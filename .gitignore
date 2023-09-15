@@ -1,0 +1,10 @@
+# Local cruft and other
+poetry.lock
+.env
+*.bak
+**/__pycache__/**
+**/.DS_Store
+
+# Local sandbox environments
+playground/
+output/

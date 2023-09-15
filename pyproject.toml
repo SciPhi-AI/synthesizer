@@ -1,0 +1,43 @@
+[build-system]
+requires = ["poetry-core", "setuptools", "wheel"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "sci_phi"
+version = "0.1.0"
+description = "SciPhi: Breaking scaling laws."
+authors = ["Owen Colegrove <owen@emergentagi.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+anthropic = "^0.3.10"
+openai = "0.27.8"
+vllm = { version = "0.1.4", optional = true }
+transformers = "4.32.0"
+python-dotenv = "^1.0.0"
+pandas = "^2.1.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+flake8 = "6.1.0"
+isort = "5.12.0"
+pre-commit = "^3.3.3"
+mypy = "^1.5.1"
+sourcery = "^1.6.0"
+types-requests = "^2.31.0.2"
+types-attrs = "^19.1.0"
+yapf = "0.40.1"
+
+[tool.black]
+line-length = 79
+
+[tool.mypy]
+ignore_missing_imports = true
+exclude = 'zero_shot_replication/evals/leetcode_hard_gym'
+
+[tool.flake8]
+ignore = ["E501", "W503"]
+exclude = 'zero_shot_replication/evals/leetcode_hard_gym'
+
