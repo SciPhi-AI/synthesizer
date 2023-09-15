@@ -2,6 +2,14 @@ from sci_phi.prompt import Prompt
 import random
 
 
+def random_sample(vars_and_weights: dict) -> str:
+    """Randomly sample a weighted dictionary"""
+    keys, weights = zip(*vars_and_weights.items())
+    if len(keys) == 0:
+        raise IndexError("Cannot randomly sample an empty input.")
+    return random.choices(keys, weights)[0]
+
+
 def synthesize(
     outer_prompt: Prompt, input_generators: dict, batch_size: int = 1_024
 ) -> list[str]:
@@ -16,12 +24,12 @@ def synthesize(
         result = {}
         for inner_key, inner_generator in input_generators.items():
             inner_prompt = Prompt(
-                text=random.choice(prompt_templates[inner_key]),
+                text=random_sample(prompt_templates[inner_key]),
                 expected_inputs=set(inner_generator.keys()),
             )
 
             generated_inputs = {
-                k: random.choice(v) for k, v in inner_generator.items()
+                k: random_sample(v) for k, v in inner_generator.items()
             }
 
             formatted_inner = inner_prompt.format(**generated_inputs)

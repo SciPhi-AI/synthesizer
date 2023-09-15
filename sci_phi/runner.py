@@ -1,11 +1,10 @@
 """Run the zero-shot replication."""
-import argparse
 import os
 import yaml
 
-from sci_phi.core import OUTPUT_FILE_NAME
 from sci_phi.core.utils import (
     get_configured_logger,
+    get_config_dir,
     get_root_dir,
     parse_arguments,
     prep_for_file_path,
@@ -15,8 +14,10 @@ from sci_phi.llm import LLMConfigManager
 from sci_phi.prompt import PromptManager, Prompt
 from sci_phi.synthesizers import synthesize
 
+OUTPUT_FILE_NAME = "{RUN_NAME}__provider_eq_{PROVIDER}__model_eq_{MODEL}__version_eq_{VERSION}{EXTRA}.jsonl"
 
-def get_output_path(args: argparse.Namespace, version: str) -> str:
+
+def get_output_path(args: dict) -> str:
     """Get the output path for the given arguments."""
 
     output_dir = os.path.join(
@@ -39,9 +40,10 @@ def get_output_path(args: argparse.Namespace, version: str) -> str:
             k: prep_for_file_path(v)
             for k, v in {
                 "RUN_NAME": args.run_name,
+                "PROVIDER": str(args.provider_name),
                 "MODEL": args.model_name,
-                "TEMPERATURE": str(args.temperature),
-                "VERSION": version,
+                "VERSION": args.version,
+                "EXTRA": args.extra,
             }.items()
         }
     )
@@ -94,15 +96,19 @@ if __name__ == "__main__":
             "Set prompt_type to override if overriding the base prompt."
         )
 
-    # Synthesize the data
-    from temp import input_generators
+    with open(
+        os.path.join(get_config_dir(), "python_textbook.yaml"), "r"
+    ) as file:
+        input_generators = yaml.safe_load(file)
 
     synthesized_data = synthesize(prompt, input_generators, 1_024)
     for i in range(10):
         print(f"Synthesized data {i} = {synthesized_data[i]}")
 
     # Get the output path
-    out_path = get_output_path(args, llm_provider.model.config.version)
+    vargs = vars(args)
+    vargs["version"] = llm_provider.model.config.version
+    out_path = get_output_path(args)
 
     # Load existing results
     # results = load_existing_jsonl(out_path)

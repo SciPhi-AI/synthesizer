@@ -52,6 +52,13 @@ def get_root_dir() -> str:
     return os.path.join(script_dir, "..", "..")
 
 
+def get_config_dir() -> str:
+    """Get the path to the root of the code repository."""
+
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+    return os.path.join(script_dir, "..", "config")
+
+
 def parse_arguments() -> argparse.Namespace:
     """Parse command line arguments."""
 
@@ -105,10 +112,15 @@ def parse_arguments() -> argparse.Namespace:
         help="Directory to write generated output to.",
     )
     parser.add_argument(
+        "--extra",
+        default="",
+        help="Extra text to append to the end of the string.",
+    )
+    parser.add_argument(
         "--version",
         type=str,
-        default="0.1.0",
-        help="Version of the run.",
+        default=None,
+        help="Version of this run.",
     )
     parser.add_argument(
         "--prompt_type",
