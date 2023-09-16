@@ -49,7 +49,7 @@ class AnthropicLLM(LLM):
         formatted_prompt = f"{HUMAN_PROMPT} {prompt} {AI_PROMPT}"
 
         completion = self.anthropic.completions.create(
-            model=self.model_name.value,
+            model=self.config.model_name,
             prompt=formatted_prompt,
             temperature=self.config.temperature,
             top_p=self.config.top_p,

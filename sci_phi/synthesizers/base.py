@@ -1,43 +1,76 @@
-from sci_phi.prompt import Prompt
+"""A module which facilitates synthesizing prompt data."""
 import random
 
-
-def random_sample(vars_and_weights: dict) -> str:
-    """Randomly sample a weighted dictionary"""
-    keys, weights = zip(*vars_and_weights.items())
-    if len(keys) == 0:
-        raise IndexError("Cannot randomly sample an empty input.")
-    return random.choices(keys, weights)[0]
+import os
+import yaml
+import random
+from typing import Union, Dict, Generator
+from sci_phi.prompt import Prompt
 
 
-def synthesize(
-    outer_prompt: Prompt, input_generators: dict, batch_size: int = 1_024
-) -> list[str]:
-    """Synthesize a list of prompts from the given input generators."""
-    results = []
-    prompt_templates = {
-        k: input_generators[k].pop("prompt_templates")
-        for k in input_generators
-    }
+class DataSynthesizer:
+    """A class to synthesize data from a configuration."""
 
-    while len(results) < batch_size:
-        result = {}
-        for inner_key, inner_generator in input_generators.items():
-            inner_prompt = Prompt(
-                text=random_sample(prompt_templates[inner_key]),
-                expected_inputs=set(inner_generator.keys()),
+    PROMPT_TEMPLATE_TAG = "prompt_templates"
+
+    def __init__(self, outer_prompt: Prompt):
+        self.outer_prompt = outer_prompt
+        self.config: Dict[str, Union[str, Dict[str, str]]] = {}
+
+    def load_config_from_dict(
+        self, config: Dict[str, Union[str, Dict[str, str]]]
+    ):
+        """Load configuration from a dictionary."""
+        self.config = config
+
+    def load_config_from_yaml(self, yaml_path: str) -> None:
+        """Load configuration from a YAML file."""
+        if not os.path.exists(yaml_path):
+            raise FileNotFoundError(f"YAML file not found at {yaml_path}")
+
+        with open(yaml_path, "r") as file:
+            self.config = yaml.safe_load(file)
+
+    @staticmethod
+    def random_sample(vars_and_weights: dict) -> str:
+        """Randomly sample a weighted dictionary."""
+        keys, weights = zip(*vars_and_weights.items())
+        if len(keys) == 0:
+            raise IndexError("Cannot randomly sample an empty input.")
+        return random.choices(keys, weights)[0]
+
+    def synthesis_generator(
+        self, batch_size: int = 1_024
+    ) -> Generator[Dict[str, str], None, None]:
+        """Returns a generator which yields formatted prompts from the loaded configuration."""
+        if not self.config:
+            raise ValueError(
+                "Configuration not loaded. Please load a configuration before synthesizing."
             )
+        results = []
+        prompt_templates = {
+            k: self.config[k].pop(DataSynthesizer.PROMPT_TEMPLATE_TAG)
+            for k in self.config
+        }
 
-            generated_inputs = {
-                k: random_sample(v) for k, v in inner_generator.items()
-            }
+        while len(results) < batch_size:
+            result = {}
+            for inner_key, inner_generator in self.config.items():
+                inner_prompt = {
+                    "text": self.random_sample(prompt_templates[inner_key]),
+                    "expected_inputs": set(inner_generator.keys()),
+                }
 
-            formatted_inner = inner_prompt.format(**generated_inputs)
-            # TODO - Do we want to keep generator shards somewhere?
-            result[inner_key] = formatted_inner
+                generated_inputs = {
+                    k: self.random_sample(v)
+                    for k, v in inner_generator.items()
+                }
 
-        result["formatted_prompt"] = outer_prompt.format(**result)
-        result["raw_prompt"] = outer_prompt
-        results.append(result)
+                formatted_inner = inner_prompt["text"].format(
+                    **generated_inputs
+                )
+                result[inner_key] = formatted_inner
 
-    return results
+            result["formatted_prompt"] = self.outer_prompt.format(**result)
+            result["raw_prompt"] = self.outer_prompt
+            yield result

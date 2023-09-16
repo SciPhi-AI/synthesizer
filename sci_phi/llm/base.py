@@ -27,15 +27,33 @@ class ModelName(Enum):
     CLAUDE_2 = "claude-2"
 
 
+from dataclasses import dataclass, field, fields
+
+
 @dataclass
 class LLMConfig(ABC):
-    """A dataclass to hold the configuration for a given LLM."""
-
     provider_name: ProviderName
     model_name: str
     version: str
     temperature: float
     top_p: float
+
+    @classmethod
+    def create(cls, **kwargs):
+        valid_keys = {f.name for f in fields(cls)}
+        filtered_kwargs = {k: v for k, v in kwargs.items() if k in valid_keys}
+        return cls(**filtered_kwargs)
+
+
+# @dataclass
+# class LLMConfig(ABC):
+#     """A dataclass to hold the configuration for a given LLM."""
+
+#     provider_name: ProviderName
+#     model_name: str
+#     version: str
+#     temperature: float
+#     top_p: float
 
 
 class LLM(ABC):

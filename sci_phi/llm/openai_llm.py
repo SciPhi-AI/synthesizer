@@ -46,15 +46,21 @@ class OpenAILLM(LLM):
 
     def get_completion(self, messages: list[dict]) -> str:
         """Get a completion from the OpenAI API based on the provided messages."""
+        # Create a dictionary with the default arguments
+        args = {
+            "model": self.config.model_name,
+            "messages": messages,
+            "temperature": self.config.temperature,
+            "top_p": self.config.top_p,
+            "max_tokens": self.config.max_tokens_to_sample,
+            "stream": self.config.stream,
+        }
 
-        response = openai.ChatCompletion.create(
-            model=self.model_name.value,
-            messages=messages,
-            temperature=self.config.temperature,
-            top_p=self.config.top_p,
-            max_tokens=self.config.max_tokens_to_sample,
-            stream=self.config.stream,
-            functions=self.config.functions,
-        )
+        # Conditionally add the 'functions' argument if it's not None
+        if self.config.functions is not None:
+            args["functions"] = self.config.functions
+
+        # Use the ** unpacking syntax to pass the arguments to the function
+        response = openai.ChatCompletion.create(**args)
 
         return response.choices[0].message["content"]

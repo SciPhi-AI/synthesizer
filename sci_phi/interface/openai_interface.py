@@ -29,16 +29,17 @@ class OpenAILLMInterface(LLMInterface):
 
     def __init__(
         self,
-        config: OpenAIConfig = OpenAIConfig(),
+        config: OpenAIConfig,
     ) -> None:
+        self.config = config
         self._model = OpenAILLM(config)
 
     def get_completion(self, prompt: str) -> str:
         """Get a completion from the OpenAI API based on the provided prompt."""
         logger.info(
-            f"Getting completion from OpenAI API for model={self.config.model.model_name}"
+            f"Getting completion from OpenAI API for model={self.config.model_name}"
         )
-        return self.model.get_completion(
+        return self._model.get_completion(
             [
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": prompt},

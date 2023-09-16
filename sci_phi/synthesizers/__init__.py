@@ -1,3 +1,3 @@
-from sci_phi.synthesizers.base import synthesize
+from sci_phi.synthesizers.base import DataSynthesizer
 
-__all__ = ["synthesize"]
+__all__ = ["DataSynthesizer"]

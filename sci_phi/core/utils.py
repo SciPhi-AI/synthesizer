@@ -52,11 +52,11 @@ def get_root_dir() -> str:
     return os.path.join(script_dir, "..", "..")
 
 
-def get_config_dir() -> str:
+def get_data_config_dir() -> str:
     """Get the path to the root of the code repository."""
 
     script_dir = os.path.dirname(os.path.realpath(__file__))
-    return os.path.join(script_dir, "..", "config")
+    return os.path.join(script_dir, "..", "data_config")
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -102,6 +102,12 @@ def parse_arguments() -> argparse.Namespace:
         help="Top-k parameter for provided model.",
     )
     parser.add_argument(
+        "--num_samples",
+        type=int,
+        default=1_024,
+        help="Number of samples to generate.",
+    )
+    parser.add_argument(
         "--output_file_name",
         default=None,
         help="Filename to override the default output file name with.",
@@ -112,7 +118,7 @@ def parse_arguments() -> argparse.Namespace:
         help="Directory to write generated output to.",
     )
     parser.add_argument(
-        "--extra",
+        "--extra_output_file_text",
         default="",
         help="Extra text to append to the end of the string.",
     )
@@ -121,6 +127,24 @@ def parse_arguments() -> argparse.Namespace:
         type=str,
         default=None,
         help="Version of this run.",
+    )
+    parser.add_argument(
+        "--log_level",
+        type=str,
+        default="INFO",
+        help="Logging verbosity level.",
+    )
+    parser.add_argument(
+        "--example_config",
+        type=str,
+        default="python_textbook",
+        help="Which configuration to use for data generation?",
+    )
+    parser.add_argument(
+        "--config_path",
+        type=Optional[str],
+        default=None,
+        help="Optional path to the configuration path, if specified the example config is overridden.",
     )
     parser.add_argument(
         "--prompt_type",
