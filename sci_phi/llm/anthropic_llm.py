@@ -53,7 +53,6 @@ class AnthropicLLM(LLM):
             prompt=formatted_prompt,
             temperature=self.config.temperature,
             top_p=self.config.top_p,
-            top_k=self.config.top_k,
             max_tokens_to_sample=self.config.max_tokens_to_sample,
             stream=self.config.stream,
         )  # type: ignore
