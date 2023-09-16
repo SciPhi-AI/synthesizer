@@ -22,7 +22,6 @@ class AnthropicConfig(LLMConfig):
     top_p: float = 1.0
 
     # Anthropic Extras
-    top_k: float = 100.0
     stream: bool = False
     max_tokens_to_sample: int = 256
 
