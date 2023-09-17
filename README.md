@@ -8,12 +8,12 @@ The SciPhi Framework is designed as simply as possible to facilitate the generat
 
 ```bash
 # Repository setup
-git clone https://github.com/emrgnt-cmplxty/sci_phi.git
-cd sci_phi
+git clone https://github.com/emrgnt-cmplxty/sciphi.git
+cd sciphi
 # Install dependencies
-poetry install
-# Install optional dependencies
-# poetry install -E anthropic_support, ...
+poetry sciphi -E openai_support
+# Add other optional dependencies
+# poetry install -E anthropic_support,openai_support, ...
 ```
 
 ---
