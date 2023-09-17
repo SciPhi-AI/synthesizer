@@ -12,6 +12,8 @@ git clone https://github.com/emrgnt-cmplxty/sci_phi.git
 cd sci_phi
 # Install dependencies
 poetry install
+# Install optional dependencies
+# poetry install -E anthropic_support, ...
 ```
 
 ---
@@ -29,7 +31,7 @@ For additional features, you can install the optional dependencies:
 poetry install -E <extra_name>
 ```
 
-- `anthropoic_support`: For running with Anthropic models.
+- `anthropic_support`: For running with Anthropic models.
 - `hf_support`: For running with the HuggingFace package, useful for a large variety of model access.
 - `openai_support`: For running with OpenAI models.
 - `vllm_support`: For with VLLM, useful for fast inference.

@@ -1,8 +1,8 @@
 """A module to manage the configurations for models."""
 from typing import Type
 
-from sci_phi.core import ProviderName
-from sci_phi.llm.base import LLMConfig
+from sciphi.core import ProviderName
+from sciphi.llm.base import LLMConfig
 
 
 class LLMConfigManager:

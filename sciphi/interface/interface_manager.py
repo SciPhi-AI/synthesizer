@@ -2,8 +2,8 @@
 import logging
 from typing import Optional, Type
 
-from sci_phi.interface.base import LLMInterface, ProviderConfig, ProviderName
-from sci_phi.llm import LLMConfig, ModelName
+from sciphi.interface.base import LLMInterface, ProviderConfig, ProviderName
+from sciphi.llm import LLMConfig, ModelName
 
 logger = logging.getLogger(__name__)
 

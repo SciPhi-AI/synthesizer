@@ -5,7 +5,7 @@ from typing import Dict, Generator, Union
 
 import yaml
 
-from sci_phi.prompt import Prompt, PromptStructure
+from sciphi.prompt import Prompt, PromptStructure
 
 
 class DataSynthesizer:

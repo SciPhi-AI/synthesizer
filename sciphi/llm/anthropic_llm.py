@@ -3,9 +3,9 @@
 from dataclasses import dataclass
 
 
-from sci_phi.core import ProviderName
-from sci_phi.llm.base import LLM, LLMConfig
-from sci_phi.llm.config_manager import model_config
+from sciphi.core import ProviderName
+from sciphi.llm.base import LLM, LLMConfig
+from sciphi.llm.config_manager import model_config
 
 
 @model_config
@@ -38,7 +38,7 @@ class AnthropicLLM(LLM):
             from anthropic import Anthropic
         except:
             raise ImportError(
-                "Please install the anthropic package before attempting to run with an Anthropic model. This can be accomplished via `poetry install -E anthropic_support`."
+                "Please install the anthropic package before attempting to run with an Anthropic model. This can be accomplished via `poetry install -E anthropic_support, ...OTHER_DEPENDENCY_HERE`."
             )
 
         self.anthropic = Anthropic()

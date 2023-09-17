@@ -1,9 +1,9 @@
 """A module for providing zero-shot completions from the OpenAI API."""
 import logging
 
-from sci_phi.interface.base import LLMInterface, ProviderName
-from sci_phi.interface.interface_manager import llm_provider
-from sci_phi.llm import HuggingFaceConfig, HuggingFaceLLM, ModelName
+from sciphi.interface.base import LLMInterface, ProviderName
+from sciphi.interface.interface_manager import llm_provider
+from sciphi.llm import HuggingFaceConfig, HuggingFaceLLM, ModelName
 
 logger = logging.getLogger(__name__)
 
