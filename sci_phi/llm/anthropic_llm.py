@@ -16,7 +16,6 @@ class AnthropicConfig(LLMConfig):
     # Base
     provider_name: ProviderName = ProviderName.ANTHROPIC
     model_name: str = "claude-2"
-    version: str = "0.1.0"
     temperature: float = 0.7
     top_p: float = 1.0
 

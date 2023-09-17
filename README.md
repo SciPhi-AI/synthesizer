@@ -1,4 +1,4 @@
-# SciPhi: Train and Evaluate LLMs
+# SciPhi: A framework for breaking scaling laws
 
 ## Overview
 
@@ -13,7 +13,6 @@ cd sci_phi
 # Install dependencies
 poetry install
 ```
-
 
 ---
 
@@ -37,21 +36,20 @@ poetry install -E <extra_name>
 
 ## Usage
 
-You can run sciphi replication by executing the `runner.py` file with various command-line arguments.
+### Dataset Generation
+
+You can use SciPhi for dataset generation by executing the relevant `runner.py` file with various command-line arguments.
 
 ```bash
-poetry run python runner.py --provider openai --dataset human-eval --model gpt-4-0613 --temperature 0.7
+poetry run python sci_phi/examples/data_generation/runner.py --provider_name=openai --model_name=gpt-4 --log_level=DEBUG
 ```
 
-### Command-Line Arguments
+### Key Command-Line Arguments
 
-- `--provider`: Which provider to use for zero-shot completions (default: "openai").
-- `--dataset`: Which dataset to run on (default: "human-eval").
-- `--model`: Model name to load from the provider (default: "gpt-3.5-turbo").
+- `--provider`: Which provider to use for completions (default: "openai").
+- `--model_name`: The name of the model to load from the provider (default: "gpt-3.5-turbo").
 - `--temperature`: Temperature parameter for the provided model (default: 0.7).
 - `--output_file_name`: Filename to override the default output file name with.
-
-To see explicit commands ran to generate the reported results, check out the [commands.md](commands.md) menu.
 
 ## License
 
@@ -64,4 +62,3 @@ This project is licensed under the Apache-2.0 License.
 [2] [Sparks of Artificial General Intelligence](https://arxiv.org/pdf/2303.12712.pdf)
 
 [3] [Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification](https://paperswithcode.com/paper/solving-challenging-math-word-problems-using)
-# DatasetBuilder

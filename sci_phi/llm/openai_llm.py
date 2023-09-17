@@ -16,7 +16,6 @@ class OpenAIConfig(LLMConfig):
     # Base
     provider_name: ProviderName = ProviderName.OPENAI
     model_name: str = "gpt-3.5-turbo"
-    version: str = "0.1.0"
     temperature: float = 0.7
     top_p: float = 1.0
 

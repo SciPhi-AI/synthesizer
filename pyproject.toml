@@ -3,9 +3,9 @@ requires = ["poetry-core", "setuptools", "wheel"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "sci_phi"
+name = "SciPhi"
 version = "0.1.0"
-description = "SciPhi: Breaking scaling laws."
+description = "SciPhi: A framework for breaking scaling laws."
 authors = ["Owen Colegrove <owen@emergentagi.com>"]
 license = "Apache-2.0"
 readme = "README.md"
