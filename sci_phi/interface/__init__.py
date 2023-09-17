@@ -1,14 +1,8 @@
-from sci_phi.interface.base import (
-    LLMInterface,
-    ProviderConfig,
-    ProviderName,
-)
-from sci_phi.interface.interface_manager import InterfaceManager
 from sci_phi.interface.anthropic_interface import AnthropicLLMInterface
+from sci_phi.interface.base import LLMInterface, ProviderConfig, ProviderName
+from sci_phi.interface.hugging_face_interface import HuggingFaceLLMInterface
+from sci_phi.interface.interface_manager import InterfaceManager
 from sci_phi.interface.openai_interface import OpenAILLMInterface
-from sci_phi.interface.hugging_face_interface import (
-    HuggingFaceLLMInterface,
-)
 
 __all__ = [
     "InterfaceManager",

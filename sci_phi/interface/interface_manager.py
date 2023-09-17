@@ -1,13 +1,9 @@
 """A module for managing the providers and their models."""
 import logging
+from typing import Optional, Type
 
-from sci_phi.interface.base import (
-    LLMInterface,
-    ProviderName,
-    ProviderConfig,
-)
+from sci_phi.interface.base import LLMInterface, ProviderConfig, ProviderName
 from sci_phi.llm import LLMConfig, ModelName
-from typing import Type, Optional
 
 logger = logging.getLogger(__name__)
 

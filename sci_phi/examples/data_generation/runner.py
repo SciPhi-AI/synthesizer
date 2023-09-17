@@ -9,51 +9,21 @@ from sci_phi.core.utils import (
     get_configured_logger,
     get_data_config_dir,
     get_root_dir,
+)
+from sci_phi.examples.helpers import (
+    build_llm_config,
     parse_arguments,
     prep_for_file_path,
 )
 from sci_phi.interface import InterfaceManager, ProviderName
 from sci_phi.llm import LLMConfigManager
-from sci_phi.prompt import PromptManager, Prompt
+from sci_phi.prompt import Prompt, PromptManager
 from sci_phi.synthesizers import DataSynthesizer
 from sci_phi.writers import JsonlDataWriter
 
 random.seed(42)
 
 OUTPUT_FILE_NAME = "{RUN_NAME}__provider_eq_{PROVIDER}__model_eq_{MODEL}__version_eq_{VERSION}{EXTRA}.jsonl"
-
-
-def build_llm_config(args: argparse.Namespace) -> dict:
-    """Constructs the LLM config based on provided arguments."""
-
-    config_args = {
-        "provider_name": ProviderName(args.provider_name),
-        "model_name": args.model_name,
-        "temperature": args.temperature,
-        "top_p": args.top_p,
-        "top_k": args.top_k,
-        "max_tokens_to_sample": args.max_tokens_to_sample,
-        "do_sample": args.do_sample,
-        "num_beams": args.num_beams,
-        "do_stream": args.do_stream,
-        "device": args.device,
-        "version": args.version,
-        "add_model_kwargs": dict(args.add_model_kwargs)
-        if args.add_model_kwargs
-        else None,
-        "add_generation_kwargs": dict(args.add_generation_kwargs)
-        if args.add_generation_kwargs
-        else None,
-        "add_tokenizer_kwargs": dict(args.add_tokenizer_kwargs)
-        if args.add_tokenizer_kwargs
-        else None,
-        "functions": [dict(func) for func in args.functions.split(",")]
-        if args.functions
-        else None,
-    }
-
-    # Filter out None values
-    return {k: v for k, v in config_args.items() if v is not None}
 
 
 def get_output_path(args: argparse.Namespace) -> str:

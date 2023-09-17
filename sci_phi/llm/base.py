@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from dataclasses import dataclass, field, InitVar
+from dataclasses import InitVar, dataclass, field
 from enum import Enum
 from typing import Any
 
@@ -34,9 +34,10 @@ from dataclasses import dataclass, field, fields
 class LLMConfig(ABC):
     provider_name: ProviderName
     model_name: str
-    version: str
     temperature: float
     top_p: float
+
+    version: str = "0.1.0"
 
     @classmethod
     def create(cls, **kwargs):

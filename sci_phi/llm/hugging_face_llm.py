@@ -17,7 +17,6 @@ class HuggingFaceConfig(LLMConfig):
     # Base
     provider_name: ProviderName = ProviderName.HUGGING_FACE
     model_name: str = "gpt-2"
-    version: str = "0.1.0"
     temperature: float = 0.7
     top_p: float = 1.0
 
@@ -45,6 +44,7 @@ class HuggingFaceLLM(LLM):
             config,
         )
         model_name = self.config.model_name
+        # TODO - Move offload_folder upstream?
         self.model = AutoModelForCausalLM.from_pretrained(
             model_name,
             device_map=self.config.device,

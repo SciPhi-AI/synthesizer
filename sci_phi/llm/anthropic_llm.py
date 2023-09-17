@@ -2,7 +2,6 @@
 
 from dataclasses import dataclass
 
-from anthropic import AI_PROMPT, HUMAN_PROMPT, Anthropic
 
 from sci_phi.core import ProviderName
 from sci_phi.llm.base import LLM, LLMConfig
@@ -17,7 +16,6 @@ class AnthropicConfig(LLMConfig):
     # Base
     provider_name: ProviderName = ProviderName.ANTHROPIC
     model_name: str = "claude-2"
-    version: str = "0.1.0"
     temperature: float = 0.7
     top_p: float = 1.0
 
@@ -36,6 +34,13 @@ class AnthropicLLM(LLM):
         super().__init__(
             config,
         )
+        try:
+            from anthropic import Anthropic
+        except:
+            raise ImportError(
+                "Please install the anthropic package before attempting to run with an Anthropic model. This can be accomplished via `poetry install -E anthropic_support`."
+            )
+
         self.anthropic = Anthropic()
         if not self.anthropic.api_key:
             raise ValueError(
@@ -44,6 +49,8 @@ class AnthropicLLM(LLM):
 
     def get_completion(self, prompt: str) -> str:
         """Get a completion from the Anthropic API based on the provided messages."""
+
+        from anthropic import AI_PROMPT, HUMAN_PROMPT
 
         formatted_prompt = f"{HUMAN_PROMPT} {prompt} {AI_PROMPT}"
 

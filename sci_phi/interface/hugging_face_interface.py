@@ -3,7 +3,6 @@ import logging
 
 from sci_phi.interface.base import LLMInterface, ProviderName
 from sci_phi.interface.interface_manager import llm_provider
-
 from sci_phi.llm import HuggingFaceConfig, HuggingFaceLLM, ModelName
 
 logger = logging.getLogger(__name__)
