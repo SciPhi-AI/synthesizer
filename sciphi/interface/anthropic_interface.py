@@ -1,7 +1,7 @@
 """A module for providing zero-shot completions from the Anthropic API."""
-from sci_phi.interface.base import LLMInterface, ProviderName
-from sci_phi.interface.interface_manager import llm_provider
-from sci_phi.llm import AnthropicConfig, AnthropicLLM, ModelName
+from sciphi.interface.base import LLMInterface, ProviderName
+from sciphi.interface.interface_manager import llm_provider
+from sciphi.llm import AnthropicConfig, AnthropicLLM, ModelName
 
 
 @llm_provider

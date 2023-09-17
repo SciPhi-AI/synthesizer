@@ -3,8 +3,8 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import List, Type
 
-from sci_phi.core import ProviderName
-from sci_phi.llm import LLM, LLMConfig, ModelName
+from sciphi.core import ProviderName
+from sciphi.llm import LLM, LLMConfig, ModelName
 
 
 class LLMInterface(ABC):

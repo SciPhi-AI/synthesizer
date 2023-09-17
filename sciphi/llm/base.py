@@ -3,7 +3,7 @@ from dataclasses import InitVar, dataclass, field
 from enum import Enum
 from typing import Any
 
-from sci_phi.core import ProviderName
+from sciphi.core import ProviderName
 
 
 class ModelName(Enum):

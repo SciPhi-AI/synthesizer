@@ -2,11 +2,9 @@
 
 from dataclasses import dataclass, field
 
-from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
-
-from sci_phi.core import ProviderName
-from sci_phi.llm.base import LLM, LLMConfig
-from sci_phi.llm.config_manager import model_config
+from sciphi.core import ProviderName
+from sciphi.llm.base import LLM, LLMConfig
+from sciphi.llm.config_manager import model_config
 
 
 @model_config
@@ -40,6 +38,17 @@ class HuggingFaceLLM(LLM):
         self,
         config: HuggingFaceConfig,
     ) -> None:
+        try:
+            from transformers import (
+                AutoModelForCausalLM,
+                AutoTokenizer,
+                GenerationConfig,
+            )
+        except:
+            raise ImportError(
+                "Please install the transformers package before attempting to run with a HuggingFace model. This can be accomplished via `poetry install -E hf_support, ...OTHER_DEPENDENCY_HERE`."
+            )
+
         super().__init__(
             config,
         )

@@ -3,9 +3,9 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from sci_phi.core import ProviderName
-from sci_phi.llm.base import LLM, LLMConfig
-from sci_phi.llm.config_manager import model_config
+from sciphi.core import ProviderName
+from sciphi.llm.base import LLM, LLMConfig
+from sciphi.llm.config_manager import model_config
 
 
 @model_config
@@ -37,7 +37,7 @@ class OpenAILLM(LLM):
             import openai
         except:
             raise ImportError(
-                "Please install the openai package before attempting to run with an OpenAI model. This can be accomplished via `poetry install -E openai_support`."
+                "Please install the openai package before attempting to run with an OpenAI model. This can be accomplished via `poetry install -E openai_support, ...OTHER_DEPENDENCY_HERE`."
             )
         if not openai.api_key:
             raise ValueError(

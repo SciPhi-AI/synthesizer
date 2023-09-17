@@ -3,7 +3,7 @@ import json
 import os
 import time
 
-from sci_phi.writers.base import DataWriter
+from sciphi.writers.base import DataWriter
 
 
 class JsonlDataWriter(DataWriter):

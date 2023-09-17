@@ -5,21 +5,21 @@ import os
 import random
 import secrets
 
-from sci_phi.core.utils import (
+from sciphi.core.utils import (
     get_configured_logger,
     get_data_config_dir,
     get_root_dir,
 )
-from sci_phi.examples.helpers import (
+from sciphi.examples.helpers import (
     build_llm_config,
     parse_arguments,
     prep_for_file_path,
 )
-from sci_phi.interface import InterfaceManager, ProviderName
-from sci_phi.llm import LLMConfigManager
-from sci_phi.prompt import Prompt, PromptManager
-from sci_phi.synthesizers import DataSynthesizer
-from sci_phi.writers import JsonlDataWriter
+from sciphi.interface import InterfaceManager, ProviderName
+from sciphi.llm import LLMConfigManager
+from sciphi.prompt import Prompt, PromptManager
+from sciphi.synthesizers import DataSynthesizer
+from sciphi.writers import JsonlDataWriter
 
 random.seed(42)
 
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     """Run the synthesis."""
     # Setup
     args = parse_arguments()
-    logger = get_configured_logger("sci_phi", log_level=args.log_level)
+    logger = get_configured_logger("sciphi", log_level=args.log_level)
 
     model_name = args.model_name
     provider_name = ProviderName(args.provider_name)

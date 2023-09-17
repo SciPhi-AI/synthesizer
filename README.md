@@ -8,10 +8,12 @@ The SciPhi Framework is designed as simply as possible to facilitate the generat
 
 ```bash
 # Repository setup
-git clone https://github.com/emrgnt-cmplxty/sci_phi.git
-cd sci_phi
+git clone https://github.com/emrgnt-cmplxty/sciphi.git
+cd sciphi
 # Install dependencies
-poetry install
+poetry sciphi -E openai_support
+# Add other optional dependencies
+# poetry install -E anthropic_support,openai_support, ...
 ```
 
 ---
@@ -29,7 +31,7 @@ For additional features, you can install the optional dependencies:
 poetry install -E <extra_name>
 ```
 
-- `anthropoic_support`: For running with Anthropic models.
+- `anthropic_support`: For running with Anthropic models.
 - `hf_support`: For running with the HuggingFace package, useful for a large variety of model access.
 - `openai_support`: For running with OpenAI models.
 - `vllm_support`: For with VLLM, useful for fast inference.

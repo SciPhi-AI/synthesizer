@@ -3,7 +3,7 @@ import argparse
 import json
 from typing import Optional
 
-from sci_phi.interface import ProviderName
+from sciphi.interface import ProviderName
 
 
 def build_llm_config(args: argparse.Namespace) -> dict:
