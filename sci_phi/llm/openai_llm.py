@@ -26,7 +26,7 @@ class OpenAIConfig(LLMConfig):
     top_p: float = 1.0
 
     # OpenAI Extras
-    stream: bool = False
+    do_stream: bool = False
     max_tokens_to_sample: int = 256
     functions: Optional[list[dict]] = None
 
@@ -53,7 +53,7 @@ class OpenAILLM(LLM):
             "temperature": self.config.temperature,
             "top_p": self.config.top_p,
             "max_tokens": self.config.max_tokens_to_sample,
-            "stream": self.config.stream,
+            "stream": self.config.do_stream,
         }
 
         # Conditionally add the 'functions' argument if it's not None

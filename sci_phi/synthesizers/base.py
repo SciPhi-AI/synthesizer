@@ -5,7 +5,7 @@ import os
 import yaml
 import random
 from typing import Union, Dict, Generator
-from sci_phi.prompt import Prompt
+from sci_phi.prompt import Prompt, PromptStructure
 
 
 class DataSynthesizer:
@@ -30,14 +30,6 @@ class DataSynthesizer:
 
         with open(yaml_path, "r") as file:
             self.config = yaml.safe_load(file)
-
-    @staticmethod
-    def random_sample(vars_and_weights: dict) -> str:
-        """Randomly sample a weighted dictionary."""
-        keys, weights = zip(*vars_and_weights.items())
-        if len(keys) == 0:
-            raise IndexError("Cannot randomly sample an empty input.")
-        return random.choices(keys, weights)[0]
 
     def synthesis_generator(
         self, batch_size: int = 1_024
@@ -71,6 +63,26 @@ class DataSynthesizer:
                 )
                 result[inner_key] = formatted_inner
 
-            result["formatted_prompt"] = self.outer_prompt.format(**result)
-            result["raw_prompt"] = self.outer_prompt
+            self.outer_prompt.format(**result)
+
+            if self.outer_prompt.structure == PromptStructure.SINGLE:
+                result["raw_prompt"] = self.outer_prompt.raw_text
+                result["formatted_prompt"] = self.outer_prompt.text
+            else:
+                result["raw_prompts"] = [
+                    f"[START_PROMPT]{prompt}[END_PROMPT]"
+                    for prompt in self.outer_prompt.text
+                ]
+                result["formatted_prompts"] = [
+                    f"[START_PROMPT]{prompt}[END_PROMPT]"
+                    for prompt in self.outer_prompt.format(**result).text
+                ]
             yield result
+
+    @staticmethod
+    def random_sample(vars_and_weights: dict) -> str:
+        """Randomly sample a weighted dictionary."""
+        keys, weights = zip(*vars_and_weights.items())
+        if len(keys) == 0:
+            raise IndexError("Cannot randomly sample an empty input.")
+        return random.choices(keys, weights)[0]

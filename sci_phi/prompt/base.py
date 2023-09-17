@@ -1,5 +1,14 @@
 """A module to facilitate seamless construction of input prompts"""
+from enum import Enum
 from dataclasses import dataclass
+from typing import List, Union, Optional
+
+
+class PromptStructure(Enum):
+    """How are prompts formatted (e.g. single reply, conversation, ..)"""
+
+    SINGLE = "single"
+    CONVERSATION = "conversation"
 
 
 @dataclass
@@ -7,15 +16,29 @@ class Prompt:
     """A simple abstraction for building input prompts."""
 
     expected_inputs: set[str]
-    text: str
+    raw_text: Union[str, List[str]]
+    structure: PromptStructure
+    _text: Optional[Union[str, List[str]]] = None
 
-    def format(self, **kwargs) -> str:
+    def format(self, **kwargs) -> None:
         """Format the prompt into a string"""
         if set(kwargs.keys()) != self.expected_inputs:
             raise ValueError(
                 f"Received {kwargs.keys()}, but expected {self.expected_inputs}"
             )
-        return self.text.format(**kwargs)
+        if self.structure == PromptStructure.SINGLE:
+            self._text = self.raw_text.format(**kwargs)
+        else:
+            # If not a single response, then text is formatted in a list
+            self._text = [ele.format(**kwargs) for ele in self.raw_text]
+
+    @property
+    def text(self):
+        if not self._text:
+            raise ValueError(
+                "Format prompt before attempting to access the `text` field."
+            )
+        return self._text
 
 
 class PromptManager:
@@ -24,7 +47,8 @@ class PromptManager:
     prompt_modes = {
         "md_instruction": Prompt(
             expected_inputs={"instruction"},
-            text="""Below is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\n{instruction}\n\n### Response:""",
+            raw_text="""Below is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\n{instruction}\n\n### Response:""",
+            structure=PromptStructure.SINGLE,
         )
     }
 
@@ -32,13 +56,10 @@ class PromptManager:
         pass
 
     @staticmethod
-    def register_prompt(prompt: Prompt) -> None:
-        """Registers the prompt with the prompt manager"""
-        PromptManager.prompt_modes[prompt.prompt_mode] = prompt
-
-    @staticmethod
     def get_prompt(prompt_mode: str) -> Prompt:
-        """Gets the prompt associated with the specified mode"""
+        """
+        Gets the list of prompts associated with the specified mode
+        """
         prompt = PromptManager.prompt_modes.get(prompt_mode)
         if not prompt:
             raise ValueError(

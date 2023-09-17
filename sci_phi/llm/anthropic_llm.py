@@ -22,7 +22,7 @@ class AnthropicConfig(LLMConfig):
     top_p: float = 1.0
 
     # Anthropic Extras
-    stream: bool = False
+    do_stream: bool = False
     max_tokens_to_sample: int = 256
 
 
@@ -53,7 +53,7 @@ class AnthropicLLM(LLM):
             temperature=self.config.temperature,
             top_p=self.config.top_p,
             max_tokens_to_sample=self.config.max_tokens_to_sample,
-            stream=self.config.stream,
+            stream=self.config.do_stream,
         )  # type: ignore
 
         return completion.completion
