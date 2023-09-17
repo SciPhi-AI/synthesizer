@@ -1,0 +1,485 @@
+instruction:
+  course_type:
+    undergraduate: 1
+    elective: 1
+    specialized: 1
+    computer science: 1
+    advanced: 1
+    introductory: 1
+    high school: 1
+    professional development: 1
+    certification: 1
+    bootcamp: 1
+    seminar: 1
+
+  programming_paradigm:
+    object-oriented: 1
+    functional: 1
+    procedural: 1
+    declarative: 1
+    logic-based: 1
+    event-driven: 1
+    modular: 1
+    symbolic: 1
+    aspect-oriented: 1
+    multi-paradigm: 1
+
+  additional_context:
+    "": 1
+    " Also, mention one real-world application where this concept is critical.": 1
+    " Additionally, discuss a potential pitfall or misconception associated with this concept.": 1
+    " Also, highlight its benefits over the alternative approach.": 1
+    " Also, compare this concept with its predecessor.": 1
+    " Additionally, share its significance in modern computing.": 1
+    " Also, provide a historical context or origin of this concept.": 1
+    " Also, mention one real-world application where this concept is critical.": 1
+    " Additionally, discuss a potential pitfall or misconception associated with this concept.": 1
+    " Also, highlight its benefits over the alternative approach.": 1
+    " Also, compare this concept with its predecessor.": 1
+    " Additionally, share its significance in modern computing.": 1
+    " Also, provide a historical context or origin of this concept.": 1
+    " Besides, can you recommend any books or resources for further reading?": 1
+    " Also, how does this concept relate to recent trends in technology?": 1
+    " Additionally, provide a visualization or diagram explaining this concept.": 1
+    " Also, mention any notable personalities or experts associated with this concept.": 1
+    " In addition, discuss the scalability aspects of this concept.": 1
+    " Also, relate this concept to a famous algorithm or software.": 1
+
+  depth:
+    in detail: 1
+    in simple terms: 1
+    in depth: 1
+    in a nutshell: 1
+    from a historical perspective: 1
+    from a practical perspective: 1
+    highlighting its pros and cons: 1
+    focusing on its applications: 1
+
+  prompt_templates:
+    "In a {course_type} course focused on the {programming_paradigm} paradigm in Python, the topic of {concept} is crucial. Please define a different but related concept {depth} and illustrate it with Python code.{additional_context}": 1
+    "In a {course_type} course focused on the {programming_paradigm} paradigm in Python, the topic of {concept} is crucial. Please define this concept {depth} and illustrate it with Python code.{additional_context}": 1
+    "There are {course_type} courses touching upon {programming_paradigm} paradigm which discuss {concept}. What is it, {depth}? Also, provide a relevant Python example.{additional_context}": 1
+    "Often {course_type} courses touch upon {programming_paradigm} paradigm in Python often discuss {concept}. Can you think of a related concept and explain it {depth}? Also, provide a relevant Python example.{additional_context}": 1
+    "In modern {course_type} courses, the emphasis on the {programming_paradigm} paradigm in Python has grown. Explore the topic of {concept} {depth} and provide practical Python examples.{additional_context}": 1
+    "In modern {course_type} courses, the emphasis on the {programming_paradigm} paradigm in Python has grown. Explore a related but different {concept} {depth} and provide practical Python examples.{additional_context}": 1
+    "With a focus on {programming_paradigm} paradigm, how would you introduce the topic of {concept} in a {course_type} course? Break it down {depth}.{additional_context}": 1
+    "With a focus on {programming_paradigm} paradigm, how would you introduce a different but related concept to {concept} to our {course_type} course? Break it down {depth}.{additional_context}": 1
+
+  concept:
+    # Intermediate Mathematics:
+    "functions: domain and range": 1
+    "functions: injective, surjective, bijective": 1
+    "functions: inverse and compositions": 1
+    "coordinate geometry: distance formula": 1
+    "coordinate geometry: midpoint formula": 1
+    "coordinate geometry: slope and equation of lines": 1
+    "sequences and series: arithmetic progressions": 1
+    "sequences and series: geometric progressions": 1
+    "matrices: determinant and inverse": 1
+    "matrices: rank and eigenvalues": 1
+    "vector spaces and subspaces": 1
+    "Basis and dimension of vector spaces": 1
+    "linear transformations and their matrix representations": 1
+    "Laplace and Fourier transforms": 1
+    # Python-specific Mathematical Applications:
+    "Python libraries: SymPy for symbolic mathematics": 1
+    "Python libraries: math for basic mathematical functions": 1
+    "Python libraries: cmath for complex numbers": 1
+    "Python applications: solving linear equations with NumPy": 1
+    "Python applications: plotting graphs with matplotlib": 1
+    "Python applications: solving ordinary differential equations with SciPy": 1
+    "Python applications: symbolic integration and differentiation with SymPy": 1
+    "Python applications: matrix operations with NumPy": 1
+    "Python applications: statistical analysis with pandas and NumPy": 1
+    "Python applications: regression models with scikit-learn": 1
+    "Python applications: optimization problems with SciPy's optimize": 1
+    "Python applications: Fourier transformations with SciPy": 1
+    "Python applications: generating and analyzing sequences with itertools": 1
+    "Python applications: number theory operations with gmpy2": 1
+    "Python applications: combinatorics with itertools and SymPy": 1
+    "Python applications: geometry computations using libraries like Shapely": 1
+    "Python applications: solving polynomial equations with NumPy's roots function": 1
+    "Python applications: numerical integration using SciPy's quad function": 1
+    "Python applications: eigenvalue and eigenvector computations with NumPy": 1
+    "Python applications: probability distributions with SciPy.stats": 1
+    # Additional Python Concepts:
+    "Python data science: introduction to pandas DataFrame": 1
+    "Python data science: data manipulation with pandas": 1
+    "Python data science: visualization with seaborn": 1
+    "Python machine learning: introduction to scikit-learn": 1
+    "Python machine learning: clustering with KMeans": 1
+    "Python machine learning: classification with Random Forests": 1
+    "Python machine learning: regression with linear regression": 1
+    "Python deep learning: introduction to TensorFlow and Keras": 1
+    "Python deep learning: building a neural network": 1
+    "Python deep learning: training and evaluation": 1
+    "Python applications: web scraping with BeautifulSoup and Scrapy": 1
+    "Python applications: web development with Flask and Django": 1
+    "Python applications: game development with Pygame": 1
+    "Python applications: image processing with PIL and OpenCV": 1
+    "Python applications: desktop applications with PyQt": 1
+    # Introductory Algebra/Mathematics/Statistics:
+    "addition and subtraction": 1
+    "multiplication and division": 1
+    "basic statistics: mean, median, mode": 1
+    "advanced statistics: standard deviation, variance, skewness, kurtosis": 1
+    "combinatorial problems: permutations": 1
+    "combinatorial problems: combinations": 1
+    "combinatorial problems: factorials": 1
+    "basic probability theory": 1
+    "probability simulations": 1
+    "probability distributions: binomial": 1
+    "probability distributions: Poisson": 1
+    "probability distributions: normal": 1
+    "graphing: linear equations": 1
+    "graphing: inequalities": 1
+    "graphing: quadratic functions (parabolas)": 1
+    "geometry basics: perimeter": 1
+    "geometry basics: area": 1
+    "geometry basics: volume": 1
+    "trigonometric functions": 1
+    "Taylor series": 1
+    "polynomial approximations": 1
+    "polynomial operations: addition": 1
+    "polynomial operations: subtraction": 1
+    "polynomial operations: multiplication": 1
+    "set theory: union": 1
+    "set theory: intersection": 1
+    "set theory: difference": 1
+    "search algorithms: linear": 1
+    "search algorithms: binary": 1
+    "regression analysis": 1
+    "time series analysis": 1
+    "forecasting": 1
+    "confidence intervals": 1
+    "hypothesis testing": 1
+    # Mathematics and Statistics:
+    "Calculus: limits and continuity": 1
+    "Statistics: Chi-squared tests": 1
+    "Statistics: ANOVA": 1
+    "Statistics: t-tests": 1
+    "Statistics: correlation coefficients (Pearson, Spearman)": 1
+    "Number Theory: Fermat's Little Theorem": 1
+    "Number Theory: Euler's Totient Function": 1
+    "Linear Algebra: Orthogonality": 1
+    "Linear Algebra: Gram-Schmidt process": 1
+    "Linear Algebra: Singular Value Decomposition (SVD)": 1
+    "Discrete Mathematics: Pigeonhole principle": 1
+    "Discrete Mathematics: Inclusion-exclusion principle": 1
+    # Extended Introductory Algebra/Mathematics/Statistics:
+    "advanced algebra: matrix operations": 1
+    "advanced algebra: eigenvalues and eigenvectors": 1
+    "calculus: differentiation": 1
+    "calculus: integration": 1
+    "calculus: partial differentiation": 1
+    "calculus: multivariable integration": 1
+    "calculus: fundamental theorem": 1
+    "calculus: chain rule": 1
+    "calculus: product and quotient rules": 1
+    "number theory: prime numbers": 1
+    "number theory: greatest common divisor": 1
+    "number theory: least common multiple": 1
+    "number theory: modulo arithmetic": 1
+    "discrete math: graphs": 1
+    "discrete math: trees": 1
+    "discrete math: logic gates": 1
+    "differential equations: first order": 1
+    "differential equations: second order": 1
+    "linear algebra: vectors": 1
+    "linear algebra: dot product and cross product": 1
+    "linear algebra: systems of equations": 1
+    "optimization problems: linear programming": 1
+    "optimization problems: simplex method": 1
+    # Basic Python concepts:
+    "Python syntax: for loops": 1
+    "Python syntax: conditional statements": 1
+    "Python syntax: list comprehensions": 1
+    "Python data structures: stacks": 1
+    "Python data structures: queues": 1
+    "Python data structures: lists": 1
+    "Python data structures: tuples": 1
+    "Python data structures: dictionaries": 1
+    "Python data structures: sets": 1
+    "Python basics: unpacking": 1
+    "Python basics: lambda functions": 1
+    "Python basics: ternary conditional expressions": 1
+    "Python basics: string operations": 1
+    "Python file operations: reading": 1
+    "Python file operations: writing": 1
+    "Python file operations: exception handling": 1
+    "Python practices: PEP8": 1
+    "Python practices: naming conventions (camelCase, snake_case)": 1
+    "Python modules: datetime": 1
+    "Python modules: time": 1
+    "Python modules: collections": 1
+    "Python modules: itertools": 1
+    "Python memory concepts: garbage collection": 1
+    "Python memory concepts: reference cycles": 1
+    "Python memory concepts: deep copy vs shallow copy": 1
+    "Python introspection: decorators": 1
+    "Python introspection: higher-order functions": 1
+    "Python introspection: introspection techniques": 1
+    "Python introspection: reflection techniques": 1
+    "Python OOP: setters": 1
+    "Python OOP: getters": 1
+    "Python OOP: inheritance": 1
+    "Python OOP: composition": 1
+    "Python OOP: encapsulation": 1
+    "Python OOP: polymorphism": 1
+    "External Python libraries: NumPy": 1
+    "External Python libraries: pandas": 1
+    "External Python libraries: matplotlib": 1
+    "Advanced Python topics: recursion": 1
+    "Advanced Python topics: iteration": 1
+    "Advanced Python topics: bitwise operations": 1
+    "Advanced Python topics: serialization (JSON, Pickle)": 1
+    # Extended Basic Python concepts:
+    "Python exceptions: custom exceptions": 1
+    "Python exceptions: raising exceptions": 1
+    "Python functions: nested functions": 1
+    "Python functions: closures": 1
+    "Python functions: decorators": 1
+    "Python functions: function factories": 1
+    "Python metaclasses: basics": 1
+    "Python metaclasses: use cases": 1
+    "Python concurrency: threading": 1
+    "Python concurrency: multiprocessing": 1
+    "Python concurrency: async/await": 1
+    "Python concurrency: coroutines": 1
+    "Python networking: socket programming": 1
+    "Python networking: async networking": 1
+    "Python GUI: Tkinter basics": 1
+    "Python GUI: PyQt basics": 1
+    "Python GUI: wxPython basics": 1
+    "Python database: SQLite integration": 1
+    "Python database: SQLAlchemy basics": 1
+    "Python advanced topics: magic methods (dunder methods)": 1
+    # Core Computer Science Principles:
+    "CS basics: static typing": 1
+    "CS basics: dynamic typing": 1
+    "CS basics: public access modifiers": 1
+    "CS basics: private access modifiers": 1
+    "CS basics: strong typing": 1
+    "CS basics: weak typing": 1
+    "Programming paradigms: procedural": 1
+    "Programming paradigms: functional": 1
+    "Programming paradigms: OOP": 1
+    "Programming paradigms: event-driven": 1
+    "Programming paradigms: reactive": 1
+    "Programming paradigms: declarative": 1
+    "Programming paradigms: imperative": 1
+    "Concurrency: multi-threading": 1
+    "Concurrency: synchronicity": 1
+    "Concurrency: thread safety": 1
+    "Concurrency: race conditions": 1
+    "Memory concepts: Memory layout": 1
+    "Memory concepts: garbage collection": 1
+    "Memory concepts: reference counting": 1
+    "Graph theory: DFS": 1
+    "Graph theory: BFS": 1
+    "Graph theory: cycles": 1
+    "Graph theory: trees": 1
+    "Graph theory: forests": 1
+    "Graph theory: traversal techniques": 1
+    "Graph theory: topological sorting": 1
+    "Algorithms & design: greedy algorithms": 1
+    "Algorithms & design: dynamic programming": 1
+    "Algorithms & design: backtracking": 1
+    "Algorithms & design: BFS": 1
+    "Algorithms & design: DFS": 1
+    "Algorithms & design: heuristics": 1
+    "Computer architecture: static libraries": 1
+    "Computer architecture: dynamic libraries": 1
+    "Computer architecture: just-in-time compilation": 1
+    "Computer architecture: ahead-of-time compilation": 1
+    "Networking & web: RESTful web services": 1
+    "Networking & web: client-side scripting": 1
+    "Networking & web: server-side scripting": 1
+    "Networking & web: microservices architecture": 1
+    "Networking & web: monolithic architecture": 1
+    "Databases: transactional": 1
+    "Databases: non-transactional": 1
+    "Databases: relational": 1
+    "Databases: non-relational": 1
+    "Databases: SQL systems": 1
+    "Databases: NoSQL systems": 1
+    "Databases: inner joins": 1
+    "Databases: outer joins": 1
+    "Data structures: continuous": 1
+    "Data structures: discrete": 1
+    "Data structures: binary trees": 1
+    "Data structures: balanced search trees": 1
+    "Data structures: linked lists": 1
+    "Data structures: arrays": 1
+    "Data structures: hash tables": 1
+    "Patterns & designs: MVC": 1
+    "Patterns & designs: Singleton": 1
+    "Patterns & designs: Factory": 1
+    "Patterns & designs: Observer": 1
+    "Patterns & designs: Event-driven": 1
+    "Patterns & designs: refactoring": 1
+    "Patterns & designs: code smells": 1
+    "Languages & scripting: interpretive languages": 1
+    "Languages & scripting: compiled languages": 1
+    "Languages & scripting: deterministic algorithms": 1
+    "Languages & scripting: nondeterministic algorithms": 1
+    "Functional programming: closures": 1
+    "Functional programming: first-class functions": 1
+    "Functional programming: higher-order functions": 1
+    "Functional programming: tail call optimization": 1
+    "Security: authentication": 1
+    "Security: authorization": 1
+    "Security: encryption": 1
+    "Security: secure programming practices": 1
+    "Development concepts: unit testing": 1
+    "Development concepts: integration testing": 1
+    # Extended Algorithms & Design:
+    "Divide and conquer algorithms": 1
+    "Merge sort": 1
+    "Quick sort": 1
+    "Radix sort": 1
+    "Kruskal’s algorithm for MST": 1
+    "Prim’s algorithm for MST": 1
+    "Dijkstra’s shortest path algorithm": 1
+    "Floyd-Warshall all-pairs shortest path algorithm": 1
+    "Bellman-Ford shortest path algorithm": 1
+    "Knapsack problem": 1
+    "Job sequencing with deadlines": 1
+    "Huffman coding": 1
+    "Union-Find algorithms": 1
+    "KMP string matching algorithm": 1
+    "Rabin-Karp string matching algorithm": 1
+    "Z algorithm for string matching": 1
+    "Minimum window substring problem": 1
+    "Algorithmic paradigms: sliding window": 1
+    "Algorithmic paradigms: two pointers": 1
+    "Algorithmic paradigms: meet in the middle": 1
+    "Amortized analysis": 1
+    "Max flow and min cut algorithms": 1
+    "Topological sort (Kahn's and DFS-based)": 1
+    "Red-Black trees": 1
+    "AVL trees": 1
+    "Segment trees": 1
+    "Trie data structure": 1
+    "Suffix tree and Suffix array": 1
+    "NP-completeness and reductions": 1
+    "Approximation algorithms": 1
+    # Python-Specific:
+    "Python libraries: NetworkX": 1
+    "Python libraries: statsmodels": 1
+    "Python advanced topics: Generators": 1
+    "Python advanced topics: context managers": 1
+    "Python advanced topics: asyncio": 1
+    "Python web frameworks: FastAPI": 1
+    "Python web frameworks: Pyramid": 1
+    "Python testing: unittest": 1
+    "Python testing: pytest": 1
+    "Python packaging: pip": 1
+    "Python packaging: virtualenv": 1
+    "Python packaging: conda": 1
+    "Python performance: profiling tools": 1
+    "Python performance: JIT compilers like Numba": 1
+    "Python performance: Cython": 1
+    # Core Computer Science Principles:
+    "Computer Architecture: Cache memory": 1
+    "Computer Architecture: pipelining": 1
+    "Operating Systems: Processes vs threads": 1
+    "Operating Systems: context switching": 1
+    "Operating Systems: synchronization primitives (semaphores, mutexes)": 1
+    "Networking: TCP/IP": 1
+    "Networking: UDP": 1
+    "Networking: OSI model layers": 1
+    "Software Engineering: Agile methodologies": 1
+    "Software Engineering: CI/CD": 1
+    "Web: HTTP/HTTPS protocols": 1
+    "Web: WebSockets": 1
+    "Web: GraphQL": 1
+    "Security: Hashing": 1
+    "Security: Digital signatures": 1
+    "Security: Public Key Infrastructure (PKI)": 1
+    "Cloud Concepts: Containers like Docker": 1
+    "Cloud Concepts: Orchestration tools like Kubernetes": 1
+    # Extended Algorithms & Design:
+    "Data Structures: Fenwick tree (Binary Indexed Tree)": 1
+    "Data Structures: Disjoint Set Union (DSU)": 1
+    "String Algorithms: Boyer-Moore string search": 1
+    "String Algorithms: Aho-Corasick pattern matching": 1
+    "Geometric Algorithms: Convex hull (Graham's scan, Jarvis march)": 1
+    "Geometric Algorithms: line intersection": 1
+    "Randomized Algorithms: Monte Carlo methods": 1
+    "Randomized Algorithms: Reservoir sampling": 1
+    "Online Algorithms: Basic concepts": 1
+    # Databases:
+    "Advanced SQL: CTEs (Common Table Expressions)": 1
+    "Advanced SQL: window functions": 1
+    "Database Design: Normalization": 1
+    "Database Design: ER diagrams": 1
+    "Database Systems: Indexing mechanisms (B-trees, hash indexes)": 1
+    # Miscellaneous:
+    "Big Data: Hadoop": 1
+    "Big Data: Spark": 1
+    "Machine Learning: CNNs": 1
+    "Machine Learning: RNNs": 1
+    "Machine Learning: LSTMs": 1
+    "Machine Learning: Transformers": 1
+    "Machine Learning: Transfer learning": 1
+    "Cloud Services: AWS basics": 1
+    "Cloud Services: Google Cloud basics": 1
+    "Cloud Services: Azure basics": 1
+    "Version Control: Git basics": 1
+    "Version Control: Git branching, merging, rebasing": 1
+    "Development Tools: IDEs": 1
+    "Development Tools: debuggers": 1
+    # Advanced Mathematics and Statistics:
+    "Stochastic processes: Markov chains": 1
+    "Game theory basics": 1
+    "Non-Euclidean geometry": 1
+    "Cryptography: RSA": 1
+    "Cryptography: Diffie-Hellman": 1
+    # Python-Specific:
+    "Python dependency management: pipenv": 1
+    "Python dependency management: poetry": 1
+    "Python async web frameworks: FastAPI": 1
+    "Python async web frameworks: Sanic": 1
+    "Python data visualization: bokeh": 1
+    "Python data visualization: plotly": 1
+    "Python NLP: NLTK": 1
+    "Python NLP: spaCy": 1
+    "Python ORM: Django ORM": 1
+    "Python ORM: Tortoise-ORM": 1
+    # Core Computer Science Principles:
+    "Virtual Machines and Hypervisors": 1
+    "Container orchestration: Docker Swarm": 1
+    "Cloud-native applications: Kubernetes": 1
+    "Cloud-native applications: Istio": 1
+    "API gateways: Kong": 1
+    "API gateways: Nginx": 1
+    "CI/CD tools: Jenkins": 1
+    "CI/CD tools: GitLab CI/CD": 1
+    "CI/CD tools: TravisCI": 1
+    "Operating Systems: Scheduling": 1
+    "Operating Systems: Deadlocks": 1
+    "Operating Systems: File Systems": 1
+    "Operating Systems: I/O management": 1
+    # Extended Algorithms & Design:
+    "Travelling Salesman Problem (TSP)": 1
+    "Maximum Bipartite Matching": 1
+    "Network Flow: Ford-Fulkerson algorithm": 1
+    "Dynamic programming: Coin change": 1
+    "Dynamic programming: Longest Increasing Subsequence": 1
+    "Streaming algorithms": 1
+    # Databases:
+    "NoSQL Databases: Cassandra": 1
+    "NoSQL Databases: MongoDB": 1
+    "NoSQL Databases: Redis": 1
+    "Database optimizations: Indexing": 1
+    "Database optimizations: Query optimization": 1
+    "Database replication and sharding": 1
+    # Miscellaneous:
+    "Microservices: Service Mesh": 1
+    "IoT (Internet of Things) basics": 1
+    "Edge computing": 1
+    "Quantum computing basics": 1
+    "Blockchain basics": 1
+    "AR (Augmented Reality) basics": 1
+    "VR (Virtual Reality) basics": 1

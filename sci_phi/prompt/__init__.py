@@ -1,3 +1,3 @@
-from sci_phi.prompt.base import Prompt, PromptManager
+from sci_phi.prompt.base import Prompt, PromptManager, PromptStructure
 
-__all__ = ["Prompt", "PromptManager"]
+__all__ = ["Prompt", "PromptManager", "PromptStructure"]

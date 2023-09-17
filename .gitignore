@@ -7,4 +7,4 @@ poetry.lock
 
 # Local sandbox environments
 playground/
-output/
+outputs/

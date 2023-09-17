@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass, field
 
-from transformers import AutoModel, AutoTokenizer, GenerationConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
 
 from sci_phi.core import ProviderName
 from sci_phi.llm.base import LLM, LLMConfig
@@ -44,11 +44,13 @@ class HuggingFaceLLM(LLM):
         super().__init__(
             config,
         )
-        model_name = self.config.model_name.value
-        self.model = AutoModel.from_pretrained(
+        model_name = self.config.model_name
+        self.model = AutoModelForCausalLM.from_pretrained(
             model_name,
             device_map=self.config.device,
+            trust_remote_code=True,
             **config.add_model_kwargs,
+            offload_folder="temp/",
         )
         self.tokenizer = AutoTokenizer.from_pretrained(
             model_name,
@@ -67,4 +69,14 @@ class HuggingFaceLLM(LLM):
 
     def get_completion(self, prompt: str) -> str:
         """Get a completion from the OpenAI API based on the provided messages."""
-        return self.model.get_completion(prompt)
+        # TODO - Should we set `max_length` here? What about `max_tokens_to_sample`?
+        # Should we set the device on inputs or is this handled above? Test on GPU inst.
+        inputs = self.tokenizer(
+            prompt,
+            return_tensors="pt",
+        ).to(self.config.device)
+        raw_completion = self.model.generate(inputs["input_ids"])
+        return [
+            ele.replace(prompt, "")
+            for ele in self.tokenizer.batch_decode(raw_completion)
+        ]

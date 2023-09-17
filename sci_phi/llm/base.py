@@ -45,17 +45,6 @@ class LLMConfig(ABC):
         return cls(**filtered_kwargs)
 
 
-# @dataclass
-# class LLMConfig(ABC):
-#     """A dataclass to hold the configuration for a given LLM."""
-
-#     provider_name: ProviderName
-#     model_name: str
-#     version: str
-#     temperature: float
-#     top_p: float
-
-
 class LLM(ABC):
     """An abstract class to provide a common interface for LLMs."""
 
