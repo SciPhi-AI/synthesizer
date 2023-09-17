@@ -45,6 +45,7 @@ class HuggingFaceLLM(LLM):
             config,
         )
         model_name = self.config.model_name
+        # TODO - Move offload_folder upstream?
         self.model = AutoModelForCausalLM.from_pretrained(
             model_name,
             device_map=self.config.device,

@@ -1,10 +1,10 @@
 """A module which facilitates synthesizing prompt data."""
-import random
-
 import os
-import yaml
 import random
-from typing import Union, Dict, Generator
+from typing import Dict, Generator, Union
+
+import yaml
+
 from sci_phi.prompt import Prompt, PromptStructure
 
 

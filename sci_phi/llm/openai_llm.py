@@ -3,13 +3,8 @@
 from dataclasses import dataclass
 from typing import Optional
 
-import openai
-
-from sci_phi.llm.base import (
-    LLM,
-    LLMConfig,
-)
 from sci_phi.core import ProviderName
+from sci_phi.llm.base import LLM, LLMConfig
 from sci_phi.llm.config_manager import model_config
 
 
@@ -39,6 +34,12 @@ class OpenAILLM(LLM):
         config: OpenAIConfig,
     ) -> None:
         super().__init__(config)
+        try:
+            import openai
+        except:
+            raise ImportError(
+                "Please install the openai package before attempting to run with an OpenAI model. This can be accomplished via `poetry install -E openai_support`."
+            )
         if not openai.api_key:
             raise ValueError(
                 "OpenAI API key not found. Please set the OPENAI_API_KEY environment variable."
@@ -46,6 +47,8 @@ class OpenAILLM(LLM):
 
     def get_completion(self, messages: list[dict]) -> str:
         """Get a completion from the OpenAI API based on the provided messages."""
+        import openai
+
         # Create a dictionary with the default arguments
         args = {
             "model": self.config.model_name,

@@ -1,7 +1,7 @@
 """A module to facilitate seamless construction of input prompts"""
-from enum import Enum
 from dataclasses import dataclass
-from typing import List, Union, Optional
+from enum import Enum
+from typing import List, Optional, Union
 
 
 class PromptStructure(Enum):

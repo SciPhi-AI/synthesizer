@@ -1,7 +1,8 @@
 """A module which facilitates JSONL data writing."""
+import json
 import os
 import time
-import json
+
 from sci_phi.writers.base import DataWriter
 
 
