@@ -43,7 +43,7 @@ poetry install -E <extra_name>
 You can use SciPhi for dataset generation by executing the relevant `runner.py` file with various command-line arguments.
 
 ```bash
-poetry run python sci_phi/examples/data_generation/runner.py --provider_name=openai --model_name=gpt-4 --log_level=DEBUG
+poetry run python sciphi/examples/data_generation/runner.py --provider_name=openai --model_name=gpt-4 --log_level=DEBUG
 ```
 
 ### Key Command-Line Arguments
