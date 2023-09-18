@@ -59,7 +59,11 @@ poetry run python sciphi/examples/data_generation/runner.py --provider_name=open
 - `--output_dir`: File path to override the default output output file path with.
 - `--output_file_name`: Filename to override the default output file name with.
 
+### Example generated data
+<img width="776" alt="Screenshot 2023-09-17 at 11 11 18 PM" src="https://github.com/emrgnt-cmplxty/SciPhi/assets/68796651/8f1ef11d-cd37-4fc7-a7a0-a1e0159ba4a3">
+
 ## Development
+
 
 The code snippet below shows how to use SciPhi to generate synthetic data for a given LLM provider.
 
