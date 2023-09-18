@@ -149,12 +149,6 @@ def parse_arguments() -> argparse.Namespace:
     )
     # Prompt arguments
     parser.add_argument(
-        "--prompt_type",
-        type=str,
-        default="md_instruction",
-        help="Which prompt type to use for generation completions?",
-    )
-    parser.add_argument(
         "--prompt_override",
         type=str,
         default="",
