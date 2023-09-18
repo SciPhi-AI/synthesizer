@@ -4,8 +4,8 @@
 
 SciPhi is a Python package that provides two high-level features:
 
-- Configurable generation of training / tuning data for LLMs.
-- Seamless LLM-to-LLM evaluation of model output.
+- Configurable generation of LLM-mediated synthetic training / tuning data for LLMs.
+- Seamless LLM-mediated evaluation of model output.
 
 <p align="center">
 <img width="517" alt="Screenshot 2023-09-18 at 9 50 16 AM" src="https://github.com/emrgnt-cmplxty/SciPhi/assets/68796651/dfad30d8-8479-4066-9405-ea01a4c90551">
