@@ -25,6 +25,8 @@ cd sciphi
 poetry install -E openai_support
 # Add other optional dependencies
 # poetry install -E openai_support -E anthropic_support -E hf_support, ...
+# Setup your environment
+vim .env.example && cp .env.example .env
 ```
 
 ---
