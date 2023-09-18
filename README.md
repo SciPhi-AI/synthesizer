@@ -8,7 +8,7 @@ SciPhi is a Python package that provides two high-level features:
 - Seamless LLM-mediated evaluation of model output.
 
 <p align="center">
-<img width="517" alt="Screenshot 2023-09-18 at 9 50 16 AM" src="https://github.com/emrgnt-cmplxty/SciPhi/assets/68796651/dfad30d8-8479-4066-9405-ea01a4c90551">
+<img width="524" alt="Screenshot 2023-09-18 at 9 53 55 AM" src="https://github.com/emrgnt-cmplxty/SciPhi/assets/68796651/9731f891-1d99-432a-aaec-37916bc6362f">
 </p>
 
 ## Installation
