@@ -1,5 +1,9 @@
 generator_mode:
-    synthetic
+  synthetic
+
+prompt_mode:
+  md_instruction
+
 instruction:
   # Specifies the mode for data creation
   course_type:

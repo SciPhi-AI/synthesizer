@@ -30,6 +30,10 @@ class LLMInterface(ABC):
         """Abstract method to get a completion from the provider."""
         pass
 
+    def get_batch_completion(self, prompts: List[str]) -> List[str]:
+        """Get a batch of completions from the provider."""
+        return [self.get_completion(prompt) for prompt in prompts]
+
 
 @dataclass
 class ProviderConfig:
