@@ -53,11 +53,6 @@ class DataMaker:
     ) -> Generator[Dict[str, str], None, None]:
         """Returns a generator which yields formatted prompts from the loaded configuration."""
 
-        if not self.config:
-            raise ValueError(
-                "Configuration not loaded. Please load a configuration before synthesizing."
-            )
-
         results = []
         prompt_templates = {
             k: self.config[k].pop(DataMaker.PROMPT_TEMPLATE_TAG)
@@ -107,6 +102,10 @@ class DataMaker:
         num_samples: int,
     ) -> Generator[Dict[str, str], None, None]:
         """Returns a generator which yields formatted prompts from the loaded configuration."""
+        if batch_size != 1:
+            raise ValueError(
+                "Batch size must be 1 for HuggingFace dataset generation."
+            )
 
         try:
             from datasets import load_dataset
@@ -118,26 +117,22 @@ class DataMaker:
         dataset = load_dataset(self.dataset_name, streaming=True)
 
         for data in dataset["train"]:
-            result = {}
-
-            for inner_key, inner_generator in self.config.items():
-                if [DataMaker.Mode.FROM_HF_DATASET.value] == list(
-                    inner_generator.keys()
-                ):
-                    format_key = inner_generator[
-                        DataMaker.Mode.FROM_HF_DATASET.value
-                    ]
-                    result[inner_key] = data[format_key]
-                else:
-                    result[inner_key] = self.random_sample(inner_generator)
+            result = {
+                inner_key: data[
+                    inner_generator[DataMaker.Mode.FROM_HF_DATASET.value]
+                ]
+                if [DataMaker.Mode.FROM_HF_DATASET.value]
+                == list(inner_generator.keys())
+                else self.random_sample(inner_generator)
+                for inner_key, inner_generator in self.config.items()
+            }
             self.outer_prompt.format(**result)
-            if self.outer_prompt.structure == PromptStructure.SINGLE:
-                result["raw_prompt"] = self.outer_prompt.raw_text
-                result["formatted_prompt"] = self.outer_prompt.text
-            else:
+            if self.outer_prompt.structure != PromptStructure.SINGLE:
                 raise NotImplementedError(
                     "Not yet implemented for multi-prompt datasets."
                 )
+            result["raw_prompt"] = self.outer_prompt.raw_text
+            result["formatted_prompt"] = self.outer_prompt.text
             yield result
             counter += 1
             if counter >= num_samples:
@@ -147,6 +142,11 @@ class DataMaker:
         self, batch_size=1_024, num_samples=1_048_576
     ) -> Generator[Dict[str, str], None, None]:
         """Returns a generator which yields formatted prompts from the loaded configuration."""
+
+        if not self.config:
+            raise ValueError(
+                "Configuration not loaded. Please load a configuration before generating data."
+            )
 
         if self.mode == DataMaker.Mode.SYNTHETIC:
             yield from self.synthetic_generator(batch_size, num_samples)

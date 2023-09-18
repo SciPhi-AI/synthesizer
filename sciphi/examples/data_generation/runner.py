@@ -2,7 +2,6 @@
 import argparse
 import hashlib
 import os
-import random
 import secrets
 
 from sciphi.core.utils import (
@@ -20,8 +19,6 @@ from sciphi.llm import LLMConfigManager
 from sciphi.makers import DataMaker
 from sciphi.prompt import Prompt, PromptStructure
 from sciphi.writers import JsonlDataWriter
-
-random.seed(42)
 
 OUTPUT_FILE_NAME = "{RUN_NAME}__provider_eq_{PROVIDER}__model_eq_{MODEL}__version_eq_{VERSION}{EXTRA}.jsonl"
 
