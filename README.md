@@ -1,11 +1,16 @@
-# SciPhi: A framework for breaking scaling laws
+# SciPhi: A framework for breaking LLM scaling laws
 
 ## Overview
 
 SciPhi is a Python package that provides two high-level features:
 
-Configurable generation of synthetic and instruction fine-tuning data for LLMs.
-A framework for LLM based evaluation of the output from other LLMs.
+- Configurable generation of training / tuning data for LLMs.
+- Seamless LLM-to-LLM evaluation of model output.
+
+<p align="center">
+    <img width="525" alt="Screenshot 2023-09-18 at 9 47 18 AM" src="https://github.com/emrgnt-cmplxty/SciPhi/assets/68796651/0c6efb4a-64e6-4bdf-8b0d-9ed60d6f04d3">
+
+</p>
 
 ## Installation
 
@@ -46,7 +51,7 @@ poetry install -E <extra_name>
 You can use SciPhi for dataset generation by executing the relevant `runner.py` file with various command-line arguments.
 
 ```bash
-poetry run python sciphi/examples/data_generation/runner.py --provider_name=openai --model_name=gpt-4 --log_level=DEBUG --batch_size=1 --num_samples=1 --output_file_name=example_output.jsonl
+poetry run python sciphi/examples/data_generation/runner.py --provider_name=openai --model_name=gpt-4 --log_level=DEBUG --batch_size=1 --num_samples=1 --output_file_name=example_output.jsonl --example_config=python_textbook
 ```
 
 ### Key Command-Line Arguments
@@ -55,10 +60,16 @@ poetry run python sciphi/examples/data_generation/runner.py --provider_name=open
 - `--model_name`: The name of the model to load from the provider (default: "gpt-3.5-turbo").
 - `--temperature`: Temperature parameter for the provided model (default: 0.7).
 - `--example_config`: Which example configuration to use (default: "python_textbook").
+- `--override_config_path`: Used to override the example configurations with custom config.
 - `--num_samples`: Number of samples to generate (default: 1_024).
 - `--output_dir`: File path to override the default output output file path with.
 - `--output_file_name`: Filename to override the default output file name with.
 
+### Stock data configs
+
+- `evol_instruct` - A config for replicating the EvolInstruct dataset
+- `python_textbook` - A config for replicating the Python textbook data from Textbooks Are All You Need [2]
+  
 ### Example generated data
 <img width="776" alt="Screenshot 2023-09-17 at 11 11 18 PM" src="https://github.com/emrgnt-cmplxty/SciPhi/assets/68796651/8f1ef11d-cd37-4fc7-a7a0-a1e0159ba4a3">
 
@@ -116,8 +127,6 @@ This project is licensed under the Apache-2.0 License.
 
 ### Sources
 
-[1] [GPT-4 Technical Report](https://arxiv.org/abs/2303.08774)
+[1] [WizardCoder: Empowering Code Large Language Models with Evol-Instruct](https://arxiv.org/abs/2306.08568)
 
-[2] [Sparks of Artificial General Intelligence](https://arxiv.org/pdf/2303.12712.pdf)
-
-[3] [Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification](https://paperswithcode.com/paper/solving-challenging-math-word-problems-using)
+[2] [Textbooks Are All You Need](https://arxiv.org/abs/2306.11644)
