@@ -10,14 +10,7 @@ class JsonlDataWriter(DataWriter):
     """A class to write data to a JSONL file."""
 
     def __init__(self, output_path, overwrite=True):
-        """
-        Initialize the DataWriter.
-
-        Args:
-            output_path (str): The initial path where the data should be written.
-            overwrite (bool): If true, overwrite the file if it exists. Otherwise, add a timestamp.
-            structured_format (bool): If true, writes the data in a structured format (e.g., JSON).
-        """
+        """Initialize the DataWriter."""
         self.output_path = output_path
         self.overwrite = overwrite
 
