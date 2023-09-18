@@ -1,0 +1,12 @@
+generator_mode:
+  from_hf_dataset: "HuggingFaceH4/CodeAlpaca_20K"
+
+question:
+  from_hf_dataset: prompt
+
+method:
+  Add new constraints and requirements to the original problem, adding approximately 10 additional words.: 1
+  Replace a commonly used requirement in the programming task with a less common and more specific one.: 1
+  If the original problem can be solved with only a few logical steps, please add more reasoning steps.: 1
+  Provide a piece of erroneous code as a reference to increase misdirection.: 1
+  Propose higher time or space complexity requirements, but please refrain from doing so frequently.: 1

@@ -49,7 +49,12 @@ class PromptManager:
             expected_inputs={"instruction"},
             raw_text="""Below is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\n{instruction}\n\n### Response:""",
             structure=PromptStructure.SINGLE,
-        )
+        ),
+        "evol_instruct": Prompt(
+            expected_inputs={"method", "question"},
+            raw_text="""Please increase the difficulty of the given programming test question a bit.\nYou can increase the difficulty using, but not limited to, the following methods:\n{method}\n\n{question}""",
+            structure=PromptStructure.SINGLE,
+        ),
     }
 
     def __init__() -> None:
