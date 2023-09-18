@@ -1,4 +1,7 @@
+generator_mode:
+    synthetic
 instruction:
+  # Specifies the mode for data creation
   course_type:
     undergraduate: 1
     elective: 1

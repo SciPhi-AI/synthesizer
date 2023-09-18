@@ -70,7 +70,7 @@ class HuggingFaceLLM(LLM):
             model_name,
             top_k=self.config.top_k,
             top_p=self.config.top_p,
-            max_tokens_to_sample=self.config.max_tokens_to_sample,
+            max_new_tokens=self.config.max_tokens_to_sample,
             do_sample=self.config.do_sample,
             num_beams=self.config.num_beams,
             **config.add_generation_kwargs,
@@ -84,7 +84,9 @@ class HuggingFaceLLM(LLM):
             prompt,
             return_tensors="pt",
         ).to(self.config.device)
-        raw_completion = self.model.generate(inputs["input_ids"])
+        raw_completion = self.model.generate(
+            inputs["input_ids"], generation_config=self.generation_config
+        )
         return [
             ele.replace(prompt, "")
             for ele in self.tokenizer.batch_decode(raw_completion)

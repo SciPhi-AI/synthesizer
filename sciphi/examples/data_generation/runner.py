@@ -18,7 +18,7 @@ from sciphi.examples.helpers import (
 from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
 from sciphi.prompt import Prompt, PromptManager
-from sciphi.synthesizers import DataSynthesizer
+from sciphi.makers import DataMaker
 from sciphi.writers import JsonlDataWriter
 
 random.seed(42)
@@ -103,8 +103,8 @@ if __name__ == "__main__":
         )
 
     # Build the synthesizer
-    synthesizer = DataSynthesizer(prompt)
-    synthesizer.load_config_from_yaml(
+    data_maker = DataMaker(outer_prompt=prompt)
+    data_maker.load_config_from_yaml(
         args.config_path
         or os.path.join(get_data_config_dir(), f"{args.example_config}.yaml")
     )
@@ -115,7 +115,8 @@ if __name__ == "__main__":
 
     # Generate the synthesized data
     batch = []
-    for entry in synthesizer.synthesis_generator(args.num_samples):
+    for entry in data_maker.generator(args.num_samples):
+        logger.debug(f"Iterating over entry: {entry}")
         batch.append(entry)
 
         if len(batch) == args.batch_size:
