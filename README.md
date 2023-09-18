@@ -11,6 +11,10 @@ SciPhi is a Python package that provides two high-level features:
 <img width="524" alt="Screenshot 2023-09-18 at 9 53 55 AM" src="https://github.com/emrgnt-cmplxty/SciPhi/assets/68796651/9731f891-1d99-432a-aaec-37916bc6362f">
 </p>
 
+## Questions?
+
+Join us on [Discord here](https://discord.gg/j9GxfbxqAe) or [contact me](mailto:owe@emergentagi.com) directly.
+
 ## Installation
 
 ```bash
