@@ -17,8 +17,8 @@ from sciphi.examples.helpers import (
 )
 from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
-from sciphi.prompt import Prompt, PromptStructure
 from sciphi.makers import DataMaker
+from sciphi.prompt import Prompt, PromptStructure
 from sciphi.writers import JsonlDataWriter
 
 random.seed(42)
@@ -108,7 +108,6 @@ if __name__ == "__main__":
 
     batch = []
     for entry in data_maker.generator(args.num_samples):
-        logger.debug(f"Iterating over entry: {entry}")
         batch.append(entry)
 
         if len(batch) == args.batch_size:
@@ -118,9 +117,10 @@ if __name__ == "__main__":
 
             for it, completion in enumerate(completions):
                 formatted_prompt = batch[it]["formatted_prompt"]
+                logger.debug("-" * 100)
                 logger.debug(f"Formatted Prompt:\n{formatted_prompt}")
-
-                logger.debug(f"Completion:\n{completion}")
+                logger.debug(f"\nCompletion:\n{completion}")
+                logger.debug("-" * 100)
 
                 # Write the results using DataWriter
                 writer.write(
@@ -133,5 +133,3 @@ if __name__ == "__main__":
                 )
 
             batch = []
-
-            break

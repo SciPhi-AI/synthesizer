@@ -1,8 +1,8 @@
 """A module which facilitates synthesizing prompt data."""
-from enum import Enum
 import os
 import random
-from typing import Dict, Optional, Generator, Union
+from enum import Enum
+from typing import Dict, Generator, Optional, Union
 
 import yaml
 
@@ -52,10 +52,12 @@ class DataMaker:
         self, batch_size: int
     ) -> Generator[Dict[str, str], None, None]:
         """Returns a generator which yields formatted prompts from the loaded configuration."""
+
         if not self.config:
             raise ValueError(
                 "Configuration not loaded. Please load a configuration before synthesizing."
             )
+
         results = []
         prompt_templates = {
             k: self.config[k].pop(DataMaker.PROMPT_TEMPLATE_TAG)
@@ -101,6 +103,7 @@ class DataMaker:
         batch_size: int,
     ) -> Generator[Dict[str, str], None, None]:
         """Returns a generator which yields formatted prompts from the loaded configuration."""
+
         try:
             from datasets import load_dataset
         except:
@@ -137,6 +140,7 @@ class DataMaker:
         self, batch_size=1_024
     ) -> Generator[Dict[str, str], None, None]:
         """Returns a generator which yields formatted prompts from the loaded configuration."""
+
         if self.mode == DataMaker.Mode.SYNTHETIC:
             yield from self.synthetic_generator(batch_size)
         elif self.mode == DataMaker.Mode.FROM_HF_DATASET:
@@ -149,6 +153,7 @@ class DataMaker:
     @staticmethod
     def random_sample(vars_and_weights: dict) -> str:
         """Randomly sample a weighted dictionary."""
+
         keys, weights = zip(*vars_and_weights.items())
         if len(keys) == 0:
             raise IndexError("Cannot randomly sample an empty input.")

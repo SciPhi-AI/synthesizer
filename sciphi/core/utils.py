@@ -1,3 +1,4 @@
+"""A module which defines utilities for the library."""
 import json
 import logging
 import os

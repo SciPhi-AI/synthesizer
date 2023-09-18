@@ -1,7 +1,5 @@
 """A module for creating Anthropic models."""
-
 from dataclasses import dataclass
-
 
 from sciphi.core import ProviderName
 from sciphi.llm.base import LLM, LLMConfig
