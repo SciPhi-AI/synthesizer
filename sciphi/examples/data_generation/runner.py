@@ -17,7 +17,7 @@ from sciphi.examples.helpers import (
 )
 from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
-from sciphi.prompt import Prompt, PromptManager
+from sciphi.prompt import Prompt, PromptStructure
 from sciphi.makers import DataMaker
 from sciphi.writers import JsonlDataWriter
 
@@ -76,54 +76,45 @@ if __name__ == "__main__":
     )
 
     # Build an LLM and provider interface
-    config_args = build_llm_config(args)
     llm_config = LLMConfigManager.get_config_for_provider(
         provider_name
-    ).create(**config_args)
+    ).create(**build_llm_config(args))
     llm_provider = InterfaceManager.get_provider(
         provider_name,
         model_name,
         llm_config,
     )
 
-    # Build the input prompt(s)
-    if args.prompt_override == "":
-        prompt = PromptManager.get_prompt(args.prompt_type)
-    elif args.prompt_type == "override":
-        prompt_inputs = args.prompt_override.split(",")
-        prompt = [
-            Prompt(
-                text=prompt_inputs[0],
-                expected_inputs=set(prompt_inputs[1:]),
-            )
-        ]
-    else:
-        raise ValueError(
-            "Set prompt_type to override if overriding the base prompt."
-        )
-
-    # Build the synthesizer
-    data_maker = DataMaker(outer_prompt=prompt)
+    # Initialize the data maker
+    data_maker = DataMaker()
     data_maker.load_config_from_yaml(
         args.config_path
         or os.path.join(get_data_config_dir(), f"{args.example_config}.yaml")
     )
 
+    if args.prompt_override != "":
+        logger.debug(f"Overriding prompt with: {args.prompt_override}")
+        prompt_inputs = args.prompt_override.split(",")
+        data_maker.prompt = Prompt(
+            text=prompt_inputs[0],
+            expected_inputs=set(prompt_inputs[1:]),
+            structure=PromptStructure.SINGLE,
+        )
+
+    # Generate & write out the results
     output_path = get_output_path(args)
     logger.debug(f"Writing results to: {output_path}.")
     writer = JsonlDataWriter(output_path)
 
-    # Generate the synthesized data
     batch = []
     for entry in data_maker.generator(args.num_samples):
         logger.debug(f"Iterating over entry: {entry}")
         batch.append(entry)
 
         if len(batch) == args.batch_size:
-            completions = [
-                llm_provider.get_completion(entry["formatted_prompt"])
-                for entry in batch
-            ]
+            completions = llm_provider.get_batch_completion(
+                [entry["formatted_prompt"] for entry in batch]
+            )
 
             for it, completion in enumerate(completions):
                 formatted_prompt = batch[it]["formatted_prompt"]

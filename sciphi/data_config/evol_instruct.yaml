@@ -1,6 +1,8 @@
 generator_mode:
   from_hf_dataset: "HuggingFaceH4/CodeAlpaca_20K"
 
+prompt_mode: evol_instruct
+
 question:
   from_hf_dataset: prompt
 

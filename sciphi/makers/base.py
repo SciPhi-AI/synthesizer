@@ -6,7 +6,7 @@ from typing import Dict, Optional, Generator, Union
 
 import yaml
 
-from sciphi.prompt import Prompt, PromptStructure
+from sciphi.prompt import PromptManager, PromptStructure
 
 
 class DataMaker:
@@ -22,8 +22,7 @@ class DataMaker:
 
     PROMPT_TEMPLATE_TAG = "prompt_templates"
 
-    def __init__(self, outer_prompt: Prompt):
-        self.outer_prompt = outer_prompt
+    def __init__(self):
         self.config: Dict[str, Union[str, Dict[str, str]]] = {}
         self.mode: Optional[DataMaker.Mode] = None
         self.dataset_name: Optional[str] = None
@@ -124,7 +123,6 @@ class DataMaker:
                     result[inner_key] = data[format_key]
                 else:
                     result[inner_key] = self.random_sample(inner_generator)
-            print("self.outer_prompt = ", self.outer_prompt)
             self.outer_prompt.format(**result)
             if self.outer_prompt.structure == PromptStructure.SINGLE:
                 result["raw_prompt"] = self.outer_prompt.raw_text
@@ -138,6 +136,7 @@ class DataMaker:
     def generator(
         self, batch_size=1_024
     ) -> Generator[Dict[str, str], None, None]:
+        """Returns a generator which yields formatted prompts from the loaded configuration."""
         if self.mode == DataMaker.Mode.SYNTHETIC:
             yield from self.synthetic_generator(batch_size)
         elif self.mode == DataMaker.Mode.FROM_HF_DATASET:
@@ -160,6 +159,9 @@ class DataMaker:
 
         if "generator_mode" not in config:
             raise ValueError("Generator mode not specified in config.")
+        if "prompt_mode" not in config:
+            raise ValueError("Prompt mode not specified in config.")
+
         generator_mode = config.pop("generator_mode")
         if isinstance(generator_mode, str):
             self.mode = DataMaker.Mode(generator_mode)
@@ -169,3 +171,6 @@ class DataMaker:
             ):
                 self.mode = DataMaker.Mode.FROM_HF_DATASET
                 self.dataset_name = generator_mode["from_hf_dataset"]
+
+        prompt_mode = config.pop("prompt_mode")
+        self.outer_prompt = PromptManager.get_prompt(prompt_mode)
