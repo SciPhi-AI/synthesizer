@@ -22,7 +22,7 @@ Join us on [Discord here](https://discord.gg/j9GxfbxqAe) or [contact me](mailto:
 git clone https://github.com/emrgnt-cmplxty/sciphi.git
 cd sciphi
 # Install dependencies
-poetry sciphi -E openai_support
+poetry install -E openai_support
 # Add other optional dependencies
 # poetry install -E openai_support -E anthropic_support -E hf_support, ...
 ```
