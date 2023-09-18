@@ -2,7 +2,6 @@
 import argparse
 import hashlib
 import os
-import random
 import secrets
 
 from sciphi.core.utils import (
@@ -20,8 +19,6 @@ from sciphi.llm import LLMConfigManager
 from sciphi.makers import DataMaker
 from sciphi.prompt import Prompt, PromptStructure
 from sciphi.writers import JsonlDataWriter
-
-random.seed(42)
 
 OUTPUT_FILE_NAME = "{RUN_NAME}__provider_eq_{PROVIDER}__model_eq_{MODEL}__version_eq_{VERSION}{EXTRA}.jsonl"
 
@@ -68,6 +65,15 @@ if __name__ == "__main__":
     args = parse_arguments()
     logger = get_configured_logger("sciphi", log_level=args.log_level)
 
+    if args.num_samples % args.batch_size != 0:
+        raise ValueError(
+            f"Number of samples ({args.num_samples}) must be divisible by batch size ({args.batch_size})."
+        )
+    if args.num_samples < args.batch_size:
+        raise ValueError(
+            "Number of samples must be greater than batch size0. Please set --num_samples."
+        )
+
     model_name = args.model_name
     provider_name = ProviderName(args.provider_name)
 
@@ -107,7 +113,7 @@ if __name__ == "__main__":
     writer = JsonlDataWriter(output_path)
 
     batch = []
-    for entry in data_maker.generator(args.num_samples):
+    for entry in data_maker.generator(args.batch_size, args.num_samples):
         batch.append(entry)
 
         if len(batch) == args.batch_size:
