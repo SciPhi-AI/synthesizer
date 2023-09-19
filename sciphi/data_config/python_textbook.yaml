@@ -1,3 +1,9 @@
+# A YAML file containing the data configuration for the Python textbook.
+# This file is used by the Python textbook generator to generate prompts.
+# The generator_mode is set to synthetic, which means that the prompts are generated from scratch.
+# The prompt_mode is set to md_instruction, which means that the prompts are generated using the md_instruction method.
+# Each input is weighted (in a relative manner) by the weights which appear to the right
+
 generator_mode: synthetic
 
 prompt_mode: md_instruction
@@ -49,11 +55,8 @@ instruction:
     "Python for Practitioners": 1
     "Python for Networking": 1
     "Python for Game Development": 1
-    "Modern Computing Concepts": 1
-    "Emerging Data Science Techniques": 1
-    "Cybersecurity Threats and Defense": 1
+    ## Other concepts
     "Cloud Computing and Big Data": 1
-    "Advanced Cybersecurity Concepts": 1
     # Theoretical concepts
     ## Mathematics
     "Introductory Mathematics": 1
@@ -64,6 +67,11 @@ instruction:
     "Foundations of Computer Science": 1
     "Extended Algorithms & Design": 1
     "Software Design Patterns": 1
+    ## Advanced Programming
+    "Modern Computing Concepts": 1
+    "Emerging Data Science Techniques": 1
+    "Cybersecurity Threats and Defense": 1
+    "Advanced Cybersecurity Concepts": 1
     "Web Development Foundations": 1
     "Mobile Application Development": 1
 
