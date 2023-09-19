@@ -1,0 +1,34 @@
+course_name: "Advanced Python"
+
+course_topic:
+  "Python Data Science": 1
+  "Python Machine Learning": 1
+  "Python Deep Learning": 1
+  "Python Web and App Development": 1
+
+sub_topic:
+  course_topic:
+    "Python Data Science":
+      "introduction to pandas DataFrame": 1
+      "data manipulation with pandas": 1
+      "visualization with seaborn": 1
+    "Python Machine Learning":
+      "introduction to scikit-learn": 1
+      "clustering with KMeans": 1
+      "classification with Random Forests": 1
+      "regression with linear regression": 1
+    "Python Deep Learning":
+      "introduction to TensorFlow and Keras": 1
+      "building a neural network": 1
+      "training and evaluation": 1
+    "Python Web and App Development":
+      "web scraping with BeautifulSoup and Scrapy": 1
+      "web development with Flask and Django": 1
+      "game development with Pygame": 1
+      "image processing with PIL and OpenCV": 1
+      "desktop applications with PyQt": 1
+      "RESTful API development with Flask-RESTful": 1
+      "Websockets with Flask-SocketIO": 1
+      "GUI development with Tkinter": 1
+      "Distributed computing with Celery": 1
+      "Database interaction with SQLAlchemy": 1

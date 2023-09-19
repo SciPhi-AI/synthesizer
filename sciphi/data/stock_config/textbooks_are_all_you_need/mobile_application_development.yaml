@@ -1,0 +1,22 @@
+course_name: "Mobile Application Development"
+
+course_topic:
+  "Native App Development": 1
+  "Hybrid and Web-based Apps": 1
+  "Mobile App Security": 1
+  "App Monetization and Marketing": 1
+
+sub_topic:
+  course_topic:
+    "Native App Development":
+      "Android App Basics": 1
+      "iOS App Basics": 1
+    "Hybrid and Web-based Apps":
+      "Introduction to React Native": 1
+      "Introduction to Flutter": 1
+    "Mobile App Security":
+      "Securing Data at Rest": 1
+      "Securing Data in Transit": 1
+    "App Monetization and Marketing":
+      "In-App Purchases": 1
+      "Mobile Ads": 1

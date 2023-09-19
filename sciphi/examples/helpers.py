@@ -170,7 +170,7 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument(
         "--example_config",
         type=str,
-        default="python_textbook",
+        default="textbooks_are_all_you_need",
         help="Which configuration to use for data generation?",
     )
     parser.add_argument(

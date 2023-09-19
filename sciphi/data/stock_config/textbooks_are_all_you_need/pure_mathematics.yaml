@@ -1,0 +1,23 @@
+course_name: "Pure Mathematics"
+
+course_topic:
+  "Topology and Spaces": 1
+  "Abstract Algebra": 1
+  "Number Theory II": 1
+  "Mathematical Logic": 1
+
+sub_topic:
+  course_topic:
+    "Topology and Spaces":
+      "Open and Closed Sets": 1
+      "Compactness": 1
+      "Continuity in Topological Spaces": 1
+    "Abstract Algebra":
+      "Groups, Rings, and Fields": 1
+      "Homomorphisms and Isomorphisms": 1
+    "Number Theory II":
+      "Prime Numbers": 1
+      "Modular Arithmetic": 1
+    "Mathematical Logic":
+      "Propositional and Predicate Logic": 1
+      "Proof Techniques": 1

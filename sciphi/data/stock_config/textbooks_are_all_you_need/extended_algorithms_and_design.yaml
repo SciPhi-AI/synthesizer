@@ -1,0 +1,47 @@
+course_name: "Extended Algorithms & Design"
+
+course_topic:
+  "Divide and Conquer": 1
+  "Sorting Algorithms": 1
+  "Graph Algorithms": 1
+  "String Algorithms": 1
+  "Algorithmic Paradigms": 1
+  "Tree Structures": 1
+  "Advanced Topics": 1
+
+sub_topic:
+  course_topic:
+    "Divide and Conquer":
+      "Divide and conquer algorithms": 1
+    "Sorting Algorithms":
+      "Merge sort": 1
+      "Quick sort": 1
+      "Radix sort": 1
+    "Graph Algorithms":
+      "Kruskal’s algorithm for MST": 1
+      "Prim’s algorithm for MST": 1
+      "Dijkstra’s shortest path algorithm": 1
+      "Floyd-Warshall all-pairs shortest path algorithm": 1
+      "Bellman-Ford shortest path algorithm": 1
+    "String Algorithms":
+      "Knapsack problem": 1
+      "Job sequencing with deadlines": 1
+      "Huffman coding": 1
+      "Union-Find algorithms": 1
+      "KMP string matching algorithm": 1
+      "Rabin-Karp string matching algorithm": 1
+      "Z algorithm for string matching": 1
+      "Minimum window substring problem": 1
+    "Algorithmic Paradigms":
+      "sliding window": 1
+      "two pointers": 1
+      "meet in the middle": 1
+    "Tree Structures":
+      "Red-Black trees": 1
+      "AVL trees": 1
+      "Segment trees": 1
+      "Trie data structure": 1
+      "Suffix tree and Suffix array": 1
+    "Advanced Topics":
+      "NP-completeness and reductions": 1
+      "Approximation algorithms": 1

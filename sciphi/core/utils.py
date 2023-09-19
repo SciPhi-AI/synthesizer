@@ -52,4 +52,4 @@ def get_root_dir() -> str:
 def get_data_config_dir() -> str:
     """Get the path to the root of the code repository."""
     script_dir = os.path.dirname(os.path.realpath(__file__))
-    return os.path.join(script_dir, "..", "data_config")
+    return os.path.join(script_dir, "..", "data", "stock_config")

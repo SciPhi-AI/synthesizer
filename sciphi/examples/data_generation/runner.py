@@ -4,6 +4,7 @@ import hashlib
 import os
 import secrets
 
+from sciphi.config import DataConfig, DataGeneratorMode
 from sciphi.core.utils import (
     get_configured_logger,
     get_data_config_dir,
@@ -17,7 +18,12 @@ from sciphi.examples.helpers import (
 from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
 from sciphi.makers import DataMaker
-from sciphi.prompt import Prompt, PromptStructure
+from sciphi.prompt import (
+    Prompt,
+    PromptGenerator,
+    PromptManager,
+    PromptStructure,
+)
 from sciphi.writers import JsonlDataWriter
 
 OUTPUT_FILE_NAME = "{RUN_NAME}__provider_eq_{PROVIDER}__model_eq_{MODEL}__version_eq_{VERSION}{EXTRA}.jsonl"
@@ -91,51 +97,59 @@ if __name__ == "__main__":
         llm_config,
     )
 
-    # Initialize the data maker
-    data_maker = DataMaker()
-    data_maker.load_config_from_yaml(
-        args.config_path
-        or os.path.join(get_data_config_dir(), f"{args.example_config}.yaml")
+    data_config = DataConfig(
+        os.path.join(
+            get_data_config_dir(), f"{args.example_config}", "main.yaml"
+        )
     )
 
+    # Initialize the prompt generator
+    prompt_generator = PromptGenerator(
+        data_config.config,
+        data_config.prompt_templates,
+        data_config.prompt_template_input_dependencies,
+        data_config.prompt_dataset_dependencies,
+        data_config.prompt_inputs,
+    )
+    prompt = PromptManager().get_prompt(data_config.outer_prompt_format)
     if args.prompt_override != "":
-        logger.debug(f"Overriding prompt with: {args.prompt_override}")
+        logger.debug(f"Overriding default prompt with: {args.prompt_override}")
         prompt_inputs = args.prompt_override.split(",")
-        data_maker.prompt = Prompt(
+        prompt = Prompt(
             text=prompt_inputs[0],
             expected_inputs=set(prompt_inputs[1:]),
             structure=PromptStructure.SINGLE,
         )
+
+    data_maker = DataMaker(
+        DataGeneratorMode(data_config.generator_mode),
+        prompt_generator,
+        prompt,
+        # Optional field, only used when generator_mode == "from_hf_dataset"
+        dataset_name=data_config.dataset_name,
+    )
 
     # Generate & write out the results
     output_path = get_output_path(args)
     logger.debug(f"Writing results to: {output_path}.")
     writer = JsonlDataWriter(output_path)
 
-    batch = []
-    for entry in data_maker.generator(args.batch_size, args.num_samples):
-        batch.append(entry)
+    for batch in data_maker.generator(args.batch_size, args.num_samples):
+        print("batch = ", batch)
+        completions = llm_provider.get_batch_completion(batch)
+        print("completions = ", completions)
+        for formatted_prompt, completion in zip(batch, completions):
+            logger.debug("-" * 100)
+            logger.debug(f"Formatted Prompt:\n{formatted_prompt}")
+            logger.debug(f"\nCompletion:\n{completion}")
+            logger.debug("-" * 100)
 
-        if len(batch) == args.batch_size:
-            completions = llm_provider.get_batch_completion(
-                [entry["formatted_prompt"] for entry in batch]
+            # Write the results using DataWriter
+            writer.write(
+                [
+                    {
+                        "formatted_prompt": formatted_prompt,
+                        "completion": completion,
+                    }
+                ]
             )
-
-            for it, completion in enumerate(completions):
-                formatted_prompt = batch[it]["formatted_prompt"]
-                logger.debug("-" * 100)
-                logger.debug(f"Formatted Prompt:\n{formatted_prompt}")
-                logger.debug(f"\nCompletion:\n{completion}")
-                logger.debug("-" * 100)
-
-                # Write the results using DataWriter
-                writer.write(
-                    [
-                        {
-                            "formatted_prompt": formatted_prompt,
-                            "completion": completion,
-                        }
-                    ]
-                )
-
-            batch = []

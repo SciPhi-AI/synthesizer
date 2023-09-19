@@ -1,0 +1,25 @@
+course_name: "Software Design Patterns"
+
+course_topic:
+  "Creational Patterns": 1
+  "Structural Patterns": 1
+  "Behavioral Patterns": 1
+  "Concurrency Patterns": 1
+
+sub_topic:
+  course_topic:
+    "Creational Patterns":
+      "Singleton Pattern": 1
+      "Factory Pattern": 1
+      "Builder Pattern": 1
+    "Structural Patterns":
+      "Adapter Pattern": 1
+      "Bridge Pattern": 1
+      "Composite Pattern": 1
+    "Behavioral Patterns":
+      "Strategy Pattern": 1
+      "State Pattern": 1
+      "Observer Pattern": 1
+    "Concurrency Patterns":
+      "Producer-Consumer": 1
+      "Read-Write Lock": 1

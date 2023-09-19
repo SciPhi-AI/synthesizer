@@ -44,30 +44,29 @@ class Prompt:
 class PromptManager:
     """A manager for available prompts"""
 
-    prompt_modes = {
+    stock_prompts = {
         "md_instruction": Prompt(
             expected_inputs={"instruction"},
             raw_text="""Below is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\n{instruction}\n\n### Response:""",
             structure=PromptStructure.SINGLE,
         ),
-        "evol_instruct": Prompt(
-            expected_inputs={"method", "question"},
-            raw_text="""Please increase the difficulty of the given programming test question a bit.\nYou can increase the difficulty using, but not limited to, the following methods:\n{method}\n\n{question}""",
+        "unit": Prompt(
+            expected_inputs={"instruction"},
+            raw_text="""{instruction}""",
             structure=PromptStructure.SINGLE,
         ),
     }
 
-    def __init__() -> None:
-        pass
+    def __init__(self, stock_prompts=stock_prompts) -> None:
+        self.stock_prompts = stock_prompts
 
-    @staticmethod
-    def get_prompt(prompt_mode: str) -> Prompt:
+    def get_prompt(self, selected_prompt: str) -> Prompt:
         """
         Gets the list of prompts associated with the specified mode
         """
-        prompt = PromptManager.prompt_modes.get(prompt_mode)
+        prompt = self.stock_prompts.get(selected_prompt)
         if not prompt:
             raise ValueError(
-                f"Requested prompt mode {prompt_mode} does not exist!"
+                f"Requested prompt mode {selected_prompt} does not exist!"
             )
         return prompt
