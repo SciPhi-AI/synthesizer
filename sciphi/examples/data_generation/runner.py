@@ -125,7 +125,8 @@ if __name__ == "__main__":
         DataGeneratorMode(data_config.generator_mode),
         prompt_generator,
         prompt,
-        # Optional field, only used when generator_mode == "from_hf_dataset"
+        # Optional field,
+        # currently only used when generator_mode == "from_hf_dataset"
         dataset_name=data_config.dataset_name,
     )
 
@@ -135,9 +136,7 @@ if __name__ == "__main__":
     writer = JsonlDataWriter(output_path)
 
     for batch in data_maker.generator(args.batch_size, args.num_samples):
-        print("batch = ", batch)
         completions = llm_provider.get_batch_completion(batch)
-        print("completions = ", completions)
         for formatted_prompt, completion in zip(batch, completions):
             logger.debug("-" * 100)
             logger.debug(f"Formatted Prompt:\n{formatted_prompt}")
