@@ -1,7 +1,19 @@
-generator_mode:
-  from_hf_dataset: "HuggingFaceH4/CodeAlpaca_20K"
+generator_mode: from_hf_dataset
 
-prompt_mode: evol_instruct
+hf_dataset_name: "HuggingFaceH4/CodeAlpaca_20K"
+
+outer_prompt_format: md_instruction
+
+prompt_template_inputs:
+  - question
+  - method
+
+prompt_templates:
+  "Please increase the difficulty of the given programming test question a bit.\nYou can increase the difficulty using, but not limited to, the following methods:\n{method}\n\n{question}": 1
+
+prompt_template_input_dependencies:
+
+config_files:
 
 question:
   from_hf_dataset: prompt

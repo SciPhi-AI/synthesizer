@@ -1,0 +1,68 @@
+course_name: Basic Python
+
+course_topic:
+  "Python Syntax": 1
+  "Python Data Structures": 1
+  "Python Specific": 1
+  "Python File Operations": 1
+  "Python Practices": 1
+  "Python Modules": 1
+  "Python Memory Concepts": 1
+  "Python Introspection": 1
+  "Python OOP": 1
+  "External Python Libraries": 1
+
+sub_topic:
+  course_topic:
+    Python Syntax:
+      "for loops": 1
+      "conditional statements": 1
+      "list comprehensions": 1
+    Python Data Structures:
+      "stacks": 1
+      "queues": 1
+      "lists": 1
+      "tuples": 1
+      "dictionaries": 1
+      "sets": 1
+    Python Specific:
+      "unpacking": 1
+      "lambda functions": 1
+      "ternary conditional expressions": 1
+      "string operations": 1
+    Python File Operations:
+      "reading": 1
+      "writing": 1
+      "exception handling": 1
+    Python File Operations:
+      "reading": 1
+      "writing": 1
+      "exception handling": 1
+    Python Practices:
+      "PEP8": 1
+      "naming conventions (camelCase, snake_case)": 1
+    Python Modules:
+      "datetime": 1
+      "time": 1
+      "collections": 1
+      "itertools": 1
+    Python Memory Concepts:
+      "garbage collection": 1
+      "reference cycles": 1
+      "deep copy vs shallow copy": 1
+    Python Introspection:
+      "decorators": 1
+      "higher-order functions": 1
+      "introspection techniques": 1
+      "reflection techniques": 1
+    Python OOP:
+      "setters": 1
+      "getters": 1
+      "inheritance": 1
+      "composition": 1
+      "encapsulation": 1
+      "polymorphism": 1
+    External Python Libraries:
+      "NumPy": 1
+      "pandas": 1
+      "matplotlib": 1

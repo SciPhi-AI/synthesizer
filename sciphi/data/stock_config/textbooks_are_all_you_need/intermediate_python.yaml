@@ -1,0 +1,39 @@
+course_name: Intermediate Python
+
+course_topic:
+  "Python Exceptions": 1
+  "Python Functions": 1
+  "Python Metaclasses": 1
+  "Python Concurrency": 1
+  "Python Networking": 1
+  "Python GUI": 1
+  "Python Database": 1
+
+sub_topic:
+  course_topic:
+    Python Exceptions:
+      "custom exceptions": 1
+      "raising exceptions": 1
+    Python Functions:
+      "nested functions": 1
+      "closures": 1
+      "decorators": 1
+      "function factories": 1
+    Python Metaclasses:
+      "basics": 1
+      "use cases": 1
+    Python Concurrency:
+      "threading": 1
+      "multiprocessing": 1
+      "async/await": 1
+      "coroutines": 1
+    Python Networking:
+      "socket programming": 1
+      "async networking": 1
+    Python GUI:
+      "Tkinter basics": 1
+      "PyQt basics": 1
+      "wxBasic Python": 1
+    Python Database:
+      "SQLite integration": 1
+      "SQLAlchemy basics": 1

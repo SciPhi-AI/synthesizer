@@ -1,12 +1,12 @@
 # A YAML file containing the data configuration for the Python textbook.
 # This file is used by the Python textbook generator to generate prompts.
 # The generator_mode is set to synthetic, which means that the prompts are generated from scratch.
-# The prompt_mode is set to md_instruction, which means that the prompts are generated using the md_instruction method.
+# The outer_prompt is set to md_instruction, which means that the generated prompts are wrapped in md_instruction template.
 # Each input is weighted (in a relative manner) by the weights which appear to the right
 
 generator_mode: synthetic
 
-prompt_mode: md_instruction
+outer_prompt: md_instruction
 
 instruction:
   prompt_templates:

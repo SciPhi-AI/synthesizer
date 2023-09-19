@@ -1,0 +1,94 @@
+# The `main.yaml` file is used to specify the synthetic data generation
+# This file is used by the `ConfigReader` to specify synthetic data construction.
+
+# Config files are used to specify the downstream configs
+# Each config file is a YAML file with input data for prompt generation
+
+# Specify how the data should be generated
+generator_mode: synthetic
+
+# Specify the outer prompt format
+outer_prompt_format: md_instruction
+
+# Specify the dependent configs to be used
+# The weights to the right of each config file name indicate the relative
+# frequency with which the config file is used
+config_files:
+  "basic_python.yaml": 1
+  "intermediate_python.yaml": 1
+
+# Specify the inputs to the prompt template
+prompt_template_inputs:
+  - course_name
+  - course_topic
+  - sub_topic
+  - context
+  - example_style
+
+# Specify the sub-dependencies of each prompt input variable
+prompt_template_input_dependencies:
+  sub_topic: course_topic
+
+# Prompt templates are used to generate prompts for the synthetic data.
+# Variables such as {course_name} and {sub_topic} are replaced with values
+# which are randomly selected from downstream configs
+prompt_templates:
+  "In the context of {course_name} where the focus is on {course_topic}, the concept of {sub_topic} becomes essential. Can you provide {context} and then showcase {example_style}?": 1
+  "While studying {course_name} and delving into {course_topic}, one encounters the importance of {sub_topic}. Could you offer {context} followed by an illustration of {example_style}?": 1
+  "During a lesson in {course_name} centered around {course_topic}, the discussion transitions to {sub_topic}. It would be helpful if you could present {context} and also demonstrate {example_style}.": 1
+  "In a module from the {course_name} curriculum emphasizing {course_topic}, there's a significant focus on {sub_topic}. Please share {context} and display {example_style}.": 1
+  "As part of the {course_name} syllabus, when exploring {course_topic}, students often engage with {sub_topic}. Kindly offer {context} and provide {example_style}.": 1
+  "When navigating through the {course_name} course, particularly the {course_topic} section, the subject of {sub_topic} arises. Could you give {context} and subsequently depict {example_style}?": 1
+  "Within the {course_name} course, especially during the {course_topic} lessons, the topic of {sub_topic} plays a pivotal role. Please highlight {context} and demonstrate {example_style}.": 1
+  "As we dive deeper into the {course_name} curriculum, specifically the {course_topic} module, attention is drawn to {sub_topic}. It'd be great if you could present {context} and illustrate {example_style}.": 1
+  "The {course_name} course, while covering {course_topic}, places emphasis on {sub_topic}. Could you kindly offer {context} and then proceed with a showcase of {example_style}?": 1
+  "In the midst of the {course_name} course, when {course_topic} is under discussion, {sub_topic} becomes a focal point. Please take a moment to deliver {context} and exemplify using {example_style}.": 1
+  "Throughout the {course_name} course, as the curriculum touches upon {course_topic}, students are introduced to {sub_topic}. Can you outline {context} and give an example in the style of {example_style}?": 1
+  "While progressing through {course_name} and examining {course_topic}, it's impossible to overlook the significance of {sub_topic}. Would you provide {context} and follow it with an instance of {example_style}?": 1
+  "Upon advancing in the {course_name} program and reaching the {course_topic} module, one realizes the essence of {sub_topic}. Please elucidate {context} and further display {example_style}.": 1
+  "As learners progress in the {course_name} course, the nuances of {course_topic} bring forth the relevance of {sub_topic}. Could you detail {context} and subsequently showcase using {example_style}?": 1
+  "In the journey of understanding {course_name}, particularly when delving into {course_topic}, the relevance of {sub_topic} becomes evident. Can you provide insights on {context} and then elaborate with {example_style}?": 1
+  "The nuances of {course_name}, especially within the {course_topic} section, make the role of {sub_topic} undeniable. Would you lay out {context} and also give a representation of {example_style}?": 1
+  "Throughout the exploration of {course_name}, and more so in the {course_topic} segment, the emphasis on {sub_topic} is palpable. Please offer insights on {context} followed by an elaboration in {example_style}.": 1
+  "As the lessons in {course_name} unfold, especially when {course_topic} is in focus, the centrality of {sub_topic} becomes clear. Could you shed light on {context} and exemplify through {example_style}?": 1
+  "While immersing oneself in the {course_name} curriculum, the importance of {sub_topic} stands out, especially within the {course_topic} framework. Please share {context} and present an instance of {example_style}.": 1
+  "Navigating the vast realm of {course_name}, especially during sessions on {course_topic}, one can't ignore the prominence of {sub_topic}. Could you expound on {context} and subsequently provide an illustration in {example_style}?": 1
+
+# Context of the topic is selected to increase randomization of the prompt
+# In 1/2 of the instances, the context is a description of the topic
+# In the other 1/2 of the instances, the context is a description of a related, but different topic
+context:
+  "a description of this topic": 1
+  "a description of a related, but different topic,": 1
+  "an elucidation of this subject": 1
+  "an elucidation of a related, but different subject": 1
+  "a mention of a real-world application where this concept is critical": 1
+  "a mention of a related, but different real-world application where this concept is critical": 1
+  "an overview of this topic": 1
+  "an overview of a related, but different topic": 1
+  "a succinct explanation of this theme": 1
+  "a succinct explanation of a related, but different theme": 1
+  "the primary principles underlying this topic": 1
+  "the primary principles underlying a related, but different topic": 1
+  "the significance of this concept": 1
+  "the significance of to a related, but different concept": 1
+  "common misconceptions related to this topic": 1
+  "common misconceptions related to a different but related topic": 1
+  "the historical evolution of this subject": 1
+  "the historical evolution of a related, but different subject": 1
+  "key challenges associated with this concept": 1
+  "key challenges associated with a related, but different concept": 1
+
+# Example style is selected to increase randomization of the prompt
+# In all instances, the example suggests a Python code snippet
+example_style:
+  "an example of it with Python code": 1
+  "its usage through a simple Python snippet": 1
+  "a real-life Python example showcasing its utility": 1
+  "a Python-based scenario involving this concept": 1
+  "a Python code illustration that beginners can follow": 1
+  "its application using Python in a step-by-step manner": 1
+  "a detailed Python code walkthrough emphasizing its intricacies": 1
+  "a Python example highlighting common pitfalls": 1
+  "a Python example that contrasts it with related concepts": 1
+  "a Python code segment that integrates multiple aspects of this topic": 1
