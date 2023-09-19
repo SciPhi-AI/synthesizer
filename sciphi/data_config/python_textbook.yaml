@@ -4,27 +4,72 @@ prompt_mode: md_instruction
 
 instruction:
   prompt_templates:
-    "In a {course_name} course currently discussing {course_topic} the topic of {topic} is discussed. Please {context} and {example_style}.": 1
+    "In the context of {course_name} where the focus is on {course_topic}, the concept of {topic} becomes essential. Can you provide {context} and then showcase {example_style}?": 1
+    "While studying {course_name} and delving into {course_topic}, one encounters the importance of {topic}. Could you offer {context} followed by an illustration of {example_style}?": 1
+    "During a lesson in {course_name} centered around {course_topic}, the discussion transitions to {topic}. It would be helpful if you could present {context} and also demonstrate {example_style}.": 1
+    "In a module from the {course_name} curriculum emphasizing {course_topic}, there's a significant focus on {topic}. Please share {context} and display {example_style}.": 1
+    "As part of the {course_name} syllabus, when exploring {course_topic}, students often engage with {topic}. Kindly offer {context} and provide {example_style}.": 1
+    "When navigating through the {course_name} course, particularly the {course_topic} section, the subject of {topic} arises. Could you give {context} and subsequently depict {example_style}?": 1
+    "Within the {course_name} course, especially during the {course_topic} lessons, the topic of {topic} plays a pivotal role. Please highlight {context} and demonstrate {example_style}.": 1
+    "As we dive deeper into the {course_name} curriculum, specifically the {course_topic} module, attention is drawn to {topic}. It'd be great if you could present {context} and illustrate {example_style}.": 1
+    "The {course_name} course, while covering {course_topic}, places emphasis on {topic}. Could you kindly offer {context} and then proceed with a showcase of {example_style}?": 1
+    "In the midst of the {course_name} course, when {course_topic} is under discussion, {topic} becomes a focal point. Please take a moment to deliver {context} and exemplify using {example_style}.": 1
+
+  context:
+    "a description of this topic": 1
+    "an elucidation of this subject": 1
+    "a mention of a real-world application where this concept is critical": 1
+    "an overview of this topic": 1
+    "a succinct explanation of this theme": 1
+    "the primary principles underlying this topic": 1
+    "the significance of this concept": 1
+    "common misconceptions related to this topic": 1
+    "the historical evolution of this subject": 1
+    "key challenges associated with this concept": 1
+
+  example_style:
+    "an example of it with Python code": 1
+    "its usage through a simple Python snippet": 1
+    "a real-life Python example showcasing its utility": 1
+    "a Python-based scenario involving this concept": 1
+    "a Python code illustration that beginners can follow": 1
+    "its application using Python in a step-by-step manner": 1
+    "a detailed Python code walkthrough emphasizing its intricacies": 1
+    "a Python example highlighting common pitfalls": 1
+    "a Python example that contrasts it with related concepts": 1
+    "a Python code segment that integrates multiple aspects of this topic": 1
 
   course_name:
-    # Python concepts
-    "Basic Python": 1
-    "Intermediate Python": 1
-    "Advanced Python": 1
+    # Applied concepts
+    ## Python concepts
+    "Basic Python": 5
+    "Intermediate Python": 3
+    "Advanced Python": 2
     "Mathematical Python": 1
     "Python for Practitioners": 1
+    "Python for Networking": 1
+    "Python for Game Development": 1
+    "Modern Computing Concepts": 1
+    "Emerging Data Science Techniques": 1
+    "Cybersecurity Threats and Defense": 1
+    "Cloud Computing and Big Data": 1
+    "Advanced Cybersecurity Concepts": 1
     # Theoretical concepts
+    ## Mathematics
     "Introductory Mathematics": 1
     "Intermediate Mathematics": 1
-    "Foundations of Computer Science": 1
     "Advanced Mathematics and Statistics": 1
+    "Pure Mathematics": 1
+    ## Programming
+    "Foundations of Computer Science": 1
     "Extended Algorithms & Design": 1
+    "Software Design Patterns": 1
+    "Web Development Foundations": 1
+    "Mobile Application Development": 1
 
   course_topic:
     course_name:
-      Mathematical Python:
-        "Python Libraries": 1
-        "Python Applications": 1
+      # Applied concepts
       Basic Python:
         "Python Syntax": 1
         "Python Data Structures": 1
@@ -48,7 +93,10 @@ instruction:
         "Python Data Science": 1
         "Python Machine Learning": 1
         "Python Deep Learning": 1
-        "Python Web and App Development": 1        
+        "Python Web and App Development": 1  
+      Mathematical Python:
+        "Python Libraries": 1
+        "Python Applications": 1
       Python for Practitioners:
         "Python Libraries": 1
         "Python Web Frameworks": 1
@@ -60,6 +108,45 @@ instruction:
         "Python data visualization": 1
         "Python NLP": 1
         "Python ORM": 1
+      Python for Networking:
+        "Network Topologies and Protocols": 1
+        "Socket Programming in Python": 1
+        "Network Analysis with Scapy": 1
+        "Web Scraping and Automation": 1
+      Python for Game Development:
+        "Game Loops and Animation": 1
+        "Physics and Collision Detection": 1
+        "Level Design and World Building": 1
+        "AI and Game NPCs": 1
+      Modern Computing Concepts:
+        "Cloud-native applications": 1
+        "Microservices and APIs": 1
+        "Advanced Databases": 1
+        "Cutting-edge Algorithms": 1
+        "Emerging Technologies": 1
+      Emerging Data Science Techniques:
+        "Advanced Machine Learning": 1
+        "Deep Learning Paradigms": 1
+        "Natural Language Innovations": 1
+        "Visual and Audio Processing": 1
+        "Reinforcement Learning & AI": 1
+      Cybersecurity Threats and Defense:
+        "Understanding Malware": 1
+        "Social Engineering and Phishing": 1
+        "Defense Strategies and Solutions": 1
+        "Incident Response and Management": 1
+      Cloud Computing and Big Data:
+        "Basics of Cloud Computing": 1
+        "Big Data Processing with Hadoop and Spark": 1
+        "Distributed Databases": 1
+        "Real-time Analytics": 1
+      Advanced Cybersecurity Concepts:
+        "Threat Intelligence & Analysis": 1
+        "Secure Software Development": 1
+        "Network & Infrastructure Security": 1
+        "Incident Response & Forensics": 1
+        "Cryptography & Secure Communications": 1
+      # Theoretical concepts
       Introductory Mathematics:
         "Basic Arithmetic": 1
         "Statistics": 1
@@ -86,37 +173,26 @@ instruction:
         "Differential Equations": 1
         "Linear Algebra": 1
         "Optimization Problems": 1
+      Pure Mathematics:
+        "Topology and Spaces": 1
+        "Abstract Algebra": 1
+        "Number Theory": 1
+        "Mathematical Logic": 1
       Foundations of Computer Science: 
-        "CS Fundamentals": 1
-        "Programming & Software Development": 1
-        "Computer Systems & Architecture": 1
-        "Data Structures & Algorithms": 1
-        "Databases": 1
-        "Security & Cryptography": 1
-        "Languages & Scripting": 1
-        "Functional Programming": 1
-
-      Computer Science Principles:
-        "CS Basics": 1
-        "Programming Paradigms": 1
-        "Concurrency": 1
-        "Memory Concepts": 1
-        "Graph Theory": 1
-        "Algorithms & Design": 1
-        "Computer Architecture": 1
-        "Networking & Web": 1
-        "Databases": 1
-        "Data Structures": 1
-        "Patterns & Designs": 1
-        "Languages & Scripting": 1
-        "Functional Programming": 1
-        "Security": 1
-        "Development Concepts": 1
-        "Database Design": 1
-        "Database Systems": 1
-        "NoSQL Databases": 1
-        "Database optimizations": 1
-        "Database replication and sharding": 1
+        "CS Fundamentals": 
+        "Programming Paradigms": 
+        "Concurrency": 
+        "Memory Concepts": 
+        "Graph Theory": 
+        "Computer Architecture": 
+        "Networking & Web": 
+        "Data Structures": 
+        "Patterns & Designs": 
+        "Languages & Scripting": 
+        "Functional Programming": 
+        "Security": 
+        "Development Concepts": 
+        "Database Design & Management": 
       Extended Algorithms & Design:
         "Divide and Conquer": 1
         "Sorting Algorithms": 1
@@ -125,7 +201,21 @@ instruction:
         "Algorithmic Paradigms": 1
         "Tree Structures": 1
         "Advanced Topics": 1
-
+      Software Design Patterns:
+        "Creational Patterns": 1
+        "Structural Patterns": 1
+        "Behavioral Patterns": 1
+        "Concurrency Patterns": 1
+      Web Development Foundations:
+        "HTML, CSS, and JavaScript Basics": 1
+        "Server Side Programming": 1
+        "Client Side Frameworks": 1
+        "Web Security": 1
+      Mobile Application Development:
+        "Native App Development": 1
+        "Hybrid and Web-based Apps": 1
+        "Mobile App Security": 1
+        "App Monetization and Marketing": 1
 
   # course_name -> course_topic -> topic
   topic:
@@ -276,6 +366,162 @@ instruction:
           Python ORM:
             "Django ORM": 1
             "Tortoise-ORM": 1
+      Python for Networking:
+        course_topic:
+          Network Topologies and Protocols:
+            "OSI Model": 1
+            "TCP/IP Model": 1
+            "IPv4 vs IPv6": 1
+            "Understanding Network Topologies (Star, Mesh, Ring)": 1
+          Socket Programming in Python:
+            "Creating a Simple Socket": 1
+            "Socket Methods (bind, listen, accept, connect)": 1
+            "Building a Chat Application": 1
+          Network Analysis with Scapy:
+            "Packet Crafting and Sniffing": 1
+            "Packet Analysis": 1
+            "Network Scans": 1
+          Web Scraping and Automation:
+            "Introduction to BeautifulSoup": 1
+            "Working with Selenium": 1
+            "Bypassing CAPTCHAs": 1
+            "Ethics of Web Scraping": 1
+      Python for Game Development:
+        course_topic:
+          Game Loops and Animation:
+            "Understanding the Game Loop": 1
+            "Sprite Animation": 1
+            "Collision Detection": 1
+          Physics and Collision Detection:
+            "Introduction to Game Physics": 1
+            "Gravity, Jumping, and Friction": 1
+            "Pixel-Perfect Collision": 1
+          Level Design and World Building:
+            "Tile-based Worlds": 1
+            "Platformer Design": 1
+            "Top-down Game Design": 1
+          AI and Game NPCs:
+            "Pathfinding Algorithms": 1
+            "NPC Behaviors": 1
+            "Decision Trees for Game AI": 1
+      Modern Computing Concepts:
+        course_topic:
+          Cloud-native applications:
+            "Kubernetes": 1
+            "Istio": 1
+            "Container orchestration with Docker Swarm": 1
+            "Serverless Computing Concepts": 1
+          Microservices and APIs:
+            "Service Mesh": 1
+            "API gateways: Kong": 1
+            "API gateways: Nginx": 1
+            "REST vs GraphQL": 1
+          Advanced Databases:
+            "NoSQL Databases: Cassandra": 1
+            "NoSQL Databases: MongoDB": 1
+            "Database replication and sharding": 1
+            "Database optimizations: Query optimization": 1
+          Cutting-edge Algorithms:
+            "Streaming algorithms": 1
+            "Travelling Salesman Problem (TSP)": 1
+            "Network Flow: Ford-Fulkerson algorithm": 1
+          Emerging Technologies:
+            "IoT (Internet of Things) basics": 1
+            "Edge computing": 1
+            "Quantum computing basics": 1
+            "Blockchain basics": 1
+            "AR (Augmented Reality) basics": 1
+            "VR (Virtual Reality) basics": 1
+      Emerging Data Science Techniques:
+        course_topic:
+          Advanced Machine Learning:
+            "Feature engineering techniques": 1
+            "Model interpretability methods": 1
+            "Transfer learning in traditional ML": 1
+            "Automated Machine Learning (AutoML)": 1
+          Deep Learning Paradigms:
+            "Transformers in NLP": 1
+            "Generative Adversarial Networks (GANs)": 1
+            "Capsule Networks": 1
+            "One-shot and Few-shot learning": 1
+          Natural Language Innovations:
+            "Zero-shot and cross-lingual models": 1
+            "Knowledge graphs": 1
+            "Conversational AI & Chatbots": 1
+            "Sentiment analysis advancements": 1
+          Visual and Audio Processing:
+            "Image segmentation techniques": 1
+            "Object detection enhancements": 1
+            "Audio scene recognition": 1
+            "Deepfake detection techniques": 1
+          Reinforcement Learning & AI:
+            "Deep Q-learning": 1
+            "Policy Gradient Methods": 1
+            "Multi-agent reinforcement learning": 1
+            "Neuroevolution techniques": 1
+      Cybersecurity Threats and Defense:
+        course_topic:
+          Understanding Malware:
+            "Types of Malware (Virus, Worm, Trojan)": 1
+            "Behavior Analysis": 1
+            "Static and Dynamic Analysis": 1
+          Social Engineering and Phishing:
+            "Types of Social Engineering Attacks": 1
+            "Phishing Techniques": 1
+            "Protection and Training Against Phishing": 1
+          Defense Strategies and Solutions:
+            "Intrusion Detection Systems": 1
+            "Firewalls": 1
+            "Sandboxes": 1
+          Incident Response and Management:
+            "Incident Identification": 1
+            "Incident Containment": 1
+            "Post-Incident Analysis": 1
+      Cloud Computing and Big Data:
+        course_topic:
+          Basics of Cloud Computing:
+            "Cloud Service Models (IaaS, PaaS, SaaS)": 1
+            "Public vs Private vs Hybrid Cloud": 1
+            "Cloud Providers Overview (AWS, Azure, GCP)": 1
+          Big Data Processing with Hadoop and Spark:
+            "Introduction to Hadoop Ecosystem": 1
+            "MapReduce": 1
+            "Introduction to Apache Spark": 1
+          Distributed Databases:
+            "Basics of Distributed Systems": 1
+            "CAP Theorem": 1
+            "Popular Distributed Databases (Cassandra, DynamoDB)": 1
+          Real-time Analytics:
+            "Introduction to Stream Processing": 1
+            "Apache Kafka Basics": 1
+            "Real-time Dashboards": 1
+      Advanced Cybersecurity Concepts:
+        course_topic:
+          Threat Intelligence & Analysis:
+            "Advanced Persistent Threats (APTs)": 1
+            "Threat hunting techniques": 1
+            "Threat modeling and risk assessment": 1
+            "Behavioral analytics & anomaly detection": 1
+          Secure Software Development:
+            "Secure coding practices": 1
+            "Static and dynamic analysis tools": 1
+            "Security in DevOps (DevSecOps)": 1
+            "Application sandboxing and containment": 1
+          Network & Infrastructure Security:
+            "Zero Trust Architecture": 1
+            "Intrusion detection and prevention systems": 1
+            "Security for 5G networks": 1
+            "IoT device security": 1
+          Incident Response & Forensics:
+            "Digital evidence collection & preservation": 1
+            "Incident triage and analysis": 1
+            "Root cause analysis techniques": 1
+            "Incident recovery and lessons learned": 1
+          Cryptography & Secure Communications:
+            "Post-quantum cryptography": 1
+            "Homomorphic encryption": 1
+            "Secure multi-party computation": 1
+            "Blockchain and its security implications": 1
       Mathematical Python:
         course_topic:
           Python Libraries:
@@ -366,6 +612,10 @@ instruction:
             "Fourier transforms": 1
       Advanced Mathematics and Statistics:
         course_topic:
+          Advanced Algebra:
+            "complex numbers": 1
+            "polynomials": 1
+            "rings and fields": 1
           Calculus:
             "limits and continuity": 1
           Statistics:
@@ -387,9 +637,33 @@ instruction:
             "linear programming": 1
             "convex optimization": 1
             "nonlinear optimization": 1
+          Differential Equations:
+            "ordinary differential equations": 1
+            "partial differential equations": 1
+            "methods of solution": 1
+            "linear systems of equations": 1
+            "nonlinear systems of equations": 1
+          Discrete Math:
+            "Pigeonhole principle": 1
+            "Inclusion-exclusion principle": 1
+      Pure Mathematics:
+        course_topic:
+          Topology and Spaces:
+            "Open and Closed Sets": 1
+            "Compactness": 1
+            "Continuity in Topological Spaces": 1
+          Abstract Algebra:
+            "Groups, Rings, and Fields": 1
+            "Homomorphisms and Isomorphisms": 1
+          Number Theory:
+            "Prime Numbers": 1
+            "Modular Arithmetic": 1
+          Mathematical Logic:
+            "Propositional and Predicate Logic": 1
+            "Proof Techniques": 1
       Foundations of Computer Science:
         course_topic:
-          "CS Basics": 
+          "CS Fundamentals": 
             "Introduction to CS": 1
             "History of CS": 1
             "Basic Terminology": 1
@@ -446,15 +720,12 @@ instruction:
             "Normalization": 1
             "ER diagrams": 1
             "Indexing mechanisms (B-trees, hash indexes)": 1
-            "NoSQL Databases": 
-              "Cassandra": 1
-              "MongoDB": 1
-              "Redis": 1
-            "Database optimizations": 
-              "Indexing": 1
-              "Query optimization": 1
-            "Database replication and sharding": 
-              "basics": 1
+            "NoSQL Databases - Cassandra": 1
+            "NoSQL Databases - MongoDB": 1
+            "NoSQL Databases - Redis": 1
+            "Database optimizations - Indexing": 1
+            "Database optimizations - Query optimization": 1
+            "Database replication and sharding": 1
       Extended Algorithms & Design:
         course_topic:
           Divide and Conquer:
@@ -491,9 +762,49 @@ instruction:
           Advanced Topics:
             "NP-completeness and reductions": 1
             "Approximation algorithms": 1
-
-  context:
-    "mention one real-world application where this concept is critical.": 1
-
-  example_style:
-    "illustrate an example of it with Python code": 1
+      Software Design Patterns:
+        course_topic:
+          Creational Patterns:
+            "Singleton Pattern": 1
+            "Factory Pattern": 1
+            "Builder Pattern": 1
+          Structural Patterns:
+            "Adapter Pattern": 1
+            "Bridge Pattern": 1
+            "Composite Pattern": 1
+          Behavioral Patterns:
+            "Strategy Pattern": 1
+            "State Pattern": 1
+            "Observer Pattern": 1
+          Concurrency Patterns:
+            "Producer-Consumer": 1
+            "Read-Write Lock": 1
+      Web Development Foundations:
+        course_topic:
+          HTML, CSS, and JavaScript Basics:
+            "HTML Elements and Attributes": 1
+            "CSS Selectors and Properties": 1
+            "JavaScript Variables and Functions": 1
+          Server Side Programming:
+            "HTTP Protocol Basics": 1
+            "Building a REST API": 1
+          Client Side Frameworks:
+            "Introduction to React": 1
+            "Introduction to Angular": 1
+          Web Security:
+            "Cross-Site Scripting (XSS)": 1
+            "Cross-Site Request Forgery (CSRF)": 1
+      Mobile Application Development:
+        course_topic:
+          Native App Development:
+            "Android App Basics": 1
+            "iOS App Basics": 1
+          Hybrid and Web-based Apps:
+            "Introduction to React Native": 1
+            "Introduction to Flutter": 1
+          Mobile App Security:
+            "Securing Data at Rest": 1
+            "Securing Data in Transit": 1
+          App Monetization and Marketing:
+            "In-App Purchases": 1
+            "Mobile Ads": 1

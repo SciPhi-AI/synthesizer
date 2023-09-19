@@ -68,12 +68,9 @@ class DataMaker:
                 }
                 generated_inputs = {}
                 for k, v in inner_generator.items():
-                    print("k = ", k)
-                    print("v = ", v)
                     vkeys = list(v.keys())
                     while len(vkeys) == 1 and vkeys[0] in generated_inputs:
                         v = v[vkeys[0]][generated_inputs[vkeys[0]]]
-                        print("new v = ", v)
                         vkeys = list(v.keys())
 
                     generated_inputs[k] = self.random_sample(v)
@@ -165,7 +162,6 @@ class DataMaker:
 
     @staticmethod
     def random_sample(vars_and_weights: dict) -> str:
-        print("vars_and_weights = ", vars_and_weights)
         """Randomly sample a weighted dictionary."""
 
         keys, weights = zip(*vars_and_weights.items())
