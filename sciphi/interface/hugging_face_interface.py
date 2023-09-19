@@ -25,7 +25,7 @@ class HuggingFaceLLMInterface(LLMInterface):
         logger.info(
             f"Getting completion from Local HuggingFace API for model={self._model.config.model_name}"
         )
-        return self.model.get_completion(prompt)
+        return self.model.get_instruct_completion(prompt)
 
     @property
     def model(self) -> HuggingFaceLLM:

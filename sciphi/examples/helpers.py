@@ -46,7 +46,7 @@ def parse_arguments() -> argparse.Namespace:
     """Parse command line arguments."""
 
     parser = argparse.ArgumentParser(
-        description="Parse Sci-Phi running commands"
+        description="Parse SciPhi running commands"
     )
     # Run arguments
     parser.add_argument(

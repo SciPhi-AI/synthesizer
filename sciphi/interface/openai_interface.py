@@ -12,15 +12,20 @@ logger = logging.getLogger(__name__)
 class OpenAILLMInterface(LLMInterface):
     """A class to provide zero-shot completions from the OpenAI API."""
 
+    instruct_models = [
+        ModelName.GPT_3p5_TURBO_INSTRUCT,
+    ]
     provider_name = ProviderName.OPENAI
     supported_models = [
         ModelName.GPT_3p5_TURBO_0301,
         ModelName.GPT_3p5_TURBO_0613,
         ModelName.GPT_3p5_TURBO,
+        ModelName.GPT_3p5_TURBO_INSTRUCT,
         ModelName.GPT_4_0314,
         ModelName.GPT_4_0613,
         ModelName.GPT_4,
     ]
+    system_message = "You are a helpful assistant."
 
     def __init__(
         self,
@@ -34,12 +39,18 @@ class OpenAILLMInterface(LLMInterface):
         logger.info(
             f"Getting completion from OpenAI API for model={self.config.model_name}"
         )
-        return self._model.get_completion(
-            [
-                {"role": "system", "content": "You are a helpful assistant."},
-                {"role": "user", "content": prompt},
-            ]
-        )
+        if ModelName(self.config.model_name) in self.instruct_models:
+            return self.model.get_instruct_completion(prompt)
+        else:
+            return self._model.get_chat_completion(
+                [
+                    {
+                        "role": "system",
+                        "content": OpenAILLMInterface.system_message,
+                    },
+                    {"role": "user", "content": prompt},
+                ]
+            )
 
     @property
     def model(self) -> OpenAILLM:
