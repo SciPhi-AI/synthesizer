@@ -1,13 +1,11 @@
 # The `main.yaml` file is used to specify the synthetic data generation
-# This file is used by the `ConfigReader` to specify synthetic data construction.
-
-# Config files are used to specify the downstream configs
-# Each config file is a YAML file with input data for prompt generation
+# This file is used by the `DataConfigReader` to specify synthetic data construction.
 
 # Specify how the data should be generated
 generator_mode: synthetic
 
-# Specify the outer prompt format
+# Specify the outer LLM prompt format
+# `md_instruction` follows typical Alpaca template
 outer_prompt_format: md_instruction
 
 # Specify the dependent configs to be used
@@ -47,9 +45,6 @@ prompt_template_inputs:
 # Specify the sub-dependencies of each prompt input variable
 prompt_template_input_dependencies:
   sub_topic: course_topic
-
-# Specify the prompt dependencies on the HuggingFace dataset
-prompt_hf_dataset_dependencies: {}
 
 # Prompt templates are used to generate prompts for the synthetic data.
 # Variables such as {course_name} and {sub_topic} are replaced with values
