@@ -62,42 +62,27 @@ class DataMaker:
         num_samples: int,
     ) -> Generator[Dict[str, str], None, None]:
         """Returns a generator which yields formatted prompts from the loaded configuration."""
-        raise NotImplementedError("Not yet implemented.")
-        # if batch_size != 1:
-        #     raise ValueError(
-        #         "Batch size must be 1 for HuggingFace dataset generation."
-        #     )
+        if batch_size != 1:
+            raise ValueError(
+                "Batch size must be 1 for HuggingFace dataset generation."
+            )
 
-        # try:
-        #     from datasets import load_dataset
-        # except:
-        #     raise ImportError(
-        #         "Please install the `datasets` package before attempting to run with a HuggingFace dataset generator. This can be accomplished via `poetry install -E hf_support, ...OTHER_DEPENDENCY_HERE`."
-        #     )
+        try:
+            from datasets import load_dataset
+        except:
+            raise ImportError(
+                "Please install the `datasets` package before attempting to run with a HuggingFace dataset generator. This can be accomplished via `poetry install -E hf_support, ...OTHER_DEPENDENCY_HERE`."
+            )
 
-        # dataset = load_dataset(self.dataset_name, streaming=True)
+        dataset = load_dataset(self.dataset_name, streaming=True)
 
-        # for data in dataset["train"]:
-        #     result = {
-        #         inner_key: data[
-        #             inner_generator[DataMaker.Mode.FROM_HF_DATASET.value]
-        #         ]
-        #         if [DataMaker.Mode.FROM_HF_DATASET.value]
-        #         == list(inner_generator.keys())
-        #         else self.random_sample(inner_generator)
-        #         for inner_key, inner_generator in self.config.items()
-        #     }
-        #     self.outer_prompt.format(**result)
-        #     if self.outer_prompt.structure != PromptStructure.SINGLE:
-        #         raise NotImplementedError(
-        #             "Not yet implemented for multi-prompt datasets."
-        #         )
-        #     result["raw_prompt"] = self.outer_prompt.raw_text
-        #     result["formatted_prompt"] = self.outer_prompt.text
-        #     yield result
-        #     counter += 1
-        #     if counter >= num_samples:
-        #         break
+        for data in dataset["train"]:
+            inner_prompt = self.prompt_generator.generate_prompt()
+            formatted_outer_prompt = copy(self.outer_prompt)
+            formatted_outer_prompt.format(
+                instruction=inner_prompt[PromptGenerator.FORMATTED_PROMPT_TAG]
+            )
+            yield formatted_outer_prompt.text
 
     def generator(
         self, batch_size=1_024, num_samples=1_048_576
