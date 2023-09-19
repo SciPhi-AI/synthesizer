@@ -76,8 +76,14 @@ class HuggingFaceLLM(LLM):
             **config.add_generation_kwargs,
         )
 
-    def get_completion(self, prompt: str) -> str:
+    def get_chat_completion(self, prompt: str) -> str:
         """Get a completion from the OpenAI API based on the provided messages."""
+        raise NotImplementedError(
+            "Chat completion not yet implemented for HuggingFace."
+        )
+
+    def get_instruct_completion(self, prompt: str) -> str:
+        """Get a instruct completion from the Anthropic API based on the provided messages."""
         # TODO - Should we set `max_length` here? What about `max_tokens_to_sample`?
         # Should we set the device on inputs or is this handled above? Test on GPU inst.
         inputs = self.tokenizer(

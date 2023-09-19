@@ -16,6 +16,7 @@ class ModelName(Enum):
     GPT_3p5_TURBO_0301 = "gpt-3.5-turbo-0301"
     GPT_3p5_TURBO_0613 = "gpt-3.5-turbo-0613"
     GPT_3p5_TURBO = "gpt-3.5-turbo"
+    GPT_3p5_TURBO_INSTRUCT = "gpt-3.5-turbo-instruct"
 
     ## GPT-4
     GPT_4_0314 = "gpt-4-0314"
@@ -57,6 +58,11 @@ class LLM(ABC):
         self.config = config
 
     @abstractmethod
-    def get_completion(self, input: Any) -> str:
-        """Abstract method to get a completion from the provider."""
+    def get_chat_completion(self, input: Any) -> str:
+        """Abstract method to get a chat completion from the provider."""
+        pass
+
+    @abstractmethod
+    def get_instruct_completion(self, input: Any) -> str:
+        """Abstract method to get an instruction completion from the provider."""
         pass

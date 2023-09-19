@@ -1,5 +1,6 @@
 """A module for creating Anthropic models."""
 from dataclasses import dataclass
+from typing import Any
 
 from sciphi.core import ProviderName
 from sciphi.llm.base import LLM, LLMConfig
@@ -45,8 +46,8 @@ class AnthropicLLM(LLM):
                 "Anthropic API key not found. Please set the ANTHROPIC_API_KEY environment variable."
             )
 
-    def get_completion(self, prompt: str) -> str:
-        """Get a completion from the Anthropic API based on the provided messages."""
+    def get_chat_completion(self, prompt: str) -> str:
+        """Get a chat completion from the Anthropic API based on the provided messages."""
 
         from anthropic import AI_PROMPT, HUMAN_PROMPT
 
@@ -62,3 +63,9 @@ class AnthropicLLM(LLM):
         )  # type: ignore
 
         return completion.completion
+
+    def get_instruct_completion(self, input: Any) -> str:
+        """Get a instruct completion from the Anthropic API based on the provided messages."""
+        raise NotImplementedError(
+            "Instruct completion is not yet supported for Anthropic."
+        )
