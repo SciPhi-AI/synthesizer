@@ -66,11 +66,14 @@ class DataMaker:
                     "text": self.random_sample(prompt_templates[inner_key]),
                     "expected_inputs": set(inner_generator.keys()),
                 }
+                generated_inputs = {}
+                for k, v in inner_generator.items():
+                    vkeys = list(v.keys())
+                    while len(vkeys) == 1 and vkeys[0] in generated_inputs:
+                        v = v[vkeys[0]][generated_inputs[vkeys[0]]]
+                        vkeys = list(v.keys())
 
-                generated_inputs = {
-                    k: self.random_sample(v)
-                    for k, v in inner_generator.items()
-                }
+                    generated_inputs[k] = self.random_sample(v)
 
                 formatted_inner = inner_prompt["text"].format(
                     **generated_inputs
