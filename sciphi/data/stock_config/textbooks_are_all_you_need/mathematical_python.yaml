@@ -1,0 +1,30 @@
+course_name: "Mathematical Python"
+
+course_topic:
+  "Mathematical Python Libraries": 1
+  "Python Applications": 1
+
+sub_topic:
+  course_topic:
+    "Mathematical Python Libraries":
+      "SymPy for symbolic mathematics": 1
+      "math for basic mathematical functions": 1
+      "cmath for complex numbers": 1
+    "Python Applications":
+      "solving linear equations with NumPy": 1
+      "plotting graphs with matplotlib": 1
+      "solving ordinary differential equations with SciPy": 1
+      "symbolic integration and differentiation with SymPy": 1
+      "matrix operations with NumPy": 1
+      "statistical analysis with pandas and NumPy": 1
+      "regression models with scikit-learn": 1
+      "optimization problems with SciPy's optimize": 1
+      "Fourier transformations with SciPy": 1
+      "generating and analyzing sequences with itertools": 1
+      "number theory operations with gmpy2": 1
+      "combinatorics with itertools and SymPy": 1
+      "geometry computations using libraries like Shapely": 1
+      "solving polynomial equations with NumPy's roots function": 1
+      "numerical integration using SciPy's quad function": 1
+      "eigenvalue and eigenvector computations with NumPy": 1
+      "probability distributions with SciPy.stats": 1

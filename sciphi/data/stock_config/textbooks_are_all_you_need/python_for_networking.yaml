@@ -1,0 +1,28 @@
+course_name: "Python for Networking"
+
+course_topic:
+  "Network Topologies and Protocols": 1
+  "Socket Programming in Python": 1
+  "Network Analysis with Scapy": 1
+  "Web Scraping and Automation": 1
+
+sub_topic:
+  course_topic:
+    "Network Topologies and Protocols":
+      "OSI Model": 1
+      "TCP/IP Model": 1
+      "IPv4 vs IPv6": 1
+      "Understanding Network Topologies (Star, Mesh, Ring)": 1
+    "Socket Programming in Python":
+      "Creating a Simple Socket": 1
+      "Socket Methods (bind, listen, accept, connect)": 1
+      "Building a Chat Application": 1
+    "Network Analysis with Scapy":
+      "Packet Crafting and Sniffing": 1
+      "Packet Analysis": 1
+      "Network Scans": 1
+    "Web Scraping and Automation":
+      "Introduction to BeautifulSoup": 1
+      "Working with Selenium": 1
+      "Bypassing CAPTCHAs": 1
+      "Ethics of Web Scraping": 1

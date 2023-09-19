@@ -1,39 +1,28 @@
 """A module which facilitates synthesizing prompt data."""
-import os
-import random
+
 from copy import copy
-from enum import Enum
-from typing import Dict, Generator, Optional, Union
+from typing import Dict, Generator, Optional
 
-import yaml
-
-from sciphi.config import DataConfig
+from sciphi.config.base import DataGeneratorMode
 from sciphi.prompt import Prompt, PromptGenerator
 
 
 class DataMaker:
-    """A class to facilitate seamless construction of input prompts"""
-
-    class GeneratorMode(Enum):
-        """What mode is the data maker in?"""
-
-        SYNTHETIC = "synthetic"
-        FROM_HF_DATASET = "from_hf_dataset"
-
     """A class to synthesize data from a configuration."""
 
     PROMPT_TEMPLATE_TAG = "prompt_templates"
 
     def __init__(
         self,
-        generator_mode: GeneratorMode,
+        generator_mode: DataGeneratorMode,
         prompt_generator: PromptGenerator,
         outer_prompt: Prompt,
-        hf_dataset_name: Optional[str] = None,
+        dataset_name: Optional[str] = None,
     ) -> None:
         self.generator_mode = generator_mode
         self.prompt_generator = prompt_generator
         self.outer_prompt = outer_prompt
+        self.dataset_name = dataset_name
 
     def synthetic_generator(
         self, batch_size: int, num_samples: int
@@ -76,24 +65,30 @@ class DataMaker:
 
         dataset = load_dataset(self.dataset_name, streaming=True)
 
+        counter = 0
         for data in dataset["train"]:
-            inner_prompt = self.prompt_generator.generate_prompt()
+            inner_prompt = self.prompt_generator.generate_prompt(
+                optional_formatters=data
+            )
             formatted_outer_prompt = copy(self.outer_prompt)
             formatted_outer_prompt.format(
                 instruction=inner_prompt[PromptGenerator.FORMATTED_PROMPT_TAG]
             )
-            yield formatted_outer_prompt.text
+            yield [formatted_outer_prompt.text]
+            counter += 1
+            if counter >= num_samples:
+                break
 
     def generator(
         self, batch_size=1_024, num_samples=1_048_576
     ) -> Generator[Dict[str, str], None, None]:
         """Returns a generator which yields formatted prompts from the loaded configuration."""
 
-        if self.generator_mode == DataMaker.GeneratorMode.SYNTHETIC:
+        if self.generator_mode == DataGeneratorMode.SYNTHETIC:
             yield from self.synthetic_generator(batch_size, num_samples)
-        elif self.generator_mode == DataMaker.GeneratorMode.FROM_HF_DATASET:
+        elif self.generator_mode == DataGeneratorMode.FROM_HF_DATASET:
             yield from self.hf_dataset_generator(batch_size, num_samples)
         else:
             raise ValueError(
-                f"Invalid generation mode {self.generator_mode} specified. Must be one of {DataMaker.GeneratorMode}."
+                f"Invalid generation mode {self.generator_mode} specified. Must be one of {DataGeneratorMode}."
             )

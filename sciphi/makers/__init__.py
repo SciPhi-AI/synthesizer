@@ -1,3 +1,3 @@
-from sciphi.makers.base import DataMaker
+from sciphi.makers.data_maker import DataMaker
 
-__all__ = ["DataMaker"]
+__all__ = [DataMaker]

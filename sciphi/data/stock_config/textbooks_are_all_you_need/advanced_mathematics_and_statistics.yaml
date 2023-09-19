@@ -1,0 +1,47 @@
+course_name: "Advanced Mathematics and Statistics"
+
+course_topic:
+  "Advanced Algebra": 1
+  "Calculus": 1
+  "Number Theory": 1
+  "Discrete Math": 1
+  "Differential Equations": 1
+  "Linear Algebra": 1
+  "Optimization Problems": 1
+
+sub_topic:
+  course_topic:
+    "Advanced Algebra":
+      "complex numbers": 1
+      "polynomials": 1
+      "rings and fields": 1
+    "Calculus":
+      "limits and continuity": 1
+    "Statistics":
+      "Chi-squared tests": 1
+      "ANOVA": 1
+      "t-tests": 1
+      "correlation coefficients (Pearson, Spearman)": 1
+    "Number Theory":
+      "Fermat's Little Theorem": 1
+      "Euler's Totient Function": 1
+    "Linear Algebra":
+      "Orthogonality": 1
+      "Gram-Schmidt process": 1
+      "Singular Value Decomposition (SVD)": 1
+    "Discrete Mathematics":
+      "Pigeonhole principle": 1
+      "Inclusion-exclusion principle": 1
+    "Optimization Problems":
+      "linear programming": 1
+      "convex optimization": 1
+      "nonlinear optimization": 1
+    "Differential Equations":
+      "ordinary differential equations": 1
+      "partial differential equations": 1
+      "methods of solution": 1
+      "linear systems of equations": 1
+      "nonlinear systems of equations": 1
+    "Discrete Math":
+      "Pigeonhole principle": 1
+      "Inclusion-exclusion principle": 1

@@ -1,0 +1,36 @@
+course_name: "Advanced Cybersecurity Concepts"
+
+course_topic:
+  "Threat Intelligence & Analysis": 1
+  "Secure Software Development": 1
+  "Network & Infrastructure Security": 1
+  "Incident Response & Forensics": 1
+  "Cryptography & Secure Communications": 1
+
+sub_topic:
+  course_topic:
+    "Threat Intelligence & Analysis":
+      "Advanced Persistent Threats (APTs)": 1
+      "Threat hunting techniques": 1
+      "Threat modeling and risk assessment": 1
+      "Behavioral analytics & anomaly detection": 1
+    "Secure Software Development":
+      "Secure coding practices": 1
+      "Static and dynamic analysis tools": 1
+      "Security in DevOps (DevSecOps)": 1
+      "Application sandboxing and containment": 1
+    "Network & Infrastructure Security":
+      "Zero Trust Architecture": 1
+      "Intrusion detection and prevention systems": 1
+      "Security for 5G networks": 1
+      "IoT device security": 1
+    "Incident Response & Forensics":
+      "Digital evidence collection & preservation": 1
+      "Incident triage and analysis": 1
+      "Root cause analysis techniques": 1
+      "Incident recovery and lessons learned": 1
+    "Cryptography & Secure Communications":
+      "Post-quantum cryptography": 1
+      "Homomorphic encryption": 1
+      "Secure multi-party computation": 1
+      "Blockchain and its security implications": 1

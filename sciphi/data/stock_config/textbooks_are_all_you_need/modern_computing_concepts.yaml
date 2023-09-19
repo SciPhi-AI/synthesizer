@@ -1,0 +1,37 @@
+course_name: "Modern Computing Concepts"
+
+course_topic:
+  "Cloud-native applications": 1
+  "Microservices and APIs": 1
+  "Advanced Databases": 1
+  "Cutting-edge Algorithms": 1
+  "Emerging Technologies": 1
+
+sub_topic:
+  course_topic:
+    "Cloud-native applications":
+      "Kubernetes": 1
+      "Istio": 1
+      "Container orchestration with Docker Swarm": 1
+      "Serverless Computing Concepts": 1
+    "Microservices and APIs":
+      "Service Mesh": 1
+      "API gateways: Kong": 1
+      "API gateways: Nginx": 1
+      "REST vs GraphQL": 1
+    "Advanced Databases":
+      "NoSQL Databases: Cassandra": 1
+      "NoSQL Databases: MongoDB": 1
+      "Database replication and sharding": 1
+      "Database optimizations: Query optimization": 1
+    "Cutting-edge Algorithms":
+      "Streaming algorithms": 1
+      "Travelling Salesman Problem (TSP)": 1
+      "Network Flow: Ford-Fulkerson algorithm": 1
+    "Emerging Technologies":
+      "IoT (Internet of Things) basics": 1
+      "Edge computing": 1
+      "Quantum computing basics": 1
+      "Blockchain basics": 1
+      "AR (Augmented Reality) basics": 1
+      "VR (Virtual Reality) basics": 1

@@ -14,8 +14,27 @@ outer_prompt_format: md_instruction
 # The weights to the right of each config file name indicate the relative
 # frequency with which the config file is used
 config_files:
-  "basic_python.yaml": 1
-  "intermediate_python.yaml": 1
+  "advanced_cybersecurity_concepts": 1
+  "advanced_mathematics_and_statistics": 1
+  "advanced_python": 2
+  "basic_python": 5
+  "cloud_computing_and_big_data": 1
+  "cybersecurity_threats_and_defense": 1
+  "emerging_data_science_techniques": 1
+  "extended_algorithms_and_design": 1
+  "foundations_of_computer_science": 1
+  "intermediate_mathematics": 1
+  "intermediate_python": 3
+  "introductory_mathematics": 1
+  "mathematical_python": 1
+  "mobile_application_development": 1
+  "modern_computing_concepts": 1
+  "pure_mathematics": 1
+  "python_for_gaming": 1
+  "python_for_networking": 1
+  "python_for_practitioners": 1
+  "software_design_patterns": 1
+  "web_development_founations": 1
 
 # Specify the inputs to the prompt template
 prompt_template_inputs:
@@ -28,6 +47,9 @@ prompt_template_inputs:
 # Specify the sub-dependencies of each prompt input variable
 prompt_template_input_dependencies:
   sub_topic: course_topic
+
+# Specify the prompt dependencies on the HuggingFace dataset
+prompt_hf_dataset_dependencies: {}
 
 # Prompt templates are used to generate prompts for the synthetic data.
 # Variables such as {course_name} and {sub_topic} are replaced with values

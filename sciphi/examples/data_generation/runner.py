@@ -4,7 +4,7 @@ import hashlib
 import os
 import secrets
 
-from sciphi.config import DataConfig
+from sciphi.config import DataConfig, DataGeneratorMode
 from sciphi.core.utils import (
     get_configured_logger,
     get_data_config_dir,
@@ -107,8 +107,9 @@ if __name__ == "__main__":
     prompt_generator = PromptGenerator(
         data_config.config,
         data_config.prompt_templates,
+        data_config.prompt_template_input_dependencies,
+        data_config.prompt_dataset_dependencies,
         data_config.prompt_inputs,
-        data_config.prompt_input_dependencies,
     )
     prompt = PromptManager().get_prompt(data_config.outer_prompt_format)
     if args.prompt_override != "":
@@ -121,11 +122,11 @@ if __name__ == "__main__":
         )
 
     data_maker = DataMaker(
-        DataMaker.GeneratorMode(data_config.generator_mode),
+        DataGeneratorMode(data_config.generator_mode),
         prompt_generator,
         prompt,
         # Optional field, only used when generator_mode == "from_hf_dataset"
-        hf_dataset_name=data_config.hf_dataset_name,
+        dataset_name=data_config.dataset_name,
     )
 
     # Generate & write out the results

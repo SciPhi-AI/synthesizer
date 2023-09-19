@@ -1,3 +1,4 @@
-from sciphi.config.base import DataConfig
+from sciphi.config.base import DataGeneratorMode
+from sciphi.config.config import DataConfig
 
-__all__ = ["DataConfig"]
+__all__ = ["DataGeneratorMode", "DataConfig"]

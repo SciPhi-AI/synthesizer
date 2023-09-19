@@ -1,0 +1,23 @@
+course_name: "Web Development Foundations"
+
+course_topic:
+  "HTML, CSS, and JavaScript Basics": 1
+  "Server Side Programming": 1
+  "Client Side Frameworks": 1
+  "Web Security": 1
+
+sub_topic:
+  course_topic:
+    "HTML, CSS, and JavaScript Basics":
+      "HTML Elements and Attributes": 1
+      "CSS Selectors and Properties": 1
+      "JavaScript Variables and Functions": 1
+    "Server Side Programming":
+      "HTTP Protocol Basics": 1
+      "Building a REST API": 1
+    "Client Side Frameworks":
+      "Introduction to React": 1
+      "Introduction to Angular": 1
+    "Web Security":
+      "Cross-Site Scripting (XSS)": 1
+      "Cross-Site Request Forgery (CSRF)": 1

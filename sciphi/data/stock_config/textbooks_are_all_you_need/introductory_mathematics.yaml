@@ -1,0 +1,55 @@
+course_name: "Introductory Mathematics"
+
+course_topic:
+  "Basic Arithmetic": 1
+  "Statistics": 1
+  "Combinatorics": 1
+  "Probability": 1
+  "Graph Theory": 1
+  "Geometry": 1
+  "Trigonometry": 1
+  "Polynomials": 1
+  "Set Theory": 1
+  "Algorithms": 1
+
+sub_topic:
+  course_topic:
+    "Basic Arithmetic":
+      "addition and subtraction": 1
+      "multiplication and division": 1
+    "Basic Statistics":
+      "mean, median, mode": 1
+      "standard deviation, variance, skewness, kurtosis": 1
+    "Combinatorics":
+      "combinatorial problems: permutations": 1
+      "combinatorial problems: combinations": 1
+      "combinatorial problems: factorials": 1
+    "Probability":
+      "basic probability theory": 1
+      "probability simulations": 1
+      "probability distributions: binomial": 1
+      "probability distributions: Poisson": 1
+      "probability distributions: normal": 1
+    "rGaph Theory":
+      "graphing: linear equations": 1
+      "graphing: inequalities": 1
+      "graphing: quadratic functions (parabolas)": 1
+    "Geometry":
+      "geometry basics: perimeter": 1
+      "geometry basics: area": 1
+      "geometry basics: volume": 1
+    "Trigonometry":
+      "trigonometric functions": 1
+    "Polynomials":
+      "Taylor series": 1
+      "polynomial approximations": 1
+      "polynomial operations: addition": 1
+      "polynomial operations: subtraction": 1
+      "polynomial operations: multiplication": 1
+    "Set Theory":
+      "set theory: union": 1
+      "set theory: intersection": 1
+      "set theory: difference": 1
+    "Algorithms":
+      "search algorithms: linear": 1
+      "search algorithms: binary": 1
