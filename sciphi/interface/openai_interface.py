@@ -37,7 +37,7 @@ class OpenAILLMInterface(LLMInterface):
     def get_completion(self, prompt: str) -> str:
         """Get a completion from the OpenAI API based on the provided prompt."""
 
-        logger.info(
+        logger.debug(
             f"Getting completion from OpenAI API for model={self.config.model_name}"
         )
         if ModelName(self.config.model_name) in self.instruct_models:

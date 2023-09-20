@@ -1,0 +1,651 @@
+% LaTeX source for textbook ``How to think like a computer scientist''
+% Copyright (c)  2001  Allen B. Downey, Jeffrey Elkner, and Chris Meyers.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+\chapter{Strings}
+\label{strings}
+
+
+\section{A compound data type}
+\index{compound data type}
+\index{data type!compound}
+
+So far we have seen three types: {\tt int}, {\tt float}, and {\tt
+string}.  Strings are qualitatively different from the
+other two because they are made up of smaller pieces---characters.
+
+\index{character}
+
+Types that comprise smaller pieces are called {\bf compound data
+types}.  Depending on what we are doing, we may want to treat a
+compound data type as a single thing, or we may want to access its
+parts.  This ambiguity is useful.
+
+\index{bracket operator}
+\index{operator!bracket}
+
+The bracket operator selects a single character from a string.
+
+\beforeverb
+\begin{verbatim}
+>>> fruit = "banana"
+>>> letter = fruit[1]
+>>> print letter
+\end{verbatim}
+\afterverb
+%
+The expression {\tt fruit[1]} selects character number 1 from {\tt
+fruit}.  The variable {\tt letter} refers to the result.  When we
+display {\tt letter}, we get a surprise:
+
+\beforeverb
+\begin{verbatim}
+a
+\end{verbatim}
+\afterverb
+%
+The first letter of {\tt "banana"} is not {\tt a}.  Unless you are a
+computer scientist.  In that case you should think of the expression in
+brackets as an offset from the beginning of the string, and the offset
+of the first letter is zero.  So {\tt b} is the 0th letter
+(``zero-eth'') of {\tt "banana"}, {\tt a} is the 1th letter
+(``one-eth''), and {\tt n} is the 2th (``two-eth'') letter.
+
+To get the first letter of a string, you just put 0, or
+any expression with the value 0, in the brackets:
+
+\beforeverb
+\begin{verbatim}
+>>> letter = fruit[0]
+>>> print letter
+b
+\end{verbatim}
+\afterverb
+%
+The expression in brackets is called an {\bf index}.  An index
+specifies a member of an ordered set, in this case the set of
+characters in the string.  The index {\em indicates} which one you
+want, hence the name.  It can be any integer expression.
+
+\index{index}
+
+
+\section{Length}
+\index{string!length}
+\index{runtime error}
+
+The {\tt len} function returns the number of characters in a string:
+
+\beforeverb
+\begin{verbatim}
+>>> fruit = "banana"
+>>> len(fruit)
+6
+\end{verbatim}
+\afterverb
+%
+To get the last letter of a string, you might be tempted to try something
+like this:
+
+\beforeverb
+\begin{verbatim}
+length = len(fruit)
+last = fruit[length]       # ERROR!
+\end{verbatim}
+\afterverb
+%
+That won't work. It causes the runtime error {\tt IndexError: string
+index out of range}.  The reason is that there is no 6th letter in
+{\tt "banana"}.  Since we started counting at zero, the six letters
+are numbered 0 to 5.  To get the last character, we have to subtract
+1 from {\tt length}:
+
+\index{runtime error}
+
+\beforeverb
+\begin{verbatim}
+length = len(fruit)
+last = fruit[length-1]
+\end{verbatim}
+\afterverb
+%
+Alternatively, we can use negative indices, which count backward from the end
+of the string.  The expression {\tt fruit[-1]} yields the last letter,
+{\tt fruit[-2]} yields the second to last, and so on.
+
+\index{index!negative}
+
+
+\section{Traversal and the {\tt for} loop}
+\label{for}
+\index{traversal}
+\index{loop!traversal}
+\index{for loop}
+\index{loop!for loop}
+
+A lot of computations involve processing a string one character at a
+time.  Often they start at the beginning, select each character in
+turn, do something to it, and continue until the end.  This pattern of
+processing is called a {\bf traversal}.  One way to encode a traversal
+is with a {\tt while} statement:
+
+\adjustpage{2}
+\beforeverb
+\begin{verbatim}
+index = 0
+while index < len(fruit):
+  letter = fruit[index]
+  print letter
+  index = index + 1
+\end{verbatim}
+\afterverb
+%
+This loop traverses the string and displays each letter on a line by
+itself.  The loop condition is {\tt index < len(fruit)}, so
+when {\tt index} is equal to the length of the string, the
+condition is false, and the body of the loop is not executed.  The
+last character accessed is the one with the index {\tt len(fruit)-1},
+which is the last character in the string.
+
+\begin{quote}
+{\em As an exercise, write a function that takes a string as an argument
+and outputs the letters backward, one per line.}
+\end{quote}
+
+Using an index to
+traverse a set of values is so common that
+Python provides an alternative, simpler syntax---the {\tt for} loop:
+
+\beforeverb
+\begin{verbatim}
+for char in fruit:
+  print char
+\end{verbatim}
+\afterverb
+%
+Each time through the loop, the next character in the string is assigned
+to the variable {\tt char}.  The loop continues until no characters are
+left.
+
+\index{concatenation}
+\index{abecedarian}
+\index{McCloskey, Robert}
+\index{{\em Make Way for Ducklings}}
+
+The following example shows how to use concatenation and a {\tt
+for} loop to generate an abecedarian series.  ``Abecedarian'' refers
+to a series or list in which the elements appear in alphabetical
+order.  For example, in Robert McCloskey's book {\em Make Way for
+Ducklings}, the names of the ducklings are Jack, Kack, Lack, Mack,
+Nack, Ouack, Pack, and Quack.  This loop outputs these names in order:
+
+\beforeverb
+\begin{verbatim}
+prefixes = "JKLMNOPQ"
+suffix = "ack"
+
+for letter in prefixes:
+  print letter + suffix
+\end{verbatim}
+\afterverb
+%
+The output of this program is:
+
+\beforeverb
+\begin{verbatim}
+Jack
+Kack
+Lack
+Mack
+Nack
+Oack
+Pack
+Qack
+\end{verbatim}
+\afterverb
+%
+Of course, that's not quite right because ``Ouack'' and
+``Quack'' are misspelled.
+
+\begin{quote}
+{\em As an exercise, modify the program to fix this error.}
+\end{quote}
+
+
+\section{String slices}
+\label{slice}
+\index{slice}
+\index{string!slice}
+
+A segment of a string is called a 
+{\bf slice}.  Selecting a slice is similar to
+selecting a character:
+
+\beforeverb
+\begin{verbatim}
+>>> s = "Peter, Paul, and Mary"
+>>> print s[0:5]
+Peter
+>>> print s[7:11]
+Paul
+>>> print s[17:21]
+Mary
+\end{verbatim}
+\afterverb
+%
+The operator {\tt [n:m]} returns the part of the string from the 
+``n-eth'' character to the ``m-eth'' character, including the first but
+excluding the last.  This behavior is counterintuitive; it makes
+more sense if you imagine the indices pointing {\em between} the
+characters, as in the following diagram:
+
+\beforefig
+\centerline{\psfig{figure=illustrations/banana.eps}}
+\afterfig
+
+If you omit the first index (before the colon), the slice starts at the
+beginning of the string.  If you omit the second index, the slice goes to the
+end of the string.  Thus:
+
+\beforeverb
+\begin{verbatim}
+>>> fruit = "banana"
+>>> fruit[:3]
+'ban'
+>>> fruit[3:]
+'ana'
+\end{verbatim}
+\afterverb
+%
+What do you think {\tt s[:]} means?
+
+
+\section{String comparison}
+\index{string comparison}
+\index{comparison!string}
+
+The comparison operators work on
+strings.  To see if two strings are equal:
+
+\beforeverb
+\begin{verbatim}
+if word == "banana":
+  print  "Yes, we have no bananas!"
+\end{verbatim}
+\afterverb
+%
+\adjustpage{-2}
+\pagebreak
+
+Other comparison operations are useful for putting words in alphabetical
+order:
+
+\beforeverb
+\begin{verbatim}
+if word < "banana":
+  print "Your word," + word + ", comes before banana."
+elif word > "banana":
+  print "Your word," + word + ", comes after banana."
+else:
+  print "Yes, we have no bananas!"
+\end{verbatim}
+\afterverb
+%
+You should be aware, though, that Python does not handle upper-
+and lowercase letters the same way that people do.  All the uppercase
+letters come before all the lowercase letters.  As a result:
+
+\beforeverb
+\begin{verbatim}
+Your word, Zebra, comes before banana.
+\end{verbatim}
+\afterverb
+%
+A common way to address this problem is to convert strings to a standard
+format, such as all lowercase, before performing the comparison.  A more
+difficult problem is making the program realize that zebras are not fruit.
+
+
+\section{Strings are immutable}
+\index{mutable}
+\index{immutable string}
+\index{string!immutable}
+
+It is tempting to use the {\tt []} operator on the left side of an
+assignment, with the intention of changing a character in a string.
+For example:
+
+\beforeverb
+\begin{verbatim}
+greeting = "Hello, world!"
+greeting[0] = 'J'            # ERROR!
+print greeting
+\end{verbatim}
+\afterverb
+%
+Instead of producing the output {\tt Jello, world!}, this code
+produces the runtime error {\tt TypeError: object doesn't support item
+assignment}.
+
+\index{runtime error}
+
+Strings are {\bf immutable}, which means you can't change an
+existing string.  The best you can do is create a new string
+that is a variation on the original:
+
+\beforeverb
+\begin{verbatim}
+greeting = "Hello, world!"
+newGreeting = 'J' + greeting[1:]
+print newGreeting
+\end{verbatim}
+\afterverb
+%
+The solution here is to concatenate a new first letter onto
+a slice of {\tt greeting}.  This operation has no effect on
+the original string.
+
+\index{concatenation}
+
+\adjustpage{-2}
+\pagebreak
+
+\section{A {\tt find} function}
+\label{find}
+\index{traversal}
+\index{eureka traversal}
+\index{pattern}
+\index{computational pattern}
+
+What does the following function do?
+
+\beforeverb
+\begin{verbatim}
+def find(str, ch):
+  index = 0
+  while index < len(str):
+    if str[index] == ch:
+      return index
+    index = index + 1
+  return -1
+\end{verbatim}
+\afterverb
+%
+In a sense, {\tt find} is the opposite of the {\tt []} operator.
+Instead of taking an index and extracting the corresponding character,
+it takes a character and finds the index where that character
+appears.  If the character is not found, the function returns {\tt
+-1}.
+
+This is the first example we have seen of a {\tt return} statement
+inside a loop.
+If {\tt str[index] == ch}, the function returns
+immediately, breaking out of the loop prematurely.
+
+If the character doesn't appear in the string, then the program
+exits the loop normally and 
+returns {\tt -1}.
+
+This pattern of computation is sometimes called a ``eureka'' traversal
+because as soon as we find what we are looking for, we can cry
+``Eureka!'' and stop looking.
+
+\begin{quote}
+{\em As an exercise, modify the {\tt find} function so that it has a
+third parameter, the index in the string where it should start
+looking.}
+\end{quote}
+
+
+\section{Looping and counting}
+\label{counter}
+\index{counter}
+\index{pattern}
+
+The following program counts the number of times the letter {\tt a}
+appears in a string:
+
+\beforeverb
+\begin{verbatim}
+fruit = "banana"
+count = 0
+for char in fruit:
+  if char == 'a':
+    count = count + 1
+print count
+\end{verbatim}
+\afterverb
+%
+This program demonstrates another pattern of computation called a {\bf
+counter}.  The variable {\tt count} is initialized to 0 and then
+incremented each time an {\tt a} is found.  (To {\bf increment} is to
+increase by one; it is the opposite of {\bf decrement}, and unrelated
+to ``excrement,'' which is a noun.)  When the loop exits, {\tt count}
+contains the result---the total number of {\tt a}'s.
+
+\begin{quote}
+{\em As an exercise, encapsulate this code in a function named {\tt
+countLetters}, and generalize it so that it accepts the string and the
+letter as arguments.}
+\end{quote}
+
+\begin{quote}
+{\em As a second exercise, rewrite this function so that instead of
+traversing the string, it uses the three-parameter version of {\tt
+find} from the previous.}
+\end{quote}
+
+
+\section{The {\tt string} module}
+\index{module}
+\index{string module}
+
+The {\tt string} module contains useful functions that
+manipulate strings.  As usual, we have to import the module before
+we can use it:
+
+\beforeverb
+\begin{verbatim}
+>>> import string
+\end{verbatim}
+\afterverb
+%
+The {\tt string} module includes a function named {\tt find} that does
+the same thing as the function we wrote.  To call it we have to
+specify the name of the module and the name of the function using dot
+notation.
+
+\beforeverb
+\begin{verbatim}
+>>> fruit = "banana"
+>>> index = string.find(fruit, "a")
+>>> print index
+1
+\end{verbatim}
+\afterverb
+%
+This example demonstrates one of the benefits of modules---they help
+avoid collisions between the names of built-in functions and
+user-defined functions.  By using dot notation we can specify which
+version of {\tt find} we want.
+
+Actually, {\tt string.find} is more general than our version.  First,
+it can find substrings, not just characters:
+
+\beforeverb
+\begin{verbatim}
+>>> string.find("banana", "na")
+2
+\end{verbatim}
+\afterverb
+%
+Also, it takes an additional argument that specifies the index it
+should start at:
+
+\beforeverb
+\begin{verbatim}
+>>> string.find("banana", "na", 3)
+4
+\end{verbatim}
+\afterverb
+%
+Or it can take two additional arguments that specify a range
+of indices:
+
+\beforeverb
+\begin{verbatim}
+>>> string.find("bob", "b", 1, 2)
+-1
+\end{verbatim}
+\afterverb
+%
+In this example, the search fails because the letter {\em b} does not
+appear in the index range from {\tt 1} to {\tt 2} (not including {\tt
+2}).
+
+
+\section{Character classification}
+\label{in}
+\index{character classification}
+\index{classification!character}
+\index{uppercase}
+\index{lowercase}
+\index{whitespace}
+
+It is often helpful to examine a character and test whether it is
+upper- or lowercase, or whether it is a character or a digit.  The
+{\tt string} module provides several constants that are
+useful for these purposes.
+
+The string {\tt string.lowercase} contains all of the letters that the
+system considers to be lowercase.  Similarly, {\tt string.uppercase}
+contains all of the uppercase letters.  Try the following and see what
+you get:
+
+\beforeverb
+\begin{verbatim}
+>>> print string.lowercase
+>>> print string.uppercase
+>>> print string.digits
+\end{verbatim}
+\afterverb
+%
+We can use these constants and {\tt find} to classify characters. For
+example, if {\tt find(lowercase, ch)} returns a value other than {\tt
+-1}, then {\tt ch} must be lowercase:
+
+\beforeverb
+\begin{verbatim}
+def isLower(ch):
+  return string.find(string.lowercase, ch) != -1
+\end{verbatim}
+\afterverb
+%
+Alternatively, we can take advantage of the {\tt in} operator, which
+determines whether a character appears in a string:
+
+\beforeverb
+\begin{verbatim}
+def isLower(ch):
+  return ch in string.lowercase
+\end{verbatim}
+\afterverb
+%
+As yet another alternative, we can use the comparison operator:
+
+\beforeverb
+\begin{verbatim}
+def isLower(ch):
+  return 'a' <= ch <= 'z'
+\end{verbatim}
+\afterverb
+%
+If {\tt ch} is between {\em a} and {\em z}, it must be a lowercase
+letter.
+
+\begin{quote}
+{\em As an exercise, discuss which version of {\tt isLower} you think
+will be fastest.  Can you think of other reasons besides speed to
+prefer one or the other?}
+\end{quote}
+
+Another constant defined in the {\tt string} module may
+surprise you when you print it:
+
+\beforeverb
+\begin{verbatim}
+>>> print string.whitespace
+\end{verbatim}
+\afterverb
+%
+{\bf Whitespace} characters move the cursor without printing
+anything.  They create the white space between visible
+characters (at least on white paper).  The constant
+{\tt string.whitespace} contains all the
+whitespace characters, including
+space, tab (\verb+\t+), and newline
+(\verb+\n+).
+
+\index{string module}
+\index{module!string}
+
+There are other useful functions in the {\tt string} module, but this
+book isn't intended to be a reference manual.  On the other hand, the
+{\em Python Library Reference} is.  Along with a wealth of other
+documentation, it's available from the Python website, {\tt
+www.python.org}.
+
+\index{{\em Python Library Reference}}
+
+\section{Glossary}
+
+\begin{description}
+
+\item[compound data type:] A data type in which the values are made
+up of components, or elements, that are themselves values.
+
+\item[traverse:] To iterate through the elements of a set,
+performing a similar operation on each.
+
+\item[index:] A variable or value used to select a member of an
+ordered set, such as a character from a string.
+
+\item[slice:] A part of a string specified by a range of indices.
+
+\item[mutable:] A compound data types whose elements can be assigned
+new values.
+
+\item[counter:] A variable used to count something, usually initialized
+to zero and then incremented.
+
+\item[increment:] To increase the value of a variable by one.
+
+\item[decrement:] To decrease the value of a variable by one.
+
+\item[whitespace:] Any of the characters that move the cursor without
+printing visible characters.  The constant
+{\tt string.whitespace}
+contains all the white\-space characters.
+
+\index{compound data type}
+\index{traverse}
+\index{index}
+\index{slice}
+\index{mutable}
+\index{counter}
+\index{increment}
+\index{decrement}
+\index{whitespace}
+
+\end{description}

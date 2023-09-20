@@ -36,7 +36,7 @@ class vLLM(LLM):
             from vllm import SamplingParams
         except ImportError:
             raise ImportError(
-                "Please install the vllm package before attempting to run with an vLLM model. This can be accomplished via `poetry install -E vllm_support, ...OTHER_DEPENDENCY_HERE`."
+                "Please install the vllm package before attempting to run with an vLLM model. This can be accomplished via `poetry install -E vllm_support, ...OTHER_DEPENDENCIES_HERE`."
             )
         self.model = vLLM(model=config.model_name)
         self.sampling_params = SamplingParams(

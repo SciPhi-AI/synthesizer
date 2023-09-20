@@ -1,0 +1,802 @@
+% LaTeX source for textbook ``How to think like a computer scientist''
+% Copyright (c)  2001  Allen B. Downey, Jeffrey Elkner, and Chris Meyers.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+\chapter{Functions}
+\label{floatchap}
+
+\section{Function calls}
+\label{functionchap}
+\index{function call}
+\index{call!function}
+
+You have already seen one example of a {\bf function call}:
+
+\beforeverb
+\begin{verbatim}
+>>> type("32")
+<type 'str'>
+\end{verbatim}
+\afterverb
+%
+The name of the function is {\tt type}, and it displays the type of
+a value or variable.  The value or variable, which is called the
+{\bf argument} of the function, has to be enclosed in parentheses.
+It is common to say that a function ``takes'' an argument and ``returns''
+a result.  The result is called the {\bf return value}.
+
+\index{argument}
+\index{return value}
+
+Instead of printing the return value, we could assign it to a variable:
+
+\beforeverb
+\begin{verbatim}
+>>> betty = type("32")
+>>> print betty
+<type 'str'>
+\end{verbatim}
+\afterverb
+%
+As another example, the {\tt id} function takes a value or a variable and
+returns an integer that acts as a unique identifier for the value:
+
+\beforeverb
+\begin{verbatim}
+>>> id(3)
+134882108
+>>> betty = 3
+>>> id(betty)
+134882108
+\end{verbatim}
+\afterverb
+%
+Every value has an {\tt id}, which is a unique number related to where
+it is stored in the memory of the computer.  The {\tt id} of a
+variable is the {\tt id} of the value to which it refers.
+
+
+
+\section{Type conversion}
+\index{conversion!type}
+\index{type conversion}
+
+Python provides a collection of built-in functions that convert values
+from one type to another.  The {\tt int} function takes any value and
+converts it to an integer, if possible, or complains otherwise:
+
+\beforeverb
+\begin{verbatim}
+>>> int("32")
+32
+>>> int("Hello")
+ValueError: invalid literal for int(): Hello
+\end{verbatim}
+\afterverb
+%
+{\tt int} can also convert floating-point values to integers, but
+remember that it truncates the fractional part:
+
+\beforeverb
+\begin{verbatim}
+>>> int(3.99999)
+3
+>>> int(-2.3)
+-2
+\end{verbatim}
+\afterverb
+%
+The {\tt float} function converts integers and strings to floating-point
+numbers:
+
+\beforeverb
+\begin{verbatim}
+>>> float(32)
+32.0
+>>> float("3.14159")
+3.14159
+\end{verbatim}
+\afterverb
+%
+Finally, the {\tt str} function converts to
+type {\tt string}:
+
+\beforeverb
+\begin{verbatim}
+>>> str(32)
+'32'
+>>> str(3.14149)
+'3.14149'
+\end{verbatim}
+\afterverb
+%
+It may seem odd that Python distinguishes the integer value {\tt 1}
+from the floating-point value {\tt 1.0}.  They may represent the same
+number, but they belong to different types.  The reason is that they
+are represented differently inside the computer.
+
+
+
+\section{Type coercion}
+\index{type coercion}
+\index{coercion!type}
+\index{integer division}
+\index{division!integer}
+
+Now that we can convert between types, we have another way to deal
+with integer division.  Returning to the example from the previous
+chapter, suppose we want to calculate the fraction of an hour that has
+elapsed.  The most obvious expression, {\tt minute / 60}, does integer
+arithmetic, so the result is always 0, even at 59 minutes
+past the hour.
+
+One solution is to convert {\tt minute} to floating-point
+and do floating-point division:
+
+\beforeverb
+\begin{verbatim}
+>>> minute = 59
+>>> float(minute) / 60
+0.983333333333
+\end{verbatim}
+\afterverb
+%
+Alternatively, we can take advantage of the rules for
+automatic type conversion, which is called {\bf type coercion}.
+For the mathematical operators, if either operand is a {\tt float},
+the other is automatically converted to a {\tt float}:
+
+\beforeverb
+\begin{verbatim}
+>>> minute = 59
+>>> minute / 60.0
+0.983333333333
+\end{verbatim}
+\afterverb
+%
+By making the denominator a {\tt float}, we force Python to do
+floating-point division.
+
+
+\section{Math functions}
+\index{math function}
+\index{function!math}
+
+In mathematics, you have probably seen functions like {\tt sin} and
+{\tt log}, and you have learned to evaluate expressions like {\tt
+sin(pi/2)} and {\tt log(1/x)}.  First, you evaluate the expression in
+parentheses (the argument).  For example, {\tt pi/2} is approximately
+1.571, and {\tt 1/x} is 0.1 (if {\tt x} happens to be 10.0).
+
+Then, you evaluate the function itself, either by looking it up in a
+table or by performing various computations.  The {\tt sin} of 1.571
+is 1, and the {\tt log} of 0.1 is -1 (assuming that {\tt log}
+indicates the logarithm base 10).
+
+This process can be applied repeatedly to evaluate more complicated
+expressions like {\tt log(1/sin(pi/2))}.  First, you evaluate the
+argument of the innermost function, then evaluate the function, and so
+on.
+
+Python has a math module that provides most of the familiar
+mathematical functions.  A {\bf module} is a file that contains a
+collection of related functions grouped together.
+
+\index{module}
+
+Before we can use the functions from a module, we have to import them:
+
+\beforeverb
+\begin{verbatim}
+>>> import math
+\end{verbatim}
+\afterverb
+%
+To call one of the functions, we have to specify the name of the
+module and the name of the function, separated by a dot, also
+known as a period.  This format is called {\bf dot notation}.
+
+\index{dot notation}
+
+\beforeverb
+\begin{verbatim}
+>>> decibel = math.log10 (17.0)
+>>> angle = 1.5
+>>> height = math.sin(angle)
+\end{verbatim}
+\afterverb
+%
+The first statement sets {\tt decibel} to the logarithm of 17, base
+{\tt 10}.  There is also a function called {\tt log} that takes logarithm
+base {\tt e}.
+
+The third statement finds the sine of the value of the variable {\tt
+angle}.  {\tt sin} and the other trigonometric functions ({\tt cos},
+{\tt tan}, etc.)  take arguments in radians. To convert from degrees
+to radians, divide by 360 and multiply by {\tt 2*pi}.  For example, to
+find the sine of 45 degrees, first calculate the angle in radians and
+then take the sine:
+
+\beforeverb
+\begin{verbatim}
+>>> degrees = 45
+>>> angle = degrees * 2 * math.pi / 360.0
+>>> math.sin(angle)
+0.707106781187
+\end{verbatim}
+\afterverb
+%
+The constant {\tt pi} is also part of the math module.  If you know
+your geometry, you can check the previous result by comparing it to
+the square root of two divided by two:
+
+\beforeverb
+\begin{verbatim}
+>>> math.sqrt(2) / 2.0
+0.707106781187
+\end{verbatim}
+\afterverb
+%
+
+\section{Composition}
+\index{composition}
+\index{function!composition}
+
+Just as with mathematical functions, Python functions can be composed,
+meaning that you use one expression as part of another. For example, you can
+use any expression as an argument to a function:
+
+\beforeverb
+\begin{verbatim}
+>>> x = math.cos(angle + math.pi/2)
+\end{verbatim}
+\afterverb
+%
+This statement takes the value of {\tt pi}, divides it by 2, and adds
+the result to the value of {\tt angle}.  The sum is then passed as an
+argument to the {\tt cos} function.
+
+You can also take the result of one function and pass it as an argument to
+another:
+
+\beforeverb
+\begin{verbatim}
+>>> x = math.exp(math.log(10.0))
+\end{verbatim}
+\afterverb
+%
+This statement finds the log base {\tt e} of 10 and then raises {\tt e} to
+that power. The result gets assigned to {\tt x}.
+
+
+\section{Adding new functions}
+
+So far, we have only been using the functions that come with Python,
+but it is also possible to add new functions.  Creating new functions
+to solve your particular problems is one of the most useful things
+about a general-purpose programming language.
+
+In the context of programming, a {\bf function} is a named sequence of
+statements that performs a desired operation.  This operation is specified
+in a {\bf function definition}.  The functions we have been using so far have
+been defined for us, and these definitions have been hidden.  This is a good
+thing, because it allows us to use the functions without worrying about the
+details of their definitions.
+
+\index{function}
+\index{function definition}
+\index{definition!function}
+
+The syntax for a function definition is:
+
+\beforeverb
+\begin{verbatim}
+def NAME( LIST OF PARAMETERS ):
+  STATEMENTS
+\end{verbatim}
+\afterverb
+%
+You can make up any names you want for the functions you create, except that
+you can't use a name that is a Python keyword.  The list of parameters
+specifies what information, if any, you have to provide in order to
+use the new function.
+
+There can be any number of statements inside the function, but they
+have to be indented from the left margin.  In the examples in this
+book, we will use an indentation of two spaces.
+
+The first couple of functions we are going to write have no parameters,
+so the syntax looks like this:
+
+\beforeverb
+\begin{verbatim}
+def newLine():
+  print
+\end{verbatim}
+\afterverb
+%
+This function is named {\tt newLine}.  The empty parentheses indicate
+that it has no parameters.  It contains only a single statement, which
+outputs a newline character. (That's what happens when you use a {\tt print}
+command without any arguments.)
+
+The syntax for calling the new function is the same as the syntax
+for built-in functions:
+
+\beforeverb
+\begin{verbatim}
+print "First Line."
+newLine()
+print "Second Line."
+\end{verbatim}
+\afterverb
+%
+The output of this program is:
+
+\beforeverb
+\begin{verbatim}
+First line.
+
+Second line.
+\end{verbatim}
+\afterverb
+%
+Notice the extra space between the two lines.  What if we wanted
+more space between the lines?  We could call the same function
+repeatedly:
+
+\beforeverb
+\begin{verbatim}
+print "First Line."
+newLine()
+newLine()
+newLine()
+print "Second Line."
+\end{verbatim}
+\afterverb
+%
+Or we could write a new function named {\tt threeLines} that prints
+three new lines:
+
+\beforeverb
+\begin{verbatim}
+def threeLines():
+  newLine()
+  newLine()
+  newLine()
+
+print "First Line."
+threeLines()
+print "Second Line."
+\end{verbatim}
+\afterverb
+%
+This function contains three statements, all of which are indented by two
+spaces.  Since the next statement is not indented, Python knows that it is
+not part of the function.
+
+You should notice a few things about this program:
+
+\begin{enumerate}
+
+\item You can call the same procedure repeatedly.  In fact, it is quite common
+and useful to do so.
+
+\item You can have one function call another function; in this case
+{\tt threeLines} calls {\tt newLine}.
+
+\end{enumerate}
+
+So far, it may not be clear why it is worth the trouble to create all of these
+new functions.  Actually, there are a lot of reasons, but this example
+demonstrates two:
+
+\begin{itemize}
+
+\item Creating a new function gives you an opportunity to name a
+group of statements.  Functions can simplify a program by hiding a complex
+computation behind a single command and by using English words in place of
+arcane code.
+
+\item Creating a new function can make a program smaller by eliminating
+repetitive code.  For example, a short way to print nine consecutive new
+lines is to call {\tt threeLines} three times.
+
+\end{itemize}
+
+\begin{quote}
+{\em As an exercise, write a function called {\tt nineLines} that uses
+{\tt threeLines} to print nine blank lines. How would you print 
+twenty-seven new lines?}
+\end{quote}
+
+
+\section{Definitions and use}
+
+Pulling together the code fragments from Section 3.6, the
+whole program looks like this:
+
+\beforeverb
+\begin{verbatim}
+def newLine():
+  print
+
+def threeLines():
+  newLine()
+  newLine()
+  newLine()
+
+print "First Line."
+threeLines()
+print "Second Line."
+\end{verbatim}
+\afterverb
+%
+This program contains two function definitions: {\tt newLine} and
+{\tt threeLines}.  Function definitions get executed just like other
+statements, but the effect is to create the new function.  The statements
+inside the function do not get executed until the function is called, and
+the function definition generates no output.
+
+As you might expect, you have to create a function before you can
+execute it.  In other words, the function definition has to be
+executed before the first time it is called.
+
+\begin{quote}
+{\em As an exercise, move the last three lines of this program
+to the top, so the function calls appear before the definitions. Run 
+the program and see what error
+message you get.}
+\end{quote}
+
+\begin{quote}
+{\em As another exercise, start with the working version of the program
+and move the definition of {\tt newLine} after the definition of
+{\tt threeLines}.  What happens when you run this program?}
+\end{quote}
+
+\section{Flow of execution}
+\index{flow of execution}
+
+In order to ensure that a function is defined before its first use,
+you have to know the order in which statements are executed, which is
+called the {\bf flow of execution}.
+
+Execution always begins at the first statement of the program.  Statements are
+executed one at a time, in order from top to bottom.
+
+Function definitions do not alter the flow of execution of the program, but
+remember that statements inside the function are not executed until the
+function is called.  Although it is not common, you can define one function
+inside another.  In this case, the inner definition isn't executed until the
+outer function is called.
+
+Function calls are like a detour in the flow of execution. Instead of going to
+the next statement, the flow jumps to the first line of the called function,
+executes all the statements there, and then comes back to pick up where it left
+off.
+
+That sounds simple enough, until you remember that one function can call
+another.  While in the middle of one function, the program might have to
+execute the statements in another function. But while executing that
+new function, the program might have to execute yet another function!
+
+Fortunately, Python is adept at keeping track of where it is, so each time a
+function completes, the program picks up where it left off in the function that
+called it.  When it gets to the end of the program, it terminates.
+
+What's the moral of this sordid tale?  When you read a program, don't read from
+top to bottom.  Instead, follow the flow of execution.
+
+
+\section{Parameters and arguments}
+\label{parameters}
+\index{parameter}
+\index{function!parameter}
+\index{argument}
+\index{function!argument}
+
+Some of the built-in functions you have used require arguments, the
+values that control how the function does its job.  For example, if
+you want to find the sine of a number, you have to indicate what the
+number is.  Thus, {\tt sin} takes a numeric value as an argument.
+
+Some functions take more than one argument. For example, {\tt pow}
+takes two arguments, the base and the exponent.  Inside the function,
+the values that are passed get assigned to variables called {\bf parameters}.
+
+Here is an example of a user-defined function that has a parameter:
+
+\beforeverb
+\begin{verbatim}
+def printTwice(bruce):
+  print bruce, bruce
+\end{verbatim}
+\afterverb
+%
+This function takes a single argument and assigns it to a parameter
+named {\tt bruce}.  The value of the parameter (at this point we
+have no idea what it will be) is printed twice, followed by a newline.
+The name {\tt bruce} was chosen to suggest that the name you give a
+parameter is up to you, but in general, you want to choose something
+more illustrative than {\tt bruce}.
+
+The function {\tt printTwice} works for any type that can be printed:
+
+\beforeverb
+\begin{verbatim}
+>>> printTwice('Spam')
+Spam Spam
+>>> printTwice(5)
+5 5
+>>> printTwice(3.14159)
+3.14159 3.14159
+\end{verbatim}
+\afterverb
+%
+In the first function call, the argument is a string. In the second,
+it's an integer. In the third, it's a {\tt float}.
+
+The same rules of composition that apply to built-in functions also
+apply to user-defined functions, so we can use any kind of expression
+as an argument for {\tt printTwice}:
+
+\beforeverb
+\begin{verbatim}
+>>> printTwice('Spam'*4)
+SpamSpamSpamSpam SpamSpamSpamSpam
+>>> printTwice(math.cos(math.pi))
+-1.0 -1.0
+\end{verbatim}
+\afterverb
+%
+As usual, the expression is evaluated before the function is run, so
+{\tt printTwice} prints {\tt SpamSpamSpamSpam SpamSpamSpamSpam} instead of
+{\tt 'Spam'*4 'Spam'*4}.
+
+\begin{quote}
+{\em As an exercise, write a call to {\tt printTwice} that does print
+{\tt 'Spam'*4 'Spam'*4}.  Hint: strings can be enclosed in either single or 
+double quotes, and the type of quote not used to enclose the string can be used
+inside it as part of the string.}
+\end{quote}
+
+We can also use a variable as an argument:
+
+\beforeverb
+\begin{verbatim}
+>>> michael = 'Eric, the half a bee.'
+>>> printTwice(michael)
+Eric, the half a bee. Eric, the half a bee.
+\end{verbatim}
+\afterverb
+%
+Notice something very important here. The name of the variable we pass
+as an argument ({\tt michael}) has nothing to do with the name of the
+parameter ({\tt bruce}).  It doesn't matter what the value was
+called back home (in the caller); here in {\tt printTwice}, we call
+everybody {\tt bruce}.
+
+
+\section{Variables and parameters are local}
+\index{local variable}
+\index{variable!local}
+
+When you create a {\bf local variable} inside a function, it only exists inside
+the function, and you cannot use it outside.  For example:
+
+\beforeverb
+\begin{verbatim}
+def catTwice(part1, part2):
+  cat = part1 + part2
+  printTwice(cat)
+\end{verbatim}
+\afterverb
+%
+This function takes two arguments, concatenates them, and then prints
+the result twice.
+We can call the function with two strings:
+
+\beforeverb
+\begin{verbatim}
+>>> chant1 = "Pie Jesu domine, "
+>>> chant2 = "Dona eis requiem."
+>>> catTwice(chant1, chant2)
+Pie Jesu domine, Dona eis requiem. Pie Jesu domine, Dona eis requiem.
+\end{verbatim}
+\afterverb
+%
+When {\tt catTwice} terminates, the variable {\tt cat} is destroyed.
+If we try to print it, we get an error:
+
+\beforeverb
+\begin{verbatim}
+>>> print cat
+NameError: cat
+\end{verbatim}
+\afterverb
+%
+Parameters are also local.
+For example, outside the function {\tt printTwice}, there is no
+such thing as {\tt bruce}.  If you try to use it, Python will
+complain.
+
+
+\section{Stack diagrams}
+\label{stackdiagram}
+\index{stack diagram}
+\index{function frame}
+\index{frame}
+
+To keep track of which variables can be used where, it is sometimes
+useful to draw a {\bf stack diagram}.  Like state diagrams, stack
+diagrams show the value of each variable, but they also show the
+function to which each variable belongs.
+
+Each function is represented by a {\bf frame}.  A frame is a box
+with the name of a function
+beside it and the parameters and variables of the function inside it.
+The stack diagram for the
+previous example looks like this:
+
+\adjustpage{-4}
+\beforefig
+\centerline{\psfig{figure=illustrations/stack.eps}}
+\afterfig
+
+The order of the stack shows the flow of execution.  {\tt printTwice}
+was called by {\tt catTwice}, and {\tt catTwice} was called by {\tt
+\_\_main\_\_}, which is a special name for the topmost function.  When
+you create a variable outside of any function, it belongs to {\tt
+\_\_main\_\_}.
+
+Each parameter refers to the same value as its corresponding
+argument.  So, {\tt part1} has the same value as
+{\tt chant1}, {\tt part2} has the same value as {\tt chant2},
+and {\tt bruce} has the same value as {\tt cat}.
+
+If an error occurs during a function call, Python prints the
+name of the function, and the name of the function that called
+it, and the name of the function that called {\em that}, all the
+way back to {\tt \_\_main\_\_}.
+
+For example, if we try to access {\tt cat} from within {\tt
+printTwice}, we get a {\tt NameError}:
+
+\beforeverb
+\begin{verbatim}
+Traceback (innermost last):
+  File "test.py", line 13, in __main__
+    catTwice(chant1, chant2)
+  File "test.py", line 5, in catTwice
+    printTwice(cat)
+  File "test.py", line 9, in printTwice
+    print cat
+NameError: cat
+\end{verbatim}
+\afterverb
+%
+This list of functions is called a {\bf traceback}.  It tells you what
+program file the error occurred in, and what line, and what functions
+were executing at the time.  It also shows the line of code that
+caused the error.
+
+\index{traceback}
+
+Notice the similarity between the traceback and the
+stack diagram.  It's not a coincidence.
+
+
+\section{Functions with results}
+
+You might have noticed by now that some of the functions we are using,
+such as the math functions, yield results.  Other functions, like
+{\tt newLine}, perform an action but don't return a value.  That raises
+some questions:
+
+\begin{enumerate}
+
+\item What happens if you call a function and you don't do anything
+with the result (i.e., you don't assign it to a variable or use it as
+part of a larger expression)?
+
+\item What happens if you use a function without a result as part of
+an expression, such as {\tt newLine() + 7}?
+
+\item Can you write functions that yield results, or are you stuck with
+simple function like {\tt newLine} and {\tt printTwice}?
+
+\end{enumerate}
+
+The answer to the last question is that you can write functions that
+yield results, and we'll do it in Chapter 5.
+
+\begin{quote}
+{\em As an exercise, answer the other two questions by trying them
+out.  When you have a question about what is legal or illegal in
+Python, a good way to find out is to ask the interpreter.}
+\end{quote}
+
+
+\section{Glossary}
+
+\begin{description}
+
+\item[function call:]  A statement that executes a function. It consists of
+the name of the function followed by a list of arguments enclosed in
+parentheses.
+
+\item[argument:]  A value provided to a function when the function is called.
+This value is assigned to the corresponding parameter in the function.
+
+\item[return value:]  The result of a function.  If a function call
+is used as an expression, the return value is the value of
+the expression.
+
+\item[type conversion:] An explicit statement that takes a value
+of one type and computes a corresponding value of another type.
+
+\item[type coercion:]  A type conversion that happens automatically
+according to Python's coercion rules.
+
+\item[module:]  A file that contains a collection of related functions and
+classes.
+
+\item[dot notation:]  The syntax for calling a function in another
+module, specifying the module name followed by a dot (period) and
+the function name.
+
+\item[function:]  A named sequence of statements that performs some useful
+operation.  Functions may or may not take arguments and may or may not
+produce a result.
+
+\item[function definition:]  A statement that creates a new function,
+specifying its name, parameters, and the statements it executes.
+
+\item[flow of execution:]  The order in which statements are executed during
+a program run.
+
+\item[parameter:]  A name used inside a function to refer to the value passed
+as an argument.
+
+\item[local variable:]  A variable defined inside a function.  A local
+variable can only be used inside its function.
+
+\item[stack diagram:]  A graphical representation of a stack of functions,
+their variables, and the values to which they refer.
+
+\item[frame:]  A box in a stack diagram that represents a function call.
+It contains the local variables and parameters of the function.
+
+\item[traceback:]  A list of the functions that are executing,
+printed when a runtime error occurs.
+
+\index{function call}
+\index{return value}
+\index{argument}
+\index{coercion}
+\index{module}
+\index{dot notation}
+\index{function}
+\index{function definition}
+\index{flow of execution}
+\index{parameter}
+\index{local variable}
+\index{stack diagram}
+\index{function frame}
+\index{frame}
+\index{traceback}
+
+\end{description}

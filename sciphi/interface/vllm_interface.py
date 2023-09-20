@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 
 @llm_provider
-class HuggingFaceLLMInterface(LLMInterface):
+class vLLMInterface(LLMInterface):
     """A class to interface with local vLLM models."""
 
     provider_name = ProviderName.VLLM

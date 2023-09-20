@@ -60,7 +60,7 @@ class DataMaker:
             from datasets import load_dataset
         except ImportError:
             raise ImportError(
-                "Please install the `datasets` package before attempting to run with a HuggingFace dataset generator. This can be accomplished via `poetry install -E hf_support, ...OTHER_DEPENDENCY_HERE`."
+                "Please install the `datasets` package before attempting to run with a HuggingFace dataset generator. This can be accomplished via `poetry install -E hf_support, ...OTHER_DEPENDENCIES_HERE`."
             )
 
         dataset = load_dataset(self.dataset_name, streaming=True)

@@ -1,0 +1,326 @@
+\documentclass{article}
+\usepackage{url}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{1.7ex plus 0.5ex minus 0.5ex}
+\renewcommand{\baselinestretch}{1.05}
+
+\title{Book Proposal: {\em Software Design}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Author information}
+
+\begin{flushleft}
+Prof. Allen B. Downey\\
+Olin College of Engineering\\
+Olin Way\\
+Needham, MA 02492\\
+\quad \\
+downey@allendowney.com\\
+781-292-2558 (w)\\
+781-292-2508 (f)\\
+\end{flushleft}
+
+Allen Downey is an Associate Professor of Computer Science at the Olin
+College of Engineering.  He has taught computer science at Wellesley
+College, Colby College and U.C. Berkeley.  He has a Ph.D. in Computer
+Science from U.C. Berkeley and a Master's Degree from MIT.
+
+Detailed CV at \url{allendowney.com/downeyCV.pdf}
+
+
+\section*{Software Design}
+
+{\em Software Design} is a revised and
+updated version of {\em How to Think Like a Computer Scientist: Learning
+with Python,} which was published in 2001.
+
+The book is intended for students with no programming experience.  It starts
+with the most basic concepts of programming, and is carefully designed
+to define all terms when they are first used and to develop each new
+concept in a logical progression.  Larger pieces, like recursion and
+object-oriented programming are divided into a sequence of smaller
+steps and introduced over the course of several chapters.
+
+The book is concise.  Each chapter is 10-12 pages and covers the
+material for one week of a college course.  It is not a comprehensive
+presentation of Python; instead it focuses on the tools of
+software design, starting with small functions and basic algorithms and
+working up to object-oriented design.  In the vocabulary of computer
+science pedagogy, it uses the {\em objects late} approach.
+
+
+\subsection*{The original book}
+
+{\em How to Think} is published under the GNU Free Documentation
+License by Green Tea Press, which is a partnership of the author and
+his wife.  Green Tea Press provides electronic versions of the book at
+\url{thinkpython.com} and sells hardcopies to individuals, college
+bookstores, and through Amazon.
+
+The book is well known on the Internet and well regarded.  A Google
+search on the title and author yields more than 16,000 hits.  The book
+has received positive reviews from readers.  It is used as a textbook
+in classes at a number of colleges and universities, including Simon
+Fraser University, Clark College, Albion College, University of
+Illinois at Urbana-Champaign, U.C. Berkeley, U.C. San Diego and San
+Diego State University.  Internationally, the electronic version is
+used at the Indian Institute of Technology at Kanpur, the University
+of New South Wales (Australia), Utrecht University (Holland) and
+Sirindhorn International Institute of Technology (Thailand).
+
+
+\subsection*{The new book}
+
+{\em Software Design} is in some sense the second edition of {\em How to
+Think.}  My goals in updating and revising the book are:
+
+\begin{enumerate}
+
+\item To incorporate the material I have developed in my classes as a
+series of case studies covering topics in software engineering:
+functional abstraction, multi-layer interface design, data structure
+selection and design, UML object and class diagrams, and basic
+object-oriented design patterns.
+
+These case studies are based on a software suite I have written called
+Swampy.  Swampy is a set of Python modules that can run in a standard
+Python installation.  They provide an environment for a series of
+exercises that include graphics and animation (the original book is
+all text-based).  The design and implementation of Swampy is the
+subject of the last case study.  The current version of Swampy
+is available from \url{allendowney.com/swampy}.
+
+\item To update the examples in the book with features that are new in
+Python, and to demonstrate more idiomatic Python style.
+
+\end{enumerate}
+
+\pagebreak
+In addition, I am considering the following changes:
+
+\begin{enumerate}
+
+\item Changing the title to {\em Software Design}.  The current title is a
+whimsical working title that stuck.  {\em Software Design} is a more
+concise description of the contents; I think it is also a stronger
+title (and it is not currently in use).
+
+A potential drawback of changing the title is that it might be more
+difficult to take advantage of the international reputation of {\em How to
+Think}.
+
+\item Removing Chapters 17 through 20.  These chapters cover the
+implementation of data structures.  They are appropriate for a college
+course on data structures (which is where they were developed), but
+they are not essential to the focus of the book.  Also, they are at a
+lower level of abstraction than the rest of the book.
+
+\item Expanding Appendix B into a regular chapter.  Defining special
+functions to customize the behavior of user-defined objects is
+an important technique in Python, and consistent with the new
+focus of the book.
+
+\end{enumerate}
+
+I expect to work on these revisions in Summer 2007.  I will have
+a draft of the new chapters by July 1 and a complete manuscript by
+September 1, 2007.
+
+I will prepare the manuscript in LaTeX; I can produce camera-ready PDF
+or LaTeX files ready for professional typesetting.  The manuscript
+will include black-and-white figures like the ones in {\em How to Think};
+these could be used as-is or sent to a professional illustrator.
+
+I will also produce a version of Swampy that contains the programs
+needed for the case studies, suitable for distribution along with the
+book or on a web page.
+
+
+\section*{Outline}
+
+The outline of the new book will follow {\em How to Think}, with the new
+case studies interspersed:
+
+1.  The way of the program.
+
+2.  Variables, expressions and statements.
+
+3.  Functions.
+
+\quad \quad    Case study: functional abstraction.
+
+4.  Conditionals and recursion.
+
+5.  Fruitful functions.
+
+6.  Iteration.
+
+\quad \quad    Case study: encapsulation and generalization.
+
+7.  Strings.
+
+8.  Lists.
+
+9.  Tuples.
+
+\quad \quad    Case study: iteration and search.
+
+10. Dictionaries.
+
+11. Files and exceptions.
+
+12. Classes and objects.
+
+\quad \quad    Case study: data structure selection.
+
+13. Classes and functions.
+
+14. Classes and methods.
+
+15. Sets of objects.
+
+\quad \quad    Case study: algorithm design.
+
+16. Inheritance and UML.
+
+17. Customizing object behavior (revised version of Appendix B).
+
+\quad \quad    Case study: object-oriented design.
+
+18. GUIs with Tkinter.
+
+\quad \quad    Case study: design and implementation of Swampy.
+
+A.  Debugging.
+
+The detailed table of contents from {\em How to Think} is included with
+this proposal.  The entire book is available from \url{thinkpython.com}.
+
+The chapters from {\em How to Think} will be revised and updated.  Some
+will be mostly unchanged; others will be substantially rewritten.
+The case studies are new material based on homeworks I am using in my
+class.  Each case study presents an example program and a series of
+exercises; then it presents solutions to some of the exercises and a
+discussion of the concept the case study is meant to demonstrate.
+
+With 18 chapters, 7 case studies and an appendix, each 10-12 pages,
+I expect the total page count to be 260--300 pages.
+
+
+\section*{Sample Chapters}
+
+Along with this proposal I am submitting Chapters 12, 13 and 14 from
+{\em How to Think}.  These chapters introduce object-oriented programming
+starting with user-defined types and attributes, functions that
+operate on objects, and then methods.
+
+These chapters demonstrate several features of the book:
+
+\begin{enumerate}
+
+\item One concept at a time: I have divided the topics that give students
+the most trouble into a series of small steps so that students can
+exercise new concepts before going to the next step.
+
+\item Balance of language features and concepts: The book in not
+primarily about Python; it uses Python examples to demonstrate
+software engineering concepts.  Most chapters start with language
+features and end with concepts.
+
+\item Conciseness: An important goal of the book is to be small enough
+that students can be expected to read and understand the entire book
+in a one-semester course.  Each chapter is 10-12 pages; students can
+read 1-2 chapters per week, depending on the pace of the class.
+
+\item Emphasis on vocabulary: I am careful to define each term the first
+time it appears, and each chapter ends with a glossary of new terms.
+
+\end{enumerate}
+
+
+\section*{Readership}
+
+{\em Software Design} is appropriate as a textbook in an introductory
+college or high school class.  {\em How to Think} is currently in use
+at a number of colleges and universities, and at some high schools.
+
+At the college level, some computer science departments are migrating
+from Java to Python in their intro classes.  In addition, many science
+departments are using Python in classes that require basic
+programming, especially Physics and Bioinformatics.
+
+{\em Software Design} is also appropriate for self-teachers and
+home-schoolers.  I get frequent email from individuals who are using
+{\em How to Think} to teach themselves programming in Python.
+
+For professional programmers, the introductory chapters are probably
+too basic, but the book is appropriate for professionals in other
+fields who need to pick up programming.
+
+
+\section*{Competition}
+
+The most direct competitors are:
+
+\begin{itemize}
+\item {\em Learn to Program Using Python: A Tutorial for Hobbyists,
+Self-Starters, and All Who Want to Learn the Art of Computer
+Programming}, by Alan Gauld (2001).
+
+\item {\em Python Programming: An Introduction to Computer Science}, by John
+M. Zelle (2003).
+\end{itemize}
+
+Both books are aimed at beginning programmers.  Gauld's is intended
+for self-teachers; Zelle's is intended for computer science classes.
+
+Both books are well regarded, but when I checked the Amazon
+sales ranks, {\em How to Think} was out-selling both (March 21, 2007).
+
+\begin{tabular}{l|l}
+Author	&	 Amazon sales rank\\
+\hline
+Downey	&         $\sim$37,000\\
+Zelle   &         $\sim$135,000\\
+Gauld	&	 $\sim$490,000\\
+\end{tabular}
+
+Gauld's book is getting old; it is possible that a new edition
+will appear soon.  Zelle's book is relatively new and probably
+the most direct competition for the college textbook market.
+
+
+\section*{Copyright}
+
+The copyright on {\em How to Think} is held by Allen Downey, Jeff Elkner
+and Chris Meyers.  We have released it under the GNU Free
+Documentation License (FDL), which allows anyone to copy, modify and
+distribute it.  In fact, the Python version of the book exists because
+Jeff Elkner took the Java version and translated it into Python.
+
+I am currently working with my co-authors to license their
+contributions for use in {\em Software Design}.  I will grant an
+exclusive license to the publishers to print and distribute the final
+version of the book, but I would like to keep the copyright and
+maintain a draft version of the book on my web page under the FDL,
+Creative Commons, or other license.
+
+% Best choice looks like:
+% http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+My experience with {\em How to Think} convinces me that keeping a
+version of the book under a permissive license has value for the
+publisher.  It encourages readers to contribute corrections and
+suggestions (which gives us a head start on a future editions), it
+allows potential adopters to test the material before committing to
+it, and, maybe most important, it opens the door to future projects
+that might never happen otherwise.
+
+\end{document}
+

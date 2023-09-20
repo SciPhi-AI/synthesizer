@@ -8,4 +8,5 @@ class ProviderName(Enum):
     OPENAI = "openai"
     ANTHROPIC = "anthropic"
     HUGGING_FACE = "hugging-face"
+    LLAMA_INDEX = "llama-index"
     VLLM = "vllm"

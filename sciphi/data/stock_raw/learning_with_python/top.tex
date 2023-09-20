@@ -1,0 +1,319 @@
+% LaTeX source for textbook ``How to think like a computer scientist''
+% Copyright (c)  2001,2002  Allen B. Downey.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+%
+\documentclass[10pt]{book}
+\usepackage[paperwidth=6.75in,paperheight=9.25in,
+  width=4.9in,height=7.2in,
+  hmarginratio=3:2,vmarginratio=3:2]{geometry}
+\usepackage{fancyhdr}
+\usepackage{psfig}
+\usepackage{makeidx}
+\pssilent
+
+\sloppy
+% dimensions for b5paper
+%\setlength{\topmargin}{-0.375in}
+%\setlength{\oddsidemargin}{0.0in}
+%\setlength{\evensidemargin}{0.0in}
+
+% dimensions for 8.5 x 11
+%\setlength{\topmargin}{0.625in}
+%\setlength{\oddsidemargin}{0.875in}
+%\setlength{\evensidemargin}{0.875in}
+
+\setlength{\headsep}{3ex}
+\setlength{\textheight}{7.2in}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{1.7ex plus 0.5ex minus 0.5ex}
+\renewcommand{\baselinestretch}{1.02}
+
+% see LaTeX Companion page 62
+\setlength{\topsep}{-0.0\parskip}
+\setlength{\partopsep}{-0.5\parskip}
+\setlength{\itemindent}{0.0in}
+\setlength{\listparindent}{0.0in}
+
+% see LaTeX Companion page 26
+% these are copied from /usr/local/teTeX/share/texmf/tex/latex/base/book.cls
+% all I changed is afterskip
+
+\makeatletter
+\renewcommand{\section}{\@startsection 
+    {section} {1} {0mm}%
+    {-3.5ex \@plus -1ex \@minus -.2ex}%
+    {0.7ex \@plus.2ex}%
+    {\normalfont\Large\bfseries}}
+\renewcommand\subsection{\@startsection {subsection}{2}{0mm}%
+    {-3.25ex\@plus -1ex \@minus -.2ex}%
+    {0.3ex \@plus .2ex}%
+    {\normalfont\large\bfseries}}
+\renewcommand\subsubsection{\@startsection {subsubsection}{3}{0mm}%
+    {-3.25ex\@plus -1ex \@minus -.2ex}%
+    {0.3ex \@plus .2ex}%
+    {\normalfont\normalsize\bfseries}}
+\makeatother
+
+\newcommand{\beforefig}{\vspace{1.3\parskip}}
+\newcommand{\afterfig}{\vspace{-0.2\parskip}}
+
+\newcommand{\beforeverb}{\vspace{0.6\parskip}}
+\newcommand{\afterverb}{\vspace{0.6\parskip}}
+
+\newcommand{\adjustpage}[1]{\enlargethispage{#1\baselineskip}}
+
+% Note: the following command seems to cause problems for Acroreader
+% on Windows, so for now I am overriding it.
+\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+\renewcommand{\clearemptydoublepage}{\cleardoublepage}
+
+\newcommand{\blankpage}{\pagestyle{empty}\vspace*{1in}\newpage}
+\renewcommand{\blankpage}{\vspace*{1in}\newpage}
+
+\pagestyle{fancyplain}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}{}}
+
+\lhead[\fancyplain{}{\bfseries\thepage}]%
+      {\fancyplain{}{\bfseries\rightmark}}
+\rhead[\fancyplain{}{\bfseries\leftmark}]%
+      {\fancyplain{}{\bfseries\thepage}}
+\cfoot{}
+
+% turn off the rule under the header
+%\setlength{\headrulewidth}{0pt}
+
+% the following is a brute-force way to prevent the headers
+% from getting transformed into all-caps
+\renewcommand\MakeUppercase{}
+
+\makeindex
+
+\begin{document}
+
+\frontmatter
+
+%-half title--------------------------------------------------
+\thispagestyle{empty}
+
+\begin{flushright}
+\vspace*{2.5in}
+
+{\huge How to Think Like a Computer Scientist}
+
+\vspace{1in}
+
+{\LARGE Learning with Python}
+
+\vfill
+
+\end{flushright}
+
+%--verso------------------------------------------------------
+
+\clearemptydoublepage
+%\pagebreak
+%\thispagestyle{empty}
+%\vspace*{6in}
+
+%--title page--------------------------------------------------
+\pagebreak
+\thispagestyle{empty}
+
+\begin{flushright}
+\vspace*{2.5in}
+
+{\huge How to Think Like a Computer Scientist}
+
+\vspace{0.25in}
+
+{\LARGE Learning with Python}
+
+\vspace{1in}
+
+{\Large
+Allen Downey\\
+Jeffrey Elkner\\
+Chris Meyers\\
+}
+
+
+\vspace{1in}
+
+{\Large Green Tea Press}
+
+{\small Wellesley, Massachusetts}
+
+%\psfig{figure=illustrations/logo1.eps,width=1in}
+\vfill
+
+\end{flushright}
+
+
+%--copyright--------------------------------------------------
+\pagebreak
+\thispagestyle{empty}
+
+{\small
+Copyright \copyright ~2002 Allen Downey, Jeffrey Elkner, and Chris Meyers.
+
+Edited by Shannon Turlington and Lisa Cutler.  Cover design by Rebecca Gimenez.
+
+Printing history:
+
+\begin{description}
+
+\item[April 2002:] First edition.
+
+\item[August 2008:] Second printing.
+
+\end{description}
+
+\vspace{0.2in}
+
+\begin{flushleft}
+Green Tea Press       \\
+1 Grove St.           \\
+P.O. Box 812901       \\
+Wellesley, MA 02482   \\
+\end{flushleft}
+
+Permission is granted to copy, distribute, and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.1 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being ``Foreword,'' ``Preface,'' and ``Contributor
+List,'' with no Front-Cover Texts, and with no Back-Cover Texts. A
+copy of the license is included in the appendix entitled ``GNU Free
+Documentation License.''
+
+The GNU Free Documentation License is available from {\tt www.gnu.org}
+or by writing to the Free Software Foundation, Inc., 59 Temple Place,
+Suite 330, Boston, MA 02111-1307, USA.
+
+The original form of this book is \LaTeX\ source code.  Compiling this
+\LaTeX\ source has the effect of generating a device-independent
+representation of a textbook, which can be converted to other formats
+and printed.
+
+The \LaTeX\ source for this book is available from
+{\tt http://www.thinkpython.com}
+
+\vspace{0.2in}
+
+Publisher's Cataloging-in-Publication (provided by Quality Books, Inc.)
+
+\begin{tabbing}
+Downey, Allen\\
+\qquad  How to think like a computer scientist : learning \\
+\quad  with Python / Allen Downey, Jeffrey Elkner, Chris       \\
+\quad  Meyers. -- 1st ed. \\
+\qquad  p. cm.            \\
+\qquad Includes index.    \\
+\qquad ISBN 0-9716775-0-6 \\
+\qquad LCCN 2002100618    \\
+\\
+\qquad  1. Python (Computer program language)  I. Elkner, \\
+\quad  Jeffrey.  II. Meyers, Chris.  III. Title           \\
+\\
+\quad QA76.73.P98D69 2002 \qquad \qquad \quad 005.13'3          \\
+\qquad \qquad \qquad \qquad \qquad \qquad \qquad QBI02-200031    \\
+\end{tabbing}
+
+} % end small
+
+%-----------------------------------------------------------------
+
+\include{foreword}
+\clearemptydoublepage
+
+\include{preface}
+\clearemptydoublepage
+
+\include{contrib}
+\clearemptydoublepage
+
+% The following lines add a little extra space to the column
+% in which the Section numbers appear in the table of contents
+\makeatletter
+\renewcommand{\l@section}{\@dottedtocline{1}{1.5em}{3.0em}}
+\makeatother
+\setcounter{tocdepth}{1}
+
+\tableofcontents
+\clearemptydoublepage
+
+\mainmatter
+\include{chap01}
+\clearemptydoublepage
+\include{chap02}
+\clearemptydoublepage
+\include{chap03}
+\clearemptydoublepage
+\include{chap04}
+\clearemptydoublepage
+\include{chap05}
+\clearemptydoublepage
+\include{chap06}
+\clearemptydoublepage
+\include{chap07}
+\clearemptydoublepage
+\include{chap08}
+\clearemptydoublepage
+\include{chap09}
+\clearemptydoublepage
+\include{chap10}
+\clearemptydoublepage
+\include{chap11}
+\clearemptydoublepage
+\include{chap12}
+\clearemptydoublepage
+\include{chap13}
+\clearemptydoublepage
+\include{chap14}
+\clearemptydoublepage
+\include{chap15}
+\clearemptydoublepage
+\include{chap16}
+\clearemptydoublepage
+\include{chap17}
+\clearemptydoublepage
+\include{chap18}
+\clearemptydoublepage
+\include{chap19}
+\clearemptydoublepage
+\include{chap20}
+\clearemptydoublepage
+
+\appendix
+\include{app01}
+\clearemptydoublepage
+\include{app02}
+\clearemptydoublepage
+%\include{app03}
+%\clearemptydoublepage
+\include{app04}
+\clearemptydoublepage
+
+%\include{fdl}
+%\clearemptydoublepage
+
+\printindex
+
+\thispagestyle{empty} \blankpage
+\thispagestyle{empty} \blankpage
+
+\end{document}
