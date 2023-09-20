@@ -85,7 +85,6 @@ class PromptGenerator:
     ) -> None:
         """Insert a formatter into the formatters dictionary."""
         if isinstance(entry, dict):
-            print("entry = ", entry)
             formatters[key] = PromptGenerator._random_sample(entry)
         elif isinstance(entry, str):
             formatters[key] = entry
