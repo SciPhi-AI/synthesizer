@@ -2,10 +2,8 @@
 import os
 
 from sciphi.config import DataConfig
-from sciphi.prompt import PromptGenerator, PromptManager
-from sciphi.core.utils import (
-    get_data_config_dir,
-)
+from sciphi.core.utils import get_data_config_dir
+from sciphi.prompt import PromptGenerator
 
 NUM_SAMPLES = 1_000_000
 if __name__ == "__main__":
