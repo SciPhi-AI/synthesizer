@@ -14,18 +14,18 @@ class HuggingFaceConfig(LLMConfig):
 
     # Base
     provider_name: ProviderName = ProviderName.HUGGING_FACE
-    model_name: str = "gpt-2"
+    model_name: str = "gpt2"
     temperature: float = 0.7
     top_p: float = 1.0
 
     # Generation parameters
-    top_k: float = 100.0
+    top_k: int = 100
     max_tokens_to_sample: int = 256
-    do_sample: bool = False
+    do_sample: bool = True
     num_beams: int = 1
 
     # Model and Tokenizer extras
-    device: str = "auto"
+    device: str = "cpu"
     add_model_kwargs: dict = field(default_factory=dict)
     add_tokenizer_kwargs: dict = field(default_factory=dict)
     add_generation_kwargs: dict = field(default_factory=dict)
@@ -59,9 +59,7 @@ class HuggingFaceLLM(LLM):
             model_name,
             device_map=self.config.device,
             trust_remote_code=True,
-            torch_dtype=torch.float16,
             **config.add_model_kwargs,
-            offload_folder="temp/",
         )
         self.tokenizer = AutoTokenizer.from_pretrained(
             model_name,
@@ -85,17 +83,17 @@ class HuggingFaceLLM(LLM):
         )
 
     def get_instruct_completion(self, instruction: str) -> str:
-        """Get an instr. completion from local HuggingFace."""
+        """Get an instr. completion from local HuggingFace model."""
         # TODO - Should we set `max_length` here? What about `max_tokens_to_sample`?
         # Should we set the device on inputs or is this handled above? Test on GPU inst.
         inputs = self.tokenizer(
-            prompt,
+            instruction,
             return_tensors="pt",
         ).to(self.config.device)
         raw_completion = self.model.generate(
             inputs["input_ids"], generation_config=self.generation_config
         )
         return [
-            ele.replace(prompt, "")
+            ele.replace(instruction, "")
             for ele in self.tokenizer.batch_decode(raw_completion)
         ]

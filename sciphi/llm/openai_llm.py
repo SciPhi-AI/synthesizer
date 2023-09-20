@@ -61,7 +61,7 @@ class OpenAILLM(LLM):
         response = openai.ChatCompletion.create(**args)
         return response.choices[0].message["content"]
 
-    def get_instruct_completion(self, prompt: str) -> str:
+    def get_instruct_completion(self, instruction: str) -> str:
         """Get an instruction completion from the OpenAI API based on the provided prompt."""
         import openai
 
@@ -69,7 +69,7 @@ class OpenAILLM(LLM):
         args = self._get_base_args()
 
         # Create the instruction completion
-        args["prompt"] = prompt
+        args["prompt"] = instruction
         response = openai.Completion.create(**args)
         return response.choices[0].text
 

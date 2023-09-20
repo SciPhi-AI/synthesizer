@@ -14,12 +14,12 @@ class vLLMConfig(LLMConfig):
 
     # Base
     provider_name: ProviderName = ProviderName.VLLM
-    model_name: str = "gpt-2"
+    model_name: str = "gpt2"
     temperature: float = 0.7
     top_p: float = 1.0
 
     # Generation parameters
-    top_k: float = 100.0
+    top_k: int = 100
     max_tokens_to_sample: int = 256
 
 
