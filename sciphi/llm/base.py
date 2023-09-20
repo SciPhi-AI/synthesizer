@@ -1,8 +1,7 @@
 """Base classes for language model providers."""
 from abc import ABC, abstractmethod
-from dataclasses import InitVar, dataclass, field
+from dataclasses import dataclass, fields
 from enum import Enum
-from typing import Any
 
 from sciphi.core import ProviderName
 
@@ -27,9 +26,6 @@ class ModelName(Enum):
 
     CLAUDE_INSTANT_1 = "claude-instant-1"
     CLAUDE_2 = "claude-2"
-
-
-from dataclasses import dataclass, field, fields
 
 
 @dataclass

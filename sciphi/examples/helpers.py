@@ -1,7 +1,6 @@
 """Helper functions to be used across example scripts"""
 import argparse
 import json
-from typing import Optional
 
 from sciphi.interface import ProviderName
 
@@ -119,25 +118,25 @@ def parse_arguments() -> argparse.Namespace:
     )
     parser.add_argument(
         "--add_model_kwargs",
-        type=dict,
+        type=str,
         default=None,
         help="Additional model kwargs for local model generation, in JSON format.",
     )
     parser.add_argument(
         "--add_tokenizer_kwargs",
-        type=dict,
+        type=str,
         default=None,
         help="Additional tokenizer kwargs for local model generation, in JSON format.",
     )
     parser.add_argument(
         "--add_generation_kwargs",
-        type=dict,
+        type=str,
         default=None,
         help="Additional generation kwargs for local model generation, in JSON format.",
     )
     parser.add_argument(
         "--functions",
-        type=list[dict],
+        type=str,
         default=None,
         help="List of functions which conform to for OpenAI function calling format, in JSON format.",
     )
@@ -163,7 +162,7 @@ def parse_arguments() -> argparse.Namespace:
     )
     parser.add_argument(
         "--config_path",
-        type=Optional[str],
+        type=str,
         default=None,
         help="Optional path to the configuration path, if specified the example config is overridden.",
     )

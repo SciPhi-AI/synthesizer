@@ -8,7 +8,7 @@ from sciphi.llm.base import LLMConfig
 class LLMConfigManager:
     """A class to manage the configurations for models."""
 
-    config_registry: dict[ProviderName, LLMConfig] = {}
+    config_registry: dict[ProviderName, Type[LLMConfig]] = {}
 
     @staticmethod
     def get_config_for_provider(

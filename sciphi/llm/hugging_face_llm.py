@@ -39,22 +39,31 @@ class HuggingFaceLLM(LLM):
         config: HuggingFaceConfig,
     ) -> None:
         try:
-            import torch
+            import torch  # noqa: F401
             from transformers import (
                 AutoModelForCausalLM,
                 AutoTokenizer,
                 GenerationConfig,
             )
-        except:
+        except ImportError:
             raise ImportError(
-                "Please install the transformers package before attempting to run with a HuggingFace model. This can be accomplished via `poetry install -E hf_support, ...OTHER_DEPENDENCY_HERE`."
+                "Please install the torch and transformers packages before attempting to run with a HuggingFace model. This can be accomplished via `poetry install -E hf_support, ...OTHER_DEPENDENCY_HERE`."
             )
 
         super().__init__(
             config,
         )
+        # Set the config here, again, for typing purposes
+        # TODO - Can setting the config twice be avoided?
+        if not isinstance(self.config, HuggingFaceConfig):
+            raise ValueError(
+                "The provided config must be an instance of HuggingFaceConfig."
+            )
+        self.config: HuggingFaceConfig = config
+
+        # Create the model, tokenizer, and generation config
         model_name = self.config.model_name
-        # TODO - Move offload_folder upstream?
+
         self.model = AutoModelForCausalLM.from_pretrained(
             model_name,
             device_map=self.config.device,

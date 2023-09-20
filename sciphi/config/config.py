@@ -37,7 +37,7 @@ class DataConfig:
         self.outer_prompt_format: str = self.config.pop(
             outer_prompt_format_field
         )
-        self.downstream_configs: list[str] = self.config.pop(
+        self.downstream_configs: dict[str, str] = self.config.pop(
             downstream_configs_field
         )
         self.prompt_dataset_dependencies: dict[str, str] = self.config.pop(
@@ -66,9 +66,9 @@ class DataConfig:
         if not self.downstream_configs:
             return
 
-        for sub_config, weight in self.downstream_configs.items():
+        for sub_config_name, weight in self.downstream_configs.items():
             with open(
-                os.path.join(self.main_path, f"{sub_config}.yaml"), "r"
+                os.path.join(self.main_path, f"{sub_config_name}.yaml"), "r"
             ) as sub_config_file:
                 sub_config = yaml.safe_load(sub_config_file)
 

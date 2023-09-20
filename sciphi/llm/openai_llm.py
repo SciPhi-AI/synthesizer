@@ -35,7 +35,7 @@ class OpenAILLM(LLM):
         super().__init__(config)
         try:
             import openai
-        except:
+        except ImportError:
             raise ImportError(
                 "Please install the openai package before attempting to run with an OpenAI model. This can be accomplished via `poetry install -E openai_support, ...OTHER_DEPENDENCY_HERE`."
             )
@@ -43,6 +43,12 @@ class OpenAILLM(LLM):
             raise ValueError(
                 "OpenAI API key not found. Please set the OPENAI_API_KEY environment variable."
             )
+        # set the config here, again, for typing purposes
+        if not isinstance(self.config, OpenAIConfig):
+            raise ValueError(
+                "The provided config must be an instance of OpenAIConfig."
+            )
+        self.config: OpenAIConfig = config
 
     def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
         """Get a completion from the OpenAI API based on the provided messages."""
