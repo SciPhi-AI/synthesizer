@@ -1,4 +1,5 @@
-course_name: "Foundations of Computer Science"
+course_name:
+  "Foundations of Computer Science": 1
 
 course_topic:
   "CS Fundamentals": 1
@@ -16,7 +17,7 @@ course_topic:
   "Development Concepts": 1
   "Database Design & Management": 1
 
-Foundations of Computer Science:
+sub_topic:
   course_topic:
     "CS Fundamentals":
       "Introduction to CS": 1

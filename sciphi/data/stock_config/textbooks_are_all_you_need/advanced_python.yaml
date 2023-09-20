@@ -1,4 +1,5 @@
-course_name: "Advanced Python"
+course_name:
+  "Advanced Python": 1
 
 course_topic:
   "Python Data Science": 1

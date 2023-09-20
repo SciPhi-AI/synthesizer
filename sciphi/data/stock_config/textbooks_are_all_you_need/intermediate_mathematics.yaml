@@ -1,4 +1,5 @@
-course_name: "Intermediate Mathematics"
+course_name:
+  "Intermediate Mathematics": 1
 
 course_topic:
   "Functions and Transformations": 1

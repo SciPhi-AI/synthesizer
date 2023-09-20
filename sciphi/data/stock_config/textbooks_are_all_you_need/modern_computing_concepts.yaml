@@ -1,4 +1,5 @@
-course_name: "Modern Computing Concepts"
+course_name:
+  "Modern Computing Concepts": 1
 
 course_topic:
   "Cloud-native applications": 1

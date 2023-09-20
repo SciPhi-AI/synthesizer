@@ -1,4 +1,5 @@
-course_name: "Pure Mathematics"
+course_name:
+  "Pure Mathematics": 1
 
 course_topic:
   "Topology and Spaces": 1

@@ -1,4 +1,5 @@
-course_name: "Web Development Foundations"
+course_name:
+  "Web Development Foundations": 1
 
 course_topic:
   "HTML, CSS, and JavaScript Basics": 1

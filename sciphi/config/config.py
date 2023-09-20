@@ -43,7 +43,6 @@ class DataConfig:
         self.prompt_dataset_dependencies: dict[str, str] = self.config.pop(
             prompt_dataset_dependencies_field, {}
         )
-
         self.dataset_name: Optional[str] = self.config.pop(
             dataset_name_field, None
         )
@@ -57,6 +56,7 @@ class DataConfig:
             )
 
         self._load_configs()
+
         # TODO - Add smart config validation
         # self._validate_config()
 
@@ -71,7 +71,6 @@ class DataConfig:
                 os.path.join(self.main_path, f"{sub_config_name}.yaml"), "r"
             ) as sub_config_file:
                 sub_config = yaml.safe_load(sub_config_file)
-
                 # Merge the sub_config into the main config
                 for key in sub_config.keys():
                     entry = sub_config[key]
@@ -89,7 +88,7 @@ class DataConfig:
                         )
                         if intersection:
                             raise ValueError(
-                                f"Sub-config {key} overlaps with main config, resulting in an intersection {intersection}."
+                                f"Sub-config {key} overlaps with main config, resulting in an intersection {intersection}. Note, every key must be unique in the unrolled dictionary."
                             )
                         # Weight the sub_config entries by the weight
                         # If value is a dictionary, then recursively weight the values
@@ -105,10 +104,8 @@ class DataConfig:
                             **self.config[key],
                         }
                     elif (
-                        key in self.config
-                        and isinstance(entry, str)
-                        or key not in self.config
-                    ):
+                        key in self.config and isinstance(entry, str)
+                    ) or key not in self.config:
                         self.config[key] = entry
                     else:
                         # Only dicts and strings are supported, raise an error otherwise

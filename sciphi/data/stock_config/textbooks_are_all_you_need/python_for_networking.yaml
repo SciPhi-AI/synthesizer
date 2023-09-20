@@ -1,4 +1,5 @@
-course_name: "Python for Networking"
+course_name:
+  "Python for Networking": 1
 
 course_topic:
   "Network Topologies and Protocols": 1

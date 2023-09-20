@@ -1,4 +1,5 @@
-course_name: "Mathematical Python"
+course_name:
+  "Mathematical Python": 1
 
 course_topic:
   "Mathematical Python Libraries": 1

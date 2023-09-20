@@ -1,4 +1,5 @@
-course_name: "Cloud Computing and Big Data"
+course_name:
+  "Cloud Computing and Big Data": 1
 
 course_topic:
   "Basics of Cloud Computing": 1

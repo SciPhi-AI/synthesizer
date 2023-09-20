@@ -1,4 +1,5 @@
-course_name: "Emerging Data Science Techniques"
+course_name:
+  "Emerging Data Science Techniques": 1
 
 course_topic:
   "Advanced Machine Learning": 1
