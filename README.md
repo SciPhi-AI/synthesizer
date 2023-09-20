@@ -25,7 +25,7 @@ cd sciphi
 # pip3 install poetry (if you don't have it)
 poetry install -E openai_support
 # Add other optional dependencies
-# poetry install -E openai_support -E anthropic_support -E hf_support, ...
+# poetry install -E openai_support -E anthropic_support -E hf_support ...
 # Setup your environment
 cp .env.example .env && vim .env
 ```
@@ -49,6 +49,7 @@ poetry install -E <extra_name>
 - `hf_support`: For running with the HuggingFace package, useful for a large variety of model access.
 - `openai_support`: For running with OpenAI models.
 - `vllm_support`: For with VLLM, useful for fast inference.
+- `llama_index_support`: For LlamaIndex, useful for grounded synthesis.
 
 ## Usage
 
