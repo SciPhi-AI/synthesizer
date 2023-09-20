@@ -1,0 +1,483 @@
+% LaTeX source for textbook ``How to think like a computer scientist''
+% Copyright (c)  2001  Allen B. Downey, Jeffrey Elkner, and Chris Meyers.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+
+\chapter{Queues}
+\label{queue}
+\index{queue}
+\index{ADT!Queue}
+\index{priority queue}
+\index{ADT!Priority Queue}
+\index{FIFO}
+\index{queueing policy}
+\index{priority queueing}
+
+This chapter presents two ADTs: the Queue and the Priority Queue.
+In real life, a {\bf queue} is a line of customers waiting for service
+of some kind.  In most cases, the first customer in line is the
+next customer to be served.  There are exceptions, though.
+At airports, customers whose flights are leaving soon
+are sometimes taken from the middle of the queue.  At
+supermarkets, a polite customer might let someone with only a
+few items go first.
+
+The rule that determines who goes next is called the
+{\bf queueing policy}.  The simplest queueing policy is
+called {\bf FIFO}, for ``first-in-first-out.''  The most general
+queueing policy is {\bf priority queueing}, in which each customer
+is assigned a priority and the customer with the highest priority
+goes first, regardless of the order of arrival.  We
+say this is the most general policy because the priority
+can be based on anything: what time a flight leaves; how many
+groceries the customer has; or how important the customer is.
+Of course, not all queueing policies are ``fair,'' but
+fairness is in the eye of the beholder.
+
+The Queue ADT and the Priority Queue ADT have the same set
+of operations.  The difference
+is in the semantics of the operations: a queue uses the FIFO
+policy; and a priority queue (as the name suggests) uses the
+priority queueing policy.
+
+\adjustpage{1}
+
+\section{The Queue ADT}
+\index{ADT!Queue}
+\index{Queue ADT}
+\index{implementation!Queue}
+\index{queue!List implementation}
+
+The Queue ADT is defined by the following operations:
+
+\begin{description}
+
+\item[{\tt \_\_init\_\_}:] Initialize a new empty queue.
+
+\item[{\tt insert}:] Add a new item to the queue.
+
+\item[{\tt remove}:] Remove and return an item from the queue.  The item
+that is returned is the first one that was added.
+
+\item[{\tt isEmpty}:] Check whether the queue is empty.
+
+\end{description}
+
+
+\section{Linked Queue}
+\index{linked queue}
+\index{queue!linked implementation}
+
+The first implementation of the Queue ADT we will look at is
+called a {\bf linked queue} because it is made up of linked
+{\tt Node} objects.  Here is the class definition:
+
+\beforeverb
+\begin{verbatim}
+class Queue:
+  def __init__(self):
+    self.length = 0
+    self.head = None
+
+  def isEmpty(self):
+    return (self.length == 0)
+
+  def insert(self, cargo):
+    node = Node(cargo)
+    node.next = None
+    if self.head == None:
+      # if list is empty the new node goes first
+      self.head = node
+    else:
+      # find the last node in the list
+      last = self.head
+      while last.next: last = last.next
+      # append the new node
+      last.next = node
+    self.length = self.length + 1
+
+  def remove(self):
+    cargo = self.head.cargo
+    self.head = self.head.next
+    self.length = self.length - 1
+    return cargo
+\end{verbatim}
+\afterverb
+%
+The methods {\tt isEmpty} and {\tt remove} are identical to the
+{\tt LinkedList} methods {\tt isEmpty} and {\tt removeFirst}.
+The {\tt insert} method is new and a bit more complicated.
+
+We want to insert new items at the end of the list.
+If the queue is empty, we just set {\tt
+head} to refer to the new node.
+
+Otherwise, we traverse the list to the last node and
+tack the new node on the end.  We can identify the last node because
+its {\tt next} attribute is {\tt None}.
+
+There are two invariants for a properly formed {\tt Queue} object.
+The value of {\tt length} should be the number of nodes in the
+queue, and the last node should have {\tt next} equal to
+{\tt None}.  Convince yourself that this method preserves
+both invariants.
+
+
+\section{Performance characteristics}
+\index{performance}
+
+Normally when we invoke a method, we are not concerned with the
+details of its implementation.  But there is one ``detail''
+we might want to know---the performance characteristics of the
+method.  How long does it take, and how does the run time change
+as the number of items in the collection increases?
+
+First look at {\tt remove}.
+There are no loops or function calls here, suggesting that
+the runtime of this method is the same every time.  Such a method
+is called a {\bf constant time} operation.
+In reality, the method might be slightly faster
+when the list is empty since it skips the body of the conditional,
+but that difference is not significant.
+
+\index{constant time}
+
+The performance of {\tt insert} is very different.
+In the general case, we have to
+traverse the list to find the last element.
+
+This traversal takes time proportional to the length of the
+list.  Since the runtime is a linear function of the length,
+this method is called {\bf linear time}.  Compared to
+constant time, that's very bad.
+
+\index{linear time}
+
+
+\section{Improved Linked Queue}
+\index{queue!improved implementation}
+\index{improved queue}
+
+We would like an implementation of the Queue ADT that can
+perform all operations in constant time.  One way to
+do that is to modify the Queue class so that it
+maintains a reference to both the first and the last node,
+as shown in the figure:
+
+\beforefig
+\centerline{\psfig{figure=illustrations/queue1.eps}}
+\afterfig
+
+The {\tt ImprovedQueue} implementation looks like this:
+
+\beforeverb
+\begin{verbatim}
+class ImprovedQueue:
+  def __init__(self):
+    self.length = 0
+    self.head   = None
+    self.last   = None
+
+  def isEmpty(self):
+    return (self.length == 0)
+\end{verbatim}
+\afterverb
+%
+So far, the only change is the attribute {\tt last}. It is used in
+{\tt insert} and {\tt remove} methods:
+
+\beforeverb
+\begin{verbatim}
+class ImprovedQueue:
+  ...
+  def insert(self, cargo):
+    node = Node(cargo)
+    node.next = None
+    if self.length == 0:
+      # if list is empty, the new node is head and last
+      self.head = self.last = node
+    else:
+      # find the last node
+      last = self.last
+      # append the new node
+      last.next = node
+      self.last = node
+    self.length = self.length + 1
+\end{verbatim}
+\afterverb
+%
+Since {\tt last} keeps track of the last node, we don't have to search
+for it.  As a result, this method is constant time.
+
+There is a price to pay for that speed.  We have to add a special case
+to {\tt remove} to set {\tt last} to {\tt None} when the last node is
+removed:
+
+\beforeverb
+\begin{verbatim}
+class ImprovedQueue:
+  ...
+  def remove(self):
+    cargo     = self.head.cargo
+    self.head = self.head.next
+    self.length = self.length - 1
+    if self.length == 0:
+      self.last = None
+    return cargo
+\end{verbatim}
+\afterverb
+%
+This implementation is more complicated than the
+Linked Queue implementation, and it is more difficult to demonstrate
+that it is correct.  The advantage is that we have achieved
+the goal---both {\tt insert} and {\tt remove} are constant time
+operations.
+
+\begin{quote}
+{\em As an exercise, write an implementation of the Queue ADT using
+a Python list.  Compare the performance of this implementation to the
+{\tt ImprovedQueue} for a range of queue lengths.}
+\end{quote}
+
+
+\section{Priority queue}
+\index{priority queue!ADT}
+\index{ADT!Priority Queue}
+
+The Priority Queue ADT has the same interface as the Queue ADT, but
+different semantics.  Again, the interface is:
+
+\begin{description}
+
+\item[{\tt \_\_init\_\_}:] Initialize a new empty queue.
+
+\item[{\tt insert}:] Add a new item to the queue.
+
+\item[{\tt remove}:] Remove and return an item from the queue.  The item
+that is returned is the one with the highest priority.
+
+\item[{\tt isEmpty}:] Check whether the queue is empty.
+
+\end{description}
+
+The semantic difference is that the item that is removed from the
+queue is not necessarily the first one that was added.  Rather, it is
+the item in the queue that has the highest priority.  What the
+priorities are and how they compare to each other are not specified by
+the Priority Queue implementation.  It depends on which items are in
+the queue.
+
+For example, if the items in the queue have names, we might choose
+them in alphabetical order.  If they are bowling scores, we might go
+from highest to lowest, but if they are golf scores, we would go from
+lowest to highest.  As long as we can compare the items in the queue,
+we can find and remove the one with the highest priority.
+
+This implementation of Priority Queue has as an attribute
+a Python list that
+contains the items in the queue.
+
+\beforeverb
+\begin{verbatim}
+class PriorityQueue:
+  def __init__(self):
+    self.items = []
+
+  def isEmpty(self):
+    return self.items == []
+
+  def insert(self, item):
+    self.items.append(item)
+\end{verbatim}
+\afterverb
+%
+The initialization method, {\tt isEmpty}, and {\tt insert} are all
+veneers on list operations.  The only interesting method is {\tt
+remove}:
+
+\beforeverb
+\begin{verbatim}
+class PriorityQueue:
+  ...
+  def remove(self):
+    maxi = 0
+    for i in range(1,len(self.items)):
+      if self.items[i] > self.items[maxi]:
+        maxi = i
+    item = self.items[maxi]
+    self.items[maxi:maxi+1] = []
+    return item
+\end{verbatim}
+\afterverb
+%
+At the beginning of each iteration, {\tt maxi} holds the index of the
+biggest item (highest priority) we have seen {\em so far}.  Each time
+through the loop, the program compares the {\tt i}-eth item to the champion.
+If the new item is bigger, the value of {\tt maxi} is set to {\tt i}.
+
+\index{traverse}
+
+When the {\tt for} statement completes,
+{\tt maxi} is the index of the biggest item.  This item
+is removed from the list and returned.
+
+Let's test the implementation:
+
+\beforeverb
+\begin{verbatim}
+>>> q = PriorityQueue()
+>>> q.insert(11)
+>>> q.insert(12)
+>>> q.insert(14)
+>>> q.insert(13)
+>>> while not q.isEmpty(): print q.remove()
+14
+13
+12
+11
+\end{verbatim}
+\afterverb
+%
+If the queue contains simple numbers or strings, they are
+removed in numerical or alphabetical order, from highest to
+lowest.  Python can find the biggest integer or string because
+it can compare them using the built-in comparison operators.
+
+If the queue contains an object type, it has to provide
+a {\tt \_\_cmp\_\_} method.  When {\tt remove} uses the {\tt >}
+operator to compare items, it invokes the {\tt \_\_cmp\_\_}
+for one of the items and passes the other as an argument.  As
+long as the {\tt \_\_cmp\_\_} method works correctly, the
+Priority Queue will work.
+
+
+\section{The {\tt Golfer} class}
+\index{Golfer}
+\index{class!Golfer}
+\index{priority}
+\index{operator overloading}
+\index{overloading!operator}
+
+As an example of an object with an unusual definition of priority, let's
+implement a class called {\tt Golfer} that keeps track of the
+names and scores of golfers.  As usual, we start by defining {\tt
+\_\_init\_\_} and {\tt \_\_str\_\_}:
+
+\beforeverb
+\begin{verbatim}
+class Golfer:
+  def __init__(self, name, score):
+    self.name = name
+    self.score= score
+
+  def __str__(self):
+    return "%-16s: %d" % (self.name, self.score)
+\end{verbatim}
+\afterverb
+%
+{\tt \_\_str\_\_} uses the format operator to put the names
+and scores in neat columns.
+
+\index{format operator}
+\index{operator!format}
+
+Next we define a version of {\tt \_\_cmp\_\_} where the lowest
+score gets highest priority.  As always, {\tt \_\_cmp\_\_} returns
+1 if {\tt self} is ``greater than'' {\tt other}, -1 if {\tt self}
+is ``less than'' other, and 0 if they are equal.
+
+\beforeverb
+\begin{verbatim}
+class Golfer:
+  ...
+  def __cmp__(self, other):
+    if self.score < other.score: return  1   # less is more
+    if self.score > other.score: return -1
+    return 0
+\end{verbatim}
+\afterverb
+%
+Now we are ready to test the priority queue with the {\tt Golfer} class:
+
+\beforeverb
+\begin{verbatim}
+>>> tiger = Golfer("Tiger Woods",    61)
+>>> phil  = Golfer("Phil Mickelson", 72)
+>>> hal   = Golfer("Hal Sutton",     69)
+>>>
+>>> pq = PriorityQueue()
+>>> pq.insert(tiger)
+>>> pq.insert(phil)
+>>> pq.insert(hal)
+>>> while not pq.isEmpty(): print pq.remove()
+Tiger Woods    : 61
+Hal Sutton     : 69
+Phil Mickelson : 72
+\end{verbatim}
+\afterverb
+
+\begin{quote}
+{\em As an exercise, write an implementation of the Priority Queue ADT 
+using a linked list.  You should keep the list sorted so that removal
+is a constant time operation.  Compare the performance of this
+implementation with the Python list implementation.}
+\end{quote}
+
+
+\section{Glossary}
+\index{queue}
+\index{queueing policy}
+\index{FIFO}
+\index{priority queue}
+\index{veneer}
+\index{constant time}
+\index{linear time}
+\index{performance hazard}
+\index{linked queue}
+\index{circular buffer}
+\index{abstract class}
+\index{interface}
+
+\begin{description}
+
+\item[queue:]  An ordered set of objects waiting for a service of
+some kind.
+
+\item[Queue:]  An ADT that performs the operations one might perform
+on a queue.
+
+\item[queueing policy:]  The rules that determine which member
+of a queue is removed next.
+
+\item[FIFO:]  ``First In, First Out,'' a queueing policy in which
+the first member to arrive is the first to be removed.
+
+\item[priority queue:]  A queueing policy in which
+each member has a priority determined by external factors.
+The member with the highest priority is the first to be removed.
+
+\item[Priority Queue:]  An ADT that defines the operations one
+might perform on a priority queue.
+
+\item[linked queue:]  An implementation of a queue using a linked
+list.
+
+\item[constant time:]  An operation whose runtime does not
+depend on the size of the data structure.
+
+\item[linear time:]  An operation whose runtime is a linear
+function of the size of the data structure.
+
+\end{description}

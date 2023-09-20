@@ -1,0 +1,949 @@
+% LaTeX source for textbook ``How to think like a computer scientist''
+% Copyright (c)  2001  Allen B. Downey, Jeffrey Elkner, and Chris Meyers.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+\chapter{Lists}
+\index{list}
+\index{type!list}
+\index{element}
+\index{sequence}
+
+A {\bf list} is an ordered set of values, where each value is
+identified by an index.  The values that make up a list are
+called its {\bf elements}.  Lists are similar to strings, which are
+ordered sets of characters, except that the elements of a list can
+have any type.  Lists and strings---and other things that behave like
+ordered sets---are called {\bf sequences}.
+
+
+\section{List values}
+
+There are several ways to create a new list; the simplest is to
+enclose the elements in square brackets (\verb+[+ and \verb+]+):
+
+\beforeverb
+\begin{verbatim}
+[10, 20, 30, 40]
+["spam", "bungee", "swallow"]
+\end{verbatim}
+\afterverb
+%
+The first example is a list of four integers.  The second is a list of
+three strings.  The elements of a list don't have to be the same type.
+The following list contains a string, a float, an integer, and
+(mirabile dictu) another list:
+
+\beforeverb
+\begin{verbatim}
+["hello", 2.0, 5, [10, 20]]
+\end{verbatim}
+\afterverb
+%
+A list within another list is said to be {\bf nested}.
+
+\index{list!nested}
+
+Lists that contain consecutive integers are common, so Python provides a
+simple way to create them:
+
+\beforeverb
+\begin{verbatim}
+>>> range(1,5)
+[1, 2, 3, 4]
+\end{verbatim}
+\afterverb
+%
+The {\tt range} function takes two arguments and returns a list that
+contains all the integers from the first to the second, including the
+first but not including the second!
+
+There are two other forms of {\tt range}.  With a single argument, it
+creates a list that starts at 0:
+
+\beforeverb
+\begin{verbatim}
+>>> range(10)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+\end{verbatim}
+\afterverb
+%
+If there is a third argument, it specifies the space between
+successive values, which is called the {\bf step size}.  This example
+counts from 1 to 10 by steps of 2:
+
+\beforeverb
+\begin{verbatim}
+>>> range(1, 10, 2)
+[1, 3, 5, 7, 9]
+\end{verbatim}
+\afterverb
+%
+Finally, there is a special list that contains no elements.  It is
+called the empty list, and it is denoted {\tt []}.
+
+With all these ways to create lists, it would be disappointing if we
+couldn't assign list values to variables or pass lists as arguments
+to functions.  We can.
+
+\beforeverb
+\begin{verbatim}
+vocabulary = ["ameliorate", "castigate", "defenestrate"]
+numbers = [17, 123]
+empty = []
+print vocabulary, numbers, empty
+['ameliorate', 'castigate', 'defenestrate'] [17, 123] []
+\end{verbatim}
+\afterverb
+%
+
+
+\section{Accessing elements}
+\index{list!element}
+\index{access}
+
+The syntax for accessing the elements of a list is the same as the
+syntax for accessing the characters of a string---the bracket
+operator ({\tt []}).  The expression inside the brackets
+specifies the index.  Remember that the indices start at 0:
+
+\beforeverb
+\begin{verbatim}
+print numbers[0]
+numbers[1] = 5
+\end{verbatim}
+\afterverb
+%
+The bracket operator can appear anywhere in an expression.  When it
+appears on the left side of an assignment, it changes one of the
+elements in the list, so the one-eth element of {\tt numbers}, which
+used to be 123, is now 5.
+
+Any integer expression can be used as an index:
+
+\beforeverb
+\begin{verbatim}
+>>> numbers[3-2]
+5
+>>> numbers[1.0]
+TypeError: sequence index must be integer
+\end{verbatim}
+\afterverb
+%
+If you try to read or write an element that does not exist, you
+get a runtime error:
+
+\index{runtime error}
+
+\beforeverb
+\begin{verbatim}
+>>> numbers[2] = 5
+IndexError: list assignment index out of range
+\end{verbatim}
+\afterverb
+%
+If an index has a negative value, it counts backward from the
+end of the list:
+
+\beforeverb
+\begin{verbatim}
+>>> numbers[-1]
+5
+>>> numbers[-2]
+17
+>>> numbers[-3]
+IndexError: list index out of range
+\end{verbatim}
+\afterverb
+%
+{\tt numbers[-1]} is the last element of the list, {\tt numbers[-2]}
+is the second to last, and {\tt numbers[-3]} doesn't exist.
+
+It is common to use a loop variable as a list index.
+
+\beforeverb
+\begin{verbatim}
+horsemen = ["war", "famine", "pestilence", "death"]
+
+i = 0
+while i < 4:
+  print horsemen[i]
+  i = i + 1
+\end{verbatim}
+\afterverb
+%
+This {\tt while} loop counts from 0 to 4.  When the loop variable
+{\tt i} is 4, the condition fails and the loop terminates.  So the
+body of the loop is only executed when {\tt i} is 0, 1, 2, and 3.
+
+Each time through the loop, the variable {\tt i} is used as an index
+into the list, printing the {\tt i}-eth element.  This pattern of
+computation is called a {\bf list traversal}.
+
+\index{list!traversal}
+\index{traversal!list}
+
+
+\section{List length}
+\index{length}
+\index{list!length}
+
+The function {\tt len} returns the length of a list.  It is a good
+idea to use this value as the upper bound of a loop instead of a
+constant.  That way, if the size of the list changes, you won't have
+to go through the program changing all the loops; they will work
+correctly for any size list:
+
+\adjustpage{-2}
+\pagebreak
+
+\beforeverb
+\begin{verbatim}
+horsemen = ["war", "famine", "pestilence", "death"]
+
+i = 0
+while i < len(horsemen):
+  print horsemen[i]
+  i = i + 1
+\end{verbatim}
+\afterverb
+%
+The last time the body of the loop is executed, {\tt i} is {\tt
+len(horsemen) - 1}, which is the index of the last element.  When {\tt
+i} is equal to {\tt len(horsemen)}, the condition fails and the body
+is not executed, which is a good thing, because {\tt len(horsemen)} is
+not a legal index.
+
+Although a list can contain another list, the nested
+list still counts as a single element.  The length of this list is
+four:
+
+\beforeverb
+\begin{verbatim}
+['spam!', 1, ['Brie', 'Roquefort', 'Pol le Veq'], [1, 2, 3]]
+\end{verbatim}
+\afterverb
+%
+\begin{quote}
+{\em As an exercise, write a loop that traverses the previous
+list and prints the length of each element.  What happens if
+you send an integer to {\tt len}?}
+\end{quote}
+
+
+\section{List membership}
+\index{list!membership}
+\index{in operator}
+\index{operator!in}
+
+{\tt in} is a boolean operator that tests membership in a sequence.
+We used it in Section~\ref{in} with strings, but it also works with
+lists and other sequences:
+
+\beforeverb
+\begin{verbatim}
+>>> horsemen = ['war', 'famine', 'pestilence', 'death']
+>>> 'pestilence' in horsemen
+True
+>>> 'debauchery' in horsemen
+False
+\end{verbatim}
+\afterverb
+
+Since ``pestilence'' is a member of the {\tt horsemen} list, the {\tt in}
+operator returns true.  Since ``debauchery'' is not in the list, {\tt
+in} returns false.
+
+We can use the {\tt not} in combination
+with {\tt in} to test whether an element is not a member of a list:
+
+\beforeverb
+\begin{verbatim}
+>>> 'debauchery' not in horsemen
+True
+\end{verbatim}
+\afterverb
+
+
+\section{Lists and {\tt for} loops}
+\index{for loop}
+\index{list!for loop}
+\index{traversal}
+
+The {\tt for} loop we saw in Section~\ref{for} also works with
+lists.
+The generalized syntax of a {\tt for} loop is:
+
+\beforeverb
+\begin{verbatim}
+for VARIABLE in LIST:
+  BODY
+\end{verbatim}
+\afterverb
+%
+This statement is equivalent to:
+
+\beforeverb
+\begin{verbatim}
+i = 0
+while i < len(LIST):
+  VARIABLE = LIST[i]
+  BODY
+  i = i + 1
+\end{verbatim}
+\afterverb
+%
+The {\tt for} loop is more concise because we can 
+eliminate the loop variable, {\tt i}.
+Here is the previous loop written with a {\tt for} loop.
+
+\beforeverb
+\begin{verbatim}
+for horseman in horsemen:
+  print horseman
+\end{verbatim}
+\afterverb
+%
+It almost reads like English: ``For (every) horseman
+in (the list of) horsemen, print (the name of the) horseman.''
+
+Any list expression can be used in a {\tt for} loop:
+
+\beforeverb
+\begin{verbatim}
+for number in range(20):
+  if number % 2 == 0:
+    print  number
+
+for fruit in ["banana", "apple", "quince"]:
+  print "I like to eat " + fruit + "s!"
+\end{verbatim}
+\afterverb
+%
+The first
+example prints all the even numbers between zero and nineteen.
+The second example expresses enthusiasm for various fruits.
+
+
+
+\section{List operations}
+\index{list operation}
+\index{operation!list}
+
+The {\tt +} operator concatenates lists:
+
+\index{concatenation!list}
+
+\beforeverb
+\begin{verbatim}
+>>> a = [1, 2, 3]
+>>> b = [4, 5, 6]
+>>> c = a + b
+>>> print c
+[1, 2, 3, 4, 5, 6]
+\end{verbatim}
+\afterverb
+%
+Similarly, the {\tt *} operator repeats a list a given number of times:
+
+\index{repetition!list}
+
+\beforeverb
+\begin{verbatim}
+>>> [0] * 4
+[0, 0, 0, 0]
+>>> [1, 2, 3] * 3
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+\end{verbatim}
+\afterverb
+%
+The first example repeats {\tt [0]} four times.  The second example
+repeats the list {\tt [1, 2, 3]} three times.
+
+
+\section{List slices}
+\index{slice}
+\index{list!slice}
+
+The slice operations we saw in Section~\ref{slice}
+also work on lists:
+
+\beforeverb
+\begin{verbatim}
+>>> list = ['a', 'b', 'c', 'd', 'e', 'f']
+>>> list[1:3]
+['b', 'c']
+>>> list[:4]
+['a', 'b', 'c', 'd']
+>>> list[3:]
+['d', 'e', 'f']
+\end{verbatim}
+\afterverb
+%
+If you omit the first index, the slice starts at the beginning.
+If you omit the second, the slice goes to the end.  So if you
+omit both, the slice is really a copy of the whole list.
+
+\beforeverb
+\begin{verbatim}
+>>> list[:]
+['a', 'b', 'c', 'd', 'e', 'f']
+\end{verbatim}
+\afterverb
+%
+
+
+\section{Lists are mutable}
+\index{mutable!list}
+\index{list!mutable}
+
+Unlike strings, lists are mutable, which means we can change
+their elements.  Using the bracket operator on the left side
+of an assignment, we can update one of the elements:
+
+\beforeverb
+\begin{verbatim}
+>>> fruit = ["banana", "apple", "quince"]
+>>> fruit[0] = "pear"
+>>> fruit[-1] = "orange"
+>>> print fruit
+['pear', 'apple', 'orange']
+\end{verbatim}
+\afterverb
+%
+With the slice operator we can update several elements at once:
+
+\beforeverb
+\begin{verbatim}
+>>> list = ['a', 'b', 'c', 'd', 'e', 'f']
+>>> list[1:3] = ['x', 'y']
+>>> print list
+['a', 'x', 'y', 'd', 'e', 'f']
+\end{verbatim}
+\afterverb
+%
+We can also remove elements from a list by assigning the empty list to
+them:
+
+\beforeverb
+\begin{verbatim}
+>>> list = ['a', 'b', 'c', 'd', 'e', 'f']
+>>> list[1:3] = []
+>>> print list
+['a', 'd', 'e', 'f']
+\end{verbatim}
+\afterverb
+%
+And we can add elements to a list by squeezing them into an empty
+slice at the desired location:
+
+\beforeverb
+\begin{verbatim}
+>>> list = ['a', 'd', 'f']
+>>> list[1:1] = ['b', 'c']
+>>> print list
+['a', 'b', 'c', 'd', 'f']
+>>> list[4:4] = ['e']
+>>> print list
+['a', 'b', 'c', 'd', 'e', 'f']
+\end{verbatim}
+\afterverb
+%
+
+\section{List deletion}
+\index{deletion!list}
+\index{list deletion}
+
+Using slices to delete list elements can be
+awkward, and therefore error-prone.  Python provides an alternative
+that is more readable.
+
+{\tt del} removes an element from a list:
+
+\beforeverb
+\begin{verbatim}
+>>> a = ['one', 'two', 'three']
+>>> del a[1]
+>>> a
+['one', 'three']
+\end{verbatim}
+\afterverb
+%
+As you might expect, {\tt del} handles negative indices
+and causes a runtime error if the index is
+out of range.
+
+You can use a slice as an index for {\tt del}:
+
+\beforeverb
+\begin{verbatim}
+>>> list = ['a', 'b', 'c', 'd', 'e', 'f']
+>>> del list[1:5]
+>>> print list
+['a', 'f']
+\end{verbatim}
+\afterverb
+%
+As usual, slices select all the elements up to, but not
+including, the second index.
+
+% Had to remove this because append is a method, not a function.
+% The {\tt append} function adds an element (or a list) to
+% the end of an existing list.
+
+% \beforeverb
+% \begin{verbatim}
+% >>> a = ['one', 'two']
+% >>> append (a, 'three')
+% >>> print a
+% ['one', 'two', 'three']
+% \end{verbatim}
+% \afterverb
+
+
+\adjustpage{-2}
+\pagebreak
+
+\section{Objects and values}
+\index{object}
+\index{value}
+
+If we execute these assignment statements,
+
+\beforeverb
+\begin{verbatim}
+a = "banana"
+b = "banana"
+\end{verbatim}
+\afterverb
+%
+we know that {\tt a} and {\tt b} will refer to a
+string with the letters {\tt "banana"}.  But we can't
+tell whether they point to the {\em same} string.
+
+There are two possible states:
+
+\beforefig
+\centerline{\psfig{figure=illustrations/list1.eps}}
+\afterfig
+
+In one case, {\tt a} and {\tt b} refer to two different things that
+have the same value.  In the second case, they refer to the same
+thing.  These ``things'' have names---they are called {\bf objects}.
+An object is something a variable can refer to.
+
+Every object has a unique {\bf identifier}, which we can obtain with
+the {\tt id} function.  By printing the identifier of {\tt a}
+and {\tt b}, we can tell whether they refer to the same object.
+
+\beforeverb
+\begin{verbatim}
+>>> id(a)
+135044008
+>>> id(b)
+135044008
+\end{verbatim}
+\afterverb
+%
+In fact, we get the same identifier twice, which means that
+Python only created one string,
+and both {\tt a} and {\tt b} refer to it.
+
+Interestingly, lists behave differently.
+When we create two lists, we get two objects:
+
+\beforeverb
+\begin{verbatim}
+>>> a = [1, 2, 3]
+>>> b = [1, 2, 3]
+>>> id(a)
+135045528
+>>> id(b)
+135041704
+\end{verbatim}
+\afterverb
+%
+\adjustpage{1}
+
+So the state diagram looks like this:
+
+\beforefig
+\centerline{\psfig{figure=illustrations/list2.eps}}
+\afterfig
+
+{\tt a} and {\tt b} have the same value but do not
+refer to the same object.
+
+
+\section{Aliasing}
+\index{aliasing}
+\index{reference!aliasing}
+
+Since variables refer to objects, if we assign one
+variable to another, both variables refer to the same object:
+
+\beforeverb
+\begin{verbatim}
+>>> a = [1, 2, 3]
+>>> b = a
+\end{verbatim}
+\afterverb
+%
+In this case, the state diagram looks like this:
+
+\beforefig
+\centerline{\psfig{figure=illustrations/list3.eps}}
+\afterfig
+
+Because the same list has two different names, {\tt a} and {\tt b}, we
+say that it is {\bf aliased}.  Changes made with one alias affect
+the other:
+
+\beforeverb
+\begin{verbatim}
+>>> b[0] = 5
+>>> print a
+[5, 2, 3]
+\end{verbatim}
+\afterverb
+%
+Although this behavior can be useful, it is sometimes unexpected or
+undesirable.  In general, it is safer to avoid aliasing when you
+are working with mutable objects.  Of course, for immutable
+objects, there's no problem.  That's why Python is free to
+alias strings when it sees an opportunity to economize.
+
+
+\section{Cloning lists}
+\index{list!cloning}
+\index{cloning}
+
+If we want to modify a list and also keep a copy of the original, we
+need to be able to make a copy of the list itself, not just the
+reference.  This process is sometimes called {\bf cloning}, to avoid the
+ambiguity of the word ``copy.''
+
+The easiest way to clone a list is to use the slice operator:
+
+\beforeverb
+\begin{verbatim}
+>>> a = [1, 2, 3]
+>>> b = a[:]
+>>> print b
+[1, 2, 3]
+\end{verbatim}
+\afterverb
+%
+Taking any slice of {\tt a} creates a new list.  
+In this case the slice happens to consist of the whole list.
+
+Now we are free to make changes to {\tt b} without worrying about {\tt a}:
+
+\beforeverb
+\begin{verbatim}
+>>> b[0] = 5
+>>> print a
+[1, 2, 3]
+\end{verbatim}
+\afterverb
+%
+\begin{quote}
+{\em As an exercise, draw a state diagram for {\tt a} and {\tt b}
+before and after this change.}
+\end{quote}
+
+
+
+\section{List parameters}
+\index{list!as parameter}
+\index{parameter}
+\index{parameter!list}
+
+Passing a list as an argument actually passes a reference to the
+list, not a copy of the list.
+For example, the function {\tt head} takes a list as an argument
+and returns the first element:
+
+\beforeverb
+\begin{verbatim}
+def head(list):
+  return list[0]
+\end{verbatim}
+\afterverb
+%
+Here's how it is used:
+
+\beforeverb
+\begin{verbatim}
+>>> numbers = [1, 2, 3]
+>>> head(numbers)
+1
+\end{verbatim}
+\afterverb
+%
+The parameter {\tt list} and the variable {\tt numbers} are
+aliases for the same object.  The state diagram looks like
+this:
+
+\beforefig
+\centerline{\psfig{figure=illustrations/stack5.eps}}
+\afterfig
+
+Since the list object is shared by two frames, we drew
+it between them.
+
+If a function modifies a list parameter, the caller sees the change.
+For example, {\tt deleteHead} removes the first element from a list:
+
+\beforeverb
+\begin{verbatim}
+def deleteHead(list):
+  del list[0]
+\end{verbatim}
+\afterverb
+%
+Here's how {\tt deleteHead} is used:
+
+\beforeverb
+\begin{verbatim}
+>>> numbers = [1, 2, 3]
+>>> deleteHead(numbers)
+>>> print numbers
+[2, 3]
+\end{verbatim}
+\afterverb
+%
+If a function returns a list, it returns a reference to the list.  For
+example, {\tt tail} returns a list that contains all but the first
+element of the given list:
+
+\beforeverb
+\begin{verbatim}
+def tail(list):
+  return list[1:]
+\end{verbatim}
+\afterverb
+%
+Here's how {\tt tail} is used:
+
+\beforeverb
+\begin{verbatim}
+>>> numbers = [1, 2, 3]
+>>> rest = tail(numbers)
+>>> print rest
+[2, 3]
+\end{verbatim}
+\afterverb
+%
+Because the return value was created with the slice operator, it
+is a new list.  Creating {\tt rest}, and any subsequent changes
+to {\tt rest}, have no effect on {\tt numbers}.
+
+
+
+\section{Nested lists}
+\label{nested lists}
+\index{nested list}
+\index{list!nested}
+
+A nested list is a list that appears as an element in another
+list.  In this list, the three-eth element is a nested list:
+
+\beforeverb
+\begin{verbatim}
+>>> list = ["hello", 2.0, 5, [10, 20]]
+\end{verbatim}
+\afterverb
+%
+If we print {\tt list[3]}, we get {\tt [10, 20]}.  To extract an
+element from the nested list, we can proceed in two steps:
+
+\beforeverb
+\begin{verbatim}
+>>> elt = list[3]
+>>> elt[0]
+10
+\end{verbatim}
+\afterverb
+%
+Or we can combine them:
+
+\beforeverb
+\begin{verbatim}
+>>> list[3][1]
+20
+\end{verbatim}
+\afterverb
+%
+Bracket operators evaluate from left to right, so this expression
+gets the three-eth element of {\tt list} and extracts the one-eth
+element from it.
+
+\section{Matrices}
+\index{matrix}
+\index{list!nested}
+
+Nested lists are often used to represent matrices.  For example,
+the matrix:
+
+\beforefig
+\centerline{\psfig{figure=illustrations/matrix.eps}}
+\afterfig
+
+might be represented as:
+
+\beforeverb
+\begin{verbatim}
+>>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+\end{verbatim}
+\afterverb
+%
+{\tt matrix} is a list with three elements, where each
+element is a row of the matrix.  We can select an entire row from the
+matrix in the usual way:
+
+\beforeverb
+\begin{verbatim}
+>>> matrix[1]
+[4, 5, 6]
+\end{verbatim}
+\afterverb
+%
+Or we can extract a single element from the matrix using the
+double-index form:
+
+\beforeverb
+\begin{verbatim}
+>>> matrix[1][1]
+5
+\end{verbatim}
+\afterverb
+%
+The first index selects the row, and the second index selects the
+column.  Although this way of representing matrices is common, it is
+not the only possibility.  A small variation is to use a list of
+columns instead of a list of rows.  Later we will see a more
+radical alternative using a dictionary.
+
+\index{dictionary}
+\index{row}
+\index{column}
+
+
+\section{Strings and lists}
+\index{split function}
+\index{join function}
+
+Two of the most useful functions in the {\tt string} module involve
+lists of strings.  The {\tt split} function breaks a string into a
+list of words.  By default, any number of whitespace characters is
+considered a word boundary:
+
+\beforeverb
+\begin{verbatim}
+>>> import string
+>>> song = "The rain in Spain..."
+>>> string.split(song)
+['The', 'rain', 'in', 'Spain...']
+\end{verbatim}
+\afterverb
+%
+An optional argument called a {\bf delimiter} can be used to specify which
+characters to use as word boundaries.
+The following example
+uses the string {\tt ai} as the delimiter:
+
+\beforeverb
+\begin{verbatim}
+>>> string.split(song, 'ai')
+['The r', 'n in Sp', 'n...']
+\end{verbatim}
+\afterverb
+%
+Notice that the delimiter doesn't appear in the list.
+
+The {\tt join} function is the inverse of {\tt split}.  It
+takes a list of strings and
+concatenates the elements with a space between each pair:
+
+\beforeverb
+\begin{verbatim}
+>>> list = ['The', 'rain', 'in', 'Spain...']
+>>> string.join(list)
+'The rain in Spain...'
+\end{verbatim}
+\afterverb
+%
+Like {\tt split}, {\tt join} takes an optional delimiter
+that is inserted between elements:
+
+\beforeverb
+\begin{verbatim}
+>>> string.join(list, '_')
+'The_rain_in_Spain...'
+\end{verbatim}
+\afterverb
+
+\begin{quote}
+\begin{quote}
+{\em As an exercise, describe the relationship between {\tt
+string.join(string.split(song))} and {\tt song}.  Are they the same
+for all strings?  When would they be different?}
+\end{quote}
+\end{quote}
+
+
+\section{Glossary}
+
+\begin{description}
+
+\item[list:] A named collection of objects, where each object is
+identified by an index.
+
+\item[index:] An integer variable or value that indicates an element of a
+list.
+
+\item[element:] One of the values in a list (or other sequence).  The
+bracket operator selects elements of a list.
+
+\item[sequence:] Any of the data types that consist of an ordered set of
+elements, with each element identified by an index.
+
+\item[nested list:] A list that is an element of another list.
+
+\item[list traversal:] The sequential accessing of each element in a list.
+
+\item[object:] A thing to which a variable can refer.
+
+\item[aliases:] Multiple variables that contain references to the same object.
+
+\item[clone:] To create a new object that has the same value as an
+existing object.  Copying a reference to an object creates an alias
+but doesn't clone the object.
+
+\item[delimiter:] A character or string used to indicate where a
+string should be split.
+
+\index{list}
+\index{index}
+\index{sequence}
+\index{element}
+\index{nested list}
+\index{list traversal}
+\index{object}
+\index{aliasing}
+\index{clone}
+\index{delimiter}
+
+\end{description}

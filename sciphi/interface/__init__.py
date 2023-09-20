@@ -2,7 +2,9 @@ from sciphi.interface.anthropic_interface import AnthropicLLMInterface
 from sciphi.interface.base import LLMInterface, ProviderConfig, ProviderName
 from sciphi.interface.hugging_face_interface import HuggingFaceLLMInterface
 from sciphi.interface.interface_manager import InterfaceManager
+from sciphi.interface.llama_index_interface import LlamaIndexInterface
 from sciphi.interface.openai_interface import OpenAILLMInterface
+from sciphi.interface.vllm_interface import vLLMInterface
 
 __all__ = [
     "InterfaceManager",
@@ -11,6 +13,8 @@ __all__ = [
     "LLMInterface",
     # Concrete Providers
     "AnthropicLLMInterface",
-    "OpenAILLMInterface",
     "HuggingFaceLLMInterface",
+    "LlamaIndexInterface",
+    "OpenAILLMInterface",
+    "vLLMInterface",
 ]

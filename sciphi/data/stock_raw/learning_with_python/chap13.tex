@@ -1,0 +1,421 @@
+% LaTeX source for textbook ``How to think like a computer scientist''
+% Copyright (c)  2001  Allen B. Downey, Jeffrey Elkner, and Chris Meyers.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+\chapter{Classes and functions}
+\label{time}
+\index{function}
+\index{method}
+
+
+\section{Time}
+
+As another example of a user-defined type, we'll define a class called
+{\tt Time} that records the time of day.  The class definition looks
+like this:
+
+\beforeverb
+\begin{verbatim}
+class Time:
+  pass
+\end{verbatim}
+\afterverb
+%
+We can create a new {\tt Time} object and assign
+attributes for hours, minutes, and seconds:
+
+\beforeverb
+\begin{verbatim}
+time = Time()
+time.hours = 11
+time.minutes = 59
+time.seconds = 30
+\end{verbatim}
+\afterverb
+%
+The state diagram for the {\tt Time} object looks like this:
+
+\beforefig
+\centerline{\psfig{figure=illustrations/time.eps}}
+\afterfig
+
+\begin{quote}
+{\em As an exercise, write a function {\tt printTime} that takes a 
+{\tt Time} object
+as an argument and prints it in the form {\tt hours:minutes:seconds}.}
+\end{quote}
+
+\begin{quote}
+{\em As a second exercise, write a boolean function {\tt after} that
+takes two {\tt Time} objects, {\tt t1} and {\tt t2}, as arguments, and
+returns {\tt True} if {\tt t1} follows {\tt t2} chronologically and
+{\tt False} otherwise.}
+\end{quote}
+
+
+\section{Pure functions}
+\index{pure function}
+\index{function type!pure}
+
+In the next few sections, we'll write two versions of a function
+called {\tt addTime}, which calculates the sum of two {\tt Time}s.
+They will demonstrate two kinds of functions: pure functions and
+modifiers.
+
+The following is a rough version of {\tt addTime}:
+
+\beforeverb
+\begin{verbatim}
+def addTime(t1, t2):
+  sum = Time()
+  sum.hours = t1.hours + t2.hours
+  sum.minutes = t1.minutes + t2.minutes
+  sum.seconds = t1.seconds + t2.seconds
+  return sum
+\end{verbatim}
+\afterverb
+%
+The function creates a new {\tt Time} object, initializes its
+attributes, and returns a reference to the new object.  This is called
+a {\bf pure function} because it does not modify any of the objects
+passed to it as arguments and it has no side effects, such as
+displaying a value or getting user input.
+
+Here is an example of how to use this function.  We'll create two {\tt
+Time} objects: {\tt currentTime}, which contains the current time; and
+{\tt breadTime}, which contains the amount of time it takes for a
+breadmaker to make bread.  Then we'll use {\tt addTime} to figure out
+when the bread will be done.  If you haven't finished writing {\tt
+printTime} yet, take a look ahead to Section~\ref{printTime} before
+you try this:
+
+\beforeverb
+\begin{verbatim}
+>>> currentTime = Time()
+>>> currentTime.hours = 9
+>>> currentTime.minutes = 14
+>>> currentTime.seconds =  30
+
+>>> breadTime = Time()
+>>> breadTime.hours =  3
+>>> breadTime.minutes =  35
+>>> breadTime.seconds =  0
+
+>>> doneTime = addTime(currentTime, breadTime)
+>>> printTime(doneTime)
+\end{verbatim}
+\afterverb
+%
+The output of this program is {\tt 12:49:30}, which is correct. On the
+other hand, there are cases where the result is not correct.  Can you
+think of one?
+
+The problem is that this function does not deal with cases where the
+number of seconds or minutes adds up to more than sixty.  When that
+happens, we have to ``carry'' the extra seconds into the minutes column
+or the extra minutes into the hours column.
+
+Here's a second corrected version of the function:
+
+\beforeverb
+\begin{verbatim}
+def addTime(t1, t2):
+  sum = Time()
+  sum.hours = t1.hours + t2.hours
+  sum.minutes = t1.minutes + t2.minutes
+  sum.seconds = t1.seconds + t2.seconds
+
+  if sum.seconds >= 60:
+    sum.seconds = sum.seconds - 60
+    sum.minutes = sum.minutes + 1
+
+  if sum.minutes >= 60:
+    sum.minutes = sum.minutes - 60
+    sum.hours = sum.hours + 1
+
+  return sum
+\end{verbatim}
+\afterverb
+%
+Although this function is correct, it is starting to get big.  Later
+we will suggest an alternative approach that yields shorter code.
+
+
+\section{Modifiers}
+\label{increment}
+\index{modifier}
+\index{function type!modifier}
+
+There are times when it is useful for a function to modify one or more
+of the objects it gets as arguments.  Usually, the caller keeps a
+reference to the objects it passes, so any changes the function makes
+are visible to the caller.  Functions that work this way are called
+{\bf modifiers}.
+
+{\tt increment}, which adds a given number of seconds to a {\tt Time}
+object, would be written most naturally as a
+modifier.  A rough draft of the function
+looks like this:
+
+\adjustpage{-2}
+\pagebreak
+
+\beforeverb
+\begin{verbatim}
+def increment(time, seconds):
+  time.seconds = time.seconds + seconds
+
+  if time.seconds >= 60:
+    time.seconds = time.seconds - 60
+    time.minutes = time.minutes + 1
+
+  if time.minutes >= 60:
+    time.minutes = time.minutes - 60
+    time.hours = time.hours + 1
+\end{verbatim}
+\afterverb
+%
+The first line performs the basic operation; the remainder deals
+with the special cases we saw before.
+
+Is this function correct?  What happens if the parameter {\tt seconds} is
+much greater than sixty?  In that case, it is not enough to carry
+once; we have to keep doing it until {\tt seconds} is less than sixty.
+One solution is to
+replace the {\tt if} statements with {\tt while}
+statements:
+
+\beforeverb
+\begin{verbatim}
+def increment(time, seconds):
+  time.seconds = time.seconds + seconds
+
+  while time.seconds >= 60:
+    time.seconds = time.seconds - 60
+    time.minutes = time.minutes + 1
+
+  while time.minutes >= 60:
+    time.minutes = time.minutes - 60
+    time.hours = time.hours + 1
+\end{verbatim}
+\afterverb
+%
+This function is now correct, but it is not the most efficient
+solution.
+
+\begin{quote}
+{\em As an exercise, rewrite this function so that it doesn't contain 
+any loops.}
+\end{quote}
+
+\begin{quote}
+{\em As a second exercise, rewrite {\tt increment} as a pure function, and
+write function calls to both versions.}
+\end{quote}
+
+
+\section{Which is better?}
+\index{functional programming style}
+
+\adjustpage{1}
+
+Anything that can be done with modifiers can also be done with pure
+functions.  In fact, some programming languages only allow pure
+functions.  There is some evidence that programs that use pure
+functions are faster to develop and less error-prone than programs
+that use modifiers.  Nevertheless, modifiers are convenient at times,
+and in some cases, functional programs are less efficient.
+
+In general, we recommend that you write pure functions whenever it is
+reasonable to do so and resort to modifiers only if there is a
+compelling advantage.  This approach might be called a {\bf functional
+programming style}.
+
+
+\section{Prototype development versus planning}
+\label{convert}
+\index{prototype development}
+
+In this chapter, we demonstrated an approach to program
+development that we call {\bf prototype development}. In each
+case, we wrote a rough draft (or prototype) that performed the basic
+calculation and then tested it on a few cases, correcting flaws as we
+found them.
+
+Although this approach can be effective, it can lead to code that is
+unnecessarily complicated---since it deals with many special
+cases---and unreliable---since it is hard to know if you have found
+all the errors.
+
+An alternative is {\bf planned development}, in which high-level insight
+into the problem can make the programming much easier.  In this case,
+the insight is that a {\tt Time} object is really a three-digit number
+in base 60!  The {\tt second} component is the ``ones column,'' the
+{\tt minute} component is the ``sixties column,'' and the {\tt hour}
+component is the ``thirty-six hundreds column.''
+
+When we wrote {\tt addTime} and {\tt increment}, we were effectively
+doing addition in base 60, which is why we had to carry from one
+column to the next.
+
+This observation suggests another approach to the whole problem---we
+can convert a {\tt Time} object into a single number and take
+advantage of the fact that the computer knows how to do arithmetic
+with numbers.  The following function converts a {\tt Time}
+object into an integer:
+
+\beforeverb
+\begin{verbatim}
+def convertToSeconds(t):
+  minutes = t.hours * 60 + t.minutes
+  seconds = minutes * 60 + t.seconds
+  return seconds
+\end{verbatim}
+\afterverb
+%
+Now, all we need is a way to convert from an integer to a {\tt Time}
+object:
+
+\adjustpage{1}
+
+\beforeverb
+\begin{verbatim}
+def makeTime(seconds):
+  time = Time()
+  time.hours = seconds // 3600
+  time.minutes = (seconds%3600) // 60
+  time.seconds = seconds%60
+  return time
+\end{verbatim}
+\afterverb
+%
+You might have to think a bit to convince yourself that this function
+is correct.  Assuming you are convinced, you can use it and
+{\tt convertToSeconds}
+to rewrite {\tt addTime}:
+
+\beforeverb
+\begin{verbatim}
+def addTime(t1, t2):
+  seconds = convertToSeconds(t1) + convertToSeconds(t2)
+  return makeTime(seconds)
+\end{verbatim}
+\afterverb
+%
+This version is much shorter than the original, and it is much easier to
+demonstrate that it is correct.
+
+\begin{quote}
+{\em As an exercise, rewrite {\tt increment} the same way.}
+\end{quote}
+
+
+\section{Generalization}
+\index{generalization}
+
+In some ways, converting from base 60 to base 10 and back is harder
+than just dealing with times.  Base conversion is more abstract; our
+intuition for dealing with times is better.
+
+But if we have the insight to treat times as base 60 numbers and make
+the investment of writing the conversion functions ({\tt
+convertToSeconds} and {\tt makeTime}), we get a program that is
+shorter, easier to read and debug, and more reliable.
+
+It is also easier to add features later.  For example, imagine
+subtracting two {\tt Time}s to find the duration between them.  The
+na\"{\i}ve approach would be to implement subtraction with borrowing.
+Using the conversion functions would be easier and more likely to be
+correct.
+
+Ironically, sometimes making a problem harder (or more general) makes it
+easier (because there are fewer special cases and fewer opportunities
+for error).
+
+
+\section{Algorithms}
+\index{algorithm}
+
+When you write a general solution for a class of problems, as opposed
+to a specific solution to a single problem, you have written an {\bf
+algorithm}.  We mentioned this word before but did not define it
+carefully.  It is not easy to define, so we will try a couple of
+approaches.
+
+First, consider something that is not an algorithm.  When you learned
+to multiply single-digit numbers, you probably memorized the
+multiplication table.  In effect, you memorized 100 specific solutions.
+That kind of knowledge is not algorithmic.
+
+But if you were ``lazy,'' you probably cheated by learning a few
+tricks.  For example, to find the product of $n$ and 9, you can
+write $n-1$ as the first digit and $10-n$ as the second
+digit.  This trick is a general solution for multiplying any
+single-digit number by 9.  That's an algorithm!
+
+Similarly, the techniques you learned for addition with carrying,
+subtraction with borrowing, and long division are all algorithms.  One
+of the characteristics of algorithms is that they do not require any
+intelligence to carry out.  They are mechanical processes in which
+each step follows from the last according to a simple set of rules.
+
+In our opinion, it is embarrassing that humans spend so much time in
+school learning to execute algorithms that, quite literally, require
+no intelligence.
+
+On the other hand, the process of designing algorithms is interesting,
+intellectually challenging, and a central part of what we call
+programming.
+
+Some of the things that people do naturally, without difficulty or
+conscious thought, are the hardest to express algorithmically.
+Understanding natural language is a good example.  We all do it, but
+so far no one has been able to explain {\em how} we do it, at least
+not in the form of an algorithm.
+
+
+\section{Glossary}
+
+\begin{description}
+
+\item[pure function:] A function that does not modify any of the objects it
+receives as arguments.  Most pure functions are fruitful.
+
+\item[modifier:] A function that changes one or more of the objects it
+receives as arguments.  Most modifiers are fruitless.
+
+\item[functional programming style:] A style of program design in which the
+majority of functions are pure.
+
+\item[prototype development:] A way of developing programs starting with a
+prototype and gradually testing and improving it.
+
+\item[planned development:] A way of developing programs that involves
+high-level insight into the problem and more planning than incremental
+development or prototype development.
+
+\item[algorithm:] A set of instructions for solving a class of problems by a
+mechanical, unintelligent process.
+
+\index{pure function}
+\index{modifier}
+\index{functional programming style}
+\index{incremental development}
+\index{development!incremental}
+\index{planned development}
+\index{development!planned}
+\index{algorithm}
+
+\end{description}

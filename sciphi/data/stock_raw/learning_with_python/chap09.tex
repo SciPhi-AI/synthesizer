@@ -1,0 +1,600 @@
+% LaTeX source for textbook ``How to think like a computer scientist'
+% Copyright (c)  2001  Allen B. Downey, Jeffrey Elkner, and Chris Meyers.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+
+
+\chapter{Tuples}
+\label{tuplechap}
+\index{tuple}
+
+\section{Mutability and tuples}
+\index{tuple}
+\index{data type!tuple}
+\index{type!tuple}
+\index{data type!immutable}
+
+So far, you have seen two compound types: strings, which are made up
+of characters; and lists, which are made up of elements of any type.
+One of the differences we noted is that the elements of a list can be
+modified, but the characters in a string cannot.  In other words, strings
+are {\bf immutable} and lists are {\bf mutable}.
+
+\index{mutable}
+\index{immutable}
+
+There is another type in Python called a {\bf tuple} that is similar
+to a list except that it is immutable.  Syntactically, a tuple is a
+comma-separated list of values:
+
+\beforeverb
+\begin{verbatim}
+>>> tuple = 'a', 'b', 'c', 'd', 'e'
+\end{verbatim}
+\afterverb
+%
+Although it is not necessary, it is conventional to enclose tuples in
+parentheses:
+
+\beforeverb
+\begin{verbatim}
+>>> tuple = ('a', 'b', 'c', 'd', 'e')
+\end{verbatim}
+\afterverb
+%
+To create a tuple with a single element, we have to include the final
+comma:
+
+\beforeverb
+\begin{verbatim}
+>>> t1 = ('a',)
+>>> type(t1)
+<type 'tuple'>
+\end{verbatim}
+\afterverb
+%
+Without the comma, Python treats {\tt ('a')} as a string in
+parentheses:
+
+\beforeverb
+\begin{verbatim}
+>>> t2 = ('a')
+>>> type(t2)
+<type 'str'>
+\end{verbatim}
+\afterverb
+%
+Syntax issues aside, the operations on tuples are the same as the
+operations on lists.  The index operator selects an element from
+a tuple.
+
+\beforeverb
+\begin{verbatim}
+>>> tuple = ('a', 'b', 'c', 'd', 'e')
+>>> tuple[0]
+'a'
+\end{verbatim}
+\afterverb
+%
+And the slice operator selects a range of elements.
+
+\beforeverb
+\begin{verbatim}
+>>> tuple[1:3]
+('b', 'c')
+\end{verbatim}
+\afterverb
+%
+But if we try to modify one of the elements of the tuple, we get
+an error:
+
+\index{runtime error}
+
+\beforeverb
+\begin{verbatim}
+>>> tuple[0] = 'A'
+TypeError: object doesn't support item assignment
+\end{verbatim}
+\afterverb
+%
+Of course, even if we can't modify the elements of a tuple, we can
+replace it with a different tuple:
+
+\beforeverb
+\begin{verbatim}
+>>> tuple = ('A',) + tuple[1:]
+>>> tuple
+('A', 'b', 'c', 'd', 'e')
+\end{verbatim}
+\afterverb
+%
+
+\section{Tuple assignment}
+\label{tuple assignment}
+\index{tuple assignment}
+\index{assignment!tuple}
+
+Once in a while, it is useful to swap the values of two variables.
+With conventional assignment statements, we have to use a temporary
+variable.  For example, to swap {\tt a} and {\tt b}:
+
+\beforeverb
+\begin{verbatim}
+>>> temp = a
+>>> a = b
+>>> b = temp
+\end{verbatim}
+\afterverb
+%
+If we have to do this often, this approach becomes cumbersome.  Python
+provides a form of {\bf tuple assignment} that solves this problem neatly:
+
+\beforeverb
+\begin{verbatim}
+>>> a, b = b, a
+\end{verbatim}
+\afterverb
+%
+The left side is a tuple of variables; the right side is a tuple of
+values.  Each value is assigned to its respective variable.  
+All the expressions on the right side are evaluated before any
+of the assignments.
+This feature makes tuple
+assignment quite versatile.
+
+Naturally, the number of variables on the left and the number of
+values on the right have to be the same:
+
+\beforeverb
+\begin{verbatim}
+>>> a, b, c, d = 1, 2, 3
+ValueError: unpack tuple of wrong size
+\end{verbatim}
+\afterverb
+%
+
+\section{Tuples as return values}
+\index{tuple}
+\index{value!tuple}
+\index{return value!tuple}
+\index{function!tuple as return value}
+
+Functions can return tuples as return values.  For example, we could
+write a function that swaps two parameters:
+
+\beforeverb
+\begin{verbatim}
+def swap(x, y):
+  return y, x
+\end{verbatim}
+\afterverb
+%
+Then we can assign the return value to a
+tuple with two variables:
+
+\beforeverb
+\begin{verbatim}
+a, b = swap(a, b)
+\end{verbatim}
+\afterverb
+%
+In this case, there is no great advantage in making {\tt swap} a
+function.  In fact, there is a danger in trying to encapsulate {\tt
+swap}, which is the following tempting mistake:
+
+\beforeverb
+\begin{verbatim}
+def swap(x, y):      # incorrect version
+  x, y = y, x
+\end{verbatim}
+\afterverb
+%
+If we call this function like this:
+
+\beforeverb
+\begin{verbatim}
+swap(a, b)
+\end{verbatim}
+\afterverb
+%
+then {\tt a} and {\tt x} are aliases for the same value.  Changing {\tt x}
+inside {\tt swap} makes {\tt x} refer to a different value, but it has no
+effect on {\tt a} in {\tt \_\_main\_\_}.  Similarly, changing {\tt y} has no
+effect on {\tt b}.
+
+This function runs without producing an error message, but it
+doesn't do what we intended.  This is an example of a semantic
+error.
+
+\index{semantic error}
+
+\begin{quote}
+{\em As an exercise, draw a state diagram for this function so that
+you can see why it doesn't work.}
+\end{quote}
+
+
+\section{Random numbers}
+\index{random number}
+\index{number!random}
+
+Most computer programs do the same thing every time they execute,
+so they are said to be {\bf deterministic}.  Determinism is usually a
+good thing, since we expect the same calculation to yield the same
+result.  For some applications, though, we want the computer to
+be unpredictable.  Games are an obvious example, but there are
+more.
+
+Making a program truly nondeterministic turns out to be not so easy,
+but there are ways to make it at least seem nondeterministic.  One of
+them is to generate random numbers and use them to determine the
+outcome of the program.  Python provides a built-in function that
+generates {\bf pseudorandom} numbers, which are not truly random in
+the mathematical sense, but for our purposes they will do.
+
+The {\tt random} module contains a function called {\tt random} that
+returns a floating-point number between 0.0 and 1.0.  Each time you
+call {\tt random}, you get the next number in a long series.  To see a
+sample, run this loop:
+
+\beforeverb
+\begin{verbatim}
+import random
+
+for i in range(10):
+  x = random.random()
+  print x
+\end{verbatim}
+\afterverb
+%
+To generate a random number between 0.0 and an upper bound like
+{\tt high}, multiply {\tt x} by {\tt high}.
+
+\begin{quote}
+{\em As an exercise, generate a random number between {\tt low} and
+{\tt high}.}
+\end{quote}
+
+\begin{quote}
+{\em As an additional exercise, generate a random {\em integer}
+between {\tt low} and {\tt high}, including both end points.}
+\end{quote}
+
+
+\section{List of random numbers}
+
+The first step is to generate a list of random values.  {\tt
+randomList} takes an integer argument and returns a list of random
+numbers with the given length.  It starts with a list of {\tt n}
+zeros.  Each time through the loop, it replaces one of the elements
+with a random number.
+The return value is a reference to the complete list:
+
+\beforeverb
+\begin{verbatim}
+def randomList(n):
+  s = [0] * n
+  for i in range(n):
+    s[i] = random.random()
+  return s
+\end{verbatim}
+\afterverb
+%
+We'll test this function with a list of eight elements.  For
+purposes of debugging, it is a good idea to start small.
+
+\adjustpage{-2}
+\pagebreak
+
+\beforeverb
+\begin{verbatim}
+>>> randomList(8)
+0.15156642489
+0.498048560109
+0.810894847068
+0.360371157682
+0.275119183077
+0.328578797631
+0.759199803101
+0.800367163582
+\end{verbatim}
+\afterverb
+%
+The numbers generated by {\tt random} are supposed to be distributed
+uniformly, which means that every value is equally likely.
+
+If we divide the range of possible
+values into equal-sized ``buckets,'' and count the number of times a
+random value falls in each bucket, we should get roughly the
+same number in each.
+
+We can test this theory by writing a program to 
+divide the range into
+buckets and count the number of values in each.
+
+
+\section{Counting}
+\index{counting}
+
+A good approach to problems like this is to divide the problem into
+subproblems and look for subproblems that fit a computational pattern
+you have seen before.
+
+In this case, we want to traverse a list of numbers and count the
+number of times a value falls in a given range.  That sounds familiar.
+In Section~\ref{counter}, we wrote a program that traversed a string and
+counted the number of times a given letter appeared.
+
+So, we can proceed by copying the old program and adapting it
+for the current problem.  The original program was:
+
+\beforeverb
+\begin{verbatim}
+count = 0
+for char in fruit:
+  if char == 'a':
+    count = count + 1
+print count
+\end{verbatim}
+\afterverb
+%
+The first step is to replace {\tt fruit} with {\tt t} and
+{\tt char} with {\tt num}.  That doesn't change the program;
+it just makes it more readable.
+
+The second step is to change the test.  We aren't interested
+in finding letters.  We want to see if {\tt num} is between
+the given values {\tt low} and {\tt high}.  
+
+\beforeverb
+\begin{verbatim}
+count = 0
+for num in t:
+  if low < num < high:
+    count = count + 1
+print count
+\end{verbatim}
+\afterverb
+%
+The last step is to encapsulate this code in a function called
+{\tt inBucket}.  The parameters are the list and the values
+{\tt low} and {\tt high}.
+
+\beforeverb
+\begin{verbatim}
+def inBucket(t, low, high):
+  count = 0
+  for num in t:
+    if low < num < high:
+      count = count + 1
+  return count
+\end{verbatim}
+\afterverb
+%
+By copying and modifying an existing program, we were able
+to write this function quickly and save a lot of debugging
+time.  This development plan is called {\bf pattern matching}.
+If you find yourself working on a problem you have solved
+before, reuse the solution.
+
+
+\section{Many buckets}
+
+As the number of buckets increases, {\tt inBucket} gets
+a little unwieldy.  With two buckets, it's not bad:
+
+\beforeverb
+\begin{verbatim}
+low = inBucket(a, 0.0, 0.5)
+high = inBucket(a, 0.5, 1)
+\end{verbatim}
+\afterverb
+%
+But with four buckets it is getting cumbersome.
+
+\beforeverb
+\begin{verbatim}
+bucket1 = inBucket(a, 0.0, 0.25)
+bucket2 = inBucket(a, 0.25, 0.5)
+bucket3 = inBucket(a, 0.5, 0.75)
+bucket4 = inBucket(a, 0.75, 1.0)
+\end{verbatim}
+\afterverb
+%
+There are two problems.  One is that we have to make up new
+variable names for each result.  The other is that we have to
+compute the range for each bucket.
+
+We'll solve the second problem first.  If the number of buckets
+is {\tt numBuckets}, then the width of each bucket is
+{\tt 1.0 / numBuckets}.
+
+We'll use a loop to compute the range of each bucket.
+The loop variable, {\tt i},
+counts from 0 to {\tt numBuckets-1}:
+
+\beforeverb
+\begin{verbatim}
+bucketWidth = 1.0 / numBuckets
+for i in range(numBuckets):
+  low = i * bucketWidth
+  high = low + bucketWidth
+  print low, "to", high
+\end{verbatim}
+\afterverb
+%
+To compute the low end of each bucket, we multiply the loop variable
+by the bucket width.  The high end is just a {\tt bucketWidth} away.
+
+With {\tt numBuckets = 8}, the output is:
+
+\beforeverb
+\begin{verbatim}
+0.0 to 0.125
+0.125 to 0.25
+0.25 to 0.375
+0.375 to 0.5
+0.5 to 0.625
+0.625 to 0.75
+0.75 to 0.875
+0.875 to 1.0
+\end{verbatim}
+\afterverb
+%
+You can confirm that each bucket is the same width, that they don't
+overlap, and that they cover the entire range from 0.0 to 1.0.
+
+Now back to the first problem.
+We need a way to store eight integers, using the loop variable
+to indicate one at a time.  By now you should be thinking,
+``List!''
+
+We have to create the bucket list outside the loop, because we only
+want to do it once.  Inside the loop, we'll call {\tt inBucket}
+repeatedly and update the {\tt i}-eth element of the list:
+
+\beforeverb
+\begin{verbatim}
+numBuckets = 8
+buckets = [0] * numBuckets
+bucketWidth = 1.0 / numBuckets
+for i in range(numBuckets):
+  low = i * bucketWidth
+  high = low + bucketWidth
+  buckets[i] = inBucket(t, low, high)
+print buckets
+\end{verbatim}
+\afterverb
+%
+With a list of 1000 values, this code produces this bucket list:
+
+\beforeverb
+\begin{verbatim}
+[138, 124, 128, 118, 130, 117, 114, 131]
+\end{verbatim}
+\afterverb
+%
+These numbers are fairly close to 125, which is what we expected.  At
+least, they are close enough that we can believe the random number
+generator is working.
+
+\begin{quote}
+{\em As an exercise, 
+test this function with some longer lists, and see if the
+number of values in each bucket tends to level off.}
+\end{quote}
+
+
+\section{A single-pass solution}
+\index{histogram}
+
+Although this program works, it is not as efficient as it could be.
+Every time it calls {\tt inBucket}, it traverses the entire list.  As
+the number of buckets increases, that gets to be a lot of traversals.
+
+It would be better to make a single pass through the list and compute
+for each value the index of the bucket in which it falls.  Then we can
+increment the appropriate counter.
+
+In the previous section we took an index, {\tt i}, and multiplied it
+by the {\tt bucketWidth} to find the lower bound of a given
+bucket.  Now we want to take a value in the range 0.0 to 1.0 and find the
+index of the bucket where it falls.
+
+Since this problem is the inverse of the previous problem, we might
+guess that we should divide by {\tt bucketWidth} instead of
+multiplying.  That guess is correct.
+
+Since {\tt bucketWidth = 1.0 / numBuckets}, dividing by {\tt
+bucketWidth} is the same as multiplying by {\tt numBuckets}.  If we
+multiply a number in the range 0.0 to 1.0 by {\tt numBuckets}, we get
+a number in the range from 0.0 to {\tt numBuckets}.  If we round that
+number to the next lower integer, we get exactly what we are looking
+for---a bucket index:
+
+\beforeverb
+\begin{verbatim}
+numBuckets = 8
+buckets = [0] * numBuckets
+for i in t:
+  index = int(i * numBuckets)
+  buckets[index] = buckets[index] + 1
+\end{verbatim}
+\afterverb
+%
+We used the {\tt int} function to convert a floating-point
+number to an integer.
+
+Is it possible for this calculation to produce an index that is out of
+range (either negative or greater than {\tt len(buckets)-1})?
+
+A list like {\tt buckets} that contains counts of the number of values
+in each range is called a {\bf histogram}.
+
+\begin{quote}
+{\em As an exercise, write a function called {\tt histogram} that
+takes a list and a number of buckets as arguments and returns
+a histogram with the given number of buckets.}
+\end{quote}
+
+\adjustpage{-2}
+\pagebreak
+
+\section{Glossary}
+
+\begin{description}
+
+\item[immutable type:] A type in which the elements cannot be
+modified.  Assignments
+to elements or slices of immutable types cause an error.
+
+\item[mutable type:] A data type in which the elements can be
+modified.  All mutable
+types are compound types.  Lists and dictionaries are mutable data
+types; strings and tuples are not.
+
+\item[tuple:] A sequence type that is similar to a list except that it is
+immutable.  Tuples can be used wherever an immutable type is required, such
+as a key in a dictionary.
+
+\item[tuple assignment:] An assignment to all of the elements in a tuple using
+a single assignment statement. Tuple assignment occurs in parallel rather
+than in sequence, making it useful for swapping values.
+
+\item[deterministic:] A program that does the same thing each time it is
+called.
+
+\item[pseudorandom:] A sequence of numbers that appear to be random but that
+are actually the result of a deterministic computation.
+
+\item[histogram:] A list of integers in which each element counts the 
+number of times something happens.
+
+\item[pattern matching:] A program development plan that involves
+identifying a familiar computational pattern and copying the
+solution to a similar problem.
+
+\index{mutable type}
+\index{immutable type}
+\index{tuple}
+\index{tuple assignment}
+\index{assignment!tuple}
+\index{deterministic}
+\index{pseudorandom}
+\index{histogram}
+\index{pattern matching}
+
+\end{description}
+

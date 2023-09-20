@@ -37,7 +37,7 @@ class OpenAILLM(LLM):
             import openai
         except ImportError:
             raise ImportError(
-                "Please install the openai package before attempting to run with an OpenAI model. This can be accomplished via `poetry install -E openai_support, ...OTHER_DEPENDENCY_HERE`."
+                "Please install the openai package before attempting to run with an OpenAI model. This can be accomplished via `poetry install -E openai_support, ...OTHER_DEPENDENCIES_HERE`."
             )
         if not openai.api_key:
             raise ValueError(

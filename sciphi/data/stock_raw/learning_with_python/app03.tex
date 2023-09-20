@@ -1,0 +1,654 @@
+% LaTeX source for textbook ``How to think like a computer scientist''
+% Copyright (c)  2001  Allen B. Downey, Jeffrey Elkner, and Chris Meyers.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+%
+\chapter{Complete Python Listings}
+
+
+\section{Point class}
+
+\beforeverb
+\begin{verbatim}
+class Point:
+  def __init__(self, x=0, y=0):
+    self.x = x
+    self.y = y
+
+  def __str__(self):
+    return '(' + str(self.x) + ', ' + str(self.y) + ')'
+
+  def __add__(self, other):
+    return Point(self.x + other.x, self.y + other.y)
+
+  def __sub__(self, other):
+    return Point(self.x - other.x, self.y - other.y)
+
+  def __mul__(self, other):
+    return self.x * other.x + self.y * other.y
+
+  def __rmul__(self, other):
+    return Point(other * self.x, other * self.y)
+
+  def reverse(self):
+    self.x, self.y = self.y, self.x
+
+  def frontAndBack(front):
+    from copy import copy
+    back = copy(front)
+    back.reverse()
+    print str(front) + str(back)
+\end{verbatim}
+\afterverb
+
+
+\section{Time class}
+
+\beforeverb
+\begin{verbatim}
+class Time:
+  def __init__(self, hours=0, minutes=0, seconds=0):
+    self.hours = hours
+    self.minutes = minutes
+    self.seconds = seconds
+
+  def __str__(self):
+    return str(self.hours) + ":" + str(self.minutes) + ":" + str(self.seconds)
+
+  def convertToSeconds(self):
+    minutes = self.hours * 60 + self.minutes
+    seconds = self.minutes * 60 + self.seconds
+    return seconds
+
+  def increment(self, secs):
+    secs = secs + self.seconds
+
+    self.hours = self.hours + secs/3600
+    secs = secs % 3600
+    self.minutes = self.minutes + secs/60
+    secs = secs % 60
+    self.seconds = secs
+
+  def makeTime(secs):
+    time = Time()
+    time.hours = secs/3600
+    secs = secs - time.hours * 3600
+    time.minutes = secs/60
+    secs = secs - time.minutes * 60
+    time.seconds = secs
+    return time
+\end{verbatim}
+\afterverb
+
+
+\section {Cards, decks and games}
+
+\beforeverb
+\begin{verbatim}
+import random
+
+class Card:
+  suitList = ["Clubs", "Diamonds", "Hearts", "Spades"]
+  rankList = [ "narf", "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                "Jack", "Queen", "King"]
+
+  def __init__(self, suit=0, rank=0):
+    self.suit = suit
+    self.rank = rank
+
+  def __str__(self):
+    return self.rankList[self.rank] + " of " + self.suitList[self.suit]
+
+  def __cmp__(self, other):
+    # check the suits
+    if self.suit > other.suit: return 1
+    if self.suit < other.suit: return -1
+    # suits are the same... check ranks
+    if self.rank > other.rank: return 1
+    if self.rank < other.rank: return -1
+    # ranks are the same... it's a tie
+    return 0
+
+class Deck:
+  def __init__(self):
+    self.cards = []
+    for suit in range(4):
+      for rank in range(1, 14):
+        self.cards.append(Card(suit, rank))
+
+  def printDeck(self):
+    for card in self.cards:
+      print card
+
+  def __str__(self):
+    s = ""
+    for i in range(len(self.cards)):
+      s = s + " "*i + str(self.cards[i]) + "\n"
+    return s
+
+  def shuffle(self):
+    import random
+    nCards = len(self.cards)
+    for i in range(nCards):
+      j = random.randrange(i, nCards)
+      [self.cards[i], self.cards[j]] = [self.cards[j], self.cards[i]]
+
+  def removeCard(self, card):
+    if card in self.cards:
+      self.cards.remove(card)
+      return 1
+    else: return 0
+
+  def popCard(self):
+    return self.cards.pop()
+
+  def isEmpty(self):
+    return (len(self.cards) == 0)
+
+  def deal(self, hands, nCards=999):
+    nHands = len(hands)
+    for i in range(nCards):
+      if self.isEmpty(): break    # break if out of cards
+      card = self.popCard()      # take the top card
+      hand = hands[i % nHands]    # whose turn is next?
+      hand.addCard(card)         # add the card to the hand
+
+class Hand(Deck):
+  def __init__(self, name=""):
+    self.cards = []
+    self.name = name
+
+  def addCard(self,card) :
+    self.cards.append(card)
+
+  def __str__(self):
+    s = "Hand " + self.name
+    if self.isEmpty():
+      s = s + " is empty\n"
+    else:
+      s = s + " contains\n"
+    return s + Deck.__str__(self)
+
+class CardGame:
+  def __init__(self):
+    self.deck = Deck()
+    self.deck.shuffle()
+
+class OldMaidHand(Hand):
+  def removeMatches(self):
+    count = 0
+    originalCards = self.cards[:]
+    for card in originalCards:
+      match = Card(3 - card.suit, card.rank)
+      if match in self.cards:
+        self.cards.remove(card)
+        self.cards.remove(match)
+        print "Hand %s: %s matches %s" % (self.name,card,match)
+        count = count+1
+    return count
+
+class OldMaidGame(CardGame):
+  def play(self, names):
+    # remove Queen of Clubs
+    self.deck.removeCard(Card(0,12))
+
+    # make hands base on names passed
+    self.hands = []
+    for name in names : self.hands.append(OldMaidHand(name))
+
+    # deal the cards
+    self.deck.deal(self.hands)
+    print "---------- Cards have been dealt"
+    self.printHands()
+
+    # Remove initial matches
+    matches = self.removeMatches()
+    print "---------- Matches discarded, play begins"
+    self.printHands()
+
+    # Play until all 50 cards matched
+    turn = 0
+    numHands = len(self.hands)
+    while matches < 25:
+      matches = matches + self.playOneTurn(turn)
+      turn = (turn + 1) % numHands
+
+    print "---------- Game is Over"
+    self.printHands ()
+
+  def removeMatches(self):
+    count = 0
+    for hand in self.hands:
+      count = count + hand.removeMatches()
+    return count
+
+  def playOneTurn(self, i):
+    if self.hands[i].isEmpty():
+      return 0
+    neighbor = self.findNeighbor(i)
+    pickedCard = self.hands[neighbor].popCard()
+    self.hands[i].addCard(pickedCard)
+    print "Hand", self.hands[i].name, "picked", pickedCard
+    count = self.hands[i].removeMatches()
+    self.hands[i].shuffle()
+    return count
+
+  def findNeighbor(self, i):
+    numHands = len(self.hands)
+    for next in range(1,numHands):
+      neighbor = (i + next) % numHands
+      if not self.hands[neighbor].isEmpty():
+        return neighbor
+
+  def printHands(self) :
+    for hand in self.hands :
+        print hand
+
+\end{verbatim}
+\afterverb
+
+
+\section{Linked Lists}
+
+\beforeverb
+\begin{verbatim}
+  def printList(node) :
+    while node :
+      print node,
+      node = node.next
+    print
+  
+  def printBackward(list) :
+    if list == None : return
+    head = list
+    tail = list.next
+    printBackward(tail)
+    print head,
+  
+  def printBackwardNicely(list) :
+    print "(",
+    if list != None :
+      head = list
+      tail = list.next
+      printBackward(tail)
+      print head,
+    print ")",
+  
+  def removeSecond(list) :
+    if list == None : return
+    first  = list
+    second = list.next
+    first.next = second.next
+    second.next = None
+    return second
+
+class Node :
+
+  def __init__(self, cargo=None) :
+    self.cargo = cargo
+    self.next  = None
+
+  def __str__(self) :
+    return str(self.cargo)
+
+  def printBackward(self) :
+    if self.next != None :
+      tail = self.next
+      tail.printBackward()
+    print self.cargo,
+
+class LinkedList :
+  def __init__(self) :
+    self.length = 0
+    self.head   = None
+
+  def printBackward(self) :
+    print "(",
+    if self.head != None :
+      self.head.printBackward()
+    print ")",
+
+  def addFirst(self, cargo) :
+    node = Node(cargo)
+    node.next = self.head
+    self.head = node
+    self.length = self.length + 1
+\end{verbatim}
+\afterverb
+
+\section{Stack class}
+
+\beforeverb
+\begin{verbatim}
+
+class Stack:              # Python list implementation
+  def __init__(self):
+    self.items = []
+
+  def push(self, item):
+    self.items.append(item)
+
+  def pop(self):
+    return self.items.pop()
+
+  def isEmpty(self):
+    return(self.items == [])
+
+  def evalPostfix(expr) :
+    import re
+    expr = re.split("([^0-9])", expr)
+    stack = Stack()
+    for token in expr :
+      if  token == '' or token == ' ':
+        continue
+      if  token == '+' :
+        sum = stack.pop() + stack.pop()
+        stack.push(sum)
+      elif token == '*' :
+        product = stack.pop() * stack.pop()
+        stack.push(product)
+      else :
+        stack.push(int(token))
+    return stack.pop()
+
+\end{verbatim}
+\afterverb
+
+\section {Queues and priority queues}
+\beforeverb
+\begin{verbatim}
+
+class Queue :
+  def __init__(self) :
+    self.length = 0
+    self.head   = None
+
+  def empty(self) :
+    return (self.length == 0)
+
+  def insert(self, cargo) :
+    node = Node(cargo)
+    node.next = None
+    if self.head == None :
+        # If list is empty our new node is first
+        self.head = node
+    else :
+        # Find the last node in the list
+        last = self.head
+        while last.next : last = last.next
+        # Append our new node
+        last.next = node
+    self.length = self.length + 1
+
+  def remove(self) :
+    cargo = self.head.cargo
+    self.head = self.head.next
+    self.length = self.length - 1
+    return cargo
+
+class ImprovedQueue :
+  def __init__(self) :
+    self.length = 0
+    self.head   = None
+    self.last   = None
+
+  def empty(self) :
+    return (self.length == 0)
+
+  def insert(self, cargo) :
+    node = Node(cargo)
+    node.next = None
+    if self.length == 0 :
+        # If list is empty our new node is first
+        self.head = self.last = node
+    else :
+        # Find the last node in the list
+        last = self.last
+        # Append our new node
+        last.next = node
+        self.last = node
+    self.length = self.length + 1
+
+  def remove(self) :
+    cargo    = self.head.cargo
+    self.head = self.head.next
+    self.length = self.length - 1
+    if self.length == 0 : self.last = None
+    return cargo
+
+class PriorityQueue :
+  def __init__(self) :
+    self.items = []
+
+  def empty(self) :
+    return self.items == []
+
+  def insert(self, item) :
+    self.items.append(item)
+
+  def remove(self) :
+    maxi = 0
+    for i in range(1,len(self.items)) :
+       if self.items[i] > self.items[maxi] :
+         maxi = i
+    item = self.items[maxi]
+    self.items[maxi:maxi+1] = []
+    return item
+
+class Golfer :
+  def __init__(self, name, score) :
+    self.name = name
+    self.score= score
+
+  def __str__(self) :
+    return "%-15s: %d" % (self.name, self.score)
+
+  def __cmp__(self, other) :
+    if self.score < other.score : return  1   # less is more
+    if self.score > other.score : return -1
+    return 0
+
+\end{verbatim}
+\afterverb
+
+\section{Trees}
+\beforeverb
+\begin{verbatim}
+class Tree :
+  def __init__(self, cargo, left=None, right=None) :
+    self.cargo = cargo
+    self.left  = left
+    self.right = right
+
+  def __str__(self) :
+    return str(self.cargo)
+
+  def getCargo(self): return self.cargo
+  def getLeft (self): return self.left
+  def getRight(self): return self.right
+
+  def setCargo(self, cargo):  self.cargo = cargo
+  def setLeft (self,  left):  self.left = left
+  def setRight(self, right):  self.right = right
+
+def total(tree) :
+  if tree == None : return 0
+  return total(tree.left) + total(tree.right) + tree.cargo
+
+def printTree(tree) :
+  if tree == None : return
+  print tree.cargo,
+  printTree(tree.left)
+  printTree(tree.right)
+
+def printTreePostorder(tree) :
+  if tree == None : return
+  printTreePostorder(tree.left)
+  printTreePostorder(tree.right)
+  print tree.cargo,
+
+def printTreeInorder(tree) :
+  if tree == None : return
+  printTreeInorder(tree.left)
+  print tree.cargo,
+  printTreeInorder(tree.right)
+
+def printTreeIndented(tree, level=0) :
+  if tree == None : return
+  printTreeIndented(tree.right, level+1)
+  print '  '*level + str(tree.cargo)
+  printTreeIndented(tree.left, level+1)
+\end{verbatim}
+
+\section{Expression trees}
+
+\begin{verbatim}
+def getToken(tokenList, expected) :
+  if tokenList[0] == expected :
+    tokenList[0:1] = []   # remove the token
+    return 1
+  else :
+    return 0
+
+def getProduct(tokenList) :
+  a = getNumber(tokenList)
+  if getToken(tokenList, '*') :
+    b = getProduct(tokenList)
+    return Tree('*', a, b)
+  else :
+    return a
+
+def getSum(tokenList) :
+  a = getProduct(tokenList)
+  if getToken(tokenList, '+') :
+    b = getSum(tokenList)
+    return Tree('+', a, b)
+  else :
+    return a
+
+def getNumber(tokenList) :
+  if getToken(tokenList, '(') :
+    x = getSum(tokenList)      # get subexpression
+    getToken(tokenList, ')')    # eat the closing parenthesis
+    return x
+  else :
+    x = tokenList[0]
+    if not isinstance(x, int) : return None
+    tokenList[0:1] = []   # remove the token
+    return Tree(x, None, None)    # return a leaf with the number
+\end{verbatim}
+
+
+\section{Guess the animal}
+
+\begin{verbatim}
+def animal() :
+  # start with a singleton
+  root = Tree("bird")
+
+  # loop until the user quits
+  while 1 :
+    print
+    if not yes("Are you thinking of an animal? ") : break
+
+    # walk the tree
+    tree = root
+    while tree.getLeft() != None :
+      prompt = tree.getCargo() + "? "
+      if yes(prompt):
+        tree = tree.getRight()
+      else:
+        tree = tree.getLeft()
+
+    # make a guess
+    guess = tree.getCargo()
+    prompt = "Is it a " + guess + "? "
+    if yes(prompt) :
+      print "I rule!"
+      continue
+
+    # get new information
+    prompt  = "What is the animal\'s name? "
+    animal  = raw_input(prompt)
+    prompt  = "What question would distinguish a %s from a %s? "
+    question = raw_input(prompt % (animal,guess))
+
+    # add new information to the tree
+    tree.setCargo(question)
+    prompt = "If the animal were %s the answer would be? "
+    if yes(prompt % animal) :
+      tree.setLeft(Tree(guess))
+      tree.setRight(Tree(animal))
+    else :
+      tree.setLeft(Tree(animal))
+      tree.setRight(Tree(guess))
+
+
+def yes(ques) :
+  from string import lower
+  ans = lower(raw_input(ques))
+  return (ans[0:1] == 'y')
+\end{verbatim}
+
+\section{{\tt Fraction} class}
+
+\beforeverb
+\begin{verbatim}
+class Fraction:
+  def __init__(self, numerator, denominator=1):
+    g = gcd(numerator, denominator)
+    self.numerator   = numerator   / g
+    self.denominator = denominator / g
+
+  def __mul__(self, object):
+    if isinstance(object, int):
+      object = Fraction(object)
+    return Fraction(self.numerator*object.numerator,
+                 self.denominator*object.denominator)
+
+  __rmul__ = __mul__
+
+  def __add__(self, object):
+    if isinstance(object, int):
+      object = Fraction(object)
+
+    return Fraction(self.numerator*object.denominator +
+                    self.denominator*object.numerator,
+                 self.denominator * object.denominator)
+
+  __radd__ = __add__
+
+  def __cmp__(self, object):
+    if isinstance(object, int):
+      object = Fraction(object)
+
+    diff = (self.numerator*object.denominator -
+            object.numerator*self.denominator)
+    return diff
+
+  def __repr__(self):
+    return self.__str__()
+
+  def __str__(self):
+    return "%d/%d" % (self.numerator, self.denominator)
+
+def gcd(m,n):
+  "return the greatest common divisor of 2 integer arguments"
+  if m % n == 0:
+    return n
+  else:
+    return gcd(n,m%n)
+
+\end{verbatim}
+\afterverb

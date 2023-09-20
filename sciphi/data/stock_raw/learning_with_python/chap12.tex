@@ -1,0 +1,592 @@
+% LaTeX source for textbook ``How to think like a computer scientist''
+% Copyright (c)  2001  Allen B. Downey, Jeffrey Elkner, and Chris Meyers.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+\chapter{Classes and objects}
+\index{class}
+\index{object}
+
+
+\section{User-defined compound types}
+\label{point}
+\index{compound data type}
+\index{data type!compound}
+\index{user-defined data type}
+\index{data type!user-defined}
+\index{constructor}
+
+Having used some of Python's built-in types, we are ready to create a
+user-defined type: the {\tt Point}.
+
+Consider the concept of a mathematical point.  In two dimensions, a
+point is two numbers (coordinates) that are treated collectively as a
+single object.  In mathematical notation, points are often written in
+parentheses with a comma separating the coordinates. For example,
+$(0, 0)$ represents the origin, and $(x, y)$ represents the
+point $x$ units to the right and $y$ units up from the origin.
+
+A natural way to represent a point in Python is with two
+floating-point values.  The question, then, is how to group these two
+values into a compound object.  The quick and dirty solution
+is to use a list or tuple, and for some applications that might
+be the best choice.
+
+\index{floating-point}
+
+An alternative is to define a new user-defined compound type, also
+called a {\bf class}.  This approach involves a bit more effort, but
+it has advantages that will be apparent soon.
+
+A class definition looks like this:
+
+\beforeverb
+\begin{verbatim}
+class Point:
+  pass
+\end{verbatim}
+\afterverb
+%
+Class definitions can appear anywhere in a program, but they are
+usually near the beginning (after the {\tt import} statements).  The
+syntax rules for a class definition are the same as for other compound
+statements (see Section~\ref{conditional execution}).
+
+This definition creates a new class called {\tt Point}.  The
+{\bf pass} statement has no effect; it is only
+necessary because a compound statement must have something in its
+body.
+
+By creating the {\tt Point} class, we created a new type, also
+called {\tt Point}.  The members of this type are called
+{\bf instances} of the type or {\bf objects}.  Creating a new instance
+is called {\bf instantiation}.  To instantiate a {\tt Point} object,
+we call a function named (you guessed it) {\tt Point}:
+
+\index{instance!object}
+\index{object instance}
+\index{instantiation}
+
+\beforeverb
+\begin{verbatim}
+blank = Point()
+\end{verbatim}
+\afterverb
+%
+The variable {\tt blank} is assigned a reference to a new
+{\tt Point} object.  A function like {\tt Point} that creates
+new objects is called a {\bf constructor}.
+
+
+\section{Attributes}
+\index{attribute}
+
+We can add new data to an instance using dot notation:
+
+\beforeverb
+\begin{verbatim}
+>>> blank.x = 3.0
+>>> blank.y = 4.0
+\end{verbatim}
+\afterverb
+%
+This syntax is similar to the syntax for selecting a variable from a
+module, such as {\tt math.pi} or {\tt string.uppercase}.  In this case,
+though, we are selecting a data item from an instance.  These
+named items are called {\bf attributes}.
+
+The following state diagram shows the result of these assignments:
+
+\beforefig
+\centerline{\psfig{figure=illustrations/point.eps}}
+\afterfig
+
+The variable {\tt blank} refers to a Point object, which
+contains two attributes.  Each attribute refers to a
+floating-point number.
+
+We can read the value of an attribute using the same syntax:
+
+\beforeverb
+\begin{verbatim}
+>>> print blank.y
+4.0
+>>> x = blank.x
+>>> print x
+3.0
+\end{verbatim}
+\afterverb
+%
+The expression {\tt blank.x} means, ``Go to the object {\tt blank}
+refers to and get the value of {\tt x}.'' In this case, we assign that
+value to a variable named {\tt x}.  There is no conflict between
+the variable {\tt x} and the attribute {\tt x}.  The
+purpose of dot notation is to identify which variable you are
+referring to unambiguously.
+
+You can use dot notation as part of any expression, so the following
+statements are legal:
+
+\beforeverb
+\begin{verbatim}
+print '(' + str(blank.x) + ', ' + str(blank.y) + ')'
+distanceSquared = blank.x * blank.x + blank.y * blank.y
+\end{verbatim}
+\afterverb
+%
+The first line outputs {\tt (3.0, 4.0)}; the second line calculates
+the value 25.0.
+
+You might be tempted to print the value of {\tt blank} itself:
+
+\beforeverb
+\begin{verbatim}
+>>> print blank
+<__main__.Point instance at 80f8e70>
+\end{verbatim}
+\afterverb
+%
+The result indicates that {\tt blank} is an instance of the {\tt
+Point} class and it was defined in {\tt \_\_main\_\_}.  {\tt 80f8e70}
+is the unique identifier for this object, written in hexadecimal (base
+16).  This is probably not the most informative way to display a {\tt
+Point} object.  You will see how to change it shortly.
+
+\index{printing!object}
+
+\begin{quote}
+{\em As an exercise, create and print a {\tt Point} object, and then
+use {\tt id} to print the object's unique identifier.
+Translate the hexadecimal form into decimal and confirm that they
+match.}
+\end{quote}
+
+
+\section{Instances as arguments}
+\index{instance}
+\index{parameter}
+
+You can pass an instance as an argument in the usual way.
+For example:
+
+\beforeverb
+\begin{verbatim}
+def printPoint(p):
+  print '(' + str(p.x) + ', ' + str(p.y) + ')'
+\end{verbatim}
+\afterverb
+%
+{\tt printPoint} takes a point as an argument and displays it in
+the standard format.  If you call {\tt printPoint(blank)}, the
+output is {\tt (3.0, 4.0)}.
+
+\begin{quote}
+{\em As an exercise, rewrite the {\tt distance} function from
+Section~\ref{program development} so that it takes two {\tt Point}s as
+arguments instead of four numbers.}
+\end{quote}
+
+
+\section{Sameness}
+\index{sameness}
+
+The meaning of the word ``same'' seems perfectly clear until you give
+it some thought, and then you realize there is more to it than you
+expected.
+
+\index{ambiguity}
+\index{natural language}
+\index{language!}
+
+For example, if you say, ``Chris and I have the same car,'' you mean
+that his car and yours are the same make and model, but that they are
+two different cars.  If you say, ``Chris and I have the same mother,''
+you mean that his mother and yours are the same person.\footnote{Not all
+languages have the same problem.  For example, German has different
+words for different kinds of sameness.  ``Same car'' in this context
+would be ``gleiche Auto,'' and ``same mother'' would be ``selbe
+Mutter.''}  So the idea of ``sameness'' is different depending on the
+context.
+
+When you talk about objects, there is a similar ambiguity.  For
+example, if two {\tt Point}s are the same, does that mean they
+contain the same data (coordinates) or that they are actually
+the same object?
+
+To find out if two references refer to the same object, use
+the {\tt is} operator.  For example:
+
+\beforeverb
+\begin{verbatim}
+>>> p1 = Point()
+>>> p1.x = 3
+>>> p1.y = 4
+>>> p2 = Point()
+>>> p2.x = 3
+>>> p2.y = 4
+>>> p1 is p2
+False
+\end{verbatim}
+\afterverb
+%
+Even though {\tt p1} and {\tt p2} contain the same coordinates,
+they are not the same object.  If we assign {\tt p1} to
+{\tt p2}, then the two variables are aliases of the same
+object:
+
+\beforeverb
+\begin{verbatim}
+>>> p2 = p1
+>>> p1 is p2
+True
+\end{verbatim}
+\afterverb
+%
+This type of equality is called {\bf shallow equality} because
+it compares only the references, not the contents of the objects.
+
+\index{equality}
+\index{identity}
+\index{shallow equality}
+\index{deep equality}
+
+To compare the contents of the objects---{\bf deep equality}---we
+can write a function called {\tt samePoint}:
+
+\beforeverb
+\begin{verbatim}
+def samePoint(p1, p2) :
+  return (p1.x == p2.x) and (p1.y == p2.y)
+\end{verbatim}
+\afterverb
+%
+Now if we create two different objects that contain the same
+data, we can use {\tt samePoint} to find out if they represent the
+same point.
+
+\adjustpage{-2}
+\pagebreak
+
+\beforeverb
+\begin{verbatim}
+>>> p1 = Point()
+>>> p1.x = 3
+>>> p1.y = 4
+>>> p2 = Point()
+>>> p2.x = 3
+>>> p2.y = 4
+>>> samePoint(p1, p2)
+True
+\end{verbatim}
+\afterverb
+%
+Of course, if the two variables refer to the same object,
+they have both shallow and deep equality.
+
+
+\section{Rectangles}
+\index{rectangle}
+
+Let's say that we want a class to represent a rectangle.  The question
+is, what information do we have to provide in order to specify a
+rectangle? To keep things simple, assume that the rectangle is
+oriented either vertically or horizontally, never at an angle.
+
+There are a few possibilities: we could specify the center of the
+rectangle (two coordinates) and its size (width and height); or we
+could specify one of the corners and the size; or we could specify two
+opposing corners.  A conventional choice is to specify the upper-left
+corner of the rectangle and the size.
+
+Again, we'll define a new class:
+
+\beforeverb
+\begin{verbatim}
+class Rectangle:
+  pass
+\end{verbatim}
+\afterverb
+%
+And instantiate it:
+
+\beforeverb
+\begin{verbatim}
+box = Rectangle()
+box.width = 100.0
+box.height = 200.0
+\end{verbatim}
+\afterverb
+%
+This code creates a new {\tt Rectangle} object with two floating-point
+attributes.  To specify the upper-left corner, we can embed an
+object within an object!
+
+\beforeverb
+\begin{verbatim}
+box.corner = Point()
+box.corner.x = 0.0
+box.corner.y = 0.0
+\end{verbatim}
+\afterverb
+%
+The dot operator composes.  The expression {\tt box.corner.x} means,
+``Go to the object {\tt box} refers to and select the attribute named
+{\tt corner}; then go to that object and select the attribute named
+{\tt x}.''
+
+The figure shows the state of this object:
+
+\beforefig
+\centerline{\psfig{figure=illustrations/rectangle.eps}}
+\afterfig
+
+
+\section{Instances as return values}
+\index{instance}
+\index{return value}
+
+Functions can return instances.  For example, {\tt findCenter}
+takes a {\tt Rectangle} as an argument and returns a {\tt Point}
+that contains the coordinates of the center of the {\tt Rectangle}:
+
+\beforeverb
+\begin{verbatim}
+def findCenter(box):
+  p = Point()
+  p.x = box.corner.x + box.width/2.0
+  p.y = box.corner.y - box.height/2.0
+  return p
+\end{verbatim}
+\afterverb
+%
+To call this function, pass {\tt box} as an argument and assign
+the result to a variable:
+
+\beforeverb
+\begin{verbatim}
+>>> center = findCenter(box)
+>>> printPoint(center)
+(50.0, -100.0)
+\end{verbatim}
+\afterverb
+%
+
+\section{Objects are mutable}
+\index{object!mutable}
+\index{mutable!object}
+
+We can change the state of an object by making an assignment
+to one of its attributes.  For example, to change the size
+of a rectangle without changing its position, we could
+modify the values of {\tt width} and {\tt height}:
+
+\beforeverb
+\begin{verbatim}
+box.width = box.width + 50
+box.height = box.height + 100
+\end{verbatim}
+\afterverb
+%
+We could encapsulate this code in a method and
+generalize it to grow the rectangle by any amount:
+
+\index{encapsulation}
+\index{generalization}
+
+\beforeverb
+\begin{verbatim}
+def growRect(box, dwidth, dheight) :
+  box.width = box.width + dwidth
+  box.height = box.height + dheight
+\end{verbatim}
+\afterverb
+%
+The variables {\tt dwidth} and {\tt dheight} indicate how much the
+rectangle should grow in each direction.  Invoking this method has the
+effect of modifying the {\tt Rectangle} that is passed as an argument.
+
+For example, we could create a new {\tt Rectangle} named {\tt bob}
+and pass it to {\tt growRect}:
+
+\beforeverb
+\begin{verbatim}
+>>> bob = Rectangle()
+>>> bob.width = 100.0
+>>> bob.height = 200.0
+>>> bob.corner = Point()
+>>> bob.corner.x = 0.0
+>>> bob.corner.y = 0.0
+>>> growRect(bob, 50, 100)
+\end{verbatim}
+\afterverb
+%
+While {\tt growRect} is running, the parameter {\tt box} is an
+alias for {\tt bob}.  Any changes made to {\tt box} also
+affect {\tt bob}.
+
+\begin{quote}
+{\em As an exercise, write a function named {\tt moveRect} that takes
+a {\tt Rectangle} and two parameters named {\tt dx} and {\tt dy}.  It
+should change the location of the rectangle by adding {\tt dx}
+to the {\tt x} coordinate of {\tt corner} and adding {\tt dy}
+to the {\tt y} coordinate of {\tt corner}.}
+\end{quote}
+
+
+\section{Copying}
+\label{embedded}
+\index{aliasing}
+\index{copying}
+\index{copy module}
+\index{module!copy}
+
+Aliasing can make a program difficult to read because changes
+made in one place might have unexpected effects in another place.
+It is hard to keep track of all the variables that might refer
+to a given object.
+
+Copying an object is often an alternative to aliasing.
+The {\tt copy} module contains a function called {\tt copy} that
+can duplicate any object:
+
+\beforeverb
+\begin{verbatim}
+>>> import copy
+>>> p1 = Point()
+>>> p1.x = 3
+>>> p1.y = 4
+>>> p2 = copy.copy(p1)
+>>> p1 == p2
+False
+>>> samePoint(p1, p2)
+True
+\end{verbatim}
+\afterverb
+%
+Once we import the {\tt copy} module, we can use the {\tt copy} method
+to make a new {\tt Point}.  {\tt p1} and {\tt p2} are not the
+same point, but they contain the same data.
+
+To copy a simple object like a {\tt Point}, which doesn't
+contain any embedded objects, {\tt copy} is sufficient.  This is called 
+{\bf shallow copying}.
+
+For something like a {\tt Rectangle}, which contains a reference
+to a {\tt Point}, {\tt copy} doesn't do quite the right thing.  It
+copies the reference to the {\tt Point} object, so both the old
+{\tt Rectangle} and the new one refer to a single {\tt Point}.
+
+\index{embedded reference}
+\index{reference!embedded}
+
+If we create a box, {\tt b1}, in the usual way and then make
+a copy, {\tt b2}, using {\tt copy}, the resulting
+state diagram looks like this:
+
+\vspace{0.1in}
+\beforefig
+\centerline{\psfig{figure=illustrations/rectangle2.eps}}
+\afterfig
+\vspace{0.1in}
+
+This is almost certainly not what we want.  In this case, invoking
+{\tt growRect} on one of the {\tt Rectangles} would not affect
+the other, but invoking {\tt moveRect} on either would affect both!
+This behavior is confusing and error-prone.
+
+Fortunately, the {\tt copy} module contains a method named {\tt
+deepcopy} that copies not only the object but also any embedded
+objects.  You will not be surprised to learn that this operation is
+called a {\bf deep copy}.
+
+\beforeverb
+\begin{verbatim}
+>>> b2 = copy.deepcopy(b1)
+\end{verbatim}
+\afterverb
+%
+Now {\tt b1} and {\tt b2} are completely separate objects.
+
+We can use {\tt deepcopy} to rewrite {\tt growRect} so that
+instead of modifying an existing {\tt Rectangle}, it creates a new
+{\tt Rectangle} that has the same location as the old one but new
+dimensions:
+
+\beforeverb
+\begin{verbatim}
+def growRect(box, dwidth, dheight) :
+  import copy
+  newBox = copy.deepcopy(box)
+  newBox.width = newBox.width + dwidth
+  newBox.height = newBox.height + dheight
+  return newBox
+\end{verbatim}
+\afterverb
+%
+
+\begin{quote}
+{\em An an exercise, rewrite {\tt moveRect} so that it creates and
+returns a new {\tt Rectangle} instead of modifying the old one.}
+\end{quote}
+
+
+\adjustpage{-2}
+\pagebreak
+
+\section{Glossary}
+
+\begin{description}
+
+\item[class:] A user-defined compound type.
+A class can also be thought of
+as a template for the objects that are instances of it.
+
+\item[instantiate:] To create an instance of a class.
+
+\item[instance:] An object that belongs to a class.
+
+\item[object:] A compound data type that is often used to
+model a thing or concept in the real world.
+
+\item[constructor:] A method used to create new objects.
+
+\item[attribute:] One of the named data items that makes up
+an instance.
+
+\item[shallow equality:]  Equality of references, or two
+references that point to the same object.
+
+\item[deep equality:]  Equality of values, or two references
+that point to objects that have the same value.
+
+\item[shallow copy:] To copy the contents of an object, including
+any references to embedded objects; implemented by the {\tt copy}
+function in the {\tt copy} module.
+
+\item[deep copy:] To copy the contents of an object as well as any
+embedded objects, and any objects embedded in them, and so on;
+implemented by the {\tt deepcopy} function in the {\tt copy} module.
+
+\index{class}
+\index{instantiate}
+\index{instance}
+\index{object}
+\index{constructor}
+\index{attribute}
+\index{shallow equality}
+\index{deep equality}
+\index{shallow copy}
+\index{deep copy}
+
+\end{description}

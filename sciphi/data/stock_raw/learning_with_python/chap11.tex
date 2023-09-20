@@ -1,0 +1,753 @@
+% LaTeX source for textbook ``How to think like a computer scientist''
+% Copyright (c)  2001  Allen B. Downey, Jeffrey Elkner, and Chris Meyers.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+\chapter{Files and exceptions}
+\index{file}
+\index{type!file}
+
+While a program is running, its data is in memory.  When the program
+ends, or the computer shuts down, data in memory disappears.  To
+store data permanently, you have to put it in a {\bf file}.
+Files are usually stored on a
+hard drive, floppy drive, or CD-ROM.
+
+When there are a large number of files, they are often organized
+into {\bf directories} (also called ``folders'').
+Each file is identified by a unique name, or a combination of a
+file name and a directory name.
+
+By reading and writing files, programs can
+exchange information with each other and generate printable formats
+like PDF.
+
+Working with files is a lot like working with books.  To use a book,
+you have to open it.  When you're done, you have to close it.  While
+the book is open, you can either write in it or read from it.  In
+either case, you know where you are in the book.  Most of the time,
+you read the whole book in its natural order, but you can also skip
+around.
+
+All of this applies to files as well.  To open a file, you specify
+its name and indicate whether you want to read or write.
+
+Opening a file creates a file object.  In this example,
+the variable {\tt f} refers to the new file object.
+
+\beforeverb
+\begin{verbatim}
+>>> f = open("test.dat","w")
+>>> print f
+<open file 'test.dat', mode 'w' at fe820>
+\end{verbatim}
+\afterverb
+%
+The open function takes two arguments.  The first is the name of the file,
+and the second is the mode.  Mode {\tt "w"} means that we are opening
+the file for writing.
+
+If there is no file named {\tt test.dat}, it will be created.
+If there already is one, it will be replaced by the file we are
+writing.
+
+When we print the file object, we see the name of the file, the
+mode, and the location of the object.
+
+To put data in the file we invoke the {\tt write} method on the
+file object:
+
+\beforeverb
+\begin{verbatim}
+>>> f.write("Now is the time")
+>>> f.write("to close the file")
+\end{verbatim}
+\afterverb
+%
+Closing the file tells the system that we are done writing and
+makes the file available for reading:
+
+\beforeverb
+\begin{verbatim}
+>>> f.close()
+\end{verbatim}
+\afterverb
+%
+Now we can open the file again, this time for reading, and read the
+contents into a string.  This time, the mode argument
+is {\tt "r"} for reading:
+
+\beforeverb
+\begin{verbatim}
+>>> f = open("test.dat","r")
+\end{verbatim}
+\afterverb
+%
+If we try to open a file that doesn't exist, we get an error:
+
+\index{runtime error}
+
+\beforeverb
+\begin{verbatim}
+>>> f = open("test.cat","r")
+IOError: [Errno 2] No such file or directory: 'test.cat'
+\end{verbatim}
+\afterverb
+%
+Not surprisingly, the {\tt read} method reads data from the
+file.  With no arguments, it reads the entire contents of the file:
+
+\beforeverb
+\begin{verbatim}
+>>> text = f.read()
+>>> print text
+Now is the timeto close the file
+\end{verbatim}
+\afterverb
+%
+There is no space between ``time'' and ``to'' because we did
+not write a space between the strings.
+
+{\tt read} can also take an argument that indicates how many
+characters to read:
+
+\beforeverb
+\begin{verbatim}
+>>> f = open("test.dat","r")
+>>> print f.read(5)
+Now i
+\end{verbatim}
+\afterverb
+%
+If not enough characters are left in the file,
+{\tt read} returns the remaining characters.
+When we get to the end of the file,
+{\tt read} returns the empty string:
+
+\beforeverb
+\begin{verbatim}
+>>> print f.read(1000006)
+s the timeto close the file
+>>> print f.read()
+
+>>>
+\end{verbatim}
+\afterverb
+%
+The following function copies a file, reading and writing
+up to fifty characters at a time.  The first argument is the name of
+the original file; the second is the name of the new file:
+
+\beforeverb
+\begin{verbatim}
+def copyFile(oldFile, newFile):
+  f1 = open(oldFile, "r")
+  f2 = open(newFile, "w")
+  while True:
+    text = f1.read(50)
+    if text == "":
+      break
+    f2.write(text)
+  f1.close()
+  f2.close()
+  return
+\end{verbatim}
+\afterverb
+%
+The {\tt break} statement is new.  Executing it breaks out of the
+loop; the flow of execution moves to the first statement after
+the loop.
+
+\index{break statement}
+\index{statement!break}
+
+In this example, the {\tt while} loop is infinite because the
+value {\tt True} is always true.  The {\em only} way to get out
+of the loop is to execute {\tt break}, which happens when
+{\tt text} is the empty string, which happens when we get to
+the end of the file.
+
+
+
+\section{Text files}
+\index{text file}
+\index{file!text}
+
+A {\bf text file} is a file that contains printable characters and
+whitespace, organized into lines separated by newline characters.
+Since Python is specifically designed to process text files, it
+provides methods that make the job easy.
+
+To demonstrate, we'll
+create a text file with three lines of text separated by
+newlines:
+
+\beforeverb
+\begin{verbatim}
+>>> f = open("test.dat","w")
+>>> f.write("line one\nline two\nline three\n")
+>>> f.close()
+\end{verbatim}
+\afterverb
+%
+The {\tt readline} method reads all the characters
+up to and including the next newline character:
+
+\beforeverb
+\begin{verbatim}
+>>> f = open("test.dat","r")
+>>> print f.readline()
+line one
+
+>>>
+\end{verbatim}
+\afterverb
+%
+{\tt readlines} returns all of the remaining
+lines as a list of strings:
+
+\beforeverb
+\begin{verbatim}
+>>> print f.readlines()
+['line two\012', 'line three\012']
+\end{verbatim}
+\afterverb
+%
+In this case, the output is in list format, which means that the
+strings appear with quotation marks and the newline character
+appears as the escape sequence {\tt \\012}.
+
+At the end of the file, {\tt readline} returns the empty string
+and {\tt readlines} returns the empty list:
+
+\beforeverb
+\begin{verbatim}
+>>> print f.readline()
+
+>>> print f.readlines()
+[]
+\end{verbatim}
+\afterverb
+%
+The following is an example of a line-processing program.
+{\tt filterFile} makes a copy of {\tt oldFile}, omitting
+any lines that begin with {\tt \#}:
+
+\beforeverb
+\begin{verbatim}
+def filterFile(oldFile, newFile):
+  f1 = open(oldFile, "r")
+  f2 = open(newFile, "w")
+  while True:
+    text = f1.readline()
+    if text == "":
+      break
+    if text[0] == '#':
+      continue
+    f2.write(text)
+  f1.close()
+  f2.close()
+  return
+\end{verbatim}
+\afterverb
+%
+The {\tt continue} statement ends the current iteration of the
+loop, but continues looping.  The flow of
+execution moves to the top of the loop, checks the condition,
+and proceeds accordingly.
+
+\index{continue statement}
+\index{statement!continue}
+
+Thus, if {\tt text} is the empty string, the loop exits.  If
+the first character of {\tt text} is a hash mark, the flow
+of execution goes to
+the top of the loop.  Only if both conditions fail do we copy
+{\tt text} into the new file.
+
+
+\section{Writing variables}
+\index{format operator}
+\index{format string}
+\index{operator!format}
+
+The argument of {\tt write} has to be a string, so if we want
+to put other values in a file, we have to convert them to
+strings first.  The easiest way to do that is with the {\tt str}
+function:
+
+\beforeverb
+\begin{verbatim}
+>>> x = 52
+>>> f.write (str(x))
+\end{verbatim}
+\afterverb
+%
+An alternative is to use the {\bf format operator} {\tt \%}.  When
+applied to integers, {\tt \%} is the modulus operator.  But
+when the first operand is a string, {\tt \%} is the format operator.
+
+The first operand is the {\bf format string}, and the second operand
+is a tuple of expressions.  The result is a string that contains
+the values of the expressions, formatted according to the format
+string.
+
+As a simple example, the {\bf format sequence} {\tt "\%d"} means that
+the first expression in the tuple should be formatted as an
+integer.  Here the letter {\em d} stands for ``decimal'':
+
+\beforeverb
+\begin{verbatim}
+>>> cars = 52
+>>> "%d" % cars
+'52'
+\end{verbatim}
+\afterverb
+%
+The result is the string {\tt '52'}, which is not to be confused
+with the integer value {\tt 52}.
+
+A format sequence can appear anywhere in the format string,
+so we can embed a value in a sentence:
+
+\beforeverb
+\begin{verbatim}
+>>> cars = 52
+>>> "In July we sold %d cars." % cars
+'In July we sold 52 cars.'
+\end{verbatim}
+\afterverb
+%
+The format sequence {\tt "\%f"} formats the next item in
+the tuple as a floating-point number, and {\tt "\%s"} formats
+the next item as a string:
+
+\beforeverb
+\begin{verbatim}
+>>> "In %d days we made %f million %s." % (34,6.1,'dollars')
+'In 34 days we made 6.100000 million dollars.'
+\end{verbatim}
+\afterverb
+%
+By default, the floating-point format prints six decimal places.
+
+The number of expressions in the tuple has to match the number
+of format sequences in the string.  Also, the types of the
+expressions have to match the format sequences:
+
+\index{runtime error}
+
+\beforeverb
+\begin{verbatim}
+>>> "%d %d %d" % (1,2)
+TypeError: not enough arguments for format string
+>>> "%d" % 'dollars'
+TypeError: illegal argument type for built-in operation
+\end{verbatim}
+\afterverb
+%
+In the first example, there aren't enough expressions; in the
+second, the expression is the wrong type.
+
+For more control over the format of numbers, we can specify
+the number of digits as part of the format sequence:
+
+\beforeverb
+\begin{verbatim}
+>>> "%6d" % 62
+'    62'
+>>> "%12f" % 6.1
+'    6.100000'
+\end{verbatim}
+\afterverb
+%
+The number after the percent sign is the minimum number of spaces
+the number will take up.  If the value provided takes fewer digits,
+leading spaces are added.  If the number of spaces is negative,
+trailing spaces are added:
+
+\beforeverb
+\begin{verbatim}
+>>> "%-6d" % 62
+'62    '
+\end{verbatim}
+\afterverb
+%
+For floating-point numbers, we can also
+specify the number of digits after the decimal point:
+
+\beforeverb
+\begin{verbatim}
+>>> "%12.2f" % 6.1
+'        6.10'
+\end{verbatim}
+\afterverb
+%
+In this example, the result takes up twelve spaces and includes two
+digits after the decimal.  This format is useful for printing
+dollar amounts with the decimal points aligned.
+
+\index{dictionary}
+
+For example, imagine a dictionary that contains
+student names as keys and hourly wages as values.
+Here is a function that prints the contents of the dictionary
+as a formatted report:
+
+\beforeverb
+\begin{verbatim}
+def report (wages) :
+  students = wages.keys()
+  students.sort()
+  for student in students :
+    print "%-20s %12.2f" % (student, wages[student])
+\end{verbatim}
+\afterverb
+%
+To test this function, we'll create a small dictionary
+and print the contents:
+
+\beforeverb
+\begin{verbatim}
+>>> wages = {'mary': 6.23, 'joe': 5.45, 'joshua': 4.25}
+>>> report (wages)
+joe                          5.45
+joshua                       4.25
+mary                         6.23
+\end{verbatim}
+\afterverb
+%
+By controlling the width of each value, we guarantee that the columns
+will line up, as long as the names contain fewer than twenty-one
+characters and the wages are less than one billion dollars an hour.
+
+
+\section{Directories}
+\index{directory}
+
+When you create a new file by opening it and writing, the new
+file goes in the current directory (wherever you were when
+you ran the program).  Similarly, when you open a file for
+reading, Python looks for it in the current directory.
+
+If you want to open a file somewhere else, you have to specify
+the {\bf path} to the file, which is the name of the directory
+(or folder) where the file is located:
+
+\beforeverb
+\begin{verbatim}
+>>>   f = open("/usr/share/dict/words","r")
+>>>   print f.readline()
+Aarhus
+\end{verbatim}
+\afterverb
+%
+This example opens a file named {\tt words} that resides in a
+directory named {\tt dict}, which resides in {\tt share}, which
+resides in {\tt usr}, which resides in the top-level directory
+of the system, called {\tt /}.
+
+\index{path}
+\index{delimiter}
+
+You cannot use {\tt /}
+as part of a filename; it is reserved as a delimiter between
+directory and filenames.
+
+The file {\tt /usr/share/dict/words} contains a list of words
+in alphabetical order, of which the first is the name of a
+Danish university.
+
+
+\section{Pickling}
+\index{pickling}
+
+In order to put values into a file, you have to convert them
+to strings.  You have already seen how to do that with {\tt str}:
+
+\beforeverb
+\begin{verbatim}
+>>> f.write (str(12.3))
+>>> f.write (str([1,2,3]))
+\end{verbatim}
+\afterverb
+%
+The problem is that when you read the value back, you get a string.
+The original type information has been lost.  In fact, you can't
+even tell where one value ends and the next begins:
+
+\beforeverb
+\begin{verbatim}
+>>>   f.readline()
+'12.3[1, 2, 3]'
+\end{verbatim}
+\afterverb
+%
+The solution is {\bf pickling}, so called because it ``preserves''
+data structures.  The {\tt pickle} module contains the necessary
+commands.  To use it, import {\tt pickle} and then open the file in
+the usual way:
+
+\beforeverb
+\begin{verbatim}
+>>> import pickle
+>>> f = open("test.pck","w")
+\end{verbatim}
+\afterverb
+%
+To store a data structure, use the {\tt dump} method and
+then close the file in the usual way:
+
+\beforeverb
+\begin{verbatim}
+>>> pickle.dump(12.3, f)
+>>> pickle.dump([1,2,3], f)
+>>> f.close()
+\end{verbatim}
+\afterverb
+%
+Then we can open the file for reading and load the data structures
+we dumped:
+
+\beforeverb
+\begin{verbatim}
+>>> f = open("test.pck","r")
+>>> x = pickle.load(f)
+>>> x
+12.3
+>>> type(x)
+<type 'float'>
+>>> y = pickle.load(f)
+>>> y
+[1, 2, 3]
+>>> type(y)
+<type 'list'>
+\end{verbatim}
+\afterverb
+%
+Each time we invoke {\tt load}, we get a single value from
+the file, complete with its original type.
+
+
+\section{Exceptions}
+\index{try statement}
+\index{statement!try}
+\index{raise exception}
+\index{handle exception}
+\index{except statement}
+\index{statement!except}
+\index{exception}
+
+Whenever a runtime error occurs, it creates an
+{\bf exception}.  Usually, the program stops and Python
+prints 
+an error message.
+
+For example, dividing by zero creates an exception:
+
+\beforeverb
+\begin{verbatim}
+>>> print 55/0
+ZeroDivisionError: integer division or modulo
+\end{verbatim}
+\afterverb
+%
+So does accessing a nonexistent list item:
+
+\beforeverb
+\begin{verbatim}
+>>> a = []
+>>> print a[5]
+IndexError: list index out of range
+\end{verbatim}
+\afterverb
+%
+Or accessing a key that isn't in the dictionary:
+
+\beforeverb
+\begin{verbatim}
+>>> b = {}
+>>> print b['what']
+KeyError: what
+\end{verbatim}
+\afterverb
+%
+Or trying to open a nonexistent file:
+
+\beforeverb
+\begin{verbatim}
+>>> f = open("Idontexist", "r")
+IOError: [Errno 2] No such file or directory: 'Idontexist'
+\end{verbatim}
+\afterverb
+%
+In each case, the error
+message has two parts: the type of error before
+the colon, and specifics about the error after the colon.
+Normally Python also prints a traceback of where the program
+was, but we have omitted that from the examples.
+
+\index{traceback}
+
+Sometimes we want to execute an operation that could cause
+an exception, but we don't want the program to stop.  We can
+{\bf handle} the exception using the {\tt try} and
+{\tt except} statements.
+
+For example, we might prompt the user for the name of a file
+and then try to open it.  If the file doesn't exist, we don't
+want the program to crash; we want to handle the exception:
+
+\beforeverb
+\begin{verbatim}
+filename = raw_input('Enter a file name: ')
+try:
+  f = open (filename, "r")
+except IOError:
+  print 'There is no file named', filename
+\end{verbatim}
+\afterverb
+%
+The {\tt try} statement executes the statements in the first block.
+If no exceptions occur, it ignores the {\tt except} statement.  If an
+exception of type {\tt IOError} occurs, it executes the statements in
+the {\tt except} branch and then continues.
+
+We can encapsulate this capability in a function: {\tt exists} takes a
+filename and returns true if the file exists, false if it doesn't:
+
+\beforeverb
+\begin{verbatim}
+def exists(filename):
+  try:
+    f = open(filename)
+    f.close()
+    return True
+  except IOError:
+    return False
+\end{verbatim}
+\afterverb
+%
+You can use multiple {\tt except} blocks to handle different kinds of
+exceptions.  The {\em Python Reference Manual} has the details.
+
+If your program detects an error condition, you can make it
+{\bf raise} an exception.  Here is an example that gets input
+from the user and checks for the value 17.  
+Assuming that 17 is not valid input for some reason, we raise an
+exception.
+
+\beforeverb
+\begin{verbatim}
+def inputNumber () :
+  x = input ('Pick a number: ')
+  if x == 17 :
+    raise ValueError, '17 is a bad number'
+  return x
+\end{verbatim}
+\afterverb
+%
+The {\tt raise} statement takes two arguments: the exception type and
+specific information about the error.  {\tt ValueError} is one of the
+exception types Python provides for a variety of occasions.  Other
+examples include {\tt TypeError}, {\tt KeyError}, and my favorite,
+{\tt NotImplementedError}.
+
+If the function that called {\tt inputNumber} handles the error,
+then the program can continue; otherwise, Python prints the
+error message and exits:
+
+\beforeverb
+\begin{verbatim}
+>>> inputNumber ()
+Pick a number: 17
+ValueError: 17 is a bad number
+\end{verbatim}
+\afterverb
+%
+The error message includes the exception type and the
+additional information you provided.
+
+\begin{quote}
+{\em As an exercise, write a function that uses {\tt inputNumber}
+to input a number from the keyboard and that handles the
+{\tt ValueError} exception.}
+\end{quote}
+
+
+\section{Glossary}
+
+\index{file}
+\index{text file}
+\index{break statement}
+\index{statement!break}
+\index{continue statement}
+\index{statement!continue}
+\index{format operator}
+\index{format string}
+\index{operator!format}
+\index{directory}
+\index{pickle}
+\index{try}
+\index{raise exception}
+\index{raise exception}
+\index{handle exception}
+\index{except statement}
+\index{exception}
+
+\begin{description}
+
+\item[file:] A named entity, usually stored on a hard drive, floppy disk,
+or CD-ROM, that contains a stream of characters.
+
+\item[directory:] A named collection of files, also called a folder.
+
+\item[path:] A sequence of directory names that specifies the
+exact location of a file.
+
+\item[text file:] A file that contains printable characters organized
+into lines separated by newline characters.
+
+\item[break statement:] A statement that causes the flow of execution
+to exit a loop.
+
+\item[continue statement:] A statement that causes the current iteration
+of a loop to end.  The flow of execution goes to the top of the loop,
+evaluates the condition, and proceeds accordingly.
+
+\item[format operator:] The {\tt \%} operator takes a format
+string and a tuple of expressions and yields a string that includes
+the expressions, formatted according to the format string.
+
+\item[format string:] A string that contains printable characters
+and format sequences that indicate how to format values.
+
+\item[format sequence:] A sequence of characters beginning with
+{\tt \%} that indicates how to format a value.
+
+\item[pickle:] To write a data value in a file along with its
+type information so that it can be reconstituted later.
+
+\item[exception:] An error that occurs at runtime.
+
+\item[handle:] To prevent an exception from terminating
+a program using the {\tt try}
+and {\tt except} statements.
+
+\item[raise:] To signal an exception using the {\tt raise}
+statement.
+
+
+\end{description}
+

@@ -1,0 +1,722 @@
+% LaTeX source for textbook ``How to think like a computer scientist''
+% Copyright (c)  2001  Allen B. Downey, Jeffrey Elkner, and Chris Meyers.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+\chapter{Conditionals and recursion}
+
+\section{The modulus operator}
+\index{modulus operator}
+\index{operator!modulus}
+
+The {\bf modulus operator} works on integers (and integer expressions)
+and yields the remainder when the first operand is divided by the
+second.  In Python, the modulus operator is a percent sign ({\tt
+\%}).  The syntax is the same as for other operators:
+
+\beforeverb
+\begin{verbatim}
+>>> quotient = 7 / 3
+>>> print quotient
+2
+>>> remainder = 7 % 3
+>>> print remainder
+1
+\end{verbatim}
+\afterverb
+%
+So 7 divided by 3 is 2 with 1 left over.
+
+The modulus operator turns out to be surprisingly useful.  For
+example, you can check whether one number is divisible by another---if
+{\tt x \% y} is zero, then {\tt x} is divisible by {\tt y}.
+
+Also, you can extract the right-most digit
+or digits from a number.  For example, {\tt x \% 10} yields the
+right-most digit of {\tt x} (in base 10).  Similarly {\tt x \% 100}
+yields the last two digits.
+
+\adjustpage{1}
+
+\section{Boolean expressions}
+\index{boolean expression}
+\index{expression!boolean}
+\index{logical operator}
+\index{operator!logical}
+
+A {\bf boolean expression} is an expression that is either true
+or false.  One way to write a boolean expression is to use the
+operator {\tt ==}, which compares two values and produces a boolean
+value:
+
+\beforeverb
+\begin{verbatim}
+>>> 5 == 5
+True
+>>> 5 == 6
+False
+\end{verbatim}
+\afterverb
+%
+In the first statement, the two operands are equal, so the value of
+the expression is {\tt True}; in the second statement, 5 is not equal
+to 6, so we get {\tt False}.  {\tt True} and {\tt False} are special
+values that are built into Python.
+
+The {\tt ==} operator is one of the {\bf comparison operators}; the
+others are:
+
+\beforeverb
+\begin{verbatim}
+      x != y               # x is not equal to y
+      x > y                # x is greater than y
+      x < y                # x is less than y
+      x >= y               # x is greater than or equal to y
+      x <= y               # x is less than or equal to y
+\end{verbatim}
+\afterverb
+%
+Although these operations are probably familiar to you, the Python
+symbols are different from the mathematical symbols.  A common error
+is to use a single equal sign ({\tt =}) instead of a double equal sign
+({\tt ==}).  Remember that {\tt =} is an assignment operator and
+{\tt ==} is a comparison operator.   Also, there is no such thing as
+{\tt =<} or {\tt =>}.
+
+
+\section {Logical operators}
+\index{logical operator}
+\index{operator!logical}
+
+There are three {\bf logical operators}: {\tt and}, {\tt
+or}, and {\tt not}.  The semantics (meaning) of these operators is
+similar to their meaning in English.  For example,
+{\tt x > 0 and x < 10} is true only if {\tt x} is greater than 0
+{\em and} less than 10.
+
+{\tt n\%2 == 0 or n\%3 == 0} is true if {\em either} of the conditions
+is true, that is, if the number is divisible by 2 {\em or} 3.
+
+Finally, the {\tt not} operator negates a boolean
+expression, so {\tt not(x > y)} is true if {\tt (x > y)} is false,
+that is, if {\tt x} is less than or equal to {\tt y}.
+
+Strictly speaking, the operands of the logical operators should be
+boolean expressions, but Python is not very strict.
+Any nonzero number is interpreted as ``true.''
+
+\beforeverb
+\begin{verbatim}
+>>>  x = 5
+>>>  x and 1
+1
+>>>  y = 0
+>>>  y and 1
+0
+\end{verbatim}
+\afterverb
+%
+In general, this sort of thing is not considered good style.  If you
+want to compare a value to zero, you should do it explicitly.
+
+
+\section{Conditional execution}
+\label{conditional execution}
+\index{conditional branching}
+\index{conditional execution}
+
+In order to write useful programs, we almost always need the ability
+to check conditions and change the behavior of the program
+accordingly.  {\bf Conditional statements} give us this ability.  The
+simplest form is the {\tt if} statement:
+
+\beforeverb
+\begin{verbatim}
+if x > 0:
+  print "x is positive"
+\end{verbatim}
+\afterverb
+%
+The boolean expression after the {\tt if} statement is
+called the {\bf condition}.  If it is true, then the indented
+statement gets executed.  If not, nothing happens.
+
+\index{compound statement}
+\index{compound statement!header}
+\index{compound statement!body}
+\index{compound statement!statement block}
+\index{statement!compound}
+
+Like other compound statements, the
+{\tt if} statement is made up of a header and a block
+of statements:
+
+\beforeverb
+\begin{verbatim}
+HEADER:
+  FIRST STATEMENT
+  ...
+  LAST STATEMENT
+\end{verbatim}
+\afterverb
+%
+The header begins on a new line and ends with a colon (:).  The
+indented statements that follow are called a {\bf block}.
+The first unindented statement marks the end of the block.
+A statement block inside a compound statement is called the {\bf body}
+of the statement.
+
+\index{block}
+\index{statement!block}
+\index{body}
+
+There is no limit on the number of statements that can appear in
+the body of an if statement, but there has to be at least one.
+Occasionally, it is useful to have a body with no statements (usually
+as a place keeper for code you haven't written yet).  In that
+case, you can use the {\tt pass} statement, which does nothing.
+
+\index{pass statement}
+\index{statement!pass}
+
+
+
+\section{Alternative execution}
+\label{alternative execution}
+
+A second form of the {\tt if} statement is alternative execution,
+in which there are two possibilities and the condition determines
+which one gets executed.  The syntax looks like this:
+
+\beforeverb
+\begin{verbatim}
+if x%2 == 0:
+  print x, "is even"
+else:
+  print x, "is odd"
+\end{verbatim}
+\afterverb
+%
+If the remainder when {\tt x} is divided by 2 is 0, then we
+know that {\tt x} is even, and the program displays a message to that
+effect.  If the condition is false, the second set of statements is
+executed.  Since the condition must be true or false, exactly one of
+the alternatives will be executed.  The alternatives are called
+{\bf branches}, because they are branches in the flow of execution.
+
+\index{branch}
+
+As an aside, if you need to check the parity (evenness or
+oddness) of numbers often, you might ``wrap'' this code in a
+function:
+
+\beforeverb
+\begin{verbatim}
+def printParity(x):
+  if x%2 == 0:
+    print x, "is even"
+  else:
+    print x, "is odd"
+\end{verbatim}
+\afterverb
+%
+For any value of {\tt x}, {\tt printParity} displays an
+appropriate message.
+When you call it, you can provide any integer expression
+as an argument.
+
+\beforeverb
+\begin{verbatim}
+>>> printParity(17)
+17 is odd
+>>> y = 17
+>>> printParity(y+1)
+18 is even
+\end{verbatim}
+\afterverb
+%
+
+
+\section{Chained conditionals}
+\index{chained conditional}
+\index{conditional!chained}
+
+Sometimes there are more than two possibilities and we need more than
+two branches.  One way to express a computation like that is a {\bf
+chained conditional}:
+
+\beforeverb
+\begin{verbatim}
+if x < y:
+  print x, "is less than", y
+elif x > y:
+  print x, "is greater than", y
+else:
+  print x, "and", y, "are equal"
+\end{verbatim}
+\afterverb
+%
+{\tt elif} is an abbreviation of ``else if.''  Again, exactly one
+branch will be executed.  There is no limit of the number of {\tt
+elif} statements, but the last branch has to be an {\tt else}
+statement:
+
+\adjustpage{3}
+\beforeverb
+\begin{verbatim}
+if choice == 'A':
+  functionA()
+elif choice == 'B':
+  functionB()
+elif choice == 'C':
+  functionC()
+else:
+  print "Invalid choice."
+\end{verbatim}
+\afterverb
+%
+Each condition is checked in order.  If the first is false,
+the next is checked, and so on.  If one of them is
+true, the corresponding branch executes, and the statement
+ends.  Even if more than one condition is true, only the
+first true branch executes.  
+
+\begin{quote}
+\begin{quote}
+{\em As an exercise, wrap these examples in functions
+called {\tt compare(x, y)} and {\tt dispatch(choice)}.}
+\end{quote}
+\end{quote}
+
+
+\section{Nested conditionals}
+
+One conditional can also be nested within another.  We could have
+written the trichotomy example as follows:
+
+\beforeverb
+\begin{verbatim}
+if x == y:
+  print x, "and", y, "are equal"
+else:
+  if x < y:
+    print x, "is less than", y
+  else:
+    print x, "is greater than", y
+\end{verbatim}
+\afterverb
+%
+The outer conditional contains two branches.  The
+first branch contains a simple output statement.  The second branch
+contains another {\tt if} statement, which has two branches of its
+own.  Those two branches are both output statements,
+although they could have been conditional statements as well.
+
+Although the indentation of the statements makes the structure
+apparent, nested conditionals become difficult to read very
+quickly. In general, it is a good idea to avoid them when you can.
+
+Logical operators often provide a way to simplify nested conditional
+statements.  For example, we can rewrite the following code using a
+single conditional:
+
+\beforeverb
+\begin{verbatim}
+if 0 < x:
+  if x < 10:
+    print "x is a positive single digit."
+\end{verbatim}
+\afterverb
+%
+The {\tt print} statement is executed only if we make it past both the
+conditionals, so we can use the {\tt and} operator:
+
+\beforeverb
+\begin{verbatim}
+if 0 < x and x < 10:
+  print "x is a positive single digit."
+\end{verbatim}
+\afterverb
+%
+These kinds of conditions are common, so Python provides an
+alternative syntax that is similar to mathematical notation:
+
+\beforeverb
+\begin{verbatim}
+if 0 < x < 10:
+  print "x is a positive single digit."
+\end{verbatim}
+\afterverb
+%
+This condition is semantically the same as
+the compound boolean expression and the nested conditional.
+
+
+\section{The {\tt return} statement}
+\index{return statement}
+\index{statement!return}
+
+The {\tt return} statement allows you to terminate the execution of a
+function before you reach the end.  One reason to use it is if you
+detect an error condition:
+
+\beforeverb
+\begin{verbatim}
+import math
+
+def printLogarithm(x):
+  if x <= 0:
+    print "Positive numbers only, please."
+    return
+
+  result = math.log(x)
+  print "The log of x is", result
+\end{verbatim}
+\afterverb
+%
+The function {\tt printLogarithm} has a
+parameter named {\tt x}.  The first thing it does is check whether
+{\tt x} is less than or equal to 0, in which case it displays an
+error message and then uses {\tt return} to exit the function. The
+flow of execution immediately returns to the caller, and the remaining
+lines of the function are not executed.
+
+Remember that to use a function from the math
+module, you have to import it.
+
+
+\section{Recursion}
+\label{recursion}
+\index{recursion}
+
+We mentioned that it is legal for one function to call another, and
+you have seen several examples of that.  We neglected to mention that
+it is also legal for a function to call itself.  It may not be obvious
+why that is a good thing, but it turns out to be one of the most
+magical and interesting things a program can do.
+For example, look at the following function:
+
+\beforeverb
+\begin{verbatim}
+def countdown(n):
+  if n == 0:
+    print "Blastoff!"
+  else:
+    print n
+    countdown(n-1)
+\end{verbatim}
+\afterverb
+%
+{\tt countdown} expects the parameter, {\tt n}, to be a positive
+integer.  If {\tt n} is 0, it outputs the word, ``Blastoff!''
+Otherwise, it outputs {\tt n} and then calls a function named
+{\tt countdown}---itself---passing {\tt n-1} as an argument.
+
+What happens if we call this function like this:
+
+\beforeverb
+\begin{verbatim}
+>>> countdown(3)
+\end{verbatim}
+\afterverb
+%
+The execution of {\tt countdown} begins with {\tt n=3}, and since
+{\tt n} is not 0, it outputs the value 3, and then calls itself...
+
+\begin{quote}
+The execution of {\tt countdown} begins with {\tt n=2}, and since
+{\tt n} is not 0, it outputs the value 2, and then calls itself...
+
+\begin{quote}
+The execution of {\tt countdown} begins with {\tt n=1}, and since
+{\tt n} is not 0, it outputs the value 1, and then calls itself...
+
+\begin{quote}
+The execution of {\tt countdown} begins with {\tt n=0}, and since
+{\tt n} is 0, it outputs the word, ``Blastoff!'' and then returns.
+\end{quote}
+
+The {\tt countdown} that got {\tt n=1} returns.
+\end{quote}
+
+The {\tt countdown} that got {\tt n=2} returns.
+\end{quote}
+
+The {\tt countdown} that got {\tt n=3} returns.
+
+And then you're back in {\tt \_\_main\_\_} (what a trip).  So, the
+total output looks like this:
+
+\beforeverb
+\begin{verbatim}
+3
+2
+1
+Blastoff!
+\end{verbatim}
+\afterverb
+%
+As a second example, look again at the functions {\tt newLine} and
+{\tt threeLines}:
+
+\beforeverb
+\begin{verbatim}
+def newline():
+  print
+
+def threeLines():
+  newLine()
+  newLine()
+  newLine()
+\end{verbatim}
+\afterverb
+%
+Although these work, they would not be much help if we wanted to output 2
+newlines, or 106.  A better alternative would be this:
+
+\beforeverb
+\begin{verbatim}
+def nLines(n):
+  if n > 0:
+    print
+    nLines(n-1)
+\end{verbatim}
+\afterverb
+%
+This program is similar to {\tt countdown}; as long as {\tt n} is
+greater than 0, it outputs one newline and then calls itself to
+output {\tt n-1} additional newlines.  Thus, the total number of
+newlines is {\tt 1 + (n - 1)} which, if you do your algebra right, comes
+out to {\tt n}.
+
+The process of a function calling itself is {\bf recursion}, and
+such functions are said to be recursive.
+
+\index{recursion}
+\index{function!recursive}
+
+
+\section{Stack diagrams for recursive functions}
+\index{stack diagram}
+\index{function frame}
+\index{frame}
+
+In Section~\ref{stackdiagram}, we used a stack diagram to represent
+the state of a program during a function call.  The same kind of
+diagram can help interpret a recursive function.
+
+Every time a function gets called, Python creates a new function
+frame, which contains the function's local variables and parameters.
+For a recursive function, there might be more than one frame on the
+stack at the same time.
+
+This figure shows a stack diagram for {\tt countdown} called with
+{\tt n = 3}:
+
+\beforefig
+\centerline{\psfig{figure=illustrations/stack2.eps}}
+\afterfig
+
+As usual, the top of the stack is the frame for {\tt \_\_main\_\_}.
+It is empty because we did not create any variables in {\tt
+\_\_main\_\_} or pass any arguments to it.
+
+The four {\tt countdown} frames have different values for the
+parameter {\tt n}.  The bottom of the stack, where {\tt n=0}, is
+called the {\bf base case}.  It does not make a recursive call, so
+there are no more frames.
+
+\adjustpage{2}
+\begin{quote}
+{\em As an exercise, draw a stack diagram for {\tt nLines} called with
+{\tt n=4}.}
+\end{quote}
+
+\index{base case}
+\index{recursion!base case}
+
+
+\section{Infinite recursion}
+\index{infinite recursion}
+\index{recursion!infinite}
+\index{runtime error}
+\index{error!runtime}
+\index{traceback}
+
+If a recursion never reaches a base case, it goes on making
+recursive calls forever, and the program never terminates.  This is
+known as {\bf infinite recursion}, and it is generally not considered
+a good idea.  Here is a minimal program with an infinite recursion:
+
+\beforeverb
+\begin{verbatim}
+def recurse():
+  recurse()
+\end{verbatim}
+\afterverb
+%
+In most programming environments, a program with infinite recursion
+does not really run forever.  Python reports an error
+message when the maximum recursion depth is reached:
+
+\beforeverb
+\begin{verbatim}
+  File "<stdin>", line 2, in recurse
+  (98 repetitions omitted)
+  File "<stdin>", line 2, in recurse
+RuntimeError: Maximum recursion depth exceeded
+\end{verbatim}
+\afterverb
+%
+This traceback is a little bigger than the one we saw in the
+previous chapter.  When the error occurs, there are 100
+{\tt recurse} frames on the stack!
+
+\begin{quote}
+{\em As an exercise, write a function with infinite recursion and run
+it in the Python interpreter.}
+\end{quote}
+
+
+\section{Keyboard input}
+
+The programs we have written so far are a bit rude in the sense that
+they accept no input from the user.  They just do the same thing every
+time.
+
+Python provides built-in functions that get input from the keyboard.
+The simplest is called {\tt raw\_input}.  When this function is
+called, the program stops and waits for the user to type something.
+When the user presses Return or the Enter key, the program resumes and
+{\tt raw\_input} returns what the user typed as a {\bf string}:
+
+\beforeverb
+\begin{verbatim}
+>>> input = raw_input ()
+What are you waiting for?
+>>> print input
+What are you waiting for?
+\end{verbatim}
+\afterverb
+%
+Before calling {\tt raw\_input}, it is a good idea to print a message
+telling the user what to input.  This message is called a {\bf
+prompt}.  We can supply a prompt as an argument to {\tt raw\_input}:
+
+\index{prompt}
+
+\beforeverb
+\begin{verbatim}
+>>> name = raw_input ("What...is your name? ")
+What...is your name? Arthur, King of the Britons!
+>>> print name
+Arthur, King of the Britons!
+\end{verbatim}
+\afterverb
+%
+If we expect the response to be an integer, we can use the
+{\tt input} function:
+
+\beforeverb
+\begin{verbatim}
+prompt = "What...is the airspeed velocity of an unladen swallow?\n"
+speed = input(prompt)
+\end{verbatim}
+\afterverb
+%
+The sequence \verb+\n+ at the end of the string represents a newline,
+so the user's input appears below the prompt.
+
+If the user types a string of digits, it is converted to an
+integer and assigned to {\tt speed}.  Unfortunately, if the user
+types a character that is not a digit, the program crashes:
+
+\beforeverb
+\begin{verbatim}
+>>> speed = input (prompt)
+What...is the airspeed velocity of an unladen swallow?
+What do you mean, an African or a European swallow?
+SyntaxError: invalid syntax
+\end{verbatim}
+\afterverb
+%
+To avoid this kind of error, it is generally a good idea to
+use {\tt raw\_input} to get a string and then use conversion
+functions to convert to other types.
+
+
+\section{Glossary}
+
+\begin{description}
+
+\item[modulus operator:]  An operator, denoted with a percent sign
+({\tt \%}), that works on integers and yields the remainder when one
+number is divided by another.
+
+\item[boolean expression:]  An expression that is either true or false.
+
+\item[comparison operator:] One of the operators that compares two
+values: {\tt ==}, {\tt !=}, {\tt >}, {\tt <}, {\tt >=}, and {\tt <=}.
+
+\item[logical operator:] One of the operators that combines boolean
+expressions: {\tt and}, {\tt or}, and {\tt not}.
+
+\item[conditional statement:]  A statement that controls the flow of
+execution depending on some condition.
+
+\item[condition:] The boolean expression in a conditional statement
+that determines which branch is executed.
+
+\item[compound statement:]  A statement that consists of a header
+and a body.  The header ends with a colon (:).  The body is indented
+relative to the header.
+
+\item[block:] A group of consecutive statements with the same
+indentation.
+
+\item[body:] The block in a compound statement that follows the
+header.
+
+\item[nesting:]  One program structure within another, such as a
+conditional statement inside a branch of another conditional
+statement.
+
+\item[recursion:]  The process of calling the function that is
+currently executing.
+
+\item[base case:]  A branch of the conditional statement in a
+recursive function that does not result in a recursive call.
+
+\item[infinite recursion:]  A function that calls itself recursively
+without ever reaching the base case.  Eventually, an infinite recursion
+causes a runtime error.
+
+\item[prompt:]  A visual cue that tells the user to input data.
+
+\index{modulus operator}
+\index{boolean expression}
+\index{expression!boolean}
+\index{conditional statement}
+\index{statement!conditional}
+\index{condition}
+\index{compound statement}
+\index{branch}
+\index{body}
+\index{block}
+\index{nesting}
+\index{recursion}
+\index{base case}
+\index{infinite recursion}
+\index{prompt}
+
+\end{description}

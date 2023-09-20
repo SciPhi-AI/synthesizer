@@ -20,6 +20,12 @@ def build_llm_config(args: argparse.Namespace) -> dict:
         "do_stream": args.do_stream,
         "device": args.device,
         "version": args.version,
+        "llama_data_dir": args.llama_data_dir,
+        "llama_index_name": args.llama_index_name,
+        "llama_out_store": args.llama_out_store,
+        "llama_load_from_avail_store": args.llama_load_from_avail_store,
+        "llama_chunk_size": args.llama_chunk_size,
+        "llama_top_k_similarity": args.llama_top_k_similarity,
         "add_model_kwargs": json.loads(args.add_model_kwargs)
         if args.add_model_kwargs
         else None,
@@ -145,6 +151,43 @@ def parse_arguments() -> argparse.Namespace:
         type=str,
         default="0.1.0",
         help="Version of this run.",
+    )
+    # Llama data arguments
+    parser.add_argument(
+        "--llama_data_dir",
+        type=str,
+        default=None,
+        help="Which directory to load the LlamaIndex data from?",
+    )
+    parser.add_argument(
+        "--llama_index_name",
+        type=str,
+        default=None,
+        help="Which directory to load the LlamaIndex data from?",
+    )
+    parser.add_argument(
+        "--llama_out_store",
+        type=str,
+        default=None,
+        help="Which directory save the LlamaIndex store to?",
+    )
+    parser.add_argument(
+        "--llama_load_from_avail_store",
+        type=bool,
+        default=True,
+        help="Should the LlamaIndex load from the available store?",
+    )
+    parser.add_argument(
+        "--llama_chunk_size",
+        type=int,
+        default=None,
+        help="What size should the LlamaIndex chunks be?",
+    )
+    parser.add_argument(
+        "--llama_top_k_similarity",
+        type=int,
+        default=None,
+        help="What top k should the LlamaIndex use for similarity?",
     )
     # Prompt arguments
     parser.add_argument(

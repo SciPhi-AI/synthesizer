@@ -1,0 +1,637 @@
+% LaTeX source for textbook ``How to think like a computer scientist''
+% Copyright (c)  2001  Allen B. Downey, Jeffrey Elkner, and Chris Meyers.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+\chapter{Inheritance}
+
+\section{Inheritance}
+\index{inheritance}
+\index{object-oriented programming}
+\index{parent class}
+\index{child class}
+\index{subclass}
+
+The language feature most often associated with object-oriented
+programming is {\bf inheritance}.  Inheritance is the ability to
+define a new class that is a modified version of an existing
+class.
+
+The primary advantage of this feature is that you can add new methods
+to a class without modifying the existing class.  It is
+called ``inheritance'' because the new class inherits all of the
+methods of the existing class.  Extending this metaphor, the existing
+class is sometimes called the {\bf parent} class.  The new class may
+be called the {\bf child} class or sometimes ``subclass.''
+
+\index{object-oriented design}
+
+Inheritance is a powerful feature.  Some programs that would be
+complicated without inheritance can be written concisely and simply
+with it.  Also, inheritance can facilitate code reuse, since you can
+customize the behavior of parent classes without having to modify
+them.  In some cases, the inheritance structure reflects the natural
+structure of the problem, which makes the program easier to
+understand.
+
+On the other hand, inheritance can make programs difficult to read.
+When a method is invoked, it is sometimes not clear where to find its
+definition.  The relevant code may be scattered among several modules.
+Also, many of the things that can be done using inheritance can be
+done as elegantly (or more so) without it.  If the natural
+structure of the problem does not lend itself to inheritance, this
+style of programming can do more harm than good.
+
+In this chapter we will demonstrate the use of inheritance as part of
+a program that plays the card game Old Maid.  One of our goals is to
+write code that could be reused to implement other card games.
+
+
+\section{A hand of cards}
+
+For almost any card game, we need to represent a hand of cards.
+A hand is similar to a deck, of course.  Both are made up of
+a set of cards, and both require operations like adding and
+removing cards.  Also, we might like the ability to shuffle
+both decks and hands.
+
+A hand is also different from a deck.  Depending on the game being
+played, we might want to perform some operations on hands that
+don't make sense for a deck.  For example, in poker we might classify
+a hand (straight, flush, etc.) or compare it with another hand.  In
+bridge, we might want to compute a score for a hand in order to make
+a bid.
+
+This situation suggests the use of inheritance.  If {\tt Hand} is a
+subclass of {\tt Deck}, it will have all the methods
+of {\tt Deck}, and new methods can be added.
+
+\index{parent class}
+\index{class!parent}
+
+In the class definition, the name of the parent class appears
+in parentheses:
+
+\beforeverb
+\begin{verbatim}
+class Hand(Deck):
+  pass
+\end{verbatim}
+\afterverb
+%
+This statement indicates that the new {\tt Hand} class inherits from
+the existing {\tt Deck} class.
+
+The {\tt Hand} constructor initializes the attributes
+for the hand, which are {\tt name} and {\tt cards}.  The string {\tt name}
+identifies this hand, probably by the name of
+the player that holds it.  The name is an optional parameter with
+the empty string as a default value.
+{\tt cards} is the list of cards in
+the hand, initialized to the empty list:
+
+\beforeverb
+\begin{verbatim}
+class Hand(Deck):
+  def __init__(self, name=""):
+    self.cards = []
+    self.name = name
+\end{verbatim}
+\afterverb
+%
+For just about any card game, it is necessary to add and
+remove cards from the deck.  Removing cards is already taken
+care of, since {\tt Hand} inherits {\tt removeCard} from {\tt Deck}.
+But we have to write {\tt addCard}:
+
+\beforeverb
+\begin{verbatim}
+class Hand(Deck):
+  ...
+  def addCard(self,card) :
+    self.cards.append(card)
+\end{verbatim}
+\afterverb
+%
+Again, the ellipsis indicates that we have omitted other methods.
+The list {\tt append} method adds the new card to
+the end of the list of cards.
+
+
+\section{Dealing cards}
+\index{dealing cards}
+
+Now that we have a {\tt Hand} class, we want to deal cards from the
+{\tt Deck} into hands.  It is not immediately obvious whether this
+method should go in the {\tt Hand} class or in the {\tt Deck} class,
+but since it operates on a single deck and (possibly) several hands,
+it is more natural to put it in {\tt Deck}.
+
+{\tt deal} should be fairly general,
+since different games will have different requirements.  We may want
+to deal out the entire deck at once or add one card to each hand.
+
+{\tt deal} takes three parameters: the deck, a list (or tuple) of
+hands, and the total number of cards to deal.  If there are not enough
+cards in the deck, the method deals out all of the cards and stops:
+
+\beforeverb
+\begin{verbatim}
+class Deck :
+  ...
+  def deal(self, hands, nCards=999):
+    nHands = len(hands)
+    for i in range(nCards):
+      if self.isEmpty(): break    # break if out of cards
+      card = self.popCard()       # take the top card
+      hand = hands[i % nHands]    # whose turn is next?
+      hand.addCard(card)          # add the card to the hand
+\end{verbatim}
+\afterverb
+%
+The last parameter, {\tt nCards}, is optional; the default is a large
+number, which effectively means that all of the cards in the deck
+will get dealt.
+
+\index{loop variable}
+\index{variable!loop}
+
+The loop variable {\tt i} goes from 0 to {\tt nCards-1}.  Each
+time through the loop, a card is removed from the deck using the
+list method {\tt pop}, which removes and returns the last item
+in the list.
+
+\index{modulus operator}
+\index{operator!modulus}
+
+The modulus operator ({\tt \%}) allows us to deal cards in a
+round robin (one card at a time to each hand).  When {\tt i} is
+equal to the number of hands in the list, the expression
+{\tt i \% nHands} wraps around to the beginning of the list
+(index 0).
+
+
+
+\section {Printing a Hand}
+\index{printing!hand of cards}
+
+To print the contents of a hand, we can take advantage of
+the {\tt printDeck} and {\tt \_\_str\_\_} methods inherited
+from {\tt Deck}.  For example:
+
+\adjustpage{-2}
+\pagebreak
+
+\beforeverb
+\begin{verbatim}
+>>> deck = Deck()
+>>> deck.shuffle()
+>>> hand = Hand("frank")
+>>> deck.deal([hand], 5)
+>>> print hand
+Hand frank contains
+2 of Spades
+ 3 of Spades
+  4 of Spades
+   Ace of Hearts
+    9 of Clubs
+\end{verbatim}
+\afterverb
+%
+It's not a great hand, but it has the makings
+of a straight flush.
+
+\index{straight flush}
+
+Although it is convenient to inherit the existing methods,
+there is additional information in a {\tt Hand}
+object we might want to include when we print one.  To do that,
+we can provide a {\tt \_\_str\_\_} method in the {\tt Hand} class
+that overrides the one in the {\tt Deck} class:
+
+\beforeverb
+\begin{verbatim}
+class Hand(Deck)
+  ...
+  def __str__(self):
+    s = "Hand " + self.name
+    if self.isEmpty():
+      return s + " is empty\n"
+    else:
+      return s + " contains\n" + Deck.__str__(self)
+\end{verbatim}
+\afterverb
+%
+Initially, {\tt s} is a string that identifies the hand.  If the hand
+is empty, the program appends the words {\tt is empty} and returns the
+result.
+
+Otherwise, the program appends the word {\tt contains} and the string
+representation of the {\tt Deck}, computed by invoking the {\tt
+\_\_str\_\_} method in the {\tt Deck} class on {\tt self}.
+
+It may seem odd to send {\tt self}, which refers to the current {\tt
+Hand}, to a {\tt Deck} method, until you remember that a {\tt Hand} is
+a kind of {\tt Deck}.  {\tt Hand} objects can do everything {\tt Deck}
+objects can, so it is legal to send a {\tt Hand} to a {\tt Deck}
+method.
+
+\index{subclass}
+\index{parent class}
+\index{class!parent}
+
+In general, it is always legal to use an instance of a subclass
+in place of an instance of a parent class.
+
+
+\section {The {\tt CardGame} class}
+
+The {\tt CardGame} class takes care
+of some basic chores common to all games, such as creating the
+deck and shuffling it:
+
+\beforeverb
+\begin{verbatim}
+class CardGame:
+  def __init__(self):
+    self.deck = Deck()
+    self.deck.shuffle()
+\end{verbatim}
+\afterverb
+%
+This is the first case we have seen where the initialization
+method performs a significant computation, beyond initializing
+attributes.
+
+To implement specific games, we can inherit from {\tt CardGame}
+and add features for the new game.
+As an example, we'll write
+a simulation of Old Maid.
+
+The object of Old Maid is to get rid of cards in your hand.  You do
+this by matching cards by rank and color.  For example, the 4 of Clubs
+matches the 4 of Spades since both suits are black.  The Jack of Hearts
+matches the Jack of Diamonds since both are red.
+
+To begin the game, the Queen of Clubs is removed from the deck so that
+the Queen of Spades has no match.  The fifty-one remaining cards are
+dealt to the players in a round robin.  After the deal, all players
+match and discard as many cards as possible.
+
+When no more matches can be made, play begins.  In turn, each player
+picks a card (without looking) from the closest neighbor to the left
+who still has cards.  If the chosen card matches a card in the
+player's hand, the pair is removed.  Otherwise, the card is added to
+the player's hand.  Eventually all possible matches are made, leaving
+only the Queen of Spades in the loser's hand.
+
+In our computer simulation of the game, the computer plays
+all hands.  Unfortunately, some nuances of the real game are lost.
+In a real game, the player with the Old Maid
+goes to some effort to get their neighbor to pick that card,
+by displaying it a little more prominently, or perhaps failing
+to display it more prominently, or even failing to fail to display
+that card more prominently.  The computer simply picks a neighbor's
+card at random.
+
+
+\section {{\tt OldMaidHand} class}
+\index{class!OldMaidHand}
+
+A hand for playing Old Maid requires some abilities beyond the
+general abilities of a {\tt Hand}.  We will define a new class, {\tt
+OldMaidHand}, that inherits from {\tt Hand} and provides an additional
+method called {\tt removeMatches}:
+
+
+\beforeverb
+\begin{verbatim}
+class OldMaidHand(Hand):
+  def removeMatches(self):
+    count = 0
+    originalCards = self.cards[:]
+    for card in originalCards:
+      match = Card(3 - card.suit, card.rank)
+      if match in self.cards:
+        self.cards.remove(card)
+        self.cards.remove(match)
+        print "Hand %s: %s matches %s" % (self.name,card,match)
+        count = count + 1
+    return count
+\end{verbatim}
+\afterverb
+%
+We start by making a copy of the list of cards, so that we can
+traverse the copy while removing cards from the original.
+Since {\tt self.cards} is modified in the
+loop, we don't want to use it to control the traversal.  Python can get
+quite confused if it is traversing a list that is changing!
+
+\index{traversal}
+
+\adjustpage{1}
+
+For each card in the hand, we figure out what the matching card is and
+go looking for it.  The match card has the same rank and the other
+suit of the same color.  The expression {\tt 3 - card.suit} turns a
+Club (suit 0) into a Spade (suit 3) and a Diamond (suit 1) into a
+Heart (suit 2).  You should satisfy yourself that the opposite
+operations also work.  If the match card is also in the hand, both
+cards are removed.
+
+The following example demonstrates how to use {\tt removeMatches}:
+
+\beforeverb
+\begin{verbatim}
+>>> game = CardGame()
+>>> hand = OldMaidHand("frank")
+>>> game.deck.deal([hand], 13)
+>>> print hand
+Hand frank contains
+Ace of Spades
+ 2 of Diamonds
+  7 of Spades
+   8 of Clubs
+    6 of Hearts
+     8 of Spades
+      7 of Clubs
+       Queen of Clubs
+        7 of Diamonds
+         5 of Clubs
+          Jack of Diamonds
+           10 of Diamonds
+            10 of Hearts
+
+>>> hand.removeMatches()
+Hand frank: 7 of Spades matches 7 of Clubs
+Hand frank: 8 of Spades matches 8 of Clubs
+Hand frank: 10 of Diamonds matches 10 of Hearts
+>>> print hand
+Hand frank contains
+Ace of Spades
+ 2 of Diamonds
+  6 of Hearts
+   Queen of Clubs
+    7 of Diamonds
+     5 of Clubs
+      Jack of Diamonds
+\end{verbatim}
+\afterverb
+%
+Notice that there is no {\tt \_\_init\_\_} method for the
+{\tt OldMaidHand} class.  We inherit it from {\tt Hand}.
+
+
+\section {{\tt OldMaidGame} class}
+\index{class!OldMaidGame}
+
+Now we can turn our attention to the game itself.
+{\tt OldMaidGame} is a subclass of {\tt CardGame} with a new
+method called {\tt play} that takes a list of players as an argument.
+
+Since {\tt \_\_init\_\_} is inherited from {\tt CardGame},
+a new {\tt OldMaidGame} object contains a new shuffled deck:
+
+\adjustpage{-1}
+
+\beforeverb
+\begin{verbatim}
+class OldMaidGame(CardGame):
+  def play(self, names):
+    # remove Queen of Clubs
+    self.deck.removeCard(Card(0,12))
+
+    # make a hand for each player
+    self.hands = []
+    for name in names :
+      self.hands.append(OldMaidHand(name))
+
+    # deal the cards
+    self.deck.deal(self.hands)
+    print "---------- Cards have been dealt"
+    self.printHands()
+
+    # remove initial matches
+    matches = self.removeAllMatches()
+    print "---------- Matches discarded, play begins"
+    self.printHands()
+
+    # play until all 50 cards are matched
+    turn = 0
+    numHands = len(self.hands)
+    while matches < 25:
+      matches = matches + self.playOneTurn(turn)
+      turn = (turn + 1) % numHands
+
+    print "---------- Game is Over"
+    self.printHands()
+\end{verbatim}
+\afterverb
+%
+Some of the steps of the game have been separated into methods.
+{\tt removeAllMatches} traverses the list of hands and
+invokes {\tt removeMatches} on each:
+
+\beforeverb
+\begin{verbatim}
+class OldMaidGame(CardGame):
+  ...
+  def removeAllMatches(self):
+    count = 0
+    for hand in self.hands:
+      count = count + hand.removeMatches()
+    return count
+\end{verbatim}
+\afterverb
+%
+\begin{quote}
+{\em As an exercise, write {\tt printHands} which traverses
+{\tt self.hands} and prints each hand.}
+\end{quote}
+
+{\tt count} is
+an accumulator that adds up the number of matches in each
+hand and returns the total.
+
+\index{accumulator}
+
+When the total number of matches reaches twenty-five,
+fifty cards have been removed from the hands, which means that
+only one card is left and the game is over.
+
+The variable {\tt turn} keeps track of which player's turn
+it is.  It starts at 0 and increases by one each time;
+when it reaches {\tt numHands}, the modulus operator
+wraps it back around to 0.
+
+The method {\tt playOneTurn} takes an argument that indicates
+whose turn it is.  The return value is the number of matches
+made during this turn:
+
+\adjustpage{-2}
+\pagebreak
+
+\beforeverb
+\begin{verbatim}
+class OldMaidGame(CardGame):
+  ...
+  def playOneTurn(self, i):
+    if self.hands[i].isEmpty():
+      return 0
+    neighbor = self.findNeighbor(i)
+    pickedCard = self.hands[neighbor].popCard()
+    self.hands[i].addCard(pickedCard)
+    print "Hand", self.hands[i].name, "picked", pickedCard
+    count = self.hands[i].removeMatches()
+    self.hands[i].shuffle()
+    return count
+\end{verbatim}
+\afterverb
+%
+If a player's hand is empty, that player is out of the game, so he or she
+does nothing and returns 0.
+
+Otherwise, a turn consists of finding the first player on the left
+that has cards, taking one card from the neighbor, and checking
+for matches.  Before returning, the cards in the hand are shuffled
+so that the next player's choice is random.
+
+The method {\tt findNeighbor} starts with the player to the
+immediate left and continues around the circle until it finds
+a player that still has cards:
+
+\beforeverb
+\begin{verbatim}
+class OldMaidGame(CardGame):
+  ...
+  def findNeighbor(self, i):
+    numHands = len(self.hands)
+    for next in range(1,numHands):
+      neighbor = (i + next) % numHands
+      if not self.hands[neighbor].isEmpty():
+        return neighbor
+\end{verbatim}
+\afterverb
+%
+If {\tt findNeighbor} ever went all the way around the circle without
+finding cards, it would return {\tt None} and cause an error
+elsewhere in the program.  Fortunately, we can prove that that will
+never happen (as long as the end of the game is detected correctly).
+
+We have omitted the {\tt printHands} method.  You
+can write that one yourself.
+
+The following output is from a truncated form of the game where only
+the top fifteen cards (tens and higher) were dealt to three players.
+With this small deck, play stops after seven matches instead of
+twenty-five.
+
+\beforeverb
+\begin{verbatim}
+>>> import cards
+>>> game = cards.OldMaidGame()
+>>> game.play(["Allen","Jeff","Chris"])
+---------- Cards have been dealt
+Hand Allen contains
+King of Hearts
+ Jack of Clubs
+  Queen of Spades
+   King of Spades
+    10 of Diamonds
+
+Hand Jeff contains
+Queen of Hearts
+ Jack of Spades
+  Jack of Hearts
+   King of Diamonds
+    Queen of Diamonds
+
+Hand Chris contains
+Jack of Diamonds
+ King of Clubs
+  10 of Spades
+   10 of Hearts
+    10 of Clubs
+
+Hand Jeff: Queen of Hearts matches Queen of Diamonds
+Hand Chris: 10 of Spades matches 10 of Clubs
+---------- Matches discarded, play begins
+Hand Allen contains
+King of Hearts
+ Jack of Clubs
+  Queen of Spades
+   King of Spades
+    10 of Diamonds
+
+Hand Jeff contains
+Jack of Spades
+ Jack of Hearts
+  King of Diamonds
+
+Hand Chris contains
+Jack of Diamonds
+ King of Clubs
+  10 of Hearts
+
+Hand Allen picked King of Diamonds
+Hand Allen: King of Hearts matches King of Diamonds
+Hand Jeff picked 10 of Hearts
+Hand Chris picked Jack of Clubs
+Hand Allen picked Jack of Hearts
+Hand Jeff picked Jack of Diamonds
+Hand Chris picked Queen of Spades
+Hand Allen picked Jack of Diamonds
+Hand Allen: Jack of Hearts matches Jack of Diamonds
+Hand Jeff picked King of Clubs
+Hand Chris picked King of Spades
+Hand Allen picked 10 of Hearts
+Hand Allen: 10 of Diamonds matches 10 of Hearts
+Hand Jeff picked Queen of Spades
+Hand Chris picked Jack of Spades
+Hand Chris: Jack of Clubs matches Jack of Spades
+Hand Jeff picked King of Spades
+Hand Jeff: King of Clubs matches King of Spades
+---------- Game is Over
+Hand Allen is empty
+
+Hand Jeff contains
+Queen of Spades
+
+Hand Chris is empty
+
+\end{verbatim}
+\afterverb
+%
+So Jeff loses.
+
+
+
+\section{Glossary}
+
+\begin{description}
+
+\item[inheritance:] The ability to define a new class that is a
+modified version of a previously defined class.
+
+\item[parent class:] The class from which a child class inherits.
+
+\item[child class:] A new class created by inheriting from an
+existing class; also called a ``subclass.''
+
+\index{inheritance}
+\index{parent class}
+\index{child class}
+\index{subclass}
+
+\end{description}

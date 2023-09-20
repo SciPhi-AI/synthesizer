@@ -36,7 +36,7 @@ class AnthropicLLM(LLM):
             from anthropic import AI_PROMPT, HUMAN_PROMPT, Anthropic
         except ImportError:
             raise ImportError(
-                "Please install the anthropic package before attempting to run with an Anthropic model. This can be accomplished via `poetry install -E anthropic_support, ...OTHER_DEPENDENCY_HERE`."
+                "Please install the anthropic package before attempting to run with an Anthropic model. This can be accomplished via `poetry install -E anthropic_support, ...OTHER_DEPENDENCIES_HERE`."
             )
 
         self.raw_prompt = HUMAN_PROMPT + " {instruction} " + AI_PROMPT

@@ -1,0 +1,765 @@
+% LaTeX source for textbook ``How to think like a computer scientist''
+% Copyright (c)  2001  Allen B. Downey, Jeffrey Elkner, and Chris Meyers.
+
+% Permission is granted to copy, distribute and/or modify this
+% document under the terms of the GNU Free Documentation License,
+% Version 1.1  or any later version published by the Free Software
+% Foundation; with the Invariant Sections being "Contributor List",
+% with no Front-Cover Texts, and with no Back-Cover Texts. A copy of
+% the license is included in the section entitled "GNU Free
+% Documentation License".
+
+% This distribution includes a file named fdl.tex that contains the text
+% of the GNU Free Documentation License.  If it is missing, you can obtain
+% it from www.gnu.org or by writing to the Free Software Foundation,
+% Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+\chapter{Classes and methods}
+
+
+\section{Object-oriented features}
+\index{object-oriented programming language}
+\index{object-oriented programming}
+
+Python is an {\bf object-oriented programming language}, which means
+that it provides features that support {\bf object-oriented
+programming}.
+
+It is not easy to define object-oriented programming, but we have
+already seen some of its characteristics:
+
+\begin{itemize}
+
+\item Programs are made up of object definitions and function
+definitions, and most of the computation is expressed in terms
+of operations on objects.
+
+\item Each object definition corresponds to some object or concept
+in the real world, and the functions that operate on that object
+correspond to the ways real-world objects interact.
+
+\end{itemize}
+
+For example, the {\tt Time} class defined in Chapter~\ref{time}
+corresponds to the way people record the time of day, and the
+functions we defined correspond to the kinds of things people do with
+times.  Similarly, the {\tt Point} and {\tt Rectangle} classes
+correspond to the mathematical concepts of a point and a rectangle.
+
+So far, we have not taken advantage of the features Python provides to
+support object-oriented programming.  Strictly speaking, these features are
+not necessary.  For the most part, they provide an alternative syntax
+for things we have already done, but in many cases, the
+alternative is more concise and more accurately conveys the structure of
+the program.
+
+For example, in the {\tt Time} program, there is no obvious
+connection between the class definition and the function definitions
+that follow.  With some examination, it is apparent that every function
+takes at least one {\tt Time} object as an argument.
+
+This observation is the motivation for {\bf methods}.  We have already
+seen some methods, such as {\tt keys} and {\tt values}, which were
+invoked on dictionaries.  Each method is associated with a class and is
+intended to be invoked on instances of that class.
+
+\index{method}
+\index{function}
+\index{instance!object}
+\index{object instance}
+
+Methods are just like functions, with
+two differences:
+
+\begin{itemize}
+
+\item Methods are defined inside a class definition in order
+to make the relationship between the class and the method explicit.
+
+\item The syntax for invoking a method is different from the
+syntax for calling a function.
+
+\end{itemize}
+
+In the next few sections, we will take the functions from the previous
+two chapters and transform them into methods.  This transformation is
+purely mechanical; you can do it simply by following a sequence of
+steps.  If you are comfortable converting from one form to another,
+you will be able to choose the best form for whatever you are doing.
+
+
+\section{{\tt printTime}}
+\label{printTime}
+\index{printing!object}
+
+In Chapter~\ref{time}, we defined a class named
+{\tt Time} and you wrote a function named {\tt printTime}, which
+should have looked something like this:
+
+\beforeverb
+\begin{verbatim}
+class Time:
+  pass
+
+def printTime(time):
+  print str(time.hours) + ":" + \
+        str(time.minutes) + ":" + \
+        str(time.seconds)
+\end{verbatim}
+\afterverb
+%
+To call this function, we passed a {\tt Time} object as an argument:
+
+\beforeverb
+\begin{verbatim}
+>>> currentTime = Time()
+>>> currentTime.hours = 9
+>>> currentTime.minutes = 14
+>>> currentTime.seconds = 30
+>>> printTime(currentTime)
+\end{verbatim}
+\afterverb
+%
+To make {\tt printTime} a method, all we have to do is
+move the function definition inside the class definition.  Notice
+the change in indentation.
+
+\beforeverb
+\begin{verbatim}
+class Time:
+  def printTime(time):
+    print str(time.hours) + ":" +  \
+          str(time.minutes) + ":" +  \
+          str(time.seconds)
+\end{verbatim}
+\afterverb
+%
+Now we can invoke {\tt printTime} using dot notation.
+
+\index{dot notation}
+
+\beforeverb
+\begin{verbatim}
+>>> currentTime.printTime()
+\end{verbatim}
+\afterverb
+%
+As usual, the object on which the method is invoked appears
+before the dot and the
+name of the method appears after the dot.
+
+The object on which the method is invoked is assigned to the
+first parameter, so in this case {\tt currentTime} is assigned
+to the parameter {\tt time}.
+
+By convention, the first parameter of a method is
+called {\tt self}.  The reason for this is a little
+convoluted, but it is based on a useful metaphor.
+
+The syntax for a function call, {\tt printTime(currentTime)},
+suggests that the function is the active agent.  It says
+something like, ``Hey {\tt printTime}!  Here's an object for
+you to print.''
+
+In object-oriented programming, the objects are the active
+agents.  An invocation like {\tt currentTime.printTime()}
+says ``Hey {\tt currentTime}!  Please print yourself!''
+
+This change in perspective might be more polite, but
+it is not obvious that it is useful.  In the examples we
+have seen so far, it may not be.  But sometimes shifting
+responsibility from the functions onto the objects
+makes it possible to write more versatile functions,
+and makes it easier to maintain and reuse code.
+
+
+\section{Another example}
+
+Let's convert {\tt increment} (from Section~\ref{increment}) to a
+method.  To save space, we will leave out previously defined methods,
+but you should keep them in your version:
+
+\adjustpage{-1}
+
+\beforeverb
+\begin{verbatim}
+class Time:
+  #previous method definitions here...
+
+  def increment(self, seconds):
+    self.seconds = seconds + self.seconds
+
+    while self.seconds >= 60:
+      self.seconds = self.seconds - 60
+      self.minutes = self.minutes + 1
+
+    while self.minutes >= 60:
+      self.minutes = self.minutes - 60
+      self.hours = self.hours + 1
+\end{verbatim}
+\afterverb
+%
+The transformation is purely mechanical---we move the method
+definition into the class definition and change the name of the first
+parameter.
+
+Now we can invoke {\tt increment} as a method.
+
+\beforeverb
+\begin{verbatim}
+currentTime.increment(500)
+\end{verbatim}
+\afterverb
+%
+Again, the object on which the method is invoked gets assigned
+to the first parameter, {\tt self}.  The second parameter,
+{\tt seconds} gets the value {\tt 500}.
+
+\begin{quote}
+{\em As an exercise, convert {\tt convertToSeconds} 
+(from Section~\ref{convert}) to a method in the
+{\tt Time} class.}
+\end{quote}
+
+
+\section{A more complicated example}
+
+The {\tt after} function is slightly more complicated because it
+operates on two {\tt Time} objects, not just one.  We can only convert
+one of the parameters to {\tt self}; the other stays the same:
+
+\beforeverb
+\begin{verbatim}
+class Time:
+  #previous method definitions here...
+
+  def after(self, time2):
+    if self.hour > time2.hour:
+      return 1
+    if self.hour < time2.hour:
+      return 0
+
+    if self.minute > time2.minute:
+      return 1
+    if self.minute < time2.minute:
+      return 0
+
+    if self.second > time2.second:
+      return 1
+    return 0
+\end{verbatim}
+\afterverb
+%
+We invoke this method on one object and pass the other as an argument:
+
+\beforeverb
+\begin{verbatim}
+if doneTime.after(currentTime):
+  print "The bread is not done yet."
+\end{verbatim}
+\afterverb
+%
+You can almost read the invocation like English: ``If the done-time is
+after the current-time, then...''
+
+
+\section{Optional arguments}
+
+We have seen built-in functions that take a variable number of
+arguments.  For example, {\tt string.find} can take two, three, or
+four arguments.
+
+It is possible to write user-defined functions with optional argument
+lists.  For example, we can upgrade our own version of {\tt find} to do
+the same thing as {\tt string.find}.
+
+This is the original version from Section~\ref{find}:
+
+\beforeverb
+\begin{verbatim}
+def find(str, ch):
+  index = 0
+  while index < len(str):
+    if str[index] == ch:
+      return index
+    index = index + 1
+  return -1
+\end{verbatim}
+\afterverb
+%
+This is the new and improved version:
+
+\beforeverb
+\begin{verbatim}
+def find(str, ch, start=0):
+  index = start
+  while index < len(str):
+    if str[index] == ch:
+      return index
+    index = index + 1
+  return -1
+\end{verbatim}
+\afterverb
+%
+The third parameter, {\tt start}, is optional because a default value,
+{\tt 0}, is provided.  If we invoke {\tt find} with only two
+arguments, it uses the default value and starts from the beginning of
+the string:
+
+\beforeverb
+\begin{verbatim}
+>>> find("apple", "p")
+1
+\end{verbatim}
+\afterverb
+%
+If we provide a third argument, it {\bf overrides} the default:
+
+\beforeverb
+\begin{verbatim}
+>>> find("apple", "p", 2)
+2
+>>> find("apple", "p", 3)
+-1
+\end{verbatim}
+\afterverb
+%
+\begin{quote}
+{\em As an exercise, add a fourth parameter, {\tt end}, that specifies where
+to stop looking.
+
+Warning: This exercise is a bit tricky.  The default value of
+{\tt end} should be {\tt len(str)}, but that doesn't work.  The
+default values are evaluated when the function is defined, not when it
+is called.  When {\tt find} is defined, {\tt str} doesn't exist yet,
+so you can't find its length.}
+\end{quote}
+
+
+\section{The initialization method}
+\index{initialization method}
+\index{method!initialization}
+
+The {\bf initialization method} is
+a special method that is invoked when an object is created.  The name
+of this method is {\tt \_\_init\_\_} (two underscore characters,
+followed by {\tt init}, and then two more underscores).  An
+initialization method for the {\tt Time} class looks like this:
+
+\beforeverb
+\begin{verbatim}
+class Time:
+  def __init__(self, hours=0, minutes=0, seconds=0):
+    self.hours = hours
+    self.minutes = minutes
+    self.seconds = seconds
+\end{verbatim}
+\afterverb
+%
+There is no conflict between the attribute {\tt self.hours}
+and the parameter {\tt hours}.  Dot notation specifies which
+variable we are referring to.
+
+\index{dot notation}
+
+When we invoke the {\tt Time} constructor, the arguments we provide
+are passed along to {\tt init}:
+
+\beforeverb
+\begin{verbatim}
+>>> currentTime = Time(9, 14, 30)
+>>> currentTime.printTime()
+9:14:30
+\end{verbatim}
+\afterverb
+%
+Because the arguments are optional, we can omit them:
+
+\beforeverb
+\begin{verbatim}
+>>> currentTime = Time()
+>>> currentTime.printTime()
+0:0:0
+\end{verbatim}
+\afterverb
+%
+Or provide only the first:
+
+\beforeverb
+\begin{verbatim}
+>>> currentTime = Time (9)
+>>> currentTime.printTime()
+9:0:0
+\end{verbatim}
+\afterverb
+%
+Or the first two:
+
+\beforeverb
+\begin{verbatim}
+>>> currentTime = Time (9, 14)
+>>> currentTime.printTime()
+9:14:0
+\end{verbatim}
+\afterverb
+%
+Finally, we can make assignments to a subset of the
+parameters by naming them explicitly:
+
+\beforeverb
+\begin{verbatim}
+>>> currentTime = Time(seconds = 30, hours = 9)
+>>> currentTime.printTime()
+9:0:30
+\end{verbatim}
+\afterverb
+%
+
+\section{Points revisited}
+\index{Point class}
+\index{class!Point}
+
+Let's rewrite the {\tt Point} class from
+Section~\ref{point} in a more object-oriented style:
+
+\beforeverb
+\begin{verbatim}
+class Point:
+  def __init__(self, x=0, y=0):
+    self.x = x
+    self.y = y
+
+  def __str__(self):
+    return '(' + str(self.x) + ', ' + str(self.y) + ')'
+\end{verbatim}
+\afterverb
+%
+The initialization method
+takes $x$ and $y$ values as optional parameters;
+the default for either parameter is 0.
+
+The next method, {\tt \_\_str\_\_}, returns a string representation
+of a {\tt Point} object.
+If a class provides a method named {\tt \_\_str\_\_}, it
+overrides the default behavior of the Python built-in {\tt str} function.
+
+\beforeverb
+\begin{verbatim}
+>>> p = Point(3, 4)
+>>> str(p)
+'(3, 4)'
+\end{verbatim}
+\afterverb
+%
+Printing a {\tt Point} object implicitly invokes {\tt \_\_str\_\_} on
+the object, so defining {\tt \_\_str\_\_} also changes the behavior of
+{\tt print}:
+
+\beforeverb
+\begin{verbatim}
+>>> p = Point(3, 4)
+>>> print p
+(3, 4)
+\end{verbatim}
+\afterverb
+%
+When we write a new class, we almost always start by writing {\tt
+\_\_init\_\_}, which makes it easier to instantiate objects, and {\tt
+\_\_str\_\_}, which is almost always useful for debugging.
+
+
+\section{Operator overloading}
+\label{operator overloading}
+\index{operator overloading}
+\index{operator!overloading}
+\index{dot product}
+\index{scalar multiplication}
+
+Some languages make it possible to change the definition of the
+built-in operators when they are applied to user-defined types.  This
+feature is called {\bf operator overloading}.  It is especially useful when
+defining new mathematical types.
+
+For example, to override the addition operator {\tt +}, we
+provide a method named {\tt \_\_add\_\_}:
+
+\beforeverb
+\begin{verbatim}
+class Point:
+  # previously defined methods here...
+
+  def __add__(self, other):
+    return Point(self.x + other.x, self.y + other.y)
+\end{verbatim}
+\afterverb
+%
+As usual, the first parameter is the object on which the method is
+invoked.  The second parameter is conveniently named {\tt other}
+to distinguish it from {\tt self}.  To add two {\tt Point}s, we create
+and return a new {\tt Point} that contains  the sum of the
+$x$ coordinates and the sum of the $y$ coordinates.
+
+Now, when we apply the {\tt +} operator to {\tt Point} objects, Python
+invokes {\tt \_\_add\_\_}:
+
+\beforeverb
+\begin{verbatim}
+>>>   p1 = Point(3, 4)
+>>>   p2 = Point(5, 7)
+>>>   p3 = p1 + p2
+>>>   print p3
+(8, 11)
+\end{verbatim}
+\afterverb
+%
+The expression {\tt p1 + p2} is equivalent to
+{\tt p1.\_\_add\_\_(p2)}, but obviously more elegant.
+
+\begin{quote}
+{\em As an exercise, add a method {\tt \_\_sub\_\_(self, other)} that
+overloads the subtraction operator, and try it out.}
+\end{quote}
+
+There are several ways to override the behavior of the
+multiplication operator: by defining a method named
+{\tt \_\_mul\_\_}, or {\tt \_\_rmul\_\_}, or both.
+
+If the left operand of {\tt *} is a {\tt Point}, Python invokes
+{\tt \_\_mul\_\_}, which assumes that the other operand is also
+a {\tt Point}.  It computes the {\bf dot product} of the two
+points, defined according to the rules of linear algebra:
+
+\beforeverb
+\begin{verbatim}
+def __mul__(self, other):
+  return self.x * other.x + self.y * other.y
+\end{verbatim}
+\afterverb
+%
+If the left operand of {\tt *} is a primitive type and the right
+operand is a {\tt Point}, Python invokes {\tt \_\_rmul\_\_}, which
+performs {\bf scalar multiplication}:
+
+\beforeverb
+\begin{verbatim}
+def __rmul__(self, other):
+  return Point(other * self.x,  other * self.y)
+\end{verbatim}
+\afterverb
+%
+The result is a new {\tt Point} whose coordinates are a multiple
+of the original coordinates.  If {\tt other} is a type that cannot
+be multiplied by a floating-point number, then
+{\tt \_\_rmul\_\_} will yield an error.
+
+This example demonstrates both kinds of multiplication:
+
+\beforeverb
+\begin{verbatim}
+>>> p1 = Point(3, 4)
+>>> p2 = Point(5, 7)
+>>> print p1 * p2
+43
+>>> print 2 * p2
+(10, 14)
+\end{verbatim}
+\afterverb
+%
+What happens if we try to evaluate {\tt p2 * 2}?  Since
+the first operand is a {\tt Point}, Python invokes
+{\tt \_\_mul\_\_} with {\tt 2} as the second argument.
+Inside {\tt \_\_mul\_\_}, the program tries to access the {\tt x}
+coordinate of {\tt other}, which fails because
+an integer has no attributes:
+
+\beforeverb
+\begin{verbatim}
+>>> print p2 * 2
+AttributeError: 'int' object has no attribute 'x'
+\end{verbatim}
+\afterverb
+%
+Unfortunately, the error message is a bit opaque.  This example
+demonstrates some of the difficulties of object-oriented programming.
+Sometimes it is hard enough just to figure out what code is running.
+
+For a more complete example of operator overloading, see
+Appendix~\ref{overloading}.
+
+
+\section{Polymorphism}
+\index{polymorphism}
+
+Most of the methods we have written only work for a specific
+type.  When you create a new object, you write methods that operate
+on that type.
+
+But there are certain operations that you will want to apply to many
+types, such as the arithmetic operations in the previous sections.
+If many types support the same set of operations, you
+can write functions that work on any of those types.
+
+For example, the {\tt multadd} operation (which is common in
+linear algebra) takes three arguments; it multiplies the first
+two and then adds the third.  We can write it in Python like
+this:
+
+\beforeverb
+\begin{verbatim}
+def multadd (x, y, z):
+  return x * y + z
+\end{verbatim}
+\afterverb
+%
+This method will work for any values of {\tt x} and {\tt y}
+that can be multiplied and for any value of {\tt z} that can be
+added to the product.
+
+We can invoke it with numeric values:
+
+\beforeverb
+\begin{verbatim}
+>>> multadd (3, 2, 1)
+7
+\end{verbatim}
+\afterverb
+%
+Or with {\tt Point}s:
+
+\beforeverb
+\begin{verbatim}
+>>> p1 = Point(3, 4)
+>>> p2 = Point(5, 7)
+>>> print multadd (2, p1, p2)
+(11, 15)
+>>> print multadd (p1, p2, 1)
+44
+\end{verbatim}
+\afterverb
+%
+In the first case, the {\tt Point} is multiplied by a scalar
+and then added to another {\tt Point}.
+In the second case, the dot product yields a numeric
+value, so the third argument also has to be a numeric value.
+
+A function like this that can take arguments with different
+types is called {\bf polymorphic}.
+
+As another example, consider the method {\tt frontAndBack},
+which prints a list twice, forward and backward:
+
+\beforeverb
+\begin{verbatim}
+def frontAndBack(front):
+  import copy
+  back = copy.copy(front)
+  back.reverse()
+  print str(front) + str(back)
+\end{verbatim}
+\afterverb
+%
+Because the {\tt reverse} method is a modifier, we make a copy
+of the list before reversing it.  That way, this method doesn't
+modify the list it gets as an argument.
+
+Here's an example that applies {\tt frontAndBack} to a list:
+
+\beforeverb
+\begin{verbatim}
+>>>   myList = [1, 2, 3, 4]
+>>>   frontAndBack(myList)
+[1, 2, 3, 4][4, 3, 2, 1]
+\end{verbatim}
+\afterverb
+%
+Of course, we intended to apply this function to lists, so
+it is not surprising that it works.
+What would be surprising is if we could apply it to a {\tt Point}.
+
+To determine whether a function can be applied to a new type,
+we apply the fundamental rule of polymorphism:
+
+\begin{quote}
+{\bf If all of the operations inside the function can be applied
+to the type, the function can be applied to the type.}
+\end{quote}
+
+The operations in the method include {\tt copy}, {\tt reverse}, and
+{\tt print}.
+
+{\tt copy} works on any object, and we have already written
+a {\tt \_\_str\_\_} method for {\tt Point}s, so all we need
+is a {\tt reverse} method in the {\tt Point} class:
+
+\beforeverb
+\begin{verbatim}
+def reverse(self):
+  self.x , self.y = self.y, self.x
+\end{verbatim}
+\afterverb
+%
+Then we can pass {\tt Point}s to {\tt frontAndBack}:
+
+\beforeverb
+\begin{verbatim}
+>>>   p = Point(3, 4)
+>>>   frontAndBack(p)
+(3, 4)(4, 3)
+\end{verbatim}
+\afterverb
+%
+The best kind of polymorphism is the unintentional kind, where
+you discover that a function you have already written can be
+applied to a type for which you never planned.
+
+
+
+\section{Glossary}
+
+\begin{description}
+
+\item[object-oriented language:] A language that provides
+features, such as user-defined classes and inheritance, that facilitate
+object-oriented programming.
+
+\item[object-oriented programming:] A style of programming in which
+data and the operations that manipulate it are organized into classes
+and methods.
+
+\item[method:] A function that is defined inside a class definition and
+is invoked on instances of that class.
+
+\item[override:] To replace a default.  Examples include replacing a default
+value with a particular argument and replacing a default method
+by providing a new method with the same name.
+
+\item[initialization method:] A special method that is invoked automatically
+when a new object is created and that initializes the object's attributes.
+
+\item[operator overloading:] Extending built-in operators
+({\tt +}, {\tt -}, {\tt *}, {\tt >}, {\tt <}, etc.) so that they work
+with user-defined types.
+
+\item[dot product:] An operation defined in linear algebra that
+multiplies two {\tt Point}s and yields a numeric value.
+
+\item[scalar multiplication:] An operation defined in linear algebra that
+multiplies each of the coordinates of a {\tt Point} by a numeric
+value.
+
+\item[polymorphic:] A function that can operate on more than one
+type.  If all the operations in a function can be
+applied to a type, then the function can be applied to a type.
+
+
+\index{object-oriented programming language}
+\index{method}
+\index{initialization method}
+\index{override}
+\index{overloading}
+\index{operator overloading}
+\index{dot product}
+\index{scalar multiplication}
+\index{polymorphic}
+
+\end{description}
