@@ -1,4 +1,4 @@
-"""A module for providing zero-shot completions from the OpenAI API."""
+"""A module for interfacing with the OpenAI API"""
 import logging
 
 from sciphi.interface.base import LLMInterface, ModelName, ProviderName
@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 @llm_provider
 class OpenAILLMInterface(LLMInterface):
-    """A class to provide zero-shot completions from the OpenAI API."""
+    """A class to interface with the OpenAI API."""
 
     instruct_models = [
         ModelName.GPT_3p5_TURBO_INSTRUCT,

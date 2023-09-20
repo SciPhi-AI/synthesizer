@@ -1,4 +1,4 @@
-"""Run the zero-shot replication."""
+"""Run the dataset generation."""
 import argparse
 import hashlib
 import os
@@ -70,7 +70,7 @@ def get_output_path(args: argparse.Namespace) -> str:
 
 if __name__ == "__main__":
     """Run the synthesis."""
-    # Setup
+    # Setup local environment
     args = parse_arguments()
     logger = get_configured_logger("sciphi", log_level=args.log_level)
 
@@ -100,13 +100,13 @@ if __name__ == "__main__":
         llm_config,
     )
 
+    # Initialize the prompt generator & data maker
     data_config = DataConfig(
         os.path.join(
             get_data_config_dir(), f"{args.example_config}", "main.yaml"
         )
     )
 
-    # Initialize the prompt generator
     prompt_generator = PromptGenerator(
         data_config.config,
         data_config.prompt_templates,

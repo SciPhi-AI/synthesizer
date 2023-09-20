@@ -1,4 +1,4 @@
-"""A module for creating HuggingFace models."""
+"""A module for managing local HuggingFace models."""
 
 from dataclasses import dataclass, field
 
@@ -10,7 +10,7 @@ from sciphi.llm.config_manager import model_config
 @model_config
 @dataclass
 class HuggingFaceConfig(LLMConfig):
-    """Configuration for HuggingFace models."""
+    """Configuration for local HuggingFace models."""
 
     # Base
     provider_name: ProviderName = ProviderName.HUGGING_FACE
@@ -32,13 +32,14 @@ class HuggingFaceConfig(LLMConfig):
 
 
 class HuggingFaceLLM(LLM):
-    """A concrete class for creating HuggingFace models."""
+    """A concrete class for creating a local HuggingFace model."""
 
     def __init__(
         self,
         config: HuggingFaceConfig,
     ) -> None:
         try:
+            import torch
             from transformers import (
                 AutoModelForCausalLM,
                 AutoTokenizer,
@@ -58,6 +59,7 @@ class HuggingFaceLLM(LLM):
             model_name,
             device_map=self.config.device,
             trust_remote_code=True,
+            torch_dtype=torch.float16,
             **config.add_model_kwargs,
             offload_folder="temp/",
         )
