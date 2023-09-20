@@ -13,7 +13,7 @@ SciPhi is a Python package that provides two high-level features:
 
 ## Questions?
 
-Join us on [Discord here](https://discord.gg/j9GxfbxqAe) or [contact me](mailto:owe@emergentagi.com) directly.
+Join us on [Discord here](https://discord.gg/j9GxfbxqAe) or [contact me](mailto:owe@emergentagi.com) directly. For a SciPhi tutorial, [go here](https://substack.com/inbox/post/137197905).
 
 ## Installation
 
