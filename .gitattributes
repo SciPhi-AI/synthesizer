@@ -1,3 +1,4 @@
+*.tex linguist-generated=true
 *.csv linguist-generated=true
 *.json linguist-generated=true
 *.jsonl linguist-generated=true
