@@ -97,35 +97,38 @@ llm_provider = InterfaceManager.get_provider(
 )
 
 # Initialize the data maker
-data_maker = DataMaker()
-data_maker.load_config_from_yaml(
-    args.config_path
-    or os.path.join(get_data_config_dir(), f"{args.example_config}.yaml")
+data_maker = DataMaker(
+    DataGeneratorMode(data_config.generator_mode),
+    prompt_generator,
+    prompt,
+    # Optional field,
+    # currently only used when generator_mode == "from_hf_dataset"
+    dataset_name=data_config.dataset_name,
 )
 
-...
+# Generate & write out the results
+output_path = get_output_path(args)
+logger.debug(f"Writing results to: {output_path}.")
 writer = JsonlDataWriter(output_path)
 
-# Generate the data and write the results
-for entry in data_maker.generator(args.num_samples):
-    batch = []
-    for entry in data_maker.generator(args.num_samples):
-        batch.append(entry)
+for batch in data_maker.generator(args.batch_size, args.num_samples):
+    completions = llm_provider.get_batch_completion(batch)
+    for formatted_prompt, completion in zip(batch, completions):
+        logger.debug("-" * 100)
+        logger.debug(f"Formatted Prompt:\n{formatted_prompt}")
+        logger.debug(f"\nCompletion:\n{completion}")
+        logger.debug("-" * 100)
 
-        if len(batch) == args.batch_size:
-            for it in range(len(completions)):
-                formatted_prompt = batch[it]["formatted_prompt"]
-                # Write the results using DataWriter
-                writer.write(
-                    [
-                        {
-                            "formatted_prompt": formatted_prompt,
-                            "completion": llm_provider.get_completion(formatted_prompt),
-                        }
-                    ]
-                )
+        # Write the results using DataWriter
+        writer.write(
+            [
+                {
+                    "formatted_prompt": formatted_prompt,
+                    "completion": completion,
+                }
+            ]
+        )
 
-        batch = []
 ```
 
 ### License
