@@ -1,6 +1,6 @@
-"""A module for managing the providers and their models."""
+"""A module for managing provider interfaces."""
 import logging
-from typing import Optional, Type
+from typing import Type
 
 from sciphi.interface.base import LLMInterface, ProviderConfig, ProviderName
 from sciphi.llm import LLMConfig, ModelName
@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 
 class InterfaceManager:
-    """A class to manage the providers and their models."""
+    """A class to manage provider interfaces."""
 
     provider_registry: dict[ProviderName, ProviderConfig] = {}
 
@@ -17,7 +17,7 @@ class InterfaceManager:
     def register_provider(
         provider: Type[LLMInterface],
     ) -> Type[LLMInterface]:
-        """Register a provider with the LLMConfigManager."""
+        """Register a provider with the InterfaceManager."""
         InterfaceManager.provider_registry[
             provider.provider_name
         ] = ProviderConfig(
@@ -33,7 +33,8 @@ class InterfaceManager:
         *args,
         **kwargs,
     ) -> LLMInterface:
-        """Get a provider based on the provided provider and model names."""
+        """Gets an interface based on the given provider and model name."""
+
         logger.debug(
             f"Loaded the following provider registry: {InterfaceManager.provider_registry}"
         )

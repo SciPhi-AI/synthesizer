@@ -1,16 +1,16 @@
-"""A module for providing zero-shot completions from the OpenAI API."""
+"""A module for interfacing with local HuggingFace models"""
 import logging
 
 from sciphi.interface.base import LLMInterface, ProviderName
 from sciphi.interface.interface_manager import llm_provider
-from sciphi.llm import HuggingFaceConfig, HuggingFaceLLM, ModelName
+from sciphi.llm import HuggingFaceConfig, HuggingFaceLLM
 
 logger = logging.getLogger(__name__)
 
 
 @llm_provider
 class HuggingFaceLLMInterface(LLMInterface):
-    """A class to provide zero-shot completions from local HuggingFacemodels."""
+    """A class to interface with local HuggingFace models."""
 
     provider_name = ProviderName.HUGGING_FACE
 
@@ -21,9 +21,10 @@ class HuggingFaceLLMInterface(LLMInterface):
         self._model = HuggingFaceLLM(config)
 
     def get_completion(self, prompt: str) -> str:
-        """Get a completion from the Local HuggingFace API based on the provided prompt."""
-        logger.info(
-            f"Getting completion from Local HuggingFace API for model={self._model.config.model_name}"
+        """Get a completion from the local HuggingFace provider."""
+
+        logger.debug(
+            f"Requesting completion from local HuggingFace with model={self._model.config.model_name} and prompt={prompt}"
         )
         return self.model.get_instruct_completion(prompt)
 

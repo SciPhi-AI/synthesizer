@@ -1,4 +1,4 @@
-"""A module for creating HuggingFace models."""
+"""A module for managing local HuggingFace models."""
 
 from dataclasses import dataclass, field
 
@@ -10,35 +10,36 @@ from sciphi.llm.config_manager import model_config
 @model_config
 @dataclass
 class HuggingFaceConfig(LLMConfig):
-    """Configuration for HuggingFace models."""
+    """Configuration for local HuggingFace models."""
 
     # Base
     provider_name: ProviderName = ProviderName.HUGGING_FACE
-    model_name: str = "gpt-2"
+    model_name: str = "gpt2"
     temperature: float = 0.7
     top_p: float = 1.0
 
     # Generation parameters
-    top_k: float = 100.0
+    top_k: int = 100
     max_tokens_to_sample: int = 256
-    do_sample: bool = False
+    do_sample: bool = True
     num_beams: int = 1
 
     # Model and Tokenizer extras
-    device: str = "auto"
+    device: str = "cpu"
     add_model_kwargs: dict = field(default_factory=dict)
     add_tokenizer_kwargs: dict = field(default_factory=dict)
     add_generation_kwargs: dict = field(default_factory=dict)
 
 
 class HuggingFaceLLM(LLM):
-    """A concrete class for creating HuggingFace models."""
+    """A concrete class for creating a local HuggingFace model."""
 
     def __init__(
         self,
         config: HuggingFaceConfig,
     ) -> None:
         try:
+            import torch
             from transformers import (
                 AutoModelForCausalLM,
                 AutoTokenizer,
@@ -59,7 +60,6 @@ class HuggingFaceLLM(LLM):
             device_map=self.config.device,
             trust_remote_code=True,
             **config.add_model_kwargs,
-            offload_folder="temp/",
         )
         self.tokenizer = AutoTokenizer.from_pretrained(
             model_name,
@@ -76,24 +76,23 @@ class HuggingFaceLLM(LLM):
             **config.add_generation_kwargs,
         )
 
-    def get_chat_completion(self, prompt: str) -> str:
-        """Get a completion from the OpenAI API based on the provided messages."""
+    def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
+        """Get a completion from the local HuggingFace model."""
         raise NotImplementedError(
             "Chat completion not yet implemented for HuggingFace."
         )
 
-    def get_instruct_completion(self, prompt: str) -> str:
-        """Get a instruct completion from the Anthropic API based on the provided messages."""
+    def get_instruct_completion(self, instruction: str) -> str:
+        """Get an instr. completion from local HuggingFace model."""
         # TODO - Should we set `max_length` here? What about `max_tokens_to_sample`?
         # Should we set the device on inputs or is this handled above? Test on GPU inst.
         inputs = self.tokenizer(
-            prompt,
+            instruction,
             return_tensors="pt",
         ).to(self.config.device)
         raw_completion = self.model.generate(
             inputs["input_ids"], generation_config=self.generation_config
         )
-        return [
-            ele.replace(prompt, "")
-            for ele in self.tokenizer.batch_decode(raw_completion)
-        ]
+        return self.tokenizer.batch_decode(raw_completion)[0].replace(
+            instruction, ""
+        )

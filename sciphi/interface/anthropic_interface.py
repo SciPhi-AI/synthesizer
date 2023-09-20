@@ -1,4 +1,4 @@
-"""A module for providing zero-shot completions from the Anthropic API."""
+"""A module for interfacing with the Anthropic API"""
 from sciphi.interface.base import LLMInterface, ProviderName
 from sciphi.interface.interface_manager import llm_provider
 from sciphi.llm import AnthropicConfig, AnthropicLLM, ModelName
@@ -6,7 +6,7 @@ from sciphi.llm import AnthropicConfig, AnthropicLLM, ModelName
 
 @llm_provider
 class AnthropicLLMInterface(LLMInterface):
-    """A concrete class to provide zero-shot completions from the Anthropic API."""
+    """A class to interface with the Anthropic API."""
 
     provider_name = ProviderName.ANTHROPIC
     supported_models = [
@@ -24,8 +24,8 @@ class AnthropicLLMInterface(LLMInterface):
         )
 
     def get_completion(self, prompt: str) -> str:
-        """Get a completion from the Anthropic provider based on the provided prompt."""
-        return self.model.get_completion(prompt)
+        """Get a completion from the remote Anthropic provider."""
+        return self.model.get_instruct_completion(prompt)
 
     @property
     def model(self) -> AnthropicLLM:

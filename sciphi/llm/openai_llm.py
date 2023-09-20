@@ -1,4 +1,4 @@
-"""A module for creating OpenAI models."""
+"""A module for creating OpenAI model abstractions."""
 
 from dataclasses import dataclass
 from typing import Optional
@@ -44,7 +44,7 @@ class OpenAILLM(LLM):
                 "OpenAI API key not found. Please set the OPENAI_API_KEY environment variable."
             )
 
-    def get_chat_completion(self, messages: list[dict]) -> str:
+    def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
         """Get a completion from the OpenAI API based on the provided messages."""
         import openai
 
@@ -57,18 +57,19 @@ class OpenAILLM(LLM):
         if self.config.functions is not None:
             args["functions"] = self.config.functions
 
-        # Use the ** unpacking syntax to pass the arguments to the function
+        # Create the chat completion
         response = openai.ChatCompletion.create(**args)
-
         return response.choices[0].message["content"]
 
-    def get_instruct_completion(self, prompt: str) -> str:
+    def get_instruct_completion(self, instruction: str) -> str:
         """Get an instruction completion from the OpenAI API based on the provided prompt."""
         import openai
 
+        # Create a dictionary with the default arguments
         args = self._get_base_args()
 
-        args["prompt"] = prompt
+        # Create the instruction completion
+        args["prompt"] = instruction
         response = openai.Completion.create(**args)
         return response.choices[0].text
 

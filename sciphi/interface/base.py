@@ -1,4 +1,4 @@
-"""A module which defines the abstract LLMInterface and related enums"""
+"""A module which defines interface abstractions for various LLM providers."""
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import List, Type
