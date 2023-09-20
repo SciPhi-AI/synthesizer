@@ -119,7 +119,7 @@ if __name__ == "__main__":
         logger.debug(f"Overriding default prompt with: {args.prompt_override}")
         prompt_inputs = args.prompt_override.split(",")
         prompt = Prompt(
-            text=prompt_inputs[0],
+            raw_text=prompt_inputs[0],
             expected_inputs=set(prompt_inputs[1:]),
             structure=PromptStructure.SINGLE,
         )

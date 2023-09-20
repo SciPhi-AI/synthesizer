@@ -3,7 +3,7 @@ import logging
 
 from sciphi.interface.base import LLMInterface, ProviderName
 from sciphi.interface.interface_manager import llm_provider
-from sciphi.llm import vLLMConfig, vLLM
+from sciphi.llm import vLLM, vLLMConfig
 
 logger = logging.getLogger(__name__)
 

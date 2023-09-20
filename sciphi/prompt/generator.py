@@ -2,8 +2,6 @@
 import random
 from typing import Union
 
-from sciphi.prompt.base import Prompt
-
 
 class PromptGenerator:
     """A class for generating prompts from a data config."""

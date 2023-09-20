@@ -32,8 +32,9 @@ class vLLM(LLM):
     ) -> None:
         super().__init__(config)
         try:
-            from vllm import LLM as vLLM, SamplingParams
-        except:
+            from vllm import LLM as vLLM
+            from vllm import SamplingParams
+        except ImportError:
             raise ImportError(
                 "Please install the vllm package before attempting to run with an vLLM model. This can be accomplished via `poetry install -E vllm_support, ...OTHER_DEPENDENCY_HERE`."
             )
@@ -45,7 +46,7 @@ class vLLM(LLM):
             max_tokens=config.max_tokens_to_sample,
         )
 
-    def get_chat_completion(self, prompt: str) -> str:
+    def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
         """Get a completion from the OpenAI API based on the provided messages."""
         raise NotImplementedError(
             "Chat completion not yet implemented for vLLM."

@@ -1,7 +1,7 @@
 """A module which facilitates synthesizing prompt data."""
 
 from copy import copy
-from typing import Dict, Generator, Optional
+from typing import Generator, Optional
 
 from sciphi.config.base import DataGeneratorMode
 from sciphi.prompt import Prompt, PromptGenerator
@@ -26,12 +26,12 @@ class DataMaker:
 
     def synthetic_generator(
         self, batch_size: int, num_samples: int
-    ) -> Generator[Dict[str, str], None, None]:
+    ) -> Generator[list[str], None, None]:
         """Returns a generator which yields formatted prompts from the loaded configuration."""
 
         counter = 0
         while counter < num_samples:
-            batch = []
+            batch: list[str] = []
 
             while len(batch) < batch_size:
                 inner_prompt = self.prompt_generator.generate_prompt()
@@ -49,7 +49,7 @@ class DataMaker:
         self,
         batch_size: int,
         num_samples: int,
-    ) -> Generator[Dict[str, str], None, None]:
+    ) -> Generator[list[str], None, None]:
         """Returns a generator which yields formatted prompts from the loaded configuration."""
         if batch_size != 1:
             raise ValueError(
@@ -58,7 +58,7 @@ class DataMaker:
 
         try:
             from datasets import load_dataset
-        except:
+        except ImportError:
             raise ImportError(
                 "Please install the `datasets` package before attempting to run with a HuggingFace dataset generator. This can be accomplished via `poetry install -E hf_support, ...OTHER_DEPENDENCY_HERE`."
             )
@@ -81,7 +81,7 @@ class DataMaker:
 
     def generator(
         self, batch_size=1_024, num_samples=1_048_576
-    ) -> Generator[Dict[str, str], None, None]:
+    ) -> Generator[list[str], None, None]:
         """Returns a generator which yields formatted prompts from the loaded configuration."""
 
         if self.generator_mode == DataGeneratorMode.SYNTHETIC:

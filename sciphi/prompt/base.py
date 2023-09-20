@@ -1,7 +1,7 @@
 """A module to facilitate seamless construction of input prompts"""
 from dataclasses import dataclass
 from enum import Enum
-from typing import List, Optional, Union
+from typing import Optional, Union
 
 
 class PromptStructure(Enum):
@@ -16,9 +16,9 @@ class Prompt:
     """A simple abstraction for building input prompts."""
 
     expected_inputs: set[str]
-    raw_text: Union[str, List[str]]
+    raw_text: Union[str, list[str]]
     structure: PromptStructure
-    _text: Optional[Union[str, List[str]]] = None
+    _text: Optional[Union[str, list[str]]] = None
 
     def format(self, **kwargs) -> None:
         """Format the prompt into a string"""
@@ -27,8 +27,18 @@ class Prompt:
                 f"Received {kwargs.keys()}, but expected {self.expected_inputs}"
             )
         if self.structure == PromptStructure.SINGLE:
+            if not isinstance(self.raw_text, str):
+                raise ValueError(
+                    f"Expected `raw_text` to be a string, but got {type(self.raw_text)}"
+                )
             self._text = self.raw_text.format(**kwargs)
         else:
+            if not isinstance(self.raw_text, list) and all(
+                isinstance(item, str) for item in self.raw_text
+            ):
+                raise ValueError(
+                    f"Expected `raw_text` to be a list of strings, but got {type(self.raw_text)}"
+                )
             # If not a single response, then text is formatted in a list
             self._text = [ele.format(**kwargs) for ele in self.raw_text]
 

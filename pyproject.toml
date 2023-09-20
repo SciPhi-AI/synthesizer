@@ -47,9 +47,13 @@ line-length = 79
 
 [tool.mypy]
 ignore_missing_imports = true
-exclude = 'zero_shot_replication/evals/leetcode_hard_gym'
+exclude = 'playground/.*'
+
+[[tool.mypy.overrides]]
+module = "yaml"
+ignore_missing_imports = true
 
 [tool.flake8]
 ignore = ["E501", "W503"]
-exclude = 'zero_shot_replication/evals/leetcode_hard_gym'
+exclude = 'playground/.*'
 

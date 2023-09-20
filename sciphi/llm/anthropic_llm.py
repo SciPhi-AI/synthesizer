@@ -1,6 +1,5 @@
 """A module for creating Anthropic models."""
 from dataclasses import dataclass
-from typing import Any
 
 from sciphi.core import ProviderName
 from sciphi.llm.base import LLM, LLMConfig
@@ -34,8 +33,8 @@ class AnthropicLLM(LLM):
             config,
         )
         try:
-            from anthropic import Anthropic, AI_PROMPT, HUMAN_PROMPT
-        except:
+            from anthropic import AI_PROMPT, HUMAN_PROMPT, Anthropic
+        except ImportError:
             raise ImportError(
                 "Please install the anthropic package before attempting to run with an Anthropic model. This can be accomplished via `poetry install -E anthropic_support, ...OTHER_DEPENDENCY_HERE`."
             )
@@ -48,6 +47,13 @@ class AnthropicLLM(LLM):
                 "Anthropic API key not found. Please set the ANTHROPIC_API_KEY environment variable."
             )
 
+        # set the config here, again, for typing purposes
+        if not isinstance(self.config, AnthropicConfig):
+            raise ValueError(
+                "The provided config must be an instance of AnthropicConfig."
+            )
+        self.config: AnthropicConfig = config
+
     def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
         """Get a chat completion from the remote Anthropic API."""
         raise NotImplementedError(
@@ -58,6 +64,7 @@ class AnthropicLLM(LLM):
         """Get an instruction completion from the remote Anthropic API."""
 
         formatted_prompt = self.raw_prompt.format(instruction=instruction)
+        # TODO - Why does anthropic completion endpoint create a type error?
         completion = self.anthropic.completions.create(
             model=self.config.model_name,
             prompt=formatted_prompt,
@@ -65,5 +72,5 @@ class AnthropicLLM(LLM):
             top_p=self.config.top_p,
             max_tokens_to_sample=self.config.max_tokens_to_sample,
             stream=self.config.do_stream,
-        )
+        )  # type: ignore
         return completion.completion
