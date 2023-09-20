@@ -93,7 +93,6 @@ class HuggingFaceLLM(LLM):
         raw_completion = self.model.generate(
             inputs["input_ids"], generation_config=self.generation_config
         )
-        return [
-            ele.replace(instruction, "")
-            for ele in self.tokenizer.batch_decode(raw_completion)
-        ]
+        return self.tokenizer.batch_decode(raw_completion)[0].replace(
+            instruction, ""
+        )

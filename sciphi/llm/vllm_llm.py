@@ -53,6 +53,7 @@ class vLLM(LLM):
 
     def get_instruct_completion(self, prompt: str) -> str:
         """Get an instruction completion from the OpenAI API based on the provided prompt."""
-        outputs = self.model.generate([prompt], self.sampling_params)
-        print("outputs = ", outputs)
-        return "x"
+        # outputs = self.model.generate([prompt], self.sampling_params)
+        raise NotImplementedError(
+            "Instruction completion not yet implemented for vLLM."
+        )
