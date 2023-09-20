@@ -24,8 +24,8 @@ class AnthropicLLMInterface(LLMInterface):
         )
 
     def get_completion(self, prompt: str) -> str:
-        """Get a completion from the Anthropic provider based on the provided prompt."""
-        return self.model.get_completion(prompt)
+        """Get a completion from the remote Anthropic provider."""
+        return self.model.get_instruct_completion(prompt)
 
     @property
     def model(self) -> AnthropicLLM:

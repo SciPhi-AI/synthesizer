@@ -44,7 +44,7 @@ class OpenAILLM(LLM):
                 "OpenAI API key not found. Please set the OPENAI_API_KEY environment variable."
             )
 
-    def get_chat_completion(self, messages: list[dict]) -> str:
+    def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
         """Get a completion from the OpenAI API based on the provided messages."""
         import openai
 

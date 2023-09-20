@@ -58,11 +58,11 @@ class LLM(ABC):
         self.config = config
 
     @abstractmethod
-    def get_chat_completion(self, input: Any) -> str:
+    def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
         """Abstract method to get a chat completion from the provider."""
         pass
 
     @abstractmethod
-    def get_instruct_completion(self, input: Any) -> str:
+    def get_instruct_completion(self, instruction: str) -> str:
         """Abstract method to get an instruction completion from the provider."""
         pass

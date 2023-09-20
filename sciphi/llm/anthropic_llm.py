@@ -34,25 +34,30 @@ class AnthropicLLM(LLM):
             config,
         )
         try:
-            from anthropic import Anthropic
+            from anthropic import Anthropic, AI_PROMPT, HUMAN_PROMPT
         except:
             raise ImportError(
                 "Please install the anthropic package before attempting to run with an Anthropic model. This can be accomplished via `poetry install -E anthropic_support, ...OTHER_DEPENDENCY_HERE`."
             )
 
+        self.raw_prompt = HUMAN_PROMPT + " {instruction} " + AI_PROMPT
         self.anthropic = Anthropic()
+
         if not self.anthropic.api_key:
             raise ValueError(
                 "Anthropic API key not found. Please set the ANTHROPIC_API_KEY environment variable."
             )
 
-    def get_chat_completion(self, prompt: str) -> str:
-        """Get a chat completion from the Anthropic API based on the provided messages."""
+    def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
+        """Get a chat completion from the remote Anthropic API."""
+        raise NotImplementedError(
+            "Chat completion is not yet supported for Anthropic."
+        )
 
-        from anthropic import AI_PROMPT, HUMAN_PROMPT
+    def get_instruct_completion(self, instruction: str) -> str:
+        """Get an instruction completion from the remote Anthropic API."""
 
-        formatted_prompt = f"{HUMAN_PROMPT} {prompt} {AI_PROMPT}"
-
+        formatted_prompt = self.raw_prompt.format(instruction=instruction)
         completion = self.anthropic.completions.create(
             model=self.config.model_name,
             prompt=formatted_prompt,
@@ -60,12 +65,5 @@ class AnthropicLLM(LLM):
             top_p=self.config.top_p,
             max_tokens_to_sample=self.config.max_tokens_to_sample,
             stream=self.config.do_stream,
-        )  # type: ignore
-
-        return completion.completion
-
-    def get_instruct_completion(self, input: Any) -> str:
-        """Get a instruct completion from the Anthropic API based on the provided messages."""
-        raise NotImplementedError(
-            "Instruct completion is not yet supported for Anthropic."
         )
+        return completion.completion

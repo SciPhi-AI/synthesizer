@@ -34,6 +34,7 @@ class InterfaceManager:
         **kwargs,
     ) -> LLMInterface:
         """Gets an interface based on the given provider and model name."""
+
         logger.debug(
             f"Loaded the following provider registry: {InterfaceManager.provider_registry}"
         )
