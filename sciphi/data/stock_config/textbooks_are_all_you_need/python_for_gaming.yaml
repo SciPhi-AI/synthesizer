@@ -1,4 +1,5 @@
-course_name: "Python for Game Development"
+course_name:
+  "Python for Game Development": 1
 
 course_topic:
   "Game Loops and Animation": 1

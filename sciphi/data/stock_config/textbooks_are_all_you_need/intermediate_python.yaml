@@ -1,4 +1,5 @@
-course_name: "Intermediate Python"
+course_name:
+  "Intermediate Python": 1
 
 course_topic:
   "Python Exceptions": 1

@@ -1,4 +1,5 @@
-course_name: "Advanced Cybersecurity Concepts"
+course_name:
+  "Advanced Cybersecurity Concepts": 1
 
 course_topic:
   "Threat Intelligence & Analysis": 1

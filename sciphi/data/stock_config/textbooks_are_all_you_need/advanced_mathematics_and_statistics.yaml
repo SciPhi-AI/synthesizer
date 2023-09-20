@@ -1,4 +1,5 @@
-course_name: "Advanced Mathematics and Statistics"
+course_name:
+  "Advanced Mathematics and Statistics": 1
 
 course_topic:
   "Advanced Algebra": 1

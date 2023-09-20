@@ -1,4 +1,5 @@
-course_name: "Mobile Application Development"
+course_name:
+  "Mobile Application Development": 1
 
 course_topic:
   "Native App Development": 1

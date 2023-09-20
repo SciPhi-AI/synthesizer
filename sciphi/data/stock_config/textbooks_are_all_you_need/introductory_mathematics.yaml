@@ -1,4 +1,5 @@
-course_name: "Introductory Mathematics"
+course_name:
+  "Introductory Mathematics": 1
 
 course_topic:
   "Basic Arithmetic": 1
@@ -30,7 +31,7 @@ sub_topic:
       "probability distributions: binomial": 1
       "probability distributions: Poisson": 1
       "probability distributions: normal": 1
-    "rGaph Theory":
+    "Graph Theory":
       "graphing: linear equations": 1
       "graphing: inequalities": 1
       "graphing: quadratic functions (parabolas)": 1

@@ -1,4 +1,5 @@
-course_name: "Python for Practitioners"
+course_name:
+  "Python for Practitioners": 1
 
 course_topic:
   "Python Libraries": 1

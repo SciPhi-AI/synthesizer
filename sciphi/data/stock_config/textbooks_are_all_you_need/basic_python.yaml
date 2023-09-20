@@ -1,4 +1,5 @@
-course_name: "Basic Python"
+course_name: 
+  "Basic Python" : 1
 
 course_topic:
   "Python Syntax": 1

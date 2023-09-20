@@ -1,4 +1,5 @@
-course_name: "Software Design Patterns"
+course_name:
+  "Software Design Patterns": 1
 
 course_topic:
   "Creational Patterns": 1

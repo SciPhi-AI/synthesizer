@@ -1,4 +1,5 @@
-course_name: "Extended Algorithms & Design"
+course_name:
+  "Extended Algorithms & Design": 1
 
 course_topic:
   "Divide and Conquer": 1
