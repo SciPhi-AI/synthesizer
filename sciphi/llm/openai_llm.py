@@ -70,7 +70,6 @@ class OpenAILLM(LLM):
 
         args["prompt"] = prompt
         response = openai.Completion.create(**args)
-        print("response = ", response)
         return response.choices[0].text
 
     def _get_base_args(self) -> dict:

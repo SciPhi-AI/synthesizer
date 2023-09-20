@@ -48,19 +48,22 @@ def get_output_path(args: argparse.Namespace) -> str:
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-    output_file_name = OUTPUT_FILE_NAME.format(
-        **{
-            k: prep_for_file_path(v)
-            for k, v in {
-                "RUN_NAME": args.run_name,
-                "PROVIDER": str(args.provider_name),
-                "MODEL": args.model_name,
-                "VERSION": args.version,
-                "EXTRA": args.extra_output_file_text
-                or f"_{generate_random_hash()}",
-            }.items()
-        }
-    )
+    if not args.output_file_name:
+        output_file_name = OUTPUT_FILE_NAME.format(
+            **{
+                k: prep_for_file_path(v)
+                for k, v in {
+                    "RUN_NAME": args.run_name,
+                    "PROVIDER": str(args.provider_name),
+                    "MODEL": args.model_name,
+                    "VERSION": args.version,
+                    "EXTRA": args.extra_output_file_text
+                    or f"_{generate_random_hash()}",
+                }.items()
+            }
+        )
+    else:
+        output_file_name = args.output_file_name
 
     return os.path.join(output_dir, output_file_name)
 
