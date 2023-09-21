@@ -1,3 +1,4 @@
+"""A module for populating ChromaDB with a dataset."""
 import os
 
 import chromadb
@@ -17,18 +18,30 @@ def chunk_text(text: str, chunk_size: int) -> list[str]:
 
 
 if __name__ == "__main__":
+    # TODO - Move to proper CLI based approach, like Fire.
+    # For now, we are getting it running quick and dirty.
+
+    # Chroma environment variables
     chroma_addr = os.environ["CHROMA_REMOTE_ADDR"]
     chroma_port = os.environ["CHROMA_REMOTE_PORT"]
     chroma_token = os.environ["CHROMA_TOKEN"]
     chroma_auth_provider = os.environ["CHROMA_AUTH_PROVIDER"]
-    openai_api_key = os.environ["OPENAI_API_KEY"]
 
+    # OpenAI environment variables
+    openai_api_key = os.environ["OPENAI_API_KEY"]
     openai.api_key = openai_api_key
+    embedding_engine = "text-embedding-ada-002"
+
+    # HF dataset
     dataset_name = "vikp/pypi_clean"
+
+    # Script variables
     chunk_size = 2048
     batch_size = 64
     sample_log_interval = 10
-    collection_name = f"{dataset_name.replace('/', '_')}_chunk_size_eq_2048"
+    collection_name = (
+        f"{dataset_name.replace('/', '_')}_chunk_size_eq__{chunk_size}"
+    )
     log_level = "INFO"
 
     logger = get_configured_logger("populate_chroma_db", log_level)
@@ -104,7 +117,9 @@ if __name__ == "__main__":
             continue
 
         buffer["documents"].extend(chunks)
-        buffer["embeddings"].extend(get_embeddings(chunks))
+        buffer["embeddings"].extend(
+            get_embeddings(chunks, engine=embedding_engine)
+        )
         buffer["metadatas"].extend(
             [
                 {

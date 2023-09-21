@@ -48,6 +48,8 @@ poetry install -E <extra_name>
 - `openai_support`: For running with OpenAI models.
 - `vllm_support`: For with VLLM, useful for fast inference.
 - `llama_index_support`: For LlamaIndex, useful for grounded synthesis.
+- `chroma_support`: For Chroma support, used for large vector databases.
+- `all`: For all dependencies (ex-vllm, which requires a separate install).
 
 ## Usage
 
