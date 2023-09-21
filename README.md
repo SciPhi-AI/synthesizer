@@ -23,9 +23,7 @@ git clone https://github.com/emrgnt-cmplxty/sciphi.git
 cd sciphi
 # Install dependencies
 # pip3 install poetry (if you don't have it)
-poetry install -E openai_support
-# Add other optional dependencies
-# poetry install -E openai_support -E anthropic_support -E hf_support ...
+poetry install -E all
 # Setup your environment
 cp .env.example .env && vim .env
 ```

@@ -95,7 +95,7 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument(
         "--max_tokens_to_sample",
         type=int,
-        default=None,
+        default=1_024,
         help="Max tokens to sample for each completion from the provided model.",
     )
     parser.add_argument(
