@@ -32,13 +32,13 @@ class vLLM(LLM):
     ) -> None:
         super().__init__(config)
         try:
-            from vllm import LLM as vLLM
+            from vllm import LLM as vvLLM
             from vllm import SamplingParams
         except ImportError:
             raise ImportError(
                 "Please install the vllm package before attempting to run with an vLLM model. This can be accomplished via `poetry install -E vllm_support, ...OTHER_DEPENDENCIES_HERE`."
             )
-        self.model = vLLM(model=config.model_name)
+        self.model = vvLLM(model=config.model_name)
         self.sampling_params = SamplingParams(
             temperature=config.temperature,
             top_p=config.top_p,
@@ -54,7 +54,5 @@ class vLLM(LLM):
 
     def get_instruct_completion(self, prompt: str) -> str:
         """Get an instruction completion from the OpenAI API based on the provided prompt."""
-        # outputs = self.model.generate([prompt], self.sampling_params)
-        raise NotImplementedError(
-            "Instruction completion not yet implemented for vLLM."
-        )
+        outputs = self.model.generate([prompt], self.sampling_params)
+        print("outputs = ", outputs)

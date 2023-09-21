@@ -100,13 +100,12 @@ if __name__ == "__main__":
         llm_config,
     )
 
-    # Initialize the prompt generator & data maker
+    # Initialize the prompt generator
     data_config = DataConfig(
         os.path.join(
             get_data_config_dir(), f"{args.example_config}", "main.yaml"
         )
     )
-
     prompt_generator = PromptGenerator(
         data_config.config,
         data_config.prompt_templates,
@@ -124,6 +123,7 @@ if __name__ == "__main__":
             structure=PromptStructure.SINGLE,
         )
 
+    # Initialize the data maker
     data_maker = DataMaker(
         DataGeneratorMode(data_config.generator_mode),
         prompt_generator,
