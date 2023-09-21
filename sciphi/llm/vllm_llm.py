@@ -59,5 +59,5 @@ class vLLM(LLM):
 
     def get_batch_instruct_completion(self, prompts: list[str]) -> list[str]:
         """Get batch instruction completion from local vLLM."""
-        raw_outputs = self.model.generate([prompts], self.sampling_params)
+        raw_outputs = self.model.generate(prompts, self.sampling_params)
         return [ele.outputs[0].text for ele in raw_outputs]
