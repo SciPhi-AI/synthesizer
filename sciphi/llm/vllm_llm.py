@@ -53,12 +53,13 @@ class vLLM(LLM):
         )
 
     def get_instruct_completion(self, prompt: str) -> str:
-        """Get an instruction completion from the OpenAI API based on the provided prompt."""
+        """Get an instruction completion from local vLLM API."""
         outputs = self.model.generate([prompt], self.sampling_params)
         print("outputs = ", outputs)
-        return outputs[0].text
+        print("outputs[0].outputs[0].text = ", outputs[0].outputs[0].text)
+        return outputs[0].outputs[0].text
 
     def get_batch_instruct_completion(self, prompts: list[str]) -> str:
-        """Get an instruction completion from the OpenAI API based on the provided prompt."""
+        """Get batch instruction completion from local vLLM."""
         raw_outputs = self.model.generate([prompts], self.sampling_params)
-        return [ele.text for ele in raw_outputs]
+        return [ele.outputs[0].text for ele in raw_outputs]
