@@ -135,6 +135,10 @@ for batch in data_maker.generator(args.batch_size, args.num_samples):
 
 This project is licensed under the Apache-2.0 License.
 
+### Datasets Generated
+
+[1] [Python Synthetic Textbooks](https://huggingface.co/datasets/emrgnt-cmplxty/sciphi-python-textbook/viewer/default/train)
+
 ### Sources
 
 [1] [WizardCoder: Empowering Code Large Language Models with Evol-Instruct](https://arxiv.org/abs/2306.08568)
