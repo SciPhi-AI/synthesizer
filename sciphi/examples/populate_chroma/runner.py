@@ -47,14 +47,6 @@ def worker(worker_args: tuple) -> None:
             logger.info(
                 f"Thread {thread_name} processed {n_samples_iter_local} samples"
             )
-            logger.info(
-                (
-                    "Sanity check on the local_buffer - "
-                    + "\n".join(
-                        [f"{k}: {len(v)}" for k, v in local_buffer.items()]
-                    )
-                )
-            )
 
         if set(raw_ids).issubset(set(parsed_ids)):
             logger.debug(f"Skipping ids = {raw_ids} as they already exist")
@@ -134,11 +126,11 @@ if __name__ == "__main__":
     batch_size = 64
     batches_per_split = 8
     # Process dataset in multiple threads
-    num_threads = 2
+    num_threads = 1
     # For logging
     # TODO - Modify to sure we are logging by-process
     log_level = "INFO"
-    sample_log_interval = 10
+    sample_log_interval = 100
 
     # Output collectionn name
     collection_name = (
