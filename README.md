@@ -1,4 +1,4 @@
-# SciPhi: A framework for breaking LLM scaling laws
+# SciPhi [ΨΦ]: A framework for breaking LLM scaling laws
 
 ## Overview
 
@@ -144,3 +144,19 @@ This project is licensed under the Apache-2.0 License.
 [1] [WizardCoder: Empowering Code Large Language Models with Evol-Instruct](https://arxiv.org/abs/2306.08568)
 
 [2] [Textbooks Are All You Need](https://arxiv.org/abs/2306.11644)
+
+
+## 📖 Citation
+
+Reference to cite if you use LlamaIndex in a paper:
+
+```
+@software{Emergent_AGI_SciPhi,
+author = {Colegrove, Owen},
+doi = {Pending},
+month = {09},
+title = {{LlamaIndex}},
+url = {https://github.com/emrgnt-cmplxty/sciphi},
+year = {2023}
+}
+```
