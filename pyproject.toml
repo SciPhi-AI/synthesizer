@@ -45,8 +45,9 @@ openai_utils_support = ["openai"]
 vllm_support = ["accelerate", "torch", "vllm"]
 llama_index_support = ["llama-index"]
 chroma_support = ["chromadb"]
-# omit "vllm", since it can cause failures w/out cuda
-all = ["anthropic",  "accelerate", "datasets", "torch", "transformers", "openai", "matplotlib", "plotly", "scipy", "scikit-learn", "llama-index", "chromadb"]
+# omit "accelerate" and "vllm", since it can cause failures w/out cuda
+all = ["anthropic", "datasets", "torch", "transformers", "openai", "matplotlib", "plotly", "scipy", "scikit-learn", "llama-index", "chromadb"]
+all_with_cuda = ["anthropic", "accelerate" , "datasets", "torch", "transformers", "openai", "matplotlib", "plotly", "scipy", "scikit-learn", "llama-index", "chromadb", "vllm"]
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
