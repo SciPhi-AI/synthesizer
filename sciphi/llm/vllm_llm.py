@@ -56,3 +56,9 @@ class vLLM(LLM):
         """Get an instruction completion from the OpenAI API based on the provided prompt."""
         outputs = self.model.generate([prompt], self.sampling_params)
         print("outputs = ", outputs)
+        return outputs[0].text
+
+    def get_batch_instruct_completion(self, prompts: list[str]) -> str:
+        """Get an instruction completion from the OpenAI API based on the provided prompt."""
+        raw_outputs = self.model.generate([prompts], self.sampling_params)
+        return [ele.text for ele in raw_outputs]
