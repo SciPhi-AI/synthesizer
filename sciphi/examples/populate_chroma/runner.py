@@ -39,7 +39,9 @@ if __name__ == "__main__":
     chunk_size = 2048
     batch_size = 64
     sample_log_interval = 10
-    collection_name = f"{dataset_name.replace('/', '_')}_chunk_size_eq_2048"
+    collection_name = (
+        f"{dataset_name.replace('/', '_')}_chunk_size_eq__{chunk_size}"
+    )
     log_level = "INFO"
 
     logger = get_configured_logger("populate_chroma_db", log_level)
