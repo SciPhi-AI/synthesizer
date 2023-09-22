@@ -2,12 +2,13 @@
 import os
 from concurrent.futures import ThreadPoolExecutor
 from threading import current_thread
+from typing import Generator
 
 import chromadb
 import dotenv
 import openai
 from chromadb.config import Settings
-from datasets import load_dataset
+from datasets import Dataset, load_dataset
 from openai.embeddings_utils import get_embeddings
 from retrying import retry
 
@@ -25,7 +26,7 @@ def chunk_text(text: str, chunk_size: int) -> list[str]:
 @retry(
     stop_max_attempt_number=3, wait_fixed=2000
 )  # Retries 3 times with a 2-second wait between retries
-def robust_get_embeddings(chunks, engine):
+def robust_get_embeddings(chunks: list[str], engine: str) -> list[list[float]]:
     try:
         return get_embeddings(chunks, engine=engine)
     except Exception as e:
@@ -35,23 +36,19 @@ def robust_get_embeddings(chunks, engine):
         raise  # Reraise the exception to be caught by the retrying mechanism
 
 
-MAX_EMBEDDING_BATCH_SIZE = 2048
-
-
 def worker(worker_args: tuple) -> None:
     """Worker function to populate ChromaDB with a batch of entries."""
     thread_name = current_thread().name
     (
         collection,
         entries_batch,
-        parsed_ids,
         chunk_size,
         batch_size,
+        max_embedding_batch_size,
         embedding_engine,
         logger,
         logger_interval,
     ) = worker_args
-    logger.info(f"Starting worker thread: {thread_name}")
 
     local_buffer: dict[str, list] = {
         "documents": [],
@@ -59,30 +56,24 @@ def worker(worker_args: tuple) -> None:
         "metadatas": [],
         "ids": [],
     }
-    n_entries_local = len(parsed_ids)
-    n_samples_iter_local = 0
 
-    for entry in entries_batch:
+    logger.info(
+        f"Iterating over a batch of size {len(entries_batch)} in {thread_name}..."
+    )
+
+    for n_samples_iter_local, (entry, raw_ids) in enumerate(
+        entries_batch, start=1
+    ):
         chunks = chunk_text(entry["code"], chunk_size)
-        raw_ids = [
-            f"id_{i}"
-            for i in range(n_entries_local, n_entries_local + len(chunks))
-        ]
-        n_entries_local += len(chunks)
-        n_samples_iter_local += 1
         if n_samples_iter_local % logger_interval == 0:
             logger.info(
                 f"Thread {thread_name} processed {n_samples_iter_local} samples"
             )
 
-        if set(raw_ids).issubset(set(parsed_ids)):
-            logger.debug(f"Skipping ids = {raw_ids} as they already exist")
-            continue
-
         local_buffer["documents"].extend(chunks)
 
-        for i in range(0, len(chunks), MAX_EMBEDDING_BATCH_SIZE):
-            batch_of_chunks = chunks[i : i + MAX_EMBEDDING_BATCH_SIZE]
+        for i in range(0, len(chunks), max_embedding_batch_size):
+            batch_of_chunks = chunks[i : i + max_embedding_batch_size]
             local_buffer["embeddings"].extend(
                 get_embeddings(batch_of_chunks, engine=embedding_engine)
             )
@@ -121,10 +112,27 @@ def worker(worker_args: tuple) -> None:
             }
 
 
-def batch_dataset(dataset, batch_size):
+def batch_dataset(
+    dataset: Dataset, batch_size: int, parsed_ids: set[str]
+) -> Generator[list[tuple[dict, list[str]]], None, None]:
+    # Count the number of chunks we have already parsed
+    n_entries = len(parsed_ids)
+    if n_entries > 0:
+        logger.info(f"Loaded {n_entries} entries from ChromaDB")
+
     batch = []
+    n_entries = 0
     for entry in dataset:
-        batch.append(entry)
+        chunks = chunk_text(entry["code"], chunk_size)
+        raw_ids = [
+            f"id_{i}" for i in range(n_entries, n_entries + len(chunks))
+        ]
+        n_entries += len(chunks)
+
+        if set(raw_ids).issubset(parsed_ids):
+            logger.debug(f"Skipping ids = {raw_ids} as they already exist")
+            continue
+        batch.append((entry, raw_ids))
         if len(batch) == batch_size:
             yield batch
             batch = []
@@ -156,6 +164,7 @@ if __name__ == "__main__":
     # For batching the embedding calls & inserts into ChromaDB
     batch_size = 64
     batches_per_split = 8
+    max_embedding_batch_size = 2048
     # Process dataset in multiple threads
     num_threads = 6
     # For logging
@@ -165,7 +174,7 @@ if __name__ == "__main__":
 
     # Output collectionn name
     collection_name = (
-        f"{dataset_name.replace('/', '_')}_chunk_size_eq__{chunk_size}"
+        f"{dataset_name.replace('/', '_')}_chunk_size_eq_{chunk_size}"
     )
 
     logger = get_configured_logger("populate_chroma_db", log_level)
@@ -197,34 +206,28 @@ if __name__ == "__main__":
             f"Collection {collection_name} likely already exists, skipping creation. For completeness, here is the exception: {e}"
         )
         collection = client.get_collection(name=collection_name)
+    parsed_ids = set(collection.get(include=[])["ids"])
 
-    parsed_ids = collection.get(include=[])["ids"]
-    logger.info("Loading the HF dataset now...")
     dataset = load_dataset(dataset_name, streaming=streaming)
     if not streaming:
         dataset = dataset["train"].shuffle(seed=42)
 
-    n_samples_iter = 0
-
-    # Count the number of chunks we have already parsed
-    n_entries = len(parsed_ids)
-    if n_entries > 0:
-        logger.info(f"Loaded {n_entries} entries from ChromaDB")
-
     logger.info("Creating the dataset batches...")
+
     with ThreadPoolExecutor(max_workers=num_threads) as executor:
+        split_size = batches_per_split * batch_size
         args_for_workers = (
             (
                 collection,
                 batch,
-                parsed_ids,
                 chunk_size,
                 batch_size,
+                max_embedding_batch_size,
                 embedding_engine,
                 logger,
                 sample_log_interval,
             )
-            for batch in batch_dataset(dataset, batches_per_split * batch_size)
+            for batch in batch_dataset(dataset, split_size, parsed_ids)
         )
         # The map method blocks until all results are returned
         list(executor.map(worker, args_for_workers))

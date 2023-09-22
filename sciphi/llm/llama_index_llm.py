@@ -35,8 +35,6 @@ class LlamaIndexLLM(LLM):
         config: LLamaIndexConfig,
     ) -> None:
         super().__init__(config)
-        # TODO - Add more robust checks and configurations for LlamaIndex
-        # Right now we are just getting the pipes flowing...
         try:
             import openai
             from llama_index import (
