@@ -1,7 +1,0 @@
-#!/usr/bin/tclsh
-
-foreach file [glob *.eps] {
-    set outfile [file root $file].png
-    puts "Converting $file, creating $outfile."
-    exec convert $file $outfile
-}

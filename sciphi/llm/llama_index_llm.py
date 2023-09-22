@@ -17,9 +17,8 @@ class LLamaIndexConfig(OpenAIConfig):
     provider_name: ProviderName = ProviderName.LLAMA_INDEX
 
     # LlamaIndex-specific configs
-    llama_data_dir: str = os.path.join(
-        get_data_raw_dir(), "learning_with_python"
-    )
+    # Defaults to the algorithms textbook
+    llama_data_dir: str = os.path.join(get_data_raw_dir(), "algorithms")
     llama_index_name: str = "vector_index"
     llama_out_store: str = "storage"
     llama_load_from_avail_store: bool = True
@@ -100,7 +99,6 @@ class LlamaIndexLLM(LLM):
             similarity_top_k=self.config.llama_top_k_similarity,
             service_context=service_context,
         )
-
         # Save index to disk if it was just created
         # TODO - Add some upstream customization around this.
         if not loaded_store:
@@ -115,5 +113,9 @@ class LlamaIndexLLM(LLM):
 
     def get_instruct_completion(self, instruction: str) -> str:
         """Get an instruction completion from the LlamaIndex API based on the provided prompt."""
-        # Create the instruction completion
+        # Clean the typical instruction completion for better search results
+        if "### Instruction:" in instruction:
+            instruction = instruction.split("### Instruction:")[1].strip()
+        if "### Response:" in instruction:
+            instruction = instruction.replace("### Response:", "").strip()
         return self.query_engine.query(instruction).response  # type: ignore
