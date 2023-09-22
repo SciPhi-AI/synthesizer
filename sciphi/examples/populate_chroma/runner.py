@@ -9,6 +9,7 @@ import openai
 from chromadb.config import Settings
 from datasets import load_dataset
 from openai.embeddings_utils import get_embeddings
+from retrying import retry
 
 from sciphi.core.utils import get_configured_logger
 
@@ -20,10 +21,36 @@ def chunk_text(text: str, chunk_size: int) -> list[str]:
     return [text[i : i + chunk_size] for i in range(0, len(text), chunk_size)]
 
 
+# Define a retrying decorator with specific parameters
+@retry(
+    stop_max_attempt_number=3, wait_fixed=2000
+)  # Retries 3 times with a 2-second wait between retries
+def robust_get_embeddings(chunks, engine):
+    try:
+        return get_embeddings(chunks, engine=engine)
+    except Exception as e:
+        logger.error(
+            f"Failed to get embeddings for chunks {chunks}, with error {e}"
+        )
+        raise  # Reraise the exception to be caught by the retrying mechanism
+
+
+MAX_EMBEDDING_BATCH_SIZE = 2048
+
+
 def worker(worker_args: tuple) -> None:
     """Worker function to populate ChromaDB with a batch of entries."""
     thread_name = current_thread().name
-    entries_batch, parsed_ids, logger, logger_interval = worker_args
+    (
+        collection,
+        entries_batch,
+        parsed_ids,
+        chunk_size,
+        batch_size,
+        embedding_engine,
+        logger,
+        logger_interval,
+    ) = worker_args
     logger.info(f"Starting worker thread: {thread_name}")
 
     local_buffer: dict[str, list] = {
@@ -53,9 +80,13 @@ def worker(worker_args: tuple) -> None:
             continue
 
         local_buffer["documents"].extend(chunks)
-        local_buffer["embeddings"].extend(
-            get_embeddings(chunks, engine=embedding_engine)
-        )
+
+        for i in range(0, len(chunks), MAX_EMBEDDING_BATCH_SIZE):
+            batch_of_chunks = chunks[i : i + MAX_EMBEDDING_BATCH_SIZE]
+            local_buffer["embeddings"].extend(
+                get_embeddings(batch_of_chunks, engine=embedding_engine)
+            )
+
         local_buffer["metadatas"].extend(
             [
                 {
@@ -126,7 +157,7 @@ if __name__ == "__main__":
     batch_size = 64
     batches_per_split = 8
     # Process dataset in multiple threads
-    num_threads = 1
+    num_threads = 6
     # For logging
     # TODO - Modify to sure we are logging by-process
     log_level = "INFO"
@@ -183,7 +214,16 @@ if __name__ == "__main__":
     logger.info("Creating the dataset batches...")
     with ThreadPoolExecutor(max_workers=num_threads) as executor:
         args_for_workers = (
-            (batch, parsed_ids, logger, sample_log_interval)
+            (
+                collection,
+                batch,
+                parsed_ids,
+                chunk_size,
+                batch_size,
+                embedding_engine,
+                logger,
+                sample_log_interval,
+            )
             for batch in batch_dataset(dataset, batches_per_split * batch_size)
         )
         # The map method blocks until all results are returned

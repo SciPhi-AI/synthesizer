@@ -36,6 +36,7 @@ vllm = { version = "0.1.7", optional = true }
 llama-index = { version = "^0.8.29.post1", optional = true }
 # chroma
 chromadb =  { version = "^0.4.12", optional = true }
+retrying = "^1.3.4"
 
 [tool.poetry.extras]
 anthropic_support = ["anthropic"]
