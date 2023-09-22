@@ -25,7 +25,7 @@ def chunk_text(text: str, chunk_size: int) -> list[str]:
 @retry(
     stop_max_attempt_number=3, wait_fixed=2000
 )  # Retries 3 times with a 2-second wait between retries
-def robust_get_embeddings(chunks, engine):
+def robust_get_embeddings(chunks: list[str], engine: str) -> list[list[float]]:
     try:
         return get_embeddings(chunks, engine=engine)
     except Exception as e:
