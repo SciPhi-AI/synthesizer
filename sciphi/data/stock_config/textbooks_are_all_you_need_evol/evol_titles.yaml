@@ -1,0 +1,1494 @@
+# prompt
+# "Here is the title of a course: {title}\nMake this title more specific.  Include one specific tool, technology, or concept that is not mentioned in the title.  Include up to 5 variations. WRITE ONLY TITLES, EACH SEPARATED BY ONE NEW LINE.": 1
+
+title:
+  "1st Grade Music: Exploring Rhythms and Melodies through Hand Drums": 1
+  "1st Grade Music: An Introduction to Rhythms and Melodies using Piano": 1
+  "1st Grade Music: Exploring Rhythms and Melodies with a Recorder": 1
+  "1st Grade Music: Understanding Rhythms and Melodies through Beatboxing": 1
+  "1st Grade Music: Discovering Rhythms and Melodies with Music Software": 1
+  "2nd Grade Language Arts: Basic Sentence Construction with Nouns and Verbs": 1
+  "2nd Grade Language Arts: Utilizing Storyboards for Basic Sentence Construction": 1
+  "2nd Grade Language Arts: Basic Sentence Construction and the Concept of Subjects and Predicates": 1
+  "2nd Grade Language Arts: Exploring Punctuation in Basic Sentence Construction": 1
+  "2nd Grade Language Arts: Basic Sentence Construction Using Interactive Digital Tools": 1
+  "Music: The Sound of the Renaissance - Exploring the Viola da Gamba": 1
+  "Music: The Influence of Printing Technology on Renaissance Melodies": 1
+  "Music: The Sound of the Renaissance - A Deep Dive into Polyphonic Techniques": 1
+  "Music: The Sound of the Renaissance - Understanding the Role of Harpsichord ": 1
+  "Music: The Sound of the Renaissance - The Impact of Sacred vs Secular Themes": 1
+  "5th Grade Social Studies: Analyzing The Civil Rights Movement Through Photographs": 1
+  "5th Grade Social Studies: Understanding The Civil Rights Movement Through Multimedia Presentations": 1
+  "5th Grade Social Studies: Exploring The Civil Rights Movement with Interactive Timelines": 1
+  "5th Grade Social Studies: Learning The Civil Rights Movement Through Virtual Reality Experiences": 1
+  "5th Grade Social Studies: Decoding The Civil Rights Movement with Primary Source Documents": 1
+  "Music: Understanding Rhythm and Pattern in Composition through MIDI Technology": 1
+  "Music: Exploring Rhythm and Pattern in Composition with the Use of Logic Pro X": 1
+  "Music: The Role of Synthesizers in Understanding Rhythm and Pattern in Composition": 1
+  "Music: Utilizing Digital Audio Workstations (DAWs) in Understanding Rhythm and Pattern in Composition": 1
+  "Music: The Application of Ableton Live in Studying Rhythm and Pattern in Composition": 1
+  "Kindergarten Physical Education: Basics of Gymnastics with Balance Beams": 1
+  "Kindergarten Physical Education: Fun with Basics of Gymnastics Using Foam Mats": 1
+  "Kindergarten Physical Education: Gymnastic Rings in Basics of Gymnastics": 1
+  "Kindergarten Physical Education: Exploring Basics of Gymnastics with Trampolines": 1
+  "Kindergarten Physical Education: Basics of Gymnastics Incorporating Springboards": 1
+  "Kindergarten Physical Education: Incorporating Balance Beams for Fun and Games": 1
+  "Kindergarten Physical Education: Utilizing Hula Hoops in Fun and Games": 1
+  "Kindergarten Physical Education: Interactive Fun and Games with Augmented Reality": 1
+  "Kindergarten Physical Education: Fun and Games with Agility Ladders": 1
+  "Kindergarten Physical Education: Enhancing Motor Skills with Scooters in Fun and Games": 1
+  "6th Grade Physical Education: Mastering Dribbling Techniques in Basketball ": 1
+  "6th Grade Physical Education: Understanding Basketball Court Layout and Positions ": 1
+  "6th Grade Physical Education: Enhancing Shooting Accuracy in Basketball using Target Practice ": 1
+  "6th Grade Physical Education: Implementing Defensive Strategies in Basketball ": 1
+  "6th Grade Physical Education: Utilizing Video Analysis to Improve Basketball Gameplay": 1
+  "Language Arts: Effective Email Communication for Event Coordination": 1
+  "Language Arts: Using Social Media Tools for Effective Event Coordination": 1
+  "Language Arts: Implementing Zoom for Effective Communication in Event Coordination": 1
+  "Language Arts: Mastery of PowerPoint in Communication for Event Coordination": 1
+  "Language Arts: Utilizing Project Management Software for Effective Event Coordination": 1
+  "Basics of Logic: Enhancing Critical Thinking through Syllogistic Reasoning": 1
+  "Basics of Logic: Critical Thinking Skills using Deductive Reasoning": 1
+  "Basics of Logic: Empowering Critical Thinking with Argument Mapping": 1
+  "Basics of Logic: Elevating Critical Thinking through Philosophical Logic": 1
+  "Basics of Logic: Strengthening Critical Thinking Skills with Propositional Logic": 1
+  "12th Grade Computer Science: Exploring Algorithms with Python": 1
+  "12th Grade Computer Science: An Introduction to Algorithms using Java": 1
+  "12th Grade Computer Science: Algorithm Development with C++": 1
+  "12th Grade Computer Science: Understanding Algorithms through JavaScript": 1
+  "12th Grade Computer Science: Mastering Algorithms with Ruby": 1
+  "Computer Science: A Novice's Approach to Python Coding and Algorithms": 1
+  "Computer Science: A Novice's Journey into Java and Algorithm Development": 1
+  "Computer Science: Introduction to C++ Coding and Algorithms for Beginners": 1
+  "Computer Science: Coding and Algorithmic Problem Solving with Ruby: A Novice's Guide": 1
+  "Computer Science: A Beginner's Exploration of JavaScript and Algorithm Design": 1
+  "1st Grade Physical Education: Learning Coordination with Ball Games": 1
+  "1st Grade Physical Education: Enhancing Fitness with Jump Ropes": 1
+  "1st Grade Physical Education: Building Teamwork with Group Sports": 1
+  "1st Grade Physical Education: Promoting Balance with Beam Games": 1
+  "1st Grade Physical Education: Improving Agility with Obstacle Courses": 1
+  "Biological Systems Modelling using Python and TensorFlow": 1
+  "Biological Systems Modelling with Python and Jupyter Notebooks": 1
+  "Biological Systems Modelling using Python and the SciPy Library": 1
+  "Biological Systems Modelling: Implementing Neural Networks with Python": 1
+  "Biological Systems Modelling using Python and Matplotlib for Data Visualization": 1
+  "6th Grade Social Studies: Ancient Egyptian Hieroglyphics": 1
+  "6th Grade Social Studies: The Architectural Marvel of Roman Aqueducts": 1
+  "6th Grade Social Studies: Ancient Greek Philosophy and Its Impact": 1
+  "6th Grade Social Studies: The Invention of the Wheel in Mesopotamia": 1
+  "6th Grade Social Studies: The Mathematics of the Mayan Civilization": 1
+  "8th Grade Music: Exploring Classical Music through Piano": 1
+  "8th Grade Music: The World of Classical Music and its Connection to the Violin": 1
+  "8th Grade Music: Understanding Classical Music through Digital Audio Workstations": 1
+  "8th Grade Music: The World of Classical Music and the Role of Sheet Music": 1
+  "8th Grade Music: The World of Classical Music: A Deep Dive into Orchestration Techniques": 1
+  "4th Grade Art: Exploring Color Theory with Watercolors": 1
+  "4th Grade Art: Exploring Color Theory using Adobe Illustrator": 1
+  "4th Grade Art: Discovering Color Theory through Oil Pastels": 1
+  "4th Grade Art: Understanding Color Theory with Digital Tablets": 1
+  "4th Grade Art: Investigating Color Theory using Color Wheel Concepts": 1
+  "Fun with Physics: Exploring Gravity through Lego Structures": 1
+  "Fun with Physics: Understanding Mechanics with Lego Structures and Pulleys": 1
+  "Fun with Physics: Learning Friction through Lego Structures": 1
+  "Fun with Physics: Building Bridges using Lego Structures and Arch Concepts": 1
+  "Fun with Physics: Experimenting with Force using Levers and Lego Structures": 1
+  "Biology: Understanding Muscular Response in Sports through EMG Technology": 1
+  "Biology: Exploring Cardiovascular Efficiency in Athletes using VO2 Max Testing": 1
+  "Biology: Examining Neuromuscular Coordination in Sports with Motion Capture Technology": 1
+  "Biology: Assessing Bone Density in Sports Performance using DEXA Scans": 1
+  "Biology: Analysing Metabolic Rate in Athletic Performance through Indirect Calorimetry": 1
+  "5th Grade Science: Exploring Earth's Geology with Soil Analysis": 1
+  "5th Grade Science: Basics of Earth's Atmosphere and Space using Weather Balloons": 1
+  "5th Grade Science: Introduction to Astronomy with Telescopes in Earth and Space Studies": 1
+  "5th Grade Science: Understanding Earth's Ecosystems through Microscope Observations": 1
+  "5th Grade Science: Earth and Space Exploration: Satellite Technology and its Applications": 1
+  "History: Exploring the Origins of International Cuisines through Archaeobotany": 1
+  "History: Investigating the Role of Spice Trade in the Evolution of International Cuisines": 1
+  "History: Unraveling the Impact of Agricultural Tools on the Development of International Cuisines": 1
+  "History: Deciphering the Influence of Fire Cooking Techniques on Early International Cuisines": 1
+  "History: The Transformation of International Cuisines: A Study on the Impact of Fermentation Techniques.": 1
+  "Elementary Drawing: Exploring Graphite and Charcoal in Basic Sketching": 1
+  "Elementary Drawing: The Use of Graphite and Digital Platforms in Basic Sketching": 1
+  "Elementary Drawing: Using Graphite and Proportions in Basic Sketching": 1
+  "Elementary Drawing: Combining Graphite and Watercolor Techniques in Basic Sketching": 1
+  "Elementary Drawing: The Use of Graphite and Perspective Concepts in Basic Sketching": 1
+  "3rd Grade History: Exploring Early American History through Storytelling": 1
+  "3rd Grade History: Uncovering Early American History with Timelines": 1
+  "3rd Grade History: Exploring Early American History Using Interactive Maps": 1
+  "3rd Grade History: Learning Early American History through Role-Playing": 1
+  "3rd Grade History: Understanding Early American History with Virtual Reality Tours": 1
+  "Music and Mathematics: Exploring the Science of Sound with Fourier Series": 1
+  "Music and Mathematics: The Science of Sound through Digital Audio Workstations": 1
+  "Music and Mathematics: The Science of Sound using Waveform Analysis": 1
+  "Music and Mathematics: The Science of Sound and the Role of MIDI Technology": 1
+  "Music and Mathematics: The Science of Sound through Frequency Modulation Synthesis.": 1
+  "7th Grade History: The Middle Ages and the Development of the Feudal System": 1
+  "7th Grade History: The Middle Ages - The Evolution of Armor and Weaponry": 1
+  "7th Grade History: The Middle Ages - The Impact of the Printing Press": 1
+  "7th Grade History: The Middle Ages - Understanding the Black Death": 1
+  "7th Grade History: The Middle Ages - The Significance of the Crusades": 1
+  "2nd Grade Art and Color Theory: Exploring Watercolors": 1
+  "2nd Grade Art and Color Theory: Introduction to Pastels": 1
+  "2nd Grade Art and Color Theory: Learning about Acrylics": 1
+  "2nd Grade Art and Color Theory: Understanding Digital Drawing Tools": 1
+  "2nd Grade Art and Color Theory: The Role of Color Wheel in Design": 1
+  "3rd Grade Geography: Exploring Continents and Oceans with Interactive Maps": 1
+  "3rd Grade Geography: Studying Continents and Oceans using Google Earth": 1
+  "3rd Grade Geography: Discovering Continents and Oceans through Virtual Reality": 1
+  "3rd Grade Geography: Learning about Continents and Oceans with Augmented Reality Apps": 1
+  "3rd Grade Geography: Understanding Continents and Oceans using GIS Technology": 1
+  "Physics Fundamentals: Exploring The Laws of Motion Through Newton's Cradle": 1
+  "Physics Fundamentals: Utilizing Accelerometers to Understand The Laws of Motion": 1
+  "Physics Fundamentals: The Laws of Motion and Their Application in Robotics": 1
+  "Physics Fundamentals: The Laws of Motion Studied Through Projectile Launchers": 1
+  "Physics Fundamentals: Leveraging Virtual Reality to Understand The Laws of Motion": 1
+  "6th Grade Music: Understanding Rhythms and Patterns Using a Metronome": 1
+  "6th Grade Music: Exploring Rhythms and Patterns Through Drum Machines": 1
+  "6th Grade Music: Mastering Rhythms and Patterns with Digital Audio Workstations": 1
+  "6th Grade Music: Deciphering Rhythms and Patterns Utilizing Music Notation Software": 1
+  "6th Grade Music: Comprehending Rhythms and Patterns with the Aid of MIDI Controllers": 1
+  "7th Grade History: The Role of Television in the Civil Rights Movement": 1
+  "7th Grade History: The Impact of Nonviolent Protest Methods in the Civil Rights Movement": 1
+  "7th Grade History: The Influence of Music in the Civil Rights Movement": 1
+  "7th Grade History: The Contribution of Political Cartoons to the Civil Rights Movement": 1
+  "7th Grade History: The Importance of Transportation in the Civil Rights Movement": 1
+  "3rd Grade Mathematics: Times Tables Mastery through Flashcards": 1
+  "3rd Grade Mathematics: Mastering Times Tables with Interactive Whiteboards": 1
+  "3rd Grade Mathematics: Times Tables Mastery using Online Games": 1
+  "3rd Grade Mathematics: Mastering Times Tables with the Abacus": 1
+  "3rd Grade Mathematics: Times Tables Mastery through Smartboard Activities": 1
+  "10th Grade English: Analyzing Shakespeare's Works with Textual Analysis Software": 1
+  "10th Grade English: Exploring Shakespeare's Plays Through Digital Humanities Tools": 1
+  "10th Grade English: Understanding Shakespeare's Works Using Machine Learning": 1
+  "10th Grade English: Shakespeare's Works and Interpretation with AI Assistance": 1
+  "10th Grade English: Immersive Study of Shakespeare's Works Through Virtual Reality": 1
+  "Chemistry: An Introduction to Organic Chemistry with a Focus on NMR Spectroscopy": 1
+  "Chemistry: Understanding Organic Reactions Through Mass Spectrometry": 1
+  "Chemistry: Delving into Organic Chemistry Using Gas Chromatography": 1
+  "Chemistry: A Comprehensive Guide to Organic Chemistry and Infrared Spectroscopy": 1
+  "Chemistry: Exploring Organic Chemistry Through the Lens of X-ray Crystallography": 1
+  "1st Grade Basic Skills: Introduction to Reading and Writing with Phonics": 1
+  "1st Grade Basic Skills: Utilizing iPads for Introduction to Reading and Writing": 1
+  "1st Grade Basic Skills: Introduction to Reading and Writing through Storytelling": 1
+  "1st Grade Basic Skills: Introduction to Reading and Writing using Interactive Whiteboards": 1
+  "1st Grade Basic Skills: Introduction to Reading and Writing with Sight Words": 1
+  "11th Grade English: Analyzing Shakespeare's Plays through Dramatic Irony ": 1
+  "11th Grade English: Exploring Shakespeare's Plays with Textual Analysis Software ": 1
+  "11th Grade English: Shakespeare's Plays Deciphered through Historical Context ": 1
+  "11th Grade English: Understanding Shakespeare's Plays using Character Mapping ": 1
+  "11th Grade English: An In-depth Review of Shakespeare's Plays through Metaphor Analysis": 1
+  "Elementary Drawing: Discovering Shading Techniques with Graphite and Charcoal": 1
+  "Elementary Drawing: Exploring Graphite and Charcoal in Portraiture Sketching": 1
+  "Elementary Drawing: A Deep Dive into Graphite and Charcoal Still Life Sketches": 1
+  "Elementary Drawing: Mastering Proportions using Graphite and Charcoal in Basic Sketching": 1
+  "Elementary Drawing: Exploring Graphite and Charcoal in Basic Sketching with Perspective Drawing Techniques": 1
+  "Elementary Biology: Exploring Life through Microscopy": 1
+  "Elementary Biology: The Study of Life via Genetic Sequencing": 1
+  "Elementary Biology: Understanding Life Processes through Computer Simulation ": 1
+  "Elementary Biology: The Study of Life and Cell Culture Techniques": 1
+  "Elementary Biology: Investigating Life with DNA Technology": 1
+  "Chemical Analysis with Raman Spectroscopy: Exploring Real World Applications": 1
+  "Chemical Analysis: Utilizing Gas Chromatography in Spectroscopy for Real World Solutions": 1
+  "Chemical Analysis: Leveraging Fourier Transform Infrared (FTIR) Spectroscopy for Practical Applications": 1
+  "Chemical Analysis: Application of Nuclear Magnetic Resonance (NMR) in Spectroscopy for Real World Problems": 1
+  "Chemical Analysis: Using Mass Spectrometry in Spectroscopy for Real World Challenges": 1
+  "Neuroscience: An Introduction to the Brain through Neuroimaging Techniques": 1
+  "Neuroscience: A Deep Dive into the Brain using Electroencephalography": 1
+  "Neuroscience: Unlocking the Brain's Secrets with Functional Magnetic Resonance Imaging": 1
+  "Neuroscience: Exploring Brain Functionality through Positron Emission Tomography": 1
+  "Neuroscience: The Brain Decoded through Computational Neuroscience Techniques": 1
+  "History: Evolution of Sports and Games through the Lens of Broadcasting Technology": 1
+  "History: The Impact of Digital Scoreboards on the Evolution of Sports and Games": 1
+  "History: Transformation of Sports and Games: The Role of Video Replay Technology": 1
+  "History: Evolution of Sports and Games: A Study on the Influence of Synthetic Turf": 1
+  "History: The Evolution of Sports and Games: Understanding the Impact of the Stopwatch": 1
+  "Mathematics: Understanding Algebra and its Business Applications Through Excel": 1
+  "Mathematics: A Deep Dive into Algebra and its Business Applications using Python": 1
+  "Mathematics: Leveraging MATLAB for Understanding Algebra and its Business Applications": 1
+  "Mathematics: Understanding Algebra and its Business Applications with IBM SPSS": 1
+  "Mathematics: Exploring Algebra and its Business Applications using Wolfram Mathematica": 1
+  "10th Grade Social Studies: Exploring World Cultures through Geographic Information Systems (GIS)": 1
+  "10th Grade Social Studies: World Cultures and its Examination through Virtual Reality (VR) ": 1
+  "10th Grade Social Studies: Analyzing World Cultures with Statistical Analysis Software ": 1
+  "10th Grade Social Studies: Understanding World Cultures through Digital Storytelling Tools ": 1
+  "10th Grade Social Studies: World Cultures Explored through Interactive Whiteboard Technology": 1
+  "The Role of Artificial Intelligence in Modern Economies": 1
+  "Nanotechnology's Impact on Contemporary Economies": 1
+  "Blockchain Technology and its Influence on Modern Economies": 1
+  "The Integration of Renewable Energy Technologies in Modern Economies": 1
+  "The Impact of Biotechnology on Modern Economies": 1
+  "7th Grade Music: Rhythm and Blues Exploration Through Piano Techniques ": 1
+  "7th Grade Music: Exploring Rhythm and Blues Using GarageBand ": 1
+  "7th Grade Music: An In-depth Study of Rhythm and Blues with MIDI Controllers": 1
+  "7th Grade Music: Understanding Rhythm and Blues Through Digital Audio Workstations ": 1
+  "7th Grade Music: Rhythm and Blues Exploration with a Focus on Harmonica Techniques": 1
+  "Visual Arts: The Impact of Music in Film Using Soundtrack Pro": 1
+  "Visual Arts: Exploring Music in Film through Dolby Atmos Technology": 1
+  "Visual Arts: The Role of Orchestral Scores in Cinematic Storytelling": 1
+  "Visual Arts: Music in Film - A Study on Digital Audio Workstation (DAW)": 1
+  "Visual Arts: Sound Design and Music in Film Using Adobe Audition": 1
+  "Economics: The Theory of Supply and Demand - A Focus on Price Elasticity": 1
+  "Economics: The Impact of Blockchain Technology on the Theory of Supply and Demand": 1
+  "Economics: The Theory of Supply and Demand - Analyzing with Econometric Models": 1
+  "Economics: The Theory of Supply and Demand - A Study of Market Equilibrium": 1
+  "Economics: The Theory of Supply and Demand - Understanding Through Game Theory": 1
+  "Biology: Introduction to Genetic Coding through DNA Sequencing": 1
+  "Biology: The Role of CRISPR in Genetic Coding Basics": 1
+  "Biology: Utilizing Polymerase Chain Reaction in Genetic Coding": 1
+  "Biology: Basics of Genetic Coding with a Focus on Genomic Mapping": 1
+  "Biology: Understanding Genetic Coding Through Gene Editing Technology": 1
+  "Language Arts: Understanding Literary Themes through Symbolism": 1
+  "Language Arts: Decoding Literary Themes using Metaphor Analysis": 1
+  "Language Arts: Interpreting Literary Themes with Allegory Exploration ": 1
+  "Language Arts: Unraveling Literary Themes via Irony Detection": 1
+  "Language Arts: Comprehending Literary Themes through Foreshadowing Recognition": 1
+  "10th Grade Social Studies: World Cultures through the Lens of Anthropology": 1
+  "10th Grade Social Studies: Exploring World Cultures with Virtual Reality Tech": 1
+  "10th Grade Social Studies: World Cultures and Global Interactions in the Digital Age": 1
+  "10th Grade Social Studies: World Cultures & Comparative Religion Studies": 1
+  "10th Grade Social Studies: Understanding World Cultures through Historical Mapping Software": 1
+  "Social Studies: The American Civil Rights Movement and the Role of Television": 1
+  "Social Studies: The Influence of Nonviolent Protest in the American Civil Rights Movement": 1
+  "Social Studies: The Impact of Legal Strategies on the American Civil Rights Movement ": 1
+  "Social Studies: The Role of Grassroots Activism in the American Civil Rights Movement": 1
+  "Social Studies: The American Civil Rights Movement: An Examination of Political Mobilization": 1
+  "Elementary Geography: Exploring the World's Continents and Oceans with Satellite Imagery": 1
+  "Elementary Geography: Understanding the World's Continents and Oceans through GPS Technology": 1
+  "Elementary Geography: Navigating the World's Continents and Oceans using Cartography": 1
+  "Elementary Geography: Discovering the World's Continents and Oceans through Virtual Reality ": 1
+  "Elementary Geography: Analyzing the World's Continents and Oceans using Geospatial Data": 1
+  "10th Grade English: Analyzing Shakespeare's Works through Digital Humanities": 1
+  "10th Grade English: Understanding Shakespeare's Plays with Virtual Reality": 1
+  "10th Grade English: Interpreting Shakespeare's Sonnets using Text Mining": 1
+  "10th Grade English: Exploring Shakespeare's Characters with Machine Learning": 1
+  "10th Grade English: Decoding Shakespeare's Language through Natural Language Processing": 1
+  "Exploring the Underwater World in Picture Books: Utilizing Digital Illustrations": 1
+  "Diving into the Underwater World: Learning Through Augmented Reality Picture Books": 1
+  "Interactive Journey: Uncovering the Underwater World with Virtual Reality in Picture Books": 1
+  "Elementary Course: Understanding Marine Ecology in Picture Books with 3D Printing Technology": 1
+  "Engaging Underwater World: Interactive Picture Books with Animation Software Techniques": 1
+  "Music Appreciation: Exploring Beethoven's Symphonies Through Digital Analysis": 1
+  "Music Appreciation: Classical Composers and Their Works: A Deep Dive into Mozart's Use of the Piano": 1
+  "Classical Composers and Their Works: Bach's Fugues and Counterpoint Technique": 1
+  "Music Appreciation: An Insight into Chopin's Masterpieces Using Music Notation Software": 1
+  "Music Appreciation: The Impact of the Harpsichord on Handel's Compositions": 1
+  "Art: Expressions of Culture Through Watercolor Painting": 1
+  "Art: Exploring Culture Through Oil Painting Techniques": 1
+  "Art: Cultural Expressions Through Acrylic Painting": 1
+  "Art: Expressing Culture Through Fresco Painting Methods": 1
+  "Art: Culture Depicted Through Pastel Painting Techniques": 1
+  "Physical Education: The Role of Biomechanics in Sports and Equality in Society": 1
+  "Physical Education: Implementing Assistive Technology to Promote Sports Equality in Society": 1
+  "Physical Education: Sports Analytics as a Tool for Equality in Society": 1
+  "Physical Education: The Influence of Performance Enhancing Drugs on Sports and Equality in Society": 1
+  "Physical Education: Using Virtual Reality Technology for Inclusive Sports Education and Equality in Society": 1
+  "Physical Education: The Economic Contribution of Biomechanics in Sports Artistry": 1
+  "Physical Education: The Economic Impact of Virtual Reality Training in Sports Artistry": 1
+  "Physical Education: The Financial Influence of Performance Analytics in Sports Artistry": 1
+  "Physical Education: The Economic Value of GPS Tracking in Sports Artistry": 1
+  "Physical Education: The Monetary Contribution of Wearable Technology in Sports Artistry": 1
+  "6th Grade Art: Exploring Fresco Techniques in Renaissance Paintings": 1
+  "6th Grade Art: Understanding Perspective in Renaissance Paintings": 1
+  "6th Grade Art: An Introduction to Oil Paint in Renaissance Art": 1
+  "6th Grade Art: The Role of Chiaroscuro in Renaissance Paintings": 1
+  "6th Grade Art: Deciphering Symbolism in Renaissance Paintings": 1
+  "6th Grade Science: Exploring Earth's Ecosystems Through Microscopy": 1
+  "6th Grade Science: Understanding Earth's Ecosystems Using Climate Modeling": 1
+  "6th Grade Science: Examining Earth's Ecosystems Through GIS Technology": 1
+  "6th Grade Science: Earth's Ecosystems and Biodiversity Analysis Using DNA Barcoding": 1
+  "6th Grade Science: Introduction to Earth's Ecosystems with Focus on Sustainability Practices": 1
+  "Basic Logic: Enhancing Reasoning and Critical Thinking Skills using Syllogisms": 1
+  "Logical Argumentation: Developing Reasoning and Critical Thinking Skills through Venn Diagrams": 1
+  "Propositional Logic: Boosting Reasoning and Critical Thinking Skills": 1
+  "Critical Thinking Mastery: Improving Reasoning Skills using Truth Tables": 1
+  "Inductive Reasoning: Enhancing Critical Thinking Skills through Causal Inference": 1
+  "6th Grade Art: Exploring The Elements of Design with Watercolors": 1
+  "6th Grade Art: The Elements of Design Through Digital Art Tools": 1
+  "6th Grade Art: The Elements of Design Using Sculpture Materials": 1
+  "6th Grade Art: Mastering The Elements of Design with Acrylic Paints": 1
+  "6th Grade Art: The Elements of Design - A Focus on Charcoal Drawing": 1
+  "1st Grade Physical Education: Introduction to Soccer with Ball Control Techniques": 1
+  "1st Grade Physical Education: Understanding Basketball through Dribbling Drills": 1
+  "1st Grade Physical Education: Volleyball Basics - Serving and Passing Techniques": 1
+  "1st Grade Physical Education: Introduction to Baseball - Batting and Fielding Skills": 1
+  "1st Grade Physical Education: Kickball Fundamentals - Kicking and Base Running Strategies": 1
+  "2nd Grade Mathematics: Exploring Addition and Subtraction with Number Lines": 1
+  "2nd Grade Mathematics: Fun with Fractions using Interactive Whiteboards": 1
+  "2nd Grade Mathematics: Developing Multiplication Skills through Abacus Learning": 1
+  "2nd Grade Mathematics: Understanding Geometry with Tangrams": 1
+  "2nd Grade Mathematics: Digital Learning of Division using Math Apps": 1
+  "1st Grade Music: Exploring Rhythm and Melodies with Hand Drums": 1
+  "1st Grade Music: Learning Rhythm and Melodies with Piano": 1
+  "1st Grade Music: Rhythm and Melodies Development using GarageBand": 1
+  "1st Grade Music: Rhythm and Melodies through Interactive Whiteboard Games": 1
+  "1st Grade Music: Enhancing Rhythm and Melodies Learning with Digital Metronomes": 1
+  "3rd Grade English: Journey into Storytelling with Digital Tools": 1
+  "3rd Grade English: Exploring Storytelling Through Puppetry ": 1
+  "3rd Grade English: Journey into Storytelling: Focusing on Character Development": 1
+  "3rd Grade English: Storytelling Mastery with Animated Software ": 1
+  "3rd Grade English: Journey into Storytelling: A Deep Dive into Plot Structure": 1
+  "4th Grade Mathematics: Understanding Multiplication and Division using Abacus": 1
+  "4th Grade Mathematics: Grasping the Concept of Multiplication and Division Through Word Problems ": 1
+  "4th Grade Mathematics: Mastering Multiplication and Division with Digital Apps": 1
+  "4th Grade Mathematics: Exploring Multiplication and Division using Math Manipulatives": 1
+  "4th Grade Mathematics: Understanding Multiplication and Division through Number Lines": 1
+  "4th Grade Science: Exploring Ecosystems through Microscopy": 1
+  "4th Grade Science: Understanding Ecosystems via Data Analysis": 1
+  "4th Grade Science: Biodiversity in Ecosystems - A Focus on Animal Classification": 1
+  "4th Grade Science: Unraveling Ecosystems through Interactive 3D Models": 1
+  "4th Grade Science: The Role of Photosynthesis in Ecosystems": 1
+  "Home Economics: Using Nutritional Analysis Software to Prepare Balanced Meals for Brain Health": 1
+  "Home Economics: Leveraging Keto Diet Principles for Crafting Balanced Brain-Boosting Meals": 1
+  "Home Economics: Integrating Superfoods in Meal Preparations for Enhanced Brain Health": 1
+  "Home Economics: Utilizing Meal Planning Apps to Create Balanced Dishes for Brain Health": 1
+  "Home Economics: Incorporating Dietary Fibers in Meal Preparations for Optimal Brain Health": 1
+  "6th Grade Language Arts: Enhancing Reading Comprehension with Interactive Digital Tools": 1
+  "6th Grade Language Arts: Boosting Reading Comprehension Skills with Flashcards Technique": 1
+  "6th Grade Language Arts: Improving Reading Comprehension using Graphic Organizers": 1
+  "6th Grade Language Arts: Strengthening Reading Comprehension through Story Mapping": 1
+  "6th Grade Language Arts: Developing Reading Comprehension Skills with Text Annotation Strategy": 1
+  "High School Physics: Exploring Sound Waves with Oscilloscopes": 1
+  "High School Physics: A Detailed Study of Sound Waves using Resonance Tubes": 1
+  "High School Physics: Analyzing Sound Waves through Spectrum Analyzers": 1
+  "High School Physics: Understanding Sound Waves with the Doppler Effect ": 1
+  "High School Physics: Investigating Sound Waves using Sonometers": 1
+  "Economics: Utilizing QuickBooks for Financial Management in Running a Gym Club": 1
+  "Economics: Implementing Point of Sale (POS) Systems in Gym Club Financial Operations": 1
+  "Economics: Exploring the Role of Cash Flow Forecasting in Gym Club Finances": 1
+  "Economics: Applying Financial Ratios Analysis to Optimize Gym Club Operations": 1
+  "Economics: Leveraging Payroll Software for Efficient Financial Management of a Gym Club": 1
+  "Language Arts: Utilizing Rhetoric in Sports Journalism Persuasive Writing": 1
+  "Language Arts: The Role of Social Media in Persuasive Writing for Sports Journalism": 1
+  "Language Arts: Digital Storytelling in Persuasive Sports Journalism Writing": 1
+  "Language Arts: SEO Optimization in Persuasive Writing for Sports Journalism": 1
+  "Language Arts: Incorporating Data Visualization in Persuasive Sports Journalism Writing": 1
+  "Reading Rhythms: Incorporating Digital Metronomes in Language Arts in Music": 1
+  "Reading Rhythms: Utilizing Music Notation Software in Language Arts in Music": 1
+  "Reading Rhythms: Exploring the Role of MIDI Technology in Language Arts in Music": 1
+  "Reading Rhythms: The Impact of Synthesizers on Language Arts in Music": 1
+  "Reading Rhythms: The Integration of Loop Stations in Language Arts in Music": 1
+  "Mathematics: Harnessing the Power of Numbers and Shapes through Calculus": 1
+  "Mathematics: The Power of Numbers and Shapes in Algebra": 1
+  "Mathematics: Exploring Numbers and Shapes with Geometric Proofs ": 1
+  "Mathematics: The Power of Numbers and Shapes Unleashed by Graphing Calculators ": 1
+  "Mathematics: The Power of Numbers and Shapes: Understanding Probability and Statistics": 1
+  "Elementary Logic: An Introduction to Reasoning with Syllogisms": 1
+  "Elementary Logic: An Introduction to Reasoning with Propositional Calculus": 1
+  "Elementary Logic: An Introduction to Reasoning using Truth Tables": 1
+  "Elementary Logic: An Introduction to Reasoning with Formal Fallacies": 1
+  "Elementary Logic: An Introduction to Reasoning through Boolean Algebra": 1
+  "History: Unraveling the Role of Double Entry Bookkeeping in Renaissance Finances": 1
+  "History: The Impact of the Medici Bank on Financial Aspects of the Renaissance": 1
+  "History: Trade and Currency Exchange: Understanding Financial Aspects of the Renaissance": 1
+  "History: The Influence of the Printing Press on Financial Literature During the Renaissance": 1
+  "History: The Role of Maritime Technology in Shaping the Financial Aspects of the Renaissance": 1
+  "Social Studies: Exploring the Role of Symmetry in Cultural Symbols through Vector Graphics ": 1
+  "Social Studies: The Role of Symmetry in Cultural Symbols: A Study Using Adobe Illustrator ": 1
+  "Social Studies: The Influence of Geometric Symmetry in Cultural Symbols Analyzed through CAD Technology ": 1
+  "Social Studies: The Role of Symmetry in Cultural Symbols: An Examination Using 3D Modeling ": 1
+  "Social Studies: Decoding Symmetry in Cultural Symbols through Digital Imaging Software": 1
+  "3rd Grade History: Early American Pioneers and the Use of the Wagon Wheel ": 1
+  "3rd Grade History: Conestoga Wagons and the Journey of Early American Pioneers ": 1
+  "3rd Grade History: Early American Pioneers - The Significance of the Flintlock Musket ": 1
+  "3rd Grade History: The Role of Animal Trapping in the Survival of Early American Pioneers ": 1
+  "3rd Grade History: Early American Pioneers and their Adoption of Corn Cultivation": 1
+  "Biology: Utilizing GIS in Environmental Systems and Sustainability": 1
+  "Biology: CRISPR-Cas9 Applications in Environmental Systems and Sustainability": 1
+  "Biology: The Role of Drone Technology in Environmental Systems and Sustainability": 1
+  "Biology: Applying Machine Learning in Environmental Systems and Sustainability ": 1
+  "Biology: The Use of Remote Sensing in Environmental Systems and Sustainability": 1
+  "3rd Grade Language Arts: Journey into Storytelling through Digital Narratives": 1
+  "3rd Grade Language Arts: Exploring Storytelling with Interactive Whiteboards": 1
+  "3rd Grade Language Arts: Journey into Storytelling using Comic Strips": 1
+  "3rd Grade Language Arts: Dive into Storytelling with Podcasting": 1
+  "3rd Grade Language Arts: Unfolding Storytelling through Flipbook Animation": 1
+  "2nd Grade Music: Exploring Rhythm and Beat with Drums": 1
+  "2nd Grade Music: Introduction to Rhythm and Beat through Percussion Instruments": 1
+  "2nd Grade Music: Understanding Rhythm and Beat using Metronomes": 1
+  "2nd Grade Music: Discovering Rhythm and Beat with Digital Music Software": 1
+  "2nd Grade Music: Rhythm and Beat Analysis using Beatboxing Techniques": 1
+  "Mathematics: The Art of Problem Solving Using Algebraic Expressions": 1
+  "Mathematics: Geometry, The Art of Visual Problem Solving": 1
+  "Mathematics: The Art of Problem Solving Through Calculus": 1
+  "Mathematics: Problem Solving with Probability and Statistics": 1
+  "Mathematics: The Art of Problem Solving using Advanced Trigonometry": 1
+  "3rd Grade English: Exploring Fables and Folktales through Digital Storytelling": 1
+  "3rd Grade English: Enhancing Understanding of Fables and Folktales with Interactive Whiteboards": 1
+  "3rd Grade English: Exploring Fables and Folktales using iPad Apps": 1
+  "3rd Grade English: Unpacking Fables and Folktales through Character Analysis": 1
+  "3rd Grade English: Leveraging Animation Software for Fables and Folktales Exploration": 1
+  "Economics Essentials: Mastering Supply and Demand with Microsoft Excel": 1
+  "Economics Essentials: Graphing Supply and Demand with MATLAB": 1
+  "Economics Essentials: Analyzing Supply and Demand using Python": 1
+  "Economics Essentials: Understanding Supply and Demand through Game Theory": 1
+  "Economics Essentials: Supply and Demand Forecasting with Predictive Analytics": 1
+  "8th Grade History: Revolutionary War Era - The Role of Cannons": 1
+  "8th Grade History: Revolutionary War Era - The Impact of Muskets": 1
+  "8th Grade History: Revolutionary War Era - Understanding Espionage Techniques": 1
+  "8th Grade History: Revolutionary War Era - The Use of Naval Warfare": 1
+  "8th Grade History: Revolutionary War Era - The Influence of Propaganda": 1
+  "3rd Grade Art: Introduction to Charcoal Drawing Techniques": 1
+  "3rd Grade Art: Basics of Drawing with Pencil": 1
+  "3rd Grade Art: Exploring Pastels in Basic Drawing": 1
+  "3rd Grade Art: Fundamentals of Sketching with Graphite": 1
+  "3rd Grade Art: Basics of Drawing - Understanding Shading Techniques": 1
+  "Music and Atmosphere: The Role of Digital Soundboards in Event Ambiance ": 1
+  "Music and Atmosphere: Harnessing the Power of Acoustic Panels in Event Sound Design": 1
+  "The Art of Sound: Utilizing Live Looping Technology for Event Atmosphere ": 1
+  "Music and Atmosphere: Exploring Equalization Techniques for Event Sound": 1
+  "The Science of Sound: Incorporating 3D Audio Technology in Event Atmosphere": 1
+  "10th Grade English: Exploring Civil Rights Era through Harper Lee's 'To Kill a Mockingbird'": 1
+  "10th Grade English: Understanding Civil Rights Era Literature through Digital Humanities Tools": 1
+  "10th Grade English: Literature of the Civil Rights Era - An Analysis with Critical Theory": 1
+  "10th Grade English: Civil Rights Era Literature & Its Expression in Film Adaptation": 1
+  "10th Grade English: A Study of Civil Rights Era through Literature: A Focus on Rhetorical Analysis": 1
+  "6th Grade Art: Mastering Clay Sculpture with Pottery Wheel Techniques": 1
+  "6th Grade Art: The Art of Stone Carving: An Introduction to Chisels ": 1
+  "6th Grade Art: Unveiling the Art of Bronze Sculpture: Wax Casting Methods Explored ": 1
+  "6th Grade Art: Creating Wood Sculptures: A Deep Dive into Whittling Techniques ": 1
+  "6th Grade Art: Introduction to Ice Sculpting: The Use of Chainsaws and Chisels": 1
+  "6th Grade Social Studies: Exploring Pyramids in Ancient Egypt": 1
+  "6th Grade Social Studies: Ancient Rome: An Overview of Aqueducts": 1
+  "6th Grade Social Studies: Unraveling the Mystery of the Mayan Calendar": 1
+  "6th Grade Social Studies: Ancient China: A Deep Dive into the Great Wall": 1
+  "6th Grade Social Studies: Ancient Greek Warfare: The Evolution of the Phalanx Formation": 1
+  "Introduction to Algebra: Understanding Numbers and Equations with MATLAB": 1
+  "Introduction to Mathematics: Grasping Numbers and Equations through Python": 1
+  "Exploring Mathematics: Grasping Numbers and Equations using Wolfram Alpha": 1
+  "Diving into Algebra: Understanding Numbers and Equations with Graphing Calculators": 1
+  "Introduction to Mathematics: Mastering Numbers and Equations using Desmos": 1
+  "Elementary Astronomy: Exploring the Universe with Hubble Space Telescope": 1
+  "Elementary Astronomy: Understanding the Universe through Spectroscopy": 1
+  "Elementary Astronomy: Decoding the Universe with Radio Telescopes": 1
+  "Elementary Astronomy: Navigating the Universe with Astrophotography": 1
+  "Elementary Astronomy: Delving into the Universe with Stellar Parallax": 1
+  "English: Enhancing Reading Comprehension through Story Mapping": 1
+  "English: Creative Writing using Scrivener Software": 1
+  "English: Improving Reading Comprehension with Lexile Measures": 1
+  "English: Creative Writing and Storytelling with Twine Software": 1
+  "English: Reading Comprehension and Creative Writing using Topic Sentences": 1
+  "8th Grade Art: Mastering Watercolor Techniques with Brush Strokes": 1
+  "8th Grade Art: Delving into Watercolor Techniques using Wet-on-Wet Approach": 1
+  "8th Grade Art: Exploring Watercolor Techniques with Blending Techniques": 1
+  "8th Grade Art: Unveiling the Magic of Watercolor Techniques with Glazing": 1
+  "8th Grade Art: Discovering Watercolor Techniques through Layering.": 1
+  "Art: Masterpieces of the Renaissance Explored Through Fresco Techniques": 1
+  "Art: The Role of Oil Paint in the Masterpieces of the Renaissance": 1
+  "Art: Perspective Drawing in the Masterpieces of the Renaissance": 1
+  "Art: Chiaroscuro and the Masterpieces of the Renaissance": 1
+  "Art: The Impact of Printmaking on the Masterpieces of the Renaissance": 1
+  "3rd Grade Art: Exploring the Color Wheel and Shapes Using Watercolors": 1
+  "3rd Grade Art: Understanding Basic Shapes and Colors through Digital Art Tools": 1
+  "3rd Grade Art: The Basics of Colors, Shapes, and Texture with Clay Sculpting": 1
+  "3rd Grade Art: Discovering Colors and Shapes through Paper Collage Techniques": 1
+  "3rd Grade Art: The Basics of Colors and Shapes with Acrylic Painting and Brushes": 1
+  "Mathematics: Data Analysis of Climate Trends using Python": 1
+  "Mathematics: Climate Change Trend Analysis using Advanced Statistical Models": 1
+  "Mathematics: Analysis of Climate Variability using Machine Learning": 1
+  "Mathematics: Climate Trends Prediction and Analysis using Artificial Intelligence": 1
+  "Mathematics: Time-Series Analysis of Climate Trends with MATLAB": 1
+  "Young Philosophers: An Introduction to Critical Thinking through Socratic Method": 1
+  "Young Philosophers: Exploring Critical Thinking with Logical Fallacies": 1
+  "Young Philosophers: A Study in Critical Thinking Utilizing Argument Mapping": 1
+  "Young Philosophers: An Introduction to Critical Thinking via Cognitive Biases ": 1
+  "Young Philosophers: Mastering Critical Thinking with the Application of Deductive Reasoning": 1
+  "Social Studies: The Civil Rights Movement and The Role of Television Broadcasting": 1
+  "Social Studies: The Civil Rights Movement - An Examination of Nonviolent Resistance": 1
+  "Social Studies: The Civil Rights Movement and The Impact of the Voting Rights Act": 1
+  "Social Studies: The Civil Rights Movement - A Focus on the 'I Have a Dream' Speech Analysis ": 1
+  "Social Studies: The Civil Rights Movement and The Influence of Rosa Parks' Bus Boycott": 1
+  "Music 101: Exploring the Physics of Sound and Acoustics Through Oscilloscopes": 1
+  "Music 101: The Application of Fourier Transforms in the Physics of Sound and Acoustics": 1
+  "Music 101: An In-Depth Study of Sound Wave Propagation and Acoustics": 1
+  "Music 101: The Physics of Sound and Acoustics: A Focus on Resonance": 1
+  "Music 101: The Role of Decibels in the Physics of Sound and Acoustics": 1
+  "3rd Grade History: The Role of the Wagon in Early American Pioneers": 1
+  "3rd Grade History: Early American Pioneers and the Impact of the Cotton Gin": 1
+  "3rd Grade History: The Influence of the Plow on Early American Pioneer Life": 1
+  "3rd Grade History: Early American Pioneers: Navigation and the Use of the Compass": 1
+  "3rd Grade History: The Printing Press and its Role in the Life of Early American Pioneers": 1
+  "1st Grade Art: Exploring Shapes in Nature with Collage Techniques": 1
+  "1st Grade Art: Discovering Shapes in Nature Through Watercolor Painting": 1
+  "1st Grade Art: Shapes in Nature: A Journey with Clay Modeling": 1
+  "1st Grade Art: Digital Artistry - Shapes in Nature with iPad Procreate": 1
+  "1st Grade Art: Shapes in Nature: An Exploration Using Pastel Chalks": 1
+  "3rd Grade Art: Exploring Primary Colors and Geometric Shapes with Scissors through Paper Collage ": 1
+  "3rd Grade Art: Discovering Color Mixing and Shapes with Glue Sticks through Paper Collage Techniques ": 1
+  "3rd Grade Art: Understanding Color Theory and Polygon Shapes with Construction Paper through Collage Techniques ": 1
+  "3rd Grade Art: Investigating Color Gradients and Abstract Shapes with Recycled Materials through Paper Collage Techniques ": 1
+  "3rd Grade Art: Mastering Color Layering and Organic Shapes with Washable Markers through Paper Collage Techniques": 1
+  "9th Grade History: The Revolutionary War Era and the Role of Cannons": 1
+  "9th Grade History: The Impact of the Spinning Jenny during the Revolutionary War Era": 1
+  "9th Grade History: The Revolutionary War Era and the Importance of the Printing Press": 1
+  "9th Grade History: Understanding the Revolutionary War Era through the Lens of the Liberty Tree Concept": 1
+  "9th Grade History: The Revolutionary War Era - A Study on the Influence of the Telegraph": 1
+  "1st Grade History: Exploring American Symbols through Interactive Maps": 1
+  "1st Grade History: An Introduction to American Symbols with 3D Printing Models": 1
+  "1st Grade History: Learning American Symbols via Virtual Reality": 1
+  "1st Grade History: Understanding American Symbols through Timeline Software": 1
+  "1st Grade History: Investigating American Symbols using Augmented Reality": 1
+  "8th Grade English Language Arts: Exploring Poetry and Prose through Symbolism": 1
+  "8th Grade English Language Arts: The Art of Poetry and Prose: An Introduction to Metaphors": 1
+  "8th Grade English Language Arts: Understanding Poetry and Prose using Digital Analysis Tools": 1
+  "8th Grade English Language Arts: Poetry and Prose Study with a Focus on Alliteration": 1
+  "8th Grade English Language Arts: Poetry and Prose: A Deep Dive into Imagery.": 1
+  "Language Arts: The Influence of Semi-Colons in Young Adult Novels: A Study Using Text Analysis Software": 1
+  "Language Arts: The Role of Quotation Marks in Dialogue of Young Adult Novels: A Deep Dive into Grammarly Insights": 1
+  "Language Arts: Exploring the Impact of Commas in Young Adult Novels through Natural Language Processing": 1
+  "Language Arts: The Power of Ellipses in Building Suspense in Young Adult Novels: A Perspective Using the Hemingway Editor": 1
+  "Language Arts: The Usage of Exclamation Marks in Young Adult Novels: An Analysis Using Google Ngram Viewer.": 1
+  "1st Grade History: Discovering Local Heroes through Storytelling": 1
+  "1st Grade History: Understanding Local Heroes using Interactive Maps": 1
+  "1st Grade History: Learning about Local Heroes via Augmented Reality": 1
+  "1st Grade History: Exploring Local Heroes with Digital Timelines": 1
+  "1st Grade History: Unveiling Local Heroes through Virtual Field Trips": 1
+  "English Literature: Analyzing Texts with Python Programming": 1
+  "English Literature: Text Analysis Using Voyant Tools": 1
+  "English Literature: An Introduction to Text Mining with R": 1
+  "English Literature: Exploring Texts through Digital Visualization Tools": 1
+  "English Literature: The Application of JSTOR Data for Research in Literature Analysis": 1
+  "English 101: Improving Reading and Writing Skills through Shakespearean Literature": 1
+  "English 101: Enhancing Reading and Writing Skills with Modern Technology Tools": 1
+  "English 101: Boosting Reading and Writing Proficiency through the Study of Grammar ": 1
+  "English 101: Advanced Reading and Writing Skills Development using Digital Storytelling": 1
+  "English 101: Enhancing Reading and Writing Skills through the Study of Classic Novels": 1
+  "7th Grade Language Arts: Exploring Poetry and Prose through Metaphor Analysis": 1
+  "7th Grade Language Arts: Exploring Poetry and Prose using Digital Literary Tools": 1
+  "7th Grade Language Arts: Enhancing Understanding of Poetry and Prose through Theme Exploration": 1
+  "7th Grade Language Arts: Exploring Poetry and Prose with the Aid of Audio-Visual Technology": 1
+  "7th Grade Language Arts: Poetry and Prose Study through Character Development Analysis": 1
+  "6th Grade Social Studies: Exploring Ancient Civilizations through the Lens of Pyramid Construction": 1
+  "Understanding the Ancient Civilizations: The Impact of the Wheel in 6th Grade Social Studies": 1
+  "6th Grade Social Studies: The Role of Agriculture in the Development of Ancient Civilizations": 1
+  "Deciphering Hieroglyphics: A Deep Dive into Ancient Civilizations in 6th Grade Social Studies": 1
+  "6th Grade Social Studies: Unraveling the Mysteries of the Ancient Civilizations using the Astronomical Knowledge.": 1
+  "Art: Designing Business Logos and Branding with Adobe Illustrator": 1
+  "Art: Creating Corporate Identity through Logo Design and Branding using Photoshop": 1
+  "Art: Utilizing Vector Graphics in Business Logo Design and Branding": 1
+  "Art: Applying Color Theory in Business Logo Design and Branding": 1
+  "Art: Designing Business Logos and Branding using 3D Modeling Tools": 1
+  "11th Grade Physical Education: Utilizing Geometry in Ballet Choreography with Kinovea Software": 1
+  "11th Grade Physical Education: Exploring Geometry in Jazz Dance Choreography Through Protractor Use": 1
+  "11th Grade Physical Education: Incorporating Geometry in Hip-Hop Choreography With Motion Capture Technology": 1
+  "11th Grade Physical Education: Applying Geometry in Contemporary Dance Choreography Using Augmented Reality": 1
+  "11th Grade Physical Education: Understanding Geometry in Salsa Dance Choreography Through Vector Analysis": 1
+  "Neuroscience 110: Exploring Sound and Music Perception through Auditory Neuroimaging": 1
+  "Neuroscience 110: The Science of Sound and Music Perception using Spectrograms": 1
+  "Neuroscience 110: Frequency Analysis in Sound and Music Perception": 1
+  "Neuroscience 110: The Science of Sound and Music Perception with Fourier Transforms": 1
+  "Neuroscience 110: Auditory Signal Processing in Sound and Music Perception": 1
+  "Mathematics: Exploring the Language of Numbers with Algebra": 1
+  "Mathematics: Utilizing Calculators in Exploring the Language of Numbers": 1
+  "Mathematics: Exploring the Language of Numbers through the Lens of Geometry": 1
+  "Mathematics: Decoding the Language of Numbers with Python Programming": 1
+  "Mathematics: Understanding the Language of Numbers through Statistics": 1
+  "1st Grade Physical Education: Exploring Teamwork with Soccer Drills": 1
+  "1st Grade Physical Education: Fun with Games and Sports Using Hula Hoops": 1
+  "1st Grade Physical Education: Enhancing Motor Skills through Obstacle Courses": 1
+  "1st Grade Physical Education: Developing Balance with Gymnastics-Based Activities": 1
+  "1st Grade Physical Education: Learning Coordination through Jump Rope Challenges": 1
+  "World History: The Evolution of Civilizations through Agricultural Tools": 1
+  "World History: Unfolding Civilizations with the Impact of The Wheel": 1
+  "World History: The Evolution of Civilizations and the Role of Ironworking": 1
+  "World History: Tracing Civilizations through the Lens of Ancient Writing Systems": 1
+  "World History: The Evolution and Impact of Pottery on Early Civilizations": 1
+  "Philosophy: Understanding Ethics through Socratic Parables": 1
+  "Philosophy: Analyzing Ethics using Nietzsche's Parables in Modern Context": 1
+  "Philosophy: A Deep Dive into Ethics through Aesop's Parables": 1
+  "Philosophy: Exploring Ethics and Human Behavior through Eastern Parables": 1
+  "Philosophy: Utilizing Parables from Ancient Civilizations to Understand Ethics and Morality": 1
+  "6th Grade Social Studies: Ancient Greek Warfare: The Evolution of the Phalanx Formation and The Role of the Sarissa Spear": 1
+  "6th Grade Social Studies: Ancient Greek Warfare: The Use of the Hoplite Shield in the Evolution of the Phalanx Formation": 1
+  "6th Grade Social Studies: The Impact of Bronze Age Metallurgy on the Evolution of the Phalanx Formation in Ancient Greek Warfare": 1
+  "6th Grade Social Studies: Ancient Greek Warfare: The Evolution of the Phalanx Formation and The Introduction of the Chariot": 1
+  "6th Grade Social Studies: Ancient Greek Warfare: The Evolution of the Phalanx Formation and The Importance of the Corinthian Helmet": 1
+  "5th Grade Art: Mastering Pencil Shading Techniques": 1
+  "5th Grade Art: Exploring Basic Drawing Techniques using Graphite Pencils": 1
+  "5th Grade Art: Fundamentals of Sketching with Charcoal": 1
+  "5th Grade Art: Introduction to Perspective in Drawing ": 1
+  "5th Grade Art: Discovering Line Art with Ink Pens": 1
+  "1st Grade Art: Exploring Basic Shapes and Colors Using Watercolors": 1
+  "1st Grade Art: Understanding Basic Shapes and Colors with Oil Pastels": 1
+  "1st Grade Art: Learning Basic Shapes and Colors through Digital Illustration ": 1
+  "1st Grade Art: Mastering Basic Shapes and Colors Using Collage Techniques": 1
+  "1st Grade Art: Discovering Basic Shapes and Colors with Mixed Media Art": 1
+  "1st Grade Language Arts: Beginning Phonics and Spelling with Interactive Whiteboard Activities": 1
+  "1st Grade Language Arts: Introduction to Phonics and Spelling through Early Reader E-books": 1
+  "1st Grade Language Arts: Utilizing Educational Apps for Beginning Phonics and Spelling": 1
+  "1st Grade Language Arts: Beginning Phonics and Spelling Enhancement with Speech Recognition Software": 1
+  "1st Grade Language Arts: Exploration of Phonics and Spelling through Animated Video Lessons": 1
+  "Physics of Sound: Exploring Vibrations and Waves through Oscilloscopes": 1
+  "Physics of Sound: An In-depth Study on Waves and Vibrations using Spectrum Analyzers": 1
+  "Physics of Sound: Understanding Vibrations and Waves with Resonance Tubes": 1
+  "Physics of Sound: Analyzing Vibrations and Waves through Fourier Transformations": 1
+  "Physics of Sound: A Comprehensive Study on Waves and Vibrations via Digital Signal Processing": 1
+  "Introduction to Neuroscience: An Analysis of the Brain using Electron Microscopy": 1
+  "Introduction to Neuroscience: Unveiling the Brain with Positron Emission Tomography (PET)": 1
+  "Introduction to Neuroscience: Understanding the Brain with Functional Magnetic Resonance Imaging (fMRI)": 1
+  "Introduction to Neuroscience: Discovering the Brain with Two-Photon Excitation Microscopy": 1
+  "Introduction to Neuroscience: Exploring the Brain through Diffusion Tensor Imaging (DTI)": 1
+  "Computer Science: An Introduction to Python Programming with Data Structures": 1
+  "Computer Science: An Introduction to Python Programming Using Django Framework": 1
+  "Computer Science: An Introduction to Python Programming for Machine Learning": 1
+  "Computer Science: An Introduction to Python Programming with NumPy for Scientific Computation": 1
+  "Computer Science: An Introduction to Python Programming and Web Scraping with BeautifulSoup": 1
+  "Physical Education: Utilizing Heart Rate Monitors to Understand Energy Consumption in Sports ": 1
+  "Physical Education: GPS Tracking and Energy Consumption in Sports": 1
+  "Physical Education: Biomechanics Analysis for Energy Consumption in Sports": 1
+  "Physical Education: Energy Consumption in Sports through VO2 Max Testing ": 1
+  "Physical Education: Analyzing Energy Consumption in Sports Using Lactate Threshold Testing": 1
+  "10th Grade Social Studies: Exploring World Cultures with Google Earth Pro and Historical Mapping Software": 1
+  "Understanding World Cultures through ArcGIS: A 10th Grade Social Studies Course": 1
+  "10th Grade Social Studies: A Deep Dive into World Cultures using Tableau and Historical Mapping Software": 1
+  "10th Grade Social Studies: Analyzing World Cultures with QGIS and Historical Mapping Technology": 1
+  "World Cultures in 10th Grade Social Studies: A Journey through Time and Space using MapInfo and Historical Mapping Software": 1
+  "Tools for Success: Utilizing Wearable Devices in Sports Training": 1
+  "Tools for Success: Maximizing Performance with GPS Technology in Sports Training": 1
+  "Tools for Success: Improving Athlete Health with Biometric Monitoring in Sports Training": 1
+  "Tools for Success: Using Virtual Reality for Skill Enhancement in Sports Training": 1
+  "Tools for Success: Integration of Data Analytics in Sports Training": 1
+  "7th Grade Music: Fundamentals of Choir with Vocal Range Training": 1
+  "7th Grade Music: Fundamentals of Choir and Sight-Reading Techniques": 1
+  "7th Grade Music: Fundamentals of Choir through Digital Audio Workstations": 1
+  "7th Grade Music: Fundamentals of Choir with Harmony and Melody Creation": 1
+  "7th Grade Music: Fundamentals of Choir - Exploring Sheet Music Interpretation": 1
+  "Music: The Evolution of Popular Music through the Gramophone and its Impact on Society": 1
+  "Music: The Impact of Auto-Tune Technology on the Evolution of Popular Music and Society": 1
+  "Music: The Role of Digital Streaming in the Evolution of Popular Music and Social Change": 1
+  "Music: Evolution of Popular Music through Guitar Amplification and its Influence on Society": 1
+  "Music: The Synthesizer's Impact on the Evolution of Popular Music and Societal Norms": 1
+  "Social Studies: The Impact of Typography in the History of Graphic Design": 1
+  "Social Studies: Evolution of Printing Technology in Graphic Design History": 1
+  "Social Studies: History of Graphic Design: The Role of Adobe Photoshop ": 1
+  "Social Studies: The Influence of Digital Illustration in Graphic Design History ": 1
+  "Social Studies: The History of Graphic Design: Understanding the Impact of Color Theory.": 1
+  "10th Grade Social Studies: Exploring Ancient Egyptian Hieroglyphics": 1
+  "10th Grade Social Studies: Understanding the Concept of Democracy in Ancient Greece": 1
+  "10th Grade Social Studies: The Use of Aqueducts in Ancient Roman Civilization": 1
+  "10th Grade Social Studies: The Impact of the Wheel on Ancient Mesopotamian Society": 1
+  "10th Grade Social Studies: Studying the Great Wall as a Defense Technology in Ancient China": 1
+  "Geography: The Role of Compass in Understanding Trade Routes and Their Historical Significance": 1
+  "Geography: The Impact of Cartography on Trade Routes and Their Historical Significance": 1
+  "Geography: The Influence of Navigation Tools on Trade Routes and Their Historical Significance ": 1
+  "Geography: Trade Routes and Their Historical Significance: A Study on the Use of the Astrolabe": 1
+  "Geography: The Importance of GPS in Modern Interpretations of Historical Trade Routes": 1
+  "8th Grade Art: Exploring Frescoes in the Roman Empire": 1
+  "8th Grade Art: Sculpting Techniques of the Roman Empire": 1
+  "8th Grade Art: Mosaic Making and Artistic Expressions of the Roman Empire": 1
+  "8th Grade Art: Roman Empire Pottery and Its Artistic Expressions": 1
+  "8th Grade Art: Artistic Expressions of the Roman Empire through Bronze Casting": 1
+  "Mathematics: Calculating Grocery Budgets Using Excel Spreadsheets": 1
+  "Mathematics: Leveraging Calculator Apps for Grocery Budgeting": 1
+  "Mathematics: Utilizing QuickBooks for Efficient Grocery Budget Management": 1
+  "Mathematics: Applying the Concept of Percentages in Grocery Budgeting ": 1
+  "Mathematics: Grocery Budgeting with the aid of Financial Software Tools": 1
+  "Mathematics: The Language of Numbers through Calculus": 1
+  "Mathematics: Exploring the Language of Numbers with Geometry": 1
+  "Mathematics: The Language of Numbers - An Introduction to Probability": 1
+  "Mathematics: The Language of Numbers - Understanding Algebra": 1
+  "Mathematics: The Language of Numbers - A Deep Dive into Trigonometry": 1
+  "Artistic Expressions: The Color of Cultures through Oil Painting": 1
+  "Artistic Expressions: The Color of Cultures in Digital Illustration": 1
+  "Artistic Expressions: The Color of Cultures and the Role of Photography": 1
+  "Artistic Expressions: The Color of Cultures Explored through Sculpture": 1
+  "Artistic Expressions: The Color of Cultures - A Deep Dive into Watercolor Techniques": 1
+  "The Economics of Information: A Detailed Study of Blockchain Technology": 1
+  "The Economics of Information: Exploring Data Analysis in Detail": 1
+  "The Economics of Information: A Detailed Study on Machine Learning Applications": 1
+  "The Economics of Information: A Deep Dive into Artificial Intelligence ": 1
+  "The Economics of Information: In-depth Analysis of Cryptocurrency Impact": 1
+  "World History: Rise and Fall of Empires through Maritime Navigation": 1
+  "World History: Impact of Iron Technology on Ancient Civilizations": 1
+  "World History: The Role of Agriculture in the Development of Empires": 1
+  "World History: Civilizations and the Evolution of Writing Systems": 1
+  "World History: Empires and Civilizations: An Exploration into the Use of Gunpowder": 1
+  "Fifth Grade Social Studies: Exploring American History through Interactive Maps": 1
+  "Fifth Grade Social Studies: Utilizing Timelines to Dive into American History": 1
+  "Fifth Grade Social Studies: Understanding American History via Virtual Reality": 1
+  "Fifth Grade Social Studies: Analyzing American History through Primary Source Documents": 1
+  "Fifth Grade Social Studies: Decoding American History with the Use of Infographics": 1
+  "Mathematics: Exploring Geometry in Nature Through Golden Ratio": 1
+  "Mathematics: Understanding Fractals in Natural Geometry": 1
+  "Mathematics: Geometry in Nature and Its Analysis with Geometric Software": 1
+  "Mathematics: Investigating Symmetry in Nature's Geometry": 1
+  "Mathematics: Geometry in Nature Illustrated Through Computer Modeling": 1
+  "Introduction to Biology: The Human Brain and Neuroimaging Techniques": 1
+  "Exploring the Human Brain: An Introduction to Biology with MRI Technology": 1
+  "Biological Overview: The Human Brain and Electrophysiology": 1
+  "Introduction to Biology: The Human Brain through the Lens of Functional MRI": 1
+  "Decoding the Human Brain: An Introductory Biology Course featuring PET Scans": 1
+  "Basic Statistics and Probability with SPSS": 1
+  "Introduction to Probability and Statistics using Microsoft Excel": 1
+  "Fundamentals of Statistics and Probability Theory with R Programming": 1
+  "Basics of Statistics and Probability with Python": 1
+  "Applied Statistics and Probability using MATLAB": 1
+  "4th Grade Social Studies: Our Community and Beyond - Exploring with Maps": 1
+  "4th Grade Social Studies: Our Community and Beyond - Understanding with Internet Research": 1
+  "4th Grade Social Studies: Our Community and Beyond - Engaging with VR Field Trips": 1
+  "4th Grade Social Studies: Our Community and Beyond - Discovering through Time-Lapse Technology": 1
+  "4th Grade Social Studies: Our Community and Beyond - Learning with Interactive Whiteboards": 1
+  "Music: The Impact of the Saxophone on the Evolution of Jazz in 20th Century America": 1
+  "Music: Amplification Technology and the Evolution of Jazz in 20th Century America": 1
+  "Music: The Influence of Improvisation on the Evolution of Jazz in 20th Century America": 1
+  "Music: The Role of Recording Technology in the Evolution of Jazz in 20th Century America": 1
+  "Music: The Concept of Swing Rhythm and the Evolution of Jazz in 20th Century America": 1
+  "4th Grade Basic Geometry and Shapes: Understanding Polygons with Protractors": 1
+  "4th Grade Basic Geometry and Shapes: Exploring Circles Using Compass": 1
+  "4th Grade Basic Geometry and Shapes: Introduction to Angles with Rulers": 1
+  "4th Grade Basic Geometry and Shapes: Learning Symmetry through Mirrors": 1
+  "4th Grade Basic Geometry and Shapes: Using Computer Graphics to Understand Shapes": 1
+  "Social Studies: Exploring the Pyramids of Ancient Egypt": 1
+  "Social Studies: The Role of the Wheel in Ancient Civilizations": 1
+  "Social Studies: Aqueducts and the Expansion of Ancient Rome": 1
+  "Social Studies: The Concept of Democracy in Ancient Greece": 1
+  "Social Studies: Ancient Chinese Civilizations and the Invention of Paper": 1
+  "3rd Grade Geography: Exploring Continents and Oceans through Interactive Maps": 1
+  "3rd Grade Geography: Using Google Earth to Discover Continents and Oceans": 1
+  "3rd Grade Geography: Learning about Continents and Oceans with Augmented Reality": 1
+  "3rd Grade Geography: Understanding Continents and Oceans through the Lens of Satellite Imagery": 1
+  "3rd Grade Geography: Uncovering the Secrets of Continents and Oceans with GIS Technology": 1
+  "5th Grade American History: Revolutionary War and the Role of Cannons": 1
+  "5th Grade American History: Navigation Technology during the Revolutionary War": 1
+  "5th Grade American History: The Impact of the Printing Press in the Revolutionary War": 1
+  "5th Grade American History: Revolutionary War and the Concept of Guerrilla Warfare": 1
+  "5th Grade American History: The Role of Espionage in the Revolutionary War": 1
+  "Physical Education: Enhancing Fitness Through Ballet Dance and Movement": 1
+  "Physical Education: Fitness Through Hip-Hop Dance and Heart Rate Monitoring": 1
+  "Physical Education: Aerobic Fitness Through Contemporary Dance and Movement": 1
+  "Physical Education: Fitness Through Dance and Biomechanics Movement Analysis": 1
+  "Physical Education: Fitness Through Dance and Movement Using Virtual Reality Technology": 1
+  "Language Arts: Using Narrative Techniques in Writing about Environmental Issues": 1
+  "Language Arts: Employing Persuasive Rhetoric in Environmental Issues Writing": 1
+  "Language Arts: Exploring Environmental Issues through Reflective Writing": 1
+  "Language Arts: Application of Research Methodology in Writing about Environmental Issues": 1
+  "Language Arts: Utilizing Digital Technologies in Addressing Environmental Issues through Writing": 1
+  "Neuroscience 101: Introduction to Neural Networks with MATLAB": 1
+  "Neuroscience 101: Exploring Neural Networks through Python": 1
+  "Neuroscience 101: Neural Networks and the Application of Deep Learning": 1
+  "Neuroscience 101: Neural Networks Investigation using Machine Learning": 1
+  "Neuroscience 101: Introduction to Neural Networks with Neuroimaging Techniques": 1
+  "History: The Evolution of Trade and Commerce through the Lens of Silk Road": 1
+  "History: The Development of Trade and Commerce: A Deep Dive into the Impact of the Printing Press": 1
+  "History: Unpacking the Evolution of Trade and Commerce: The Role of Bartering Systems ": 1
+  "History: Trade and Commerce Evolution: A Study of the Use of Coins in Ancient Economies": 1
+  "History: The Evolution of Trade and Commerce: An Exploration of Maritime Navigation Tools": 1
+  "Economics: Understanding Macroeconomics Principles and Fiscal Policy through Keynesian Models": 1
+  "Economics: Application of the IS-LM Model in Macroeconomics Principles and Fiscal Policy": 1
+  "Economics: Analyzing Macroeconomics Principles and Fiscal Policy Using Econometrics ": 1
+  "Economics: Macroeconomics Principles, Fiscal Policy, and the Impact of Monetary Policy Tools ": 1
+  "Economics: The Role of GDP in Macroeconomics Principles and Fiscal Policy": 1
+  "Elementary Astronomy: Exploring the Universe with Hubble Space Telescope": 1
+  "Elementary Astronomy: Understanding the Universe through Radio Telescopes": 1
+  "Elementary Astronomy: Navigating the Universe with Spectroscopy": 1
+  "Elementary Astronomy: Deciphering the Universe with Adaptive Optics": 1
+  "Elementary Astronomy: Probing the Universe with Infrared Telescopes": 1
+  "English: Exploring Literature through Symbolism using Psychoanalytic Theory": 1
+  "English: A Deep Dive into Metaphors in Literature with Machine Learning Tools": 1
+  "English: Exploring Shakespearean Literature through Symbolism with Textual Analysis": 1
+  "English: Symbolism in Victorian Literature: An Examination using Digital Humanities": 1
+  "English: Unraveling Symbolism in American Literature through Data Mining Techniques": 1
+  "Language Arts: Enhancing Creative Writing Skills with Storytelling Techniques": 1
+  "Language Arts: Enhancing Creative Writing Skills through the Use of Mind Mapping Tools": 1
+  "Language Arts: Enhancing Creative Writing Skills with the Integration of Digital Storytelling Platforms": 1
+  "Language Arts: Enhancing Creative Writing Skills Using Role Play as a Tool": 1
+  "Language Arts: Enhancing Creative Writing Skills through the Application of the Freewriting Concept": 1
+  "4th Grade Social Studies: Understanding Geography through Map Reading": 1
+  "4th Grade Social Studies: Exploring Geography using Google Earth": 1
+  "4th Grade Social Studies: Navigating Geography with Compass Skills": 1
+  "4th Grade Social Studies: Understanding Geography through Climate Patterns": 1
+  "4th Grade Social Studies: Learning Geography with Geographic Information Systems (GIS)": 1
+  "Music Education: An Introduction to Classical Music through Violin ": 1
+  "Music Education: Exploring Classical Music with Digital Audio Workstations ": 1
+  "Music Education: Classical Music Analysis using Music Notation Software ": 1
+  "Music Education: Introduction to Classical Music through the Lens of Music Theory ": 1
+  "Music Education: Enhancing Appreciation of Classical Music with Virtual Reality Technology": 1
+  "Physics: Exploring the Fundamentals of Motion and Energy through Newton's Laws": 1
+  "Physics: Utilizing Kinematics in the Study of Motion and Energy ": 1
+  "Physics: Analyzing Fundamentals of Motion and Energy with the Help of Quantum Mechanics": 1
+  "Physics: The Role of Thermodynamics in Understanding Motion and Energy ": 1
+  "Physics: Interpreting Motion and Energy Fundamentals through the Lens of Einstein's Theory of Relativity": 1
+  "Chemistry: Analysis of Environmental Toxins and their Impact using Gas Chromatography ": 1
+  "Chemistry: A Study on Environmental Toxins Impact through Nuclear Magnetic Resonance Spectroscopy ": 1
+  "Chemistry: Mass Spectrometry in Understanding Environmental Toxins and their Effects": 1
+  "Chemistry: Infrared Spectroscopy and its Application to Environmental Toxins Study": 1
+  "Chemistry: Chromatographic Techniques in Assessing Environmental Toxins and their Consequences": 1
+  "12th Grade History: The Influence of Cryptography in World War II": 1
+  "12th Grade History: The Role of Radar Technology During World War II": 1
+  "12th Grade History: The Impact of Propaganda in Shaping World War II": 1
+  "12th Grade History: The Significance of Nuclear Technology in World War II's Outcome": 1
+  "12th Grade History: The Concept of Total War and Its Application in World War II": 1
+  "Science: Climate Change and Global Impact: Exploring Predictive Modelling Tools": 1
+  "Science: Climate Change and Global Impact: Mitigating with Renewable Energy Technologies": 1
+  "Science: Climate Change and Global Impact: Carbon Capture and Storage as a Solution": 1
+  "Science: Climate Change and Global Impact: The Role of Nuclear Energy in Climate Change Mitigation": 1
+  "Science: Climate Change and Global Impact: Forest Restoration and Carbon Sequestration Strategies": 1
+  "8th Grade History: Exploring the American Revolution through Primary Sources": 1
+  "8th Grade History: Understanding the American Revolution's Impact on the Constitution": 1
+  "8th Grade History: The American Revolution and its Leaders: A Deep Dive into Revolutionary War Tactics": 1
+  "8th Grade History: The Role of Print Media in the American Revolution and its Leaders": 1
+  "8th Grade History: The American Revolution and its Leaders: Analyzing the Revolution through Cartography": 1
+  "Neuroscience of Computation and Cognitive Processes: An Exploration of fMRI Technology": 1
+  "Neuroscience of Computation and Cognitive Processes: Understanding Neural Networks ": 1
+  "Neuroscience of Computation and Cognitive Processes: An Introduction to Machine Learning ": 1
+  "Neuroscience of Computation and Cognitive Processes: A Study of Brain-Computer Interfaces ": 1
+  "Neuroscience of Computation and Cognitive Processes: The Role of Artificial Intelligence": 1
+  "Philosophy for Kids: An Introduction to Ethics and Morality Using Storytelling Techniques": 1
+  "Philosophy for Kids: Exploring Ethics and Morality Through Role-Playing Games": 1
+  "Interactive Philosophy for Kids: Teaching Ethics and Morality with Digital Tools": 1
+  "Philosophy for Kids: Using Animated Videos to Learn About Ethics and Morality": 1
+  "Philosophy for Kids: An Introduction to Ethics and Morality - Understanding through Case Studies": 1
+  "History: Evolution of the Digital World through the Lens of the Internet": 1
+  "History: The Role of Personal Computers in the Evolution of the Digital World": 1
+  "History: The Evolution of the Digital World: Focusing on Social Media": 1
+  "Impact of Mobile Technology on the Evolution of the Digital World: A Historical Perspective": 1
+  "History: Understanding the Evolution of the Digital World through the Emergence of Artificial Intelligence": 1
+  "5th Grade Social Studies: Exploring Egyptian Pyramids in Ancient Civilizations": 1
+  "5th Grade Social Studies: The Role of Papyrus in Ancient Civilizations": 1
+  "5th Grade Social Studies: Unraveling Hieroglyphics of Ancient Civilizations": 1
+  "5th Grade Social Studies: The Impact of the Wheel in Ancient Civilizations": 1
+  "5th Grade Social Studies: Understanding the Concept of Democracy in Ancient Civilizations": 1
+  "Music: Utilizing Harpsichord in Composition Techniques in Baroque Period": 1
+  "Music: Counterpoint Application in Composition Techniques of Baroque Period": 1
+  "Music: Fugue Form as a Composition Technique in Baroque Period": 1
+  "Music: Using Basso Continuo in Baroque Period Composition Techniques": 1
+  "Music: The Role of Ornamentation in Composition Techniques during the Baroque Period": 1
+  "Philosophy: Enhancing Critical Thinking and Logic Through Syllogisms": 1
+  "Philosophy: Utilizing Deductive Reasoning in Critical Thinking and Logic": 1
+  "Philosophy: An Introduction to Critical Thinking and Logic with a Focus on Fallacies": 1
+  "Philosophy: Exploring Critical Thinking and Logical Argumentation through Truth Tables": 1
+  "Philosophy: The Role of Inductive Reasoning in Critical Thinking and Logic": 1
+  "Home Economics: The Art of Baking with a Stand Mixer": 1
+  "Home Economics: The Art of Baking - Focusing on Bread Machines": 1
+  "Home Economics: The Art of Baking - Understanding Oven Temperatures": 1
+  "Home Economics: The Art of Baking - Mastering the Dough Hook": 1
+  "Home Economics: The Art of Baking - An In-depth Study of Yeast Fermentation": 1
+  "Mathematics: Analysis of Climate Variability using Machine Learning and Python": 1
+  "Mathematics: Application of TensorFlow in Climate Variability Analysis through Machine Learning": 1
+  "Mathematics: Climate Variability Exploration using Machine Learning and Linear Regression Models": 1
+  "Mathematics: Utilization of Deep Learning Techniques in Climate Variability Analysis": 1
+  "Mathematics: Climate Variability Analysis using Machine Learning and K-Nearest Neighbors Algorithm": 1
+  "Social Studies: Exploring the Pyramids of Ancient Egypt": 1
+  "Social Studies: Navigation Techniques in Ancient Maritime Civilizations": 1
+  "Social Studies: The Role of Agriculture in the Growth of Ancient Civilizations": 1
+  "Social Studies: Ancient Roman Architecture: An In-depth Study ": 1
+  "Social Studies: Stone Tools and Their Impact on Ancient Civilizations": 1
+  "Music: The Influence of Piano Improvisation on the Evolution of Jazz in 20th Century America": 1
+  "Music: The Impact of Microphone Technology on Improvisation and the Evolution of Jazz in 20th Century America": 1
+  "Music: The Role of Bebop Improvisation in the Development of Jazz in 20th Century America": 1
+  "Music: The Influence of Sheet Music Notation on Jazz Improvisation and its Evolution in 20th Century America": 1
+  "Music: The Influence of Improvisation and the Phonograph on the Evolution of Jazz in 20th Century America": 1
+  "12th Grade Language Arts: American Literature Analysis Using Symbolism ": 1
+  "12th Grade Language Arts: Exploring American Literature Through Thematic Analysis ": 1
+  "12th Grade Language Arts: American Literature Analysis and Character Development Studies ": 1
+  "12th Grade Language Arts: American Literature Analysis Using Digital Annotation Tools ": 1
+  "12th Grade Language Arts: American Literature Analysis Through the Lens of Historical Context": 1
+  "5th Grade Language Arts: Exploring Character Development through Digital Storytelling": 1
+  "5th Grade Language Arts: Analyzing Plot Structures using Interactive Whiteboards": 1
+  "5th Grade Language Arts: Understanding Setting through Virtual Reality Explorations": 1
+  "5th Grade Language Arts: Studying Theme with E-Books and Online Annotations": 1
+  "5th Grade Language Arts: Enhancing Imagery Interpretation through Graphic Design Software": 1
+  "5th Grade Language Arts: Analyzing Plot Structures using SMART Board's Notebook Software": 1
+  "5th Grade Language Arts: Exploring Plot Structures through Promethean ActivInspire Interactive Whiteboards": 1
+  "5th Grade Language Arts: Using Google Slides for Analyzing Plot Structures on Interactive Whiteboards": 1
+  "5th Grade Language Arts: Investigating Plot Structures using Microsoft Whiteboard on Interactive Screens": 1
+  "5th Grade Language Arts: Analyzing Plot Structures with iPad Pro and Apple Pencil on Interactive Whiteboards": 1
+  "3rd Grade Social Studies: The History of Communication Technology - The Invention of Telegraph": 1
+  "3rd Grade Social Studies: The Evolution of the Telephone in Communication Technology ": 1
+  "3rd Grade Social Studies: The History of Communication Technology - The Impact of the Printing Press": 1
+  "3rd Grade Social Studies: The Advent of the Internet in Communication Technology History": 1
+  "3rd Grade Social Studies: The History of Communication Technology - The Role of Radio Broadcasting": 1
+  "Music Technology: A Comprehensive Study of MIDI Interfaces": 1
+  "Music Technology: Exploring Digital Audio Workstations in Depth": 1
+  "Music Technology: Understanding the Role of Auto-Tune ": 1
+  "Music Technology: A Comprehensive Study of Synthesizers": 1
+  "Music Technology: The Impact of Streaming Services on Music Production": 1
+  "Social Studies: A Deep Dive into French Cuisine using Gastronomic Tools": 1
+  "Social Studies: Unmasking the Secrets of Japanese Food Culture through Umami Concept": 1
+  "Social Studies: Exploring Middle Eastern Food Traditions with the Aid of Fermentation Techniques": 1
+  "Social Studies: Discovering Mediterranean Diets through the Lens of Olive Oil Production": 1
+  "Social Studies: An In-depth Study of Mexican Food Culture Using Maize Cultivation Technology": 1
+  "Elementary Science: Introduction to Aquatic Life Forms through Microscopy": 1
+  "Elementary Science: Exploring Aquatic Life Forms with pH Testing": 1
+  "Elementary Science: Introduction to Aquatic Life Forms using Sonar Technology": 1
+  "Elementary Science: Analysis of Aquatic Life Forms through Water Quality Testing": 1
+  "Elementary Science: Understanding Aquatic Life Forms with DNA Sequencing": 1
+  "Social Studies: Exploration of Cultural Traditions using Anthropological Methods": 1
+  "Social Studies: Global Cultural Traditions through the Lens of Ethnography": 1
+  "Social Studies: Cultural Traditions from the Globe Analyzed via Sociological Theories": 1
+  "Social Studies: Decoding Cultural Traditions Globally using Comparative Analysis": 1
+  "Social Studies: Understanding Cultural Traditions Worldwide through Case Study Research": 1
+  "Philosophy for Kids: Exploring Ethics and Moral Dilemmas through Socratic Dialogue": 1
+  "Philosophy for Kids: Introduction to Ethics and Moral Dilemmas with Role-Playing Scenarios": 1
+  "Philosophy for Kids: Applying Critical Thinking to Ethics and Moral Dilemmas": 1
+  "Philosophy for Kids: Introduction to Ethics and Moral Dilemmas Using Interactive Games": 1
+  "Philosophy for Kids: Introduction to Ethics and Moral Dilemmas through Storytelling Techniques": 1
+  "Science: The Development and Impact of Radar Technology in World War II": 1
+  "Science: Nuclear Technologies and the Atomic Bomb in World War II": 1
+  "Science: Cryptography and the Enigma Machine in World War II": 1
+  "Science: The Evolution of Aircraft Technology during World War II": 1
+  "Science: The Role of Synthetic Fuels and Chemicals in World War II": 1
+  "10th Grade Art: An Introduction to One-Point Perspective Drawing Using Graphite Pencils": 1
+  "10th Grade Art: Mastering Two-Point Perspective Drawing with Charcoal": 1
+  "10th Grade Art: Discovering Three-Point Perspective in Art Using Digital Tools": 1
+  "10th Grade Art: Exploring Aerial Perspective Drawing Techniques with Watercolors": 1
+  "10th Grade Art: Linear Perspective Drawing: From Basic to Advanced Using Ink Pens": 1
+  "Applying the Monte Carlo Simulation in Sports: A Deep Dive into Statistical Strategies": 1
+  "Using R Programming for Sports Analysis: A Study in Statistics and Probability": 1
+  "Exploiting Microsoft Excel in Sports Tactics: A Statistical and Probabilistic Study": 1
+  "Sports Data Analysis with Python: Exploring Statistics and Probability": 1
+  "Utilizing SPSS in Sports: A Comprehensive Study of Statistical and Probabilistic Techniques": 1
+  "5th Grade English: Exploring Literary Genres through Story Mapping": 1
+  "5th Grade English: Understanding Literary Genres using Digital Storytelling Tools": 1
+  "5th Grade English: Discovering Literary Genres with Interactive E-books": 1
+  "5th Grade English: Analyzing Literary Genres through Digital Annotation Tools": 1
+  "5th Grade English: Engaging with Literary Genres through Virtual Reality Storytelling": 1
+  "Environmental Studies: Exploring the Ecosystem using GIS Technology": 1
+  "Environmental Studies: The Ecosystem and its Wonders through the Lens of Remote Sensing": 1
+  "Environmental Studies: Understanding the Ecosystem with Climate Change Modeling": 1
+  "Environmental Studies: The Ecosystem and its Wonders: A Focus on Biodiversity": 1
+  "Environmental Studies: The Ecosystem Examined through Carbon Footprint Analysis": 1
+  "Music: Exploring Rhythms and Melodies in Sports Chants through Ethnomusicological Analysis": 1
+  "Music: The Role of Sound Editing Software in Creating Sports Chants' Rhythms and Melodies": 1
+  "Music: The Impact of MIDI Technology on Rhythms and Melodies in Sports Chants": 1
+  "Music: Decoding Rhythms and Melodies in Sports Chants using Acoustic Spectroscopy": 1
+  "Music: Rhythms and Melodies in Sports Chants: A Study in Digital Audio Workstation Production": 1
+  "6th Grade Mathematics: Exploring Geometry Fundamentals with Pythagorean Theorem": 1
+  "6th Grade Mathematics: Understanding Geometry Basics through AutoCAD": 1
+  "6th Grade Mathematics: Geometry Exploration with Compass and Straightedge Tools": 1
+  "6th Grade Mathematics: Investigating Geometry Principles Using Geogebra": 1
+  "6th Grade Mathematics: Diving into Geometry Fundamentals with Protractor Use": 1
+  "Computer Science 105: Digital Art and Design with Adobe Photoshop": 1
+  "Computer Science 105: Exploring Digital Art and Design through Vector Graphics": 1
+  "Computer Science 105: Digital Art and Design: A Focus on 3D Modeling": 1
+  "Computer Science 105: Digital Art and Design using HTML and CSS": 1
+  "Computer Science 105: An Introduction to Digital Art and Design with Python Programming": 1
+  "7th Grade Mathematics: Understanding Geometry with Pythagorean Theorem": 1
+  "7th Grade Mathematics: Exploring Geometry and Shapes through AutoCAD": 1
+  "7th Grade Mathematics: Geometry and Shapes with Compass and Straightedge": 1
+  "7th Grade Mathematics: An In-depth Study of Geometry using Geogebra": 1
+  "7th Grade Mathematics: Trigonometry in Geometry and Shapes": 1
+  "Social Studies: Analyzing Global Food Habits and Culture using Ethnographic Research Techniques": 1
+  "Social Studies: Applying GIS Technology to Study Food Habits and Culture Globally": 1
+  "Social Studies: A Statistical Approach to Understanding Food Habits and Culture Worldwide": 1
+  "Social Studies: Food Habits and Cultural Practices Around the World: A Comparative Study Using Archival Research": 1
+  "Social Studies: Exploring Global Food Culture through the Lens of Digital Anthropology": 1
+  "6th Grade Science: Exploring Earth's Ecosystems through Microscopic Organisms": 1
+  "6th Grade Science: Understanding Earth's Ecosystems through Satellite Imaging": 1
+  "6th Grade Science: The Basics of Earth's Ecosystems and the Role of Photosynthesis": 1
+  "6th Grade Science: Analyzing Earth's Ecosystems using Data Collection Technology": 1
+  "6th Grade Science: Discovering Earth's Ecosystems through the Study of Biogeochemical Cycles": 1
+  "Computer Science: Intro to Python Coding and Programming": 1
+  "Computer Science: Intro to Java Coding and Programming": 1
+  "Computer Science: Intro to Web Development with HTML and CSS": 1
+  "Computer Science: Intro to Database Management with SQL": 1
+  "Computer Science: Intro to App Development with Swift Programming": 1
+  "12th Grade History: The Role of Railroads in the American Civil War": 1
+  "12th Grade History: The Impact of Telegraph Communication during the American Civil War": 1
+  "12th Grade History: Naval Warfare in the American Civil War": 1
+  "12th Grade History: The Concept of Total War in the American Civil War": 1
+  "12th Grade History: The Role of Photography in the American Civil War": 1
+  "Kindergarten Art: Exploring Colors and Shapes through Watercolor Painting": 1
+  "Kindergarten Art: Understanding Colors and Shapes using Digital Art Software": 1
+  "Kindergarten Art: Discovering Colors and Shapes through Collage Making": 1
+  "Kindergarten Art: Learning Colors and Shapes through Clay Modelling": 1
+  "Kindergarten Art: Studying Colors and Shapes with Chalk Art on Blackboard": 1
+  "Physics 101: The Concept of Quantum Mechanics and the Schrödinger Equation": 1
+  "Physics 101: Quantum Mechanics - A Deep Dive into Heisenberg's Uncertainty Principle": 1
+  "Physics 101: Quantum Mechanics and the Application of Quantum Computing": 1
+  "Physics 101: Quantum Mechanics - Understanding the Role of the Quantum Field Theory": 1
+  "Physics 101: Quantum Mechanics - The Exploration of the Quantum Entanglement Phenomenon": 1
+  "9th Grade Biology: Exploring Cell Structures through Microscopy": 1
+  "9th Grade Biology: Understanding Cell Structures using DNA Sequencing": 1
+  "9th Grade Biology: Cell Structures Analysis with Gel Electrophoresis": 1
+  "9th Grade Biology: Studying Cell Structures through Gene Editing Techniques": 1
+  "9th Grade Biology: Cell Structures Examination Using Spectrophotometry": 1
+  "Elementary Education: Enhancing Reading Comprehension through Phonics": 1
+  "Elementary Education: The Role of E-Books in Boosting Reading Comprehension": 1
+  "Elementary Education: Using Interactive Whiteboards for Improved Reading Comprehension": 1
+  "Elementary Education: The Impact of Text-to-Speech Technology on Reading Comprehension": 1
+  "Elementary Education: Enhancing Reading Comprehension with the SQ3R Technique": 1
+  "Neuroscience: An Introduction to the Human Brain through Functional MRI": 1
+  "Neuroscience: Exploring the Human Brain with EEG Technology": 1
+  "Neuroscience: An Introduction to the Human Brain using Diffusion Tensor Imaging ": 1
+  "Neuroscience: Understanding the Human Brain through Neuroimaging Techniques ": 1
+  "Neuroscience: An In-Depth Study of the Human Brain with Positron Emission Tomography": 1
+  "Introduction to Bioinformatics: Exploring Genomic Data with Python and Biopython": 1
+  "Introduction to Bioinformatics: A Journey with Python and Machine Learning Applications": 1
+  "Introduction to Bioinformatics: Understanding Protein Structures with Python and PDB": 1
+  "Introduction to Bioinformatics: Sequence Alignment and Phylogenetics with Python and ClustalW": 1
+  "Introduction to Bioinformatics: Mastering Genomic Databases with Python and SQL.": 1
+  "First Grade Social Studies: Exploring Local Communities through Map Reading": 1
+  "First Grade Social Studies: Introduction to Local Communities with Digital Storytelling": 1
+  "First Grade Social Studies: Studying Local Communities using Virtual Reality Tours": 1
+  "First Grade Social Studies: Understanding Local Communities through Census Data Analysis": 1
+  "First Grade Social Studies: Introduction to Local Communities using Interactive Smartboard Activities": 1
+  "Language Arts: Utilizing Mind-Mapping in Decoding Literary Structure and Sequence": 1
+  "Language Arts: Applying Text Annotation Tools for Decoding Literary Structure and Sequence": 1
+  "Language Arts: Decoding Literary Structure and Sequence with Plot Diagram Techniques": 1
+  "Language Arts: Using Digital Highlighters in Decoding Literary Structure and Sequence": 1
+  "Language Arts: Decoding Literary Structure and Sequence: An Approach Through Storyboarding Techniques": 1
+  "Language Arts 135: The Influence of the Printing Press in Literature": 1
+  "Language Arts 135: Examining the Role of Digital Media in Modern Literature": 1
+  "Language Arts 135: The Impact of E-books on Literary Consumption and Interpretation": 1
+  "Language Arts 135: Internet and its Impact on Literature Distribution and Accessibility": 1
+  "Language Arts 135: The Role of Typewriters in 20th Century Literature": 1
+  "7th Grade Music: Discovering Classical Composers through Piano": 1
+  "7th Grade Music: Exploring Classical Composers with Music Software": 1
+  "7th Grade Music: Understanding Classical Composers using Audio Analysis": 1
+  "7th Grade Music: Discovering Classical Composers with Virtual Reality Technology": 1
+  "7th Grade Music: Exploring Classical Composers through Music Theory Concepts": 1
+  "History: The Evolution of the Digital World: A Comprehensive Study on Facebook's Role in Social Media Evolution": 1
+  "History: The Evolution of the Digital World: Decoding the Impact of YouTube on Social Media Progression": 1
+  "History: The Evolution of the Digital World: Understanding Twitter's Influence on Social Media Development": 1
+  "History: The Evolution of the Digital World: Focusing on Social Media and the Power of Instagram": 1
+  "History: The Evolution of the Digital World: An In-depth Analysis of Snapchat's Contribution to Social Media Advancements": 1
+  "English: Examining Symbolism in American Literature using Python's Natural Language Processing Techniques": 1
+  "English: Decoding Symbolism in American Literature through Text Analysis in R Programming": 1
+  "English: Unveiling Symbolism in American Literature with Machine Learning Algorithms in Data Mining": 1
+  "English: Deconstructing Symbolism in American Gothic Literature through Big Data Analysis": 1
+  "English: Scrutinizing Symbolism in 19th Century American Literature through Sentiment Analysis Tools": 1
+  "Art Education: Understanding Cubism through Digital Illustration": 1
+  "Art Education: Discovering Modern Art through Mixed Media Techniques": 1
+  "Art Education: Exploring the World of Modern Art Using Virtual Reality": 1
+  "Art Education: Unpacking Abstract Expressionism with 3D Printing": 1
+  "Art Education: Navigating Pop Art through Interactive Software": 1
+  "8th Grade Language Arts: Exploring Shakespeare’s Impact in the Age of the Printing Press": 1
+  "8th Grade Language Arts: Gutenberg's Printing Press and its Influence on Literature": 1
+  "8th Grade Language Arts: Dissecting the Effect of Typography in the Printing Press Era Literature": 1
+  "8th Grade Language Arts: The Impact of Woodblock Printing on Renaissance Literature": 1
+  "8th Grade Language Arts: The Role of Movable Type in the Proliferation of Literature during the Press Printing Age": 1
+  "6th Grade Music: Exploring the Lute in the Sounds of the Middle Ages": 1
+  "6th Grade Music: The Role of Gregorian Chants in the Middle Ages": 1
+  "6th Grade Music: Sounds of the Middle Ages through the Lens of Sacred Music": 1
+  "6th Grade Music: Understanding the Middle Ages through the Harpsichord": 1
+  "6th Grade Music: The Influence of the Hurdy-Gurdy in Middle Ages Music": 1
+  "Arithmetic for Everyday Life: Mastering Financial Transactions with Excel": 1
+  "Arithmetic for Everyday Life: Understanding Financial Transactions through Blockchain Technology": 1
+  "Arithmetic for Everyday Life: Decrypting Financial Transactions with Cryptography": 1
+  "Arithmetic for Everyday Life: Streamlining Financial Transactions with PayPal": 1
+  "Arithmetic for Everyday Life: Simplifying Financial Transactions using QuickBooks": 1
+  "1st Grade Basic Skills: Introduction to Reading and Writing through Phonics": 1
+  "1st Grade Basic Skills: Introduction to Reading and Writing with Interactive Whiteboard Technology": 1
+  "1st Grade Basic Skills: Introduction to Reading and Writing using ABCmouse Educational Software": 1
+  "1st Grade Basic Skills: Introduction to Reading and Writing with Focus on Sight Words ": 1
+  "1st Grade Basic Skills: Introduction to Reading and Writing using Montessori Methodology": 1
+  "12th Grade Science: Dissecting Anatomy with Virtual Reality Tools": 1
+  "12th Grade Science: Mapping the Human Body with MRI Technology": 1
+  "12th Grade Science: Exploring Cellular Biology within the Human Body": 1
+  "12th Grade Science: Unraveling the Human Genome - A Detailed Study": 1
+  "12th Grade Science: Investigating the Human Body through Microscopy Techniques": 1
+  "Introduction to Fortran Programming: A Beginner's Course on Data Structures": 1
+  "Introduction to Fortran Programming with Eclipse: A Beginner's Course": 1
+  "Introduction to Fortran Programming: A Beginner's Course on Computational Fluid Dynamics ": 1
+  "Introduction to Fortran Programming with GNU Fortran Compiler: A Beginner's Course ": 1
+  "Introduction to Fortran Programming: A Beginner's Course on Parallel Computing": 1
+  "2nd Grade Geography: Interactive Exploration of Continents and Oceans with Google Earth": 1
+  "2nd Grade Geography: Learning Global Landforms and Water Bodies through Virtual Reality": 1
+  "2nd Grade Geography: Understanding Continents and Oceans using Physical Globes": 1
+  "2nd Grade Geography: Navigating Continents and Oceans with Geospatial Data": 1
+  "2nd Grade Geography: Discovering Continents and Oceans through Atlas Studies": 1
+  "Philosophy: The Influence of Socratic Method on Contemporary Ethical Theory": 1
+  "Philosophy: The Impact of Aristotelian Logic on Modern Moral Dilemmas": 1
+  "Philosophy: The Role of Platonic Dualism in Shaping Contemporary Ethics": 1
+  "Philosophy: The Consequences of Stoic Philosophy on Modern Ethical Systems": 1
+  "Philosophy: Tracing the Footprints of Epicureanism in Contemporary Moral Philosophy": 1
+  "1st Grade Life Skills: Understanding Personal Hygiene through Tooth Brushing": 1
+  "1st Grade Life Skills: Learning Personal Hygiene with Hand Sanitizer Use": 1
+  "1st Grade Life Skills: The Importance of Soap in Personal Hygiene": 1
+  "1st Grade Life Skills: Mastering Personal Hygiene Using Bathing Techniques": 1
+  "1st Grade Life Skills: Incorporating Tissue Paper in Personal Hygiene Practices": 1
+  "Physics: Utilizing Pendulums to Discover Forces and Motion Through Simple Experiments": 1
+  "Physics: Decoding Forces and Motion with Accelerometers in Simple Experiments": 1
+  "Physics: Exploring Forces and Motion with Newton's Laws in Simple Experiments": 1
+  "Physics: Discovering Forces and Motion Through Simple Experiments Using String Theory": 1
+  "Physics: Unveiling Forces and Motion with Thermodynamics in Simple Experiments": 1
+  "4th Grade History: Columbus' Use of the Astrolabe in the Discovery of America": 1
+  "4th Grade History: The Role of the Compass in the Discovery of America": 1
+  "4th Grade History: The Impact of Maritime Navigation on the Discovery of America": 1
+  "4th Grade History: Discovery of America - A Study of Ancient Cartography": 1
+  "4th Grade History: The Influence of the Quadrant in the Discovery of America": 1
+  "Exploring Ethics with Fables: A Philosophy Course for Kids": 1
+  "Philosophy for Kids: Morality and Ethics through Storytelling Techniques": 1
+  "Using Interactive Games to Teach Philosophy and Ethics to Kids": 1
+  "Philosophy for Kids: An Introduction to Ethics and Morality through Animated Videos": 1
+  "Utilizing Digital Tools for Teaching Philosophy and Ethics to Children": 1
+  "Mathematical Magic: Exploring Geometry with Compass and Straightedge": 1
+  "Mathematical Magic: Fun with Number Theory and Python Coding": 1
+  "Mathematical Magic: Understanding Fractals with Graphic Design Tools": 1
+  "Mathematical Magic: Exploring Probability with Spreadsheets": 1
+  "Mathematical Magic: Fun with Algebra and Graphing Calculators": 1
+  "Second Grade Art: Introduction to Color Mixing with Watercolors": 1
+  "Second Grade Art: Exploring Color Mixing through Digital Technology": 1
+  "Second Grade Art: Discovering Color Mixing with Acrylic Paints": 1
+  "Second Grade Art: Introduction to Color Mixing using Color Wheels": 1
+  "Second Grade Art: Basics of Color Mixing with Oil Pastels": 1
+  "2nd Grade Mathematics: Exploring Addition and Subtraction with Number Lines": 1
+  "2nd Grade Mathematics: Mastering Multiplication Tables through Interactive Games": 1
+  "2nd Grade Mathematics: Discovering Fractions using Physical Manipulatives": 1
+  "2nd Grade Mathematics: Understanding Place Values with Digital Tools": 1
+  "2nd Grade Mathematics: Learning Geometry Concepts through Drawing Tools": 1
+  "Logic in Practice: The Impact of Python Programming in Algorithms and Modern Society": 1
+  "The Role of Machine Learning in Shaping Algorithms and Contemporary Society": 1
+  "GitHub and Collaboration: The Relevance of Algorithms in Technological Societal Advancements": 1
+  "Logic in Practice: The Influence of Big Data on Algorithm Development in Modern Society": 1
+  "Cryptography and Security: The Significance of Algorithms in Today's Digital Society": 1
+  "Mathematics: Exploring Euclidean Geometry and Its Application in Architectural Design": 1
+  "Mathematics: The Impact of Pythagorean Theorem on Architectural Design": 1
+  "Mathematics: Utilization of CAD Technology in Geometry-Based Architectural Design": 1
+  "Mathematics: The Role of Geometric Transformations in Contemporary Architectural Design": 1
+  "Mathematics: The Intersection of Trigonometry and Geometry in Architectural Design": 1
+  "7th Grade Physical Education: Mastering Basketball with Teamwork Strategies": 1
+  "7th Grade Physical Education: Enhancing Soccer Skills through Team Sports": 1
+  "7th Grade Physical Education: Building Endurance with Track and Field Team Sports": 1
+  "7th Grade Physical Education: Learning Volleyball Techniques in Team Sports": 1
+  "7th Grade Physical Education: Embracing Team Sports with a Focus on Baseball Tactics": 1
+  "Chemistry 105: Acoustics in Music - The Chemistry of Sound with Spectroscopy": 1
+  "Chemistry 105: Sonorous Reactions - A Deep Dive into the Chemistry of Sound and Music with Oscilloscopes": 1
+  "Chemistry 105: Harmonious Elements - Exploring Sound and Music through the Lens of Chemical Thermodynamics": 1
+  "Chemistry 105: The Chemistry of Sound Waves and Music - A Study with Fourier Transforms": 1
+  "Chemistry 105: Resonance and Timbre - Understanding the Chemistry of Sound and Music through Acoustic Resonance.": 1
+  "Mathematics of Digital Media: An Integrated Approach to Algorithms": 1
+  "Exploring Vector Spaces: Mathematics of Digital Media": 1
+  "Mathematics of Digital Media: Understanding Fourier Transforms": 1
+  "Mathematics of Digital Media: An Integrated Approach with Python Programming": 1
+  "Mathematics of Digital Media: An In-depth Study of Cryptography Techniques": 1
+  "6th Grade Music: Discovering Rhythm with Metronome Use": 1
+  "6th Grade Music: Exploring Melody through Piano Techniques": 1
+  "6th Grade Music: Understanding Rhythm and Melody with Digital Audio Workstations": 1
+  "6th Grade Music: Mastering Rhythm using Drum Machines": 1
+  "6th Grade Music: Investigating Melody with Music Notation Software": 1
+  "6th Grade Social Studies: Unveiling Ancient Civilizations through Archaeology": 1
+  "6th Grade Social Studies: Exploring Ancient Civilizations using Geographic Information Systems": 1
+  "6th Grade Social Studies: Decoding Ancient Civilizations through Cryptography": 1
+  "6th Grade Social Studies: Understanding Ancient Civilizations via Carbon Dating ": 1
+  "6th Grade Social Studies: Navigating Ancient Civilizations with Satellite Imagery": 1
+  "Fourth Grade Mathematics: Mastering Multiplication and Division using Abacus": 1
+  "Fourth Grade Mathematics: Mastering Multiplication and Division with Digital Learning Apps": 1
+  "Fourth Grade Mathematics: Mastering Multiplication and Division through Montessori Materials": 1
+  "Fourth Grade Mathematics: Mastering Multiplication and Division with Interactive Whiteboards": 1
+  "Fourth Grade Mathematics: Mastering Multiplication and Division using the Grid Method": 1
+  "4th Grade Music: Exploring Rhythms and Melodies with Hand Drums": 1
+  "4th Grade Music: Discovering Rhythms and Melodies using Digital Audio Workstations": 1
+  "4th Grade Music: Understanding Rhythms and Melodies through the Piano ": 1
+  "4th Grade Music: Learning Rhythmic Patterns and Melodies with a Metronome": 1
+  "4th Grade Music: Mastering Rhythms and Melodies using Music Composition Software": 1
+  "9th Grade Music: Mastering Musical Notation through Piano": 1
+  "9th Grade Music: Understanding Musical Notation using Digital Audio Workstations": 1
+  "9th Grade Music: Exploring Musical Notation with the Violin": 1
+  "9th Grade Music: Deciphering Musical Notation through Music Theory Software": 1
+  "9th Grade Music: Grasping Musical Notation through the Study of Sheet Music": 1
+  "Geography: Utilizing GIS to Map the Global Food Resources": 1
+  "Geography: Harnessing Satellite Imagery to Identify World's Food Resources": 1
+  "Geography: Employing Data Analysis in Mapping Global Food Resources": 1
+  "Geography: Leveraging Drone Technology for Food Resources Mapping": 1
+  "Geography: Using Remote Sensing Technology to Map World's Food Resources": 1
+  "Biology: Understanding Human Adaptation to Climate Change through Genomic Studies": 1
+  "Biology: Exploring Human Adaptation to Environmental Shifts Using Bioinformatics": 1
+  "Biology: Investigating Human Response to Ecological Changes with DNA Sequencing Technology": 1
+  "Biology: Tracing Human Adaptation to Environmental Alterations through Population Genetics": 1
+  "Biology: Examining Human Adaptation to Environmental Changes through the Lens of Evolutionary Biology": 1
+  "10th Grade Social Studies: Analyzing the Role of Watchtowers in the Great Wall as a Defense Technology in Ancient China": 1
+  "10th Grade Social Studies: Exploring the Significance of Beacon Towers: A Key Defense Technology of the Great Wall in Ancient China": 1
+  "10th Grade Social Studies: The Impact of Parapet Walls in the Great Wall's Defense System in Ancient China": 1
+  "10th Grade Social Studies: The Strategic Role of Fortresses in the Defense Mechanism of the Great Wall in Ancient China": 1
+  "10th Grade Social Studies: Understanding the Use of Signal Fires in the Defense Infrastructure of the Great Wall in Ancient China": 1
+  "Young Philosophers: An Introduction to Critical Thinking via Cognitive Biases Using the Socratic Method": 1
+  "Young Philosophers: An Exploration of Cognitive Biases via Digital Technology in Critical Thinking": 1
+  "Young Philosophers: Applying Bayesian Reasoning to Identify Cognitive Biases in Critical Thinking ": 1
+  "Young Philosophers: Unpacking Cognitive Biases through Critical Thinking and Mind Mapping Techniques ": 1
+  "Young Philosophers: Understanding Cognitive Biases in Critical Thinking through the Lens of Formal Logic": 1
+  "9th Grade Language Arts: Exploring Metaphors in Poetry using Google Classroom": 1
+  "9th Grade Language Arts: Understanding Similes in Poetry with Smartboard Activities": 1
+  "9th Grade Language Arts: Analyzing Alliteration in Poetry through Collaborative Online Platforms": 1
+  "9th Grade Language Arts: Interpreting Personification in Poetry via Interactive eBooks": 1
+  "9th Grade Language Arts: Uncovering Imagery in Poetry through Digital Annotation Tools": 1
+  "Philosophy: A Detailed Study of Immanuel Kant's Ethics and Human Nature": 1
+  "Philosophy: Introduction to Ethics and Human Nature through the Lens of Utilitarianism": 1
+  "Philosophy: Exploring Human Nature and Ethics through Aristotle's Virtue Ethics": 1
+  "Philosophy: Analyzing Ethics and Human Nature using Nietzsche's Will to Power Concept": 1
+  "Philosophy: Unpacking Human Nature and Ethics with the Socratic Method": 1
+  "Elementary Astronomy: Exploring the Universe with Hubble Space Telescope": 1
+  "Elementary Astronomy: Investigating the Cosmos with Infrared Technology and Spectroscopy": 1
+  "Elementary Astronomy: Delving into the Universe with Infrared Telescopes and Radio Astronomy": 1
+  "Elementary Astronomy: Uncovering Cosmic Mysteries with Infrared Telescopes and Dark Matter Concepts": 1
+  "Elementary Astronomy: Probing the Universe with Infrared Telescopes and the Doppler Shift Principle": 1
+  "Art Appreciation: An Introduction to Renaissance Art Focusing on Fresco Painting Techniques": 1
+  "Art Appreciation: Exploring The Use of Chiaroscuro in Renaissance Art": 1
+  "Art Appreciation: A Deep Dive into the Perspective Drawing Techniques of Renaissance Art": 1
+  "Art Appreciation: Understanding the Role of the Printing Press in the Renaissance Art Movement ": 1
+  "Art Appreciation: The Influence of Pythagorean Proportions in Renaissance Art": 1
+  "Neuroscience: Fundamental Concepts and Brain Anatomy through MRI Imaging": 1
+  "Neuroscience: Exploring Fundamental Concepts and Brain Anatomy using EEG Technology": 1
+  "Neuroscience: Fundamental Concepts and Brain Anatomy with Focus on PET Scans": 1
+  "Neuroscience: Decoding Fundamental Concepts and Brain Anatomy through fMRI": 1
+  "Neuroscience: In-depth Study of Fundamental Concepts and Brain Anatomy using Diffusion Tensor Imaging": 1
+  "3rd Grade Science: Photosynthesis in Plants and Animal Habitats": 1
+  "3rd Grade Science: Exploring Plant Cell Structure with Microscopes": 1
+  "3rd Grade Science: Ecosystem Interactions: Plants, Animals, and The Food Chain": 1
+  "3rd Grade Science: Using Technology to Study Animal Behavior": 1
+  "3rd Grade Science: Plant Reproduction and Cross-Pollination Techniques": 1
+  "Economics: The Role of Fiscal Policy": 1
+  "Economics: An In-depth Study of Supply and Demand": 1
+  "Economics: Money Matters and The Blockchain Technology": 1
+  "Economics: Understanding Inflation and Deflation": 1
+  "Economics: A Focus on Monetary Theory and Cryptocurrencies": 1
+  "Third Grade Geography: Understanding Basic Landforms and their Characteristics using Topographic Maps": 1
+  "Third Grade Geography: Exploring Basic Landforms and their Characteristics through Google Earth": 1
+  "Third Grade Geography: Studying Basic Landforms and their Characteristics with GIS (Geographic Information System)": 1
+  "Third Grade Geography: Learning Basic Landforms and their Characteristics using 3D Modeling": 1
+  "Third Grade Geography: Analyzing Basic Landforms and their Characteristics through Satellite Imagery": 1
+  "9th Grade Social Studies: Exploring Cultural Diversity Through the Lens of Anthropology": 1
+  "9th Grade Social Studies: Understanding Global Cultures Through Geographic Information System (GIS)": 1
+  "9th Grade Social Studies: Decoding Cultures Around the World with Linguistic Tools": 1
+  "9th Grade Social Studies: Evaluating Global Cultures Through Ethnographic Fieldwork": 1
+  "9th Grade Social Studies: Analyzing World Cultures Through Historical Artifacts": 1
+  "Science: Understanding Life through Biology using Microscopy Techniques": 1
+  "Science: Exploring Genetics in Life through Biology": 1
+  "Science: Understanding Life through Biology with DNA Sequencing Technologies": 1
+  "Science: Examining Cellular Structures in Biology using Electron Microscopy": 1
+  "Science: Understanding Life through Biology and Genomic Analysis": 1
+  "6th Grade Social Studies: Exploring World Cultures through Digital Mapping": 1
+  "6th Grade Social Studies: Understanding World Cultures using Interactive Timelines": 1
+  "6th Grade Social Studies: Investigating World Cultures with Virtual Reality": 1
+  "6th Grade Social Studies: Delving into World Cultures through Anthropological Concepts": 1
+  "6th Grade Social Studies: Understanding World Cultures via Comparative Religion Studies": 1
+  "Health Education: The Role of Virtual Reality in Online Safety and Digital Wellbeing": 1
+  "Health Education: Cybersecurity Measures and Digital Wellbeing in an Online Environment": 1
+  "Health Education: Promoting Digital Wellbeing through Effective Use of Parental Controls": 1
+  "Health Education: Online Safety and Mental Health: The Impact of Social Media": 1
+  "Health Education: Digital Wellbeing in the Age of Artificial Intelligence: Privacy and Online Safety": 1
+  "Basic Computer Programming: An Introductory Guide to Python and the Use of PyCharm IDE": 1
+  "Python for Beginners: Exploring Fundamentals with Jupyter Notebook": 1
+  "Mastering Python: A Beginner's Guide to Coding and Data Visualisation using Matplotlib": 1
+  "A Starter's Guide to Python: Understanding Object-Oriented Programming": 1
+  "Introduction to Python Programming: Learning Basic Concepts with Anaconda Navigator": 1
+  "4th Grade Mathematics: Introduction to Algebra with Abacus": 1
+  "4th Grade Mathematics: Exploring Algebra through Smartboard Technology": 1
+  "4th Grade Mathematics: Introduction to Algebra using Graphing Calculators": 1
+  "4th Grade Mathematics: Foundations of Algebra with Fractions Concepts": 1
+  "4th Grade Mathematics: Algebra Introduction with the aid of Math Apps": 1
+  "4th Grade Science: Exploring the Solar System with Telescopes": 1
+  "4th Grade Science: Understanding the Solar System through Star Charts": 1
+  "4th Grade Science: Discovering the Solar System with Space Probes": 1
+  "4th Grade Science: Unraveling the Solar System's Mysteries through Satellite Imagery": 1
+  "4th Grade Science: The Solar System and Its Planets: A Journey with 3D Modeling Software.": 1
+  "History: Dawn of the Digital Revolution - The Impact of the Personal Computer": 1
+  "History: Dawn of the Digital Revolution - The Emergence of the Internet": 1
+  "History: Dawn of the Digital Revolution - The Influence of Video Game Technology ": 1
+  "History: Dawn of the Digital Revolution - The Role of Artificial Intelligence": 1
+  "History: Dawn of the Digital Revolution - The Evolution of Mobile Communication": 1
+  "Physics for Little Minds: Exploring Pulleys and Their Function": 1
+  "Physics for Little Minds: Understanding Levers and Their Mechanics": 1
+  "Physics for Little Minds: Diving into Wheels and Axles and Their Operation": 1
+  "Physics for Little Minds: A Study of Inclined Planes and Their Uses": 1
+  "Physics for Little Minds: Unraveling the Mystery of Screws and Their Applications": 1
+  "Music Appreciation for Kids: Exploring Rhythm and Melody with Bongo Drums ": 1
+  "Music Appreciation for Kids: Dive into Rhythm with the Use of the Metronome ": 1
+  "Music Appreciation for Kids: Fostering Creativity through Melody with Xylophones ": 1
+  "Music Appreciation for Kids: Understanding Tempo with Tambourines ": 1
+  "Music Appreciation for Kids: Learning Beat Patterns with Djembe Drums": 1
+  "Elementary Mathematics: Grasping Geometry with Graph Paper using Protractors": 1
+  "Elementary Mathematics: Grasping Geometry with Graph Paper and Rulers": 1
+  "Elementary Mathematics: Grasping Geometry with Graph Paper through Pythagorean Theorem": 1
+  "Elementary Mathematics: Grasping Geometry with Graph Paper utilizing Digital Geometry Software": 1
+  "Elementary Mathematics: Grasping Geometry with Graph Paper through the Concept of Angles": 1
+  "Music: Composing Music Inspired by Outdoor Sounds Using GarageBand": 1
+  "Music: Crafting Soundscapes Inspired by Nature with Ableton Live": 1
+  "Music: Utilizing Field Recordings to Compose Outdoor-Inspired Music in Logic Pro": 1
+  "Music: Creating Ambient Music Inspired by Outdoor Sounds Using Audacity ": 1
+  "Music: Composing and Mixing Nature-inspired Music Using Pro Tools": 1
+  "1st Grade Art: Exploring Primary Colors through Watercolor Painting": 1
+  "1st Grade Art: Understanding Color Theory with Crayons": 1
+  "1st Grade Art: Discovering Colors using Digital Art Tools ": 1
+  "1st Grade Art: Learning About Color Mixing with Acrylic Paints": 1
+  "1st Grade Art: Creating Color Wheel with Colored Pencils": 1
+  "3rd Grade Mathematics: Multiplication and Division using Number Lines": 1
+  "3rd Grade Mathematics: An Introduction to Multiplication and Division with Fractions": 1
+  "3rd Grade Mathematics: Exploring Multiplication and Division through Arrays": 1
+  "3rd Grade Mathematics: Multiplication and Division Mastery with Digital Flashcards": 1
+  "3rd Grade Mathematics: Interactive Multiplication and Division using Math Apps": 1
+  "10th Grade Physical Education: The Science of Nutrition and Exercise Using MyFitnessPal App": 1
+  "10th Grade Physical Education: Exploring the Biochemistry of Nutrition and Exercise": 1
+  "10th Grade Physical Education: The Science of Nutrition and Exercise with Fitbit Technology": 1
+  "10th Grade Physical Education: The Science of Nutrition and Exercise: A Study on Calorie Counting": 1
+  "10th Grade Physical Education: The Science of Nutrition and Exercise Through the Lens of Body Mass Index (BMI)": 1
+  "9th Grade Social Studies: Ancient Civilizations and the Use of Papyrus": 1
+  "9th Grade Social Studies: Ancient Civilizations and the Concept of Democracy": 1
+  "9th Grade Social Studies: Ancient Civilizations and the Development of the Wheel": 1
+  "9th Grade Social Studies: Ancient Civilizations and the Innovation of Aqueducts": 1
+  "9th Grade Social Studies: Ancient Civilizations and the Introduction of the Plow": 1
+  "3rd Grade Music: Exploring Patterns in Rhythm through Hand Drums": 1
+  "3rd Grade Music: Understanding Rhythmic Patterns with Digital Music Software": 1
+  "3rd Grade Music: Discovering Patterns in Rhythm with Metronomes ": 1
+  "3rd Grade Music: Patterns in Rhythm: A Study of Musical Notation ": 1
+  "3rd Grade Music: Applying Patterns in Rhythm using Keyboard Synthesizers": 1
+  "8th Grade Language Arts: Exploring Metaphors in Poetry with Traditional Analysis": 1
+  "8th Grade Language Arts: Understanding Rhyme Schemes in Poetry using Digital Tools": 1
+  "8th Grade Language Arts: Unveiling Symbolism in Poetry through Collaborative Discussion": 1
+  "8th Grade Language Arts: Analyzing Tone in Poetry with Interactive Online Platforms": 1
+  "8th Grade Language Arts: Investigating Imagery in Poetry using Multi-Media Technologies": 1
+  "Economics: The Financial Impact of Art Markets through Blockchain Technology": 1
+  "Economics: Exploring the Effect of AI on the Financial Impact of Art Markets ": 1
+  "Economics: The Financial Impact of Art Markets and the Role of Cryptocurrency": 1
+  "Economics: The Impact of Big Data Analytics on the Financial Stability of Art Markets": 1
+  "Economics: The Financial Impact of Art Markets: A Focus on NFT (Non-fungible token) Technology": 1
+  "2nd Grade Art: Exploring Colors and Shapes with Watercolors": 1
+  "2nd Grade Art: Using Clay to Explore Shapes and Colors": 1
+  "2nd Grade Art: Exploring Colors and Shapes through Digital Art Software": 1
+  "2nd Grade Art: Understanding Colors and Shapes with Collage Techniques": 1
+  "2nd Grade Art: Discovering Colors and Shapes through Printmaking Technology": 1
+  "Logic: Utilizing Semiotics to Analyze Symbolism in Picasso's Art": 1
+  "Logic: Applying Visual Analysis Tools to Interpret Symbolism in Renaissance Art": 1
+  "Logic: Using Augmented Reality to Analyze Abstract Concepts in Contemporary Art": 1
+  "Logic: Employing Machine Learning in Decoding Symbolism in Abstract Expressionist Art": 1
+  "Logic: Leveraging Digital Image Processing to Uncover Symbolism in Impressionist Art": 1
+  "Mathematics: Calculating Calories and Nutritional Values using MyFitnessPal App": 1
+  "Advanced Nutrition Analysis: Leveraging Excel in Calculating Calories and Nutritional Values": 1
+  "Mathematics and Dietetics: Using Python for Accurate Calorie and Nutritional Value Calculations": 1
+  "Mathematics of Health: Calorie and Nutritional Value Calculation with MATLAB": 1
+  "Food Engineering: Mathematical Analysis of Calories and Nutritional Values using SPSS.": 1
+  "Language Arts: The Rhetoric of Economic Policies Through the Lens of Blockchain Technology": 1
+  "Language Arts: Examining the Rhetoric of Economic Policies Using Regression Analysis": 1
+  "Language Arts: The Rhetoric of Economic Policies: A Focus on Quantitative Easing ": 1
+  "Language Arts: A Study on the Rhetoric of Economic Policies Through the Use of Big Data Analytics": 1
+  "Language Arts: The Rhetoric of Economic Policies and its Implications: An Evaluation Using Game Theory": 1
+  "Introduction to Mathematics: Learning Algebra and Equations with Python and Jupyter Notebook": 1
+  "Introduction to Mathematics: Understanding Calculus through Python and Matplotlib": 1
+  "Introduction to Mathematics: Exploring Geometry with Python and Numpy": 1
+  "Introduction to Mathematics: Grasping Trigonometry and Equations using Python and Pandas": 1
+  "Introduction to Mathematics: Navigating Differential Equations through Python and Scipy": 1
+  "Musical Harmony: Analyzing Classical Music Through Melodyne Software": 1
+  "Musical Harmony: Utilizing MIDI Technology in Understanding Classical Music": 1
+  "Musical Harmony: Decoding Classical Music with Spectrogram Analysis": 1
+  "Musical Harmony: Understanding Classical Music through the Lens of Music Theory": 1
+  "Musical Harmony: Employing Digital Audio Workstations in Classical Music Interpretation": 1
+  "History: Economic Trends throughout the Ages - A Focus on the Impact of Industrial Revolution": 1
+  "History: The Influence of Agriculture on Economic Trends throughout the Ages": 1
+  "History: The Role of Maritime Navigation Technology in Economic Trends throughout the Ages": 1
+  "History: Economic Trends throughout the Ages - Understanding Through the Lens of the Gold Standard": 1
+  "History: Economic Trends throughout the Ages - An Examination of the Evolution of Cryptocurrency.": 1
+  "Physics of Sound: Exploring Acoustics in Music through Oscilloscopes": 1
+  "Physics of Sound: The Science Behind Music and its Visualization with Spectrogram Analysis": 1
+  "Physics of Sound: Understanding Music through the Lens of Resonance": 1
+  "Physics of Sound: The Science Behind Music Amplification with Microphones": 1
+  "Physics of Sound: Decoding Music Composition with Frequency Modulation Theory": 1
+  "Social Studies: Exploring the Origins of Democracy through the Magna Carta": 1
+  "Social Studies: Understanding Democracy: A Deep Dive into the Athenian System": 1
+  "Social Studies: The Role of Enlightenment Philosophy in Shaping Democracy": 1
+  "Social Studies: Tracing the Evolution of Democratic Systems with the Federalist Papers": 1
+  "Social Studies: Democracy Unpacked: The Impact of the French Revolution on Democratic Ideals": 1
+  "4th Grade Mathematics: Discovering Fractions with Interactive Whiteboards": 1
+  "4th Grade Mathematics: Exploring Fractions using Math Manipulatives": 1
+  "4th Grade Mathematics: Understanding Fractions with Fraction Bars": 1
+  "4th Grade Mathematics: Mastering Fractions through Virtual Math Labs": 1
+  "4th Grade Mathematics: Grasping Fractions via the Concept of Division": 1
+  "Environmental Studies: Examining Ecosystems through Carbon Footprint Analysis using GIS Technology": 1
+  "Environmental Studies: Investigating Ecosystems with Carbon Footprint Analysis and Drone Technology": 1
+  "Environmental Studies: Carbon Footprint Analysis of Ecosystems using Machine Learning Algorithms": 1
+  "Environmental Studies: Ecosystem Examination via Carbon Footprint Analysis and Satellite Imagery": 1
+  "Environmental Studies: Understanding Ecosystems through Carbon Footprint Analysis and Remote Sensing Techniques": 1
+  "Chemistry of Sound: Exploring Acoustics through Oscilloscopes": 1
+  "Chemistry of Sound: The Role of Frequency Modulation in Acoustics": 1
+  "Chemistry of Sound: An In-depth Study of Resonance in Acoustics": 1
+  "Chemistry of Sound: Understanding Acoustics Utilizing Soundproofing Materials": 1
+  "Chemistry of Sound: Deciphering Acoustics with Sound Wave Interference": 1
+  "5th Grade Music: Exploring the Piano in Introduction to Musical Notation ": 1
+  "5th Grade Music: Introduction to Musical Notation using Music Composition Software": 1
+  "5th Grade Music: Understanding Rhythm in Introduction to Musical Notation ": 1
+  "5th Grade Music: Introduction to Musical Notation with Interactive Digital Tools": 1
+  "5th Grade Music: Comprehending Scales in Introduction to Musical Notation": 1
+  "Logic: Analyzing Color-Based Puzzles using Graph Theory": 1
+  "Logic: Binary Search Applications in Solving Color-Based Puzzles": 1
+  "Logic: Deploying Recursive Algorithms in Color-Based Puzzles Analysis": 1
+  "Logic: Color-Based Puzzles Solved with Depth-First Search Techniques": 1
+  "Logic: Utilizing Breadth-First Search in Analyzing Color-Based Puzzles": 1
+  "Mathematics: Using Digital Scales to Decode Measurements in Baking": 1
+  "Mathematics: Understanding Conversion Charts in Baking Measurements": 1
+  "Mathematics: Decoding Measurements in Baking with Kitchen Calculators ": 1
+  "Mathematics: Utilizing Measuring Cups for Precise Baking": 1
+  "Mathematics: Decoding Baking Measurements with the Aid of Unit Conversion Apps": 1
+  "Third Grade Geography: Exploring the United States with Google Earth": 1
+  "Third Grade Geography: Navigating the United States with Interactive Maps": 1
+  "Third Grade Geography: Exploring the United States through Climate Patterns": 1
+  "Third Grade Geography: Discovering the United States using Virtual Field Trips": 1
+  "Third Grade Geography: Studying the United States with Geospatial Technologies": 1
+  "2nd Grade: Exploring Habitats with Microscopes in our Journey Through the Animal Kingdom in Science": 1
+  "2nd Grade: Navigating through Animal Kingdom using Interactive Digital Maps in Science": 1
+  "2nd Grade: Journey Through the Animal Kingdom: An Introduction to Zoology for Second Graders": 1
+  "2nd Grade: Journey Through the Animal Kingdom in Science: A Focus on Endangered Species": 1
+  "2nd Grade: Journey Through the Animal Kingdom in Science: An In-Depth Study using 3D Animal Models.": 1
+  "3rd Grade Music: Exploring Mozart through the Piano": 1
+  "3rd Grade Music: Discovering Classical Composers with Interactive Digital Software": 1
+  "3rd Grade Music: An In-depth Study of Beethoven using Audio-Visual Technology": 1
+  "3rd Grade Music: Learning About Bach through Music Theory": 1
+  "3rd Grade Music: Understanding Haydn's Works via Hands-on Violin Lessons": 1
+  "1st Grade Physical Education: Introduction to Soccer using Training Cones": 1
+  "1st Grade Physical Education: Learning Teamwork through Basketball Drills": 1
+  "1st Grade Physical Education: Understanding Scoring in Team Handball": 1
+  "1st Grade Physical Education: Fundamentals of Field Hockey using Stick Handling": 1
+  "1st Grade Physical Education: Introduction to Volleyball: Serving and Passing Techniques": 1
+  "The Philosophy of Computer Science: Exploring the Digital Mind through Python Programming": 1
+  "The Philosophy of Computer Science: A Deep Dive into Artificial Intelligence": 1
+  "The Philosophy of Computer Science: Understanding the Digital Mind through Machine Learning": 1
+  "The Philosophy of Computer Science: Exploring the Digital Mind with Data Structures": 1
+  "The Philosophy of Computer Science: Navigating the Digital Mind through Algorithmic Complexity": 1
+  "2nd Grade Math: Exploring Addition and Subtraction with Star Counting": 1
+  "2nd Grade Math: Using Abacus for Star Counting": 1
+  "2nd Grade Math: Star Counting with Interactive Whiteboard Technology": 1
+  "2nd Grade Math: Understanding Place Value through Star Counting": 1
+  "2nd Grade Math: Star Counting and Number Sequencing with Flashcards": 1
+  "7th Grade Language Arts: Mastering Grammar and Composition with Microsoft Office Suite": 1
+  "7th Grade Language Arts: Mastering Grammar and Composition through Google Docs": 1
+  "7th Grade Language Arts: Understanding Syntax and Sentence Structure in Composition": 1
+  "7th Grade Language Arts: Mastering Grammar and Composition using Grammarly": 1
+  "7th Grade Language Arts: Enhancing Writing Skills with Composition Techniques through Scrivener": 1
+  "5th Grade Music: Reading Basic Notation with the Treble Clef": 1
+  "5th Grade Music: Exploring Basic Notation through Piano": 1
+  "5th Grade Music: Reading Basic Notation using Sibelius Software": 1
+  "5th Grade Music: Understanding Basic Notation through Rhythm": 1
+  "5th Grade Music: Reading Basic Notation with the Bass Clef": 1
+  "Logic and Truth Tables: Application of Deductive Reasoning in Mathematics": 1
+  "Logic with Set Theory: Basics of Deductive Reasoning in Mathematics": 1
+  "Logic and Propositional Calculus: Understanding Deductive Reasoning in Mathematics": 1
+  "Logic: Basics of Deductive Reasoning with Venn Diagrams in Mathematics": 1
+  "Logic and Mathematical Software: Enhancing Deductive Reasoning in Mathematics": 1
+  "Easy Logic: Harnessing the Power of Syllogism for Young Minds": 1
+  "Easy Logic: An Introduction to Critical Thinking through Venn Diagrams for Young Minds": 1
+  "Easy Logic: Exploring the Concept of Deductive Reasoning for Young Minds": 1
+  "Easy Logic: Understanding Fallacies through Interactive Games for Young Minds ": 1
+  "Easy Logic: Using Truth Tables to Enhance Reasoning Skills for Young Minds": 1
+  "2nd Grade Science: Exploring the Human Body Through Microscopy": 1
+  "2nd Grade Science: Unveiling the Human Body Using 3D Models": 1
+  "2nd Grade Science: Decoding the Human Body with Anatomical Charts": 1
+  "2nd Grade Science: Understanding the Human Body Through Dissection Simulation": 1
+  "2nd Grade Science: Learning the Human Body with Virtual Reality Technology": 1
+  "Neuroscience of Computation and Cognitive Processes: An In-Depth Study of fMRI Technology and Diffusion Tensor Imaging": 1
+  "Neuroscience of Computation and Cognitive Processes: Exploring fMRI Technology and the Use of Neurofeedback": 1
+  "Neuroscience of Computation and Cognitive Processes: Uncovering the Links with fMRI Technology and Brain-Computer Interfaces": 1
+  "Neuroscience of Computation and Cognitive Processes: A Detailed Exploration of fMRI Technology and Transcranial Magnetic Stimulation": 1
+  "Neuroscience of Computation and Cognitive Processes: An Advanced Study of fMRI Technology and Electroencephalography": 1
+  "Kindergarten: Introduction to Shapes and Colors Using Drawing Tablets": 1
+  "Kindergarten: Exploring Shapes and Colors with Interactive Whiteboards": 1
+  "Kindergarten: Learning Shapes and Colors through Augmented Reality": 1
+  "Kindergarten: Understanding Shapes and Colors with 3D Printing Technology": 1
+  "Kindergarten: Introduction to Shapes and Colors through Digital Paint Software": 1
+  "Elementary Accounting: Understanding Balance Sheets through Excel": 1
+  "Elementary Accounting: The Concept of Balance Sheets and Usage of QuickBooks ": 1
+  "Elementary Accounting: Balance Sheets and Financial Analysis with Sage": 1
+  "Elementary Accounting: The Concept of Balance Sheets Analyzed through Xero Software": 1
+  "Elementary Accounting: Mastering Balance Sheets with Zoho Books": 1
+  "Philosophy: Ethical Perspectives on Climate Change with Focus on Carbon Capture Technology": 1
+  "Philosophy: Ethical Perspectives on Climate Change and Utilization of Renewable Energy Sources": 1
+  "Philosophy: Ethical Perspectives on Climate Change and the Role of Geoengineering": 1
+  "Philosophy: Ethical Perspectives on Climate Change and the Implementation of Green Policies": 1
+  "Philosophy: Ethical Perspectives on Climate Change and the Application of Sustainable Agricultural Practices": 1
+  "English: Literature and Environment - An Analysis of Ecocriticism Through Digital Humanities Tools": 1
+  "English: Literature and Environment - A Study of Ecocriticism Using GIS Mapping ": 1
+  "English: Literature and Environment - Exploring Ecocriticism with Computational Text Analysis": 1
+  "English: Literature and Environment - A Study of Ecocriticism and its Representation in Virtual Reality": 1
+  "English: Literature and Environment - An Examination of Ecocriticism Through the Lens of Data Visualization Techniques": 1
+  "7th Grade Art: Drawing Inspiration from Nature using Charcoal": 1
+  "7th Grade Art: Incorporating Natural Elements into Sketches with Colored Pencils": 1
+  "7th Grade Art: Exploring Nature through Watercolor Techniques": 1
+  "7th Grade Art: Capturing the Beauty of Nature using Digital Art Tools": 1
+  "7th Grade Art: Studying Nature's Forms with Sculpture Techniques": 1

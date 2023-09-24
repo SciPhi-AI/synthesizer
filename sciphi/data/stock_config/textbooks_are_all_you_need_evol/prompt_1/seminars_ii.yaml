@@ -1,0 +1,4 @@
+# prompt
+# "Here is the title of a course: {title}\nMake this title more specific.  Include one specific tool, technology, or concept that is not mentioned in the title.  Include up to 5 variations. WRITE ONLY TITLES, EACH SEPARATED BY ONE NEW LINE.": 1
+
+title:

@@ -1,0 +1,33 @@
+# The `main.yaml` file is used to specify the synthetic data generation
+# This file is used by the `DataConfigReader` to specify synthetic data construction.
+
+# Specify the outer LLM prompt format
+# `md_instruction` follows typical Alpaca template
+outer_prompt_format: md_instruction
+
+# Specify how the data should be generated
+generator_mode: synthetic
+
+# Prompt templates are used to generate prompts for the synthetic data.
+prompt_templates:
+  # "Here is the title of a course: {title}\nMake this title more specific.  Include one specific tool, technology, or concept that is not mentioned in the title.  Include up to 5 variations. WRITE ONLY TITLES, EACH SEPARATED BY ONE NEW LINE.": 1
+  # "Here is the title of a course: {title}\nThink of up to TEN somewhat related, but different elementary courses. Include courses in philosophy, neuroscience, biology, chemistry, physics, computer science, logic, economics, english, and the like. Include at least one more elementary course. Include one specific tool, technology, or concept in the title. WRITE ONLY TITLES FOR THE COURSES, EACH SEPARATED BY ONE NEW LINE.": 1
+  # "Here is the title of a course: {title}\nThink of up to TEN somewhat related, but different elementary/grade-school/high-school subjects, like 2nd grade mathematics, or \"3rd grade english\". Include subjects like history, mathematics, science, language arts, physical education, art, music, and social studies. Include at least one more elementary subject. Include one specific topic, theme, or concept in the title. WRITE ONLY TITLES FOR THE SUBJECTS, EACH SEPARATED BY ONE NEW LINE.": 1
+prompt_template_inputs:
+  - title
+
+prompt_template_input_dependencies:
+
+config_files:
+
+title:
+  "1st Grade Introduction to Computers: Understanding Basic Functions": 1
+  "3rd Grade Mathematics: Introduction to Algorithms": 1
+  "5th Grade Science: Exploring the Human Brain": 1
+  "6th Grade English: Reading and Writing Technical Texts": 1
+  "8th Grade History: The Evolution of Computing": 1
+  "4th Grade Art: Exploring Digital Design": 1
+  "7th Grade Physical Education: Brain Health and Exercise": 1
+  "2nd Grade Music: Composing with Computer Assistance": 1
+  "9th Grade Social Studies: Impact of Technology on Society": 1
+  "5th Grade Robotics: Introduction to Programming": 1
