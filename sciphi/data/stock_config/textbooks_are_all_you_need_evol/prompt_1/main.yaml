@@ -10,10 +10,13 @@ generator_mode: synthetic
 
 # Prompt templates are used to generate prompts for the synthetic data.
 prompt_templates:
-  "Here is the title of a course: {title}\nMake this title more specific.  Include one specific tool, technology, or concept that is not mentioned in the title.  Include 10 different possible solutions. WRITE ONLY TITLES, EACH SEPARATED BY ONE NEW LINE.": 1
-  # "Here is the title of a course: {title}\nThink of up to TEN somewhat related, but different elementary courses. Include courses in philosophy, neuroscience, biology, chemistry, physics, computer science, logic, economics, english, and the like. Include at least one more elementary course. Include one specific tool, technology, or concept in the title. WRITE ONLY TITLES FOR THE COURSES, EACH SEPARATED BY ONE NEW LINE.": 1
-  # "Here is the title of a course: {title}\nThink of up to TEN somewhat related, but different elementary/grade-school/high-school subjects, like 2nd grade mathematics, or \"3rd grade english\". Include subjects like history, mathematics, science, language arts, physical education, art, music, and social studies. Include at least one more elementary subject. Include one specific topic, theme, or concept in the title. WRITE ONLY TITLES FOR THE SUBJECTS, EACH SEPARATED BY ONE NEW LINE.": 1
-  # "Here is the title of a book and a corresponding chapter: {title}\n Write a step by step outline for the chapter in plain english, then proceed to write a five paragraph chapter. Nerxt, represent the key concepts of the chapter through an intricate multi-step example with Python code.": 1
+  "{title}": 1
+
+# Here is the title of a course: {title}\nMake ten permutations of the title that are slightly different and even more specific.  For each, include one specific tool, technology, or concept that is not mentioned in the title.  WRITE ONLY TITLES, EACH SEPARATED BY ONE NEW LINE.": 1
+# "Here is the title of a course: {title}\nMake ten permutations of the title that are slightly different and even more specific.  For each, include one specific tool, technology, or concept that is not mentioned in the title.  WRITE ONLY TITLES, EACH SEPARATED BY ONE NEW LINE.": 1
+# "Here is the title of a course: {title}\nThink of up to TEN somewhat related, but different elementary courses. Include courses in philosophy, neuroscience, biology, chemistry, physics, computer science, logic, economics, english, and the like. Include at least one more elementary course. Include one specific tool, technology, or concept in the title. WRITE ONLY TITLES FOR THE COURSES, EACH SEPARATED BY ONE NEW LINE.": 1
+# "Here is the title of a course: {title}\nThink of up to TEN somewhat related, but different elementary/grade-school/high-school subjects, like 2nd grade mathematics, or \"3rd grade english\". Include subjects like history, mathematics, science, language arts, physical education, art, music, and social studies. Include at least one more elementary subject. Include one specific topic, theme, or concept in the title. WRITE ONLY TITLES FOR THE SUBJECTS, EACH SEPARATED BY ONE NEW LINE.": 1
+# "Here is the title of a book and a corresponding chapter: {title}\n Write a step by step outline for the chapter in plain english, then proceed to write a five paragraph chapter. Nerxt, represent the key concepts of the chapter through an intricate multi-step example with Python code.": 1
 
 prompt_template_inputs:
   - title
@@ -21,6 +24,6 @@ prompt_template_inputs:
 prompt_template_input_dependencies:
 
 config_files:
-  # "grade_school": 1
-  "seminars_i": 1
+  "evol_grade_school": 1
+  "evol_seminar_i": 1
   # "seminars_i_grade_school_iter_2": 1
