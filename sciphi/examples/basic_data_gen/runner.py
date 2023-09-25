@@ -44,9 +44,10 @@ def get_output_path(args: argparse.Namespace) -> str:
         prep_for_file_path(args.provider_name),
         prep_for_file_path(args.model_name),
     )
-
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
+
+    # TODO - Fail check if path does not exist after attempted creation
 
     if not args.output_file_name:
         output_file_name = OUTPUT_FILE_NAME.format(
