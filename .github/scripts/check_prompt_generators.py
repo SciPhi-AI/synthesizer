@@ -10,7 +10,7 @@ if __name__ == "__main__":
     data_config = DataConfig(
         os.path.join(
             get_data_config_dir(),
-            "textbooks_are_all_you_need_static/main.yaml",
+            "textbooks_are_all_you_need_basic_split/main.yaml",
         )
     )
     prompt_generator = PromptGenerator(

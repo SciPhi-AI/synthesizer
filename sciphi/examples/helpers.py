@@ -212,7 +212,7 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument(
         "--example_config",
         type=str,
-        default="textbooks_are_all_you_need_static",
+        default="textbooks_are_all_you_need_basic_split",
         help="Which configuration to use for data generation?",
     )
     parser.add_argument(

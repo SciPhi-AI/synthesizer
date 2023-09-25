@@ -3,6 +3,10 @@ import argparse
 import hashlib
 import os
 import secrets
+import random
+import time
+
+random.seed(time.time())
 
 from sciphi.config import DataConfig, DataGeneratorMode
 from sciphi.core.utils import (

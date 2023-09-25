@@ -74,7 +74,6 @@ class PromptGenerator:
                 self._insert_formatter(formatters, prompt_input, entry)
 
         prompt = PromptGenerator._random_sample(self.prompt_templates)
-        print("prompt=", prompt)
         return {
             PromptGenerator.RAW_PROMPT_TAG: prompt,
             PromptGenerator.FORMATTED_PROMPT_TAG: prompt.format_map(

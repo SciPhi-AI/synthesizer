@@ -52,7 +52,6 @@ class DataMaker:
         batch_size: int,
         num_samples: int,
     ) -> Generator[list[str], None, None]:
-        print("in hf dataset gen")
         """Returns a generator which yields formatted prompts from the loaded configuration."""
         if batch_size != 1:
             raise ValueError(
