@@ -2,11 +2,9 @@
 import argparse
 import hashlib
 import os
-import secrets
 import random
+import secrets
 import time
-
-random.seed(time.time())
 
 from sciphi.config import DataConfig, DataGeneratorMode
 from sciphi.core.utils import (
@@ -29,6 +27,8 @@ from sciphi.prompt import (
     PromptStructure,
 )
 from sciphi.writers import JsonlDataWriter
+
+random.seed(time.time())
 
 OUTPUT_FILE_NAME = "{RUN_NAME}__provider_eq_{PROVIDER}__model_eq_{MODEL}__version_eq_{VERSION}{EXTRA}.jsonl"
 
