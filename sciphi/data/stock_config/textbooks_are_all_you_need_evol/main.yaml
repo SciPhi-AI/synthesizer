@@ -25,7 +25,7 @@ prompt_template_inputs:
 prompt_template_input_dependencies:
 
 config_files:
-  "evol_grade_school": 1
+  # "evol_grade_school": 1
   "evol_seminar_i": 1
 
 instruction_prefix:
