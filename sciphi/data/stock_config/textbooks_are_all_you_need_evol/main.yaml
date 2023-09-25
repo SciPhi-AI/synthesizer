@@ -10,17 +10,17 @@ generator_mode: synthetic
 
 # Prompt templates are used to generate prompts for the synthetic data.
 prompt_templates:
-  "{leading_input} {modifier}:\n{title}\n\nYour task is to {task}, {action}. {final_segway} {python_action}, {python_task}.": 1
+  "{instruction_prefix} is the {document_type_description}:\n'{title}'\n\nYour task is to FIRST {outline_creation_instruction} and THEN {comprehensive_piece_instruction}. {python_intro_statement} {python_core_concept_representation} {python_example_instruction}. Note, explain things in as simple english as possible.": 1
 
 prompt_template_inputs:
-  - leading_input
-  - modifier
+  - instruction_prefix
+  - document_type_description
   - title
-  - task
-  - action
-  - final_segway
-  - python_action
-  - python_task
+  - outline_creation_instruction
+  - comprehensive_piece_instruction
+  - python_intro_statement
+  - python_core_concept_representation
+  - python_example_instruction
 
 prompt_template_input_dependencies:
 
@@ -28,164 +28,80 @@ config_files:
   # "evol_grade_school": 1
   "evol_seminar_i": 1
 
-leading_input:
+instruction_prefix:
   "Listed below": 1
-  "Shown below": 1
-  "Displayed below": 1
   "Provided here": 1
-  "See below for": 1
-  "Given the": 1
-  "Outlined here": 1
-  "Mentioned below": 1
-  "Highlighted below": 1
-  "Specified here": 1
-  "Detailed below": 1
-  "Found below": 1
-  "Observed below": 1
-  "Noted here": 1
-  "Indicated below": 1
-  "Declared here": 1
-  "Revealed below": 1
-  "Stated here": 1
-  "Explained below": 1
-  "Described here": 1
-  "Documented below": 1
+  "Outlined below": 1
+  "Given below": 1
   "Presented here": 1
-  "Reported below": 1
-  "Discussed here": 1
-  "Illustrated below": 1
+  "Shown below": 1
+  "Illustrated here": 1
+  "Displayed below": 1
+  "Revealed here": 1
+  "Detailed below": 1
 
-modifier:
-  "title of a book and a corresponding chapter": 5
+document_type_description:
   "title of a textbook and a corresponding section": 5
-  "title of an encyclopedia and a particular volume": 5
-  "title of an essay": 4
-  "title of an article": 4
-  "title of a class and an associated lecture": 3
+  "title of a book and a corresponding chapter": 4
+  "title of a review paper and the associated section": 3
   "title of a volume and the associated chapter": 3
-  "title of a journal and a specific issue": 3
-  "title of a report and the relevant section": 3
-  "title of a thesis and an associated chapter": 2
-  "title of a conference paper and the corresponding session": 1
-  "title of a research paper and the relevant subsection": 1
-  "title of a dissertation and the pertinent chapter": 1
-  "title of a manuscript and a related section": 1
-  "title of a monograph and an included chapter": 1
-  "title of a review paper and the associated section": 1
+  "title of a reference book and a relevant section": 3
+  "title of an essay": 2
+  "title of a coursebook and a relevant module": 2
+  "title of an encyclopedia and a particular volume": 2
+  "title of a dissertation and the pertinent chapter": 2
+  "title of a class and an associated lecture": 2
+  "title of a symposium and the corresponding discussion": 1
   "title of a lecture series and a specific lecture": 1
-  "title of a symposium and the related presentation": 1
-  "title of a workshop and the relevant session": 1
-  "title of a seminar and the associated topic": 1
+  "title of an academic publication and a related chapter": 1
+  "title of a journal and a distinct article": 1
+  "title of a scholarly compendium and an associated entry": 1
+  "title of a research paper and the relevant subsection": 1
   "title of an academic handbook and a specific chapter": 1
-  "title of a reference work and the related entry": 1
-  "title of a scholarly compendium and the associated article": 1
-  "title of a course and the relevant module": 1
   "title of a lecture note and the corresponding unit": 1
 
-task:
-  "write a step by step outline for the mentioned work": 1
-  "compose a detailed, step-by-step outline for the task as mentioned": 1
-  "draft a comprehensive, stepwise outline for the specified task": 1
-  "create a step-by-step outline for the work mentioned": 1
-  "outline the steps needed for the mentioned task": 1
-  "detail a step-by-step plan for the specified work": 1
-  "formulate a thorough, step-by-step guide for the task as described": 1
-  "develop a detailed stepwise outline for the work specified": 1
-  "craft a comprehensive, step-by-step guide for the task mentioned": 1
-  "compile a thorough stepwise plan for the mentioned work": 1
-  "construct a step-by-step blueprint for the specified task": 1
-  "map out a detailed, step-by-step plan for the task described": 1
-  "build a comprehensive stepwise guide for the work outlined": 1
-  "assemble a detailed step-by-step outline for the task at hand": 1
-  "devise a thorough stepwise strategy for the mentioned task": 1
-  "design a comprehensive, step-by-step framework for the specified work": 1
-  "generate a detailed step-by-step schema for the task outlined": 1
-  "create a meticulous, step-by-step procedure for the work described": 1
-  "sketch a comprehensive stepwise layout for the task specified": 1
-  "form a systematic, step-by-step layout for the task mentioned": 1
-  "develop a meticulous stepwise strategy for the specified work": 1
-  "construct a detailed, step-by-step manual for the task at hand": 1
-  "organize a comprehensive step-by-step blueprint for the work described": 1
-  "draft a thorough stepwise procedure for the mentioned task": 1
-  "establish a detailed, step-by-step roadmap for the specified task": 1
-  "compose a systematic, step-by-step guide for the work outlined": 1
-  "formulate a detailed stepwise outline for the task described": 1
-  "build a comprehensive, step-by-step flowchart for the mentioned work": 1
-  "create a meticulous stepwise plan for the specified work": 1
-  "map out a systematic, step-by-step strategy for the task at hand": 1
-  "generate a comprehensive step-by-step manual for the work mentioned": 1
-  "sketch a detailed, stepwise blueprint for the task specified": 1
-  "devise a thorough step-by-step roadmap for the work outlined": 1
-  "design a meticulous, step-by-step guide for the task described": 1
-  "compile a systematic stepwise strategy for the mentioned task": 1
-  "assemble a detailed, step-by-step layout for the specified work": 1
-  "craft a thorough, step-by-step procedure for the work at hand": 1
-  "invent a comprehensive stepwise manual for the task mentioned": 1
-  "produce a meticulous, step-by-step blueprint for the specified task": 1
+outline_creation_instruction:
+  "write a step-by-step outline to replicate the mentioned title": 1
+  "compose a detailed, step-by-step outline to replicate the title as mentioned": 1
+  "draft a comprehensive, stepwise outline to replicate the specified title": 1
+  "formulate a thorough, step-by-step guide to replicate the title as described": 1
+  "detail a step-by-step plan to replicate the specified work": 1
+  "craft a clear, structured outline to accurately replicate the title presented": 1
+  "develop a meticulous, step-by-step strategy for reproducing the specified title": 1
+  "organize a thorough, sequential outline for accurately replicating the mentioned work": 1
+  "design a comprehensive, stepwise guide to faithfully replicate the described title": 1
+  "construct a detailed, structured blueprint to precisely replicate the title specified": 1
 
-action:
-  "then complete it": 1
-  "then author it": 1
-  "then write it": 1
-  "then draft it": 1
-  "then compose it": 1
-  "thereafter, produce it": 1
-  "thereafter, write it": 1
-  "afterwards, write it": 1
-  "afterwards, author it": 1
-  "afterwards, write it": 1
+comprehensive_piece_instruction:
+  "COMPOSE a comprehensive piece on the topic": 1
+  "COMPOSE a detailed section on the topic": 2
+  "DRAFT a substantial essay on the topic": 1
+  "DRAFT an explanatory article on the topic": 1
+  "WRITE an explanatory article on the topic": 1
+  "WRITE a detailed page on the topic": 2
+  "REPRODUCE the entire piece": 2
+  "FORMULATE a detailed exposition on the subject": 1
+  "ASSEMBLE a meticulous review on the subject": 1
 
+python_intro_statement:
+  "FINALLY,": 1
 
-final_segway:
-  "Afterwards,": 1
-  "Subsequently,": 1
-  "Following this,": 1
-  "Consequently,": 1
-  "Next,": 1
-  "Then,": 1
-  "Upon completion,": 1
-  "As a follow-up,": 1
-  "Continuing on,": 1
-  "Subsequently,": 1
-  "In addition,": 1
+python_core_concept_representation:
+  "represent a core concept of your response": 1
+  "illustrate a principal element of your answer": 1
+  "demonstrate a fundamental idea from your response": 1
+  "showcase a key theme of your answer": 1
+  "depict an essential concept from your reply": 1
+  "display a foundational principle of your response": 1
+  "exemplify a main idea from your answer": 1
+  "highlight a central concept of your reply": 1
 
-python_task:
-  "represent the key concept of the draft": 1
-  "illustrate the main idea of the specified project": 1
-  "demonstrate the central theme of the given assignment": 1
-  "depict the principal element of the indicated task": 1
-  "showcase the foundational notion of the highlighted study": 1
-  "portray the core principle of the referred endeavor": 1
-  "exhibit the essential theory of the named piece": 1
-  "visualize the main concept of the declared undertaking": 1
-  "model the cardinal point of the outlined assignment": 1
-  "emulate the basic idea of the stated project": 1
-  "simulate the chief element of the noted work": 1
-  "mirror the pivotal theme of the suggested task": 1
-  "reflect the crucial theory of the mentioned endeavor": 1
-  "render the significant concept of the indicated study": 1
-  "reproduce the important idea of the specified piece": 1
-  "express the major principle of the given undertaking": 1
-  "manifest the primary notion of the referred assignment": 1
-  "convey the main theme of the declared project": 1
-  "present the fundamental concept of the outlined task": 1
-  "display the key theory of the stated endeavor": 1
-  "illustrate the essential idea of the noted work": 1
-  "demonstrate the important principle of the suggested study": 1
-  "depict the major notion of the indicated assignment": 1
-  "showcase the primary theme of the specified project": 1
-  "portray the foundational concept of the given task": 1
-
-python_action:
-  "through an example with Python code": 1
-  "through a Python programming sample": 1
-  "via a Python coding example": 1
-  "with a Python coding demonstration": 1
-  "via a Python scripting example": 1
-  "with a Python script example": 1
-  "by way of a Python code example": 1
-  "through a sample of Python programming": 1
-  "via a Python scripting example": 1
-  "with a hands-on Python scripting example": 1
-  "with an exemplar of Python programming": 1
-
+python_example_instruction:
+  "through an example with Python code": 5
+  "by providing a Python code snippet": 4
+  "using a practical Python example": 4
+  "by illustrating with a piece of Python code": 3
+  "by presenting an example using Python programming": 3
+  "with a demonstrative Python code segment": 3
+  "by showcasing a Python coding example": 2
+  "using an illustrative Python coding snippet": 2
