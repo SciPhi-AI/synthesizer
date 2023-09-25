@@ -58,7 +58,7 @@ poetry install -E <extra_name>
 You can use SciPhi for dataset generation by executing the relevant `runner.py` file with various command-line arguments.
 
 ```bash
-poetry run python sciphi/examples/data_generation/runner.py --provider_name=openai --model_name=gpt-4 --log_level=DEBUG --batch_size=1 --num_samples=1 --output_file_name=example_output.jsonl --example_config=textbooks_are_all_you_need
+poetry run python sciphi/examples/basic_data_gen/runner.py --provider_name=openai --model_name=gpt-4 --log_level=DEBUG --batch_size=1 --num_samples=1 --output_file_name=example_output.jsonl --example_config=textbooks_are_all_you_need_basic_split
 ```
 
 ### Key Command-Line Arguments
@@ -66,7 +66,7 @@ poetry run python sciphi/examples/data_generation/runner.py --provider_name=open
 - `--provider`: Which provider to use for completions (default: "openai").
 - `--model_name`: The name of the model to load from the provider (default: "gpt-3.5-turbo").
 - `--temperature`: Temperature parameter for the provided model (default: 0.7).
-- `--example_config`: Which example configuration to use (default: "textbooks_are_all_you_need").
+- `--example_config`: Which example configuration to use (default: "textbooks_are_all_you_need_basic_split").
 - `--override_config_path`: Used to override the example configurations with custom config.
 - `--num_samples`: Number of samples to generate (default: 1_024).
 - `--output_dir`: File path to override the default output output file path with.
@@ -75,7 +75,7 @@ poetry run python sciphi/examples/data_generation/runner.py --provider_name=open
 ### Stock data configs
 
 - `evol_instruct` - A config for replicating the EvolInstruct dataset
-- `textbooks_are_all_you_need` - A config for replicating the Python textbook data from Textbooks Are All You Need [2]
+- `textbooks_are_all_you_need_basic_split` - A config for replicating the Python textbook data from Textbooks Are All You Need [2]
   
 ### Example generated data
 <img width="776" alt="Screenshot 2023-09-17 at 11 11 18 PM" src="https://github.com/emrgnt-cmplxty/SciPhi/assets/68796651/8f1ef11d-cd37-4fc7-a7a0-a1e0159ba4a3">

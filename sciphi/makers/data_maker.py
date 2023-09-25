@@ -18,11 +18,13 @@ class DataMaker:
         prompt_generator: PromptGenerator,
         outer_prompt: Prompt,
         dataset_name: Optional[str] = None,
+        dataset_filters: Optional[dict[str, str]] = None,
     ) -> None:
         self.generator_mode = generator_mode
         self.prompt_generator = prompt_generator
         self.outer_prompt = outer_prompt
         self.dataset_name = dataset_name
+        self.dataset_filters = dataset_filters
 
     def synthetic_generator(
         self, batch_size: int, num_samples: int
@@ -65,6 +67,12 @@ class DataMaker:
 
         dataset = load_dataset(self.dataset_name, streaming=True)
 
+        # filter the dataset, on key and list of filter values
+        if self.dataset_filters:
+            for key, values in self.dataset_filters.items():
+                dataset = dataset.filter(
+                    lambda example: example[key] in values,
+                )
         counter = 0
         for data in dataset["train"]:
             inner_prompt = self.prompt_generator.generate_prompt(

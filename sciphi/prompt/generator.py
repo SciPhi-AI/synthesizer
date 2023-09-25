@@ -37,7 +37,6 @@ class PromptGenerator:
 
     def generate_prompt(self, optional_formatters=None) -> dict:
         """Return a prompt and its inputs."""
-
         # Build the prompt formatters
         formatters: dict[str, str] = optional_formatters or {}
 
@@ -47,14 +46,20 @@ class PromptGenerator:
         # It can be `None` if there are no dependencies
         for prompt_input in self.prompt_inputs:
             entry = self.config[prompt_input]
-            if prompt_input in self.prompt_dataset_dependencies:
+            if (
+                self.prompt_dataset_dependencies
+                and prompt_input in self.prompt_dataset_dependencies
+            ):
                 # Parse dataset dependencies
                 entry = PromptGenerator._random_sample(entry)
 
                 self._insert_formatter(
                     formatters, prompt_input, optional_formatters[entry]
                 )
-            elif prompt_input in self.prompt_template_input_dependencies:
+            elif (
+                self.prompt_template_input_dependencies
+                and prompt_input in self.prompt_template_input_dependencies
+            ):
                 # Parse single depth dependencies
                 dependent_on = self.prompt_template_input_dependencies[
                     prompt_input
@@ -69,7 +74,6 @@ class PromptGenerator:
                 self._insert_formatter(formatters, prompt_input, entry)
 
         prompt = PromptGenerator._random_sample(self.prompt_templates)
-
         return {
             PromptGenerator.RAW_PROMPT_TAG: prompt,
             PromptGenerator.FORMATTED_PROMPT_TAG: prompt.format_map(

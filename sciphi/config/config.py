@@ -25,7 +25,6 @@ class DataConfig:
             self.config = yaml.safe_load(file)
         self.main_path = os.path.dirname(main_config_path)
         self.generator_mode: str = self.config.pop(generator_mode_field)
-
         # Unpack the prompt config
         self.prompt_templates: dict[str, int] = self.config.pop(
             prompt_templates_field
@@ -76,7 +75,10 @@ class DataConfig:
                     entry = sub_config[key]
 
                     # Unroll dependencies (only single layers are supported now)
-                    if key in self.prompt_template_input_dependencies:
+                    if (
+                        self.prompt_template_input_dependencies
+                        and key in self.prompt_template_input_dependencies
+                    ):
                         entry = entry[
                             self.prompt_template_input_dependencies[key]
                         ]

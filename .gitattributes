@@ -1,3 +1,4 @@
+*.yaml linguist-generated=true
 *.tex linguist-generated=true
 *.csv linguist-generated=true
 *.json linguist-generated=true
