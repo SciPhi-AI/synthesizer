@@ -54,12 +54,12 @@ first_task:
   "\n\nYour **first task** is to write three paragraphs from the introduction page of the chapter.": 1
   "\n\nYour **first task** is to write three paragraphs from a page in the middle of the chapter.": 1
   "\n\nYour **first task** is to write three paragraphs from the page concluding the chapter.": 1
-  "\n\nYour **first task** is to write an outline for a short essay on the chapter. Your **second task** is to compose a three paragraph essay.": 3
+  "\n\nYour **first task** is to write an outline for a short essay on the chapter. Your **second task** is to compose a three paragraph essay on the chapter.": 3
   # Four paragraphs
   "\n\nYour **first task** is to write four paragraphs from the introduction page of the chapter.": 1
   "\n\nYour **first task** is to write four paragraphs from a page in the middle of the chapter.": 1
   "\n\nYour **first task** is to write four paragraphs from the page concluding the chapter.": 1
-  "\n\nYour **first task** is to write an outline for a short essay on the chapter. Your **second task** is to compose a four paragraph essay.": 3
+  "\n\nYour **first task** is to write an outline for a short essay on the chapter. Your **second task** is to compose a four paragraph essay on the chapter.": 3
   # Five paragraphs
   "\n\nYour **first task** is to write five paragraphs from the introduction page of the chapter.": 1
   "\n\nYour **first task** is to write five paragraphs from a page in the middle of the chapter.": 1
@@ -69,27 +69,87 @@ first_task:
   "\n\nYour **first task** is to write six paragraphs from the introduction page of the chapter.": 1
   "\n\nYour **first task** is to write six paragraphs from a page in the middle of the chapter.": 1
   "\n\nYour **first task** is to write six paragraphs from the page concluding the chapter.": 1
-  "\n\nYour **first task** is to write an outline for a medium length essay on the chapter. Your **second task** is to compose a six paragraph essay.": 3
+  "\n\nYour **first task** is to write an outline for a medium length essay on the chapter. Your **second task** is to compose a six paragraph essay on the chapter.": 3
   # Seven paragraphs
   "\n\nYour **first task** is to write seven paragraphs from the introduction page of the chapter.": 1
   "\n\nYour **first task** is to write seven paragraphs from a page in the middle of the chapter.": 1
   "\n\nYour **first task** is to write seven paragraphs from the page concluding the chapter.": 1
-  "\n\nYour **first task** is to write an outline for a medium length essay on the chapter. Your **second task** is to compose a seven paragraph essay.": 3
+  "\n\nYour **first task** is to write an outline for a medium length essay on the chapter. Your **second task** is to compose a seven paragraph essay on the chapter.": 3
   # Eight paragraphs
   "\n\nYour **first task** is to write eight paragraphs from the introduction page of the chapter.": 1
   "\n\nYour **first task** is to write eight paragraphs from a page in the middle of the chapter.": 1
   "\n\nYour **first task** is to write eight paragraphs from the page concluding the chapter.": 1
-  "\n\nYour **first task** is to write an outline for a long essay on the chapter. Your **second task** is to compose an eight paragraph essay.": 3
+  "\n\nYour **first task** is to write an outline for a long essay on the chapter. Your **second task** is to compose an eight paragraph essay on the chapter.": 3
   # Nine paragraphs
   "\n\nYour **first task** is to write nine paragraphs from the introduction page of the chapter.": 1
   "\n\nYour **first task** is to write nine paragraphs from a page in the middle of the chapter.": 1
   "\n\nYour **first task** is to write nine paragraphs from the page concluding the chapter.": 1
-  "\n\nYour **first task** is to write an outline for a long essay on the chapter. Your **second task** is to compose a nine paragraph essay.": 3
+  "\n\nYour **first task** is to write an outline for a long essay on the chapter. Your **second task** is to compose a nine paragraph essay on the chapter.": 3
   # Ten paragraphs
   "\n\nYour **first task** is to write ten paragraphs from the introduction page of the chapter.": 1
   "\n\nYour **first task** is to write ten paragraphs from a page in the middle of the chapter.": 1
   "\n\nYour **first task** is to write ten paragraphs from the page concluding the chapter.": 1
-  "\n\nYour **first task** is to write an outline for a long essay on the chapter. Your **second task** is to compose a ten paragraph essay.": 3
+  "\n\nYour **first task** is to write an outline for a long essay on the chapter. Your **second task** is to compose a ten paragraph essay on the chapter.": 3
+
+  # 11 paragraphs
+  "\n\nYour **first task** is to write eleven paragraphs from the introduction page of the chapter.": 1
+  "\n\nYour **first task** is to write eleven paragraphs from a page in the middle of the chapter.": 1
+  "\n\nYour **first task** is to write eleven paragraphs from the page concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for a long essay on the chapter. Your **second task** is to compose a eleven paragraph page from the chapter.": 3
+
+  # 12 paragraphs
+  "\n\nYour **first task** is to write twelve paragraphs from the introduction page of the chapter.": 1
+  "\n\nYour **first task** is to write twelve paragraphs from a page in the middle of the chapter.": 1
+  "\n\nYour **first task** is to write twelve paragraphs from the page concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for the chapter. Your **second task** is to compose a twelve paragraph page from the chapter.": 3
+
+  # 13 paragraphs
+  "\n\nYour **first task** is to write thirteen paragraphs from the introduction page of the chapter.": 1
+  "\n\nYour **first task** is to write thirteen paragraphs from a page in the middle of the chapter.": 1
+  "\n\nYour **first task** is to write thirteen paragraphs from the page concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for the chapter. Your **second task** is to compose a thirteen paragraph page from the chapter.": 3
+
+  # 14 paragraphs
+  "\n\nYour **first task** is to write fourteen paragraphs from the introduction page of the chapter.": 1
+  "\n\nYour **first task** is to write fourteen paragraphs from a page in the middle of the chapter.": 1
+  "\n\nYour **first task** is to write fourteen paragraphs from the page concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for the chapter. Your **second task** is to compose a fourteen paragraph page from the chapter.": 3
+
+  # 15 paragraphs
+  "\n\nYour **first task** is to write fifteen paragraphs from the introduction page of the chapter.": 1
+  "\n\nYour **first task** is to write fifteen paragraphs from a page in the middle of the chapter.": 1
+  "\n\nYour **first task** is to write fifteen paragraphs from the page concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for the chapter. Your **second task** is to compose a fifteen paragraph page from the chapter.": 3
+
+  # 16 paragraphs
+  "\n\nYour **first task** is to write sixteen paragraphs from the introduction page of the chapter.": 1
+  "\n\nYour **first task** is to write sixteen paragraphs from a page in the middle of the chapter.": 1
+  "\n\nYour **first task** is to write sixteen paragraphs from the page concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for the chapter. Your **second task** is to compose a sixteen paragraph page from the chapter.": 3
+
+  # 17 paragraphs
+  "\n\nYour **first task** is to write seventeen paragraphs from the introduction page of the chapter.": 1
+  "\n\nYour **first task** is to write seventeen paragraphs from a page in the middle of the chapter.": 1
+  "\n\nYour **first task** is to write seventeen paragraphs from the page concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for the chapter. Your **second task** is to compose a seventeen paragraph page from the chapter.": 3
+
+  # 18 paragraphs
+  "\n\nYour **first task** is to write eighteen paragraphs from the introduction page of the chapter.": 1
+  "\n\nYour **first task** is to write eighteen paragraphs from a page in the middle of the chapter.": 1
+  "\n\nYour **first task** is to write eighteen paragraphs from the page concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for the chapter. Your **second task** is to compose a eighteen paragraph page from the chapter.": 3
+
+  # 19 paragraphs
+  "\n\nYour **first task** is to write nineteen paragraphs from the introduction page of the chapter.": 1
+  "\n\nYour **first task** is to write nineteen paragraphs from a page in the middle of the chapter.": 1
+  "\n\nYour **first task** is to write nineteen paragraphs from the page concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for the chapter. Your **second task** is to compose a nineteen paragraph page from the chapter.": 3
+
+  # 20 paragraphs
+  "\n\nYour **first task** is to write twenty paragraphs from the introduction page of the chapter.": 1
+  "\n\nYour **first task** is to write twenty paragraphs from a page in the middle of the chapter.": 1
+  "\n\nYour **first task** is to write twenty paragraphs from the page concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for the chapter. Your **second task** is to compose a twenty paragraph page from the chapter.": 3
 
 last_task:
   "": 5
@@ -124,12 +184,17 @@ context:
 content_length:
   "- Keep the content concise and to the point.\n": 1
   "- Provide a detailed and in-depth exploration of the topic.\n": 1
-  "": 6
+  "- Delve into detailed exploration, providing comprehensive insights.\n": 1
+  "": 3
 
 application_of_knowledge:
   "- If applicable, discuss practical applications and real-world implications of the subject matter.\n": 1
+  "- Incorporate interactive elements such as thought-provoking questions, activities, or challenges to engage the reader.\n": 1
   "": 3
 
 final_note:
-  "You will be graded on how complete and appropriate your response is.\n": 6
+  "You will be graded on how complete and appropriate your response is.": 6
+  "Strive for completeness and appropriateness in your response, keeping in mind the diversity of the audience.\n": 1
+  "Ensure your response is thorough and apt, considering the varied backgrounds of the audience.\n": 1
+  "Aim for a well-rounded and insightful response, keeping in mind the diversity in audience knowledge.\n": 1
   "": 4
