@@ -10,17 +10,14 @@ generator_mode: synthetic
 
 # Prompt templates are used to generate prompts for the synthetic data.
 prompt_templates:
-  "{instruction_prefix} is the {document_type_description}:\n'{title}'\n\nYour task is to FIRST {outline_creation_instruction} and THEN {comprehensive_piece_instruction}. {python_intro_statement} {python_core_concept_representation} {python_example_instruction}. Note, explain things in as simple english as possible.": 1
+  '{instruction_prefix}"{title}".{first_task}{last_task}{final_note}': 1
 
 prompt_template_inputs:
   - instruction_prefix
-  - document_type_description
   - title
-  - outline_creation_instruction
-  - comprehensive_piece_instruction
-  - python_intro_statement
-  - python_core_concept_representation
-  - python_example_instruction
+  - first_task
+  - last_task
+  - final_note
 
 prompt_template_input_dependencies:
 
@@ -29,79 +26,73 @@ config_files:
   "evol_seminar_i": 1
 
 instruction_prefix:
-  "Listed below": 1
-  "Provided here": 1
-  "Outlined below": 1
-  "Given below": 1
-  "Presented here": 1
-  "Shown below": 1
-  "Illustrated here": 1
-  "Displayed below": 1
-  "Revealed here": 1
-  "Detailed below": 1
+  "Imagine you are a prolific author tasked with writing a textbook. You are working on writing a textbook chapter titled ": 1
+  "Pretend you are a prolific author tasked with writing a textbook. You are working on writing a textbook chapter titled ": 1
 
-document_type_description:
-  "title of a textbook and a corresponding section": 5
-  "title of a book and a corresponding chapter": 4
-  "title of a review paper and the associated section": 3
-  "title of a volume and the associated chapter": 3
-  "title of a reference book and a relevant section": 3
-  "title of an essay": 2
-  "title of a coursebook and a relevant module": 2
-  "title of an encyclopedia and a particular volume": 2
-  "title of a dissertation and the pertinent chapter": 2
-  "title of a class and an associated lecture": 2
-  "title of a symposium and the corresponding discussion": 1
-  "title of a lecture series and a specific lecture": 1
-  "title of an academic publication and a related chapter": 1
-  "title of a journal and a distinct article": 1
-  "title of a scholarly compendium and an associated entry": 1
-  "title of a research paper and the relevant subsection": 1
-  "title of an academic handbook and a specific chapter": 1
-  "title of a lecture note and the corresponding unit": 1
+first_task:
+  #  intro / content / summary / random pages (4) * N/A / step-by-step (24 w/ weights) = 48
+  # no step by step
+  "\n\nYour **first task** is to write a summary page from the chapter.": 6
+  "\n\nYour **first task** is to write a page from the middle of chapter.": 6
+  "\n\nYour **first task** is to write a summary page from the chapter.": 6
+  "\n\nYour **first task** is to write a random page from the chapter.": 6
+  # with step by step
+  "\n\nYour **first task** to write an outline outline for the introduction for the chapter. Your **second task** is to compose the introduction.": 6
+  "\n\nYour **first task** to write an outline outline for the middle page for the chapter. Your **second task** is to compose the middle page.": 6
+  "\n\nYour **first task** to write an outline outline for the summary page for the chapter. Your **second task** is to compose the summary page.": 6
+  "\n\nYour **first task** to write an outline outline for the random page for the chapter. Your **second task** is to compose the random page.": 6
 
-outline_creation_instruction:
-  "write a step-by-step outline to replicate the mentioned title": 1
-  "compose a detailed, step-by-step outline to replicate the title as mentioned": 1
-  "draft a comprehensive, stepwise outline to replicate the specified title": 1
-  "formulate a thorough, step-by-step guide to replicate the title as described": 1
-  "detail a step-by-step plan to replicate the specified work": 1
-  "craft a clear, structured outline to accurately replicate the title presented": 1
-  "develop a meticulous, step-by-step strategy for reproducing the specified title": 1
-  "organize a thorough, sequential outline for accurately replicating the mentioned work": 1
-  "design a comprehensive, stepwise guide to faithfully replicate the described title": 1
-  "construct a detailed, structured blueprint to precisely replicate the title specified": 1
+  # 3,4,5,6,7,8,9,10 paragraphs (8) intro | middle | conclusion | step-by-step+no instructio location (6 w/ weights) = 48
+  # Three paragraphs
+  "\n\nYour **first task** is to write three paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write three paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write three paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for a short essay on the chapter. Your **second task** is to compose a three paragraph essay.": 3
+  # Four paragraphs
+  "\n\nYour **first task** is to write four paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write four paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write four paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for a short essay on the chapter. Your **second task** is to compose a four paragraph essay.": 3
+  # Five paragraphs
+  "\n\nYour **first task** is to write five paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write five paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write five paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for a medium length essay on the chapter. Your **second task** is to compose a five paragraph essay.": 3
+  # Six paragraphs
+  "\n\nYour **first task** is to write six paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write six paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write six paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for a medium length essay on the chapter. Your **second task** is to compose a six paragraph essay.": 3
+  # Seven paragraphs
+  "\n\nYour **first task** is to write seven paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write seven paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write seven paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for a medium length essay on the chapter. Your **second task** is to compose a seven paragraph essay.": 3
+  # Eight paragraphs
+  "\n\nYour **first task** is to write eight paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write eight paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write eight paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for a long essay on the chapter. Your **second task** is to compose a eight paragraph essay.": 3
+  # Nine paragraphs
+  "\n\nYour **first task** is to write nine paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write nine paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write nine paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for a long essay on the chapter. Your **second task** is to compose a nine paragraph essay.": 3
+  # Ten paragraphs
+  "\n\nYour **first task** is to write ten paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write ten paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write ten paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to write an outline for a long essay on the chapter. Your **second task** is to compose a ten paragraph essay.": 3
 
-comprehensive_piece_instruction:
-  "COMPOSE a comprehensive piece on the topic": 1
-  "COMPOSE a detailed section on the topic": 2
-  "DRAFT a substantial essay on the topic": 1
-  "DRAFT an explanatory article on the topic": 1
-  "WRITE an explanatory article on the topic": 1
-  "WRITE a detailed page on the topic": 2
-  "REPRODUCE the entire piece": 2
-  "FORMULATE a detailed exposition on the subject": 1
-  "ASSEMBLE a meticulous review on the subject": 1
+last_task:
+  " Your **last task**, is to demonstrate a fundamental idea from your response through an example with Python code.": 2
+  " Your **last task**, is to summarize your response into a single paragraph.": 1
+  " Your **last task**, is to write a single paragraph on a related subject.": 1
+  " Your **last task**, is to reflect on the greater importance of this subject in the context of all of humanities knowledge.": 1
+  "": 2
 
-python_intro_statement:
-  "FINALLY,": 1
-
-python_core_concept_representation:
-  "represent a core concept of your response": 1
-  "illustrate a principal element of your answer": 1
-  "demonstrate a fundamental idea from your response": 1
-  "showcase a key theme of your answer": 1
-  "depict an essential concept from your reply": 1
-  "display a foundational principle of your response": 1
-  "exemplify a main idea from your answer": 1
-  "highlight a central concept of your reply": 1
-
-python_example_instruction:
-  "through an example with Python code": 5
-  "by providing a Python code snippet": 4
-  "using a practical Python example": 4
-  "by illustrating with a piece of Python code": 3
-  "by presenting an example using Python programming": 3
-  "with a demonstrative Python code segment": 3
-  "by showcasing a Python coding example": 2
-  "using an illustrative Python coding snippet": 2
+final_note:
+  "\n\nNotes: your target audience for this work has no familiarity of the subject. You will be graded on how complete and appropriate your response is.": 1
+  "\n\nNotes: your target audience for this work has some familiarity on the subject. You will be graded on how complete and appropriate your response is.": 1
+  "\n\nNotes: your target audience for this work is an expert on the subject. You will be graded on how complete and appropriate your response is.": 1
+  "": 2
