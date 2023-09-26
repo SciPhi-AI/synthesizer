@@ -26,31 +26,63 @@ config_files:
   "evol_seminar_i": 1
 
 instruction_prefix:
-  "Imagine you are a prolific author tasked with writing a textbook. You are working on a chapter with the title:": 1
-  "Pretend you are a prolific author tasked with writing a textbook. You are working on a chapter with the title:": 1
+  "Imagine you are a prolific author tasked with writing a textbook. You are working on writing a textbook chapter titled ": 1
+  "Pretend you are a prolific author tasked with writing a textbook. You are working on writing a textbook chapter titled ": 1
 
 first_task:
-  "\n\nYour **first task** is to write an introduction page from the chapter.": 2
-  "\n\nYour **first task** is to write an content page from the chapter.": 2
-  "\n\nYour **first task** is to write an summary page from the chapter.": 2
-  "\n\nYour **first task** is to write a random page from the chapter.": 2
-  "\n\nYour **first task** is outline a step-by-step plan to write a random page from the chapter. Your **second task** is to compose the random page.": 8
-  "\n\nYour **first task** is to write a three paragraph on the chapter.": 1
-  "\n\nYour **first task** is outline a step-by-step plan to write a three-paragraph essay on the chapter. Your **second task** is to compose a three paragraph essay.": 1
-  "\n\nYour **first task** is to write a four paragraph on the chapter.": 1
-  "\n\nYour **first task** is outline a step-by-step plan to write a four-paragraph essay on the chapter. Your **second task** is to compose a four paragraph essay.": 1
-  "\n\nYour **first task** is to write a five paragraph on the chapter.": 1
-  "\n\nYour **first task** is outline a step-by-step plan to write a five-paragraph essay on the chapter. Your **second task** is to compose a five paragraph essay.": 1
-  "\n\nYour **first task** is to write a six paragraph on the chapter.": 1
-  "\n\nYour **first task** is outline a step-by-step plan to write a six-paragraph essay on the chapter. Your **second task** is to compose a six paragraph essay.": 1
-  "\n\nYour **first task** is to write a seven paragraph on the chapter.": 1
-  "\n\nYour **first task** is outline a step-by-step plan to write a seven-paragraph essay on the chapter. Your **second task** is to compose a seven paragraph essay.": 1
-  "\n\nYour **first task** is to write a eight paragraph on the chapter.": 1
-  "\n\nYour **first task** is outline a step-by-step plan to write a eight-paragraph essay on the chapter. Your **second task** is to compose an eight paragraph essay.": 1
-  "\n\nYour **first task** is to write a nine paragraph on the chapter.": 1
-  "\n\nYour **first task** is outline a step-by-step plan to write an essay on the chapter. Your **second task** is to compose a nine paragraph essay.": 1
-  "\n\nYour **first task** is to write a ten paragraph on the chapter.": 1
-  "\n\nYour **first task** is outline a step-by-step plan to write an essay on the chapter. Your **second task** is to compose a ten paragraph essay.": 1
+  #  intro / content / summary / random pages (4) * N/A / step-by-step (24 w/ weights) = 48
+  # no step by step
+  "\n\nYour **first task** is to write an introduction page from the chapter.": 6
+  "\n\nYour **first task** is to write an content page from the chapter.": 6
+  "\n\nYour **first task** is to write an summary page from the chapter.": 6
+  "\n\nYour **first task** is to write a random page from the chapter.": 6
+  # with step by step
+  "\n\nYour **first task** is outline a step-by-step plan to write a introduction for the chapter. Your **second task** is to compose the introduction.": 6
+  "\n\nYour **first task** is outline a step-by-step plan to write a middle page for the chapter. Your **second task** is to compose the middle page.": 6
+  "\n\nYour **first task** is outline a step-by-step plan to write a summary page for the chapter. Your **second task** is to compose the summary page.": 6
+  "\n\nYour **first task** is outline a step-by-step plan to write a random page for the chapter. Your **second task** is to compose the random page.": 6
+
+  # 3,4,5,6,7,8,9,10 paragraphs (8) intro | middle | conclusion | step-by-step+no instructio location (6 w/ weights) = 48
+  # Three paragraphs
+  "\n\nYour **first task** is to write three paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write three paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write three paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to outline a step-by-step plan to write a short essay on the chapter. Your **second task** is to compose a three paragraph essay.": 3
+  # Four paragraphs
+  "\n\nYour **first task** is to write four paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write four paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write four paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to outline a step-by-step plan to write a short essay on the chapter. Your **second task** is to compose a four paragraph essay.": 3
+  # Five paragraphs
+  "\n\nYour **first task** is to write five paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write five paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write five paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to outline a step-by-step plan to write a medium length essay on the chapter. Your **second task** is to compose a five paragraph essay.": 3
+  # Six paragraphs
+  "\n\nYour **first task** is to write six paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write six paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write six paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to outline a step-by-step plan to write a medium length essay on the chapter. Your **second task** is to compose a six paragraph essay.": 3
+  # Seven paragraphs
+  "\n\nYour **first task** is to write seven paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write seven paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write seven paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to outline a step-by-step plan to write a medium length essay on the chapter. Your **second task** is to compose a seven paragraph essay.": 3
+  # Eight paragraphs
+  "\n\nYour **first task** is to write eight paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write eight paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write eight paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to outline a step-by-step plan to write a long essay on the chapter. Your **second task** is to compose a eight paragraph essay.": 3
+  # Nine paragraphs
+  "\n\nYour **first task** is to write nine paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write nine paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write nine paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to outline a step-by-step plan to write a long essay on the chapter. Your **second task** is to compose a nine paragraph essay.": 3
+  # Ten paragraphs
+  "\n\nYour **first task** is to write ten paragraphs introducing the chapter.": 1
+  "\n\nYour **first task** is to write ten paragraphs from the middle of the chapter.": 1
+  "\n\nYour **first task** is to write ten paragraphs concluding the chapter.": 1
+  "\n\nYour **first task** is to outline a step-by-step plan to write a long essay on the chapter. Your **second task** is to compose a ten paragraph essay.": 3
 
 last_task:
   " Your **last task**, is to demonstrate a fundamental idea from your response through an example with Python code.": 2
@@ -59,7 +91,7 @@ last_task:
   "": 1
 
 final_note:
-  " Note: your target audience for this work has no familiarity of the subject. You will be graded on how complete and appropriate your response is.": 1
-  " Note: your target audience for this work has some familiarity on the subject. You will be graded on how complete and appropriate your response is.": 1
-  " Note: your target audience for this work is an expert on the subject. You will be graded on how complete and appropriate your response is.": 1
+  "\nNote: your target audience for this work has no familiarity of the subject. You will be graded on how complete and appropriate your response is.": 1
+  "\nNote: your target audience for this work has some familiarity on the subject. You will be graded on how complete and appropriate your response is.": 1
+  "\nNote: your target audience for this work is an expert on the subject. You will be graded on how complete and appropriate your response is.": 1
   "": 1
