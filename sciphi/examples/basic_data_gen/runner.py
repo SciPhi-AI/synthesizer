@@ -28,8 +28,6 @@ from sciphi.prompt import (
 )
 from sciphi.writers import JsonlDataWriter
 
-random.seed(time.time())
-
 OUTPUT_FILE_NAME = "{RUN_NAME}__provider_eq_{PROVIDER}__model_eq_{MODEL}__version_eq_{VERSION}{EXTRA}.jsonl"
 
 
@@ -143,6 +141,10 @@ if __name__ == "__main__":
     logger.debug(f"Writing results to: {output_path}.")
     writer = JsonlDataWriter(output_path)
 
+    seed = int(time.time() * 1_000_000) + os.getpid()
+    logger.info(f"Using seed: {seed}")
+    random.seed(seed)
+
     for batch in data_maker.generator(args.batch_size, args.num_samples):
         completions = llm_provider.get_batch_completion(batch)
         for formatted_prompt, completion in zip(batch, completions):
@@ -150,12 +152,11 @@ if __name__ == "__main__":
             logger.debug(f"Formatted Prompt:\n{formatted_prompt}")
             logger.debug(f"\nCompletion:\n{completion}")
             logger.debug("-" * 100)
-
             # Write the results using DataWriter
             writer.write(
                 [
                     {
-                        "formatted_prompt": formatted_prompt,
+                        "raw_prompt" "formatted_prompt": formatted_prompt,
                         "completion": completion,
                     }
                 ]
