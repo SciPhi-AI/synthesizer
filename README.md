@@ -138,6 +138,7 @@ This project is licensed under the Apache-2.0 License.
 ### Datasets Generated
 
 [1] [Python Synthetic Textbooks](https://huggingface.co/datasets/emrgnt-cmplxty/sciphi-python-textbook/viewer/default/train)
+[2] [Textbooks are all you need](https://huggingface.co/datasets/emrgnt-cmplxty/sciphi-textbooks-are-all-you-need)
 
 ### Sources
 
