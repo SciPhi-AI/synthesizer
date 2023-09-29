@@ -107,10 +107,6 @@ It is with great pleasure that I introduce "Deep Learning Fundamentals: A Compre
 
 This textbook provides a comprehensive overview of deep learning, delving into the intricacies of deep neural networks and their applications. Whether you are a seasoned practitioner or a curious student, this book will equip you with the knowledge and tools necessary to navigate the complexities of this rapidly evolving field.
 
-One of the exceptional strengths of this book lies in its coverage of the U-Net architecture. U-Net, developed by researchers at the Pattern Recognition and Image Processing group at the University of Freiburg, Germany, has revolutionized image segmentation tasks. By exploring the implementation details and insights behind U-Net, readers will gain a deeper understanding of the inner workings of convolutional neural networks.
-
-In addition to the technical aspects, this textbook also highlights the contributions of esteemed researchers, such as Fei-Fei Li. Professor Li's expertise in computer vision and her renowned Stanford course, CS231n, have played a pivotal role in advancing the field of deep learning. Her chapter in "Architects of Intelligence: The Truth About AI from the People Building it" further showcases her profound knowledge and experience.
-
 To truly comprehend deep learning, one must grasp the underlying principles of deep neural networks. This textbook provides a comprehensive exploration of these networks, elucidating the role of neurons, synapses, weights, biases, and activation functions. By demystifying these complex concepts, readers will be empowered to develop and train their own deep neural networks.
 
 Furthermore, this book underscores the significance of deep architectures in modeling complex non-linear relationships. Through layered compositions of primitives, deep architectures enable the representation and understanding of intricate data patterns. As we delve into the depths of deep learning, we unveil the exponential advantages of deep neural networks over their shallow counterparts in approximating complex functions.
