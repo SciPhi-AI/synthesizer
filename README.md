@@ -149,14 +149,14 @@ This project is licensed under the Apache-2.0 License.
 
 ## 📖 Citation
 
-Reference to cite if you use LlamaIndex in a paper:
+Reference to cite if you use SciPhi in a paper:
 
 ```
 @software{Emergent_AGI_SciPhi,
 author = {Colegrove, Owen},
 doi = {Pending},
 month = {09},
-title = {{LlamaIndex}},
+title = {{SciPhi}},
 url = {https://github.com/emrgnt-cmplxty/sciphi},
 year = {2023}
 }
