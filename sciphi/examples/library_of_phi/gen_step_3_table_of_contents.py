@@ -35,33 +35,18 @@ from glob import glob
 
 import fire
 
+from sciphi.examples.library_of_phi.prompts import TABLE_OF_CONTENTS_PROMPT
 from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
 
-# Prompt for the LLM
-prompt = """
-### Instructions:
-Below the course syllabus for {course_name} is shown as a yaml snippet.
 
-```yaml
-{context}
-```
-
-Pretend you are a prolific author, your task is to translate the shown syllabus into a very detailed Table of Contents for a new textbook that is meant to accompany the course.
-Be sure to pick a fitting name for the textbook. Add additional topics so that the table of contents provides much more information than the original syllabus.
-Return your final result in an easily parseable yaml format, your final yaml must match the above with course -> textbook, and topics -> chapters, subtopics -> sections, and an additional new key: subsubtopics -> subsections.
-
-### Response:
-"""
-
-
-class TextbookTableOfContentsGenerator:
-    """Class to generate detailed Table of Contents for textbooks based on YAML syllabus."""
+class TableOfContentsRunner:
+    """Class to run the generation of detailed Table of Contents for textbooks based on YAML syllabus."""
 
     def __init__(
         self,
         input_rel_dir: str = "output_step_2",
-        output_rel_dir: str = "table_of_contents",
+        output_rel_dir: str = "output_step_3",
         data_directory=None,
         provider: str = "openai",
         model_name: str = "gpt-4-0613",
@@ -115,7 +100,7 @@ class TextbookTableOfContentsGenerator:
                     course_name = " ".join(
                         yml_file_name.split("name_")[1].split("-")
                     )
-                formatted_prompt = prompt.format(
+                formatted_prompt = TABLE_OF_CONTENTS_PROMPT.format(
                     course_name=course_name, context=yml_load
                 )
                 logging.debug(
@@ -133,4 +118,4 @@ class TextbookTableOfContentsGenerator:
 
 
 if __name__ == "__main__":
-    fire.Fire(TextbookTableOfContentsGenerator)
+    fire.Fire(TableOfContentsRunner)

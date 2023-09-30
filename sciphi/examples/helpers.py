@@ -255,18 +255,6 @@ def setup_logging(log_level: str = "INFO") -> logging.Logger:
     return logging.getLogger(__name__)
 
 
-def load_yaml(yml_file_path: str) -> dict:
-    """Load the content of a YAML file."""
-    with open(yml_file_path, "r", encoding="utf-8") as file:
-        return yaml.safe_load(file)
-
-
-def save_yaml(content: str, filename: str) -> None:
-    """Save content to a YAML file."""
-    with open(filename, "w", encoding="utf-8") as file:
-        yaml.dump(content, file, allow_unicode=True)
-
-
 def prep_yaml_line(line: str) -> str:
     """Replace special characters in the YAML string."""
     replacements = {
@@ -322,6 +310,40 @@ def format_yaml_line(line: str, index: int, split_lines: list[str]) -> str:
                 + '":'
             )
     return line
+
+
+def load_yaml_file(yml_file_path: str, do_prep=False) -> dict:
+    """Load YAML content from the given file path."""
+    try:
+        with open(yml_file_path, "r") as yfile:
+            if do_prep:
+                # Parse and clean YAML content
+                yfile_content = yfile.read()
+                parsed_content = ""
+                split_lines = yfile_content.splitlines()
+                for it, line in enumerate(split_lines):
+                    if "```yaml" in line:
+                        line = line.replace("```yaml", "")
+                    elif "```" in line:
+                        line = line.replace("```", "")
+                    line = prep_yaml_line(line)
+                    line = format_yaml_line(line, it, split_lines)
+                    parsed_content += line + "\n"
+                return yaml.safe_load(parsed_content)
+            else:
+                return yaml.safe_load(yfile)
+    except FileNotFoundError:
+        logging.error(f"File not found: {yml_file_path}")
+        raise
+    except yaml.YAMLError as e:
+        logging.error(f"Error {e} while parsing YAML file: {yml_file_path}")
+        raise
+
+
+def save_yaml(content: str, filename: str) -> None:
+    """Save content to a YAML file."""
+    with open(filename, "w", encoding="utf-8") as file:
+        yaml.dump(content, file, allow_unicode=True)
 
 
 def ensure_directory_exists(directory_path: str) -> None:
