@@ -1,11 +1,15 @@
 """Helper functions to be used across example scripts"""
 import argparse
 import json
+import logging
+import os
+
+import yaml
 
 from sciphi.interface import ProviderName
 
 
-def build_llm_config(args: argparse.Namespace) -> dict:
+def gen_llm_config(args: argparse.Namespace) -> dict:
     """Constructs the LLM config based on provided arguments."""
 
     config_args = {
@@ -243,3 +247,107 @@ def parse_arguments() -> argparse.Namespace:
         help="Directory to write generated output to.",
     )
     return parser.parse_args()
+
+
+def setup_logging(log_level: str = "INFO") -> logging.Logger:
+    """Set up logging with the given log level."""
+    logging.basicConfig(level=log_level.upper())
+    return logging.getLogger(__name__)
+
+
+def load_yaml(yml_file_path: str) -> dict:
+    """Load the content of a YAML file."""
+    with open(yml_file_path, "r", encoding="utf-8") as file:
+        return yaml.safe_load(file)
+
+
+def save_yaml(content: str, filename: str) -> None:
+    """Save content to a YAML file."""
+    with open(filename, "w", encoding="utf-8") as file:
+        yaml.dump(content, file, allow_unicode=True)
+
+
+def prep_yaml_line(line: str) -> str:
+    """Replace special characters in the YAML string."""
+    replacements = {
+        "\u201C": '"',
+        "\u201D": '"',
+        "Ã©": "é",
+        "Å": "œ",
+        "â": "",
+        "Î©": "I",
+        "Ï": "I",
+        "\x83": "",
+        "\x88": "",
+        "\x89": "",
+        "\x90": "",
+        "\x91": "",
+        "\x92": "",
+        "\x9b": "",
+        "\x8f": "",
+    }
+    for old, new in replacements.items():
+        line = line.replace(old, new)
+
+    line = line.replace("\\", "\\\\")
+    line = line.replace('"', "'")
+
+    return line
+
+
+def format_yaml_line(line: str, index: int, split_lines: list[str]) -> str:
+    """Format a specific line in the YAML content."""
+    line_cut = line.find("- ")
+    if line_cut != -1:
+        end = len(line) if line[-1] != ":" else len(line) - 1
+        line = (
+            line[: line_cut + 2]
+            + '"'
+            + line[line_cut + 2 : end]
+            + '"'
+            + ("" if end == len(line) else ":")
+        )
+        if line[-1] != ":" and index != len(split_lines) - 1:
+            if "subtopics:" in split_lines[index + 1]:
+                line += ":"
+    elif index == 2:
+        first_non_blank_char = next(
+            (i for i, char in enumerate(line) if char != " "), 0
+        )
+        if first_non_blank_char != 0:
+            line = (
+                line[:first_non_blank_char]
+                + '"'
+                + line[first_non_blank_char:-1]
+                + '":'
+            )
+    return line
+
+
+def ensure_directory_exists(directory_path: str) -> None:
+    """Ensure that a directory exists, and create it if it doesn't."""
+    if not os.path.exists(directory_path):
+        os.makedirs(directory_path)
+
+
+def prase_yaml_completion(yml_content: dict) -> str:
+    """Parse and clean YAML content."""
+    completion = yml_content.get("completion", "")
+    if "```yaml" not in completion:
+        raise ValueError("YML not found in completion")
+
+    yml_str = completion.split("```yaml")[1].split("```")[0]
+
+    def clean_yaml_string(yml_str: str) -> str:
+        """Clean and format the YAML string."""
+        parsed_yml_str = ""
+        split_lines = yml_str.splitlines()
+
+        for it, line in enumerate(split_lines):
+            line = prep_yaml_line(line)
+            line = format_yaml_line(line, it, split_lines)
+            parsed_yml_str += line + "\n"
+
+        return parsed_yml_str
+
+    return clean_yaml_string(yml_str)

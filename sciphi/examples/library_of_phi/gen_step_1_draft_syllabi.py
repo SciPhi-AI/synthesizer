@@ -1,41 +1,42 @@
 # type: ignore
 """
-MIT OCW Course Data Scraper to YAML
+MIT OCW Course Data Scraper to syllyabi 'Draft' YAML Generator
 
 Description:
     This script is designed to scrape course data from the MIT OpenCourseWare (OCW) website and 
-    generate YAML files suitable for LLM (Language Learning Model).
+    generate input YAML files with the help of an LLM.
 
 Usage:
     Command-line interface:
-        $ python sciphi/examples/library_of_phi/yaml_step_1.py run \
-            --output_dir=my_output_directory \
-            --input_filename=my_input_file.jsonl \
+        $ python sciphi/examples/library_of_phi/gen_step_1_draft_syllabi.py run \
+            --output_rel_dir=my_output_directory \
+            --input_jsonl_filename=my_input_file.jsonl \
             --log_level=DEBUG
 Parameters:
-    output_dir (str): 
-        The directory where the generated YAML files will be saved. 
-        Default value is derived based on the relative path 'raw_data/yaml_step_1'.
-
-    input_filename (str): 
-        The filename for the input JSONL file containing the scraped OCW data. 
-        Default is 'scraped_ocw.jsonl'.
+    
+    provider (str):
+        The provider to use for LLM completions.
+        Default is 'openai'.
+    
+    model_name (str):
+        The model to use for LLM completions.
+        Default is 'gpt-4-0613'.
 
     data_directory (Optional[str]): 
-        The directory where the input JSONL file is located. 
-        If not specified, the default location is the directory of this script combined with 'raw_data'.
+        The directory the input and output data is to be stored.
+        If none, defaults to the directory of this script plus '/raw_data'.
+
+    output_rel_dir (str): 
+        The relative directory within the data directory where the generated YAML files will be saved. 
+        Default value is 'output_step_1'.
+
+    input_jsonl_filename (str): 
+        The name of the input jsonl file containing course data scraped from MIT OCW.
+        Default value is 'output_step_1'.
 
     log_level (str): 
         Logging level for the scraper. Can be one of: DEBUG, INFO, WARNING, ERROR, CRITICAL. 
         Default is 'INFO'.
-    
-    provider (str):
-        The provider to use for LLM.
-        Default is 'openai'.
-    
-    model_name (str):
-        The model to use for LLM.
-        Default is 'gpt-4-0613'.
 """
 
 import json
@@ -202,21 +203,19 @@ class OCWScraper:
 
     def __init__(
         self,
-        data_dir: str = "raw_data",
-        output_dir: str = "yaml_step_1",
-        input_filename: str = "scraped_ocw.jsonl",
-        data_directory: Optional[str] = None,
-        log_level: str = "INFO",
         provider: str = "openai",
         model_name: str = "gpt-4-0613",
+        data_directory: Optional[str] = None,
+        output_rel_dir: str = "output_step_1",
+        input_jsonl_filename: str = "scraped_ocw.jsonl",
         prompt: str = TOPIC_CREATION_PROMPT,
+        log_level: str = "INFO",
     ):
-        self.data_dir = data_dir
-        self.rel_output_dir = os.path.join(data_dir, output_dir)
-        self.input_filename = input_filename
-        self.data_directory = data_directory
         self.provider = provider
         self.model_name = model_name
+        self.data_directory = data_directory
+        self.output_rel_dir = output_rel_dir
+        self.input_jsonl_filename = input_jsonl_filename
         self.prompt = prompt
         logging.basicConfig(level=getattr(logging, log_level.upper()))
 
@@ -231,17 +230,18 @@ class OCWScraper:
         llm_provider = InterfaceManager.get_provider(
             provider_name, self.model_name, llm_config
         )
-        file_path = os.path.dirname(os.path.abspath(__file__))
         if not self.data_directory:
-            self.data_directory = os.path.join(file_path, self.data_dir)
+            file_path = os.path.dirname(os.path.abspath(__file__))
+            self.data_directory = os.path.join(file_path, "raw_data")
 
-        output_dir = os.path.join(file_path, self.rel_output_dir)
+        output_dir = os.path.join(self.data_directory, self.output_rel_dir)
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
+        logging.info(f"Saving data to output directory = {output_dir}")
 
-        # Get path to this file
+        # The input file path = data directory + input file name
         input_file_path = os.path.join(
-            self.data_directory, self.input_filename
+            self.data_directory, self.input_jsonl_filename
         )
 
         with open(input_file_path, "r") as file:
@@ -270,7 +270,7 @@ class OCWScraper:
                         logging.info(f"Skipping output file {dump_name}....")
                         continue
 
-                    logging.info(f"Creating output at {dump_name}")
+                    logging.info(f"Saving output file named {dump_name}.")
                     formatted_prompt = self.prompt.format(
                         course_name=course_name, context=context
                     )
