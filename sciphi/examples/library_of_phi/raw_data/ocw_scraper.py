@@ -1,8 +1,35 @@
 """
-Script to scrape MIT OCW website for course data.
+MIT OCW Course Data Scraper
 
-Can be run from the command line as follows:
-poetry run python sciphi/examples/library_of_phi/raw_data/ocw_scraper.py scrape --input_file_name=ocw_courses.html --output_file_name=scraped_ocw.jsonl --sleep_time=1 --log_level=INFO
+Description:
+    This script is designed to scrape course data from the MIT OpenCourseWare (OCW) website.
+    It extracts details like course number, title, URL, resource level, page contents, and more.
+
+Usage:
+    Command-line interface:
+        $ poetry run python sciphi/examples/library_of_phi/raw_data/ocw_scraper.py scrape \
+            --input_file_name=ocw_courses.html \
+            --output_file_name=scraped_ocw.jsonl \
+            --sleep_time=1 \
+            --log_level=INFO
+
+Parameters:
+    input_file_name (str, default="ocw_courses.html"): 
+        Name of the input HTML file containing MIT OCW course listings.
+    
+    output_file_name (str, default="ocw_scraped.jsonl"): 
+        Name of the output JSONL file where scraped data will be saved.
+    
+    data_directory (Optional[str], default=None): 
+        Path to the directory where the input file is located 
+        and where the output file will be saved. 
+        If not specified, defaults to the directory of this script.
+    
+    sleep_time (int, default=0): 
+        Time (in seconds) to pause between scraping consecutive courses.
+    
+    log_level (str, default="INFO"): 
+        Logging level for the scraper. Can be one of: DEBUG, INFO, WARNING, ERROR, CRITICAL.
 """
 import logging
 import os
