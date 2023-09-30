@@ -55,10 +55,17 @@ poetry install -E <extra_name>
 
 ### Dataset Generation
 
-You can use SciPhi for dataset generation by executing the relevant `runner.py` file with various command-line arguments.
+To help with the Library of Phi generation, you can run the following commands below:
 
 ```bash
-poetry run python sciphi/examples/basic_data_gen/runner.py --provider_name=openai --model_name=gpt-4 --log_level=DEBUG --batch_size=1 --num_samples=1 --output_file_name=example_output.jsonl --example_config=textbooks_are_all_you_need_basic_split
+poetry run python sciphi/examples/library_of_phi/raw_data/ocw_scraper.py scrape --input_file_name=ocw_courses.html --output_file_name=scraped_ocw.jsonl --sleep_time=1 --log_level=INFO
+# More to come ..
+```
+
+For broad application, you can use SciPhi for dataset generation by executing the relevant `runner.py` file with various command-line arguments.
+
+```bash
+poetry run python sciphi/examples/basic_data_gen/runner.py --provider_name=openai --model_name=gpt-4 --log_level=INFO --batch_size=1 --num_samples=1 --output_file_name=example_output.jsonl --example_config=textbooks_are_all_you_need_basic_split
 ```
 
 ### Key Command-Line Arguments
@@ -146,7 +153,6 @@ This project is licensed under the Apache-2.0 License.
 [1] [WizardCoder: Empowering Code Large Language Models with Evol-Instruct](https://arxiv.org/abs/2306.08568)
 
 [2] [Textbooks Are All You Need](https://arxiv.org/abs/2306.11644)
-
 
 ## 📖 Citation
 
