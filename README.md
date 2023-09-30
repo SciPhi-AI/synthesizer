@@ -57,9 +57,31 @@ poetry install -E <extra_name>
 
 To help with the Library of Phi generation, you can run the following commands below:
 
+#### Step 1: Scraping the MIT OCW Website
+
+This step involves scraping the MIT OCW website to obtain course details like course number, title, URL, resource level, page contents, and more.
+
 ```bash
-poetry run python sciphi/examples/library_of_phi/raw_data/ocw_scraper.py scrape --input_file_name=ocw_courses.html --output_file_name=scraped_ocw.jsonl --sleep_time=1 --log_level=INFO
-# More to come ..
+poetry run python sciphi/examples/library_of_phi/raw_data/ocw_scraper.py scrape
+    # Optional arguments
+    # --input_file_name=ocw_courses.html \
+    # --output_file_name=scraped_ocw.jsonl \
+    # --sleep_time=1 \
+    # --log_level=INFO
+```
+
+#### Step 2: Processing the Scraped Data to Generate YAML
+
+This step converts the scraped data into YAML with the help of the specified LLM.
+
+```bash
+python poetry run python sciphi/examples/library_of_phi/yaml_step_1.py run 
+    # Optional arguments
+    # --output_dir=my_output_directory \
+    # --input_filename=my_input_file.jsonl \
+    # --log_level=DEBUG \
+    # --provider_name=openai \
+    # --model_name=gpt-4
 ```
 
 For broad application, you can use SciPhi for dataset generation by executing the relevant `runner.py` file with various command-line arguments.
