@@ -93,14 +93,16 @@ class TextbookTableOfContentsGenerator:
         )
 
         input_dir = os.path.join(self.data_directory, self.input_rel_dir)
+        output_dir = os.path.join(self.data_directory, self.output_rel_dir)
+
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
 
         for yml_file_path in glob(f"{input_dir}/*.yaml"):
             try:
                 # get end of name
                 yml_file_name = os.path.basename(yml_file_path)
-                yml_output_file = yml_file_name.replace(
-                    input_dir, self.output_rel_dir
-                )
+                yml_output_file = os.path.join(output_dir, yml_file_name)
                 if os.path.exists(yml_output_file):
                     logging.info(
                         f"Skipping {yml_output_file} because it was already created..."

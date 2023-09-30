@@ -67,7 +67,7 @@ Scrape the MIT OCW website to obtain course details like course number, title, U
 poetry run python sciphi/examples/library_of_phi/raw_data/ocw_scraper.py scrape
 ```
 
-#### Step 2: Process the scraped data to Generate 'Draft' syllabi YAMLs:
+#### Step 2: Process the scraped data to Generate 'Draft' syllabi YAMLs
 
 Converts the scraped data into a JSON YAML 'draft' syllabi with the help of a specified LLM (defaults to openai).
 
@@ -75,12 +75,12 @@ Converts the scraped data into a JSON YAML 'draft' syllabi with the help of a sp
 poetry run python sciphi/examples/library_of_phi/gen_step_1_draft_syllabi.py run
 ```
 
-#### Step 3: Process the draft YAML into the final YAML syllabi:
+#### Step 3: Process the draft YAML into the final YAML syllabi
 
 Clean the drafted syllabi and saves into a ready-to-run YAML output. TODO - Add LLM support for failing drafts.
 
 ```bash
-poetry run python sciphi/examples/library_of_phi/gen_step_2_clean_syllabi.py 
+poetry run python sciphi/examples/library_of_phi/gen_step_2_clean_syllabi.py run
 ```
 
 #### Step 4: Convert the syllabi into a table of contents
@@ -88,8 +88,7 @@ poetry run python sciphi/examples/library_of_phi/gen_step_2_clean_syllabi.py
 This step converts the drafted YAML into a final YAML output
 
 ```bash
-poetry run python sciphi/examples/library_of_phi/gen_table_of_contents.py 
-
+poetry run python sciphi/examples/library_of_phi/gen_step_3_table_of_contents.py run
 ```
 
 ### Customizeable Runner Script
