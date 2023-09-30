@@ -8,7 +8,7 @@ Description:
 
 Usage:
     Command-line interface:
-        $ python your_script_name.py run \
+        $ python sciphi/examples/library_of_phi/yaml_step_1.py run \
             --output_dir=my_output_directory \
             --input_filename=my_input_file.jsonl \
             --log_level=DEBUG

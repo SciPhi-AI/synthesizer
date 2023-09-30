@@ -11,5 +11,4 @@ playground/
 outputs/
 
 # Scraped data
-sciphi/examples/library_of_phi/raw_data/scraped_ocw.jsonl
-sciphi/examples/library_of_phi/raw_data/yaml_step_1/*yaml
+sciphi/examples/library_of_phi/raw_data/

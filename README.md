@@ -72,7 +72,7 @@ poetry run python sciphi/examples/library_of_phi/raw_data/ocw_scraper.py scrape
 
 #### Step 2: Processing the Scraped Data to Generate YAML
 
-This step converts the scraped data into YAML with the help of the specified LLM.
+This step converts the scraped data into a YAML rough draft with the help of the specified LLM.
 
 ```bash
 python poetry run python sciphi/examples/library_of_phi/yaml_step_1.py run 
@@ -82,6 +82,19 @@ python poetry run python sciphi/examples/library_of_phi/yaml_step_1.py run
     # --log_level=DEBUG \
     # --provider_name=openai \
     # --model_name=gpt-4
+```
+
+#### Step 3: Process the draft YAML to generate the final YAML
+
+This step converts the drafted YAML into a final YAML output
+
+```bash
+python poetry run python sciphi/examples/library_of_phi/yaml_step_2.py 
+    # Optional arguments
+    # --input_rel_dir="yaml_step_1" \
+    # --output_rel_dir="yaml_step_2" \
+    # --data_directory=None \
+    # --log_level=DEBUG \
 ```
 
 For broad application, you can use SciPhi for dataset generation by executing the relevant `runner.py` file with various command-line arguments.
