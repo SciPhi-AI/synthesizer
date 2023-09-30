@@ -14,17 +14,17 @@ Usage:
             --log_level=INFO
 
 Parameters:
+    data_directory (Optional[str], default=None): 
+        Path to the directory where the input file is located 
+        and where the output file will be saved. 
+        If not specified, defaults to the directory of this script.
+
     input_file_name (str, default="ocw_courses.html"): 
         Name of the input HTML file containing MIT OCW course listings.
     
     output_file_name (str, default="ocw_scraped.jsonl"): 
         Name of the output JSONL file where scraped data will be saved.
-    
-    data_directory (Optional[str], default=None): 
-        Path to the directory where the input file is located 
-        and where the output file will be saved. 
-        If not specified, defaults to the directory of this script.
-    
+        
     sleep_time (int, default=0): 
         Time (in seconds) to pause between scraping consecutive courses.
     
@@ -73,9 +73,9 @@ class Scraper:
 
     def scrape(
         self,
+        data_directory: Optional[str] = None,
         input_file_name: str = "ocw_courses.html",
         output_file_name: str = "ocw_scraped.jsonl",
-        data_directory: Optional[str] = None,
     ):
         """Scrape course data from MIT OCW and save to an output file."""
 

@@ -13,7 +13,7 @@ from sciphi.core.utils import (
     get_root_dir,
 )
 from sciphi.examples.helpers import (
-    build_llm_config,
+    gen_llm_config,
     parse_arguments,
     prep_for_file_path,
 )
@@ -96,7 +96,7 @@ if __name__ == "__main__":
     # Build an LLM and provider interface
     llm_config = LLMConfigManager.get_config_for_provider(
         provider_name
-    ).create(**build_llm_config(args))
+    ).create(**gen_llm_config(args))
     llm_provider = InterfaceManager.get_provider(
         provider_name,
         model_name,
