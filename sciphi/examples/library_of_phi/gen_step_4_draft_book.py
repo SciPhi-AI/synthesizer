@@ -52,7 +52,12 @@ from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
 from sciphi.writers import RawDataWriter
 from sciphi.examples.helpers import load_yaml_file, wiki_search_api
-from sciphi.examples.library_of_phi.prompts import BOOK_FOREWARD_PROMPT
+from sciphi.examples.library_of_phi.prompts import (
+    BOOK_FOREWARD_PROMPT,
+    BOOK_CHAPTER_SUMMARY_PROMPT,
+    BOOK_CHAPTER_INTRODUCTION_PROMPT,
+    BOOK_BULK_PROMPT,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -190,26 +195,25 @@ class TextbookContentGenerator:
                 logger.debug(f"Constructing the foreward...")
                 foreward = llm_provider.get_completion(foreward_prompt)
                 prev_response = foreward
+                current_chapter = chapter
                 writer.write(f"{prev_response}\n")
                 logger.info(f"Foreward Completion:\n{prev_response}\n\n")
 
-            # Build the capter conclusion
+            # Build the capter conclusion and next chapter introduction
             if chapter != current_chapter:
                 # Summarize the previous chapter
-                if current_chapter != None:
-                    chapter_summary_prompt = CHAPTER_SUMMARY_PROMPT.format(
-                        title=textbook,
-                        chapter=current_chapter,
-                        book_context=f"Chapter outline:\n{str(prev_chapter_config)}\n\nChapter Introduction:{chapter_intro_prompt}}",
-                    )
-                    chapter_completion = llm_provider.get_completion(
-                        chapter_summary_prompt
-                    )
+                chapter_summary_prompt = BOOK_CHAPTER_SUMMARY_PROMPT.format(
+                    title=textbook,
+                    chapter=current_chapter,
+                    book_context=f"Chapter outline:\n{str(prev_chapter_config)}\n\nChapter Introduction:{chapter_intro_prompt}",
+                )
+                chapter_completion = llm_provider.get_completion(
+                    chapter_summary_prompt
+                )
 
-                    current_chapter = chapter
-                    prev_response = chapter_completion
-                    writer.write(f"{prev_response}\n")
-                    print(f"Chapter Conclusion:\n{prev_response}\n\n")
+                prev_response = chapter_completion
+                writer.write(f"{prev_response}\n")
+                print(f"Chapter Conclusion:\n{prev_response}\n\n")
 
                 # Introduce the new chapter
                 chapter_intro_prompt = CHAPTER_INTRODUCTION_PROMPT.format(
@@ -229,7 +233,7 @@ class TextbookContentGenerator:
                 url, username, password, subsection or section
             )
 
-            step_prompt = CHUNK_PROMPT.format(
+            step_prompt = BOOK_BULK_PROMPT.format(
                 title=textbook,
                 chapter=chapter,
                 section=section,

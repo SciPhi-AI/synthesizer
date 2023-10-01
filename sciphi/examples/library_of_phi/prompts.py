@@ -127,7 +127,7 @@ Notes:
 """
 
 
-BOOK_CHUNK_PROMPT = """
+BOOK_BULK_PROMPT = """
 ### Instructions:
 You are a writing a book titled "{title}". You are currently writing the chapter and section shown below:
 
@@ -191,7 +191,7 @@ $$
 """
 
 # Prompt for the LLM
-CHAPTER_INTRODUCTION_PROMPT = """
+BOOK_CHAPTER_INTRODUCTION_PROMPT = """
 ### Instructions:
 You are a writing a book titled "{title}". You are currently writing a several paragraph introducton for the chapter shown below (avoid going into too much detail):
 
