@@ -1,5 +1,9 @@
 # **SciPhi [ΨΦ]: A Framework for Breaking LLM Scaling Laws**
 
+<p align="center">
+<img width="716" alt="Screenshot 2023-10-01 at 10 45 12 AM" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/c4192288-b5af-4ef8-9774-82b3bb5c8251">
+</p>
+
 <!-- ## **Overview** -->
 
 **SciPhi** is an configurable Python framework designed to tackle the challenges of LLM (Large Language Model) scaling laws. At its core, SciPhi offers:
