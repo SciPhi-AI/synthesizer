@@ -1,3 +1,5 @@
+# NOTE - THIS TEXTBOOK WAS GENERATED WITH AI.
+
 # Table of Contents
 
 - [Foreword](#foreword)
