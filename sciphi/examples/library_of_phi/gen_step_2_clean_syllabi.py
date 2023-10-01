@@ -37,10 +37,16 @@ import os
 import fire
 import yaml
 
-from sciphi.examples.helpers import load_yaml, prase_yaml_completion, save_yaml
+from sciphi.examples.helpers import (
+    load_yaml_file,
+    prase_yaml_completion,
+    save_yaml,
+)
 
 
-class SyllabiYAMLGenerator:
+class CleanSyllabiYAMLRunner:
+    """Runs the generation process to clean drafted syllabi YAMLs."""
+
     def __init__(
         self,
         data_directory=None,
@@ -84,7 +90,7 @@ class SyllabiYAMLGenerator:
         counter = 0
         for yml_file_path in glob.glob(os.path.join(input_yaml_dir, "*.yaml")):
             try:
-                yml_content = load_yaml(yml_file_path)
+                yml_content = load_yaml_file(yml_file_path)
                 parsed_yml_str = prase_yaml_completion(yml_content)
                 yml_load = yaml.safe_load(parsed_yml_str)
                 yml_file_name = os.path.basename(yml_file_path)
@@ -102,4 +108,4 @@ class SyllabiYAMLGenerator:
 
 
 if __name__ == "__main__":
-    fire.Fire(SyllabiYAMLGenerator)
+    fire.Fire(CleanSyllabiYAMLRunner)

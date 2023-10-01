@@ -4,7 +4,9 @@ import json
 import logging
 import os
 
+import requests
 import yaml
+from requests.auth import HTTPBasicAuth
 
 from sciphi.interface import ProviderName
 
@@ -255,18 +257,6 @@ def setup_logging(log_level: str = "INFO") -> logging.Logger:
     return logging.getLogger(__name__)
 
 
-def load_yaml(yml_file_path: str) -> dict:
-    """Load the content of a YAML file."""
-    with open(yml_file_path, "r", encoding="utf-8") as file:
-        return yaml.safe_load(file)
-
-
-def save_yaml(content: str, filename: str) -> None:
-    """Save content to a YAML file."""
-    with open(filename, "w", encoding="utf-8") as file:
-        yaml.dump(content, file, allow_unicode=True)
-
-
 def prep_yaml_line(line: str) -> str:
     """Replace special characters in the YAML string."""
     replacements = {
@@ -324,6 +314,40 @@ def format_yaml_line(line: str, index: int, split_lines: list[str]) -> str:
     return line
 
 
+def load_yaml_file(yml_file_path: str, do_prep=False) -> dict:
+    """Load YAML content from the given file path."""
+    try:
+        with open(yml_file_path, "r") as yfile:
+            if do_prep:
+                # Parse and clean YAML content
+                yfile_content = yfile.read()
+                parsed_content = ""
+                split_lines = yfile_content.splitlines()
+                for it, line in enumerate(split_lines):
+                    if "```yaml" in line:
+                        line = line.replace("```yaml", "")
+                    elif "```" in line:
+                        line = line.replace("```", "")
+                    line = prep_yaml_line(line)
+                    line = format_yaml_line(line, it, split_lines)
+                    parsed_content += line + "\n"
+                return yaml.safe_load(parsed_content)
+            else:
+                return yaml.safe_load(yfile)
+    except FileNotFoundError:
+        logging.error(f"File not found: {yml_file_path}")
+        raise
+    except yaml.YAMLError as e:
+        logging.error(f"Error {e} while parsing YAML file: {yml_file_path}")
+        raise
+
+
+def save_yaml(content: str, filename: str) -> None:
+    """Save content to a YAML file."""
+    with open(filename, "w", encoding="utf-8") as file:
+        yaml.dump(content, file, allow_unicode=True)
+
+
 def ensure_directory_exists(directory_path: str) -> None:
     """Ensure that a directory exists, and create it if it doesn't."""
     if not os.path.exists(directory_path):
@@ -351,3 +375,25 @@ def prase_yaml_completion(yml_content: dict) -> str:
         return parsed_yml_str
 
     return clean_yaml_string(yml_str)
+
+
+def wiki_search_api(
+    url: str, username: str, password: str, query: str, top_k=10
+) -> dict:
+    """
+    Queries the search API with the provided credentials and query.
+    The expected output is a JSON response containing the top_k examples.
+    """
+    # Make the GET request with basic authentication and the query parameter
+    response = requests.get(
+        url,
+        auth=HTTPBasicAuth(username, password),
+        params={"query": query, "k": top_k},
+    )
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        return response.json()["match"]  # Return the JSON response
+    else:
+        response.raise_for_status()  # Raise an HTTPError if the HTTP request returned an unsuccessful status code
+        raise ValueError("Unexpected response from API")

@@ -42,101 +42,15 @@ Parameters:
 import json
 import logging
 import os
-import textwrap
 from glob import glob
 from typing import Optional, Set
 
 import fire
 import yaml
 
+from sciphi.examples.library_of_phi.prompts import SYLLABI_CREATION_PROMPT
 from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
-
-TOPIC_CREATION_PROMPT = textwrap.dedent(
-    """
-Take a deep breath, then closely examine the configuration that follows. You will be asked to produce a similar configuration as part of this task, so pay close attention to the format.
-
-```yaml
-course:
-    Quantum Physics I:
-        topics:
-            - Basic Features of Quantum Mechanics:
-                subtopics:
-                    - Linearity
-                    - Complex Numbers
-                    - Non-deterministic
-                    - Superposition
-                    - Entanglement
-            - Experimental Basis of Quantum Physics:
-                subtopics:
-                    - Two-slit Experiments
-                    - Mach-Zehnder Interferometer
-                    - Elitzur-Vaidman Bombs
-                    - Photoelectric Effect
-                    - Compton Scattering
-                    - de Broglie Wavelength
-            - Wave Mechanics:
-                subtopics:
-                    - Galilean Transformation of de Broglie Wavelength
-                    - Wave-packets and Group Velocity
-                    - Matter Wave for a Particle
-                    - Momentum and Position Operators
-                    - Schrödinger Equation
-            - Interpretation of the Wavefunction:
-                subtopics:
-                    - Probability Density
-                    - Probability Current
-                    - Current Conservation
-                    - Hermitian Operators
-            - Expectation Values and Uncertainty:
-                subtopics:
-                    - Expectation Values of Operators
-                    - Time Evolution of Wave-packets
-                    - Fourier Transforms
-                    - Parseval Theorem
-                    - Uncertainty Relation
-            - Quantum Physics in One-dimensional Potentials:
-                subtopics:
-                    - Stationary States
-                    - Boundary Conditions
-                    - Particle on a Circle
-                    - Infinite Square Well
-                    - Finite Square Well
-                    - Semiclassical Approximations
-                    - Numerical Solution by the Shooting Method
-                    - Delta Function Potential
-                    - Simple Harmonic Oscillator
-                    - Reflection and Transmission Coefficients
-                    - Ramsauer Townsend Effect
-                    - 1D Scattering and Phase Shifts
-                    - Levinson’s Theorem
-            - Angular Momentum and Central Potentials:
-                subtopics:
-                    - Resonances and Breit-Wigner Distribution
-                    - Central Potentials
-                    - Algebra of Angular Momentum
-                    - Legendre Polynomials
-                    - Hydrogen Atom
-                    - Energy Levels Diagram
-                    - Virial Theorem
-                    - Circular Orbits and Eccentricity
-                    - Discovery of Spin
-```
-
-Given the following context, deduce the new configuration entry for the course "{course_name}". Be sure to fill in the appropriate topics and subtopics.
-
-```md
-{context}
-```
-
-Notes:
-- Filter out any erroneous content like "QUIZ" or "TEST" that might appear in the syllabus. 
-- Attempt to match the length and specificity of the above example; add your own context if necessary to accomplish this or remove extra context.
-- You should target **5-10 main topics with 6-10 subtopics each**.
-
-### Response:
-"""
-)
 
 
 def extract_data_from_record(record: dict[str, str]) -> tuple[dict, str]:
@@ -198,8 +112,8 @@ def quoted_presenter(dumper, data):
     return dumper.represent_scalar("tag:yaml.org,2002:str", data, style='"')
 
 
-class OCWScraper:
-    """MIT OCW scraper class."""
+class DraftSyllabiYAMLRunner:
+    """Runs the generation process for draft syllabi YAMLs."""
 
     def __init__(
         self,
@@ -207,8 +121,8 @@ class OCWScraper:
         model_name: str = "gpt-4-0613",
         data_directory: Optional[str] = None,
         output_rel_dir: str = "output_step_1",
-        input_jsonl_filename: str = "scraped_ocw.jsonl",
-        prompt: str = TOPIC_CREATION_PROMPT,
+        input_jsonl_filename: str = "ocw_scraped.jsonl",
+        prompt: str = SYLLABI_CREATION_PROMPT,
         log_level: str = "INFO",
     ):
         self.provider = provider
@@ -219,8 +133,8 @@ class OCWScraper:
         self.prompt = prompt
         logging.basicConfig(level=getattr(logging, log_level.upper()))
 
-    def run(self):
-        """Main function."""
+    def run(self) -> None:
+        """Run the draft YAML generation process."""
         yaml.add_representer(str, quoted_presenter)
 
         provider_name = ProviderName(self.provider)
@@ -297,4 +211,4 @@ class OCWScraper:
 
 
 if __name__ == "__main__":
-    fire.Fire(OCWScraper)
+    fire.Fire(DraftSyllabiYAMLRunner)
