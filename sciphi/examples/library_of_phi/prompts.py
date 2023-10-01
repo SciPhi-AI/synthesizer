@@ -88,6 +88,22 @@ Notes:
 )
 
 
+TABLE_OF_CONTENTS_PROMPT = """
+### Instructions:
+Below the course syllabus for {course_name} is shown as a yaml snippet.
+
+```yaml
+{context}
+```
+
+Pretend you are a prolific author, your task is to translate the shown syllabus into a very detailed Table of Contents for a new textbook that is meant to accompany the course.
+Be sure to pick a fitting name for the textbook. Add additional topics so that the table of contents provides much more information than the original syllabus.
+Return your final result in an easily parseable yaml format, your final yaml must match the above with course -> textbook, and topics -> chapters, subtopics -> sections, and an additional new key: subsubtopics -> subsections.
+
+### Response:
+"""
+
+
 BOOK_FOREWARD_PROMPT = """
 ### Instructions:
 You are a writing a book titled "{title}". You are currently writing the foreward for the book:
@@ -197,21 +213,6 @@ Notes:
 \\Delta w = ...
 $$
 `
-
-### Response:
-"""
-
-TABLE_OF_CONTENTS_PROMPT = """
-### Instructions:
-Below the course syllabus for {course_name} is shown as a yaml snippet.
-
-```yaml
-{context}
-```
-
-Pretend you are a prolific author, your task is to translate the shown syllabus into a very detailed Table of Contents for a new textbook that is meant to accompany the course.
-Be sure to pick a fitting name for the textbook. Add additional topics so that the table of contents provides much more information than the original syllabus.
-Return your final result in an easily parseable yaml format, your final yaml must match the above with course -> textbook, and topics -> chapters, subtopics -> sections, and an additional new key: subsubtopics -> subsections.
 
 ### Response:
 """
