@@ -139,14 +139,14 @@ You are a writing a book titled "{title}". You are currently writing the chapter
 
 ### Subsection (optional): {subsection}
 
-To assist you in this task, you have been provided the content bellow:
+To assist you in writing the chapter, you have been provided with some related context and recent chapter contents bellow:
 
 ### Related Context
 ```
 {related_context}
 ```
 
-### Last textbook section context:
+### Last textbook section content:
 ```
 {book_context}
 ```
@@ -156,7 +156,7 @@ Notes:
 - The context may be truncated and is meant only to provide a starting point. Feel free to expand on it or take the response in any direction that fits the prompt, but keep it in a voice that is appropriate for an advanced undergraduate course at MIT.
 - Avoid making any factual claims or opinions without proper citations or context to support them, stick to the proposed context.
 - Format ALL math equations with the $ and $$ delimiters to insert math expressions in TeX and LaTeX style syntax. This content is then rendered using the highly popular MathJax library. E.g. write inline math like `$y_j(n)$` and equations like `$$
-\Delta w = ...
+\\Delta w = ...
 $$
 `
 
@@ -166,7 +166,7 @@ $$
 # Prompt for the LLM
 BOOK_CHAPTER_SUMMARY_PROMPT = """
 ### Instructions:
-You are a writing a book titled "{title}". You are currently writing a several paragraph summary for the chapter shown below:
+You are a writing a book titled "{title}". You are tasked with writing a several paragraph CONCLUSION FOR THE CHAPTER shown below:
 
 #  Title: {title}
 
@@ -174,7 +174,7 @@ You are a writing a book titled "{title}". You are currently writing a several p
 
 To assist you in this task, you have been provided the context bellow:
 
-### Chapter section context:
+### Previously written chapter:
 ```
 {book_context}
 ```
@@ -183,7 +183,7 @@ Notes:
 - The book is being written in the popular Markdown format.
 - Avoid making any factual claims or opinions without proper citations or context to support them, stick to the proposed context.
 - Format ALL math equations with the $ and $$ delimiters to insert math expressions in TeX and LaTeX style syntax. This content is then rendered using the highly popular MathJax library. E.g. write inline math like `$y_j(n)$` and equations like `$$
-\Delta w = ...
+\\Delta w = ...
 $$
 `
 
@@ -210,7 +210,7 @@ Notes:
 - The book is being written in the popular Markdown format.
 - Avoid making any factual claims or opinions without proper citations or context to support them, stick to the proposed context.
 - Format ALL math equations with the $ and $$ delimiters to insert math expressions in TeX and LaTeX style syntax. This content is then rendered using the highly popular MathJax library. E.g. write inline math like `$y_j(n)$` and equations like `$$
-\Delta w = ...
+\\Delta w = ...
 $$
 `
 

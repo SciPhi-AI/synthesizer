@@ -96,7 +96,10 @@ poetry run python sciphi/examples/library_of_phi/gen_step_3_table_of_contents.py
 This step converts the clean syllabi info a table of contents.
 
 ```bash
-poetry run python sciphi/examples/library_of_phi/gen_step_4_draft_book.py run
+poetry run python sciphi/examples/library_of_phi/gen_step_4_draft_book.py run --do-wiki=False
+# To run with wiki, set --do-wiki=True and place the appropriate 
+# `WIKI_SERVER_URL`, `WIKI_SERVER_USERNAME`, and `WIKI_SERVER_PASSWORD`
+# parameters into your local .env file.
 ```
 
 ### Customizeable Runner Script

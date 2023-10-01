@@ -48,16 +48,16 @@ from typing import Generator, Tuple
 
 import fire
 
+from sciphi.examples.helpers import load_yaml_file, wiki_search_api
+from sciphi.examples.library_of_phi.prompts import (
+    BOOK_BULK_PROMPT,
+    BOOK_CHAPTER_INTRODUCTION_PROMPT,
+    BOOK_CHAPTER_SUMMARY_PROMPT,
+    BOOK_FOREWARD_PROMPT,
+)
 from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
 from sciphi.writers import RawDataWriter
-from sciphi.examples.helpers import load_yaml_file, wiki_search_api
-from sciphi.examples.library_of_phi.prompts import (
-    BOOK_FOREWARD_PROMPT,
-    BOOK_CHAPTER_SUMMARY_PROMPT,
-    BOOK_CHAPTER_INTRODUCTION_PROMPT,
-    BOOK_BULK_PROMPT,
-)
 
 logger = logging.getLogger(__name__)
 
@@ -169,6 +169,7 @@ class TextbookContentGenerator:
 
         current_chapter = None
         prev_chapter_config = None
+        chapter_intro_prompt = None
         logger.info("Looping over the textbook config...")
         for counter, elements in enumerate(traversal_generator):
             # elements is a tuple containing the names of textbook, chapter, section, and subsection.
@@ -195,28 +196,29 @@ class TextbookContentGenerator:
                 logger.debug(f"Constructing the foreward...")
                 foreward = llm_provider.get_completion(foreward_prompt)
                 prev_response = foreward
-                current_chapter = chapter
+                prev_chapter_config = chapter_config
                 writer.write(f"{prev_response}\n")
                 logger.info(f"Foreward Completion:\n{prev_response}\n\n")
 
             # Build the capter conclusion and next chapter introduction
             if chapter != current_chapter:
-                # Summarize the previous chapter
-                chapter_summary_prompt = BOOK_CHAPTER_SUMMARY_PROMPT.format(
-                    title=textbook,
-                    chapter=current_chapter,
-                    book_context=f"Chapter outline:\n{str(prev_chapter_config)}\n\nChapter Introduction:{chapter_intro_prompt}",
-                )
-                chapter_completion = llm_provider.get_completion(
-                    chapter_summary_prompt
-                )
+                if current_chapter is not None:
+                    # Summarize the previous chapter
+                    chapter_summary_prompt = BOOK_CHAPTER_SUMMARY_PROMPT.format(
+                        title=textbook,
+                        chapter=current_chapter,
+                        book_context=f"Chapter outline:\n{str(prev_chapter_config)}",
+                    )
+                    chapter_completion = llm_provider.get_completion(
+                        chapter_summary_prompt
+                    )
 
-                prev_response = chapter_completion
-                writer.write(f"{prev_response}\n")
-                print(f"Chapter Conclusion:\n{prev_response}\n\n")
+                    prev_response = chapter_completion
+                    writer.write(f"{prev_response}\n")
+                    print(f"Chapter Conclusion:\n{prev_response}\n\n")
 
                 # Introduce the new chapter
-                chapter_intro_prompt = CHAPTER_INTRODUCTION_PROMPT.format(
+                chapter_intro_prompt = BOOK_CHAPTER_INTRODUCTION_PROMPT.format(
                     title=textbook,
                     chapter=chapter,
                     book_context=str(chapter_config),
@@ -230,7 +232,12 @@ class TextbookContentGenerator:
                 current_chapter = chapter
 
             related_context = (
-                wiki_search_api(url, username, password, subsection or section)
+                wiki_search_api(
+                    self.url,
+                    self.username,
+                    self.password,
+                    subsection or section,
+                )
                 if self.do_wiki
                 else "Related context not available."
             )
