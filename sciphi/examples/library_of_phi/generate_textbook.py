@@ -8,7 +8,7 @@ Description:
 
 Usage:
     Command-line interface:
-        $ python sciphi/examples/library_of_phi/gen_step4_draft_book.py run \
+        $ python sciphi/examples/library_of_phi/generate_textbook.py run \
             --input_dir=table_of_contents  \
             --provider=openai \
             --model_name=gpt-4-0613 \
