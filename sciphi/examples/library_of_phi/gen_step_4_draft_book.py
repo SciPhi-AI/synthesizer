@@ -9,7 +9,7 @@ Description:
 Usage:
     Command-line interface:
         $ python sciphi/examples/library_of_phi/gen_step4_draft_book.py run \
-            --input_dir=output_step_3  \
+            --input_dir=table_of_contents  \
             --provider=openai \
             --model_name=gpt-4-0613 \
             --log_level=DEBUG
@@ -21,11 +21,11 @@ Parameters:
     parsed_dir (str): 
         Directory containing parsed data. Default is 'raw_data'.
     toc_dir (str): 
-        Directory for the table of contents. Default is 'output_step_3'.
+        Directory for the table of contents. Default is 'table_of_contents'.
     output_dir (str): 
         Directory for the output. Default is 'output_step_4'.
-    textbook (str): 
-        Name of the textbook. Default is 'field_computer_science_subfield_artificial_intelligence_course_name_Introduction_to_Deep_Learning'.
+      (str): 
+        Name of the textbook. Default is 'Introduction_to_Deep_Learning'.
     max_related_context_to_sample (int): 
         Maximum context to sample. Default is 2000.
     max_prev_snippet_to_sample (int): 
@@ -104,9 +104,9 @@ class TextbookContentGenerator:
         provider="openai",
         model="gpt-4-0613",
         parsed_dir="raw_data",
-        toc_dir="output_step_3",
+        toc_dir="table_of_contents",
         output_dir="output_step_4",
-        textbook="field_computer_science_subfield_artificial_intelligence_course_name_Introduction_to_Deep_Learning",
+        textbook="Introduction_to_Deep_Learning",
         max_related_context_to_sample=2_000,
         max_prev_snippet_to_sample=2_000,
         do_wiki=True,
@@ -164,7 +164,7 @@ class TextbookContentGenerator:
 
         if not os.path.exists(os.path.dirname(output_path)):
             os.makedirs(os.path.dirname(output_path))
-
+        logger.info(f"Saving textbook to {output_path}")
         writer = RawDataWriter(output_path)
 
         current_chapter = None
@@ -176,9 +176,7 @@ class TextbookContentGenerator:
             textbook, chapter, section, subsection, chapter_config = elements
             # Build the forward prompt
             if counter == 0:
-                logger.info(
-                    f"Processing {textbook}, {chapter}, {section}, {subsection}"
-                )
+                logger.info(f"Processing {textbook}, Chapter:{chapter}")
                 logger.debug("Fetching related content..")
                 related_context = (
                     wiki_search_api(

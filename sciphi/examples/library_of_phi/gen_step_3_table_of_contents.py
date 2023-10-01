@@ -35,7 +35,7 @@ from glob import glob
 
 import fire
 
-from sciphi.examples.library_of_phi.prompts import TABLE_OF_CONTENTS_PROMPT
+from sciphi.examples.library_of_phi.prompts import TABLE_OF_CONTENTS_PROMPT  # type: ignore
 from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
 
@@ -46,7 +46,7 @@ class TableOfContentsRunner:
     def __init__(
         self,
         input_rel_dir: str = "output_step_2",
-        output_rel_dir: str = "output_step_3",
+        output_rel_dir: str = "table_of_contents",
         data_directory=None,
         provider: str = "openai",
         model_name: str = "gpt-4-0613",
