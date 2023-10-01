@@ -51,7 +51,7 @@ class TextbookContentGeneratorSimplified:
     def run(
         self,
         provider="openai",
-        model="gpt-4-0613",
+        model_name="gpt-4-0613",
         parsed_dir="raw_data",
         toc_dir="table_of_contents",
         output_dir="created_textbooks",
@@ -67,7 +67,7 @@ class TextbookContentGeneratorSimplified:
         """Runs the generation process to create a textbook from the YAML table of contents."""
         TextbookContentGenerator(
             provider,
-            model,
+            model_name,
             parsed_dir,
             toc_dir,
             output_dir,
