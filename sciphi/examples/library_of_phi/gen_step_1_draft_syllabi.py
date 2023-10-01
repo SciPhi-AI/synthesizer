@@ -50,8 +50,6 @@ import yaml
 
 from sciphi.examples.helpers import get_default_settings_provider
 from sciphi.examples.library_of_phi.prompts import SYLLABI_CREATION_PROMPT
-from sciphi.interface import InterfaceManager, ProviderName
-from sciphi.llm import LLMConfigManager
 
 
 def extract_data_from_record(record: dict[str, str]) -> tuple[dict, str]:

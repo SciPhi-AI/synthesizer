@@ -3,14 +3,13 @@ import argparse
 import json
 import logging
 import os
-from typing import Tuple
 
 import requests
 import yaml
 from requests.auth import HTTPBasicAuth
 
-from sciphi.interface import ProviderName
 from sciphi.interface import InterfaceManager, ProviderName
+from sciphi.interface.base import LLMInterface
 from sciphi.llm import LLMConfigManager
 
 
@@ -404,15 +403,12 @@ def wiki_search_api(
 
 def get_default_settings_provider(
     provider: str, model_name: str, max_tokens_to_sample=None
-) -> Tuple[InterfaceManager, LLMConfigManager]:
+) -> LLMInterface:
     """Get the default LLM config and provider for the given provider and model name."""
 
     provider_name = ProviderName(provider)
     llm_config = LLMConfigManager.get_config_for_provider(
         provider_name
     ).create(max_tokens_to_sample=max_tokens_to_sample, model_name=model_name)
-    llm_provider = InterfaceManager.get_provider(
-        provider_name, model_name, llm_config
-    )
 
-    return llm_provider
+    return InterfaceManager.get_provider(provider_name, model_name, llm_config)

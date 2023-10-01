@@ -49,9 +49,9 @@ from typing import Generator, Tuple
 import fire
 
 from sciphi.examples.helpers import (
+    get_default_settings_provider,
     load_yaml_file,
     wiki_search_api,
-    get_default_settings_provider,
 )
 from sciphi.examples.library_of_phi.prompts import (
     BOOK_BULK_PROMPT,
