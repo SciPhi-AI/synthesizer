@@ -1,0 +1,194 @@
+```yaml
+course:
+  Convex Analysis and Optimization:
+    textbook:
+      title: "Convex Analysis and Optimization: Theory, Algorithms, and Applications"
+      author: "John Smith"
+      chapters:
+        - The role of convexity in optimization:
+            sections:
+              - Convex sets and functions
+                subsections:
+                  - Convexity and convex sets
+                  - Convex functions and their properties
+                  - Convex combinations and convex hulls
+              - Epigraphs
+                subsections:
+                  - Definition and properties
+                  - Epigraphical representation of convex functions
+              - Closed convex functions
+                subsections:
+                  - Definition and properties
+                  - Examples of closed convex functions
+              - Recognizing convex functions
+                subsections:
+                  - Criteria for convexity
+                  - Techniques for recognizing convex functions
+        - Duality theory:
+            sections:
+              - Algorithms and duality
+                subsections:
+                  - Dual problem formulation
+                  - Duality gap and optimality conditions
+                  - Algorithms for solving dual problems
+        - Differentiable convex functions:
+            sections:
+              - Convex and affine hulls
+                subsections:
+                  - Definition and properties
+                  - Convex hulls and affine hulls of sets
+              - Caratheodory’s theorem
+                subsections:
+                  - Statement and proof of Caratheodory's theorem
+                  - Applications of Caratheodory's theorem
+        - Relative interior and closure:
+            sections:
+              - Algebra of convex sets
+                subsections:
+                  - Minkowski sum and difference of convex sets
+                  - Intersection and union of convex sets
+              - Separation theorems
+                subsections:
+                  - Hahn-Banach separation theorem
+                  - Supporting hyperplane theorem
+              - Supporting hyperplanes
+                subsections:
+                  - Definition and properties
+                  - Geometric interpretation of supporting hyperplanes
+              - Extreme points
+                subsections:
+                  - Definition and properties
+                  - Extreme points of convex sets
+        - Convex optimization problems:
+            sections:
+              - Convex optimization problems
+                subsections:
+                  - Problem formulation and basic concepts
+                  - Feasible sets and feasible solutions
+              - Convex programming
+                subsections:
+                  - Convex programming problems and properties
+                  - Convex programming algorithms
+              - Linear programming
+                subsections:
+                  - Linear programming problems and properties
+                  - Simplex algorithm and its variants
+              - Quadratic programming
+                subsections:
+                  - Quadratic programming problems and properties
+                  - Algorithms for solving quadratic programming problems
+              - Second-order cone programming
+                subsections:
+                  - Second-order cone programming problems and properties
+                  - Algorithms for solving second-order cone programming problems
+              - Semidefinite programming
+                subsections:
+                  - Semidefinite programming problems and properties
+                  - Algorithms for solving semidefinite programming problems
+              - Geometric programming
+                subsections:
+                  - Geometric programming problems and properties
+                  - Algorithms for solving geometric programming problems
+              - Conic programming
+                subsections:
+                  - Conic programming problems and properties
+                  - Algorithms for solving conic programming problems
+              - Generalized inequalities
+                subsections:
+                  - Definition and properties of generalized inequalities
+                  - Applications of generalized inequalities in optimization
+        - Convex analysis:
+            sections:
+              - Convex functions
+                subsections:
+                  - Definition and properties of convex functions
+                  - Convexity-preserving operations
+              - Subgradients
+                subsections:
+                  - Definition and properties of subgradients
+                  - Subgradient-based optimization algorithms
+              - Conjugate functions
+                subsections:
+                  - Definition and properties of conjugate functions
+                  - Conjugate duality and optimization
+              - Convex optimization problems
+                subsections:
+                  - Connection between convex functions and optimization problems
+                  - Techniques for solving convex optimization problems
+        - Optimality conditions:
+            sections:
+              - Optimality conditions for convex problems
+                subsections:
+                  - KKT conditions and their interpretation
+                  - Slater's condition and its implications
+              - Duality gap
+                subsections:
+                  - Definition and interpretation of duality gap
+                  - Techniques for bounding and minimizing duality gap
+        - Algorithms for convex optimization:
+            sections:
+              - Gradient descent
+                subsections:
+                  - Basic gradient descent algorithm
+                  - Convergence analysis and variations of gradient descent
+              - Newton's method
+                subsections:
+                  - Newton's method for convex optimization
+                  - Convergence analysis and modifications of Newton's method
+              - Proximal gradient method
+                subsections:
+                  - Proximal operator and proximal gradient algorithm
+                  - Convergence properties and applications of proximal gradient method
+              - Alternating direction method of multipliers (ADMM)
+                subsections:
+                  - ADMM algorithm and its applications in convex optimization
+                  - Convergence analysis and variations of ADMM
+              - Interior point methods
+                subsections:
+                  - Barrier methods for convex optimization
+                  - Primal-dual interior point algorithms
+                  - Convergence analysis and modifications of interior point methods
+        - Applications of convex optimization:
+            sections:
+              - Signal processing
+                subsections:
+                  - Convex optimization in signal denoising and reconstruction
+                  - Compressed sensing and sparse signal recovery
+              - Machine learning
+                subsections:
+                  - Convex optimization in support vector machines
+                  - Convex formulations of machine learning problems
+              - Control theory
+                subsections:
+                  - Convex optimization in model predictive control
+                  - Convex relaxations of control problems
+              - Image processing
+                subsections:
+                  - Convex optimization in image restoration and segmentation
+                  - Convex formulations of image processing problems
+              - Finance
+                subsections:
+                  - Portfolio optimization using convex optimization
+                  - Risk management and convex risk measures
+              - Statistics
+                subsections:
+                  - Convex optimization in statistical estimation
+                  - Convex formulations of statistical problems
+              - Operations research
+                subsections:
+                  - Convex optimization in network flow problems
+                  - Convex relaxations of combinatorial optimization problems
+              - Robotics
+                subsections:
+                  - Convex optimization in robot motion planning
+                  - Convex formulations of robotic control problems
+              - Data science
+                subsections:
+                  - Convex optimization in data analysis and machine learning
+                  - Convex formulations of data science problems
+              - Economics
+                subsections:
+                  - Convex optimization in economic modeling and optimization
+                  - Convex formulations of economic problems
+```
+```

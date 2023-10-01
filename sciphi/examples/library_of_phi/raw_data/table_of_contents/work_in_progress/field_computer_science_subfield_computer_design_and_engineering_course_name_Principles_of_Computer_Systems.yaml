@@ -1,0 +1,67 @@
+```yaml
+textbook:
+  Principles of Computer Systems: A Comprehensive Guide
+    chapters:
+    - Course Information:
+        sections:
+        - 'Chapter 1: Course Number: 6.826'
+        - 'Chapter 2: Course Name: Principles of Computer Systems'
+        - 'Chapter 3: Resource Level: Graduate'
+    - Spec Language:
+        sections:
+        - 'Chapter 4: Handouts 1-6: Course Information, Spec language (PDF)'
+        - 'Chapter 5: Handout 9: Atomic Semantics of Spec (PDF)'
+        - 'Chapter 6: Handouts 10, 11: Performance, Firefly RPC (PDF)'
+        - 'Chapter 7: Handouts 12, 13: Naming, Semantic File System (PDF)'
+        - 'Chapter 8: Handout 17: Formal Concurrency (PDF)'
+    - Disks and File Systems:
+        sections:
+        - 'Chapter 9: Handout 7: Disks and File Systems (PDF)'
+    - Generalizing Abstraction Functions:
+        sections:
+        - 'Chapter 10: Handout 8: Generalizing Abstraction Functions (PDF)'
+    - Concurrency:
+        sections:
+        - 'Chapter 11: Handouts 14-16: Concurrency (PDF)'
+    - Consensus:
+        sections:
+        - 'Chapter 12: Handout 18: Consensus (PDF)'
+    - Sequential Transactions with Caching:
+        sections:
+        - 'Chapter 13: Handout 19: Sequential Transactions with Caching (PDF)'
+    - Performance:
+        sections:
+        - 'Chapter 14: Handouts 10, 11: Performance, Firefly RPC (PDF)'
+    - Naming:
+        sections:
+        - 'Chapter 15: Handouts 12, 13: Naming, Semantic File System (PDF)'
+    - Formal Concurrency:
+        sections:
+        - 'Chapter 16: Handout 17: Formal Concurrency (PDF)'
+    - Lectures:
+        sections:
+        - 'Chapter 17: Lec #1: Overview. The Spec language, state machine semantics, examples of specifications and code'
+    - Assignments:
+        sections:
+        - 'Chapter 18: Problem Set 1 (PDF)'
+        - 'Chapter 19: Problem Set 2 (PDF)'
+        - 'Chapter 20: Problem Set 3 (PDF)'
+        - 'Chapter 21: Problem Set 4 (PDF)'
+    - Clarifications:
+        sections:
+        - 'Chapter 22: Problem Set 1 (PDF)'
+        - 'Chapter 23: Problem Set 2 (PDF)'
+        - 'Chapter 24: Problem Set 3 (PDF)'
+        - 'Chapter 25: Problem Set 4 (PDF)'
+    - Syllabus:
+        sections:
+        - 'Chapter 26: Course Information'
+    - Calendar:
+        sections:
+        - 'Chapter 27: Lecture Topics'
+        - 'Chapter 28: Assignment Due Dates'
+    - Projects:
+        sections:
+        - 'Chapter 29: Project Information'
+```
+```

@@ -1,0 +1,92 @@
+```yaml
+textbook:
+  'Drawings & Numbers: Five Centuries of Digital Design':
+    chapters:
+      - title: 'Introduction: Drawings, Numbers, and the Power of Printed Images'
+        sections:
+          - title: 'The Importance of Drawings in Design'
+            subsections:
+              - 'Introduction to the course'
+              - 'The role of drawings in design'
+              - 'The power of printed images'
+          - title: 'The History of Printed Images'
+            subsections:
+              - 'Early forms of printed images'
+              - 'Evolution of printing technology'
+              - 'The impact of printed images on design'
+      - title: 'The Primacy of the Word: Vitruvius and the Mystery of his Missing Images'
+        sections:
+          - title: 'Vitruvius and His Influence'
+            subsections:
+              - 'Overview of Vitruvius' work'
+              - 'His influence on architectural design'
+          - title: 'The Mystery of Missing Images'
+            subsections:
+              - 'Exploring the missing images in Vitruvius' work'
+              - 'Speculations on the reasons behind the missing images'
+      - title: 'Alberti and the (Untrustworthy) Power of Man-made Images'
+        sections:
+          - title: 'Alberti and His Contributions'
+            subsections:
+              - 'Overview of Alberti's life and work'
+              - 'His theories on architecture and design'
+          - title: 'The Untrustworthy Nature of Man-made Images'
+            subsections:
+              - 'Discussion on the limitations and biases of man-made images'
+              - 'Critical analysis of Alberti's ideas'
+      - title: 'Alberti's Improbable Image-making Technologies'
+        sections:
+          - title: 'Exploring Alberti's Image-making Technologies'
+            subsections:
+              - 'Overview of the technologies used by Alberti'
+              - 'Analysis of their feasibility and impact'
+          - title: 'The Influence of Alberti's Technologies'
+            subsections:
+              - 'Discussion on how Alberti's technologies influenced digital design'
+              - 'Comparison with modern image-making technologies'
+      - title: 'Discussion of Final Presentation Topics'
+        sections:
+          - title: 'Guidelines for Final Presentations'
+            subsections:
+              - 'Explanation of presentation requirements'
+              - 'Selection of topics for final presentations'
+          - title: 'Brainstorming Session'
+            subsections:
+              - 'Group discussion on potential presentation topics'
+              - 'Sharing of ideas and feedback'
+      - title: 'Image-making Technologies, Architecture, and Identical Replication'
+        sections:
+          - title: 'The Relationship Between Image-making Technologies and Architecture'
+            subsections:
+              - 'Exploration of how image-making technologies influenced architectural design'
+              - 'Examples of architectural replication through technology'
+          - title: 'Identical Replication in Design'
+            subsections:
+              - 'The concept of identical replication in design'
+              - 'Advantages and disadvantages'
+      - title: 'On Some Semi-automatic Machines for the Drawing of the Architectural Orders Oddly Invented in the Seventeenth Century'
+        sections:
+          - title: 'Overview of Semi-automatic Machines'
+            subsections:
+              - 'Introduction to semi-automatic machines'
+              - 'Explanation of their purpose and function'
+          - title: 'Architectural Orders in the Seventeenth Century'
+            subsections:
+              - 'Exploration of architectural styles and orders during the seventeenth century'
+              - 'Analysis of the unique inventions during this period'
+          - title: 'Invention and Innovation in the Seventeenth Century'
+            subsections:
+              - 'Discussion on the innovative spirit of the seventeenth century'
+              - 'Impact of inventions on design and architecture'
+      - title: 'Final Lecture'
+        sections:
+          - title: 'Key Takeaways from the Course'
+            subsections:
+              - 'Summary of the main topics covered in the course'
+              - 'Reflection on the importance of drawings and numbers in design'
+          - title: 'Open Discussion'
+            subsections:
+              - 'Opportunity for students to ask questions and engage in a final discussion'
+              - 'Sharing of personal insights and experiences'
+
+```

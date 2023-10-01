@@ -1,0 +1,65 @@
+course:
+  Art Since 1940: The Evolution of Modern Art
+
+textbook:
+  topics:
+    - Introduction:
+        subtopics:
+        - Aesthetic and ideological context for figuration vs. abstraction going into WWII
+        - Themes of the '30s
+        - The impact of World War II on the art world
+
+    - Surrealism to Abstract Expressionism:
+        subtopics:
+        - Surrealism and its influence on the art movement
+        - Artists: Matta, Andre Masson, Joan Miro, Sandy Calder, Isamu Noguchi, Henry Moore, Arshile Gorky, John Graham, Hans Hofmann
+
+    - Abstract Expressionism:
+        subtopics:
+        - Transition from 'action' to 'field' painting
+        - Abstract expressionism abroad and its global impact
+        - The Cold War '50s and its influence on art
+
+    - Figuration into Neo-Dada:
+        subtopics:
+        - Transition from the '50s: Figuration to Neo-Dada
+        - Contemporary art movement and its significance
+        - Artists: Willem de Kooning, Franz Kline, Philip Guston, Robert Motherwell, Rothko, Newman, Reinhardt
+
+    - Abstraction and Figuration in the '60s:
+        subtopics:
+        - Industrial aesthetic and its impact on art
+        - International pop art and conceptualism
+        - The evolution of abstraction and figuration in the 1960s
+
+    - '70s Pluralism':
+        subtopics:
+        - Conceptual art and performance: Exploring new artistic forms
+        - Process art, feminism, and identity: The impact of social and political changes on art
+        - The end of 'the mainstream': The rise of alternative art movements
+
+    - Political Art and Postmodernism:
+        subtopics:
+        - '80s and '90s political art: The power of art in social and political activism
+        - Postmodernism in art: Challenging traditional notions of art and aesthetics
+
+    - Installations, Politics, and Biennial Culture:
+        subtopics:
+        - '90s installations: The rise of immersive and interactive art experiences
+        - Politics in art: Exploring the intersection of art and politics
+        - Biennial culture in the 2000s: The impact of international art exhibitions on contemporary art
+
+    - Contemporary Art Movements:
+        subtopics:
+        - New media art: Exploring the use of technology in art
+        - Environmental art: Art in response to ecological concerns
+        - Performance art: The merging of visual art and live performance
+        - Globalization and art: The influence of globalization on artistic production
+
+    - The Future of Art:
+        subtopics:
+        - Emerging art movements and trends: The evolution of art in the 21st century
+        - Art and technology: The impact of technology on the creation and dissemination of art
+        - Art and activism: Harnessing the power of art for social change
+
+The additional new key: subsubtopics -> subsections has not been added as it was not specified in the original syllabus.

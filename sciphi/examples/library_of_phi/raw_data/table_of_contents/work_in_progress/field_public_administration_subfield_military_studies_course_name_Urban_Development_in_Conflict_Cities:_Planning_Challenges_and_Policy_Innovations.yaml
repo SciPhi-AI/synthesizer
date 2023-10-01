@@ -1,0 +1,117 @@
+```yaml
+course:
+  textbook: 'Urban Development in Conflict Cities: Planning Challenges and Policy Innovations'
+
+topics:
+- Introduction to Urban Development in Conflict Cities:
+    subtopics:
+    - Conflict and Cities:
+        subsubtopics:
+        - Understanding Conflict in Urban Areas
+        - Impact of Conflict on Cities
+        - Urbanization in Conflict Zones
+    - Challenges in Conflict Zones:
+        subsubtopics:
+        - Infrastructure and Services
+        - Displacement and Homelessness
+        - Economic Challenges
+        - Humanitarian Crisis in Conflict Zones
+    - Violent Conflict Definitions:
+        subsubtopics:
+        - Types of Violent Conflict
+        - Causes and Triggers of Violent Conflict
+        - Dynamics of Violent Conflict in Cities
+        - Impact of Violent Conflict on Urban Development
+
+- Urban Warfare and Conflict Spaces:
+    subtopics:
+    - Re-defining Urban Warfare:
+        subsubtopics:
+        - Traditional vs. Urban Warfare
+        - Tactics and Strategies in Urban Warfare
+        - Urban Warfare in Modern Conflicts
+    - Slum Wars:
+        subsubtopics:
+        - Slums and Informal Settlements in Conflict Zones
+        - Conflict Dynamics in Slum Areas
+        - Urban Violence in Slum Communities
+    - Conditions of Conflict in Selected City:
+        subsubtopics:
+        - Case Study: Conflict City A
+        - Urban Development Challenges in Conflict City A
+        - Urban Planning in Conflict City A
+    - Gender and Conflict:
+        subsubtopics:
+        - Gendered Impacts of Conflict in Cities
+        - Women's Roles in Conflict Zones
+        - Gender and Urban Development in Post-Conflict Cities
+    - Space and Urban Conflict:
+        subsubtopics:
+        - Urban Space as a Battleground
+        - Spatial Strategies in Conflict Zones
+        - Urban Design and Conflict Resolution
+    - Mapping Conflict:
+        subsubtopics:
+        - Mapping Techniques in Conflict Areas
+        - Spatial Analysis of Conflict Zones
+        - Role of GIS in Conflict Mapping
+
+- Gangs and Weak States in Conflict:
+    subtopics:
+    - Gangs in Conflict Cities:
+        subsubtopics:
+        - Gang Dynamics in Urban Conflict
+        - Gangs as Non-State Armed Groups
+        - Criminal Networks in Conflict Zones
+    - Weak States and Conflict:
+        subsubtopics:
+        - Concept of Weak States
+        - Impact of Weak States on Urban Development
+        - Governance Challenges in Conflict Cities
+
+- Perspectives on Conflict:
+    subtopics:
+    - Military Perspective:
+        subsubtopics:
+        - Role of Military in Urban Conflict
+        - Urban Warfare Strategies of Military Forces
+        - Militarization of Cities in Conflict Zones
+    - Non-State Armed Groups (NSAG) Perspective:
+        subsubtopics:
+        - NSAGs and Urban Conflict
+        - Tactics and Strategies of NSAGs in Cities
+        - Urban Insurgency and Non-State Actors
+
+- Intervention and Reconciliation:
+    subtopics:
+    - Peace Process and Reconciliation:
+        subsubtopics:
+        - Negotiation and Mediation in Conflict Resolution
+        - Post-Conflict Reconciliation Strategies
+        - Rebuilding Trust and Social Cohesion in Conflict Cities
+    - Intervening in Urban Conflict:
+        subsubtopics:
+        - Humanitarian Intervention in Conflict Zones
+        - Role of International Organizations in Conflict Resolution
+        - Urban Planning and Intervention in Post-Conflict Cities
+
+- Research and Analysis:
+    subtopics:
+    - Preliminary In-class Presentations:
+        subsubtopics:
+        - Research Methodologies for Conflict Studies
+        - Presenting and Analyzing Data on Conflict Cities
+    - Final Paper Guidelines:
+        subsubtopics:
+        - Research Design and Proposal Writing
+        - Data Collection and Analysis
+        - Writing and Presenting a Research Paper
+
+- Course Wrap-up:
+    subtopics:
+    - Last Class:
+        subsubtopics:
+        - Recap of Key Concepts and Topics
+        - Discussion and Reflection on the Course
+
+```

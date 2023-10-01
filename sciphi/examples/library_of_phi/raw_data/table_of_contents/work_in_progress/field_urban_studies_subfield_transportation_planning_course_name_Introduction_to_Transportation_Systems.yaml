@@ -1,0 +1,73 @@
+textbook:
+  Introduction to Transportation Systems: A Comprehensive Guide
+  
+chapters:
+  - Transportation Systems Components:
+    sections:
+      - Key Components of Transportation Systems
+      - 30 Key Points
+      - Class Discussion Based on Article Distributed
+      
+  - Modeling / Demand / Equilibrium:
+    sections:
+      - Introduction to Modeling in Transportation Systems
+      - Demand Analysis in Transportation Systems
+      - Equilibrium in Transportation Systems
+      - Costing and Economic Analysis in Transportation Systems
+      
+  - Traveler Level of Service:
+    sections:
+      - Understanding Traveler Level of Service
+      - Factors Affecting Traveler Level of Service
+      - Measuring and Improving Traveler Level of Service
+      
+  - Urban Public Transportation:
+    sections:
+      - Overview of Urban Public Transportation Systems
+      - Modes of Urban Public Transportation
+      - Planning and Designing Urban Public Transportation Systems
+      - Operations and Management of Urban Public Transportation Systems
+      
+  - Introduction to Freight / LOS / Logistics:
+    sections:
+      - Introduction to Freight Transportation
+      - Understanding Level of Service in Freight Transportation
+      - Logistics and Supply Chain Management
+      - Modes of Freight Transportation
+      - Cost and Service Analysis in Freight Transportation
+      - Operational Strategies in Freight Transportation
+      
+  - Operations / Operating Plans / Strategic Plans:
+    sections:
+      - Operations Management in Transportation Systems
+      - Developing Operating Plans in Transportation Systems
+      - Strategic Planning in Transportation Systems
+      - Managing Transportation Systems for Efficiency and Effectiveness
+      
+  - Freight Intermodalism / International Transportation:
+    sections:
+      - Introduction to Freight Intermodalism
+      - Intermodal Transportation Systems and Infrastructure
+      - International Transportation and Trade
+      - Challenges and Opportunities in International Transportation
+      
+  - Project Evaluation and Finance:
+    sections:
+      - Evaluation of Transportation Projects
+      - Financial Analysis of Transportation Projects
+      - Funding and Financing Transportation Projects
+      - Public-Private Partnership in Transportation Projects
+      
+  - Public Policy Issues - Privatization:
+    sections:
+      - Public Policy and Transportation Systems
+      - Privatization of Transportation Services
+      - Implications of Privatization in Transportation Systems
+      - Public-Private Collaboration in Transportation Policy Making
+      
+  - Transportation Technologies - Their Role and Limitations:
+    sections:
+      - Overview of Transportation Technologies
+      - Intelligent Transportation Systems and their Applications
+      - Emerging Technologies in Transportation Systems
+      - Assessing the Role and Limitations of Transportation Technologies

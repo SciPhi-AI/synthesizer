@@ -1,0 +1,40 @@
+textbook:
+  Introduction to Neuroscience: A Comprehensive Guide to the Study of the Nervous System:
+    chapters:
+    - Introduction:
+        sections:
+        - Cellular neuroanatomy: neurons and glia
+        - Neurophysiology 2: action potential
+        - Synaptic transmission 2: chemistry
+    - Exam 1:
+        sections:
+        - Organization of the vertebrate brain
+        - Vision 1: the eye
+        - Vision 2: visual pathways and processing
+    - Hearing:
+        sections:
+        - Hearing
+        - Auditory pathways and processing
+    - Motor System 1:
+        sections:
+        - Motor system 1
+        - Motor control and coordination
+        - Motor disorders and rehabilitation
+    - Exam 2:
+        sections:
+        - Chemical control of brain 1
+        - Brain disorders
+        - Chemical control of brain 2 motivation
+        - Neuroendocrinology: the hormonal control of brain function
+    - Attention:
+        sections:
+        - Attention
+        - Attention disorders and their impact on cognition
+    - Emotion:
+        sections:
+        - Emotion
+        - Neural basis of emotions and their regulation
+    - Final Exam:
+        sections:
+        - Final exam
+        - Comprehensive review of all topics covered in the course

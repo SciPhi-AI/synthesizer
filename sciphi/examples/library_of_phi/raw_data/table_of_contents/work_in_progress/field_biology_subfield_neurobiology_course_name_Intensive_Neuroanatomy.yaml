@@ -1,0 +1,87 @@
+textbook:
+  Intensive Neuroanatomy: A Comprehensive Guide
+
+chapters:
+  - Overview of Nervous System:
+    sections:
+      - Neural Tube Development
+      - Neural Folds Fusion
+      - Neural Crest Formation
+      - Formation of Primary Vesicles
+  - Spinal Cord:
+    sections:
+      - Structure of the Spinal Cord
+      - Spinal Cord Development
+      - Spinal Cord Tracts
+      - Spinal Cord Pathways
+      - Spinal Cord Reflexes
+  - Cranial Nerves:
+    sections:
+      - Classification of Cranial Nerves
+      - Cranial Nerves Development
+      - Functions of Cranial Nerves
+      - Cranial Nerves Lesions
+      - Cranial Nerves Examination
+  - Brain Stem:
+    sections:
+      - Anatomy of the Brain Stem
+      - Brain Stem Development
+      - Brain Stem Nuclei
+      - Brain Stem Pathways
+      - Brain Stem Functions
+  - Diencephalon + Telencephalon:
+    sections:
+      - Anatomy of the Diencephalon
+      - Diencephalon Development
+      - Anatomy of the Telencephalon
+      - Telencephalon Development
+      - Diencephalon Functions
+      - Telencephalon Functions
+  - Cerebellum + Vestibular System:
+    sections:
+      - Anatomy of the Cerebellum
+      - Cerebellum Development
+      - Cerebellar Pathways
+      - Cerebellar Functions
+      - Anatomy of the Vestibular System
+      - Vestibular System Development
+      - Vestibular System Pathways
+      - Vestibular System Functions
+  - Motor Systems:
+    sections:
+      - Upper Motor Neurons
+      - Lower Motor Neurons
+      - Motor Cortex
+      - Basal Ganglia
+      - Cerebellum and Motor Control
+      - Motor Pathways
+  - Sensory Systems:
+    sections:
+      - Somatosensory System
+      - Visual System
+      - Auditory System
+      - Gustatory System
+      - Olfactory System
+      - Vestibular System
+      - Sensory Pathways
+  - Hypothalamus + Limbic System:
+    sections:
+      - Anatomy of the Hypothalamus
+      - Hypothalamus Development
+      - Functions of the Hypothalamus
+      - Anatomy of the Limbic System
+      - Limbic System Development
+      - Functions of the Limbic System
+  - Neocortex: Functional Organization:
+    sections:
+      - Anatomy of the Neocortex
+      - Neocortex Development
+      - Neocortical Areas
+      - Neocortical Functions
+      - Neocortical Pathways
+  - Exam:
+    sections:
+      - Exam Preparation Tips
+      - Sample Exam Questions
+      - Exam Format and Grading Criteria
+      - Exam Policies and Guidelines

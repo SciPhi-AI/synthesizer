@@ -1,0 +1,171 @@
+textbook:
+  Computer Systems Security: A Comprehensive Guide
+chapters:
+  - Introduction to Computer Systems Security:
+    sections:
+      - What is Computer Systems Security?
+      - Why is Computer Systems Security Important?
+      - History and Evolution of Computer Systems Security
+      - Current Challenges in Computer Systems Security
+  - Threat Models:
+    sections:
+      - Introduction to Threat Models
+      - Types of Threats and Attackers
+      - Security Models and Frameworks
+  - Control Hijacking Attacks:
+    sections:
+      - Buffer Overflow Attacks
+      - Return-Oriented Programming (ROP)
+      - Control Flow Integrity (CFI)
+  - Buffer Overflow Exploits and Defenses:
+    sections:
+      - Stack-based Buffer Overflows
+      - Heap-based Buffer Overflows
+      - Return-to-libc Attacks
+      - Address Space Layout Randomization (ASLR)
+      - Data Execution Prevention (DEP)
+      - Stack Canaries and Guard Pages
+  - Privilege Separation:
+    sections:
+      - User and Kernel Mode
+      - Process Isolation
+      - Privilege Escalation
+      - Mandatory Access Control (MAC)
+  - Capabilities:
+    sections:
+      - Principle of Least Privilege
+      - Capability-based Security
+      - Domain and Object Capabilities
+      - Capability-based Systems
+  - Sandboxing Native Code:
+    sections:
+      - Native Code Execution Risks
+      - Sandboxing Techniques
+      - Address Space Layout Randomization (ASLR)
+      - Just-In-Time (JIT) Compilation
+      - Code Signing and Verification
+  - Web Security Model:
+    sections:
+      - Web Application Architecture
+      - Same-Origin Policy (SOP)
+      - Cross-Site Scripting (XSS)
+      - Cross-Site Request Forgery (CSRF)
+      - Clickjacking
+      - Content Security Policy (CSP)
+  - Securing Web Applications:
+    sections:
+      - Input Validation and Sanitization
+      - Session Management
+      - Authentication and Authorization
+      - Secure Communication (HTTPS)
+      - Secure Coding Practices
+      - Web Application Firewalls (WAF)
+  - Symbolic Execution:
+    sections:
+      - Program Analysis Techniques
+      - Symbolic Execution Basics
+      - Path Conditions and Constraints
+      - Constraint Solvers
+      - Dynamic Symbolic Execution
+      - Concolic Testing
+  - Ur / Web:
+    sections:
+      - Web Programming with Ur / Web
+      - Security Features in Ur / Web
+      - Web Application Development Workflow
+      - Web Application Testing and Debugging
+      - Web Application Security Best Practices
+  - Network Security:
+    sections:
+      - Network Threats and Vulnerabilities
+      - Network Security Protocols
+      - Secure Network Design Principles
+      - Intrusion Detection and Prevention Systems (IDS/IPS)
+      - Virtual Private Networks (VPNs)
+      - Network Access Control (NAC)
+  - Network Protocols:
+    sections:
+      - Internet Protocol Suite (TCP/IP)
+      - Network Address Translation (NAT)
+      - Domain Name System (DNS)
+      - Dynamic Host Configuration Protocol (DHCP)
+      - Simple Mail Transfer Protocol (SMTP)
+      - Secure Shell (SSH)
+  - SSL and HTTPS:
+    sections:
+      - Secure Sockets Layer (SSL)
+      - Transport Layer Security (TLS)
+      - Public Key Infrastructure (PKI)
+      - Certificate Authorities (CAs)
+      - HTTPS Protocol and Implementation
+      - SSL/TLS Vulnerabilities and Attacks
+  - Medical Software:
+    sections:
+      - Security Challenges in Medical Software
+      - Privacy and Confidentiality in Health Information Systems
+      - Medical Device Security
+      - Electronic Health Records (EHRs)
+      - Health Information Exchange (HIE)
+      - Regulatory Compliance (HIPAA, GDPR)
+  - Side-Channel Attacks:
+    sections:
+      - Side-Channel Information Leakage
+      - Timing Attacks
+      - Power Analysis Attacks
+      - Electromagnetic Emanation Attacks
+      - Fault Injection Attacks
+      - Countermeasures and Mitigation Techniques
+  - User Authentication:
+    sections:
+      - Password-based Authentication
+      - Biometric Authentication
+      - Multi-factor Authentication
+      - Single Sign-On (SSO)
+      - Token-based Authentication
+      - Authentication Protocols (OAuth, OpenID)
+  - Private Browsing:
+    sections:
+      - Browser Privacy Features
+      - Private Browsing Modes
+      - Tracking Protection
+      - Incognito Mode
+      - Privacy Threats and Risks
+      - Privacy-enhancing Technologies
+  - Anonymous Communication:
+    sections:
+      - Anonymity and Pseudonymity
+      - Onion Routing (Tor)
+      - Mix Networks
+      - Decentralized Anonymous Communication
+      - Anonymous Messaging Protocols
+      - Anonymity Attacks and Defenses
+  - Mobile Phone Security:
+    sections:
+      - Mobile Operating Systems Security
+      - App Permissions and Privacy
+      - Mobile Device Management (MDM)
+      - Mobile Malware and Exploits
+      - Secure Mobile App Development
+      - Mobile Payment Security
+  - Data Tracking:
+    sections:
+      - Online Tracking Technologies
+      - Web Browser Fingerprinting
+      - Mobile Device Tracking
+      - Behavioral Tracking and Profiling
+      - Privacy Laws and Regulations
+      - Privacy-enhancing Tools and Techniques
+  - Security Economics:
+    sections:
+      - Economic Incentives in Cybersecurity
+      - Cost-Benefit Analysis of Security Measures
+      - Risk Management and Insurance
+      - Security Investments and Returns
+      - Cybersecurity Markets and Industry
+      - Cybersecurity Policy and Regulation
+  - Project Presentations:
+    sections:
+      - Final Project Presentations
+      - Project Demonstrations and Evaluations
+      - Peer Feedback and Evaluation
+      - Lessons Learned and Best Practices

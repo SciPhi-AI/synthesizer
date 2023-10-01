@@ -1,0 +1,83 @@
+```yaml
+textbook:
+  Small-Molecule Spectroscopy and Dynamics: A Comprehensive Guide
+    chapters:
+    - General Information:
+        sections:
+        - Introduction to Small-Molecule Spectroscopy and Dynamics
+        - The Role of Matrices in Spectroscopic Theory
+        - Spectroscopic Notation and Quantum Numbers
+        - Perturbation Theory and Secular Equations
+        - Non-Orthonormal Basis Sets
+        - Transformation of Matrix Elements
+    - Coupled Harmonic Oscillators: Truncation of an Infinite Matrix:
+        sections:
+        - Matrix Solution of Harmonic Oscillator Problem
+        - Derivation of Heisenberg Equation of Motion
+        - Matrix Elements of Functions of X and P
+        - Building an Effective Hamiltonian
+    - Anharmonic Oscillator and Vibration-Rotation Interaction:
+        sections:
+        - Introduction to Anharmonic Oscillator
+        - Energy Levels of a Vibrating Rotor
+        - Vibrational-Rotational Interaction
+    - Atoms: 1e- and Alkali:
+        sections:
+        - Alkali Atomic Spectra
+        - Many-Electron Atomic Spectra
+        - Assigning an Atomic Spectrum
+    - The Born-Oppenheimer Approximation:
+        sections:
+        - Spectra and Dynamics of Diatomic Molecules
+        - Introduction to Born-Oppenheimer Approach
+        - Born-Oppenheimer Approach to Transitions
+        - Born-Oppenheimer Approach to Transitions II
+    - Pictures of Spectra and Notation:
+        sections:
+        - Rotational Assignment of Diatomic Electronic Spectra I
+        - Laser Schemes for Rotational Assignment
+    - Rotation and Angular Momenta:
+        sections:
+        - Introduction to Rotation and Angular Momenta
+        - 2â Matrices
+        - Parity and e/f Basis for 2â, 2âÂ±
+        - Hund’s Cases: 2â, 2âÂ± Examples
+        - Energy Level Structure of 2â and 2â States
+        - Matrix Elements for 2â and 2â States
+        - Perturbation of â ~ â
+    - Perturbations:
+        sections:
+        - A Model for Perturbations and Fine Structure of â States of CO
+        - Factorization of Perturbation Parameters
+        - Second-Order Effects: Centrifugal Distortion and Î-Doubling
+        - Transformations Between Basis Sets: 3-j, 6-j, and Wigner-Eckart Theorem
+    - Construction of Potential Curves by the Rydberg-Klein-Rees Method
+    - Rotation of Polyatomic Molecules I:
+        sections:
+        - Energy Levels of a Rigid Rotor
+        - Energy Levels of an Asymmetric Rotor
+        - Asymmetric Top Molecules
+    - Pure Rotation Spectra of Polyatomic Molecules:
+        sections:
+        - Introduction to Pure Rotation Spectra
+        - Energy Levels of a Rigid Rotor
+    - Polyatomic Vibrations: Normal Mode Calculations:
+        sections:
+        - Introduction to Polyatomic Vibrations
+        - Normal Mode Calculations II: s-vectors, G-matrix, and Eckart Condition
+        - Normal Mode Calculations III: s-vectors and H2O
+        - Normal Mode Calculations IV: Symmetry Considerations
+    - A Sprint Through Group Theory:
+        sections:
+        - Introduction to Group Theory
+        - Character Tables and Their Uses
+    - Electronic Spectra of Polyatomic Molecules
+    - Vibronic Coupling
+    - Time-Independent Schrodinger Equation for a Molecular System
+    - Wavepacket Dynamics:
+        sections:
+        - Introduction to Wavepacket Dynamics
+        - Wavepacket Dynamics II
+        - Wavepacket Dynamics III
+```
+```

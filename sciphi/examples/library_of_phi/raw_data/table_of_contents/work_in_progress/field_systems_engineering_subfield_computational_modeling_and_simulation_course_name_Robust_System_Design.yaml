@@ -1,0 +1,55 @@
+textbook:
+  Robust System Design: Principles and Applications:
+    chapters:
+      - 'Chapter 1: Course Introduction'
+        sections:
+          - 'Section 1.1: Probability and Statistics Fundamentals'
+          - 'Section 1.2: Quality Loss and Robust Quality'
+      - 'Chapter 2: Context of Robust Design'
+        sections:
+          - 'Section 2.1: Introduction to Product Development'
+          - 'Section 2.2: Phadke's Approach to Robust Design'
+      - 'Chapter 3: Matrix Experiments Using Orthogonal Arrays'
+        sections:
+          - 'Section 3.1: Introduction to Orthogonal Arrays'
+          - 'Section 3.2: Design and Analysis of Paper Helicopter Experiment'
+      - 'Chapter 4: Performance Characterization'
+        sections:
+          - 'Section 4.1: Selection of Quality Characteristics'
+          - 'Section 4.2: Design for Additivity in Experiments'
+      - 'Chapter 5: Control and Noise Factors'
+        sections:
+          - 'Section 5.1: Selection of Control Factors'
+          - 'Section 5.2: Noise Strategy in Robust Design'
+      - 'Chapter 6: Analysis of Variance (ANOVA)'
+        sections:
+          - 'Section 6.1: Introduction to ANOVA'
+          - 'Section 6.2: Application of ANOVA in Robust Design'
+      - 'Chapter 7: Constructing Orthogonal Arrays'
+        sections:
+          - 'Section 7.1: Principles of Constructing Orthogonal Arrays'
+          - 'Section 7.2: Construction Techniques for Orthogonal Arrays'
+      - 'Chapter 8: Robust Design Using Simulations'
+        sections:
+          - 'Section 8.1: Introduction to Simulation in Robust Design'
+          - 'Section 8.2: Simulation Methods and Analysis'
+      - 'Chapter 9: Design of Dynamic Systems'
+        sections:
+          - 'Section 9.1: Fundamentals of Dynamic Systems Design'
+          - 'Section 9.2: Optimization Techniques for Dynamic Systems'
+      - 'Chapter 10: Reliability Improvement'
+        sections:
+          - 'Section 10.1: Reliability Analysis and Assessment'
+          - 'Section 10.2: Strategies for Reliability Improvement'
+      - 'Chapter 11: Tolerance Design'
+        sections:
+          - 'Section 11.1: Principles of Tolerance Design'
+          - 'Section 11.2: Optimization of Tolerance Allocation'
+      - 'Chapter 12: Mahalanobis Taguchi System'
+        sections:
+          - 'Section 12.1: Introduction to Mahalanobis Taguchi System'
+          - 'Section 12.2: Implementation and Case Studies'
+      - 'Chapter 13: Robust Conceptual Design'
+        sections:
+          - 'Section 13.1: Introduction to Robust Conceptual Design'
+          - 'Section 13.2: Methods and Tools for Robust Conceptual Design'

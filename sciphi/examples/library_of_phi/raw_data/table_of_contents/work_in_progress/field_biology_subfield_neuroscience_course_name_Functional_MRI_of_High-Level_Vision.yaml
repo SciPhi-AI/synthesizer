@@ -1,0 +1,55 @@
+textbook:
+  Functional MRI of High-Level Vision: A Comprehensive Guide
+
+chapters:
+- Introduction to fMRI and High-Level Vision:
+    sections:
+    - Scene Perception and the PPA:
+        subsections:
+        - Overview of scene perception in the human brain
+        - Role of the Parahippocampal Place Area (PPA) in scene processing
+        - Neural mechanisms underlying scene perception
+    - Face Processing and the FFA:
+        subsections:
+        - Understanding face perception in the brain
+        - The Fusiform Face Area (FFA) and its role in face recognition
+        - Face processing deficits and disorders
+    - Visual Attention:
+        subsections:
+        - Mechanisms of visual attention
+        - Neural correlates of attentional processes in the brain
+        - Disorders of visual attention
+    - Visual Awareness:
+        subsections:
+        - The relationship between consciousness and visual awareness
+        - Neural mechanisms of visual awareness
+        - The role of attention in visual awareness
+    - The Dorsal/Parietal Pathway:
+        subsections:
+        - Functions and anatomy of the dorsal/parietal pathway
+        - Role of the dorsal/parietal pathway in visually guided action
+        - The involvement of the dorsal/parietal pathway in number processing
+        - Attention and response selection in the dorsal/parietal pathway
+
+- Functional Organization of the Ventral Visual Pathway:
+    sections:
+    - Visual Recognition and Object Shape:
+        subsections:
+        - Overview of visual recognition in the human brain
+        - Role of the lateral occipital complex (LOC) in object shape processing
+        - Neural mechanisms underlying object recognition
+        - Disorders of object recognition
+    - Visual Attention:
+        subsections:
+        - Mechanisms of visual attention
+        - Neural correlates of attentional processes in the brain
+        - Disorders of visual attention
+
+- Development and Effects of Experience on Visual and Extrastriate Cortex:
+    sections:
+    - Student Presentations:
+        subsections:
+        - Role of experience in shaping visual and extrastriate cortex
+        - Neural plasticity and its impact on visual processing
+        - Developmental changes in high-level vision
+        - Effects of sensory deprivation on visual and extrastriate cortex

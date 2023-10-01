@@ -1,0 +1,48 @@
+textbook:
+  'GPS: Where Are You? - A Comprehensive Guide to Global Positioning System':
+    chapters:
+      - Introduction to seminar and course objectives:
+          sections:
+            - Definitions of latitude / longitude and height
+            - Astronomical latitude and longitude determination
+      - Geometric systems for position measurement:
+          sections:
+            - Techniques to measure positions geometrically
+            - Distance measurement in geometric systems
+            - Making maps and their significance
+            - Geodetic datum and coordinate systems
+            - Coordinate transformations
+      - Determining latitude and longitude without GPS or maps:
+          sections:
+            - Discussion of methods and reasons for choosing them
+            - Data collected during measurements
+            - Calculation of latitude and longitude
+            - Celestial navigation techniques
+            - Timekeeping and its relation to latitude determination
+      - Results and techniques of circle measurements:
+          sections:
+            - Discussion of circle measurement results
+            - Analysis of techniques used
+            - Error analysis and uncertainty estimation
+            - Advanced circle measurement techniques
+      - Introduction to GPS and its functioning:
+          sections:
+            - How GPS works
+            - GPS applications and their reports
+            - GPS signal structure and acquisition
+            - GPS positioning methods
+            - Differential GPS and its applications
+            - GPS augmentation systems
+      - Fieldwork using theodolite:
+          sections:
+            - Measurements using theodolite
+            - Reducing the results obtained
+            - Traversing and network adjustment
+            - Geodetic control surveys
+            - Digital mapping and GIS applications
+      - UROP discussions:
+          sections:
+            - Research discussions and opportunities
+            - Writing research proposals
+            - Data collection and analysis techniques
+            - Presenting research findings

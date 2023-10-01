@@ -1,0 +1,76 @@
+```yaml
+textbook:
+  'Ethics for Engineers: Artificial Intelligence':
+    chapters:
+      - Introduction to Ethical Issues in CS/AI:
+          sections:
+            - Ethics in Artificial Intelligence
+            - Ethical considerations in Computer Science
+      - Can AI Be Intelligent?:
+          sections:
+            - Artificial Intelligence and Intelligence
+            - Turing Test
+            - Machine Learning and Intelligence
+            - Ethics of Intelligent Machines
+      - Humans Need Not Apply:
+          sections:
+            - Automation and Job Displacement
+            - Impact of AI on the Workforce
+            - Socioeconomic Implications of Automation
+      - Who Lives and Who Drives:
+          sections:
+            - Ethics of Autonomous Vehicles
+            - Decision-making Algorithms for Autonomous Vehicles
+            - Safety and Liability in Autonomous Driving
+      - Strategic Competition and AI:
+          sections:
+            - AI and National Security
+            - Ethics of AI in Warfare
+            - International Competition in AI Development
+      - Ethical and Legal Aspects of Autonomous Weapons:
+          sections:
+            - Ethics of Autonomous Weapons
+            - Legal Framework for Autonomous Weapons
+            - International Laws and Regulations for Autonomous Weapons
+      - Introduction to the Philosophy, Ethics, and Geopolitics of AI:
+          sections:
+            - Philosophy of AI
+            - Ethical considerations in AI Development
+            - Geopolitical Implications of AI
+      - Welcome to the Second Machine Age:
+          sections:
+            - Technological Advancements in the Second Machine Age
+            - Societal Impact of the Second Machine Age
+            - Ethical Challenges in the Second Machine Age
+      - 'Study Questions I: Introduction to the Philosophy, Ethics, and Geopolitics of AI':
+          sections:
+            - Discussion of study questions on Philosophy, Ethics, and Geopolitics of AI
+      - Introduction to Ethical Issues in CS/AI:
+          sections:
+            - Ethical considerations in Computer Science and Artificial Intelligence
+      - Can AI Be Intelligent?:
+          sections:
+            - Debate on the intelligence of Artificial Intelligence
+      - Humans Need Not Apply:
+          sections:
+            - Impact of Automation on Job Market
+      - Who Lives and Who Drives:
+          sections:
+            - Ethics of Decision-making Algorithms in Autonomous Vehicles
+            - Liability in Autonomous Driving
+      - Strategic Competition and AI:
+          sections:
+            - Ethical Implications of AI in Warfare
+      - Ethical and Legal Aspects of Autonomous Weapons:
+          sections:
+            - Ethics and Legal Framework for Autonomous Weapons
+      - Introduction to the Philosophy, Ethics, and Geopolitics of AI:
+          sections:
+            - Overview of Philosophy, Ethics, and Geopolitics of AI
+      - Welcome to the Second Machine Age:
+          sections:
+            - Introduction to the Second Machine Age and its Impact
+      - 'Study Questions I: Introduction to the Philosophy, Ethics, and Geopolitics of AI':
+          sections:
+            - Discussion of study questions on Philosophy, Ethics, and Geopolitics of AI
+```

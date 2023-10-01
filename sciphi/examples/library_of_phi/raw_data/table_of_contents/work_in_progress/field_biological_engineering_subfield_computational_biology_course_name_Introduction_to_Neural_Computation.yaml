@@ -1,0 +1,43 @@
+```yaml
+textbook:
+  Neural Computation: From Ion Channels to Deep Learning:
+    chapters:
+    - Chapter 1: Introduction to Neural Computation
+        sections:
+        - Section 1.1: Overview of Neural Computation
+          subsections:
+          - Subsection 1.1.1: Historical Perspective
+          - Subsection 1.1.2: Basic Concepts in Neural Computation
+        - Section 1.2: Ionic Currents in Neural Computation
+          subsections:
+          - Subsection 1.2.1: RC Circuit and Nernst Potential
+          - Subsection 1.2.2: Nernst Potential and Integrate and Fire Models
+    - Chapter 2: The Hodgkin-Huxley Model
+        sections:
+        - Section 2.1: Introduction to the Hodgkin-Huxley Model
+          subsections:
+          - Subsection 2.1.1: Hodgkin-Huxley Model Part 1
+          - Subsection 2.1.2: Hodgkin-Huxley Model Part 2
+    - Chapter 3: Dendrites in Neural Computation
+        sections:
+        - Section 3.1: Synapses in Dendrites
+        - Section 3.2: Spike Trains in Dendrites
+    - Chapter 4: Receptive Fields in Neural Computation
+        sections:
+        - Section 4.1: Time Series Analysis
+        - Section 4.2: Spectral Analysis Part 1
+        - Section 4.3: Spectral Analysis Part 2
+    - Chapter 5: Synapses as Computational Devices
+        sections:
+        - Section 5.1: Diffusion, Equivalent Circuit, and Nernst Potential
+        - Section 5.2: Integrate and Fire and Hodgkin-Huxley Models
+        - Section 5.3: Analyzing EEG Data
+    - Chapter 6: Perceptrons and Principal Component Analysis (PCA)
+        sections:
+        - Section 6.1: Recurrent Networks in Neural Computation
+        - Section 6.2: Perceptrons and Linear Separability
+        - Section 6.3: Principal Component Analysis (PCA)
+          subsections:
+          - Subsection 6.3.1: Basics of PCA
+          - Subsection 6.3.2: Applications of PCA in Neural Computation
+```

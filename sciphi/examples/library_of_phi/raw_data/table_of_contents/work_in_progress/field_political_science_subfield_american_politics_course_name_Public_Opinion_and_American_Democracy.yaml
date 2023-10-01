@@ -1,0 +1,80 @@
+course:
+  textbook: 
+    Public Opinion and American Democracy:
+      chapters:
+      - The Meaning of Public Opinion:
+          sections:
+          - Definitions and Concepts
+          - Historical Perspective
+          - Theories of Public Opinion
+      - 'Measuring Public Opinion: Sampling and Collecting Data':
+          sections:
+          - Random Sampling
+          - Survey Methods
+          - Questionnaire Design
+          - Data Collection Techniques
+      - The Survey Interview and the Nature of the Survey Response:
+          sections:
+          - Interviewing Techniques
+          - Response Bias
+          - Nonresponse Bias
+          - Survey Error and Accuracy
+      - Political Knowledge, Sophistication, and Democratic Competence:
+          sections:
+          - Levels of Political Knowledge
+          - Political Sophistication
+          - Democratic Competence
+          - Factors Affecting Political Knowledge
+      - Ideology and the Organization of Opinion:
+          sections:
+          - Types of Ideologies
+          - Political Ideologies in America
+          - Ideological Polarization
+          - Organizing Political Opinions
+      - Self Interest:
+          sections:
+          - The Role of Self Interest
+          - Economic Self Interest
+          - Social Self Interest
+          - Group Identity and Self Interest
+      - 'Groups in American Politics: Us and Them':
+          sections:
+          - Interest Groups
+          - Political Parties
+          - Social Movements
+          - Identity Groups
+      - Core Values:
+          sections:
+          - Definition of Core Values
+          - Role of Core Values in Opinion Formation
+          - Value Conflicts and Consensus
+          - Value Change over Time
+      - Framing, Priming, and Media Effects:
+          sections:
+          - Framing Effects
+          - Priming Effects
+          - Media Influence on Public Opinion
+          - Media Bias and Agenda Setting
+      - Collective Opinion and Representation:
+          sections:
+          - Aggregation of Individual Opinions
+          - Opinion Leaders and Elites
+          - Public Opinion and Democratic Representation
+          - Public Opinion and Policy Making
+      - Public Opinion and Public Policy:
+          sections:
+          - Policy Responsiveness to Public Opinion
+          - Policy Feedback Effects
+          - Public Opinion and Policy Change
+          - Influence of Interest Groups on Policy
+      - Public Opinion and Foreign Policy:
+          sections:
+          - Public Opinion and International Relations
+          - Public Opinion and War
+          - Public Opinion and Diplomacy
+          - Influence of Media on Public Opinion of Foreign Policy
+      - Conclusion - Public Opinion and American Democracy:
+          sections:
+          - Summary of Key Findings
+          - Implications for Democracy
+          - Future Directions of Research

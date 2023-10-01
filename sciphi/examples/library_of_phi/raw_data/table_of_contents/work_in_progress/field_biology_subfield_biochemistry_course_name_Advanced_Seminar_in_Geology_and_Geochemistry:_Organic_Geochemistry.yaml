@@ -1,0 +1,62 @@
+textbook:
+  'Comprehensive Guide to Organic Geochemistry':
+    chapters:
+      - Introduction to Organic Geochemistry:
+          sections:
+            - Seminar Consisting of Three Talks for the International Meeting on Organic Geochemistry (IMOG)
+            - Overview of the Course Structure and Content
+      - Acetogenic Lipids and their Fossil Counterparts:
+          sections:
+            - Chain-length, Branching Systematics and Isotopic Compositions - Indicators of Biological Sources
+            - Algeanans: Functional Roles and Geological Patterns of Occurrence
+            - Branched Alkanes with Quaternary Carbon Centers (BAQCs)
+                subsections:
+                  - Seminar on Biomarkers and Earth’s Redox History
+      - Isoprenoid Lipids:
+          sections:
+            - Biosynthesis and Isomerism
+            - Structural Aspects: Archaeal and Non-archaeal Sources
+            - Structure vs. Physiology
+            - Bicyclic and Tricyclic Isoprenoids
+            - Other Cyclised Polyprenoids and their Geological Record
+                subsections:
+                  - Seminar on Acyclic Isoprenoids
+      - Analytical Techniques for Biomarker Analysis:
+          sections:
+            - Introduction to Analytical Techniques
+      - Steroids:
+          sections:
+            - Biosynthetic Issues
+          subsections:
+            - Formation by Bacteria and Eukaryotes
+            - Role of Oxygen
+            - Seminar on Steroids
+      - Isotopic and Molecular Indicators for a Biogenic Origin of Organic Matter:
+          sections:
+            - Mono-, Sesqui-, di- and Triterpenoids 1
+          subsections:
+            - Biosynthetic Issues
+            - Bacteria and Eukaryotes
+            - Bacteriohopanepolyols
+      - Diterpenoids and Triterpenoids 2:
+          sections:
+            - Plant-derived Terpenoids
+          subsections:
+            - Biomarkers for an Evolving Ocean Plankton
+            - Seminar on Triterpenoids
+      - Pigment-derived Biomarkers:
+          sections:
+            - Porphyrins and Carotenoids
+          subsections:
+            - Seminar on the Permian-Triassic Boundary Extinction
+            - Diagenesis and Catagenesis
+            - Organic Matter Preservation
+            - Kerogen Formation
+      - Petroleum Formation, Occurrence and Characterization:
+          sections:
+            - Seminar on Neoproterozoic Glaciations
+      - Atmospheric Oxygen Evolution, Paleo-ocean Chemistry, and Biomarkers:
+          sections:
+            - Seminar on Atmospheric Oxygen Evolution and Paleo-ocean Chemistry
+            - Kerogen: Experimental Approaches to Classification and Structural Analysis
+            - Rock Eval, Pyrolysis, and Chemical Degradation

@@ -1,0 +1,80 @@
+textbook:
+  Physical Chemistry: A Comprehensive Guide
+  chapters:
+    - chapter:
+      title: Historical Background and Photoelectric Effect
+      sections:
+        - section: Compton Scattering
+    - chapter:
+      title: Wave Nature of the Electron and the Internal Structure of an Atom
+      sections:
+        - section: Geiger-Marsden Revisited
+    - chapter:
+      title: Two-Slit Experiment and Quantum Weirdness
+      sections:
+        - section: The Classical Wave Equation and Separation of Variables
+    - chapter:
+      title: Quantum Mechanics: Free Particle and Particle in 1D Box
+      sections:
+        - section: 3-D Box and Separation of Variables
+    - chapter:
+      title: Classical Mechanical Harmonic Oscillator
+      sections:
+        - section: Quantum Mechanical Harmonic Oscillator
+    - chapter:
+      title: The Harmonic Oscillator: Creation and Annihilation Operators
+      sections:
+        - section: The Time-Dependent Schrödinger Equation
+    - chapter:
+      title: Wavepacket Dynamics for Harmonic Oscillator and PIB
+      sections:
+        - section: Catch Up and Review
+        - section: Postulates
+    - chapter:
+      title: From HijIntegrals toHMatrices
+      sections:
+        - section: From HijIntegrals toHMatrices II
+    - chapter:
+      title: Non-Degenerate Perturbation Theory
+      sections:
+        - section: Non-Degenerate Perturbation Theory II: HO using a,a†
+    - chapter:
+      title: Rigid Rotor
+      sections:
+        - section: Rigid Rotor II
+    - chapter:
+      title: Hydrogen Atom
+      sections:
+        - section: Hydrogen Atom II
+    - chapter:
+      title: Helium Atom
+      sections:
+        - section: Many-Electron Atoms
+    - chapter:
+      title: Molecular Orbital Theory: Variational Principle and Matrix Mechanics
+      sections:
+        - section: Molecular Orbital Theory II: H2+, A2, AB Diatomics
+    - chapter:
+      title: Qualitative MO Theory: Hückel
+      sections:
+        - section: Non-Degenerate Perturbation Theory III
+    - chapter:
+      title: Modern Electronic Structure Theory: Basis Sets
+      sections:
+        - section: Modern Electronic Structure Theory: Electronic Correlation
+    - chapter:
+      title: Time-Dependent Perturbation Theory: His Time-Independent, Zewail Wavepacket
+      sections:
+        - section: Time-Dependent Perturbation Theory II: His Time-Dependent: Two-Level Problem
+    - chapter:
+      title: Intermolecular Interactions by Non-Degenerate Perturbation Theory
+      sections:
+        - section: Electronic Spectroscopy: Franck-Condon
+    - chapter:
+      title: Electronic Spectroscopy and Photochemistry
+      sections:
+        - section: δ-Functions, Eigenfunctions of X, Discrete Variable Representation
+    - chapter:
+      title: Time Dependence of Two-Level Systems: Density Matrix, Rotating Wave Approximation
+      sections:
+        - section: Final Exam

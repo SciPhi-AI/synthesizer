@@ -1,0 +1,78 @@
+textbook:
+  Computational Methods of Scientific Programming: A Comprehensive Guide
+chapters:
+  - Problem Formulation and Algorithm Development:
+    sections:
+      - Algorithm Design
+      - Problem Analysis
+      - Problem Decomposition
+      - Pseudocode
+      - Flowcharts
+  - Programming Languages:
+    sections:
+      - FORTRAN
+      - Python
+      - MATLAB
+      - C
+  - Program Implementation and Documentation:
+    sections:
+      - Compilation and Linking
+      - Variables and Parameters
+      - Control Flow
+      - Subroutines and Functions
+      - Libraries and External Communication
+  - Error Handling and Debugging:
+    sections:
+      - Compilation Errors
+      - Segmentation Violations
+      - Not-a-Number (NaN) Errors
+  - Advanced Graphics:
+    sections:
+      - 2D and 3D Graphics
+      - Animation Creation
+      - Exporting Graphics
+  - Ordinary Differential Equations:
+    sections:
+      - Numerical Methods for ODEs
+      - Euler's Method
+      - Runge-Kutta Methods
+      - Stability and Convergence
+  - Final Project:
+    sections:
+      - Project Requirements
+      - Language Choice
+      - Solution Development
+      - Project Presentation
+  - Homework Assignments:
+    sections:
+      - Assignment 1
+      - Assignment 2
+      - Assignment 3
+      - Assignment 4
+      - Assignment 5
+  - Exams:
+    sections:
+      - Midterm Exam
+      - Final Exam
+  - Syllabus:
+    sections:
+      - Course Overview
+      - Grading Breakdown
+      - Schedule
+  - Calendar:
+    sections:
+      - Lecture Topics and Instructors
+      - Key Dates
+  - Recitations:
+    sections:
+      - Additional Problem Solving Sessions
+      - Q&A with Teaching Assistants
+  - Readings:
+    sections:
+      - Textbook Readings
+      - Supplementary Materials
+  - Projects:
+    sections:
+      - Common Project Development
+      - Comparison of Solutions
+      - Project Presentation

@@ -1,0 +1,105 @@
+```yaml
+textbook:
+  Advanced Macroeconomics II: A Comprehensive Study Guide
+    chapters:
+    - Shocks Vector Autoregression Models (VARs):
+        sections:
+        - Wold Representations and Their Limits
+            subsections:
+            - Introduction to VARs
+            - Stationary VARs
+            - Order Conditions
+            - Impulse Response Functions
+        - Underlying Non-linear Dynamics
+            subsections:
+            - Non-linear Systems
+            - Deterministic Chaos
+            - Non-linear Forecasting
+        - Markov Processes
+            subsections:
+            - Basics of Markov Processes
+            - Stationary Markov Processes
+            - Ergodicity and Mixing
+        - Invertibility and Fundamentalness
+            subsections:
+            - Invertibility
+            - Fundamentalness
+            - Identification
+        - Finite-lag VAR Representations
+            subsections:
+            - Finite-lag Models
+            - Estimation Methods
+            - Model Selection Criteria
+        - Number of Shocks and Number of Variables
+            subsections:
+            - Identification Issues
+            - Identification Strategies
+            - Determining the Optimal Number of Shocks and Variables
+    - Structural VARs:
+        sections:
+        - A Few Major Shocks or Many?
+            subsections:
+            - Identification of Structural Shocks
+            - Impulse Response Analysis
+            - Forecasting with Structural Shocks
+        - Factor Models
+            subsections:
+            - Basics of Factor Models
+            - Identification of Factors
+            - Estimation of Factor Models
+        - Technology versus Demand Shocks
+            subsections:
+            - Technology Shocks
+            - Demand Shocks
+            - Empirical Evidence
+        - The Great Moderation
+            subsections:
+            - Definition and Characteristics
+            - Causes of the Great Moderation
+            - Implications and Policy Impacts
+    - Basic (Non-cyclical) Facts about Unemployment Flows:
+        sections:
+        - Flows, Bargaining, and Unemployment
+            subsections:
+            - Flows in the Labor Market
+            - Wage Bargaining and Unemployment
+            - Search and Matching Models
+        - Role of Institutions I: Employment Protection and the Labor Market
+            subsections:
+            - Employment Protection Legislation
+            - Effects of Employment Protection
+            - Labor Market Performance
+        - Role of Institutions II: Trust, Hold-ups, and Bargaining
+            subsections:
+            - Trust and Economic Outcomes
+            - Hold-ups and Bargaining Power
+            - Institutional Design and Economic Performance
+        - 'Culture' and Labor Market Outcomes
+            subsections:
+            - Cultural Aspects in Labor Markets
+            - Cultural Norms and Economic Performance
+            - Cross-country Comparisons
+        - Cyclic
+            subsections:
+            - Cyclic Unemployment
+            - Causes and Consequences
+            - Policy Implications
+    - Liquidity and Spending Dynamics:
+        sections:
+        - Guerrieri, Veronica, and Guido Lorenzoni. 'Liquidity and Spending Dynamics.'
+          Mimeograph, University of California, Los Angeles
+            subsections:
+            - Introduction to Liquidity and Spending Dynamics
+            - Theoretical Framework
+            - Empirical Evidence
+    - Problem Sets:
+        sections:
+        - Problem Set 1 (PDF)
+        - Problem Set 1 Data (XLS)
+        - Problem Set 2 (PDF)
+        - Problem Set 3 (PDF)
+        - Problem Set 4 (PDF)
+        - Problem Set 5 (PDF)
+        - Problem Set 6 (PDF)
+        - Problem Set 7 (PDF)
+```

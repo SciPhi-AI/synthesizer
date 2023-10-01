@@ -1,0 +1,172 @@
+```yaml
+textbook:
+  Thermodynamics of Materials: A Comprehensive Guide
+    chapters:
+    - Introduction and Course Description:
+        sections:
+        - Thermodynamic Variables:
+            subsections:
+            - Definition and Significance of Thermodynamic Variables
+            - Temperature, Pressure, and Volume
+            - Internal Energy, Enthalpy, and Entropy
+        - State Variables and Functions:
+            subsections:
+            - Definition and Examples of State Variables
+            - Thermodynamic Functions and their Relationships
+            - Maxwell's Relations
+        - Thermodynamic Systems and Processes:
+            subsections:
+            - Types of Thermodynamic Systems
+            - Closed, Open, and Isolated Systems
+            - Quasi-static and Reversible Processes
+    - Energy and Work:
+        sections:
+        - Properties of Materials:
+            subsections:
+            - Physical and Chemical Properties
+            - Mechanical and Thermal Properties
+            - Electrical and Magnetic Properties
+        - Stored Energy in Solids, First Law for Fluids:
+            subsections:
+            - Internal Energy and its Components in Solids
+            - First Law of Thermodynamics for Fluids
+            - Work and Heat Transfer in Fluid Systems
+        - Quasi-static Processes:
+            subsections:
+            - Definition and Characteristics of Quasi-static Processes
+            - Application of Quasi-static Processes in Material Systems
+            - Efficiency and Limitations of Quasi-static Processes
+    - Heat and Temperature:
+        sections:
+        - Heat Capacities and Gaseous Behavior:
+            subsections:
+            - Specific Heat Capacity and Molar Heat Capacity
+            - Heat Capacity at Constant Volume and Constant Pressure
+            - Ideal Gas Behavior and its Implications
+        - Internal Energy and Enthalpy for Fluids:
+            subsections:
+            - Calculation of Internal Energy for Fluids
+            - Enthalpy and its Relation to Internal Energy
+            - Enthalpy Change in Chemical Reactions
+        - Thermodynamic Functions for General Systems:
+            subsections:
+            - Helmholtz Free Energy
+            - Gibbs Free Energy
+            - Enthalpy and Entropy in General Systems
+    - Entropy and Equilibrium:
+        sections:
+        - The Second Law:
+            subsections:
+            - Statement and Implications of the Second Law
+            - Entropy Generation and its Relation to Irreversibility
+            - Carnot Efficiency and Heat Engines
+        - Heat Stored during Phase Changes:
+            subsections:
+            - Latent Heat and its Significance
+            - Phase Transitions and Energy Storage
+            - Clausius-Clapeyron Equation and its Applications
+        - Gibbs Free Energy:
+            subsections:
+            - Definition and Significance of Gibbs Free Energy
+            - Gibbs Free Energy Change in Chemical Reactions
+            - Gibbs Phase Rule and its Implications
+        - Entropy Content in Materials:
+            subsections:
+            - Entropy Calculation for Pure Substances
+            - Entropy Calculation for Mixtures
+            - Entropy Change in Phase Transitions
+        - Conditions of Equilibrium:
+            subsections:
+            - Thermodynamic Equilibrium and its Criteria
+            - Equilibrium in Chemical Reactions
+            - Phase Equilibrium and Phase Rule
+        - Describing the State of an Alloy:
+            subsections:
+            - Composition and Microstructure of Alloys
+            - Phase Diagrams and Equilibrium Phases in Alloys
+            - Alloying Elements and their Effects
+        - Generalized Conditions for Equilibrium:
+            subsections:
+            - Chemical Potential and its Importance
+            - Activity and Activity Coefficient
+            - Equilibrium Constant and its Calculation
+        - The Chemical Potential:
+            subsections:
+            - Definition and Significance of Chemical Potential
+            - Chemical Potential in Pure Substances
+            - Chemical Potential in Mixtures and Solutions
+    - Mathematics of Thermodynamics:
+        sections:
+        - Mathematical Relations and Changing Variables:
+            subsections:
+            - Mathematical Formulations of Thermodynamic Equations
+            - Transformation of Variables in Thermodynamic Equations
+            - Legendre Transform and its Applications
+        - Mathematics and Stability:
+            subsections:
+            - Stability Criteria for Thermodynamic Systems
+            - Mathematical Analysis of Stability Conditions
+            - Instability and Phase Transitions
+        - Implications of Equilibrium and Gibbs-Duhem:
+            subsections:
+            - Gibbs-Duhem Equation and its Significance
+            - Constraints on Thermodynamic Systems at Equilibrium
+            - Equilibrium Thermodynamics and Phase Diagrams
+        - Symmetry and Equilibrium:
+            subsections:
+            - Symmetry Operations in Thermodynamics
+            - Symmetry and its Relation to Equilibrium
+            - Broken Symmetry and Phase Transitions
+        - The Gibbs Phase Rule and its Application:
+            subsections:
+            - Gibbs Phase Rule and its Derivation
+            - Applications of Gibbs Phase Rule in Phase Diagrams
+            - Limitations and Extensions of Gibbs Phase Rule
+    - Phase Diagrams:
+        sections:
+        - Gibbs Free Energy and Phase Diagrams:
+            subsections:
+            - Gibbs Free Energy and its Role in Phase Diagrams
+            - Construction and Interpretation of Phase Diagrams
+            - Binary, Ternary, and Multicomponent Phase Diagrams
+        - Uniformity of Chemical Potential at Equilibrium:
+            subsections:
+            - Chemical Potential and its Equality at Equilibrium
+            - Chemical Potential Gradient and Driving Force
+            - Equilibrium Conditions in Heterogeneous Systems
+        - Important Geometrical Constructions:
+            subsections:
+            - Lever Rule and its Applications
+            - Tie Lines and Phase Fractions in Phase Diagrams
+            - Isothermal and Vertical Sections in Phase Diagrams
+        - Phase Diagrams:
+            subsections:
+            - Types and Representation of Phase Diagrams
+            - Eutectic, Peritectic, and Eutectoid Reactions
+            - Solidification and Melting Behavior in Phase Diagrams
+        - Solution Thermodynamics:
+            subsections:
+            - Ideal and Non-Ideal Solution Behavior
+            - Regular Solution Model and its Parameters
+            - Thermodynamic Properties of Solutions
+        - Unstable Solutions:
+            subsections:
+            - Metastable Solutions and their Characteristics
+            - Nucleation and Growth of Unstable Phases
+            - Kinetics of Phase Transformations
+        - Equilibrium Conditions for Solid Solutions:
+            subsections:
+            - Solubility Limit and its Determination
+            - Solid Solution Strengthening Mechanisms
+            - Phase Transformation in Solid Solutions
+        - Equilibrium Conditions for Charged Species:
+            subsections:
+            - Electrochemical Equilibrium and its Principles
+            - Nernst Equation and its Applications
+            - Equilibrium Potentials and Redox Reactions
+        - Introduction to Surface Thermodynamics:
+            subsections:
+            - Surface Energy and Surface Tension
+            - Gibbs Adsorption Equation and its Implications
+            - Thermodynamics of Surfaces and Interfaces
+```

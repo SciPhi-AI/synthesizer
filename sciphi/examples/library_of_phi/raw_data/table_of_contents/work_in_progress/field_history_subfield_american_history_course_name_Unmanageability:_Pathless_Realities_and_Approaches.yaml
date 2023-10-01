@@ -1,0 +1,55 @@
+course:
+  'Unmanageability: Pathless Realities and Approaches':
+    textbook:
+      Information:
+      - Introduction to Unmanageability
+      - Understanding Practice and its Significance
+      - Exploring Managerial and Control Society
+      - 'Counter Practices: Creating New Realities'
+      - 'Counter Practices: The Art of Improvisation'
+      - 'Academic Apparatus: A Case Study of MIT'
+      - 'Academic Apparatus: The Dynamics of the Classroom'
+      - Effective Presentation Techniques and Strategies
+      - Final Presentations: Day 1 - Showcasing Student Work
+      - Final Presentations: Day 2 - Evaluating and Analyzing Student Work
+      - Exhibition: Displaying and Celebrating Student Achievements
+      - Critique: Analyzing and Reflecting on Student Work
+      - Exit Strategies: Navigating Post-Course Realities and Opportunities
+      page:
+      - textbook
+    chapters:
+    - Introduction:
+        sections:
+        - Understanding the Modern Symptoms of Unmanageability
+        - Defining Practice and its Significance in Contemporary Society
+        - Exploring the Role of Managerial and Control Structures in Unmanageability
+        - Overcoming Unmanageability through Counter Practices
+    - Counter Practices:
+        sections:
+        - Creating New Realities: Techniques and Approaches
+        - The Art of Improvisation: Embracing Uncertainty and Spontaneity
+    - Academic Apparatus:
+        sections:
+        - A Case Study of MIT: Unpacking the Inner Workings of an Academic Institution
+        - The Dynamics of the Classroom: Power Dynamics and Knowledge Production
+    - Effective Presentation Techniques:
+        sections:
+        - Developing Clear and Concise Presentations
+        - Engaging and Captivating an Audience
+        - Utilizing Visual Aids and Technology
+    - Final Presentations:
+        sections:
+        - Day 1: Showcasing Student Work and Research
+        - Day 2: Evaluating and Analyzing Student Presentations
+    - Exhibition:
+        subsections:
+        - Curating and Displaying Student Achievements
+        - Organizing an Exhibition Event
+    - Critique:
+        subsections:
+        - Analyzing and Reflecting on Student Work
+        - Providing Constructive Feedback and Evaluation
+    - Exit Strategies:
+        subsections:
+        - Planning for Post-Course Realities and Opportunities
+        - Navigating Career Paths and Future Endeavors

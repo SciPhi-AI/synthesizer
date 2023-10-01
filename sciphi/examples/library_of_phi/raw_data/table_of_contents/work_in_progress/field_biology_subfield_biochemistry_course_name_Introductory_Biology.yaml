@@ -1,0 +1,185 @@
+course:
+  Introductory Biology Textbook:
+    chapters:
+    - Chapter 1: Introduction & The Cell
+        sections:
+        - Section 1.1: Cell Structure
+        - Section 1.2: Cell Function
+        - Section 1.3: Cell Division
+    - Chapter 2: Biochemistry 1
+        sections:
+        - Section 2.1: Chemical Bonds
+        - Section 2.2: Proteins and Enzymes
+        - Section 2.3: Carbohydrates
+        - Section 2.4: Lipids
+    - Chapter 3: Biochemistry 2
+        sections:
+        - Section 3.1: Nucleic Acids
+        - Section 3.2: Metabolism
+        - Section 3.3: Energy and ATP
+    - Chapter 4: Biochemistry 3
+        sections:
+        - Section 4.1: Photosynthesis
+        - Section 4.2: Cellular Respiration
+        - Section 4.3: Fermentation
+    - Chapter 5: Genetics 1
+        sections:
+        - Section 5.1: Mendelian Genetics
+        - Section 5.2: Punnett Squares
+        - Section 5.3: Inheritance Patterns
+    - Chapter 6: Genetics 2
+        sections:
+        - Section 6.1: DNA Structure and Replication
+        - Section 6.2: RNA and Protein Synthesis
+        - Section 6.3: Genetic Mutations
+    - Chapter 7: Genetics 3
+        sections:
+        - Section 7.1: Human Genetics
+        - Section 7.2: Genetic Disorders
+        - Section 7.3: Genetic Engineering
+    - Chapter 8: Genetics 4
+        sections:
+        - Section 8.1: Population Genetics
+        - Section 8.2: Evolutionary Genetics
+        - Section 8.3: Genetic Variation and Adaptation
+    - Chapter 9: Molecular Biology 1
+        sections:
+        - Section 9.1: DNA Replication and Repair
+        - Section 9.2: Transcription and RNA Processing
+        - Section 9.3: Translation and Protein Synthesis
+    - Chapter 10: Molecular Biology 2
+        sections:
+        - Section 10.1: Gene Regulation
+        - Section 10.2: Epigenetics
+        - Section 10.3: Recombinant DNA Technology
+    - Chapter 11: Molecular Biology 3
+        sections:
+        - Section 11.1: DNA Sequencing and Genomics
+        - Section 11.2: DNA Fingerprinting
+        - Section 11.3: Polymerase Chain Reaction (PCR)
+    - Chapter 12: Molecular Biology 4
+        sections:
+        - Section 12.1: Gene Expression and Cancer
+        - Section 12.2: Genetic Engineering and Biotechnology
+        - Section 12.3: Synthetic Biology
+    - Chapter 13: Recombinant DNA 1
+        sections:
+        - Section 13.1: DNA Cloning
+        - Section 13.2: Plasmids and Vectors
+        - Section 13.3: Gene Libraries
+    - Chapter 14: Recombinant DNA 2
+        sections:
+        - Section 14.1: DNA Sequencing
+        - Section 14.2: Site-Directed Mutagenesis
+        - Section 14.3: DNA Microarrays
+    - Chapter 15: Recombinant DNA 3
+        sections:
+        - Section 15.1: Protein Expression and Purification
+        - Section 15.2: Transgenic Organisms
+        - Section 15.3: Gene Therapy
+    - Chapter 16: Recombinant DNA 4
+        sections:
+        - Section 16.1: CRISPR-Cas9 Technology
+        - Section 16.2: RNA Interference (RNAi)
+        - Section 16.3: Synthetic DNA and Gene Synthesis
+    - Chapter 17: Cell Biology 1
+        sections:
+        - Section 17.1: Cell Membrane
+        - Section 17.2: Cytoskeleton
+        - Section 17.3: Cell Organelles
+    - Chapter 18: Cell Biology 2
+        sections:
+        - Section 18.1: Cellular Transport
+        - Section 18.2: Endocytosis and Exocytosis
+        - Section 18.3: Cell Signaling
+    - Chapter 19: Cell Biology 3
+        sections:
+        - Section 19.1: Cell Cycle and Mitosis
+        - Section 19.2: Meiosis and Sexual Reproduction
+        - Section 19.3: Cell Death and Apoptosis
+    - Chapter 20: Cell Biology 4
+        sections:
+        - Section 20.1: Cell Differentiation
+        - Section 20.2: Stem Cells and Regeneration
+        - Section 20.3: Cell Aging and Senescence
+    - Chapter 21: Cancer 1
+        sections:
+        - Section 21.1: Causes and Risk Factors
+        - Section 21.2: Tumor Biology
+        - Section 21.3: Oncogenes and Tumor Suppressor Genes
+    - Chapter 22: Cancer 2
+        sections:
+        - Section 22.1: Cancer Diagnosis and Staging
+        - Section 22.2: Cancer Treatment: Surgery and Radiation
+        - Section 22.3: Cancer Treatment: Chemotherapy and Targeted Therapy
+    - Chapter 23: Cancer 3
+        sections:
+        - Section 23.1: Immunotherapy and Cancer Vaccines
+        - Section 23.2: Cancer Prevention and Screening
+        - Section 23.3: Cancer Epidemiology and Public Health
+    - Chapter 24: Development 1
+        sections:
+        - Section 24.1: Fertilization and Early Development
+        - Section 24.2: Embryonic Development and Organogenesis
+        - Section 24.3: Germ Layers and Body Axes
+    - Chapter 25: Development 2
+        sections:
+        - Section 25.1: Developmental Genetics
+        - Section 25.2: Stem Cells and Developmental Plasticity
+        - Section 25.3: Developmental Disorders and Birth Defects
+    - Chapter 26: Stem Cells
+        sections:
+        - Section 26.1: Types of Stem Cells
+        - Section 26.2: Stem Cell Niches
+        - Section 26.3: Stem Cell Therapy
+    - Chapter 27: Tissue Repair
+        sections:
+        - Section 27.1: Wound Healing
+        - Section 27.2: Regeneration vs. Fibrosis
+        - Section 27.3: Tissue Engineering Approaches
+    - Chapter 28: Tissue Engineering
+        sections:
+        - Section 28.1: Scaffold Design and Fabrication
+        - Section 28.2: Cell-Seeding Techniques
+        - Section 28.3: Bioreactor Systems
+    - Chapter 29: Immunology 1
+        sections:
+        - Section 29.1: Innate Immunity
+        - Section 29.2: Antigens and Antibodies
+        - Section 29.3: Complement System
+    - Chapter 30: Immunology 2
+        sections:
+        - Section 30.1: Adaptive Immunity
+        - Section 30.2: B Cells and T Cells
+        - Section 30.3: Major Histocompatibility Complex (MHC)
+    - Chapter 31: Neurobiology 1
+        sections:
+        - Section 31.1: Nervous System Structure
+        - Section 31.2: Neuron Anatomy and Function
+        - Section 31.3: Resting Membrane Potential
+    - Chapter 32: Neurobiology 2
+        sections:
+        - Section 32.1: Action Potentials
+        - Section 32.2: Synaptic Transmission
+        - Section 32.3: Neurotransmitters and Receptors
+    - Chapter 33: Neurobiology 3
+        sections:
+        - Section 33.1: Neural Circuits and Pathways
+        - Section 33.2: Sensory Systems
+        - Section 33.3: Motor Systems
+    - Chapter 34: Neurobiology 4
+        sections:
+        - Section 34.1: Learning and Memory
+        - Section 34.2: Neurodegenerative Diseases
+        - Section 34.3: Neural Plasticity
+    - Chapter 35: The Genomic Revolution
+        sections:
+        - Section 35.1: Human Genome Project
+        - Section 35.2: Next-Generation Sequencing
+        - Section 35.3: Genomic Medicine
+    - Chapter 36: Future of Biology
+        sections:
+        - Section 36.1: Synthetic Biology
+        - Section 36.2: Bioinformatics
+        - Section 36.3: Ethical and Social Implications of Biotechnology
+```

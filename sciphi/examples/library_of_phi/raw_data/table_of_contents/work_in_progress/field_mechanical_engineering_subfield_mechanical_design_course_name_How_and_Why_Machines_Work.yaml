@@ -1,0 +1,85 @@
+textbook:
+  How and Why Machines Work: A Comprehensive Guide
+chapters:
+  - Introduction to How Machines Work:
+    sections:
+      - The Five 'F's'
+      - Control Volumes
+      - Flow Balances
+      - Units
+  - How Machines are Designed and Manufactured:
+    sections:
+      - Project Management
+      - Introduction to Manufacturing
+      - 'CAD I: Software Interface'
+  - Mechanical Engineering:
+    sections:
+      - Overview of Mechanical Engineering
+  - How Machines are Manufactured:
+    sections:
+      - Casting
+      - Sheet metal
+      - Turning
+      - Milling
+  - Automotive Manufacturing:
+    sections:
+      - Automotive Manufacturing
+  - Machine Components and Systems:
+    sections:
+      - 'CAD II: Design Intent Basics'
+      - Fluid Components and Systems
+  - 'CAD II: Design Intent Basics':
+    sections:
+      - 'CAD III: Design Intent Advanced Concepts'
+      - 'CAD IV: Project Recitations'
+  - Fluid Components and Systems:
+    sections:
+      - 'Guest Speakers: MIT FSAE Talk/Tour'
+  - 'Project I: Kick Off':
+    sections:
+      - Electro-Mechanical Machines
+      - 'CAD III: Design Intent Advanced Concepts'
+      - 'CAD IV: Project Recitations'
+  - Electro-Mechanical Machines:
+    sections:
+      - 'CAD IV: Project Recitations'
+  - 'CAD III: Design Intent Advanced Concepts':
+    sections:
+      - 'CAD IV: Project Recitations'
+  - 'CAD IV: Project Recitations':
+    sections:
+      - 'Guest Speakers: MIT FSAE Talk/Tour'
+  - 'Guest Speakers: MIT FSAE Talk/Tour':
+    sections:
+      - Machines that Store and Transfer Energy
+  - Machines that Store and Transfer Energy:
+    sections:
+      - 'Tour: Cogeneration/ Gas Turbine Lab/Cryo Lab'
+  - 'Tour: Cogeneration/ Gas Turbine Lab/Cryo Lab':
+    sections:
+      - Design Consulting
+  - Design Consulting:
+    sections:
+      - Project II Updates
+  - Project II Updates:
+    sections:
+      - Bio-Engineering
+      - Service Learning
+  - Bio-Engineering:
+    sections:
+      - Project II Updates
+  - Service Learning:
+    sections:
+      - Project II Updates
+  - Concept Design and Large Systems:
+    sections:
+      - Automotive Design/Manufacturing Research
+  - Automotive Design/Manufacturing Research:
+    sections:
+      - Work On Project II
+  - Work On Project II:
+    sections:
+      - Design Project Presentation/Contest
+  - Design Project Presentation/Contest:
+    sections:
+      - Design Project Presentation/Contest

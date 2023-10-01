@@ -1,0 +1,98 @@
+textbook:
+  Ethnicity and Race in World Politics: A Comprehensive Analysis
+  chapters:
+    - 'Chapter 1: Introduction: Objectives and Requirements of the Course':
+        sections:
+        - 'Section 1.1: Rethinking Ethnicity and Race'
+        - 'Section 1.2: Ethnic and Racial Identities in Comparative Perspective'
+        - 'Section 1.3: Understanding the Political Dimensions of Ethnicity and Race'
+    - 'Chapter 2: A Framework for Analysis of Ethnopolitical Mobilization':
+        sections:
+        - 'Section 2.1: The Sources of Discontent: The Intersections of Race and Class'
+        - 'Section 2.2: Government Responses to Ethnopolitical Demands and Group Disadvantage'
+    - 'Chapter 3: International Dimensions of National Ethnopolitical Conflicts':
+        sections:
+        - 'Section 3.1: The Emergence of International Human Rights'
+        - 'Section 3.2: Are Human Rights Universal?: Women’s Rights versus Cultural Practices'
+        - 'Section 3.3: Human Rights and Foreign Policy: Should Outsiders Assist the Ethnic/Racial Groups of Another Country?'
+        - 'Section 3.4: International Humanitarian Intervention: Bosnia vs. Darfur, Sudan and Rwanda'
+    - 'Chapter 4: Ethnic Minority Rights, Human Rights, and Sovereignty':
+        sections:
+        - 'Section 4.1: Review Class - Lessons Learned and Looking Forward'
+    - 'Chapter 5: The Role of Ethnicity and Race in International Conflict Resolution':
+        sections:
+        - 'Section 5.1: Negotiating Ethnic and Racial Conflicts: Approaches and Strategies'
+        - 'Section 5.2: Mediation and Peacebuilding in Ethnopolitical Conflicts'
+    - 'Chapter 6: Ethnicity, Race, and Political Movements':
+        sections:
+        - 'Section 6.1: Ethnic and Racial Mobilization: Theories and Case Studies'
+        - 'Section 6.2: Ethnic and Racial Movements in the Global South'
+        - 'Section 6.3: Ethnic and Racial Movements in the Global North'
+    - 'Chapter 7: Ethnicity and Race in Comparative Politics':
+        sections:
+        - 'Section 7.1: Ethnic and Racial Politics in Democratic Regimes'
+        - 'Section 7.2: Ethnic and Racial Politics in Authoritarian Regimes'
+        - 'Section 7.3: Ethnic and Racial Politics in Multicultural Societies'
+    - 'Chapter 8: Ethnicity and Race in International Relations':
+        sections:
+        - 'Section 8.1: Ethnicity and Race in Inter-State Relations'
+        - 'Section 8.2: Ethnicity and Race in Global Governance'
+        - 'Section 8.3: Ethnic and Racial Dimensions of Globalization'
+    - 'Chapter 9: Ethnicity and Race in Comparative Public Policy':
+        sections:
+        - 'Section 9.1: Affirmative Action and Equal Opportunity Policies'
+        - 'Section 9.2: Ethnic and Racial Inequality in Education'
+        - 'Section 9.3: Ethnic and Racial Discrimination in Employment'
+    - 'Chapter 10: Ethnicity, Race, and Identity Politics':
+        sections:
+        - 'Section 10.1: Ethnic and Racial Identity Formation'
+        - 'Section 10.2: Ethnic and Racial Identity Politics in the Digital Age'
+        - 'Section 10.3: Ethnic and Racial Identity and Social Movements'
+    - 'Chapter 11: Ethnicity and Race in Global Development':
+        sections:
+        - 'Section 11.1: Ethnic and Racial Inequality and Poverty'
+        - 'Section 11.2: Ethnic and Racial Dimensions of Development Aid'
+        - 'Section 11.3: Ethnic and Racial Perspectives on Sustainable Development'
+    - 'Chapter 12: Ethnicity, Race, and Nationalism':
+        sections:
+        - 'Section 12.1: Understanding Nationalism and Its Relation to Ethnicity and Race'
+        - 'Section 12.2: Ethnic and Racial Nationalism in the Modern World'
+        - 'Section 12.3: Challenges to Ethnic and Racial Nationalism'
+    - 'Chapter 13: Ethnicity and Race in Global Migration':
+        sections:
+        - 'Section 13.1: The Causes and Consequences of Ethnic and Racial Migration'
+        - 'Section 13.2: Ethnic and Racial Diasporas and Transnationalism'
+        - 'Section 13.3: Ethnic and Racial Integration and Assimilation'
+    - 'Chapter 14: Ethnicity and Race in Conflict and Security Studies':
+        sections:
+        - 'Section 14.1: Ethnic and Racial Conflict: Causes and Dynamics'
+        - 'Section 14.2: Ethnic and Racial Conflict Resolution and Peacebuilding'
+        - 'Section 14.3: Ethnic and Racial Dimensions of National Security'
+    - 'Chapter 15: Ethnicity, Race, and Gender Relations':
+        sections:
+        - 'Section 15.1: Intersectionality: Understanding the Interplay of Ethnicity, Race, and Gender'
+        - 'Section 15.2: Ethnicity, Race, and Feminism'
+        - 'Section 15.3: Ethnic and Racial Identity and LGBTQ+ Rights'
+    - 'Chapter 16: Ethnicity and Race in Post-Colonial Societies':
+        sections:
+        - 'Section 16.1: Ethnic and Racial Politics in Former Colonies'
+        - 'Section 16.2: Decolonization and Indigenous Rights'
+    - 'Chapter 17: Ethnicity and Race in Global Governance':
+        sections:
+        - 'Section 17.1: Ethnic and Racial Representation in International Organizations'
+        - 'Section 17.2: Ethnic and Racial Dimensions of Global Governance Institutions'
+        - 'Section 17.3: Ethnic and Racial Perspectives on Global Governance Reforms'
+    - 'Chapter 18: Ethnicity and Race in Health and Healthcare':
+        sections:
+        - 'Section 18.1: Ethnic and Racial Health Disparities'
+        - 'Section 18.2: Ethnic and Racial Factors in Healthcare Access and Quality'
+        - 'Section 18.3: Ethnic and Racial Perspectives on Public Health Policies'
+    - 'Chapter 19: Ethnicity and Race in Environmental Politics':
+        sections:
+        - 'Section 19.1: Ethnic and Racial Perspectives on Environmental Justice'
+        - 'Section 19.2: Indigenous Peoples and Environmental Conservation'
+        - 'Section 19.3: Ethnic and Racial Dimensions of Climate Change'
+    - 'Chapter 20: Ethnicity, Race, and Social Movements':
+        sections:
+        - 'Section 20.1: Ethnic and Racial Movements for Social Justice'
+        - 'Section 20.2: Ethnic and Racial Activism in the Digital Age'

@@ -1,0 +1,114 @@
+```yaml
+course:
+  textbook: "Compressible Flow: Theory and Applications"
+    chapters:
+      - chapter 1: "Introduction to Compressible Flow"
+        sections:
+          - section 1.1: "Basics"
+            subsections:
+              - subsection 1.1.1: "Continuity and Momentum Equations"
+              - subsection 1.1.2: "Thermo - and Mechanical Processes"
+              - subsection 1.1.3: "Splitting the Energy Equation"
+              - subsection 1.1.4: "Entropy Changes and Thermodynamic Context"
+              - subsection 1.1.5: "Exact Solution of the Navier-Stokes Equations for a One-Dimensional Flow"
+              - subsection 1.1.6: "Physical Insight into Shock Thickness and the 'Origin' of Losses for a Shock Wave"
+          - section 1.2: "Integral Forms of Equations of Motion"
+            subsections:
+              - subsection 1.2.1: "Non-dimensional Parameters Characterizing Compressible Flow"
+              - subsection 1.2.2: "Appropriate Scaling-what are the Relevant Nondimensional Parameters?"
+              - subsection 1.2.3: "When is a Flow Compressible [For Both Steady and Unsteady Flow]?"
+          - section 1.3: "Quasi 1-D Compressible Flow and Extensions"
+            subsections:
+              - subsection 1.3.1: "Physical Basis for the 1-D Flow Assumption, Role of 1-D Flow Descriptions"
+              - subsection 1.3.2: "1-D Flow in Converging-diverging Nozzles"
+              - subsection 1.3.3: "Shock Waves, Behavior of Nozzles"
+          - section 1.4: "Generalized One-dimensional Flow With Mass, Momentum, and Energy Interchange"
+            subsections:
+              - subsection 1.4.1: "Effect of Friction"
+              - subsection 1.4.2: "General Compressible Flow Processes in Propulsion Systems"
+              - subsection 1.4.3: "Representation of Flow Processes in H-K Diagrams"
+              - subsection 1.4.4: "Applications to Ramjets and Scramjets"
+          - section 1.5: "Axisymmetric Compressible Swirling Flow"
+            subsections:
+              - subsection 1.5.1: "Derivation of Equations"
+              - subsection 1.5.2: "Examples: Compound-compressible Flow"
+          - section 1.6: "Disturbance Behavior in a Compressible Flow"
+            subsections:
+              - subsection 1.6.1: "Types of Perturbations in Compressible Flow: Entropy, Vorticity and Pressure Disturbances"
+              - subsection 1.6.2: "Coupling of Disturbance Types in Compressible Flow"
+              - subsection 1.6.3: "Characteristic Disturbance Velocities and Behavior"
+              - subsection 1.6.4: "Unsteady Flow and Upstream Influence in Compressible Flow"
+          - section 1.7: "Gas Dynamic Discontinuities"
+            subsections:
+              - subsection 1.7.1: "Shock Waves"
+              - subsection 1.7.2: "Deflagrations"
+              - subsection 1.7.3: "Detonations"
+              - subsection 1.7.4: "Crocco’s Theorem"
+          - section 1.8: "Two-Dimensional, Compressible, Linear Flows"
+            subsections:
+              - subsection 1.8.1: "Constant Entropy Flows"
+              - subsection 1.8.2: "Slender, Axially Symmetric Flows"
+          - section 1.9: "Two-Dimensional, Compressible, Non-Linear Flows"
+            subsections:
+              - subsection 1.9.1: "Inviscid, Unsteady Transonic Flows"
+              - subsection 1.9.2: "Inviscid Hypersonic Flows"
+      - chapter 2: "Flow Measurement Techniques"
+        sections:
+          - section 2.1: "Pitot-Static Probe"
+          - section 2.2: "Hot-Wire Anemometry"
+          - section 2.3: "Laser Doppler Anemometry"
+          - section 2.4: "Pressure-Sensitive Paint"
+          - section 2.5: "Shadowgraph and Schlieren Techniques"
+      - chapter 3: "Compressible Flow in Nozzles and Diffusers"
+        sections:
+          - section 3.1: "Isentropic Flow in Nozzles"
+          - section 3.2: "Normal Shock Waves in Nozzles"
+          - section 3.3: "Oblique Shock Waves in Nozzles"
+          - section 3.4: "Flow Separation and Shock-Boundary Layer Interaction in Nozzles"
+          - section 3.5: "Diffusers and Duct Flow"
+      - chapter 4: "Compressible Flow in Turbomachinery"
+        sections:
+          - section 4.1: "Introduction to Turbomachinery"
+          - section 4.2: "Compressible Flow in Centrifugal Compressors"
+          - section 4.3: "Compressible Flow in Axial Compressors"
+          - section 4.4: "Compressible Flow in Turbine Blades"
+          - section 4.5: "Compressible Flow in Nozzle Guide Vanes"
+      - chapter 5: "Compressible Flow in Aerospace Applications"
+        sections:
+          - section 5.1: "Compressible Flow in Airfoils"
+          - section 5.2: "Compressible Flow in Wings and Winglets"
+          - section 5.3: "Compressible Flow in Rocket Propulsion"
+          - section 5.4: "Compressible Flow in Supersonic and Hypersonic Vehicles"
+      - chapter 6: "Compressible Flow and Energy Conversion"
+        sections:
+          - section 6.1: "Compressible Flow in Power Generation"
+          - section 6.2: "Compressible Flow in Gas Turbines"
+          - section 6.3: "Compressible Flow in Steam Turbines"
+          - section 6.4: "Compressible Flow in Wind Turbines"
+          - section 6.5: "Compressible Flow in Hydraulic Turbines"
+      - chapter 7: "Compressible Flow and Heat Transfer"
+        sections:
+          - section 7.1: "Compressible Flow Heat Transfer Fundamentals"
+          - section 7.2: "Compressible Flow Heat Transfer in Aerospace Applications"
+          - section 7.3: "Compressible Flow Heat Transfer in Power Generation"
+          - section 7.4: "Compressible Flow Heat Transfer in Turbomachinery"
+          - section 7.5: "Compressible Flow Heat Transfer in Internal Combustion Engines"
+      - chapter 8: "Compressible Flow and Shock Waves"
+        sections:
+          - section 8.1: "Shock Wave Fundamentals"
+          - section 8.2: "Shock Wave Interactions"
+          - section 8.3: "Shock Wave Applications in Aerospace Engineering"
+          - section 8.4: "Shock Waves in Engineering and Industrial Processes"
+      - chapter 9: "Compressible Flow and Computational Fluid Dynamics"
+        sections:
+          - section 9.1: "Basics of Computational Fluid Dynamics (CFD)"
+          - section 9.2: "Compressible Flow Modeling in CFD"
+          - section 9.3: "Applications of CFD in Compressible Flow"
+          - section 9.4: "Advances in CFD for Compressible Flow"
+      - chapter 10: "Compressible Flow and Experimental Techniques"
+        sections:
+          - section 10.1: "Wind Tunnel Testing"
+          - section 10.2: "Shock Tube Experiments"
+          - section 10.3: "Supersonic and Hypersonic Flow Visualization"
+          - section 10.4: "Flow Control Techniques in Compressible Flow Experiments"
+```

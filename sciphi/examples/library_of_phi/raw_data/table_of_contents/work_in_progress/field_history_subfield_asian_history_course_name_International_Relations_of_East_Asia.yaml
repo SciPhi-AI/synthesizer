@@ -1,0 +1,41 @@
+textbook:
+  International Relations of East Asia: A Comprehensive Study
+  chapters:
+    - Background:
+        sections:
+        - Introduction
+        - International Relations Theory and East Asia
+        - Historical Legacies
+    - Early Cold War:
+        sections:
+        - Origins of the Cold War in East Asia
+        - Korean War I
+        - Korean War II
+        - Containment in East Asia
+    - Late Cold War:
+        sections:
+        - Vietnam War
+        - Collapse of the China-Soviet Alliance
+        - US-China Rapprochement
+        - China-Soviet Cold War
+        - US-China Normalization and Beyond
+    - Maintaining Regional Order:
+        sections:
+        - 'Maintaining Regional Order I: ASEAN'
+        - Financial Miracles
+        - Japan’s Emergence
+        - Ripe for Rivalry?
+        - 'Maintaining Regional Order II: Beyond ASEAN'
+        - Financial Crisis and Regionalism
+    - Security Issues:
+        sections:
+        - Crisis in the Taiwan Straits
+        - Crisis on the Korean Peninsula
+        - China’s Rise
+        - A New Security Dilemma?
+    - In-class Exam:
+        sections: null
+    - The U.S. in East Asia:
+        sections: null
+    - Conclusion and Wrap-Up:
+        sections: null

@@ -1,0 +1,65 @@
+```yaml
+course:
+  Principles of Automatic Control:
+    textbook:
+      name: Comprehensive Guide to Principles of Automatic Control
+      chapters:
+        - Introduction:
+          sections:
+            - Why automatic control?
+            - Categorization of control systems
+        - Modeling Principles:
+          sections:
+            - Modeling principles
+        - Block Diagrams and Feedback:
+          sections:
+            - Block diagrams
+            - The effect of feedback
+        - Dynamic Response:
+          sections:
+            - Dynamic response of closed-loop systems
+        - Transient Response and Performance:
+          sections:
+            - Time-domain specifications
+        - Disturbances and Sensitivity:
+          sections:
+            - Effect of noise
+            - Steady-state errors
+        - Root Locus Techniques:
+          sections:
+            - The Routh criterion
+        - Bode Plots:
+          sections:
+            - Bode plots
+        - Nyquist Criterion:
+          sections:
+            - The Nyquist stability criterion
+        - Gain and Phase Margins:
+          sections:
+            - Stability margins
+            - Bode gain-phase theorem
+        - Bode Design:
+          sections:
+            - Bode compensation
+        - Digital Control:
+          sections:
+            - Digital control
+            - The z-transform
+        - PID Control:
+          sections:
+            - PID control
+        - Frequency Response Design:
+          sections:
+            - Frequency response design
+        - Compensator Design:
+          sections:
+            - Compensator design examples
+            - Time delay of ZOH
+        - Discrete Control:
+          sections:
+            - Discrete design
+        - Higher Level Control:
+          sections:
+            - Higher harmonic control
+```
+```

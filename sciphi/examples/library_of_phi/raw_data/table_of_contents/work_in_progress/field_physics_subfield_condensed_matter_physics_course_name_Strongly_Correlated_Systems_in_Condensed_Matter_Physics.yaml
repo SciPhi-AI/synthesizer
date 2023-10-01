@@ -1,0 +1,95 @@
+textbook:
+  Strongly Correlated Systems in Condensed Matter Physics: A Comprehensive Introduction
+
+chapters:
+  - Coherent States:
+    sections:
+      - Introduction to Coherent States
+      - Properties of Coherent States
+      - Applications of Coherent States
+    subsections: []
+
+  - Squeezed States:
+    sections:
+      - Introduction to Squeezed States
+      - Properties of Squeezed States
+      - Applications of Squeezed States
+    subsections: []
+
+  - Second Quantization:
+    sections:
+      - Introduction to Second Quantization
+      - Operators in Second Quantization
+      - Creation and Annihilation Operators
+      - Field Operators
+      - Occupation Number Representation
+    subsections: []
+
+  - Bose Condensation:
+    sections:
+      - Introduction to Bose Condensation
+      - Properties of Bose Condensates
+      - Quasiparticles in Bose Condensates
+      - Vortices in Bose Condensates
+      - Finite Temperature Effects in Bose Condensates
+    subsections: []
+
+  - Superfluidity and Vortices:
+    sections:
+      - Introduction to Superfluidity
+      - Properties of Superfluids
+      - Vortices in Superfluids
+      - Finite Temperature Effects in Superfluids
+    subsections: []
+
+  - Interacting Fermions:
+    sections:
+      - Introduction to Interacting Fermions
+      - Many-body Interactions in Fermionic Systems
+      - Fermi Gases
+      - Fermi Liquids
+      - Collective Modes in Fermionic Systems
+    subsections: []
+
+  - Bardeen-Cooper-Schrieffer Theory:
+    sections:
+      - Introduction to BCS Theory
+      - Cooper Pairs
+      - Quasiparticles in Superconductors
+      - BCS Wavefunction
+      - Energy Gap in Superconductors
+    subsections: []
+
+  - Quasiparticle Transport in Superconductors:
+    sections:
+      - Introduction to Quasiparticle Transport
+      - Quasiparticle Scattering
+      - Quasiparticle Tunneling
+      - Quasiparticle Diffusion
+      - Superconducting Proximity Effect
+    subsections: []
+
+  - Path Integral:
+    sections:
+      - Introduction to Path Integral
+      - Path Integral Formulation of Quantum Mechanics
+      - Path Integrals in Condensed Matter Physics
+      - Applications of Path Integral Formalism
+    subsections: []
+
+  - Quantum Tunneling and Escape:
+    sections:
+      - Introduction to Quantum Tunneling
+      - Tunneling Phenomena in Condensed Matter Systems
+      - Escape Phenomena in Condensed Matter Systems
+      - Quantum Dissipation and Decoherence
+    subsections: []
+
+  - Field Integral, Bosons and Fermions:
+    sections:
+      - Introduction to Field Integral
+      - Bosonic Fields
+      - Fermionic Fields
+      - Bosonization
+      - Fermionization
+    subsections: []

@@ -1,0 +1,93 @@
+```yaml
+textbook:
+  Computer Language Engineering: A Comprehensive Guide
+    chapters:
+    - Introduction to Computer Language Engineering:
+        sections:
+        - Overview of Computer Languages
+        - Language Design Principles
+        - Language Specification
+        - Syntax and Semantics
+    - Regular Expressions and Context-Free Grammars:
+        sections:
+        - Regular Expressions
+        - Context-Free Grammars
+        - Language Specification using Regular Expressions and Grammars
+    - Parsing Techniques:
+        sections:
+        - Shift-Reduce Parsing
+        - Top-Down Parsing
+        - Bottom-Up Parsing
+    - Intermediate Representation:
+        sections:
+        - Intermediate Formats
+        - Abstract Syntax Trees
+        - Three-Address Code
+    - Semantic Analysis:
+        sections:
+        - Type Checking
+        - Symbol Table
+        - Scope and Binding
+    - Code Generation:
+        sections:
+        - Unoptimized Code Generation
+        - Introduction to Program Analysis and Optimization
+        - Introduction to Dataflow Analysis
+        - Foundations of Dataflow Analysis
+        - Introduction to Code Optimization: Instruction Scheduling
+    - Memory Optimization:
+        sections:
+        - Loop Optimizations: Instruction Scheduling
+        - More Loop Optimizations
+        - Register Allocation
+        - Parallelization
+    - Putting It All Together:
+        sections:
+        - Memory Optimization Techniques
+        - Code Optimization Techniques
+        - Integration of Analysis and Optimization
+    - Quizzes and Exams:
+        sections:
+        - Practice Quizzes
+        - Previous Semester Quizzes
+    - Projects:
+        sections:
+        - Project Overview
+        - Decaf Language
+        - Project 1: Scanner and Parser
+        - Project 2: Semantic Analysis
+        - Project 3: Code Generation
+    - Additional Resources:
+        sections:
+        - Course Readings
+        - Lecture Notes
+        - Recitation Slides
+        - Assignments
+        - Course Calendar
+        - Course Information
+    - Advanced Topics in Computer Language Engineering:
+        sections:
+        - Advanced Language Design Principles
+        - Advanced Language Specification Techniques
+        - Advanced Code Optimization Techniques
+        - Advanced Memory Optimization Techniques
+        - Compiler Frontend Optimization
+        - Compiler Backend Optimization
+    - Case Studies in Computer Language Engineering:
+        sections:
+        - Case Study 1: C Programming Language
+        - Case Study 2: Java Programming Language
+        - Case Study 3: Python Programming Language
+        - Case Study 4: JavaScript Programming Language
+    - Future Trends in Computer Language Engineering:
+        sections:
+        - Domain-Specific Languages
+        - Just-In-Time Compilation
+        - Machine Learning in Language Engineering
+        - Quantum Computing and Language Engineering
+    - Appendix:
+        sections:
+        - Glossary
+        - References
+        - Index
+```

@@ -1,0 +1,115 @@
+```yaml
+course:
+  textbook:
+    topics:
+      - Quantum Physics I:
+          chapters:
+            - Basic Features of Quantum Mechanics:
+                sections:
+                  - Linearity
+                  - Complex Numbers
+                  - Non-deterministic
+                  - Superposition
+                  - Entanglement
+            - Experimental Basis of Quantum Physics:
+                sections:
+                  - Two-slit Experiments
+                  - Mach-Zehnder Interferometer
+                  - Elitzur-Vaidman Bombs
+                  - Photoelectric Effect
+                  - Compton Scattering
+                  - de Broglie Wavelength
+            - Wave Mechanics:
+                sections:
+                  - Galilean Transformation of de Broglie Wavelength
+                  - Wave-packets and Group Velocity
+                  - Matter Wave for a Particle
+                  - Momentum and Position Operators
+                  - Schrödinger Equation
+            - Interpretation of the Wavefunction:
+                sections:
+                  - Probability Density
+                  - Probability Current
+                  - Current Conservation
+                  - Hermitian Operators
+            - Expectation Values and Uncertainty:
+                sections:
+                  - Expectation Values of Operators
+                  - Time Evolution of Wave-packets
+                  - Fourier Transforms
+                  - Parseval Theorem
+                  - Uncertainty Relation
+            - Quantum Physics in One-dimensional Potentials:
+                sections:
+                  - Stationary States
+                  - Boundary Conditions
+                  - Particle on a Circle
+                  - Infinite Square Well
+                  - Finite Square Well
+                  - Semiclassical Approximations
+                  - Numerical Solution by the Shooting Method
+                  - Delta Function Potential
+                  - Simple Harmonic Oscillator
+                  - Reflection and Transmission Coefficients
+                  - Ramsauer Townsend Effect
+                  - 1D Scattering and Phase Shifts
+                  - Levinson’s Theorem
+            - Angular Momentum and Central Potentials:
+                sections:
+                  - Resonances and Breit-Wigner Distribution
+                  - Central Potentials
+                  - Algebra of Angular Momentum
+                  - Legendre Polynomials
+                  - Hydrogen Atom
+                  - Energy Levels Diagram
+                  - Virial Theorem
+                  - Circular Orbits and Eccentricity
+                  - Discovery of Spin
+            - Theory of Parallel Hardware (SMA 5511):
+                sections:
+                  - Systolic Computation
+                  - Fast Addition
+                  - Fast Multiplication
+                  - Fast Division
+                  - Matrix Computations
+                  - Retiming
+                  - Retiming II
+                  - Clock Period
+                  - Clock Period II
+                  - Sorting on 1D and 2D Arrays
+                  - Comparison Networks
+                  - Interconnection Networks
+                  - Routing
+                  - VLSI
+                  - VLSI II
+                  - VLSI III
+                  - VLSI IV
+                  - VLSI Lowerbounds
+                  - VLSI Layout
+                  - VLSI Wrapup
+                  - Area Universal Networks
+                subsections:
+                  - Systolic Arrays and their Applications
+                  - Fast Addition Circuits and Algorithms
+                  - Fast Multiplication Circuits and Algorithms
+                  - Fast Division Circuits and Algorithms
+                  - Matrix Multiplication Algorithms
+                  - Retiming Techniques for Digital Circuits
+                  - Retiming Techniques for Sequential Circuits
+                  - Clock Period Estimation and Optimization
+                  - Clock Period Estimation for Pipelined Circuits
+                  - Sorting Algorithms for 1D and 2D Arrays
+                  - Comparison Networks for Sorting
+                  - Interconnection Networks and their Topologies
+                  - Routing Algorithms in Interconnection Networks
+                  - VLSI Design Methodologies
+                  - VLSI Design Considerations for CMOS Circuits
+                  - VLSI Design Considerations for Digital Circuits
+                  - VLSI Design Considerations for Analog Circuits
+                  - Lower Bounds for VLSI Circuits
+                  - VLSI Layout Design Techniques
+                  - VLSI Layout Design for Standard Cells
+                  - VLSI Layout Design for Full Custom Circuits
+                  - Wrapup of VLSI Design Techniques
+                  - Universal Networks for VLSI Circuit Design
+```

@@ -1,0 +1,106 @@
+```yaml
+course:
+  textbook:
+    chapters:
+      - title: Introduction to Ionized Gases
+        sections:
+          - title: Fundamentals of Plasma Physics
+            subsections:
+              - title: Larmor Motion
+              - title: Debye Shielding
+              - title: Plasma Frequency
+              - title: Plasma Oscillations
+                subsections:
+                  - title: Langmuir Waves
+                  - title: Ion Acoustic Waves
+          - title: Motion of Charges in Uniform E and B fields
+            subsections:
+              - title: Diamagnetism
+              - title: ExB Drift
+              - title: Alfven Waves
+              - title: Cyclotron Motion
+                subsections:
+                  - title: Gyroresonance
+                  - title: Landau Damping
+          - title: Effects of an Inhomogeneous Magnetic Field
+            subsections:
+              - title: Inertia and Grad-B Drifts
+              - title: Parallel Drifts and Magnetic Mirrors
+              - title: Magnetic Reconnection
+                subsections:
+                  - title: Magnetic Islands
+                  - title: Flux Ropes
+          - title: Relationship between Drifts and the Fluid Picture
+          - title: Time-varying B field
+            subsections:
+              - title: Adiabatic Invariants
+              - title: Magnetic Reconnection and Reconnection Rates
+      - title: Kinetic Theory of Ionized Gases
+        sections:
+          - title: Collision Theory
+            subsections:
+              - title: Energy and Momentum Transfer
+              - title: Calculation of Scattering Cross Sections: The Hard Sphere Model and Power-law Potentials
+              - title: Coulomb Collision Frequency
+          - title: Boltzmann's H-Theorem and Equilibrium Statistical Mechanics
+            subsections:
+              - title: Relationship Between H and S
+              - title: Quantum Statistics
+              - title: Classical Limit
+              - title: Partition Function
+              - title: Multi-component Systems
+              - title: Translational Partition Function
+          - title: The Equilibrium Distribution and its Properties
+            subsections:
+              - title: Characteristic Energies and Velocities for a Maxwellian Distribution
+              - title: Thermal Equilibrium
+              - title: Saha Equation
+          - title: Moments of the Boltzmann Equation
+            subsections:
+              - title: Mass and Momentum Conservation
+              - title: Kinetic Energy Equation
+              - title: Heat Flux Equation
+          - title: Maxwellian Collisions and Electron Energy Equation
+            subsections:
+              - title: Ohm's Law
+              - title: Ambipolar Diffusion
+              - title: Energy Equation
+          - title: Plasma-Wall Interactions
+            subsections:
+              - title: Sheath and Pre-sheath
+              - title: Bohm Condition
+              - title: Random Particle and Kinetic Energy Flux Across a Plane
+              - title: Plasma-Surface Interactions
+                subsections:
+                  - title: Sputtering
+                  - title: Secondary Electron Emission
+                  - title: Plasma Etching
+      - title: Radiation Transport in Ionized Gases
+        sections:
+          - title: Equilibrium Statistical Mechanics and Electronic Partition Function
+            subsections:
+              - title: Ionization Equilibrium
+              - title: Free Electrons in Metals
+              - title: Black Body Radiation
+              - title: Vibrational and Rotational Partition Functions
+              - title: Energy Levels in Atoms and Ions
+          - title: Radiation Transport in a Gas
+            subsections:
+              - title: Equilibrium Distribution
+              - title: Transport Equation
+              - title: Collisional Operator
+              - title: Spectral Lines
+              - title: Line-reversal Pyrometer
+          - title: Semi-thick Plasma Approximation
+            subsections:
+              - title: Line Radiation and Broadening
+              - title: Bound-free Radiation
+              - title: Bremsstrahlung
+              - title: Escape for Resonant Radiation
+              - title: Opacity and Optical Depth
+                subsections:
+                  - title: Thomson Scattering
+                  - title: Rayleigh Scattering
+                  - title: Absorption and Emission Coefficients
+```
+```

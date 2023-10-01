@@ -1,0 +1,54 @@
+```yaml
+textbook:
+  The Challenge of World Poverty: A Comprehensive Analysis
+    chapters:
+    - Introduction:
+        sections:
+        - 'Introduction I: What this class is about!'
+        - 'Introduction II: What is a poverty trap?'
+        - 'Introduction III: Learning what works: The role of experiments'
+    - Food:
+        sections:
+        - 'Food I: The nature of famine'
+        - 'Food II: Is there a nutrition-based trap? The demand for food and calories'
+        - 'Food III: Is there a nutrition-based poverty trap? The hidden trap'
+    - Health:
+        sections:
+        - 'Health I: Delivering healthcare, a case study from India'
+        - 'Health II: Low hanging fruit: Understanding healthcare behavior in developing countries'
+    - Education:
+        sections:
+        - 'Education I: Setting the stage'
+        - 'Education II: How to make schools work for the poor: Pratham’s experience'
+        - 'Education III: Beyond supply and demand wars'
+    - Family:
+        sections:
+        - 'Family I: What drives fertility decisions'
+        - 'Family II: Household model and discrimination against girls'
+    - Risk and Insurance:
+        sections:
+        - 'Risk and Insurance I'
+        - 'Risk and Insurance II'
+    - Credit:
+        sections:
+        - 'Credit I: Microcredit under strain'
+        - 'Credit II: The economics of lending to the poor'
+        - 'Credit III: The economics of lending to the poor'
+    - Savings:
+        sections:
+        - Savings I
+        - Savings II
+    - The poor and their businesses:
+        sections:
+        - The poor and their businesses
+        - The poor and their businesses
+    - Institutions:
+        sections:
+        - 'Institutions I: The big picture'
+        - 'Institutions II: The very small pictures'
+    - Policies, politics:
+        sections:
+        - Policies, politics
+        - Policies, politics
+
+```

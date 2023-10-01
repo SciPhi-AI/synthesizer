@@ -1,0 +1,90 @@
+```yaml
+textbook:
+  Introduction to Network Models: A Comprehensive Guide
+    chapters:
+    - Course specifics, motivation, and intro to graph theory:
+        sections:
+        - Course specifics
+        - Motivation
+        - Introduction to graph theory
+    - Strong and weak ties, triadic closure, and homophily:
+        sections:
+        - Strong and weak ties
+        - Triadic closure
+        - Homophily
+    - Centrality measures:
+        sections:
+        - Centrality measures
+    - Centrality and web search, spectral graph theory:
+        sections:
+        - Centrality and web search
+        - Spectral graph theory
+    - Spectral graph theory, spectral clustering, and community detection:
+        sections:
+        - Spectral graph theory, spectral clustering, and community detection I
+        - Spectral graph theory, spectral clustering, and community detection II
+    - Network models:
+        sections:
+        - Network models I
+        - Network models II
+        - Network models III
+        - Configuration model and small-world graphs
+        - Growing networks
+    - Linear dynamical systems:
+        sections:
+        - Linear dynamical systems
+    - Markov chains / Information spread and distributed computation:
+        sections:
+        - Markov chains
+        - Information spread and distributed computation
+    - Learning and herding:
+        sections:
+        - Learning and herding
+    - Epidemics:
+        sections:
+        - Epidemics
+    - Introduction to game theory I:
+        sections:
+        - Introduction to game theory I
+    - Introduction to game theory II / Application of game theory to networks:
+        sections:
+        - Introduction to game theory II
+        - Application of game theory to networks
+    - Network robustness and resilience:
+        sections:
+        - Network robustness
+        - Network resilience
+    - Social network analysis:
+        sections:
+        - Social network analysis methods
+        - Community detection algorithms
+    - Link prediction and recommendation systems:
+        sections:
+        - Link prediction
+        - Recommendation systems
+    - Network visualization techniques:
+        sections:
+        - Network visualization tools
+        - Visualizing large-scale networks
+    - Network motifs and motifs analysis:
+        sections:
+        - Network motifs
+        - Motif analysis techniques
+    - Network evolution and dynamics:
+        sections:
+        - Network evolution models
+        - Dynamic network analysis
+    - Network diffusion and influence maximization:
+        sections:
+        - Network diffusion models
+        - Influence maximization algorithms
+    - Network security and privacy:
+        sections:
+        - Network security threats
+        - Privacy-preserving techniques
+    - Network measurements and data collection:
+        sections:
+        - Network measurement techniques
+        - Data collection methods
+
+```

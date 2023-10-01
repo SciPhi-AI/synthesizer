@@ -1,0 +1,44 @@
+textbook:
+  Interfacial Phenomena: A Comprehensive Guide
+
+chapters:
+  - Introduction:
+    sections:
+      - Notation:
+
+  - Definition and Scaling of Surface Tension:
+    sections:
+      - Wetting:
+
+  - Young’s Law with Applications:
+    sections:
+      - Stress Boundary Conditions:
+
+  - More on Fluid Statics:
+    sections:
+      - Spinning, Tumbling, and Rolling Drops:
+
+  - Capillary Rise:
+    sections:
+      - Marangoni Flows:
+
+  - Marangoni Flows II:
+    sections:
+      - Fluid Jets:
+
+  - Instability Dynamics:
+    sections:
+      - Fluid Sheets:
+
+  - Instability of Superposed Fluids:
+    sections:
+      - Contact Angle Hysteresis:
+      - Wetting of Textured Solids:
+
+  - More Forced Wetting:
+    sections:
+      - Coating: Dynamic Contact Lines:
+
+  - Spreading:
+    sections:
+      - Water Waves:

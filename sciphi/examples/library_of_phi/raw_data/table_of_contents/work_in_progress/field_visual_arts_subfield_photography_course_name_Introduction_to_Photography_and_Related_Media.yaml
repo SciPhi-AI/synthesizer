@@ -1,0 +1,118 @@
+```yaml
+course:
+  Introduction to Photography and Related Media:
+    textbook:
+      title: "Photography and Related Media: Exploring Visual Arts Through the Lens"
+      author: "Your Name"
+      chapters:
+        - Chapter 1: Introduction to Photography and Related Media
+          sections:
+            - Section 1.1: Course Number
+              subsections:
+                - 4.341
+            - Section 1.2: Course Philosophy and Objectives
+              subsections:
+                - Introduction to the course and its goals
+                - Overview of facilities and resources available
+                - Introduction to term assignment
+                - Introduction to introductory slide lecture
+            - Section 1.3: Introduction to 35mm Camera
+            - Section 1.4: Darkroom Workshop
+              subsections:
+                - Printing and drying techniques
+                - Individual reviews and feedback
+            - Section 1.5: Introduction to Digital Imaging
+            - Section 1.6: Advanced Darkroom Techniques
+              subsections:
+                - Large format printing
+                - Experimental techniques
+            - Section 1.7: Site Visit and Experimental Techniques
+              subsections:
+                - Pawan Sinha presentation
+                - Metal and wood workshop tour
+                - Discuss Hirsch reading
+            - Section 1.8: Adobe Photoshop Workshop I
+            - Section 1.9: Introduction to Medium Format Cameras
+            - Section 1.10: Student Presentations and Workshops
+              subsections:
+                - View camera workshop
+                - Retouching and mounting techniques
+                - Large format camera workshop with Charles Fendrock (MIT alum)
+            - Section 1.11: Presentation of Exhibition Proposal with BCS
+            - Section 1.12: Adobe Photoshop Workshop II
+            - Section 1.13: List Visual Arts Center Exhibition Visit
+            - Section 1.14: Guest Speaker: Anne Cahill
+            - Section 1.15: Tour of Local Art Scene with Bill Arning
+            - Section 1.16: Workshop: Exhibition Installation
+            - Section 1.17: Class Review
+            - Section 1.18: Museum of Fine Arts Visit
+            - Section 1.19: Production Day and Individual Reviews
+            - Section 1.20: Clean Up and Film Processing
+        - Chapter 2: Readings and Lecture Notes
+          sections:
+            - Section 2.1: Readings
+              subsections:
+                - Text
+                - Information
+            - Section 2.2: Lecture Notes
+              subsections:
+                - Text
+                - Information
+        - Chapter 3: Recitations and Assignments
+          sections:
+            - Section 3.1: Recitations
+              subsections:
+                - Text
+                - Information
+            - Section 3.2: Assignments
+              subsections:
+                - Text
+                - Information
+        - Chapter 4: Exams and Syllabus
+          sections:
+            - Section 4.1: Exams
+              subsections:
+                - Text
+                - Information
+            - Section 4.2: Syllabus
+              subsections:
+                - Course philosophy and objectives
+                - Introduction to facilities and resources
+                - Term assignment
+                - Introductory slide lecture
+                - Introduction to 35mm camera
+                - Darkroom workshop: printing, drying, and production time
+                - Individual reviews
+                - Introduction to digital imaging
+                - Darkroom workshop: large format printing and experimental techniques
+                - Site visit: Pawan Sinha presentation, metal and wood workshop tour, experimental photographic techniques, discuss Hirsch reading
+                - Adobe Photoshop workshop I
+                - Introduction to medium format cameras
+                - Student presentations
+                - View camera workshop
+                - Darkroom workshop: retouching and mounting
+                - Large format camera workshop with Charles Fendrock (MIT alum)
+                - Presentation of exhibition proposal with BCS
+                - Student presentations
+                - Adobe Photoshop workshop II
+                - List Visual Arts Center exhibition visit
+                - Student presentations
+                - Anne Cahill guest lecture
+                - Tour of local art scene with Bill Arning
+                - Student presentations
+                - Workshop: exhibition installation
+                - Class review
+                - Museum of Fine Arts visit
+                - Production day: individual reviews, clean up, and film processing
+        - Chapter 5: Student Projects
+          sections:
+            - Section 5.1: Brain and Cognitive Science Theme
+              subsections:
+                - Explanation of the theme and its relevance
+            - Section 5.2: Student Projects and Installations
+              subsections:
+                - Photographs and statements from students
+                - Images of completed installations
+                - Courtesy of the students and teaching assistants
+```
+```

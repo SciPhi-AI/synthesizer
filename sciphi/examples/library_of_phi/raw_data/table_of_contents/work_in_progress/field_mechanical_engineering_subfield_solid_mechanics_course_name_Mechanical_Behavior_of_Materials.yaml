@@ -1,0 +1,135 @@
+textbook:
+  Mechanical Behavior of Materials: A Comprehensive Guide
+  chapters:
+    - Introduction:
+        sections:
+        - Force distributions
+          subsections:
+          - Introduction to forces and their distributions
+          - Internal force distribution in materials
+          - External force distribution on materials
+        - Deformation under force
+          subsections:
+          - Elastic deformation
+          - Plastic deformation
+          - Viscoelastic deformation
+    - Stress Distributions:
+        sections:
+        - Stress distributions in materials
+          subsections:
+          - Types of stress distributions
+          - Factors influencing stress distributions
+        - Strain and stress
+          subsections:
+          - Relationship between strain and stress
+          - Stress-strain curves
+    - Pressure Vessels:
+        sections:
+        - Pressure vessels
+          subsections:
+          - Types of pressure vessels
+          - Design considerations for pressure vessels
+    - Stress Transformations:
+        sections:
+        - Stress transformations
+          subsections:
+          - Introduction to stress transformations
+          - Stress transformations in 2D
+          - Stress transformations in 3D
+    - Elasticity:
+        sections:
+        - Continuum linear elasticity
+          subsections:
+          - Hooke's law
+          - Elastic modulus
+          - Poisson's ratio
+        - Linear elasticity
+          subsections:
+          - Linear elastic behavior in solids
+          - Linear elastic behavior in fluids
+    - Superelasticity:
+        sections:
+        - Superelasticity
+          subsections:
+          - Mechanisms of superelastic behavior
+          - Applications of superelastic materials
+    - Nonlinear Elasticity:
+        sections:
+        - Nonlinear elasticity
+          subsections:
+          - Nonlinear stress-strain behavior
+          - Elastic limit and yield point
+    - Viscoelasticity:
+        sections:
+        - Viscoelasticity
+          subsections:
+          - Viscoelastic behavior in polymers
+          - Time-dependent deformation in viscoelastic materials
+    - Rubber Elasticity:
+        sections:
+        - Rubber elasticity
+          subsections:
+          - Molecular origins of rubber elasticity
+          - Physical properties of elastomers
+    - Continuum Plasticity:
+        sections:
+        - Continuum plasticity
+          subsections:
+          - Plastic deformation mechanisms
+          - Plastic flow and strain hardening
+    - Plasticity in Crystals:
+        sections:
+        - Plasticity in crystals
+          subsections:
+          - Slip systems and dislocations in crystals
+          - Deformation mechanisms in crystalline materials
+        - Plasticity in amorphous materials
+          subsections:
+          - Deformation mechanisms in amorphous materials
+          - Plastic flow in glasses and polymers
+    - Controlling Plasticity Onset:
+        sections:
+        - Controlling plasticity onset
+          subsections:
+          - Strengthening mechanisms in materials
+          - Control of plasticity through microstructural design
+        - Plasticity at surfaces
+          subsections:
+          - Surface effects on plastic deformation
+          - Surface treatments for controlling plasticity
+    - Time-dependent Plasticity:
+        sections:
+        - Time-dependent plasticity
+          subsections:
+          - Creep deformation mechanisms
+          - Creep resistance and design considerations
+        - Designing against creep
+          subsections:
+          - Creep-resistant materials and structures
+          - Creep testing and analysis
+    - Continuum Fracture:
+        sections:
+        - Continuum fracture
+          subsections:
+          - Types of fracture in materials
+          - Fracture toughness and critical stress intensity factor
+        - Fracture in crystals
+          subsections:
+          - Brittle fracture in single crystals
+          - Ductile fracture in polycrystalline materials
+        - Fracture in amorphous materials
+          subsections:
+          - Fracture mechanisms in glasses
+          - Fracture behavior of polymers
+    - Fatigue:
+        sections:
+        - Fatigue
+          subsections:
+          - Fatigue failure mechanisms
+          - Fatigue life prediction and testing
+    - Final Exam:
+        sections:
+        - Final exam
+          subsections:
+          - Exam preparation strategies
+          - Review of course material

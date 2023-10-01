@@ -1,0 +1,123 @@
+textbook:
+  Communicating With Data: A Comprehensive Guide
+  
+chapters:
+  - Introduction:
+    sections:
+      - Course objectives
+      - Importance of data communication
+      - Overview of communication techniques
+      - Why data communication matters in the digital age
+  - Decision Analysis:
+    sections:
+      - Kendall Crab and Lobster Case
+      - Graphic Corp. Case
+      - Analyzing decisions using decision analysis
+  - Laws of Probability:
+    sections:
+      - Fundamentals of probability
+      - Probability distributions
+      - Discrete and continuous probability
+      - Understanding the laws that govern probability
+  - Value:
+    sections:
+      - Value modeling
+      - Decision trees
+      - Sensitivity analysis
+      - Evaluating the value of decisions
+  - Discrete Probability:
+    sections:
+      - Random variables
+      - Probability mass function
+      - Conditional probability
+      - Understanding discrete probability and its applications
+  - Binomial Distribution:
+    sections:
+      - Bernoulli trials
+      - Binomial probability formula
+      - Applications of binomial distribution
+      - Analyzing events with binomial distribution
+  - Portfolio Risk Management:
+    sections:
+      - Portfolio diversification
+      - Risk measures
+      - Capital asset pricing model (CAPM)
+      - Managing risk in investment portfolios
+  - Normal Distribution:
+    sections:
+      - Properties of the normal distribution
+      - Standardization and z-scores
+      - Central limit theorem
+      - Understanding the normal distribution and its applications
+  - Central Limit Theorem:
+    sections:
+      - Sampling distribution
+      - Confidence intervals
+      - Hypothesis testing
+      - The role of the central limit theorem in statistical analysis
+  - Sampling and Sample Means:
+    sections:
+      - Simple random sampling
+      - Sample mean and standard deviation
+      - Central limit theorem for sample means
+      - Understanding sampling techniques and sample means
+  - Simulation:
+    sections:
+      - Monte Carlo simulation
+      - Random number generation
+      - Variance reduction techniques
+      - Simulating real-world scenarios using Monte Carlo simulation
+  - Gentle Lentil Case:
+    sections:
+      - Case study analysis
+      - Decision making under uncertainty
+      - Sensitivity analysis
+      - Analyzing decision-making in uncertain situations
+  - Estimation and Mis-estimation:
+    sections:
+      - Point estimation
+      - Confidence intervals for population parameters
+      - Sampling distributions of estimators
+      - Understanding estimation and the potential for mis-estimation
+  - Ontario Gateway Case:
+    sections:
+      - Case study analysis
+      - Decision making under uncertainty
+      - Value of information analysis
+      - Analyzing decision-making in complex scenarios
+  - Regression I:
+    sections:
+      - Simple linear regression
+      - Least squares estimation
+      - Inference for regression coefficients
+      - Understanding and analyzing simple linear regression
+  - Regression II:
+    sections:
+      - Multiple linear regression
+      - Model selection techniques
+      - Multicollinearity and heteroscedasticity
+      - Analyzing multiple linear regression models
+  - Regression III:
+    sections:
+      - Polynomial regression
+      - Logistic regression
+      - Generalized linear models
+      - Exploring advanced regression techniques
+  - Communication Exercise:
+    sections:
+      - Effective data visualization
+      - Storytelling with data
+      - Presenting data to different audiences
+      - Mastering the art of data communication
+  - Summary:
+    sections:
+      - Course review
+      - Key takeaways
+      - Final exam preparation
+      - Summarizing the key concepts covered in the course
+  - Final Exam:
+    sections:
+      - Exam format
+      - Study guide
+      - Practice exams and solutions
+      - Preparing for the final exam

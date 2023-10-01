@@ -1,0 +1,46 @@
+```yaml
+textbook:
+  Numerical Computation for Mechanical Engineers: A Comprehensive Guide
+chapters:
+  - chapter: Numerical Calculus
+    sections:
+      - section: Numerical Calculus Part 1
+      - section: Numerical Calculus Part 2
+      - section: Numerical Calculus Part 3
+  - chapter: Probability and Statistics
+    sections:
+      - section: Probability and Statistics Part 1
+      - section: Probability and Statistics Part 2
+      - section: Probability and Statistics Part 3
+      - section: Probability and Statistics Part 4
+      - section: Probability and Statistics Part 5
+  - chapter: Linear Algebra 1
+    sections:
+      - section: Linear Algebra 1 Part 1
+      - section: Linear Algebra 1 Part 2
+      - section: Linear Algebra 1 Part 3
+      - section: Linear Algebra 1 Coda
+  - chapter: Special Topic: MATLAB Programming and Arduino
+    sections:
+      - section: Special Topic: MATLAB Programming and Arduino Part 1
+      - section: Special Topic: MATLAB Programming and Arduino Part 2
+  - chapter: Ordinary Differential Equations
+    sections:
+      - section: Ordinary Differential Equations Part 1
+      - section: Ordinary Differential Equations Part 2
+      - section: Ordinary Differential Equations Part 3
+  - chapter: Linear Algebra 2
+    sections:
+      - section: Linear Algebra 2 Part 1
+      - section: Linear Algebra 2 Part 2
+      - section: Linear Algebra 2 Part 3
+      - section: Linear Algebra 2 Part 4
+  - chapter: Nonlinear Problems
+    sections:
+      - section: Nonlinear Problems Part 1
+      - section: Nonlinear Problems Part 2
+      - section: Nonlinear Problems Part 3
+  - chapter: Additional Topics
+    sections:
+      - section: Additional Topics
+```

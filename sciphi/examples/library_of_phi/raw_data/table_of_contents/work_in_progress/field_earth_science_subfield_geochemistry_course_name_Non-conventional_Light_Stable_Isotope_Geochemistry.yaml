@@ -1,0 +1,147 @@
+```yaml
+textbook:
+  Non-conventional Light Stable Isotope Geochemistry: A Comprehensive Guide
+    chapters:
+      - Equilibrium / kinetic isotope effect:
+          sections:
+            - Isotope Fractionation Theory
+              subsections:
+                - Introduction to Isotope Fractionation
+                - Factors Influencing Isotope Fractionation
+                - Equilibrium vs. Kinetic Isotope Effects
+                - Models and Approaches for Isotope Fractionation
+            - Isotope Fractionation in New Systems
+              subsections:
+                - Isotope Fractionation in Biological Systems
+                - Isotope Fractionation in Environmental Systems
+                - Isotope Fractionation in Geological Systems
+                - Isotope Fractionation in Industrial Processes
+      - Precision and accuracy of mass-spectrometry analysis:
+          sections:
+            - Mass-Spectrometer Operation
+              subsections:
+                - Introduction to Mass-Spectrometry
+                - Components of a Mass Spectrometer
+                - Ionization Techniques
+                - Ion Detection and Analysis
+            - Measurement Precision
+              subsections:
+                - Sources of Measurement Uncertainty
+                - Error Propagation in Isotope Analysis
+                - Statistical Analysis of Measurement Precision
+            - Measurement Accuracy
+              subsections:
+                - Calibration and Standardization in Isotope Analysis
+                - Accuracy Assessment Methods
+                - Uncertainty Budgeting in Isotope Analysis
+      - Clumped isotope CO2,13CH3D:
+          sections:
+            - Clumped Isotope Analysis
+              subsections:
+                - Introduction to Clumped Isotope Analysis
+                - Principles of Clumped Isotope Thermometry
+                - Sample Preparation for Clumped Isotope Analysis
+                - Data Interpretation and Applications of Clumped Isotope Analysis
+            - Carbon Dioxide Isotopes
+              subsections:
+                - Carbon Isotope Fractionation in Carbon Dioxide
+                - Oxygen Isotope Fractionation in Carbon Dioxide
+                - Clumped Isotope Signatures in Carbon Dioxide
+            - Methane Isotopes
+              subsections:
+                - Carbon Isotope Ratio in Methane
+                - Hydrogen Isotope Ratio in Methane
+                - Clumped Isotope Signatures in Methane
+      - Nitrous Oxide Isotopomer:
+          sections:
+            - Nitrous Oxide Isotopes
+              subsections:
+                - Nitrous Oxide Isotope Fractionation Processes
+                - Measurement Techniques for Nitrous Oxide Isotopes
+                - Nitrous Oxide Isotope Signatures in Different Environments
+            - Isotopomer Analysis
+              subsections:
+                - Introduction to Nitrous Oxide Isotopomers
+                - Isotopomer Measurement Techniques
+                - Isotopomer Signatures and Interpretation in Nitrous Oxide
+      - Mass-dependent fractionation O-17 small anomaly:
+          sections:
+            - Oxygen-17 Isotopes
+              subsections:
+                - Isotopic Composition and Natural Abundance of O-17
+                - Fractionation Processes Involving O-17
+                - Analytical Techniques for Measuring O-17 Isotopes
+            - Mass-dependent Fractionation
+              subsections:
+                - Theoretical Background of Mass-dependent Fractionation
+                - Experimental Evidence of Mass-dependent Fractionation
+                - Isotope Effects and Isotope Ratios in Mass-dependent Fractionation
+            - Small Anomaly
+              subsections:
+                - Definition and Origin of the Small Anomaly
+                - Observations and Measurements of the Small Anomaly
+                - Implications and Applications of the Small Anomaly
+      - Mass-independent fractionation, O-17, Ozone, CO, stratospheric CO2, NO3, SO4:
+          sections:
+            - Oxygen-17 Isotopes
+              subsections:
+                - Isotopic Composition and Natural Abundance of O-17
+                - Fractionation Processes Involving O-17
+                - Analytical Techniques for Measuring O-17 Isotopes
+            - Mass-independent Fractionation
+              subsections:
+                - Theoretical Background of Mass-independent Fractionation
+                - Experimental Evidence of Mass-independent Fractionation
+                - Isotope Effects and Isotope Ratios in Mass-independent Fractionation
+            - Ozone Isotopes
+              subsections:
+                - Isotopic Composition and Fractionation of Ozone
+                - Ozone Isotope Signatures in the Atmosphere
+                - Ozone Isotopes as Tracers of Atmospheric Processes
+            - Carbon Monoxide Isotopes
+              subsections:
+                - Carbon Isotope Ratio in Carbon Monoxide
+                - Oxygen Isotope Ratio in Carbon Monoxide
+                - Carbon Monoxide Isotope Signatures in Different Environments
+            - Stratospheric Carbon Dioxide Isotopes
+              subsections:
+                - Isotopic Composition and Fractionation of Stratospheric CO2
+                - Stratospheric CO2 Isotope Signatures and Variations
+                - Implications of Stratospheric CO2 Isotope Measurements
+            - Nitrate Isotopes
+              subsections:
+                - Nitrogen Isotope Ratio in Nitrate
+                - Oxygen Isotope Ratio in Nitrate
+                - Nitrate Isotope Signatures in Different Environments
+            - Sulfate Isotopes
+              subsections:
+                - Sulfur Isotope Ratio in Sulfate
+                - Oxygen Isotope Ratio in Sulfate
+                - Sulfate Isotope Signatures in Different Environments
+      - Mass-independent fractionation, S-33:
+          sections:
+            - Sulfur-33 Isotopes
+              subsections:
+                - Isotopic Composition and Natural Abundance of S-33
+                - Fractionation Processes Involving S-33
+                - Analytical Techniques for Measuring S-33 Isotopes
+            - Mass-independent Fractionation
+              subsections:
+                - Theoretical Background of Mass-independent Fractionation
+                - Experimental Evidence of Mass-independent Fractionation
+                - Isotope Effects and Isotope Ratios in Mass-independent Fractionation
+      - O-17 hydrology:
+          sections:
+            - Oxygen-17 Isotopes
+              subsections:
+                - Isotopic Composition and Natural Abundance of O-17
+                - Fractionation Processes Involving O-17
+                - Analytical Techniques for Measuring O-17 Isotopes
+            - Hydrology Applications
+              subsections:
+                - Isotope Hydrology and Water Cycle Studies
+                - Isotope Tracing in Aquifers and Groundwater Systems
+                - Isotope Applications in Surface Water Systems
+                - Isotope Techniques for Studying Paleoclimates and Climate Change
+
+```

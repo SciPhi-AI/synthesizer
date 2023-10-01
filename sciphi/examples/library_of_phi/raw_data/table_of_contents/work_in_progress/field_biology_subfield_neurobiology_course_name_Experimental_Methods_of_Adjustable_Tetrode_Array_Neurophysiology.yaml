@@ -1,0 +1,68 @@
+course:
+  Experimental Methods of Adjustable Tetrode Array Neurophysiology:
+    textbook:
+      Neurophysiology: From Theory to Practice:
+        chapters:
+          - Introduction to Neurophysiology:
+            sections:
+              - Overview of the Course
+              - Projects and Expectations
+              - Tetrode Array Construction
+              - Testing Methods for Tetrode Array
+              - Microdrive Construction
+              - Microdrive Testing
+          - Neural Mechanisms of Learning and Memory:
+            sections:
+              - Role of Hippocampal Formation in Memory
+              - Investigations using Tetrode Microarray Recording
+              - Project Orientation and Task Overview
+              - Animal Behavior and Brain Activity Recording
+              - Behavioral Laboratory Procedures
+          - Tetrode Array Assembly:
+            sections:
+              - Electronics Laboratory Setup
+              - Construction of Tetrode Array
+              - Step-by-step Instructions for Assembly
+              - Use of Tetrode Array for Recording Hippocampal Activity
+              - Lab Materials and Manual
+          - Microdrive Assembly and Use:
+            sections:
+              - Microdrive Assembly Instructions
+              - Integration with Tetrode Array
+              - Recording Techniques with Microdrive
+              - Manipulating Behavior and Perception using Microstimulation
+              - Potential Applications in Epilepsy and Parkinson's Treatment
+          - Animal Care and Training:
+            sections:
+              - Responsibilities in Animal Care
+              - Training Techniques for Behavioral Experiments
+              - Ethics and Welfare Considerations
+              - Handling and Maintenance of Experimental Subjects
+          - Data Analysis and Interpretation:
+            sections:
+              - Signal Processing Techniques
+              - Analysis of Neural Activity Data
+              - Correlation and Causation Analysis
+              - Statistical Methods for Data Interpretation
+              - Presentation and Visualization of Results
+          - Experimental Design and Controls:
+            sections:
+              - Control Groups and Experimental Variables
+              - Randomization and Counterbalancing Techniques
+              - Sample Size Determination
+              - Replication and Generalizability
+              - Bias and Confounding Factors
+          - Ethical Considerations in Neurophysiology:
+            sections:
+              - Animal Research Ethics
+              - Informed Consent and Human Subject Research
+              - Responsible Conduct of Research
+              - Institutional Review Boards (IRBs)
+              - Reporting and Publication Ethics
+          - Current Research and Advancements:
+            sections:
+              - Recent Studies in Neurophysiology
+              - Emerging Technologies in Neural Recording
+              - Neuroprosthetics and Brain-Machine Interfaces
+              - Optogenetics and Chemogenetics
+              - Future Directions in Neurophysiology

@@ -1,0 +1,257 @@
+textbook:
+  Introduction to Housing, Community, and Economic Development: A Comprehensive Guide
+  chapters:
+    - 'Chapter 1: Introductory Class: The ''just city'' in context':
+        sections:
+        - 'Section 1.1: Trends, dilemmas, scales':
+            subsections:
+            - Introduction to the concept of the "just city"
+            - Understanding the trends, dilemmas, and scales related to the "just city"
+    - 'Chapter 2: The Just City: Equitable development concepts and cross-national comparisons':
+        sections:
+        - 'Section 2.1: Equitable development concepts':
+            subsections:
+            - Exploring the concepts of equitable development
+            - Analyzing the principles of equitable development
+        - 'Section 2.2: Cross-national comparisons':
+            subsections:
+            - Comparing different countries' approaches to equitable development
+            - Examining case studies of cross-national comparisons in equitable development
+    - 'Chapter 3: Demographic shifts and neighborhood change':
+        sections:
+        - 'Section 3.1: Segregation':
+            subsections:
+            - Understanding the impact of segregation on neighborhoods
+            - Analyzing the causes and consequences of segregation
+        - 'Section 3.2: Migration':
+            subsections:
+            - Examining the effects of migration on neighborhoods
+            - Analyzing the factors driving migration patterns
+        - 'Section 3.3: Aging':
+            subsections:
+            - Understanding the implications of an aging population on neighborhoods
+            - Examining strategies for addressing the needs of aging communities
+    - 'Chapter 4: Income, wealth, and the political economy of inequality':
+        sections:
+        - 'Section 4.1: Income inequality':
+            subsections:
+            - Exploring the causes and consequences of income inequality
+            - Analyzing policies and strategies for reducing income inequality
+        - 'Section 4.2: Wealth inequality':
+            subsections:
+            - Understanding the factors contributing to wealth inequality
+            - Examining approaches to addressing wealth disparities
+        - 'Section 4.3: Political economy of inequality':
+            subsections:
+            - Analyzing the political and economic systems that perpetuate inequality
+            - Examining alternative models for achieving economic equity
+    - 'Chapter 5: Civic context: Engagement and political representation':
+        sections:
+        - 'Section 5.1: Civic engagement':
+            subsections:
+            - Exploring the importance of civic engagement in community development
+            - Examining strategies for promoting civic participation
+        - 'Section 5.2: Political representation':
+            subsections:
+            - Understanding the role of political representation in shaping community development
+            - Analyzing the challenges and opportunities for diverse representation
+    - 'Chapter 6: The nature of community in 21st century America: Networks, places, social capital':
+        sections:
+        - 'Section 6.1: Networks in communities':
+            subsections:
+            - Examining the role of networks in community development
+            - Analyzing the impact of social networks on community well-being
+        - 'Section 6.2: Places and community development':
+            subsections:
+            - Understanding the significance of physical spaces in community development
+            - Examining strategies for creating inclusive and vibrant community spaces
+        - 'Section 6.3: Social capital and community building':
+            subsections:
+            - Exploring the concept of social capital in community development
+            - Analyzing strategies for building social capital within communities
+    - 'Chapter 7: History and development: Politics and program':
+        sections:
+        - 'Section 7.1: Political history of community development':
+            subsections:
+            - Tracing the historical evolution of community development initiatives
+            - Analyzing the political factors influencing community development policies
+        - 'Section 7.2: Development programs and policies':
+            subsections:
+            - Examining the various programs and policies implemented in community development
+            - Analyzing the effectiveness of different development approaches
+    - 'Chapter 8: Institutional context: CDCs and other CBOs, intermediaries, government, foundations / donors, labor unions and other private partners':
+        sections:
+        - 'Section 8.1: Community Development Corporations (CDCs)':
+            subsections:
+            - Understanding the role and functions of CDCs in community development
+            - Examining successful CDC models and case studies
+        - 'Section 8.2: Community-based organizations (CBOs)':
+            subsections:
+            - Exploring the contributions of CBOs in community development
+            - Analyzing the challenges and opportunities faced by CBOs
+        - 'Section 8.3: Government involvement in community development':
+            subsections:
+            - Examining the role of government in facilitating community development initiatives
+            - Analyzing the impact of government policies on community development outcomes
+        - 'Section 8.4: Foundations and donors in community development':
+            subsections:
+            - Understanding the role of foundations and donors in supporting community development projects
+            - Examining best practices in securing funding from foundations and donors
+        - 'Section 8.5: Labor unions and community development':
+            subsections:
+            - Analyzing the contributions of labor unions in community development
+            - Examining labor union-community partnerships and their outcomes
+        - 'Section 8.6: Private partners in community development':
+            subsections:
+            - Exploring the role of private partners in community development initiatives
+            - Analyzing successful private-public partnerships in community development
+    - 'Chapter 9: Governance at multiple scales':
+        sections:
+        - 'Section 9.1: Local governance':
+            subsections:
+            - Examining the role of local governance in community development
+            - Analyzing the challenges and opportunities of local governance structures
+        - 'Section 9.2: Regional governance':
+            subsections:
+            - Understanding the importance of regional governance in addressing community development issues
+            - Examining successful regional governance models and case studies
+        - 'Section 9.3: National governance':
+            subsections:
+            - Analyzing the role of national governance in shaping community development policies
+            - Examining the impact of national-level initiatives on local communities
+        - 'Section 9.4: International governance':
+            subsections:
+            - Exploring the global perspective on community development governance
+            - Analyzing international frameworks and collaborations in community development
+    - 'Chapter 10: Housing markets and policy':
+        sections:
+        - 'Section 10.1: Overview of housing markets':
+            subsections:
+            - Understanding the dynamics of housing markets and their impact on communities
+            - Analyzing the factors influencing housing market trends
+        - 'Section 10.2: Housing policies and regulations':
+            subsections:
+            - Examining different housing policies and regulations
+            - Analyzing the effectiveness of housing policy interventions
+    - 'Chapter 11: Rental housing':
+        sections:
+        - 'Section 11.1: Rental housing market':
+            subsections:
+            - Understanding the rental housing market dynamics and trends
+            - Analyzing the impact of rental housing on communities
+        - 'Section 11.2: Rental housing policies':
+            subsections:
+            - Examining policies and regulations related to rental housing
+            - Analyzing the challenges and opportunities in rental housing policy implementation
+    - 'Chapter 12: Housing as a market good: Gentrification and fair housing':
+        sections:
+        - 'Section 12.1: Gentrification and its effects on housing':
+            subsections:
+            - Understanding the concept of gentrification and its impact on housing affordability
+            - Analyzing strategies for mitigating the negative effects of gentrification
+        - 'Section 12.2: Fair housing policies and practices':
+            subsections:
+            - Examining fair housing policies and practices
+            - Analyzing the challenges and opportunities in achieving fair housing outcomes
+    - 'Chapter 13: Affordable housing, smart growth, and regional land use':
+        sections:
+        - 'Section 13.1: Affordable housing strategies':
+            subsections:
+            - Exploring different strategies for promoting affordable housing
+            - Analyzing the effectiveness of affordable housing initiatives
+        - 'Section 13.2: Smart growth principles':
+            subsections:
+            - Understanding the principles of smart growth and their relationship to community development
+            - Examining successful smart growth initiatives and case studies
+        - 'Section 13.3: Regional land use planning':
+            subsections:
+            - Analyzing the role of regional land use planning in promoting sustainable and equitable development
+            - Examining best practices in regional land use planning
+    - 'Chapter 14: Alternative housing models: Land trusts and more':
+        sections:
+        - 'Section 14.1: Land trusts and their role in housing':
+            subsections:
+            - Understanding the concept of land trusts and their impact on affordable housing
+            - Analyzing successful land trust models and case studies
+        - 'Section 14.2: Other alternative housing models':
+            subsections:
+            - Exploring innovative housing models beyond traditional homeownership and rental housing
+            - Analyzing the potential benefits and challenges of alternative housing models
+    - 'Chapter 15: Mobility and the tensions between fair housing, affordable housing, and community development':
+        sections:
+        - 'Section 15.1: Mobility and its impact on housing and community development':
+            subsections:
+            - Examining the relationship between mobility and housing affordability
+            - Analyzing the impacts of mobility on community development goals
+        - 'Section 15.2: Tensions between fair housing, affordable housing, and community development goals':
+            subsections:
+            - Understanding the trade-offs and tensions among fair housing, affordable housing, and community development objectives
+            - Analyzing strategies for balancing competing priorities
+    - 'Chapter 16: Introduction to LED':
+        sections:
+        - 'Section 16.1: Overview of LED (Local Economic Development)':
+            subsections:
+            - Introducing the concept of Local Economic Development (LED)
+            - Analyzing the factors influencing LED outcomes
+    - 'Chapter 17: Workforce development and cooperative enterprise':
+        sections:
+        - 'Section 17.1: Workforce development programs and policies':
+            subsections:
+            - Examining different workforce development programs and policies
+            - Analyzing the impact of workforce development on community economic development
+        - 'Section 17.2: Cooperative enterprises in community development':
+            subsections:
+            - Understanding the role of cooperative enterprises in community economic development
+            - Analyzing successful cooperative enterprise models and case studies
+    - 'Chapter 18: Job quality and upgrading':
+        sections:
+        - 'Section 18.1: Job quality standards and measures':
+            subsections:
+            - Exploring the concept of job quality and its importance in community development
+            - Analyzing strategies for improving job quality in various sectors
+        - 'Section 18.2: Strategies for job upgrading':
+            subsections:
+            - Examining different strategies for job upgrading and career advancement
+            - Analyzing the impact of job upgrading on community economic development
+    - 'Chapter 19: Entrepreneurship and business development':
+        sections:
+        - 'Section 19.1: Entrepreneurship in community development':
+            subsections:
+            - Understanding the role of entrepreneurship in fostering community economic development
+            - Analyzing successful entrepreneurship models and case studies
+        - 'Section 19.2: Business development strategies':
+            subsections:
+            - Exploring different strategies for promoting business development in communities
+            - Analyzing the challenges and opportunities in business development initiatives
+    - 'Chapter 20: Fostering and upgrading manufacturing':
+        sections:
+        - 'Section 20.1: Strategies for fostering manufacturing industries':
+            subsections:
+            - Examining strategies for promoting and supporting manufacturing industries in communities
+            - Analyzing the benefits and challenges of fostering manufacturing sectors
+        - 'Section 20.2: Upgrading manufacturing processes and technologies':
+            subsections:
+            - Understanding the importance of upgrading manufacturing processes and technologies
+            - Analyzing successful examples of manufacturing process and technology upgrades
+    - 'Chapter 21: Toward the healthy city':
+        sections:
+        - 'Section 21.1: Health considerations in urban planning and development':
+            subsections:
+            - Exploring the intersection of health and urban planning
+            - Analyzing strategies for creating healthy and equitable cities
+        - 'Section 21.2: Strategies for creating healthy cities':
+            subsections:
+            - Examining different strategies for promoting health and well-being in urban communities
+            - Analyzing successful examples of healthy city initiatives
+    - 'Chapter 22: Course review':
+        sections:
+        - 'Section 22.1: Recap of course topics and concepts':
+            subsections:
+            - Summarizing the key topics and concepts covered throughout the course
+            - Providing a comprehensive review for exam preparation
+    - 'Chapter 23: Final team briefings':
+        sections:
+        - 'Section 23.1: Final team presentations and discussions':
+            subsections:
+            - Presenting final team projects and findings
+            - Engaging in discussions and reflections on the course material and team projects

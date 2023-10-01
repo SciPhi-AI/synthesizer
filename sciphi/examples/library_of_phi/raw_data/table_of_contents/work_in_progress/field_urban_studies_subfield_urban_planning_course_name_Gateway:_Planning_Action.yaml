@@ -1,0 +1,40 @@
+textbook:
+  'Comprehensive Guide to Gateway: Planning Action':
+    chapters:
+      - chapter: 'Theoretical Framework for Planning Action'
+        sections:
+          - section: 'Seven Step Model of Planning Practice'
+          - section: 'Key Dilemmas in Thinking about Planning Practice'
+      - chapter: 'Case Studies'
+        sections:
+          - section: 'Boston (South End) Lecture'
+          - section: 'Mexico City Lecture'
+          - section: 'Netherlands Lecture - Part 1'
+          - section: 'Netherlands Lecture - Part 2'
+          - section: 'Netherlands Lecture - Part 3'
+      - chapter: 'Future of the Profession of City Planning'
+        sections:
+          - section: 'Thinking About Planning Education'
+      - chapter: 'Discussion Questions'
+        sections:
+          - section: 'Webber & Rittel (Wicked Problems)'
+          - section: 'Meyerson and Banfield'
+          - section: 'Friedmann'
+          - section: 'Davidoff'
+          - section: 'Wildavsky'
+      - chapter: 'Class Discussions and Group Projects'
+        sections:
+          - section: 'Class Discussion Unit II'
+            subsections:
+              - subsection: 'Class Discussion 2 Unit II'
+              - subsection: 'Unit II Memo'
+          - section: 'Group Project Presentations Unit II'
+          - section: 'Class Discussion Unit III'
+            subsections:
+              - subsection: 'Class Discussion 2 Unit III'
+              - subsection: 'Unit III Memo'
+          - section: 'Group Project Presentations Unit III'
+          - section: 'Class Discussion Unit IV'
+      - chapter: 'Additional Topics'
+        sections:
+          - section: 'Mexico City'

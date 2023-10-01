@@ -1,0 +1,50 @@
+textbook:
+  'Computational Design for Housing: A Comprehensive Guide':
+    chapters:
+    - Introduction:
+        sections:
+        - Course Overview
+        - Importance of Computational Design in Housing
+    - Design Problem:
+        sections:
+        - Understanding Terry Knight's Online Paper
+        - Identifying Key Concepts and Challenges
+    - Shape Grammars 2D:
+        sections:
+        - Introduction to Shape Grammars for 2D Site Plan
+        - Applying Shape Grammars to Housing Design
+        - In-Class Work: Shape Grammars for the 2D Site Plan
+        - Group Work with Online Consultation
+    - Shape Grammars 3D:
+        sections:
+        - Understanding 3D Shape Grammars
+        - Practice 3D Grammars by Hand
+    - 3D Abstract Models of Clusters:
+        sections:
+        - Introduction to 3D Abstract Models of Clusters
+        - Understanding the Role of Shape Grammars in the 3D Study of Clusters
+        - Upload 3D Abstract Models of Clusters and New 3D Site Plan
+    - AutoGrammar Tutorial:
+        sections:
+        - Introduction to AutoGrammar
+        - Understanding Given Spatial Relations
+        - Practice with AutoGrammar
+    - Adjustments of Shape Using AutoGrammar:
+        sections:
+        - Introduction to Adjustments of Shape Using AutoGrammar
+        - Consultation with Overseas Partners using Netmeeting
+        - Upload Work for Feedback
+    - Developing Housing Units:
+        sections:
+        - Introduction to Developing Housing Units
+        - Consultation with Overseas Partners using Netmeeting
+        - Iterative Design Process for Housing Units
+    - Detailing of Housing Units:
+        sections:
+        - Introduction to Detailing of Housing Units
+        - Importance of Presentation Images
+        - Techniques for Creating Effective Presentation Images
+    - Final Review:
+        sections:
+        - Final Review Preparation
+        - Presenting the Final Design Solution

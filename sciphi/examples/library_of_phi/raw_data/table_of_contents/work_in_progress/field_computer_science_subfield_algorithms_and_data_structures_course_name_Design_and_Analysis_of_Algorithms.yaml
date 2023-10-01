@@ -1,0 +1,77 @@
+textbook:
+  Design and Analysis of Algorithms: A Comprehensive Guide
+    chapters:
+    - Introduction to Design and Analysis of Algorithms:
+        sections:
+        - Overview
+        - Interval Scheduling
+    - Divide & Conquer:
+        sections:
+        - Convex Hull
+        - Median Finding
+        - Smarter Interval Scheduling
+        - Master Theorem
+        - Strassen’s Algorithm
+        - Fast Fourier Transform
+    - Data Structures:
+        sections:
+        - B-trees
+        - Van Emde Boas Trees
+        - Union-find
+    - Amortized Analysis:
+        sections:
+        - Amortized Analysis
+    - Randomized Algorithms:
+        sections:
+        - Matrix Multiply
+        - Quicksort
+        - Randomized Median
+        - Skip Lists
+        - Universal & Perfect Hashing
+    - Dynamic Programming:
+        sections:
+        - More Examples
+        - Advanced Dynamic Programming
+        - All-pairs Shortest Paths
+    - Greedy Algorithms:
+        sections:
+        - Minimum Spanning Tree
+        - More Examples
+    - Incremental Improvement:
+        sections:
+        - Max Flow, Min Cut
+        - Matching
+        - Applications of Network Flow & Matching
+    - Linear Programming:
+        sections:
+        - Linear Programming
+        - Reductions
+        - Simplex Algorithm
+    - Complexity Theory:
+        sections:
+        - P, NP, NP-completeness, Reductions
+        - More Reductions
+        - Approximation Algorithms
+        - Fixed-parameter Algorithms
+        - Approximation Techniques
+    - Distributed Algorithms:
+        sections:
+        - Symmetry-breaking and Shortest-paths Spanning Trees
+        - More Shortest-paths Spanning Trees Algorithms
+        - More Distributed Algorithms
+    - Cryptography:
+        sections:
+        - Hash Functions
+        - Encryption
+        - More Primitives
+    - Cache-oblivious Algorithms:
+        sections:
+        - Medians and Matrices
+        - Searching and Sorting
+    - Other Topics:
+        sections:
+        - Augmentation: Range Trees
+        - Complexity: More Reductions
+        - Synchronous Distributed Algorithms: Symmetry-breaking and Shortest-paths Spanning
+          Trees
+        - Asynchronous Distributed Algorithms: Shortest-paths Spanning Trees

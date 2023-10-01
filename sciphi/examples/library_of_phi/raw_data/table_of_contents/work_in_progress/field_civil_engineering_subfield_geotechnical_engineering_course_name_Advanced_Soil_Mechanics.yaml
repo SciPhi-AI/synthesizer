@@ -1,0 +1,95 @@
+textbook:
+  Advanced Soil Mechanics: A Comprehensive Guide to Soil Behavior and Engineering Applications:
+    chapters:
+      - Soil Composition, Index Properties, and Soil Classification:
+          sections:
+            - Soil Composition:
+                subsections:
+                  - Definition and Types of Soil Composition
+                  - Mineralogy and Particle Size Distribution
+                  - Organic Matter and Soil Structure
+                  - Soil Fabric and Fabric Indices
+            - Index Properties:
+                subsections:
+                  - Definition and Significance of Index Properties
+                  - Particle Size Analysis and Soil Classification Systems
+                  - Atterberg Limits and Plasticity Index
+                  - Soil Consistency, Compaction, and Permeability
+            - Soil Classification:
+                subsections:
+                  - Classification Systems and Their Applications
+                  - Unified Soil Classification System (USCS)
+                  - AASHTO Soil Classification System
+                  - Soil Behavior and Engineering Properties by Classification
+      - Soil Structure and Environmental Effects:
+          sections:
+            - Soil Structure:
+                subsections:
+                  - Soil Aggregates and Particle Arrangement
+                  - Soil Mass and Pore Space
+                  - Soil Structure and Engineering Properties
+                  - Soil Structure Modification Techniques
+            - Environmental Effects:
+                subsections:
+                  - Climate and Weathering Effects on Soil
+                  - Biological Activity and Soil Degradation
+                  - Soil Erosion and Conservation Practices
+                  - Anthropogenic Impacts on Soil Structure and Composition
+      - 'Dry Soil: Stresses':
+          sections:
+            - Stresses in Dry Soil:
+                subsections:
+                  - Stress Types and Distribution in Dry Soil
+                  - Stress Measurement Techniques in Dry Soil
+                  - Stress-Strain Behavior under Different Loading Conditions
+                  - Stress Effects on Soil Strength and Stability
+      - Stress-Strain-Strength Properties:
+          sections:
+            - Stress-Strain Relationships in Soil:
+                subsections:
+                  - Elastic and Inelastic Deformations in Soil
+                  - Stress-Strain Models and Constitutive Relationships
+                  - Shear Strength and Mohr-Coulomb Failure Criteria
+                  - Stress Path and Critical State Soil Mechanics
+            - Strength Properties of Soil:
+                subsections:
+                  - Shear Strength Testing Methods and Interpretation
+                  - Drained and Undrained Shear Strength of Soils
+                  - Factors Affecting Soil Strength and Failure Modes
+                  - Determination of Soil Parameters for Engineering Design
+      - Lateral Earth Pressures and Retaining Walls:
+          sections:
+            - Lateral Earth Pressures:
+                subsections:
+                  - Earth Pressure Theories and Assumptions
+                  - Rankine and Coulomb Earth Pressure Theories
+                  - Active and Passive Pressure Distribution
+                  - Earth Pressure Coefficients for Different Conditions
+            - Retaining Walls:
+                subsections:
+                  - Types and Design Considerations for Retaining Walls
+                  - Stability Analysis and Failure Modes of Retaining Walls
+                  - Earth Pressure Distribution on Retaining Structures
+                  - Reinforcement Techniques for Retaining Walls
+      - 'Shallow Foundations on Sand: Bearing Capacity':
+          sections:
+            - Bearing Capacity of Shallow Foundations on Sand:
+                subsections:
+                  - Soil Mechanics Principles for Bearing Capacity Analysis
+                  - Terzaghi's Bearing Capacity Theory and Assumptions
+                  - Factors Affecting the Ultimate Bearing Capacity
+                  - Design Considerations for Shallow Foundations on Sand
+      - Effective Stress Principle and Capillarity:
+          sections:
+            - Effective Stress Principle:
+                subsections:
+                  - Concept of Effective Stress in Soil
+                  - Effective Stress Calculation and Applications
+                  - Pore Water Pressure and Effective Stress Interaction
+                  - Influence of Effective Stress on Soil Behavior
+            - Capillarity:
+                subsections:
+                  - Capillary Rise and Soil Moisture Retention
+                  - Capillary Fringe and Capillary Barrier Effects
+                  - Capillary Pressure and Suction Measurement
+                  - Capillary Effects on Soil Strength and Volume Change

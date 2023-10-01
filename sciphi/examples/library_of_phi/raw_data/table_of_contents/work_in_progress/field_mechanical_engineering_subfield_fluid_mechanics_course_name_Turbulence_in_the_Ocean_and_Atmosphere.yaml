@@ -1,0 +1,103 @@
+textbook:
+  Turbulence in the Ocean and Atmosphere: A Comprehensive Study
+  chapters:
+    - Introduction:
+        sections:
+          - Transition to Turbulence
+            subsections:
+              - Definition of Turbulence
+              - Reynolds Number and Turbulent Flow
+              - Instability and Transition to Turbulence
+              - Turbulence in the Ocean and Atmosphere
+          - Statistics and Turbulence
+            subsections:
+              - Statistical Measures of Turbulence
+              - Turbulent Energy Spectra
+              - Turbulence Intensity and Dissipation Rate
+              - Turbulence Modeling Techniques
+    - Convection:
+        sections:
+          - 3D Turbulence
+            subsections:
+              - Three-Dimensional Fluid Motion
+              - Turbulent Convection in the Ocean and Atmosphere
+              - Convective Heat and Mass Transfer
+              - Numerical Models of 3D Turbulence
+          - 2D Turbulence
+            subsections:
+              - Two-Dimensional Fluid Motion
+              - Geostrophic Turbulence
+              - Quasigeostrophic Dynamics
+              - Vortices and Jets in 2D Turbulence
+          - QG Turbulence
+            subsections:
+              - Quasi-Geostrophic Approximation
+              - Rossby Waves and Vortices
+              - QG Turbulence in the Ocean and Atmosphere
+              - QG Turbulence Modeling
+    - Mean-Field Approximation:
+        sections:
+          - SQG Turbulence
+            subsections:
+              - Surface Quasi-Geostrophic Approximation
+              - SQG Turbulence in the Ocean and Atmosphere
+              - SQG Turbulence Modeling
+              - SQG Turbulence and Frontogenesis
+          - Effective Diffusivity
+            subsections:
+              - Mixing and Diffusion in Turbulent Flows
+              - Effective Diffusivity in the Ocean and Atmosphere
+              - Parameterization of Effective Diffusivity
+              - Applications of Effective Diffusivity
+          - Transformed Eulerian Mean
+            subsections:
+              - Basic Concepts of Transformed Eulerian Mean
+              - Transformed Eulerian Mean in 2D Flows
+              - Transformed Eulerian Mean in 3D Flows
+              - Applications of Transformed Eulerian Mean
+          - Transformed Eulerian Mean in 3D
+            subsections:
+              - Transformed Eulerian Mean Equations
+              - Turbulence Closure Models
+              - Tidal Mixing and Turbulence in Estuaries
+              - Submesoscale Processes in 3D Turbulence
+    - Particle Motions:
+        sections:
+          - Stokes’ Drift
+            subsections:
+              - Definition and Mechanisms of Stokes' Drift
+              - Particle Trajectories in Turbulent Flows
+              - Lagrangian Coherent Structures
+              - Observations and Modeling of Stokes' Drift
+          - Baroclinic Turbulence
+            subsections:
+              - Baroclinic Instability and Turbulence
+              - Eddy-Driven Ocean and Atmosphere Circulation
+              - Mixing and Energy Dissipation in Baroclinic Turbulence
+              - Climate Impacts of Baroclinic Turbulence
+          - Gyres
+            subsections:
+              - Oceanic and Atmospheric Gyres
+              - Gyre Dynamics and Circulation
+              - Mesoscale Eddy Interactions in Gyres
+              - Gyre Variability and Climate Change
+          - Turbulent Boundary Layers
+            subsections:
+              - Boundary Layer Structure and Dynamics
+              - Turbulent Transport in the Boundary Layer
+              - Mixing and Entrainment Processes
+              - Boundary Layer Observations and Modeling
+    - Nonlinear Internal Waves:
+        sections:
+          - Solitary Waves
+            subsections:
+              - Generation and Propagation of Solitary Waves
+              - Internal Wave Breaking and Turbulence
+              - Solitary Wave Interactions and Wave-Wave Interactions
+              - Applications of Solitary Waves in Oceanography
+          - Topographic Waves
+            subsections:
+              - Generation and Propagation of Topographic Waves
+              - Internal Tides and Wave-Tide Interactions
+              - Wave-Topography Interactions and Energy Dissipation
+              - Impacts of Topographic Waves on Coastal Processes

@@ -1,0 +1,214 @@
+course:
+  Dynamics of Nonlinear Systems Textbook:
+    chapters:
+    - Input/Output and State-Space Models:
+        sections:
+        - Input/Output Models:
+            subsections:
+            - Introduction to Input/Output Models
+            - Transfer Functions
+            - Block Diagrams
+        - State-Space Models:
+            subsections:
+            - Introduction to State-Space Models
+            - State-Space Representation
+            - State Variables and State Equations
+    - Differential Equations as System Models:
+        sections:
+        - Ordinary Differential Equations:
+            subsections:
+            - Introduction to Ordinary Differential Equations
+            - Order and Linearity of Differential Equations
+            - Solution Methods for Ordinary Differential Equations
+        - Partial Differential Equations:
+            subsections:
+            - Introduction to Partial Differential Equations
+            - Classification of Partial Differential Equations
+            - Solution Methods for Partial Differential Equations
+    - Continuous Dependence on Parameters:
+        sections:
+        - Sensitivity Analysis:
+            subsections:
+            - Introduction to Sensitivity Analysis
+            - Sensitivity Coefficients
+            - Sensitivity Analysis Techniques
+        - Stability Analysis:
+            subsections:
+            - Introduction to Stability Analysis
+            - Lyapunov Stability Analysis
+            - Routh-Hurwitz Stability Criterion
+        - Bifurcation Analysis:
+            subsections:
+            - Introduction to Bifurcation Analysis
+            - Bifurcation Types and Bifurcation Diagrams
+            - Bifurcation Analysis Methods
+    - Analysis Based on Continuity:
+        sections:
+        - Stability Criteria:
+            subsections:
+            - Introduction to Stability Criteria
+            - Lyapunov's Direct Method
+            - Nyquist Stability Criterion
+        - Continuity Theorems:
+            subsections:
+            - Introduction to Continuity Theorems
+            - Brouwer's Fixed Point Theorem
+            - Invariance Theorems
+        - Poincaré Maps:
+            subsections:
+            - Introduction to Poincaré Maps
+            - Construction of Poincaré Maps
+            - Analysis of Poincaré Maps
+    - Lyapunov Functions and Storage Functions:
+        sections:
+        - Lyapunov Stability:
+            subsections:
+            - Introduction to Lyapunov Stability
+            - Lyapunov's First Method
+            - Lyapunov's Second Method
+        - Energy Functions:
+            subsections:
+            - Introduction to Energy Functions
+            - Definition and Properties of Energy Functions
+            - Application of Energy Functions in Stability Analysis
+        - Storage Functions:
+            subsections:
+            - Introduction to Storage Functions
+            - Definition and Properties of Storage Functions
+            - Application of Storage Functions in Stability Analysis
+    - Storage Functions and Stability Analysis:
+        sections:
+        - Stability Analysis with Storage Functions:
+            subsections:
+            - Introduction to Stability Analysis with Storage Functions
+            - Comparison with Lyapunov Stability Analysis
+            - Application of Storage Functions in Stability Analysis
+        - Lyapunov's Second Method:
+            subsections:
+            - Introduction to Lyapunov's Second Method
+            - Construction of Lyapunov Functions using Second Method
+            - Application of Lyapunov's Second Method in Stability Analysis
+        - Stability of Periodic Solutions:
+            subsections:
+            - Introduction to Stability of Periodic Solutions
+            - Floquet Theory
+            - Stability Analysis of Periodic Solutions
+    - Finding Lyapunov Functions:
+        sections:
+        - Construction Techniques:
+            subsections:
+            - Introduction to Construction Techniques
+            - Direct Construction Methods
+            - Indirect Construction Methods
+        - Lyapunov's Direct Method:
+            subsections:
+            - Introduction to Lyapunov's Direct Method
+            - Lyapunov's Direct Method for Stability Analysis
+            - Lyapunov's Direct Method for Asymptotic Stability
+        - Lyapunov's Indirect Method:
+            subsections:
+            - Introduction to Lyapunov's Indirect Method
+            - Lyapunov's Indirect Method for Stability Analysis
+            - Lyapunov's Indirect Method for Asymptotic Stability
+    - Local Behavior at Equilibria:
+        sections:
+        - Linearization around Equilibria:
+            subsections:
+            - Introduction to Linearization around Equilibria
+            - Linearization Methods
+            - Linearization Analysis
+        - Stability of Linear Systems:
+            subsections:
+            - Introduction to Stability of Linear Systems
+            - Routh-Hurwitz Stability Criterion for Linear Systems
+            - Lyapunov's Direct Method for Linear Systems
+        - Center Manifold and Normal Form:
+            subsections:
+            - Introduction to Center Manifold and Normal Form
+            - Center Manifold Theory
+            - Normal Form Theory
+    - Local Behavior Near Trajectories:
+        sections:
+        - Hartman-Grobman Theorem:
+            subsections:
+            - Introduction to Hartman-Grobman Theorem
+            - Statement and Proof of Hartman-Grobman Theorem
+            - Application of Hartman-Grobman Theorem in Stability Analysis
+        - Stable and Unstable Manifolds:
+            subsections:
+            - Introduction to Stable and Unstable Manifolds
+            - Definition and Properties of Stable and Unstable Manifolds
+            - Application of Stable and Unstable Manifolds in Stability Analysis
+        - Homoclinic and Heteroclinic Orbits:
+            subsections:
+            - Introduction to Homoclinic and Heteroclinic Orbits
+            - Definition and Properties of Homoclinic and Heteroclinic Orbits
+            - Application of Homoclinic and Heteroclinic Orbits in Stability Analysis
+    - Singular Perturbations and Averaging:
+        sections:
+        - Multiple Time Scales:
+            subsections:
+            - Introduction to Multiple Time Scales
+            - Separation of Time Scales
+            - Multiple Time Scale Analysis Methods
+        - Averaging Methods:
+            subsections:
+            - Introduction to Averaging Methods
+            - Averaging Method for Slowly Varying Systems
+            - Averaging Method for Rapidly Varying Systems
+        - Boundary Layer Theory:
+            subsections:
+            - Introduction to Boundary Layer Theory
+            - Definition and Properties of Boundary Layers
+            - Application of Boundary Layer Theory in System Analysis
+    - Volume Evolution and System Analysis:
+        sections:
+        - Phase Space Volume Conservation:
+            subsections:
+            - Introduction to Phase Space Volume Conservation
+            - Liouville's Theorem
+            - Application of Volume Conservation in System Analysis
+        - Poincaré Recurrence Theorem:
+            subsections:
+            - Introduction to Poincaré Recurrence Theorem
+            - Statement and Proof of Poincaré Recurrence Theorem
+            - Application of Poincaré Recurrence Theorem in System Analysis
+        - System Analysis with Volume Evolution:
+            subsections:
+            - Introduction to System Analysis with Volume Evolution
+            - Volume Evolution Equations
+            - Application of Volume Evolution in System Analysis
+    - Local Controllability:
+        sections:
+        - Controllability Conditions:
+            subsections:
+            - Introduction to Controllability Conditions
+            - Kalman's Rank Condition
+            - Controllability Gramian
+        - Feedback Control Design:
+            subsections:
+            - Introduction to Feedback Control Design
+            - State Feedback Control
+            - Output Feedback Control
+        - Optimal Control:
+            subsections:
+            - Introduction to Optimal Control
+            - Hamilton-Jacobi-Bellman Equation
+            - Pontryagin's Maximum Principle
+    - Feedback Linearization:
+        sections:
+        - Input-Output Linearization:
+            subsections:
+            - Introduction to Input-Output Linearization
+            - Input-Output Linearization Techniques
+            - Application of Input-Output Linearization in Control Design
+        - Exact Feedback Linearization:
+            subsections:
+            - Introduction to Exact Feedback Linearization
+            - Exact Feedback Linearization Methods
+            - Application of Exact Feedback Linearization in Control Design
+        - Nonlinear Control Design:
+            subsections:
+            - Introduction to Nonlinear Control Design
+            - Nonlinear Control Design Techniques
+            - Application of Nonlinear Control Design in System Control

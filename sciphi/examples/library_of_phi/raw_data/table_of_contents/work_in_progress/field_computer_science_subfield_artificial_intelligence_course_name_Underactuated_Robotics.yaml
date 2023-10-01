@@ -1,0 +1,44 @@
+textbook:
+  Underactuated Robotics: Theory and Applications
+  chapters:
+    - Nonlinear Dynamics of the Simple Pendulum:
+        sections:
+        - 'Dynamic programming and value iteration: grid world, double integrator,
+          and pendulum examples'
+        - 'Acrobot and cart-pole: controllability, partial feedback linearization'
+        - 'Policy search: open-loop optimal control, direct methods, and indirect
+          methods'
+        - 'Simple walking models: rimless wheel, compass gait, kneed compass gait'
+        - Feedback control for simple walking models
+    - 'Simple Running Models: Spring-loaded inverted pendulum':
+        sections:
+        - 'Motion planning: Dijkstra’s, A-star'
+        - 'Randomized motion planning: rapidly-exploring randomized trees and probabilistic
+          road maps'
+        - 'Feedback motion planning: planning with funnels, linear quadratic regulator'
+        - Function approximation and system identification
+        - 'Model systems with uncertainty: state distribution dynamics and state estimation'
+    - Stochastic Optimal Control:
+        sections:
+        - Aircraft
+        - Swimming and flapping flight
+        - Randomized policy gradient
+        - 'Model-free value methods: temporal difference learning and Q-learning'
+    - Analytical Optimal Control:
+        sections:
+        - Analytical optimal control with the Hamilton-Jacobi-Bellman sufficiency
+          theorem
+        - Analytical optimal control with Pontryagin’s minimum principle
+        - Trajectory optimization
+        - Feasible motion planning
+        - Global policies from local policies
+    - Model-Free Policy Search:
+        sections:
+        - Stochastic optimal control
+        - Model-free value methods
+        - Model-free policy search
+        - Actor-critic methods
+    - Learning Case Studies and Course Wrap-Up:
+        sections:
+        - Learning case studies
+        - Course wrap-up

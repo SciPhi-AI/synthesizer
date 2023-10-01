@@ -1,0 +1,171 @@
+```yaml
+textbook:
+  Entrepreneurial Finance: A Comprehensive Guide to Financing Startups and Growing Businesses
+  chapters:
+    - Introduction and Overview of Entrepreneurial Finance:
+        sections:
+        - The Economics of the Private Equity Market
+    - DermaCare: Zapping Zits Directly:
+        sections:
+        - 'DermaCare: Zapping Zits Directly'
+    - Business Valuation:
+        sections:
+        - Discounted Cash Flow
+        - Venture Capital Method
+    - Netflix:
+        sections:
+        - Netflix
+    - Real Option Valuation:
+        sections:
+        - Real Option Valuation
+    - Genzyme/Geltex:
+        sections:
+        - Genzyme/Geltex
+    - Deal Structure:
+        sections:
+        - Deal Structure
+    - Walnut Venture Associates:
+        sections:
+        - Walnut Venture Associates
+    - 'Guest: John H. Chory':
+        sections:
+        - John H. Chory (Partner, WilmerHale Venture Group)
+    - Metapath:
+        sections:
+        - Metapath
+    - BNI Video:
+        sections:
+        - Conrad Clemson (Founder and CEO, BNI Video)
+        - Carl Stjernfeldt
+    - 'Guest: Dr. William Janeway':
+        sections:
+        - Dr. William Janeway
+    - Portfolio and Partnership:
+        sections:
+        - Portfolio and Partnership
+    - VC Vignettes:
+        sections:
+        - VC Vignettes
+    - Grove Street Advisors - September 2009:
+        sections:
+        - Christopher E. Yang
+    - Forte Ventures:
+        sections:
+        - Forte Ventures
+    - Initial Public Offering:
+        sections:
+        - Initial Public Offering
+    - Grand Junction:
+        sections:
+        - Michael Szeto
+    - Blackstone:
+        sections:
+        - Blackstone
+    - Final Review:
+        sections:
+        - Final Review
+  subsubtopics:
+    - Introduction and Overview of Entrepreneurial Finance:
+        subsections:
+        - Introduction to Entrepreneurial Finance
+        - Importance of Finance in Entrepreneurship
+        - Role of Financial Institutions in Entrepreneurial Finance
+    - DermaCare: Zapping Zits Directly:
+        subsections:
+        - Overview of DermaCare Case Study
+        - Financial Analysis of DermaCare
+        - Funding Options for DermaCare
+    - Business Valuation:
+        subsections:
+        - Introduction to Business Valuation
+        - Discounted Cash Flow Method
+        - Venture Capital Method
+        - Comparable Company Analysis
+        - Precedent Transaction Analysis
+    - Netflix:
+        subsections:
+        - Overview of Netflix Case Study
+        - Financial Performance Analysis of Netflix
+        - Financing Strategies for Netflix
+    - Real Option Valuation:
+        subsections:
+        - Introduction to Real Option Valuation
+        - Types of Real Options
+        - Real Option Valuation Techniques
+        - Applications of Real Option Valuation in Entrepreneurial Finance
+    - Genzyme/Geltex:
+        subsections:
+        - Overview of Genzyme/Geltex Case Study
+        - Financial Analysis of Genzyme/Geltex
+        - Funding Strategies for Genzyme/Geltex
+    - Deal Structure:
+        subsections:
+        - Introduction to Deal Structure
+        - Types of Deal Structures
+        - Negotiating Deal Terms
+        - Financial Implications of Deal Structure
+    - Walnut Venture Associates:
+        subsections:
+        - Overview of Walnut Venture Associates
+        - Investment Criteria of Walnut Venture Associates
+        - Portfolio Management Strategies of Walnut Venture Associates
+    - 'Guest: John H. Chory':
+        subsections:
+        - Introduction to John H. Chory
+        - Expert Insights on Venture Capital Financing
+        - Case Studies of Venture Capital Deals
+    - Metapath:
+        subsections:
+        - Overview of Metapath Case Study
+        - Financial Analysis of Metapath
+        - Funding Options for Metapath
+    - BNI Video:
+        subsections:
+        - Introduction to BNI Video
+        - Success Story of Conrad Clemson (Founder and CEO)
+        - Role of Carl Stjernfeldt in BNI Video's Growth
+    - 'Guest: Dr. William Janeway':
+        subsections:
+        - Introduction to Dr. William Janeway
+        - Expert Insights on Entrepreneurial Finance
+        - Case Studies of Successful Entrepreneurial Ventures
+    - Portfolio and Partnership:
+        subsections:
+        - Importance of Portfolio Management in Entrepreneurial Finance
+        - Building Strategic Partnerships for Growth
+        - Mitigating Risk through Diversification
+    - VC Vignettes:
+        subsections:
+        - Short Stories of Successful Venture Capital Investments
+        - Lessons Learned from VC Vignettes
+        - Analyzing Investment Opportunities like a Venture Capitalist
+    - Grove Street Advisors - September 2009:
+        subsections:
+        - Overview of Grove Street Advisors
+        - Investment Strategies of Grove Street Advisors
+        - Evaluating Private Equity Opportunities
+    - Forte Ventures:
+        subsections:
+        - Overview of Forte Ventures
+        - Investment Approach of Forte Ventures
+        - Case Studies of Forte Ventures' Investments
+    - Initial Public Offering:
+        subsections:
+        - Introduction to Initial Public Offering (IPO)
+        - IPO Process and Requirements
+        - Evaluating IPO Opportunities
+    - Grand Junction:
+        subsections:
+        - Overview of Grand Junction Case Study
+        - Financial Analysis of Grand Junction
+        - Funding Options for Grand Junction
+    - Blackstone:
+        subsections:
+        - Overview of Blackstone
+        - Investment Strategies of Blackstone
+        - Case Studies of Blackstone's Private Equity Deals
+    - Final Review:
+        subsections:
+        - Recap of Key Concepts in Entrepreneurial Finance
+        - Practice Questions and Exercises for Exam Preparation
+```

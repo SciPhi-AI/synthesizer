@@ -1,0 +1,127 @@
+textbook:
+  Climate Physics and Chemistry: A Comprehensive Study
+  chapters:
+    - Origin of the Earth, Atmosphere, and Life:
+        sections:
+          - Early Geochemical Evolution:
+              subsections:
+                - Formation of the Solar System
+                - Earth's Formation and Differentiation
+                - Development of the Atmosphere
+          - Origin of Life:
+              subsections:
+                - Prebiotic Chemistry
+                - Miller-Urey Experiment
+                - Emergence of Life on Earth
+    - Co-evolution of Life, Ocean-Atmospheric Chemistry, and Sedimentary Rocks:
+        sections:
+          - Ocean-Atmospheric Chemistry Interactions:
+              subsections:
+                - Chemical Composition of the Atmosphere
+                - Ocean-Atmosphere Exchange Processes
+                - Impact of Life on Atmospheric Chemistry
+          - Sedimentary Rocks Formation:
+              subsections:
+                - Depositional Environments
+                - Diagenesis and Lithification
+                - Sedimentary Structures and Fossils
+    - Climate on Geologic Time Scales:
+        sections:
+          - Faint Young Sun Paradox:
+              subsections:
+                - Early Earth's Climate
+                - Solar Evolution and its Impact on Climate
+                - Solutions to the Faint Young Sun Paradox
+          - Geochemical Carbon Cycle:
+              subsections:
+                - Carbon Sources and Sinks
+                - Carbon Cycle Feedbacks
+                - Paleoclimate Proxies for Carbon Cycle Reconstruction
+          - CO2-Climate Connection:
+              subsections:
+                - Greenhouse Effect and Radiative Forcing
+                - Carbon Dioxide Feedbacks
+                - Role of Carbon Dioxide in Climate Change
+    - Pleistocene Ice Age Cycles:
+        sections:
+          - Ice Sheet Paleoclimatology:
+              subsections:
+                - Glacial-Interglacial Cycles
+                - Ice Core Records and Climate Reconstruction
+                - Feedback Mechanisms in Ice Age Cycles
+          - Proterozoic Glaciations:
+              subsections:
+                - Evidence for Proterozoic Glaciations
+                - Causes and Impacts of Proterozoic Glaciations
+                - Paleoclimatic Significance of Proterozoic Glaciations
+    - Climate Physics and Chemistry:
+        sections:
+          - Radiative Transfer:
+              subsections:
+                - Energy Balance Equations
+                - Radiative Forcing and Feedbacks
+                - Radiative Transfer Models
+          - Moist Convection:
+              subsections:
+                - Convective Processes in the Atmosphere
+                - Water Vapor and Clouds in Climate
+                - Impacts of Moist Convection on Climate
+          - Flux of Water:
+              subsections:
+                - Hydrological Cycle
+                - Evaporation and Transpiration
+                - Water Vapor Transport and Precipitation
+          - Heat Transport:
+              subsections:
+                - Atmospheric Heat Transport
+                - Oceanic Heat Transport
+                - Role of Heat Transport in Climate
+    - Ocean Circulation for Climate Understanding:
+        sections:
+          - Temperature Gradient in Middle and High Latitudes:
+              subsections:
+                - Thermohaline Circulation
+                - Meridional Overturning Circulation
+                - Role of Temperature Gradient in Climate
+          - Natural and Fossil Fuel CO2 in the Ocean:
+              subsections:
+                - Carbonate Chemistry and Ocean Acidification
+                - Carbon Sequestration in the Ocean
+                - Human Impact on Oceanic Carbon Cycle
+    - Atmospheric Chemistry:
+        sections:
+          - Ozone, Chlorofluorocarbons, Nitrogen Oxides, and Dimethyl Sulfide:
+              subsections:
+                - Ozone Depletion and Ozone Hole
+                - Sources and Impacts of Chlorofluorocarbons
+                - Nitrogen Oxides and Their Role in Climate
+                - Dimethyl Sulfide and Climate-Cloud Feedbacks
+          - Methane:
+              subsections:
+                - Methane Sources and Sinks
+                - Methane Feedbacks on Climate
+                - Impacts of Methane on Atmospheric Chemistry
+    - Paleoclimate:
+        sections:
+          - Changes in CO2 During the Past Million Years:
+              subsections:
+                - Ice Core Records of CO2 Variability
+                - Natural and Anthropogenic Drivers of CO2 Changes
+                - Implications for Future Climate
+          - Long-Term Climate Cycles:
+              subsections:
+                - Milankovitch Cycles and Climate
+                - Orbital Forcing and Ice Age Cycles
+                - Climate Variability over Geological Timescales
+    - Ocean Physics and Climate:
+        sections:
+          - Ocean Circulation:
+              subsections:
+                - Wind-Driven Ocean Circulation
+                - Thermohaline Circulation and Deep Water Formation
+                - Impacts of Ocean Circulation on Climate
+          - Ocean Carbon System:
+              subsections:
+                - Ocean Acidification and Carbonate Chemistry
+                - Biological Pump and Carbon Sequestration
+                - Feedbacks between Ocean Physics and Carbon Cycle

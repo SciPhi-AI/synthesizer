@@ -1,0 +1,31 @@
+textbook:
+  Introduction to Video: A Comprehensive Guide
+    chapters:
+    - Introduction to the Course:
+        sections:
+        - Course Number
+        - Course Name
+        - Resource Level
+    - 'Technical Workshop: Demonstration of DV Cameras':
+        sections:
+        - 'In-class Exercise #1: ''Camera Play'''
+    - 'Introduction to Assignment #4: Personal Documentary':
+        sections:
+        - 'Introduction to Assignment #4: ''Personal Doc'''
+    - 'Introduction to Assignment #5: Personae and the Fictive Self':
+        sections:
+        - 'Class Exercise: Screening of Completed ''Hartley'' Edits'
+        - Production Time
+        - 'Assignment #5: ''The Fictive Self'''
+    - 'Individual Presentations: Cinematography':
+        sections:
+        - Individual Edits of Hartley Scene
+    - 'Introduction to Assignment #7: Stories':
+        sections:
+        - Individual Presentations
+        - Individual Meetings
+        - 'Technical Workshop: Final Cut Pro Color Manipulation'
+        - Presentation of Final Project Treatment, Storyboards and Influences
+    - 'Assignment #7: Stories':
+        sections:
+        - 'Assignment #7: Stories'

@@ -1,0 +1,79 @@
+textbook:
+  Inquiry into Computation and Design Companion:
+    chapters:
+      - Introduction / Metaphor:
+          sections:
+            - Metaphor and Thought
+              subsections:
+                - Understanding the Role of Metaphor in Design and Computation
+                - Exploring the Cognitive Effects of Metaphors
+            - Concept Design Games
+              subsections:
+                - Gamification in Design Thinking
+                - Using Game Mechanics for Concept Development
+      - The Silent Game I:
+          sections:
+            - An Introduction to Metaphor
+              subsections:
+                - Defining Metaphor in the Context of Design and Computation
+                - Analyzing Metaphorical Expressions in Design
+            - Metaphors We Design and Compute By
+              subsections:
+                - Common Metaphorical Representations in Design
+                - Evaluating the Impact of Metaphors on Computational Models
+      - The Silent Game II:
+          sections:
+            - Design, Rules, and Cognition I
+              subsections:
+                - Understanding the Relationship between Design and Rules
+                - Cognitive Processes in Rule-Based Design
+            - Design, Rules, and Cognition II
+              subsections:
+                - Rule-Based Design Strategies
+                - Cognitive Implications of Rule-Based Design
+      - Visual Calculating I:
+          sections:
+            - Visual Calculating I
+              subsections:
+                - Introduction to Visual Computing
+                - Visual Representations for Computational Problems
+            - Visual Calculating II
+              subsections:
+                - Techniques for Visualizing Computational Processes
+                - Visual Analytics for Computational Design
+      - Machine Computing I:
+          sections:
+            - Machine Computing I
+              subsections:
+                - Introduction to Machine Computation
+                - Historical Development of Machine Computation
+            - Machine Computing II
+              subsections:
+                - Contemporary Approaches to Machine Computation
+                - Implications of Machine Computation in Design
+      - Digital Fabricating I:
+          sections:
+            - Digital Fabricating I
+              subsections:
+                - Introduction to Digital Fabrication
+                - Tools and Technologies for Digital Fabrication
+            - Digital Fabricating II
+              subsections:
+                - Applications of Digital Fabrication in Design
+                - Advancements and Future Trends in Digital Fabrication
+      - Design Knowledge I:
+          sections:
+            - Design Knowledge I
+              subsections:
+                - Understanding Design as Knowledge Construction
+                - Theories and Frameworks in Design Knowledge
+            - Design Knowledge II
+              subsections:
+                - Knowledge Management in Design
+                - Knowledge Transfer and Collaboration in Design
+      - Moving On:
+          sections:
+            - Moving On
+              subsections:
+                - Preparing for Advanced Topics in Computation and Design
+                - Exploring Career Opportunities in Computation and Design

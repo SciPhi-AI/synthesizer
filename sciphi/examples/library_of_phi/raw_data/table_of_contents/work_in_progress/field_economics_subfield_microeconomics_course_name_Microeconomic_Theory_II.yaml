@@ -1,0 +1,62 @@
+textbook:
+  Microeconomic Theory II: A Comprehensive Guide to Advanced Game Theory and Mechanism Design
+  chapters:
+    - Static Games:
+        sections:
+        - Dominant Strategies
+        - Nash Equilibrium
+        - Mixed Strategies
+        - Best Response Functions
+    - Dynamic Games:
+        sections:
+        - Backward Induction
+        - Subgame Perfect Equilibrium
+        - Markov Perfect Equilibrium
+        - Sequential Equilibrium
+    - Incomplete Information:
+        sections:
+        - Bayesian Nash Equilibrium
+        - Perfect Bayesian Equilibrium
+        - Signaling Games
+        - Screening Games
+    - Dynamic Games with Incomplete Information:
+        sections:
+        - Bayesian Nash Equilibrium
+        - Perfect Bayesian Equilibrium
+        - Signaling Games
+        - Screening Games
+    - Auction Theory:
+        sections:
+        - First-price Auction
+        - Second-price Auction
+        - English Auction
+        - Dutch Auction
+        - Revenue Equivalence Theorem
+    - Mechanism Design:
+        sections:
+        - Revelation Principle
+        - Vickrey-Clarke-Groves Mechanism
+        - Incentive Compatibility
+        - Individual Rationality
+        - Social Choice Theory
+    - Industrial Organization:
+        sections:
+        - Monopoly Pricing
+        - Price Discrimination
+        - Oligopoly Theory
+        - Collusion and Cartels
+        - Entry and Exit
+    - Bargaining Theory:
+        sections:
+        - Nash Bargaining Solution
+        - Rubinstein Bargaining Model
+        - Alternating Offers Model
+        - Bilateral Bargaining
+        - Ultimatum Game
+    - Game Theory Applications in Economics:
+        sections:
+        - Strategic Trade Policy
+        - R&D Races
+        - Network Effects
+        - Market Structure and Competition
+        - Behavioral Game Theory

@@ -1,0 +1,66 @@
+textbook:
+  Engineering Design and Rapid Prototyping: A Comprehensive Guide
+  chapters:
+    - Introduction to Design:
+      sections:
+        - Forming teams and selecting components
+        - Touring the facilities
+      subsections:
+        - The design process and its importance
+        - Design thinking and problem-solving techniques
+        - Team dynamics and collaboration in design projects
+    - Hand Sketching:
+      sections:
+        - Sketching initial designs by hand
+        - Rough sizing and concept
+      subsections:
+        - Sketching techniques and best practices
+        - Visual communication in design
+        - Design iteration and refinement through sketching
+    - CAD Mechanical Modeling:
+      sections:
+        - Creating initial CAD models of components
+        - Computer Aided Engineering (CAE)
+        - Solidworks® Tutorial
+      subsections:
+        - Introduction to CAD software and its applications in design
+        - Parametric modeling and constraints
+        - Simulation and analysis using CAE tools
+        - Hands-on Solidworks® tutorials and exercises
+    - Prototyping Avionics:
+      sections:
+        - Avionics prototyping
+      subsections:
+        - Introduction to avionics systems and their role in design
+        - Rapid prototyping techniques for avionics components
+        - Testing and troubleshooting avionics prototypes
+    - Electric Motors and Hybrid Drives:
+      sections:
+        - Electric motor design
+        - Hybrid drive systems
+      subsections:
+        - Principles of electric motor operation and design
+        - Types of hybrid drive systems and their applications
+        - Integration of electric motors in design projects
+    - Manufacturing and Testing:
+      sections:
+        - Manufacturing processes
+        - Testing procedures
+      subsections:
+        - Overview of manufacturing techniques in design
+        - Quality control and assurance in manufacturing
+        - Testing methodologies and data analysis in design
+    - Microwave System Design:
+      sections:
+        - Designing microwave systems
+      subsections:
+        - Fundamentals of microwave systems and their applications
+        - Design considerations for microwave components and circuits
+        - Simulation and optimization of microwave systems
+    - Critical Design Review:
+      sections:
+        - Reviewing and evaluating designs
+      subsections:
+        - Importance of critical design review in the design process
+        - Criteria for evaluating the effectiveness of a design
+        - Techniques for providing constructive feedback on designs

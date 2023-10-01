@@ -1,0 +1,147 @@
+textbook:
+  Data Mining: A Comprehensive Guide
+  chapters:
+    - Chapter 1: Introduction to Data Mining
+      sections:
+        - Section 1.1: Data Mining Overview
+        - Section 1.2: Importance and Applications of Data Mining
+        - Section 1.3: Data Mining Process
+        - Section 1.4: Challenges and Ethical Considerations in Data Mining
+      
+    - Chapter 2: Prediction and Classification with k-Nearest Neighbors
+      sections:
+        - Section 2.1: Introduction to Prediction and Classification
+        - Section 2.2: k-Nearest Neighbors Algorithm
+        subsections:
+          - Subsection 2.2.1: Distance Metrics in k-Nearest Neighbors
+          - Subsection 2.2.2: Choosing the Value of k in k-Nearest Neighbors
+          - Subsection 2.2.3: Handling Missing Values in k-Nearest Neighbors
+      
+    - Chapter 3: Classification and Bayes Rule, Naïve Bayes
+      sections:
+        - Section 3.1: Classification and Bayes Rule
+        - Section 3.2: Introduction to Naïve Bayes Algorithm
+        subsections:
+          - Subsection 3.2.1: Naïve Bayes Assumptions
+          - Subsection 3.2.2: Parameter Estimation in Naïve Bayes
+      
+    - Chapter 4: Classification Trees
+      sections:
+        - Section 4.1: Introduction to Classification Trees
+        - Section 4.2: Decision Tree Learning Algorithms
+        subsections:
+          - Subsection 4.2.1: Gini Index
+          - Subsection 4.2.2: Information Gain
+          - Subsection 4.2.3: Pruning Decision Trees
+      
+    - Chapter 5: Discriminant Analysis
+      sections:
+        - Section 5.1: Introduction to Discriminant Analysis
+        - Section 5.2: Linear Discriminant Analysis
+        - Section 5.3: Quadratic Discriminant Analysis
+      
+    - Chapter 6: Logistic Regression Case: Handlooms
+      sections:
+        - Section 6.1: Introduction to Logistic Regression
+        - Section 6.2: Logistic Regression Model
+        - Section 6.3: Logistic Regression Case Study: Handlooms
+      
+    - Chapter 7: Neural Nets
+      sections:
+        - Section 7.1: Introduction to Neural Networks
+        - Section 7.2: Perceptron Model
+        - Section 7.3: Backpropagation Algorithm
+        subsections:
+          - Subsection 7.3.1: Activation Functions in Neural Networks
+          - Subsection 7.3.2: Handling Overfitting in Neural Networks
+      
+    - Chapter 8: Cases: Direct Marketing/German Credit
+      sections:
+        - Section 8.1: Direct Marketing Case Study
+        - Section 8.2: German Credit Case Study
+      
+    - Chapter 9: Assessing Prediction Performance
+      sections:
+        - Section 9.1: Introduction to Prediction Performance Evaluation
+        - Section 9.2: Confusion Matrix and Performance Metrics
+        subsections:
+          - Subsection 9.2.1: Accuracy
+          - Subsection 9.2.2: Precision and Recall
+          - Subsection 9.2.3: ROC Curve and AUC
+      
+    - Chapter 10: Subset Selection in Regression
+      sections:
+        - Section 10.1: Introduction to Subset Selection in Regression
+        - Section 10.2: Best Subset Selection
+        - Section 10.3: Stepwise Selection
+        subsections:
+          - Subsection 10.3.1: Forward Selection
+          - Subsection 10.3.2: Backward Elimination
+          - Subsection 10.3.3: Hybrid Approaches
+      
+    - Chapter 11: Regression Trees, Case: IBM/GM weekly returns
+      sections:
+        - Section 11.1: Introduction to Regression Trees
+        - Section 11.2: Building Regression Trees
+        - Section 11.3: Regression Tree Case Study: IBM/GM Weekly Returns
+      
+    - Chapter 12: k-Means Clustering, Hierarchical Clustering
+      sections:
+        - Section 12.1: Introduction to Clustering
+        - Section 12.2: k-Means Clustering Algorithm
+        - Section 12.3: Hierarchical Clustering Algorithm
+        subsections:
+          - Subsection 12.3.1: Agglomerative Clustering
+          - Subsection 12.3.2: Divisive Clustering
+          - Subsection 12.3.3: Evaluating Clustering Results
+      
+    - Chapter 13: Case: Retail Merchandising
+      sections:
+        - Section 13.1: Retail Merchandising Case Study
+      
+    - Chapter 14: Midterm Exam
+      sections:
+        - Section 14.1: Midterm Exam Format
+        - Section 14.2: Study Guide and Preparation Tips
+      
+    - Chapter 15: Principal Components
+      sections:
+        - Section 15.1: Introduction to Principal Components Analysis
+        - Section 15.2: Principal Components Extraction
+        - Section 15.3: Interpreting Principal Components
+      
+    - Chapter 16: Guest Lecture by Dr. Ira Haimowitz: Data Mining and CRM at Pfizer
+      sections:
+        - Section 16.1: Overview of Data Mining in CRM
+        - Section 16.2: Case Study: Data Mining and CRM at Pfizer
+      
+    - Chapter 17: Association Rules
+      sections:
+        - Section 17.1: Introduction to Association Rules
+        - Section 17.2: Apriori Algorithm
+        subsections:
+          - Subsection 17.2.1: Support and Confidence Measures
+          - Subsection 17.2.2: Generating Association Rules
+      
+    - Chapter 18: Recommendation Systems: Collaborative Filtering
+      sections:
+        - Section 18.1: Introduction to Recommendation Systems
+        - Section 18.2: Collaborative Filtering Techniques
+        subsections:
+          - Subsection 18.2.1: User-Based Collaborative Filtering
+          - Subsection 18.2.2: Item-Based Collaborative Filtering
+          - Subsection 18.2.3: Matrix Factorization
+      
+    - Chapter 19: Guest Lecture by Dr. John Elder IV, Elder Research: The Practice of Data Mining
+      sections:
+        - Section 19.1: Introduction to Data Mining in Practice
+        - Section 19.2: Case Studies from Elder Research
+        subsections:
+          - Subsection 19.2.1: Fraud Detection
+          - Subsection 19.2.2: Customer Segmentation
+          - Subsection 19.2.3: Predictive Maintenance
+      
+    - Chapter 20: Project Presentations
+      sections:
+        - Section 20.1: Guidelines for Project Presentations
+        - Section 20.2: Examples of Good Project Presentations

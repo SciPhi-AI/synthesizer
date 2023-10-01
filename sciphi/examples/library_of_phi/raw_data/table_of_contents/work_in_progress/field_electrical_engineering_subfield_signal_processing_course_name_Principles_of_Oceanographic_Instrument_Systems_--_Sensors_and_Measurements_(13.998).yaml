@@ -1,0 +1,188 @@
+```yaml
+textbook:
+  Principles of Oceanographic Instrument Systems: Sensors, Measurements, and Data Analysis:
+    chapters:
+      - Introduction:
+          sections:
+            - Course Introduction
+            - Student Requirements
+            - Student Interests/Focus
+      - Transducers and Instrument Systems:
+          sections:
+            - Transducer Principles
+            - Instrument System Components
+            - Measurement Limits and Uncertainties
+      - Electronics Lab: Circuit Design and Construction:
+          sections:
+            - Circuit Design Fundamentals
+            - Circuit Construction Techniques
+            - Soldering Techniques
+            - Oscilloscope Usage
+            - Digital Multimeter Usage
+      - Sampling Theory, Statistics, and Signal Processing:
+          sections:
+            - Sampling Theory Basics
+            - Statistical Analysis Techniques
+            - Fourier Transform Fundamentals
+            - Filter Types and Applications
+      - Signal Analysis and Confidence Limits:
+          sections:
+            - Power Spectral Analysis
+            - Coherence Analysis
+            - Confidence Interval Estimation
+      - Electronics Lab: Advanced Circuit Techniques:
+          sections:
+            - Advanced Circuit Construction Techniques
+            - Advanced Soldering Techniques
+            - Oscilloscope Operation Techniques
+            - Digital Multimeter Techniques
+      - Analog-to-Digital Conversion and Frequency Counting:
+          sections:
+            - Analog-to-Digital Conversion Principles
+            - Ideal Amplifiers and Converters
+            - Frequency Measurement Methods
+            - Least Count Error Analysis
+      - Sensor Calibrations and Response Analysis:
+          sections:
+            - Calibration Procedures
+            - Static Response Analysis
+            - Dynamic Response Analysis
+            - Sensor Characteristics
+      - Oceanic Hardware for Instrumentation:
+          sections:
+            - Overview of Oceanic Hardware
+            - Compass and Tilt Sensors
+            - Motion Sensors
+            - Acoustic Releases and Locators
+      - Noise Analysis and Frequency Response Effects:
+          sections:
+            - Noise Sources and Analysis
+            - Signal-to-Noise Ratio Calculation
+            - Frequency Response Analysis
+      - Sea Water Properties and Distributions:
+          sections:
+            - Properties of Seawater
+            - Distributions of Seawater Properties
+            - Equation of State of Seawater
+      - Oceanic Hardware Lab: Compass, Tilt, Motion, Acoustic Releases:
+          sections:
+            - Compass Sensor Operation
+            - Tilt Sensor Operation
+            - Motion Sensor Operation
+            - Acoustic Release and Locator Usage
+      - Pressure and Temperature Sensors/Measurements:
+          sections:
+            - Pressure Sensor Principles
+            - Temperature Sensor Principles
+            - Measurement and Calibration Standards
+      - Conductivity and Salinity Sensors/Measurements:
+          sections:
+            - Conductivity Measurement Principles
+            - Salinity Measurement Principles
+            - Standards for Conductivity/Salinity Measurements
+      - Instrument Calibration Lab: Part 1:
+          sections:
+            - Calibration Techniques
+            - Calibration Equipment Usage
+      - CTDs: Profiling, Towed, and Self-contained:
+          sections:
+            - CTD Sensor Overview
+            - Profiling CTDs
+            - Towed CTDs
+            - Self-contained CTDs
+      - Buoys, Moorings, and Regulatory Compliance:
+          sections:
+            - Buoy Systems
+            - Mooring Systems
+            - Compliance with Regulations
+      - Instrument Calibration Lab: Part 2:
+          sections:
+            - Advanced Calibration Techniques
+            - Additional Calibration Equipment Usage
+      - Ropes, Fibers, Cables, and Compliant Elements:
+          sections:
+            - Rope and Fiber Materials
+            - Cable and Wire Selection
+            - Compliant Element Design
+      - Data Systems and Telemetry:
+          sections:
+            - Data System Architecture
+            - Data Recorders and Loggers
+            - Analog-to-Digital Converters
+            - Microprocessor Applications
+            - Telemetry Systems
+      - Cruise Lab: Instrument Development and Testing:
+          sections:
+            - Group Formation
+            - Instrument Project Initiation
+            - Instrument Development and Testing
+            - Instrument Performance Evaluation
+      - Eulerian Current Meters:
+          sections:
+            - Eulerian Current Meter Types
+            - Vector Averaging Current Meters
+            - Vector Measuring Current Meters
+            - Acoustic Current Meters
+            - Bottom-mounted Acoustic Scattering Systems
+      - Lagrangian Currents:
+          sections:
+            - Lagrangian Current Meter Types
+            - Drifter Systems
+            - Float Systems
+            - SOFAR Floats
+            - RAFOS Floats
+      - Cruise Lab: Instruments:
+          sections:
+            - Instrument Finalization Procedures
+            - Instrument Pre-deployment Checklist
+            - Instrument Deployment Techniques
+            - Data Collection during Whole Day
+      - Acoustic Current Meters:
+          sections:
+            - Acoustic Doppler Velocimeters
+            - Acoustic Doppler Current Profilers
+            - Laser Doppler Velocimeters
+      - Acoustic Backscattering and Sediment Transport:
+          sections:
+            - Acoustic Backscattering Systems
+            - Suspended Sediment Sensors
+      - Cruise Lab: Instrument Recovery and Data Retrieval:
+          sections:
+            - Instrument Recovery Techniques
+            - Data Retrieval Procedures
+      - Imaging Instrumentation:
+          sections:
+            - Imaging Instrumentation Overview
+            - Fluorometers
+            - Transmissometers
+            - Optical Backscatter Sensors
+            - Radiometers
+            - Photosynthetically Active Radiation Sensors
+      - Bio-optical Instrumentation:
+          sections:
+            - Bio-optical Instrumentation Overview
+            - Fluorometers
+            - Transmissometers
+            - Optical Backscatter Sensors
+            - Radiometers
+            - Photosynthetically Active Radiation Sensors
+      - Cruise Lab: Data Analysis and Instrument Performance Evaluation:
+          sections:
+            - Data Analysis Techniques
+            - Instrument Performance Evaluation
+      - Remote Sensing Techniques:
+          sections:
+            - Satellite Remote Sensing
+            - Radar Remote Sensing
+            - VHF Radar Remote Sensing
+            - Laser Doppler Velocimeters
+            - Acoustic Doppler Current Profilers
+            - Acoustic Doppler Velocimeters
+      - Other Topics of Student Interest:
+          sections:
+            - Student-selected Topics
+      - Oral Presentations and Written Reports:
+          sections:
+            - Presentation Techniques
+            - Report Writing Guidelines
+```

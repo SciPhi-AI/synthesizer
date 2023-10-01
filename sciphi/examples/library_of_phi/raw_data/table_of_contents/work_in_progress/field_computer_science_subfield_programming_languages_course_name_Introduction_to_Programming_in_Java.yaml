@@ -1,0 +1,68 @@
+textbook:
+  Introduction to Programming in Java: A Comprehensive Guide
+    chapters:
+    - Chapter 1: Types, Variables, Operators
+        sections:
+        - Section 1.1: Data Types
+        - Section 1.2: Variables
+        - Section 1.3: Operators
+    - Chapter 2: More Types, Methods, Conditionals
+        sections:
+        - Section 2.1: Control Flow Statements
+        - Section 2.2: Methods
+        - Section 2.3: Conditional Statements
+    - Chapter 3: Loops and Arrays
+        sections:
+        - Section 3.1: For Loops
+        - Section 3.2: While Loops
+        - Section 3.3: Arrays
+    - Chapter 4: Objects and Classes
+        sections:
+        - Section 4.1: Classes and Objects
+        - Section 4.2: Constructors
+        - Section 4.3: Instance Variables
+        - Section 4.4: Methods and Encapsulation
+    - Chapter 5: Access Control, Class Scope, Packages, Java API
+        sections:
+        - Section 5.1: Access Modifiers
+        - Section 5.2: Class Scope
+        - Section 5.3: Packages
+        - Section 5.4: Java API
+    - Chapter 6: Design, Debugging, Interfaces
+        sections:
+        - Section 6.1: Software Design Principles
+        - Section 6.2: Debugging Techniques
+        - Section 6.3: Interfaces
+    - Chapter 7: Inheritance, Exceptions, File I/O
+        sections:
+        - Section 7.1: Inheritance
+        - Section 7.2: Exceptions
+        - Section 7.3: File Input/Output
+    - Chapter 8: GravityCalculator
+        sections:
+        - Section 8.1: Description
+        - Section 8.2: Implementation
+    - Chapter 9: FooCorporation
+        sections:
+        - Section 9.1: Description
+        - Section 9.2: Implementation
+    - Chapter 10: Marathon
+        sections:
+        - Section 10.1: Description
+        - Section 10.2: Implementation
+    - Chapter 11: Library
+        sections:
+        - Section 11.1: Description
+        - Section 11.2: Implementation
+    - Chapter 12: Graphics!
+        sections:
+        - Section 12.1: Description
+        - Section 12.2: Implementation
+    - Chapter 13: Graphics Strikes Back!
+        sections:
+        - Section 13.1: Description
+        - Section 13.2: Implementation
+    - Chapter 14: Magic Squares
+        sections:
+        - Section 14.1: Description
+        - Section 14.2: Implementation

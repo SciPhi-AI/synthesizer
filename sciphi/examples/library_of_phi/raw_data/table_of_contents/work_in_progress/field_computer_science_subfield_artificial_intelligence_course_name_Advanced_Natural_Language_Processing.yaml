@@ -1,0 +1,83 @@
+textbook:
+  Advanced Natural Language Processing: A Comprehensive Guide
+  chapters:
+    - Introduction and Overview:
+        sections:
+        - Course introduction
+        - Overview of natural language processing
+        subsections:
+        - Importance of natural language processing
+        - Applications of natural language processing
+    - Parsing and Syntax:
+        sections:
+        - Parsing techniques
+        - Syntax analysis
+        subsections:
+        - Top-down parsing
+        - Bottom-up parsing
+        - Dependency parsing
+        - Constituency parsing
+    - Smoothed Estimation and Language Modeling:
+        sections:
+        - Estimation methods
+        - Language modeling techniques
+        subsections:
+        - N-gram language models
+        - Smoothing techniques
+        - Neural network language models
+    - The EM Algorithm:
+        sections:
+        - Introduction to the EM algorithm
+        - Application of the EM algorithm in NLP
+        subsections:
+        - Expectation-Maximization algorithm
+        - EM algorithm in unsupervised learning
+        - EM algorithm for language modeling
+    - Lexical Similarity:
+        sections:
+        - Similarity measures for words
+        - Lexical resources for NLP
+        subsections:
+        - Word embeddings
+        - Word similarity metrics
+        - Thesauri and ontologies
+    - Log-Linear Models:
+        sections:
+        - Log-linear modeling in NLP
+        - Feature selection and regularization
+        subsections:
+        - Log-linear models for classification
+        - Regularization techniques
+        - Feature engineering in NLP
+    - Tagging and History-based Models:
+        sections:
+        - Part-of-speech tagging
+        - History-based models for NLP
+        subsections:
+        - Hidden Markov Models (HMM)
+        - Conditional Random Fields (CRF)
+        - Sequence labeling tasks in NLP
+    - Grammar Induction:
+        sections:
+        - Inducing grammars from data
+        - Grammar induction algorithms
+        subsections:
+        - Context-free grammar induction
+        - Unsupervised grammar learning
+        - Grammatical inference
+    - Computational Modeling of Discourse:
+        sections:
+        - Discourse representation
+        - Discourse coherence modeling
+        subsections:
+        - Rhetorical structure theory
+        - Coherence relations in discourse
+        - Discourse parsing
+    - Text Segmentation:
+        sections:
+        - Methods for text segmentation
+        - Applications of text segmentation in NLP
+        subsections:
+        - Sentence boundary detection
+        - Paragraph segmentation
+        - Text segmentation for information retrieval

@@ -1,0 +1,32 @@
+course:
+  Nonlinear Programming Textbook:
+    chapters:
+      - Introduction:
+        sections:
+          - Unconstrained Optimization:
+            subsections:
+              - Optimality Conditions
+              - Gradient Methods
+              - Convergence Analysis of Gradient Methods
+              - Rate of Convergence
+              - Newton and Gauss - Newton Methods
+              - Additional Methods
+      - Optimization Over a Convex Set:
+        sections:
+          - Optimality Conditions
+          - Feasible Direction Methods
+          - Alternatives to Gradient Projection
+      - Constrained Optimization:
+        sections:
+          - Lagrange Multipliers
+          - Inequality Constraints
+          - Introduction to Duality
+      - Interior Point Methods:
+        sections:
+          - Penalty Methods
+          - Augmented Lagrangian Methods
+          - Duality Theory
+          - Duality Theorems
+          - Strong Duality
+          - Dual Computational Methods
+          - Additional Dual Methods

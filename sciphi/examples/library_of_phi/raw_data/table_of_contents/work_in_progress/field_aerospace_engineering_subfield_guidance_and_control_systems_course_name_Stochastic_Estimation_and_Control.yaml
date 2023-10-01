@@ -1,0 +1,162 @@
+```yaml
+course:
+  Stochastic Estimation and Control:
+    textbook:
+      title: Stochastic Estimation and Control: Theory and Applications
+      author: John Smith
+      chapters:
+        - chapter_title: Introduction
+          sections:
+            - section_title: Random Signals
+            - section_title: Intuitive Notion of Probability
+            - section_title: Axiomatic Probability
+            - section_title: Joint and Conditional Probability
+        - chapter_title: Independence
+          sections:
+            - section_title: Random Variables
+            - section_title: Probability Distribution and Density Functions
+        - chapter_title: Expectation, Averages and Characteristic Function
+          sections:
+            - section_title: Normal or Gaussian Random Variables
+            - section_title: Impulsive Probability Density Functions
+            - section_title: Multiple Random Variables
+        - chapter_title: Correlation, Covariance, and Orthogonality
+          sections:
+            - section_title: Sum of Independent Random Variables and Tendency Toward Normal Distribution
+            - section_title: Transformation of Random Variables
+        - chapter_title: Some Common Distributions
+          sections:
+            - section_title: Exponential Distribution
+            - section_title: Uniform Distribution
+            - section_title: Chi-square Distribution
+            - section_title: Student's t-distribution
+            - section_title: F-distribution
+        - chapter_title: More Common Distributions
+          sections:
+            - section_title: Multivariate Normal Distribution
+            - section_title: Multivariate Exponential Distribution
+            - section_title: Multivariate Uniform Distribution
+            - section_title: Multivariate Chi-square Distribution
+            - section_title: Multivariate Student's t-distribution
+            - section_title: Multivariate F-distribution
+        - chapter_title: Linearized Error Propagation
+          sections:
+            - section_title: Error Propagation in Linear Systems
+            - section_title: Propagation of Sums and Differences of Random Variables
+            - section_title: Propagation of Products and Quotients of Random Variables
+            - section_title: Propagation of Functions of Random Variables
+        - chapter_title: More Linearized Error Propagation
+          sections:
+            - section_title: Error Propagation in Non-linear Systems
+            - section_title: Propagation of Random Variables through Non-linear Functions
+            - section_title: Taylor Series Expansion Method
+            - section_title: Monte Carlo Simulation Method
+        - chapter_title: Concept of a Random Process
+          sections:
+            - section_title: Introduction to Random Processes
+            - section_title: Stationary and Non-stationary Processes
+            - section_title: Autocorrelation Function
+            - section_title: Cross-correlation Function
+            - section_title: Power Spectral Density Function
+        - chapter_title: Autocorrelation Function
+          sections:
+            - section_title: Definition and Properties
+            - section_title: Calculation Methods
+            - section_title: Autocorrelation of Random Signals
+            - section_title: Autocorrelation of Random Processes
+        - chapter_title: Power Spectral Density Function
+          sections:
+            - section_title: Definition and Properties
+            - section_title: Calculation Methods
+            - section_title: Relationship with Autocorrelation Function
+            - section_title: Spectral Representation of Random Processes
+        - chapter_title: Gauss-Markov Process
+          sections:
+            - section_title: Definition and Properties
+            - section_title: Linear Least Squares Estimation
+            - section_title: Kalman Filter
+            - section_title: Application Examples
+        - chapter_title: Determination of Autocorrelation and Spectral Density Functions from Experimental Data
+          sections:
+            - section_title: Estimation Methods
+            - section_title: Periodogram Method
+            - section_title: Bartlett Method
+            - section_title: Welch Method
+            - section_title: Blackman-Tukey Method
+        - chapter_title: Introduction: The Analysis Problem
+          sections:
+            - section_title: Introduction to Estimation and Control Problems
+            - section_title: Formulation of the Analysis Problem
+            - section_title: Performance Measures
+        - chapter_title: Pure White Noise and Bandlimited Systems
+          sections:
+            - section_title: Definition and Properties of White Noise
+            - section_title: White Noise Filtering
+            - section_title: Bandlimited Systems
+            - section_title: Frequency Domain Analysis
+        - chapter_title: Nonstationary
+          sections:
+            - section_title: Definition and Properties
+            - section_title: Time-varying Systems
+            - section_title: Time-frequency Analysis
+            - section_title: Wavelet Transform
+        - chapter_title: The Wiener Filter Problem
+          sections:
+            - section_title: Optimal Filtering Problem
+            - section_title: Wiener Filter Solution
+            - section_title: Wiener Filter Performance
+            - section_title: Adaptive Filtering
+        - chapter_title: The Stationary Optimization Problem - Weighting Function Approach
+          sections:
+            - section_title: Weighting Function Approach
+            - section_title: Optimal Filtering Problem with Constraints
+            - section_title: Solution by Convex Optimization
+            - section_title: Application Examples
+        - chapter_title: Complementary Filter
+          sections:
+            - section_title: Definition and Properties
+            - section_title: Combination of Multiple Filters
+            - section_title: Sensor Fusion
+            - section_title: Application Examples
+        - chapter_title: Estimation
+          sections:
+            - section_title: Estimation of Parameters
+            - section_title: Maximum Likelihood Estimation
+            - section_title: Bayesian Estimation
+            - section_title: Recursive Estimation
+        - chapter_title: Markov Processes
+          sections:
+            - section_title: Definition and Properties
+            - section_title: Markov Chains
+            - section_title: Hidden Markov Models
+            - section_title: Markov Decision Processes
+        - chapter_title: State Space Description
+          sections:
+            - section_title: State Space Models
+            - section_title: State Estimation
+            - section_title: State Prediction
+            - section_title: Control Systems
+        - chapter_title: Monte Carlo Simulation of Discrete-Time Systems
+          sections:
+            - section_title: Discrete-Time Systems
+            - section_title: Monte Carlo Simulation Method
+            - section_title: Random Number Generation
+            - section_title: Application Examples
+        - chapter_title: Transition from the Discrete to Continuous Filter Equations
+          sections:
+            - section_title: Discretization Methods
+            - section_title: Euler Method
+            - section_title: Runge-Kutta Methods
+            - section_title: Continuous Filter Equations
+        - chapter_title: Divergence Problems
+          sections:
+            - section_title: Stability Analysis
+            - section_title: Divergence Criteria
+            - section_title: Limitations of Estimation and Control Systems
+            - section_title: Application Examples
+        - chapter_title: Complementary Filter Methodology
+          sections:
+            - section_title: Design Methodology
+            - section_title: Performance Evaluation
+            - section_title: Application Examples
+```

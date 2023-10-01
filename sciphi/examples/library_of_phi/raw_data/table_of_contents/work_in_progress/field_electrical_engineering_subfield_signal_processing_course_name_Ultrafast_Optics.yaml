@@ -1,0 +1,51 @@
+```yaml
+course:
+  Ultrafast Optics:
+    textbook:
+      Ultrafast Optics: Principles and Applications:
+        chapters:
+          - Introduction to Ultrafast Optics:
+            sections:
+              - Overview of Ultrafast Optics
+              - Generation of Ultrafast Pulses
+              - Ultrafast Laser Systems
+              - Pulse Characterization Techniques
+              - Nonlinear Optics
+          - Maxwell-Bloch Equation:
+            sections:
+              - Two-Level Atoms and Rabi Flopping
+              - Dispersion, Absorption, Gain
+          - Nonlinear Pulse Propagation:
+            sections:
+              - Pulse Compression
+              - Self-Phase Modulation (SPM) and Solitons
+              - Soliton Perturbation Theory
+              - Optical Solitons in Fibers
+          - Rate Equations and Relaxation Oscillation:
+            sections:
+              - Rate Equations for Laser Dynamics
+              - Relaxation Oscillation
+              - Gain Saturation and Mode-Locking
+          - Q-Switching:
+            sections:
+              - Introduction to Q-Switching
+              - Q-Switched Laser Operation
+              - Active Q-Switching
+              - Passive Q-Switching
+          - Master Equation and Active Mode-Locking:
+            sections:
+              - Master Equation for Laser Dynamics
+              - Active Mode-Locking
+              - Stabilization Techniques for Mode-Locked Lasers
+          - Ultrafast Optics Applications:
+            sections:
+              - Ultrafast Spectroscopy
+              - Ultrafast Imaging
+              - Ultrafast Time-Resolved Measurements
+              - Ultrafast Nonlinear Optics
+              - Ultrafast Laser Micromachining
+              - Attosecond Science and High Harmonic Generation
+              - Ultrafast Optoelectronics
+              - Ultrafast Optical Communication Systems
+              - Ultrafast Quantum Information Processing
+```

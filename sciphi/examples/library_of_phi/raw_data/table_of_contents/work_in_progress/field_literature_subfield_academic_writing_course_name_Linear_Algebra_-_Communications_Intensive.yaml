@@ -1,0 +1,83 @@
+course:
+  Linear Algebra - "Communications Intensive" Textbook:
+    chapters:
+    - Introduction to Mathematical Writing:
+        sections:
+        - Writing Mathematical Proofs
+        - Mathematical Notation
+        - Logical Reasoning
+        - Proof Techniques
+        - Writing Style
+    - Linear Spaces:
+        sections:
+        - Vector Spaces
+        - Subspaces
+        - Linear Independence
+        - Basis and Dimension
+        - Span and Linear Combinations
+        - Orthogonality
+        - Inner Product Spaces
+    - Linear Mappings:
+        sections:
+        - Matrix Representations
+        - Null Space and Range
+        - Rank and Nullity
+        - Inverse Mappings
+        - Eigenvalues and Eigenvectors
+        - Diagonalization
+    - Matrices:
+        sections:
+        - Matrix Operations
+        - Determinants
+        - Cramer's Rule
+        - Row Echelon Form
+        - Reduced Row Echelon Form
+        - Systems of Linear Equations
+    - Publishing Program LATEX:
+        sections:
+        - Document Formatting
+        - Equations and Symbols
+        - Figures and Tables
+        - Bibliographies and Citations
+    - Subspaces and Direct Sums:
+        sections:
+        - Direct Sums
+        - Orthogonal Complements
+        - Projection Operators
+        - Linear Transformations
+        - Change of Basis
+        - Similarity Transformations
+        - Jordan Canonical Form
+    - Reflections in a Euclidean Space:
+        sections:
+        - Reflection Matrices
+        - Fixed Points and Eigenvectors
+        - Orthogonal Reflections
+        - Geometric Interpretation
+    - Abstract Root Systems:
+        sections:
+        - Root Lattices
+        - Simple and Positive Roots
+        - Dynkin Diagrams
+        - Classification Theorems
+    - Properties of Simple Roots:
+        sections:
+        - Simple Root Multiplicities
+        - Weyl Group Symmetries
+        - Dual Root Systems
+        - Reflection Groups
+        - Coxeter Groups
+    - Cartan Matrix of a Root System:
+        sections:
+        - Construction of Cartan Matrix
+        - Properties and Invariants
+        - Classification of Cartan Matrices
+        - Root System Representations
+        - Root Systems in Lie Algebras
+    - Dynkin Diagrams and Classification:
+        sections:
+        - Construction of Dynkin Diagrams
+        - Types of Dynkin Diagrams
+        - Classification of Semisimple Lie Algebras
+        - Simple Lie Algebras and Groups
+        - Compact Lie Groups

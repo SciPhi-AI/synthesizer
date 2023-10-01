@@ -1,0 +1,72 @@
+textbook:
+  Intermediate Microeconomic Theory: A Comprehensive Guide
+  chapters:
+    - Chapter 1: Motivation and Objectives of the Course
+      sections:
+        - Section 1.1: Economics as Experiments
+        - Section 1.2: Models as Fully Articulated Systems or Labs
+        - Section 1.3: RCT’s versus Natural Experiments
+        - Section 1.4: Prediction and Validation
+        - Section 1.5: Actual and Counterfactual Policy and Welfare
+        - Section 1.6: Theory and Measurement Unified
+        - Section 1.7: Big Data
+        - Section 1.8: Computation
+        - Section 1.9: Villages Economies Real and as Metaphors for Modern Systems
+        - Section 1.10: Bitcoin/Blockchain/Distributed Ledgers
+    - Chapter 2: Preferences
+      sections:
+        - Section 2.1: Preferences and Utility Maximization
+    - Chapter 3: Income and Substitution Effects
+      sections:
+        - Section 3.1: Income and Substitution Effects
+    - Chapter 4: Production and Profit Maximization
+      sections:
+        - Section 4.1: Production and Profit Maximization
+    - Chapter 5: Uncertainty
+      sections:
+        - Section 5.1: Uncertainty
+    - Chapter 6: Dynamic Optimization
+      sections:
+        - Section 6.1: Dynamic Optimization
+    - Chapter 7: Pareto Optimality
+      sections:
+        - Section 7.1: Pareto Optimality
+    - Chapter 8: Risk-Sharing Application
+      sections:
+        - Section 8.1: Risk-Sharing Application I
+        - Section 8.2: Village India / Portfolio Choice
+        - Section 8.3: Risk-Sharing Application II
+        - Section 8.4: Financial Modeling
+    - Chapter 9: Mechanism Design
+      sections:
+        - Section 9.1: Mechanism Design
+        - Section 9.2: Contracts and Mechanism Design I
+        - Section 9.3: Moral Hazard
+        - Section 9.4: Contracts and Mechanism Design II
+    - Chapter 10: Walrasian Equilibrium and International Trade
+      sections:
+        - Section 10.1: Walrasian Equilibrium and International Trade
+        - Section 10.2: 2x2x2 model
+        - Section 10.3: Trade Application I
+        - Section 10.4: Trade Application II
+    - Chapter 11: Welfare Theorems
+      sections:
+        - Section 11.1: Welfare Theorems
+        - Section 11.2: Existence of Equilibria
+        - Section 11.3: Gorman Aggregation
+        - Section 11.4: Identification
+        - Section 11.5: Aggregation & Failure of Welfare Theorems
+        - Section 11.6: Failure of Welfare Theorems
+    - Chapter 12: Monetary Theory
+      sections:
+        - Section 12.1: Monetary Theory
+    - Chapter 13: Exam Reviews
+      sections:
+        - Section 13.1: Exam #1 Review
+        - Section 13.2: Exam #2 Review
+        - Section 13.3: Exam #3 Review
+    - Chapter 14: Exams
+      sections:
+        - Section 14.1: Exam #1
+        - Section 14.2: Exam #2
+        - Section 14.3: Exam #3

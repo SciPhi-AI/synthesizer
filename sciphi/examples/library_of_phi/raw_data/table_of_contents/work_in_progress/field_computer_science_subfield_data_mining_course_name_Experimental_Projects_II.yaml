@@ -1,0 +1,65 @@
+textbook:
+  Experimental Projects II: A Comprehensive Guide to Designing and Conducting Experiments
+  
+chapters:
+  - chapter1: Project Design and Proposal
+    sections:
+      - section1.1: Design Proposal in 16.621
+      - section1.2: Setting up and Conducting Experiments
+      - section1.3: Conclusion of Experiments
+      - section1.4: Designing Experiments for Different Research Questions
+    subsections:
+      - subsection1.4.1: Hypothesis Generation and Experimental Variables
+      - subsection1.4.2: Sample Size Determination
+      - subsection1.4.3: Experimental Design Considerations
+      - subsection1.4.4: Ethical Considerations in Experimental Design
+
+  - chapter2: Progress Reports
+    sections:
+      - section2.1: Formal Mid-term Oral Reports
+      - section2.2: Final Oral Reports
+      - section2.3: Submission of Final Report
+      - section2.4: Samples of Reports
+    subsections:
+      - subsection2.4.1: Writing Effective Progress Reports
+      - subsection2.4.2: Analyzing and Presenting Experimental Data
+      - subsection2.4.3: Formatting and Style Guidelines for Reports
+
+  - chapter3: Team Meetings
+    sections:
+      - section3.1: Sign-up for Team Meetings
+      - section3.2: Informal 15 Minute Team Meetings
+      - section3.3: Status Reports with Course Staff and Advisor
+    subsections:
+      - subsection3.3.1: Effective Communication in Team Meetings
+      - subsection3.3.2: Team Collaboration and Conflict Resolution
+      - subsection3.3.3: Building Effective Relationships with Advisors
+
+  - chapter4: Communication Class
+    sections:
+      - section4.1: Progress Reports
+      - section4.2: Oral Progress Reports
+      - section4.3: Final Report Presentation
+      - section4.4: Final Oral Presentations
+    subsections:
+      - subsection4.4.1: Effective Presentation Skills
+      - subsection4.4.2: Visual Aids and Multimedia in Presentations
+      - subsection4.4.3: Handling Questions and Q&A Sessions
+
+  - chapter5: Class Schedule and Deadlines
+    sections:
+      - section5.1: Key Dates and Deadlines
+      - section5.2: Last Day to Take Data
+      - section5.3: Progress Review
+    subsections:
+      - subsection5.3.1: Time Management and Planning for Experiments
+      - subsection5.3.2: Tracking and Monitoring Progress
+
+  - chapter6: Previous Semesters
+    sections:
+      - section6.1: Bennett, Fall 2002
+      - section6.2: de Mierry, Fall 2002
+      - section6.3: Qu, Spring 2003
+    subsections:
+      - subsection6.3.1: Lessons Learned from Previous Projects
+      - subsection6.3.2: Case Studies and Best Practices from Previous Semesters

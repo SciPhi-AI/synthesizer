@@ -1,0 +1,105 @@
+textbook:
+  Structure of Earth Materials: A Comprehensive Guide
+  
+chapters:
+  - Crystal Symmetry:
+    sections:
+      - 2-D Symmetry Operations
+      - 3-D Symmetry + Translation
+      - Point Groups and Space Groups
+      - Crystal Symmetry in Minerals
+    subsections:
+      - Crystal Systems
+      - Symmetry Elements in Crystals
+      - Symmetry Operations in Crystals
+      - Symmetry Operators in Crystals
+
+  - Crystal Chemistry and Bonding:
+    sections:
+      - Coordination Number and Polyhedra
+      - Bonding Models - Ionic - Electrostatics
+      - Bonding Models - Covalent - Metallic
+      - Crystal Structures and Bonding in Minerals
+    subsections:
+      - Coordination Polyhedra and their Significance
+      - Ionic Bonding and its Characteristics
+      - Electrostatics in Minerals
+      - Covalent Bonding in Minerals
+      - Metallic Bonding in Minerals
+
+  - X-ray and Electron Diffraction:
+    sections:
+      - Crystal Lattices - Reciprocal Lattices
+      - X-ray Generation, Diffraction, Bragg’s Law
+      - X-ray and Electron Diffraction Techniques
+    subsections:
+      - Crystal Lattices and their Properties
+      - Reciprocal Lattices and their Applications
+      - Generation of X-rays and Electrons
+      - X-ray Diffraction and its Principles
+      - Bragg’s Law and its Applications
+
+  - Mineral Groups:
+    sections:
+      - Earth’s Element Inventory - Metals and Sulfides
+      - High P Mantle Mineralogy
+      - Pyriboles
+      - Feldspar, Quartz
+      - Carbonates, Sulfates, etc.
+      - Mineral Identification Techniques
+    subsections:
+      - Metals and Sulfides in Earth's Element Inventory
+      - High Pressure Mantle Mineralogy and its Significance
+      - Pyriboles and their Importance in Geology
+      - Feldspar and Quartz - Common Rock-Forming Minerals
+      - Carbonates, Sulfates, and their Geological Applications
+      - Techniques for Mineral Identification
+
+  - Tensor Properties:
+    sections:
+      - Representation Quadrics
+      - Tensor Analysis in Geophysics
+      - Applications of Tensors in Earth Materials
+    subsections:
+      - Representation Quadrics and their Geometric Properties
+      - Tensor Analysis and its Mathematical Framework
+      - Tensor Applications in Geophysics
+      - Tensor Applications in Earth Materials
+
+  - The Interaction of Electric Fields with Crystals: An Introduction to Crystal Optics:
+    sections:
+      - Optical Indicatrices
+      - Optical Properties
+      - Crystal Optics and its Applications
+    subsections:
+      - Optical Indicatrices and their Characteristics
+      - Optical Properties of Crystals
+      - Applications of Crystal Optics in Geology
+
+  - Stress and Strain:
+    sections:
+      - Stiffness and Compliance
+      - Stress-Strain Relationships in Earth Materials
+    subsections:
+      - Stiffness and Compliance in Geophysics
+      - Stress-Strain Relationships and their Applications
+
+  - Point and Line Defects:
+    sections:
+      - Magnetic Properties
+      - Defects in Crystals and their Influence
+    subsections:
+      - Magnetic Properties of Crystals
+      - Defects in Crystals and their Importance
+
+  - Review:
+    sections:
+      - Hardness
+      - Microprobe
+      - Defects I
+      - Review
+    subsections:
+      - Hardness and its Measurement
+      - Microprobe Analysis in Earth Materials
+      - Defects I: Point Defects and their Characteristics
+      - Review of Key Concepts in Structure of Earth Materials

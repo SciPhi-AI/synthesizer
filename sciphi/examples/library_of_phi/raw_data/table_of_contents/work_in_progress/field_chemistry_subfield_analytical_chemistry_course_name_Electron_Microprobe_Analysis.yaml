@@ -1,0 +1,33 @@
+textbook:
+  Electron Microprobe Analysis: A Comprehensive Guide
+chapters:
+- Introduction to Electron Microprobe Analysis:
+    sections:
+    - Electron-Specimen Interactions
+    - Electron Detectors
+    - Scanning Electron Imaging (BSE and SE)
+    - Cathodoluminescence (CL) Imaging
+- X-ray Generation and Detection:
+    sections:
+    - Wavelength Dispersive Spectrometer (WDS)
+    - X-ray Emission and Measurement
+- Quantitative Analysis using WDS:
+    sections:
+    - Sample Preparation
+    - Carbon Coating
+    - Peak and Background in WD Spectra
+    - Detector Settings through Pulse Height Analysis
+    - Peak Overlap Corrections
+- Qualitative Analysis with BSE Imaging and EDS:
+    sections:
+    - Composite Sample Analysis
+- Semi-Quantitative Analysis and Compositional Imaging with WDS:
+    sections:
+    - Compositional Imaging
+- Analysis of Alloy Systems with WDS:
+    sections:
+    - Fe-Ni Alloys
+    - Ti-V Alloys
+- Matrix Corrections in Alloy Systems:
+    sections:
+    - ZAF Corrections

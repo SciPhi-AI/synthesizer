@@ -1,0 +1,91 @@
+textbook:
+  Microelectronic Devices and Circuits: A Comprehensive Guide
+
+chapters:
+  - Introduction to Semiconductors and Doping:
+      sections:
+        - Carrier Concentrations
+        - Generation and Recombination
+        - Thermal Equilibrium
+        - Carrier Dynamics and Transport
+  - P-N Junctions and Diodes:
+      sections:
+        - Depletion Approximation
+        - Reverse Bias
+        - Minority Carrier Injection
+        - Forward Bias Characteristics
+        - Diode Models and Equivalent Circuits
+        - Zener Diodes and Breakdown
+  - Bipolar Junction Transistors (BJTs):
+      sections:
+        - Terminal Characteristics
+        - Regions of Operation
+        - Coupled Diodes
+        - Solar Cells and LEDs
+        - BJT Models and Equivalent Circuits
+        - Amplifier Configurations
+  - MOS Capacitors and MOSFETs:
+      sections:
+        - Accumulation, Depletion, and Inversion
+        - Gradual Channel Approximation
+        - Output Characteristics
+        - Subthreshold Operation
+        - MOSFET Models and Equivalent Circuits
+        - CMOS Inverter and Logic Gates
+  - CMOS and Logic Inverters:
+      sections:
+        - Transfer Characteristics
+        - Noise Margins
+        - Optimal Device Sizing
+        - Switching Delays and Power Dissipation
+        - CMOS Logic Gates
+        - Complex CMOS Circuits
+  - Linear Amplifiers:
+      sections:
+        - Performance Metrics
+        - Current Source Biasing
+        - Current Mirrors
+        - Mid-band Range
+        - Differential Amplifiers
+        - Cascode Amplifiers
+  - Single-transistor Building Block Stages:
+      sections:
+        - Common-source
+        - Common-gate
+        - Common-drain
+        - Source-follower and Emitter-follower
+        - Current Steering Logic
+  - Differential Amplifiers:
+      sections:
+        - Large Signal Transfer Characteristics
+        - Small Signal Analysis
+        - Common- and Difference-mode Inputs
+        - Active Load Differential Amplifiers
+        - Cascode Differential Amplifiers
+        - Symmetrical Differential Amplifiers
+  - Multi-stage Amplifiers:
+      sections:
+        - Cascading Differential Stages
+        - Output Stages
+        - Active Loads
+        - Maximum Gain Biasing
+        - Feedback Amplifiers
+        - Power Amplifiers
+  - Frequency Response and Subthreshold Amplifiers:
+      sections:
+        - Miller Effect
+        - Intrinsic Frequency Limitations
+        - OCTC Method
+        - Ultra-Low Power Electronics
+        - MOS Imagers
+        - Current Mirrors for Subthreshold Operation
+  - Device Scaling and Technology:
+      sections:
+        - MOSFET Scaling
+        - Advanced CMOS Technologies
+        - Non-Silicon-Based Technologies
+        - Nanoelectronic Devices and Circuits
+  - Semester Wrap-up:
+      sections:
+        - Life After Microelectronic Devices and Circuits
+        - Emerging Trends in Microelectronics

@@ -1,0 +1,55 @@
+textbook:
+  Waste Containment and Remediation Technology Handbook:
+    chapters:
+      - Introduction to Remediation Technology:
+          sections:
+            - Hazardous Waste Regulations and Hazardous Materials
+            - Contaminant Transport Mechanisms and Principles
+            - Multi-Phase Flow in Porous Media
+            - NAPL Fate and Transport
+            - Site Characterization
+      - Remediation Principles and Techniques:
+          sections:
+            - Source Control and Management of Migration Covers
+            - Cut-off Walls
+            - Solidification/Stabilization
+            - Pump-and-treat Systems
+            - Solvent Vapor Extraction
+            - Air Sparging
+            - Soil Flushing
+      - Advanced Remediation Technologies:
+          sections:
+            - Funnel and Gate Systems
+            - Permeable Treatment Walls
+            - Bioremediation
+            - Natural Attenuation
+            - New Remediation Technologies
+            - Technical Impracticability
+      - Waste Disposal and Containment:
+          sections:
+            - Introduction to Solid, Hazardous, and Radioactive Waste Disposal and Containment
+            - Design of Landfill
+            - Leachate and Gas Production in Landfill
+            - Landfill Hydrology
+            - Field Trip to Landfill
+      - Liners and Geomembranes:
+          sections:
+            - Compacted Soil Liners
+            - Synthetic Clay Liners
+            - Geomembranes
+            - Landfill Construction QA, Monitoring, and Closure
+      - Additional Topics:
+          sections:
+            - Brownfields
+            - Hazardous Waste Practice
+            - Landfill Siting and Permitting
+            - Risk Assessment and Risk Management
+            - Remediation Cost Estimation and Economic Evaluation
+            - Environmental Impact Assessment for Waste Containment
+      - Appendices:
+          sections:
+            - Glossary
+            - Abbreviations and Acronyms
+            - Conversion Factors
+            - Units and Dimensions
+            - References

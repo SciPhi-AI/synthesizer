@@ -1,0 +1,79 @@
+textbook:
+  Large-scale Flow Dynamics: Understanding Atmospheric and Oceanic Flows
+
+chapters:
+  - Invertability and Superposition Principles:
+    sections:
+      - 2D Inversion Projects Introduced
+      - 2D Inversion In-Class Work
+      - 2D Inversion Presentations
+      - 2D Inversion Case Studies
+    subsections:
+      - Principles of Invertability
+      - Superposition Techniques
+
+  - Geostrophic Adjustment:
+    sections:
+      - Geostrophic Adjustment Projects Introduced
+      - Geostrophic Adjustment In-Class Work
+      - Geostrophic Adjustment Presentations
+      - Geostrophic Adjustment Case Studies
+    subsections:
+      - Introduction to Geostrophic Adjustment
+      - Physical Mechanisms of Geostrophic Adjustment
+      - Applications of Geostrophic Adjustment
+
+  - Barotropic Vorticity Equation and Quasi-Geostrophic Balance:
+    sections:
+      - Vortex Interaction Projects Introduced
+      - Vortex Interaction In-Class Work
+      - Vortex Interaction Presentations
+      - Vortex Interaction Case Studies
+    subsections:
+      - Derivation of Barotropic Vorticity Equation
+      - Quasi-Geostrophic Balance Concepts
+      - Analysis of Vortex Interaction
+
+  - Rossby Waves and Quasi-Geostrophic:
+    sections:
+      - Rossby Waves and Quasi-Geostrophic Projects Introduced
+      - Rossby Waves and Quasi-Geostrophic In-Class Work
+      - Rossby Waves and Quasi-Geostrophic Presentations
+      - Rossby Waves and Quasi-Geostrophic Case Studies
+    subsections:
+      - Properties and Characteristics of Rossby Waves
+      - Quasi-Geostrophic Approximation and its Applications
+      - Observational Analysis of Rossby Waves
+
+  - Frontal Waves:
+    sections:
+      - Frontal Waves Projects Introduced
+      - Frontal Waves In-Class Work
+      - Frontal Waves Presentations
+      - Frontal Waves Case Studies
+    subsections:
+      - Introduction to Frontal Waves
+      - Formation and Evolution of Frontal Waves
+      - Frontal Wave Interactions with the Environment
+
+  - Baroclinic Instability:
+    sections:
+      - Baroclinic Instability Projects Introduced
+      - Baroclinic Instability In-Class Work
+      - Baroclinic Instability Presentations
+      - Baroclinic Instability Case Studies
+    subsections:
+      - Overview of Baroclinic Instability
+      - Factors Influencing Baroclinic Instability
+      - Analysis and Prediction of Baroclinic Instability
+
+  - Geostrophic Balance:
+    sections:
+      - Geostrophic Balance Projects Introduced
+      - Geostrophic Balance In-Class Work
+      - Geostrophic Balance Presentations
+      - Geostrophic Balance Case Studies
+    subsections:
+      - Principles of Geostrophic Balance
+      - Applications and Consequences of Geostrophic Balance
+      - Advanced Techniques in Geostrophic Balance Analysis

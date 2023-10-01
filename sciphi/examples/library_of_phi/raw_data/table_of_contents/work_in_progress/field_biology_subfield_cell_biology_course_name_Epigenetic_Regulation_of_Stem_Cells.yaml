@@ -1,0 +1,80 @@
+textbook:
+  Epigenetic Regulation of Stem Cells: A Comprehensive Guide
+
+chapters:
+  - Introduction:
+    sections:
+      - Lecture Summary
+      - Introduction to stem cells and induced pluripotency
+      - Importance of Epigenetic Regulation in Stem Cells
+
+  - Epigenetic Memory and Epigenetic States:
+    sections:
+      - Differential Plasticity of Epiblast and Primitive Endoderm Precursors within the ICM of the Early Mouse Embryo
+      - Induction of Pluripotent Stem Cells from Mouse Embryonic and Adult Fibroblast Cultures by Defined Factors
+      - Epigenetic Modifications and Cellular Memory in Stem Cells
+
+  - DNA Methylation:
+    sections:
+      - DNA Methylation: Mechanisms and Functions
+      - Maintenance and Demethylation of DNA Methylation Patterns
+      - DNA Methylation Dynamics during Cellular Reprogramming
+
+  - DNA Methyl-Binding Proteins:
+    sections:
+      - DNA Methyl-Binding Proteins: Structure and Function
+      - Interactions of DNA Methyl-Binding Proteins with Chromatin
+      - Role of DNA Methyl-Binding Proteins in Stem Cell Differentiation
+
+  - Histone Marks and Epigenomic Sequencing Technologies:
+    sections:
+      - Histone Marks and Their Role in Gene Regulation
+      - Techniques for Mapping Histone Modifications and Chromatin Accessibility
+      - Epigenomic Sequencing Technologies and their Application in Stem Cell Research
+
+  - Polycomb Group Proteins:
+    sections:
+      - Polycomb Group Proteins and Transcriptional Repression
+      - Polycomb Repressive Complexes and Their Role in Development
+      - Polycomb Proteins in Stem Cell Maintenance and Differentiation
+
+  - Enhancers:
+    sections:
+      - Enhancers: Definition and Mechanisms of Action
+      - Enhancer Promoter Interactions in Stem Cells
+      - Enhancer Reprogramming and Cellular Identity
+
+  - Super Enhancers:
+    sections:
+      - Super Enhancers: Properties and Functions
+      - Formation and Regulation of Super Enhancers
+      - Super Enhancers in Stem Cell Pluripotency and Differentiation
+
+  - Non-coding RNA:
+    sections:
+      - Non-coding RNA: Types and Classification
+      - Regulatory Roles of Non-coding RNA in Stem Cells
+      - Therapeutic Potential of Non-coding RNA in Stem Cell-based Therapies
+
+  - Modeling Complex Biological Systems & Student Paper Discussions:
+    sections:
+      - Computational Approaches for Modeling Stem Cell Behavior
+      - Integration of Multi-omics Data in Stem Cell Research
+      - Student Paper Discussions on Stem Cell Models and Data Analysis
+
+  - Chromatin Nuclear Topology:
+    sections:
+      - Organization of Chromatin in the Nucleus
+      - Nuclear Topology and Gene Regulation in Stem Cells
+      - Three-dimensional Genome Architecture and Stem Cell Identity
+
+  - Stem Cell Therapy:
+    sections:
+      - Overview of Stem Cell Therapy
+      - Current Applications and Challenges of Stem Cell Therapy
+      - Future Directions in Stem Cell-based Therapies
+
+  - Final Presentations:
+    sections:
+      - Preparing and Delivering Effective Scientific Presentations
+      - Student Presentations on Stem Cell Research Projects

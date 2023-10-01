@@ -1,0 +1,265 @@
+```yaml
+textbook:
+  'Single-Molecule Imaging: Capturing Nanoscale Cellular Machines in Action':
+    chapters:
+    - Introduction to Single Molecule Imaging Techniques:
+        sections:
+        - Single Optical Traps:
+            subsections:
+            - Introduction to Optical Traps
+            - Trap Calibration and Force Measurements
+            - Applications of Single Optical Traps
+        - Magnetic Tweezers:
+            subsections:
+            - Principles of Magnetic Tweezers
+            - Experimental Setup and Calibration
+            - Applications of Magnetic Tweezers
+        - Double Optical Traps:
+            subsections:
+            - Introduction to Double Optical Traps
+            - Techniques for Manipulating Dual Beams
+            - Applications of Double Optical Traps
+    - Total Internal Reflection Fluorescence Microscopy:
+        sections:
+        - Single-Molecule FRET:
+            subsections:
+            - Principles of Single-Molecule FRET
+            - Experimental Design and Data Analysis
+            - Applications of Single-Molecule FRET
+        - DNA Curtains and Extensions by Flow:
+            subsections:
+            - Generation of DNA Curtains
+            - Flow-Induced DNA Extension Techniques
+            - Applications of DNA Curtains and Extensions
+        - 'Fleezers: Combining Fluorescence with Optical Tweezers':
+            subsections:
+            - Introduction to Fleezers
+            - Experimental Setup and Integration of Techniques
+            - Applications of Fleezers
+    - 'Fleezers 2.0: Dual Traps Combined with Confocal Microscopy':
+        sections:
+        - Optical Traps Meet both Confocal and FRET:
+            subsections:
+            - Integration of Optical Traps with Confocal Microscopy
+            - Integration of Optical Traps with FRET
+            - Applications of Combined Techniques
+        - Stochastic Optical Reconstruction Microscopy:
+            subsections:
+            - Principles and Techniques of STORM
+            - Sample Preparation and Imaging Considerations
+            - Applications of STORM
+        - Photoactivation Localization Microscopy:
+            subsections:
+            - Principles and Techniques of PALM
+            - Fluorophore Photoswitching and Activation
+            - Applications of PALM
+        - Structured Illumination Microscopy:
+            subsections:
+            - Introduction to SIM
+            - Illumination Patterns and Image Reconstruction
+            - Applications of SIM
+    - Oral Presentations and Final Discussions:
+        sections:
+        - Presentation Skills:
+            subsections:
+            - Effective Communication Techniques
+            - Visual Aids and Slide Design
+            - Public Speaking Tips
+        - Q&A Sessions:
+            subsections:
+            - Strategies for Answering Questions
+            - Handling Challenging Questions
+            - Creating Engaging Discussions
+        - Final Discussions and Conclusions:
+            subsections:
+            - Summarizing Key Findings
+            - Identifying Future Research Directions
+            - Reflections on Course Content
+    - Single Molecule Imaging Techniques in Cell Biology:
+        sections:
+        - Protein Dynamics:
+            subsections:
+            - Studying Protein Conformational Changes
+            - Protein-Protein Interactions
+            - Protein Localization and Transport
+        - Molecular Motors:
+            subsections:
+            - Introduction to Molecular Motors
+            - Motility Assays and Experimental Techniques
+            - Motor Function and Regulation
+        - DNA Replication:
+            subsections:
+            - Replication Fork Dynamics
+            - Replication Origins and Initiation
+            - Coordination and Regulation of Replication
+        - RNA Transcription:
+            subsections:
+            - Transcription Initiation and Elongation
+            - RNA Polymerase Dynamics and Regulation
+            - Co-transcriptional RNA Processing
+        - Cellular Signaling Pathways:
+            subsections:
+            - Signal Transduction Mechanisms
+            - Intracellular Signal Transduction Networks
+            - Spatiotemporal Dynamics of Signaling
+        - Membrane Dynamics:
+            subsections:
+            - Lipid Bilayer Structure and Properties
+            - Membrane Protein Dynamics and Function
+            - Membrane Trafficking and Fusion
+    - Super-Resolution Imaging Techniques:
+        sections:
+        - Localization-Based Techniques:
+            subsections:
+            - Principles of Localization-Based Imaging
+            - Single-Molecule Localization Algorithms
+            - Applications of Localization-Based Techniques
+        - Stimulated Emission Depletion Microscopy (STED):
+            subsections:
+            - Principles and Techniques of STED
+            - STED Imaging Modes and Resolution Enhancement
+            - Applications of STED Microscopy
+        - Photoactivated Localization Microscopy (PALM):
+            subsections:
+            - Principles and Techniques of PALM
+            - Photoactivation and Imaging Considerations
+            - Applications of PALM Microscopy
+        - Stochastic Optical Reconstruction Microscopy (STORM):
+            subsections:
+            - Principles and Techniques of STORM
+            - Sample Preparation and Imaging Considerations
+            - Applications of STORM Microscopy
+    - Data Analysis and Image Processing:
+        sections:
+        - Image Registration:
+            subsections:
+            - Techniques for Image Alignment
+            - Registration Algorithms and Validation
+            - Applications of Image Registration
+        - Particle Tracking:
+            subsections:
+            - Tracking Algorithms and Approaches
+            - Trajectory Analysis and Visualization
+            - Applications of Particle Tracking
+        - Fluorescence Intensity Analysis:
+            subsections:
+            - Image Intensity Measurement Techniques
+            - Quantitative Analysis of Fluorescence Signals
+            - Applications of Fluorescence Intensity Analysis
+        - Single-Molecule Localization:
+            subsections:
+            - Localization Algorithms and Approaches
+            - Precision and Accuracy Considerations
+            - Applications of Single-Molecule Localization
+        - Colocalization Analysis:
+            subsections:
+            - Methods for Colocalization Analysis
+            - Statistical Analysis and Interpretation
+            - Applications of Colocalization Analysis
+        - Image Segmentation:
+            subsections:
+            - Segmentation Techniques for Image Analysis
+            - Region-Based and Edge-Based Segmentation
+            - Applications of Image Segmentation
+        - Noise Reduction Techniques:
+            subsections:
+            - Noise Modeling and Characterization
+            - Filtering and Denoising Algorithms
+            - Applications of Noise Reduction Techniques
+    - Advanced Applications of Single-Molecule Imaging:
+        sections:
+        - Single-Molecule Spectroscopy:
+            subsections:
+            - Principles and Techniques of Spectroscopy
+            - Fluorescence Correlation Spectroscopy (FCS)
+            - Applications of Single-Molecule Spectroscopy
+        - Single-Molecule Crystallography:
+            subsections:
+            - Principles and Techniques of Crystallography
+            - X-ray and Electron Diffraction Methods
+            - Applications of Single-Molecule Crystallography
+        - Single-Molecule Force Spectroscopy:
+            subsections:
+            - Force Measurement Techniques and Instruments
+            - Mechanical Unfolding and Manipulation
+            - Applications of Single-Molecule Force Spectroscopy
+        - Single-Molecule Manipulation:
+            subsections:
+            - Optical Manipulation Techniques
+            - Magnetic Manipulation Techniques
+            - Applications of Single-Molecule Manipulation
+        - Single-Molecule Optogenetics:
+            subsections:
+            - Principles and Techniques of Optogenetics
+            - Light-Induced Control of Molecular Processes
+            - Applications of Single-Molecule Optogenetics
+        - Single-Molecule Biophysics:
+            subsections:
+            - Biophysical Techniques for Single-Molecule Studies
+            - Probing Biological Systems at the Nanoscale
+            - Applications of Single-Molecule Biophysics
+    - Challenges and Limitations in Single-Molecule Imaging:
+        sections:
+        - Photobleaching and Phototoxicity:
+            subsections:
+            - Mechanisms and Effects of Photobleaching
+            - Reducing Photobleaching and Phototoxicity
+            - Mitigating Photobleaching Effects in Imaging Experiments
+        - Background Noise and Signal-to-Noise Ratio:
+            subsections:
+            - Sources of Background Noise in Imaging
+            - Strategies for Noise Reduction
+            - Improving Signal-to-Noise Ratio in Single-Molecule Imaging
+        - Spatial and Temporal Resolution Limitations:
+            subsections:
+            - Factors Affecting Spatial Resolution
+            - Factors Affecting Temporal Resolution
+            - Enhancing Resolution in Single-Molecule Imaging
+        - Sample Preparation and Labeling:
+            subsections:
+            - Techniques for Sample Preparation
+            - Fluorescent Labeling Strategies
+            - Considerations for Sample Preparation and Labeling
+        - Data Analysis and Interpretation:
+            subsections:
+            - Statistical Analysis of Single-Molecule Data
+            - Modeling and Simulation of Molecular Processes
+            - Interpreting Experimental Results in Single-Molecule Imaging
+        - Instrumentation and Equipment Limitations:
+            subsections:
+            - Limitations of Optical Microscopes
+            - Challenges in Instrument Calibration and Performance
+            - Overcoming Instrumentation Limitations in Single-Molecule Imaging
+    - Future Directions in Single-Molecule Imaging:
+        sections:
+        - Multi-color Imaging:
+            subsections:
+            - Principles and Techniques of Multi-color Imaging
+            - Fluorescent Dyes and Probes for Multi-color Imaging
+            - Applications and Challenges of Multi-color Imaging
+        - Live-Cell Imaging:
+            subsections:
+            - Techniques for Imaging in Live Cells
+            - Strategies for Minimizing Phototoxicity and Photobleaching
+            - Applications and Limitations of Live-Cell Imaging
+        - Single-Molecule Imaging in Complex Systems:
+            subsections:
+            - Imaging Techniques for Complex Biological Samples
+            - Imaging Challenges and Approaches in Complex Systems
+            - Applications and Future Perspectives of Single-Molecule Imaging in Complex Systems
+        - High-Throughput Single-Molecule Imaging:
+            subsections:
+            - Techniques for High-Throughput Imaging
+            - Data Acquisition and Analysis Strategies
+            - Applications and Advancements in High-Throughput Single-Molecule Imaging
+        - Integration of Single-Molecule Imaging with Other Techniques:
+            subsections:
+            - Hybrid Approaches in Single-Molecule Imaging
+            - Complementary Techniques for Multi-modal Imaging
+            - Applications and Synergies of Integrated Single-Molecule Imaging
+        - Development of Novel Imaging Probes and Labels:
+            subsections:
+            - New Fluorescent Probes and Labels
+            - Advanced Labeling Strategies and Techniques
+            - Applications and Implications of Novel Imaging Probes and Labels
+```

@@ -1,0 +1,89 @@
+```yaml
+textbook:
+  'The Structural Basis of Genetic Material: Nucleic Acids':
+    chapters:
+      - Chapter 1: Introduction to Genetic Material
+        sections:
+          - Section 1.1: The Structure and Function of RNA
+          - Section 1.2: The Structure and Function of DNA
+          - Section 1.3: Supercoiled DNA and its Significance
+          - Section 1.4: Nucleosome: Packaging DNA
+          - Section 1.5: The Genetic Code: Part I
+          - Section 1.6: The Genetic Code: Part II and III
+          - Section 1.7: Polyribosome: Translating mRNA
+          - Section 1.8: The Three-Dimensional Structure of tRNA
+          - Section 1.9: Reverse Transcription: RNA to DNA
+          - Section 1.10: RNA as an Enzyme
+
+      - Chapter 2: Nucleic Acid Replication and Repair
+        sections:
+          - Section 2.1: DNA Replication: Prokaryotes vs Eukaryotes
+          - Section 2.2: DNA Polymerases and their Functions
+          - Section 2.3: DNA Repair Mechanisms
+          - Section 2.4: Telomeres and Telomerase
+
+      - Chapter 3: Transcription and RNA Processing
+        sections:
+          - Section 3.1: Overview of Transcription
+          - Section 3.2: RNA Polymerase: Initiation, Elongation, and Termination
+          - Section 3.3: Transcription Factors and Regulation
+          - Section 3.4: RNA Processing: Capping, Splicing, and Polyadenylation
+
+      - Chapter 4: Translation and Protein Synthesis
+        sections:
+          - Section 4.1: Overview of Translation
+          - Section 4.2: Ribosomes and their Functions
+          - Section 4.3: tRNA Charging and Aminoacyl-tRNA Synthetases
+          - Section 4.4: Initiation, Elongation, and Termination of Translation
+          - Section 4.5: Post-Translational Modifications
+
+      - Chapter 5: RNA World and Evolution of Genetic Material
+        sections:
+          - Section 5.1: RNA World Hypothesis
+          - Section 5.2: RNA-based Evolution
+          - Section 5.3: Origin of DNA and Protein Synthesis
+
+      - Chapter 6: Structural Studies of Nucleic Acids
+        sections:
+          - Section 6.1: X-ray Crystallography
+          - Section 6.2: Nuclear Magnetic Resonance Spectroscopy
+          - Section 6.3: Cryo-Electron Microscopy
+          - Section 6.4: Other Structural Techniques
+
+      - Chapter 7: Nucleic Acid-Protein Interactions
+        sections:
+          - Section 7.1: DNA-Protein Interactions
+          - Section 7.2: RNA-Protein Interactions
+          - Section 7.3: Chromatin Remodeling and Epigenetics
+
+      - Chapter 8: Nucleic Acids in Biotechnology and Medicine
+        sections:
+          - Section 8.1: PCR and DNA Amplification Techniques
+          - Section 8.2: DNA Sequencing Methods
+          - Section 8.3: RNA Interference and Gene Silencing
+          - Section 8.4: Antisense Oligonucleotides and RNA Therapeutics
+          - Section 8.5: Nucleic Acid-based Vaccines
+
+      - Chapter 9: Nucleic Acids in Genetic Diseases
+        sections:
+          - Section 9.1: Genetic Mutations and their Consequences
+          - Section 9.2: Inherited Genetic Disorders
+          - Section 9.3: Cancer and Genetic Instability
+
+    subsections:
+      - Subsection 4.4.1: Ribosome Recycling
+      - Subsection 4.4.2: Ribosome Proofreading
+      - Subsection 4.5.1: Protein Folding and Chaperones
+      - Subsection 4.5.2: Protein Modification and Degradation
+      - Subsection 8.1.1: Real-time PCR
+      - Subsection 8.2.1: Sanger Sequencing
+      - Subsection 8.2.2: Next-Generation Sequencing
+      - Subsection 8.3.1: siRNA and shRNA
+      - Subsection 8.3.2: CRISPR-Cas9 Gene Editing
+      - Subsection 8.4.1: Antisense Oligonucleotide Therapeutics
+      - Subsection 8.4.2: RNA-based Vaccines
+      - Subsection 9.1.1: Point Mutations
+      - Subsection 9.1.2: Frameshift Mutations
+      - Subsection 9.1.3: Chromosomal Aberrations
+```
+```

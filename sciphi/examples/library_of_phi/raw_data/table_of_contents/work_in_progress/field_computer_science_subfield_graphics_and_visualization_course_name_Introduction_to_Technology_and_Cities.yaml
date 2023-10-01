@@ -1,0 +1,134 @@
+course:
+  textbook: 
+    title: "Technology and Cities: Exploring the Impact of ICT on Urban Environments"
+    chapters:
+      - chapter: 
+          title: "Introduction to Technology and Cities"
+          sections:
+            - section: 
+                title: "ICT and Community"
+                subsections:
+                  - "Introduction"
+                  - "Neighborhood or Community? Community in the Networked Society"
+                  - "Community Lost or Saved: Social Impacts of ICTs"
+                  - "Place-Based and IT Mediated Community"
+            - section: 
+                title: "ICT and Planning"
+                subsections:
+                  - "Modeling Urban Futures"
+                  - "Urban Spatial Structure: Understanding, Representing and Visualizing Place"
+                  - "Facilitating Dialogue, Evaluation, and Coordination"
+            - section: 
+                title: "ICT and Place"
+                subsections:
+                  - "Public Space"
+                  - "Private Space"
+                  - "Local and Global Development"
+                  - "E-government - Beyond Automation"
+                  - "Financing and Managing Metro Information Infrastructure"
+                  - "Empowerment, Democracy, and Public Participation"
+            - section: 
+                title: "ICT and Transportation"
+                subsections:
+                  - "Smart Mobility Solutions"
+                  - "Intelligent Transportation Systems"
+                  - "Shared Mobility and the Future of Transportation"
+      - chapter: 
+          title: "ICT and Urban Design"
+          sections:
+            - section: 
+                title: "The Role of ICT in Urban Design"
+                subsections:
+                  - "Designing Smart Cities"
+                  - "ICT Tools for Urban Design"
+                  - "Data-Driven Urban Design"
+            - section: 
+                title: "Sustainable Urban Development and ICT"
+                subsections:
+                  - "ICT Solutions for Energy Efficiency"
+                  - "Smart Grids and Sustainable Energy Management"
+                  - "ICT for Waste Management in Cities"
+            - section: 
+                title: "ICT and Urban Infrastructure"
+                subsections:
+                  - "Smart Buildings and Energy Management"
+                  - "Smart Water Management Systems"
+                  - "ICT in Urban Transportation Infrastructure"
+      - chapter: 
+          title: "ICT and Urban Governance"
+          sections:
+            - section: 
+                title: "E-governance and Citizen Engagement"
+                subsections:
+                  - "Open Data and Transparency"
+                  - "ICT for Citizen Participation"
+                  - "Smart Governance Solutions"
+            - section: 
+                title: "ICT and Urban Policy Making"
+                subsections:
+                  - "ICT in Urban Planning and Policy Formulation"
+                  - "Data-Driven Decision Making"
+                  - "ICT for Social and Economic Development"
+            - section: 
+                title: "Challenges and Opportunities of ICT in Urban Governance"
+                subsections:
+                  - "Digital Divide and Inclusivity"
+                  - "Privacy and Security Concerns"
+                  - "Ethical Considerations in Urban Governance"
+      - chapter: 
+          title: "ICT and Urban Livability"
+          sections:
+            - section: 
+                title: "ICT and Quality of Life"
+                subsections:
+                  - "Improving Accessibility and Mobility"
+                  - "Enhancing Health and Well-being"
+                  - "ICT for Cultural and Social Integration"
+            - section: 
+                title: "Smart City Services"
+                subsections:
+                  - "Smart Healthcare Systems"
+                  - "Smart Education and Learning"
+                  - "Smart Tourism and Leisure"
+      - chapter: 
+          title: "ICT and Urban Sustainability"
+          sections:
+            - section: 
+                title: "Smart Energy Management"
+                subsections:
+                  - "Renewable Energy Integration"
+                  - "Energy Monitoring and Optimization"
+                  - "ICT Solutions for Carbon Footprint Reduction"
+            - section: 
+                title: "ICT and Sustainable Transportation"
+                subsections:
+                  - "Intelligent Traffic Management Systems"
+                  - "ICT for Electric Vehicle Infrastructure"
+                  - "Smart Parking Solutions"
+            - section: 
+                title: "ICT and Environmental Monitoring"
+                subsections:
+                  - "Air Quality Monitoring and Management"
+                  - "Water Resource Management"
+                  - "Waste Management Solutions"
+      - chapter: 
+          title: "ICT and Urban Resilience"
+          sections:
+            - section: 
+                title: "ICT for Disaster Management"
+                subsections:
+                  - "Early Warning Systems"
+                  - "Emergency Response and Recovery"
+                  - "ICT for Resilient Infrastructure"
+            - section: 
+                title: "ICT and Climate Change Adaptation"
+                subsections:
+                  - "Climate Modeling and Predictive Analytics"
+                  - "ICT Solutions for Water Resource Management"
+                  - "Smart Agriculture and Food Security"
+            - section: 
+                title: "Building Smart and Resilient Cities"
+                subsections:
+                  - "ICT for Risk Assessment and Mitigation"
+                  - "Resilient Urban Design Principles"
+                  - "ICT Solutions for Community Resilience"

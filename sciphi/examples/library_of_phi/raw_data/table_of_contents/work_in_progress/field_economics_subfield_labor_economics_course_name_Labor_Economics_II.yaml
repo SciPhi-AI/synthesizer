@@ -1,0 +1,42 @@
+textbook:
+  Labor Economics II: A Comprehensive Analysis
+    chapters:
+    - 'Chapter 1: Inequality: An Overview':
+        sections:
+        - 'Section 1.1: Decomposing the Wage Distribution'
+        - 'Section 1.2: Inequality - Some Facts and Questions'
+    - 'Chapter 2: Job Loss and Job Search':
+        sections:
+        - 'Section 2.1: Job Loss and Job Search at the Micro and Macro Level'
+        - 'Section 2.2: Educational Production and Wage Structure'
+    - 'Chapter 3: Market Structure and Wage Structure':
+        sections:
+        - 'Section 3.1: Capital-skill Complementarity'
+        - 'Section 3.2: The Task Framework'
+        - 'Section 3.3: The Division of Labor'
+        - 'Section 3.4: The Economics of Superstars'
+    - 'Chapter 4: Theory and Evidence':
+        sections:
+        - 'Section 4.1: Labor Market Institutions and Wage Structure'
+        - 'Section 4.2: The Emerging Gender Gap in Education and Labor Markets'
+        - 'Section 4.3: The Roy Model: Theory and An Application to Immigration'
+        - 'Section 4.4: The Roy Model: Additional Applications'
+    - 'Chapter 5: Equalizing Wage Differentials':
+        sections:
+        - 'Section 5.1: Equalizing Wage Differentials: Theory and Empirics'
+        - 'Section 5.2: Applying the Roy Model and Equalizing Wage Differentials: Female Labor Supply'
+        - 'Section 5.3: Applying the Roy Model and Equalizing Wage Differentials: The Scientific Workforce'
+    - 'Chapter 6: Discrimination and Learning':
+        sections:
+        - 'Section 6.1: Discrimination - Theory'
+        - 'Section 6.2: Discrimination - Empirics'
+        - 'Section 6.3: Discrimination and Learning'
+    - 'Chapter 7: Firm-level Determinants of Wages and Productivity':
+        sections:
+        - 'Section 7.1: Rent-sharing'
+        - 'Section 7.2: Management Practices'
+    - 'Chapter 8: Intergenerational Mobility':
+        sections:
+        - 'Section 8.1: Intergenerational Mobility - Theory and Measurement'
+        - 'Section 8.2: Intergenerational Mobility - Empirics'
+        - 'Section 8.3: Early Life Determinants of Long-run Outcomes'

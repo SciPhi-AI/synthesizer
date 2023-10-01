@@ -1,0 +1,43 @@
+textbook:
+  Environmental Engineering Masters of Engineering Project: 
+    chapters: 
+      - Course Number: 
+          sections: 
+            - '1.782'
+      - Course Name: 
+          sections: 
+            - Environmental Engineering Masters of Engineering Project
+      - Resource Level: 
+          sections: 
+            - Graduate
+      - 'Page: readings': 
+          sections: 
+            - Text
+            - Information
+      - 'Page: lecture-notes': 
+          sections: 
+            - Text
+            - Information
+      - 'Page: recitations': 
+          sections: 
+            - Text
+            - Information
+      - 'Page: assignments': 
+          sections: 
+            - Text
+            - Information
+      - 'Page: exams': 
+          sections: 
+            - Text
+            - Information
+      - 'Page: syllabus': 
+          sections: 
+            - Information
+      - 'Page: calendar': 
+          sections: 
+            - Text
+            - Information
+      - 'Page: projects': 
+          sections: 
+            - Text
+            - Information

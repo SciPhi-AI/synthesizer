@@ -1,0 +1,50 @@
+textbook:
+  System Optimization and Analysis for Manufacturing: A Comprehensive Guide
+  chapters:
+    - Introduction and Overview:
+        sections:
+        - Course Number
+        - Course Name
+        - Resource Level
+        subsections:
+    - LP (Linear Programming) - Introduction, Formulations and Geometry:
+        sections:
+        - LP Formulations
+        - LP Geometry
+        subsections:
+    - LP (Linear Programming) - Example:
+        sections:
+        - Red Brand Case
+        subsections:
+    - Networks - Introduction:
+        sections:
+        - Network Fundamentals
+        subsections:
+    - LP (Linear Programming) - Solution Methods and Sensitivity Analysis:
+        sections:
+        - LP Solution Methods
+        - Sensitivity Analysis
+        subsections:
+    - Integer Programming - Formulations:
+        sections:
+        - Integer Programming Formulations
+        subsections:
+    - Integer Programming - Algorithms:
+        sections:
+        - Integer Programming Algorithms
+        subsections:
+    - Integer Programming - Heuristics:
+        sections:
+        - Integer Programming Heuristics
+        subsections:
+    - Applications in Manufacturing:
+        sections:
+        - Labor Planning for a Manufacturing Line
+        - 'Pump System Design: Optimizing Total Cost Over System Life Cycle'
+        - Assignment of Instructors for Courses and Sections Within the U.S. Air Force
+          Academy Department of Mathematical Sciences
+        - Fundraising Optimization for the Leukemia & Lymphoma Society’s Team In Training
+        - 'Boston Bound: Optimization of LFM Student Summer Travel to Boston'
+        - Student Loan Optimization
+        - Marina Mooring Optimization
+        subsections:

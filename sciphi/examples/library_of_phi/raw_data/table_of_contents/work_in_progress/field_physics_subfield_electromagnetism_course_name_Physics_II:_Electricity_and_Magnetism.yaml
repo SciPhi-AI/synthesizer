@@ -1,0 +1,56 @@
+textbook:
+  'Electricity and Magnetism: A Comprehensive Approach':
+    chapters:
+    - Introduction to TEAL and the Study of Electricity and Magnetism:
+        sections:
+        - The Importance of Electricity and Magnetism in Modern Science
+        - Coordinate Systems and Their Application in Physics
+        - Gradients: Understanding Changes in Field Strength
+        - Line and Surface Integrals: Calculating Flux and Circulation
+    - Electric Charge and the Fundamentals of Electric Fields:
+        sections:
+        - The Nature of Electric Charge
+        - Coulomb's Law: Quantifying the Force Between Charges
+        - Electric Fields: The Influence of Charges on Surrounding Space
+        - Electric Dipoles: Understanding Polarization
+        - Continuous Charge Distributions and Charge Density
+    - Electric Potential and the Behavior of Charges:
+        sections:
+        - Electric Potential: Understanding Potential Energy in Electric Fields
+        - Equipotentials: Mapping Regions of Equal Potential
+        - Capacitors: Storing and Releasing Electric Energy
+        - Exam 1 Information and Preparation
+    - Gauss's Law and Its Implications:
+        sections:
+        - Gauss's Law: Quantifying Electric Flux
+        - Electric Fields and Conductors: The Role of Charge Distribution
+        - Electric Fields Inside and Outside of Conductors
+        - Electric Fields and Insulators: Polarization and Bound Charges
+    - Magnetic Fields and Their Creation:
+        sections:
+        - Magnetic Fields: Understanding Magnetic Phenomena
+        - Ampere's Law: Quantifying Magnetic Field Circulation
+        - Magnetic Levitation: Applications of Magnetic Forces
+        - Magnetic Forces on Dipoles: Torque and Equilibrium
+        - Faraday's Law: Understanding Induced Electromotive Force
+    - Mutual Inductance, Transformers, and Inductors:
+        sections:
+        - Mutual Inductance: Coupling Magnetic Fields
+        - Transformers: Changing Voltage and Current
+        - Inductors: Storing Energy in Magnetic Fields
+        - Exam 2 Information and Preparation
+        - RC Circuits: Time Constants and Charging/Discharging
+        - RL Circuits: Inductive Reactance and Time-Varying Currents
+    - Driven LRC Circuits and Electromagnetic Waves:
+        sections:
+        - Driven LRC Circuits: Resonance and Frequency Response
+        - Maxwell's Equations: Unifying Electricity and Magnetism
+        - Electromagnetic Radiation: The Propagation of Energy
+        - Energy Flow in Electromagnetic Waves: Poynting Vector
+    - Electromagnetic Radiation and its Applications:
+        sections:
+        - Exam 3 Information and Preparation
+        - The Electromagnetic Spectrum: Understanding Different Types of Radiation
+        - Wave-Particle Duality: The Dual Nature of Light
+        - Optics: Reflection, Refraction, and Diffraction
+        - Final Exam Preparation and Review

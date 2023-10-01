@@ -1,0 +1,187 @@
+```yaml
+course:
+  Synthetic Organic Chemistry II:
+    textbook:
+      title: Comprehensive Guide to Stereocontrolled Organic Synthesis
+      chapters:
+        - Strategies for Stereocontrolled Synthesis:
+            sections:
+              - Strategies for Stereocontrolled Synthesis I:
+                  subsections:
+                    - Introduction to Stereochemistry and Its Importance in Synthesis
+                    - Chiral Pool and Auxiliary-Based Strategies
+                    - Asymmetric Induction and Desymmetrization Reactions
+                    - Stereoselective Transformations of Functional Groups
+                    - Enantioselective Catalysis and Asymmetric Organocatalysis
+                    - Stereoselective Transformations of Cyclic Compounds
+              - Strategies for Stereocontrolled Synthesis II:
+                  subsections:
+                    - Stereoselective Transformations of Alkenes and Alkynes
+                    - Stereoselective Transformations of Carbocycles and Heterocycles
+                    - Stereoselective Transformations of Cyclopropanes and Cyclobutanes
+                    - Stereoselective Transformations of Cyclopentanes and Cyclohexanes
+                    - Stereoselective Transformations of Cycloheptanes and Larger Rings
+              - Strategies for Stereocontrolled Synthesis III:
+                  subsections:
+                    - Stereoselective Transformations of Alcohols and Ethers
+                    - Stereoselective Transformations of Amines and Amides
+                    - Stereoselective Transformations of Aldehydes and Ketones
+                    - Stereoselective Transformations of Carboxylic Acids and Esters
+              - Strategies for Stereocontrolled Synthesis IV:
+                  subsections:
+                    - Stereoselective Transformations of Nitrogen-Containing Compounds
+                    - Stereoselective Transformations of Sulfur-Containing Compounds
+                    - Stereoselective Transformations of Phosphorus-Containing Compounds
+                    - Stereoselective Transformations of Silicon-Containing Compounds
+              - Strategies for Stereocontrolled Synthesis V:
+                  subsections:
+                    - Stereoselective Transformations of Halogen-Containing Compounds
+                    - Stereoselective Transformations of Oxygen-Containing Compounds
+                    - Stereoselective Transformations of Carbon-Containing Compounds
+                    - Stereoselective Transformations of Heteroatom-Containing Compounds
+              - Strategies for Stereocontrolled Synthesis VI:
+                  subsections:
+                    - Stereoselective Transformations of Natural Products
+                    - Stereoselective Transformations of Pharmaceuticals
+                    - Stereoselective Transformations of Agrochemicals
+                    - Stereoselective Transformations of Fragrances and Flavors
+        - Stereocontrolled Alkylation:
+            sections:
+              - Stereocontrolled Alkylation I:
+                  subsections:
+                    - Introduction to Stereoselective Alkylation Reactions
+                    - Alkylation of Alkenes and Alkynes
+                    - Alkylation of Carbocycles and Heterocycles
+                    - Alkylation of Cyclopropanes and Cyclobutanes
+                    - Alkylation of Cyclopentanes and Cyclohexanes
+                    - Alkylation of Cycloheptanes and Larger Rings
+              - Stereocontrolled Alkylation II:
+                  subsections:
+                    - Alkylation of Alcohols and Ethers
+                    - Alkylation of Amines and Amides
+                    - Alkylation of Aldehydes and Ketones
+                    - Alkylation of Carboxylic Acids and Esters
+              - Stereocontrolled Alkylation III:
+                  subsections:
+                    - Alkylation of Nitrogen-Containing Compounds
+                    - Alkylation of Sulfur-Containing Compounds
+                    - Alkylation of Phosphorus-Containing Compounds
+                    - Alkylation of Silicon-Containing Compounds
+        - Stereocontrolled Conjugate Addition:
+            sections:
+              - Stereocontrolled Conjugate Addition I:
+                  subsections:
+                    - Introduction to Stereoselective Conjugate Addition Reactions
+                    - Conjugate Addition to Alkenes and Alkynes
+                    - Conjugate Addition to Carbocycles and Heterocycles
+                    - Conjugate Addition to Cyclopropanes and Cyclobutanes
+                    - Conjugate Addition to Cyclopentanes and Cyclohexanes
+                    - Conjugate Addition to Cycloheptanes and Larger Rings
+              - Stereocontrolled Conjugate Addition II:
+                  subsections:
+                    - Conjugate Addition to Alcohols and Ethers
+                    - Conjugate Addition to Amines and Amides
+                    - Conjugate Addition to Aldehydes and Ketones
+                    - Conjugate Addition to Carboxylic Acids and Esters
+              - Stereocontrolled Conjugate Addition III:
+                  subsections:
+                    - Conjugate Addition to Nitrogen-Containing Compounds
+                    - Conjugate Addition to Sulfur-Containing Compounds
+                    - Conjugate Addition to Phosphorus-Containing Compounds
+                    - Conjugate Addition to Silicon-Containing Compounds
+        - Stereocontrolled 1,2 Addition to Carbonyls:
+            sections:
+              - Stereocontrolled 1,2 Addition to Carbonyls I:
+                  subsections:
+                    - Introduction to Stereoselective 1,2 Addition Reactions
+                    - 1,2 Addition to Alkenes and Alkynes
+                    - 1,2 Addition to Carbocycles and Heterocycles
+                    - 1,2 Addition to Cyclopropanes and Cyclobutanes
+                    - 1,2 Addition to Cyclopentanes and Cyclohexanes
+                    - 1,2 Addition to Cycloheptanes and Larger Rings
+              - Stereocontrolled 1,2 Addition to Carbonyls II:
+                  subsections:
+                    - 1,2 Addition to Alcohols and Ethers
+                    - 1,2 Addition to Amines and Amides
+                    - 1,2 Addition to Aldehydes and Ketones
+                    - 1,2 Addition to Carboxylic Acids and Esters
+        - Addition of Allylmetals to Carbonyls:
+            sections:
+              - Addition of Allylmetals to Carbonyls I:
+                  subsections:
+                    - Introduction to Allylmetal-Based Addition Reactions
+                    - Addition of Allylmetals to Alkenes and Alkynes
+                    - Addition of Allylmetals to Carbocycles and Heterocycles
+                    - Addition of Allylmetals to Cyclopropanes and Cyclobutanes
+                    - Addition of Allylmetals to Cyclopentanes and Cyclohexanes
+                    - Addition of Allylmetals to Cycloheptanes and Larger Rings
+              - Addition of Allylmetals to Carbonyls II:
+                  subsections:
+                    - Addition of Allylmetals to Alcohols and Ethers
+                    - Addition of Allylmetals to Amines and Amides
+                    - Addition of Allylmetals to Aldehydes and Ketones
+                    - Addition of Allylmetals to Carboxylic Acids and Esters
+              - Addition of Allylmetals to Carbonyls III:
+                  subsections:
+                    - Addition of Allylmetals to Nitrogen-Containing Compounds
+                    - Addition of Allylmetals to Sulfur-Containing Compounds
+                    - Addition of Allylmetals to Phosphorus-Containing Compounds
+                    - Addition of Allylmetals to Silicon-Containing Compounds
+        - Stereocontrolled Aldol Reactions:
+            sections:
+              - Stereocontrolled Aldol Reactions I:
+                  subsections:
+                    - Introduction to Stereoselective Aldol Reactions
+                    - Intramolecular Aldol Reactions
+                    - Intermolecular Aldol Reactions
+                    - Crossed Aldol Reactions
+                    - Directed Aldol Reactions
+                    - Retro-Aldol Reactions
+              - Stereocontrolled Aldol Reactions II:
+                  subsections:
+                    - Aldol Reactions with Enolates and Enols
+                    - Aldol Reactions with Enamine Intermediates
+                    - Aldol Reactions with Organometallic Reagents
+                    - Aldol Reactions with Organocatalysts
+              - Aldol Reactions III and Stereocontrolled Carbonyl Reduction:
+                  subsections:
+                    - Stereoselective Reduction of Aldehydes and Ketones
+                    - Stereoselective Reduction of Carboxylic Acids and Esters
+                    - Stereoselective Reduction of Lactones and Lactams
+                    - Stereoselective Reduction of Nitriles and Imines
+        - Stereocontrolled Carbonyl and Alkene Reduction:
+            sections:
+              - Stereocontrolled Carbonyl and Alkene Reduction:
+                  subsections:
+                    - Introduction to Stereoselective Carbonyl Reduction Reactions
+                    - Reduction of Aldehydes and Ketones
+                    - Reduction of Carboxylic Acids and Esters
+                    - Reduction of Lactones and Lactams
+                    - Reduction of Nitriles and Imines
+              - Stereocontrolled Alkene Reduction and Hydroboration:
+                  subsections:
+                    - Introduction to Stereoselective Alkene Reduction Reactions
+                    - Hydroboration of Alkenes and Alkynes
+                    - Hydroboration of Carbocycles and Heterocycles
+                    - Hydroboration of Cyclopropanes and Cyclobutanes
+                    - Hydroboration of Cyclopentanes and Cyclohexanes
+                    - Hydroboration of Cycloheptanes and Larger Rings
+        - Stereocontrolled Dihydroxylation and Epoxidation:
+            sections:
+              - Stereocontrolled Dihydroxylation and Epoxidation I:
+                  subsections:
+                    - Introduction to Stereoselective Dihydroxylation and Epoxidation Reactions
+                    - Dihydroxylation of Alkenes and Alkynes
+                    - Dihydroxylation of Carbocycles and Heterocycles
+                    - Dihydroxylation of Cyclopropanes and Cyclobutanes
+                    - Dihydroxylation of Cyclopentanes and Cyclohexanes
+                    - Dihydroxylation of Cycloheptanes and Larger Rings
+              - Stereocontrolled Epoxidation II:
+                  subsections:
+                    - Epoxidation of Alkenes and Alkynes
+                    - Epoxidation of Carbocycles and Heterocycles
+                    - Epoxidation of Cyclopropanes and Cyclobutanes
+                    - Epoxidation of Cyclopentanes and Cyclohexanes
+                    - Epoxidation of Cycloheptanes and Larger Rings
+```
+```

@@ -1,0 +1,46 @@
+```yaml
+course:
+  textbook: 'Law, Social Movements, and Public Policy: Comparative and International Experience'
+    chapters:
+    - chapter_title: 'Introduction'
+      sections:
+      - section_title: 'Course Overview'
+      - section_title: 'Main Substantive Themes'
+      - section_title: 'Course Requirements'
+    - chapter_title: 'Understanding Social Movements'
+      sections:
+      - section_title: 'Social Movements, NGOs, and Civil Society'
+      - section_title: 'Interactions Between Social Movements and the State'
+      - section_title: 'Changing Domestic Contexts of Social Movements'
+      - section_title: 'Changing Global Contexts of Social Movements'
+      subsections:
+      - subsection_title: 'Social Movements and Political Change'
+      - subsection_title: 'Social Movements and Legal Change'
+    - chapter_title: 'Domestic and Comparative Experience'
+      sections:
+      - section_title: 'Legal and Social Change in the US: Contesting Perspectives'
+      - section_title: 'The Environment as an Arena of Struggle'
+      - section_title: 'Law and the American Labor Movement'
+      - section_title: 'Feminism and Women’s Movements'
+      - section_title: 'Race, Poverty, and the Struggle for Social Justice'
+      - section_title: 'The Conservative Movement, Policy Change, and Law'
+      - section_title: 'Preparation for Field-component on Occupy Wall Street'
+      - section_title: 'Field Work Report Back'
+      - section_title: 'Legal and Social Change in India: The Role of Mobilization and Activism'
+      - section_title: 'Women’s Rights vs. Gender Justice'
+      - section_title: 'Caste and the Struggle with/through Law'
+      - section_title: 'Contesting Development: Law and Struggle in the Narmada Valley'
+      - section_title: 'Human Rights, Social Movements, and Public Interest Litigation'
+      - section_title: 'Beyond the State? Changing Contexts for Law-making and Application at the Global Level'
+      - section_title: 'The World Commission on Dams and the Struggle over Development'
+      - section_title: 'Setting Global Environmental and Health Policy: The Case of Nuclear Weapons'
+      - section_title: 'Global Economic Institutions and Resistance from the Margins'
+      - section_title: 'The World Trade Organization as a Policy Machine'
+      - section_title: 'Human Rights Law as Global Public Policy'
+      - section_title: 'Conclusion and Review Class'
+      subsections:
+      - subsection_title: 'The Impact of Social Movements on Legal Systems'
+      - subsection_title: 'Comparative Analysis of Social Movements'
+      - subsection_title: 'The Role of Activism in Legal Change'
+```
+```

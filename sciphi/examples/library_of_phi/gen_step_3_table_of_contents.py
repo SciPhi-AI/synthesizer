@@ -1,3 +1,4 @@
+# type: ignore
 """
 YAML Syllabi to YAML Table of Contents Generator
 
@@ -35,7 +36,9 @@ from glob import glob
 
 import fire
 
-from sciphi.examples.library_of_phi.prompts import TABLE_OF_CONTENTS_PROMPT  # type: ignore
+from sciphi.examples.library_of_phi.prompts import (
+    TABLE_OF_CONTENTS_PROMPT,
+)
 from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
 

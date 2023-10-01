@@ -1,0 +1,205 @@
+textbook:
+  Data Communication Networks: A Comprehensive Guide
+  chapters:
+    - Introduction to Data Communication Networks:
+        sections:
+        - OSI 7-Layer Architecture
+          subsections:
+          - Overview of OSI Model
+          - Physical Layer
+          - Data Link Layer
+          - Network Layer
+          - Transport Layer
+          - Session Layer
+          - Presentation Layer
+          - Application Layer
+        - Data Link Layers
+          subsections:
+          - Framing
+          - Error Detection
+          - Error Correction
+          - Flow Control
+          - Media Access Control
+        - Network Layer Protocols
+          subsections:
+          - IP Protocol
+          - IP Addressing
+          - Routing Algorithms
+          - Internet Control Protocols
+          - Quality of Service (QoS)
+        - Transport Layer Protocols
+          subsections:
+          - TCP Protocol
+          - UDP Protocol
+          - Congestion Control
+          - Flow Control
+          - Error Handling
+          - Multiplexing
+          - Port Numbers
+    - Retransmission Algorithms:
+        sections:
+        - Retransmission Algorithms
+          subsections:
+          - Stop-and-Wait Protocol
+          - Go-Back-N Protocol
+          - Selective Repeat Protocol
+        - Queueing Models - Introduction & Little's Theorem
+          subsections:
+          - Queueing Systems Overview
+          - Little's Theorem
+          - Single-Server Queueing Model
+          - Multi-Server Queueing Model
+          - Queueing Network Model
+        - M/M/1, M/M/m Queues
+          subsections:
+          - M/M/1 Queue
+          - M/M/m Queue
+          - Performance Metrics
+          - Erlang B Formula
+          - Erlang C Formula
+        - Networks of Queues
+          subsections:
+          - Jackson Networks
+          - BCMP Networks
+          - Mean Value Analysis
+          - Approximate Analysis Techniques
+    - M/G/1 Queues:
+        sections:
+        - M/G/1 Queues
+          subsections:
+          - M/G/1 Queueing Model
+          - Arrival Process
+          - Service Time Distributions
+          - Queue Occupancy Distribution
+        - M/G/1 Queue Occupancy Distribution
+          subsections:
+          - State Dependent Queueing Models
+          - Mean Value Analysis
+          - Approximation Techniques
+        - M/G/1 w/ Vacations, Reservations, Priority Queues
+          subsections:
+          - M/G/1 Queue with Vacations
+          - M/G/1 Queue with Reservations
+          - M/G/1 Priority Queue
+          - Performance Analysis
+        - Stability of Queueing Systems
+          subsections:
+          - Stability Conditions
+          - Lyapunov Stability
+          - Bounded Queueing Systems
+          - Stability Analysis Techniques
+    - Multiple Access & Aloha:
+        sections:
+        - Multiple Access & Aloha
+          subsections:
+          - Multiple Access Techniques
+          - Aloha Protocol
+          - Slotted Aloha
+          - Carrier Sense Multiple Access (CSMA)
+          - CSMA/CD Protocol
+        - Stabilized Aloha, Tree Algorithms
+          subsections:
+          - Stabilized Aloha Protocol
+          - Tree Algorithms for Multiaccess Networks
+          - Binary Countdown Algorithm
+          - Tree Algorithms for Broadcast Networks
+        - CSMA, CSMA/CD and Ethernet
+          subsections:
+          - Carrier Sense Multiple Access (CSMA)
+          - CSMA/CD Protocol
+          - Ethernet Protocol
+          - Ethernet Frame Format
+          - Ethernet Switching
+          - Ethernet Performance Analysis
+        - High-Speed LANs, Token Rings, Satellite Reservations
+          subsections:
+          - High-Speed Local Area Networks (LANs)
+          - Token Ring Protocol
+          - Satellite Reservations for Multiple Access
+          - Performance Analysis of High-Speed LANs
+    - Routing in Data Networks:
+        sections:
+        - Introduction to Switch Architecture
+          subsections:
+          - Switching Techniques
+          - Circuit Switching
+          - Packet Switching
+          - Message Switching
+          - Hybrid Switching
+        - High-Speed Switch Scheduling
+          subsections:
+          - Scheduling Algorithms
+          - First-Come, First-Served (FCFS)
+          - Round Robin (RR)
+          - Weighted Round Robin (WRR)
+          - Deficit Round Robin (DRR)
+          - Virtual Clock (VC)
+          - Strict Priority (SP)
+        - Broadcast Routing & Spanning Trees
+          subsections:
+          - Broadcast Routing Algorithms
+          - Distance Vector Routing Protocol
+          - Link State Routing Protocol
+          - Spanning Tree Algorithms
+          - Broadcast Storm Problem
+        - Shortest Path Routing
+          subsections:
+          - Dijkstra's Algorithm
+          - Bellman-Ford Algorithm
+          - Link State Routing
+          - Open Shortest Path First (OSPF)
+          - Routing Information Protocol (RIP)
+        - Distributed Routing Algorithms, Optimal Routing
+          subsections:
+          - Distributed Routing Algorithms
+          - Flooding Algorithm
+          - Distance Vector Routing
+          - Link State Routing
+          - Optimal Routing Algorithms
+    - Flow Control and Congestion Control:
+        sections:
+        - Flow Control - Window/Credit Schemes
+          subsections:
+          - Window-Based Flow Control
+          - Credit-Based Flow Control
+          - Sliding Window Protocol
+          - Stop-and-Wait Protocol
+          - Go-Back-N Protocol
+          - Selective Repeat Protocol
+        - Flow Control - Rate Based Schemes
+          subsections:
+          - Leaky Bucket Algorithm
+          - Token Bucket Algorithm
+          - Adaptive Rate Control
+          - Explicit Rate Indication
+          - Resource Reservation Protocol (RSVP)
+        - Transport Layer and TCP/IP
+          subsections:
+          - Transport Layer Protocols
+          - Transmission Control Protocol (TCP)
+          - User Datagram Protocol (UDP)
+          - TCP/IP Protocol Stack
+          - TCP/IP Addressing
+          - TCP/IP Routing
+          - TCP/IP Security
+        - ATM Networks
+          subsections:
+          - Asynchronous Transfer Mode (ATM)
+          - ATM Architecture
+          - ATM Adaptation Layer
+          - ATM Virtual Connections
+          - ATM Traffic Management
+          - ATM Quality of Service (QoS)
+    - Special Topics in Data Communication Networks:
+        sections:
+        - 'Special Topic: Optical Networks, Wireless Networks'
+          subsections:
+          - Optical Networks
+          - Fiber-Optic Communication Systems
+          - Optical Transmission Technologies
+          - Wavelength Division Multiplexing (WDM)
+          - Wireless Networks
+          - Wireless Communication Technologies
+          - Wireless LANs
+          - Mobile Ad Hoc Networks (MANETs)
+          - Sensor Networks

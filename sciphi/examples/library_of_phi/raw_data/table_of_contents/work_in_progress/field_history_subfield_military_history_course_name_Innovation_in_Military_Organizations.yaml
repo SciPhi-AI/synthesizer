@@ -1,0 +1,45 @@
+textbook:
+  Innovation in Military Organizations: A Comprehensive Study
+  chapters:
+    - Introduction:
+        sections:
+          - Organization Theory:
+            subsections:
+              - Basics of Organizations
+              - Organizational Structures
+              - Organizational Culture
+              - Organizational Change
+          - Military Innovation Theories:
+            subsections:
+              - Diffusion of Innovations Theory
+              - Organizational Learning Theory
+              - Technological Determinism Theory
+              - Disruptive Innovation Theory
+    - Strategic Airpower:
+        sections:
+          - Lecture Outline (PDF)
+    - Armored Warfare:
+        sections:
+          - Lecture Outline
+    - Tactical Airpower:
+        sections:
+          - Lecture Outline
+    - Submarine Warfare:
+        sections:
+          - Lecture Outline (PDF)
+    - Cruise and Ballistic Missiles:
+        sections:
+          - Lecture Outline (PDF)
+    - 'Failed Innovation: Counterinsurgency':
+        sections:
+          - Lecture Outline (PDF)
+    - 'Post-Vietnam Innovation: The ''Transformation'' of the U.S. Army':
+        sections:
+          - Lecture Outline
+    - 'Transformation: The Revolution in Military Affairs':
+        sections:
+          - Lecture Outline (PDF)
+    - Student Papers:
+        sections:
+          - Paper Writing Requirements
+          - Paper Presentation

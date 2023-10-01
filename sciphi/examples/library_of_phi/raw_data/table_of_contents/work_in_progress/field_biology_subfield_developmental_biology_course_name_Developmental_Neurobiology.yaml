@@ -1,0 +1,32 @@
+textbook:
+  Developmental Neurobiology: A Comprehensive Guide to Neural Development and Wiring
+  chapters:
+    - Introduction:
+        sections:
+        - Neural Induction
+        - Establising the CNS Anterior/Posterior Axis
+        - Hox Genes and Segmental Organization of the Hindbrain and Spinal Cord
+    - The Spinal Cord Dorsal/Ventral Axis:
+        sections:
+        - Regionalization of the Embryonic Midbrain and Forebrain
+        - Lineage Studies
+        - Neural Crest
+        - Progression from Extrinsic to Intrinsic Signals of Cell Fate
+        - 'Neuronal Migration 1: Radial vs. Tangential Movement'
+    - Asymmetric Cell Divisions:
+        sections:
+        - Stem Cells
+        - Axon Guidance 1
+        - Axon Guidance 2
+        - Cell Death
+        - Growth Factors
+    - 'Map Formation 1: The Retinotectal System-Chemical and Molecular Gradients':
+        sections:
+        - 'Neuronal Migration 2: Long Distance Travel'
+        - 'Map Formation 2: The Olfactory System-Representing Smells in the Brain'
+        - 'Activity Dependent Development 1: The Visual and Auditory Systems'
+    - 'Cortical Regionalization: Specification of Cerebral Cortical Areas':
+        sections:
+        - 'Activity Dependent Development 2: Plasticity Genes'
+        - 'Synapse Formation 1: NMJ'
+        - 'Synapse Formation 2: Central Synapses'

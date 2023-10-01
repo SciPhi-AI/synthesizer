@@ -1,0 +1,193 @@
+```
+course:
+  textbook:
+    Control of Manufacturing Processes: Theory and Practice
+    chapters:
+      - chapter:
+          title: Introduction to Control of Manufacturing Processes
+          sections:
+            - section:
+                title: Overview of Process Control
+                subsections:
+                  - Process control overview (PDF)
+                  - "Boning, Duane S., et al. 'A General Semiconductor Process Modeling Framework.' IEEE Transactions on Semiconductor Manufacturing 5 (November 1992): 266-280."
+      - chapter:
+          title: Probability Models and Parameter Estimation
+          sections:
+            - section:
+                title: Kurtosis and Probability Models
+                subsections:
+                  - Kurtosis handout (PDF)
+            - section:
+                title: Parameter Estimation and Sampling
+                subsections:
+                  - Probability models, parameter estimation, and sampling
+      - chapter:
+          title: Yield Modeling in VLSIC's
+          sections:
+            - section:
+                title: Introduction to Yield Modeling
+                subsections:
+                  - "Ciplickas, Dennis J., et al. 'Predictive Yield Modeling of VLSIC’s.' IEEE 5th International Workshop on Statistical Metrology (June 2000): 28-37."
+      - chapter:
+          title: Nested Variance Components
+          sections:
+            - section:
+                title: Case Study 1: Tungsten CVD DOE/RSM
+                subsections:
+                  - Case study 1: tungsten CVD DOE/RSM
+            - section:
+                title: Case Study 2: Cycle to Cycle Control
+                subsections:
+                  - Case study 2: cycle to cycle control
+            - section:
+                title: Case Study 3: Spatial Modeling
+                subsections:
+                  - Case study 3: spatial modeling
+      - chapter:
+          title: Semiconductor Process Variation
+          sections:
+            - section:
+                title: Introduction to Semiconductor Process Variation
+                subsections:
+                  - Introduction  processes and variation framework
+      - chapter:
+          title: Mechanical Process Variation and Data Interpretation
+          sections:
+            - section:
+                title: Probability Models of Manufacturing Processes
+                subsections:
+                  - Probability models of manufacturing processes
+      - chapter:
+          title: Sampling Distributions and Statistical Hypotheses
+          sections:
+            - section:
+                title: Introduction to Sampling Distributions
+                subsections:
+                  - Probability models, parameter estimation, and sampling
+            - section:
+                title: Statistical Hypotheses Testing
+                subsections:
+                  - Sampling distributions and statistical hypotheses
+      - chapter:
+          title: Shewhart SPC and Process Capability
+          sections:
+            - section:
+                title: Introduction to Shewhart SPC
+                subsections:
+                  - Sampling distributions and statistical hypotheses
+            - section:
+                title: Process Capability Analysis
+                subsections:
+                  - Shewhart SPC and process capability
+      - chapter:
+          title: Advanced and Multivariate SPC
+          sections:
+            - section:
+                title: Multivariate Statistical Process Control
+                subsections:
+                  - Process capability and alternative SPC methods
+            - section:
+                title: Advanced SPC Techniques
+                subsections:
+                  - Advanced and multivariate SPC
+      - chapter:
+          title: Introduction to Analysis of Variance
+          sections:
+            - section:
+                title: Basics of Analysis of Variance (ANOVA)
+                subsections:
+                  - Introduction to analysis of variance
+      - chapter:
+          title: Full Factorial Models
+          sections:
+            - section:
+                title: Introduction to Full Factorial Designs
+                subsections:
+                  - Yield modeling
+      - chapter:
+          title: Modeling Testing and Fractional Factorial Models
+          sections:
+            - section:
+                title: Basics of Fractional Factorial Designs
+                subsections:
+                  - Introduction to analysis of variance
+            - section:
+                title: Modeling Testing and Analysis
+                subsections:
+                  - Modeling testing and fractional factorial models
+      - chapter:
+          title: Aliasing and Higher Order Models
+          sections:
+            - section:
+                title: Introduction to Aliasing
+                subsections:
+                  - Full factorial models
+            - section:
+                title: Higher Order Models
+                subsections:
+                  - Aliasing and higher order models
+      - chapter:
+          title: Response Surface Modeling and Process Optimization
+          sections:
+            - section:
+                title: Basics of Response Surface Methodology
+                subsections:
+                  - Modeling testing and fractional factorial models
+            - section:
+                title: Process Optimization Techniques
+                subsections:
+                  - Response surface modeling and process optimization
+      - chapter:
+          title: Process Robustness
+          sections:
+            - section:
+                title: Introduction to Process Robustness
+                subsections:
+                  - Aliasing and higher order models
+            - section:
+                title: Techniques for Improving Process Robustness
+                subsections:
+                  - Process robustness
+      - chapter:
+          title: Sequential Experimentation and Robust Design
+          sections:
+            - section:
+                title: Basics of Sequential Experimentation
+                subsections:
+                  - Response surface modeling and process optimization
+            - section:
+                title: Robust Design and Engineering Systems
+                subsections:
+                  - "Sequential experimentation: 'Experimentation and Robust Design and Engineering Systems.'"
+      - chapter:
+          title: Case Studies
+          sections:
+            - section:
+                title: Case Study 1: Tungsten CVD DOE/RSM
+                subsections:
+                  - Process robustness
+            - section:
+                title: Case Study 2: Cycle to Cycle Control
+                subsections:
+                  - "Sequential experimentation: 'Experimentation and Robust Design and Engineering Systems.'"
+            - section:
+                title: Case Study 3: Spatial Modeling
+                subsections:
+                  - Case study 1: tungsten CVD DOE/RSM
+            - section:
+                title: Case Study 4: Modeling the Embossing/Imprinting of Thermoplastic Layers
+                subsections:
+                  - Case study 2: cycle to cycle control
+      - chapter:
+          title: Project Presentations
+          sections:
+            - section:
+                title: Project Presentations 1
+                subsections:
+                  - Case study 3: spatial modeling
+            - section:
+                title: Project Presentations 2
+                subsections:
+                  - "Case study 4: 'Modeling the Embossing/Imprinting of Thermoplastic Layers.'"
+```

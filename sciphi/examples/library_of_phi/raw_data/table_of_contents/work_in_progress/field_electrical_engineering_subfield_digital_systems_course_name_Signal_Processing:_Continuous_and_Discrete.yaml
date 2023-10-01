@@ -1,0 +1,60 @@
+textbook:
+  'Signal Processing: Continuous and Discrete - A Comprehensive Guide':
+    chapters:
+    - Introduction to Signal Processing:
+        sections:
+        - Properties of LTI Continuous Filters
+        - The Dirac Delta Function
+        - Practical Applications of the Dirac Delta Function
+    - Continuous LTI System Time-Domain Response:
+        sections:
+        - Sinusoidal Response of LTI Continuous Systems
+    - The Fourier Series and Transform:
+        sections:
+        - Periodic Input Functions - The Fourier Series
+        - Aperiodic Input Functions - The Fourier Transform
+    - Review of Development of Fourier Transform:
+        sections:
+        - Convolution and Correlation
+        - Properties of the Fourier Transform
+        - Fourier Transform Pairs
+        - Frequency-Shifting and Modulation
+    - Discrete-Time Signal Processing:
+        sections:
+        - Discrete-Time Signals and Systems
+        - Discrete-Time Convolution
+        - Z-Transform and Analysis
+        - Discrete Fourier Transform
+    - Design of FIR Filters:
+        sections:
+        - Windowing Techniques
+        - Frequency Sampling Technique
+        - Least Squares Technique
+        - Parks-McClellan Algorithm
+    - Design of IIR Filters:
+        sections:
+        - Analog Filter Design
+        - Butterworth Filters
+        - Chebyshev Filters
+        - Elliptic Filters
+        - Bilinear Transformation
+    - Non-Parametric Power Spectral Density Estimation:
+        sections:
+        - Periodogram Method
+        - Welch's Method
+        - Parametric Methods
+        - Autoregressive (AR) Modeling
+        - Moving Average (MA) Modeling
+    - Least-Squares Filter Design:
+        sections:
+        - Linear Prediction
+        - Adaptive Filters
+        - Recursive Least Squares Algorithm
+        - Kalman Filter
+    - Adaptive Filtering:
+        sections:
+        - LMS Algorithm
+        - Normalized LMS Algorithm
+        - RLS Algorithm
+        - System Identification
+        - Adaptive Beamforming

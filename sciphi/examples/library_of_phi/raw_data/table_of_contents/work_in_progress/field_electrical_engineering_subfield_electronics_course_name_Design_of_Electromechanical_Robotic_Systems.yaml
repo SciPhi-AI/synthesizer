@@ -1,0 +1,99 @@
+```yaml
+textbook:
+  Design of Electromechanical Robotic Systems: A Comprehensive Guide
+    chapters:
+      - Chapter 1: Concepts of Design
+          sections:
+            - Section 1.1: Design Process
+            - Section 1.2: Design Overview
+            - Section 1.3: Design Tools and Applications
+      - Chapter 2: Experiments, Tests, and Data
+          sections:
+            - Section 2.1: Overview of Experiments
+            - Section 2.2: Data Collection and Analysis
+            - Section 2.3: Testing Methods
+      - Chapter 3: Electronics Essentials
+          sections:
+            - Section 3.1: Basic Electronics Principles
+            - Section 3.2: Electronic Components
+            - Section 3.3: Circuit Design
+      - Chapter 4: Design for the Ocean Environment
+          sections:
+            - Section 4.1: Challenges of Ocean Environments
+            - Section 4.2: Ocean Engineering Principles
+            - Section 4.3: Marine Robotics Design Considerations
+      - Chapter 5: Applying Optimization
+          sections:
+            - Section 5.1: Optimization Techniques
+            - Section 5.2: Design Optimization
+            - Section 5.3: Multi-objective Optimization
+      - Chapter 6: Stability and Trim
+          sections:
+            - Section 6.1: Stability Analysis
+            - Section 6.2: Trim Analysis
+            - Section 6.3: Stability and Trim Optimization
+      - Chapter 7: General Presentation Guidelines
+          sections:
+            - Section 7.1: Effective Presentation Techniques
+            - Section 7.2: Visual Aids Design
+            - Section 7.3: Presentation Delivery Tips
+      - Chapter 8: Corrosion in Marine Environments
+          sections:
+            - Section 8.1: Corrosion Mechanisms
+            - Section 8.2: Corrosion Prevention Methods
+            - Section 8.3: Materials Selection for Marine Applications
+      - Chapter 9: Important Vehicle Power Sources
+          sections:
+            - Section 9.1: Electric Power Systems
+            - Section 9.2: Internal Combustion Engines
+            - Section 9.3: Alternative Power Sources
+      - Chapter 10: Topics in Machine Elements
+          sections:
+            - Section 10.1: Mechanical Linkages
+            - Section 10.2: Gears and Gear Systems
+            - Section 10.3: Bearings and Lubrication
+            - Section 10.4: Mechanical Assemblies
+      - Chapter 11: Navigation Sensors and Systems
+          sections:
+            - Section 11.1: Sensor Technologies
+            - Section 11.2: Navigation Algorithms
+            - Section 11.3: Autonomous Navigation Systems
+      - Chapter 12: Basic Physics Concepts
+          sections:
+            - Section 12.1: Forces and Motion
+            - Section 12.2: Energy and Power
+            - Section 12.3: Thermodynamics
+            - Section 12.4: Fluid Mechanics
+      - Chapter 13: Linear Time Invariance
+          sections:
+            - Section 13.1: Properties of Linear Systems
+            - Section 13.2: Convolution Operation
+            - Section 13.3: Fourier Series Analysis
+            - Section 13.4: Frequency Response
+      - Chapter 14: Probability and Random Variables
+          sections:
+            - Section 14.1: Probability Theory
+            - Section 14.2: Random Variables
+            - Section 14.3: Probability Distributions
+            - Section 14.4: Statistical Analysis
+      - Chapter 15: System Design Revisited
+          sections:
+            - Section 15.1: Design Review and Evaluation
+            - Section 15.2: Tools and Techniques for System Design
+            - Section 15.3: Case Studies of System Design
+      - Chapter 16: Engineering Ethics
+          sections:
+            - Section 16.1: Ethical Principles in Engineering
+            - Section 16.2: Case Studies in Engineering Ethics
+            - Section 16.3: Professional Responsibilities
+      - Chapter 17: Project Management
+          sections:
+            - Section 17.1: Project Planning and Scheduling
+            - Section 17.2: Project Organization and Teamwork
+            - Section 17.3: Project Risk Management
+      - Chapter 18: Final Presentations
+          sections:
+            - Section 18.1: Presentation Preparation
+            - Section 18.2: Effective Communication of Project Results
+            - Section 18.3: Q&A and Feedback Handling
+```

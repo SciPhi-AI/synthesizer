@@ -1,0 +1,164 @@
+```yaml
+course:
+  String Theory and Holographic Duality:
+    textbook:
+      chapters:
+        - Emergence of Gravity:
+            sections:
+              - Classical Black Hole Geometry
+              - Causal Structure of a Black Hole and Black Hole Temperature
+              - Physical Interpretation of Black Hole Temperature
+              - Black Hole Thermodynamics
+        - Holographic Principle:
+            sections:
+              - Structure of Large-N Expansion
+              - Large-N Expansion as a String Theory, Part I
+              - Large-N Expansion as a String Theory, Part II
+        - Basics of String Theory:
+            sections:
+              - String Theory in the Light-cone Gauge
+              - String Spectrum and Graviton
+        - Physics of D-branes:
+            sections:
+              - Physics of D-branes, Part I
+              - Physics of D-branes, Part II
+              - Physics of D-branes, Part III
+              - Geometry of D-branes and AdS / CFT Conjecture
+        - AdS / CFT Duality:
+            sections:
+              - More on AdS / CFT Duality
+              - General Aspects of the Duality
+              - Mass-dimension Relation
+              - 'Euclidean Correlation Functions: Two-point Functions'
+              - 'Euclidean Correlation Functions: Higher-point Functions'
+        - Computation and Entanglement:
+            sections:
+              - Computation of the Wilson Loop
+              - Duality at a Finite Temperature and Finite Chemical Potential
+              - Holographic Entanglement Entropy
+        - Problem Sets:
+            sections:
+              - Problem Set 1 Solutions
+              - Problem Set 2 Solutions
+              - Problem Set 3 Solutions
+              - Problem Set 4 Solutions
+        - Final Project:
+            sections:
+              - Description in the Syllabus section
+      subsubtopics:
+        - Emergence of Gravity:
+            subtopics:
+              - Classical Black Hole Geometry:
+                - Overview of Classical Black Hole Solutions
+                - Schwarzschild and Reissner-Nordström Black Holes
+                - Kerr Black Holes
+              - Causal Structure of a Black Hole and Black Hole Temperature:
+                - Event Horizon and Singularity of a Black Hole
+                - Hawking Radiation and Black Hole Temperature
+                - Black Hole Entropy and Information Loss Paradox
+              - Physical Interpretation of Black Hole Temperature:
+                - Thermodynamics of Black Holes
+                - Unruh Effect and Hawking Temperature
+              - Black Hole Thermodynamics:
+                - Laws of Black Hole Thermodynamics
+                - Bekenstein-Hawking Entropy Formula
+        - Holographic Principle:
+            subtopics:
+              - Structure of Large-N Expansion:
+                - Introduction to Large-N Expansion
+                - Feynman Diagrams and Perturbation Theory
+                - Scaling Behavior in Large-N Theories
+              - Large-N Expansion as a String Theory, Part I:
+                - Introduction to String Theory
+                - Worldsheet Formulation and Polyakov Action
+                - String Scattering and S-Matrix
+              - Large-N expansion as a String Theory, Part II:
+                - AdS/CFT Correspondence and Holography
+                - Supergravity and String Theory
+                - The AdS/CFT Dictionary
+        - Basics of String Theory:
+            subtopics:
+              - String Theory in the Light-cone Gauge:
+                - Light-cone Quantization of Bosonic String
+                - Virasoro Algebra and Conformal Invariance
+                - Mass Spectrum of Bosonic String
+              - String Spectrum and Graviton:
+                - Open and Closed String Spectrum
+                - Tachyon and Massless States
+                - Graviton and Higher Spin States
+        - Physics of D-branes:
+            subtopics:
+              - Physics of D-branes, Part I:
+                - Introduction to D-branes
+                - Boundary Conformal Field Theory (BCFT)
+                - D-brane Boundary State and Boundary State Formalism
+              - Physics of D-branes, Part II:
+                - Open String Modes and D-brane Dynamics
+                - Gauge Theory on D-branes
+                - Worldvolume Supersymmetry of D-branes
+              - Physics of D-branes, Part III:
+                - T-duality and D-brane Probes
+                - Adsorption of D-branes
+                - D-brane Instantons and Non-perturbative Effects
+              - Geometry of D-branes and AdS / CFT Conjecture:
+                - D-branes in Type II String Theory
+                - AdS Geometry and its Dual CFT
+                - Holographic Renormalization and RG Flows
+        - AdS / CFT Duality:
+            subtopics:
+              - More on AdS / CFT Duality:
+                - Overview of AdS/CFT Correspondence
+                - Examples of Dualities: AdS5/CFT4, AdS4/CFT3, etc.
+                - Holographic RG and Bulk/Boundary Correspondence
+              - General Aspects of the Duality:
+                - Supergravity and String Theory Dualities
+                - Symmetries and Conservation Laws in AdS/CFT
+                - Quantization of Bulk Fields and Holographic Dictionary
+              - Mass-dimension Relation:
+                - Mass and Dimension in AdS/CFT
+                - Mass Spectrum and Scaling Dimensions
+                - Conformal Dimensions and Anomalous Dimensions
+              - 'Euclidean Correlation Functions: Two-point Functions':
+                - Euclidean AdS Space and Wick Rotation
+                - Two-point Functions and OPE in CFT
+                - Conformal Blocks and Crossing Symmetry
+              - 'Euclidean Correlation Functions: Higher-point Functions':
+                - Three-point Functions and Conformal Blocks
+                - Four-point Functions and Conformal Bootstrap
+                - Higher-point Functions and Operator Product Expansion
+        - Computation and Entanglement:
+            subtopics:
+              - Computation of the Wilson Loop:
+                - Wilson Loop Operator and its Expectation Value
+                - Wilson Loop in Gauge Theories and String Theory
+                - String Worldsheet and Area Law in Wilson Loop
+              - Duality at a Finite Temperature and Finite Chemical Potential:
+                - Thermal AdS Space and Black Holes
+                - Thermal Correlation Functions and Partition Function
+                - Holographic Phase Transitions and Critical Behavior
+              - Holographic Entanglement Entropy:
+                - Entanglement Entropy in Quantum Field Theory
+                - Holographic Entanglement Entropy and RT Formula
+                - Holographic Mutual Information and Quantum Complexity
+        - Problem Sets:
+            subtopics:
+              - Problem Set 1 Solutions:
+                - Detailed Solutions for Problem Set 1
+                - Step-by-step Derivations and Explanations
+              - Problem Set 2 Solutions:
+                - Detailed Solutions for Problem Set 2
+                - Step-by-step Derivations and Explanations
+              - Problem Set 3 Solutions:
+                - Detailed Solutions for Problem Set 3
+                - Step-by-step Derivations and Explanations
+              - Problem Set 4 Solutions:
+                - Detailed Solutions for Problem Set 4
+                - Step-by-step Derivations and Explanations
+        - Final Project:
+            subtopics:
+              - Description in the Syllabus section:
+                - Overview of the Final Project Requirements
+                - Choosing a Project Topic and Research Question
+                - Writing and Presenting the Final Project Report
+```
+```

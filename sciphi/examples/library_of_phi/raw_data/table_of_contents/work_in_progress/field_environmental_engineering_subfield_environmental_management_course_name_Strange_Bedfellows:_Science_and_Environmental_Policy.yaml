@@ -1,0 +1,113 @@
+textbook:
+  'Strange Bedfellows: Science and Environmental Policy Companion':
+    chapters:
+    - Introduction:
+        sections:
+        - Importance of Science in Environmental Policy
+        - Role of Politics in Environmental Policy
+    - Science, Policy, and the Environment:
+        sections:
+        - Intersection of Science and Policy
+        - Environmental Challenges and Policy Responses
+        - Scientific Evidence in Policy Decision Making
+    - Case Study I: Conservation of Biopreserves:
+        sections:
+        - Overview of Biopreserves
+        - Importance of Biopreserve Conservation
+        - Scientific Considerations in Biopreserve Policy Decisions
+        - Case Study Analysis: Biopreserve Conservation Successes and Challenges
+    - Case Study II: Challenges of Nuclear Waste Disposal:
+        sections:
+        - Overview of Nuclear Waste Disposal
+        - Environmental Risks and Challenges
+        - Scientific Considerations in Nuclear Waste Policy Decisions
+        - Case Study Analysis: Nuclear Waste Disposal Strategies and Impacts
+    - Case Study III: Climate Change and Policy Making:
+        sections:
+        - Impact of Climate Change on Policy Making
+        - Policy Responses to Climate Change Challenges
+        - Scientific Controversies in Climate Change Policies
+        - Case Study Analysis: Climate Change Mitigation and Adaptation Strategies
+    - Case Study IV: Role of DDT in Malaria Control:
+        sections:
+        - Overview of Malaria Control Strategies
+        - Use of DDT in Malaria Control
+        - Scientific Controversies in DDT and Malaria Control Policies
+        - Case Study Analysis: Balancing Malaria Control and Environmental Impact
+    - Building Research Skills:
+        sections:
+        - Research Methodologies in Environmental Science
+        - Data Collection and Analysis Techniques
+        - Ensuring Validity and Reliability of Scientific Research
+    - Laws, Regulations, and International Treaties:
+        sections:
+        - Environmental Laws and Regulations
+        - International Agreements and Treaties
+        - Implementation and Enforcement of Environmental Policies
+    - Players in Environmental Policy Making:
+        sections:
+        - Stakeholders in Environmental Policy Making
+        - Power Dynamics and Decision Making
+        - Role of Interest Groups and Lobbying
+        - Public Engagement and Environmental Policy
+    - Problem Framing and Science in Policy Making:
+        sections:
+        - Framing Environmental Problems
+        - Scientific Inputs in Problem Framing
+        - Media, Public Opinion, and Policy Making
+        - Ethical Considerations in Environmental Policy Making
+    - The Role of Modeling in Science and Policy:
+        sections:
+        - Conceptual Models in Environmental Science
+        - Simulation and Predictive Modeling
+        - Use of Models in Policy Analysis
+    - Predictive Modeling and Model Interpretation:
+        sections:
+        - Introduction to Predictive Modeling
+        - Data Requirements for Model Development
+        - Model Validation and Evaluation Techniques
+        - Interpretation of Model Outputs
+    - Systems Dynamics Models and Policy Simulations:
+        sections:
+        - Systems Dynamics Models in Environmental Science
+        - Feedback Loops and Nonlinear Relationships
+        - Scenario Analysis and Policy Simulations
+    - Uncertainty and Sensitivity Analysis in Modeling:
+        sections:
+        - Understanding Uncertainty in Environmental Science
+        - Sources and Measurement of Uncertainty
+        - Uncertainty Analysis Techniques
+        - Sensitivity Analysis and Model Robustness
+    - Communicating Uncertainty in Policy Making:
+        sections:
+        - Communicating Uncertainty to Policy Makers
+        - Decision Making Under Uncertainty
+        - Robust Decision Making Approaches
+    - Probability, Risk, and Decision Analysis:
+        sections:
+        - Probability Concepts in Environmental Risk Assessment
+        - Risk Perception and Communication
+        - Decision Analysis and Risk Management
+    - Ethical Considerations in Environmental Decision Making:
+        sections:
+        - Ethical Frameworks in Policy Making
+        - Precautionary Principle and Environmental Decision Making
+        - Adaptive Management and Learning
+    - Integrating Science and Policy Perspectives:
+        sections:
+        - Review of Course Concepts and Topics
+        - Reflection on Learning Outcomes
+        - Integration of Science and Policy Perspectives
+    - Critiques of Current Environmental Policy Approaches:
+        sections:
+        - Critiques of Current Environmental Policy Approaches
+        - Alternative Paradigms and Models
+        - Prospects for Transformative Change
+    - Final Reports and Discussion:
+        sections:
+        - Individual Research Reports on Case Studies
+        - Analysis and Evaluation of Policy Approaches
+        - Recommendations for Future Actions
+        - Group Presentations on Case Studies
+        - Debates and Discussions on Key Issues
+        - Summary and Conclusions

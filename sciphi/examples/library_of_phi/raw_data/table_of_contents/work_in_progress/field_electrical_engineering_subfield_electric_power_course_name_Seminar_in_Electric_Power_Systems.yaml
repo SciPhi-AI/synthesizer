@@ -1,0 +1,175 @@
+textbook:
+  Seminar in Electric Power Systems: A Comprehensive Guide
+  chapters:
+    - Introduction, Preview, Review of Concepts:
+        sections:
+        - Background Material on Power Systems
+        - 6.061 Course Notes
+        subsections:
+        - Introduction to Power Systems
+        - Preview of Course Topics
+        - Review of Fundamental Concepts in Electric Power Systems
+    - Complex Power, Polyphase Systems:
+        sections:
+        - Power Definitions
+        - Complex Power Calculation
+        - Polyphase Systems Overview
+        subsections:
+        - Real Power and Reactive Power
+        - Power Factor
+        - Power Triangle
+        - Complex Power Formulation
+        - Three-Phase Power Systems
+        - Polyphase Power Measurement
+    - Transmission Lines, Sending and Receiving End Circle Diagrams:
+        sections:
+        - Transmission Line Basics
+        - Sending End Circle Diagrams
+        - Receiving End Circle Diagrams
+        subsections:
+        - Transmission Line Parameters
+        - Transmission Line Models
+        - Transmission Line Equations
+        - Line Parameters Calculation
+        - Circle Diagrams for Transmission Line Analysis
+    - Transformers, Polyphase Connections, Start Load Flow:
+        sections:
+        - Transformer Basics
+        - Polyphase Connections
+        - Start Load Flow Concepts
+        subsections:
+        - Transformer Construction and Operation
+        - Transformer Types and Applications
+        - Transformer Equivalent Circuit
+        - Transformer Connections and Configurations
+        - Polyphase Transformer Connections
+        - Load Flow Analysis Introduction
+        - Load Flow Calculation Steps
+    - Load Flow Problem, Setup, Matrices:
+        sections:
+        - Load Flow Problem Overview
+        - Load Flow Setup
+        - Load Flow Matrices
+        subsections:
+        - Power Flow Equations
+        - Bus Classification
+        - Data Requirements for Load Flow Analysis
+        - Formulation of Load Flow Equations
+        - Load Flow Solution Methods
+        - Bus Admittance and Impedance Matrices
+    - Newton Raphson Method, Decoupled Load Flow:
+        sections:
+        - Newton Raphson Method
+        - Decoupled Load Flow
+        subsections:
+        - Newton Raphson Load Flow Algorithm
+        - Jacobian Matrix Calculation
+        - Load Flow Convergence Criteria
+        - Decoupled Load Flow Analysis
+        - Decoupled Load Flow Solution Techniques
+    - Basics of Synchronous Machines:
+        sections:
+        - Synchronous Machine Fundamentals
+        - Synchronous Generator Models
+        subsections:
+        - Synchronous Machine Construction and Operation
+        - Synchronous Machine Equivalent Circuit
+        - Synchronous Generator Models and Characteristics
+        - Synchronous Machine Parameters
+    - Machine Operation, Electromechanical Dynamics:
+        sections:
+        - Synchronous Machine Operation
+        - Electromechanical Dynamics
+        subsections:
+        - Synchronous Machine Operating Conditions
+        - Power-Angle Characteristics
+        - Synchronous Machine Stability
+        - Electromechanical Oscillations
+        - Swing Equation
+    - Voltage Regulator, Power System Stabilizer:
+        sections:
+        - Voltage Regulator Principles
+        - Power System Stabilizer Basics
+        subsections:
+        - Voltage Regulation Methods
+        - Voltage Regulator Types and Control Strategies
+        - Power System Stability Enhancement Techniques
+        - Power System Stabilizer Design
+        - Power System Damping Control
+    - Continued Discussion of Small Signal Behavior:
+        sections:
+        - Small Signal Stability Analysis
+        - Small Signal Models
+        subsections:
+        - Small Signal Stability Concepts
+        - Eigenvalue Analysis
+        - Modal Analysis
+        - Small Signal Models for Power System Components
+    - Generation Costs:
+        sections:
+        - Cost of Generation Analysis
+        - Economic Considerations
+        subsections:
+        - Generation Cost Components
+        - Economic Dispatch Analysis
+        - Economic Considerations in Power System Operation
+        - Cost Minimization Techniques in Power Generation
+    - Economic Dispatch:
+        sections:
+        - Economic Dispatch Basics
+        - Optimization Techniques
+        subsections:
+        - Economic Dispatch Problem Formulation
+        - Economic Dispatch Solution Methods
+        - Economic Dispatch with Transmission Constraints
+        - Optimization Techniques for Economic Dispatch
+    - Optimal Dispatch:
+        sections:
+        - Optimal Dispatch Concepts
+        - Optimization Algorithms
+        subsections:
+        - Optimal Dispatch Problem Formulation
+        - Optimal Dispatch Solution Techniques
+        - Optimal Dispatch with Security Constraints
+        - Optimization Algorithms for Optimal Dispatch
+    - Symmetrical Components:
+        sections:
+        - Symmetrical Components Theory
+        - Fault Analysis Techniques
+        subsections:
+        - Symmetrical Components Transformation
+        - Sequence Impedances Calculation
+        - Fault Analysis Methods using Symmetrical Components
+    - Modeling of Faults:
+        sections:
+        - Fault Modeling Overview
+        - Fault Analysis Methods
+        subsections:
+        - Fault Types and Characteristics
+        - Fault Impedance Calculation
+        - Fault Analysis Techniques
+    - System Protection: Relaying:
+        sections:
+        - Power System Protection Basics
+        - Relay Operation Principles
+        subsections:
+        - Power System Protection Requirements
+        - Protective Relay Types and Principles
+        - Protection Schemes and Coordination
+        - Relay Setting and Coordination Techniques
+    - Slack:
+        sections:
+        - Slack Bus Definition
+        - Slack Bus Analysis
+        subsections:
+        - Definition and Role of Slack Bus
+        - Slack Bus Analysis in Power Flow Studies
+        - Slack Bus Control and Optimization Techniques
+    - Project Presentations:
+        sections:
+        - Presentation Guidelines
+        - Class Project Examples
+        subsections:
+        - Effective Presentation Techniques
+        - Class Project Selection and Execution
+        - Project Examples and Case Studies

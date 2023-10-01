@@ -1,0 +1,83 @@
+```yaml
+textbook:
+  'Comprehensive Guide to the Geology of Africa':
+    chapters:
+      - 'Chapter 1: 1600 Million Years of African Geology':
+          sections:
+            - 'Section 1.1: Formation of African Cratons'
+            - 'Section 1.2: Tectonic Events in the Proterozoic Era'
+            - 'Section 1.3: Sedimentary Basins in Africa'
+            - 'Section 1.4: Archean and Proterozoic Rocks in Africa'
+            - 'Section 1.5: Geological Evolution of Africa'
+      - 'Chapter 2: The Panafrican Orogeny':
+          sections:
+            - 'Section 2.1: Collision of Gondwana and Laurentia'
+            - 'Section 2.2: Tectonic Processes during the Panafrican Orogeny'
+            - 'Section 2.3: Metamorphic Rocks formed during the Orogeny'
+            - 'Section 2.4: Geochronology of Panafrican Events'
+            - 'Section 2.5: Tectonic Evolution of Africa after the Orogeny'
+      - 'Chapter 3: The Wilson Cycle: Geology before the Present Oceans began to Form':
+          sections:
+            - 'Section 3.1: Supercontinent Cycle and Orogenic Events'
+            - 'Section 3.2: Rifting and Opening of Ocean Basins'
+            - 'Section 3.3: Sedimentary Deposition during the Wilson Cycle'
+            - 'Section 3.4: Plate Tectonics and Wilson Cycle in Africa'
+            - 'Section 3.5: Geological Significance of the Wilson Cycle'
+      - 'Chapter 4: Undeformed and Deformed Alkaline Rocks and Carbonatites':
+          sections:
+            - 'Section 4.1: Introduction to Alkaline Rocks and Carbonatites'
+            - 'Section 4.2: Petrography and Mineralogy of Alkaline Rocks'
+            - 'Section 4.3: Magmatic Processes in Alkaline Rocks'
+            - 'Section 4.4: Metasomatic Alteration in Alkaline Rocks'
+            - 'Section 4.5: Tectonic Significance of Alkaline Rocks in Africa'
+      - 'Chapter 5: Paleomagnetism':
+          sections:
+            - 'Section 5.1: Principles of Paleomagnetism'
+            - 'Section 5.2: Magnetic Minerals and Magnetic Remanence'
+            - 'Section 5.3: Paleomagnetic Data and Tectonic Reconstruction'
+            - 'Section 5.4: Paleogeographic Interpretations using Paleomagnetism'
+            - 'Section 5.5: Paleomagnetism in African Geological Studies'
+      - 'Chapter 6: Paleozoic History':
+          sections:
+            - 'Section 6.1: Paleozoic Era in Africa'
+            - 'Section 6.2: Paleozoic Sedimentary Sequences and Fossils in Africa'
+            - 'Section 6.3: Tectonic Events and Paleogeography in the Paleozoic'
+            - 'Section 6.4: Paleozoic Climate and Environmental Changes'
+            - 'Section 6.5: Geological Significance of the Paleozoic Era in Africa'
+      - 'Chapter 7: Africa in the Early Phases of the Break-up of Pangea':
+          sections:
+            - 'Section 7.1: Formation of Gondwana and Pangea'
+            - 'Section 7.2: Rifting and Opening of the South Atlantic'
+            - 'Section 7.3: Tectonic Events during the Break-up of Pangea'
+            - 'Section 7.4: Sedimentary Basins and Volcanism in Africa'
+            - 'Section 7.5: Geological Evolution of Africa during the Break-up of Pangea'
+      - 'Chapter 8: The Opening of the South Atlantic':
+          sections:
+            - 'Section 8.1: Tectonic Evolution of the South Atlantic'
+            - 'Section 8.2: Sedimentary Basins and Fossil Records in the South Atlantic'
+            - 'Section 8.3: Magmatism and Volcanism in the South Atlantic'
+            - 'Section 8.4: Tectonic Significance of the South Atlantic Opening'
+            - 'Section 8.5: Geological Evolution of Africa after the South Atlantic Opening'
+      - 'Chapter 9: Africa’s Past 30 Million Years I':
+          sections:
+            - 'Section 9.1: Cenozoic Tectonic Events in Africa'
+            - 'Section 9.2: Climatic Changes during the Cenozoic Era'
+            - 'Section 9.3: Sedimentary Basins and Fossils in Africa'
+            - 'Section 9.4: Tectonic Controls on African Landscapes'
+            - 'Section 9.5: Geological Significance of the Cenozoic Era in Africa'
+      - 'Chapter 10: Africa’s Past 30 Million Years II':
+          sections:
+            - 'Section 10.1: Evolution of African Rift Systems'
+            - 'Section 10.2: Volcanism and Magmatism in the East African Rift'
+            - 'Section 10.3: Sedimentation and Lake Systems in the East African Rift'
+            - 'Section 10.4: Human Evolution and Paleontological Discoveries in Africa'
+            - 'Section 10.5: Geological Significance of the East African Rift'
+      - 'Chapter 11: Africa’s Past 30 Million Years III':
+          sections:
+            - 'Section 11.1: Quaternary Climate Changes in Africa'
+            - 'Section 11.2: Paleohydrological Records and Lake Cycles'
+            - 'Section 11.3: Archaeological and Anthropological Discoveries in Africa'
+            - 'Section 11.4: Geological Impacts on Human Evolution in Africa'
+            - 'Section 11.5: Geological Significance of the Quaternary Period in Africa'
+```
+```

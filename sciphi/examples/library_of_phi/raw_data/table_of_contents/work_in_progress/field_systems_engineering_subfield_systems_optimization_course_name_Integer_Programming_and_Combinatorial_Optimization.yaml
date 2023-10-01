@@ -1,0 +1,91 @@
+textbook:
+  Integer Programming and Combinatorial Optimization: A Comprehensive Guide
+chapters:
+  - Formulations:
+    sections:
+      - Integer Linear Programming Formulations
+      - Binary Integer Programming Formulations
+      - Mixed Integer Programming Formulations
+  - Complexity:
+    sections:
+      - Polynomial Time Algorithms
+      - NP-Completeness
+      - Approximation Algorithms
+      - Parameterized Complexity
+  - Methods to Enhance Formulations:
+    sections:
+      - Constraint Generation
+      - Cut Generation
+      - Reformulation Techniques
+  - Ideal Formulations:
+    sections:
+      - Strong Formulations
+      - Relaxations and Bounds
+      - Valid Inequalities
+  - Duality Theory:
+    sections:
+      - Dual Linear Programs
+      - Duality Gaps
+      - Lagrangean Relaxation
+      - Benders Decomposition
+  - Algorithms for Solving Relaxations:
+    sections:
+      - Simplex Method
+      - Interior Point Methods
+      - Branch and Bound
+      - Cutting Plane Methods
+      - Column Generation
+  - Robust Discrete Optimization:
+    sections:
+      - Uncertainty in Data
+      - Robust Optimization Models
+      - Robust Integer Programming
+  - Lattices:
+    sections:
+      - Lattice Basics
+      - Lattice Point Enumeration
+      - Lattice Reduction Algorithms
+  - Algebraic Geometry:
+    sections:
+      - Algebraic Sets and Varieties
+      - Convex Polytopes
+      - Gröbner Bases
+      - Algebraic Methods in Optimization
+  - Geometry:
+    sections:
+      - Polyhedra and Polytopes
+      - Convex Hulls
+      - Voronoi Diagrams
+      - Geometric Algorithms
+  - Cutting Plane Methods:
+    sections:
+      - Gomory's Mixed Integer Cuts
+      - Chvátal-Gomory Cuts
+      - Lift-and-Project Cuts
+      - Facet-Defining Cuts
+  - Enumerative Methods:
+    sections:
+      - Enumeration Algorithms
+      - Knapsack Problem
+      - Travelling Salesman Problem
+      - Bin Packing Problem
+  - Heuristic Methods:
+    sections:
+      - Greedy Algorithms
+      - Local Search Methods
+      - Metaheuristic Algorithms
+      - Simulated Annealing
+      - Genetic Algorithms
+  - Approximation Algorithms:
+    sections:
+      - Approximation Schemes
+      - PTAS and FPTAS
+      - Randomized Rounding
+      - Primal-Dual Algorithms
+  - Mixed Integer Optimization:
+    sections:
+      - Branch and Bound
+      - Branch and Cut
+      - Branch and Price
+      - Bilevel Programming
+      - Decomposition Methods

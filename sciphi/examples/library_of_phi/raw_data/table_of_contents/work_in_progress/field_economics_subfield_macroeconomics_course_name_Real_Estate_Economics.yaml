@@ -1,0 +1,60 @@
+textbook:
+  Real Estate Economics: A Comprehensive Guide
+  chapters:
+    - Introduction:
+        sections:
+        - Overview of Real Estate Economics
+        - Economic Factors Affecting Real Estate Markets
+        - Role of Real Estate in the Economy
+        - Real Estate as an Investment
+    - Residential Land Markets:
+        sections:
+        - Land Prices and Land Use
+        - Residential Property Values
+        - Housing Attributes and Density
+        - Rent Gradient and Land Price
+        - Urban Sprawl and its Impact on Residential Land Markets
+    - Residential Development:
+        sections:
+        - Factors Influencing Residential Development
+        - Housing Supply and Demand
+        - Determining Optimal Housing FAR
+        - Comparative Statics in Real Estate Markets
+        - Sustainable Residential Development Practices
+    - Industrial Location:
+        sections:
+        - Factors Influencing Industrial Location
+        - Industrial Land Use
+        - Industrial Property Values
+        - Externality and Public Good
+        - Brownfield Redevelopment and Industrial Location
+    - Office Location: Edge Cities:
+        sections:
+        - Edge Cities and Their Impact on Office Markets
+        - Office Property Values
+        - Metro Transit Evaluation
+        - Sustainable Office Development Strategies
+    - Retail Development:
+        sections:
+        - Factors Influencing Retail Development
+        - Retail Property Values
+        - Simulating Shopping Center Demand
+        - E-commerce and its Effects on Retail Development
+    - Local Government and Land Markets:
+        sections:
+        - Role of Local Government in Real Estate
+        - Zoning and Land Use Regulations
+        - Regulating Development
+        - Affordable Housing Policies and Local Government
+    - Macro Analysis of Housing:
+        sections:
+        - Housing Market Analysis at the Macro Level
+        - Housing Market Cycles
+        - Time Series Analysis of Real Estate Markets
+        - Housing Affordability and Macro Analysis
+    - Macro Analysis of Non-Residential Property:
+        sections:
+        - Analysis of Commercial, Industrial, and Office Markets
+        - Non-Residential Property Values
+        - Regional Growth and Real Estate Markets
+        - Economic Development Strategies and Non-Residential Property

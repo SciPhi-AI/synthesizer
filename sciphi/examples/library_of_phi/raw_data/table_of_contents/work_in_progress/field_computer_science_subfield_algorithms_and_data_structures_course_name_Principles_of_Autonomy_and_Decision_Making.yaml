@@ -1,0 +1,122 @@
+textbook:
+  Principles of Autonomy and Decision Making: A Comprehensive Guide
+  chapters:
+    - Foundations of Autonomy:
+        sections:
+        - Introduction
+        - State Space Search
+          subsections:
+          - Uninformed Search
+          - Heuristic Search
+        - Complexity of State Space Search
+          subsections:
+          - Time Complexity Analysis
+          - Space Complexity Analysis
+        - Soundness and Completeness of Search
+          subsections:
+          - Soundness of Search Algorithms
+          - Completeness of Search Algorithms
+    - Constraint Programming and Satisfaction:
+        sections:
+        - Constraint Programming
+          subsections:
+          - Constraint Modeling
+          - Constraint Solving Techniques
+        - Constraint Satisfaction
+          subsections:
+          - Backtracking Algorithms
+          - Constraint Propagation
+        - Conflict-Directed Backtracking
+          subsections:
+          - Conflict Analysis
+          - Learning from Conflicts
+    - Planning and Execution:
+        sections:
+        - Graph Plan
+          subsections:
+          - Graph Plan Representation
+          - Plan Extraction
+        - Plan Termination and Plan Execution
+          subsections:
+          - Plan Termination Conditions
+          - Plan Execution Techniques
+        - Activity Planning
+          subsections:
+          - Activity Representation
+          - Activity Scheduling
+    - Model-Based Reasoning:
+        sections:
+        - Propositional Logic and Satisfiability
+          subsections:
+          - Syntax and Semantics of Propositional Logic
+          - Satisfiability Testing Algorithms
+        - Encoding Planning Problems as Propositional Logic
+          subsections:
+          - Translation Techniques
+          - Planning Domain Definition Language
+        - Diagnosis and Mode Estimation
+          subsections:
+          - Fault Diagnosis
+          - Mode Estimation Techniques
+        - OpSat and Conflict-Directed A*
+          subsections:
+          - OpSat Algorithm
+          - Conflict-Directed A* Algorithm
+    - Global Path Planning:
+        sections:
+        - Informed Search
+          subsections:
+          - A* Algorithm
+          - Dijkstra's Algorithm
+        - Sampling-Based Algorithms for Motion Planning
+          subsections:
+          - Probabilistic Roadmap Method
+          - Rapidly-exploring Random Tree
+    - Mathematical Programming:
+        sections:
+        - Introduction to Mathematical Programming
+          subsections:
+          - Linear Programming
+          - Integer Programming
+        - The Simplex Method
+          subsections:
+          - Simplex Algorithm
+          - Big-M Method
+        - Optimization
+          subsections:
+          - Convex Optimization
+          - Nonlinear Optimization
+    - Reasoning in an Uncertain World:
+        sections:
+        - Inferring State in an Uncertain World
+          subsections:
+          - Bayesian Inference
+          - Particle Filtering
+        - Hidden Markov Models
+          subsections:
+          - HMM Representation
+          - HMM Learning Algorithms
+    - Dynamic Programming and Machine Learning:
+        sections:
+        - Markov Decision Processes
+          subsections:
+          - Value Iteration
+          - Policy Iteration
+        - Policy Iteration
+          subsections:
+          - Policy Evaluation
+          - Policy Improvement
+        - Reinforcement Learning
+          subsections:
+          - Q-Learning
+          - Deep Q-Networks
+    - Game Theory:
+        sections:
+        - Sequential Games
+          subsections:
+          - Extensive Form Games
+          - Subgame Perfect Equilibrium
+        - Differential Games
+          subsections:
+          - Pursuit-Evasion Games
+          - Hamilton-Jacobi-Isaacs Equation

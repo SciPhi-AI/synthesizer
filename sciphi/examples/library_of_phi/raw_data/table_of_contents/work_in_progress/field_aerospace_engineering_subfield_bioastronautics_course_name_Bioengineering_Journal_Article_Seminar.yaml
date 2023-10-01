@@ -1,0 +1,61 @@
+course:
+  Textbook for Bioengineering Journal Article Seminar:
+    chapters:
+    - Operator Performance and Fatigue:
+        sections:
+        - Fatigue, Sleep Restriction and Driving Performance
+          subsections:
+          - Introduction to Operator Performance and Fatigue
+          - The Impact of Sleep Restriction on Driving Performance
+          - Strategies to Mitigate Fatigue in Operators
+          - Case Studies on Fatigue-related Accidents
+        - Maximizing Sensitivity of the Psychomotor Vigilance Test (PVT) to Sleep Loss
+          subsections:
+          - Overview of the Psychomotor Vigilance Test (PVT)
+          - Factors Affecting the Sensitivity of PVT to Sleep Loss
+          - Methods to Enhance the Sensitivity of PVT to Sleep Loss
+          - Applications of PVT in Sleep Research
+        - Chasing the Silver Bullet: Measuring Driver Fatigue Using Simple and Complex Tasks
+          subsections:
+          - Introduction to Measuring Driver Fatigue
+          - Comparison of Simple and Complex Tasks in Assessing Fatigue
+          - Novel Approaches to Measure Driver Fatigue
+          - Case Studies on Fatigue Measurement in Real-world Settings
+    - Physiological Limits of Underpressure and Overpressure for Mechanical Counter Pressure Suits:
+        sections:
+        - An Extravehicular Suit Impact Load Attenuation Study to Improve Astronaut Bone Fracture Prediction
+          subsections:
+          - Overview of Extravehicular Suits and Impact Load Attenuation
+          - Physiological Limits of Underpressure for Counter Pressure Suits
+          - Physiological Limits of Overpressure for Counter Pressure Suits
+          - Case Studies on Improving Astronaut Bone Fracture Prediction
+    - Biomechanical Design of the Berkeley Lower Extremity Exoskeleton:
+        sections:
+        - Performance Enhancement in an Uninhabited Air Vehicle Task Using Psychophysiologically Determined Adaptive Aiding
+          subsections:
+          - Introduction to the Berkeley Lower Extremity Exoskeleton (BLEEX)
+          - Psychophysiological Determinants of Performance Enhancement
+          - Application of Adaptive Aiding in Uninhabited Air Vehicle Tasks
+          - Case Studies on Performance Enhancement using BLEEX
+    - A Model for Types and Levels of Human Interaction with Automation:
+        sections:
+        - Consequences of Shifting from One Level of Automation to Another: Main Effects and their Stability
+          subsections:
+          - Overview of Human Interaction with Automation
+          - Types and Levels of Automation
+          - Consequences of Shifting Automation Levels
+          - Stability of the Effects of Shifting Automation Levels
+    - Optic Disc Edema, Globe Flattening, Choroidal Folds, and Hyperopic Shifts Observed in Astronauts after Long-duration Space Flight:
+        sections:
+        - Ophthalmodynamometry for ICP Prediction and Pilot Test on Mt. Everest
+          subsections:
+          - Introduction to Optic Disc Edema and Intracranial Pressure (ICP)
+          - Ophthalmodynamometry as a Tool for ICP Prediction
+          - Pilot Test of Ophthalmodynamometry on Mt. Everest
+          - Case Studies on ICP Prediction using Ophthalmodynamometry
+        - Sonographic Optic Nerve Sheath Diameter as an Estimate of Intracranial Pressure in Adult Trauma
+          subsections:
+          - Overview of Sonographic Optic Nerve Sheath Diameter (ONSD)
+          - Correlation between ONSD and Intracranial Pressure
+          - Applications of ONSD Measurement in Adult Trauma
+          - Case Studies on ICP Estimation using ONSD Measurement

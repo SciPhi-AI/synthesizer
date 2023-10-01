@@ -1,0 +1,429 @@
+```yaml
+course:
+  Principles of Chemical Science:
+    textbook:
+      title: Comprehensive Guide to Principles of Chemical Science
+      chapters:
+        - chapter: 'Unit I: The Atom'
+          sections:
+            - section: Atomic Structure
+              subsections:
+                - Introduction to Atomic Theory
+                - Subatomic Particles
+                - Atomic Models Throughout History
+                - Quantum Numbers and Orbitals
+                - Electron Configurations
+                - Electron Shells and Energy Levels
+                - Periodic Table and Atomic Structure
+            - section: Electron Configuration
+              subsections:
+                - Aufbau Principle
+                - Pauli Exclusion Principle
+                - Hund's Rule
+                - Orbital Diagrams
+                - Periodic Trends in Electron Configuration
+                - Valence Electrons
+            - section: Periodic Trends
+              subsections:
+                - Atomic Radius
+                - Ionic Radius
+                - Ionization Energy
+                - Electron Affinity
+                - Electronegativity
+                - Periodic Trends and the Periodic Table
+            - section: Chemical Bonding
+              subsections:
+                - Ionic Bonding
+                - Covalent Bonding
+                - Lewis Symbols
+                - Lewis Structures
+                - Formal Charge
+                - Resonance Structures
+                - Bond Polarity
+                - Electronegativity and Bond Type
+                - Molecular Polarity
+            - section: Molecular Geometry
+              subsections:
+                - VSEPR Theory
+                - Linear Geometry
+                - Trigonal Planar Geometry
+                - Tetrahedral Geometry
+                - Trigonal Bipyramidal and Octahedral Geometries
+                - Molecular Shape and Polarity
+                - Bond Angles
+            - section: Lewis Dot Structures
+              subsections:
+                - Lewis Dot Symbols
+                - Lewis Dot Structures for Compounds
+                - Lewis Dot Structures for Polyatomic Ions
+                - Exceptions to the Octet Rule
+            - section: VSEPR Theory
+              subsections:
+                - Electron Pair Repulsion
+                - VSEPR Notation
+                - VSEPR Shapes and Molecular Polarity
+                - AXE Notation
+            - section: Hybridization
+              subsections:
+                - Valence Bond Theory
+                - Hybrid Orbitals
+                - sp, sp2, and sp3 Hybridization
+                - Molecular Orbital Theory
+                - Hybridization and Molecular Shape
+            - section: Intermolecular Forces
+              subsections:
+                - Types of Intermolecular Forces
+                - London Dispersion Forces
+                - Dipole-Dipole Forces
+                - Hydrogen Bonding
+                - Ion-Dipole Forces
+                - Intermolecular Forces and Physical Properties
+            - section: Stoichiometry
+              subsections:
+                - The Mole Concept
+                - Empirical and Molecular Formulas
+                - Balancing Chemical Equations
+                - Stoichiometric Calculations
+                - Limiting Reactants and Excess Reactants
+                - Percent Yield and Percent Composition
+                - Reaction Stoichiometry
+                - Theoretical and Experimental Yield
+                - Stoichiometry and Chemical Reactions
+
+        - chapter: 'Unit II: Chemical Reactions'
+          sections:
+            - section: Balancing Equations
+              subsections:
+                - Balancing Chemical Equations
+                - Law of Conservation of Mass
+                - Stoichiometry and Balancing Equations
+                - Balancing Equations for Redox Reactions
+                - Balancing Equations for Acid-Base Reactions
+            - section: Types of Reactions
+              subsections:
+                - Combination Reactions
+                - Decomposition Reactions
+                - Displacement Reactions
+                - Redox Reactions
+                - Acid-Base Reactions
+                - Precipitation Reactions
+                - Combustion Reactions
+            - section: Reaction Stoichiometry
+              subsections:
+                - Mole Ratios
+                - Stoichiometric Calculations
+                - Limiting Reactants
+                - Percent Yield
+                - Theoretical and Experimental Yield
+                - Reaction Stoichiometry and Balanced Equations
+            - section: Limiting Reactants
+              subsections:
+                - Definition and Concept of Limiting Reactants
+                - Calculating the Limiting Reactant
+                - Percent Yield and Limiting Reactants
+                - Excess Reactants
+                - Theoretical and Experimental Yield
+            - section: Percent Yield
+              subsections:
+                - Definition and Calculation of Percent Yield
+                - Theoretical and Experimental Yield
+                - Limiting Reactants and Percent Yield
+                - Stoichiometry and Percent Yield
+            - section: Redox Reactions
+              subsections:
+                - Oxidation and Reduction Reactions
+                - Half-Reactions
+                - Balancing Redox Reactions
+                - Oxidation Numbers
+                - Redox Reactions and Electron Transfer
+            - section: Reaction Rates
+              subsections:
+                - Factors Affecting Reaction Rates
+                - Rate Laws
+                - Reaction Order
+                - Rate Constants
+                - Reaction Rate and Concentration
+            - section: Collision Theory
+              subsections:
+                - Activation Energy
+                - Reaction Rates and Collision Frequency
+                - Effective Collisions
+                - Reaction Rate and Temperature
+                - Reaction Rate and Pressure
+            - section: Catalysts
+              subsections:
+                - Definition and Types of Catalysts
+                - Homogeneous Catalysts
+                - Heterogeneous Catalysts
+                - Enzymes as Catalysts
+                - Catalysts and Reaction Rates
+            - section: Equilibrium
+              subsections:
+                - Chemical Equilibrium
+                - Equilibrium Constant
+                - Le Chatelier's Principle
+                - Shifting Equilibrium: Changes in Concentration, Pressure, and Temperature
+                - Equilibrium Calculations
+                - Equilibrium and the Rate of Forward and Reverse Reactions
+
+        - chapter: 'Unit III: Thermodynamics'
+          sections:
+            - section: Energy and Heat
+              subsections:
+                - Forms of Energy
+                - Heat and Temperature
+                - Units of Energy and Heat
+                - Heat Transfer: Conduction, Convection, and Radiation
+                - Specific Heat and Heat Capacity
+            - section: Enthalpy
+              subsections:
+                - Enthalpy Change
+                - Enthalpy of Formation
+                - Enthalpy of Combustion
+                - Enthalpy of Reaction
+                - Hess's Law
+            - section: Entropy
+              subsections:
+                - Entropy and Disorder
+                - Entropy Change in Reactions
+                - Standard Entropy
+                - Gibbs Free Energy and Entropy
+                - Entropy and Spontaneity
+            - section: Gibbs Free Energy
+              subsections:
+                - Gibbs Free Energy Change
+                - Standard Gibbs Free Energy
+                - Gibbs Free Energy and Spontaneity
+                - Gibbs Free Energy and Equilibrium
+                - Gibbs Free Energy and Temperature
+            - section: Spontaneity
+              subsections:
+                - Spontaneous Processes
+                - Entropy and Spontaneity
+                - Gibbs Free Energy and Spontaneity
+                - Factors Affecting Spontaneity
+                - Entropy and the Second Law of Thermodynamics
+            - section: Hess's Law
+              subsections:
+                - Hess's Law of Heat Summation
+                - Enthalpy Change and Hess's Law
+                - Standard Enthalpy of Formation and Hess's Law
+                - Standard Enthalpy of Reaction and Hess's Law
+                - Hess's Law and Bond Energies
+            - section: Calorimetry
+              subsections:
+                - Heat Capacity and Calorimetry
+                - Constant-Pressure Calorimetry
+                - Constant-Volume Calorimetry
+                - Bomb Calorimetry
+                - Enthalpy and Calorimetry
+            - section: Phase Diagrams
+              subsections:
+                - Phase Changes
+                - Phase Diagrams and Phase Transitions
+                - Heating and Cooling Curves
+                - Triple Point and Critical Point
+                - Phase Diagrams of Water and Other Substances
+            - section: Van't Hoff Equation
+              subsections:
+                - Van't Hoff Equation
+                - Equilibrium Constant and Temperature
+                - Reaction Quotient and Temperature
+                - Equilibrium and Temperature Changes
+                - Le Chatelier's Principle and Temperature
+            - section: Reaction Kinetics
+              subsections:
+                - Rate Laws
+                - Reaction Order
+                - Rate Constants
+                - Reaction Rate and Concentration
+                - Collision Theory and Reaction Rates
+
+        - chapter: 'Unit IV: Chemical Equilibrium'
+          sections:
+            - section: Le Chatelier's Principle
+              subsections:
+                - Le Chatelier's Principle and Equilibrium
+                - Effect of Concentration Changes
+                - Effect of Pressure Changes
+                - Effect of Temperature Changes
+                - Effect of Catalysts
+            - section: Equilibrium Constants
+              subsections:
+                - Equilibrium Constant Expression
+                - Equilibrium Constant and Reaction Quotient
+                - Relationship between Kc and Kp
+                - Relationship between Kc and Q
+                - Equilibrium Constant and Partial Pressures
+            - section: Acid-Base Equilibria
+              subsections:
+                - Arrhenius Theory of Acids and Bases
+                - Bronsted-Lowry Theory of Acids and Bases
+                - Lewis Theory of Acids and Bases
+                - Conjugate Acid-Base Pairs
+                - Acid Dissociation Constants
+                - Base Dissociation Constants
+                - pH and pOH
+                - Strong Acids and Bases
+                - Weak Acids and Bases
+                - Acid-Base Equilibrium Calculations
+            - section: Solubility Equilibria
+              subsections:
+                - Solubility Product Constant
+                - The Common Ion Effect
+                - Precipitation and Dissolution Reactions
+                - Solubility Equilibrium Calculations
+                - Factors Affecting Solubility
+            - section: Common Ion Effect
+              subsections:
+                - Common Ion Effect and Solubility
+                - Common Ion Effect and pH
+                - Common Ion Effect and Buffer Solutions
+                - Common Ion Effect and Precipitation
+            - section: pH and pOH
+              subsections:
+                - Definition and Calculation of pH
+                - Definition and Calculation of pOH
+                - Relationship between pH and pOH
+                - pH Scale and Acid-Base Strength
+                - pH of Strong Acids and Bases
+                - pH of Weak Acids and Bases
+                - pH and pOH Calculations
+            - section: Buffers
+              subsections:
+                - Buffer Solutions
+                - Buffer Capacity
+                - Henderson-Hasselbalch Equation
+                - Buffer Range
+                - Buffer Preparation and Applications
+            - section: Titrations
+              subsections:
+                - Acid-Base Titrations
+                - Titration Curves
+                - Equivalence Point
+                - pH Indicators
+                - Oxidation-Reduction Titrations
+                - Titrations and Stoichiometry
+            - section: Acid-Base Indicators
+              subsections:
+                - Acid-Base Indicators and pH Range
+                - Indicator Color Changes
+                - Litmus Paper and Universal Indicator
+                - pH Indicators in Titrations
+                - Natural Indicators and Synthetic Indicators
+            - section: Solubility Rules
+              subsections:
+                - Solubility Rules for Common Ionic Compounds
+                - Solubility Rules and Precipitation Reactions
+                - Solubility Rules and Net Ionic Equations
+                - Solubility Rules and Chemical Analysis
+                - Exceptions to Solubility Rules
+
+        - chapter: 'Unit V: Organic Chemistry'
+          sections:
+            - section: Functional Groups
+              subsections:
+                - Organic Functional Groups
+                - Aliphatic and Aromatic Compounds
+                - Hydrocarbons and Heteroatoms
+                - Functional Groups and Chemical Properties
+            - section: Nomenclature
+              subsections:
+                - IUPAC Nomenclature System
+                - Naming Alkanes, Alkenes, and Alkynes
+                - Naming Aromatic Compounds
+                - Naming Organic Functional Groups
+                - Naming Organic Substituents
+            - section: Isomerism
+              subsections:
+                - Structural Isomerism
+                - Stereoisomerism
+                - Geometric Isomerism
+                - Optical Isomerism
+                - Isomerism and Physical Properties
+            - section: Alkanes
+              subsections:
+                - Structure and Properties of Alkanes
+                - Alkane Nomenclature
+                - Alkane Formula and Isomerism
+                - Alkane Reactions
+                - Alkane Substitution and Radical Reactions
+            - section: Alkenes and Alkynes
+              subsections:
+                - Structure and Properties of Alkenes
+                - Alkene Nomenclature
+                - Alkene Formula and Isomerism
+                - Alkene Reactions
+                - Alkyne Nomenclature
+                - Alkyne Formula and Isomerism
+                - Alkyne Reactions
+            - section: Aromatic Compounds
+              subsections:
+                - Structure and Properties of Aromatic Compounds
+                - Aromaticity and Huckel's Rule
+                - Aromatic Nomenclature
+                - Aromatic Reactions
+                - Benzene and Its Derivatives
+            - section: Organic Reactions
+              subsections:
+                - Substitution Reactions
+                - Addition Reactions
+                - Elimination Reactions
+                - Oxidation-Reduction Reactions
+                - Rearrangement Reactions
+                - Organic Reaction Mechanisms
+                - Reaction Intermediates
+            - section: Stereochemistry
+              subsections:
+                - Chirality and Enantiomers
+                - Optical Activity
+                - Fischer Projections
+                - R and S Configuration
+                - Diastereomers and Meso Compounds
+                - Stereoisomerism in Organic Reactions
+            - section: Reaction Mechanisms
+              subsections:
+                - Reaction Mechanisms and Reaction Steps
+                - Elementary Reactions
+                - Reaction Intermediates
+                - Rate-Determining Step
+                - Reaction Mechanisms and Reaction Rates
+            - section: Spectroscopy
+              subsections:
+                - Introduction to Spectroscopy
+                - Infrared Spectroscopy
+                - Ultraviolet-Visible Spectroscopy
+                - Nuclear Magnetic Resonance Spectroscopy
+                - Mass Spectrometry
+                - Spectral Interpretation and Structural Analysis
+
+        - chapter: 'Unit VI: Biochemistry'
+          sections:
+            - section: Amino Acids
+              subsections:
+                - Structure and Properties of Amino Acids
+                - Classification of Amino Acids
+                - Essential and Nonessential Amino Acids
+                - Amino Acid Sequences and Proteins
+                - Protein Structure and Folding
+            - section: Protein Structure
+              subsections:
+                - Primary Structure of Proteins
+                - Secondary Structure of Proteins
+                - Tertiary Structure of Proteins
+                - Quaternary Structure of Proteins
+                - Protein Folding and Misfolding
+            - section: Enzymes
+              subsections:
+                - Enzyme Structure and Function
+                - Enzyme Kinetics
+                - Enzyme Inhibition
+                - Enzyme Regulation
+                - Enzyme Cofactors and Coenzymes
+            - section: Carbohydrates
+              subsections:
+                - Structure and Classification of Carbohydrates
+                - Monosaccharides
+                - Disaccharides
+                - Polysaccharides
+                - Carbohydrate

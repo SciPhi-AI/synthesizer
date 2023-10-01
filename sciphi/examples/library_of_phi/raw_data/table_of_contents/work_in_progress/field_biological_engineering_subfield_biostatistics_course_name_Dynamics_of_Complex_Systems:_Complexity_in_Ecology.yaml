@@ -1,0 +1,82 @@
+textbook:
+  'Exploring Complexity in Ecology: A Comprehensive Guide to Dynamics of Complex Systems':
+    chapters:
+    - Introduction:
+        sections:
+        - How many Species are there on Earth?
+    - Food Webs:
+        sections:
+        - Introduction to Food Webs and Trophic Interactions
+        - Empirical Examples and Critiques of the Cascade Model
+        - Dynamical Models of Food Webs
+    - Biodiversity and Ecological Stability:
+        sections:
+        - What is the Relationship Between Complexity and Stability?
+        - Evidence from Experiments
+        - 'Diversity Stability Relationships: Statistical Inevitability or Ecological
+          Consequence?'
+    - Diversity and Ecosystem Function:
+        sections:
+        - Diversity in Terrestrial Ecosystems
+        - Perspectives on Biodiversity and Ecosystem Function
+        - Island Biogeography
+        - 'Theoretical Foundation: Log-normal Distributions of Species Abundance Power-law
+          Species-area Curves'
+        - Spatial Models
+        - What is the Role of Resource Availability in Species-area Relationships?
+        - Empirical Tests of Species-energy Theory
+        - Issues of Scale
+        - Extinction Rates and Range Contraction of Endangered Species
+    - Introduction to Body Size in the Context of Evolution and Ecology:
+        sections:
+        - Allometric Constraints, Resource Equipartitioning and Body Size
+        - Cope’s Rule
+        - Home Range Scaling and Statistical Artifacts in Abundance Sampling
+        - Evolutionary Entropy and Body Size
+    - Student Presentations:
+        sections:
+        - '[Topic 1]':
+            subsections:
+            - Introduction to the topic
+            - Key research studies
+            - Current challenges and future directions
+        - '[Topic 2]':
+            subsections:
+            - Introduction to the topic
+            - Key research studies
+            - Current challenges and future directions
+        - '[Topic 3]':
+            subsections:
+            - Introduction to the topic
+            - Key research studies
+            - Current challenges and future directions
+        - '[Topic 4]':
+            subsections:
+            - Introduction to the topic
+            - Key research studies
+            - Current challenges and future directions
+        - '[Topic 5]':
+            subsections:
+            - Introduction to the topic
+            - Key research studies
+            - Current challenges and future directions
+        - '[Topic 6]':
+            subsections:
+            - Introduction to the topic
+            - Key research studies
+            - Current challenges and future directions
+        - '[Topic 7]':
+            subsections:
+            - Introduction to the topic
+            - Key research studies
+            - Current challenges and future directions
+        - '[Topic 8]':
+            subsections:
+            - Introduction to the topic
+            - Key research studies
+            - Current challenges and future directions
+        - '[Topic 9]':
+            subsections:
+            - Introduction to the topic
+            - Key research studies
+            - Current challenges and future directions

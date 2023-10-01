@@ -1,0 +1,54 @@
+textbook:
+  Effective Oral Communication in the Earth, Atmospheric, and Planetary Sciences:
+    chapters:
+    - Introduction:
+        sections:
+        - Importance of Oral Communication
+        - Overview of the Course
+        subsections: []
+    - Chapter 1: Finding Good Presentations:
+        sections:
+        - Identifying Effective Presentations
+        - Analyzing Presentation Slides
+        - Elements of a Successful Presentation
+        subsections: []
+    - Chapter 2: Rehearsal Techniques:
+        sections:
+        - Elevator Talk Practice
+        - Short Talk Rehearsal
+        - Mid-length Talk Rehearsal
+        subsections: []
+    - Chapter 3: Delivering Presentations:
+        sections:
+        - Elevator Talk Presentation
+        - Short Talk Presentation
+        - Mid-length Talk Presentation
+        subsections: []
+    - Chapter 4: Effective Communication Strategies:
+        sections:
+        - Clarifying Research Goals
+        - Targeting the Audience
+        - Engaging with Visual Aids
+        - Using Effective Body Language
+        subsections: []
+    - Chapter 5: The Great Debate:
+        sections:
+        - 'Part 1: Introduction and Background'
+        - 'Part 2: Analyzing Arguments'
+        subsections: []
+    - Chapter 6: AGU Talks Round:
+        sections:
+        - 'Round 1: Presentation Evaluation'
+        - 'Round 2: Constructive Feedback and Improvement'
+        subsections: []
+    - Chapter 7: Presentation Analysis:
+        sections:
+        - Evaluating Presentation Clips
+        - Identifying Strengths and Weaknesses
+        subsections: []
+    - Chapter 8: Contextualizing Research:
+        sections:
+        - Defining the Problem Statement
+        - Establishing Research Motivation
+        - Relating to Earth, Atmospheric, and Planetary Sciences
+        subsections: []

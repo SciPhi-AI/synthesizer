@@ -1,0 +1,63 @@
+textbook:
+  Intermediate Macroeconomic Theory: A Comprehensive Guide
+
+chapters:
+  - chapter: Neoclassical Growth Theory
+    sections:
+      - section: Solow, Robert M. 'Technical Change and the Aggregated Production Function.'
+      - section: Mankiw, N. Gregory, David Romer, and David N. Weil. 'A Contribution to the Empirics of Economic Growth.'
+      - section: Lucas, Robert E. 'On the Mechanics of Economic Development.'
+  
+  - chapter: Consumption and Investment
+    sections:
+      - section: Friedman, Milton. 'The Permanent Income Hypothesis.'
+      - section: Hall, Robert E. 'Stochastic Implications of the Life Cycle-Permanent Income Hypothesis.'
+      - section: 'Abel, Andrew B., and Olivier J. Blanchard. ''Investment and Sales: Some Empirical Evidence.'''
+  
+  - chapter: Aggregate Demand and Aggregate Supply
+    sections:
+      - section: Romer, David. 'A New Assessment of the Relationship between Inflation and Economic Growth.'
+      - section: Bernanke, Ben S., and Mark Gertler. 'Monetary Policy and Asset Price Volatility.'
+      - section: Blanchard, Olivier J., and Mark W. Watson. 'Bubbles, Rational Expectations, and Financial Markets.'
+  
+  - chapter: Money and Inflation
+    sections:
+      - section: Tobin, James. 'Money and Economic Growth.'
+      - section: Sargent, Thomas J., and Neil Wallace. 'Some Unpleasant Monetarist Arithmetic.'
+      - section: Barro, Robert J. 'Are Government Bonds Net Wealth?'
+  
+  - chapter: Business Cycles
+    sections:
+      - section: Kydland, Finn E., and Edward C. Prescott. 'Time to Build and Aggregate Fluctuations.'
+      - section: Romer, David. 'The Origins of Endogenous Growth.'
+      - section: King, Robert G., and Sergio T. Rebelo. 'Resuscitating Real Business Cycles.'
+  
+  - chapter: Fiscal Policy
+    sections:
+      - section: Barro, Robert J. 'Government Spending in a Simple Model of Endogenous Growth.'
+      - section: Alesina, Alberto, and Roberto Perotti. 'Fiscal Expansions and Adjustments in OECD Economies.'
+      - section: Blanchard, Olivier J., and Roberto Perotti. 'An Empirical Characterization of the Dynamic Effects of Changes in Government Spending and Taxes on Output.'
+  
+  - chapter: Monetary Policy
+    sections:
+      - section: Taylor, John B. 'Discretion versus Policy Rules in Practice.'
+      - section: 'Clarida, Richard, Jordi Gali, and Mark Gertler. ''Monetary Policy Rules and Macroeconomic Stability: Evidence and Some Theory.'''
+      - section: Romer, David. 'Should Policy Makers be Restrained?'
+  
+  - chapter: Open Economy Macroeconomics
+    sections:
+      - section: Obstfeld, Maurice, and Kenneth Rogoff. 'Exchange Rate Dynamics Redux.'
+      - section: Obstfeld, Maurice, and Kenneth Rogoff. 'Foundations of International Macroeconomics.'
+      - section: 'Aizenman, Joshua, and Jaewoo Lee. ''Financial Versus Monetary Mercantilism: Long-Run View of Large International Reserve Hoarding.'''
+  
+  - chapter: Economic Growth
+    sections:
+      - section: Romer, Paul M. 'Increasing Returns and Long-Run Growth.'
+      - section: Barro, Robert J., and Xavier Sala-i-Martin. 'Technological Diffusion, Convergence, and Growth.'
+      - section: Acemoglu, Daron, and James A. Robinson. 'Why Did the West Extend the Franchise? Democracy, Inequality, and Growth in Historical Perspective.'
+  
+  - chapter: Financial Markets and Crises
+    sections:
+      - section: Diamond, Douglas W., and Philip H. Dybvig. 'Bank Runs, Deposit Insurance, and Liquidity.'
+      - section: Brunnermeier, Markus K. 'Deciphering the Liquidity and Credit Crunch 2007-2008.'
+      - section: Gorton, Gary, and Andrew Metrick. 'Haircuts.'

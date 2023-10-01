@@ -1,0 +1,95 @@
+course:
+  'Attraction and Repulsion: The Magic of Magnets':
+    textbook:
+      name: 'Magnets and Their Marvels: Exploring the Science of Attraction and Repulsion'
+    chapters:
+      - 'Chapter 1: Introduction to Magnets':
+          sections:
+            - 'Section 1.1: Basics of Hard and Soft Magnetic Materials':
+                subsections:
+                  - 'Subsection 1.1.1: Magnetic Properties of Materials'
+                  - 'Subsection 1.1.2: Classification of Hard and Soft Magnetic Materials'
+                  - 'Subsection 1.1.3: Magnetic Domains and Magnetization Processes'
+            - 'Section 1.2: Magnetic Fields and Forces':
+                subsections:
+                  - 'Subsection 1.2.1: Magnetism and Electromagnetism'
+                  - 'Subsection 1.2.2: Understanding Magnetic Fields'
+                  - 'Subsection 1.2.3: Magnetic Forces on Moving Charges'
+            - 'Section 1.3: Magnetic Phenomena':
+                subsections:
+                  - 'Subsection 1.3.1: Magnetic Levitation'
+                  - 'Subsection 1.3.2: Magnetic Recording'
+                  - 'Subsection 1.3.3: Ferrofluids and their Applications'
+      - 'Chapter 2: Magnetic Forces and Curie Temperatures':
+          sections:
+            - 'Section 2.1: Basics of Electromagnetism':
+                subsections:
+                  - 'Subsection 2.1.1: Electric and Magnetic Fields'
+                  - 'Subsection 2.1.2: Ampere's Law and Biot-Savart Law'
+                  - 'Subsection 2.1.3: Maxwell's Equations'
+            - 'Section 2.2: Magnetic Data Recording':
+                subsections:
+                  - 'Subsection 2.2.1: History of Magnetic Data Recording'
+                  - 'Subsection 2.2.2: Magnetic Storage Devices'
+                  - 'Subsection 2.2.3: Advances in Magnetic Recording Technologies'
+            - 'Section 2.3: Superconductivity and Magnetism':
+                subsections:
+                  - 'Subsection 2.3.1: Meissner Effect and Type-I Superconductors'
+                  - 'Subsection 2.3.2: Type-II Superconductors and Their Applications'
+                  - 'Subsection 2.3.3: Superconducting Magnets and Their Uses'
+            - 'Section 2.4: Magnetic Fields in the Brain':
+                subsections:
+                  - 'Subsection 2.4.1: Biomagnetism and Brain Activity'
+                  - 'Subsection 2.4.2: Magnetoencephalography (MEG) and Its Applications'
+                  - 'Subsection 2.4.3: Magnetic Resonance Imaging (MRI) and Brain Research'
+      - 'Chapter 3: Oral Presentations on Magnets in Science and Technology':
+          sections:
+            - 'Section 3.1: Magnets in Cyclotrons, CERN, and Space':
+                subsections:
+                  - 'Subsection 3.1.1: Magnet Designs for Particle Accelerators'
+                  - 'Subsection 3.1.2: Magnetic Fields in Space Exploration'
+                  - 'Subsection 3.1.3: Applications of Magnets in CERN Experiments'
+            - 'Section 3.2: Magnets in NMR, EPR, Mass Spectroscopy':
+                subsections:
+                  - 'Subsection 3.2.1: Nuclear Magnetic Resonance (NMR) and Its Uses'
+                  - 'Subsection 3.2.2: Electron Paramagnetic Resonance (EPR) Spectroscopy'
+                  - 'Subsection 3.2.3: Magnetic Mass Spectrometry and Its Applications'
+      - 'Chapter 4: Ferrofluids and Their Fascination':
+          sections:
+            - 'Section 4.1: Introduction to Ferrofluids':
+                subsections:
+                  - 'Subsection 4.1.1: Properties and Synthesis of Ferrofluids'
+                  - 'Subsection 4.1.2: Uses of Ferrofluids in Engineering and Medicine'
+                  - 'Subsection 4.1.3: Challenges and Future Directions in Ferrofluid Research'
+      - 'Chapter 5: Assignments and Reflections on Magnetic Phenomena':
+          sections:
+            - 'Section 5.1: Applications of Magnetic Induction':
+                subsections:
+                  - 'Subsection 5.1.1: Inductive Charging and Wireless Power Transfer'
+                  - 'Subsection 5.1.2: Magnetic Sensors and Non-Destructive Testing'
+                  - 'Subsection 5.1.3: Electromagnetic Braking and Propulsion Systems'
+            - 'Section 5.2: Magnetic Levitation and Its Real-World Applications':
+                subsections:
+                  - 'Subsection 5.2.1: Maglev Trains and Magnetic Bearings'
+                  - 'Subsection 5.2.2: Levitating Displays and Magnetic Suspension Systems'
+                  - 'Subsection 5.2.3: Challenges and Innovations in Magnetic Levitation'
+            - 'Section 5.3: Magnetic Recording Technologies':
+                subsections:
+                  - 'Subsection 5.3.1: Evolution of Magnetic Storage Devices'
+                  - 'Subsection 5.3.2: Hard Disk Drives and Solid-State Drives (SSDs)'
+                  - 'Subsection 5.3.3: Magnetic Random-Access Memory (MRAM) and Future Trends'
+            - 'Section 5.4: Biomagnetism and Its Role in Life Sciences':
+                subsections:
+                  - 'Subsection 5.4.1: Magnetic Fields in Organisms and Cells'
+                  - 'Subsection 5.4.2: Magnetic Navigation in Animals and Insects'
+                  - 'Subsection 5.4.3: Medical Applications of Biomagnetism'
+            - 'Section 5.5: Magnets in Advanced Physics and Chemistry Research':
+                subsections:
+                  - 'Subsection 5.5.1: Magnetic Resonance Spectroscopy and Imaging'
+                  - 'Subsection 5.5.2: Magnetic Field Effects in Chemical Reactions'
+                  - 'Subsection 5.5.3: Magnetism in Condensed Matter Physics'
+            - 'Section 5.6: Seminar Reflection and Recommendations':
+                subsections:
+                  - 'Subsection 5.6.1: Evaluation of Seminar Presentations'
+                  - 'Subsection 5.6.2: Personal Insights and Favorite Seminars'
+                  - 'Subsection 5.6.3: Suggestions for Future Seminar Improvements'

@@ -1,0 +1,244 @@
+```
+course:
+  Quantum Theory I:
+    textbook:
+      title: Quantum Mechanics: A Comprehensive Introduction
+      author: John Smith
+      chapters:
+        - Fundamental Postulates of Quantum Mechanics:
+            sections:
+            - Hilbert Spaces
+              subsections:
+              - Definition and Properties of Hilbert Spaces
+              - Complete and Orthonormal Sets of Functions
+              - Hilbert Space Basis
+              - Hilbert Space Dimensionality
+            - Inner Products
+              subsections:
+              - Definition and Properties of Inner Products
+              - Inner Product Spaces
+              - Inner Product Space Examples
+              - Inner Product Space Dimensionality
+            - Dual Space
+              subsections:
+              - Definition and Properties of Dual Spaces
+              - Dual Space Examples
+              - Dual Space Dimensionality
+              - Dual Basis
+            - Orthonormal Bases
+              subsections:
+              - Definition and Properties of Orthonormal Bases
+              - Orthonormal Basis Examples
+              - Gram-Schmidt Process
+            - Operators
+              subsections:
+              - Definition and Properties of Operators
+              - Linear Operators
+              - Hermitian Operators
+              - Unitary Operators
+            - Eigenstates and Eigenvalues
+              subsections:
+              - Definition and Properties of Eigenstates and Eigenvalues
+              - Eigenstate Equations
+              - Eigenstate Examples
+              - Eigenvalue Spectrum
+        - Matrix Representations and Operators:
+            sections:
+            - Operators as Matrices in a Given Basis
+              subsections:
+              - Matrix Representation of Operators
+              - Change of Basis
+              - Matrix Representation Examples
+            - Adjoint Operators
+              subsections:
+              - Definition and Properties of Adjoint Operators
+              - Adjoint Operator Examples
+              - Matrix Representation of Adjoint Operators
+            - Operator Examples
+              subsections:
+              - Position and Momentum Operators
+              - Angular Momentum Operators
+              - Energy Operator
+              - Spin Operators
+        - Quantum Mechanics in One-dimensional Systems:
+            sections:
+            - Stationary States
+              subsections:
+              - Time-independent Schrödinger Equation
+              - Solutions of the Schrödinger Equation
+              - Superposition of Stationary States
+            - Boundary Conditions
+              subsections:
+              - Definition and Types of Boundary Conditions
+              - Boundary Conditions Examples
+              - Boundary Conditions in Infinite Square Well
+              - Boundary Conditions in Finite Square Well
+            - Infinite Square Well
+              subsections:
+              - Particle in a Box Model
+              - Energy Levels and Wavefunctions
+              - Normalization of Wavefunctions
+              - Average Position and Momentum
+            - Finite Square Well
+              subsections:
+              - Potential Energy Profile
+              - Bound and Scattering States
+              - Transmission and Reflection Coefficients
+              - Resonance States
+            - Simple Harmonic Oscillator
+              subsections:
+              - Harmonic Potential Energy
+              - Energy Levels and Wavefunctions
+              - Ladder Operators
+              - Coherent States
+            - Delta Function Potential
+              subsections:
+              - Dirac Delta Function
+              - Delta Function Potential Well
+              - Scattering States
+              - Bound States
+        - Quantum Mechanics in Three-dimensional Systems:
+            sections:
+            - Central Potentials
+              subsections:
+              - Spherical Coordinates
+              - Central Potentials Examples
+              - Radial Wavefunctions
+            - Angular Momentum
+              subsections:
+              - Orbital Angular Momentum
+              - Spherical Harmonics
+              - Angular Momentum Operators
+              - Commutation Relations
+            - Hydrogen Atom
+              subsections:
+              - Hydrogen Atom Model
+              - Energy Levels and Wavefunctions
+              - Angular Momentum and Energy Quantization
+              - Spectroscopic Notation
+            - Energy Levels Diagram
+              subsections:
+              - Energy Levels and Transitions
+              - Selection Rules
+              - Fine Structure
+              - Hyperfine Structure
+        - Quantum Mechanics of Angular Momentum:
+            sections:
+            - Algebra of Angular Momentum
+              subsections:
+              - Angular Momentum Operators Algebra
+              - Angular Momentum Addition
+              - Clebsch-Gordan Coefficients
+            - Legendre Polynomials
+              subsections:
+              - Legendre Polynomials Definition and Properties
+              - Associated Legendre Polynomials
+              - Legendre Polynomials Examples
+            - Circular Orbits and Eccentricity
+              subsections:
+              - Circular Orbits and Angular Momentum
+              - Eccentricity and Orbital Shapes
+              - Elliptical Orbits
+            - Discovery of Spin
+              subsections:
+              - Stern-Gerlach Experiment
+              - Electron Spin
+              - Pauli Matrices
+        - Quantum Mechanics in Two-level Systems:
+            sections:
+            - Superposition and Entanglement
+              subsections:
+              - Quantum Superposition
+              - Quantum Entanglement
+              - Bell States
+              - Quantum Teleportation
+            - Rabi Oscillations
+              subsections:
+              - Two-level System Model
+              - Rabi Frequency
+              - Rabi Oscillations Examples
+              - Ramsey Interferometry
+            - Bloch Sphere
+              subsections:
+              - Bloch Sphere Representation
+              - Bloch Equations
+              - Bloch Sphere Dynamics
+              - Geometric Phase
+            - Quantum Gates
+              subsections:
+              - Quantum Logic Gates
+              - Single-qubit Gates
+              - Two-qubit Gates
+              - Quantum Circuits
+            - Quantum Algorithms
+              subsections:
+              - Quantum Fourier Transform
+              - Grover's Algorithm
+              - Shor's Algorithm
+              - Quantum Error Correction
+        - Time Evolution and Scattering:
+            sections:
+            - Time Evolution of Wave-packets
+              subsections:
+              - Time-dependent Schrödinger Equation
+              - Wave-packet Dynamics
+              - Wave-packet Spreading
+              - Group Velocity
+            - Scattering Theory
+              subsections:
+              - Scattering Amplitude
+              - Scattering Cross Section
+              - Scattering Phase Shift
+              - Partial Wave Analysis
+            - Phase Shifts
+              subsections:
+              - Definition and Properties of Phase Shifts
+              - Phase Shifts in Scattering Theory
+              - Phase Shift Analysis
+              - Resonance and Breit-Wigner Formula
+        - Quantum Measurements and Observables:
+            sections:
+            - Probability Density
+              subsections:
+              - Born's Rule
+              - Probability Density Interpretation
+              - Normalization Condition
+              - Probability Current Density
+            - Expectation Values of Operators
+              subsections:
+              - Expectation Values Definition and Properties
+              - Measurement Postulate
+              - Expectation Values Examples
+              - Uncertainty Principle and Expectation Values
+            - Uncertainty Relation
+              subsections:
+              - Heisenberg Uncertainty Principle
+              - Position-Momentum Uncertainty Relation
+              - Energy-Time Uncertainty Relation
+              - Uncertainty Relation Examples
+        - Quantum Mechanics of Identical Particles:
+            sections:
+            - Symmetry and Exchange
+              subsections:
+              - Particle Exchange Symmetry
+              - Symmetric and Antisymmetric States
+              - Exchange Operator
+              - Permutation Group
+            - Pauli Exclusion Principle
+              subsections:
+              - Pauli Exclusion Principle Definition
+              - Pauli Matrices and Spin Statistics
+              - Fermi-Dirac and Bose-Einstein Statistics
+            - Fermions and Bosons
+              subsections:
+              - Fermions and Fermi-Dirac Statistics
+              - Bosons and Bose-Einstein Statistics
+              - Fermi-Dirac and Bose-Einstein Distribution Functions
+              - Fermi-Dirac and Bose-Einstein Gases
+            - Quantum Statistics
+              subsections:
+              - Quantum Statistics Definition and Properties
+              - Maxwell-Boltzmann Distribution
+              - Quantum Statistics Examples
+              - Quantum Statistics in Systems of Identical Particles
+```

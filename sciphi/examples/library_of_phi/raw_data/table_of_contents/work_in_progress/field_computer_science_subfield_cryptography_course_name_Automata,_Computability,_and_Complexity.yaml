@@ -1,0 +1,94 @@
+textbook:
+  Automata, Computability, and Complexity: A Comprehensive Guide
+  
+chapters:
+  - Introduction:
+    sections:
+      - Logic, circuits, and gates
+      - Deterministic finite automata
+      - NFAs and regular expressions
+      - Limitations of regular languages
+      - Context-free languages and grammars
+      - Pushdown automata
+      - Parsing and the Chomsky hierarchy
+      
+  - Non-regular languages and the pumping lemma:
+    sections:
+      - Turing machines
+      - Decidability
+      - Recursively enumerable languages
+      - Universal Turing machines
+      - Halting problem
+      - Undecidable problems
+      - The pumping lemma for context-free languages
+      
+  - Undecidable problems and Post correspondence problem:
+    sections:
+      - Mapping reducibility and Rice’s theorem
+      - Self-reference and the recursion theorem
+      - Post correspondence problem
+      - Computational complexity theory
+      - Time and space complexity classes
+      - P versus NP problem
+      
+  - Introduction to cryptography:
+    sections:
+      - Complexity theory
+      - Pseudorandom generators and one-way functions
+      - Public-key cryptography
+      - Symmetric-key cryptography
+      - Cryptographic protocols
+      - Digital signatures
+      
+  - More complexity theory:
+    sections:
+      - More NP-completeness
+      - Probabilistic Turing machines and complexity classes
+      - Approximation algorithms
+      - Circuit complexity
+      - Interactive proof systems
+      - Zero-knowledge proofs
+      
+  - Introduction to quantum:
+    sections:
+      - Quantum mechanics and BQP
+      - Quantum algorithms
+      - Quantum complexity theory
+      - Quantum error correction
+      - Quantum cryptography
+      
+  - Advanced topics in automata:
+    sections:
+      - Tree automata
+      - Automata on infinite words
+      - Omega-regular languages
+      - Timed automata
+      - Game automata
+      - Automata learning
+      
+  - Advanced topics in complexity:
+    sections:
+      - Circuit lower bounds
+      - Derandomization
+      - Communication complexity
+      - PCP theorem
+      - Fine-grained complexity
+      - Proof complexity
+      
+  - Advanced topics in cryptography:
+    sections:
+      - Lattice-based cryptography
+      - Multilinear maps
+      - Homomorphic encryption
+      - Zero-knowledge proofs of knowledge
+      - Quantum-resistant cryptography
+      - Side-channel attacks
+      
+  - Current research directions:
+    sections:
+      - Quantum supremacy
+      - Post-quantum cryptography
+      - Machine learning and complexity
+      - Cryptocurrencies and blockchain
+      - Computational social choice
+      - Bio-inspired computing

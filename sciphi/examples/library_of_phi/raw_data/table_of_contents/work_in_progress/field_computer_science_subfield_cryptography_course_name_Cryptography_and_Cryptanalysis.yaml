@@ -1,0 +1,54 @@
+```yaml
+course:
+  Cryptography and Cryptanalysis:
+    textbook:
+      title: Comprehensive Guide to Cryptography and Cryptanalysis
+      chapters:
+      - Public-key Encryption:
+          sections:
+          - Basic Protocols
+            subsections:
+            - Overview
+            - RSA Encryption
+            - Diffie-Hellman Key Exchange
+          - Computational Complexity Requirements
+            subsections:
+            - Big-O Notation
+            - Time Complexity Analysis
+            - Space Complexity Analysis
+      - Digital Signatures:
+          sections:
+          - Basic Protocols
+            subsections:
+            - Overview
+            - RSA Digital Signature
+            - DSA Digital Signature
+          - Computational Complexity Requirements
+            subsections:
+            - Big-O Notation
+            - Time Complexity Analysis
+            - Space Complexity Analysis
+          - Security Analysis
+            subsections:
+            - Known Attacks
+            - Collision Resistance
+            - Unforgeability
+      - Pseudo-random Number Generation:
+          sections:
+          - Basic Protocols
+            subsections:
+            - Overview
+            - Linear Congruential Generator
+            - Blum Blum Shub Generator
+          - Computational Complexity Requirements
+            subsections:
+            - Big-O Notation
+            - Time Complexity Analysis
+            - Space Complexity Analysis
+          - Statistical Tests
+            subsections:
+            - Frequency Test
+            - Poker Test
+            - Runs Test
+```
+```

@@ -1,0 +1,108 @@
+textbook:
+  Cellular and Molecular Computation: A Comprehensive Guide
+  
+chapters:
+  - Introduction and Overview:
+    sections:
+      - Understanding Nonlinearity and Feedback in Biological Networks
+      
+  - DNA Computing and Self-Assembly:
+    sections:
+      - DNA Computing
+      - Self-Assembly
+      
+  - Enzyme Kinetics:
+    sections:
+      - Michaelis-Menten Theory
+      - Cooperative Behavior
+      
+  - Metabolic Control Analysis:
+    sections:
+      - Control of Metabolism
+      
+  - General Formalism for Chemical Reaction Networks:
+    sections:
+      - Chemical Reaction Networks
+      - Metabolic Flux Analysis
+    
+  - Student Presentations:
+    sections:
+      - Theory of Chemical Computation
+    
+  - Overview of Transcriptional Regulation:
+    sections:
+      - Lambda Phage
+    
+  - Models of Bistability in Chemical Reaction Networks:
+    sections:
+      - Bistability in Chemical Reaction Networks
+    
+  - Demo of Bard Ermentrout’s XPP:
+    sections:
+      - Chemical Reaction Networks Versus Neural Networks
+      - Global Stability of Symmetric Networks
+    
+  - Student Presentations:
+    sections:
+      - Synthetic Genetic Networks
+    
+  - Oscillations in an Activator-Inhibitor System:
+    sections:
+      - Phase Plane Analysis
+    
+  - Hodgkin-Huxley Model of the Action Potential:
+    sections:
+      - Action Potential
+    
+  - Spike Frequency Adaptation and Negative Feedback Linearization:
+    sections:
+      - Frequency Adaptation
+      - Feedback Linearization
+    
+  - Phototransduction:
+    sections:
+      - Phototransduction Mechanisms
+    
+  - Chemotaxis:
+    sections:
+      - Cellular Chemotaxis
+    
+  - Long-Term Potentiation:
+    sections:
+      - Neural Plasticity
+    
+  - Circadian Rhythms:
+    sections:
+      - Biological Clocks
+    
+  - Stochastic Models of Lambda Phage:
+    sections:
+      - Stochastic Modeling
+    
+  - Molecular Motors:
+    sections:
+      - Motor Proteins
+    
+  - Development:
+    sections:
+      - Biological Development
+    
+  - Cell Cycle:
+    sections:
+      - Cell Division
+    
+  - Pattern Formation and Slime Molds:
+    sections:
+      - Morphogenesis
+    
+  - Cell Sorting:
+    sections:
+      - Cellular Sorting Mechanisms
+    
+  - Immunity:
+    sections:
+      - Immune System
+    
+  - Final Project Presentations:
+    sections:
+      - Student Project Presentations

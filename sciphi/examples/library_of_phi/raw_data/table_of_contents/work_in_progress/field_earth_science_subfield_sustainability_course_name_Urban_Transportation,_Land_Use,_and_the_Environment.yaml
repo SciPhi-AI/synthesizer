@@ -1,0 +1,78 @@
+```yaml
+textbook:
+  Urban Transportation, Land Use, and the Environment: A Comprehensive Guide
+  chapters:
+    - 'Chapter 1: Introduction to Course: Cities and Transport in the Development Context':
+        sections:
+          - 'Section 1.1: Urbanization and Transportation'
+          - 'Section 1.2: Sustainable Development Goals'
+          - 'Section 1.3: Urban Transport Challenges'
+          - 'Section 1.4: Development Context'
+    - 'Chapter 2: Urban Transportation & Sustainability':
+        sections:
+          - 'Section 2.1: Economic Impact of Transportation'
+          - 'Section 2.2: Environmental Impact of Transportation'
+          - 'Section 2.3: Equity and Accessibility'
+    - 'Chapter 3: Transportation Strategies and Options':
+        sections:
+          - 'Section 3.1: Public Transportation Systems'
+          - 'Section 3.2: Active Transportation (Walking and Cycling)'
+          - 'Section 3.3: Intelligent Transportation Systems'
+          - 'Section 3.4: Land Use Planning and Transportation'
+    - 'Chapter 4: Regional Strategic Transportation Planning':
+        sections:
+          - 'Section 4.1: Transportation Planning Process'
+          - 'Section 4.2: Regional Connectivity'
+          - 'Section 4.3: Multimodal Transportation'
+          - 'Section 4.4: Transportation Demand Management'
+    - 'Chapter 5: Case Study 1: Mexico City':
+        sections:
+          - 'Section 5.1: Urbanization and Transportation in Mexico City'
+          - 'Section 5.2: Transportation Challenges in Mexico City'
+          - 'Section 5.3: Sustainable Transport Solutions in Mexico City'
+    - 'Chapter 6: Case Study 2: Santiago':
+        sections:
+          - 'Section 6.1: Urbanization and Transportation in Santiago'
+          - 'Section 6.2: Transportation Challenges in Santiago'
+          - 'Section 6.3: Sustainable Transport Solutions in Santiago'
+    - 'Chapter 7: Comparison/Contrast of Cases':
+        sections:
+          - 'Section 7.1: Similarities and Differences between Mexico City and Santiago'
+          - 'Section 7.2: Lessons Learned from the Case Studies'
+          - 'Section 7.3: Discussion of Case Study Approach'
+    - 'Chapter 8: Urban Transportation Planning and Policy':
+        sections:
+          - 'Section 8.1: Policy Frameworks for Urban Transportation Planning'
+          - 'Section 8.2: Stakeholder Engagement in Transportation Planning'
+          - 'Section 8.3: Funding and Financing of Transportation Projects'
+          - 'Section 8.4: Evaluating and Monitoring Transport Systems'
+    - 'Chapter 9: Technology and Innovation in Urban Transportation':
+        sections:
+          - 'Section 9.1: Emerging Technologies in Transportation'
+          - 'Section 9.2: Big Data in Urban Transportation Planning'
+          - 'Section 9.3: Smart Cities and Urban Mobility'
+    - 'Chapter 10: Sustainable Land Use and Transportation Integration':
+        sections:
+          - 'Section 10.1: Principles of Sustainable Land Use and Transportation Integration'
+          - 'Section 10.2: Transit-Oriented Development'
+          - 'Section 10.3: Mixed-Use Development'
+          - 'Section 10.4: Pedestrian-Friendly Design and Walkability'
+    - 'Chapter 11: Social Equity and Transportation':
+        sections:
+          - 'Section 11.1: Equity in Transportation Planning'
+          - 'Section 11.2: Access to Transportation for Vulnerable Populations'
+          - 'Section 11.3: Transportation and Social Inclusion'
+    - 'Chapter 12: Environmental Considerations in Urban Transportation':
+        sections:
+          - 'Section 12.1: Climate Change and Transportation'
+          - 'Section 12.2: Air Quality and Transportation'
+          - 'Section 12.3: Noise Pollution and Transportation'
+          - 'Section 12.4: Energy Efficiency in Transportation'
+    - 'Chapter 13: Future Trends in Urban Transportation':
+        sections:
+          - 'Section 13.1: Autonomous Vehicles and Mobility as a Service'
+          - 'Section 13.2: Electric and Sustainable Fuels'
+          - 'Section 13.3: Shared Mobility and Ride-Hailing Services'
+          - 'Section 13.4: Micro-Mobility Solutions'
+```
+```

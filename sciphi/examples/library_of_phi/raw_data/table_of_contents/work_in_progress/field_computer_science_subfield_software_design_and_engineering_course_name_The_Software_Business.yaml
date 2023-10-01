@@ -1,0 +1,53 @@
+textbook:
+  The Software Business: Strategies, Development, and Emerging Technologies:
+    chapters:
+    - Chapter 1: Course Overview and Organization
+        sections:
+        - Section 1.1: Strategy for Software Companies: What to Think About
+        - Section 1.2: How Software Became a Business
+        - Section 1.3: Microsoft Case Study: Strategy, Management, Organization
+    - Chapter 2: Managing Software Development: Basic Issues and Best Practices
+        sections:
+        - Section 2.1: Software Sales
+        - Section 2.2: Part 1: Software Marketing
+        - Section 2.3: Open Source
+        - Section 2.4: Software Business Overseas: Outsourcing and Innovation
+    - Chapter 3: Emerging Software Technologies/Companies - Paper Presentations 1
+        sections:
+        - Section 3.1: Student team 1: Best Practices for IT Services Firms
+        - Section 3.2: Student Team 2: Current Standards/Platforms Battles - .NET vs. J2EE, other
+    - Chapter 4: Wrap-Up
+        sections:
+        - Section 4.1: Course Summary and Review
+    - Chapter 5: Assignments
+        sections:
+        - Section 5.1: Reaction Papers
+    - Chapter 6: Exams
+        sections:
+        - Section 6.1: Midterm Exam
+        - Section 6.2: Final Exam
+    - Chapter 7: Projects
+        sections:
+        - Section 7.1: Group Projects
+    - Chapter 8: Readings
+        sections:
+        - Section 8.1: Cusumano, Michael A. The Business of Software: What Every Manager, Programmer, and Entrepreneur Must Know in Good Times and Bad.
+        - Section 8.2: Cusumano, Michael A., and Richard W. Selby. Microsoft Secrets.
+    - Chapter 9: Lecture Notes
+        sections:
+        - Section 9.1: Lecture Notes
+    - Chapter 10: Recitations
+        sections:
+        - Section 10.1: Recitation Notes
+    - Chapter 11: Syllabus
+        sections:
+        - Section 11.1: Syllabus Overview
+    - Chapter 12: Calendar
+        sections:
+        - Section 12.1: Course Schedule
+    - Chapter 13: Resource Level
+        sections:
+        - Section 13.1: Graduate Level
+    - Chapter 14: Course Number
+        sections:
+        - Section 14.1: 15.358

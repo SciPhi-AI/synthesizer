@@ -1,0 +1,57 @@
+textbook:
+  'Architecture from 1750 to the Present: Exploring the Evolution of Built Environment':
+    chapters:
+      - 'Chapter 1: Prelude to an Architecture of Globalization: The Transatlantic Slave Trade':
+          sections:
+            - 'Section 1.1: Architecture and the Transatlantic Slave Trade'
+            - 'Section 1.2: Impact of Slavery on Architectural Development'
+            - 'Section 1.3: Case Studies of Slave-Related Architecture'
+      - 'Chapter 2: Architecture and Industrialism, Part 1: The Ghosts of Technology':
+          sections:
+            - 'Section 2.1: Industrial Revolution and Its Impact on Architecture'
+            - 'Section 2.2: Technological Advancements in Building Materials and Techniques'
+            - 'Section 2.3: Architectural Responses to Industrialization'
+      - 'Chapter 3: Architecture as Ornament':
+          sections:
+            - 'Section 3.1: Ornamentation in Architectural Design'
+            - 'Section 3.2: Historical and Cultural Significance of Ornamentation'
+            - 'Section 3.3: Symbolism and Meaning in Architectural Ornamentation'
+      - 'Chapter 4: Architecture and Industrialism, Part 2: Masses, Classes and Regions':
+          sections:
+            - 'Section 4.1: Social and Economic Factors Shaping Architectural Development'
+            - 'Section 4.2: Class-Based Architectural Styles'
+            - 'Section 4.3: Regional Variations in Architectural Design'
+      - 'Chapter 5: Making of the Modernist Avant-Garde and the Operative Historian':
+          sections:
+            - 'Section 5.1: Modernist Architecture and Its Origins'
+            - 'Section 5.2: Avant-Garde Movements in Architecture'
+            - 'Section 5.3: Role of Historians in Shaping Architectural Narratives'
+      - 'Chapter 6: Domesticity; Gender in Space':
+          sections:
+            - 'Section 6.1: Architecture and Gender Roles'
+            - 'Section 6.2: Designing Domestic Spaces'
+            - 'Section 6.3: Feminist Perspectives in Architecture'
+      - 'Chapter 7: Body Talk':
+          sections:
+            - 'Section 7.1: Architecture and the Human Body'
+            - 'Section 7.2: Sensory Experience in Architectural Design'
+            - 'Section 7.3: Embodiment and Architecture'
+      - 'Chapter 8: Ludic Spaces':
+          sections:
+            - 'Section 8.1: Playfulness and Spatial Design'
+            - 'Section 8.2: Architecture for Leisure and Recreation'
+            - 'Section 8.3: Interactive and Participatory Architecture'
+      - 'Chapter 9: Lines Across the City':
+          sections:
+            - 'Section 9.1: Urban Design and City Planning'
+            - 'Section 9.2: Impact of Infrastructure on Urban Spaces'
+            - 'Section 9.3: Architectural Interventions in Urban Contexts'
+      - 'Chapter 10: Post-War Narratives of Development':
+          sections:
+            - 'Section 10.1: Post-War Reconstruction and Development'
+            - 'Section 10.2: Modernization and Urbanization'
+            - 'Section 10.3: Critiques of Development Paradigms'
+      - 'Chapter 11: Final Lecture':
+          sections:
+            - 'Section 11.1: Recap of Course Themes and Topics'
+            - 'Section 11.2: Reflections on Architecture from 1750 to the Present'

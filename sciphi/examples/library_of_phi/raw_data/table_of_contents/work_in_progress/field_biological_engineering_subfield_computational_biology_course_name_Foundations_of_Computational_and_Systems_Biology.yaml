@@ -1,0 +1,62 @@
+```yaml
+course:
+  textbook: "Foundations of Computational and Systems Biology: A Comprehensive Guide"
+  chapters:
+    - Chapter 1: Introduction to Computational Biology
+      sections:
+        - Section 1.1: History of Computational Biology
+        - Section 1.2: Course Policies and Mechanics
+        - Section 1.3: DNA Sequencing Technologies
+    - Chapter 2: Local Alignment and Statistics
+      sections:
+        - Section 2.1: BLAST
+        - Section 2.2: Significance Testing
+        - Section 2.3: Bonferroni Correction
+    - Chapter 3: Global Alignment of Protein Sequences
+      sections:
+        - Section 3.1: Comparative Genomic Analysis of Gene Regulation
+    - Chapter 4: Clustering, Model Selection, and BIC Scores
+      sections:
+        - Section 4.1: Model Selection
+        - Section 4.2: BIC Scores
+    - Chapter 5: Library Complexity and Short Read Alignment
+      sections:
+        - Section 5.1: Burrows-Wheeler Transform
+        - Section 5.2: Genome Assembly
+    - Chapter 6: ChIP-seq Analysis and DNA-protein Interactions
+      sections:
+        - Section 6.1: ChIP-seq Analysis
+        - Section 6.2: DNA-protein Interactions
+    - Chapter 7: RNA-sequence Analysis: Expression, Isoforms
+      sections:
+        - Section 7.1: Modeling and Discovery of Sequence Motifs
+        - Section 7.2: Markov and Hidden Markov Models
+        - Section 7.3: RNA Secondary Structure - Biological Functions and Prediction
+    - Chapter 8: Introduction to Protein Structure; Structure Comparison and Classification
+      sections:
+        - Section 8.1: Predicting Protein Structure
+        - Section 8.2: Predicting Protein Interactions
+    - Chapter 9: Gene Regulatory Networks
+      sections:
+        - Section 9.1: Protein Interaction Networks
+        - Section 9.2: Logic Modeling of Cell Signaling Networks
+    - Chapter 10: Analysis of Chromatin Structure
+      sections:
+        - Section 10.1: BayesNets
+        - Section 10.2: Discovering Quantitative Trait Loci
+    - Chapter 11: Human Genetics, SNPs, and Genome Wide Associate Studies
+      sections:
+        - Section 11.1: Narrow Sense Heritability
+        - Section 11.2: Human Genetics
+        - Section 11.3: SNPs
+    - Chapter 12: Synthetic Biology: From Parts to Modules to Therapeutic Systems
+      sections:
+        - Section 12.1: Synthetic Biology
+        - Section 12.2: Parts to Modules to Therapeutic Systems
+    - Chapter 13: Causality, Natural Computing, and Engineering Genomes
+      sections:
+        - Section 13.1: Causality
+        - Section 13.2: Natural Computing
+        - Section 13.3: Engineering Genomes
+```
+```

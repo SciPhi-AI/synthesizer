@@ -1,0 +1,59 @@
+textbook:
+  Principles of Digital Communication I: A Comprehensive Guide
+  chapters:
+    - Introduction to Digital Communication:
+      sections:
+        - A layered view of digital communication
+    - Discrete Source Encoding:
+      sections:
+        - Memory-less sources
+        - Prefix free codes
+        - Entropy
+    - Markov Sources and Universal Codes:
+      sections:
+        - Markov sources
+        - Lempel-Ziv universal codes
+    - Quantization and Waveform Encoding:
+      sections:
+        - Quantization
+        - High-rate quantizers
+        - Waveform encoding
+    - Fourier Transforms:
+      sections:
+        - Fourier series
+        - Fourier transforms
+    - Discrete-Time Fourier Transforms:
+      sections:
+        - Sampling theorem
+        - Discrete-time Fourier transforms
+    - Signal Space and Modulation:
+      sections:
+        - Degrees of freedom
+        - Orthonormal expansions
+        - Signal space
+        - Modulation
+    - Random Processes:
+      sections:
+        - Jointly Gaussian random vectors and processes
+        - White Gaussian noise
+    - Detection and Coding:
+      sections:
+        - Linear functionals
+        - Filtering of random processes
+        - Detection for random vectors and processes
+        - Theorem of irrelevance
+        - M-ary detection
+        - Coding
+    - Wireless Communication:
+      sections:
+        - Introduction to wireless communication
+        - Discrete-time baseband models for wireless channels
+        - Doppler spread
+        - Time spread
+        - Coherence time
+        - Coherence frequency
+        - Detection for flat Rayleigh fading and incoherent channels
+        - Rake receivers
+    - Code Division Multiple Access:
+      sections:
+        - Case study - Code Division Multiple Access

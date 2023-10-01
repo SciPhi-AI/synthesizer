@@ -1,0 +1,78 @@
+textbook:
+  Principles of Macroeconomics: A Comprehensive Guide
+  chapters:
+    - Introduction to Macroeconomics:
+        sections:
+        - Definition and Scope of Macroeconomics
+        - Circular Flow of Income
+        - Macroeconomic Goals
+        - Economic Indicators
+        - Aggregate Demand and Aggregate Supply
+    - Macroeconomic Models:
+        sections:
+        - IS-LM Model
+        - AD-AS Model
+        - Solow Growth Model
+        - Phillips Curve
+        - Mundell-Fleming Model
+        - New Keynesian Economics
+    - Fiscal Policy:
+        sections:
+        - Government Spending
+        - Taxation
+        - Budget Deficits and Surpluses
+        - Multiplier Effect
+        - Crowding Out
+        - Automatic Stabilizers
+        - Public Debt
+    - Monetary Policy:
+        sections:
+        - Money Supply and Demand
+        - Central Banks
+        - Interest Rates
+        - Money Creation
+        - Open Market Operations
+        - Taylor Rule
+        - Quantitative Easing
+    - Macroeconomic Stability:
+        sections:
+        - Inflation
+        - Unemployment
+        - Economic Growth
+        - Business Cycles
+        - Stabilization Policies
+        - Economic Fluctuations
+        - Supply-side Economics
+    - International Macroeconomics:
+        sections:
+        - Balance of Payments
+        - Exchange Rates
+        - International Trade
+        - Capital Flows
+        - Trade Policies
+        - Globalization and Macroeconomics
+        - International Monetary System
+    - Economic Policy:
+        sections:
+        - Government Intervention
+        - Regulation
+        - Market Failures
+        - Externalities
+        - Public Goods
+        - Income Distribution
+        - Welfare Economics
+    - Macroeconomic Data Analysis:
+        sections:
+        - Gross Domestic Product (GDP)
+        - Consumer Price Index (CPI)
+        - Unemployment Rate
+        - Inflation Rate
+        - Economic Indicators
+        - Economic Forecasting
+        subsections:
+        - National Income Accounting
+        - Price Index Calculation
+        - Types of Unemployment
+        - Phillips Curve Analysis
+        - Leading Economic Indicators
+        - Time Series Analysis

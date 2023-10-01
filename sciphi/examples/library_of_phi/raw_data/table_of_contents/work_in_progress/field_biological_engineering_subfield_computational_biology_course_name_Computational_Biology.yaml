@@ -1,0 +1,63 @@
+textbook:
+  Computational Biology: A Comprehensive Guide
+  chapters:
+    - Introduction to Computational Biology:
+        sections:
+          - Course Overview
+          - An Overview of Biology
+          - Introduction to Algorithms
+          - Introduction to Machine Learning
+    - Sequence Alignment:
+        sections:
+          - Dynamic Programming
+          - Global Alignment
+          - Local Alignment
+          - Database Search Techniques
+          - Rapid String Matching
+          - BLAST Algorithm
+          - BLOSUM Matrix
+    - Hidden Markov Models:
+        sections:
+          - Introduction to Hidden Markov Models
+          - Evaluation and Parsing
+          - Viterbi Algorithm
+          - Forward Algorithms
+          - Posterior Decoding
+          - Learning in Hidden Markov Models
+          - Baum-Welch Algorithm
+    - Transcriptomics:
+        sections:
+          - GENSCAN: Gene Structure Prediction
+          - RNA-seq: Analysis of RNA sequences
+          - Mapping Techniques for Transcriptomics
+          - De Novo Assembly of Transcriptomes
+          - Differential Expression Analysis
+    - Expression Analysis:
+        sections:
+          - Clustering and Classification Techniques
+          - K-Means Clustering
+          - Hierarchical Clustering
+          - Bayesian Classification
+    - Network Analysis:
+        sections:
+          - Introduction to Network Analysis
+          - Bayesian Inference in Networks
+          - Deep Learning for Network Analysis
+          - Network Dynamics and Modeling
+          - Network Learning Algorithms
+          - Network Structure Analysis
+          - Spectral Methods for Network Analysis
+    - Regulatory Motifs:
+        sections:
+          - Discovery of Regulatory Motifs
+          - Representation of Regulatory Motifs
+          - Protein Binding Microarrays (PBMs)
+          - Gibbs Sampling Algorithm for Motif Discovery
+          - Expectation-Maximization Algorithm for Motif Discovery
+    - Epigenomics:
+        sections:
+          - ChIP-Seq: Analysis of DNA-protein interactions
+          - Read Mapping Techniques for ChIP-Seq
+          - Peak Calling in ChIP-Seq Data
+          - Irreproducible Discovery Rate (IDR)
+          - Chromatin States and Analysis

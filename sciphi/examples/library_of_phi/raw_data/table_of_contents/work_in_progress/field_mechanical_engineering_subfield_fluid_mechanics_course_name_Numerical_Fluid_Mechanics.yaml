@@ -1,0 +1,69 @@
+```yaml
+course:
+  Numerical Fluid Mechanics:
+    textbook:
+      title: "Numerical Fluid Mechanics: Theory and Applications"
+      chapters:
+        - chapter: "Introduction to Numerical Fluid Mechanics"
+          sections:
+            - section: "Models to Simulations"
+            - section: "Error Types"
+            - section: "Approximation and Round-off Errors"
+            - section: "Number Representations"
+            - section: "Errors of Numerical Operations"
+        - chapter: "Introduction to MATLAB"
+          sections:
+            - section: "Introduction to MATLAB"
+        - chapter: "Roots of Non-linear Equations"
+          sections:
+            - section: "Truncation Errors"
+            - section: "Taylor Series and Error Analysis"
+            - section: "Error Propagation and Estimation"
+            - section: "Condition Numbers"
+            - section: "Introduction and Bracketing Methods"
+        - chapter: "Systems of Linear Equations"
+          sections:
+            - section: "Review: Navier-Stokes Equations and Their Approximations"
+            - section: "Conservation Laws, Material Derivative, Reynolds Transport Theorem, Constitutive Equations"
+            - section: "Motivations and Plans for Solving Systems of Linear Equations"
+            - section: "Direct Methods: Gauss Elimination"
+            - section: "Special Matrices: LU Decompositions, Tridiagonal Systems, General Banded Matrices, Symmetric, Positive-definite Matrices"
+            - section: "Introduction to Iterative Methods"
+            - section: "Iterative Methods: Jacobi Method, Gauss-Seidel Iteration, Successive Over-relaxation Methods, Gradient Methods, Stop Criteria"
+        - chapter: "Finite Differences"
+          sections:
+            - section: "End of Navier-Stokes Review"
+            - section: "Finite Difference Based on Taylor Series for Higher Order Accuracy Differences and Examples"
+            - section: "Polynomial Approximations"
+            - section: "Fourier Error Analysis, Introduction to Stability: Heuristic, Energy and Von Neumann Methods, Hyperbolic PDEs, Characteristics"
+            - section: "Stability, Hyperbolic Equations Revisited: Courant-Friedrichs-Lewy"
+            - section: "Finite Volume Methods"
+            - section: "Finite Volume Methods on Complex Geometries"
+        - chapter: "Methods for Unsteady Problems"
+          sections:
+            - section: "Time-marching Methods"
+            - section: "Ordinary Differential Equations"
+        - chapter: "Solutions of the Navier-Stokes Equation"
+          sections:
+            - section: "Incompressible and Compressible"
+            - section: "Pressure-correction, Fractional-step"
+            - section: "Vorticity, Artificial Compressibility, and Other Methods"
+        - chapter: "Grid Generation and Complex Geometries"
+          sections:
+            - section: "Finite Element Methods: Introduction, Fluid Applications"
+            - section: "Finite Element Methods on Complex Geometries"
+            - section: "Inviscid Flow Equations: Boundary Element Methods, Panel Methods"
+        - chapter: "Turbulent Flows"
+          sections:
+            - section: "Models and Numerical Simulations"
+        - chapter: "Final Project"
+          sections:
+            - section: "Final Project Selection"
+            - section: "Project Presentations"
+      appendix:
+        - appendix: "Glossary"
+        - appendix: "List of Symbols"
+        - appendix: "References"
+        - appendix: "Index"
+```
+```

@@ -1,0 +1,19 @@
+textbook:
+  Macroeconomic Theory III: An In-Depth Analysis
+  chapters:
+    - Chapter 1: Intertemporal Preferences and Welfare Costs of Uncertainty
+      sections:
+        - Section 1.1: Complete Markets and Pareto Optima
+        - Section 1.2: Asset Pricing: Arbitrage and CCAPM
+        - Section 1.3: Precautionary Savings / Income Fluctuations Problem
+        - Section 1.4: Empirical Evidence, Tests and Quantitative Models
+    - Chapter 2: Imperfect Insurance with Frictions
+      sections:
+        - Section 2.1: Investment with Convex Adjustment Costs / Q-Theory
+        - Section 2.2: Irreversibility, Fixed-Costs and
+    - Chapter 3: Asset Pricing
+      sections:
+        - Section 3.1: Incomplete Markets
+    - Chapter 4: Frictions for Insurance
+      sections:
+        - Section 4.1: Investment

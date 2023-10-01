@@ -1,0 +1,72 @@
+textbook:
+  Computation Structures: A Comprehensive Guide to Digital Systems
+  chapters:
+    - Course Overview and Mechanics:
+      sections:
+        - Basics of Information
+    - Digital Abstraction and Combinational Logic:
+      sections:
+        - Voltage-Based Encoding
+    - CMOS Technology and Gate Design:
+      sections:
+        - Timing
+        - Canonical Forms
+        - Synthesis
+        - Simplification
+    - Sequential Logic:
+      sections:
+        - Storage Elements
+        - Finite State Machines
+    - Synchronization and Metastability:
+      sections:
+        - Pipelining
+        - Throughput and Latency
+    - Case Study: Multipliers:
+      sections:
+        - Beta Instruction Set Architecture
+        - Compilation
+        - Machine Language Programming Issues
+    - Models of Computation and Programmable Architectures:
+      sections:
+        - Stacks and Procedures
+        - Non-pipelined Beta Implementation
+    - Multilevel Memories and Cache Design Issues:
+      sections:
+        - Locality
+        - Performance
+        - Caches
+    - Virtual Memory and Virtual Machines:
+      sections:
+        - Mapping
+        - Protection
+        - Contexts
+        - Timesharing
+        - OS Kernels
+        - Supervisor Calls
+    - Devices and Interrupt Handlers:
+      sections:
+        - Preemptive Interrupts
+        - Real-time Issues
+    - Communication Issues:
+      sections:
+        - Busses
+        - Networks
+        - Protocols
+    - Communicating Processes:
+      sections:
+        - Semaphores
+        - Synchronization
+        - Atomicity
+        - Deadlock
+    - Pipeline Issues:
+      sections:
+        - Delay Slots
+        - Annulment
+        - Exceptions
+    - Parallel Processing and Cache Coherence:
+      sections:
+        - Shared Memory
+        - Consistency Criteria
+    - Wrapup Lecture:
+      sections:
+        - Final Review

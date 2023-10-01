@@ -1,0 +1,24 @@
+course:
+  'Development Economics: Macroeconomics':
+    textbook:
+      title: 'Development Economics: Macroeconomics - A Comprehensive Guide'
+      chapters:
+        - Introduction to the Course:
+          sections:
+            - Growth, Inequality, and Total Factor Productivity (TFP) with Financial Imperfections
+            - Other Frictions in Financial Intermediation: Growth, TFP, and International Capital Flows
+        - Micro-founded Macro Models:
+          sections:
+            - Part 1: Occupational Choice and Limited Commitment - Theory with Micro Tests
+            - Part 2: Risk-sharing, Insurance, and Endogenous Financial Deepening
+            - Part 3: Model Comparisons
+        - Measurement: Financial Accounts, Economic Accounts, NIPA, Balance of Payments; From Households to Village Economies to National Level Flow of Funds:
+          sections:
+            - Insurance: From Village Insurance to Financial Access and Targeting to Risk Instruments in Advanced OECD Countries
+            - Capital Asset Pricing: Idiosyncratic and Aggregate Risk, Mean Variance Frontiers, Lack of Insurance among the Poor and Modern Corporations
+            - Links to the Macro Literature: Panel Data and Models of Smoothing
+            - Labor Supply: Intensive and Extensive Margin in Villages to Families, Lotteries, and Elasticities in Macro
+            - Barriers to Sharing Risk
+            - Program Evaluation: The Thai Million Baht Village Fund
+            - From Reduced-form to Structural Evaluation: Expanding Financial Infrastructure and Impact
+            - Discussion and Research Proposals

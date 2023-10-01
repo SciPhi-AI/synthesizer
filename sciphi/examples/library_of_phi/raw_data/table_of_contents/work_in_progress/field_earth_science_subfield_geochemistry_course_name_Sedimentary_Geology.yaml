@@ -1,0 +1,67 @@
+textbook:
+  Sedimentary Geology: A Comprehensive Guide to Sediments, Structures, and Environments
+  chapters:
+    - The Nature, Description, and Classification of Sediments:
+        sections:
+          - Sediment Texture:
+              subsections:
+                - Definition and types of sediment texture
+                - Grain size analysis techniques
+                - Sediment sorting and roundness
+                - Sediment fabric and composition
+          - Sediment Transport:
+              subsections:
+                - Types and mechanisms of sediment transport
+                - Sediment deposition and erosion processes
+                - Sediment transport models and equations
+    - Physics of Sedimentation:
+        sections:
+          - Siliciclastic Rocks:
+              subsections:
+                - Composition and properties of siliciclastic sediments
+                - Weathering and erosion of siliciclastic rocks
+                - Transportation and deposition of siliciclastic sediments
+          - Carbonate Sediments and Rocks:
+              subsections:
+                - Formation and characteristics of carbonate sediments
+                - Diagenesis and lithification of carbonate rocks
+                - Carbonate facies and depositional environments
+          - Cherts and Evaporites:
+              subsections:
+                - Formation and properties of chert
+                - Depositional environments and occurrences of chert
+                - Formation and characteristics of evaporites
+    - Sedimentary Structures:
+        sections:
+          - Diagenesis:
+              subsections:
+                - Processes and products of diagenesis
+                - Diagenetic environments and factors affecting diagenesis
+                - Diagenetic alteration of sedimentary structures
+          - Paleontology:
+              subsections:
+                - Fossilization processes and preservation biases
+                - Use of fossils in biostratigraphy and paleoenvironmental reconstructions
+                - Paleontological analysis techniques and applications
+    - Depositional Environments:
+        sections:
+          - Depositional Environments:
+              subsections:
+                - Classification and characteristics of depositional environments
+                - Sedimentary facies and facies models
+                - Sedimentation patterns and processes in different environments
+          - Stratigraphy:
+              subsections:
+                - Principles of stratigraphy and sequence stratigraphy
+                - Stratigraphic correlation techniques and tools
+                - Stratigraphic analysis and interpretation
+          - Sedimentary Basins:
+              subsections:
+                - Types and formation of sedimentary basins
+                - Basin analysis and tectonic controls
+                - Sedimentary basin evolution and petroleum systems
+          - Fossil Fuels:
+              subsections:
+                - Origins and formation of fossil fuels
+                - Exploration and extraction of fossil fuels
+                - Environmental impact and future of fossil fuels

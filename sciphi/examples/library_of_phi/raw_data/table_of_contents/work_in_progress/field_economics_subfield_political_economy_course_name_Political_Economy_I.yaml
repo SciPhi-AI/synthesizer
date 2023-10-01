@@ -1,0 +1,98 @@
+```yaml
+textbook:
+  Political Economy: Paradigms and Theories for Understanding Society:
+    chapters:
+      - 'Introduction: Paradigms and Social Science':
+          sections:
+            - 'Paradigms in Social Science':
+                subsections:
+                  - The Positivist Paradigm
+                  - The Interpretive Paradigm
+                  - The Critical Paradigm
+                  - The Post-Modern Paradigm
+            - 'Introduction to Political Economy':
+                subsections:
+                  - Definition and Scope of Political Economy
+                  - Evolution of Political Economy as a Field of Study
+                  - Interdisciplinary Approaches to Political Economy
+      - 'Theories of the Liberal State and Politics':
+          sections:
+            - 'Liberal State and Politics':
+                subsections:
+                  - Origins and Development of Liberalism
+                  - Principles of Liberal Democracy
+                  - Liberal Democracy and the Rule of Law
+            - 'Lockean Theory of Civil Government':
+                subsections:
+                  - John Locke's Theory of Natural Rights
+                  - Social Contract and Consent
+                  - Limited Government and Individual Liberties
+            - "Isaiah Berlin's Concept of Liberty":
+                subsections:
+                  - Two Concepts of Liberty
+                  - Negative and Positive Freedom
+                  - Implications for Political Theory and Practice
+            - "Madison's Federalist Paper 10":
+                subsections:
+                  - The Problem of Faction and Majority Tyranny
+                  - Extended Republic and Representative Government
+                  - Safeguards against Factionalism in Democratic Governance
+      - 'Neo-Classical Theories of the Economy':
+          sections:
+            - 'Neo-Classical Economics':
+                subsections:
+                  - Assumptions and Methodology of Neo-Classical Economics
+                  - Supply and Demand Analysis
+                  - Rational Choice Theory
+            - 'Neoclassical Approaches':
+                subsections:
+                  - Marginal Analysis and Utility Maximization
+                  - Production and Cost Functions
+                  - Market Structures and Competition
+            - 'Keynesian Revolution':
+                subsections:
+                  - John Maynard Keynes and the Great Depression
+                  - Aggregate Demand and Macroeconomic Stabilization
+                  - Critiques and Revisions of Keynesian Economics
+      - 'Marxist Politics':
+          sections:
+            - 'Marxist Political Theory':
+                subsections:
+                  - Historical Materialism and Class Struggle
+                  - Critique of Capitalism and the State
+                  - Socialist Revolution and the Dictatorship of the Proletariat
+      - 'Marxist Economics and Value Theory':
+          sections:
+            - 'Marxist Economic Theory':
+                subsections:
+                  - Labor Theory of Value and Exploitation
+                  - Capitalist Accumulation and Crisis
+                  - Socialist Economic Planning and Distribution
+            - 'Value Theory in Marxism':
+                subsections:
+                  - Use Value and Exchange Value
+                  - Surplus Value and Profit Extraction
+                  - Commodity Fetishism and Alienation
+      - 'Sociological Theories of Capitalism':
+          sections:
+            - 'Sociological Perspectives on Capitalism':
+                subsections:
+                  - Max Weber's Theory of Protestant Ethic and Capitalism
+                  - Emile Durkheim's Division of Labor and Capitalism
+                  - Karl Polanyi's Embeddedness of Markets
+      - 'Crisis and Capitalism':
+          sections:
+            - 'Economic Crisis and Capitalism':
+                subsections:
+                  - Causes and Consequences of Economic Crises
+                  - Financialization and Speculation
+                  - Responses to Crisis: Austerity vs. Stimulus
+      - 'Institutionalism':
+          sections:
+            - 'Institutional Economics':
+                subsections:
+                  - Evolution of Institutions and their Impact on Economic Behavior
+                  - Formal and Informal Institutions
+                  - Institutional Change and Economic Development
+```
+```

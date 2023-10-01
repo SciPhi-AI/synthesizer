@@ -1,0 +1,114 @@
+course:
+  Wave Motions in the Ocean and Atmosphere Textbook:
+    chapters:
+      - Basics:
+          sections:
+            - Introduction to Wave Motions
+            - Wave Equations
+            - Linear and Nonlinear Waves
+            - Dispersion and Group Velocity
+            - Wave Reflection and Transmission
+            - Wave Interactions
+      - Boussinesq Approximation:
+          sections:
+            - Derivation of Boussinesq Equations
+            - Assumptions and Limitations
+            - Applications in Ocean and Atmosphere
+      - Available Potential Energy:
+          sections:
+            - Introduction to Available Potential Energy
+            - Calculation Methods
+            - Interpretation and Significance
+            - Relationship with Wave Motions
+      - Internal Gravity Waves:
+          sections:
+            - Characteristics of Internal Gravity Waves
+            - Propagation and Dispersion
+            - Generation Mechanisms
+            - Reflection and Refraction
+            - Interaction with Stratified Fluids
+      - Surface Forced IGW’s:
+          sections:
+            - Wind-Driven Surface Waves
+            - Wave-Current Interactions
+            - Wave Breaking and Dissipation
+            - Coastal and Offshore Wave Dynamics
+            - Wave Energy Transfer
+      - Curvilinear Coordinates:
+          sections:
+            - Coordinate Systems in Ocean and Atmosphere
+            - Transformations and Jacobians
+            - Wave Equations in Curvilinear Coordinates
+            - Applications in Geophysical Fluid Dynamics
+      - Pressure-like Coordinates:
+          sections:
+            - Definition and Applications of Pressure-like Coordinates
+            - Vertical Coordinate Systems
+            - Stacked Baroclinic Modes
+            - Wave Propagation in Pressure-like Coordinates
+      - Surface Waves:
+          sections:
+            - Characteristics of Surface Waves
+            - Gravity Waves and Capillary Waves
+            - Wind Waves and Swell
+            - Wave Breaking and Wave-Induced Turbulence
+            - Wave Spectra and Wave Measurements
+      - Shallow Water Equations:
+          sections:
+            - Derivation and Assumptions of Shallow Water Equations
+            - Solving Shallow Water Equations
+            - Applications in Ocean and Atmospheric Dynamics
+            - Tsunami and Storm Surge Modeling
+      - Thermodynamics:
+          sections:
+            - Basic Concepts of Thermodynamics
+            - Thermodynamic Equilibrium and Stability
+            - Heat Flux and Energy Balance
+            - Thermodynamic Properties of Ocean and Atmosphere
+      - Laplace Tidal Equations:
+          sections:
+            - Introduction to Tidal Equations
+            - Laplace's Tidal Equations
+            - Tidal Analysis and Prediction
+            - Tidal Constituents and Harmonic Analysis
+      - Hough Functions:
+          sections:
+            - Definition and Properties of Hough Functions
+            - Applications in Geophysical Fluid Dynamics
+            - Hough Modes and Wave Dynamics
+      - Equatorial Beta Plane:
+          sections:
+            - Equatorial Dynamics and Beta Plane Approximation
+            - Equatorial Waves and Kelvin Waves
+            - Rossby Waves and Equatorial Rossby Waves
+            - Tropical Instabilities and Tropical Cyclones
+      - Rotating Waves in a Channel:
+          sections:
+            - Rotating Shallow Water Equations
+            - Beta Effect and Channel Waves
+            - Eddy-Mean Flow Interactions
+            - Channel Resonance and Wave Trapping
+      - Leewaves in Compressible Fluid:
+          sections:
+            - Introduction to Compressible Fluid Dynamics
+            - Mountain Lee Waves and Atmospheric Blocking
+            - Wave Breaking and Wave-Induced Turbulence
+            - Wave-Flow Interactions in the Atmosphere
+      - Quasigeostrophy:
+          sections:
+            - Quasigeostrophic Approximation
+            - Quasigeostrophic Equations and Conservation Laws
+            - Geostrophic Adjustment and Rossby Waves
+            - Quasigeostrophic Potential Vorticity Dynamics
+      - WKB Approx. and Atmospheric Modes:
+          sections:
+            - WKB Approximation and Its Applications
+            - Atmospheric Modes and Wave Propagation
+            - Wave-CISK (Convective Instability of the Second Kind)
+            - Atmospheric Teleconnections and Climate Variability
+      - Eady Problem:
+          sections:
+            - Introduction to the Eady Problem
+            - Baroclinic Instability and Eady Waves
+            - Eady Model and Storm Track Formation
+            - Wave Breaking and Cyclogenesis

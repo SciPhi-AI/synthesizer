@@ -1,0 +1,32 @@
+textbook:
+  Quantum Theory II: A Comprehensive Guide to Time-dependent Perturbation Theory, Symmetry in Quantum Mechanics, Scattering, and Relativistic Quantum Mechanics
+  chapters:
+    - Background:
+        sections:
+        - 'Chapter 1: Course Number: 8.322'
+        - 'Chapter 2: Course Name: Quantum Theory II'
+        - 'Chapter 3: Resource Level: Graduate'
+    - Time-dependent Perturbation Theory and Applications to Radiation:
+        sections:
+        - 'Chapter 4: Time-dependent Potentials Exactly Soluble'
+        - 'Chapter 5: 2-State Problem'
+        - 'Chapter 6: Time-dependent Perturbation Theory'
+        - 'Chapter 7: First Order Perturbation Theory - Fermi’s Golden Rule'
+        - 'Chapter 8: Coupling to Radiation Field'
+        - 'Chapter 9: Absorption Cross-section'
+        - 'Chapter 10: Photoelectric Effect'
+        - 'Chapter 11: Quantization of Transverse EM Field'
+        - 'Chapter 12: E1 Spontaneous Emission'
+        - 'Chapter 13: Higher Multipole Transitions'
+        - 'Chapter 14: Planck’s Radiation Law'
+        - 'Chapter 15: Damping and Natural Line Width'
+        - 'Chapter 16: Adiabatic Theorem and Berry’s Phase'
+    - Symmetry in Quantum Mechanics:
+        sections:
+        - 'Chapter 17: Symmetry in Quantum Mechanics'
+    - Scattering:
+        sections:
+        - 'Chapter 18: Scattering'
+    - Relativistic Quantum Mechanics:
+        sections:
+        - 'Chapter 19: Relativistic Quantum Mechanics'

@@ -1,0 +1,84 @@
+textbook:
+  Paleoceanography: A Comprehensive Guide to the Study of Ancient Oceans and Climate Change
+  chapters:
+    - Major Paleoceanographic and Paleoclimatic Events:
+        sections:
+        - Events of the Past 2 Million Years
+    - Oxygen Isotope Paleoclimatology:
+        sections:
+        - Fundamentals of Factor Analysis
+        - Satellite Image Analysis
+    - Oxygen Isotope Paleothermometry:
+        sections:
+        - Temperature Estimation Techniques
+    - Sea-level and Climate Change:
+        sections:
+        - Coral Reefs on Stable and Emerging Islands
+    - Glacial/Interglacial Oscillations:
+        sections:
+        - Time-series Analysis
+    - Ice Core Evidence for Climate Change:
+        sections:
+        - Continental Evidence
+        - Atmospheric CO2 and Ocean Chemistry
+        - Mechanisms of Climate Change
+    - Lifestyles of the Small and Calcareous:
+        sections:
+        - Coral Evidence for Temperature, Salinity, and Nutrient Changes
+    - Introduction to Cenozoic Paleoceanography:
+        sections:
+        - Newer Tracers
+    - Microfossils as Paleoceanographic Proxies:
+        sections:
+        - Diatoms
+        - Foraminifera
+    - Sediment Cores and Paleoenvironmental Reconstruction:
+        sections:
+        - Core Sampling Techniques
+        - Sediment Analysis Methods
+    - Carbonate Chemistry and Ocean Acidification:
+        sections:
+        - Carbonate System Equilibrium
+        - Acid-Base Reactions in Seawater
+        - Impacts of Ocean Acidification on Marine Life
+    - Geochemical Tracers and their Applications in Paleoceanography:
+        sections:
+        - Stable Isotopes (δ18O, δ13C)
+        - Trace Elements (Ba, Mg, Sr)
+        - Radioisotopes (14C, 230Th)
+    - Paleoclimate Modeling Techniques:
+        sections:
+        - General Principles of Climate Models
+        - Model Validation and Analysis
+        - Future Projections and Uncertainty
+    - Impacts of Paleoenvironmental Changes on Marine Ecosystems:
+        sections:
+        - Phytoplankton Dynamics
+        - Fish and Coral Reef Communities
+        - Benthic Organisms and Deep-Sea Environments
+    - Paleogeography and Plate Tectonics:
+        sections:
+        - Continental Drift and Seafloor Spreading
+        - Paleogeographic Reconstructions
+        - Tectonic Controls on Climate Change
+    - Human Influences on Paleoceanographic Records:
+        sections:
+        - Anthropogenic CO2 Emissions
+        - Pollution and Contaminant Records
+        - Overfishing and Marine Biodiversity Loss
+    - Methods and Techniques in Paleoceanography:
+        sections:
+        - Radiocarbon Dating
+        - X-Ray Fluorescence Spectroscopy
+        - Scanning Electron Microscopy
+    - Case Studies in Paleoceanography:
+        sections:
+        - The Mid-Pleistocene Transition
+        - Ocean Anoxic Events
+        - The Paleocene-Eocene Thermal Maximum
+        - The Last Glacial Maximum
+    - Future Directions in Paleoceanography:
+        sections:
+        - Emerging Technologies and Methods
+        - Integrating Paleoceanographic Data with Climate Models
+        - Addressing Knowledge Gaps and Uncertainties

@@ -1,0 +1,42 @@
+textbook:
+  Dynamics: 
+    chapters:
+      - chapter: Examples of Single Particle Dynamics
+        sections:
+          - section: Linear and Angular Momentum Principles
+          - section: Work-energy Principle
+      - chapter: Dynamics of Systems of Particles
+        sections:
+          - section: Linear and Angular Momentum Principles
+          - section: Work-energy Principle
+          - section: Examples
+      - chapter: Rigid Bodies
+        sections:
+          - section: Degrees of Freedom
+          - section: Linear and Angular Momentum Principle
+          - section: Work-energy Principle
+      - chapter: Generalized Coordinates, Constraints, Virtual Displacements
+        sections:
+          - section: Exam 1
+          - section: Generalized Coordinates
+          - section: Constraints
+          - section: Virtual Displacements
+        subsections:
+          - subsection: The Principle of Virtual Work and D'Alembert's Principle
+          - subsection: Holonomic and Nonholonomic Systems
+          - subsection: Virtual Displacement Method
+      - chapter: Lagrange Multipliers
+        sections:
+          - section: Determining Holonomic Constraint Forces
+          - section: Lagrange's Equation for Nonholonomic Systems
+          - section: Examples
+        subsections:
+          - subsection: Lagrange Multipliers for Inequality Constraints
+          - subsection: Lagrange Multipliers for Equality Constraints
+      - chapter: Linearized Equations of Motion Near Equilibria of Holonomic Systems
+        sections:
+          - section: Damped and Forced Vibrations Near Equilibria
+          - section: Exam 2
+        subsections:
+          - subsection: Stability Analysis of Equilibria
+          - subsection: Linearization of Nonlinear Systems

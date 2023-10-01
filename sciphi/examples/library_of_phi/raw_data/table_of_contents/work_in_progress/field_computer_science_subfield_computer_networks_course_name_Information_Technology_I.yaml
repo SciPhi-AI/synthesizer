@@ -1,0 +1,42 @@
+textbook:
+  Information Technology I: A Comprehensive Guide to Hardware, Software, and Networks:
+    chapters:
+    - 'Chapter 1: The Basics: Hardware, OS, and Software':
+        sections:
+        - 'Section 1.1: Introduction: Course Overview; Inside the CPU'
+        - 'Section 1.2: Computer Architecture: Processing, Memory and I/O'
+        - 'Section 1.3: Computer Representations; Compression'
+        - 'Section 1.4: Operating Systems'
+        - 'Section 1.5: Software Development'
+    - 'Chapter 2: Databases':
+        sections:
+        - 'Section 2.1: Relational Databases; Database Queries Using SQL'
+        - 'Section 2.2: An Introduction to Microsoft Access'
+        - 'Section 2.3: Relational Database Design'
+        - 'Section 2.4: Introduction to User Interface Building with Access Examples'
+    - 'Chapter 3: Networks and Telecommunications':
+        sections:
+        - 'Section 3.1: Telecommunication Concepts; Data Transmission'
+        - 'Section 3.2: Local Area Networks; Ethernet; Packet-switched Networks'
+        - 'Section 3.3: Wide Area Networks; The Internet'
+        - 'Section 3.4: Wireless Network Technologies'
+        - 'Section 3.5: Client/Server, Peer-to-Peer and the WWW'
+    - 'Chapter 4: Security':
+        sections:
+        - 'Section 4.1: Security I: Public Key Cryptography'
+        - 'Section 4.2: Security II: Digital Signatures; Network Security'
+    - 'Chapter 5: Evolution of Web Technologies':
+        sections:
+        - 'Section 5.1: Evolution of Web Technologies'
+        - 'Section 5.2: Under the Hood of a Commercial Web Site'
+    - 'Chapter 6: Data Mining and Data Warehousing':
+        sections:
+        - 'Section 6.1: Data Mining, Data Warehousing'
+        - 'Section 6.2: Software Agents'
+    - 'Chapter 7: Student Presentations':
+        sections:
+        - 'Section 7.1: Student Presentations I'
+        - 'Section 7.2: Student Presentations II'
+    - 'Chapter 8: Trends in eBusiness Technology':
+        sections:
+        - 'Section 8.1: Trends in eBusiness Technology; Course Wrap-up'

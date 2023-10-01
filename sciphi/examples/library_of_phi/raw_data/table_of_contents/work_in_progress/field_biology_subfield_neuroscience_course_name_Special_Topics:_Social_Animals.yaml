@@ -1,0 +1,106 @@
+textbook:
+  'Social Animals: Exploring the Science of Social Behavior':
+    assignments_page: assignments
+    assignments_text: 'Chapter 1: Introduction to Social Animals
+      - Student paper presentations: 1.5 hours
+      - Required readings: 2-3 papers
+      - Optional readings: several papers
+      - Presentation duration: 15 minutes
+      - Number of presentations per participant: 2-4
+      - Final paper: literature review and critique
+
+      '
+    lecture_notes_page: lecture-notes
+    lecture_notes_text: 'Chapter 2: Altruism
+      - Social and Individual Learning of Helping in Humans and Other Species
+      - Born (and Bred) to Help
+      - Evolutionary Theory and the Social Psychology of Human Cooperation
+
+      Chapter 3: Morality and Norms
+      - Altruism
+      - Morality and Norms
+
+      Chapter 4: Empathy and Helping
+      - Empathy and Helping
+
+      Chapter 5: Perception of Agents and Actions
+      - Social Perception
+
+      Chapter 6: Theory of Mind and Attribution
+      - Theory of Mind
+
+      Chapter 7: Communication and Teaching
+      - Communication
+
+      Chapter 8: Ingroups and Outgroups
+      - Ingroups and Outgroups
+
+      Chapter 9: Aggression and Dominance
+      - Aggression and Dominance
+
+      Chapter 10: Mating and Parenting
+      - Mating
+
+      '
+    readings_page: readings
+    readings_text: 'Chapter 2: Altruism and Cooperation
+      - Lehnmann, L., K. R. Foster, E. Borenstein, and M. W. Feldman. ''Social and Individual Learning of Helping in Humans and Other Species.''Trends in Ecology and Evolution23, no. 12 (2008): 664-71.
+      - Tomasello, M. ''Born (and Bred) to Help.'' InWhy We Cooperate. Cambridge, MA: MIT Press, 2009. ISBN: 9780262013598.
+      - Henrich, J., and N. Henrich. ''Evolutionary Theory and the Social Psychology of Human Cooperation.'' InWhy Humans Cooperate. New York, NY: Oxford Uni
+
+      '
+    resource_level: Graduate
+    syllabus_page: syllabus
+    syllabus_text: 'Chapter 1: Introduction to Social Animals
+
+      Chapter 2: Altruism
+
+      Chapter 3: Morality and Norms
+
+      Chapter 4: Empathy and Helping
+
+      Chapter 5: Perception of Agents and Actions
+
+      Chapter 6: Theory of Mind and Attribution
+
+      Chapter 7: Communication and Teaching
+
+      Chapter 8: Ingroups and Outgroups
+
+      Chapter 9: Aggression and Dominance
+
+      Chapter 10: Mating and Parenting
+
+      '
+    chapters:
+    - Chapter 1: Introduction to Social Animals
+    - Chapter 2: Altruism and Cooperation
+        sections:
+        - Section 2.1: Social and Individual Learning of Helping in Humans and Other Species
+        - Section 2.2: Born (and Bred) to Help
+        - Section 2.3: Evolutionary Theory and the Social Psychology of Human Cooperation
+    - Chapter 3: Morality and Norms
+        sections:
+        - Section 3.1: Altruism
+        - Section 3.2: Morality and Norms
+    - Chapter 4: Empathy and Helping
+        sections:
+        - Section 4.1: Empathy and Helping
+    - Chapter 5: Perception of Agents and Actions
+        sections:
+        - Section 5.1: Social Perception
+    - Chapter 6: Theory of Mind and Attribution
+        sections:
+        - Section 6.1: Theory of Mind
+    - Chapter 7: Communication and Teaching
+        sections:
+        - Section 7.1: Communication
+    - Chapter 8: Ingroups and Outgroups
+        sections:
+        - Section 8.1: Ingroups and Outgroups
+    - Chapter 9: Aggression and Dominance
+        sections:
+        - Section 9.1: Aggression and Dominance
+    - Chapter 10: Mating and Parenting
+        sections:
+        - Section 10.1: Mating

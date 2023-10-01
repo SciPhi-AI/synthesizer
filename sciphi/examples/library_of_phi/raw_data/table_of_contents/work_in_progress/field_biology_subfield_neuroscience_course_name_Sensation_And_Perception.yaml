@@ -1,0 +1,64 @@
+```yaml
+course:
+  textbook: 
+    Sensation And Perception: 
+      chapters: 
+        - chapter: Intro to perception
+          sections: 
+            - section: Basic psychophysics
+        - chapter: Eye, retina
+          sections:
+            - section: Spatial vision
+            - section: Mid-level vision
+            - section: Retinal processing
+        - chapter: Object recognition
+          sections:
+            - section: Face recognition
+            - section: Object detection
+            - section: Visual attention
+        - chapter: Color and lightness
+          sections:
+            - section: Color perception
+            - section: Lightness perception
+            - section: Color constancy
+        - chapter: Binocular vision
+          sections:
+            - section: Stereopsis
+            - section: Binocular rivalry
+            - section: Eye movements
+        - chapter: Audition
+          sections:
+            - section: Sound perception
+            - section: Music perception
+            - section: Speech perception
+        - chapter: Touch
+          sections:
+            - section: Tactile receptors
+            - section:  Somatosensation
+            - section: Pain perception
+        - chapter: Smell
+          sections:
+            - section: Olfactory system
+            - section: Odor perception
+        - chapter: Taste
+          sections:
+            - section: Gustatory system
+            - section: Taste perception
+      subsections:
+        - subsubsection: Depth perception
+          sections:
+            - section: Monocular cues
+            - section: Binocular cues
+        - subsubsection: Motion perception
+          sections:
+            - section: Motion detection
+            - section: Motion integration
+        - subsubsection: Haptic perception
+          sections:
+            - section: Texture perception
+            - section: Shape perception
+        - subsubsection: Multisensory perception
+          sections:
+            - section: Crossmodal integration
+            - section: Sensory substitution
+```

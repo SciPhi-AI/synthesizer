@@ -1,0 +1,149 @@
+textbook:
+  Airline Management: A Comprehensive Guide
+  chapters:
+    - Introduction to Airline Planning Processes and Systems:
+        sections:
+        - Course Introduction
+          subsections:
+            - Importance of Airline Management
+            - Scope and Objectives of the Course
+            - Course Structure and Resources
+        - Airline Economics Review
+          subsections:
+            - Overview of Airline Economics
+            - Factors Affecting Airline Economics
+            - Demand and Supply in the Airline Industry
+        - Operating Costs and Productivity
+          subsections:
+            - Types of Operating Costs
+            - Cost Control Measures
+            - Productivity Analysis in Airlines
+        - Load and Spill Analysis
+          subsections:
+            - Load Factor Calculation
+            - Spill Analysis and Revenue Leakage
+            - Strategies to Maximize Load Factor
+        - Airline Schedule Development
+          subsections:
+            - Factors Influencing Schedule Development
+            - Schedule Optimization Techniques
+            - Schedule Planning for Hub and Spoke Networks
+        - Passenger Choice Models
+          subsections:
+            - Factors Affecting Passenger Choice
+            - Behavioral Models in Airline Management
+            - Application of Passenger Choice Models
+
+    - Introduction to ePODS Airline Management Game:
+        sections:
+        - Introduction to ePODS Airline Management Game
+          subsections:
+            - Overview of ePODS Simulation
+            - Objectives and Rules of the Game
+            - Understanding the Simulation Interface
+        - ePODS Work Session
+          subsections:
+            - Simulation Practice and Exercises
+            - Analyzing Game Results
+            - Strategy Formulation and Implementation
+
+    - Fleet Assignment Optimization:
+        sections:
+        - Fleet Assignment Optimization
+          subsections:
+            - Fleet Assignment Models and Algorithms
+            - Factors Influencing Fleet Assignment Decisions
+            - Optimization Techniques for Fleet Planning
+        - ePODS Work Session
+          subsections:
+            - Applying Fleet Assignment Strategies in ePODS
+            - Analyzing Fleet Performance Metrics
+            - Fleet Optimization Case Studies
+
+    - Route Planning and Network Strategies:
+        sections:
+        - Route Planning and Network Strategies
+          subsections:
+            - Route Selection Criteria
+            - Network Design and Expansion
+            - Factors Influencing Route Planning
+        - ePODS Work Session
+          subsections:
+            - Analyzing Route Performance in ePODS
+            - Network Strategy Formulation and Evaluation
+            - Real-world Case Studies on Route Planning
+
+    - Scheduling and Operational Constraints:
+        sections:
+        - Scheduling and Operational Constraints
+          subsections:
+            - Crew Scheduling and Optimization
+            - Aircraft Assignment and Utilization
+            - Operational Constraints and Disruptions
+        - ePODS Work Session
+          subsections:
+            - Managing Operational Constraints in ePODS
+            - Analysis of Schedule Reliability and Efficiency
+            - Strategies for Overcoming Operational Disruptions
+
+    - Airline Fleet Planning Issues:
+        sections:
+        - Airline Fleet Planning Issues
+          subsections:
+            - Fleet Size Determination
+            - Fleet Mix and Types of Aircraft
+            - Fleet Renewal and Retirement Strategies
+        - AMG Work Session
+          subsections:
+            - Analyzing Fleet Planning Scenarios in AMG
+            - Evaluating Fleet Performance Metrics
+            - Fleet Planning Case Studies
+
+    - Revenue Management Concept and Models:
+        sections:
+        - Revenue Management Concept and Models
+          subsections:
+            - Introduction to Revenue Management
+            - Forecasting and Demand Estimation
+            - Price Optimization and Demand Control
+        - Overbooking Methods
+          subsections:
+            - Overbooking Policies and Techniques
+            - Managing No-Shows and Denials
+            - Overbooking Performance Evaluation
+        - O-D/Network Seat Inventory Control
+          subsections:
+            - Seat Inventory Management Strategies
+            - Network Seat Allocation Models
+            - Control Policies for Origin-Destination Markets
+        - ePODS Work Session
+          subsections:
+            - Implementing Revenue Management Strategies in ePODS
+            - Analyzing Revenue Performance Metrics
+            - Revenue Management Case Studies
+
+    - Airline Pricing Structures and Strategies:
+        sections:
+        - Airline Pricing Structures and Strategies
+          subsections:
+            - Pricing Objectives and Strategies
+            - Fare Structures and Fare Classes
+            - Pricing Models and Techniques
+        - Airline Revenue Management Systems
+          subsections:
+            - Overview of Revenue Management Systems
+            - Implementation and Integration of Pricing Systems
+            - Analysis of Revenue Management Software
+        - ePODS Work Session
+          subsections:
+            - Applying Pricing Strategies in ePODS
+            - Evaluating Price Performance Metrics
+            - Pricing Strategy Case Studies
+
+    - 'Summary: Airline Management Challenges':
+        sections:
+        - 'Summary: Airline Management Challenges'
+          subsections:
+            - Key Challenges in Airline Management
+            - Industry Trends and Emerging Issues
+            - Strategies for Overcoming Management Challenges

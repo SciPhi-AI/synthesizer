@@ -1,0 +1,66 @@
+textbook:
+  Introduction to Spatial Analysis: A Comprehensive Guide
+  chapters:
+    - Getting Started:
+        sections:
+        - Primary Readings
+        - Case Study Readings (optional, but helpful for homework)
+        - Helpful Resources for Websites
+    - Cartography and Map Design:
+        sections:
+        - Primary Readings
+        - Visual Guides to Symbols and Classification (optional, but recommended reference for homework)
+        - 'Case Study Readings: Power of Visualization'
+        - Optional Reading
+    - Spatial Data - Types, Structures, and Representation:
+        sections:
+        - Primary Readings
+        - Case Study Reading
+    - Quantitative Mapping - Census Data and the ACS:
+        sections:
+        - Problem set 1
+        - Take-home exercise for week 2
+    - Spatial Data Formats and Geoprocessing:
+        sections:
+        - Problem set 2
+        - Problem set 1
+    - Geocoding and Address Finding:
+        sections:
+        - Problem set 3
+        - Problem set 2
+    - Spatial Analysis in a GIS Environment:
+        sections:
+        - Problem set 4
+        - Problem set 3
+    - Spatial Autocorrelation:
+        sections:
+        - Problem set 5
+        - Problem set 4
+    - Spatial Regression:
+        sections:
+        - Problem set 6
+        - Problem set 5
+    - Spatial Interaction:
+        sections:
+        - Problem set 7
+        - Problem set 6
+    - Spatial Optimization:
+        sections:
+        - Problem set 8
+        - Problem set 7
+    - Spatial Dynamics:
+        sections:
+        - Problem set 9
+        - Problem set 8
+    - Network Analysis:
+        sections:
+        - Problem set 10
+        - Problem set 9
+    - Geosimulation:
+        sections:
+        - Problem set 11
+        - Problem set 10
+    - Spatial Decision Support Systems:
+        sections:
+        - Problem set 12
+        - Final Project

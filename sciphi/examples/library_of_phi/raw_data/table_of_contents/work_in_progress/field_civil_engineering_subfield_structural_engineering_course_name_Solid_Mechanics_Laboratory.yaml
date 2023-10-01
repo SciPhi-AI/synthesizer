@@ -1,0 +1,79 @@
+```yaml
+course:
+  Solid Mechanics Laboratory:
+    textbook:
+      name: "Comprehensive Guide to Solid Mechanics Laboratory"
+      topics:
+        - chapter: "Introduction"
+          sections:
+            - section: "Static Equilibrium"
+            - section: "Concept of Force"
+            - section: "Concept of Moment"
+        - chapter: "Internal Forces and Moments"
+          sections:
+            - section: "Pasta Uncertainty Experiment"
+        - chapter: "Truss Structures"
+          sections:
+            - section: "Cable Structures Experiment"
+        - chapter: "Shafts in Torsion"
+          sections:
+            - section: "Uniaxial Tension Experiment"
+        - chapter: "Transformation Rules"
+          sections:
+            - section: "Equilibrium"
+        - chapter: "Indeterminate Systems"
+          sections:
+            - section: "Simple Systems"
+            - section: "Matrix Analysis Truss Structures"
+            - section: "Special Methods"
+        - chapter: "Concepts of Stress"
+          sections:
+            - section: "Concept of Strain"
+            - section: "Strain/Displacement"
+            - section: "Transformation Rules"
+            - section: "Materials: Properties/Failure"
+            - section: "Stress/Strain Relations"
+            - section: "Failure Phenomena"
+        - chapter: "Stresses/Deflections"
+          sections:
+            - section: "Torsion"
+            - section: "Beams in Bending"
+            - section: "Shear in Beams"
+            - section: "Composite Beams"
+            - section: "Deflections due to Bending"
+            - section: "Buckling of Beams"
+            - section: "Matrix Analysis of Frames"
+            - section: "Special Methods"
+        - chapter: "Calendar"
+          sections:
+            - section: "Introduction"
+            - section: "Static Equilibrium"
+            - section: "Concept of Force"
+            - section: "Concept of Moment"
+            - section: "Internal Forces and Moments"
+            - section: "Truss Structures"
+            - section: "Beams"
+            - section: "Shafts in Torsion"
+            - section: "Concepts of Stress"
+            - section: "Transformation Rules"
+            - section: "Equilibrium"
+            - section: "Indeterminate Systems"
+            - section: "Simple Systems"
+            - section: "Matrix Analysis Truss Structures"
+            - section: "Special Methods"
+            - section: "Concept of Strain"
+            - section: "Strain/Displacement"
+            - section: "Transformation Rules"
+            - section: "Materials: Properties/Failure"
+            - section: "Stress/Strain Relations"
+            - section: "Failure Phenomena"
+            - section: "Stresses/Deflections: Torsion"
+            - section: "Stresses: Beams in Bending"
+            - section: "Shear in Beams"
+            - section: "Composite Beams"
+            - section: "Deflections due to Bending"
+            - section: "Buckling of Beams"
+            - section: "Matrix Analysis of Frames"
+            - section: "Special Methods"
+```
+```

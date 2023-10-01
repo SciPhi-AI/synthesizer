@@ -1,0 +1,65 @@
+textbook:
+  Multivariable Control Systems: A Comprehensive Guide
+chapters:
+  - Standard LTI Feedback Optimization Setup:
+      sections:
+        - Interpretations for Standard Optimization Setup
+        - Solving the H2 Optimization Problem
+        - Using H2 Optimization
+        - The Waterbed Effect
+  - Kalman-Yakubovich-Popov Lemma:
+      sections:
+        - Algorithms for H-Infinity Optimization
+        - Fundamentals of Model Order Reduction
+        - Hankel Optimal Model Order Reduction
+        - Q-Parameterization
+        - The Tustin Transform
+  - Convex Optimization:
+      sections:
+        - Analysis of Uncertain Systems
+  - Problem Sets:
+      sections:
+        - Problem Set 1:
+            subsections:
+              - Problem 1.1
+              - Problem 1.2
+              - Problem 1.3
+        - Problem Set 2:
+            subsections:
+              - Problem 2.1
+              - Problem 2.2
+              - Problem 2.3
+        - Problem Set 3:
+            subsections:
+              - Problem 3.1
+              - Problem 3.2
+              - Problem 3.3
+        - Problem Set 4:
+            subsections:
+              - Problem 4.1
+              - Problem 4.2
+              - Problem 4.3
+        - Problem Set 5:
+            subsections:
+              - Problem 5.1
+              - Problem 5.2
+              - Problem 5.3
+        - Problem Set 6:
+            subsections:
+              - Problem 6.1
+              - Problem 6.2
+              - Problem 6.3
+        - Problem Set 7:
+            subsections:
+              - Problem 7.1
+              - Problem 7.2
+              - Problem 7.3
+  - Syllabus:
+      sections:
+        - Calendar
+        - Readings
+        - Lecture Notes
+        - Recitations
+        - Assignments
+        - Exams
+        - Projects

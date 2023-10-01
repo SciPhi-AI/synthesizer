@@ -1,0 +1,95 @@
+course:
+  Neuroscience and Behavior Textbook:
+    chapters:
+      - Introduction to Brain-behavior Studies:
+          sections:
+            - History and Goals, Part I
+            - History and Goals, Part II
+            - History and Goals, Part III
+            - History and Goals, Part IV
+      - Cellular Mechanisms:
+          sections:
+            - Neuronal Conduction and Transmission
+            - Synapses
+      - Introduction to CNS and its Evolution:
+          sections:
+            - Evolution of the Nervous System
+            - Brain Subdivisions and Functions
+            - Effects of Transection on Brain Functions
+            - The Spinal Cord: Structure and Function
+            - The Hindbrain and Midbrain: Roles and Interactions
+            - The Midbrain and Forebrain: Functions and Connections
+      - Development of CNS, Introduction:
+          sections:
+            - Cell Migration and Neural Development
+            - Influences on Axon Growth and Guidance
+            - Axonal Sprouting and Regeneration Mechanisms
+      - Motor System:
+          sections:
+            - Motor System Overview
+            - Motor System Control and Execution
+            - Motor System Pathologies and Disorders
+            - Motor System: Rhythmic Outputs and Movements
+      - Rhythms of Activity:
+          sections:
+            - Sleep and Waking Patterns
+            - Habituation and Novelty Responses in Brain Activity
+      - Visual System:
+          sections:
+            - Visual System Anatomy and Ablations
+            - Visual System Physiology and Function
+            - Ablation Studies in the Visual System
+            - Visual System: Lesions and Impairments
+            - Visual System Conclusion and Integration
+      - Auditory System:
+          sections:
+            - Auditory System: Structure and Function
+      - Pain and Central Gray Area:
+          sections:
+            - Pain Processing in the Brain
+            - Central Gray Area: Role in Pain Modulation
+      - Hypothalamus and Feeding:
+          sections:
+            - Hypothalamus: Anatomy and Functions
+            - Feeding Behavior and Regulation
+      - Drive, Reward:
+          sections:
+            - Drive: Motivation and Behavioral Activation
+            - Reward Pathways and Reinforcement
+      - Higher Functions:
+          sections:
+            - Higher Cognitive Functions in the Brain
+      - Human Nature and Neuroscience:
+          sections:
+            - Exploring Human Nature through Neuroscience
+      - Conclusion:
+          sections:
+            - Summary and Key Takeaways
+      - Rosenzweig, chapter 1, pp. 1-21:
+          sections: null
+      - Rosenzweig, chapter 3, pp. 55-85:
+          sections: null
+      - Rosenzweig, chapter 2, pp. 25-26:
+          sections: null
+      - Rosenzweig, chapter 5, pp. 117-146:
+          sections: null
+      - Rosenzweig, chapter 7, pp. 177-210:
+          sections: null
+      - Rosenzweig, chapter 11a, pp. 323-338:
+          sections: null
+      - Rosenzweig, chapter 11b, pp. 338-359:
+          sections: null
+      - Rosenzweig, 'Oscillatory Circuits….,' pp. 80-81 and 346-349:
+          sections: null
+      - Rosenzweig, chapter 8a, pp. 213-235:
+          sections: null
+      - Rosenzweig, chapter 10, pp. 281-321:
+          sections: null
+      - 'Handout: Two arousal systems':
+          sections: null
+      - Rosenzweig, chapter 17, pp. 537-570:
+          sections: null
+      - Rosenzweig, chapter 16, pp. 503-534:
+          sections: null
+      - Rosenzweig, Glossary, G-1 - G-26:
+          sections: null

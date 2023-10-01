@@ -1,0 +1,98 @@
+textbook:
+  Digital Mock-Up Workshop: A Comprehensive Guide to Digital Fabrication and Design
+  chapters:
+    - Systems Engineering for Digital Fabrication:
+        sections:
+        - Digital Mock-Ups
+        - Tall Building Design
+            subsections:
+            - Design Considerations for Tall Buildings
+            - Structural Systems for Tall Buildings
+            - Sustainable Design Strategies for Tall Buildings
+    - Research Case - Design Production:
+        sections:
+        - Research Case - Design Production
+        - Materials and Assemblies
+            subsections:
+            - Material Selection and Properties
+            - Assembly Techniques for Digital Fabrication
+            - Case Studies in Design Production
+    - Façade Design:
+        sections:
+        - Façade Design
+        - Façade Redesign
+            subsections:
+            - Principles of Façade Design
+            - Performance Analysis of Façades
+            - Retrofitting Existing Façades
+    - Field Trip:
+        sections:
+        - Field Trip to NYC
+        - Field Trip to London
+            subsections:
+            - Architectural Highlights in NYC
+            - Architectural Highlights in London
+            - Field Trip Reflections and Learnings
+    - Tower Design:
+        sections:
+        - Tower Design 1
+        - Tower Design 2
+        - Tower Design 3
+        - Redesign
+            subsections:
+            - Structural Design Principles for Towers
+            - Parametric Design Approaches for Towers
+            - Case Studies in Tower Design
+            - Redesigning Existing Towers
+    - Final Presentation:
+        sections:
+        - Final Presentation
+            subsections:
+            - Effective Presentation Techniques
+            - Visual Communication Strategies
+            - Public Speaking Tips
+    - Analysis of a Tower:
+        sections:
+        - 'Module 1: Analysis of existing tower design due'
+            subsections:
+            - Introduction to Tower Analysis
+            - Structural Evaluation Methods
+            - Case Studies in Tower Analysis
+    - Mockup:
+        sections:
+        - 'Module 2: Mockup due'
+            subsections:
+            - Importance of Mockups in Design Process
+            - Mockup Construction Techniques
+            - Evaluating Mockup Performance
+    - Engineering Assemblies:
+        sections:
+        - 'Module 3: Engineering Assemblies due'
+            subsections:
+            - Assembly Techniques for Complex Structures
+            - Integration of Building Systems
+            - Quality Control in Assembly Processes
+    - Midterm Project:
+        sections:
+        - (Friction Joined) Responsive Tower - Daniel Cardoso, Dennis Michaud, and Vincent LeClerc (PDF - 5.5 MB)
+            subsections:
+            - Design Concept and Rationale
+            - Fabrication Process and Techniques
+            - Performance Evaluation of the Tower
+        - 'Soft Skin Skyscraper: Digital Design and Fabrication for Tall Building Façade - Jaebum Joo and Kalaya Kovidvisith (PDF - 2.4 MB)'
+            subsections:
+            - Soft Skin Façade Systems
+            - Digital Design Tools for Façade Fabrication
+            - Case Studies in Soft Skin Façades
+        - Algorithms and Design Descriptions for Relational Modeling - Taro Narahara and Kenfield Griffith (PDF - 1.6 MB)
+            subsections:
+            - Introduction to Relational Modeling
+            - Algorithmic Design Techniques
+            - Applications of Relational Modeling in Architecture
+    - Digital Mockup:
+        sections:
+        - 'Digital Mockup: Steps'
+            subsections:
+            - Planning and Preparation for Digital Mockup
+            - Digital Tools for Mockup Creation
+            - Evaluating Digital Mockup Performance

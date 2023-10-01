@@ -1,0 +1,66 @@
+```yaml
+course:
+  Nano-to-Macro Transport Processes Textbook:
+    chapters:
+      - Chapter 1: Introduction to Nanotechnology and Nanoscale Transport Phenomena
+        sections:
+          - Section 1.1: Characteristic Time and Length
+          - Section 1.2: Simple Kinetic Theory
+      - Chapter 2: Schrödinger Equation and Material Waves
+        sections:
+          - Section 2.1: Solution of Schrödinger Equation
+          - Section 2.2: Energy Quantization
+      - Chapter 3: Electronic Levels in One-Dimensional Lattice Chain
+        sections:
+          - Section 3.1: Crystal Bonding and Electronic Energy Levels in Crystals
+      - Chapter 4: Phonon Energy Levels in Crystal and Crystal Structures
+        sections:
+          - Section 4.1: Density of States and Statistical Distributions
+      - Chapter 5: Specific Heat and Planck's Law
+        sections:
+          - Section 5.1: Fundamentals of Statistical Thermodynamics
+      - Chapter 6: Energy Transfer by Waves: Plane Waves
+        sections:
+          - Section 6.1: Electromagnetic Waves: Reflection at a Single Interface
+          - Section 6.2: EM Wave Propagation Through Thin Films and Multilayers
+      - Chapter 7: Wave Phenomena and Landauer Formalism
+        sections:
+          - Section 7.1: Particle Description, Liouville and Boltzmann Equations
+          - Section 7.2: Fermi Golden Rule and Relaxation Time Approximation
+      - Chapter 8: Solutions to Boltzmann Equation: Diffusion Laws
+        sections:
+          - Section 8.1: Electron Transport and Thermoelectric Effects
+          - Section 8.2: Classical Size Effects, Parallel Direction
+          - Section 8.3: Classical Size Effects, Perpendicular Direction
+      - Chapter 9: Slip Condition, Coupled Energy Transport and Conversion
+        sections:
+          - Section 9.1: PN junction, Diode and Photovoltaic Cells
+      - Chapter 10: Liquids: Brownian Motion and Forces in Liquids
+        sections:
+          - Section 10.1: Electrical Double Layer, Size Effects in Phase Change
+      - Chapter 11: Statistical Foundation for Molecular Dynamics Simulation
+        sections:
+          - Section 11.1: Final Project: Research Topic Report
+    subsections:
+      - Section 1.1.1: Introduction to Nanotechnology
+      - Section 1.1.2: Nanoscale Transport Phenomena
+      - Section 2.1.1: Quantum Mechanics Basics
+      - Section 2.1.2: Wave-Particle Duality
+      - Section 3.1.1: Introduction to Crystals and Lattice Structures
+      - Section 4.1.1: Phonons and Crystal Vibrations
+      - Section 4.1.2: Statistical Distributions and Phonon Energy Levels
+      - Section 5.1.1: Thermodynamic Properties of Materials
+      - Section 6.1.1: Wave Properties and Reflection
+      - Section 6.2.1: Thin Film Interference
+      - Section 7.1.1: Kinetic Theory of Gases
+      - Section 7.2.1: Quantum Mechanics and Transition Probabilities
+      - Section 8.1.1: Electron Transport in Solids
+      - Section 8.1.2: Thermoelectric Effects in Materials
+      - Section 8.2.1: Size Effects in Parallel Direction
+      - Section 8.3.1: Size Effects in Perpendicular Direction
+      - Section 9.1.1: Semiconductor Junctions and Diodes
+      - Section 10.1.1: Brownian Motion and Diffusion
+      - Section 10.1.2: Interfacial Forces in Liquids
+      - Section 11.1.1: Introduction to Molecular Dynamics Simulation
+      - Section 11.1.2: Techniques and Algorithms for Molecular Dynamics Simulation
+```

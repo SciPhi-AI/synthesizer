@@ -1,0 +1,49 @@
+```yaml
+textbook:
+  Competition in Telecommunications: A Comprehensive Guide
+    chapters:
+    - Chapter 1: Course Introduction and Competitive Structure of Telecoms Industry
+      sections:
+      - Section 1.1: Effect of Convergence
+    - Chapter 2: What Caused the Telecom Crash? Is there Light at the End of the Tunnel?
+      sections:
+      - Section 2.1: Telecom Crash Causes
+      - Section 2.2: Potential Recovery
+    - Chapter 3: The Economics of Networks and Regulation
+      sections:
+      - Section 3.1: Economies of Scale and Scope
+      - Section 3.2: Sunk Costs
+      - Section 3.3: Barriers to Entry
+      - Section 3.4: Unbundled Network Elements
+    - Chapter 4: Regulation, Deregulation and the Telecom Act of 1996
+      sections:
+      - Section 4.1: Regulatory Policies
+      - Section 4.2: Deregulation Impact
+      - Section 4.3: Telecom Act of 1996
+    - Chapter 5: Competition for Residential Local and Long Distance
+      sections:
+      - Section 5.1: Residential Local Competition
+      - Section 5.2: Residential Long Distance Competition
+    - Chapter 6: Are Spectrum Auctions a Good Idea?
+      sections:
+      - Section 6.1: Spectrum Auctions Overview
+      - Section 6.2: Pros and Cons
+    - Chapter 7: Future Competition in Telecommunications
+      sections:
+      - Section 7.1: Emerging Technologies
+      - Section 7.2: Market Trends
+    - Chapter 8: Mobile Handset Market Value Chain
+      sections:
+      - Section 8.1: Market Participants
+      - Section 8.2: Value Chain Analysis
+    - Chapter 9: Will Telecom and IT be a Growing Industry or like a 'Water Utility'?
+      sections:
+      - Section 9.1: Industry Growth Potential
+      - Section 9.2: Comparisons to Water Utility
+    - Chapter 10: Student Presentations
+      sections:
+      - Section 10.1: Presentation Topics
+    - Chapter 11: Last Day of Class
+      sections:
+      - Section 11.1: Course Wrap-up
+```

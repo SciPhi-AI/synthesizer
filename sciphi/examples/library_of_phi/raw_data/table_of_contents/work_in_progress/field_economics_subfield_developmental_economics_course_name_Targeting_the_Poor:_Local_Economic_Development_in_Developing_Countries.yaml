@@ -1,0 +1,32 @@
+```yaml
+textbook:
+  'Local Economic Development in Developing Countries: A Comprehensive Guide':
+    chapters:
+    - Introduction:
+        sections:
+        - First class / overview
+        - 'The context: the state and economic development'
+    - Understanding the Informal Sector:
+        sections:
+        - Organizational analysis as lens
+        - Microcredit organizations
+        - Agricultural organizations
+        - Donor organizations public & non-government, large & small
+        - Labor inspectors
+        subsections: []
+    - Exploring Linkages between Rural and Urban, Agricultural and Manufacturing:
+        sections:
+        - Linkages and other development triggers
+        - The 'newly-discovered' rural economy
+        - Paths to effective linkages
+        subsections: []
+    - Small Firms, Employment, and Political Economy:
+        sections:
+        - 'What drives improved labor standards: three cases from India, Brazil, and Italy'
+        - 'Foreign direct investment: Domestic outcomes and dilemmas'
+        subsections: []
+    - Student Presentations:
+        sections: []
+        subsections: []
+
+```

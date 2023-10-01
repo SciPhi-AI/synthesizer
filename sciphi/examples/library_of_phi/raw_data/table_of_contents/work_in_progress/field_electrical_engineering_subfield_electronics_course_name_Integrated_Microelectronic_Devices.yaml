@@ -1,0 +1,108 @@
+```yaml
+course:
+  textbook: "Comprehensive Guide to Integrated Microelectronic Devices"
+    chapters:
+    - Chapter 1: Overview and Fundamental Concepts
+        sections:
+        - Section 1.1: Introduction to Integrated Microelectronic Devices
+        - Section 1.2: Intrinsic Semiconductors
+        - Section 1.3: Extrinsic Semiconductors
+        - Section 1.4: Conduction and Valence Band Density of States
+        - Section 1.5: Carrier Statistics in Semiconductors
+        - Section 1.6: Fermi Level
+
+    - Chapter 2: Generation and Recombination Mechanisms
+        sections:
+        - Section 2.1: Equilibrium Rates
+        - Section 2.2: Rates Outside Equilibrium
+        - Section 2.3: Problems on Carrier Statistics in Equilibrium, Generation and Recombination
+
+    - Chapter 3: Carrier Dynamics and Thermal Motion
+        sections:
+        - Section 3.1: Carrier Dynamics
+        - Section 3.2: Thermal Motion
+
+    - Chapter 4: Drift and Diffusion
+        sections:
+        - Section 4.1: Drift
+        - Section 4.2: Diffusion
+        - Section 4.3: Transit Time
+        - Section 4.4: Problems on Carrier Dynamics, Drift and Diffusion
+
+    - Chapter 5: Non-uniform Doping Distribution
+        sections:
+        - Section 5.1: Non-uniform Doping Distribution
+        - Section 5.2: Problems on Non-uniform Doping Distribution
+
+    - Chapter 6: Quasi-Fermi Levels and Continuity Equations
+        sections:
+        - Section 6.1: Quasi-Fermi Levels
+        - Section 6.2: Continuity Equations
+        - Section 6.3: Problems on Quasi-Fermi Levels, Continuity Equations
+
+    - Chapter 7: PN Junction
+        sections:
+        - Section 7.1: Electrostatics in and out of Equilibrium
+        - Section 7.2: Depletion Capacitance
+        - Section 7.3: Current-Voltage
+        - Section 7.4: Carrier Storage
+        - Section 7.5: Diffusion Capacitance
+        - Section 7.6: PN Diode Parasitics
+        - Section 7.7: Problems on PN Junction, PN Diode
+
+    - Chapter 8: Metal-Semiconductor Junction
+        sections:
+        - Section 8.1: Electrostatics in and out of Equilibrium
+        - Section 8.2: Capacitance-Voltage
+        - Section 8.3: I-V Characteristics
+        - Section 8.4: Schottky Diode
+        - Section 8.5: Equivalent-Circuit Model
+        - Section 8.6: Ohmic Contacts
+        - Section 8.7: Problems on Metal-Semiconductor Junction, Schottky Diode
+
+    - Chapter 9: Metal-Oxide-Semiconductor
+        sections:
+        - Section 9.1: MOS Outside Equilibrium
+        - Section 9.2: Poisson-Boltzmann Formulation
+        - Section 9.3: Simplifications to Poisson-Boltzmann Formulation
+        - Section 9.4: Problems on MOS Structure
+
+    - Chapter 10: Dynamics of MOS Structure
+        sections:
+        - Section 10.1: C-V Characteristics
+        - Section 10.2: Three-terminal MOS
+        - Section 10.3: Inversion Layer Transport
+        - Section 10.4: Long-channel MOSFET
+        - Section 10.5: I-V Characteristics
+        - Section 10.6: Problems on Long MOSFET
+
+    - Chapter 11: Short-channel MOSFET
+        sections:
+        - Section 11.1: Short-channel Effects
+        - Section 11.2: MOSFET Scaling
+        - Section 11.3: Evolution of MOSFET Design
+        - Section 11.4: Problems on Short MOSFET
+
+    - Chapter 12: Bipolar Junction Transistor
+        sections:
+        - Section 12.1: I-V Characteristics in Forward-Active
+        - Section 12.2: Other Regimes of Operation
+        - Section 12.3: C-V Characteristics
+        - Section 12.4: Small-signal Equivalent Circuit Models
+        - Section 12.5: High-frequency Characteristics
+        - Section 12.6: Problems on BJT
+
+    - Chapter 13: BJT Non-ideal Effects and Evolution
+        sections:
+        - Section 13.1: Non-ideal Effects
+        - Section 13.2: Evolution of BJT Design
+        - Section 13.3: Bipolar Issues in CMOS
+
+    - Chapter 14: Device Characterization Projects
+        sections:
+        - Section 14.1: MOSFET Source-body PN Diode Characterization
+        - Section 14.2: 0.18μm N-MOSFET Characterization
+        - Section 14.3: NPN Bipolar Junction Transistor Characterization
+        - Section 14.4: Design Problem: Gate Material Options for CMOS Technology
+```
+```

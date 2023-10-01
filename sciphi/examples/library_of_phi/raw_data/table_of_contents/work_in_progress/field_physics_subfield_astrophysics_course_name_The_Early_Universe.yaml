@@ -1,0 +1,73 @@
+textbook:
+  The Early Universe: Exploring the Multiverse and Beyond:
+    chapters:
+    - 'Chapter 1: Inflationary Cosmology: Is Our Universe Part of a Multiverse? Part I':
+        sections:
+        - 'Section 1.1: Introduction to the Multiverse'
+        - 'Section 1.2: Evidence for Inflation'
+        - 'Section 1.3: Eternal Inflation'
+        - 'Section 1.4: Cosmic Microwave Background'
+        - 'Section 1.5: Baryogenesis'
+    - 'Chapter 2: Inflationary Cosmology: Is Our Universe Part of a Multiverse? Part II':
+        sections:
+        - 'Section 2.1: Quantum Fluctuations'
+        - 'Section 2.2: Inflationary Models'
+        - 'Section 2.3: Primordial Density Perturbations'
+        - 'Section 2.4: Inflationary Predictions'
+        - 'Section 2.5: Observational Tests of Inflation'
+    - 'Chapter 3: The Doppler Effect and Special Relativity':
+        sections:
+        - 'Section 3.1: Relativistic Doppler Effect'
+        - 'Section 3.2: Time Dilation'
+        - 'Section 3.3: Lorentz Transformations'
+        - 'Section 3.4: Twin Paradox'
+        - 'Section 3.5: Relativistic Mass'
+    - 'Chapter 4: The Kinematics of the Homogeneous Expanding Universe':
+        sections:
+        - 'Section 4.1: Hubble's Law'
+        - 'Section 4.2: Friedmann Equations'
+        - 'Section 4.3: Cosmological Parameters'
+        - 'Section 4.4: Cosmic Scale Factor'
+        - 'Section 4.5: Redshift-Distance Relation'
+    - 'Chapter 5: Cosmological Redshift and the Dynamics of Homogeneous Expansion':
+        sections:
+        - 'Section 5.1: Redshift and Expansion'
+        - 'Section 5.2: Cosmological Models'
+        - 'Section 5.3: Matter and Radiation Domination'
+        - 'Section 5.4: Big Bang Nucleosynthesis'
+        - 'Section 5.5: Cosmic Neutrino Background'
+    - 'Chapter 6: Introduction to Non-Euclidean Spaces':
+        sections:
+        - 'Section 6.1: Curved Space'
+        - 'Section 6.2: Riemannian Geometry'
+        - 'Section 6.3: Geodesics'
+        - 'Section 6.4: Curvature Scalar'
+        - 'Section 6.5: Geodesic Equation'
+    - 'Chapter 7: Black-Body Radiation and the Early History of the Universe':
+        sections:
+        - 'Section 7.1: Planck's Law'
+        - 'Section 7.2: Stefan-Boltzmann Law'
+        - 'Section 7.3: Cosmic Microwave Background Radiation'
+        - 'Section 7.4: Recombination Era'
+        - 'Section 7.5: Horizon Problem'
+    - 'Chapter 8: Cosmic Microwave Background Spectrum and the Cosmological Constant':
+        sections:
+        - 'Section 8.1: CMB Power Spectrum'
+        - 'Section 8.2: Acoustic Oscillations'
+        - 'Section 8.3: Cold Dark Matter'
+        - 'Section 8.4: Dark Energy'
+        - 'Section 8.5: Lambda-CDM Model'
+    - 'Chapter 9: Supernovae Ia and Vacuum Energy Density':
+        sections:
+        - 'Section 9.1: Dark Energy Equation of State'
+        - 'Section 9.2: Supernovae Observations'
+        - 'Section 9.3: Distance Measurements'
+        - 'Section 9.4: Vacuum Energy Density'
+        - 'Section 9.5: Cosmological Constant Problem'
+    - 'Chapter 10: The Higgs Field and the Cosmological Magnetic Monopole Problem':
+        sections:
+        - 'Section 10.1: Higgs Mechanism'
+        - 'Section 10.2: Electroweak Symmetry Breaking'
+        - 'Section 10.3: Magnetic Monopoles'
+        - 'Section 10.4: Monopole Problem'
+        - 'Section 10.5: Grand Unified Theories'

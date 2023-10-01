@@ -1,0 +1,59 @@
+```yaml
+textbook:
+  Genetic Neurobiology: A Comprehensive Guide to Genetic and Neurobiological Principles
+
+chapters:
+  - Introduction to Course:
+    sections:
+      - Course Number
+      - Course Name
+      - Resource Level
+
+  - Bacterial Chemoreception:
+    sections:
+      - Bacterial microprocessing
+      - Chemoreceptors in bacteria
+      - Mutants defective in bacterial chemotaxis
+
+  - Bacterial and Paramecium Motility:
+    sections:
+      - Bacterial and Paramecium Motility
+      - '[Add subtopics here]'
+    
+  - Neurogenomics: Genome Sequencing and the Nervous System:
+    sections:
+      - Neurogenomics
+      - Genome Sequencing
+      - Nervous System
+
+  - Development of the Nervous System:
+    sections:
+      - Development of the Nervous System
+      - '[Add subtopics here]'
+    
+  - Genetic Analysis of Axonal Pathfinding:
+    sections:
+      - Genetic Analysis of Axonal Pathfinding
+      - '[Add subtopics here]'
+    
+  - Genetic Analysis of Membrane Excitability:
+    sections:
+      - Genetic Analysis of Membrane Excitability
+      - '[Add subtopics here]'
+    
+  - Neurodevelopment and Function in the Mouse:
+    sections:
+      - Neurodevelopment and Function in the Mouse
+      - '[Add subtopics here]'
+    
+  - Neurotransmitter Release at Nerve Terminals:
+    sections:
+      - Neurotransmitter Release at Nerve Terminals
+      - '[Add subtopics here]'
+    
+  - Genetic Analysis of Sensory Perception:
+    sections:
+      - Genetic Analysis of Sensory Perception
+      - '[Add subtopics here]'
+```
+```

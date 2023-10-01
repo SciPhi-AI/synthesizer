@@ -1,0 +1,88 @@
+textbook:
+  'Immune Cell Migration: A Comprehensive Guide to Pathogen Response and Cancer Immunotherapy':
+    chapters:
+      - Introduction:
+          sections:
+            - Importance of immune cell migration
+            - Role of immune cell migration in response to pathogens
+            - Role of immune cell migration in cancer immunotherapy
+      - Immune Responses to Cancer:
+          sections:
+            - Type, Density, and Location of Immune Cells Within Tumors
+            - Clinical Outcome Predictions
+            - IFNγ and Lymphocytes in Tumor Development Prevention
+            - Tumor Immunogenicity
+            - Immune Cell Infiltration in Tumor Microenvironment
+            - Immune Checkpoint Inhibitors and Their Effects on Tumor Immunity
+      - The Physical Basis of Cell Motility I:
+          sections:
+            - Cell Motility Mechanisms
+            - Actin Cytoskeleton
+            - Lamellipodia and Filopodia Formation
+            - Membrane Protrusion and Cell Migration
+      - The Physical Basis of Cell Motility II:
+          sections:
+            - Microtubule Dynamics
+            - Molecular Motors
+            - Cell Polarization
+            - Cell Contractility and Migration
+      - Specialized Adhesions Formed by Immune Cells:
+          sections:
+            - Immunological Synapse
+            - Integrins and Adhesion Molecules
+            - Cell-Cell and Cell-Extracellular Matrix Interactions
+            - Immune Cell Adhesion and Migration
+            - Immune Cell-Endothelial Cell Interactions
+      - Modes of Cell Migration in and out of Confinement:
+          sections:
+            - Chemotaxis
+            - Haptotaxis
+            - Transmigration
+            - Extravasation
+            - Immune Cell Migration in Lymph Nodes
+            - Immune Cell Migration in Tissues
+      - Signals that Guide Immune Cell Motility:
+          sections:
+            - Chemokine Signaling
+            - Growth Factors and Cytokines
+            - Tumor Microenvironment Signals
+            - Immune Cell Guidance by Soluble Factors
+            - Immune Cell Guidance by ECM Components
+      - Integrating Start and Stop Signals in Immune Cells:
+          sections:
+            - Receptor Signaling
+            - Intracellular Signaling Pathways
+            - Immune Cell Activation and Inhibition
+            - Immune Cell Migration Regulation
+      - Making Decisions:
+          sections:
+            - Cell Fate Decisions
+            - Cell Differentiation
+            - Cell Death
+            - Immune Cell Fate Determination
+            - Immune Cell Differentiation and Polarization
+      - Migration in Immune and Nonimmune Tissues:
+          sections:
+            - Lymphocyte Homing
+            - Dendritic Cell Migration
+            - Fibroblast Migration
+            - Neutrophil Migration
+            - Immune Cell Migration in Inflammation
+            - Immune Cell Migration in Wound Healing
+      - Cytoskeletal Regulation of Immune Cell Functions:
+          sections:
+            - Actin Remodeling and Cell Shape Changes
+            - Microtubule Dynamics and Intracellular Transport
+            - Intermediate Filament Function
+            - Cytoskeletal Regulation of Immune Cell Activation
+            - Cytoskeletal Regulation of Immune Cell Polarization
+      - Immune Cell Migration in Disease:
+          sections:
+            - Immune Cell Migration in Infectious Diseases
+            - Immune Cell Migration in Autoimmune Diseases
+            - Immune Cell Migration in Allergic Reactions
+            - Immune Cell Migration in Immunodeficiency Disorders
+      - Oral Presentations and Wrap-Up:
+          sections:
+            - Student Presentations on Course-related Topics
+            - Course Summary and Key Takeaways

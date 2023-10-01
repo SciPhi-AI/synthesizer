@@ -1,0 +1,37 @@
+textbook:
+  'The Economics of Information: Strategy, Structure and Pricing':
+    chapters:
+      - The economics of information:
+          sections:
+            - Introduction to the economics of information
+            - Information asymmetry and market outcomes
+            - Sermo: An online platform for physician collaboration
+            - Differential pricing: Strategies for capturing consumer surplus
+            - Signaling and screening: Tools for quality differentiation
+            - Bundling and aggregation: Maximizing revenue through product combinations
+      - Search and competition:
+          sections:
+            - Introduction to search and competition
+            - Two-sided networks: The case of eBay
+            - Pricing at zero: The economics of freemium models
+            - Amazon: An online retail giant
+            - Targeted advertising: The role of Google in digital advertising
+      - Measurement, analytics and experimentation:
+          sections:
+            - Introduction to measurement, analytics, and experimentation
+            - The long tail: Leveraging niche markets in the digital economy
+            - Deep QA and knowledge work: The impact of artificial intelligence
+      - Midterm exam:
+          sections:
+            - Introduction to the midterm exam
+            - Wikipedia: A case study in collaborative knowledge creation
+      - Experimentation, replication and innovation:
+          sections:
+            - Introduction to experimentation, replication, and innovation
+            - Digital advantage: How technology drives competitive advantage
+            - Social networks: The role of social platforms in information dissemination
+      - Student presentations:
+          sections:
+            - Introduction to student presentations
+            - Emerging electronic markets: Trends and opportunities in digital economies
+            - Future of information economy: Predicting the trajectory of information markets

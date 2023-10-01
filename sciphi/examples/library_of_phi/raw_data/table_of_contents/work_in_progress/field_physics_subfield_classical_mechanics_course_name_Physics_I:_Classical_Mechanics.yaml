@@ -1,0 +1,160 @@
+```yaml
+course:
+  'Physics I: Classical Mechanics':
+    textbook: 'Fundamentals of Classical Mechanics'
+    chapters:
+      - chapter: 'Introduction to Classical Mechanics'
+        sections:
+          - section: 'Scalars and Vectors'
+            subsections:
+              - 'Definition of Scalars'
+              - 'Definition of Vectors'
+              - 'Vector Addition and Subtraction'
+              - 'Vector Components and Unit Vectors'
+              - 'Vector Products'
+          - section: 'Motion in Cartesian and Polar Coordinates'
+            subsections:
+              - 'Position, Velocity, and Acceleration'
+              - 'Projectile Motion'
+              - 'Circular Motion'
+              - 'Relative Motion'
+          - section: 'Newton’s Laws and Forces'
+            subsections:
+              - 'Newton's First Law'
+              - 'Newton's Second Law'
+              - 'Newton's Third Law'
+              - 'Force of Gravity'
+              - 'Force of Friction'
+          - section: 'Application of Newton’s Laws I'
+            subsections:
+              - 'Free Body Diagrams'
+              - 'Equilibrium'
+              - 'Tension'
+              - 'Inclined Planes'
+          - section: 'Application of Newton’s Laws II'
+            subsections:
+              - 'Pulleys and Tension'
+              - 'Springs and Hooke's Law'
+              - 'Circular Motion and Centripetal Force'
+              - 'Banked Curves'
+          - section: 'Momentum'
+            subsections:
+              - 'Linear Momentum'
+              - 'Impulse and Momentum Change'
+              - 'Conservation of Momentum'
+              - 'Collisions'
+          - section: 'Collisions I'
+            subsections:
+              - 'Elastic Collisions'
+              - 'Inelastic Collisions'
+              - 'Coefficient of Restitution'
+              - 'Center of Mass'
+          - section: 'Rocket Motion'
+            subsections:
+              - 'Rocket Propulsion'
+              - 'Rocket Equations'
+              - 'Escape Velocity'
+              - 'Orbital Motion'
+          - section: 'Energy'
+            subsections:
+              - 'Work and Kinetic Energy'
+              - 'Potential Energy'
+              - 'Conservation of Mechanical Energy'
+              - 'Power'
+          - section: 'Potential Energy'
+            subsections:
+              - 'Gravitational Potential Energy'
+              - 'Elastic Potential Energy'
+              - 'Conservative and Non-conservative Forces'
+              - 'Energy Diagrams'
+          - section: 'Energy Conservation'
+            subsections:
+              - 'Conservation of Mechanical Energy'
+              - 'Conservation of Total Energy'
+              - 'Energy Transformations'
+              - 'Work-Energy Theorem'
+          - section: 'Collisions II'
+            subsections:
+              - 'Center of Mass Frame'
+              - 'Relativistic Collisions'
+              - 'Conservation of Energy and Momentum'
+              - 'Scattering'
+          - section: 'Fixed Axis Rotation'
+            subsections:
+              - 'Rotational Variables'
+              - 'Rotational Motion Equations'
+              - 'Torque'
+              - 'Moment of Inertia'
+          - section: 'Moment of Inertia'
+            subsections:
+              - 'Parallel-axis Theorem'
+              - 'Composite Objects'
+              - 'Rotational Kinetic Energy'
+              - 'Rolling Motion'
+          - section: 'Rotational and Translational Motion'
+            subsections:
+              - 'Rolling without Slipping'
+              - 'Angular Momentum'
+              - 'Conservation of Angular Momentum'
+              - 'Gyroscopic Motion'
+          - section: 'Rigid Body Motion'
+            subsections:
+              - 'Translational Motion'
+              - 'Rotational Motion'
+              - 'Combined Motion'
+              - 'Parallel Axis Theorem'
+          - section: 'Gyroscopic Motion I'
+            subsections:
+              - 'Gyroscope Basics'
+              - 'Precession'
+              - 'Nutation'
+              - 'Torque-Free Motion'
+          - section: 'Gyroscopic Motion II'
+            subsections:
+              - 'Forced Precession'
+              - 'Gyroscopic Stability'
+              - 'Applications of Gyroscopes'
+              - 'Gyrocompass'
+          - section: 'Cavendish Experiment'
+            subsections:
+              - 'Measurement of Gravitational Constant'
+              - 'Torsion Balance'
+              - 'Attraction and Repulsion Forces'
+              - "Cavendish's Setup"
+          - section: 'Moment of Inertia Tensor'
+            subsections:
+              - 'Generalized Moment of Inertia'
+              - 'Principal Axes'
+              - 'Diagonalization of Moment of Inertia Tensor'
+              - 'Rotation about Principal Axes'
+          - section: 'Euler’s Equations/Accelerated Reference Frames'
+            subsections:
+              - "Euler's Equations of Motion"
+              - 'Accelerated Reference Frames'
+              - 'Coriolis Effect'
+              - 'Centrifugal Force'
+          - section: 'Accelerated and Rotating Reference Frames'
+            subsections:
+              - 'Pseudoforces'
+              - 'Fictitious Forces'
+              - 'Non-Inertial Frames'
+              - 'Centripetal Force in Rotating Frame'
+          - section: 'Central Force Motion and Kepler’s Laws'
+            subsections:
+              - 'Central Force Motion'
+              - 'Kepler's Laws of Planetary Motion'
+              - 'Gravitational Force'
+              - 'Orbits and Ellipses'
+          - section: 'Foundations of Relativity'
+            subsections:
+              - 'Galilean Relativity'
+              - 'Special Theory of Relativity'
+              - 'Time Dilation'
+              - 'Length Contraction'
+          - section: 'Exam 3'
+            subsections:
+              - 'Exam 3 Review'
+          - section: 'Final Exam'
+            subsections:
+              - 'Final Exam Review'
+```

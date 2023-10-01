@@ -1,0 +1,75 @@
+textbook:
+  'Comprehensive Guide to Tumor Heterogeneity and the Tumor Microenvironment in Cancer Metastasis':
+    chapters:
+    - Introduction:
+        sections:
+        - Lecture Summary
+    - Epithelial-Mesenchymal Transition and Dissemination from the Primary Tumor:
+        sections:
+        - Lecture Summary
+        - Twist, a master regulator of morphogenesis, plays an essential role in tumor metastasis (PDF).Cell117, 927-939.
+        - Ras and TGFÎ² cooperatively regulate epithelial cell plasticity and metastasis: dissection of Ras signaling pat
+    - Cancer in Transit: Dynamics and Behaviors of Circulating Tumor Cells:
+        sections:
+        - Lecture Summary
+    - Stromal Support of Dissemination:
+        sections:
+        - Lecture Summary
+    - EMT Plasticity and Metastatic Colonization:
+        sections:
+        - Lecture Summary
+    - Cancer Stem Cells:
+        sections:
+        - Lecture Summary
+    - Genetic Heterogeneity and Evolution of Metastatic Disease:
+        sections:
+        - Lecture Summary
+    - Field Trip:
+        sections:
+        - Lecture Summary
+    - Determinants of Metastatic Tropism:
+        sections:
+        - Lecture Summary
+    - The Metastatic Niche:
+        sections:
+        - Lecture Summary
+    - Systemic Effects and the Pre-metastatic Niche:
+        sections:
+        - Lecture Summary
+    - Interactions Between Dormant DTCs and the Immune System:
+        sections:
+        - Lecture Summary
+    - Oral Presentations and Closing Remarks:
+        sections:
+        - Lecture Summary
+    - Readings:
+        sections:
+        - 'Cancer in Transit: Dynamics and Behaviors of Circulating Tumor Cells'
+        - Stromal Support of Dissemination
+        - EMT Plasticity and Metastatic Colonization
+        - Cancer Stem Cells
+        - Genetic Heterogeneity and Evolution of Metastatic Disease
+    - Assignments:
+        sections:
+        - Written critique of a scientific article
+    - Syllabus:
+        sections:
+        - Introduction
+        - Epithelial-Mesenchymal Transition and Dissemination from the Primary Tumor
+        - 'Cancer in Transit: Dynamics and Behaviors of Circulating Tumor Cells'
+        - Stromal Support of Dissemination
+        - EMT Plasticity and Metastatic Colonization
+        - Cancer Stem Cells
+        - Genetic Heterogeneity and Evolution of Metastatic Disease
+        - Field Trip
+        - Determinants of Metastatic Tropism
+        - The Metastatic Niche
+        - Systemic Effects and the Pre-metastatic Niche
+        - Interactions Between Dormant DTCs and the Immune System
+        - Oral Presentations and Closing Remarks
+    - Calendar:
+        sections:
+        - Lecture Schedule
+    - Projects:
+        sections:
+        - Lecture Summary

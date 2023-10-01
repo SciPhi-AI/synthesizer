@@ -1,0 +1,233 @@
+textbook:
+  Introduction to Numerical Methods: A Comprehensive Guide
+  chapters:
+  - Course Overview and Root-Finding Methods:
+      sections:
+      - Newton's Method:
+          subsections:
+          - Introduction to Newton's Method
+          - Derivation of Newton's Method
+          - Convergence Analysis of Newton's Method
+          - Newton's Method for Nonlinear Equations
+          - Newton's Method for Systems of Equations
+          - Applications of Newton's Method
+      - Bisection Method:
+          subsections:
+          - Introduction to Bisection Method
+          - Convergence Analysis of Bisection Method
+          - Bisection Method for Nonlinear Equations
+          - Bisection Method for Systems of Equations
+          - Applications of Bisection Method
+      - Secant Method:
+          subsections:
+          - Introduction to Secant Method
+          - Convergence Analysis of Secant Method
+          - Secant Method for Nonlinear Equations
+          - Secant Method for Systems of Equations
+          - Applications of Secant Method
+  - Floating-Point Arithmetic and Error Analysis:
+      sections:
+      - Machine Epsilon:
+          subsections:
+          - Introduction to Machine Epsilon
+          - Calculation of Machine Epsilon
+          - Significance of Machine Epsilon
+          - Floating-Point Arithmetic with Machine Epsilon
+      - Rounding Error:
+          subsections:
+          - Introduction to Rounding Error
+          - Sources of Rounding Error
+          - Bounds on Rounding Error
+          - Minimizing Rounding Error
+      - Truncation Error:
+          subsections:
+          - Introduction to Truncation Error
+          - Sources of Truncation Error
+          - Bounds on Truncation Error
+          - Minimizing Truncation Error
+      - Condition Number:
+          subsections:
+          - Introduction to Condition Number
+          - Definition of Condition Number
+          - Properties of Condition Number
+          - Conditioning and Stability
+  - Numerical Methods for Linear Systems:
+      sections:
+      - Gaussian Elimination:
+          subsections:
+          - Introduction to Gaussian Elimination
+          - Gaussian Elimination with Partial Pivoting
+          - Gaussian Elimination with LU Factorization
+          - Numerical Stability of Gaussian Elimination
+      - LU Factorization:
+          subsections:
+          - Introduction to LU Factorization
+          - LU Factorization with Partial Pivoting
+          - Numerical Stability of LU Factorization
+      - Partial Pivoting:
+          subsections:
+          - Introduction to Partial Pivoting
+          - Advantages of Partial Pivoting
+          - Numerical Stability of Partial Pivoting
+      - Iterative Methods (Jacobi, Gauss-Seidel):
+          subsections:
+          - Introduction to Iterative Methods
+          - Jacobi Iterative Method
+          - Gauss-Seidel Iterative Method
+          - Convergence Analysis of Iterative Methods
+  - Numerical Methods for Ordinary Differential Equations:
+      sections:
+      - Euler's Method:
+          subsections:
+          - Introduction to Euler's Method
+          - Derivation of Euler's Method
+          - Convergence Analysis of Euler's Method
+          - Stability of Euler's Method
+          - Extensions of Euler's Method
+      - Runge-Kutta Methods:
+          subsections:
+          - Introduction to Runge-Kutta Methods
+          - Derivation of Runge-Kutta Methods
+          - Convergence Analysis of Runge-Kutta Methods
+          - Stability of Runge-Kutta Methods
+          - Higher-Order Runge-Kutta Methods
+      - Multistep Methods:
+          subsections:
+          - Introduction to Multistep Methods
+          - Adams-Bashforth Methods
+          - Adams-Moulton Methods
+          - Convergence Analysis of Multistep Methods
+          - Stability of Multistep Methods
+      - Stiff Systems:
+          subsections:
+          - Introduction to Stiff Systems
+          - Definition of Stiff Systems
+          - Implicit Methods for Stiff Systems
+          - Convergence Analysis of Implicit Methods
+          - Stability of Implicit Methods
+  - Numerical Methods for Eigenvalue Problems:
+      sections:
+      - Power Method:
+          subsections:
+          - Introduction to Power Method
+          - Algorithm for Power Method
+          - Convergence Analysis of Power Method
+          - Applications of Power Method
+      - QR Algorithm:
+          subsections:
+          - Introduction to QR Algorithm
+          - Algorithm for QR Algorithm
+          - Convergence Analysis of QR Algorithm
+          - Applications of QR Algorithm
+      - Lanczos Method:
+          subsections:
+          - Introduction to Lanczos Method
+          - Algorithm for Lanczos Method
+          - Convergence Analysis of Lanczos Method
+          - Applications of Lanczos Method
+      - Arnoldi Method:
+          subsections:
+          - Introduction to Arnoldi Method
+          - Algorithm for Arnoldi Method
+          - Convergence Analysis of Arnoldi Method
+          - Applications of Arnoldi Method
+  - Optimization Algorithms:
+      sections:
+      - Gradient Descent:
+          subsections:
+          - Introduction to Gradient Descent
+          - Algorithm for Gradient Descent
+          - Convergence Analysis of Gradient Descent
+          - Applications of Gradient Descent
+      - Newton's Method:
+          subsections:
+          - Introduction to Newton's Method
+          - Algorithm for Newton's Method
+          - Convergence Analysis of Newton's Method
+          - Applications of Newton's Method
+      - Conjugate Gradient Method:
+          subsections:
+          - Introduction to Conjugate Gradient Method
+          - Algorithm for Conjugate Gradient Method
+          - Convergence Analysis of Conjugate Gradient Method
+          - Applications of Conjugate Gradient Method
+      - Quasi-Newton Methods:
+          subsections:
+          - Introduction to Quasi-Newton Methods
+          - BFGS Method
+          - L-BFGS Method
+          - Convergence Analysis of Quasi-Newton Methods
+          - Applications of Quasi-Newton Methods
+  - Numerical Integration:
+      sections:
+      - Trapezoidal Rule:
+          subsections:
+          - Introduction to Trapezoidal Rule
+          - Derivation of Trapezoidal Rule
+          - Error Analysis of Trapezoidal Rule
+          - Improvements to Trapezoidal Rule
+      - Simpson's Rule:
+          subsections:
+          - Introduction to Simpson's Rule
+          - Derivation of Simpson's Rule
+          - Error Analysis of Simpson's Rule
+          - Improvements to Simpson's Rule
+      - Gaussian Quadrature:
+          subsections:
+          - Introduction to Gaussian Quadrature
+          - Derivation of Gaussian Quadrature
+          - Error Analysis of Gaussian Quadrature
+          - Orthogonal Polynomials and Quadrature
+      - Adaptive Quadrature:
+          subsections:
+          - Introduction to Adaptive Quadrature
+          - Algorithm for Adaptive Quadrature
+          - Error Analysis of Adaptive Quadrature
+          - Applications of Adaptive Quadrature
+  - Fast Fourier Transform:
+      sections:
+      - Discrete Fourier Transform:
+          subsections:
+          - Introduction to Discrete Fourier Transform
+          - Algorithm for Discrete Fourier Transform
+          - Properties of Discrete Fourier Transform
+          - Applications of Discrete Fourier Transform
+      - Fast Fourier Transform Algorithms:
+          subsections:
+          - Introduction to Fast Fourier Transform Algorithms
+          - Cooley-Tukey Algorithm
+          - Radix-2 FFT Algorithm
+          - Split-Radix FFT Algorithm
+          - Prime Factor FFT Algorithm
+      - Cooley-Tukey Algorithm:
+          subsections:
+          - Introduction to Cooley-Tukey Algorithm
+          - Algorithm for Cooley-Tukey Algorithm
+          - Convergence Analysis of Cooley-Tukey Algorithm
+          - Applications of Cooley-Tukey Algorithm
+  - Project:
+      sections:
+      - Proposal:
+          subsections:
+          - Writing an Effective Project Proposal
+          - Components of a Project Proposal
+          - Project Proposal Examples
+          - Proposal Evaluation Criteria
+      - Implementation:
+          subsections:
+          - Planning the Project Implementation
+          - Development of the Project
+          - Testing and Debugging
+          - Documentation and Code Organization
+      - Evaluation:
+          subsections:
+          - Evaluation Metrics for the Project
+          - Evaluation Process and Criteria
+          - Project Evaluation Examples
+          - Improvements and Future Work
+      - Presentation:
+          subsections:
+          - Preparing for the Project Presentation
+          - Structure and Content of the Presentation
+          - Effective Visual Aids
+          - Presentation Delivery Techniques

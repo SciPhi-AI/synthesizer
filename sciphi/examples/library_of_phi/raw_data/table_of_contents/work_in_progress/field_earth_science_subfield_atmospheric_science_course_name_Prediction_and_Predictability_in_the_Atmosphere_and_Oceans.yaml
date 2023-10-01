@@ -1,0 +1,185 @@
+```yaml
+textbook:
+  Prediction and Predictability in the Atmosphere and Oceans: A Comprehensive Guide
+    chapters:
+    - Introduction:
+        sections:
+        - Course Description and Expectations
+        - Motivation
+        - Presentation of Possible Project Topics
+    - Attractors and Dimensions:
+        sections:
+        - Definitions
+        - Attractor Dimensions
+        - Embedding
+    - Sensitive Dependence to Initial Conditions:
+        sections:
+        - Lyapunov Exponents
+        - Singular Vectors and Norms
+        - Validity of Linearity Assumption
+    - Probabilistic Forecasting:
+        sections:
+        - Stochastic Dynamic Prediction
+        - Probability Continuity Equation
+        - Evolution of the First Two Moments of the PDF
+        - Monte Carlo, or Ensemble Approximation
+        - Probability Primer
+    - Data Assimilation:
+        sections:
+        - Model's Adjoint and its Applications
+        - Fully Nonlinear, Probabilistic Data Assimilation
+        - Particle Filter
+        - Ensemble Approach to the Extended Kalman Filter, the EnKF
+    - '[Topic 6]':
+        sections:
+        - '[Subtopic 1]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 2]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 3]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 4]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 5]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 6]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+    - '[Topic 7]':
+        sections:
+        - '[Subtopic 1]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 2]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 3]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 4]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 5]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 6]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+    - '[Topic 8]':
+        sections:
+        - '[Subtopic 1]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 2]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 3]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 4]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 5]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 6]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+    - '[Topic 9]':
+        sections:
+        - '[Subtopic 1]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 2]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 3]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 4]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 5]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+        - '[Subtopic 6]':
+            subsections:
+            - '[Subsubsection 1]'
+            - '[Subsubsection 2]'
+            - '[Subsubsection 3]'
+            - '[Subsubsection 4]'
+```

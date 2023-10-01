@@ -1,0 +1,44 @@
+```yaml
+course:
+  textbook: Marine Isotope Chemistry: Exploring the Ocean's Isotopic Composition
+    chapters:
+    - Nuclear Systematics:
+        sections:
+        - The Basics
+        - Nucleosynthesis
+        - Radioactive Decay
+        - Radiometric Dating I
+        - Radiometric Dating II
+    - Problem-Solving Session 1:
+        sections:
+        - Solar System and Planetary Formation
+        - Earth Structure and Evolution
+        - Atmosphere/Ocean Formation
+    - Cosmogenic Isotopes I:
+        sections:
+        - Cosmogenic Isotopes II
+        - Problem-Solving Session 2
+    - Mass Spectrometry I:
+        sections:
+        - Mass Spectrometry II
+    - Isotope Fractionation I:
+        sections:
+        - Isotope Fractionation II
+        - Problem-Solving Session 3
+    - Mass-Independent Fractionation:
+        sections:
+        - Clumped Isotopes
+    - Water Column I:
+        sections:
+        - Problem-Solving Session 4
+        - Water Column II
+        - Water Column III
+        - Water Column IV
+        - Water Column V
+    - Final Exam:
+    - Appendix: 
+      subsections:
+      - Glossary
+      - Equations and Constants
+      - Useful Resources
+```

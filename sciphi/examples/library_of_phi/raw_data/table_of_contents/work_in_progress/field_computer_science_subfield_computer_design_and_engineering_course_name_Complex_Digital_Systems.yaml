@@ -1,0 +1,79 @@
+```yaml
+textbook:
+  Complex Digital Systems:
+    chapters:
+      - Introduction:
+          sections:
+            - Course Number
+            - Course Name
+            - Resource Level
+      - Digital Design Using Verilog:
+          sections:
+            - Verilog HDL
+            - Verilog-2001
+            - Verilog Simulation
+            - Intermediate Verilog designer
+      - CMOS Technology and Logic Gates:
+          sections:
+            - CMOS Technology
+            - Logic Gates
+      - Wires:
+          sections:
+            - Wire Design
+            - Wire Optimization
+      - Synthesis:
+          sections:
+            - Synthesis Techniques
+            - Logic Synthesis
+      - Clocking:
+          sections:
+            - Clock Design
+            - Clock Synchronization
+      - 'Bluespec I: Motivation':
+          sections:
+            - Introduction to Bluespec
+            - Motivation for Bluespec
+      - 'Bluespec II: Designing with Rules':
+          sections:
+            - Rule-based Design
+            - Rule Syntax
+      - 'Bluespec III: Modules and Interfaces':
+          sections:
+            - Module Design
+            - Interface Design
+      - 'Bluespec IV: Rule Scheduling and Synthesis':
+          sections:
+            - Rule Scheduling
+            - Rule Synthesis
+      - Bluespec:
+          sections:
+            - Bluespec Language
+            - Bluespec Applications
+      - Power:
+          sections:
+            - Power Optimization
+            - Low Power Design Techniques
+      - 'Bluespec V: Processors':
+          sections:
+            - Processor Design
+            - Instruction Set Architectures
+      - 'Bluespec VI: Modularity and Performance':
+          sections:
+            - Modularity in Bluespec
+            - Performance Optimization
+      - Transaction Level Design and Verification:
+          sections:
+            - Transaction Level Modeling
+            - Verification Techniques
+      - Testing:
+          sections:
+            - Test Generation
+            - Test Coverage Analysis
+      - Projects:
+          sections:
+            - Large-scale Digital System Design
+            - Project Selection
+            - Project Implementation
+            - Project Testing
+```
+```

@@ -1,0 +1,40 @@
+course:
+  textbook: "Electrical, Optical, and Magnetic Properties of Materials: A Comprehensive Guide"
+  chapters:
+    - Introduction to Materials Properties:
+        sections:
+        - Band Theory and Electronic Properties of Solids
+        - Optical Properties of Solids
+        - Physical Theory of Ferromagnetic Domains
+    - Electronic and Optical Units:
+        sections:
+        - 'From Particles to Waves: The Schrödinger Equation'
+        - 'Mechanics of Quantum Mechanics: Operators, Expectation Values'
+        - Hydrogen Atom and the Periodic Table
+        - Periodicity and Phonons
+        - 'Electrons in a Lattice: Bloch''s Theorem'
+        - Nearly-Free Electron Model
+    - Semiconductors and Insulators:
+        sections:
+        - Band Structure Engineering
+        - Transport of Heat and Electricity
+        - Inhomogeneous and Hot Carriers in Semiconductors
+    - Mid-term Exam:
+        sections:
+        - Review of Covered Topics
+    - Optical Materials and Refractive Index:
+        sections:
+        - Classic Propagation of Waves
+        - Interband Absorption
+    - Fundamental of Ferromagnetic Materials:
+        sections:
+        - Hysteresis Loop and Driving Energies
+        - Hard Materials and Permanent Magnets
+    - Spin Valves, Spin Switches, and Spin Tunneling:
+        sections:
+        - Excitons
+        - Luminescence
+        - Semiconductor Quantum Wells
+    - Final Exam:
+        sections:
+        - Review of Covered Topics

@@ -1,0 +1,95 @@
+```yaml
+textbook:
+  Urban Sociology: Exploring Theory and Practice:
+    chapters:
+      - Introduction to Urban Sociology:
+          sections:
+            - Course Overview
+            - MCI Norfolk Orientation
+            - Importance of Urban Sociology
+            - Key Concepts and Terminology
+
+      - The Sociological Imagination:
+          sections:
+            - Understanding Social Structures
+            - Analyzing Social Issues
+            - Applying the Sociological Imagination
+            - Historical Development of the Sociological Imagination
+
+      - Early Urban Sociology:
+          sections:
+            - The Birth of Urban Sociology
+            - Urbanization and Industrialization
+            - Urbanization and Deindustrialization
+            - Urbanization in Historical Context
+
+      - Community and How to Study It:
+          sections:
+            - Defining Community
+            - Methods of Studying Community
+            - Types of Communities
+            - Community Dynamics and Change
+
+      - The Ethnographic Tradition:
+          sections:
+            - Ethnographic Research Methods
+            - Ethnographic Case Studies
+            - Ethnography in Urban Sociology
+            - Challenges and Ethical Considerations in Ethnographic Research
+
+      - Urban Political Economy: Cities, Industrialization, and Deindustrialization:
+          sections:
+            - Economic Development of Cities
+            - Impacts of Industrialization
+            - Effects of Deindustrialization
+            - Globalization and Urban Political Economy
+
+      - Urban Political Economy: Elites, Political Power, and Urban Dynamics:
+          sections:
+            - Urban Elites and Power Structures
+            - Political Influences on Urban Dynamics
+            - Urban Governance and Decision-Making
+            - Urban Planning and Development
+
+      - Theories of Urban Inequality:
+          sections:
+            - Social Stratification in Urban Areas
+            - Theoretical Perspectives on Urban Inequality
+            - Intersectionality and Urban Inequality
+            - Policies and Interventions to Address Urban Inequality
+
+      - Identities, Boundaries, and Inequality:
+          sections:
+            - Identity Formation in Urban Contexts
+            - Social Boundaries and Inequality
+            - Race, Ethnicity, and Urban Identity
+            - Gender, Sexuality, and Urban Identity
+
+      - Social Capital and Social Networks:
+          sections:
+            - Concept of Social Capital
+            - Role of Social Networks in Urban Life
+            - Social Capital and Community Development
+            - Digital Networks and Urban Social Capital
+
+      - Neighborhood Effects: Order, Disorder, and Collective Efficacy:
+          sections:
+            - Effects of Neighborhood Characteristics
+            - Order and Disorder in Urban Neighborhoods
+            - Collective Efficacy and Community Safety
+            - Neighborhood Revitalization and Renewal
+
+      - Social Origins of Violence:
+          sections:
+            - Causes of Urban Violence
+            - Social Factors Contributing to Violence
+            - Violence Prevention and Intervention
+            - Restorative Justice and Community Healing
+
+      - Collective Action:
+          sections:
+            - Forms of Collective Action
+            - Social Movements in Urban Contexts
+            - Grassroots Activism and Urban Change
+            - Social Media and Digital Activism
+```

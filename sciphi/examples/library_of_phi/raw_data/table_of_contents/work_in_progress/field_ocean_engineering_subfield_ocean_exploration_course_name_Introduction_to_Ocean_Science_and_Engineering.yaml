@@ -1,0 +1,83 @@
+textbook:
+  Introduction to Ocean Science and Engineering: A Comprehensive Guide
+  chapters:
+    - Introduction to Ocean Systems and Engineering:
+        sections:
+        - Sea Floor: Exploring the Bottom of the Ocean
+        - Measurements in the Ocean: Techniques and Instruments
+        - Accuracy of Measurements: Sources of Error and Uncertainty
+    - Atmospheric Effects on the Ocean:
+        sections:
+        - Wind and Heat: Interactions between the Atmosphere and Ocean
+    - SeaPerch II ROV:
+        sections:
+        - Introduction to SeaPerch: Building and Operating an Underwater Robot
+        - Construction Plan: Designing and Assembling the SeaPerch ROV
+        - Lab Procedures: Conducting Experiments with the SeaPerch ROV
+    - Ocean Seawater Properties:
+        sections:
+        - Seawater Properties: Physical and Chemical Characteristics
+    - Light Propagation in the Ocean:
+        sections:
+        - Basics of Light Propagation: Absorption, Scattering, and Reflection
+    - Sound Propagation in the Ocean:
+        sections:
+        - Basics of Sound Propagation: Principles and Mechanisms
+        - Speed of Sound: Factors Affecting Sound Speed in Seawater
+        - Sound Channel: Understanding the Deep Sound Channel
+    - Acoustics:
+        sections:
+        - Acoustics 1: Introduction to Underwater Acoustics
+        - Acoustics 2: Sound Generation and Propagation
+        - Acoustics 3: Sonar Systems and Applications
+        - Acoustics 4: Ocean Acoustic Noise and Interference
+    - Introduction to GFD (Geophysical Fluid Dynamics):
+        sections:
+        - Conservation of Mass, Momentum, and Energy: Fundamental Principles
+    - Turbulence, Scaling, and Boundary Layers:
+        sections:
+        - Turbulence: Dynamics and Effects in the Ocean
+        - Scaling: Bridging the Gap between Laboratory and Real-World Conditions
+        - Boundary Layers: Understanding the Ocean-Atmosphere Interface
+    - Ocean Mixing and Stability:
+        sections:
+        - Mixing in the Ocean: Processes and Consequences
+        - Stability of Ocean Layers: Stratification and Vertical Motion
+    - Coriolis Force and Ekman Forcing:
+        sections:
+        - Coriolis Force: The Influence of Earth's Rotation
+        - Ekman Forcing: Wind-Driven Circulation in the Surface Ocean
+    - Geostrophic Flows:
+        sections:
+        - Geostrophic Flows 1: Geostrophy and the Balance of Forces
+        - Geostrophic Flows 2: Applications and Examples
+    - Measuring Currents:
+        sections:
+        - Lagrangian vs. Eulerian Measurements: Tracking Water Motion
+    - Deep Ocean Circulation:
+        sections:
+        - Circulation Patterns in the Deep Ocean: Global Conveyor Belt and Thermohaline Circulation
+    - El Nino and La Nina:
+        sections:
+        - El Nino Phenomenon: Causes and Impacts
+        - La Nina Phenomenon: A Counterpart to El Nino
+    - Coastal Processes:
+        sections:
+        - Tsunamis: Generation, Propagation, and Coastal Effects
+    - Guest Lectures:
+        sections:
+        - Hydrothermal Vents in the Ocean: Exploring Submarine Hot Springs
+        - Chemical Sensing in the Ocean: Monitoring and Analyzing Ocean Chemistry
+    - Final Project:
+        sections:
+        - Project Start: Choosing a Topic and Developing a Plan
+        - Project Progress: Conducting Research and Gathering Data
+        - Project Testing: Analyzing Results and Evaluating Hypotheses
+        - Project Completion: Presenting Findings and Conclusions
+    - Final Presentations:
+        sections:
+        - Presenting Final Projects: Effective Communication and Delivery
+    - Trip to WHOI:
+        sections:
+        - Launching ROV: Field Deployment and Operation of the SeaPerch ROV
+        - Visiting WHOI Labs: Experiencing Cutting-Edge Ocean Science and Engineering Research

@@ -1,0 +1,37 @@
+textbook:
+  Theory of Parallel Systems: Concepts, Performance, and Analysis:
+    chapters:
+    - Chapter 1: Introduction to Parallel Systems
+        sections:
+        - Section 1.1: Historical Overview of Parallel Computing
+        - Section 1.2: Parallel Programming Models and Paradigms
+    - Chapter 2: Dynamic Multithreading
+        sections:
+        - Section 2.1: Introduction to Dynamic Multithreading
+        - Section 2.2: Cilk Manual 5.3.2 (PDF)
+        - Section 2.3: Minicourse on Multithreaded Programming (PDF)
+    - Chapter 3: Serial Performance and Caching
+        sections:
+        - Section 3.1: Introduction to Serial Performance and Caching
+        - Section 3.2: Sorting Code Handout (PDF)
+        - Section 3.3: C Code for Sorting (C)
+        - Section 3.4: ASM Code for Sorting (Excerpt) (ASM)
+        - Section 3.5: Cache-Oblivious Algorithms
+        - Section 3.6: Prokop’s Masters Thesis (PDF)
+        - Section 3.7: FOCS Paper (PDF)
+    - Chapter 4: Determinacy Detection and Race Detection
+        sections:
+        - Section 4.1: Introduction to Determinacy Detection and Race Detection
+        - Section 4.2: Efficient Detection of Determinacy Race by Feng and Leiserson
+    - Chapter 5: Consistency of the Memory Sub-System
+        sections:
+        - Section 5.1: Introduction to Consistency of the Memory Sub-System
+    - Chapter 6: Analyzing Space Bounds
+        sections:
+        - Section 6.1: Introduction to Analyzing Space Bounds
+        - Section 6.2: Jeremy Fineman's Contributions
+    - Chapter 7: Cilk Scheduler
+        sections:
+        - Section 7.1: Introduction to Cilk Scheduler
+        - Section 7.2: Competitive Snoopy Caching
+        - Section 7.3: Pick a Winner

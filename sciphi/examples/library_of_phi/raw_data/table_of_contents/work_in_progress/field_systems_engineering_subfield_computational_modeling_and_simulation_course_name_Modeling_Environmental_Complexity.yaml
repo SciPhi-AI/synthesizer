@@ -1,0 +1,60 @@
+```yaml
+textbook:
+  Modeling Environmental Complexity: A Comprehensive Guide
+    chapters:
+    - Introduction:
+        sections:
+        - Definition of Environmental Complexity
+        - Importance of Modeling
+        subsections: []
+    - Microdynamics to Macrodynamics:
+        sections:
+        - Scale in Environmental Systems
+        - Emergent Properties
+        - Feedback Loops
+        subsections: []
+    - River Networks:
+        sections:
+        - Formation and Evolution
+        - Fractal Geometry
+        - Hydrological Connectivity
+        subsections: []
+    - Self-organized Criticality:
+        sections:
+        - Sandpile Models
+        - Power Laws in Environmental Systems
+        - Avalanches and Cascades
+        subsections: []
+    - Anomalous Diffusion:
+        sections:
+        - Brownian Motion
+        - Levy Flights
+        - Subdiffusion and Superdiffusion
+        subsections: []
+    - Percolation Theory:
+        sections:
+        - Connectivity and Giant Component
+        - Phase Transitions
+        - Cluster Size Distribution
+        subsections: []
+    - Random and Scale-free Networks:
+        sections:
+        - Small-world Networks
+        - Preferential Attachment
+        - Degree Distribution
+        subsections: []
+    - Origin of Biogeochemical Cycles:
+        sections:
+        - Carbon Cycle
+        - Nitrogen Cycle
+        - Phosphorus Cycle
+        - Feedbacks in Biogeochemical Systems
+        - Anthropogenic Influence
+        subsections: []
+    - Disordered Kinetics:
+        sections:
+        - Reaction-diffusion Systems
+        - Chemical Reactions in Heterogeneous Environments
+        - Reaction Front Propagation
+        subsections: []
+```

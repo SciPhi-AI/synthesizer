@@ -1,0 +1,99 @@
+```yaml
+course:
+  textbook: 'Comprehensive Guide to American Political Behavior: Understanding the Dynamics of Democracy'
+  chapters:
+    - Introduction:
+        sections:
+        - Required Readings:
+            - The American Voter: Chapters 6-8, 10 by Campbell, Angus, Philip E. Converse, Warren E. Miller, and Donald E. Stokes (University of Chicago Press, 1980)
+            - Democracy for Realists: Chapters 1, 2 by Achen, Christopher H., and Larry M. Bartels (Princeton University Press, 2016)
+        - Learning Objectives
+        - Overview of Political Behavior
+    - Chapter 1: Micro Public Opinion: Ideology and Opinion Formation:
+        sections:
+        - Definition and Measurement of Public Opinion
+        - The Role of Ideology in Opinion Formation
+        - Partisanship and Party Identification
+        - The Influence of Socialization on Opinion Formation
+    - Chapter 2: Micro Public Opinion: Cognition, Information, and Knowledge:
+        sections:
+        - Cognitive Processes and Decision Making
+        - Information Processing and Political Knowledge
+        - Media Influence on Opinion Formation
+        - The Role of Education in Shaping Political Cognition
+        - The Influence of Social Networks on Political Knowledge
+        - Cognitive Dissonance and Opinion Change
+        - Public Opinion Polling and Survey Research Methods
+    - Chapter 3: Micro Public Opinion: Groups, Self-Interest, and Symbolic Politics:
+        sections:
+        - The Influence of Social Groups on Opinion Formation
+        - Racial and Ethnic Identity in Opinion Formation
+        - Gender and Opinion Formation
+        - Economic and Social Group Interests
+        - The Role of Symbolic Politics in Opinion Formation
+        - Public Opinion and Public Policy
+    - Chapter 4: Macro Public Opinion and Representation:
+        sections:
+        - Aggregate Opinion and Public Opinion Trends
+        - The Measurement and Interpretation of Public Opinion
+        - Public Opinion and Policymaking
+        - The Role of Public Opinion in Democratic Governance
+        - The Challenge of Representing Diverse Public Opinions
+    - Chapter 5: Party Identification:
+        sections:
+        - Definition and Measurement of Party Identification
+        - The Formation and Stability of Party Identification
+        - The Influence of Party Identification on Political Behavior
+        - Party Identification and Voter Decision-Making
+        - The Role of Party Identification in Electoral Politics
+    - Chapter 6: Social Influence and Context:
+        sections:
+        - Social Networks and Political Behavior
+        - Social Influence and Opinion Formation
+        - The Role of Social Identity in Political Behavior
+        - The Influence of Social Context on Political Attitudes and Behaviors
+        - The Impact of Social Movements on Political Change
+    - Chapter 7: Political Communication and Media:
+        sections:
+        - The Role of Media in Political Communication
+        - Media Effects on Public Opinion
+        - The Influence of News Framing on Political Behavior
+        - The Impact of New Media on Political Engagement
+        - Political Advertising and Persuasion
+        - Media Bias and its Effects on Public Opinion
+        - The Role of Social Media in Shaping Political Discourse
+    - Chapter 8: Political Participation and Voter Turnout:
+        sections:
+        - Types and Levels of Political Participation
+        - The Factors that Influence Political Participation
+        - The Consequences of Political Participation
+        - The Relationship between Political Participation and Democracy
+        - Voter Turnout and its Determinants
+        - Strategies to Increase Voter Turnout
+    - Chapter 9: Voting Behavior I: Political Campaigns:
+        sections:
+        - The Role of Political Campaigns in Shaping Voter Behavior
+        - The Influence of Campaign Messages and Strategies on Voter Decision-Making
+        - The Impact of Campaign Advertising and Fundraising on Elections
+        - The Role of Campaign Events and Debates in Shaping Public Opinion
+        - The Influence of Candidate Characteristics on Voter Behavior
+        - The Effect of Negative Campaigning on Voter Attitudes
+        - The Role of Political Consultants in Campaign Strategy
+        - Preliminary Memo on Final Paper Topic Due
+    - Chapter 10: Voting Behavior II: Vote Choice and Political Accountability:
+        sections:
+        - The Determinants of Vote Choice
+        - The Impact of Economic Conditions on Voting Behavior
+        - The Role of Party Platforms in Shaping Voter Decisions
+        - The Influence of Candidate Image and Personality on Vote Choice
+        - The Role of Political Scandals in Voter Decision-Making
+        - The Effect of Incumbency on Voter Behavior
+        - The Relationship between Voter Behavior and Government Accountability
+        - Other Political Participation
+        - Political Inequality and Participation/Policy Feedback Effects
+    - Chapter 11: Other Political Participation:
+        sections: null
+    - Chapter 12: Political Inequality and Participation/Policy Feedback Effects:
+        sections: null
+```
+```

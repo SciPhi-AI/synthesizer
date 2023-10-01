@@ -1,0 +1,73 @@
+```yaml
+textbook:
+  Computational Models of Discourse: A Comprehensive Guide
+    chapters:
+    - Introduction:
+        sections:
+          - Discourse: An Overview
+          - Computational Perspectives on Discourse and Dialog
+    - Topic Segmentation:
+        sections:
+          - Agreement, Evaluation, and Automatic Text Segmentation
+          - Hierarchical Text Segmentation
+          - Meeting Segmentation
+    - Cohesion and Local Coherence:
+        sections:
+          - Lexical Chains and Discourse Coherence
+          - Centering Theory and Discourse Coherence
+          - Applications of Cohesion in Automated Essay Scoring
+    - Automatic Reference Resolution:
+        sections:
+          - Introduction to Automatic Reference Resolution
+          - Reference Generation in Discourse
+    - Generation of Referring Expressions:
+        sections:
+          - Introduction to Generation of Referring Expressions
+    - Domain-dependent Models of Text Structure:
+        sections:
+          - Introduction to Domain-dependent Models of Text Structure
+    - Rhetorical Structure Theory:
+        sections:
+          - Introduction to Rhetorical Structure Theory
+    - Discourse Structure in Text Summarization; Alignment:
+        sections:
+          - Discourse Structure in Text Summarization
+          - Alignment and Discourse Structure
+    - Temporal Ordering in Discourse:
+        sections:
+          - Temporal Ordering in Discourse
+    - Prosody and Discourse:
+        sections:
+          - Prosody and Discourse
+    - Intentions and the Structure of Discourse:
+        sections:
+          - Intentions and the Structure of Discourse
+    - Studies of Dialogues; Taxonomy of Speech Acts:
+        sections:
+          - Studies of Dialogues
+          - Taxonomy of Speech Acts
+    - Automatic Interpretation of Dialogue Acts:
+        sections:
+          - Automatic Interpretation of Dialogue Acts
+    - Learning Dialogue Strategies via Reinforcement Learning:
+        sections:
+          - Learning Dialogue Strategies via Reinforcement Learning
+    - MIT Dialogue Systems:
+        sections:
+          - Introduction to MIT Dialogue Systems
+    - Dialogue Systems:
+        sections:
+          - Introduction to Dialogue Systems
+    - Plan Recognition:
+        sections:
+          - Introduction to Plan Recognition
+    - Evaluation for Discourse Processing:
+        sections:
+          - Evaluation for Discourse Processing
+    - Discourse in Psycholinguistics:
+        sections:
+          - Discourse in Psycholinguistics
+    - Project Presentations:
+        sections:
+          - Project Presentations
+```

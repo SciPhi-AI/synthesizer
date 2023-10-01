@@ -1,0 +1,65 @@
+course:
+  'Architectural Design, Level II: Material Essence: The Glass House':
+    textbook: 'Architectural Design: Exploring Material Essence in The Glass House'
+    resource_level: Graduate
+    chapters:
+    - Introduction to Studios:
+        sections:
+        - Show and Tell
+    - 'Chapter 1: Project 1 - Introduction':
+        sections:
+        - Pin Up of First Individual Ideas/Concepts but in Groups
+    - 'Chapter 2: Field Trip to T. Island':
+        sections:
+        - All Studios - Field Trip
+    - 'Chapter 3: Group Esquisse Hybridization':
+        sections:
+        - Desk Crits
+    - 'Chapter 4: Group Presentations of Design Strategies':
+        sections:
+        - Assignment of Faculty
+    - 'Chapter 5: Research, Development and Testing':
+        sections:
+        - Working Pin Ups with Faculty
+    - 'Chapter 6: Workshop Prototype/Fabrication':
+        sections:
+        - Review of Group Work with Critics
+    - 'Chapter 7: Project 2A - Introduction':
+        sections:
+        - Wellesley Visit Site Studies/Model
+    - 'Chapter 8: Desk Crits':
+        sections:
+        - Pin Up
+    - 'Chapter 9: Project 2B - Site and Material Studies':
+        sections:
+        - Pin Up
+    - 'Chapter 10: Tim Eliasson Lecture Pin-up with Tim Eliasson':
+        sections:
+        - Trip to Tri-Pyramid, Concord
+    - 'Chapter 11: Field Trip: Fort Worth':
+        sections:
+        - Project 3 Concepts/Design Generation
+    - 'Chapter 12: Desk Crits':
+        sections:
+        - Pin-up with Guest Critics
+    - 'Chapter 13: Project 3.2: Design Organization':
+        sections:
+        - Andrew Scott in St Louis Tony Hunt Lecture
+    - 'Chapter 14: Mid Project Review':
+        sections:
+        - 'Project 4: Skin and Bones Materials Language'
+    - 'Chapter 15: Desk Crits Peter Cook Lecture':
+        sections:
+        - 'Peter del Tredici: Plants Desk Crits'
+    - 'Chapter 16: Desk Crits':
+        sections:
+        - 'Project 5: Prototype and Fabricate Make and Test: Workshop Pin-up'
+    - 'Chapter 17: Desk Crits':
+        sections:
+        - 'Review Final Project: Design Synthesis/Presentation'
+    - 'Chapter 18: Desk Crits':
+        sections:
+        - Mock-ups
+    - 'Chapter 19: MArch Thesis Reviews':
+        sections:
+        - Final Review

@@ -1,0 +1,248 @@
+```yaml
+course:
+  Statistical Thinking and Data Analysis:
+    textbook:
+      title: Statistical Thinking and Data Analysis: A Comprehensive Guide
+      author: Your Name
+      chapters:
+        - Review of Probability:
+            sections:
+            - Basic Probability Concepts:
+                subsections:
+                - Overview of Probability
+                - Sample Spaces and Events
+                - Probability Rules
+            - Conditional Probability:
+                subsections:
+                - Introduction to Conditional Probability
+                - Conditional Probability Rules
+                - Bayes' Theorem
+            - Random Variables:
+                subsections:
+                - Introduction to Random Variables
+                - Discrete and Continuous Random Variables
+                - Probability Distribution Functions
+        - Collecting Data:
+            sections:
+            - Sampling Methods:
+                subsections:
+                - Simple Random Sampling
+                - Stratified Sampling
+                - Cluster Sampling
+                - Systematic Sampling
+            - Experimental Design:
+                subsections:
+                - Introduction to Experimental Design
+                - Randomization and Control Groups
+                - Factorial Design
+                - Blocking and Confounding
+            - Surveys and Observational Studies:
+                subsections:
+                - Introduction to Surveys
+                - Types of Surveys
+                - Sampling Techniques for Surveys
+                - Observational Studies and Bias
+        - Summarizing and Exploring Data:
+            sections:
+            - Descriptive Statistics:
+                subsections:
+                - Measures of Central Tendency
+                - Measures of Dispersion
+                - Measures of Skewness and Kurtosis
+                - Graphical Summaries
+            - Exploratory Data Analysis:
+                subsections:
+                - Data Visualization Techniques
+                - Boxplots and Outliers
+                - Scatterplots and Correlation
+                - Data Transformations
+        - Sampling Distributions of Statistics:
+            sections:
+            - Sampling Distribution of the Mean:
+                subsections:
+                - Central Limit Theorem
+                - Standard Error
+                - Confidence Intervals for the Mean
+                - Hypothesis Tests for the Mean
+            - Sampling Distribution of the Proportion:
+                subsections:
+                - Sampling Distribution of the Proportion
+                - Confidence Intervals for Proportions
+                - Hypothesis Tests for Proportions
+        - Basic Concepts of Inference:
+            sections:
+            - Hypothesis Testing:
+                subsections:
+                - Null and Alternative Hypotheses
+                - Type I and Type II Errors
+                - Significance Level and P-values
+                - Power and Sample Size
+            - Confidence Intervals:
+                subsections:
+                - Confidence Interval Estimation
+                - Margin of Error
+                - Interpreting Confidence Intervals
+                - Choosing Sample Size for Confidence Intervals
+            - Type I and Type II Errors:
+                subsections:
+                - Understanding Type I Errors
+                - Understanding Type II Errors
+                - Minimizing Type I and Type II Errors
+                - Relationship between Type I and Type II Errors
+            - P-values:
+                subsections:
+                - Introduction to P-values
+                - Interpreting P-values
+                - P-value vs. Significance Level
+                - Common Misconceptions about P-values
+        - Inferences for Single Samples:
+            sections:
+            - One-Sample t-test:
+                subsections:
+                - Assumptions of the One-Sample t-test
+                - Calculation of the t-statistic
+                - One-Sample t-test in Practice
+                - Interpreting the Results of a One-Sample t-test
+            - One-Sample Proportion Test:
+                subsections:
+                - Assumptions of the One-Sample Proportion Test
+                - Calculation of the Test Statistic
+                - One-Sample Proportion Test in Practice
+                - Interpreting the Results of a One-Sample Proportion Test
+            - Paired t-test:
+                subsections:
+                - Assumptions of the Paired t-test
+                - Calculation of the Paired t-statistic
+                - Paired t-test in Practice
+                - Interpreting the Results of a Paired t-test
+            - Matched Pairs Proportion Test:
+                subsections:
+                - Assumptions of the Matched Pairs Proportion Test
+                - Calculation of the Test Statistic
+                - Matched Pairs Proportion Test in Practice
+                - Interpreting the Results of a Matched Pairs Proportion Test
+        - Inferences for Two Samples:
+            sections:
+            - Independent Samples t-test:
+                subsections:
+                - Assumptions of the Independent Samples t-test
+                - Calculation of the t-statistic
+                - Independent Samples t-test in Practice
+                - Interpreting the Results of an Independent Samples t-test
+            - Independent Samples Proportion Test:
+                subsections:
+                - Assumptions of the Independent Samples Proportion Test
+                - Calculation of the Test Statistic
+                - Independent Samples Proportion Test in Practice
+                - Interpreting the Results of an Independent Samples Proportion Test
+            - Paired Samples t-test:
+                subsections:
+                - Assumptions of the Paired Samples t-test
+                - Calculation of the Paired t-statistic
+                - Paired Samples t-test in Practice
+                - Interpreting the Results of a Paired Samples t-test
+            - McNemar's Test:
+                subsections:
+                - Assumptions of McNemar's Test
+                - Calculation of the McNemar's Test Statistic
+                - McNemar's Test in Practice
+                - Interpreting the Results of McNemar's Test
+        - Inferences for Proportions and Count Data:
+            sections:
+            - Chi-Square Test for Proportions:
+                subsections:
+                - Assumptions of the Chi-Square Test for Proportions
+                - Calculation of the Chi-Square Test Statistic
+                - Chi-Square Test for Proportions in Practice
+                - Interpreting the Results of a Chi-Square Test for Proportions
+            - Chi-Square Test for Goodness of Fit:
+                subsections:
+                - Assumptions of the Chi-Square Test for Goodness of Fit
+                - Calculation of the Chi-Square Test Statistic
+                - Chi-Square Test for Goodness of Fit in Practice
+                - Interpreting the Results of a Chi-Square Test for Goodness of Fit
+            - Chi-Square Test for Independence:
+                subsections:
+                - Assumptions of the Chi-Square Test for Independence
+                - Calculation of the Chi-Square Test Statistic
+                - Chi-Square Test for Independence in Practice
+                - Interpreting the Results of a Chi-Square Test for Independence
+            - Poisson Regression:
+                subsections:
+                - Introduction to Poisson Regression
+                - Assumptions of Poisson Regression
+                - Model Estimation in Poisson Regression
+                - Interpreting the Results of Poisson Regression
+        - Similar Linear Regression and Correlation:
+            sections:
+            - Simple Linear Regression:
+                subsections:
+                - Assumptions of Simple Linear Regression
+                - Estimation of the Regression Line
+                - Inference for Simple Linear Regression
+                - Interpreting the Results of Simple Linear Regression
+            - Correlation Coefficient:
+                subsections:
+                - Introduction to Correlation Coefficient
+                - Calculation of the Correlation Coefficient
+                - Interpreting the Correlation Coefficient
+                - Correlation vs. Causation
+            - Coefficient of Determination:
+                subsections:
+                - Definition of the Coefficient of Determination
+                - Calculation of the Coefficient of Determination
+                - Interpreting the Coefficient of Determination
+                - Limitations of the Coefficient of Determination
+        - Multiple Linear Regression:
+            sections:
+            - Multiple Regression Model:
+                subsections:
+                - Assumptions of Multiple Linear Regression
+                - Model Estimation in Multiple Linear Regression
+                - Inference for Multiple Linear Regression
+                - Interpreting the Results of Multiple Linear Regression
+            - Dummy Variables:
+                subsections:
+                - Introduction to Dummy Variables
+                - Coding of Dummy Variables
+                - Interpretation of Dummy Variables
+                - Interaction Effects with Dummy Variables
+            - Model Selection:
+                subsections:
+                - Introduction to Model Selection
+                - Stepwise Regression
+                - Variable Selection Criteria
+                - Overfitting and Model Complexity
+            - Residual Analysis:
+                subsections:
+                - Introduction to Residual Analysis
+                - Residual Plot Analysis
+                - Detection of Outliers and Influential Points
+                - Assumptions of Residual Analysis
+        - Nonparametric Statistical Methods:
+            sections:
+            - Wilcoxon Rank Sum Test:
+                subsections:
+                - Assumptions of the Wilcoxon Rank Sum Test
+                - Calculation of the Test Statistic
+                - Wilcoxon Rank Sum Test in Practice
+                - Interpreting the Results of the Wilcoxon Rank Sum Test
+            - Kruskal-Wallis Test:
+                subsections:
+                - Assumptions of the Kruskal-Wallis Test
+                - Calculation of the Test Statistic
+                - Kruskal-Wallis Test in Practice
+                - Interpreting the Results of the Kruskal-Wallis Test
+            - Mann-Whitney U Test:
+                subsections:
+                - Assumptions of the Mann-Whitney U Test
+                - Calculation of the Test Statistic
+                - Mann-Whitney U Test in Practice
+                - Interpreting the Results of the Mann-Whitney U Test
+            - Spearman's Rank Correlation:
+                subsections:
+                - Introduction to Spearman's Rank Correlation
+                - Calculation of the Rank Correlation Coefficient
+                - Interpreting Spearman's Rank Correlation
+                - Assumptions of Spearman's Rank Correlation
+```

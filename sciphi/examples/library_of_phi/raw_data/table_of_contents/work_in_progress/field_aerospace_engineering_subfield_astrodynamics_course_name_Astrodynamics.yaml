@@ -1,0 +1,70 @@
+```yaml
+course:
+  textbook: "Astrodynamics: A Comprehensive Guide"
+  chapters:
+    - chapter: "Introduction to Astrodynamics"
+      sections:
+        - section: "The History of Astrodynamics"
+        - section: "Basic Concepts and Terminology"
+        - section: "Coordinate Systems and Frames of Reference"
+        - section: "Celestial Mechanics Overview"
+    - chapter: "The Two-Body Problem"
+      sections:
+        - section: "Kepler's Laws"
+        - section: "Orbital Elements"
+        - section: "Orbit Determination"
+        - section: "Orbital Maneuvers"
+        - section: "Orbital Transfers"
+        - section: "Two-Body Problem Case Studies"
+    - chapter: "Orbital Mechanics"
+      sections:
+        - section: "Barker's Equation"
+        - section: "Kepler's Equation"
+        - section: "Initial-Value Problem"
+        - section: "Euler Angles"
+        - section: "Orbital Boundary-Value Problem"
+        - section: "Orbital Mechanics Case Studies"
+    - chapter: "Lambert's Theorem and Lagrange Time Equation"
+      sections:
+        - section: "Lambert's Theorem"
+        - section: "Lagrange Time Equation"
+        - section: "Analytical and Geometric Properties of the Boundary-Value Problem"
+        - section: "Lambert's Theorem and Lagrange Time Equation Case Studies"
+    - chapter: "Transformation of the Boundary-Value Problem"
+      sections:
+        - section: "Hyperbolic Orbits"
+        - section: "Patched Conics and Planetary Flybys"
+        - section: "Gauss's Method for the Time-Constrained Boundary-Value Problem"
+        - section: "Hypergeometric Functions and Continued Fractions"
+        - section: "The Fundamental Ellipse of the Boundary-Value Problem"
+        - section: "Boundary-Value Problem Transformation Case Studies"
+    - chapter: "Non-Singular 'Gauss-Like' Method for the Boundary-Value Problem"
+      sections:
+        - section: "The Battin-Vaughan Algorithm"
+        - section: "Preliminary Orbit Determination using Taylor Series"
+        - section: "The State Transition Matrix"
+        - section: "Non-Singular 'Gauss-Like' Method Case Studies"
+    - chapter: "Space Navigation and Estimation"
+      sections:
+        - section: "Powered Flight Guidance"
+        - section: "Space Navigation: Position Fix"
+        - section: "Covariance, Information, and Estimator Matrices"
+        - section: "Estimation of Position and Velocity"
+        - section: "Space Navigation and Estimation Case Studies"
+    - chapter: "Three-Body Problem"
+      sections:
+        - section: "Basic Elements of the Three-Body Problem"
+        - section: "The Restricted Problem of Three Bodies"
+        - section: "The Clohessy-Wiltshire Equations of Relative Motion"
+        - section: "Variation of Parameters"
+        - section: "Effect of Atmospheric Drag on Satellite Orbits"
+        - section: "Three-Body Problem Case Studies"
+    - chapter: "Perturbations in Satellite Orbits"
+      sections:
+        - section: "The Disturbing Function and Legendre Polynomials"
+        - section: "Effect of J2 on Satellite Orbits"
+        - section: "The Calculus of Variations and Lunar Landing Guidance"
+        - section: "Powered Flight Guidance to Maximize Final Energy"
+        - section: "Runge-Kutta Method of Numerical Integration"
+        - section: "Perturbations in Satellite Orbits Case Studies"
+```

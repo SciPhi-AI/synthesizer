@@ -1,0 +1,56 @@
+textbook:
+  Bioinformatics and Proteomics: A Comprehensive Guide
+  chapters:
+  - Introduction:
+      sections:
+      - Course Introduction
+      - Review of Modern Biology
+  - 'Abstraction Level 1: Sequence':
+      sections:
+      - Introduction to Bioinformatics Laboratory
+      - Bioinformatics in the Computer Industry
+      - 'Sequence Analysis: Motif and Regulation'
+      - 'Sequence Analysis: Genes and Genome'
+      - 'Sequence Analysis: Gene Evolution'
+  - 'Abstraction Level 2: Expression':
+      sections:
+      - Microarray Expression Data Analysis
+      - Machine Learning for Gene Expression
+  - Proteomics and Systems theme-based Lab:
+      sections:
+      - Proteomics Data Analysis
+      - Systems Biology Approaches
+  - Student Selected Based on Course Themes:
+      sections:
+      - 'Theme 1: [Topic 1]':
+          subsections:
+          - '[Subtopic 1]'
+          - '[Subtopic 2]'
+          - '[Subtopic 3]'
+          - '[Subtopic 4]'
+          - '[Subtopic 5]'
+          - '[Subtopic 6]'
+      - 'Theme 2: [Topic 2]':
+          subsections:
+          - '[Subtopic 1]'
+          - '[Subtopic 2]'
+          - '[Subtopic 3]'
+          - '[Subtopic 4]'
+          - '[Subtopic 5]'
+          - '[Subtopic 6]'
+      - 'Theme 3: [Topic 3]':
+          subsections:
+          - '[Subtopic 1]'
+          - '[Subtopic 2]'
+          - '[Subtopic 3]'
+          - '[Subtopic 4]'
+          - '[Subtopic 5]'
+          - '[Subtopic 6]'
+      - 'Theme 4: [Topic 4]':
+          subsections:
+          - '[Subtopic 1]'
+          - '[Subtopic 2]'
+          - '[Subtopic 3]'
+          - '[Subtopic 4]'
+          - '[Subtopic 5]'
+          - '[Subtopic 6]'

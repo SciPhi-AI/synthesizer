@@ -1,0 +1,96 @@
+textbook:
+  Mathematical Methods and Quantum Physics for Engineers:
+    chapters:
+    - chapter:
+        title: Differential Equations and Stable Difference Methods
+        sections:
+        - section: Finite Differences: Accuracy, Stability, Convergence
+        - section: The Wave Equation and von Neumann Stability
+        - section: The Heat Equation and Convection-Diffusion
+    - chapter:
+        title: Maxwell's Equations and Staggered Leapfrog
+        sections:
+        - section: Nonlinear Flow Equations
+        - section: Separation of Variables and Spectral Methods
+    - chapter:
+        title: Solving Large Linear Systems
+        sections:
+        - section: Elimination with Reordering
+        - section: Iterative Methods
+        - section: Multigrid Methods
+        - section: Krylov Methods
+        - section: Saddle Points and the Stokes Problem
+    - chapter:
+        title: Optimization
+        sections:
+        - section: Gradient-Based Optimization
+        - section: Newton's Method
+        - section: Constrained Optimization
+    - chapter:
+        title: Basic Features of Quantum Mechanics
+        sections:
+        - section: Linearity
+        - section: Complex Numbers
+        - section: Non-deterministic
+        - section: Superposition
+        - section: Entanglement
+    - chapter:
+        title: Experimental Basis of Quantum Physics
+        sections:
+        - section: Two-slit Experiments
+        - section: Mach-Zehnder Interferometer
+        - section: Elitzur-Vaidman Bombs
+        - section: Photoelectric Effect
+        - section: Compton Scattering
+        - section: de Broglie Wavelength
+    - chapter:
+        title: Wave Mechanics
+        sections:
+        - section: Galilean Transformation of de Broglie Wavelength
+        - section: Wave-packets and Group Velocity
+        - section: Matter Wave for a Particle
+        - section: Momentum and Position Operators
+        - section: Schrödinger Equation
+    - chapter:
+        title: Interpretation of the Wavefunction
+        sections:
+        - section: Probability Density
+        - section: Probability Current
+        - section: Current Conservation
+        - section: Hermitian Operators
+    - chapter:
+        title: Expectation Values and Uncertainty
+        sections:
+        - section: Expectation Values of Operators
+        - section: Time Evolution of Wave-packets
+        - section: Fourier Transforms
+        - section: Parseval Theorem
+        - section: Uncertainty Relation
+    - chapter:
+        title: Quantum Physics in One-dimensional Potentials
+        sections:
+        - section: Stationary States
+        - section: Boundary Conditions
+        - section: Particle on a Circle
+        - section: Infinite Square Well
+        - section: Finite Square Well
+        - section: Semiclassical Approximations
+        - section: Numerical Solution by the Shooting Method
+        - section: Delta Function Potential
+        - section: Simple Harmonic Oscillator
+        - section: Reflection and Transmission Coefficients
+        - section: Ramsauer Townsend Effect
+        - section: 1D Scattering and Phase Shifts
+        - section: Levinson’s Theorem
+    - chapter:
+        title: Angular Momentum and Central Potentials
+        sections:
+        - section: Resonances and Breit-Wigner Distribution
+        - section: Central Potentials
+        - section: Algebra of Angular Momentum
+        - section: Legendre Polynomials
+        - section: Hydrogen Atom
+        - section: Energy Levels Diagram
+        - section: Virial Theorem
+        - section: Circular Orbits and Eccentricity
+        - section: Discovery of Spin

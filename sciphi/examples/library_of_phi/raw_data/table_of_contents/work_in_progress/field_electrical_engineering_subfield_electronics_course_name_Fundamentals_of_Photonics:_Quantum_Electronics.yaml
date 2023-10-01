@@ -1,0 +1,188 @@
+```yaml
+textbook:
+  'Fundamentals of Photonics: Quantum Electronics':
+    chapters:
+    - Introduction:
+        sections:
+        - Quantum Nature of Light and Matter:
+            subsections:
+            - Introduction to Quantum Nature of Light and Matter
+            - Wave-Particle Duality
+            - Photons and Photodetection
+        - Schrödinger Equation and Stationary States:
+            subsections:
+            - Introduction to Schrödinger Equation and Stationary States
+            - Wavefunctions and Probability Density
+            - Time-independent Schrödinger Equation
+        - Dirac Formalism and Matrix Mechanics:
+            subsections:
+            - Introduction to Dirac Formalism and Matrix Mechanics
+            - Dirac Notation and Bra-Ket Notation
+            - Matrix Representation of Operators
+        - Interaction of Light and Matter:
+            subsections:
+            - Introduction to Interaction of Light and Matter
+            - Absorption, Emission, and Scattering
+            - Selection Rules and Transition Probabilities
+        - The Two-Level Atom: Rabi-Oscillations:
+            subsections:
+            - Introduction to The Two-Level Atom: Rabi-Oscillations
+            - Rabi Frequency and Rabi Oscillations
+            - Bloch Sphere and Population Inversion
+        - Optical Amplifiers and Lasers:
+            subsections:
+            - Introduction to Optical Amplifiers and Lasers
+            - Gain and Loss in Optical Amplifiers
+            - Laser Principles and Operation
+    - Maxwell's Equations of Isotropic Media:
+        sections:
+        - Maxwell's Equations of Isotropic Media (Review):
+            subsections:
+            - Introduction to Maxwell's Equations of Isotropic Media (Review)
+            - Electromagnetic Fields and Sources
+            - Time-dependent Maxwell's Equations
+        - Electromagnetic Waves and Interfaces I (Review):
+            subsections:
+            - Introduction to Electromagnetic Waves and Interfaces I (Review)
+            - Plane Waves and Boundary Conditions
+            - Reflection and Transmission Coefficients
+        - Electromagnetic Waves and Interfaces II:
+            subsections:
+            - Introduction to Electromagnetic Waves and Interfaces II
+            - Guided Waves and Modes
+            - Reflection and Refraction at Interfaces
+        - Mirrors, Interferometers and Thin-Film Structures:
+            subsections:
+            - Introduction to Mirrors, Interferometers and Thin-Film Structures
+            - Reflection and Transmission at Mirrors
+            - Thin-Film Interference and Coatings
+        - Gaussian Beams and Paraxial Wave Equation:
+            subsections:
+            - Introduction to Gaussian Beams and Paraxial Wave Equation
+            - Gaussian Beam Propagation
+            - Paraxial Wave Equation and ABCD Matrices
+        - Ray Optics and Optical Systems:
+            subsections:
+            - Introduction to Ray Optics and Optical Systems
+            - Geometrical Optics and Laws of Reflection/Refraction
+            - Lens Systems and Optical Aberrations
+    - Optical Resonators:
+        sections:
+        - Optical Resonators:
+            subsections:
+            - Introduction to Optical Resonators
+            - Resonator Modes and Frequency Comb
+            - Cavity QED and Strong Coupling
+        - Integrated Optics: Waveguides:
+            subsections:
+            - Introduction to Integrated Optics: Waveguides
+            - Waveguide Modes and Propagation
+            - Waveguide Coupling and Power Transfer
+        - Integrated Optics: Coupled Mode Theory:
+            subsections:
+            - Introduction to Integrated Optics: Coupled Mode Theory
+            - Coupled Mode Equations and Mode Coupling
+            - Waveguide Gratings and Filters
+        - Optical Fibers:
+            subsections:
+            - Introduction to Optical Fibers
+            - Fiber Modes and Modal Analysis
+            - Fiber Dispersion and Nonlinearities
+        - Anisotropic Media: Crystal Optics and Polarization:
+            subsections:
+            - Introduction to Anisotropic Media: Crystal Optics and Polarization
+            - Crystal Symmetry and Index Ellipsoid
+            - Polarization Phenomena in Anisotropic Media
+    - Quantum Nature of Light and Matter:
+        sections:
+        - Quantum Nature of Light and Matter (Review):
+            subsections:
+            - Introduction to Quantum Nature of Light and Matter (Review)
+            - Wave-Particle Duality and Uncertainty Principle
+            - Quantum Superposition and Interference
+        - Schrödinger Equation and Stationary States (Review):
+            subsections:
+            - Introduction to Schrödinger Equation and Stationary States (Review)
+            - Time-independent Schrödinger Equation and Eigenstates
+            - Quantum Harmonic Oscillator and Hydrogen Atom
+        - Harmonic Oscillator and Hydrogen Atom:
+            subsections:
+            - Introduction to Harmonic Oscillator and Hydrogen Atom
+            - Quantum Harmonic Oscillator and Energy Levels
+            - Hydrogen Atom and Atomic Orbitals
+        - Wave Mechanics:
+            subsections:
+            - Introduction to Wave Mechanics
+            - Wave Packets and Group Velocity
+            - Scattering and Wavefunction Collapse
+        - Dirac Formalism and Matrix Mechanics:
+            subsections:
+            - Introduction to Dirac Formalism and Matrix Mechanics
+            - Dirac Notation and Bra-Ket Notation
+            - Matrix Representation of Operators
+        - Harmonic Oscillator Revisited:
+            subsections:
+            - Introduction to Harmonic Oscillator Revisited
+            - Coherent States and Squeezed States
+            - Quantum Optics and Harmonic Oscillator
+    - Interaction of Light and Matter:
+        sections:
+        - Interaction of Light and Matter:
+            subsections:
+            - Introduction to Interaction of Light and Matter
+            - Absorption, Emission, and Scattering
+            - Selection Rules and Transition Probabilities
+        - The Two-Level Atom: Rabi-Oscillations:
+            subsections:
+            - Introduction to The Two-Level Atom: Rabi-Oscillations
+            - Rabi Frequency and Rabi Oscillations
+            - Bloch Sphere and Population Inversion
+        - Density Matrix, Energy and Phase Relaxation:
+            subsections:
+            - Introduction to Density Matrix, Energy and Phase Relaxation
+            - Density Matrix Formalism
+            - Relaxation Processes in Quantum Systems
+        - Rate Equations, Dispersion, Absorption and Gain:
+            subsections:
+            - Introduction to Rate Equations, Dispersion, Absorption and Gain
+            - Rate Equations and Population Dynamics
+            - Dispersion, Absorption, and Gain in Optical Materials
+        - Optical Amplifiers and Lasers:
+            subsections:
+            - Introduction to Optical Amplifiers and Lasers
+            - Gain and Loss in Optical Amplifiers
+            - Laser Principles and Operation
+        - Homogenous and Inhomogenous Broadening and Related Effects:
+            subsections:
+            - Introduction to Homogenous and Inhomogenous Broadening and Related Effects
+            - Homogenous and Inhomogenous Broadening Mechanisms
+            - Spectral Hole Burning and Coherence Effects
+    - Optical Fibers:
+        sections:
+        - Optical Fibers:
+            subsections:
+            - Introduction to Optical Fibers
+            - Fiber Modes and Modal Analysis
+            - Fiber Dispersion and Nonlinearities
+        - Q-Switching and Mode Locking:
+            subsections:
+            - Introduction to Q-Switching and Mode Locking
+            - Q-Switching and Cavity Dumping
+            - Mode Locking and Ultrafast Lasers
+        - Electro- and Acousto-Optic Modulation:
+            subsections:
+            - Introduction to Electro- and Acousto-Optic Modulation
+            - Electro-Optic Effect and Modulators
+            - Acousto-Optic Effect and Modulators
+    - Assignments:
+        sections: []
+    - Exams:
+        sections: []
+    - Readings:
+        sections: []
+    - Recitations:
+        sections: []
+    - Projects:
+        sections: []
+
+```

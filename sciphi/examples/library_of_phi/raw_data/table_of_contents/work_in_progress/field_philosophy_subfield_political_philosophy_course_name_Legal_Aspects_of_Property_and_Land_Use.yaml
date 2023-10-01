@@ -1,0 +1,85 @@
+textbook:
+  Legal Aspects of Property and Land Use: A Comprehensive Guide
+  chapters:
+    - Introduction to the Course:
+        sections:
+        - Background
+    - Chapter 1: First Possession and Conquest:
+        sections:
+        - First Possession and Labor
+        subsections:
+        - The Concept of First Possession
+        - Historical Examples of Conquest
+    - Chapter 2: Competition versus Property Including Corporations:
+        sections:
+        - Courts, Policy and Flexibility
+        subsections:
+        - Court Interpretations of Property Rights
+        - Policy Considerations in Property Law
+        - Flexibility in Property Ownership
+    - Chapter 3: Security of Property and Adverse Possession:
+        sections:
+        - Public Policy Limits on Trespass
+        subsections:
+        - Requirements for Adverse Possession
+        - Defenses against Adverse Possession
+    - Chapter 4: Public Accommodations, Antidiscrimination and Access Rights:
+        sections:
+        - Public Trust and Private Property
+        subsections:
+        - Balancing Public Accommodations and Private Property Rights
+        - Antidiscrimination Laws and Property Rights
+        - Access Rights and Property Ownership
+    - Chapter 5: Fair Use of Property, Support Easements and Nuisance:
+        sections:
+        - Land-use Planning and Zoning
+        subsections:
+        - Fair Use Doctrine and Property Rights
+        - Support Easements and Property Boundaries
+        - Nuisance Law and Property Interests
+    - Chapter 6: Property, Slavery, Race and Discrimination:
+        sections:
+        - Property and Sex-based Discrimination
+        subsections:
+        - Slavery and Property Ownership
+        - Race-based Discrimination in Property Transactions
+        - Sex-based Discrimination in Property Law
+    - Chapter 7: Property and Economic Discrimination:
+        sections:
+        - Property, Sovereignty and Takings
+        subsections:
+        - Economic Discrimination in Property Transactions
+        - Sovereignty and Property Rights
+        - Takings and Compensation in Property Law
+    - Chapter 8: Servitudes, Licenses and Easements:
+        sections:
+        - Covenants
+        subsections:
+        - Servitudes and Property Rights
+        - Licenses and Permission in Property Law
+        - Easements and Right of Way
+    - Chapter 9: Common Ownership and Housing:
+        sections:
+        - 'Redressing the Legacy of Apartheid in South Africa: Rural Land Restitution'
+        subsections:
+        - Common Ownership Models and Property Law
+        - The Impact of Apartheid on Land Ownership in South Africa
+        - Rural Land Restitution and Property Rights
+    - Chapter 10: 'Urban Dilemmas: Land Invasions, Housing Rights and Evictions':
+        sections:
+        - Contestation over Property Rights in India
+        subsections:
+        - Land Invasions and Informal Settlements
+        - Housing Rights and Property Law in India
+        - Evictions and Displacement in Urban Areas
+    - Chapter 11: Development Displacement, Contests over Land and Housing Rights:
+        sections:
+        - International Development Policy Prescriptions of Property
+        subsections:
+        - Development Projects and Land Displacement
+        - Contests over Land Rights and Property Ownership
+        - International Policies on Property and Development
+    - Chapter 12: Summing Up; Questions
+        sections:
+        - Review of Key Concepts
+        - Discussion Questions and Further Exploration

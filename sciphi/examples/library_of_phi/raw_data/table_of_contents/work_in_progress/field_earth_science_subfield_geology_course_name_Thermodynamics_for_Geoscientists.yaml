@@ -1,0 +1,96 @@
+```yaml
+course:
+  Thermodynamics for Geoscientists:
+    textbook:
+      title: Thermodynamics for Geoscientists: Understanding Solution Properties and Equilibria in Geologic Systems
+      chapters:
+        - Solution Properties of Silicate Minerals:
+          sections:
+            - Ideal Solutions:
+              subsections:
+                - Introduction to Ideal Solutions
+                - Definition of Ideal Solutions
+                - Properties of Ideal Solutions
+            - Non-ideal Solutions:
+              subsections:
+                - Introduction to Non-ideal Solutions
+                - Types of Non-ideal Solutions
+                - Deviations from Ideality
+            - Alkali and Plagioclase Feldspars Solution Models:
+              subsections:
+                - Introduction to Alkali and Plagioclase Feldspars
+                - Solution Models for Alkali Feldspars
+                - Solution Models for Plagioclase Feldspars
+        - Thermodynamic Properties of Multi-site Mineral Solutions:
+          sections:
+            - Homogeneous Equilibria:
+              subsections:
+                - Introduction to Homogeneous Equilibria
+                - Thermodynamic Equilibrium Conditions
+                - Calculation of Homogeneous Equilibrium Constants
+            - Pyroxene Thermometry II:
+              subsections:
+                - Introduction to Pyroxene Thermometry
+                - Calculation of Pyroxene Thermometry Equations
+                - Applications and Limitations of Pyroxene Thermometry
+            - Spinels, Rhombohedral Oxides and T-ÆO2 Relations:
+              subsections:
+                - Introduction to Spinels and Rhombohedral Oxides
+                - Thermodynamic Relations for Spinels and Rhombohedral Oxides
+                - T-ÆO2 Diagrams and Applications
+        - Heterogeneous Equilibria in Two- and Three-component Systems:
+          sections:
+            - Liquidus Diagrams - Liquidus Boundaries:
+              subsections:
+                - Introduction to Liquidus Diagrams
+                - Definition of Liquidus Boundaries
+                - Factors Affecting Liquidus Boundaries
+            - Liquidus Diagrams - Degeneracies and Natural Examples:
+              subsections:
+                - Introduction to Liquidus Diagrams Degeneracies
+                - Types of Liquidus Diagram Degeneracies
+                - Examples of Liquidus Diagram Degeneracies in Natural Systems
+            - Liquidus Diagrams - Thermodynamic Controls on Boundaries:
+              subsections:
+                - Introduction to Thermodynamic Controls on Liquidus Boundaries
+                - Factors Affecting Thermodynamic Controls on Liquidus Boundaries
+                - Applications of Thermodynamic Controls on Liquidus Boundaries
+        - Schreinemaker’s Analysis - Multi-component Systems:
+          sections:
+            - Choosing Components - Representations of Composition Space:
+              subsections:
+                - Introduction to Composition Space
+                - Different Representations of Composition Space
+                - Factors to Consider when Choosing Components
+            - Heterogeneous Reactions - The Gibbs Method:
+              subsections:
+                - Introduction to Heterogeneous Reactions
+                - The Gibbs Method for Heterogeneous Reactions
+                - Applications and Limitations of the Gibbs Method
+        - Solution Models for Silicate Melts:
+          sections:
+            - Simple Systems:
+              subsections:
+                - Introduction to Simple Systems
+                - Solution Models for Simple Systems
+                - Applications of Solution Models for Simple Systems
+            - Multicomponent Systems:
+              subsections:
+                - Introduction to Multicomponent Systems
+                - Solution Models for Multicomponent Systems
+                - Applications of Solution Models for Multicomponent Systems
+        - Thermodynamic Models of Multicomponent Systems:
+          sections:
+            - MELTS:
+              subsections:
+                - Introduction to MELTS
+                - Overview of the MELTS Software
+                - Applications and Limitations of MELTS
+        - Mixed Volatile Equilibria:
+          sections:
+            - P-T-XCO2-XH2O Equilibria:
+              subsections:
+                - Introduction to Mixed Volatile Equilibria
+                - Calculation of P-T-XCO2-XH2O Equilibrium Conditions
+                - Applications and Limitations of P-T-XCO2-XH2O Equilibria
+```

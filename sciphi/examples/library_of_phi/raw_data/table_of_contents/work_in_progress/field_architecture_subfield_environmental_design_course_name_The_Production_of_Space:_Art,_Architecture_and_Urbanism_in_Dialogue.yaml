@@ -1,0 +1,60 @@
+course:
+  textbook: 'The Production of Space: Art, Architecture and Urbanism in Dialogue Companion'
+  chapters:
+    - chapter: 'Introduction'
+      sections:
+        - section: 'The Importance of Space in Art, Architecture, and Urbanism'
+        - section: 'Historical Overview of Space Production'
+        - section: 'The Role of Space in Shaping Society and Identity'
+    - chapter: 'The Sense of Place and the Politics of Space'
+      sections:
+        - section: 'The Power of Place: Urban Landscapes as Public History'
+        - section: 'Spatial Politics and Identity'
+        - section: 'Public Memory and Collective Identity'
+        - section: 'The Influence of Space on Social Relations'
+    - chapter: 'Against Architecture: The Writings of Georges Bataille'
+      sections:
+        - section: 'Architecture as a Manifestation of Power'
+        - section: 'The Subversive Potential of Architecture'
+        - section: 'Architecture and Eroticism'
+        - section: 'Architecture as a Form of Transgression'
+    - chapter: 'Who’s afraid of blue, red, and green?'
+      sections:
+        - section: 'The Impact of Colors on Perception'
+        - section: 'Color Symbolism in Art and Architecture'
+        - section: 'The Psychological Effects of Colors'
+    - chapter: 'Who is speaking?'
+      sections:
+        - section: 'The Role of Language in Shaping Space'
+        - section: 'Linguistic Landscapes and Identity'
+        - section: 'Discourse and Power in Urban Spaces'
+    - chapter: 'Projections and instrumentations'
+      sections:
+        - section: 'The Use of Projections in Architecture and Art'
+        - section: 'Spatial Instrumentation and Interaction Design'
+        - section: 'Augmented Reality and Virtual Environments'
+    - chapter: 'Game, risk, disaster'
+      sections:
+        - section: 'Spatial Games and Gamification'
+        - section: 'Risk Assessment and Urban Planning'
+        - section: 'Disaster Mitigation and Resilient Design'
+    - chapter: 'Politechnics'
+      sections:
+        - section: 'The Intersection of Art, Technology, and Architecture'
+        - section: 'Media Art and Architectural Interventions'
+        - section: 'Technological Innovations and Built Environments'
+    - chapter: 'Archive'
+      sections:
+        - section: 'Architecture and the Preservation of Memory'
+        - section: 'Archiving Urban Space and Cultural Heritage'
+        - section: 'Digital Archives and Access to Information'
+    - chapter: 'Bachelard, Bataille, Foucault, Hayden, Hollier, Defert'
+      sections:
+        - section: 'The Theoretical Framework of Space Production'
+        - section: 'Philosophical Perspectives on Space'
+        - section: 'Critical Analysis of Space in Literature and Art'
+    - chapter: 'Student Projects'
+      sections:
+        - section: 'Group Presentations'
+        - section: 'Midterm Project Files'
+        - section: 'Final Project Files'

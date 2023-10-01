@@ -1,0 +1,35 @@
+textbook:
+  Urban Public Finance in Developing Countries: A Comprehensive Guide
+  chapters:
+    - Introduction to Course:
+      sections:
+        - Justifications for Public Finance: Public Goods and Externalities
+        - Ethical Frameworks
+        - Justifications for Public Finance: Economic Development
+        - The Fiscal Gap: Fiscal Health and Analysis
+    - Public Finance Theory: Efficiency - Optimal Taxation, Optimal User Fees:
+      sections:
+        - Efficiency
+        - Public Finance Theory: Equity, Incidence in the General Equilibrium Model
+        - Property Taxation in Developing Countries
+    - Source of Finance: Private Sector Participation:
+      sections:
+        - Private Sector
+        - Case Study of Private Sector Participation
+    - Source of Finance: International Lending Agencies:
+      sections:
+        - Programming Assistance
+        - Conditionalities
+        - Debt
+        - Inflation
+        - Structural Adjustment
+    - User Fees in Developing Countries:
+      sections:
+        - MicroFinance History and Design
+        - MicroFinance Case
+    - Final Exam:
+      sections:
+        - Problem set 1
+        - Problem set 2
+        - Problem set 3
+        - Problem set 4

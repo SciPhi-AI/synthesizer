@@ -1,0 +1,279 @@
+course:
+  Textbook for Representation and Modeling for Image Analysis:
+    chapters:
+      - Introduction and Tutorial on PCA:
+          sections:
+            - Introduction to Image Analysis
+              - What is Image Analysis?
+              - Basic concepts in Image Analysis
+            - Principal Component Analysis (PCA)
+              - Introduction to PCA
+              - Eigenvalues and eigenvectors
+              - Calculation of principal components
+            - Image Representation using PCA
+              - Representing images as vectors
+              - Image compression using PCA
+              - Image reconstruction using PCA
+            - Applications of PCA in Image Analysis
+              - Face recognition using PCA
+              - Image denoising using PCA
+              - Image classification using PCA
+      - Eigenfaces:
+          sections:
+            - Face Recognition using Eigenfaces
+              - Introduction to face recognition
+              - Eigenfaces algorithm
+              - Training and recognition using Eigenfaces
+            - Nonlinear Component Analysis as a Kernel Eigenvalue Problem
+              - Nonlinear dimensionality reduction
+              - Kernel methods for Eigenvalue problems
+              - Kernel PCA for face recognition
+            - Applications of Eigenfaces in Image Analysis
+              - Face verification and identification
+              - Facial expression recognition
+              - Age estimation using Eigenfaces
+      - Active Appearance Models:
+          sections:
+            - Introduction to Active Appearance Models
+              - Overview of Active Appearance Models
+              - Components of Active Appearance Models
+              - AAM fitting algorithm
+            - Tim Cootes' Web site
+              - Resources for Active Appearance Models
+              - Case studies and examples
+            - Applications of Active Appearance Models in Image Analysis
+              - Facial landmark detection
+              - Facial expression analysis using AAM
+              - Object tracking with AAM
+      - Tutorial on EM:
+          sections:
+            - The EM Algorithm
+              - Introduction to Expectation-Maximization
+              - The steps of the EM algorithm
+              - EM for Gaussian Mixture Models
+            - Applications of EM in Image Analysis
+              - Image segmentation using EM
+              - Object recognition using EM
+              - Image restoration using EM
+      - Learning Flexible Sprites in Video Layers:
+          sections:
+            - Introduction to Learning Flexible Sprites
+              - Overview of flexible sprites
+              - Learning flexible sprite models
+              - Sprite-based video representation
+            - Video Layer Analysis using Flexible Sprites
+              - Layer segmentation in videos
+              - Object tracking with flexible sprites
+            - Applications of Flexible Sprites in Image Analysis
+              - Video object segmentation
+              - Video inpainting using flexible sprites
+              - Video-based motion analysis
+      - LLE and other Manifold Learning Methods:
+          sections:
+            - Introduction to Manifold Learning Methods
+              - Motivation for manifold learning
+              - Linear vs. nonlinear dimensionality reduction
+              - Overview of manifold learning techniques
+            - Locally Linear Embedding (LLE)
+              - LLE algorithm and its steps
+              - LLE for image analysis
+            - Other Manifold Learning Techniques
+              - Isomap and its applications
+              - t-SNE for visualizing high-dimensional data
+              - Laplacian Eigenmaps in image analysis
+            - Applications of Manifold Learning in Image Analysis
+              - Image clustering using manifold learning
+              - Image retrieval based on manifold similarity
+              - Visualizing high-dimensional image data
+      - EM Segmentation:
+          sections:
+            - Introduction to EM Segmentation
+              - Overview of EM-based image segmentation
+              - Expectation-Maximization for image segmentation
+              - EM-based region growing
+            - Applications of EM Segmentation in Image Analysis
+              - Medical image segmentation using EM
+              - Object segmentation in natural images
+              - Texture segmentation with EM
+      - Tutorial on Calculus of Variations:
+          sections:
+            - Introduction to Calculus of Variations
+              - Overview of Calculus of Variations
+              - Variational principles in image analysis
+              - Euler-Lagrange equation
+            - Variational Methods in Image Analysis
+              - Variational denoising techniques
+              - Variational segmentation methods
+              - Variational image registration
+            - Applications of Calculus of Variations in Image Analysis
+              - Image inpainting using variational methods
+              - Optical flow estimation using variational models
+              - Shape optimization using variational techniques
+      - Mumford-Shah:
+          sections:
+            - Introduction to Mumford-Shah Model
+              - Overview of the Mumford-Shah model
+              - Piecewise smooth image representation
+              - Energy functional and regularization terms
+            - Image Segmentation using Mumford-Shah Model
+              - Minimization of the Mumford-Shah functional
+              - Segmentation with edge detection and region merging
+              - Variations of the Mumford-Shah model
+            - Applications of Mumford-Shah Model in Image Analysis
+              - Image restoration using Mumford-Shah
+              - Texture segmentation with Mumford-Shah
+              - Image inpainting using Mumford-Shah
+      - Snakes:
+          sections:
+            - Introduction to Snakes
+              - Overview of snakes (active contour models)
+              - Energy minimization for contour evolution
+              - External forces and image forces
+            - Active Contour Models
+              - Snake representation and evolution
+              - Contour initialization and propagation
+              - Snakes for object boundary detection
+            - Applications of Snakes in Image Analysis
+              - Object tracking using snakes
+              - Image segmentation with snakes
+              - Shape analysis and morphing with snakes
+      - Geodesic Active Contours:
+          sections:
+            - Introduction to Geodesic Active Contours
+              - Overview of geodesic active contours
+              - Geodesic distance and level sets
+              - Energies for geodesic active contours
+            - Applications of Geodesic Active Contours in Image Analysis
+              - Image segmentation using geodesic active contours
+              - Object tracking with geodesic active contours
+              - Medical image analysis with geodesic active contours
+      - Shape Based Curve Evolution:
+          sections:
+            - Introduction to Shape Based Curve Evolution
+              - Curve evolution as a shape model
+              - Geometric deformations and shape constraints
+              - Energy functionals for shape evolution
+            - Applications of Shape Based Curve Evolution in Image Analysis
+              - Object boundary detection using shape evolution
+              - Image registration with shape-based methods
+              - Shape analysis and classification using curve evolution
+      - Tutorial on Clustering:
+          sections:
+            - Introduction to Clustering
+              - Overview of clustering in image analysis
+              - Distance metrics and similarity measures
+              - Hierarchical clustering vs. K-means clustering
+            - Spectral Clustering
+              - Spectral graph theory and Laplacian matrix
+              - Spectral clustering algorithm
+              - Applications of spectral clustering in image analysis
+            - Normalized Cuts
+              - Graph partitioning using normalized cuts
+              - Normalized cut algorithm and optimization
+              - Image segmentation with normalized cuts
+            - Graph Cuts for Energy Minimization
+              - Overview of graph cuts for energy minimization
+              - Graph cut algorithm for image segmentation
+              - Applications of graph cuts in image analysis
+            - Applications of Clustering in Image Analysis
+              - Image compression using clustering
+              - Object recognition based on clustering
+              - Motion segmentation with clustering techniques
+      - Belief Propagation:
+          sections:
+            - Introduction to Belief Propagation
+              - Overview of belief propagation algorithm
+              - Message passing and graphical models
+              - Inference in Markov random fields
+            - Applications of Belief Propagation in Image Analysis
+              - Image denoising with belief propagation
+              - Image restoration using belief propagation
+              - Object recognition based on belief propagation
+      - SIFT:
+          sections:
+            - Introduction to Scale-Invariant Feature Transform (SIFT)
+              - Motivation for scale-invariant features
+              - Scale space representation and scale selection
+              - Descriptor extraction using SIFT
+            - Applications of SIFT in Image Analysis
+              - Image matching and object recognition with SIFT
+              - Image stitching using SIFT features
+              - 3D reconstruction with SIFT keypoints
+      - Constellation Model:
+          sections:
+            - Introduction to Constellation Model
+              - Overview of constellation model
+              - Part-based representation and configuration
+              - Estimation and inference in constellation models
+            - Applications of Constellation Model in Image Analysis
+              - Human pose estimation using constellation models
+              - Object tracking with constellation models
+              - Shape analysis and recognition using constellations
+      - Shape Context:
+          sections:
+            - Introduction to Shape Context
+              - Shape representation using shape context
+              - Shape matching based on shape context
+              - Shape context descriptor extraction
+            - Applications of Shape Context in Image Analysis
+              - Object recognition using shape context
+              - Shape-based image retrieval with shape context
+              - Shape segmentation and grouping using shape context
+      - Local Descriptors:
+          sections:
+            - Introduction to Local Descriptors
+              - Local feature detection and description
+              - Scale-invariant feature detection
+              - Local feature descriptors
+            - Applications of Local Descriptors in Image Analysis
+              - Image matching using local descriptors
+              - Object tracking with local descriptors
+              - Bag-of-features representation for image classification
+      - Object Recognition:
+          sections:
+            - Introduction to Object Recognition
+              - Overview of object recognition
+              - Object detection vs. object classification
+              - Challenges and approaches in object recognition
+            - Applications of Object Recognition in Image Analysis
+              - Object detection in natural images
+              - Object recognition in videos
+              - Multi-object tracking and recognition
+      - Finite Element Models:
+          sections:
+            - Introduction to Finite Element Models
+              - Overview of finite element analysis
+              - Finite element method for image analysis
+              - Finite element simulation and modeling
+            - Applications of Finite Element Models in Image Analysis
+              - Image deformation modeling using finite elements
+              - Image registration with finite element models
+              - Biomechanical analysis of medical images using FEM
+      - Non-rigid Registration using B-splines:
+          sections:
+            - Introduction to Non-rigid Registration
+              - Overview of non-rigid image registration
+              - Deformable image registration techniques
+              - B-splines as a deformation model
+            - B-spline-based Registration Techniques
+              - B-spline registration algorithm
+              - Control points and control grids
+              - Applications of B-spline registration in image analysis
+            - Applications of Non-rigid Registration in Image Analysis
+              - Medical image registration using B-splines
+              - Image morphing and animation with non-rigid registration
+              - Deformable image fusion and super-resolution
+      - Doing Photogrammetry Right:
+          sections:
+            - Introduction to Photogrammetry
+              - Principles of photogrammetry
+              - Camera calibration and image rectification
+              - Photogrammetric measurements and reconstruction
+            - Photogrammetric Techniques
+              - Dense stereo matching and depth estimation
+              - Structure-from-motion and 3D reconstruction
+              - Camera pose estimation and bundle adjustment
+            - Applications of Photogrammetry in Image Analysis
+              - 3D modeling and virtual reality
+              - Augmented reality and image-based rendering
+              - Historical document analysis using photogrammetry

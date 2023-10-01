@@ -1,0 +1,100 @@
+```yaml
+textbook:
+  Thermodynamics and Kinetics of Materials: A Comprehensive Guide
+    chapters:
+    - Irreversible Thermodynamics:
+        sections:
+        - Fields and Gradients
+        - Fluxes
+        - Continuity Equation
+        - Entropy Production
+        - Conjugate Driving Forces and Fluxes
+    - Diffusional Transport:
+        sections:
+        - Mass Diffusion in a Continuum
+        - Diffusion Coefficients
+        - Solutions to the Diffusion/Heat Equation
+        - Atomistic Mechanisms of Diffusion
+        - Diffusion in Ionic Crystals
+        - Role of Microstructure in Diffusion; Short Circuits
+    - Nucleation and Growth:
+        sections:
+        - Homogeneous and Heterogeneous Nucleation
+        - Diffusional Growth
+        - The 'Moving Boundary' Problem
+        - Solidification
+        - Spinodal Decomposition
+        - Particle Coarsening
+        - Sintering
+    - Phase Transformations:
+        sections:
+        - Gibbs Phase Rule
+        - Lever Rule
+        - Binary Eutectic Systems
+        - Solid Solutions and Phase Diagrams
+        - Precipitation Reactions
+        - Martensitic Transformations
+    - Kinetics of Reactions:
+        sections:
+        - Reaction Rates
+        - Rate Laws
+        - Reaction Mechanisms
+        - Activation Energy
+        - Transition State Theory
+        - Catalysis
+        - Enzyme Kinetics
+        - Surface Reactions
+        - Diffusion-Controlled Reactions
+    - Thermodynamics of Materials:
+        sections:
+        - Energy and Enthalpy
+        - Entropy and Entropy Generation
+        - Free Energy and Equilibrium
+        - Chemical Potential
+        - Phase Equilibria
+        - Thermodynamic Properties of Mixtures
+        - Ideal and Non-ideal Solutions
+        - Gibbs-Duhem Equation
+        - Thermodynamics of Surfaces and Interfaces
+        - Thermodynamics of Polymers
+    - Statistical Thermodynamics:
+        sections:
+        - Boltzmann Distribution
+        - Partition Function
+        - Microstates and Macrostates
+        - Ensembles
+        - Ideal Gas Law
+        - Maxwell-Boltzmann Distribution
+        - Fermi-Dirac Distribution
+        - Bose-Einstein Distribution
+        - Quantum Statistics
+        - Phase Transitions and Critical Phenomena
+    - Transport Phenomena:
+        sections:
+        - Diffusion
+        - Heat Conduction
+        - Mass Transfer
+        - Fluid Mechanics
+        - Rheology
+        - Convective Heat and Mass Transfer
+        - Boundary Layer Theory
+        - Turbulent Flow
+        - Heat and Mass Transfer in Biological Systems
+    - Materials Characterization Techniques:
+        sections:
+        - X-ray Diffraction
+        - Scanning Electron Microscopy
+        - Transmission Electron Microscopy
+        - Atomic Force Microscopy
+        - Spectroscopy Techniques
+        - Thermal Analysis Techniques
+        - Electron Microprobe Analysis
+        - Auger Electron Spectroscopy
+        - X-ray Photoelectron Spectroscopy
+        - Secondary Ion Mass Spectrometry
+        - Surface Science Techniques
+        - Mechanical Testing Techniques
+        - Thermal Testing Techniques
+        - Chemical Analysis Techniques
+
+```

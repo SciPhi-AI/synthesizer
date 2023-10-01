@@ -1,0 +1,116 @@
+textbook:
+  Introduction to Seismology: A Comprehensive Guide
+  chapters:
+    - Introduction to Seismology:
+        sections:
+        - Stress and Strain:
+            subsections:
+            - Definition of Stress
+            - Types of Stress
+            - Definition of Strain
+            - Types of Strain
+            - Relationship between Stress and Strain
+        - Equation of Motion:
+            subsections:
+            - Newton's Second Law
+            - Damping
+            - Hooke's Law
+            - Elasticity
+        - Wave Equation:
+            subsections:
+            - Derivation of the Wave Equation
+            - Characteristics of Wave Equation
+            - Solutions of Wave Equation
+        - d’Alembert’s Solution:
+            subsections:
+            - Introduction to d’Alembert’s Solution
+            - Application of d’Alembert’s Solution
+        - Separation of Variables:
+            subsections:
+            - Introduction to Separation of Variables
+            - Application of Separation of Variables
+        - Fourier Transform:
+            subsections:
+            - Definition of Fourier Transform
+            - Properties of Fourier Transform
+            - Applications of Fourier Transform
+    - Seismic Waves:
+        sections:
+        - Snell’s Law:
+            subsections:
+            - Introduction to Snell’s Law
+            - Application of Snell’s Law
+        - Critical and Post-critical Reflection:
+            subsections:
+            - Definition of Critical Reflection
+            - Definition of Post-critical Reflection
+            - Factors Affecting Critical Reflection
+        - Surface Waves-Ground Roll:
+            subsections:
+            - Types of Surface Waves
+            - Characteristics of Surface Waves
+            - Ground Roll phenomenon
+        - Normal Modes:
+            subsections:
+            - Definition of Normal Modes
+            - Calculation of Normal Modes
+            - Applications of Normal Modes
+        - Anisotropy:
+            subsections:
+            - Introduction to Anisotropy
+            - Types of Anisotropy
+            - Effects of Anisotropy
+        - Earthquake:
+            subsections:
+            - Definition of Earthquake
+            - Causes of Earthquake
+            - Types of Earthquake
+            - Effects of Earthquake
+    - Focal Mechanics:
+        sections:
+        - Focal Mechanics:
+            subsections:
+            - Definition of Focal Mechanics
+            - Faults and Faulting
+            - Earthquake Source Parameters
+            - Focal Mechanism Solutions
+    - Course Resources:
+        sections:
+        - Lecture Notes:
+            subsections:
+            - Introduction to Lecture Notes
+            - Note-taking Techniques
+        - Readings:
+            subsections:
+            - Recommended Textbooks
+            - Journal Articles
+            - Research Papers
+        - Recitations:
+            subsections:
+            - Purpose of Recitations
+            - Problem-solving Sessions
+        - Assignments:
+            subsections:
+            - Types of Assignments
+            - Grading Criteria
+            - Tips for Assignment Preparation
+        - Exams:
+            subsections:
+            - Types of Exams
+            - Exam Preparation Strategies
+            - Grading Policies
+        - Syllabus:
+            subsections:
+            - Course Overview
+            - Course Objectives
+            - Assessment Methods
+            - Class Schedule
+        - Calendar:
+            subsections:
+            - Important Dates
+            - Course Deadlines
+        - Projects:
+            subsections:
+            - Project Topics
+            - Project Guidelines
+            - Project Presentation

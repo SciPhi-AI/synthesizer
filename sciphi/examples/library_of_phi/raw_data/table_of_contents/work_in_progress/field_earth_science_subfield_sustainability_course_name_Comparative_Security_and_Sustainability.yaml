@@ -1,0 +1,72 @@
+textbook:
+  Comparative Security and Sustainability: A Comprehensive Guide
+  chapters:
+    - Introduction:
+        sections:
+          - Course Number
+          - Course Name
+          - Resource Level
+    - Concepts and Theories:
+        sections:
+          - 'Governing the Commons: The Evolution of Institutions for Collective Action'
+          - 'Sustainability and the Social Sciences: A Cross-disciplinary Approach to Integrating Environmental Cons'
+    - Modes of:
+        sections:
+          - Local Conditions and Global Dilemmas:
+              subsections:
+                - Introduction to Local Conditions
+                - Understanding Global Dilemmas
+          - When People Move or Boundaries Shift:
+              subsections:
+                - Migration and Its Impact on Security and Sustainability
+                - The Challenges of Shifting Boundaries
+          - When Resources are 'Scarce':
+              subsections:
+                - Scarcity of Resources and its Implications
+                - Managing Resources under Scarcity
+          - When Environments 'Strain':
+              subsections:
+                - Environmental Stress and its Effect on Security
+                - Strategies for Dealing with Strained Environments
+          - When Regimes Fail or States Collapse:
+              subsections:
+                - The Consequences of Failed Regimes
+                - Rebuilding and Restoring Stability
+          - When Wars Happen:
+              subsections:
+                - Understanding the Causes of Wars
+                - Post-War Reconstruction and Sustainable Development
+    - Technology Imperatives:
+        sections:
+          - Managing Security and Sustainability:
+              subsections:
+                - The Role of Technology in Security Management
+                - Sustainable Technological Solutions
+          - Design Systems for Security and Sustainability:
+              subsections:
+                - Principles of System Design for Security
+                - Integrating Sustainability in System Design
+    - Readings:
+        sections:
+          - 'Ostrom, Elinor.Governing the Commons: The Evolution of Institutions for Collective Action. New York, NY: Cambridge University Press, 1990. ISBN: 9780521405997. (40%)'
+          - 'Becker, Egon, and Thomas Jahn, eds.Sustainability and the Social Sciences: A Cross-disciplinary Approach to Integrating Environmental Cons'
+    - Lecture Notes:
+        sections: null
+    - Recitations:
+        sections: null
+    - Assignments:
+        sections:
+          - The written requirement constitutes 50% of the student's final grade. There are three options for fulfilling this requirement of the course. 
+            Take home final - essay type; three questions; no choice; covering all aspects of the course; open books and notes; full references required etc. 
+            Three short papers - on topics assigned in advance, or selected by the student (approved by the instructor in advance). No more than 10 pages - fully referenced
+            - from assigned readings or other sources as relevant
+    - Syllabus:
+        sections:
+          - 50%
+          - 10%
+          - 20%
+          - 20%
+    - Calendar:
+        sections: null
+    - Projects:
+        sections: null

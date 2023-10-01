@@ -1,0 +1,57 @@
+book:
+  'Algorithmic Lower Bounds: A Comprehensive Guide to Hardness Proofs':
+    chapters:
+    - Introduction:
+        sections:
+        - Overview of the Course
+        - Importance of Lower Bounds
+        - Complexity Theory Basics
+    - 3-partition and 2-partition:
+        sections:
+        - Problem Definition
+        - Reductions to 3-partition
+        - Reductions to 2-partition
+        - Hardness Proofs
+    - SAT (Satisfiability):
+        sections:
+        - Definition of SAT
+        - Cook-Levin Theorem
+        - NP-Completeness
+        - Hardness Proofs
+    - Circuit SAT:
+        sections:
+        - Circuit Complexity
+        - Circuit SAT Problem
+        - Hardness Proofs
+    - Planar SAT:
+        sections:
+        - Planar Graphs
+        - Planar SAT Problem
+        - Hardness Proofs
+    - Hamiltonicity:
+        sections:
+        - Hamiltonian Graphs
+        - Hamiltonicity Problem
+        - Hardness Proofs
+    - Graph Problems:
+        sections:
+        - Graph Coloring
+        - Maximum Independent Set
+        - Minimum Vertex Cover
+        - Hardness Proofs
+    - Inapproximability Introduction:
+        sections:
+        - Approximation Algorithms
+        - Inapproximability Definitions
+        - Hardness Proofs
+    - Inapproximability Examples:
+        sections:
+        - Vertex Cover Inapproximability
+        - Set Cover Inapproximability
+        - Max-Cut Inapproximability
+        - Hardness Proofs
+    - Gap Inapproximability:
+        sections:
+        - Gap Definitions
+        - Complexity Classes
+        - Hardness Proofs

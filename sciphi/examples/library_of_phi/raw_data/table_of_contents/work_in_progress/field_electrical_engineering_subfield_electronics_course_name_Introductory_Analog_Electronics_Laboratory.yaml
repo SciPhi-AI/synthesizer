@@ -1,0 +1,91 @@
+```yaml
+course:
+  Introductory Analog Electronics Laboratory:
+    textbook:
+      title: "Fundamentals of Analog Electronics: From Basics to Advanced Circuits"
+      chapters:
+      - Chapter 1: Introduction to Analog Electronics
+        sections:
+        - Section 1.1: Basic Electronic Components
+        - Section 1.2: Ohm's Law
+        - Section 1.3: Voltage Dividers
+        - Section 1.4: Current Dividers
+        - Section 1.5: Kirchhoff's Laws
+        - Section 1.6: Series and Parallel Circuits
+        - Section 1.7: Circuit Analysis Techniques
+      - Chapter 2: Diodes and Rectifiers
+        sections:
+        - Section 2.1: Diode Characteristics
+        - Section 2.2: Diode Circuits
+        - Section 2.3: Half-Wave Rectifiers
+        - Section 2.4: Full-Wave Rectifiers
+        - Section 2.5: Bridge Rectifiers
+        - Section 2.6: Zener Diodes
+        - Section 2.7: Diode Applications
+      - Chapter 3: Transistors and Amplifiers
+        sections:
+        - Section 3.1: Bipolar Junction Transistors (BJTs)
+        - Section 3.2: Field-Effect Transistors (FETs)
+        - Section 3.3: Common-Emitter Amplifiers
+        - Section 3.4: Common-Base Amplifiers
+        - Section 3.5: Common-Collector Amplifiers
+        - Section 3.6: Biasing Techniques
+        - Section 3.7: Small Signal Models
+        - Section 3.8: Amplifier Frequency Response
+      - Chapter 4: Operational Amplifiers (Op-Amps)
+        sections:
+        - Section 4.1: Ideal Op-Amp Characteristics
+        - Section 4.2: Inverting Amplifiers
+        - Section 4.3: Non-Inverting Amplifiers
+        - Section 4.4: Summing Amplifiers
+        - Section 4.5: Difference Amplifiers
+        - Section 4.6: Integrators and Differentiators
+        - Section 4.7: Active Filters with Op-Amps
+      - Chapter 5: Feedback and Oscillators
+        sections:
+        - Section 5.1: Feedback Concepts
+        - Section 5.2: Voltage and Current Feedback
+        - Section 5.3: Positive and Negative Feedback
+        - Section 5.4: Oscillator Basics
+        - Section 5.5: LC Oscillators
+        - Section 5.6: RC Oscillators
+        - Section 5.7: Crystal Oscillators
+      - Chapter 6: Filters and Frequency Response
+        sections:
+        - Section 6.1: Passive Filters
+        - Section 6.2: Active Filters
+        - Section 6.3: Low-Pass Filters
+        - Section 6.4: High-Pass Filters
+        - Section 6.5: Band-Pass Filters
+        - Section 6.6: Notch Filters
+        - Section 6.7: Filter Design Techniques
+      - Chapter 7: Power Amplifiers and Output Stages
+        sections:
+        - Section 7.1: Class A Amplifiers
+        - Section 7.2: Class B Amplifiers
+        - Section 7.3: Class AB Amplifiers
+        - Section 7.4: Class C Amplifiers
+        - Section 7.5: Class D Amplifiers
+        - Section 7.6: Push-Pull Amplifiers
+        - Section 7.7: Amplifier Distortion and Efficiency
+      - Chapter 8: Digital-to-Analog and Analog-to-Digital Converters
+        sections:
+        - Section 8.1: Digital-to-Analog Conversion
+        - Section 8.2: Analog-to-Digital Conversion
+        - Section 8.3: Digital-to-Analog Converters (DACs)
+        - Section 8.4: Analog-to-Digital Converters (ADCs)
+        - Section 8.5: Successive Approximation ADCs
+        - Section 8.6: Delta-Sigma ADCs
+        - Section 8.7: ADC and DAC Applications
+      - Chapter 9: Noise and Signal Integrity
+        sections:
+        - Section 9.1: Sources of Noise
+        - Section 9.2: Thermal Noise
+        - Section 9.3: Shot Noise
+        - Section 9.4: Flicker Noise
+        - Section 9.5: Signal Integrity Issues
+        - Section 9.6: Crosstalk
+        - Section 9.7: Ground Bounce
+        - Section 9.8: Power Supply Noise
+        - Section 9.9: Electromagnetic Interference (EMI)
+```

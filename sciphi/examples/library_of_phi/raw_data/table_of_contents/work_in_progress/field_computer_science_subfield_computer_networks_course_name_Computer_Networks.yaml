@@ -1,0 +1,180 @@
+```yaml
+course:
+  Computer Networks:
+    textbook:
+      title: "Comprehensive Guide to Computer Networks"
+      chapters:
+        - chapter: "Introduction to Computer Networks"
+          sections:
+            - section: "Background Readings"
+              subsections:
+                - "Introduction to Computer Networks"
+            - section: "Internetworking and Routing"
+              subsections:
+                - "Packet Switching"
+                - "The Internetworking Problem"
+                - "Scaling IP"
+            - section: "Useful Tools"
+              subsections:
+                - "Tutorial on useful tools"
+        - chapter: "Unicast Internet Routing"
+          sections:
+            - section: "Intra- and Inter-Domain Routing"
+              subsections:
+                - "Intra-Domain Routing"
+                - "Inter-Domain Routing"
+            - section: "Internet Routing-in-the-Wild"
+              subsections:
+                - "Internet Routing-in-the-Wild"
+            - section: "Intro to the ns2 Network Simulator"
+              subsections:
+                - "Intro to the ns2 Network Simulator"
+        - chapter: "Router Design and Implementation"
+          sections:
+            - section: "Router Design and Implementation"
+              subsections:
+                - "Router Design Principles"
+                - "Router Implementation Strategies"
+        - chapter: "Security Problems with the Internet Architecture"
+          sections:
+            - section: "Security Problems with the Internet Architecture"
+              subsections:
+                - "Threats to Internet Security"
+                - "Security Measures and Countermeasures"
+        - chapter: "IPv6: The Future of Internet Protocol"
+          sections:
+            - section: "Tutorial on IPv6"
+              subsections:
+                - "Introduction to IPv6"
+                - "IPv6 Addressing and Routing"
+        - chapter: "Resource Management in Computer Networks"
+          sections:
+            - section: "End-to-End Congestion Control"
+              subsections:
+                - "Congestion Control Algorithms"
+                - "Quality of Service Guarantees"
+            - section: "Router-Assisted Congestion Control"
+              subsections:
+                - "Traffic Shaping and Policing"
+                - "Congestion Avoidance"
+            - section: "Fair Queuing and Variants"
+              subsections:
+                - "Fair Queuing"
+                - "Weighted Fair Queuing"
+            - section: "Modeling and Measurement-I: Packet Trains"
+              subsections:
+                - "Packet Train Models"
+                - "Measurement Techniques"
+            - section: "TCP Congestion Control Impediments"
+              subsections:
+                - "TCP Congestion Control Algorithms"
+                - "Factors Affecting TCP Performance"
+            - section: "Adaptive Network Applications"
+              subsections:
+                - "Adaptive Multimedia Streaming"
+                - "Adaptive Web Applications"
+        - chapter: "Quiz 1 Review"
+          sections:
+            - section: "Quiz 1 Review"
+              subsections:
+                - "Review of Key Concepts"
+                - "Practice Questions and Solutions"
+        - chapter: "Quiz 1: In Class"
+          sections:
+            - section: "Quiz 1: In Class"
+              subsections:
+                - "Quiz Format and Guidelines"
+                - "Sample Questions and Solutions"
+        - chapter: "Project Meetings and Proposals"
+          sections:
+            - section: "Project Meetings"
+              subsections:
+                - "Scheduling and Facilitating Project Meetings"
+            - section: "Project Proposals Due"
+              subsections:
+                - "Writing Effective Project Proposals"
+                - "Submission Guidelines"
+            - section: "Project Presentations"
+              subsections:
+                - "Preparing and Delivering Project Presentations"
+        - chapter: "Quality of Service in Computer Networks"
+          sections:
+            - section: "QoS-I: Why QoS; Basic Models and Architecture"
+              subsections:
+                - "Introduction to Quality of Service"
+                - "QoS Models and Architectures"
+            - section: "QoS-II: Mechanisms and Properties"
+              subsections:
+                - "QoS Mechanisms and Techniques"
+                - "QoS Properties and Metrics"
+        - chapter: "Modeling and Measurement in Computer Networks"
+          sections:
+            - section: "Modeling and Measurement-II: Traffic Self-Similarity; Virus Propagation"
+              subsections:
+                - "Traffic Self-Similarity Models"
+                - "Virus Propagation Models"
+        - chapter: "Communication and Network Services"
+          sections:
+            - section: "P2P Networks"
+              subsections:
+                - "Introduction to Peer-to-Peer Networks"
+                - "P2P File Sharing Systems"
+            - section: "Distributed Hash Table"
+              subsections:
+                - "Distributed Hash Table Algorithms"
+                - "DHT Applications and Use Cases"
+            - section: "Routing in Overlay Networks"
+              subsections:
+                - "Overlay Routing Protocols"
+                - "Overlay Network Construction"
+            - section: "DNS: Domain Name System"
+              subsections:
+                - "DNS Fundamentals"
+                - "DNS Resolution Process"
+            - section: "Wireless and Mobility: MAC Protocols, Routing"
+              subsections:
+                - "Wireless MAC Protocols"
+                - "Wireless Routing Algorithms"
+            - section: "Wireless Protocols: Data Transport and Sensor Data Dissemination"
+              subsections:
+                - "Wireless Data Transport Protocols"
+                - "Sensor Data Dissemination Techniques"
+            - section: "Anonymity in Computer Networks"
+              subsections:
+                - "Anonymity Techniques and Tools"
+                - "Privacy and Security Considerations"
+            - section: "Group Communication: Multicast Routing and Transport"
+              subsections:
+                - "Multicast Routing Algorithms"
+                - "Multicast Transport Protocols"
+            - section: "Multicast in Computer Networks"
+              subsections:
+                - "Introduction to Multicast"
+                - "IP Multicast Protocols and Applications"
+        - chapter: "Quiz 2: In class"
+          sections:
+            - section: "Quiz 2: In class"
+              subsections:
+                - "Quiz Format and Guidelines"
+                - "Sample Questions and Solutions"
+        - chapter: "Term Project"
+          sections:
+            - section: "Overview of Term Project"
+              subsections:
+                - "Project Objectives and Scope"
+            - section: "Proposal Writing"
+              subsections:
+                - "Writing Effective Project Proposals"
+                - "Guidelines for Proposal Submission"
+            - section: "Project Suggestions"
+              subsections:
+                - "List of Project Ideas and Topics"
+            - section: "Research Methodology"
+              subsections:
+                - "Research Process and Methodologies"
+                - "Data Collection and Analysis Techniques"
+        - chapter: "Appendix: Glossary"
+          sections:
+            - section: "Glossary of Computer Networks Terms"
+```
+```

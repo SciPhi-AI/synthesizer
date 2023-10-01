@@ -1,0 +1,72 @@
+```yaml
+course:
+  textbook:
+    name: "Macroeconomics and International Economics: A Comprehensive Guide"
+    chapters:
+      - title: "Introduction to Macro and International Economics"
+        sections:
+          - title: "The issues, short-term and long-term"
+            subsections:
+              - "National Income Accounting"
+              - "GDP Growth"
+              - "Determinants of long-term growth"
+          - title: "Exchange Rates"
+            subsections:
+              - "Exchange rates for emerging markets"
+              - "Exchange rates for industrialized countries"
+          - title: "Financial Crises"
+            subsections:
+              - "Banking crises"
+              - "Modern financial crises"
+              - "Japan's lost decade"
+              - "Crisis in Asia, 1997-98"
+          - title: "Comparison of Europe and the US"
+            subsections:
+              - "Prone to crisis now - Europe or the US?"
+          - title: "Macroeconomic Policy"
+            subsections:
+              - "Macroeconomic policy in historical perspective"
+              - "Fiscal sustainability"
+      - title: "Case Studies"
+        sections:
+          - title: "National Income Accounting"
+          - title: "China: To Float or Not to Float?"
+          - title: "U.S. Current Account Deficit"
+          - title: "The Federal Reserve and the Banking Crisis of 1931"
+          - title: "The First Global Financial Crisis of the 21st Century"
+          - title: "Japanese Financial System: From Postwar to the New Millennium"
+          - title: "Korea: After the 1997 Financial Crisis"
+      - title: "Exams"
+        sections:
+          - title: "Essay exam based on class discussions"
+          - title: "Fall 2010 exam"
+          - title: "Fall 2011 exam"
+      - title: "Group Project"
+        sections:
+          - title: "Macroeconomic environment in a specific country after the 2008-2009 global crisis"
+          - title: "10-15 page report"
+          - title: "Group assignment"
+      - title: "Additional Topics"
+        sections:
+          - title: "Theories of Economic Growth"
+            subsections:
+              - "Solow-Swan Model"
+              - "Endogenous Growth Theory"
+              - "New Growth Theory"
+          - title: "Monetary Policy and Central Banking"
+            subsections:
+              - "Money Supply and Inflation"
+              - "Interest Rates and Monetary Policy Tools"
+              - "Central Bank Independence"
+          - title: "International Trade and Globalization"
+            subsections:
+              - "Comparative Advantage and Trade"
+              - "Trade Policies and Tariffs"
+              - "Foreign Direct Investment and Multinational Corporations"
+          - title: "Development Economics"
+            subsections:
+              - "Poverty and Inequality"
+              - "Sustainable Development Goals"
+              - "Role of Institutions in Development"
+```
+```

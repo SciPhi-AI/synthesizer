@@ -1,0 +1,50 @@
+```yaml
+course:
+  textbook: 'Imaging the City: The Place of Media in City Design and Development'
+    chapters:
+    - title: 'Chapter 1: Process and Form, Work and Place'
+      sections:
+        - title: 'Section 1.1: Richard Sennett'
+    - title: 'Chapter 2: Image Construction in Pre-Modern Cities'
+      sections:
+        - title: 'Section 2.1: Julian Beinart'
+    - title: 'Chapter 3: Tales of Manhattan: Mapping the Urban Imagination Through Hollywood Film'
+      sections:
+        - title: 'Section 3.1: Henry Jenkins'
+    - title: 'Chapter 4: The City in Cyberspace: Representation of Community and Place'
+      sections:
+        - title: 'Section 4.1: Tom Campanella'
+        - title: 'Section 4.2: Anne Beamish'
+    - title: 'Chapter 5: Ephemera, Temporary Urbanism, and Imaging'
+      sections:
+        - title: 'Section 5.1: J. Mark Schuster'
+    - title: 'Chapter 6: Place-Marketing: Using Media to Promote Cities'
+      sections:
+        - title: 'Section 6.1: Briavel Holcomb'
+    - title: 'Chapter 7: Negotiating Conflicting Images'
+      sections:
+        - title: 'Section 7.1: Eugenie Birch'
+    - title: 'Chapter 8: Re-imaging the Rust Belt: The New Cleveland Campaign'
+      sections:
+        - title: 'Section 8.1: Edward Hill'
+        - title: 'Section 8.2: Patricia Burgess'
+        - title: 'Section 8.3: Ruth Durack'
+    - title: 'Chapter 9: Architectural Mega-Projects in Asia: New City Images and New City Form'
+      sections:
+        - title: 'Section 9.1: Larry Ford'
+    - title: 'Chapter 10: Rating Place-Ratings'
+      sections:
+        - title: 'Section 10.1: John de Monchaux'
+    - title: 'Chapter 11: Inner Cities and Outer Cities'
+      sections:
+        - title: 'Section 11.1: Dolores Hayden'
+        - title: 'Section 11.2: Alex MacLean'
+    - title: 'Chapter 12: The Images of Commonplace Living in Modern City Regions'
+      sections:
+        - title: 'Section 12.1: Judith Martin'
+        - title: 'Section 12.2: Sam Bass Warner, Jr.'
+    - title: 'Chapter 13: City-Imaging after Lynch'
+      sections:
+        - title: 'Section 13.1: Sam Bass Warner, Jr.'
+        - title: 'Section 13.2: Lawrence Vale'
+```

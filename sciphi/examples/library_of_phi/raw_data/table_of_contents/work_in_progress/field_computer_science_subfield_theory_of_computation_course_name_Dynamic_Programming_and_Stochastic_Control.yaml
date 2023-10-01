@@ -1,0 +1,77 @@
+```yaml
+course:
+  Dynamic Programming and Stochastic Control:
+    textbook:
+      Dynamic Programming and Stochastic Control: A Comprehensive Guide
+    chapters:
+      - Finite Horizon Problems:
+          sections:
+            - Bellman Equation
+            - Hamilton-Jacobi-Bellman Equation
+            - Backward Induction
+            - Value Iteration
+            - Policy Iteration
+            - Linear Quadratic Regulator
+      - Simple Infinite Horizon Problems:
+          sections:
+            - Discounted Cost
+            - Average Cost
+            - Infinite Horizon Value Iteration
+            - Infinite Horizon Policy Iteration
+            - Convergence of Value Iteration
+      - Advanced Infinite Horizon Problems:
+          sections:
+            - Markov Decision Processes
+            - Stochastic Shortest Path
+            - Average Reward Reinforcement Learning
+            - Policy Gradient Methods
+            - Approximate Dynamic Programming
+            - Function Approximation
+      - Optimal Control in Continuous Time:
+          sections:
+            - Hamilton-Jacobi-Bellman Equation
+            - Pontryagin's Minimum Principle
+            - Existence and Uniqueness of Optimal Control
+            - Linear Quadratic Regulator in Continuous Time
+            - Infinite Horizon Optimal Control
+      - Reinforcement Learning:
+          sections:
+            - Temporal Difference Learning
+            - Q-Learning
+            - Value Function Approximation
+            - Policy Gradient Methods
+            - Deep Reinforcement Learning
+            - Model-Based Reinforcement Learning
+      - Multi-Agent Reinforcement Learning:
+          sections:
+            - Markov Games
+            - Nash Equilibrium
+            - Joint Action Learning
+            - Decentralized Learning
+            - Cooperative Learning
+            - Adversarial Learning
+      - Approximate Dynamic Programming:
+          sections:
+            - Value Function Approximation
+            - Policy Function Approximation
+            - Model-Based Approximate Dynamic Programming
+            - Model-Free Approximate Dynamic Programming
+            - Kernel-Based Approximate Dynamic Programming
+            - Neural Network Approximation
+      - Reinforcement Learning in Robotics:
+          sections:
+            - Sensor-Based Control
+            - Model-Free Control
+            - Model-Based Control
+            - Exploration and Exploitation
+            - Reinforcement Learning for Manipulation
+            - Learning from Demonstrations
+      - Applications of Dynamic Programming:
+          sections:
+            - Optimal Control of Queues
+            - Inventory Control
+            - Portfolio Optimization
+            - Resource Allocation
+            - Routing and Scheduling Problems
+            - Optimal Stopping Problems
+```

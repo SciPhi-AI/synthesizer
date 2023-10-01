@@ -1,0 +1,48 @@
+```yaml
+course:
+  'Dynamics of Complex Systems: Ecological Theory':
+    textbook:
+      title: 'Exploring Complexity in Ecological Systems'
+      chapters:
+        - chapter: 'Introduction to Complexity and Stability'
+          sections:
+            - section: 'Complexity in Ecological Systems'
+            - section: 'Stability in Ecological Systems'
+            - section: 'The Struggle for Existence'
+              subsections:
+                - 'Predator-Prey Models'
+                - 'Competitive Exclusion'
+                - 'Niche Theory'
+        - chapter: 'Dynamics and Patterns in Complex Systems'
+          sections:
+            - section: 'Chaotic Dynamics'
+            - section: 'Network Theory'
+              subsections:
+                - 'Population Dispersal'
+                - 'Patchiness'
+                - 'Pattern and Scale'
+        - chapter: 'Models of Spatial Interactions'
+          sections:
+            - section: 'Spatial Models'
+              subsections:
+                - 'Lattice-gas Models'
+                - 'Plankton Patchiness'
+                - 'Scaling from Trees to Forests'
+            - section: 'Interacting Particle Systems'
+        - chapter: 'Evolutionary Dynamics'
+          sections:
+            - section: 'Evolution of Biodiversity'
+              subsections:
+                - 'Adaptation and Diversification'
+                - 'Artificial Life and Biological Complexity'
+            - section: 'Cycles'
+              subsections:
+                - 'Reactivity, Stability, and Plankton'
+                - 'Theory of Productivity-Diversity Relationships'
+            - section: 'Evolution of Virulence in Host-Pathogen Systems'
+              subsections:
+                - 'Renormalization Approach to Biological Systems'
+                - 'Directed Motion in Lotka-Volterra Models'
+                - ''Highly Optimized Tolerance' and Ecology'
+        - chapter: 'Theory of Vegetation Patterns'
+```

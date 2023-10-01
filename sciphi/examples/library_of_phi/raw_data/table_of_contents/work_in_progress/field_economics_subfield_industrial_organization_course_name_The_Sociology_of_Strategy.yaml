@@ -1,0 +1,106 @@
+```yaml
+textbook:
+  The Sociology of Strategy: Exploring the Links between Sociology and Strategic Management
+    chapters:
+      - An Overview of Strategic Management and its Links to Sociology:
+          sections:
+            - '1.1 Strategic Factor Markets: Expectations, Luck, and Business Strategy':
+              subsections:
+                - Introduction to Strategic Factor Markets
+                - The Role of Expectations in Business Strategy
+                - Luck and its Impact on Strategic Management
+            - '1.2 A Sociological View on Why Firms Differ':
+              subsections:
+                - Exploring Sociological Perspectives on Firm Differences
+                - Factors Influencing Firm Differences
+            - '1.3 What is Strategy?':
+              subsections:
+                - Understanding the Concept of Strategy
+                - Different Approaches to Defining Strategy
+            - '1.4 The Structural Basis of Social Inequality':
+              subsections:
+                - The Relationship between Social Structure and Inequality
+                - Examining Social Inequality in Strategic Management
+      - 'Chapter 2: Networks I: Theories Relating Brokerage to Success':
+          sections:
+            - '2.1 Networks and Competitive Advantage':
+              subsections:
+                - Introduction to Networks and Competitive Advantage
+                - The Role of Brokerage in Success
+      - 'Chapter 3: Networks II: Networks as Competitive Advantage':
+          sections:
+            - '3.1 Networks and Competitive Advantage':
+              subsections:
+                - Expanding on the Concept of Networks and Competitive Advantage
+                - Strategies for Leveraging Networks in Business
+      - 'Chapter 4: Models of Competition I: Ecological':
+          sections:
+            - '4.1 Ecological Models of Competition':
+              subsections:
+                - Introduction to Ecological Models of Competition
+                - Understanding the Dynamics of Ecological Competition
+      - 'Chapter 5: Models of Competition II: Status-based':
+          sections:
+            - '5.1 Status-based Models of Competition':
+              subsections:
+                - Exploring Status-based Models of Competition
+                - The Influence of Status on Competitive Strategies
+      - 'Chapter 6: Models of Competition III: Role and Category-based':
+          sections:
+            - '6.1 Role and Category-based Models of Competition':
+              subsections:
+                - Overview of Role and Category-based Models of Competition
+                - Examining the Role of Categories in Competitive Dynamics
+      - 'Chapter 7: Origins I: The Founding of New Firms':
+          sections:
+            - '7.1 The Founding of New Firms':
+              subsections:
+                - Understanding the Process of Founding New Firms
+                - Factors Influencing Successful Firm Founding
+      - 'Chapter 8: Origins II: The Founding of New Forms':
+          sections:
+            - '8.1 The Founding of New Forms':
+              subsections:
+                - Exploring the Creation of New Organizational Forms
+                - Analyzing the Factors Driving New Form Founding
+      - 'Chapter 9: Strategic Change':
+          sections:
+            - '9.1 Strategic Change':
+              subsections:
+                - Introduction to Strategic Change
+                - Understanding the Drivers of Strategic Change
+            - '9.2 The Process of Strategic Change':
+              subsections:
+                - The Steps Involved in Implementing Strategic Change
+                - Managing Resistance to Strategic Change
+            - '9.3 Evaluating the Outcomes of Strategic Change':
+              subsections:
+                - Assessing the Impact and Effectiveness of Strategic Change
+                - Learning from Strategic Change Initiatives
+      - 'Chapter 10: Organizational Capabilities':
+          sections:
+            - '10.1 Organizational Capabilities':
+              subsections:
+                - Defining Organizational Capabilities
+                - The Role of Capabilities in Strategic Management
+            - '10.2 Building and Developing Organizational Capabilities':
+              subsections:
+                - Strategies for Building and Enhancing Organizational Capabilities
+                - Overcoming Challenges in Developing Organizational Capabilities
+      - 'Chapter 11: Diffusion and Learning I: Process':
+          sections:
+            - '11.1 Diffusion and Learning Process':
+              subsections:
+                - Understanding the Diffusion of Innovations
+                - The Process of Learning in Organizations
+            - '11.2 Factors Influencing Diffusion and Learning':
+              subsections:
+                - Examining the Factors that Impact Diffusion and Learning
+                - Strategies for Promoting Effective Diffusion and Learning
+      - 'Chapter 12: Diffusion and Learning II: Channels':
+          sections:
+            - '12.1 Diffusion and Learning Channels':
+              subsections:
+                - Exploring Different Channels of Diffusion and Learning
+                - Leveraging Channels for Effective Knowledge Transfer
+```

@@ -1,0 +1,74 @@
+```yaml
+course:
+  Applications of System Dynamics:
+    textbook:
+      title: The Dynamics of Complex Systems: A Practical Guide
+      author: [Your Name]
+      chapters:
+      - Introduction:
+          sections:
+          - Course overview
+          - Objectives
+          - Importance of system dynamics
+          subsections: []
+      - Guidelines for Kickoff Meeting:
+          sections:
+          - Preparing for kickoff meeting
+          - Meeting agenda
+          - Client expectations
+          subsections: []
+      - Definition of Concern and Momentum Policies:
+          sections:
+          - Identifying concerns
+          - Developing momentum policies
+          - Presenting concerns to clients
+          subsections: []
+      - Rough Dynamic Hypotheses:
+          sections:
+          - Formulating hypotheses
+          - Initial model development
+          - Hypothesis presentation
+          subsections: []
+      - Dynamic Hypotheses:
+          sections:
+          - Refining hypotheses
+          - Data collection
+          - Model validation
+          subsections: []
+      - Mini-presentations:
+          sections:
+          - Presentation structure
+          - Delivering effective presentations
+          - Feedback and revisions
+          subsections: []
+      - Partial Model of First Hypothesis:
+          sections:
+          - Developing partial models
+          - Model integration
+          - Presentation to clients
+          subsections: []
+      - Model and Analysis of First Hypothesis:
+          sections:
+          - Model refinement
+          - Data analysis
+          - Presentation of results
+          subsections: []
+      - Insights Presentation:
+          sections:
+          - Analyzing insights
+          - Communicating findings
+          - Finalizing recommendations
+          subsections: []
+      - Final Presentations and Models:
+          sections:
+          - Finalizing models
+          - Preparing presentations
+          - Project evaluation
+          subsections: []
+      - System Dynamics in Practice:
+          sections:
+          - Real-world case studies
+          - Ethical considerations in system dynamics
+          - Challenges and future directions
+          subsections: []
+```

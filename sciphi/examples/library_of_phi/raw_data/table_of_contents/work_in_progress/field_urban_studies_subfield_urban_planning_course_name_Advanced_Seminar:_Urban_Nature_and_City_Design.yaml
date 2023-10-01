@@ -1,0 +1,153 @@
+```yaml
+textbook:
+  'Urban Nature and City Design: Theory, Practice, and Examples':
+    chapters:
+      - chapter_title: 'Introduction: Understanding Urban Nature and City Design'
+        sections:
+          - section_title: 'Ideas of Nature and City Design and Development'
+            subsections:
+              - 'Williams, Raymond. ''Ideas of Nature.'' In Problems in Materialism and Culture. Verso, 1985, pp. 67–85. ISBN: 9780860917298.'
+              - 'Spirn, Anne Whiston. ''Ecological Urbanism.'' In Resilience in Ecology and Urban Design: Linking Theory and Practice for Sustainable Cities. Edited by M. L. Cadenasso Pickett, and Bria'
+          - section_title: 'Urban Nature and City Design: Practice, Theory, and Tradition I'
+          - section_title: 'Urban Nature and City Design: ''The Power of Example'''
+          - section_title: 'Urban Nature and City Design: Practice, Theory, and Tradition II'
+          - section_title: 'Introduction to Library Resources and Image Copyright Issues'
+          - section_title: 'Earth and Water'
+          - section_title: 'Air and the Urban Biome'
+          - section_title: 'Presentations and Discussion'
+          - section_title: 'Web Authoring Workshop'
+          - section_title: 'Reflections: Lessons for Cities'
+      - chapter_title: 'Understanding and Analyzing Urban Nature'
+        sections:
+          - section_title: 'Urban Ecosystems: Concepts and Principles'
+            subsections:
+              - 'Definition and Characteristics of Urban Ecosystems'
+              - 'The Role of Biodiversity in Urban Ecosystems'
+              - 'Urban Ecological Patterns and Processes'
+              - 'Ecological Services Provided by Urban Ecosystems'
+          - section_title: 'Urban Nature and Human Health'
+            subsections:
+              - 'The Impact of Urban Nature on Physical Health'
+              - 'The Impact of Urban Nature on Mental Health'
+              - 'Promoting Health and Well-being through Urban Nature Design'
+          - section_title: 'Assessing and Mapping Urban Nature'
+            subsections:
+              - 'Methods for Assessing Urban Nature'
+              - 'Techniques for Mapping Urban Nature'
+              - 'Spatial Analysis of Urban Nature Data'
+      - chapter_title: 'Principles and Approaches in City Design'
+        sections:
+          - section_title: 'Historical Perspectives on City Design'
+            subsections:
+              - 'Ancient Urban Planning and Design'
+              - 'Renaissance and Baroque City Design'
+              - 'The Emergence of Modern Urban Planning'
+              - 'Contemporary Approaches to City Design'
+          - section_title: 'Sustainable Urban Design Principles'
+            subsections:
+              - 'Compact and Mixed-Use Development'
+              - 'Walkability and Pedestrian-Friendly Design'
+              - 'Transit-Oriented Development'
+              - 'Green and Blue Infrastructure'
+              - 'Energy Efficiency and Renewable Energy'
+              - 'Waste Management and Recycling'
+              - 'Social Equity and Inclusivity'
+              - 'Resilience and Adaptation to Climate Change'
+          - section_title: 'Urban Design Guidelines and Best Practices'
+            subsections:
+              - 'Creating Vibrant Public Spaces'
+              - 'Designing Livable and Healthy Neighborhoods'
+              - 'Integrating Nature into Urban Design'
+              - 'Promoting Active Transportation and Non-Motorized Modes'
+              - 'Preserving and Rehabilitating Historic Buildings'
+              - 'Promoting Social Interaction and Community Engagement'
+              - 'Balancing Density and Open Space'
+              - 'Designing for Climate Resilience and Mitigation'
+      - chapter_title: 'Case Studies in Urban Nature and City Design'
+        sections:
+          - section_title: 'Green Cities and Eco-Districts'
+            subsections:
+              - 'Curitiba, Brazil'
+              - 'Freiburg, Germany'
+              - 'Portland, Oregon, USA'
+              - 'Singapore, Singapore'
+          - section_title: 'Parks and Urban Green Spaces'
+            subsections:
+              - 'Central Park, New York City, USA'
+              - 'Villa Borghese Gardens, Rome, Italy'
+              - 'Stanley Park, Vancouver, Canada'
+              - 'Yoyogi Park, Tokyo, Japan'
+          - section_title: 'Green Infrastructure Projects'
+            subsections:
+              - 'The High Line, New York City, USA'
+              - 'Cheonggyecheon Stream Restoration, Seoul, South Korea'
+              - 'Millennium Park, Chicago, USA'
+              - 'The Bosco Verticale, Milan, Italy'
+          - section_title: 'Urban Agriculture Initiatives'
+            subsections:
+              - 'The Rooftop Gardens of Brooklyn Grange, New York City, USA'
+              - 'Community Gardens in Berlin, Germany'
+              - 'The Vertical Farm at Paedagogisches Zentrum, Zurich, Switzerland'
+              - 'The Urban Farming Project, Detroit, USA'
+          - section_title: 'Waterfront Redevelopment Projects'
+            subsections:
+              - 'Thames Barrier Park, London, UK'
+              - 'The Battery Park City, New York City, USA'
+              - 'The Bund, Shanghai, China'
+              - 'The Darling Harbour, Sydney, Australia'
+      - chapter_title: 'Tools and Techniques for Urban Nature and City Design'
+        sections:
+          - section_title: 'Urban Design Software and Visualization Tools'
+            subsections:
+              - 'GIS Applications for Urban Design'
+              - 'Parametric Design Tools'
+              - 'Virtual Reality and Augmented Reality for Urban Design'
+          - section_title: 'Community Engagement and Participatory Design'
+            subsections:
+              - 'Stakeholder Analysis and Mapping'
+              - 'Public Meetings and Workshops'
+              - 'Crowdsourcing and Citizen Science'
+          - section_title: 'Sustainability Assessments and Certifications'
+            subsections:
+              - 'LEED Certification'
+              - 'BREEAM Certification'
+              - 'Green Star Certification'
+              - 'Living Building Challenge Certification'
+          - section_title: 'Visualization Techniques for Urban Design'
+            subsections:
+              - 'Hand Sketching and Drawing'
+              - 'Digital Rendering and Animation'
+              - 'Physical Models and Mockups'
+      - chapter_title: 'Integration of Urban Nature and City Design in Planning and Policy'
+        sections:
+          - section_title: 'Urban Design Guidelines and Zoning Regulations'
+            subsections:
+              - 'Form-Based Codes'
+              - 'Transit-Oriented Development Standards'
+              - 'Green Building Requirements'
+              - 'Design Review Boards and Commissions'
+          - section_title: 'Climate Action Plans and Resilience Strategies'
+            subsections:
+              - 'Mitigation Strategies for Reducing Greenhouse Gas Emissions'
+              - 'Adaptation Strategies for Climate Change Impacts'
+              - 'Urban Heat Island Mitigation'
+              - 'Floodplain Management'
+          - section_title: 'Urban Nature and Health Policies'
+            subsections:
+              - 'Green Space Preservation and Expansion'
+              - 'Active Transportation Promotion'
+              - 'Access to Healthy Food'
+              - 'Air and Water Quality Regulations'
+          - section_title: 'Public/Private Partnerships for Urban Nature and City Design'
+            subsections:
+              - 'Collaborations with Nonprofit Organizations'
+              - 'Corporate Sponsorship and Funding'
+              - 'Public-Private Park Partnerships'
+              - 'Community Land Trusts'
+    - chapter_title: 'Conclusion: Future Directions in Urban Nature and City Design'
+        sections:
+          - section_title: 'Emerging Trends and Innovations'
+          - section_title: 'Challenges and Opportunities'
+          - section_title: 'The Role of Designers, Planners, and Citizens'
+```
+```

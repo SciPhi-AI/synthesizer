@@ -1,0 +1,95 @@
+```yaml
+textbook:
+  Principles and Practice of Assistive Technology: A Comprehensive Guide
+  
+  chapters:
+    - Introduction:
+        sections:
+        - Course Introduction (case study of previous projects)
+        - Importance of Assistive Technology
+        subsections:
+        - The Evolution of Assistive Technology
+        - Impact of Assistive Technology on People with Disabilities
+    
+    - Disability, Communication, and Etiquette:
+        sections:
+        - Communicating with (and about) people with disabilities
+        subsections:
+        - Understanding Different Types of Disabilities
+        - Effective Communication Strategies for People with Disabilities
+        - Disability Etiquette and Respectful Language
+    
+    - User Centered Design:
+        sections:
+        - AT user sharing (Steve Saling and Jack Geilfuss, Leonard Florence Center / ALS Residence Initiative)
+        subsections:
+        - Understanding the Needs and Perspectives of AT Users
+        - User-Centered Design Principles and Methods
+        - Case Studies of Successful User-Centered Design in AT
+    
+    - Project Matching and Logistics:
+        sections:
+        - AT showcase (low-tech to high-tech)
+        subsections:
+        - Exploring a Range of Assistive Technologies
+        - Assessing the Suitability of AT for Different Users
+        - Logistics of Procuring and Implementing AT Projects
+    
+    - Ethics:
+        sections:
+        - Ethnographic techniques (Lynde Lutzow, RISD / MassArt)
+        subsections:
+        - Ethical Considerations in Assistive Technology Research and Development
+        - Ethnographic Research Methods for Understanding User Needs
+        - Ensuring Equity and Accessibility in AT Design and Implementation
+    
+    - Wheelchair Lab Discussion:
+        sections:
+        - Contextual inquiry (Prof Ro)
+        subsections:
+        - Conducting Contextual Inquiry in Wheelchair Design
+        - Analyzing User Feedback for Wheelchair Improvement
+        - Integrating User-Centered Design in Wheelchair Lab Projects
+    
+    - Blogging Assignments:
+        sections:
+        - 2nd Month Deliverables
+        - End of Class Deliverables
+        subsections:
+        - Effective Blogging for Reflecting on AT Projects
+        - Showcasing Project Progress and Learnings through Blogging
+    
+    - Client Agreement:
+        sections:
+        - Client Agreement
+        subsections:
+        - Developing and Negotiating Agreements with AT Clients
+        - Ensuring Clear Communication and Expectations with AT Clients
+        - Addressing Challenges and Conflicts in Client Relationships
+    
+    - Contextual Inquiry and Success Metrics:
+        sections:
+        - Video Project
+        subsections:
+        - Conducting Contextual Inquiry in AT Projects
+        - Defining and Measuring Success Metrics for AT Interventions
+        - Communicating Project Outcomes through Video Presentations
+    
+    - Team Agreement:
+        sections:
+        - Mid-Semester Report
+        - Mid-Semester Presentations
+        subsections:
+        - Establishing Effective Team Agreements and Roles
+        - Collaborative Approaches to AT Project Management
+        - Presenting Project Progress and Findings to Peers and Instructors
+    
+    - Project Documentation Plan:
+        sections:
+        - Project Documentation Plan
+        subsections:
+        - Importance of Detailed Project Documentation in AT
+        - Strategies for Effective Documentation in AT Projects
+        - Utilizing Documentation for Future Iterations and Improvements
+```
+```

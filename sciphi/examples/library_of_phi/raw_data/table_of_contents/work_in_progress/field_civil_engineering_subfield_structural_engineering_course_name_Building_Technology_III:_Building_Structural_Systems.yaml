@@ -1,0 +1,259 @@
+```yaml
+textbook:
+  'Building Structural Systems: A Comprehensive Guide':
+    chapters:
+    - Introduction to Building Structural Systems:
+        sections:
+        - Importance of Building Structural Systems:
+            subsections:
+            - Role of Structural Systems in Building Performance
+            - Impact of Structural Systems on Occupant Safety
+            - Relationship between Structural Systems and Architectural Design
+        - Structural Design Principles:
+            subsections:
+            - Structural Analysis and Design Process
+            - Load Path and Load Transfer Mechanisms in Structures
+            - Structural Stability and Redundancy
+        - Loadings and Load Combinations:
+            subsections:
+            - Dead Loads and Live Loads
+            - Environmental Loads (Wind, Snow, Seismic)
+            - Load Combinations and Factors of Safety
+        - Structural Safety and Performance:
+            subsections:
+            - Structural Safety Factors and Design Codes
+            - Performance-Based Design Approaches
+            - Durability and Maintenance of Structural Systems
+    - Reinforced Concrete Structures:
+        sections:
+        - Basic Concepts of Reinforced Concrete:
+            subsections:
+            - Properties and Behavior of Concrete and Reinforcement
+            - Concrete Mix Design and Proportioning
+            - Concrete Curing and Strength Development
+        - Reinforcement Details and Placement:
+            subsections:
+            - Reinforcement Types and Bar Sizes
+            - Reinforcement Layout and Spacing
+            - Reinforcement Anchoring and Development Length
+        - Structural Analysis and Design of Reinforced Concrete Elements:
+            subsections:
+            - Flexural Design of Reinforced Concrete Beams
+            - Shear Design of Reinforced Concrete Beams
+            - Torsion Design of Reinforced Concrete Beams
+            - Design of Reinforced Concrete Slabs and Footings
+        - Shear and Flexural Behavior of Reinforced Concrete Beams:
+            subsections:
+            - Shear Strength and Failure Modes in Reinforced Concrete Beams
+            - Flexural Strength and Behavior of Reinforced Concrete Beams
+            - Deflection Control in Reinforced Concrete Beams
+        - Reinforced Concrete Columns and Walls:
+            subsections:
+            - Design of Reinforced Concrete Columns
+            - Behavior and Design of Reinforced Concrete Walls
+            - Design of Reinforced Concrete Shear Walls
+        - Design of Reinforced Concrete Slabs:
+            subsections:
+            - One-Way Slab Design
+            - Two-Way Slab Design (Direct Design Method)
+            - Two-Way Slab Design (Equivalent Frame Method)
+    - Steel Structures:
+        sections:
+        - Properties and Behavior of Structural Steel:
+            subsections:
+            - Types and Grades of Structural Steel
+            - Material Properties of Structural Steel
+            - Steel Design Codes and Standards
+        - Design of Steel Beams and Columns:
+            subsections:
+            - Flexural Design of Steel Beams
+            - Compression and Tension Member Design
+            - Design of Steel Beam-Column Connections
+        - Connection Design for Steel Structures:
+            subsections:
+            - Welded Connections in Steel Structures
+            - Bolted Connections in Steel Structures
+            - Moment-Resisting Connections in Steel Frames
+        - Structural Stability and Bracing Systems:
+            subsections:
+            - Buckling of Steel Members and Frames
+            - Design of Steel Bracing Systems
+            - Design of Steel Moment-Resisting Frames
+        - Steel Roof and Floor Systems:
+            subsections:
+            - Design of Steel Roof Trusses
+            - Design of Steel Floor Systems
+            - Composite Steel Decking Systems
+        - Steel Bridge Design:
+            subsections:
+            - Design Criteria for Steel Bridges
+            - Design of Steel Girder Bridges
+            - Design of Steel Arch Bridges
+    - Wood Structures:
+        sections:
+        - Properties and Behavior of Wood:
+            subsections:
+            - Anatomy and Structure of Wood
+            - Mechanical Properties of Wood
+            - Moisture Effects on Wood Behavior
+        - Design of Wood Beams and Columns:
+            subsections:
+            - Bending Design of Wood Beams
+            - Axial Design of Wood Columns
+            - Lateral-Torsional Buckling of Wood Beams
+        - Connection Design for Wood Structures:
+            subsections:
+            - Fasteners and Wood Connectors
+            - Nailed and Screwed Connections in Wood
+            - Moment-Resisting Connections in Wood Structures
+        - Structural Design of Wood Roof and Floor Systems:
+            subsections:
+            - Design of Wood Roof Trusses
+            - Design of Wood Floor Joist Systems
+            - Design of Wood Sheathing and Subflooring
+        - Wood Shear Walls and Diaphragms:
+            subsections:
+            - Behavior and Design of Wood Shear Walls
+            - Design of Wood Diaphragms
+            - Plywood and OSB Sheathing in Wood Structures
+        - Wood Foundation Systems:
+            subsections:
+            - Design of Wood Foundation Walls
+            - Wood Pile and Pier Systems
+            - Moisture Protection in Wood Foundation Construction
+    - Masonry Structures:
+        sections:
+        - Introduction to Masonry Materials:
+            subsections:
+            - Types and Properties of Masonry Materials
+            - Masonry Unit Manufacturing and Standards
+            - Mortar Types and Mix Proportions
+        - Behavior and Design of Masonry Walls:
+            subsections:
+            - Structural Behavior of Masonry Walls
+            - Design of Load-Bearing Masonry Walls
+            - Design of Masonry Shear Walls
+        - Masonry Columns and Beams:
+            subsections:
+            - Design of Masonry Columns
+            - Design of Masonry Beams
+            - Reinforced Masonry Beam Design
+        - Reinforced Masonry Structures:
+            subsections:
+            - Reinforced Masonry Wall Design
+            - Reinforcement Details and Placement in Masonry
+            - Design of Masonry Coupling Beams
+        - Masonry Shear Walls:
+            subsections:
+            - Behavior and Design of Masonry Shear Walls
+            - Shear Wall Reinforcement Design
+            - Shear Transfer Mechanisms in Masonry
+        - Masonry Foundation Systems:
+            subsections:
+            - Design of Masonry Foundation Walls
+            - Masonry Pile and Pier Systems
+            - Moisture Protection in Masonry Foundation Construction
+    - Composite Structures:
+        sections:
+        - Introduction to Composite Materials:
+            subsections:
+            - Types and Properties of Composite Materials
+            - Fiber Reinforcement in Composite Materials
+            - Composite Material Manufacturing Processes
+        - Behavior and Design of Composite Beams and Columns:
+            subsections:
+            - Flexural Behavior of Composite Beams
+            - Design of Composite Beam-Column Connections
+            - Design of Composite Columns
+        - Composite Slabs and Floor Systems:
+            subsections:
+            - Behavior and Design of Composite Slabs
+            - Design of Composite Floor Systems
+            - Composite Metal Decking Systems
+        - Connection Design for Composite Structures:
+            subsections:
+            - Welded Connections in Composite Structures
+            - Bolted Connections in Composite Structures
+            - Moment-Resisting Connections in Composite Structures
+        - Composite Bridge Design:
+            subsections:
+            - Design Criteria for Composite Bridges
+            - Design of Composite Girder Bridges
+            - Design of Composite Arch Bridges
+        - Composite Reinforcement Systems:
+            subsections:
+            - Fiber-Reinforced Polymer (FRP) Reinforcement
+            - Applications of FRP Reinforcement in Structures
+            - Design Considerations for FRP-Reinforced Elements
+    - Structural Analysis and Design Software:
+        sections:
+        - Introduction to Structural Analysis and Design Software:
+            subsections:
+            - Types and Features of Structural Analysis Software
+            - Types and Features of Structural Design Software
+            - Integration of Analysis and Design Software
+        - Modeling and Analysis of Structural Systems:
+            subsections:
+            - Structural Modeling Techniques
+            - Structural Analysis Methods (Static and Dynamic)
+            - Finite Element Analysis (FEA) in Structural Design
+        - Design and Optimization of Structural Elements:
+            subsections:
+            - Design Optimization Methods and Techniques
+            - Parametric Design and Sensitivity Analysis
+            - Design Automation in Structural Engineering
+        - Visualization and Presentation of Structural Designs:
+            subsections:
+            - 3D Visualization Techniques in Structural Design
+            - Computer-Aided Design (CAD) in Structural Engineering
+            - Virtual Reality (VR) and Augmented Reality (AR) in Structural Design
+    - Structural Testing and Evaluation:
+        sections:
+        - Non-destructive Testing Techniques:
+            subsections:
+            - Visual Inspection and Non-destructive Evaluation (NDE)
+            - Ultrasonic Testing of Structural Elements
+            - Radiographic Testing of Structural Elements
+        - Load Testing of Structures:
+            subsections:
+            - Static Load Testing of Buildings and Bridges
+            - Dynamic Load Testing of Structures
+            - Monitoring and Data Analysis during Load Testing
+        - Structural Health Monitoring:
+            subsections:
+            - Sensors and Monitoring Systems for Structural Health
+            - Data Analysis and Interpretation in Structural Health Monitoring
+            - Condition Assessment and Maintenance Planning
+        - Structural Evaluation and Retrofitting:
+            subsections:
+            - Structural Evaluation Techniques and Procedures
+            - Strengthening and Retrofitting Strategies
+            - Cost Analysis and Feasibility Studies for Retrofit Projects
+    - Sustainability in Structural Design:
+        sections:
+        - Sustainable Materials and Construction Practices:
+            subsections:
+            - Green Building Materials and Technologies
+            - Low-Impact Construction Techniques
+            - Recycling and Reuse in Structural Design
+        - Life Cycle Assessment of Structural Systems:
+            subsections:
+            - Life Cycle Assessment (LCA) Methodology and Tools
+            - Environmental Impact Assessment of Structural Systems
+            - Life Cycle Cost Analysis (LCCA) in Structural Design
+        - Energy Efficiency in Building Structural Systems:
+            subsections:
+            - Passive Design Strategies for Energy Efficiency
+            - Energy-Efficient Materials and Systems
+            - Building Energy Simulation and Optimization
+        - Design for Resilience and Adaptability:
+            subsections:
+            - Resilient Design Principles for Structural Systems
+            - Adaptive Reuse and Repurposing of Existing Structures
+            - Disaster Mitigation and Emergency Response Planning
+        - Green Building Certifications and Standards:
+            subsections:
+            - LEED Certification and Sustainable Building Standards
+            - Green Building Rating Systems (BREEAM, Green Star, etc.)
+            - Net Zero Energy and Carbon Neutral Design Strategies
+```

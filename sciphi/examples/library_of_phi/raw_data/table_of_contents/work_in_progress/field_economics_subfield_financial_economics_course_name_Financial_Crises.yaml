@@ -1,0 +1,29 @@
+textbook:
+  Financial Crises: A Comprehensive Study
+  chapters:
+    - Understanding Financial Crises:
+      sections:
+        - Lessons from History:
+          subsections: []
+        - Borrowing Constraints and the Net Worth Channel:
+          subsections: []
+    - Leverage and Fire Sales:
+      sections:
+        - Amplification Mechanisms:
+          subsections: []
+        - Moral Hazard or Mistakes:
+          subsections: []
+    - Liquidity and Banking Panics:
+      sections:
+        - Maturity Mismatch:
+          subsections: []
+        - Debt, Panics, and Flight to Quality:
+          subsections: []
+    - Interconnections and Complexity:
+      sections:
+        - Optimal Policy to Mitigate or Prevent Crises:
+          subsections: []
+    - Final Exam:
+      sections:
+        - 'Chapter 12 of ''The Courage to Act: A Memoir of a Crisis and Its Aftermath'' by Ben S. Bernanke':
+          subsections: []

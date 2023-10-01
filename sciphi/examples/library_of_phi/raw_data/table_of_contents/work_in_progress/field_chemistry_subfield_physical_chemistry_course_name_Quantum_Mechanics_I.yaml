@@ -1,0 +1,60 @@
+textbook:
+  Quantum Mechanics I: A Comprehensive Guide
+  chapters:
+    - One-Dimensional Problems:
+        sections:
+        - Course Outline
+        - Free Particle
+        - Motion
+        - Infinite Box
+        - \(\delta(x)\) Well
+        - \(\delta(x)\) Barrier
+        - Probability Density: Motion
+        - Probability Density: Position
+        - Probability Density: Spreading
+        - Probability Density: Gaussian Wavepacket
+        - Stationary Phase and Gaussian Wavepackets
+        - Continuum Normalization
+        - Linear Potential
+        - JWKB Approximation and Quantization
+    - Numerov-Cooley Method: 1-D Schrödinger Equation:
+        sections:
+        - Numerov-Cooley Method: 1-D Schrödinger Equation
+        - Matrix Mechanics
+        - Eigenvalues, Eigenvectors, and Discrete Variable Representation
+        - Matrix Solution of Harmonic Oscillator I
+        - Matrix Solution of Harmonic Oscillator II
+    - Perturbation Theory:
+        sections:
+        - Perturbation Theory I
+        - Perturbation Theory II
+        - Perturbation Theory III
+        - Perturbation Theory IV
+    - Variational Method:
+        sections:
+        - Variational Method
+    - Density Matrices:
+        sections:
+        - Density Matrices I
+        - Density Matrices II
+    - 3-D Central Force Problems:
+        sections:
+        - 3-D Central Force Problems I
+        - 3-D Central Force Problems II
+    - Angular Momentum Matrix Elements:
+        sections:
+        - Angular Momentum Matrix Elements from Commutation Rules
+        - J-Matrices
+    - Wigner-Eckart Theorem:
+        sections:
+        - Wigner-Eckart Theorem
+    - Many-Electron Atoms:
+        sections:
+        - Begin Many-Electron Atoms: Quantum Defect Theory
+        - Matrix Elements of Many-Electron Wavefunctions
+        - Matrix Elements of One-Electron
+    - Infinite 1-D Lattice:
+        sections:
+        - Infinite 1-D Lattice I
+        - Infinite 1-D Lattice II
+        - One-Dimensional Lattice: Weak-Coupling Limit

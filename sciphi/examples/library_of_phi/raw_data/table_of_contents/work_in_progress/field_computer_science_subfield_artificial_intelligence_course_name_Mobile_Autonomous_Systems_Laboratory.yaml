@@ -1,0 +1,67 @@
+textbook:
+  Mobile Autonomous Systems Laboratory: A Comprehensive Guide
+  chapters:
+    - Chapter 1: Overview
+      sections:
+        - Section 1.1: Welcome
+        - Section 1.2: Staff
+        - Section 1.3: Logistics
+        - Section 1.4: Course Policies/Philosophy
+        - Section 1.5: Contest Preview: The Game
+        - Section 1.6: The Kit Orc API and maslab.jar
+        - Section 1.7: OrcPad
+        - Section 1.8: PegBot
+        - Section 1.9: Soldering Tutorial Overview (PDF)
+    - Chapter 2: Mechanical Sensors and Cables
+      sections:
+        - Section 2.1: Mechanical Sensors and Cables
+    - Chapter 3: Software Engineering
+      sections:
+        - Section 3.1: On MIT Server and your robot (make, Ant, CVS)
+        - Section 3.2: Design Principles
+        - Section 3.3: Threading in Java (more mechanics than theory)
+        - Section 3.4: Pitfalls
+    - Chapter 4: Vision
+      sections:
+        - Section 4.1: Quick Review: Colors (HSV, Maslab colors, this year)
+        - Section 4.2: Blue line (motiva)
+    - Chapter 5: Design Review
+      sections:
+        - Section 5.1: Activity: Work on Checkpoint 2
+        - Section 5.2: Activity: Checkpoint 2: Score a Point
+        - Section 5.3: Activity: Mock Contest 1
+        - Section 5.4: Programming 27Robots: Distributed Algorithms for Robot Swarms and Engineering Creativity: Exercises for your Right Brain
+        - Section 5.5: Activity: Mock Contest 2
+        - Section 5.6: Learning in Robots
+        - Section 5.7: Activity: Impounding
+        - Section 5.8: Activity: Contest Day
+    - Chapter 6: Assignments
+      sections:
+        - Section 6.1: You have completed all required activities for today! Take your kit home.
+        - Section 6.2: Brainstorm robot ideas with your team.
+        - Section 6.3: Finish the tutorial if you have not done so already.
+        - Section 6.4: Find a red ball (it will be in the robot’s line of sight) and drive towards it.
+        - Section 6.5: Design Review Guidelines
+    - Chapter 7: Calendar
+      sections:
+        - Section 7.1: Lecture: Overview Welcome, Staff, Logistics, Course Policies/Philosophy, Contest Preview: The Game, The Kit Orc API and maslab.jar, OrcPad, PegBot, Soldering Tutorial Activity PegBot, OrcPad, Orc Hello World
+        - Section 7.2: Lecture, Part I: Mechanical Lecture, Part II: Sensors and Cables Activity Cable Making: Have each team make its own IR sensor cable. Sensor Task: IR proximity with OrcPad feedback. Choose 'bump/no bump' or edge-finder. Have other sensors available to play with. Evening: Java
+        - Section 7.3: Lecture: Design Review
+        - Section 7.4: Activity: Work on Checkpoint 2
+        - Section 7.5: Activity: Checkpoint 2: Score a Point
+        - Section 7.6: Activity: Mock Contest 1
+        - Section 7.7: Lecture: Programming 27Robots: Distributed Algorithms for Robot Swarms and Engineering Creativity: Exercises for your Right Brain
+        - Section 7.8: Activity: Mock Contest 2
+        - Section 7.9: Lecture: Learning in Robots
+        - Section 7.10: Activity: Impounding
+        - Section 7.11: Activity: Contest Day
+    - Chapter 8: Projects
+      sections:
+        - Section 8.1: Introduction
+        - Section 8.2: Team 1 - Robot Name
+        - Section 8.3: Team 2 - Robot Name
+        - Section 8.4: Team 3 - Robot Name
+        - Section 8.5: Team 4 - Robot Name
+        - Section 8.6: Team 5 - Robot Name
+        - Section 8.7: Team 6 - Robot Name
+        - Section 8.8: Final Papers

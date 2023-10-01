@@ -1,0 +1,28 @@
+textbook:
+  'Trace Element Analysis of Geological, Biological & Environmental Materials by Neutron Activation Analysis: An Exposure':
+    chapters:
+    - Introduction:
+        sections:
+        - Neutron Activation Analysis Fundamental Concepts
+    - Gamma Detection - Instrumentation Principles:
+        sections:
+        - 'Neutron Activation Analysis - Applications: Trace Element Analysis of Geological,
+          Biological and Environmental Materials'
+        - 'Presentation and Report assignment (one per student): Epithermal, Delayed
+          Neutron, Prompt Gamma Neutron Activation Analysis'
+        subsections:
+        - Gamma Detection Techniques
+        - Instrumentation Principles
+    - Experimental Procedures:
+        sections:
+        - Hands-on Experience with Sample Preparation
+        - Hands-on Experience with Gamma Spectrometer in MIT-EAPS INAA Laboratory
+        subsections:
+        - Sample Collection and Preparation
+        - Gamma Spectrometer Operation
+    - Trace Element Analysis - Student’s Presentations:
+        sections:
+        - '[List of student presentations]'
+        subsections:
+        - Presentation Techniques
+        - Effective Communication in Scientific Presentations

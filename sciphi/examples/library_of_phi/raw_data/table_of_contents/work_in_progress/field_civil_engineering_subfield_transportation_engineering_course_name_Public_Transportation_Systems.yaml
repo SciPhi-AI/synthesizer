@@ -1,0 +1,89 @@
+textbook:
+  Public Transportation Systems: A Comprehensive Guide
+  chapters:
+    - Introduction:
+        sections:
+        - Overview of Public Transportation Systems
+        - Importance and Benefits of Public Transportation
+        - History and Evolution of Public Transportation
+    - Data Collection and Analysis:
+        sections:
+        - Techniques for Data Collection
+        - Program Design for Data Analysis
+        - Data Analysis and Inference
+        - Data Visualization Techniques
+    - Modal Characteristics and Roles:
+        sections:
+        - Different Modes of Public Transportation
+          subsections:
+          - Bus Transportation
+          - Rail Transportation
+          - Subway Transportation
+          - Light Rail Transportation
+          - Tram Transportation
+          - Ferry Transportation
+        - Characteristics and Features of Each Mode
+          subsections:
+          - Bus Characteristics and Features
+          - Rail Characteristics and Features
+          - Subway Characteristics and Features
+          - Light Rail Characteristics and Features
+          - Tram Characteristics and Features
+          - Ferry Characteristics and Features
+        - Roles and Functions of Different Modes
+          subsections:
+          - Bus Roles and Functions
+          - Rail Roles and Functions
+          - Subway Roles and Functions
+          - Light Rail Roles and Functions
+          - Tram Roles and Functions
+          - Ferry Roles and Functions
+    - Planning and Scheduling:
+        sections:
+        - Short-range Planning for Public Transportation Systems
+          subsections:
+          - Scheduling and Dispatching
+          - Service Planning
+        - Modal Capacities and Costs
+        - Cost Estimation for Public Transportation Projects
+        - Ridership Forecasting
+        - Frequency Determination
+    - Route Design and Network Structure:
+        sections:
+        - Macro Design Models for a Single Route
+        - Network and Route Structure
+        - High Ridership Corridor Strategies
+        - Bus and Rail Corridor Strategies
+        - Integration of Multiple Modes
+    - Performance Measurement and Evaluation:
+        sections:
+        - Performance Models for Public Transportation Systems
+        - Transit Service Reliability
+        - Performance Measurement Tools and Techniques
+        - Performance Evaluation Methods
+    - Fare Policy and Technology:
+        sections:
+        - Fare Structure and Pricing Policies
+        - Technology in Fare Collection and Payment Systems
+        - Fare Integration and Interoperability
+        - Customer Information Strategies
+        - Fare Evasion Prevention Techniques
+    - Workforce Planning and Labor Relations:
+        sections:
+        - Workforce Planning for Public Transportation Systems
+          subsections:
+          - Workforce Demand Forecasting
+          - Recruitment and Selection
+          - Training and Development
+        - Labor Relations and Collective Bargaining
+          subsections:
+          - Labor Laws and Regulations
+          - Union Negotiations and Agreements
+          - Grievance Handling Procedures
+    - Transit Finance and Funding:
+        sections:
+        - Funding Sources for Public Transportation Projects
+        - Transit Finance and Budgeting
+        - Public-Private Partnerships in Transit Projects
+        - Grant Writing and Proposal Preparation
+        - Cost-Benefit Analysis for Transit Projects

@@ -1,0 +1,57 @@
+```yaml
+textbook:
+  Introduction to Astronomy: A Comprehensive Guide to the Study of the Universe
+  chapters:
+    - Chapter 1: Course Organization; Introduction
+      sections:
+        - Section 1.1: Greek Astronomy
+        - Section 1.2: Astronomy in the Era of Copernicus, Tycho, Kepler, and Galileo
+        - Section 1.3: Kepler’s Laws of Planetary Motion
+    - Chapter 2: Review of Classical Mechanics; Circular Orbits
+      sections:
+        - Section 2.1: Full Kepler Orbit Problem
+        - Section 2.2: Introduction to Electromagnetic Waves; Doppler Effect
+    - Chapter 3: Reflection, Refraction, and Optics
+      sections:
+        - Section 3.1: Optical, Radio, and X-Ray Telescopes
+        - Section 3.2: Distances and Magnitudes
+    - Chapter 4: Binary Systems
+      sections:
+        - Section 4.1: Hertzsprung-Russell Diagrams
+        - Section 4.2: Initial Mass Function; Olbert’s Paradox; The Milky Way
+    - Chapter 5: Birth, Structure, and Evolution of Stars
+      sections:
+        - Section 5.1: Star Death: White Dwarves, Neutron Stars, Supernovae, and Black Holes
+        - Section 5.2: Cepheid Variables; Mass Transfer Binaries
+    - Chapter 6: Interstellar Medium
+      sections:
+        - Section 6.1: HII Regions; Galaxy Types
+        - Section 6.2: Masses of Galaxies and Galaxy Clusters; Distance Ladder
+    - Chapter 7: Age and Large Scale Structure of the Universe; Intergalactic Medium
+      sections:
+        - Section 7.1: Active Galactic Nuclei
+        - Section 7.2: Newtonian Cosmology; Thermal History of the Universe
+  subsubtopics:
+    - Subsection 1.2.1: Tycho Brahe: The Observational Pioneer
+    - Subsection 1.2.2: Johannes Kepler and the Three Laws of Planetary Motion
+    - Subsection 1.2.3: Galileo Galilei: Revolutionizing Astronomy with the Telescope
+    - Subsection 3.1.1: Optical Telescopes: Reflectors and Refractors
+    - Subsection 3.1.2: Radio Telescopes: Probing the Universe in Radio Frequencies
+    - Subsection 3.1.3: X-Ray Telescopes: Exploring High-Energy Phenomena in Space
+    - Subsection 4.1.1: Stellar Classification and Evolution on the Hertzsprung-Russell Diagram
+    - Subsection 4.1.2: The Milky Way: Our Home Galaxy in the Cosmic Neighborhood
+    - Subsection 5.1.1: White Dwarves: The Remnants of Low-Mass Stars
+    - Subsection 5.1.2: Neutron Stars: The Densest Objects in the Universe
+    - Subsection 5.1.3: Supernovae: Spectacular Explosions of Massive Stars
+    - Subsection 5.1.4: Black Holes: The Mysterious Cosmic Abyss
+    - Subsection 5.2.1: Cepheid Variables: Cosmic Distance Indicators
+    - Subsection 5.2.2: Mass Transfer Binaries: Stellar Evolution in Close Binaries
+    - Subsection 6.1.1: HII Regions: Birthplaces of New Stars
+    - Subsection 6.1.2: Galaxy Types: Understanding the Diversity of Galaxies
+    - Subsection 6.2.1: Masses of Galaxies: Weighing the Universe's Building Blocks
+    - Subsection 6.2.2: Galaxy Clusters: The Largest Structures in the Universe
+    - Subsection 7.1.1: Active Galactic Nuclei: Supermassive Black Holes at the Center of Galaxies
+    - Subsection 7.2.1: Newtonian Cosmology: The Expanding Universe and the Big Bang
+    - Subsection 7.2.2: Thermal History of the Universe: From the Big Bang to the Present Day
+```
+```

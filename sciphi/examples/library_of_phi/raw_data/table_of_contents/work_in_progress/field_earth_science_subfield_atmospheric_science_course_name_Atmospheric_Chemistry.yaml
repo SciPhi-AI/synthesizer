@@ -1,0 +1,65 @@
+course:
+  Atmospheric Chemistry Textbook:
+    chapters:
+      - Introduction to Atmospheric Chemistry:
+          sections:
+            - Overview of Atmospheric Chemistry
+            - Composition of the Atmosphere
+            - Major Atmospheric Constituents
+            - Trace Gases and Aerosols
+      - Chemical Kinetics:
+          sections:
+            - Reaction Rates
+            - Reaction Mechanisms
+            - Rate Laws and Rate Constants
+            - Collision Theory
+            - Transition State Theory
+      - Photochemistry and Spectroscopy:
+          sections:
+            - Absorption and Emission of Light
+            - Excited States and Electronic Transitions
+            - Photodissociation and Photoionization
+            - Photochemical Reactions
+            - Spectroscopic Techniques
+      - Stratospheric Chemistry:
+          sections:
+            - Ozone Chemistry and Depletion
+            - Stratospheric Aerosols
+            - Halogen Chemistry
+            - Heterogeneous Reactions
+      - Tropospheric Chemistry:
+          sections:
+            - Nitrogen Oxides (NOx) and Hydroxyl Radicals (OH)
+            - Volatile Organic Compounds (VOCs)
+            - Secondary Organic Aerosols (SOAs)
+            - Photochemical Smog
+      - Atmospheric Organic Chemistry:
+          sections:
+            - Sources and Sinks of Organic Compounds
+            - Biogenic Emissions
+            - Oxidation of Organic Compounds
+            - Formation of Secondary Organic Aerosols
+      - Reactive Nitrogen and Ozone Pollution:
+          sections:
+            - Nitrogen Oxides (NOx) Emissions
+            - Ozone Formation and Chemistry
+            - Photochemical Smog and Air Quality
+            - Health Effects of Ozone Pollution
+      - Atmospheric Aqueous Chemistry:
+          sections:
+            - Clouds and Rainwater Chemistry
+            - Acid Rain Formation
+            - Dissolution and Reaction Rates
+            - Aerosol-Cloud Interactions
+      - Atmospheric Aerosols:
+          sections:
+            - Aerosol Size and Distribution
+            - Physical Properties of Aerosols
+            - Aerosol Formation and Growth
+            - Aerosol-Climate Interactions
+      - Atmospheric Chemistry and Climate Change:
+          sections:
+            - Greenhouse Gases and Global Warming Potential
+            - Climate Forcing and Radiative Forcing
+            - Climate Models and Predictions
+            - Feedback Mechanisms and Climate Sensitivity

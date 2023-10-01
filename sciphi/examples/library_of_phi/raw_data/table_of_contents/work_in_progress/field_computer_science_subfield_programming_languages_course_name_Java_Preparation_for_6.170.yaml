@@ -1,0 +1,42 @@
+textbook:
+  Java Programming: From Basics to Advanced Concepts:
+    chapters:
+    - Object Oriented Programming:
+        sections:
+        - Java Program Structure
+        - Primitives
+        - Control Flow
+        - Arrays
+        - Objects
+    - Classes and Interfaces:
+        sections:
+        - Classes vs. Objects/Instances
+        - Method Overloading
+        - Inheritance
+        - Abstract Superclasses
+        - Interfaces
+        - Polymorphism
+        - Method Overriding
+    - Hashing, Collections, and Comparators:
+        sections:
+        - Hashing
+        - Data Structures
+        - Collections
+        - Comparators
+    - Interfaces, Abstract classes, Exceptions, Inner classes:
+        sections:
+        - Interfaces
+        - Abstract Classes
+        - Exceptions
+        - Inner Classes
+    - Review, Question and Answer, Writing an Address Book Program that Loads and Stores Files to Disk:
+        sections:
+        - Review
+        - Question and Answer
+        - Writing an Address Book Program
+        - Loading and Storing Files to Disk
+    - Simple AIMTMAssignment:
+        sections:
+        - Reference Implementation
+        - Source Code Handout
+        - TOC2 Protocol

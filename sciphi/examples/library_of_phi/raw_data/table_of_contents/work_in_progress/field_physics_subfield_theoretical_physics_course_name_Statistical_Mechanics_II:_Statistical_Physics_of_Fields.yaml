@@ -1,0 +1,176 @@
+```yaml
+textbook:
+  'Statistical Physics of Fields: From Particles to Fields':
+    chapters:
+    - Collective Behavior, from Particles to Fields:
+        sections:
+        - Introduction:
+            subsections:
+            - Overview of Statistical Mechanics
+            - Scope and Objectives of the Course
+        - Phonons and Elasticity:
+            subsections:
+            - Lattice Dynamics and Phonons
+            - Elasticity and Mechanical Waves
+        - Phase Transitions:
+            subsections:
+            - First and Second Order Phase Transitions
+            - Critical Phenomena and Universality
+            - Scaling Theory and the Renormalization Group
+        - Critical Behavior:
+            subsections:
+            - Critical Exponents and Scaling Laws
+            - Scaling Relations and Fisher's Hypothesis
+        - The Landau-Ginzburg Approach:
+            subsections:
+            - Landau Theory of Phase Transitions
+            - Ginzburg Criterion and Order Parameter
+            - Mean Field Approximation
+        - Saddle Point Approximation:
+            subsections:
+            - Path Integral Formulation
+            - Stationary Phase Method
+        - Mean-field Theory:
+            subsections:
+            - Mean-field Approximation for Phase Transitions
+            - Mean-field Models of Ferromagnetism and Superconductivity
+        - Spontaneous Symmetry Breaking:
+            subsections:
+            - Symmetry Breaking and Symmetry Restoration
+            - Order Parameter and Broken Symmetry
+        - Goldstone Modes:
+            subsections:
+            - Spontaneous Symmetry Breaking and Goldstone Theorem
+            - Massless Excitations and Goldstone Modes
+    - The Scaling Hypothesis:
+        sections:
+        - Perturbative Renormalization Group:
+            subsections:
+            - Introduction to Renormalization Group
+            - Wilsonian Renormalization Group
+        - Position Space Renormalization Group:
+            subsections:
+            - Block Spin Transformations
+            - Kadanoff's Real Space Renormalization Group
+        - Series Expansions:
+            subsections:
+            - High and Low Temperature Expansions
+            - Field Theoretic Methods for Series Expansions
+        - Continuous Spins at Low Temperatures:
+            subsections:
+            - Continuous Symmetry Breaking
+            - Spin-wave Theory and Bogoliubov Transformation
+            - Low Temperature Expansions for Continuous Spins
+        - Dissipative Dynamics:
+            subsections:
+            - Langevin Equation and Brownian Motion
+            - Fluctuation-Dissipation Theorem
+            - Dynamic Renormalization Group
+            - Stochastic Field Theory
+    - Problem Sets:
+        sections:
+        - Phase Transitions:
+            subsections:
+            - Landau Theory of Phase Transitions
+            - Critical Phenomena and Scaling Laws
+            - Mean-field Approximation
+            - Renormalization Group and Universality
+        - Fluctuations:
+            subsections:
+            - Fluctuation-Dissipation Theorem
+            - Langevin Equation and Fokker-Planck Equation
+            - Gaussian Fluctuations and Central Limit Theorem
+        - Scaling, Perturbation, & Renormalization:
+            subsections:
+            - Scaling Theory and the Renormalization Group
+            - Perturbation Theory and Feynman Diagrams
+            - Renormalization and the Callan-Symanzik Equation
+        - Transfer Matrices & Position Space Renormalization:
+            subsections:
+            - Transfer Matrices and Partition Function
+            - Kadanoff's Real Space Renormalization Group
+            - Block Spin Transformations
+        - 'Duality: Potts Models & Percolation':
+            subsections:
+            - Duality Transformations and Self-Duality
+            - Potts Models and Phase Transitions
+            - Percolation and Cluster Size Distribution
+        - Beyond Spin Waves:
+            subsections:
+            - Nonlinear Sigma Models and Topological Defects
+            - Quantum Phase Transitions and Quantum Criticality
+            - Gauge Field Theories and Confinement
+    - Exams:
+        sections:
+        - Test 1 Review Problems:
+            subsections:
+            - Landau Theory and Order Parameters
+            - Critical Exponents and Scaling Relations
+        - Test 2 Review Problems:
+            subsections:
+            - Mean-field Theory and Phase Transitions
+            - Renormalization Group and Universality
+        - Test 3 Review Problems:
+            subsections:
+            - Fluctuation-Dissipation Theorem and Langevin Equation
+            - Series Expansions and Low Temperature Expansions
+    - Calendar:
+        sections:
+        - Introduction, Phonons and Elasticity:
+            subsections:
+            - Overview of the Course and Statistical Mechanics
+            - Lattice Dynamics and Phonons
+            - Elasticity and Mechanical Waves
+        - Phase Transitions, Critical Behavior:
+            subsections:
+            - First and Second Order Phase Transitions
+            - Critical Phenomena and Scaling Laws
+            - Critical Exponents and Scaling Relations
+        - The Landau-Ginzburg Approach:
+            subsections:
+            - Landau Theory of Phase Transitions
+            - Ginzburg Criterion and Order Parameter
+            - Mean-field Approximation
+        - Spontaneous Symmetry Breaking and Goldstone Modes:
+            subsections:
+            - Symmetry Breaking and Symmetry Restoration
+            - Order Parameter and Broken Symmetry
+            - Spontaneous Symmetry Breaking and Goldstone Theorem
+            - Massless Excitations and Goldstone Modes
+        - Perturbative Renormalization Group:
+            subsections:
+            - Introduction to Renormalization Group
+            - Wilsonian Renormalization Group
+        - Position Space Renormalization Group:
+            subsections:
+            - Block Spin Transformations
+            - Kadanoff's Real Space Renormalization Group
+        - Series Expansions:
+            subsections:
+            - High and Low Temperature Expansions
+            - Field Theoretic Methods for Series Expansions
+        - Continuous Spins at Low Temperatures:
+            subsections:
+            - Continuous Symmetry Breaking
+            - Spin-wave Theory and Bogoliubov Transformation
+            - Low Temperature Expansions for Continuous Spins
+        - Dissipative Dynamics:
+            subsections:
+            - Langevin Equation and Brownian Motion
+            - Fluctuation-Dissipation Theorem
+            - Dynamic Renormalization Group
+            - Stochastic Field Theory
+    - Final Project:
+        sections:
+        - Write a brief paper on a subject of your choice:
+            subsections:
+            - Paper Guidelines and Requirements
+            - Choosing a Suitable Topic
+        - Relevant to the topics of this course:
+            subsections:
+            - Topics Related to Phase Transitions
+            - Topics Related to Renormalization Group
+            - Topics Related to Critical Phenomena
+            - Topics Related to Fluctuations and Dynamics
+```
+```

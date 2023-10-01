@@ -1,0 +1,161 @@
+```yaml
+course:
+  Atmospheric and Ocean Circulations:
+    textbook:
+      title: "Understanding Atmospheric and Ocean Circulations: Dynamics and Phenomena"
+      chapters:
+        - Shallow Water Gravity Waves:
+            sections:
+              - Surface Motions on Shallow Water:
+                  subsections:
+                    - Surface Gravity Waves
+                    - Capillary Waves
+                    - Internal Waves
+                    - Surface Currents
+              - Small-amplitude Shallow-water Surface Waves:
+                  subsections:
+                    - Linear Theory of Shallow-water Waves
+                    - Dispersion Relation
+                    - Energy and Momentum Transport
+                    - Wave Breaking
+              - Background Theory-nondispersive Waves:
+                  subsections:
+                    - Basic Concepts of Non-dispersive Waves
+                    - Wave Propagation Equations
+                    - Conservation Laws
+              - Oscillations:
+                  subsections:
+                    - Forced Oscillations
+                    - Free Oscillations
+                    - Resonance
+              - Nondispersive Waves:
+                  subsections:
+                    - Linear Wave Theory
+                    - Group Velocity
+                    - Wave Energy
+                    - Wave Interactions
+              - Two-dimensional Waves:
+                  subsections:
+                    - Equations for 2D Waves
+                    - Wave Reflection
+                    - Wave Refraction
+                    - Wave Diffraction
+              - Motions within a Wave:
+                  subsections:
+                    - Particle Motion
+                    - Group Velocity
+                    - Ray Velocity
+                    - Invariant Properties
+              - Surface Wave reflection and modes:
+                  subsections:
+                    - Reflection from a Boundary
+                    - Reflection from Different Boundaries
+                    - Standing Wave Modes
+              - 1-D Reflection:
+                  subsections:
+                    - Reflection from a Wall
+                    - Reflection from a Slope
+                    - Reflection from a Step
+                    - Reflection from a Gaussian Hill
+              - Modes in a Bounded 1-D Domain:
+                  subsections:
+                    - Normal Modes
+                    - Wavenumber Spectrum
+                    - Wave Energy Distribution
+              - Reflection of Plane Waves:
+                  subsections:
+                    - Reflection from a Planar Interface
+                    - Reflection from a Curved Interface
+                    - Reflection from a Rough Interface
+        - Deep Water Gravity Waves:
+            sections:
+              - Wave Generation Mechanism
+              - Wave Dispersion
+              - Wave Energy and Momentum
+              - Wave Breaking and Dissipation
+              - Wave-Induced Currents
+              - Wave-Induced Mixing
+              - Wave-Induced Turbulence
+        - Internal Gravity Waves:
+            sections:
+              - Wave Propagation in a Stratified Medium
+              - Internal Wave Generation Mechanism
+              - Internal Wave Reflection and Refraction
+              - Internal Wave Breaking and Mixing
+              - Internal Tide Generation
+              - Internal Tidal Energy Dissipation
+              - Internal Wave Interactions
+        - Mid-Term Quiz 1:
+            sections:
+              - Quiz Preparation
+              - Quiz Questions and Answers
+        - Tides:
+            sections:
+              - Oceanic Tides
+              - Atmospheric Tides
+              - Tidal Forcing Mechanisms
+              - Tidal Analysis and Prediction
+              - Tidal Dissipation Processes
+              - Tidal Mixing and Vertical Mixing
+        - Large-scale Motions on a Rotating Earth:
+            sections:
+              - Coriolis Force and Geostrophic Balance
+              - Geostrophic Currents
+              - Geostrophic Adjustment
+              - Ekman Transport and Ekman Pumping
+              - Sverdrup Theory of Wind-driven Circulation
+              - Western Boundary Currents
+              - Eastern Boundary Currents
+              - Subtropical and Subpolar Gyres
+        - Rossby Waves and Planetary Scale Motions:
+            sections:
+              - Rossby Wave Dispersion
+              - Rossby Wave Propagation
+              - Planetary Wave Reflection
+              - Planetary Wave Interactions
+              - Planetary Wave Breaking and Mixing
+              - Planetary Wave-Induced Circulation
+              - Atmospheric Blocking and Rossby Wave Breaking
+        - Mid-Term Quiz 2:
+            sections:
+              - Quiz Preparation
+              - Quiz Questions and Answers
+        - Baroclinic Instability and Midlatitude Storms:
+            sections:
+              - Baroclinic Instability Mechanisms
+              - Eady Waves and Baroclinic Waves
+              - Cyclogenesis and Storm Development
+              - Frontogenesis and Frontal Structure
+              - Jet Streams and Midlatitude Circulation
+              - Storm Tracks and Climate Variability
+              - Extratropical Cyclones and Severe Weather
+        - The Equatorial Atmosphere and Ocean:
+            sections:
+              - Equatorial Waves
+              - Equatorial Upwelling and Downwelling
+              - Equatorial Kelvin Waves
+              - Equatorial Rossby Waves
+              - Equatorial Mixed Layer Dynamics
+              - Equatorial Climate Variability
+              - El Niño-Southern Oscillation (ENSO)
+        - El Niño and the Southern Oscillation:
+            sections:
+              - El Niño and La Niña Phenomena
+              - ENSO Teleconnections
+              - ENSO Climate Impacts
+              - ENSO Prediction and Forecasting
+              - ENSO Modelling and Simulations
+              - ENSO and Global Climate Change
+        - Tropical Cyclones:
+            sections:
+              - Tropical Cyclone Formation
+              - Tropical Cyclone Structure and Dynamics
+              - Tropical Cyclone Intensity and Track Prediction
+              - Tropical Cyclone Climatology
+              - Tropical Cyclone Impacts and Mitigation
+              - Tropical Cyclone Modelling and Simulations
+        - Final Exam:
+            sections:
+              - Exam Preparation
+              - Exam Questions and Answers
+```

@@ -1,0 +1,155 @@
+```yaml
+course:
+  Essentials of Geophysics Textbook:
+    chapters:
+      - chapter: Solar System Formation, Accretion, and the Early Thermal State of the Earth
+        sections:
+          - section: Early Solar System
+          - section: Planet Formation
+          - section: Accretion Processes
+          - section: Earth's Early Thermal State
+      - chapter: Rotation and Angular Momentum
+        sections:
+          - section: Earth's Rotation
+          - section: Angular Momentum Conservation
+          - section: Precession and Nutation
+          - section: Earth's Figure and Shape
+      - chapter: The Sun
+        sections:
+          - section: Solar Structure and Composition
+          - section: Solar Energy Generation
+          - section: Solar Activity and Variability
+          - section: Solar Wind and Magnetosphere
+      - chapter: Planetary Formation
+        sections:
+          - section: Nebular Hypothesis
+          - section: Protoplanetary Disk
+          - section: Planetesimal Accretion
+          - section: Giant Planet Formation
+          - section: Terrestrial Planet Formation
+      - chapter: Radioactive Decay
+        sections:
+          - section: Types of Radioactive Decay
+          - section: Half-Life and Decay Constant
+          - section: Radiometric Dating Methods
+          - section: Applications in Geophysics
+      - chapter: Radiometric Dating
+        sections:
+          - section: Principles of Radiometric Dating
+          - section: Dating Techniques (e.g., U-Pb, K-Ar, Rb-Sr)
+          - section: Age Determination of Rocks and Minerals
+          - section: Geochronology Applications
+      - chapter: Heat Sources in the Earth
+        sections:
+          - section: Radioactivity as a Heat Source
+          - section: Heat Flow and Thermal Gradient
+          - section: Geothermal Energy
+          - section: Heat Production in the Mantle
+      - chapter: Meteorites and Earth's Composition
+        sections:
+          - section: Meteorite Types and Classification
+          - section: Meteorite Composition
+          - section: Earth's Bulk Composition
+          - section: Early Earth Differentiation
+      - chapter: Chondrites
+        sections:
+          - section: Chondrite Types and Features
+          - section: Chondrule Formation
+          - section: Chondrule Chronology
+          - section: Chondrule Origin Theories
+      - chapter: Secondary Processing
+        sections:
+          - section: Metamorphism and Metamorphic Rocks
+          - section: Magmatic Processes
+          - section: Volcanism and Igneous Rocks
+          - section: Sedimentation and Sedimentary Rocks
+      - chapter: Achondrites
+        sections:
+          - section: Achondrite Types and Characteristics
+          - section: Formation Mechanisms
+          - section: Petrology and Mineralogy
+          - section: Achondrite Parent Bodies
+      - chapter: Irons and Stony-Irons
+        sections:
+          - section: Iron Meteorites
+          - section: Pallasites
+          - section: Mesosiderites
+          - section: Iron-Stony Meteorites
+      - chapter: The Earth in the Solar System
+        sections:
+          - section: Earth's Position and Orbit
+          - section: Seasons and Climate
+          - section: Earth-Moon System
+          - section: Tides and Gravitational Interactions
+      - chapter: The Earth's Gravitational Field
+        sections:
+          - section: Gravity and Gravitational Force
+          - section: Earth's Gravitational Field
+          - section: Gravity Anomalies
+          - section: Geoid and Reference Ellipsoid
+      - chapter: The Magnetic Field of the Earth
+        sections:
+          - section: Earth's Magnetic Field
+          - section: Magnetic Field Generation
+          - section: Magnetic Field Reversals
+          - section: Paleomagnetism and Geomagnetic Dating
+      - chapter: Seismology
+        sections:
+          - section: Seismic Waves and Earthquakes
+          - section: Earthquake Monitoring and Measurement
+          - section: Earthquake Magnitude and Intensity
+          - section: Earthquake Hazards and Preparedness
+      - chapter: Geodynamics
+        sections:
+          - section: Plate Tectonics
+          - section: Plate Boundaries and Interactions
+          - section: Continental Drift
+          - section: Mantle Convection
+          - section: Mountain Building
+    sections:
+      - section: Introduction to Geophysics
+        subsections:
+          - subsection: Definition and Scope of Geophysics
+          - subsection: Historical Development of Geophysics
+          - subsection: Tools and Techniques in Geophysical Investigations
+      - section: Earth's Interior Structure
+        subsections:
+          - subsection: Earth's Layered Structure
+          - subsection: Composition of the Earth's Interior
+          - subsection: Seismic Techniques for Studying Earth's Interior
+      - section: Geophysical Methods
+        subsections:
+          - subsection: Gravity Methods
+          - subsection: Magnetic Methods
+          - subsection: Electric and Electromagnetic Methods
+          - subsection: Seismic Methods
+          - subsection: Geothermal Methods
+          - subsection: Remote Sensing Methods
+      - section: Geophysical Data Processing and Interpretation
+        subsections:
+          - subsection: Data Acquisition and Processing
+          - subsection: Data Visualization and Analysis
+          - subsection: Inversion Techniques
+          - subsection: Interpretation of Geophysical Data
+      - section: Geophysics in Exploration and Resource Assessment
+        subsections:
+          - subsection: Geophysical Exploration Methods
+          - subsection: Applications in Mineral Exploration
+          - subsection: Applications in Oil and Gas Exploration
+          - subsection: Applications in Groundwater Exploration
+          - subsection: Environmental and Engineering Applications
+      - section: Geophysics in Natural Hazards and Environmental Studies
+        subsections:
+          - subsection: Geophysics for Earthquake Studies
+          - subsection: Geophysics for Volcanic Studies
+          - subsection: Geophysics for Landslide Studies
+          - subsection: Geophysics for Coastal Studies
+          - subsection: Geophysics for Climate Studies
+      - section: Geophysics in Planetary Science
+        subsections:
+          - subsection: Geophysics of the Moon
+          - subsection: Geophysics of Mars
+          - subsection: Geophysics of Other Planetary Bodies
+          - subsection: Comparative Planetary Geophysics
+```
+```

@@ -1,0 +1,30 @@
+textbook:
+  'Engaging Community: Models and Methods for Designers and Planners':
+    chapters:
+      - Public Engagement and Democracy:
+          sections:
+            - Introduction
+            - Demographic Complexity and Public Conversation
+      - Learning Design:
+          sections:
+            - Learning Design and Intro to Gather
+            - Learning Design Session 2
+            - Intro to Class Redesign; Learning Design Session 3
+          subsections:
+            - Design Thinking and User-Centered Design
+            - Prototyping and Iteration
+      - Engagement Design:
+          sections:
+            - Review of Learning Designs and Overview of Client Project
+            - Client Design Brief Session; Facilitation Workshop
+          subsections:
+            - Stakeholder Analysis and Mapping
+            - Community Needs Assessment
+            - Designing Effective Facilitation Workshops
+      - Presentation of Final Design Brief and Learning Designs:
+          sections:
+            - Facilitation Workshop
+            - Closing Reflection
+          subsections:
+            - Final Design Presentation and Feedback
+            - Evaluating Community Engagement Projects

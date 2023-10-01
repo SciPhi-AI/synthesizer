@@ -1,0 +1,128 @@
+```yaml
+course:
+  Architectural Construction and Computation:
+    textbook:
+      title: Architectural Construction and Computation: Principles, Processes, and Applications
+      chapters:
+        - Introduction to Traditional Design:
+            sections:
+              - Traditional Design Principles
+              - Design Process
+              - Design Tools and Techniques
+        - Field Trip:
+            sections:
+              - Visiting Construction Sites
+              - Observing Construction Techniques
+              - Documenting Field Trip Findings
+        - Presentation on Design:
+            sections:
+              - Design Presentations
+              - Design Documentation
+              - Design Review and Feedback
+        - Presentation on Construction:
+            sections:
+              - Construction Presentations
+              - Construction Documentation
+              - Construction Review and Feedback
+        - Computer Controlled Design and Construction:
+            sections:
+              - Introduction to Computer-Aided Design (CAD)
+              - Computer-Aided Manufacturing (CAM)
+              - Digital Fabrication Techniques
+        - CNC Construction:
+            sections:
+              - CNC Machine Operation
+              - CNC File Preparation
+              - CNC Tooling and Material Selection
+        - Field Trip - Sargent Wood Products:
+            sections:
+              - Visiting a Wood Products Manufacturer
+              - Exploring Advanced Construction Techniques
+              - Analyzing Sustainable Construction Practices
+        - Student Proposal Presentations:
+            sections:
+              - Presenting and Defending Project Proposals
+              - Incorporating Feedback into Project Plans
+              - Refining Project Objectives and Scope
+        - Student Final Presentations:
+            sections:
+              - Presenting Completed Projects
+              - Evaluating Project Outcomes
+              - Reflecting on the Design and Construction Process
+        - Assignment 1A:
+            sections:
+              - Introduction to Assignment 1A
+              - Assignment 1A Guidelines and Requirements
+              - Submission and Grading Criteria
+        - Assignment 1B:
+            sections:
+              - Introduction to Assignment 1B
+              - Assignment 1B Guidelines and Requirements
+              - Submission and Grading Criteria
+        - Assignment 2A:
+            sections:
+              - Introduction to Assignment 2A
+              - Assignment 2A Guidelines and Requirements
+              - Submission and Grading Criteria
+        - Assignment 2B:
+            sections:
+              - Introduction to Assignment 2B
+              - Assignment 2B Guidelines and Requirements
+              - Submission and Grading Criteria
+        - Final Project Proposal:
+            sections:
+              - Developing a Project Proposal
+              - Proposal Review and Feedback
+              - Finalizing Project Proposal
+        - Introduction to Traditional Design:
+            sections:
+              - Traditional Design Principles
+              - Design Process
+              - Design Tools and Techniques
+        - Field Trip:
+            sections:
+              - Visiting Construction Sites
+              - Observing Construction Techniques
+              - Documenting Field Trip Findings
+        - Presentation on Design:
+            sections:
+              - Design Presentations
+              - Design Documentation
+              - Design Review and Feedback
+        - Presentation on Construction:
+            sections:
+              - Construction Presentations
+              - Construction Documentation
+              - Construction Review and Feedback
+        - CNC Construction:
+            sections:
+              - CNC Machine Operation
+              - CNC File Preparation
+              - CNC Tooling and Material Selection
+        - Presentation on Design:
+            sections:
+              - Design Presentations
+              - Design Documentation
+              - Design Review and Feedback
+        - Field Trip - Sargent Wood Products:
+            sections:
+              - Visiting a Wood Products Manufacturer
+              - Exploring Advanced Construction Techniques
+              - Analyzing Sustainable Construction Practices
+        - Presentation on Construction:
+            sections:
+              - Construction Presentations
+              - Construction Documentation
+              - Construction Review and Feedback
+        - Student Proposal Presentations:
+            sections:
+              - Presenting and Defending Project Proposals
+              - Incorporating Feedback into Project Plans
+              - Refining Project Objectives and Scope
+        - Student Final Presentations:
+            sections:
+              - Presenting Completed Projects
+              - Evaluating Project Outcomes
+              - Reflecting on the Design and Construction Process
+```
+```

@@ -1,0 +1,60 @@
+textbook:
+  Automatic Speech Recognition: A Comprehensive Guide
+  chapters:
+    - Course Overview:
+        sections:
+        - Introduction
+    - Acoustic Theory of Speech Production:
+        sections:
+        - Speech Production Mechanism
+        - Vocal Tract Model
+        - Source-filter Theory
+    - Speech Sounds:
+        sections:
+        - Phonetics
+        - Vowels and Consonants
+        - Articulatory Phonetics
+        - Acoustic Phonetics
+    - Signal Representation:
+        sections:
+        - Time-domain Representation
+        - Frequency-domain Representation
+        - Fourier Transform
+        - Spectrogram
+    - Vector Quantization:
+        sections:
+        - Codebook Design
+        - Quantization Techniques
+        - Vector Quantization Algorithms
+    - Pattern Classification:
+        sections:
+        - Introduction to Classification
+        - Feature Extraction
+        - Classification Algorithms
+    - Search:
+        sections:
+        - Language Models
+        - Search Algorithms
+        - Beam Search
+    - Hidden Markov Modeling:
+        sections:
+        - Introduction to HMMs
+        - Forward-Backward Algorithm
+        - Viterbi Algorithm
+        - Baum-Welch Algorithm
+    - Acoustic Modeling:
+        sections:
+        - Feature Extraction
+        - Acoustic Models
+        - Gaussian Mixture Models
+        - Maximum Likelihood Estimation
+    - Language Modeling:
+        sections:
+        - N-gram Models
+        - Statistical Language Models
+        - Smoothing Techniques
+    - Graphical Models:
+        sections:
+        - Probabilistic Graphical Models
+        - Markov Random Fields
+        - Conditional Random Fields

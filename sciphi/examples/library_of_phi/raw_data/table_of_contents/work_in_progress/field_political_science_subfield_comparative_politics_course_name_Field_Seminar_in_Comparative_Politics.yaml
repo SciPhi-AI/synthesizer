@@ -1,0 +1,87 @@
+```yaml
+textbook:
+  Field Seminar in Comparative Politics: A Comprehensive Guide
+  chapters:
+    - Introduction:
+        sections:
+        - Questions for Class Discussion
+    - Social structure, classes, and political regimes:
+        sections:
+        - Aristotle.Politics, Book III, Parts 7-8, classics.mit.edu
+        subsections:
+        - Social Structure and its Impact on Political Regimes
+        - Classes and their Influence on Political Systems
+    - The role of culture in democracy and economic growth:
+        sections:
+        - Cultural Factors in Democracy
+        - Cultural Factors in Economic Growth
+        subsections:
+        - The Relationship Between Culture and Democracy
+        - The Relationship Between Culture and Economic Growth
+    - Constitutional choices and governmental performance:
+        sections:
+        - Constitutional Choices and their Impact on Governmental Performance
+        subsections:
+        - Comparative Analysis of Different Constitutional Choices
+        - Assessing Governmental Performance based on Constitutional Choices
+    - Leadership:
+        sections:
+        - Leadership Styles and their Impact on Politics
+        subsections:
+        - Comparing Different Leadership Styles
+        - The Influence of Leadership on Political Systems
+    - The state and state formation:
+        sections:
+        - The Concept of the State and its Formation
+        subsections:
+        - The Evolution of the State
+        - Factors Influencing State Formation
+    - Modernization and development:
+        sections:
+        - Modernization Theories and their Implications for Development
+        subsections:
+        - Modernization and Economic Development
+        - Modernization and Political Development
+    - Political institutions and economic growth:
+        sections:
+        - The Role of Political Institutions in Economic Growth
+        subsections:
+        - Comparative Analysis of Political Institutions and Economic Growth
+        - Assessing the Impact of Political Institutions on Economic Development
+    - Nationalism:
+        sections:
+        - Nationalism and its Effect on Political Systems
+        subsections:
+        - The Relationship Between Nationalism and State Formation
+        - Nationalism and its Impact on International Relations
+    - Parties, party systems, and electoral behavior:
+        sections:
+        - Parties and their Role in Political Systems
+        - Party Systems and their Impact on Politics
+        - Electoral Behavior and its Influence on Political Outcomes
+        subsections:
+        - Comparative Analysis of Political Parties
+        - Understanding Different Party Systems
+        - Analyzing Electoral Behavior in Comparative Politics
+    - Clientelism and patronage politics:
+        sections:
+        - Clientelism and its Role in Political Systems
+        - Patronage Politics and its Impact on Governance
+        subsections:
+        - Comparative Analysis of Clientelism in Different Countries
+        - Assessing the Consequences of Patronage Politics
+    - Corruption and monitoring government:
+        sections:
+        - Corruption and its Effects on Governance
+        - Monitoring Government to Counter Corruption
+        subsections:
+        - Comparative Analysis of Corruption Levels in Different Countries
+        - Strategies for Monitoring Government Actions
+    - Emergence and persistence of popular self-government in Athens:
+        sections:
+        - The Emergence of Popular Self-Government in Athens
+        - Factors Contributing to the Persistence of Self-Government in Athens
+        subsections:
+        - The Athenian Democracy: Historical Context and Evolution
+        - Analyzing the Factors that Sustained Popular Self-Government in Athens
+```

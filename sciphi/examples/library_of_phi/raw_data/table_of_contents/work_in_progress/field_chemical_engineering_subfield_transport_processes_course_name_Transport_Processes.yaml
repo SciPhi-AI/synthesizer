@@ -1,0 +1,59 @@
+textbook:
+  Transport Processes: A Comprehensive Guide
+  chapters:
+    - Chapter 1: Introduction and Overview
+      sections:
+        - Section 1.1: Demonstration of Modes of Heat and Mass Transfer
+    - Chapter 2: Conservation of Energy
+      sections:
+        - Section 2.1: Heat Diffusion Equation
+        - Section 2.2: Boundary and Initial Conditions
+    - Chapter 3: Steady-state Conduction in Plane Wall and Radial Geometries
+      sections:
+        - Section 3.1: Recitation 1
+    - Chapter 4: Conduction with Energy Generation
+      sections:
+        - Section 4.1: Extended Surfaces
+    - Chapter 5: Two-dimensional Conduction
+      sections:
+        - Section 5.1: Recitation 2
+    - Chapter 6: Transient Conduction with Spatial Effects
+      sections:
+        - Section 6.1: Recitation 3
+    - Chapter 7: Semi-infinite Solid
+      sections:
+        - Section 7.1: Multi-dimensional Effects
+        - Section 7.2: Introduction to Radiation
+    - Chapter 8: Radiation Processes
+      sections:
+        - Section 8.1: Recitation 4
+        - Section 8.2: Blackbody Exchange
+    - Chapter 9: Gray Surfaces
+      sections:
+        - Section 9.1: Recitation 5
+        - Section 9.2: Recitation 6
+    - Chapter 10: External Flow Correlations
+      sections:
+        - Section 10.1: Recitation 7
+    - Chapter 11: Convection Correlations
+      sections:
+        - Section 11.1: Heat Exchangers
+        - Section 11.2: Recitation 8
+    - Chapter 12: Introduction to Mass Transfer
+      sections:
+        - Section 12.1: Conservation of Species
+        - Section 12.2: Steady Diffusion
+        - Section 12.3: Recitation 9
+    - Chapter 13: Diffusion with Homogeneous Reaction
+      sections:
+        - Section 13.1: Diffusion with Heterogeneous Reaction
+        - Section 13.2: Transient Diffusion
+        - Section 13.3: Recitation 11
+    - Chapter 14: Convective Mass Transfer
+      sections:
+        - Section 14.1: Mass Transfer Boundary Layers
+        - Section 14.2: Recitation 12
+    - Chapter 15: Interphase Mass Transfer
+      sections:
+        - Section 15.1: Simultaneous Heat and Mass Transfer
+        - Section 15.2: Recitation 13

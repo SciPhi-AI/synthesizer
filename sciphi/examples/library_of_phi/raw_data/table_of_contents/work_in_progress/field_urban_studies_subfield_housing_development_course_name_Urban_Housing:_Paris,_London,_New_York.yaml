@@ -1,0 +1,65 @@
+textbook:
+  'Urban Housing: Paris, London, New York - A Comprehensive Study':
+    chapters:
+    - Introduction:
+        sections:
+        - Historical Background of Urban Housing
+        - Evolution of Architectural Focus
+    - Chapter 1: The Paris Hotel (1550-1830):
+        sections:
+        - Architecture and Design Features
+        - Influence of French Hôtel on Modern Architecture
+        - Case Studies and Examples
+    - Chapter 2: The London Townhouse (1550-1830):
+        sections:
+        - Characteristics of London Townhouses
+        - Architectural Styles and Influences
+        - Notable London Townhouses
+    - Chapter 3: The NY Rowhouse and Tenement (1625-1875):
+        sections:
+        - Development of the Rowhouse and Tenement
+        - Architectural Elements and Layout
+        - Social and Economic Factors
+    - Chapter 4: The NY Apartment (1875-1925):
+        sections:
+        - Rise of Apartment Buildings in New York
+        - Architectural Features and Innovations
+        - Impact on Urban Housing Landscape
+    - Chapter 5: The Paris Apartment (1850-1925):
+        sections:
+        - Evolution of Parisian Apartment Buildings
+        - Haussmannization and Urban Planning
+        - Significance of Paris Apartments
+    - Chapter 6: Modern Housing Projects (1925-1975):
+        sections:
+        - Shift in Urban Housing Design Philosophy
+        - Experimentation with Modernist Architecture
+        - Case Studies and Critiques
+    - Chapter 7: Seminar I:
+        sections:
+        - Discussion on Urban Housing Concepts
+        - Analysis of Historical Examples
+        subsections:
+        - Importance of Urban Housing in Societal Development
+        - Role of Government Policies in Shaping Urban Housing
+    - Chapter 8: Seminar II:
+        sections:
+        - Contemporary Urban Housing Trends
+        - Sustainability and Green Design
+        subsections:
+        - Impact of Technology on Urban Housing
+        - Strategies for Achieving Sustainable Urban Housing
+    - Chapter 9: Seminar III:
+        sections:
+        - Social and Community Aspects of Urban Housing
+        - Gentrification and Affordable Housing
+        subsections:
+        - Community Engagement in Urban Housing Projects
+        - Balancing Gentrification and Affordable Housing
+    - Chapter 10: Seminar IV:
+        sections:
+        - Future of Urban Housing
+        - Innovative Approaches and Technologies
+        subsections:
+        - Technological Advancements Shaping the Future of Urban Housing
+        - Experimental Approaches to Urban Housing Development

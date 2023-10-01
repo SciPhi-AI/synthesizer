@@ -1,0 +1,23 @@
+textbook:
+  Advanced Circuit Techniques: A Comprehensive Guide to Circuit Design
+  chapters:
+    - Sample and Hold Applications:
+        sections:
+        - S & H Four Diode Gate
+        - Buffers
+    - Op Amps and Z Amps:
+        sections:
+        - Op Amps and Z Amps Basics
+        - Op Amps and Z Amps Applications
+    - Digital-to-Analog Converters:
+        sections:
+        - D/A PWM, Dividers, Ladders
+        - D/A Voltage and Current Switches
+        - D/A Offset Correction, References
+        - D/A Examples
+    - Analog-to-Digital Converters:
+        sections:
+        - A/D Counters, SAR, Flash
+        - A/D Folders, Integrating
+        - A/D Dual Slope Converters
+        - A/D Examples

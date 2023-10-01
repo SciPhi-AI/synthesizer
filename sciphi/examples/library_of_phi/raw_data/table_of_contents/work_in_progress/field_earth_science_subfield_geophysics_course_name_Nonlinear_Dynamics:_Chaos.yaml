@@ -1,0 +1,59 @@
+textbook:
+  'A Comprehensive Guide to Nonlinear Dynamics and Chaos':
+    chapters:
+    - 'Chapter 1: Introduction to Nonlinear Dynamics: Chaos':
+        sections:
+        - 'Section 1.1: Flows and Bifurcations in One Dimension'
+        - 'Section 1.2: Pendulum and Stability in Two Dimensional Systems'
+        - 'Section 1.3: Dissipation and Contraction of Volumes in Phase Space'
+        - 'Section 1.4: Forced Oscillators and Limit Cycles'
+        - 'Section 1.5: Bifurcations in Two Dimensions'
+    - 'Chapter 2: Spectral Analysis for Dynamical Systems':
+        sections:
+        - 'Section 2.1: Poincaré Sections'
+        - 'Section 2.2: Fluid Dynamics and Rayleigh-Benard Convection'
+        - 'Section 2.3: Introduction to Strange Attractors'
+        - 'Section 2.4: Lorenz Equations'
+        - 'Section 2.5: Hénon Attractor'
+    - 'Chapter 3: Fractal Dimension':
+        sections:
+        - 'Section 3.1: Lyapunov Exponents'
+        - 'Section 3.2: Period Doubling Route to Chaos'
+        - 'Section 3.3: Intermittency'
+    - 'Chapter 4: Applications of Nonlinear Dynamics and Chaos':
+        sections:
+        - 'Section 4.1: Chaos in Biological Systems'
+        - 'Section 4.2: Chaos in Engineering Systems'
+        - 'Section 4.3: Chaos in Economic Systems'
+    - 'Chapter 5: Final Project Oral Presentation':
+        sections:
+        - 'Section 5.1: Guidelines for the Final Project'
+        - 'Section 5.2: Effective Presentation Techniques'
+        - 'Section 5.3: Q&A Session Preparation'
+    - 'Chapter 6: Advanced Topics in Nonlinear Dynamics':
+        sections:
+        - 'Section 6.1: Nonlinear Time Series Analysis'
+        - 'Section 6.2: Chaos Control and Synchronization'
+        - 'Section 6.3: Chaotic Maps and Fractals'
+    - 'Chapter 7: Computer Simulations in Nonlinear Dynamics':
+        sections:
+        - 'Section 7.1: Introduction to Numerical Methods'
+        - 'Section 7.2: Simulation of Nonlinear Systems'
+        - 'Section 7.3: Visualization of Chaotic Behavior'
+    - 'Chapter 8: Mathematical Tools for Nonlinear Dynamics':
+        sections:
+        - 'Section 8.1: Differential Equations for Nonlinear Systems'
+        - 'Section 8.2: Stability Analysis'
+        - 'Section 8.3: Nonlinear Control Theory'
+        - 'Section 8.4: Chaos Theory and Symbolic Dynamics'
+    - 'Chapter 9: Chaos and Complexity in Physical Systems':
+        sections:
+        - 'Section 9.1: Chaos in Classical Mechanics'
+        - 'Section 9.2: Chaos in Quantum Mechanics'
+        - 'Section 9.3: Chaos in Statistical Mechanics'
+    - 'Chapter 10: Chaos and Information Theory':
+        sections:
+        - 'Section 10.1: Entropy and Information Measures'
+        - 'Section 10.2: Chaos-Based Cryptography'
+        - 'Section 10.3: Chaos and Data Compression'
+        - 'Section 10.4: Applications of Chaos in Communication Systems'

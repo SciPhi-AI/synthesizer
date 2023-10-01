@@ -1,0 +1,69 @@
+```yaml
+textbook:
+  Fundamentals of Materials Science: A Comprehensive Guide
+    chapters:
+    - 'Chapter 1: Orientation: Research and Careers in Materials Science and Engineering':
+        sections:
+        - 'Section 1.1: Classical or Quantum: Electrons as Waves, Wave Mechanics'
+        - 'Section 1.2: Schrödinger’s Equation and Discrete Energy States of a Confined Electron'
+        - 'Section 1.3: Free Electrons, Electrons in a Metal, and the Scanning Tunneling Microscope'
+        - 'Section 1.4: Curiosity Killed the Cat: General Principles of Quantum Mechanics'
+        - 'Section 1.5: The Hydrogen Atom'
+        - 'Section 1.6: Alphabet Soup: The Periodic Table'
+    - 'Chapter 2: The Variational Principle; Application to Hydrogen Atom':
+        sections:
+        - 'Section 2.1: Molecules from Atoms: Energy Minimization, Hybridization of Atomic Orbitals'
+        - 'Section 2.2: Bonding in Molecules: Hartree and Hartree-Fock Equations, Symmetries, Bond Order'
+        - 'Section 2.3: Polymers Part 1: Diagonalization on a Basis, Huckel Model'
+        - 'Section 2.4: Quantum Oscillation'
+        - 'Section 2.5: Point Groups and Bravais Lattices'
+    - 'Chapter 3: Structure of Solids':
+        sections:
+        - 'Section 3.1: Symmetry Operations'
+        - 'Section 3.2: X-ray Diffraction'
+        - 'Section 3.3: X-rays at Work: Laue Condition, Ewald Construction, Bragg’s Law, Powder Diffraction'
+        - 'Section 3.4: From Diffraction to Structure'
+        - 'Section 3.5: Symmetries and Tensors'
+    - 'Chapter 4: Non-crystalline Materials':
+        sections:
+        - 'Section 4.1: Polymers Part 2'
+        - 'Section 4.2: Glasses'
+        - 'Section 4.3: Liquid Crystals'
+        - 'Section 4.4: Final Exam'
+    - 'Chapter 5: Thermodynamics':
+        sections:
+        - 'Section 5.1: Recitation: Structure and Bonding'
+        - 'Section 5.2: Recitation: Thermodynamics'
+        - 'Section 5.3: Recitation: Practice Problem Solutions'
+        - 'Section 5.4: Practice Problems'
+        - 'Section 5.5: Mercury Software'
+        - 'Section 5.6: Review Session'
+    - 'Chapter 6: Assignments':
+        sections:
+        - 'Section 6.1: Problem Set 1'
+        - 'Section 6.2: Problem Set 2'
+        - 'Section 6.3: Problem Set 3'
+        - 'Section 6.4: Problem Set 4'
+        - 'Section 6.5: Problem Set 5'
+        - 'Section 6.6: Problem Set 6'
+    - 'Chapter 7: Exams':
+        sections:
+        - 'Section 7.1: Quiz 1'
+        - 'Section 7.2: Quiz 2'
+        - 'Section 7.3: Quiz 3'
+        - 'Section 7.4: Quiz 4'
+    - 'Chapter 8: Syllabus':
+        sections:
+        - 'Section 8.1: Course Number and Name'
+        - 'Section 8.2: Resource Level'
+    - 'Chapter 9: Calendar':
+        sections:
+        - 'Section 9.1: Lecture'
+        - 'Section 9.2: Recitation: Structure and Bonding'
+        - 'Section 9.3: Recitation: Thermodynamics'
+        - 'Section 9.4: Lab'
+    - 'Chapter 10: Projects':
+        sections:
+        - 'Section 10.1: None'
+```
+```

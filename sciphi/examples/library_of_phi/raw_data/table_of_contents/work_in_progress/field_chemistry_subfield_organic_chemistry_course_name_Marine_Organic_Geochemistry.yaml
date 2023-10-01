@@ -1,0 +1,75 @@
+textbook:
+  Marine Organic Geochemistry: A Comprehensive Guide
+  chapters:
+    - Organic Geochemistry Methods:
+      sections:
+        - Organic Geochemistry Methods I
+        - Organic Geochemistry Methods II
+    - Cycling and Composition of Dissolved Organic Carbon, Dissolved Organic Nitrogen, and Dissolved Organic Phosphorus:
+      sections:
+        - Dissolved Organic Carbon (DOC) Cycling and Composition
+        - Dissolved Organic Nitrogen (DON) Cycling and Composition
+        - Dissolved Organic Phosphorus (DOP) Cycling and Composition
+    - Molecular Markers: Applications in Marine Organic Geochemistry:
+      sections:
+        - Introduction to Molecular Markers
+        - Techniques and Analysis of Molecular Markers
+    - Stable Carbon Isotopes: Tracing Organic Matter Sources and Transformation:
+      sections:
+        - Carbon Isotope Fractionation in Marine Environments
+        - Stable Carbon Isotope Analysis Techniques
+    - Preservation and Diagenesis of Organic Carbon in Marine Sediments:
+      sections:
+        - Factors Influencing Organic Carbon Preservation
+        - Diagenetic Processes and Alteration of Organic Carbon
+    - Particulate Organic Carbon Cycling in Marine Environments:
+      sections:
+        - Production and Fate of Particulate Organic Carbon
+        - Particle Size and Composition in the POC Pool
+    - Terrestrial Organic Carbon Inputs to Marine Sediments: Sources and Transport Mechanisms:
+      sections:
+        - Terrestrial Organic Carbon Sources and Composition
+        - Riverine Transport and Deposition Processes
+    - Molecular Markers as Tools for Tracing Organic Matter Sources and Transformation:
+      sections:
+        - Molecular Markers for Terrestrial Inputs
+        - Molecular Markers for Marine Primary Production
+    - Radiocarbon Dating Techniques in Organic Materials:
+      sections:
+        - Principles and Applications of Radiocarbon Dating
+        - Sample Collection and Preparation for Radiocarbon Analysis
+    - Biogeochemical Cycling in Anoxic Marine Sediments: Role of Microbial Communities:
+      sections:
+        - Anaerobic Metabolism and Microbial Communities in Anoxic Sediments
+        - Biogeochemical Processes in Sulfidic and Methanic Sediments
+    - Organic Phosphorus: Sources, Cycling, and Biological Significance:
+      sections:
+        - Organic Phosphorus in Marine Environments
+        - Phosphorus Cycling and Limitation in Marine Ecosystems
+    - Old Carbon in the Modern Marine Environment: Insights from Radiocarbon Analysis:
+      sections:
+        - Radiocarbon Dating of Ancient Carbon in Modern Systems
+        - Implications of Old Carbon for Carbon Cycling Studies
+    - Introduction to Organic Chemicals of Environmental Concern:
+      sections:
+        - Sources and Fate of Organic Contaminants in Marine Environments
+        - Physical and Chemical Properties of Organic Contaminants
+        - Ecological Impacts and Human Health Risks
+    - Fate of Organic Matter Over Geologic Time: From Sedimentation to Petroleum Formation:
+      sections:
+        - Sedimentation and Preservation of Organic Matter
+        - Diagenetic Processes and the Formation of Kerogen
+        - Petroleum Generation and Migration
+    - Course Review and Recapitulation of Key Concepts:
+      sections:
+        - Major Themes and Concepts in Marine Organic Geochemistry
+        - Summary of Key Findings and Future Directions
+    - Student Presentations and Case Studies:
+      sections:
+        - Case Study 1: Biogeochemical Cycling in Oxygen Minimum Zones
+        - Case Study 2: Organic Contaminant Transport in Coastal Ecosystems
+    - Final Exam: Comprehensive Assessment of Course Material:
+      sections:
+        - Multiple Choice Questions
+        - Short Answer Questions
+        - Essay Questions
