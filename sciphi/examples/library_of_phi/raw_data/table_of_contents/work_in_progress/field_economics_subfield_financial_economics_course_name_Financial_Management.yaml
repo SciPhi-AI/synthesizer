@@ -1,0 +1,101 @@
+course:
+  Financial Management Textbook:
+    chapters:
+      - Introduction:
+          sections:
+            - What is Finance?
+            - Types of Questions
+      - Principles of Valuation:
+          sections:
+            - Introduction to Valuation
+            - Principles of Valuation
+          subsections:
+            - Understanding Cash Flows
+            - Time Value of Money
+      - Evaluating Projects:
+          sections:
+            - Evaluating Projects (1)
+            - 'Acid Rain: The Southern Co.'
+            - Evaluating Projects (2)
+          subsections:
+            - Net Present Value (NPV) Method
+            - Internal Rate of Return (IRR) Method
+            - Payback Period Method
+            - Profitability Index Method
+      - Firm Valuation:
+          sections:
+            - Firm Valuation (1)
+            - Firm Valuation (2)
+            - Cooper Industries, Inc.
+          subsections:
+            - Dividend Discount Model (DDM)
+            - Price/Earnings (P/E) Ratio
+            - Free Cash Flow (FCF) Valuation
+      - Risk and Return:
+          sections:
+            - Introduction to Risk and Return
+            - Portfolio Theory
+            - CAPM
+            - Discount Rates in Practice
+            - Cost of Capital at Ameritrade
+          subsections:
+            - Standard Deviation and Variance
+            - Covariance and Correlation
+            - Diversification and Risk Reduction
+            - Beta and Systematic Risk
+      - Raising Capital:
+          sections:
+            - Raising Capital
+            - Capital Structure
+            - Two Cases
+          subsections:
+            - Debt Financing
+            - Equity Financing
+            - Weighted Average Cost of Capital (WACC)
+      - Market Efficiency:
+          sections:
+            - Market Efficiency
+          subsections:
+            - Efficient Market Hypothesis (EMH)
+            - Weak Form Efficiency
+            - Semi-Strong Form Efficiency
+            - Strong Form Efficiency
+      - Discounting:
+          sections:
+            - Discounting
+          subsections:
+            - Present Value (PV)
+            - Future Value (FV)
+            - Discounted Cash Flow (DCF)
+            - Discounted Payback Period
+      - Project Cashflows:
+          sections:
+            - Project Cashflows
+          subsections:
+            - Incremental Cash Flows
+            - Sunk Costs and Opportunity Costs
+            - Pro Forma Cash Flows
+            - Terminal Cash Flow
+      - Statistics of Risk and Return:
+          sections:
+            - Statistics of Risk and Return
+          subsections:
+            - Expected Return
+            - Variance and Standard Deviation
+            - Covariance and Correlation Coefficient
+            - Coefficient of Determination
+      - Leverage and Risk:
+          sections:
+            - Leverage and Risk
+          subsections:
+            - Operating Leverage
+            - Financial Leverage
+            - Combined Leverage
+            - Break-Even Analysis
+      - Review:
+          sections:
+            - Review
+          subsections:
+            - Conceptual Questions
+            - Numerical Problems
+            - Case Studies

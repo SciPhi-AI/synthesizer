@@ -1,0 +1,103 @@
+```yaml
+textbook:
+  Quantum Physics III: Advanced Topics in Quantum Mechanics
+    chapters:
+    - Perturbation Theory:
+        sections:
+        - Time Independent Perturbation Theory:
+            subsections:
+            - Introduction to Perturbation Theory
+            - First-order Perturbation Theory
+            - Second-order Perturbation Theory
+            - Higher-order Perturbation Theory
+        - Degenerate Perturbation Theory:
+            subsections:
+            - Introduction to Degenerate Perturbation Theory
+            - First-order Degenerate Perturbation Theory
+            - Second-order Degenerate Perturbation Theory
+            - Higher-order Degenerate Perturbation Theory
+        - Time Dependent Perturbation Theory:
+            subsections:
+            - Introduction to Time Dependent Perturbation Theory
+            - First-order Time Dependent Perturbation Theory
+            - Second-order Time Dependent Perturbation Theory
+            - Higher-order Time Dependent Perturbation Theory
+        - Fermi’s Golden Rule:
+            subsections:
+            - Introduction to Fermi’s Golden Rule
+            - Transition Rates and Probability
+            - Fermi’s Golden Rule in Quantum Mechanics
+            - Applications of Fermi’s Golden Rule
+        - Fermi’s Golden Rule for Harmonic Transitions:
+            subsections:
+            - Introduction to Harmonic Transitions
+            - Fermi’s Golden Rule for Harmonic Transitions in Quantum Mechanics
+            - Applications of Fermi’s Golden Rule for Harmonic Transitions
+    - Hydrogen Fine Structure:
+        sections:
+        - Hydrogen Atom Fine Structure:
+            subsections:
+            - Introduction to Hydrogen Atom Fine Structure
+            - Spin-Orbit Interaction
+            - Zeeman Effect
+            - Stark Effect
+            - Hyperfine Structure
+    - Semiclassical Approximation:
+        sections:
+        - Introduction to the Semiclassical Approximation:
+            subsections:
+            - Classical and Quantum Mechanics
+            - WKB Method
+            - Bohr-Sommerfeld Quantization Rule
+            - Applications of the Semiclassical Approximation
+        - The Semiclassical WKB Approximation:
+            subsections:
+            - WKB Approximation for One-Dimensional Systems
+            - WKB Approximation for Multidimensional Systems
+            - Tunneling in Quantum Mechanics
+            - Applications of the Semiclassical WKB Approximation
+    - Particles in Electromagnetic Fields:
+        sections:
+        - Charged Particles in Electromagnetic Fields:
+            subsections:
+            - Motion of Charged Particles in Electric Fields
+            - Motion of Charged Particles in Magnetic Fields
+            - Motion of Charged Particles in Electromagnetic Fields
+            - Applications of Particles in Electromagnetic Fields
+    - Adiabatic Approximation:
+        sections:
+        - Adiabatic Approximation:
+            subsections:
+            - Introduction to Adiabatic Approximation
+            - Adiabatic Theorem
+            - Applications of Adiabatic Approximation
+        - Adiabatic Approximation: Berry’s Phase:
+            subsections:
+            - Introduction to Berry’s Phase
+            - Geometric Phase in Quantum Mechanics
+            - Berry’s Phase in Adiabatic Approximation
+            - Applications of Berry’s Phase
+        - Adiabatic Approximation: Molecules:
+            subsections:
+            - Introduction to Adiabatic Approximation for Molecules
+            - Born-Oppenheimer Approximation
+            - Molecular Vibrations and Rotations
+            - Applications of Adiabatic Approximation for Molecules
+    - Scattering:
+        sections:
+        - Scattering:
+            subsections:
+            - Introduction to Scattering Theory
+            - Scattering Amplitude and Cross Section
+            - Partial Wave Analysis
+            - Applications of Scattering Theory
+    - Identical Particles:
+        sections:
+        - Identical Particles:
+            subsections:
+            - Symmetrization and Exchange Postulate
+            - Two-Particle Systems
+            - Identical Particles in Many-Body Systems
+            - Applications of Identical Particles
+```
+```

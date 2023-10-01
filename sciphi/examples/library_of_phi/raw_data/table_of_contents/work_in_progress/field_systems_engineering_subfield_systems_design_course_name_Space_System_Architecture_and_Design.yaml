@@ -1,0 +1,27 @@
+course:
+  textbook:
+    topics:
+      - chapter 1: Introduction and Motivation
+        sections:
+          - section 1: Space Systems and Definitions
+          - section 2: Classic Solutions
+      - chapter 2: MATE: Tradespace Exploration
+        sections:
+          - section 1: Applied Utility Theory
+          - section 2: Modeling and Exploring the Tradespace
+          - section 3: Integrated Concurrent Engineering
+      - chapter 3: Examples and Simulation
+        sections:
+          - section 1: XTOS and SPACETUG and MATE-CON Simulation
+          - section 2: Efficient Searches of Tradespaces
+      - chapter 4: Uncertainty and Risk
+        sections:
+          - section 1: Flexibility for Space Systems I
+          - section 2: Flexibility for Space Systems II
+          - section 3: Policy Issues in Space System Architectures
+      - chapter 5: Learning Objectives
+        sections:
+          - section 1: Definition of architecture
+          - section 2: Different worlds of space
+          - section 3: Definitions of space systems and satellites
+          - section 4: Description of different types and classes of space system architectures

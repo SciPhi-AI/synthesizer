@@ -1,0 +1,52 @@
+textbook:
+  'Exploring New Global Agenda: Innovations in Information Technologies for 21st Century Challenges':
+    chapters:
+    - Chapter 1: Introducing Technology in International Relations
+        sections:
+        - Section 1.1: Course Overview
+        - Section 1.2: The Role of Technology in Economic Interconnectedness
+        - Section 1.3: Impact of Technology on International Relations
+    - Chapter 2: Examples of Technology Advances
+        sections:
+        - Section 2.1: Recent Technological Advancements
+        - Section 2.2: Effects of Technology on International Relations and Policies
+    - Chapter 3: Global Agenda! Simulation
+        sections:
+        - Section 3.1: Simulation Overview
+        - Section 3.2: Key Concepts and Principles of the Global Agenda
+        - Section 3.3: Real-World Applications of the Global Agenda
+    - Chapter 4: Governing the Internet
+        sections:
+        - Section 4.1: Internet Governance Frameworks
+        - Section 4.2: Digital Rights and Privacy in the Digital Era
+        - Section 4.3: Cybersecurity Threats and Protection
+    - Chapter 5: Technology for Government Accountability: Dangers and Opportunities
+        sections:
+        - Section 5.1: Transparency and Open Data in Government
+        - Section 5.2: Surveillance and Privacy Concerns in the Digital Age
+        - Section 5.3: Whistleblowing and Leaks: Challenges and Impacts
+    - Chapter 6: System Dynamics and International Relations
+        sections:
+        - Section 6.1: Feedback Loops and Causal Relationships in Complex Systems
+        - Section 6.2: Modeling Complex Systems for Policy Analysis
+        - Section 6.3: Policy Design and Implementation in Dynamic Environments
+    - Chapter 7: Knowledge and Information for Sustainable Development
+        sections:
+        - Section 7.1: Access and Equity to Information in Sustainable Development
+        - Section 7.2: Data-driven Decision Making for Sustainable Development
+        - Section 7.3: Technology for Environmental Sustainability
+    - Chapter 8: Presentations for Assignment 3
+        sections:
+        - Section 8.1: Presentation Guidelines for Assignment 3
+        - Section 8.2: Topics and Themes for Assignment 3 Presentations
+        - Section 8.3: Evaluation Criteria for Assignment 3 Presentations
+    - Chapter 9: Final Project
+        sections:
+        - Section 9.1: Final Project Requirements
+        - Section 9.2: Research and Analysis for the Final Project
+        - Section 9.3: Presentation and Defense of the Final Project
+    - Chapter 10: Assignments
+        sections:
+        - Section 10.1: Assignment 1: Web Technologies and Political Systems
+        - Section 10.2: Assignment 2: Policy Issue Debate
+        - Section 10.3: Final Project: Topic Selection and Proposal

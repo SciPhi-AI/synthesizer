@@ -1,0 +1,112 @@
+textbook:
+  Economic Analysis for Business Decisions: A Comprehensive Guide
+  chapters:
+    - Introduction to Economic Analysis:
+      sections:
+        - 'Types of Markets: Competitive, Monopoly/Monopsony and Oligopoly/Oligopsony':
+          subsections:
+            - Definition and Characteristics of Competitive Markets
+            - Types of Monopoly and Monopsony
+            - Types of Oligopoly and Oligopsony
+        - The Boundaries of a Market:
+          subsections:
+            - Geographic Boundaries
+            - Product Boundaries
+            - Temporal Boundaries
+    - Supply and Demand:
+      sections:
+        - Review of Own- and Cross-price Elasticities:
+          subsections:
+            - Definition and Calculation of Own- and Cross-price Elasticities
+            - Interpretation of Elasticity Values
+        - Market Definition:
+          subsections:
+            - Geographic Market Definition
+            - Product Market Definition
+            - Temporal Market Definition
+        - Consumer and Producer Surplus:
+          subsections:
+            - Calculation and Interpretation of Consumer Surplus
+            - Calculation and Interpretation of Producer Surplus
+        - Use of Supply and Demand Curves:
+          subsections:
+            - Graphical Representation of Supply and Demand
+            - Determination of Equilibrium Price and Quantity
+        - Review of Logarithms:
+          subsections:
+            - Properties of Logarithms
+            - Logarithmic Transformation of Variables
+    - Production and Cost:
+      sections:
+        - Review of the Economics of Production and Cost:
+          subsections:
+            - Production Function and its Characteristics
+            - Cost Concepts: Total, Average, and Marginal Cost
+        - Review of Production and Cost Concepts:
+          subsections:
+            - Short-run vs. Long-run Production
+            - Economies of Scale and Scope
+    - Demand and Market Power:
+      sections:
+        - Review of the Economics of Demand:
+          subsections:
+            - Law of Demand and its Determinants
+            - Demand Elasticity and its Importance
+        - Network Externalities and Demand Concepts:
+          subsections:
+            - Positive and Negative Network Externalities
+            - Network Effects on Demand
+        - Review of Market Power:
+          subsections:
+            - Types and Sources of Market Power
+            - Measuring Market Power
+        - Review of Pricing with Market Power:
+          subsections:
+            - Price Discrimination Strategies
+            - Price Leadership and Collusion
+    - Game Theory:
+      sections:
+        - Review of Game Theory:
+          subsections:
+            - Basic Concepts and Terminology
+            - Types of Games: Cooperative and Non-cooperative
+        - Collusion and Cartels:
+          subsections:
+            - Types of Collusion
+            - Formation and Stability of Cartels
+    - Auctions and Common Property Resources:
+      sections:
+        - Review of Auctions and Common Property Resources:
+          subsections:
+            - Types of Auctions: English, Dutch, and Sealed-bid
+            - Tragedy of the Commons and Resource Allocation
+    - Transfer Pricing and Asymmetric Information:
+      sections:
+        - Review of Transfer Pricing and Asymmetric Information:
+          subsections:
+            - Definition and Importance of Transfer Pricing
+            - Types of Asymmetric Information
+        - Information Asymmetry and Market Efficiency:
+          subsections:
+            - Adverse Selection and Moral Hazard
+            - Signaling and Screening in Markets
+    - Midterm Exam:
+      sections:
+        - Review for Midterm Exam:
+          subsections:
+            - Key Topics and Concepts for Midterm Exam
+            - Practice Questions for Midterm Exam
+        - Midterm Exam:
+          subsections:
+            - Format and Structure of Midterm Exam
+            - Sample Midterm Exam Paper
+    - Final Exam:
+      sections:
+        - Review for Final Exam:
+          subsections:
+            - Comprehensive Review of Course Material
+            - Practice Questions for Final Exam
+        - Final Examination:
+          subsections:
+            - Format and Structure of Final Exam
+            - Sample Final Exam Paper

@@ -1,0 +1,122 @@
+textbook:
+  Cognitive & Behavioral Genetics: A Comprehensive Guide
+
+chapters:
+- General Overview:
+  sections:
+  - Introduction to Cognitive & Behavioral Genetics
+  - Historical Background
+  - Nature vs. Nurture Debate
+    subsections:
+    - Nature vs. Nurture in Cognitive Abilities
+    - Nature vs. Nurture in Behavioral Traits
+
+- Remedial Genetics:
+  sections:
+  - Basic Principles of Genetics
+  - Mendelian Inheritance
+  - Chromosomal Abnormalities
+    subsections:
+    - Autosomal Chromosomal Abnormalities
+    - Sex Chromosome Abnormalities
+
+- Gene Structure / Function:
+  sections:
+  - DNA Structure and Replication
+  - Gene Expression and Regulation
+  - Protein Synthesis
+    subsections:
+    - Transcription and Translation
+    - Regulation of Gene Expression
+    - Protein Folding and Modification
+
+- Single Gene Mutations:
+  sections:
+  - Types of Genetic Mutations
+  - Genetic Disorders Caused by Single Gene Mutations
+  - Inheritance Patterns of Single Gene Disorders
+    subsections:
+    - Point Mutations
+    - Insertions and Deletions
+    - Frameshift Mutations
+    - Autosomal Dominant Disorders
+    - Autosomal Recessive Disorders
+    - X-Linked Disorders
+
+- Neurogenetics:
+  sections:
+  - Genetics of Neurological Disorders
+  - Role of Genes in Brain Development and Function
+  - Neurotransmitter Systems and Genetics
+    subsections:
+    - Neurodegenerative Disorders
+    - Neurodevelopmental Disorders
+    - Neurotransmitter Imbalances
+
+- Environmental and Genetic Context:
+  sections:
+  - Gene-Environment Interaction
+  - Gene-Environment Correlation
+  - Epigenetics and Gene Expression
+    subsections:
+    - Gene-Environment Interplay in Cognitive Abilities
+    - Gene-Environment Interplay in Behavioral Traits
+    - Epigenetic Mechanisms in Gene Regulation
+
+- Williams Syndrome:
+  sections:
+  - Characteristics of Williams Syndrome
+  - Genetic Basis of Williams Syndrome
+  - Cognitive and Behavioral Features
+    subsections:
+    - Physical Features of Williams Syndrome
+    - Genetics of Elastin Gene
+    - Cognitive Profile of Williams Syndrome
+
+- Genetics of Language:
+  sections:
+  - Genetic Influences on Language Development
+  - Language Disorders and Genetic Factors
+  - Genetic Basis of Language Acquisition
+    subsections:
+    - Language Acquisition in Infancy
+    - Specific Language Impairment
+    - Genetic Variants Associated with Language Abilities
+
+- Intelligence:
+  sections:
+  - Genetic and Environmental Contributions to Intelligence
+  - Heritability of Intelligence
+  - Cognitive Genomics
+    subsections:
+    - Twin Studies on Intelligence
+    - Environmental Factors Affecting Intelligence
+    - Genes Associated with Cognitive Abilities
+
+- Challenge of Defining Phenotype:
+  sections:
+  - Phenotype Definition and Measurement
+  - Genetic and Environmental Factors in Phenotype Variation
+  - Gene-Phenotype Associations
+    subsections:
+    - Quantitative vs. Qualitative Phenotypes
+    - Gene-Environment Interactions in Phenotype Variation
+    - Polygenic and Pleiotropic Effects
+
+- Sex Differences, Homosexuality:
+  sections:
+  - Biological Influences on Sex Differences
+  - Genetics of Sexual Orientation
+  - Role of Genes in Gender Identity
+    subsections:
+    - Hormonal Influences on Sexual Differentiation
+    - Genetic Factors in Sexual Orientation
+    - Gender Identity Development
+
+- Review:
+  sections:
+  - Key Concepts and Theories in Cognitive & Behavioral Genetics
+  - Summarizing the Course Content
+    subsections:
+    - Behavioral Genetics Theories
+    - Future Directions in Cognitive & Behavioral Genetics

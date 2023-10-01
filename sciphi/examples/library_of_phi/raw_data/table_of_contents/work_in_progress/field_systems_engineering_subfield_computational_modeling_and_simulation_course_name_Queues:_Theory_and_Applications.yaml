@@ -1,0 +1,207 @@
+textbook:
+  'Queueing Theory: From Fundamentals to Advanced Applications':
+    chapters:
+    - 'Chapter 1: Fundamental Insights: The M/M/s Type Systems':
+        sections:
+        - 'Section 1.1: Introduction to Queueing Systems':
+            subsections:
+            - 'Subsection 1.1.1: Definition and Components of Queueing Systems'
+            - 'Subsection 1.1.2: Characteristics of Queueing Systems'
+        - 'Section 1.2: Markovian Arrival Process':
+            subsections:
+            - 'Subsection 1.2.1: Definition and Properties of Markovian Arrival Process'
+            - 'Subsection 1.2.2: Arrival Rate and Arrival Time Distribution'
+        - 'Section 1.3: Exponential Service Time':
+            subsections:
+            - 'Subsection 1.3.1: Definition and Properties of Exponential Service Time'
+            - 'Subsection 1.3.2: Service Rate and Service Time Distribution'
+        - 'Section 1.4: Single Server Queues':
+            subsections:
+            - 'Subsection 1.4.1: Analysis of M/M/1 Queue'
+            - 'Subsection 1.4.2: Performance Measures of M/M/1 Queue'
+        - 'Section 1.5: Multiple Server Queues':
+            subsections:
+            - 'Subsection 1.5.1: Analysis of M/M/s Queue'
+            - 'Subsection 1.5.2: Performance Measures of M/M/s Queue'
+    - 'Chapter 2: Little’s Law and Generalizations':
+        sections:
+        - 'Section 2.1: Arrival Rate and Arrival Process':
+            subsections:
+            - 'Subsection 2.1.1: Definition and Calculation of Arrival Rate'
+            - 'Subsection 2.1.2: Modeling Arrival Process: Poisson Process'
+        - 'Section 2.2: Service Rate and Service Time':
+            subsections:
+            - 'Subsection 2.2.1: Definition and Calculation of Service Rate'
+            - 'Subsection 2.2.2: Modeling Service Time: Exponential Distribution'
+        - 'Section 2.3: Utilization and Queue Length':
+            subsections:
+            - 'Subsection 2.3.1: Definition and Calculation of Utilization'
+            - 'Subsection 2.3.2: Relationship between Utilization and Queue Length'
+        - 'Section 2.4: Response Time and Waiting Time':
+            subsections:
+            - 'Subsection 2.4.1: Definition and Calculation of Response Time'
+            - 'Subsection 2.4.2: Estimating Waiting Time in Queueing Systems'
+    - 'Chapter 3: Distributional Laws':
+        sections:
+        - 'Section 3.1: Poisson Distribution':
+            subsections:
+            - 'Subsection 3.1.1: Definition and Properties of Poisson Distribution'
+            - 'Subsection 3.1.2: Application of Poisson Distribution in Queueing Systems'
+        - 'Section 3.2: Exponential Distribution':
+            subsections:
+            - 'Subsection 3.2.1: Definition and Properties of Exponential Distribution'
+            - 'Subsection 3.2.2: Application of Exponential Distribution in Queueing Systems'
+        - 'Section 3.3: Erlang Distribution':
+            subsections:
+            - 'Subsection 3.3.1: Definition and Properties of Erlang Distribution'
+            - 'Subsection 3.3.2: Application of Erlang Distribution in Queueing Systems'
+        - 'Section 3.4: Hyperexponential Distribution':
+            subsections:
+            - 'Subsection 3.4.1: Definition and Properties of Hyperexponential Distribution'
+            - 'Subsection 3.4.2: Application of Hyperexponential Distribution in Queueing Systems'
+        - 'Section 3.5: General Distribution':
+            subsections:
+            - 'Subsection 3.5.1: Definition and Properties of General Distribution'
+            - 'Subsection 3.5.2: Application of General Distribution in Queueing Systems'
+    - 'Chapter 4: Conservation Laws':
+        sections:
+        - 'Section 4.1: Traffic Intensity':
+            subsections:
+            - 'Subsection 4.1.1: Definition and Calculation of Traffic Intensity'
+            - 'Subsection 4.1.2: Relationship between Traffic Intensity and System Performance'
+        - 'Section 4.2: Balance Equation':
+            subsections:
+            - 'Subsection 4.2.1: Definition and Concept of Balance Equation'
+            - 'Subsection 4.2.2: Application of Balance Equation in Queueing Systems'
+        - 'Section 4.3: Network Flow Conservation':
+            subsections:
+            - 'Subsection 4.3.1: Definition and Principles of Network Flow Conservation'
+            - 'Subsection 4.3.2: Analyzing Network Flow Conservation in Queueing Systems'
+    - 'Chapter 5: PASTA':
+        sections:
+        - 'Section 5.1: Probability of Arrival':
+            subsections:
+            - 'Subsection 5.1.1: Definition and Calculation of Probability of Arrival'
+            - 'Subsection 5.1.2: Understanding Arrival Patterns in Queueing Systems'
+        - 'Section 5.2: Probability of Service':
+            subsections:
+            - 'Subsection 5.2.1: Definition and Calculation of Probability of Service'
+            - 'Subsection 5.2.2: Analyzing Service Patterns in Queueing Systems'
+        - 'Section 5.3: Probability of Time Average':
+            subsections:
+            - 'Subsection 5.3.1: Definition and Calculation of Probability of Time Average'
+            - 'Subsection 5.3.2: Estimating Time Averages in Queueing Systems'
+    - 'Chapter 6: Systems with No Overtaking: Exact Solutions':
+        sections:
+        - 'Section 6.1: FIFO Queueing System':
+            subsections:
+            - 'Subsection 6.1.1: Definition and Analysis of FIFO Queueing System'
+            - 'Subsection 6.1.2: Performance Measures in FIFO Queueing System'
+        - 'Section 6.2: LIFO Queueing System':
+            subsections:
+            - 'Subsection 6.2.1: Definition and Analysis of LIFO Queueing System'
+            - 'Subsection 6.2.2: Performance Measures in LIFO Queueing System'
+        - 'Section 6.3: Priority Queueing System':
+            subsections:
+            - 'Subsection 6.3.1: Definition and Analysis of Priority Queueing System'
+            - 'Subsection 6.3.2: Performance Measures in Priority Queueing System'
+        - 'Section 6.4: Round Robin Queueing System':
+            subsections:
+            - 'Subsection 6.4.1: Definition and Analysis of Round Robin Queueing System'
+            - 'Subsection 6.4.2: Performance Measures in Round Robin Queueing System'
+    - 'Chapter 7: Systems with No Overtaking: Asymptotic Solutions':
+        sections:
+        - 'Section 7.1: Long-Run Average Queue Length':
+            subsections:
+            - 'Subsection 7.1.1: Definition and Analysis of Long-Run Average Queue Length'
+            - 'Subsection 7.1.2: Estimating Long-Run Average Queue Length in Queueing Systems'
+        - 'Section 7.2: Long-Run Average Waiting Time':
+            subsections:
+            - 'Subsection 7.2.1: Definition and Analysis of Long-Run Average Waiting Time'
+            - 'Subsection 7.2.2: Estimating Long-Run Average Waiting Time in Queueing Systems'
+        - 'Section 7.3: Asymptotic Behavior of Queueing Systems':
+            subsections:
+            - 'Subsection 7.3.1: Definition and Analysis of Asymptotic Behavior in Queueing Systems'
+            - 'Subsection 7.3.2: Understanding the Limiting Behavior of Queueing Systems'
+    - 'Chapter 8: Priority, Polling Systems':
+        sections:
+        - 'Section 8.1: Priority Queues':
+            subsections:
+            - 'Subsection 8.1.1: Definition and Analysis of Priority Queues'
+            - 'Subsection 8.1.2: Performance Evaluation of Priority Queues'
+        - 'Section 8.2: Preemptive Scheduling':
+            subsections:
+            - 'Subsection 8.2.1: Definition and Analysis of Preemptive Scheduling in Queueing Systems'
+            - 'Subsection 8.2.2: Impact of Preemptive Scheduling on System Performance'
+        - 'Section 8.3: Non-preemptive Scheduling':
+            subsections:
+            - 'Subsection 8.3.1: Definition and Analysis of Non-preemptive Scheduling in Queueing Systems'
+            - 'Subsection 8.3.2: Evaluating the Effectiveness of Non-preemptive Scheduling'
+        - 'Section 8.4: Polling Systems':
+            subsections:
+            - 'Subsection 8.4.1: Definition and Analysis of Polling Systems'
+            - 'Subsection 8.4.2: Performance Evaluation of Polling Systems'
+    - 'Chapter 9: Multiserver Queues':
+        sections:
+        - 'Section 9.1: M/M/s Queueing System':
+            subsections:
+            - 'Subsection 9.1.1: Definition and Analysis of M/M/s Queueing System'
+            - 'Subsection 9.1.2: Performance Measures in M/M/s Queueing System'
+        - 'Section 9.2: M/G/s Queueing System':
+            subsections:
+            - 'Subsection 9.2.1: Definition and Analysis of M/G/s Queueing System'
+            - 'Subsection 9.2.2: Performance Measures in M/G/s Queueing System'
+        - 'Section 9.3: G/M/s Queueing System':
+            subsections:
+            - 'Subsection 9.3.1: Definition and Analysis of G/M/s Queueing System'
+            - 'Subsection 9.3.2: Performance Measures in G/M/s Queueing System'
+        - 'Section 9.4: G/G/s Queueing System':
+            subsections:
+            - 'Subsection 9.4.1: Definition and Analysis of G/G/s Queueing System'
+            - 'Subsection 9.4.2: Performance Measures in G/G/s Queueing System'
+    - 'Chapter 10: Queues in Halfin-Whitt Regime':
+        sections:
+        - 'Section 10.1: Heavy-Traffic Limits':
+            subsections:
+            - 'Subsection 10.1.1: Definition and Analysis of Heavy-Traffic Limits'
+            - 'Subsection 10.1.2: Understanding Queueing Systems in Heavy-Traffic Regime'
+        - 'Section 10.2: Fluid Limit':
+            subsections:
+            - 'Subsection 10.2.1: Definition and Analysis of Fluid Limit'
+            - 'Subsection 10.2.2: Modeling Queueing Systems using Fluid Limit'
+        - 'Section 10.3: Diffusion Limit':
+            subsections:
+            - 'Subsection 10.3.1: Definition and Analysis of Diffusion Limit'
+            - 'Subsection 10.3.2: Approximating Queueing Systems using Diffusion Limit'
+        - 'Section 10.4: Stationary Distribution':
+            subsections:
+            - 'Subsection 10.4.1: Definition and Analysis of Stationary Distribution'
+            - 'Subsection 10.4.2: Estimating Stationary Distribution in Queueing Systems'
+    - 'Chapter 11: Open Jackson Networks':
+        sections:
+        - 'Section 11.1: Jackson Networks':
+            subsections:
+            - 'Subsection 11.1.1: Definition and Analysis of Jackson Networks'
+            - 'Subsection 11.1.2: Modeling Network Performance using Jackson Networks'
+        - 'Section 11.2: Routing Probability':
+            subsections:
+            - 'Subsection 11.2.1: Definition and Calculation of Routing Probability'
+            - 'Subsection 11.2.2: Analyzing Network Routing in Queueing Systems'
+        - 'Section 11.3: Balance Conditions':
+            subsections:
+            - 'Subsection 11.3.1: Definition and Conditions for Balanced Networks'
+            - 'Subsection 11.3.2: Analyzing Balance Conditions in Queueing Systems'
+        - 'Section 11.4: Mean Value Analysis':
+            subsections:
+            - 'Subsection 11.4.1: Definition and Application of Mean Value Analysis'
+            - 'Subsection 11.4.2: Evaluating Performance Measures using Mean Value Analysis'
+    - 'Chapter 12: Closed Jackson Networks':
+        sections:
+        - 'Section 12.1: Closed Networks':
+            subsections:
+            - 'Subsection 12.1.1: Definition and Analysis of Closed Networks'
+            - 'Subsection 12.1.2: Modeling Closed Networks in Queueing Systems'
+        - 'Section 12.2: Reversibility':
+            subsections:
+            - 'Subsection 12.2.1: Definition and Principles of Reversibility'
+           

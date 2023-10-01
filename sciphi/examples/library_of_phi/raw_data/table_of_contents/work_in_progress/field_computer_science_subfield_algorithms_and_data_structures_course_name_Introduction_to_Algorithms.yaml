@@ -1,0 +1,127 @@
+textbook:
+  Introduction to Algorithms: A Comprehensive Guide
+  chapters:
+    - Introduction:
+        sections:
+        - Course Number
+        - Course Name
+        - Resource Level
+          subsections:
+          - What is Computer Science?
+          - Why Study Algorithms?
+          - Importance of Algorithms in Problem Solving
+    - Data Structures:
+        sections:
+        - 'Lecture 2: Data Structures notes'
+          subsections:
+          - Arrays
+          - Linked Lists
+          - Stacks
+          - Queues
+          - Trees
+          - Graphs
+    - Sorting:
+        sections:
+        - 'Lecture 3: Sorting notes'
+          subsections:
+          - Overview of Sorting Algorithms
+          - Bubble Sort
+          - Selection Sort
+          - Insertion Sort
+          - Merge Sort
+          - Quick Sort
+          - Heap Sort
+          - Radix Sort
+    - Hashing:
+        sections:
+        - 'Lecture 4: Hashing notes'
+          subsections:
+          - Introduction to Hashing
+          - Hash Functions
+          - Collision Resolution Techniques
+          - Hash Tables
+          - Hash Maps
+    - Linear Sorting:
+        sections:
+        - 'Lecture 5: Linear Sorting notes'
+          subsections:
+          - Counting Sort
+          - Bucket Sort
+          - Radix Sort
+    - Binary Trees:
+        sections:
+        - 'Lecture 6: Binary Trees, Part 1 notes'
+          subsections:
+          - Introduction to Binary Trees
+          - Binary Tree Traversals
+          - Binary Search Trees
+          - Balanced Binary Search Trees
+        - 'Lecture 7: Binary Trees, Part 2: AVL notes'
+          subsections:
+          - AVL Trees
+          - AVL Tree Operations
+          - AVL Tree Rotations
+    - Binary Heaps:
+        sections:
+        - 'Lecture 8: Binary Heaps notes'
+          subsections:
+          - Introduction to Binary Heaps
+          - Heap Operations
+          - Heapify Algorithm
+          - Priority Queue Implementation
+    - Breadth-First Search:
+        sections:
+        - 'Lecture 9: Breadth-First Search notes'
+          subsections:
+          - Introduction to Graph Traversal
+          - Breadth-First Search Algorithm
+          - Applications of Breadth-First Search
+    - Depth-First Search:
+        sections:
+        - 'Lecture 10: Depth-First Search notes'
+          subsections:
+          - Depth-First Search Algorithm
+          - Depth-First Search Traversal
+          - Applications of Depth-First Search
+    - Weighted Shortest Paths:
+        sections:
+        - 'Lecture 11: Weighted Shortest Paths notes'
+          subsections:
+          - Introduction to Weighted Graphs
+          - Dijkstra's Algorithm
+          - Bellman-Ford Algorithm
+          - Floyd-Warshall Algorithm
+          - Johnson's Algorithm
+    - Dynamic Programming:
+        sections:
+        - 'Lecture 15: Dynamic Programming, Part 1: SRBOT, Fib, DAGs, Bowling notes'
+          subsections:
+          - Introduction to Dynamic Programming
+          - Overlapping Subproblems
+          - Optimal Substructure
+          - Solving Recurrence Relations
+          - Fibonacci Numbers
+          - Directed Acyclic Graphs
+          - Bowling Score Calculation
+        - 'Lecture 16: Dynamic Programming, Part 2: LCS, LIS, Coins notes'
+          subsections:
+          - Longest Common Subsequence
+          - Longest Increasing Subsequence
+          - Coin Change Problem
+    - Complexity:
+        sections:
+        - 'Lecture 19: Complexity notes'
+          subsections:
+          - Introduction to Computational Complexity
+          - Big O Notation
+          - Time Complexity Analysis
+          - Space Complexity Analysis
+          - P vs NP Problem
+    - Course Review:
+        sections:
+        - 'Lecture 20: Course Review notes'
+          subsections:
+          - Recap of Course Topics
+          - Problem-Solving Strategies
+          - Exam Preparation Tips
+          - Additional Resources and References

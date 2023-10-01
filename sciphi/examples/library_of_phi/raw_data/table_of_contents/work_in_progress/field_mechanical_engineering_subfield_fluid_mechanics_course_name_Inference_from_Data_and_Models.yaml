@@ -1,0 +1,82 @@
+textbook:
+  Inference from Data and Models: A Comprehensive Guide
+chapters:
+  - Introduction to Inference:
+    sections:
+      - Statistical Inference
+      - Probability Distributions
+      - Estimation
+      - Hypothesis Testing
+      - Confidence Intervals
+  - Time Series Analysis:
+    sections:
+      - Autocorrelation
+      - Stationarity
+      - ARMA Models
+      - ARIMA Models
+      - Seasonal Models
+      - Spectral Analysis
+  - Linear Regression:
+    sections:
+      - Simple Linear Regression
+      - Multiple Linear Regression
+      - Model Selection
+      - Model Assumptions
+      - Residual Analysis
+      - Interpreting Regression Results
+  - Bayesian Inference:
+    sections:
+      - Bayes' Theorem
+      - Prior and Posterior Distributions
+      - Markov Chain Monte Carlo (MCMC) Methods
+      - Hierarchical Models
+      - Bayesian Model Comparison
+      - Bayesian Model Averaging
+  - Nonparametric Methods:
+    sections:
+      - Kernel Density Estimation
+      - Nonparametric Regression
+      - Smoothing Techniques
+      - Bootstrap Methods
+      - Permutation Tests
+      - Rank-Based Methods
+  - Machine Learning:
+    sections:
+      - Supervised Learning
+      - Unsupervised Learning
+      - Decision Trees
+      - Random Forests
+      - Support Vector Machines
+      - Neural Networks
+  - Model Selection and Validation:
+    sections:
+      - Cross-Validation
+      - Information Criteria
+      - Overfitting and Underfitting
+      - Model Diagnostics
+      - Model Validation Techniques
+      - Model Averaging
+  - Time Series Forecasting:
+    sections:
+      - ARIMA Forecasting
+      - Exponential Smoothing
+      - State Space Models
+      - Kalman Filtering
+      - Dynamic Linear Models
+      - Forecast Evaluation
+  - Causal Inference:
+    sections:
+      - Observational Studies
+      - Randomized Controlled Trials
+      - Propensity Score Matching
+      - Instrumental Variables
+      - Difference-in-Differences
+      - Regression Discontinuity Design
+  - Big Data Analytics:
+    sections:
+      - MapReduce
+      - Hadoop
+      - Spark
+      - Distributed Computing
+      - Data Visualization
+      - Dimensionality Reduction

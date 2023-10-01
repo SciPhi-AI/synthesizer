@@ -1,0 +1,53 @@
+textbook:
+  Readings in Optimization: A Comprehensive Guide
+
+chapters:
+- MAXCUT, Semidefinite Programming, and the Goemans-Williamson Paper:
+  sections:
+  - Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming
+  subsections: []
+
+- Dunagan and Vempala Paper; Storn and Price Paper:
+  sections:
+  - Simple Polynomial-Time Rescaling Algorithm for Solving Linear Programs
+  subsections: []
+
+- Clarkson Paper; Motwani and Raghavan chapter 9:
+  sections:
+  - Las Vegas Algorithms for Linear and Integer Programming When the Dimension Is Small
+  subsections: []
+
+- Kalai Paper #1; Kalai Paper #2:
+  sections:
+  - A Subexponential Randomized Simplex Algorithm
+  subsections: []
+
+- Solis and Wets Paper; Romeijn Thesis Book:
+  sections:
+  - Minimization by Random Search Techniques
+  subsections: []
+
+- Zabinsky and Smith Paper:
+  sections:
+  - Pure Adaptive Search in Global Optimization
+  subsections: []
+
+- Simonovits Paper:
+  sections:
+  - How to Compute the Volume in High Dimension?
+  subsections: []
+
+- Romeijn and Smith Paper:
+  sections:
+  - Simulated Annealing for Constrained Global Optimization
+  subsections: []
+
+- Bertsimas and Vempala Paper; Zabinsky, Smith, etc. Paper:
+  sections:
+  - Solving Convex Programs by Random Walks
+  subsections: []
+
+- Zabinsky, Graesser, etc. Paper; Sanjeev Paper:
+  sections:
+  - Global Optimization of Composite Laminates Using Improving Hit and Run
+  subsections: []

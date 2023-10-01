@@ -1,0 +1,40 @@
+textbook:
+  'Branes and Gauge Theory Dynamics: Exploring the Frontiers of Theoretical Particle Physics':
+    chapters:
+    - Introduction to Branes:
+        sections:
+        - Branes Ending on Branes
+    - Central Charges in the Supersymmetry Algebra:
+        sections:
+        - Branes in Type II Theories
+        - Dualities in String Theory
+        - Tensions of Branes
+    - Supergravity in Various Dimensions - 32 Supercharges:
+        sections:
+        - Scalar Manifolds in Various Dimensions
+        - Cosmic Strings
+    - u-dualities and Representations of p-forms:
+        sections:
+        - Electric and Magnetic Excitations on Branes
+        - SYM Actions in Various Dimensions
+        - Higgs Mechanism - Adjoint Representation
+    - Brane Intervals - Hanany Witten Brane Configurations:
+        sections:
+        - Brane Realization of Classical Groups for Theories with 16 Supercharges
+        - BPS Objects Living on Branes
+        - Enhanced Gauge Groups in Type I'
+        - Magnetic Monopoles in Type I'
+        - Anomalies in 6d Theories with 8 Supercharges
+        - Higgs Branch and the Moduli Space of Instantons - Classical Groups A, B,
+          C, D
+    - The String Coupling and Vector Multiplets:
+        sections:
+        - Mirror Symmetry in 3 Dimensions
+    - '[ADD CHAPTER]':
+        sections:
+        - '[ADD SECTION]'
+        - '[ADD SECTION]'
+        - '[ADD SECTION]'
+        - '[ADD SECTION]'
+        - '[ADD SECTION]'
+        - '[ADD SECTION]'

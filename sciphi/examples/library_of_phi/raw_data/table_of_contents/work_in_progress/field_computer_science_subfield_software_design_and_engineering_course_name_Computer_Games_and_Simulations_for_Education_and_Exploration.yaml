@@ -1,0 +1,191 @@
+textbook:
+  Computer Games and Simulations for Education and Exploration:
+    chapters:
+    - Introduction:
+        sections:
+        - Importance of Educational Games:
+            subsections:
+            - Introduction to Educational Games
+            - Benefits of Educational Games
+            - Research on Educational Games
+        - Learning Through Simulations:
+            subsections:
+            - Simulation-based Learning
+            - Types of Simulations
+            - Benefits of Simulation-based Learning
+            - Designing Effective Simulations
+        - Gamification in Education:
+            subsections:
+            - Gamification Principles
+            - Gamification Techniques
+            - Benefits of Gamification in Education
+            - Designing Gamified Learning Experiences
+        - Benefits of Game-based Learning:
+            subsections:
+            - Cognitive Benefits of Game-based Learning
+            - Social Benefits of Game-based Learning
+            - Emotional Benefits of Game-based Learning
+            - Designing Effective Game-based Learning Experiences
+    - Designing Curriculum for Commercial Off the Shelf Games:
+        sections:
+        - MDA Framework for Game Design:
+            subsections:
+            - Mechanics in Game Design
+            - Dynamics in Game Design
+            - Aesthetics in Game Design
+            - Using the MDA Framework in Education
+        - Integrating Games in Curriculum:
+            subsections:
+            - Benefits of Integrating Games in Curriculum
+            - Selecting Appropriate Games for Curriculum
+            - Aligning Games with Learning Objectives
+            - Assessing Learning Outcomes of Game-based Curriculum
+        - Adapting Commercial Games for Education:
+            subsections:
+            - Adapting Games for Educational Contexts
+            - Modifying Game Mechanics for Learning
+            - Incorporating Learning Objectives in Commercial Games
+            - Evaluating the Effectiveness of Adapting Commercial Games
+        - Game Mechanics and Learning Objectives:
+            subsections:
+            - Understanding Game Mechanics
+            - Identifying Learning Objectives in Games
+            - Designing Game Mechanics to Support Learning Objectives
+            - Assessing Learning Outcomes of Game Mechanics
+    - Multiplayer Games:
+        sections:
+        - Collaborative Learning in Multiplayer Games:
+            subsections:
+            - Benefits of Collaborative Learning in Multiplayer Games
+            - Designing Collaborative Learning Experiences in Multiplayer Games
+            - Facilitating Communication and Teamwork in Multiplayer Games
+            - Assessing Collaborative Learning Outcomes in Multiplayer Games
+        - Communication and Teamwork:
+            subsections:
+            - Importance of Communication in Multiplayer Games
+            - Strategies for Effective Communication in Multiplayer Games
+            - Promoting Teamwork in Multiplayer Games
+            - Evaluating Communication and Teamwork Skills in Multiplayer Games
+        - Game Balancing and Fairness:
+            subsections:
+            - Balancing Gameplay in Multiplayer Games
+            - Ensuring Fairness and Equity in Multiplayer Games
+            - Addressing Cheating and Unfair Practices in Multiplayer Games
+            - Evaluating Game Balancing and Fairness in Multiplayer Games
+        - Competition and Cooperation:
+            subsections:
+            - Understanding Competition and Cooperation in Multiplayer Games
+            - Designing Competitive and Cooperative Game Experiences
+            - Promoting Healthy Competition and Cooperation in Multiplayer Games
+            - Assessing Competition and Cooperation in Multiplayer Games
+    - Board Games:
+        sections:
+        - History and Evolution of Board Games:
+            subsections:
+            - Origins of Board Games
+            - Evolution of Board Game Mechanics
+            - Cultural Significance of Board Games
+            - Analyzing the Influence of Board Games on Society
+        - Designing Board Game Mechanics:
+            subsections:
+            - Principles of Board Game Design
+            - Types of Board Game Mechanics
+            - Balancing Luck and Strategy in Board Games
+            - Evaluating the Effectiveness of Board Game Mechanics
+        - Player Interaction and Decision Making:
+            subsections:
+            - Social Interaction in Board Games
+            - Decision Making in Board Games
+            - Negotiation and Diplomacy in Board Games
+            - Assessing Player Interaction and Decision Making in Board Games
+        - Prototyping and Playtesting:
+            subsections:
+            - Prototyping Board Games
+            - Conducting Playtests for Board Games
+            - Iterating and Refining Board Game Designs
+            - Analyzing Feedback from Board Game Playtests
+    - Digital Games:
+        sections:
+        - Game Design Principles for Digital Games:
+            subsections:
+            - Core Principles of Digital Game Design
+            - User Experience Design in Digital Games
+            - Designing for Different Platforms and Devices
+            - Evaluating the User Experience of Digital Games
+        - Game Genres and Mechanics:
+            subsections:
+            - Exploring Different Game Genres
+            - Understanding Game Mechanics in Digital Games
+            - Combining Game Genres and Mechanics
+            - Analyzing the Effectiveness of Game Genres and Mechanics
+        - Player Engagement and Motivation:
+            subsections:
+            - Understanding Player Engagement in Digital Games
+            - Motivational Factors in Digital Game Design
+            - Designing for Player Retention and Progression
+            - Assessing Player Engagement and Motivation in Digital Games
+        - Game Analytics and Assessment:
+            subsections:
+            - Introduction to Game Analytics
+            - Collecting and Analyzing Game Data
+            - Using Game Analytics for Assessment
+            - Evaluating the Effectiveness of Game Analytics in Education
+    - Game Curriculum Presentations:
+        sections:
+        - Sharing and Presenting Game-based Curricula:
+            subsections:
+            - Communicating the Value of Game-based Curricula
+            - Showcasing Game-based Curricula to Stakeholders
+            - Strategies for Effective Curriculum Presentations
+            - Evaluating the Impact of Curriculum Presentations
+        - Evaluating Curriculum Effectiveness:
+            subsections:
+            - Approaches to Evaluating Curriculum Effectiveness
+            - Using Assessment to Measure Learning Outcomes
+            - Collecting and Analyzing Data on Curriculum Impact
+            - Interpreting and Reporting Curriculum Evaluation Results
+        - Incorporating Feedback and Iterative Design:
+            subsections:
+            - Importance of Feedback in Curriculum Design
+            - Strategies for Collecting and Incorporating Feedback
+            - Implementing Iterative Design in Curriculum Development
+            - Assessing the Impact of Feedback and Iterative Design in Education
+    - Board Game Presentations:
+        sections:
+        - Showcasing Board Game Prototypes:
+            subsections:
+            - Presenting Board Game Prototypes to Different Audiences
+            - Demonstrating Gameplay and Mechanics of Board Games
+            - Collecting Feedback on Board Game Prototypes
+            - Analyzing Feedback for Refining Board Game Designs
+        - Collecting User Feedback and Iterating Designs:
+            subsections:
+            - Methods for Collecting User Feedback on Board Games
+            - Analyzing User Feedback for Improvement
+            - Iterating Board Game Designs Based on User Feedback
+            - Evaluating the Impact of User Feedback and Iterative Design on Board Games
+        - Documenting and Presenting Board Game Rules:
+            subsections:
+            - Importance of Clear and Concise Rules in Board Games
+            - Formatting and Organizing Board Game Rules
+            - Presenting Board Game Rules Effectively
+            - Assessing the Usability of Board Game Rules
+    - Digital Games Presentations:
+        sections:
+        - Demonstrating Digital Game Prototypes:
+            subsections:
+            - Showcasing Digital Game Prototypes to Different Audiences
+            - Presenting Gameplay and Mechanics of Digital Games
+            - Collecting User Feedback on Digital Game Prototypes
+            - Analyzing User Feedback for Refining Digital Game Designs
+        - Analyzing Player Feedback and Iterating Designs:
+            subsections:
+            - Methods for Analyzing Player Feedback on Digital Games
+            - Iterating Digital Game Designs Based on Player Feedback
+            - Evaluating the Impact of Player Feedback and Iterative Design on Digital Games
+        - Creating Game Trailers and Presentations:
+            subsections:
+            - Importance of Game Trailers in Game Presentations
+            - Creating Engaging Game Trailers
+            - Effective Techniques for Presenting Digital Games
+            - Assessing the Impact of Game Trailers and Presentations

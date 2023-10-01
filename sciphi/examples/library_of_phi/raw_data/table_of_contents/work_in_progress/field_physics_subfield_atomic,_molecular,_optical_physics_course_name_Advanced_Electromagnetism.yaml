@@ -1,0 +1,113 @@
+```yaml
+course:
+  Advanced Electromagnetism Textbook:
+    chapters:
+      - Characterization of Left-handed Materials:
+          sections:
+            - Introduction to Left-handed Materials:
+              subsections: []
+            - Negative Refraction:
+              subsections: []
+            - Veselago's Theory:
+              subsections: []
+            - Metamaterials:
+              subsections: []
+            - Split-ring Resonators:
+              subsections: []
+      - Dispersion Relations in Left-handed Materials:
+          sections:
+            - Maxwell's Equations in LHMs:
+              subsections: []
+            - Wave Propagation in LHMs:
+              subsections: []
+            - Group Velocity and Phase Velocity:
+              subsections: []
+            - Anisotropy in LHMs:
+              subsections: []
+            - Birefringence in LHMs:
+              subsections: []
+      - Green’s Functions for Planarly Layered Media:
+          sections:
+            - Dyadic Green's Functions:
+              subsections: []
+            - Plane Wave Expansions:
+              subsections: []
+            - Reflection and Transmission Coefficients:
+              subsections: []
+            - Scattering Matrices:
+              subsections: []
+            - Surface Plasmons:
+              subsections: []
+      - Scattering of Electromagnetic Waves:
+          sections:
+            - Scattering Cross-section:
+              subsections: []
+            - Mie Scattering:
+              subsections: []
+            - Rayleigh Scattering:
+              subsections: []
+            - Scattering by Spheres:
+              subsections: []
+            - Scattering by Cylinders:
+              subsections: []
+      - Wave-guides and Resonators:
+          sections:
+            - Optical Fibers:
+              subsections: []
+            - Metal-insulator-metal Waveguides:
+              subsections: []
+            - Photonic Crystals:
+              subsections: []
+            - Whispering Gallery Resonators:
+              subsections: []
+            - Cavity Quantum Electrodynamics:
+              subsections: []
+      - Plasmonics and Metamaterials:
+          sections:
+            - Surface Plasmons:
+              subsections: []
+            - Plasmonic Waveguides:
+              subsections: []
+            - Plasmonic Resonators:
+              subsections: []
+            - Metamaterial Design:
+              subsections: []
+            - Chiral Metamaterials:
+              subsections: []
+      - Nonlinear Optics:
+          sections:
+            - Nonlinear Susceptibility:
+              subsections: []
+            - Second Harmonic Generation:
+              subsections: []
+            - Optical Parametric Oscillators:
+              subsections: []
+            - Four-wave Mixing:
+              subsections: []
+            - Kerr Effect:
+              subsections: []
+      - Quantum Optics:
+          sections:
+            - Coherent States:
+              subsections: []
+            - Squeezed States:
+              subsections: []
+            - Entangled States:
+              subsections: []
+            - Quantum Interferometry:
+              subsections: []
+            - Quantum Computing:
+              subsections: []
+      - Electromagnetic Theory and Computation:
+          sections:
+            - Finite-difference Time-domain Method:
+              subsections: []
+            - Finite-element Method:
+              subsections: []
+            - Boundary Element Method:
+              subsections: []
+            - Method of Moments:
+              subsections: []
+            - Fast Multipole Method:
+              subsections: []
+```

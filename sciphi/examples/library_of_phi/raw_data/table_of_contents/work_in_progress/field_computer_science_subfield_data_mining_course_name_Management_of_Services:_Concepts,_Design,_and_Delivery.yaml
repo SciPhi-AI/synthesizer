@@ -1,0 +1,49 @@
+textbook:
+  'Management of Services: Concepts, Design, and Delivery':
+    chapters:
+      - Introduction to Service Operations:
+          sections:
+            - 'Chapter 1: Process design: Order fulfillment'
+            - 'Chapter 2: The role of the employee in service operations'
+            - 'Chapter 3: The role of the customer'
+      - Refining Retail Business Models:
+          sections:
+            - 'Chapter 4: Clockspeed and disruptions'
+            - 'Chapter 5: Disruptive service models'
+            - 'Chapter 6: Retail business model innovation'
+      - 'Process Design: Health Care Systems':
+          sections:
+            - 'Chapter 7: Service operations frameworks I'
+            - 'Chapter 8: Service operations frameworks II'
+            - 'Chapter 9: Designing healthcare processes'
+      - Retailing and Logistics Capabilities:
+          sections:
+            - 'Chapter 10: Retailing and logistics capabilities I'
+            - 'Chapter 11: Retailing and logistics capabilities II'
+            - 'Chapter 12: Supply chain management in retail'
+      - Employee Involvement and Data Mining:
+          sections:
+            - 'Chapter 13: The last ten yards of supply chain delivery'
+            - 'Chapter 14: Consumer insurance'
+            - 'Chapter 15: Data mining in service operations'
+      - Internet and Digital Media:
+          sections:
+            - 'Chapter 16: Internet as disruptive vs. sustaining'
+            - 'Chapter 17: Business-to-Business (B2B) services'
+            - 'Chapter 18: Information technology outsourcing and consulting'
+            - 'Chapter 19: Web services, cloud computing and digital media'
+      - Disruptions in the Auto Industry:
+          sections:
+            - 'Chapter 20: Disruptions and servicization in the auto industry'
+            - 'Chapter 21: Homebuilding: A complex network of services'
+            - 'Chapter 22: Supply chain systems: Social responsibility'
+            - 'Chapter 23: Electric vehicles and sustainable transportation'
+      - Organizational Change and Government Services:
+          sections:
+            - 'Chapter 24: Organizational change in service industries'
+            - 'Chapter 25: Government services and public administration'
+            - 'Chapter 26: Public-private partnerships'
+      - Student Projects:
+          sections:
+            - 'Chapter 27: Student project presentations and wrap-up'
+            - 'Chapter 28: Project management in services'

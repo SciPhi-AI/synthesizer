@@ -1,0 +1,170 @@
+course:
+  textbook:
+    chapters:
+      - Introduction to the Visual System and Organization of the Retina:
+          sections:
+            - Anatomy and Physiology of the Retina:
+                subsections:
+                  - Structure and Function of Photoreceptor Cells
+                  - Neural Circuits in the Retina
+                  - Processing of Visual Information in the Retina
+            - Ganglion-cell Receptive Field Organization:
+                subsections:
+                  - Types of Ganglion Cells
+                  - Spatial and Temporal Properties of Ganglion-cell Receptive Fields
+                  - Center-Surround Organization in Ganglion Cells
+            - Pre-ganglionic Elements:
+                subsections:
+                  - Bipolar Cells and Horizontal Cells
+                  - Amacrine Cells and Interplexiform Cells
+                  - Synaptic Connections in the Inner Plexiform Layer
+      - The Lateral Geniculate Nucleus:
+          sections:
+            - Laminar Organization of the LGN:
+                subsections:
+                  - Structure and Function of the LGN
+                  - Laminar Organization of Neuronal Cell Types
+                  - Input and Output Connections of the LGN
+            - Receptive Field Properties of Single Cells:
+                subsections:
+                  - Simple and Complex Cells in the LGN
+                  - Spatial and Temporal Properties of LGN Receptive Fields
+                  - Orientation and Direction Selectivity in LGN Cells
+      - The Striate Cortex:
+          sections:
+            - Striate Cortex Receptive Field Organization:
+                subsections:
+                  - Layers and Columns in the Striate Cortex
+                  - Receptive Field Properties of Simple and Complex Cells in V1
+                  - Functional Maps in the Striate Cortex
+            - Cytoarchitecture:
+                subsections:
+                  - Cellular Organization of the Striate Cortex
+                  - Cortical Layers and Their Functions
+                  - Cortical Columns and Their Properties
+            - Modular Organization:
+                subsections:
+                  - Functional Organization of V1 Modules
+                  - Modular Processing in the Striate Cortex
+                  - Hierarchical Organization of Visual Processing
+            - Imaging:
+                subsections:
+                  - Functional Imaging Techniques in the Striate Cortex
+                  - Mapping Visual Responses in V1
+                  - Neuroimaging Studies of Visual Perception
+      - Extrastriate Areas:
+          sections:
+            - Specificity of Areas:
+                subsections:
+                  - Functional Specialization in Extrastriate Areas
+                  - Role of Extrastriate Areas in Visual Processing
+                  - Hierarchical Organization of Extrastriate Areas
+            - Single-cell Receptive Field Properties:
+                subsections:
+                  - Receptive Field Properties of Neurons in Extrastriate Areas
+                  - Selectivity for Stimulus Features in Extrastriate Areas
+                  - Modulation of Neuronal Responses in Extrastriate Areas
+            - Topography:
+                subsections:
+                  - Retinotopic Mapping in Extrastriate Areas
+                  - Organization of Visual Space in Extrastriate Areas
+                  - Integration of Visual Information across Extrastriate Areas
+            - Imaging:
+                subsections:
+                  - Functional Imaging of Extrastriate Areas
+                  - Neuroimaging Studies of Visual Attention in Extrastriate Areas
+                  - Plasticity in Extrastriate Areas after Sensory Deprivation
+            - Functional and Anatomical Connections:
+                subsections:
+                  - Feedforward and Feedback Connections in Visual Processing
+                  - Parallel Pathways for Visual Processing in Extrastriate Areas
+                  - Connectivity Patterns between Extrastriate Areas and Other Brain Regions
+      - The ON and OFF Channels and Brightness Perception:
+          sections:
+            - The ON and OFF Channels:
+                subsections:
+                  - Physiology of ON and OFF Pathways
+                  - Receptive Field Properties of ON and OFF Cells
+                  - Role of ON and OFF Channels in Vision
+            - Function in Vision:
+                subsections:
+                  - Brightness Perception and ON-OFF Processing
+                  - Contrast Sensitivity and Luminance Adaptation
+                  - Color Perception and Chromatic Contrast
+      - The Midget and Parasol Systems:
+          sections:
+            - Characteristics:
+                subsections:
+                  - Anatomical and Physiological Properties of Midget and Parasol Cells
+                  - Spatial and Temporal Properties of Midget and Parasol Systems
+                  - Receptive Field Properties of Midget and Parasol Cells
+            - Connections:
+                subsections:
+                  - Wiring Diagrams of Midget and Parasol Systems
+                  - Synaptic Connections with Other Visual Pathways
+                  - Integration of Midget and Parasol Signals in Visual Processing
+            - Functions of the Midget and Parasol Systems:
+                subsections:
+                  - Role of Midget and Parasol Systems in Visual Acuity
+                  - Contribution of Midget and Parasol Systems to Motion Perception
+                  - Encoding of Visual Contrast by Midget and Parasol Cells
+      - Eye Movement Control, Subcortical Structures:
+          sections:
+            - Codes for the Generation of Visually Guided Eye Movements:
+                subsections:
+                  - Neural Circuits for Eye Movement Generation
+                  - Role of Superior Colliculus in Eye Movement Control
+                  - Role of Brainstem Nuclei in Eye Movement Control
+            - Role of Excitatory and Inhibitory Mechanisms in Eye Movement Generation:
+                subsections:
+                  - Excitatory and Inhibitory Interactions in Eye Movement Control
+                  - Neural Basis of Saccade Generation and Fixation
+                  - Role of Basal Ganglia in Eye Movement Control
+      - Eye Movement Control, Cortical Structures:
+          sections:
+            - Parallel Pathways for the Control of Visually Guided Eye Movements:
+                subsections:
+                  - Dorsal and Ventral Streams in Eye Movement Control
+                  - Role of Parietal Cortex in Eye Movement Control
+                  - Role of Frontal Cortex in Eye Movement Control
+            - Functions of Cortical Areas in Eye Movement Generation:
+                subsections:
+                  - Role of Medial Superior Temporal Area in Eye Movement Control
+                  - Role of Frontal Eye Fields in Eye Movement Control
+                  - Interactions between Parietal and Frontal Cortices in Eye Movement Control
+      - Depth Perception:
+          sections:
+            - Depth Perception:
+                subsections:
+                  - Monocular and Binocular Depth Cues
+                  - Stereoscopic Depth Perception
+                  - Motion Parallax and Depth Perception
+            - Underlying Neural Mechanisms:
+                subsections:
+                  - Neural Processing of Binocular Disparity
+                  - Role of Visual Areas in Depth Perception
+                  - Neural Basis of Size and Distance Perception
+      - Visual Illusions:
+          sections:
+            - What Illusions Can Convey about How the Brain Processes Visual Information:
+                subsections:
+                  - Illusions as Tools for Studying Perception
+                  - Illusions and Perceptual Organization
+                  - Illusions and Neural Representations
+            - Brain's Explanation of Some Illusions:
+                subsections:
+                  - Neural Mechanisms Underlying Illusory Contours
+                  - Role of Context in Illusion Perception
+                  - Neural Correlates of Illusory Motion Perception
+      - Visual Prosthesis:
+          sections:
+            - Assessment of Research on Visual Prosthesis:
+                subsections:
+                  - Retinal and Cortical Visual Prostheses
+                  - Electrode Array Technologies for Visual Prostheses
+                  - Clinical Trials and Future Directions for Visual Prostheses
+            - Major Tasks Involved in Making a Visual Prosthetic Feasible:
+                subsections:
+                  - Visual Information Encoding and Decoding
+                  - Electrode-Neuron Interfaces for Visual Prostheses
+                  - Rehabilitation Strategies for Visual Prosthesis Users

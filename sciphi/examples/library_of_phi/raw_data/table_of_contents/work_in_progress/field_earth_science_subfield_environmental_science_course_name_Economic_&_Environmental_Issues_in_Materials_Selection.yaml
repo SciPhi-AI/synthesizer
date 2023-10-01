@@ -1,0 +1,124 @@
+textbook:
+  Economic & Environmental Issues in Materials Selection: A Comprehensive Guide
+
+chapters:
+  - Introduction:
+    sections:
+      - Introduction
+      - Time Value of Money
+      - Single Payment Discounting
+      - Importance of Economic and Environmental Considerations in Materials Selection
+
+  - Value and Discounting:
+    sections:
+      - Value
+      - Multi-payment Discounting
+      - Non-uniform Cash Flows
+      - Evaluating the Economic Value of Materials Choices
+
+  - Interest Rates and Uncertainty:
+    sections:
+      - Effective Interest Rates
+      - Uncertainty in Materials Selection
+      - Evaluating and Managing Risks in Materials Selection
+
+  - Comparing Alternatives:
+    sections:
+      - Comparing Alternatives
+      - Evaluating Alternatives
+      - Minimum Acceptable Rate of Return (MARR)
+      - Present Worth (PW)
+      - Annual Worth (AW)
+      - Internal Rate of Return (IRR)
+      - Techniques for Decision Making in Materials Selection
+
+  - Dealing with Changing Prices:
+    sections:
+      - Dealing with Changing Prices
+      - Inflation and Its Impact on Materials Selection
+
+  - Combining Concepts:
+    sections:
+      - Combining Concepts
+      - Class Examples
+      - Applying Economic and Environmental Concepts in Materials Selection
+
+  - Presentations and Review:
+    sections:
+      - Presentations and Review
+      - Reviewing Economic and Environmental Principles in Materials Selection
+
+  - Exam 1:
+    sections:
+      - Exam 1
+      - Assessment of Economic and Environmental Knowledge in Materials Selection
+
+  - Concepts of Materials Indices and Software Introduction:
+    sections:
+      - Concepts of Materials Indices
+      - Software Introduction
+      - Utilizing Material Indices and Software Tools in Materials Selection
+
+  - Material and Shape Selection:
+    sections:
+      - Material and Shape Selection
+      - Evaluating Material and Shape Choices for Economic and Environmental Performance
+
+  - Process Selection and In-class Examples:
+    sections:
+      - Process Selection
+      - In-class Examples
+      - Assessing Process Selection for Economic and Environmental Efficiency
+
+  - Using Cost Models: Concepts and Principles:
+    sections:
+      - Using Cost Models
+      - Concepts and Principles
+      - Applying Cost Models in Materials Selection
+
+  - Tackling Variable Costs:
+    sections:
+      - Tackling Variable Costs
+      - Strategies for Managing Variable Costs in Materials Selection
+
+  - Modeling Fixed Costs:
+    sections:
+      - Modeling Fixed Costs
+      - Techniques for Modeling Fixed Costs in Materials Selection
+
+  - Presentations and Review:
+    sections:
+      - Presentations and Review
+      - Reviewing Economic and Environmental Factors in Materials Selection
+
+  - Exam 2:
+    sections:
+      - Exam 2
+      - Assessment of Economic and Environmental Proficiency in Materials Selection
+
+  - Introduction: What is the Cost of Materials Usage?:
+    sections:
+      - Introduction
+      - Cost of Materials Usage
+      - Understanding the Economic Implications of Materials Usage
+
+  - An Overview of Life Cycle Assessment:
+    sections:
+      - An Overview of Life Cycle Assessment
+      - Life Cycle Assessment in Materials Selection
+
+  - Analysis Goal and Scope; Inventory Methods:
+    sections:
+      - Analysis Goal and Scope
+      - Inventory Methods
+      - Conducting Life Cycle Assessment in Materials Selection
+
+  - Impact Assessment:
+    sections:
+      - Impact Assessment
+      - Assessing Environmental Impacts in Materials Selection
+
+  - Presentations and Wrap-up:
+    sections:
+      - Presentations and Wrap-up
+      - Summarizing Economic and Environmental Considerations in Materials Selection

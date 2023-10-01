@@ -1,0 +1,104 @@
+```yaml
+course:
+  textbook: Product Design and Development: A Comprehensive Guide
+    chapters:
+    - Introduction:
+        sections:
+        - Course logistics and project descriptions
+    - 'Chapter 1: The Product Development Process: ''IDEO''':
+        sections:
+        - IDEO's process, organization, and management
+        - Acceptance of the Visor project
+        - Negotiating a longer lead time
+        - IDEO's success stories and case studies
+    - Chapter 2: Project Proposals:
+        sections:
+        - 50-second presentations
+        - Writing effective project proposals
+        - Pitching project ideas to stakeholders
+    - 'Chapter 3: Identifying Customer Needs: ''Sweetwater''':
+        sections:
+        - Analysis of customer needs
+        - Conducting market research
+        - Gathering user feedback
+    - 'Chapter 4: Customer Preferences: Conjoint Analysis':
+        sections:
+        - Conjoint analysis for understanding customer preferences
+        - Designing effective surveys for preference analysis
+        - Analyzing and interpreting conjoint data
+    - Chapter 5: Industrial Design:
+        sections:
+        - Principles and techniques of industrial design
+        - Form, function, and aesthetics in product design
+        - Ergonomics and user-centered design
+    - Chapter 6: Product Specifications and Concept Generation:
+        sections:
+        - Defining product specifications
+        - Generating product concepts through brainstorming and ideation
+        - Applying design thinking to concept development
+        - Creating user personas for concept creation
+    - Chapter 7: Prototyping:
+        sections:
+        - Prototyping techniques and methods
+        - Rapid prototyping and 3D printing
+        - Usability testing with prototypes
+    - Chapter 8: Concept Selection:
+        sections:
+        - Criteria and methods for selecting product concepts
+        - Evaluating and scoring concept alternatives
+        - Concept testing and validation
+    - Chapter 9: Faculty Project Consulting:
+        sections:
+        - Consulting with faculty on project development
+        - Leveraging faculty expertise for project success
+    - Chapter 10: Intellectual Property:
+        sections:
+        - Overview of intellectual property rights
+        - Patents, trademarks, and copyrights in product design
+        - Protecting intellectual property in a global marketplace
+    - Chapter 11: Peer Concept Review:
+        sections:
+        - Reviewing and providing feedback on peers' product concepts
+        - Conducting effective peer evaluations
+        - Collaborative idea refinement
+    - Chapter 12: Product Architecture:
+        sections:
+        - Designing product architecture
+        - Modular and scalable design principles
+        - Integrating hardware and software components
+    - Chapter 13: Forecasting Demand for New Products:
+        sections:
+        - Methods for predicting product demand
+        - Market research and demand forecasting models
+        - Analyzing market trends and consumer behavior
+    - Chapter 14: Global Manufacturing and Costing:
+        sections:
+        - Considerations for global manufacturing and costing
+        - Supply chain management and international logistics
+        - Cost optimization and value engineering
+    - Chapter 15: Design for Manufacturing:
+        sections:
+        - Designing products for efficient manufacturing
+        - Design for assembly and design for maintenance
+        - Designing for sustainability and life cycle assessment
+    - Chapter 16: Trends and Tools in Product Development:
+        sections:
+        - Current trends and tools in product development
+        - Emerging technologies and their impact on product design
+        - Collaborative design tools and virtual prototyping
+    - Chapter 17: Final Meeting Project Presentations:
+        sections:
+        - Presenting final project outcomes
+        - Effective storytelling and visual communication
+        - Pitching products to investors and stakeholders
+    - Appendix A: Product Design and Development Resources:
+        subsections:
+        - Recommended books and articles
+        - Online communities and forums for product designers
+        - Professional organizations and conferences
+    - Appendix B: Glossary of Product Design Terms:
+        subsections:
+        - Key terms and definitions in product design and development
+        - Common acronyms and industry jargon
+```
+```

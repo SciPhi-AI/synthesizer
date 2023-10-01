@@ -1,0 +1,32 @@
+textbook:
+  Biogeochemistry of Sulfur: A Comprehensive Guide
+  chapters:
+    - Stable Isotope Fractionation Theory:
+        sections:
+        - Applying Stable Isotope Fractionation Theory to New Systems
+        - Calculation of Equilibrium Mass-dependent Isotope Effects
+    - Sulfur Isotope Fractionation:
+        sections:
+        - Biogeochemistry of Sulfur Isotopes
+        - Sulfur and Oxygen Isotope Fractionation in Biological Systems
+    - Sulfidic Ocean:
+        sections:
+        - Evidence and Implications
+        - Proterozoic
+        - Diagnostic Lipids for Ocean Euxinia
+    - Atmospheric Sulfur Cycle:
+        sections:
+        - Dimethylsulfides and Atmospheric Sulfur Cycle
+        - Influence of Sulfur Dioxide Emissions on Atmospheric Chemistry
+    - Molecular Biology of Sulfur:
+        sections:
+        - Discussion Topic Selected by Participants
+    - Organic Sulfur and Lipid Biomarkers:
+        sections:
+        - Organic Sulfur and Preservation of Lipid Biomarkers
+        - Discussion About Selected Topics
+    - Calendar and Important Dates:
+        sections:
+        - Introduction and Course Structure
+        - Discussion Topic Selected by Participants
+        - Projects and Term Papers

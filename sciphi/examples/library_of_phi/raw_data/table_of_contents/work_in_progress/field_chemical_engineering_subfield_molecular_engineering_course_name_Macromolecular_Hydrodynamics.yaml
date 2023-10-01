@@ -1,0 +1,72 @@
+textbook:
+  Macromolecular Hydrodynamics: A Comprehensive Guide
+  
+chapters:
+  - Review of Newtonian Fluid Mechanics:
+    sections:
+      - Funny Flow Phenomena
+      - Review of Classical Hydrodynamics
+      - Equations of Change
+      - Applications in Macromolecular Hydrodynamics
+    
+  - Materials Functions:
+    sections:
+      - Material Functions I
+      - Material Functions II: Linear Viscoelasticity
+      - Material Functions III: Extensional Flows
+      - Polymer Material Functions and their Rheological Properties
+      - Rheological Characterization Techniques for Materials
+    
+  - Generalized Newtonian Fluids:
+    sections:
+      - Generalized Newtonian Fluids: Principles and Behavior
+      - Linear Viscoelasticity: The Basics
+      - Linear Viscoelasticity II: Advanced Concepts
+      - Experimental Methods for LVE Time-Temperature Superposition
+      - Nonlinear Viscoelasticity: Theory and Applications
+    
+  - Polymer Physics:
+    sections:
+      - Polymer Physics: Dilute Solutions
+      - Polymer Physics: Reptation of Entangled Melts & Rubbery Materials
+      - Polymer Physics: Chain Conformation and Dynamics
+      - Polymer Rheology: Flow and Deformation Behavior
+    
+  - Ordered Fluid Expansions:
+    sections:
+      - Ordered Fluid Expansions: Introduction and Principles
+      - Ordered Fluid Expansions: Special Cases and Rheometry
+      - Ordered Fluid Expansions: Applications in Complex Fluids
+    
+  - Differential Constitutive Models:
+    sections:
+      - Differential Constitutive Models: Principles and Formulation
+      - Differential Constitutive Models: Linear and Nonlinear Examples
+      - Differential Constitutive Models: Time-Dependent Behavior
+      - Differential Constitutive Models: Multiscale Approaches
+    
+  - Integral Constitutive Models:
+    sections:
+      - Integral Constitutive Models: Principles and Applications
+      - Integral Constitutive Models: Linear and Nonlinear Examples
+      - Integral Constitutive Models: Time-Dependent Behavior
+      - Integral Constitutive Models: Multiscale Approaches
+    
+  - Gels and Gel Rheology:
+    sections:
+      - Gels and Gel Rheology I: Fundamentals and Characterization
+      - Gels and Gel Rheology II: Mechanical Properties and Applications
+      - Gels and Gel Rheology III: Microstructural Evolution and Aging
+    
+  - Suspension Rheology:
+    sections:
+      - Suspension Rheology I: Fundamentals and Particle Interactions
+      - Suspension Rheology II: Flow and Deformation Behavior
+      - Suspension Rheology III: Shear Thickening and Jamming Phenomena
+      - Suspension Rheology IV: Applications in Industrial Processes
+    
+  - In Class Project Presentations:
+    sections:
+      - In Class Project Presentations: Guidelines and Expectations
+      - In Class Project Presentations: Successful Presenting Techniques
+      - Last Day: In Class Project Presentations: Reflections and Feedback

@@ -1,0 +1,33 @@
+textbook:
+  Marine Power and Propulsion: A Comprehensive Guide
+  chapters:
+  - Resistance and Propulsion:
+      sections:
+      - Resistance and Propulsion (propulsors)
+      - Actuator disk
+      - Propeller testing
+      - Design using Kt (Kq) curves
+      - Detail design
+      - Cavitation
+      - Waterjet notes
+  - First Law:
+      sections:
+      - First law
+      - Summary of thermo
+  - Propeller Lifting Line Theory:
+      sections:
+      - Propeller lifting line theory
+      - Propeller design plot example
+      - Units (propulsors)
+  - Combustion:
+      sections:
+      - Combustion
+      - Relationships for gases
+      - Basic dual cycle diesel notes
+      - Diesel analysis
+      - Diesel
+  - Motors and Generators Overview:
+      sections:
+      - Motors and generators overview
+      - Electric propulsion presentation, guest lecturer Prof. Harbour
+      - Reduction gears notes

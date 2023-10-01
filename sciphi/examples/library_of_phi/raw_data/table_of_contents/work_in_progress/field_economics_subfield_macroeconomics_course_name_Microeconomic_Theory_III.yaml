@@ -1,0 +1,119 @@
+textbook:
+  Microeconomic Theory III: A Comprehensive Guide to Advanced Microeconomics
+chapters:
+  - Chapter 1: Introduction to Microeconomic Theory III
+    sections:
+      - Section 1: Overview of Microeconomic Theory III
+      - Section 2: Review of Microeconomic Theory II
+      - Section 3: Mathematical Tools for Microeconomic Analysis
+        subsections:
+          - Subsection 1: Optimization Techniques
+          - Subsection 2: Calculus for Economics
+          - Subsection 3: Linear Algebra for Economics
+  - Chapter 2: Consumer Theory
+    sections:
+      - Section 1: Preferences and Utility
+        subsections:
+          - Subsection 1: Utility Functions
+          - Subsection 2: Indifference Curves
+          - Subsection 3: Budget Constraint
+      - Section 2: Choice and Demand
+        subsections:
+          - Subsection 1: Consumer Optimization
+          - Subsection 2: Income and Substitution Effects
+          - Subsection 3: Engel Curves
+          - Subsection 4: Revealed Preference Theory
+  - Chapter 3: Producer Theory
+    sections:
+      - Section 1: Production and Cost Functions
+        subsections:
+          - Subsection 1: Production Function
+          - Subsection 2: Isoquants and Marginal Rate of Technical Substitution
+          - Subsection 3: Cost Functions
+      - Section 2: Firm Behavior and Supply
+        subsections:
+          - Subsection 1: Profit Maximization
+          - Subsection 2: Input Demand
+          - Subsection 3: Supply Curve
+  - Chapter 4: Market Structures
+    sections:
+      - Section 1: Perfect Competition
+        subsections:
+          - Subsection 1: Market Equilibrium
+          - Subsection 2: Short-run and Long-run Analysis
+          - Subsection 3: Efficiency and Welfare
+      - Section 2: Monopoly
+        subsections:
+          - Subsection 1: Profit Maximization
+          - Subsection 2: Price Discrimination
+          - Subsection 3: Monopoly Regulation
+      - Section 3: Oligopoly
+        subsections:
+          - Subsection 1: Cournot Model
+          - Subsection 2: Bertrand Model
+          - Subsection 3: Game Theory in Oligopoly
+  - Chapter 5: General Equilibrium
+    sections:
+      - Section 1: Walrasian Equilibrium
+        subsections:
+          - Subsection 1: Edgeworth Box Diagram
+          - Subsection 2: Pareto Efficiency
+          - Subsection 3: Welfare Economics
+      - Section 2: Arrow-Debreu Model
+        subsections:
+          - Subsection 1: Equilibrium Existence and Efficiency
+          - Subsection 2: Equilibrium with Production
+          - Subsection 3: Dynamic General Equilibrium
+  - Chapter 6: Game Theory
+    sections:
+      - Section 1: Strategic Form Games
+        subsections:
+          - Subsection 1: Dominant Strategies
+          - Subsection 2: Nash Equilibrium
+          - Subsection 3: Mixed Strategies
+      - Section 2: Extensive Form Games
+        subsections:
+          - Subsection 1: Subgame Perfect Equilibrium
+          - Subsection 2: Backward Induction
+          - Subsection 3: Sequential Bargaining
+  - Chapter 7: Information Economics
+    sections:
+      - Section 1: Adverse Selection
+        subsections:
+          - Subsection 1: Signaling and Screening
+          - Subsection 2: Lemons Problem
+          - Subsection 3: Mechanism Design
+      - Section 2: Moral Hazard
+        subsections:
+          - Subsection 1: Principal-Agent Problem
+          - Subsection 2: Incentive Compatibility
+          - Subsection 3: Contract Theory
+  - Chapter 8: Welfare Economics
+    sections:
+      - Section 1: Social Welfare Functions
+        subsections:
+          - Subsection 1: Pareto Efficiency and Optimality
+          - Subsection 2: Utilitarianism
+          - Subsection 3: Rawlsian and Nozickian Criteria
+      - Section 2: Externalities and Public Goods
+        subsections:
+          - Subsection 1: Pigouvian Taxes and Subsidies
+          - Subsection 2: Coase Theorem
+          - Subsection 3: Public Choice Theory
+  - Chapter 9: Advanced Topics in Microeconomics
+    sections:
+      - Section 1: Game-Theoretic Industrial Organization
+        subsections:
+          - Subsection 1: Collusion and Cartels
+          - Subsection 2: Entry and Exit
+          - Subsection 3: Predatory Pricing
+      - Section 2: Behavioral Economics
+        subsections:
+          - Subsection 1: Prospect Theory
+          - Subsection 2: Time Inconsistency
+          - Subsection 3: Bounded Rationality
+      - Section 3: Experimental Economics
+        subsections:
+          - Subsection 1: Laboratory Experiments
+          - Subsection 2: Field Experiments
+          - Subsection 3: Behavioral Game Theory

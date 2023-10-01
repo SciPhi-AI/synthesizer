@@ -1,0 +1,201 @@
+course:
+  Advanced Fluid Mechanics Textbook:
+    chapters:
+      - The Continuum Viewpoint and the Equations of Motion:
+          sections:
+            - Introduction to Fluid Mechanics:
+                subsections:
+                  - Continuum Hypothesis
+                  - Thermophysical Properties of Fluids
+            - The Material Derivative and Descriptions of Fluid Motion:
+                subsections:
+                  - Lagrangian and Eulerian Descriptions
+                  - Kinematics of Deformation
+            - Forces and Stresses in Fluids:
+                subsections:
+                  - Forces and Stresses at a Point
+                  - Hydrostatic Pressure Variations
+                  - Rigid Body Motions
+            - Bernoulli's Equation:
+                subsections:
+                  - Steady Bernoulli Equation Along Streamlines
+                  - Steady Bernoulli Equation Across Streamlines
+                  - Unsteady and Generalized Forms of the Bernoulli Equation
+      - The Reynolds Transport Theorem:
+          sections:
+            - Conservation Laws:
+                subsections:
+                  - Conservation of Mass
+                  - Conservation of Energy
+                  - Conservation of Entropy
+            - Conservation of Momentum:
+                subsections:
+                  - Linear Momentum
+                  - Angular Momentum
+      - The Navier-Stokes Equations and Boundary Conditions:
+          sections:
+            - Constitutive Equation for Newtonian Fluids:
+                subsections:
+                  - Conservation of Mass in Differential Form
+                  - Constitutive Equation for Newtonian Fluids
+            - The Navier-Stokes Equations:
+                subsections:
+                  - The Navier-Stokes Equation
+                  - Boundary Conditions for Navier-Stokes Equations
+      - Full Developed Flows and Stability of Viscous Flows:
+          sections:
+            - Full Developed Flows:
+                subsections:
+                  - Couette Flows
+                  - Poiseuille Flows
+            - Stability of Viscous Flows:
+                subsections:
+                  - Introduction to Stability Analysis
+                  - Stability of Laminar Flows
+                  - Transition to Turbulence
+      - The Buckingham Pi Theorem and Dimensionless Variables:
+          sections:
+            - The Buckingham Pi Theorem:
+                subsections:
+                  - Introduction to Dimensional Analysis
+                  - Application of the Buckingham Pi Theorem
+            - Physical Significance of Dimensionless Variables:
+                subsections:
+                  - Importance of Dimensionless Variables in Fluid Mechanics
+                  - Examples of Dimensionless Numbers and Their Interpretation
+      - Asymptotic Limits and Scaling with Dimensionless Variables:
+          sections:
+            - Asymptotic Limits of the Governing Equations:
+                subsections:
+                  - Introduction to Asymptotic Analysis
+                  - Boundary Layer Approximation
+            - Scaling with Dimensionless Variables:
+                subsections:
+                  - Importance of Scaling in Fluid Mechanics
+                  - Examples of Scaling Laws in Fluid Flow Problems
+      - Start-Up and Transient Flows; Similarity Solutions:
+          sections:
+            - Start-Up and Transient Flows:
+                subsections:
+                  - Introduction to Start-Up and Transient Flows
+                  - Analytical and Numerical Methods for Transient Flows
+            - Similarity Solution for a Flat Plate:
+                subsections:
+                  - Boundary Layer on a Flat Plate
+                  - Falkner-Skan Solutions for Flow over a Flat Plate
+      - Quasi-Fully Developed Flows and Lubrication Analysis:
+          sections:
+            - Quasi-Fully Developed Flows:
+                subsections:
+                  - Introduction to Quasi-Fully Developed Flows
+                  - Hagen-Poiseuille Flow
+            - Lubrication Analysis:
+                subsections:
+                  - Introduction to Lubrication Theory
+                  - Reynolds Equation and Its Applications
+      - Free Surfaces and Lubrication Flows:
+          sections:
+            - Free Surfaces in Fluids:
+                subsections:
+                  - Introduction to Free Surface Flows
+                  - Capillary Action and Meniscus Shape
+            - Other Lubrication Flows:
+                subsections:
+                  - Squeeze Film Lubrication
+                  - Journal Bearing Lubrication
+      - The Velocity Potential and Stream Function; Complex Variable Formulation:
+          sections:
+            - The Velocity Potential and Stream Function:
+                subsections:
+                  - Introduction to Potential Flow Theory
+                  - Velocity Potential and Stream Function for Incompressible Flows
+            - Complex Variable Formulation:
+                subsections:
+                  - Complex Potential Flow Theory
+                  - Applications of Complex Analysis in Fluid Mechanics
+      - Examples of Potential Flow Solutions:
+          sections:
+            - Potential Flow around Simple Geometries:
+                subsections:
+                  - Potential Flow over a Cylinder
+                  - Potential Flow over a Sphere
+            - Source-Sink Doublet Solutions:
+                subsections:
+                  - Source-Sink Pair in Uniform Flow
+                  - Flow past a Doublet on a Plane Wall
+      - Circulation and Inviscid Flow; Rotational and Irrotational Flows:
+          sections:
+            - Definition of Circulation and Vorticity:
+                subsections:
+                  - Introduction to Circulation and Vorticity
+                  - Relationship between Circulation and Vorticity
+            - Rotational and Irrotational Flows:
+                subsections:
+                  - Conditions for Irrotational Flow
+                  - Calculation of Circulation in Irrotational Flow
+      - Kelvin’s Circulation Theorems and Aerodynamics:
+          sections:
+            - Kelvin’s Circulation Theorems:
+                subsections:
+                  - Kelvin's Circulation Theorem for Steady Flow
+                  - Kelvin's Circulation Theorem for Unsteady Flow
+            - Aerodynamics:
+                subsections:
+                  - Lift and Induced Drag
+                  - Airfoil Theory and Wing Design
+      - Motivation and Scaling of the Boundary Layer Equations:
+          sections:
+            - Introduction to Boundary Layers:
+                subsections:
+                  - Importance of Boundary Layers in Fluid Mechanics
+                  - Boundary Layer Approximation and its Motivation
+            - Measures of Boundary Layer Thickness:
+                subsections:
+                  - Momentum Thickness and Displacement Thickness
+                  - Energy Thickness and Shape Factor
+      - Boundary Layer on a Flat Plate and Pressure Gradient Effects:
+          sections:
+            - Boundary Layer on a Flat Plate:
+                subsections:
+                  - Laminar Boundary Layer on a Flat Plate
+                  - Transition and Turbulent Boundary Layer on a Flat Plate
+            - Effect of a Pressure Gradient: Falkner-Skan Solutions:
+                subsections:
+                  - Falkner-Skan Equation and its Solutions
+                  - Boundary Layer Separation and Reattachment
+      - Flow Separation and Turbulent Boundary Layers:
+          sections:
+            - Flow Separation in Fluids:
+                subsections:
+                  - Causes and Consequences of Flow Separation
+                  - Control and Prevention of Flow Separation
+            - Turbulent Boundary Layers:
+                subsections:
+                  - Characteristics of Turbulent Boundary Layers
+                  - Turbulent Boundary Layer Thickness and Skin Friction
+      - Free Surface Force Balance and Capillarity:
+          sections:
+            - Free Surface Force Balance:
+                subsections:
+                  - Surface Tension and Capillary Pressure
+                  - Equilibrium of Free Surfaces
+            - Scaling and Dimensional Analysis in Capillarity:
+                subsections:
+                  - Capillary Rise and Capillary Length
+                  - Capillary Waves and Capillary Action
+      - Examples of Flows Driven by Surface Tension:
+          sections:
+            - Capillary Flow in Microfluidics:
+                subsections:
+                  - Capillary Flow in Microchannels
+                  - Droplet Formation and Manipulation
+            - Bubble and Drop Dynamics:
+                subsections:
+                  - Growth and Collapse of Bubbles
+                  - Motion and Coalescence of Drops
+      - Course Review:
+          sections:
+            - Recap of Key Concepts:
+                subsections:
+                  - Summary of Fundamental Fluid Mechanics Principles
+                  - Overview of Advanced Topics Covered in the Course

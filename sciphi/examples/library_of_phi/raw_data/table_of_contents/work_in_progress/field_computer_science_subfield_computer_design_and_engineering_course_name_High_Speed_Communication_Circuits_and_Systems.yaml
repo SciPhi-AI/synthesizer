@@ -1,0 +1,177 @@
+course:
+  High Speed Communication Circuits and Systems Textbook:
+    chapters:
+    - Introduction to High Speed Communication Circuits and Systems:
+        sections:
+        - Overview of Course
+        - Importance and Applications of High Speed Communication Systems
+        - Key Concepts and Terminology
+        - Challenges and Opportunities in High Speed Communication
+    - Transmission Line Theory:
+        sections:
+        - Introduction to Transmission Line Theory
+        - Transmission Line Equations
+        - Propagation Modes and Waveforms
+        - Characteristic Impedance and Velocity of Propagation
+        - Reflection Coefficient and Standing Waves
+        - Impedance Transformers and Matching Techniques
+    - S-parameters and Impedance Transformers:
+        sections:
+        - Introduction to S-parameters and their Applications
+        - S-parameters and Network Analysis
+        - S-parameter Simulation and Measurement Techniques
+        - Impedance Matching Techniques using S-parameters
+        - Design of Impedance Transformers for High Speed Circuits
+    - Generalized Reflection Coefficient, Smith Chart, Passives:
+        sections:
+        - Generalized Reflection Coefficient Analysis
+        - Smith Chart and its Use in Design
+        - Passive Components in High Speed Circuits
+        - Transmission Line Models for Passive Components
+        - Design of High Speed Passive Components
+    - High Speed Broadband Amplifiers:
+        sections:
+        - Introduction to High Speed Broadband Amplifiers
+        - Amplifier Specifications and Requirements
+        - Broadband Amplifier Design Techniques
+        - Stability Analysis and Compensation Techniques
+        - Noise Modeling and Optimization in High Speed Amplifiers
+    - Enhancement of Broadband Amplifiers, Narrowband Amplifiers:
+        sections:
+        - Techniques for Enhancing Broadband Amplifier Performance
+        - Design of Narrowband Amplifiers for High Speed Applications
+        - Trade-offs and Limitations in Amplifier Design
+        - Advanced Amplifier Topologies and Configurations
+        - Power Amplifiers for High Speed Communication Systems
+    - Noise Modeling in Amplifiers:
+        sections:
+        - Introduction to Noise Sources in Amplifiers
+        - Noise Modeling Techniques for High Speed Amplifiers
+        - Noise Figure Analysis and Optimization
+        - Noise Figure Measurement Techniques
+        - Impact of Noise on System Performance
+    - Noise Figure, Impact of Amplifier Nonlinearities:
+        sections:
+        - Noise Figure Calculation and Optimization in Amplifiers
+        - Nonlinear Effects in High Speed Amplifiers
+        - Intermodulation Distortion and Harmonic Distortion
+        - Impact of Nonlinearities on System Performance
+    - Low Noise Amplifiers:
+        sections:
+        - Design Considerations for Low Noise Amplifiers
+        - Noise Analysis and Optimization in Low Noise Amplifiers
+        - Noise Figure Measurement Techniques for Low Noise Amplifiers
+        - Low Noise Amplifier Topologies and Configurations
+        - LNA Applications in High Speed Communication Systems
+    - Mixers:
+        sections:
+        - Basics of Mixer Design for High Speed Applications
+        - Conversion Gain and Noise Analysis in Mixers
+        - Nonlinear Effects and Linearity in Mixers
+        - Mixer Architectures for High Speed Communication Systems
+        - Mixer Performance Optimization Techniques
+    - Voltage Controlled Oscillators:
+        sections:
+        - Design Principles of Voltage Controlled Oscillators (VCOs)
+        - Oscillation and Frequency Tuning in VCOs
+        - Phase Noise Analysis and Optimization in VCOs
+        - VCO Design Techniques for High Speed Communication Systems
+        - VCO Applications in Frequency Synthesis and Clock Generation
+    - High Speed Digital Logic:
+        sections:
+        - Design Challenges in High Speed Digital Circuits
+        - Signal Integrity and Timing Analysis in Digital Systems
+        - Clock Distribution Techniques for High Speed Circuits
+        - Power Supply Noise and Ground Bounce in High Speed Logic
+        - High Speed Memory Design and Interconnects
+    - High Speed Frequency Dividers:
+        sections:
+        - Frequency Division Techniques and Counters
+        - Design of High Speed Frequency Dividers
+        - Performance Analysis and Optimization
+        - Frequency Divider Applications in Clock Generation
+        - Frequency Divider Design for Wireless Communication Systems
+    - Integer-N Frequency Synthesizers:
+        sections:
+        - Architecture and Operation of Integer-N Frequency Synthesizers
+        - Phase Locked Loop (PLL) Design and Analysis
+        - Frequency Synthesis Techniques for High Speed Applications
+        - Integer-N Frequency Synthesizer Design and Optimization
+        - Frequency Synthesizer Applications in Wireless Communication
+    - Noise in Integer-N Frequency Synthesizers:
+        sections:
+        - Noise Sources in Integer-N Frequency Synthesizers
+        - Noise Analysis and Optimization in Frequency Synthesizers
+        - Impact of Noise on System Performance
+        - Phase Noise and Spurious Analysis in Frequency Synthesizers
+        - Noise Reduction Techniques for Integer-N Synthesizers
+    - Advanced Frequency Synthesizers:
+        sections:
+        - Fractional-N Frequency Synthesis Techniques
+        - Phase Noise Reduction Methods in Frequency Synthesizers
+        - Spurious Signal Analysis and Suppression in Synthesizers
+        - Frequency Synthesizer Architectures for High Speed Applications
+        - Advanced Techniques for Frequency Synthesizer Design
+    - Design and Simulation of Synthesizers:
+        sections:
+        - Design Methodologies for Frequency Synthesizers
+        - Simulation Techniques and Tools for Synthesizer Design
+        - Trade-offs and Design Optimization in Frequency Synthesizers
+        - Design Automation and Optimization of Frequency Synthesizers
+        - Advanced Topics in Frequency Synthesizer Design
+    - Basics of Wireless Communication:
+        sections:
+        - Wireless Communication Systems Overview
+        - Modulation and Demodulation Techniques for Wireless Communication
+        - Channel Coding and Error Control in Wireless Systems
+        - Multiple Access Techniques and Wireless Standards
+        - Wireless Communication Protocols and Architectures
+    - Performance Measures of Wireless Communication:
+        sections:
+        - Signal-to-Noise Ratio (SNR) Analysis in Wireless Communication
+        - Bit Error Rate (BER) Calculation and Analysis
+        - Link Budget and Coverage Analysis in Wireless Systems
+        - Wireless Communication Performance Metrics and Evaluation
+        - Interference and Noise in Wireless Communication Systems
+    - MSK Modulation and Clock and Data Recovery Circuits:
+        sections:
+        - Minimum Shift Keying (MSK) Modulation and Demodulation
+        - Clock and Data Recovery (CDR) Techniques for High Speed Communication
+        - Phase Locked Loop (PLL) Implementation and Analysis
+        - Timing Recovery and Data Synchronization Techniques
+        - CDR Circuits for High Speed Serial Data Communication
+    - Guest Lecture by Gu-Yeon Wei, Harvard University: Low-Power High-Speed Links:
+        sections:
+        - Low-Power Design Techniques for High-Speed Links
+        - Energy-Efficient Communication Systems
+        - Case Studies and Best Practices in Low-Power Design
+        - Energy Harvesting and Power Management for High-Speed Links
+        - Future Trends in Low-Power High-Speed Communication
+    - Guest Lecture: Statistical Electronics:
+        sections:
+        - Statistical Analysis of Electronic Systems
+        - Random Process Modeling and Simulation in Electronics
+        - Monte Carlo Methods for Performance Evaluation
+        - Statistical Design and Optimization Techniques
+        - Advanced Topics in Statistical Electronics
+    - Guest Lecture by Analog Devices: RF Power Amplifiers:
+        sections:
+        - Design Principles of RF Power Amplifiers
+        - Efficiency and Linearity Trade-offs in Power Amplifier Design
+        - Power Amplifier Characterization and Measurement Techniques
+        - Advanced RF Power Amplifier Architectures and Techniques
+        - RF Power Amplifiers for Wireless Communication Systems
+    - Guest Lecture: A 1.6 Gb/s/pair Electromagnetically Coupled Multidrop Bus Using Pulse-Based Modulated Signaling:
+        sections:
+        - Multidrop Bus Communication Systems and Architectures
+        - Pulse-Based Modulation Techniques for High-Speed Communication
+        - Signal Integrity and Noise Analysis in Multidrop Bus Systems
+        - Electromagnetic Coupling and Equalization Techniques
+        - Multidrop Bus Design and Optimization for High Data Rates
+    - Guest Lecture by Richard Schreier, Analog Devices: Lowpass and Bandpass Delta-Sigma Modulation:
+        sections:
+        - Delta-Sigma Modulation Basics and Principles
+        - Design of Lowpass Delta-Sigma Modulators
+        - Bandpass Delta-Sigma Modulation Techniques and Applications
+        - Noise Shaping and Quantization Noise Analysis
+        - Delta-Sigma Modulation for High Speed Data Conversion

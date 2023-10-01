@@ -1,0 +1,120 @@
+course:
+  Textbook on Optimization Methods:
+    chapters:
+    - Applications of linear optimization:
+        sections:
+        - Geometry of linear optimization
+            subsections:
+            - Introduction to linear optimization and its geometric interpretation
+            - Convex sets and convex optimization problems
+            - Basic properties of linear optimization
+        - Simplex method
+            subsections:
+            - Introduction to the simplex method
+            - Formulating linear optimization problems using the simplex method
+            - Solving linear optimization problems using the simplex method
+            - Optimality conditions and sensitivity analysis with the simplex method
+        - Duality theory
+            subsections:
+            - Introduction to duality theory
+            - Formulating dual linear optimization problems
+            - Solving dual linear optimization problems
+            - Optimality conditions and sensitivity analysis with duality theory
+        - Sensitivity analysis
+            subsections:
+            - Introduction to sensitivity analysis
+            - Interpreting sensitivity analysis results
+            - Applications of sensitivity analysis in linear optimization
+        - Robust optimization
+            subsections:
+            - Introduction to robust optimization
+            - Robust optimization formulations and solutions
+            - Applications of robust optimization in various fields
+        - Large scale optimization
+            subsections:
+            - Introduction to large scale optimization problems
+            - Techniques for solving large scale optimization problems
+            - Scalability issues and computational considerations in large scale optimization
+
+    - Network flows:
+        sections:
+        - Applications of network flows
+            subsections:
+            - Introduction to network flow problems and their applications
+            - Formulating network flow problems
+            - Solving network flow problems using different algorithms
+            - Applications of network flow problems in transportation, communication, and logistics
+        - Branch and bound and cutting planes
+            subsections:
+            - Introduction to branch and bound algorithm
+            - Incorporating cutting planes into branch and bound algorithm
+            - Solving optimization problems using branch and bound and cutting planes
+            - Analysis and optimization of branch and bound algorithm
+
+    - Applications of discrete optimization:
+        sections:
+        - Lagrangean methods
+            subsections:
+            - Introduction to Lagrangean methods in discrete optimization
+            - Formulating discrete optimization problems using Lagrangean methods
+            - Solving discrete optimization problems using Lagrangean methods
+            - Analysis and optimization of Lagrangean methods
+        - Heuristics and approximation algorithms
+            subsections:
+            - Introduction to heuristics and approximation algorithms in discrete optimization
+            - Designing and implementing heuristics and approximation algorithms
+            - Evaluating the performance of heuristics and approximation algorithms
+            - Applications of heuristics and approximation algorithms in various fields
+        - Dynamic programming
+            subsections:
+            - Introduction to dynamic programming in discrete optimization
+            - Formulating optimization problems using dynamic programming
+            - Solving optimization problems using dynamic programming
+            - Analysis and optimization of dynamic programming algorithms
+
+    - Applications of nonlinear optimization:
+        sections:
+        - Optimality conditions and gradient methods
+            subsections:
+            - Introduction to optimality conditions in nonlinear optimization
+            - Formulating optimization problems using optimality conditions
+            - Solving optimization problems using gradient methods
+            - Analysis and optimization of gradient methods
+        - Line searches and Newton’s method
+            subsections:
+            - Introduction to line searches in nonlinear optimization
+            - Implementing line searches in optimization algorithms
+            - Introduction to Newton’s method in nonlinear optimization
+            - Solving optimization problems using Newton’s method
+            - Analysis and optimization of Newton’s method
+        - Conjugate gradient methods
+            subsections:
+            - Introduction to conjugate gradient methods in nonlinear optimization
+            - Formulating optimization problems using conjugate gradient methods
+            - Solving optimization problems using conjugate gradient methods
+            - Analysis and optimization of conjugate gradient methods
+        - Affine scaling algorithm
+            subsections:
+            - Introduction to affine scaling algorithm in nonlinear optimization
+            - Formulating optimization problems using affine scaling algorithm
+            - Solving optimization problems using affine scaling algorithm
+            - Analysis and optimization of affine scaling algorithm
+        - Interior point methods
+            subsections:
+            - Introduction to interior point methods in nonlinear optimization
+            - Formulating optimization problems using interior point methods
+            - Solving optimization problems using interior point methods
+            - Analysis and optimization of interior point methods
+
+    - Semidefinite optimization:
+        sections:
+        - Semidefinite optimization I
+            subsections:
+            - Introduction to semidefinite optimization
+            - Solving semidefinite optimization problems using different algorithms
+            - Applications of semidefinite optimization in various fields
+        - Semidefinite optimization II
+            subsections:
+            - Advanced topics in semidefinite optimization
+            - Extensions and variations of semidefinite optimization problems
+            - Analysis and optimization of semidefinite optimization algorithms

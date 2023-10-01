@@ -1,0 +1,249 @@
+```yaml
+course:
+  textbook:
+    topics:
+      - chapter: Review of Analytical Mechanics
+        sections:
+          - Euler-Lagrange Equations
+          - Hamilton Equations
+          - D’Alembert and Hamilton principles
+          - Conservation Laws
+          - Holonomic and nonholonomic constraints
+          - Lagrange multipliers
+      - chapter: Rigid Body Dynamics
+        sections:
+          - Non-inertial coordinate systems
+          - Rotation matrices
+          - Euler’s theorem
+          - Moment of Inertia Tensor
+          - Euler Equations
+          - Lagrangian for a spinning top with torque
+      - chapter: Vibrations & Oscillations
+        sections:
+          - Simultaneous diagonalization of matrices for kinetic and potential energy
+          - Using normal coordinates as generalized coordinates
+      - chapter: Canonical Transformations, Hamilton-Jacobi Equations, and Action-Angle Variables
+        sections:
+          - Generating functions for canonical transformations
+          - Invariants
+          - Hamilton-Jacobi equation
+          - Action-angle variables
+          - Kepler problem with action-angle variables
+          - Three-Body problem and Lagrange points
+      - chapter: Perturbation Theory
+        sections:
+          - Time dependent perturbation theory
+          - Periodic and secular changes
+          - Adiabatic invariants
+      - chapter: Fluid Mechanics
+        sections:
+          - Dynamics for continuous systems
+          - Hydrostatics
+          - Conservation laws
+          - Euler equation
+          - Incompressible flows
+          - Sound waves
+          - Viscous flows and the Navier-Stokes equation
+          - Reynolds number
+          - Vortices and Turbulence
+      - chapter: Chaos and Non-Linear Dynamics
+        sections:
+          - Fixed points
+          - Bifurcation
+          - Limit cycles
+          - Lorenz Equations
+          - The Logistic Map
+          - Fractals and Strange Attractors
+    subsubtopics:
+      - section: Euler-Lagrange Equations
+        subsections:
+          - Derivation of Euler-Lagrange Equations
+          - Examples of Euler-Lagrange Equations
+          - Applications of Euler-Lagrange Equations
+      - section: Hamilton Equations
+        subsections:
+          - Derivation of Hamilton Equations
+          - Canonical Transformations and Hamilton Equations
+          - Applications of Hamilton Equations
+      - section: D’Alembert and Hamilton principles
+        subsections:
+          - Derivation of D’Alembert principle
+          - Derivation of Hamilton principle
+          - Applications of D’Alembert and Hamilton principles
+      - section: Conservation Laws
+        subsections:
+          - Conservation of Energy
+          - Conservation of Momentum
+          - Conservation of Angular Momentum
+          - Applications of Conservation Laws
+      - section: Holonomic and nonholonomic constraints
+        subsections:
+          - Classification of Constraints
+          - Holonomic Constraints
+          - Nonholonomic Constraints
+          - Applications of Holonomic and Nonholonomic Constraints
+      - section: Lagrange multipliers
+        subsections:
+          - Introduction to Lagrange multipliers
+          - Applications of Lagrange multipliers
+      - section: Non-inertial coordinate systems
+        subsections:
+          - Introduction to Non-inertial coordinate systems
+          - Examples of Non-inertial coordinate systems
+          - Applications of Non-inertial coordinate systems
+      - section: Rotation matrices
+        subsections:
+          - Introduction to Rotation matrices
+          - Properties of Rotation matrices
+          - Applications of Rotation matrices
+      - section: Euler’s theorem
+        subsections:
+          - Statement of Euler’s theorem
+          - Proof of Euler’s theorem
+          - Applications of Euler’s theorem
+      - section: Moment of Inertia Tensor
+        subsections:
+          - Introduction to Moment of Inertia Tensor
+          - Calculation of Moment of Inertia Tensor
+          - Applications of Moment of Inertia Tensor
+      - section: Euler Equations
+        subsections:
+          - Derivation of Euler Equations
+          - Applications of Euler Equations
+      - section: Lagrangian for a spinning top with torque
+        subsections:
+          - Derivation of Lagrangian for a spinning top with torque
+          - Applications of Lagrangian for a spinning top with torque
+      - section: Simultaneous diagonalization of matrices for kinetic and potential energy
+        subsections:
+          - Introduction to Simultaneous diagonalization of matrices
+          - Mathematical techniques for Simultaneous diagonalization
+          - Applications of Simultaneous diagonalization of matrices
+      - section: Using normal coordinates as generalized coordinates
+        subsections:
+          - Introduction to normal coordinates
+          - Transformation to normal coordinates
+          - Applications of normal coordinates
+      - section: Generating functions for canonical transformations
+        subsections:
+          - Introduction to Generating functions
+          - Types of Generating functions
+          - Applications of Generating functions
+      - section: Invariants
+        subsections:
+          - Definition of Invariants
+          - Examples of Invariants
+          - Applications of Invariants
+      - section: Hamilton-Jacobi equation
+        subsections:
+          - Derivation of Hamilton-Jacobi equation
+          - Separation of variables in Hamilton-Jacobi equation
+          - Applications of Hamilton-Jacobi equation
+      - section: Action-angle variables
+        subsections:
+          - Definition of Action-angle variables
+          - Calculation of Action-angle variables
+          - Applications of Action-angle variables
+      - section: Kepler problem with action-angle variables
+        subsections:
+          - Introduction to Kepler problem
+          - Solution using action-angle variables
+          - Applications of Kepler problem with action-angle variables
+      - section: Three-Body problem and Lagrange points
+        subsections:
+          - Introduction to Three-Body problem
+          - Lagrange points in the Three-Body problem
+          - Applications of Three-Body problem and Lagrange points
+      - section: Time dependent perturbation theory
+        subsections:
+          - Introduction to Time dependent perturbation theory
+          - First order and higher order corrections
+          - Applications of Time dependent perturbation theory
+      - section: Periodic and secular changes
+        subsections:
+          - Definition of Periodic and secular changes
+          - Calculation of Periodic and secular changes
+          - Applications of Periodic and secular changes
+      - section: Adiabatic invariants
+        subsections:
+          - Introduction to Adiabatic invariants
+          - Examples of Adiabatic invariants
+          - Applications of Adiabatic invariants
+      - section: Dynamics for continuous systems
+        subsections:
+          - Conservation laws for continuous systems
+          - Euler equation for continuous systems
+          - Applications of Dynamics for continuous systems
+      - section: Hydrostatics
+        subsections:
+          - Introduction to Hydrostatics
+          - Pressure distribution in fluids at rest
+          - Applications of Hydrostatics
+      - section: Conservation laws
+        subsections:
+          - Conservation of mass
+          - Conservation of momentum
+          - Conservation of energy
+          - Applications of Conservation laws
+      - section: Euler equation
+        subsections:
+          - Derivation of Euler equation
+          - Applications of Euler equation
+      - section: Incompressible flows
+        subsections:
+          - Definition of Incompressible flows
+          - Bernoulli's equation for incompressible flows
+          - Applications of Incompressible flows
+      - section: Sound waves
+        subsections:
+          - Introduction to Sound waves
+          - Speed of sound in fluids
+          - Applications of Sound waves
+      - section: Viscous flows and the Navier-Stokes equation
+        subsections:
+          - Introduction to Viscous flows
+          - Derivation of Navier-Stokes equation
+          - Applications of Viscous flows and the Navier-Stokes equation
+      - section: Reynolds number
+        subsections:
+          - Definition of Reynolds number
+          - Calculation of Reynolds number
+          - Applications of Reynolds number
+      - section: Vortices and Turbulence
+        subsections:
+          - Introduction to Vortices
+          - Characteristics of Vortices
+          - Turbulent flows and its properties
+          - Applications of Vortices and Turbulence
+      - section: Fixed points
+        subsections:
+          - Definition of Fixed points
+          - Stability analysis of Fixed points
+          - Applications of Fixed points
+      - section: Bifurcation
+        subsections:
+          - Introduction to Bifurcation
+          - Types of Bifurcation
+          - Applications of Bifurcation
+      - section: Limit cycles
+        subsections:
+          - Introduction to Limit cycles
+          - Conditions for Limit cycles
+          - Applications of Limit cycles
+      - section: Lorenz Equations
+        subsections:
+          - Derivation of Lorenz Equations
+          - Chaos in the Lorenz Equations
+          - Applications of Lorenz Equations
+      - section: The Logistic Map
+        subsections:
+          - Introduction to The Logistic Map
+          - Bifurcation and Chaos in The Logistic Map
+          - Applications of The Logistic Map
+      - section: Fractals and Strange Attractors
+        subsections:
+          - Introduction to Fractals
+          - Definition of Strange Attractors
+          - Applications of Fractals and Strange Attractors
+```
+```

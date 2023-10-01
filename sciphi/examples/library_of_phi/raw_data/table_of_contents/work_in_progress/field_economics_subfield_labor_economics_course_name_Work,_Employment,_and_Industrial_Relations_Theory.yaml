@@ -1,0 +1,89 @@
+```
+course:
+  textbook:
+    title: Work, Employment, and Industrial Relations: Theory and Practice
+    author: Your Name
+
+    chapters:
+      - title: Introduction to Work, Employment, and Industrial Relations
+        sections:
+          - title: Historical Evolution, Contemporary Issues, and Debates
+            subsections:
+              - Evolution of Work and Employment Relations
+              - Key Debates and Contemporary Issues
+              - Alternative Approaches to the Study of Work
+
+      - title: Pluralist/Institutional Industrial Relations Theory
+        sections:
+          - title: Bases of Pluralist/Institutional Theory
+          - title: Role of Institutions in Industrial Relations
+          - title: Collective Bargaining and Employee Representation
+          - title: Dispute Resolution Mechanisms
+
+      - title: Marxist Perspectives of Industrial Relations
+        sections:
+          - title: Marxist Analysis of Capital and Labor
+          - title: Class Struggle and Exploitation
+          - title: Relationship between Capitalism and Industrial Relations
+
+      - title: Economics Perspectives: Institutional and Internal Labor Market Theory
+        sections:
+          - title: Institutional Economics and Labor Markets
+          - title: Internal Labor Market Theory
+          - title: Wage Determination and Labor Market Segmentation
+
+      - title: Sociological Foundations of Human Resource Management
+        sections:
+          - title: Social Structure and Organizations
+          - title: Power and Authority in Employment Relations
+          - title: Social Networks and Employment
+          - title: Organizational Culture and Climate
+
+      - title: Psychological Foundations of Human Resource Management
+        sections:
+          - title: Individual Differences and Work Behavior
+          - title: Motivation and Job Satisfaction
+          - title: Leadership and Team Dynamics
+          - title: Employee Well-being and Work-Life Balance
+
+      - title: Strategic Human Resource Management and High Performance Work Systems
+        sections:
+          - title: Strategic HRM and Organizational Performance
+          - title: Designing High Performance Work Systems
+          - title: Employee Involvement and Participation
+          - title: Talent Management and Succession Planning
+
+      - title: Political Science Perspectives: Global Supply Chains
+        sections:
+          - title: Globalization and Labor Relations
+          - title: Transnational Corporations and Global Supply Chains
+          - title: Labor Standards and Corporate Social Responsibility
+          - title: Worker Mobilization and Transnational Activism
+
+      - title: Negotiations Theory and Research
+        sections:
+          - title: Theories of Negotiation
+          - title: Negotiation Strategies and Tactics
+          - title: Bargaining Power and Distributive Bargaining
+          - title: Integrative and Interest-Based Bargaining
+
+      - title: Global Occupational Studies: Call Center Research
+        sections:
+          - title: Nature and Characteristics of Call Center Work
+          - title: Work Organization and Employee Experience
+          - title: Technology and Performance Management
+          - title: Work-Life Balance and Well-being in Call Centers
+
+      - title: Industry Studies
+        sections:
+          - title: Comparative Analysis of Employment Relations across Industries
+          - title: Sectoral Approaches to Industrial Relations
+          - title: Labor Market Dynamics and Industry Performance
+          - title: Innovation and Change in Specific Industries
+
+      - title: Wrap-up
+        sections:
+          - title: Review of Key Concepts and Theories
+          - title: Recap of Course Themes and Discussion Points
+          - title: Future Directions in Work and Employment Relations
+```

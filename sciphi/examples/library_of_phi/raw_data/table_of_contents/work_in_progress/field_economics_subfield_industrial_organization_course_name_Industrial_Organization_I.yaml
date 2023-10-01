@@ -1,0 +1,186 @@
+course:
+  textbook:
+    chapters:
+    - Monopoly Pricing and Durable Goods:
+        sections:
+        - Monopoly Pricing:
+            subsections:
+            - Definition and Characteristics of Monopoly
+            - Monopoly Power and Pricing Strategies
+        - Durable Goods:
+            subsections:
+            - Introduction to Durable Goods
+            - Pricing Strategies for Durable Goods
+            - Consumer Behavior and Demand for Durable Goods
+    - Price Discrimination:
+        sections:
+        - First-degree Price Discrimination:
+            subsections:
+            - Concept and Conditions for First-degree Price Discrimination
+            - Pricing Strategies and Revenue Maximization in First-degree Price Discrimination
+        - Second-degree Price Discrimination:
+            subsections:
+            - Types and Applications of Second-degree Price Discrimination
+            - Pricing Strategies and Revenue Maximization in Second-degree Price Discrimination
+        - Third-degree Price Discrimination:
+            subsections:
+            - Types and Examples of Third-degree Price Discrimination
+            - Pricing Strategies and Revenue Maximization in Third-degree Price Discrimination
+    - Static Competition and Models of Differentiation:
+        sections:
+        - Cournot Duopoly:
+            subsections:
+            - Introduction to Cournot Duopoly
+            - Equilibrium and Output Determination in Cournot Duopoly
+        - Bertrand Duopoly:
+            subsections:
+            - Introduction to Bertrand Duopoly
+            - Equilibrium and Price Competition in Bertrand Duopoly
+        - Product Differentiation Models:
+            subsections:
+            - Types and Examples of Product Differentiation
+            - Pricing Strategies and Market Outcomes in Product Differentiation Models
+    - Dynamic Competition:
+        sections:
+        - Stackelberg Model:
+            subsections:
+            - Introduction to Stackelberg Model
+            - Leader-Follower Equilibrium and Output Determination in Stackelberg Model
+        - Investment and Entry Deterrence:
+            subsections:
+            - Strategic Investment and Entry Deterrence Strategies
+            - Real Options Analysis and Decision-making in Dynamic Competition
+        - Limit Pricing:
+            subsections:
+            - Concept and Application of Limit Pricing
+            - Pricing Strategies and Market Entry Deterrence through Limit Pricing
+    - Search:
+        sections:
+        - Search Theory:
+            subsections:
+            - Introduction to Search Theory
+            - Equilibrium and Optimal Search Strategies
+        - Consumer Search:
+            subsections:
+            - Consumer Information Search Behavior
+            - Implications of Consumer Search for Pricing and Market Competition
+        - Job Search:
+            subsections:
+            - Models of Job Search
+            - Labor Market Outcomes and Policy Implications of Job Search
+    - Networks and Two-Sided Markets:
+        sections:
+        - Network Effects:
+            subsections:
+            - Types and Examples of Network Effects
+            - Pricing Strategies and Market Dynamics in Network Industries
+        - Market Platforms:
+            subsections:
+            - Characteristics and Business Models of Market Platforms
+            - Pricing and Competitive Strategies in Platform Markets
+        - Multi-sided Markets:
+            subsections:
+            - Structure and Economics of Multi-sided Markets
+            - Pricing and Market Design in Multi-sided Markets
+    - Entry:
+        sections:
+        - Barriers to Entry:
+            subsections:
+            - Types and Examples of Barriers to Entry
+            - Implications for Market Competition and Entry Strategies
+        - Contestable Markets:
+            subsections:
+            - Theory and Conditions for Contestable Markets
+            - Pricing Strategies and Market Outcomes in Contestable Markets
+        - Entry Deterrence Strategies:
+            subsections:
+            - Types and Examples of Entry Deterrence Strategies
+            - Strategic Behavior and Market Entry Prevention
+        - Market Entry and Exit:
+            subsections:
+            - Market Entry Decision-making and Strategic Considerations
+            - Factors Influencing Market Exit and Firm Survival
+    - Strategic Investment:
+        sections:
+        - Real Options:
+            subsections:
+            - Introduction to Real Options Analysis
+            - Strategic Investment and Decision-making under Uncertainty
+        - Strategic Commitment:
+            subsections:
+            - Types and Examples of Strategic Commitment
+            - Implications for Market Competition and Firm Strategy
+        - Preemption:
+            subsections:
+            - Preemptive Strategies and First-mover Advantage
+            - Game-theoretic Models and Preemptive Behavior
+    - Predation and Limit Pricing:
+        sections:
+        - Predatory Pricing:
+            subsections:
+            - Definition and Characteristics of Predatory Pricing
+            - Legal and Economic Perspectives on Predatory Pricing
+        - Limit Pricing:
+            subsections:
+            - Concept and Application of Limit Pricing
+            - Strategic Pricing and Market Entry Deterrence through Limit Pricing
+        - Strategic Pricing:
+            subsections:
+            - Pricing Strategies and Competitive Behavior in Oligopolistic Markets
+            - Collusion and Non-price Competition in Strategic Pricing
+    - Auctions:
+        sections:
+        - Auction Types:
+            subsections:
+            - Classification and Characteristics of Auctions
+            - Bidding Strategies and Auction Outcomes
+        - Auction Strategies:
+            subsections:
+            - Types and Examples of Auction Strategies
+            - Strategic Behavior and Revenue Maximization in Auctions
+        - Auction Design:
+            subsections:
+            - Principles and Considerations in Auction Design
+            - Efficiency and Market Performance in Auction Markets
+    - Bounded Rationality:
+        sections:
+        - Behavioral Economics:
+            subsections:
+            - Introduction to Behavioral Economics
+            - Decision-making Biases and Heuristics
+        - Bounded Rationality Models:
+            subsections:
+            - Models of Bounded Rationality and Decision-making
+            - Implications for Market Behavior and Economic Outcomes
+        - Heuristics and Biases:
+            subsections:
+            - Cognitive Heuristics and Biases in Decision-making
+            - Behavioral Insights and Economic Policy
+    - Advertising:
+        sections:
+        - Advertising and Market Power:
+            subsections:
+            - Role and Impact of Advertising on Market Power
+            - Pricing and Competitive Strategies in Advertising-intensive Industries
+        - Persuasive Advertising:
+            subsections:
+            - Techniques and Effects of Persuasive Advertising
+            - Consumer Behavior and Response to Persuasive Advertising
+        - Informational Advertising:
+            subsections:
+            - Types and Objectives of Informational Advertising
+            - Market Information and Consumer Decision-making
+    - Patents and Technology Diffusion:
+        sections:
+        - Patent System:
+            subsections:
+            - Introduction to Patent System and Intellectual Property Rights
+            - Patent Protection and Incentives for Innovation
+        - Innovation and Diffusion:
+            subsections:
+            - Models of Innovation and Technology Diffusion
+            - Economic Impacts of Innovation and Diffusion
+        - Intellectual Property Rights:
+            subsections:
+            - Types and Enforcement of Intellectual Property Rights
+            - Policy Considerations and Market Effects of Intellectual Property Rights

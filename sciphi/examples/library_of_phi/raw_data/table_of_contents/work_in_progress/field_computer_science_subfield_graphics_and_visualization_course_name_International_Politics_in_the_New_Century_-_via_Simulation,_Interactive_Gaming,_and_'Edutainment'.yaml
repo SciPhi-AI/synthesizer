@@ -1,0 +1,97 @@
+```yaml
+course:
+  textbook: International Politics in the New Century: A Comprehensive Guide to Simulation, Interactive Gaming, and 'Edutainment'
+    chapters:
+    - Global Gaming and Global Agenda:
+        sections:
+        - Remediation: Understanding New Media
+        - Fostering Political Edutainment in the 21st century
+    - Visualization and International Relations:
+        sections:
+        - Exploring Problems in International Relations
+        - Enhancing Global Agenda and Visualization Strategies
+    - Introduction Challenges, Concepts, Theories, Outcomes:
+        sections:
+        - General Workshop Logic
+        - Making the Game Forces you to Think out all the Possible Actions and Consequences
+    - Looking at a Situation From Different Perspectives can Bring Different Insights:
+        sections:
+        - Perspective-based Analysis
+        - Comparative Analysis
+    - Game Theory and Decision-Making in International Politics:
+        sections:
+        - Rational Choice Theory
+        - Prisoner's Dilemma
+        - Nash Equilibrium
+        - Game Theory Applications in International Politics
+    - Conflict and Cooperation in International Relations:
+        sections:
+        - Causes of Conflict
+        - Power and Security Dilemmas
+        - Diplomacy and Negotiation
+    - Global Governance and International Organizations:
+        sections:
+        - United Nations
+        - World Trade Organization
+        - International Monetary Fund
+        - Non-Governmental Organizations
+    - International Political Economy:
+        sections:
+        - Trade and Economic Integration
+        - Globalization and Its Impacts
+        - Development and Underdevelopment
+        - Economic Policies and International Relations
+    - Human Rights and Humanitarian Interventions:
+        sections:
+        - Universal Declaration of Human Rights
+        - Humanitarian Interventions
+        - Human Rights Violations and Accountability
+        - Responsibility to Protect
+    - Global Security and Conflict Resolution:
+        sections:
+        - Security Dilemmas
+        - Arms Control and Disarmament
+        - Conflict Resolution Mechanisms
+        - Peacekeeping and Peacebuilding
+    - The Role of Technology in International Politics:
+        sections:
+        - Cybersecurity and Cyber Warfare
+        - Artificial Intelligence in International Relations
+        - Surveillance and Privacy Issues in a Globalized World
+    - Global Environmental Politics:
+        sections:
+        - Climate Change and its Impacts on International Relations
+        - Sustainable Development and Resource Management
+        - Environmental Governance and Cooperation
+    - Gender and International Relations:
+        sections:
+        - Feminist Perspectives in International Politics
+        - Gender Inequality and its Effects on Global Issues
+        - Women's Empowerment in International Decision-Making
+    - Media and Public Opinion in International Relations:
+        sections:
+        - Role of Media in Shaping Public Opinion
+        - Propaganda and Disinformation in International Politics
+        - Social Media and Political Activism
+    - Migration and Refugee Crisis:
+        sections:
+        - Causes and Consequences of Migration
+        - Refugee Rights and International Law
+        - Nationalism and Xenophobia in Migration Policies
+    - Emerging Powers in Global Politics:
+        sections:
+        - Rise of China as a Global Superpower
+        - India's Role in International Relations
+        - Brazil's Influence in Global Governance
+        - Russia's Geopolitical Ambitions
+    - Terrorism and Counterterrorism:
+        sections:
+        - Origins and Ideologies of Terrorism
+        - Counterterrorism Strategies and International Cooperation
+        - Impact of Terrorism on Global Security
+    - Ethical Considerations in International Politics:
+        sections:
+        - Just War Theory and Ethics of Armed Conflict
+        - Humanitarian Ethics and Intervention
+        - Ethics of Global Economic Inequality
+```

@@ -1,0 +1,58 @@
+```yaml
+textbook:
+  Atomic and Optical Physics: A Comprehensive Introduction
+  chapters:
+    - Resonance:
+        sections:
+        - Resonance I
+        - Resonance II
+        - Resonance III
+        - Resonance IV
+        - Resonance V
+    - Atoms:
+        sections:
+        - Atoms I
+        - Atoms II
+        - Atoms III
+        - Atoms IV
+        - Atoms V
+    - Atoms in External Fields:
+        sections:
+        - Atoms in External Fields I
+        - Atoms in External Fields II
+        - Atoms in External Fields III
+        - Atoms in External Fields IV
+    - Atom-light Interactions:
+        sections:
+        - Atom-light Interactions I
+        - Atom-light Interactions II
+        - Atom-light Interactions III
+        - Atom-light Interactions IV
+        - Atom-light Interactions V
+        - Atom-light Interactions VI
+    - Line Broadening:
+        sections:
+        - Line Broadening I
+        - Line Broadening II
+        - Line Broadening III
+        - Line Broadening IV
+    - Two-photon Excitation:
+        sections:
+        - Two-photon Excitation I
+        - Two-photon Excitation II
+    - Coherence:
+        sections:
+        - Coherence I
+        - Coherence II
+        - Coherence III
+        - Coherence IV
+        - Coherence V
+    - Assignments: null
+    - Exams: null
+    - Syllabus: null
+    - Readings: null
+    - Lecture Notes: null
+    - Recitations: null
+    - Calendar: null
+    - Projects: null
+```

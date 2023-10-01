@@ -1,0 +1,46 @@
+textbook:
+  Organic Optoelectronics: A Comprehensive Guide to Organic Optoelectronics and Its Applications
+    chapters:
+      - Introduction to the Class:
+          sections:
+            - Course Number
+            - Course Name
+            - Resource Level
+      - Molecules - Chemistry:
+          sections:
+            - Organic Molecules - Structure and Nomenclature
+            - Organic Molecules - Cyclic and Conjugated Molecules
+            - Organic Molecules - Energy Levels
+      - Molecules - Energy Structure:
+          sections:
+            - From Molecules to Aggregates
+            - Excited States of Aggregate Films
+            - Excitons - Types, Energy Transfer
+      - From Monomers to Aggregates:
+          sections:
+            - Exciton Diffusion
+            - Energy Transfer
+            - Growing and Purifying Thin Films/Crystals
+      - Photovoltaics and Photodetectors:
+          sections:
+            - Interfaces - Metal/Organic, Organic/Organic
+            - Xerography
+            - Charged Carrier Transport in Molecular Organics
+            - Charged Carrier Transport in Polymers
+      - Light Emitting Devices:
+          sections:
+            - Luminescence in a Solid Matrix
+            - Lasers
+      - Transistors:
+          sections:
+            - Transistors and Their Applications
+            - Non-Linear Optical Materials/Electrochromics
+            - Molecular Electronics
+      - Student Presentations:
+          sections:
+            - Student Presentations
+      - Final Project:
+          sections:
+            - Review of a Published Article
+            - Brief Description of the Article
+            - Significant Findings

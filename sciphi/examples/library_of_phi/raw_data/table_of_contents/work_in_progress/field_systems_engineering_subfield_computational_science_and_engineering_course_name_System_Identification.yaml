@@ -1,0 +1,227 @@
+textbook:
+  System Identification: A Comprehensive Guide
+chapters:
+  - Review of Linear Systems and Stochastic Processes:
+    sections:
+      - Linear Systems:
+        subsections:
+          - Introduction to Linear Systems
+          - System Representation
+          - System Properties
+          - System Response
+      - Stochastic Processes:
+        subsections:
+          - Introduction to Stochastic Processes
+          - Stationary Processes
+          - Autocorrelation and Power Spectral Density
+          - Gaussian Processes
+          - Markov Processes
+  - Defining a General Framework:
+    sections:
+      - General Framework:
+        subsections:
+          - System Identification Framework
+          - Modeling Assumptions
+          - Signal Processing Techniques
+  - Introductory Examples for System Identification:
+    sections:
+      - Introductory Examples:
+        subsections:
+          - Example 1: Spring-Mass-Damper System
+          - Example 2: RC Circuit
+          - Example 3: Pendulum System
+  - Nonparametric Identification:
+    sections:
+      - Nonparametric Identification:
+        subsections:
+          - Frequency Domain Methods
+          - Time Domain Methods
+          - Nonparametric Model Selection
+          - Model Validation Techniques
+  - Input Design and Persistence of Excitation:
+    sections:
+      - Input Design:
+        subsections:
+          - Excitation Signals
+          - Input Design Criteria
+          - Optimal Input Design Methods
+      - Persistence of Excitation:
+        subsections:
+          - Definition and Importance
+          - Excitation Conditions
+          - Excitation Signals for Parameter Estimation
+  - Pseudo-random Sequences:
+    sections:
+      - Pseudo-random Sequences:
+        subsections:
+          - Definition and Properties
+          - Generation Methods
+          - Spectral Properties
+          - Applications in System Identification
+  - Least Squares and Statistical Properties:
+    sections:
+      - Least Squares:
+        subsections:
+          - Ordinary Least Squares (OLS)
+          - Weighted Least Squares (WLS)
+          - Recursive Least Squares (RLS)
+      - Statistical Properties:
+        subsections:
+          - Consistency
+          - Efficiency
+          - Bias
+          - Robustness
+  - Parametrized Model Structures and One-step Predictor:
+    sections:
+      - Parametrized Model Structures:
+        subsections:
+          - ARX Models
+          - ARMAX Models
+          - Output Error Models
+          - State Space Models
+      - One-step Predictor:
+        subsections:
+          - Definition and Formulation
+          - Estimation Methods
+          - Prediction Error Analysis
+  - Identifiability:
+    sections:
+      - Identifiability:
+        subsections:
+          - Definition and Importance
+          - Identifiability Conditions
+          - Practical Identifiability Techniques
+  - Parameter Estimation Methods:
+    sections:
+      - Parameter Estimation Methods:
+        subsections:
+          - Maximum Likelihood Estimation
+          - Bayesian Estimation
+          - Instrumental Variable Estimation
+          - Subspace Methods
+  - Minimum Prediction Error Paradigm and Maximum Likelihood:
+    sections:
+      - Minimum Prediction Error Paradigm:
+        subsections:
+          - MPE Estimation Framework
+          - Prediction Error Criterion
+          - Properties and Advantages
+      - Maximum Likelihood:
+        subsections:
+          - ML Estimation Framework
+          - Likelihood Function
+          - Parameter Estimation Techniques
+  - Convergence and Consistency:
+    sections:
+      - Convergence and Consistency:
+        subsections:
+          - Asymptotic Convergence
+          - Consistency of Estimators
+          - Rate of Convergence
+          - Convergence in Probability
+  - Informative Data:
+    sections:
+      - Informative Data:
+        subsections:
+          - Definition and Importance
+          - Data Transformation Techniques
+          - Data Preprocessing Methods
+          - Data Quality Assessment
+  - Convergence to the True Parameters:
+    sections:
+      - Convergence to the True Parameters:
+        subsections:
+          - Asymptotic Properties of Estimators
+          - Consistency of Estimators
+          - Rate of Convergence
+          - Convergence in Probability
+  - Asymptotic Distribution of PEM:
+    sections:
+      - Asymptotic Distribution of PEM:
+        subsections:
+          - Distribution of Prediction Errors
+          - Confidence Intervals
+          - Hypothesis Testing
+          - Goodness-of-fit Measures
+  - Instrumental Variable Methods:
+    sections:
+      - Instrumental Variable Methods:
+        subsections:
+          - Definition and Importance
+          - Identification Conditions
+          - Estimation Techniques
+          - Applications and Limitations
+  - Identification in Closed Loop:
+    sections:
+      - Identification in Closed Loop:
+        subsections:
+          - Challenges in Closed Loop Identification
+          - Open Loop Identification Techniques
+          - Closed Loop Identification Techniques
+          - Performance Analysis
+  - Asymptotic Results:
+    sections:
+      - Asymptotic Results:
+        subsections:
+          - Asymptotic Efficiency
+          - Asymptotic Cramér-Rao Bound
+          - Asymptotic Bias
+          - Asymptotic Variance
+  - Computation:
+    sections:
+      - Computation:
+        subsections:
+          - Numerical Methods
+          - Optimization Techniques
+          - Computational Efficiency
+          - Software Tools
+  - Levinson Algorithm and Recursive Estimation:
+    sections:
+      - Levinson Algorithm:
+        subsections:
+          - Introduction to Levinson Algorithm
+          - Levinson Algorithm Steps
+          - Recursive Estimation:
+        subsections:
+          - Recursive Least Squares (RLS)
+          - Recursive Instrumental Variable (RIV)
+          - Recursive Maximum Likelihood (RML)
+  - Identification in Practice:
+    sections:
+      - Identification in Practice:
+        subsections:
+          - Real-World System Identification Challenges
+          - Practical Considerations
+          - Case Studies and Examples
+          - Best Practices
+  - Error Filtering:
+    sections:
+      - Error Filtering:
+        subsections:
+          - Error Detection and Removal Techniques
+          - Kalman Filtering
+          - Particle Filtering
+          - Smoothing Techniques
+  - Order Estimation:
+    sections:
+      - Order Estimation:
+        subsections:
+          - Model Order Selection
+          - Information Criteria
+          - Cross-validation Techniques
+          - Residual Analysis
+  - Model Structure Validation:
+    sections:
+      - Model Structure Validation:
+        subsections:
+          - Model Adequacy Assessment
+          - Model Selection Criteria
+          - Model Validation Techniques
+          - Overfitting and Underfitting
+  - Examples:
+    sections:
+      - Examples:
+        subsections:
+          - Example 1: Identification of a Car Suspension System
+          - Example 2: Identification of a Biomedical Signal
+          - Example 3: Identification of a Power System

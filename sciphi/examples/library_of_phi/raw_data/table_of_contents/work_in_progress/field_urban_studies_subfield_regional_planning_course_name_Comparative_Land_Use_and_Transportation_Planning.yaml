@@ -1,0 +1,43 @@
+```yaml
+course:
+  textbook:
+    Comparative Land Use and Transportation Planning: A Comprehensive Guide
+    chapters:
+    - Introduction:
+        sections:
+        - Course Overview
+        - Objectives
+        - Expectations
+        - Logistics
+        - Student Interests
+        - Basic Course Framework
+        - Why Comparative Land Use and Transportation Planning?
+    - Metropolitan-ization Forces, Patterns and Trends, Concerns:
+        sections:
+        - Models of the Metropolis
+        - Regional Architectures: Institutions of the Metropolis
+        - Accessibility: The Land Use-Transportation Link
+        - Basics of Travel Demand: Persons and Firms
+        - Mobility/Accessibility Relationship
+        - Measuring Urban Form and Urban Design
+        - Implications for Planning Policies and Tools
+        - Financial Instruments for Land Use and Transportation Planning
+        - Transportation and Metropolitan Growth: History of Effects
+        - Public Transportation and Metropolitan Growth
+    - Public Transportation and Metropolitan Growth: Case Studies in Integration:
+        sections:
+        - Passaic Studio Presentation
+        - Roadways and Metropolitan Growth
+        - Financial Instruments for Transportation and Metropolitan Growth
+        - Transportation Networks and Travel Behavior
+    - Back to the Future? Land Use Mobility, Accessibility in Metropolitan China:
+        sections:
+        - The Future of the Metropolis: Theoretical Speculations
+        - The Future of the Metropolis: Tools and Models
+        - Student Presentations
+        subsections:
+        - Urbanization and Sustainable Development in Metropolitan China
+        - High-Speed Rail and Urban Connectivity
+        - Urban Design and Planning in Chinese Metropolises
+        - Future Challenges and Opportunities in Metropolitan China
+```

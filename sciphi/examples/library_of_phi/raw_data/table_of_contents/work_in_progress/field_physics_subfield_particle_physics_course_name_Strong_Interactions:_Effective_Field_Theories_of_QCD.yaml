@@ -1,0 +1,275 @@
+```yaml
+course:
+  'Strong Interactions: Effective Field Theories of QCD':
+    textbook:
+      name: 'Effective Field Theories of QCD: A Comprehensive Guide'
+      chapters:
+        - Standard Model Review:
+            sections:
+              - CKM Matrix:
+                  subsections:
+                    - Introduction to CKM Matrix
+                    - Unitarity Triangle
+                    - CP Violation
+              - SM as an EFT:
+                  subsections:
+                    - Introduction to the Standard Model
+                    - Effective Field Theories
+                    - Power Counting in EFT
+              - Relevant and Irrelevant Operators:
+                  subsections:
+                    - Classification of Operators
+                    - Renormalization and Anomalies
+                    - Operator Mixing
+              - Field Redefinitions:
+                  subsections:
+                    - Field Transformations
+                    - Canonical Quantization
+                    - Path Integral Formulation
+              - Wilsonian and Gell-Mann Low Renormalization Group:
+                  subsections:
+                    - Wilsonian RG
+                    - Gell-Mann Low RG
+                    - Beta Function and Anomalous Dimensions
+              - Neutrinos:
+                  subsections:
+                    - Neutrino Oscillations
+                    - Neutrino Masses and Mixings
+                    - Neutrinoless Double Beta Decay
+        - EFT Basics:
+            sections:
+              - QCD Handout:
+                  subsections:
+                    - Introduction to QCD
+                    - QCD Lagrangian
+                    - Color Confinement
+              - Regularization and Renormalization:
+                  subsections:
+                    - Dimensional Regularization
+                    - Renormalization Schemes
+                    - Renormalization Group Equations
+              - Decoupling Theorem:
+                  subsections:
+                    - Statement of the Decoupling Theorem
+                    - Applications of the Decoupling Theorem
+              - Mass Independent Schemes:
+                  subsections:
+                    - MS Bar Scheme
+                    - On-Shell Scheme
+                    - Other Mass Independent Schemes
+              - Matching and Running:
+                  subsections:
+                    - Matching Conditions
+                    - Renormalization Scale Dependence
+                    - Running Coupling Constants
+        - EFT for Massive Particles:
+            sections:
+              - Integrating out the Top, W, Z:
+                  subsections:
+                    - Top Quark Mass Effects
+                    - W and Z Boson Mass Effects
+                    - Electroweak Precision Observables
+              - Matching and Decoupling:
+                  subsections:
+                    - Matching Conditions for Massive Particles
+                    - Decoupling of Massive Particles
+                    - Heavy Particle Effective Field Theories
+              - Electroweak Hamiltonian:
+                  subsections:
+                    - Electroweak Symmetry Breaking
+                    - Electroweak Precision Tests
+                    - Effective Hamiltonian for Electroweak Processes
+              - Flavor Changing Neutral Currents:
+                  subsections:
+                    - Flavor Changing Neutral Currents in the SM
+                    - FCNCs in EFT
+                    - Rare B and K Decays
+              - Higgs Effective Field Theory:
+                  subsections:
+                    - Effective Field Theory for the Higgs Boson
+                    - Higgs Phenomenology in EFT
+                    - Higgs Production and Decays
+        - Chiral Perturbation Theory:
+            sections:
+              - Introduction to Chiral Perturbation Theory:
+                  subsections:
+                    - Spontaneous Symmetry Breaking
+                    - Chiral Effective Field Theory
+                    - Chiral Perturbation Theory Lagrangian
+              - Pion Scattering:
+                  subsections:
+                    - Pion-Pion Scattering
+                    - Low-Energy Theorems
+                    - Chiral Perturbation Theory Predictions
+              - Chiral Symmetry Breaking:
+                  subsections:
+                    - Spontaneous Chiral Symmetry Breaking
+                    - Chiral Condensate and Quark Masses
+                    - Chiral Effective Potential
+              - Chiral Power Counting:
+                  subsections:
+                    - Power Counting in Chiral Perturbation Theory
+                    - Chiral Expansion of Amplitudes
+                    - Order Counting Rules
+              - Chiral Lagrangian:
+                  subsections:
+                    - Chiral Lagrangian for Pions
+                    - Extension to Include Other Mesons
+                    - Applications of Chiral Lagrangian
+        - Heavy Quark Effective Theory:
+            sections:
+              - Introduction to Heavy Quark Effective Theory:
+                  subsections:
+                    - Symmetries of Heavy Quark Effective Theory
+                    - Heavy Quark Effective Lagrangian
+                    - Power Counting in HQET
+              - HQET for B Mesons:
+                  subsections:
+                    - Effective Field Theory for B Mesons
+                    - B Meson Decay Processes
+                    - B Mixing and CP Violation
+              - Heavy Quark Symmetries:
+                  subsections:
+                    - Heavy Quark Spin Symmetry
+                    - Heavy Quark Flavor Symmetry
+                    - Applications of Heavy Quark Symmetries
+              - Leptonic and Semileptonic Decays:
+                  subsections:
+                    - Leptonic Decays of Heavy Mesons
+                    - Semileptonic Decays of Heavy Mesons
+                    - Form Factors in Heavy Meson Decays
+              - Heavy Quark Form Factors:
+                  subsections:
+                    - Heavy-to-Light Form Factors
+                    - Heavy-to-Heavy Form Factors
+                    - Applications of Heavy Quark Form Factors
+        - Non-Relativistic QCD:
+            sections:
+              - Introduction to Non-Relativistic QCD:
+                  subsections:
+                    - NRQCD Lagrangian
+                    - Velocity Scaling and Power Counting
+                    - Non-Relativistic Bound States
+              - NRQCD Power Counting:
+                  subsections:
+                    - Power Counting in NRQCD
+                    - Matching Conditions for NRQCD
+                    - Renormalization Group Evolution in NRQCD
+              - Quarkonium Spectroscopy:
+                  subsections:
+                    - Quarkonium Bound States
+                    - Quarkonium Mass Spectrum
+                    - Quarkonium Decays and Production
+              - Heavy Quarkonia Decay:
+                  subsections:
+                    - Radiative and Electromagnetic Decays
+                    - Leptonic and Semileptonic Decays
+                    - Hadronic and Inclusive Decays
+              - Effective Field Theory for Quarkonia:
+                  subsections:
+                    - Effective Field Theory for Quarkonia
+                    - EFT Approach to Quarkonia Phenomenology
+                    - Applications of Quarkonium EFT
+        - Prelude to SCET:
+            sections:
+              - Introduction to Soft-Collinear Effective Theory:
+                  subsections:
+                    - Introduction to SCET
+                    - SCET Lagrangian
+                    - Power Counting in SCET
+              - SCET Power Counting:
+                  subsections:
+                    - Power Counting in SCET
+                    - Factorization in SCET
+                    - Applications of SCET in QCD Processes
+              - Factorization Theorems:
+                  subsections:
+                    - Factorization in QCD Processes
+                    - Soft and Collinear Factorization
+                    - Proof of Factorization Theorems
+              - Resummation Techniques:
+                  subsections:
+                    - Resummation in SCET
+                    - Sudakov Form Factors
+                    - Threshold Resummation
+        - Soft-Collinear Effective Theory:
+            sections:
+              - Introduction to SCET:
+                  subsections:
+                    - Introduction to SCET
+                    - SCET Power Counting
+                    - SCET Lagrangian
+              - SCET Lagrangian:
+                  subsections:
+                    - SCET Field Content
+                    - SCET Gauge Symmetry
+                    - SCET Soft and Collinear Modes
+              - Gauge Symmetry:
+                  subsections:
+                    - Gauge Symmetry in SCET
+                    - Gauge Invariance and Ward Identities
+                    - Anomalous Dimensions in SCET
+              - Renormalization Group Evolution:
+                  subsections:
+                    - Renormalization Group in SCET
+                    - Anomalous Dimensions in SCET
+                    - RG Evolution Equations in SCET
+              - Infrared Divergences and Matching:
+                  subsections:
+                    - Infrared Divergences in SCET
+                    - Soft and Collinear Divergences
+                    - Matching Calculations in SCET
+        - Student Presentations:
+            sections:
+              - Presentation 1:
+                  subsections:
+                    - Presentation Topic 1
+                    - Presentation Content 1
+                    - Presentation Discussion 1
+              - Presentation 2:
+                  subsections:
+                    - Presentation Topic 2
+                    - Presentation Content 2
+                    - Presentation Discussion 2
+              - Presentation 3:
+                  subsections:
+                    - Presentation Topic 3
+                    - Presentation Content 3
+                    - Presentation Discussion 3
+              - Presentation 4:
+                  subsections:
+                    - Presentation Topic 4
+                    - Presentation Content 4
+                    - Presentation Discussion 4
+              - Presentation 5:
+                  subsections:
+                    - Presentation Topic 5
+                    - Presentation Content 5
+                    - Presentation Discussion 5
+              - Presentation 6:
+                  subsections:
+                    - Presentation Topic 6
+                    - Presentation Content 6
+                    - Presentation Discussion 6
+              - Presentation 7:
+                  subsections:
+                    - Presentation Topic 7
+                    - Presentation Content 7
+                    - Presentation Discussion 7
+              - Presentation 8:
+                  subsections:
+                    - Presentation Topic 8
+                    - Presentation Content 8
+                    - Presentation Discussion 8
+              - Presentation 9:
+                  subsections:
+                    - Presentation Topic 9
+                    - Presentation Content 9
+                    - Presentation Discussion 9
+              - Presentation 10:
+                  subsections:
+                    - Presentation Topic 10
+                    - Presentation Content 10
+                    - Presentation Discussion 10
+```
+```

@@ -1,0 +1,93 @@
+```yaml
+course:
+  Textbook on Physical Metallurgy:
+    chapters:
+    - Introduction to Physical Metallurgy:
+        sections:
+        - Basic crystallography
+        - BCC, FCC, HCP structures
+        - Miller indices
+        - Crystal symmetry
+        - Stereographic projection
+    - Crystal Shear Stress and Yielding:
+        sections:
+        - Burgers' vector
+        - Introduction to edge, screw, and mixed dislocations
+        - Stress, strain, and stored energy
+    - Dislocation Energy and Movement:
+        sections:
+        - Stress fields
+        - Movement of dislocations
+    - Dislocation Interactions:
+        sections:
+        - Peach-Koehler equation
+        - Effects on material behavior
+        - Frank-Read sources
+        - Observing dislocations
+    - Crystal Structures and Slip Systems:
+        sections:
+        - Dislocation shear stress resolution
+        - Using stereographic projections
+    - Applying Stress and Dislocation Locking:
+        sections:
+        - Cross-slipping
+        - Dislocation locking
+        - Jogs and partials
+    - More Dislocation Interactions:
+        sections:
+        - Orowan looping
+        - Work hardening
+        - Polycrystal deformation
+    - Twinning:
+        sections:
+        - Twinning mechanisms
+    - Heating Metals and Annealing:
+        sections:
+        - Dislocation climb
+        - Recovery
+        - Annealing
+    - Recrystallization and Grain Growth:
+        sections:
+        - Nucleation
+        - Grain growth
+        - Effects of temperature, strain, grain size, impurities
+    - Alloying and Deformation:
+        sections:
+        - Forces on dislocations
+    - Solid Solutions and Strengthening:
+        sections:
+        - Annealing
+        - Diffusion kinetics
+    - Precipitate Hardening and Phase Boundaries:
+        sections:
+        - Effect of time and temperature on microstructure
+        - Mechanisms and size effects
+    - Contributions to Precipitate Hardening:
+        sections:
+        - Phase diagrams
+        - Kinetics
+        - Ostwald ripening
+        - TTT diagrams
+    - Intra-particle Stresses and Modulus Limits:
+        sections:
+        - Isostrain and isostress
+        - Contiguity and percolation
+    - Introduction to Steel:
+        sections:
+        - Fe-C phase diagram
+        - Phases and microstructures
+    - Steel Properties:
+        sections:
+        - Mechanical properties of steel
+        - Thermal properties of steel
+        - Electrical properties of steel
+    - Nanocrystalline Metals:
+        sections:
+        - Properties of nanocrystalline metals
+        - Dislocations in nanocrystalline metals
+        - Grain boundaries in nanocrystalline metals
+        - Applications of nanocrystalline metals
+    - Conclusions:
+        sections:
+        - Summary of the course
+```

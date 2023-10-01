@@ -1,0 +1,75 @@
+textbook:
+  'Digital Communication Systems: Theory and Practice':
+    chapters:
+    - Introduction:
+        sections:
+        - Introduction and objectives for communication systems
+        - Information and entropy
+        - Huffman coding
+    - Source Coding:
+        sections:
+        - 'Source coding: Huffman codes and LZW'
+    - Error Correction:
+        sections:
+        - Errors and binary symmetric channels
+        - Error correction introduction
+        - Error correction (channel coding)
+        - Hamming distance
+        - Parity bits
+        - Rectangular parity codes
+        - Hamming codes
+        - Linear block codes
+        - Interleaving
+    - Convolutional Codes:
+        sections:
+        - Convolutional codes
+        - Viterbi decoding of convolutional codes
+    - Noise and Signaling:
+        sections:
+        - Gaussian noise, SNR and BER, dB scale
+        - 'Transmitting on a physical channel: the bits-signal boundary'
+        - Digital signaling
+        - Modulation and demodulation
+    - LTI Models and Filters:
+        sections:
+        - Linear, time-invariant
+        - Intersymbol interference
+        - Filters and composition
+        - Deconvolution as Fourier transformation
+    - Spectral Representation:
+        sections:
+        - Fourier transformation to display the spectrum of a periodic signal
+        - Discrete-time Fourier series
+        - Spectrum of non-periodic signals
+    - Modulation and Demodulation:
+        sections:
+        - Modulation on a sinusoidal carrier
+        - Demodulation
+    - LTI Channels and Filtering:
+        sections:
+        - Signals in time and frequency
+        - LTI channels
+        - Filtering
+        - Modulation/demodulation in modern design
+    - Communication Networks:
+        sections:
+        - Multi-hop networks
+        - Packet switching
+        - Queues
+        - Sources of delay
+    - MAC Protocols:
+        sections:
+        - Sharing a channel
+        - MAC protocols
+    - Network Routing:
+        sections:
+        - Network layer
+        - Routing protocols
+    - Transport Protocols:
+        sections:
+        - 'Transport protocols: reliable data delivery'
+        - 'Transport protocols: improving throughput with sliding windows'
+    - History and Wrap-up:
+        sections:
+        - From the telegraph to the Internet
+        - Course wrap-up

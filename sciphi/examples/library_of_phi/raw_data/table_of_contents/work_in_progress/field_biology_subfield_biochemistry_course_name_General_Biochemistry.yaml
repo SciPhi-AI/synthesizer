@@ -1,0 +1,50 @@
+course:
+  Textbook of General Biochemistry:
+    chapters:
+    - Biomolecules, Methods, and Mechanisms:
+        sections:
+        - Introduction to Biochemistry
+        - Classes of Biomolecules
+        - pH, Buffers, and Titration Curves
+    - Amino Acids and Proteins:
+        sections:
+        - Introduction to Amino Acids
+        - Structure and Properties of Amino Acids
+        - Protein Structure and Folding
+        - Protein Purification Techniques
+        - Protein Structure Determination Methods
+    - Enzyme Chemistry and Mechanisms:
+        sections:
+        - Introduction to Enzymes
+        - Enzyme Classification and Nomenclature
+        - Enzyme Kinetics and Inhibition
+        - Enzyme Catalytic Mechanisms
+        - Enzyme Regulation and Allostery
+    - Signal Transduction and Cell Communication:
+        sections:
+        - Introduction to Signal Transduction
+        - Hormones and Receptors
+        - Intracellular Signaling Pathways
+        - Small G-proteins and Second Messengers
+        - Signal Transduction in Development and Disease
+    - Nucleic Acids and Protein Synthesis:
+        sections:
+        - Introduction to Nucleic Acids
+        - DNA Structure and Replication
+        - RNA Structure and Transcription
+        - tRNA and Protein Translation
+        - Ribosomes and Protein Synthesis
+    - Metabolism and Energy Production:
+        sections:
+        - Introduction to Metabolism
+        - Carbohydrate Metabolism and Glycolysis
+        - Citric Acid Cycle and Oxidative Phosphorylation
+        - Lipid Metabolism and Fatty Acid Oxidation
+        - Amino Acid Metabolism and Nitrogen Cycling
+    - Biochemical Pathways and Regulation:
+        sections:
+        - Pentose Phosphate Pathway
+        - Gluconeogenesis and Glycogen Metabolism
+        - TCA Cycle and Electron Transport Chain
+        - Lipid Synthesis and Regulation
+        - Nucleotide Metabolism and Regulation

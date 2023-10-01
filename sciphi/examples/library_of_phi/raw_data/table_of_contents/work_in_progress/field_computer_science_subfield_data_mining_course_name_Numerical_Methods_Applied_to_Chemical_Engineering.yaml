@@ -1,0 +1,157 @@
+```yaml
+textbook:
+  Numerical Methods for Chemical Engineering: Theory, Algorithms, and Applications:
+    chapters:
+    - Chapter 1: Introduction to Numerical Methods in Chemical Engineering
+      sections:
+      - Section 1.1: Overview of Numerical Methods
+      - Section 1.2: Importance of Numerical Methods in Chemical Engineering
+      - Section 1.3: Challenges and Limitations of Numerical Methods
+    - Chapter 2: Linear Algebra
+      sections:
+      - Section 2.1: Introduction to Linear Algebra
+        subsections:
+        - Subsection 2.1.1: Vectors and Matrices
+        - Subsection 2.1.2: Matrix Operations
+        - Subsection 2.1.3: Linear Systems of Equations
+      - Section 2.2: Matrix Factorizations and Decompositions
+        subsections:
+        - Subsection 2.2.1: LU Factorization
+        - Subsection 2.2.2: QR Factorization
+        - Subsection 2.2.3: Cholesky Factorization
+      - Section 2.3: Eigenvalue Problems
+        subsections:
+        - Subsection 2.3.1: Power Iteration Method
+        - Subsection 2.3.2: QR Algorithm
+        - Subsection 2.3.3: Lanczos Algorithm
+    - Chapter 3: Systems of Nonlinear Equations
+      sections:
+      - Section 3.1: Introduction to Nonlinear Equations
+        subsections:
+        - Subsection 3.1.1: Bisection Method
+        - Subsection 3.1.2: Newton-Raphson Method
+        - Subsection 3.1.3: Secant Method
+      - Section 3.2: Solution Techniques for Nonlinear Systems
+        subsections:
+        - Subsection 3.2.1: Fixed-Point Iteration
+        - Subsection 3.2.2: Newton's Method for Systems
+        - Subsection 3.2.3: Quasi-Newton Methods
+    - Chapter 4: Optimization
+      sections:
+      - Section 4.1: Introduction to Optimization
+        subsections:
+        - Subsection 4.1.1: Unconstrained Optimization
+        - Subsection 4.1.2: Constrained Optimization
+      - Section 4.2: Linear Programming
+        subsections:
+        - Subsection 4.2.1: Simplex Method
+        - Subsection 4.2.2: Interior Point Methods
+      - Section 4.3: Nonlinear Programming
+        subsections:
+        - Subsection 4.3.1: Gradient-Based Methods
+        - Subsection 4.3.2: Penalty and Augmented Lagrangian Methods
+    - Chapter 5: ODE-IVP and Numerical Integration
+      sections:
+      - Section 5.1: Initial Value Problems for Ordinary Differential Equations
+        subsections:
+        - Subsection 5.1.1: Euler's Method
+        - Subsection 5.1.2: Runge-Kutta Methods
+        - Subsection 5.1.3: Multistep Methods
+      - Section 5.2: Numerical Integration Techniques
+        subsections:
+        - Subsection 5.2.1: Trapezoidal Rule
+        - Subsection 5.2.2: Simpson's Rule
+        - Subsection 5.2.3: Gaussian Quadrature
+    - Chapter 6: Differential-Algebraic Equations
+      sections:
+      - Section 6.1: Introduction to Differential-Algebraic Equations
+        subsections:
+        - Subsection 6.1.1: Index and Types of DAEs
+        - Subsection 6.1.2: Numerical Methods for DAEs
+      - Section 6.2: Index Reduction Techniques
+        subsections:
+        - Subsection 6.2.1: Differential Algebraic Transformations
+        - Subsection 6.2.2: Projection Methods
+    - Chapter 7: Boundary Value Problems
+      sections:
+      - Section 7.1: Introduction to Boundary Value Problems
+        subsections:
+        - Subsection 7.1.1: Shooting Method
+        - Subsection 7.1.2: Finite Difference Methods
+        - Subsection 7.1.3: Finite Element Methods
+      - Section 7.2: Sturm-Liouville Problems
+        subsections:
+        - Subsection 7.2.1: Eigenvalue Problems
+        - Subsection 7.2.2: Orthogonal Collocation Methods
+    - Chapter 8: Partial Differential Equations
+      sections:
+      - Section 8.1: Introduction to Partial Differential Equations
+        subsections:
+        - Subsection 8.1.1: Classification of PDEs
+        - Subsection 8.1.2: Analytical Solution Techniques
+      - Section 8.2: Numerical Methods for PDEs
+        subsections:
+        - Subsection 8.2.1: Finite Difference Methods
+        - Subsection 8.2.2: Finite Element Methods
+        - Subsection 8.2.3: Finite Volume Methods
+    - Chapter 9: Summary and Review
+      sections:
+      - Section 9.1: Review on Initial Value Problems
+      - Section 9.2: Review on Differential-Algebraic Equations
+      - Section 9.3: Review on Boundary Value Problems
+    - Chapter 10: Probability Theory for Chemical Engineering
+      sections:
+      - Section 10.1: Fundamentals of Probability Theory
+        subsections:
+        - Subsection 10.1.1: Probability Spaces
+        - Subsection 10.1.2: Random Variables and Distribution Functions
+        - Subsection 10.1.3: Expected Values and Moments
+      - Section 10.2: Statistical Inference
+        subsections:
+        - Subsection 10.2.1: Estimation Theory
+        - Subsection 10.2.2: Hypothesis Testing
+        - Subsection 10.2.3: Regression Analysis
+    - Chapter 11: Models vs. Data in Chemical Engineering
+      sections:
+      - Section 11.1: Model Validation and Verification
+        subsections:
+        - Subsection 11.1.1: Sensitivity Analysis
+        - Subsection 11.1.2: Calibration and Uncertainty Quantification
+      - Section 11.2: Data Analysis and Model Identification
+        subsections:
+        - Subsection 11.2.1: Experimental Design
+        - Subsection 11.2.2: Parameter Estimation
+        - Subsection 11.2.3: Model Selection and Validation
+    - Chapter 12: Operator Splitting Methods
+      sections:
+      - Section 12.1: Introduction to Operator Splitting
+        subsections:
+        - Subsection 12.1.1: Sequential and Parallel Splitting Methods
+        - Subsection 12.1.2: Strang Splitting and Lie-Trotter Splitting
+    - Chapter 13: Monte Carlo Methods in Chemical Engineering
+      sections:
+      - Section 13.1: Introduction to Monte Carlo Methods
+        subsections:
+        - Subsection 13.1.1: Monte Carlo Integration
+        - Subsection 13.1.2: Markov Chain Monte Carlo Methods
+      - Section 13.2: Monte Carlo Simulation in Chemical Engineering
+        subsections:
+        - Subsection 13.2.1: Stochastic Modeling
+        - Subsection 13.2.2: Rare Event Simulation
+    - Chapter 14: Stochastic Chemical Kinetics
+      sections:
+      - Section 14.1: Introduction to Stochastic Chemical Kinetics
+        subsections:
+        - Subsection 14.1.1: Chemical Master Equation
+        - Subsection 14.1.2: Gillespie Algorithm
+      - Section 14.2: Numerical Methods for Stochastic Chemical Kinetics
+        subsections:
+        - Subsection 14.2.1: Tau-Leaping Methods
+        - Subsection 14.2.2: Hybrid Methods
+    - Chapter 15: Review and Exam Preparation
+      sections:
+      - Section 15.1: Review of Key Concepts
+      - Section 15.2: Sample Problems and Solutions
+      - Section 15.3: Exam Preparation Tips and Strategies
+```
+```

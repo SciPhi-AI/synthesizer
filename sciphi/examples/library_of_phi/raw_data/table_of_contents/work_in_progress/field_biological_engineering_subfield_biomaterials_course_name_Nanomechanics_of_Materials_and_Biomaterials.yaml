@@ -1,0 +1,50 @@
+```yaml
+textbook:
+  Nanomechanics of Materials and Biomaterials: A Comprehensive Study
+    chapters:
+    - Introduction to Nanomechanics:
+        sections:
+        - High resolution force spectroscopy
+        - Additional nanomechanics instrumentation components
+        - Force versus distance curves
+    - Atomic Force Microscope (AFM) Imaging:
+        sections:
+        - 'AFM imaging I: Principles and Techniques'
+        - 'AFM imaging II: Artifacts and applications'
+        - Single cell mechanics
+        - Qualitative introduction to intra- and intermolecular forces
+    - Molecule-Surface Interactions:
+        sections:
+        - Quantitative description of intra- and intermolecular forces
+        - Molecule-surface interactions
+        - Colloids and interparticle potentials
+        - 'Van der Waals forces at work: Gecko feet adhesion'
+    - Biomechanics:
+        sections:
+        - Nanomechanics of cartilage
+        - Protein-surface interactions
+        - 'Nanomechanics and biocompatibility: Protein-biomaterial interactions, part 2'
+    - Polymer Chains and Nanoindentation:
+        sections:
+        - 'Elasticity of single polymer chains: Theoretical formulations'
+        - 'Theoretical aspects of single molecule force spectroscopy: Extensibility and the worm-like chain'
+        - 'Single chain elasticity of biomacromolecules: The giant protein titin and DNA'
+        - Theoretical aspects of nanoindentation
+        - 'Nanoindentation 1: Principles and Techniques'
+        - 'Nanoindentation 2: Oliver-Pharr method and one literature example: Nacre'
+    - Interactions in Biological Systems:
+        sections:
+        - Intermolecular interactions in motility of a biological spring
+    - Exams and Evaluation:
+        sections:
+        - Midterm exam - during class time
+        - Midterm exam solutions review
+        - Final exam during finals week
+    - Appendices:
+        sections:
+        - List of Symbols
+        - Glossary of Terms
+        - References
+        - Index
+```
+```

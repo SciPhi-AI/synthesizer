@@ -1,0 +1,38 @@
+course:
+  Electromagnetic Theory Textbook:
+    chapters:
+      - Maxwell's Equations:
+          sections:
+            - Introduction
+            - 'Conservation Laws: Energy, Poynting Theorem'
+            - 'Conservation Laws: Momentum, Stress Tensor'
+            - Energy and Momentum of E&M wave
+      - Models of Electric Response:
+          sections:
+            - Frequency-dependent Response Function, Kramers-Kronig Theorem
+            - Waves in Dispersive Media
+            - Waves in Inhomogeneous Media, Fresnel Formulas
+      - Transmission Lines and Waveguides:
+          sections:
+            - Resonant Cavities
+            - Lagrangian and Hamiltonian for Particle Dynamics
+            - Conservation Laws, Noether Theorem
+            - Lagrangian and Hamiltonian for E&M Fields
+            - Lorentz Transformations, Relativistic E&M I
+            - Lorentz Transformations, Relativistic E&M II
+      - Retarded Potentials and Radiation:
+          sections:
+            - Retarded Potentials, Radiation
+            - Larmor Formula, Dipole Radiation
+            - Scattering of EM Waves
+            - Relativistic Theory of Radiation
+            - Radiation Reaction and Damping
+            - Frequency Spectrum of Radiation
+      - Impulsive and Non-Relativistic Radiation:
+          sections:
+            - Impulsive Radiation
+            - Cerenkov Radiation
+            - Synchrotron Radiation
+      - Final Exam
+
+The above yaml snippet represents the detailed Table of Contents for the "Electromagnetic Theory Textbook" that accompanies the course. It provides an expanded version of the original syllabus, with additional sections and subsections for each chapter.

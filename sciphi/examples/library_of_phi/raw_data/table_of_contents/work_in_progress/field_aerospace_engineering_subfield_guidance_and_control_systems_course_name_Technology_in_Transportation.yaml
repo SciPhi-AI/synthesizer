@@ -1,0 +1,84 @@
+textbook:
+  Technology in Transportation: A Comprehensive Guide
+  chapters:
+    - Introduction - Energy in Transportation:
+        sections:
+        - Energy & Thermodynamics
+    - Chapter 1: Internal Combustion Engines:
+        sections:
+        - Internal Combustion Engines I
+        - Internal Combustion Engines II
+        - Combustion Processes in Engines
+        - Engine Performance and Efficiency
+        - Emissions Control in Internal Combustion Engines
+    - Chapter 2: Road Vehicle Engineering & Components:
+        sections:
+        - Road Vehicle Engineering & Components I
+        - Road Vehicle Engineering & Components II
+        - Vehicle Dynamics and Suspension Systems
+        - Braking Systems
+        - Steering Systems
+        - Transmission Systems
+    - Chapter 3: Electric & Hybrid Vehicles:
+        sections:
+        - Electric & Hybrid Vehicles I
+        - Electric & Hybrid Vehicles II
+        - Battery Technology and Management
+        - Electric Motor Technology
+        - Hybrid Vehicle Architecture
+        - Charging Infrastructure for Electric Vehicles
+    - Chapter 4: Rail Transport:
+        sections:
+        - Rail Transport: Fossil Fuel, Electric, Urban & High-Speed (Overview)
+        - Locomotive Technology
+        - Rail Infrastructure and Signaling Systems
+        - High-Speed Rail Systems
+        - Urban Rail Systems
+    - Chapter 5: Water Transport:
+        sections:
+        - Water Transport: History, Vessels, Port Operations (Overview)
+        - Ship Design and Construction
+        - Marine Propulsion Systems
+        - Port Operations and Logistics
+        - Environmental Impact of Water Transport
+    - Chapter 6: Review:
+        sections:
+        - Exam 1
+    - Chapter 7: Aircraft Types:
+        sections:
+        - Fixed-Wing Aircraft Aerodynamics I
+        - Fixed-Wing Aircraft Aerodynamics II
+        - Aircraft Structures and Materials
+        - Aircraft Systems and Avionics
+        - Aircraft Performance and Flight Mechanics
+    - Chapter 8: Aircraft Engines:
+        sections:
+        - Aircraft Engines (Overview)
+        - Jet Engines
+        - Piston Engines
+        - Gas Turbine Engines
+        - Propeller Systems
+    - Chapter 9: Helicopters:
+        sections:
+        - Helicopters (Overview)
+        - Helicopter Aerodynamics
+        - Helicopter Flight Controls
+        - Helicopter Powerplants
+        - Helicopter Performance and Operations
+    - Chapter 10: Radar:
+        sections:
+        - Radar (Overview)
+        - Principles of Radar Operation
+        - Radar Systems and Components
+        - Radar Signal Processing
+        - Applications of Radar Technology
+    - Chapter 11: Navigation Module:
+        sections:
+        - Navigation Module (Overview)
+        - Celestial Navigation
+        - Inertial Navigation Systems
+        - Global Navigation Satellite Systems
+        - Autonomous Navigation Systems
+    - Chapter 12: Exam 2:
+        sections:
+        - Exam 2

@@ -1,0 +1,57 @@
+```yaml
+course:
+  textbook:
+    topics:
+      - chapter: Introduction to Integral Equations
+        sections:
+          - section: Fredholm Alternative
+          - section: Exactly Solvable Integral Equations (IE)
+          - section: Elementary Nonlinear IE
+          - section: Bifurcations
+      - chapter: Green’s Functions
+        sections:
+          - section: Conversion of ODEs to IEs
+          - section: Potential Scattering
+          - section: Mechanical Vibrations
+          - section: Propagation in Nonlinear Medium
+          - section: Born Approximation and Iteration Series
+      - chapter: Fredholm IEs and Fredholm Theory
+        sections:
+          - section: Iteration Scheme
+          - section: Resolvent Kernel
+          - section: Fredholm Determinant
+          - section: Examples
+      - chapter: Exactly Solvable Cases
+        sections:
+          - section: Fourier Series and Transforms
+      - chapter: Hilbert-Schmidt Theory for Symmetric Kernels
+        sections:
+          - section: Kernel Eigenvalues
+          - section: Bounds for Eigenvalues
+          - section: Kernel Symmetrization
+          - section: Connection to Sturm-Liouville System
+      - chapter: W-H IE (Wiener-Hopf Integral Equation) of 1st and 2nd Kind
+        sections:
+          - section: W-H Sum Equations
+          - section: Basics of Solution Technique
+          - section: Analyticity in Fourier Domain
+          - section: Liouville’s Theorem
+      - chapter: Application to Mixed Boundary Value Problems for Partial Differential Equation
+        sections:
+          - section: Introduction
+      - chapter: Introduction to Theory of Homogeneous W-H IE of 2nd Kind
+        sections:
+          - section: Kernel Factorization
+          - section: the Heins IE
+          - section: General Theory of Homogeneous W-H IE
+          - section: Definition of Kernel Index
+      - chapter: General Theory for Non-homogeneous W-H IE
+        sections:
+          - section: Cauchy-type IE of 1st Kind
+          - section: the Riemann-Hilbert Problem
+      - chapter: IE of 2nd Kind
+        sections:
+          - section: Kernels with Algebraic Singularities
+          - section: Kernels with Logarithmic Singularities
+          - section: the Carleman IE
+```

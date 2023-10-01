@@ -1,0 +1,180 @@
+textbook:
+  Principles of Microeconomics: A Comprehensive Guide
+
+chapters:
+  - Introduction to Microeconomics:
+      sections:
+        - Supply and Demand:
+            subsections:
+              - Understanding Market Equilibrium
+              - Factors Affecting Demand and Supply
+
+        - Preferences and Utility Functions:
+            subsections:
+              - Consumer Preferences and Indifference Curves
+              - Utility Maximization and Consumer Equilibrium
+
+        - Budget Constraints and Constrained Choice:
+            subsections:
+              - Budget Constraints and Opportunity Cost
+              - Constrained Consumer Choice and Optimal Consumption
+
+        - Mathematics of Constrained Maximization:
+            subsections:
+              - Lagrange Multiplier Method
+              - Applications of Constrained Maximization
+
+  - Demand and Consumer Theory:
+      sections:
+        - Demand Curves and Income/Substitution Effects:
+            subsections:
+              - Law of Demand and Demand Curves
+              - Income and Substitution Effects on Demand
+
+        - Production Theory:
+            subsections:
+              - Factors of Production and Production Function
+              - Isoquants and Optimal Input Combination
+
+        - Costs:
+            subsections:
+              - Fixed and Variable Costs
+              - Short-run and Long-run Cost Curves
+
+        - Competition I:
+            subsections:
+              - Perfect Competition and Market Structure
+              - Profit Maximization in Perfectly Competitive Markets
+
+        - Competition II:
+            subsections:
+              - Short-run and Long-run Equilibrium
+              - Efficiency and Welfare in Perfect Competition
+
+        - Supply and Demand; Consumer/Producer Surplus:
+            subsections:
+              - Producer Surplus and Consumer Surplus
+              - Elasticity of Demand and Supply
+
+  - Market Structures and Welfare Economics:
+      sections:
+        - Review Competition and Costs:
+            subsections:
+              - Market Structures Overview
+              - Cost Analysis and Market Efficiency
+
+        - Welfare Economics:
+            subsections:
+              - Welfare Analysis and Consumer Choice
+              - Market Failure and Government Intervention
+
+        - Monopoly I:
+            subsections:
+              - Monopoly Power and Barriers to Entry
+              - Profit Maximization in Monopoly Markets
+
+        - Monopoly II:
+            subsections:
+              - Price Discrimination and Monopoly Behavior
+              - Monopoly Regulation and Antitrust Policies
+
+        - Welfare Economics and Monopoly:
+            subsections:
+              - Deadweight Loss and Monopoly
+              - Public Policy and Monopoly Control
+
+        - Oligopoly I:
+            subsections:
+              - Oligopoly Markets and Game Theory
+              - Collusion and Price Leadership
+
+        - Oligopoly II:
+            subsections:
+              - Advertising and Strategic Behavior
+              - Oligopoly and Market Outcomes
+
+        - Monopoly and Oligopoly:
+            subsections:
+              - Comparing Monopoly and Oligopoly
+              - Government Policies and Oligopoly
+
+  - Input Markets and Intertemporal Choice:
+      sections:
+        - Input Markets I: Labor Market:
+            subsections:
+              - Labor Market Supply and Demand
+              - Wage Determination and Labor Market Equilibrium
+
+        - Input Markets II: Labor and Capital:
+            subsections:
+              - Capital Market Supply and Demand
+              - Interest Rates and Capital Market Equilibrium
+
+        - Making Choices over Time:
+            subsections:
+              - Present Value and Discounting
+              - Optimal Consumption and Saving
+
+        - Mathematics of Intertemporal Choice:
+            subsections:
+              - Dynamic Optimization and Calculus
+              - Applications of Intertemporal Choice
+
+        - Increasing Savings; Introduction to Trade:
+            subsections:
+              - National Saving and Investment
+              - Trade and Comparative Advantage
+
+  - International Trade and Policy:
+      sections:
+        - PPF and Comparative Advantage:
+            subsections:
+              - Production Possibility Frontier (PPF)
+              - Comparative Advantage and Trade
+
+        - International Trade: Welfare and Policy:
+            subsections:
+              - Gains from Trade and Trade Policy
+              - Tariffs, Quotas, and Import Restrictions
+
+        - Uncertainty:
+            subsections:
+              - Risk and Uncertainty in Trade
+              - Trade and Global Economic Shocks
+
+        - Efficiency and Equity:
+            subsections:
+              - Economic Efficiency and Trade
+              - Income Distribution and Trade
+
+        - Social Welfare Example:
+            subsections:
+              - Social Welfare and Trade
+              - Trade and Poverty Alleviation
+
+        - Government Redistribution and Taxation:
+            subsections:
+              - Taxation and Trade
+              - Government Intervention and Trade
+
+  - Market Failures and Informational Asymmetry:
+      sections:
+        - Market Failures I: Externalities:
+            subsections:
+              - External Costs and Benefits
+              - Market Failure and Environmental Policy
+
+        - Market Failures II: Informational Asymmetry:
+            subsections:
+              - Adverse Selection and Moral Hazard
+              - Government Regulation and Informational Asymmetry
+
+        - Health Economics:
+            subsections:
+              - Economics of Healthcare
+              - Healthcare Policy and Market Failures
+
+        - Exam Review:
+            subsections:
+              - Key Concepts and Review Questions
+              - Practice Problems and Exam Strategies

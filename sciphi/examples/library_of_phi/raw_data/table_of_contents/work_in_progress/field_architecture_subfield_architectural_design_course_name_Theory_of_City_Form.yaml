@@ -1,0 +1,187 @@
+course:
+  textbook: "Comprehensive Guide to Theory of City Form"
+
+topics:
+  - Introduction:
+      subtopics:
+        - The Nature of City Form
+        - Is a General Normative Theory Possible?
+      subsubtopics:
+        - Understanding the Evolution of Cities
+        - The Role of City Form in Urban Planning
+
+  - 'Normative Theory I: The City as Supernatural':
+      subtopics:
+        - Exploring the Concept of Supernatural City Form
+      subsubtopics:
+        - The Influence of Mythology on City Planning
+        - Examining the Spiritual Elements in Urban Design
+
+  - 'Normative Theory II: The City as Machine':
+      subtopics:
+        - Understanding the City as a Mechanical Entity
+      subsubtopics:
+        - The Industrial Revolution and Its Impact on Urbanization
+        - The Efficiency and Functionality of Machine-inspired City Design
+
+  - 'Normative Theory III: The City as Organism':
+      subtopics:
+        - Analyzing Cities as Living Organisms
+      subsubtopics:
+        - The Biological Analogies in Urban Planning
+        - Sustainability and Resilience in Organic City Form
+
+  - Descriptive and Functional Theory:
+      subtopics:
+        - Examining Descriptive and Functional Approaches to City Form
+      subsubtopics:
+        - The Importance of Observational Research in Urban Design
+        - The Relationship between Functionality and Aesthetics in City Planning
+
+  - Dimensions, Patterns, Agreements, Structure, and Syntax:
+      subtopics:
+        - Understanding the Elements of City Form
+      subsubtopics:
+        - Analyzing the Spatial Dimensions of Urban Design
+        - Identifying Patterns and Agreements in City Form
+        - Exploring the Structural and Syntax Elements in City Planning
+
+  - The Early Cities of Capitalism:
+      subtopics:
+        - Examining the Evolution of Cities during Capitalism Era
+      subsubtopics:
+        - The Rise of Merchant Cities
+        - The Impact of Industrialization on Urban Development
+
+  - 'Transformations I: London':
+      subtopics:
+        - Tracing the Transformation of London's City Form
+      subsubtopics:
+        - The Influence of Medieval Planning on London
+        - The Impact of Industrial Revolution on the City
+
+  - 'Transformations II: Paris':
+      subtopics:
+        - Analyzing the Transformation of Parisian City Form
+      subsubtopics:
+        - Haussmannization and the Modernization of Paris
+        - The Role of Architecture in Shaping the City
+
+  - 'Transformations III: Vienna and Barcelona':
+      subtopics:
+        - Exploring the Transformations in Vienna and Barcelona
+      subsubtopics:
+        - The Influence of Art Nouveau on Viennese City Form
+        - The Role of Antoni Gaudí in Shaping Barcelona's Urban Landscape
+
+  - 'Transformations IV: Chicago':
+      subtopics:
+        - Tracing the Transformation of Chicago's City Form
+      subsubtopics:
+        - The Rise of Skyscrapers and the Chicago School of Architecture
+        - The Impact of Modernism on the City's Urban Fabric
+
+  - 'Transformations V: Panopticism, St. Petersburg and Berlin':
+      subtopics:
+        - Examining Panopticism in St. Petersburg and Berlin
+      subsubtopics:
+        - The Influence of Peter the Great on St. Petersburg's City Planning
+        - The Impact of World War II on Berlin's Urban Form
+
+  - Utopianism as Social Reform and Built Form:
+      subtopics:
+        - Analyzing Utopian Concepts in City Planning
+      subsubtopics:
+        - The Role of Socialism in Utopian Urban Design
+        - Case Studies of Utopian Cities and Their Successes/Failures
+
+  - '20th Century Realizations: Russian and Great Britain':
+      subtopics:
+        - Examining Urban Realizations in Russia and Great Britain
+      subsubtopics:
+        - The Influence of Constructivism on Russian City Form
+        - The Garden City Movement in Great Britain and Its Impact
+
+  - City Form and Process:
+      subtopics:
+        - Understanding the Relationship between City Form and Urban Processes
+      subsubtopics:
+        - The Influence of Economic Factors on City Form
+        - The Role of Social and Political Processes in Urban Design
+
+  - 'Spatial & Social Structure I: Theory':
+      subtopics:
+        - Exploring the Theory of Spatial and Social Structures in Cities
+      subsubtopics:
+        - The Concept of Spatial Justice in Urban Planning
+        - The Impact of Social Hierarchies on City Form
+
+  - 'Spatial & Social Structure II: Bipolarity':
+      subtopics:
+        - Analyzing Bipolarity in Spatial and Social Structures
+      subsubtopics:
+        - The Impact of Segregation and Gentrification on City Form
+        - The Role of Public Spaces in Bridging Social Divisions
+
+  - 'Spatial & Social Structure III: Colony and Post-colony':
+      subtopics:
+        - Examining the Influence of Colonization on City Form
+      subsubtopics:
+        - The Legacy of Colonial Cities in Post-colonial Societies
+        - Decolonizing City Planning and Design
+
+  - 'Form Models I: Modern and Post-modern Urbanism':
+      subtopics:
+        - Understanding Modern and Post-modern Form Models in Urban Design
+      subsubtopics:
+        - The Influence of Le Corbusier on Modernist City Planning
+        - Post-modernism and the Revival of Historical References in Urban Design
+
+  - 'Form Models II: Open-endedness and Prophecy':
+      subtopics:
+        - Exploring Open-endedness and Prophecy in City Form
+      subsubtopics:
+        - The Role of Flexibility and Adaptability in Urban Design
+        - Futuristic Approaches to City Planning and Their Viability
+
+  - 'Form Models III and IV: Rationality and Memory':
+      subtopics:
+        - Analyzing Rationality and Memory in City Form
+      subsubtopics:
+        - The Impact of Rational Urban Planning on City Form
+        - The Role of Collective Memory in Shaping Urban Identity
+
+  - 'Cases I: Public and Private Domains':
+      subtopics:
+        - Examining the Distinction between Public and Private Domains in Urban Design
+      subsubtopics:
+        - The Design of Public Spaces and Their Impact on City Form
+        - The Influence of Private Development on Urban Morphology
+
+  - 'Cases II: Suburbs and Periphery':
+      subtopics:
+        - Analyzing the Role of Suburbs and Periphery in City Form
+      subsubtopics:
+        - The Evolution of Suburban Sprawl and Its Impact on Urbanization
+        - The Challenges of Designing Sustainable Periphery Areas
+
+  - 'Cases III: Post-urbanism and Resource Conservation':
+      subtopics:
+        - Exploring Post-urbanism and Resource Conservation in City Planning
+      subsubtopics:
+        - The Concept of Post-urbanism and Its Implications for City Form
+        - Sustainable Approaches to Resource Conservation in Urban Design
+
+  - 'Cases IV: Hyper and Mega-urbanism':
+      subtopics:
+        - Examining the Phenomenon of Hyper and Mega-urbanism
+      subsubtopics:
+        - The Challenges of Managing Hyper-dense Cities
+        - The Impact of Globalization on Mega-urban Form
+
+  - 'Conclusion: Towards a Theory of City Form':
+      subtopics:
+        - Summarizing the Key Concepts and Insights in City Form Theory
+      subsubtopics:
+        - Future Directions in Urban Design Research
+        - The Role of City Form in Addressing Contemporary Urban Challenges

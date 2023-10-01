@@ -1,0 +1,82 @@
+textbook:
+  Systems and Controls: A Comprehensive Guide
+
+chapters:
+  - Introduction to Systems and Controls:
+    sections:
+      - Physical model
+      - Ordinary differential equation (ODE)
+      - Types of systems
+      - System representation
+
+  - 1st and 2nd Order System Behavior:
+    sections:
+      - Behavior from ODE
+      - Translation and rotational mechanical system
+      - Response characteristics
+      - Stability analysis
+
+  - Laplace Transform and Solving ODEs:
+    sections:
+      - Solving ODEs using Laplace transform
+      - Inverse Laplace transform
+      - Transfer function derivation
+      - Time-domain analysis using transfer functions
+
+  - Transfer Functions, Poles, and Zeros:
+    sections:
+      - Observation of behavior based on transfer functions
+      - Pole-zero analysis
+      - Stability analysis using poles and zeros
+      - Frequency response analysis
+
+  - Electrical Elements R, L, C, op-amp:
+    sections:
+      - DC motor and its dynamics
+      - Introduction to electrical elements
+      - Op-amp circuits and applications
+      - Modeling and analysis of electrical systems
+
+  - Proportional Control and Flywheel Modeling:
+    sections:
+      - Effect of gain on proportional control
+      - Flywheel modeling and analysis
+      - Stability and performance analysis
+      - Anti-windup techniques
+
+  - Integral Control on the Flywheel:
+    sections:
+      - Steady state error and integral control
+      - PI controller design and tuning
+      - Performance analysis and optimization
+      - Frequency-domain analysis
+
+  - PID Control:
+    sections:
+      - Speeding up and stabilization with derivative control
+      - PID controller design and tuning
+      - Performance analysis and optimization
+      - Cascade control and feedforward control
+
+  - Inverted Pendulum:
+    sections:
+      - Project work and demo to instructors
+      - State-space modeling and analysis
+      - Control design for stabilizing the inverted pendulum
+      - Nonlinear control and optimal control approaches
+
+  - Project:
+    sections:
+      - Work on the project
+      - Project planning and management
+      - Experimental setup and data acquisition
+      - Analysis and interpretation of project results
+
+  - Root Locus and P-Control:
+    sections:
+      - Practice on root locus and P-control
+      - Root locus design and analysis
+      - Stability analysis using root locus
+      - PID controller design using root locus
+
+Note: The additional sections provide more in-depth coverage of each topic, allowing for a comprehensive understanding of systems and controls concepts.

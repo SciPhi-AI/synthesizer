@@ -1,0 +1,70 @@
+```yaml
+course:
+  Computer System Architecture:
+    textbook:
+      title: "Foundations of Computer System Architecture: From Calculators to Modern Processors"
+      author: "John Smith"
+      chapters:
+        - chapter: "Introduction"
+          sections:
+            - section: "History of Calculation and Computer Architecture"
+              subsections:
+                - "Influence of Technology and Software on Instruction Sets: Up to the Dawn of IBM 360"
+                - "Complex Instruction Set Evolution in the Sixties: Stack and GPR Architectures"
+                - "Self-assessment Test and ISA"
+        - chapter: "Microprogramming and Instruction Pipelining"
+          sections:
+            - section: "Microprogramming"
+              subsections:
+                - "MIPS ISA, Bus-based Implementation, and Microprogramming"
+                - "Simple Instruction Pipelining"
+                - "Pipeline Hazards"
+                - "Microprogramming, Pipelining, and Hazards"
+        - chapter: "Memory Hierarchy and Virtual Memory"
+          sections:
+            - section: "Multilevel Memories - Technology"
+              subsections:
+                - "Cache"
+                - "ISAs, Microprogramming, Simple Pipelining and Hazards"
+            - section: "Virtual Memory Basics"
+              subsections:
+                - "Quiz 1, Caches, and Virtual Memory Basics"
+                - "Virtual Memory: Part Deux"
+        - chapter: "Advanced Pipelining and Superscalar Architectures"
+          sections:
+            - section: "Complex Pipelining"
+              subsections:
+                - "Caches, Virtual Memory"
+                - "Out of Order Execution and Register Renaming"
+                - "Branch Prediction and Speculative Execution"
+            - section: "Advanced Superscalar Architectures"
+              subsections:
+                - "Quiz 2, Scoreboarding, Register Renaming, and Branch Prediction"
+                - "Microprocessor Evolution: 4004 to Pentium 4"
+        - chapter: "Cache Coherence and Memory Models"
+          sections:
+            - section: "Synchronization and Sequential Consistency"
+              subsections:
+                - "Cache Coherence"
+                - "Snoopy Protocols"
+                - "Sequential Consistency, Synchronization, Cache Coherence Protocols"
+            - section: "Relaxed Memory Models"
+              subsections:
+                - "SMPs, CC, Synch, Memory Models"
+                - "VLIW/EPIC: Statically Scheduled ILP"
+        - chapter: "Parallel Architectures and Vector Processors"
+          sections:
+            - section: "Vector Computers"
+              subsections:
+                - "Vector Computers"
+                - "Quiz 4 and VLIW"
+                - "Multithreaded Processors"
+        - chapter: "Fault Tolerance and Virtualization"
+          sections:
+            - section: "Reliable Architectures"
+              subsections:
+                - "Vector Computers, Multithreading and Reliable Architectures"
+                - "Virtual Machines"
+                - "VLIW/Vector/Threads"
+```
+```

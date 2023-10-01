@@ -1,0 +1,60 @@
+textbook:
+  Effective Programming in C and C++: A Comprehensive Guide
+  chapters:
+    - Introduction to C Programming:
+        sections:
+        - Welcome to the Memory Jungle
+        - Subtleties of C: Data Structures and Floating-Point Arithmetic
+        subsections: []
+    - Transitioning from C to C++:
+        sections:
+        - Style and Structure
+        subsections:
+        - Abstraction and Encapsulation
+        - Inheritance and Polymorphism
+        - Standard Template Library (STL)
+    - Object-Oriented Programming in C++:
+        sections:
+        - Advanced C++ Concepts
+        subsections:
+        - Abstraction, Inheritance, and Polymorphism
+        - Operator Overloading and Templates
+        - Exception Handling and Memory Management
+    - Design Patterns in C++:
+        sections:
+        - Introduction to Design Patterns
+        subsections:
+        - Creational Patterns
+        - Structural Patterns
+        - Behavioral Patterns
+    - Introduction to Projects:
+        sections:
+        - Unit Testing
+        - Third-Party Libraries
+        - Code Review
+        subsections: []
+    - Project Environments:
+        sections:
+        - Iterators
+        - N-Body Problem
+        - Setup
+        subsections:
+        - Build Systems and Dependency Management
+        - Version Control Systems
+        - Continuous Integration and Deployment
+    - Visualization Techniques:
+        sections:
+        - OpenGL Basics
+        - Makefiles and Build Automation
+        - Large-Scale Project Management
+        subsections:
+        - Advanced OpenGL Rendering Techniques
+        - Debugging and Profiling Tools
+        - Performance Optimization Strategies
+    - Course Recap, Interviews, Advanced Topics:
+        sections:
+        - Grab Bag & Perspective
+        subsections:
+        - Advanced Memory Management
+        - Multi-threading and Parallel Programming
+        - Networking and Socket Programming

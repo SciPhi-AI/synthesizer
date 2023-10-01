@@ -1,0 +1,52 @@
+textbook:
+  'Understanding Violent Non-State Actors: A Comprehensive Analysis':
+    chapters:
+      - Introduction:
+          sections:
+            - 'Insurgents, Terrorists and Militias: The Warriors of Contemporary Combat (Shultz, Richard H., and Andrea Dew)'
+            - Nonstate Actors in the International System (Kegley, Charles, Jr., and Eugene R. Wittkopf)
+            - Theoretical Frameworks for Understanding Violent Non-State Actors:
+              subsections:
+                - Realism and Violent Non-State Actors
+                - Liberalism and Violent Non-State Actors
+                - Constructivism and Violent Non-State Actors
+                - Critical Perspectives on Violent Non-State Actors
+      - Warlords:
+          sections:
+            - Warlords Throughout History
+            - Rise and Fall of Warlordism
+            - Characteristics of Warlordism
+            - Warlords in Modern Conflict Zones
+            - The Role of Warlords in State Fragility
+      - Terrorism:
+          sections:
+            - Terrorism: Definitions and Concepts
+            - Historical Evolution of Terrorism
+            - Causes and Motivations of Terrorism
+            - The Psychology of Terrorism
+            - Religion and Terrorism: An In-depth Analysis
+            - Suicide Terrorism: Tactics and Motivations
+            - Terrorist Strategies and Networks: Financing, Recruitment, and Operations
+            - State-sponsored Terrorism: Case Studies and Analysis
+      - Para-statal militias:
+          sections:
+            - Para-statal Militias: Definition and Origins
+            - The Role of Para-statal Militias in Conflict
+            - Paramilitary Groups and State Erosion
+            - Human Rights Abuses and Para-statal Militias
+            - International Responses to Para-statal Militias
+      - Private military firms:
+          sections:
+            - Private Military Firms: Introduction and Historical Background
+            - The Rise of Private Military Industry
+            - Roles and Functions of Private Military Firms
+            - Ethical Considerations and Accountability of Private Military Firms
+            - Regulation and Oversight of Private Military Firms
+      - Countering violent non-state actors:
+          sections:
+            - Countering Violent Non-State Actors: Approaches and Strategies
+            - Military Responses to Violent Non-State Actors
+            - Intelligence and Surveillance in Countering Violent Non-State Actors
+            - Development and Aid as Counterinsurgency Tools
+            - Multilateral Cooperation in Countering Violent Non-State Actors
+            - Conclusion: Future Trends and Challenges in Dealing with Violent Non-State Actors

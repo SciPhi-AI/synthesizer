@@ -1,0 +1,55 @@
+textbook:
+  'Building Programming Experience: A Lead-In to 6.001':
+    chapters:
+    - Introduction and Basic Scheme:
+        sections:
+        - 6001mac (TEX) contains macros that produce the look-and-feel of the handouts
+        - 'LEC #TOPICSSTUDENT NOTESSUPPORTING FILESSOLUTIONS 1Introduction and Basic
+          Scheme (PDF) (TEX)Student Notes 1 (PDF)Solutions 1 (TXT)'
+    - Procedures and Recursion:
+        sections:
+        - Procedures and Recursion
+        - 6001mac (TEX) contains macros that produce the look-and-feel of the handouts
+        - 'LEC #TOPICSSTUDENT NOTESSUPPORTING FILESSOLUTIONS 2Procedures and Recursion
+          (PDF) (TEX)Student Notes 2 (PDF)Solutions 2 (TXT)'
+        - More Procedures
+    - More Procedures:
+        sections:
+        - More Procedures
+        - 6001mac (TEX) contains macros that produce the look-and-feel of the handouts
+        - 'LEC #TOPICSSTUDENT NOTESSUPPORTING FILESSOLUTIONS 3More Procedures (PDF)
+          (TEX)Student Notes 3 (PDF)Code to load, lec3 (SCM)Solutions 3 (TXT)'
+    - Sugar, Recursive/Iterative, Basic Lists:
+        sections:
+        - Sugar, Recursive/Iterative, Basic Lists
+        - 6001mac (TEX) contains macros that produce the look-and-feel of the handouts
+        - 'LEC #TOPICSSTUDENT NOTESSUPPORTING FILESSOLUTIONS 4Sugar, Recursive/Iterative,
+          Basic Lists (PDF) (TEX)Student Notes 4 (PDF)Solutions 4 (TXT)'
+    - List Procedures, Data Abstraction:
+        sections:
+        - List Procedures, Data Abstraction
+        - 6001mac (TEX) contains macros that produce the look-and-feel of the handouts
+        - 'LEC #TOPICSSTUDENT NOTESSUPPORTING FILESSOLUTIONS 5List Procedures, Data
+          Abstr'
+    - Higher Order Procedures, Types, Nimrod:
+        sections:
+        - Higher Order Procedures, Types, Nimrod
+        - 6001mac (TEX) contains macros that produce the look-and-feel of the handouts
+        - 'LEC #TOPICSSTUDENT NOTESSUPPORTING FILESSOLUTIONS Higher Order Procedures,
+          Types, Nimrod'
+    - Quiz 1:
+        sections:
+        - Quiz 1
+        - 6001mac (TEX) contains macros that produce the look-and-feel of the handouts
+        - 'LEC #TOPICSSTUDENT NOTESSUPPORTING FILESSOLUTIONS Quiz 1'
+    - Tags, Association Lists, Trees:
+        sections:
+        - Tags, Association Lists, Trees
+        - 6001mac (TEX) contains macros that produce the look-and-feel of the handouts
+        - 'LEC #TOPICSSTUDENT NOTESSUPPORTING FILESSOLUTIONS Tags, Association Lists,
+          Trees'
+    - Henderson Picture Language:
+        sections:
+        - Henderson Picture Language
+        - 6001mac (TEX) contains macros that produce the look-and-feel of the handouts
+        - 'LEC #TOPICSSTUDENT NOTESSUPPORTING FILESSOLUTIONS Henderson Picture Language'

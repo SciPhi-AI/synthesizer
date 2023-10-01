@@ -1,0 +1,97 @@
+```yaml
+course:
+  'Prediction: Machine Learning and Statistics':
+    textbook:
+      title: 'A Comprehensive Guide to Prediction: Machine Learning and Statistics'
+      chapters:
+        - Rule Mining and the Apriori Algorithm:
+            sections:
+              - Support and Confidence Measures
+              - Frequent Itemset Generation
+              - Association Rule Mining
+              - Apriori Algorithm
+        - R for Machine Learning:
+            sections:
+              - Introduction to R
+              - Data Manipulation and Visualization
+              - Supervised and Unsupervised Learning in R
+              - Model Evaluation and Selection
+        - Fundamentals of Learning:
+            sections:
+              - Bias-Variance Tradeoff
+              - Overfitting and Underfitting
+              - Cross-Validation
+              - Regularization Techniques
+        - Inference:
+            sections:
+              - Hypothesis Testing
+              - Confidence Intervals
+              - Parametric and Non-parametric Tests
+              - Bayesian Inference
+        - Clustering:
+            sections:
+              - K-means Clustering
+              - Hierarchical Clustering
+              - Density-based Clustering
+              - Evaluation Metrics for Clustering
+        - k-nearest Neighbors:
+            sections:
+              - Distance Metrics
+              - k-NN Algorithm
+              - Curse of Dimensionality
+              - Feature Selection
+        - Naïve Bayes:
+            sections:
+              - Bayes' Theorem
+              - Naïve Bayes Classifier
+              - Laplace Smoothing
+              - Text Classification with Naïve Bayes
+        - Decision Trees:
+            sections:
+              - Entropy and Information Gain
+              - ID3 Algorithm
+              - Pruning Techniques
+              - Random Forests
+        - Logistic Regression:
+            sections:
+              - Odds and Log Odds
+              - Maximum Likelihood Estimation
+              - Regularized Logistic Regression
+              - Multinomial Logistic Regression
+        - Boosting:
+            sections:
+              - AdaBoost Algorithm
+              - Gradient Boosting
+              - XGBoost
+              - Ensemble Methods
+        - Convex Optimization:
+            sections:
+              - Convex Sets and Functions
+              - Convex Optimization Problems
+              - Gradient Descent
+              - Newton's Method
+        - Support Vector Machines:
+            sections:
+              - Maximum Margin Classifier
+              - Soft Margin Classifier
+              - Kernel Trick
+              - Support Vector Regression
+        - Kernels:
+            sections:
+              - Mercer's Theorem
+              - Polynomial Kernels
+              - Radial Basis Function Kernels
+              - Kernel PCA
+        - Statistical Learning Theory:
+            sections:
+              - Empirical Risk Minimization
+              - VC Dimension
+              - Rademacher Complexity
+              - PAC Learning
+        - Bayesian Analysis:
+            sections:
+              - Prior and Posterior Distributions
+              - Bayesian Parameter Estimation
+              - Bayesian Model Selection
+              - Markov Chain Monte Carlo Methods
+```

@@ -1,0 +1,51 @@
+textbook:
+  Weather and Climate Laboratory: A Hands-on Approach to Understanding Weather and Climate
+  chapters:
+    - Introduction to class:
+        sections:
+          - Project 1: Mass and wind
+    - Introduction to project 1:
+        sections:
+          - Project 1: fluids lab
+    - Project 1: fluids lab:
+        sections:
+          - Project 1: fluids lab (cont.)
+    - Project 1: synoptic lab:
+        sections:
+          - Oral presentation workshop
+    - Introduction of project 2:
+        sections:
+          - Project 2: fluids lab
+    - Project 2: fluids lab:
+        sections:
+          - Project 2: fluids lab (cont.)
+    - Project 2: synoptic lab:
+        sections:
+          - Project 2: synoptic lab
+    - Project 2: oral presentations:
+        sections:
+          - Introduction of project 3: convection
+    - Introduction of project 3: convection:
+        sections:
+          - Project 3: fluids lab
+    - Project 3: fluids lab:
+        sections:
+          - Project 3: fluids lab (cont.)
+    - Project 3: synoptic lab:
+        sections:
+          - Project 3: synoptic lab
+    - Project 3: oral presentations:
+        sections:
+          - Introduction of project 4: general circulation and climate
+    - Introduction of project 4: general circulation and climate:
+        sections:
+          - Project 4: synoptic lab
+    - Project 4: synoptic lab:
+        sections:
+          - Project 4: synoptic lab (cont.)
+    - Project 4: fluids lab:
+        sections:
+          - Project 4: fluids lab (cont.)
+    - Project 4: oral presentations:
+        sections:
+          - No class or lab

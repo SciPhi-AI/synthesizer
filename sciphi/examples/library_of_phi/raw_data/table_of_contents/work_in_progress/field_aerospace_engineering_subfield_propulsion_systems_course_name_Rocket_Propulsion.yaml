@@ -1,0 +1,152 @@
+```yaml
+course:
+  Rocket Propulsion Textbook:
+    chapters:
+    - Introduction:
+        sections:
+        - Rocket Nozzles and Thrust
+        - Review of Ideal Nozzle Fluid Mechanics
+        - Nozzle Off-Design Operation and Non-Idealities
+        - Effects of Particles in Nozzle Flow
+        - 'Convective Heat Transfer: Reynolds Analogy'
+    - Convective Heat Transfer:
+        sections:
+        - 'Convective Heat Transfer: Other Effects'
+        - Liquid Cooling
+        - Ablative Cooling, Film Cooling
+        - Radiation Heat Transfer and Cooling
+    - Equilibrium Thermochemistry:
+        sections:
+        - Review of Equilibrium Thermochemistry
+        - Examples of Chemical Equilibrium
+        - Non-Equilibrium Flows
+    - Propellant Selection:
+        sections:
+        - Selection of Propellant Mixtures
+        - 'Solid Propellants: Design Goals and Constraints'
+        - 'Solid Propellants: Other Topics'
+        - Liquid Propellants
+    - Combustion and Injection:
+        sections:
+        - Combustion of Liquid Propellants
+        - 'Liquid Motors: Injection and Mixing'
+        - 'Liquid Motors: Stability'
+    - Turbopumps and Turbines:
+        sections:
+        - Pressurization and Pump Cycles
+        - Basic Turbomachine Performance
+        - Turbopumps
+        - Turbines
+        - Mechanical Design of Turbomachinery
+    - Active Control and Orbital Mechanics:
+        sections:
+        - Rotordynamics Problems
+        - 'Dynamics of Turbopump Systems: The Shuttle Engine'
+        - Active Control of Rockets
+        - 'Orbital Mechanics: Review, Staging'
+    - Performance and Maneuvers:
+        sections:
+        - Performance to LEO
+        - Performance to GEO
+        - Impulsive and Low-Thrust Maneuvers in Space
+    - Future Developments:
+        sections:
+        - Future Developments
+    - Rocket Propulsion History:
+        sections:
+        - Early Rocket Development
+        - Modern Rocket Propulsion Milestones
+    - Rocket Propulsion Fundamentals:
+        sections:
+        - Rocket Propulsion Principles
+        - Thermodynamics of Rocket Propulsion
+        - Rocket Propulsion Cycles
+    - Rocket Engines and Components:
+        sections:
+        - Liquid Rocket Engines
+        - Solid Rocket Motors
+        - Hybrid Rocket Engines
+        - Thrust Chambers and Nozzles
+        - Ignition Systems
+        - Propellant Feed Systems
+    - Combustion in Rocket Engines:
+        sections:
+        - Combustion Chemistry
+        - Combustion Processes in Rocket Engines
+        - Combustion Stability and Control
+        - Ignition and Flameholding
+    - Rocket Engine Performance Analysis:
+        sections:
+        - Thrust and Specific Impulse
+        - Rocket Engine Efficiency
+        - Characteristic Velocity
+        - Performance Parameters
+        - Rocket Engine Scaling
+    - Rocket Propellant Chemistry:
+        sections:
+        - Types of Rocket Propellants
+        - Combustion Properties of Propellants
+        - Propellant Stability and Aging
+        - Propellant Formulation and Processing
+    - Rocket Propellant Manufacturing:
+        sections:
+        - Propellant Ingredients and Formulation
+        - Propellant Mixing and Casting
+        - Propellant Grain Design
+        - Propellant Drying and Curing
+        - Propellant Quality Control
+    - Rocket Propellant Testing and Evaluation:
+        sections:
+        - Propellant Testing Methods
+        - Propellant Chemical Analysis
+        - Propellant Performance Testing
+        - Propellant Aging and Shelf Life
+    - Rocket Propellant Storage and Handling:
+        sections:
+        - Propellant Storage Requirements
+        - Propellant Handling Procedures
+        - Propellant Safety Precautions
+        - Propellant Transfer Systems
+    - Rocket Propulsion System Design:
+        sections:
+        - Mission Requirements and Constraints
+        - Propulsion System Architecture
+        - Engine Selection and Sizing
+        - Propellant Tank Design
+        - Thrust Vector Control
+        - Propulsion System Integration
+    - Rocket Engine Testing and Evaluation:
+        sections:
+        - Engine Test Facilities and Equipment
+        - Engine Test Procedures
+        - Engine Performance Evaluation
+        - Engine Reliability and Failure Analysis
+    - Rocket Engine Operational Considerations:
+        sections:
+        - Engine Start and Shutdown Procedures
+        - Engine Thrust Control
+        - Engine Throttling and Modulation
+        - Engine Restart Capability
+    - Rocket Propulsion System Performance:
+        sections:
+        - System Level Performance Analysis
+        - Rocket Propulsion Efficiency
+        - System Propellant Mass Fraction
+        - System Payload Capacity
+        - System Reliability and Safety
+    - Rocket Launch and Mission Operations:
+        sections:
+        - Launch Vehicle Assembly and Integration
+        - Launch Pad Operations
+        - Countdown and Launch Procedures
+        - Mission Control and Monitoring
+        - Post-Launch Operations
+    - Rocket Propulsion Future Trends:
+        sections:
+        - Advanced Rocket Propulsion Concepts
+        - Electric Propulsion Systems
+        - Reusable Rocket Technology
+        - Space Exploration Missions
+        - Commercial Space Transportation
+
+```

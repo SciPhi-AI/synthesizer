@@ -1,0 +1,76 @@
+textbook:
+  'Building Technologies III: Building Structural Systems II':
+    chapters:
+    - 'Chapter 1: Introduction: Structure and Form':
+        sections:
+        - 'Section 1.1: Structural Forms and Form Finding'
+        - 'Section 1.2: Structural Forces and Load Paths'
+        - 'Section 1.3: Design Principles'
+    - 'Chapter 2: Structural Forms in Masonry':
+        sections:
+        - 'Section 2.1: Masonry Materials and Construction Techniques'
+        - 'Section 2.2: Masonry Structural Systems'
+        - 'Section 2.3: Masonry Design Principles'
+    - 'Chapter 3: Structural Forms in Timber':
+        sections:
+        - 'Section 3.1: Timber Materials and Properties'
+        - 'Section 3.2: Timber Structural Systems'
+        - 'Section 3.3: Timber Connection Details'
+        - 'Section 3.4: Timber Design Principles'
+    - 'Chapter 4: Structural Forms in Concrete':
+        sections:
+        - 'Section 4.1: Concrete Materials and Properties'
+        - 'Section 4.2: Reinforced Concrete Structural Systems'
+        - 'Section 4.3: Prestressed Concrete Structural Systems'
+        - 'Section 4.4: Concrete Design Principles'
+    - 'Chapter 5: Structural Forms in Steel':
+        sections:
+        - 'Section 5.1: Steel Materials and Properties'
+        - 'Section 5.2: Steel Structural Systems'
+        - 'Section 5.3: Steel Connection Details'
+        - 'Section 5.4: Steel Design Principles'
+    - 'Chapter 6: Graphic Statics':
+        sections:
+        - 'Section 6.1: Introduction to Graphic Statics'
+        - 'Section 6.2: Equilibrium Diagrams'
+        - 'Section 6.3: Force Polygon Method'
+        - 'Section 6.4: Funicular Polygon Method'
+        - 'Section 6.5: Graphic Statics Applications'
+    - 'Chapter 7: Envelopes':
+        sections:
+        - 'Section 7.1: Building Envelope Systems'
+        - 'Section 7.2: Thermal Insulation and Vapor Barriers'
+        - 'Section 7.3: Waterproofing Systems'
+        - 'Section 7.4: Air Barrier Systems'
+        - 'Section 7.5: Envelope Design Principles'
+    - 'Chapter 8: Advances in Building Technology':
+        sections:
+        - 'Section 8.1: Sustainable Building Technologies'
+        - 'Section 8.2: Smart Building Technologies'
+        - 'Section 8.3: Innovative Structural Systems'
+    - 'Chapter 9: Indeterminate Structures':
+        sections:
+        - 'Section 9.1: Indeterminate Structural Analysis'
+        - 'Section 9.2: Influence Lines and Indeterminacy'
+        - 'Section 9.3: Flexibility Matrix Method'
+        - 'Section 9.4: Moment Distribution Method'
+        - 'Section 9.5: Indeterminate Structures Design Principles'
+    - 'Chapter 10: Construction Processes':
+        sections:
+        - 'Section 10.1: Construction Methods and Techniques'
+        - 'Section 10.2: Excavation and Foundation Construction'
+        - 'Section 10.3: Concrete Formwork and Placement'
+        - 'Section 10.4: Steel Erection and Connection'
+        - 'Section 10.5: Construction Processes Design Principles'
+    - 'Chapter 11: Integration':
+        sections:
+        - 'Section 11.1: Building Systems Integration'
+        - 'Section 11.2: Coordination and Collaboration'
+        - 'Section 11.3: Building Information Modeling (BIM)'
+        - 'Section 11.4: Construction and Design Integration'
+    - 'Chapter 12: Final Project Presentations':
+        sections:
+        - 'Section 12.1: Project Proposal Presentations'
+        - 'Section 12.2: Design Development Presentations'
+        - 'Section 12.3: Construction Documentation Presentations'
+        - 'Section 12.4: Final Project Presentations'

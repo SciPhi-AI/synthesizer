@@ -1,0 +1,84 @@
+```yaml
+textbook:
+  Marine Autonomy, Sensing and Communications: A Comprehensive Guide
+    chapters:
+    - Introduction to the Class:
+        sections:
+        - Getting Started w/Lab Machines
+    - Marine Robotics Applications:
+        sections:
+        - Marine Robotics Software 1
+    - The MOOS Autonomy Middleware:
+        sections:
+        - Marine Robotics Software 2
+    - Programming in MOOS:
+        sections:
+        - MOOS Middleware
+    - Ocean Acoustics, Sensing, and Comms:
+        sections:
+        - MOOS Application Writing
+    - Behavior-Based Robotics / IvP Helm:
+        sections:
+        - Intro to Helm Autonomy
+    - Behavior Properties / Multi-vehicle Operations:
+        sections:
+        - Sim Multi-vehicle Ops 1
+    - Nested Autonomy Paradigm:
+        sections:
+        - Sim Multi-vehicle Ops 2
+    - Autonomous Collaborative Search:
+        sections:
+        - Autonomous Collaborative Search
+    - 'Guest Lecture: Dr. Balasuriya, Underwater Imaging':
+        sections:
+        - Underwater Imaging
+    - Contact Related Behaviors / Dynamic Behavior Spawning:
+        sections:
+        - Dynamic Behavior Spawning
+    - Acoustic Comms 1:
+        sections:
+        - Acoustic Comms 1
+    - Acoustic Comms 2:
+        sections:
+        - Acoustic Comms 2
+    - Intro to Behavior Authoring:
+        sections:
+        - Intro to Behavior Authoring
+    - Optimization and Helm Decisions:
+        sections:
+        - Optimization and Helm Decisions
+    - IvP Build Toolbox:
+        sections:
+        - IvP Build Toolbox
+    - Parameter Estimation:
+        sections:
+        - Parameter Estimation
+    - Class briefs of Collab Search:
+        sections:
+        - Class briefs of Collab Search
+    - Adaptive Acoustic Sensing:
+        sections:
+        - Adaptive Acoustic Sensing
+    - 'Guest Lecture: Prof. Lermusiaux, Rapid Environ. Assess':
+        sections:
+        - Rapid Environ. Assess
+    - 'Guest Lecture: Prof. John Leonard, AUV Navigation':
+        sections:
+        - AUV Navigation
+    - Class briefs on Front Detection:
+        sections:
+        - Class briefs on Front Detection
+    - In-Water Experimentation:
+        sections:
+        - In-Water Experimentation
+    - 'Guest Lecture: Prof. Franz Hover, Autonomous Ship Hull Inspection':
+        sections:
+        - Autonomous Ship Hull Inspection
+    - Final Lab Demos:
+        sections:
+        - Final Lab Demos
+    - Final Lab Demos:
+        sections:
+        - Final Lab Demos
+
+```

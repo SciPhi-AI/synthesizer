@@ -1,0 +1,101 @@
+```yaml
+textbook:
+  Introduction to Computer Science and Programming in Python - A Comprehensive Guide:
+    chapters:
+    - Chapter 1: What is computation?
+      sections:
+      - Section 1.1: Introduction to computation
+      - Section 1.2: Algorithms
+      - Section 1.3: Turing machines
+      - Section 1.4: Halting problem
+
+    - Chapter 2: Branching and Iteration:
+      sections:
+      - Section 2.1: Conditional statements
+      - Section 2.2: Loops
+      - Section 2.3: Control flow
+      - Section 2.4: Boolean logic
+
+    - Chapter 3: String Manipulation, Guess and Check:
+      sections:
+      - Section 3.1: String operations
+      - Section 3.2: String methods
+      - Section 3.3: String formatting
+      - Section 3.4: Guessing game
+
+    - Chapter 4: Approximations, Bisection:
+      sections:
+      - Section 4.1: Approximation algorithms
+      - Section 4.2: Bisection method
+      - Section 4.3: Convergence
+      - Section 4.4: Error analysis
+
+    - Chapter 5: Decomposition, Abstractions, Functions:
+      sections:
+      - Section 5.1: Decomposition in problem-solving
+      - Section 5.2: Abstraction in programming
+      - Section 5.3: Function definition
+      - Section 5.4: Function arguments and return values
+
+    - Chapter 6: Tuples, Lists, Aliasing, Mutability, Cloning:
+      sections:
+      - Section 6.1: Tuples and their operations
+      - Section 6.2: Lists and their operations
+      - Section 6.3: Aliasing and mutability
+      - Section 6.4: Cloning and copying
+
+    - Chapter 7: Recursion, Dictionaries:
+      sections:
+      - Section 7.1: Recursive functions
+      - Section 7.2: Base case and recursive case
+      - Section 7.3: Dictionaries and their operations
+      - Section 7.4: Dictionary methods
+
+    - Chapter 8: Testing, Debugging, Exceptions, Assertions:
+      sections:
+      - Section 8.1: Testing strategies
+      - Section 8.2: Debugging techniques
+      - Section 8.3: Exception handling
+      - Section 8.4: Assertions
+
+    - Chapter 9: Object Oriented Programming:
+      sections:
+      - Section 9.1: Classes and objects
+      - Section 9.2: Attributes and methods
+      - Section 9.3: Inheritance and polymorphism
+      - Section 9.4: Object-oriented design principles
+
+    - Chapter 10: Python Classes and Inheritance:
+      sections:
+      - Section 10.1: Class definition
+      - Section 10.2: Class attributes and methods
+      - Section 10.3: Inheritance and subclassing
+      - Section 10.4: Method overriding and super()
+
+    - Chapter 11: Understanding Program Efficiency, Part 1:
+      sections:
+      - Section 11.1: Big O notation
+      - Section 11.2: Time complexity
+      - Section 11.3: Space complexity
+      - Section 11.4: Efficiency analysis
+
+    - Chapter 12: Understanding Program Efficiency, Part 2:
+      sections:
+      - Section 12.1: Recursion and efficiency
+      - Section 12.2: Memoization
+      - Section 12.3: Dynamic programming
+      - Section 12.4: NP-completeness
+
+    - Chapter 13: Searching and Sorting algorithms:
+      sections:
+      - Section 13.1: Linear search
+      - Section 13.2: Binary search
+      - Section 13.3: Bubble sort
+      - Section 13.4: Selection sort
+      - Section 13.5: Insertion sort
+      - Section 13.6: Merge sort
+      - Section 13.7: Quick sort
+      - Section 13.8: Heap sort
+      - Section 13.9: Radix sort
+```
+```

@@ -1,0 +1,67 @@
+textbook:
+  Design and Manufacturing: Concepts and Applications
+  chapters:
+    - Chapter 1: Course Introduction and Contest Overview
+      sections:
+        - Section 1.1: Explore Kit and Contest
+    - Chapter 2: Problem Definition and Design
+      sections:
+        - Section 2.1: Design Process and Machine Elements
+        - Section 2.2: Servomotors, Mechanisms, and CAD
+        - Section 2.3: Window Mechanism
+    - Chapter 3: Actuators - DC Motors, Servomotors, Pneumatics
+      sections:
+        - Section 3.1: Pneumatics, CAD, and Gears
+    - Chapter 4: Creating CAD Components
+      sections:
+        - Section 4.1: Creating CAD Components 1
+        - Section 4.2: Creating CAD Components 2
+    - Chapter 5: Mechanisms
+      sections:
+        - Section 5.1: Mechanisms
+        - Section 5.2: Creating CAD Assemblies
+        - Section 5.3: Mechanisms (2D Kinematic Analysis)
+        - Section 5.4: Mechanisms (Synthesis of 4 Bar Mechanisms)
+    - Chapter 6: Creating CAD Assemblies
+      sections:
+        - Section 6.1: Creating CAD Assemblies 2
+    - Chapter 7: Quiz 1
+      sections:
+        - Section 7.1: Quiz 1
+    - Chapter 8: Creating CAD Drawings
+      sections:
+        - Section 8.1: Creating CAD Drawings
+    - Chapter 9: Gears
+      sections:
+        - Section 9.1: Gears - Basics, Terminology, Involute Curve
+        - Section 9.2: Gears - Strength, Gear Trains
+    - Chapter 10: Microcontrollers
+      sections:
+        - Section 10.1: Microcontrollers
+    - Chapter 11: Lab Time
+      sections:
+        - Section 11.1: Lab Time
+    - Chapter 12: Sensors
+      sections:
+        - Section 12.1: Sensors
+    - Chapter 13: Belts / Chains / Cams
+      sections:
+        - Section 13.1: Belts / Chains / Cams
+    - Chapter 14: Quiz 2
+      sections:
+        - Section 14.1: Quiz 2
+    - Chapter 15: Optimization
+      sections:
+        - Section 15.1: Optimization
+    - Chapter 16: Professional Ethics
+      sections:
+        - Section 16.1: Professional Ethics
+    - Chapter 17: Review of Festivity Procedures
+      sections:
+        - Section 17.1: Review of Festivity Procedures
+    - Chapter 18: A Review of This Year’s Machines
+      sections:
+        - Section 18.1: A Review of This Year’s Machines
+    - Chapter 19: Course Summary / Feedback
+      sections:
+        - Section 19.1: Course Summary / Feedback

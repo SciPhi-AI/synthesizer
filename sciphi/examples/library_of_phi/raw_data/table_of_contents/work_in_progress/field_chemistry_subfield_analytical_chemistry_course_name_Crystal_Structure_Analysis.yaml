@@ -1,0 +1,50 @@
+textbook:
+  Crystal Structure Analysis: A Comprehensive Guide
+chapters:
+- Overview, Textbooks, and History of Crystallography:
+    sections:
+    - Introduction to Crystal Structure Analysis
+    - Recommended Textbooks for Crystallography
+    - A Brief History of Crystallography
+- Symmetry in 2D:
+    sections:
+    - Definition of Symmetry in Two Dimensions
+    - Introduction to Symmetry Operators
+    - Compatibility of Symmetry Operators with Translation
+    - Combining Symmetry Operations and Determination of Plane Groups
+- Symmetry in 3D:
+    sections:
+    - Extension of the Plane Groups Concept to the Third Dimension: Space Groups
+    - Introduction to Screw Axes and Glide Planes
+    - Point Groups vs. Space Groups
+    - The Unit Cell and Crystallographic Conventions
+- X-ray Generation:
+    sections:
+    - X-ray Generation and Properties
+    - Diffraction Experiment with Optical Grids
+- Additional Topics:
+    sections:
+    - [Additional Topic 1]:
+        subsections:
+        - [Subtopic 1]
+        - [Subtopic 2]
+        - [Subtopic 3]
+        - [Subtopic 4]
+        - [Subtopic 5]
+        - [Subtopic 6]
+    - [Additional Topic 2]:
+        subsections:
+        - [Subtopic 1]
+        - [Subtopic 2]
+        - [Subtopic 3]
+        - [Subtopic 4]
+        - [Subtopic 5]
+        - [Subtopic 6]
+    - [Additional Topic 3]:
+        subsections:
+        - [Subtopic 1]
+        - [Subtopic 2]
+        - [Subtopic 3]
+        - [Subtopic 4]
+        - [Subtopic 5]
+        - [Subtopic 6]

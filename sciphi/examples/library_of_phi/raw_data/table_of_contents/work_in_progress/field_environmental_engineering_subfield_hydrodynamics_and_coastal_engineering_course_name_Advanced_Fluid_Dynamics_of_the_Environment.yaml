@@ -1,0 +1,47 @@
+course:
+  Advanced Fluid Dynamics of the Environment:
+    textbook:
+      title: "Fluid Dynamics and Environmental Flows: Theory and Applications"
+      chapters:
+        - chapter: Basics
+          sections:
+            - section: Eulerian and Lagrangian Descriptions of Fluid Motion
+            - section: Kinematics, Strain and Vorticity
+            - section: Kinematic Transport Theorem and Consequences
+            - section: Forces in the Fluid, Stresses and Cauchy’s Law
+            - section: Momentum Conservation Law
+            - section: Stress and Strain, Navier-Stokes Equations
+        - chapter: Simple Deductions
+          sections:
+            - section: Vorticity Theorems for Homogeneous and Stratified Fluids
+            - section: Rayleigh Problem – Where Does Vorticity Come From?
+            - section: Scaling and Approximations
+            - section: Slow Spreading of a Mud Layer on an Incline
+            - section: Selective Withdrawal into a Line Sink, Boundary Layer Approximation and Similarity Solution
+            - section: Stokes Flow Past a Sphere
+            - section: Mechanics of Aerosols
+            - section: Inviscid Irrotational Flows of a Homogeneous Fluid
+            - section: Bernoulli’s Theorems for Inviscid Homogeneous Fluids
+            - section: Example of Steady Boundary Layer; The Laminar Jet
+        - chapter: Effects of Variable Pressure Gradient
+          sections:
+            - section: Kármán’s Momentum Integral Approximation
+            - section: An Application to Transient Boundary Layer Along a Flat Plate
+            - section: Unsteady Boundary Layers
+            - section: Gust and Separation
+            - section: Thermal Energy; Mountain Wind
+            - section: Buoyant Plume from a Steady Source of Heat
+            - section: Homogenization and Dispersion in Oscillatory Flows in a Pipe
+            - section: Heruristic Argument of Kelvin-Helmholtz Instability; Linearized Analysis of K-H Instability; K-H Instabilty of a Continuously Stratified Fluid
+            - section: Rayleigh’s Inviscid Theory of Instability of Parallel Flows; Fjortoft’s Theorem
+        - chapter: Viscous Effects on Parallel Flow Instability
+          sections:
+            - section: Porous Media and Darcy’s Law; Homogenization and Micro-Mechanical Basis of Darcy’s Law
+            - section: Saffman-Taylor Instability and Viscous Lingering; Convection in a Porous Layer with a Geothermal Gradient
+            - section: Horton-Rogers-Lapwood Instability
+            - section: Rotating Coordinates and Coriolis Force
+            - section: Vorticity Theorem in Rotating Fluid; Shallow-Sea Approximation
+            - section: Steady Wind-Induced Flow in a Shallow Sea
+            - section: Nonuniform Forcing on the Sea Surface-Ekman Pumping
+            - section: Wind-Forced Waves in a Two-Layered Sea
+            - section: Coastal Upwelling

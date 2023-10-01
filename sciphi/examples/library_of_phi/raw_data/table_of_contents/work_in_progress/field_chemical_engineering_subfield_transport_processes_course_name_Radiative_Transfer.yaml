@@ -1,0 +1,35 @@
+```yaml
+course:
+  Textbook on Radiative Transfer:
+    chapters:
+    - Review of Basic Thermal Radiation Concepts:
+        sections:
+        - Blackbody Radiation
+        - View Factor
+        - Simple Radiative Transfer
+    - Radiative Transfer in Enclosures:
+        sections:
+        - Electromagnetic Waves
+        - Electromagnetic Wave Modeling of Surfaces
+        - Electromagnetic Wave Modeling of Thin Films
+        - Electromagnetic Wave Modeling of Particles
+        - Scattering Properties of Particulates
+        - Dielectric Properties of Solid (Drude Model)
+        - Lorentz Model
+        - Radiative Properties of Gases
+    - Equation of Radiative Transfer in Participating Media:
+        sections:
+        - Solution of Equation of Radiative Transfer for One-dimensional Gray Media
+        - Discrete Ordinate Method
+        - Spherical Harmonics Method
+        - Approximate Solutions
+        - Monte Carlo Simulation
+    - Near Field Thermal Radiation:
+        sections:
+        - Fluctuation-Dissipation Theory
+        - Solar Cells
+    - Coherent Radiation Source:
+        sections:
+        - Lasers
+        - Laser Materials Interactions
+```

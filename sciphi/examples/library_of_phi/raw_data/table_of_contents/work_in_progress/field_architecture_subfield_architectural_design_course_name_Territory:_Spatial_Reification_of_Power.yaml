@@ -1,0 +1,58 @@
+textbook:
+  'Territory: Spatial Reification of Power':
+    chapters:
+      - chapter: 'Introduction'
+        sections:
+          - section: 'Territory, Not Land'
+            subsections:
+              - 'The People and Their Territory: The Partitioning of the World'
+              - Preface
+      - chapter: 'The Production of Territory'
+        sections:
+          - section: 'Land, Terrain, Territory'
+      - chapter: 'Cartography and Spatial Calculation'
+        sections:
+          - section: 'Territory and Territoriality'
+      - chapter: 'State & Nation'
+        sections:
+          - section: 'Boundlessness, or Infinite Extension'
+      - chapter: 'Power & Space'
+        sections:
+          - section: 'The Border'
+          - section: 'The Envelope'
+      - chapter: 'Initial Mapping and Research Topic Presentations'
+        sections:
+          - section: 'World Urbanization - Theories'
+          - section: 'World Urbanization - Architecture Reactions'
+      - chapter: 'Reification - Marx, Lukács, and Beyond'
+        sections:
+          - section: 'The Production of Territory'
+      - chapter: 'World Urbanization - Theories'
+        sections:
+          - section: 'Territory, Not Land'
+      - chapter: 'World Urbanization - Architecture Reactions'
+        sections:
+          - section: 'The Production of Territory'
+      - chapter: 'Boundlessness, or Infinite Extension'
+        sections:
+          - section: 'The People and Their Territory: The Partitioning of the World'
+      - chapter: 'The Border'
+        sections:
+          - section: 'Territory and Territoriality'
+      - chapter: 'The Envelope'
+        sections:
+          - section: 'The People and Their Territory: The Partitioning of the World'
+      - chapter: 'Final Presentations'
+        sections:
+          - section: 'Territory, Not Land'
+          - section: 'The Production of Territory'
+          - section: 'Cartography and Spatial Calculation'
+          - section: 'State & Nation'
+          - section: 'Power & Space'
+          - section: 'Initial Mapping and Research Topic Presentations'
+          - section: 'Reification - Marx, Lukács, and Beyond'
+          - section: 'World Urbanization - Theories'
+          - section: 'World Urbanization - Architecture Reactions'
+          - section: 'Boundlessness, or Infinite Extension'
+          - section: 'The Border'
+          - section: 'The Envelope'

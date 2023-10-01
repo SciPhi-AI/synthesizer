@@ -1,0 +1,33 @@
+textbook:
+  The Comprehensive Guide to Visual Object Recognition in Monkeys and Humans:
+    chapters:
+    - Introduction to Visual Object Recognition:
+        sections:
+        - High-level Vision
+        - Models of object recognition
+        - The human visual cortex
+        - Comparative mapping of higher visual areas in monkeys and humans
+    - Neuronal Object Representations: Spatial and Temporal Aspects of the Code:
+        sections:
+        - Spatial Aspect of the Code
+          subsections:
+          - Select papers for oral presentation assignments
+        - Temporal Aspect of the Code
+    - Adaptation Effects in Visual Object Recognition:
+        sections:
+        - Adaptation Effects: fMRI and Neurophysiology
+    - The Content of Neuronal Representations in Visual Object Recognition:
+        sections:
+        - Shape, Features, Curvature, Non-accidental Properties
+    - The Tolerances in Visual Object Recognition:
+        sections:
+        - The Tolerances
+    - Effects of Training and Experience on Object Representations:
+        sections:
+        - Effects of Training/Experience on Object Representations
+    - Attention and Object Recognition:
+        sections:
+        - Attention and Object Recognition
+    - Perceptual Awareness in Object Recognition:
+        sections:
+        - Perceptual Awareness

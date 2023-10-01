@@ -1,0 +1,73 @@
+textbook:
+  Elements of Software Construction: A Comprehensive Guide to Java Programming and Software Development
+  chapters:
+    - Introduction to Java Programming:
+        sections:
+        - Overview of objectives and structure of the course
+        - Introduction to Java syntax and semantics
+        - Variables and data types
+        - Operators and expressions
+        - Control flow statements
+    - Intermediate Java Programming:
+        sections:
+        - Exceptions
+        - Input/output
+        - Classes and objects
+        - Access control
+        - Static and final keywords
+        - Inheritance and polymorphism
+        - Abstract classes and interfaces
+        - Enumerations and annotations
+    - Advanced Java Programming:
+        sections:
+        - Overriding and overloading
+        - Packages and namespaces
+        - Generics
+        - Inner classes
+        - Lambda expressions and functional interfaces
+        - Reflection and dynamic proxies
+        - Multithreading and synchronization
+        - Java I/O and file handling
+    - State Machine Design and Implementation:
+        sections:
+        - Introduction to state machines
+        - Graphical object model notation
+        - State machine syntax and semantics
+        - State machine implementation in Java
+    - Jackson Structured Programming (JSP):
+        sections:
+        - Introduction to JSP
+        - Syntax and semantics of JSP
+        - JSP implementation in Java
+    - Davis-Putnam-Logemann-Loveland (DPLL) Algorithm:
+        sections:
+        - Introduction to DPLL algorithm
+        - Syntax and semantics of DPLL algorithm
+        - DPLL algorithm implementation in Java
+    - Structured Query Language (SQL):
+        sections:
+        - Introduction to SQL
+        - Syntax and semantics of SQL
+        - SQL queries and statements
+        - Database connectivity in Java
+    - Case Study 1: Building a Simple Web Application:
+        sections:
+        - Problem analysis and requirements gathering
+        - Designing the architecture of the web application
+        - Implementing the front-end using HTML, CSS, and JavaScript
+        - Implementing the back-end using Java servlets and JSP
+        - Testing and debugging the web application
+    - Case Study 2: Developing a Mobile Application:
+        sections:
+        - Problem analysis and user experience design
+        - Designing the architecture of the mobile application
+        - Implementing the user interface using Android XML layouts
+        - Implementing the functionality using Java and Android SDK
+        - Testing and publishing the mobile application
+    - Case Study 3: Creating a Desktop Application:
+        sections:
+        - Problem analysis and user interface design
+        - Designing the architecture of the desktop application
+        - Implementing the user interface using JavaFX
+        - Implementing the functionality using Java and JavaFX API
+        - Packaging and distributing the desktop application

@@ -1,0 +1,34 @@
+textbook:
+  Particle Physics II: A Comprehensive Guide to Fundamental Building Blocks and Interactions
+  chapters:
+    - Fundamental Building Blocks and their Interactions:
+      sections:
+        - Symmetries and Quarks; Discoveries of the J, Upsilon
+        - Gluons, Particle-antiparticle, Gluons inside Nucleons
+        - Dirac Formalism, Chirality, Helicity, Why Higgs?
+        - Local Gauge Transformation
+        - Solutions of the Dirac Equation
+        - Matrix, Decays, Cross Sections and Radiative Corrections
+    - Polarization, Propagator, Interaction Matrix, Cross Sections and Unitarity Bounds:
+      sections:
+        - Unitarity Bound Violation and 'New' Particles
+        - 'Bottom-up Approach: Unitarity Bounds, ''New'' Particles and their Coupling Constants'
+        - Unitarity Bounds, Higgs, its Coupling Constants and Limit on its Mass
+    - Electro-weak Interactions:
+      sections:
+        - Review
+        - Mid-term
+        - Discussion on Research Topics
+    - Prelude to The Standard Model:
+      sections:
+        - Spontaneous Symmetry Breaking and Higgs Top-down Approach
+        - Masses and Interactions of Weak Bosons and Fermions
+        - QCD, QED and EW Corrections within SM
+    - Divergence in SM and Plausible Solutions:
+      sections:
+        - Technical Color
+        - Reading Assignments based on Lecture Notes on SM, and Models beyond SM
+        - Presentations of Research Papers
+    - Projects:
+      sections:
+        - To demonstrate your in-depth understanding of the frontier theories, experimental techniques and statistical analysis methods, as well as to stimulate your creativity in design and planning, each student in 8.811 is required to write a term research paper, and furthermore to present it, near the end of the semester, to the class for 35 minutes, including discussions. The written reports are officially due in my office. If you have extraordinary difficulty, you are urged to arrange with me individually.

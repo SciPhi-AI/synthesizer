@@ -1,0 +1,81 @@
+```yaml
+textbook:
+  Foundations of Development Policy: A Comprehensive Guide
+    chapters:
+    - 'Chapter 1: Introduction: the vicious circle of poverty':
+        sections:
+        - 'Section 1.1: Poverty traps'
+        - 'Section 1.2: Income inequality'
+        - 'Section 1.3: Human capital'
+        - 'Section 1.4: Social capital'
+    - 'Chapter 2: Nutrition and productivity: interrelationships':
+        sections:
+        - 'Section 2.1: The impact of malnutrition on productivity'
+        - 'Section 2.2: Nutritional interventions'
+        - 'Section 2.3: Food security'
+        - 'Section 2.4: Agricultural productivity'
+    - 'Chapter 3: Education':
+        sections:
+        - 'Section 3.1: The role of education in development'
+        - 'Section 3.2: Access to education'
+        - 'Section 3.3: Quality of education'
+        - 'Section 3.4: Primary, secondary, and tertiary education'
+        - 'Section 3.5: Vocational training'
+    - 'Chapter 4: Health: a case study from Rajasthan':
+        sections:
+        - 'Section 4.1: Health infrastructure'
+        - 'Section 4.2: Maternal and child health'
+        - 'Section 4.3: Disease burden'
+        - 'Section 4.4: Healthcare financing'
+    - 'Chapter 5: Gender discrimination':
+        sections:
+        - 'Section 5.1: Gender gaps in education and employment'
+        - 'Section 5.2: Gender-based violence'
+        - 'Section 5.3: Women's empowerment'
+        - 'Section 5.4: Gender-responsive policies'
+    - 'Chapter 6: Bargaining within families':
+        sections:
+        - 'Section 6.1: Intra-household decision-making'
+        - 'Section 6.2: Gender roles and power dynamics'
+        - 'Section 6.3: Resource allocation within families'
+    - 'Chapter 7: In-class student presentations':
+        sections:
+        - 'Section 7.1: Research topics in development policy'
+        - 'Section 7.2: Presenting research findings'
+        - 'Section 7.3: Peer feedback and evaluation'
+    - 'Chapter 8: Land':
+        sections:
+        - 'Section 8.1: Land tenure systems'
+        - 'Section 8.2: Land reform'
+        - 'Section 8.3: Land rights and access'
+        - 'Section 8.4: Land conflicts'
+    - 'Chapter 9: Savings':
+        sections:
+        - 'Section 9.1: Savings behavior'
+        - 'Section 9.2: Formal and informal savings mechanisms'
+        - 'Section 9.3: Financial inclusion'
+        - 'Section 9.4: Savings for development'
+    - 'Chapter 10: Insurance':
+        sections:
+        - 'Section 10.1: Microinsurance'
+        - 'Section 10.2: Health insurance'
+        - 'Section 10.3: Crop insurance'
+        - 'Section 10.4: Social protection programs'
+    - 'Chapter 11: Credit markets':
+        sections:
+        - 'Section 11.1: Microfinance'
+        - 'Section 11.2: Access to credit'
+        - 'Section 11.3: Informal lending'
+        - 'Section 11.4: Credit constraints'
+    - 'Chapter 12: Formal and informal institutions':
+        sections:
+        - 'Section 12.1: Governance and corruption'
+        - 'Section 12.2: Rule of law'
+        - 'Section 12.3: Property rights'
+        - 'Section 12.4: Informal social norms'
+    - 'Chapter 13: Limits to social policy: corruption':
+        sections:
+        - 'Section 13.1: The impact of corruption on development'
+        - 'Section 13.2: Anti-corruption measures'
+        - 'Section 13.3: Transparency and accountability'
+```

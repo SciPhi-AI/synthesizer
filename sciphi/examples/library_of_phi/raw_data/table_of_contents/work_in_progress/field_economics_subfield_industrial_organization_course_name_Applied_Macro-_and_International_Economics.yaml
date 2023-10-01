@@ -1,0 +1,96 @@
+```yaml
+course:
+  Applied Macro- "and International Economics":
+    textbook:
+      title: "Macroeconomics and International Economics: Theory and Applications"
+      chapters:
+        - chapter: "Introduction and the Money Multiplier"
+          sections:
+            - section: "The Concept of Money Multiplier"
+              subsections:
+                - "Babysitters and Money Multiplier"
+        - chapter: "Monetary Policy and Velocity Theory of Money"
+          sections:
+            - section: "Monetary Policy and Its Impact on the Economy"
+              subsections:
+                - "Germany"
+                - "Zimbabwe"
+        - chapter: "The IS-LM Model"
+          sections:
+            - section: "Understanding the IS-LM Model"
+              subsections:
+                - "Introduction to IS-LM Model"
+            - section: "Applications of the IS-LM Model"
+              subsections:
+                - "Fiscal Policy and Its Role in the Great Depression"
+        - chapter: "AD-AS and Long Run Adjustment"
+          sections:
+            - section: "Aggregate Demand and Aggregate Supply"
+              subsections:
+                - "Connection to Inflation"
+        - chapter: "Central Bank Accounting"
+          sections:
+            - section: "Overview of Central Bank Accounting"
+        - chapter: "World through Inflation"
+          sections:
+            - section: "Understanding Inflation"
+        - chapter: "Banking Crisis and Accounting"
+          sections:
+            - section: "Reasons for Banking Crisis"
+              subsections:
+                - "Causes of Banking Crisis"
+            - section: "Consequences of Banking Crisis"
+              subsections:
+                - "Effects of Banking Crisis on the Economy"
+        - chapter: "Theories of Nominal Exchange Rates"
+          sections:
+            - section: "Short-run Theories of Exchange Rates"
+              subsections:
+                - "Factors Affecting Short-run Exchange Rates"
+            - section: "Long-run Theories of Exchange Rates"
+              subsections:
+                - "Factors Affecting Long-run Exchange Rates"
+        - chapter: "Fiscal Currency Crises"
+          sections:
+            - section: "Causes of Fiscal Currency Crises"
+              subsections:
+                - "Factors Leading to Fiscal Currency Crises"
+            - section: "Solutions to Fiscal Currency Crises"
+              subsections:
+                - "Strategies to Overcome Fiscal Currency Crises"
+        - chapter: "Self-fulfilling Currency Crises"
+          sections:
+            - section: "Factors Leading to Self-fulfilling Currency Crises"
+              subsections:
+                - "Causes and Consequences of Self-fulfilling Currency Crises"
+        - chapter: "Exchange-rate Regimes"
+          sections:
+            - section: "Overview of Exchange-rate Regimes"
+              subsections:
+                - "Different Types of Exchange-rate Regimes"
+        - chapter: "Capital Controls and Unemployment"
+          sections:
+            - section: "The Relationship between Capital Controls and Unemployment"
+              subsections:
+                - "Unholy Trinity: Capital Controls, Exchange-rate Regimes, and Unemployment"
+        - chapter: "US Financial Crisis"
+          sections:
+            - section: "Causes of the US Financial Crisis"
+              subsections:
+                - "Factors Leading to the US Financial Crisis"
+            - section: "Implications of the US Financial Crisis"
+              subsections:
+                - "Effects of the US Financial Crisis on the Global Economy"
+        - chapter: "Debate 1: The International Role of the Dollar"
+          sections:
+            - section: "Arguments for the International Role of the Dollar"
+            - section: "Arguments against the International Role of the Dollar"
+        - chapter: "Debate 2: The Euro"
+          sections:
+            - section: "Pros of the Euro"
+            - section: "Cons of the Euro"
+        - chapter: "Introduction to Development Economics"
+          sections:
+            - section: "Overview of Development Economics"
+```
+```

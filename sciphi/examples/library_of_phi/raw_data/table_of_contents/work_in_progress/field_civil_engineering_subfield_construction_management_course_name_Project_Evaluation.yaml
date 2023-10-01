@@ -1,0 +1,83 @@
+textbook:
+  Project Evaluation: A Comprehensive Guide
+  chapters:
+    - Introduction and Motivation:
+        sections:
+        - Initial discussion of project
+    - Public and Private Projects:
+        sections:
+        - Introduction to public and private projects
+        - Evaluation methods and project evaluation checklists
+        subsections:
+        - Evaluating the feasibility of public projects
+        - Evaluating the feasibility of private projects
+    - Stakeholder Analysis and Multi-Attribute Analysis:
+        sections:
+        - Stakeholder analysis
+        - Multi-attribute analysis
+        subsections:
+        - Identifying stakeholders and their interests
+        - Analyzing stakeholder power and influence
+        - Conducting a multi-attribute analysis
+    - Project Costs and Revenues:
+        sections:
+        - Project costs and revenues
+        - Stakeholder perspectives (public vs. private)
+        subsections:
+        - Estimating project costs
+        - Assessing project revenues
+        - Analyzing the impact of stakeholder perspectives on costs and revenues
+    - Time Value of Money:
+        sections:
+        - Equivalence relationships
+        - Discount rates
+        - Minimally acceptable rate of return (MARR)
+        subsections:
+        - Understanding the time value of money
+        - Applying discount rates in project evaluation
+        - Determining the MARR for different projects
+    - Benefit Cost Analysis:
+        sections:
+        - Comparing alternatives
+        - Financial and economic analysis
+        subsections:
+        - Identifying and evaluating project alternatives
+        - Analyzing the financial viability of projects
+        - Assessing the economic impact of projects
+    - Financing:
+        sections:
+        - Financing options
+        subsections:
+        - Debt financing
+        - Equity financing
+        - Public funding sources
+        - Private funding sources
+    - Case Studies:
+        sections:
+        - Panama Canal
+        - High speed rail
+        - Spent nuclear fuel transportation to Yucca Mountain, Nevada
+        - Pure Home Water in Africa
+        subsections:
+        - Analyzing the project evaluation process for each case study
+        - Assessing the outcomes and impacts of each case study
+    - Public Private Partnerships:
+        sections:
+        - Introduction to public private partnerships
+        - Infrastructure banks
+        subsections:
+        - Understanding the benefits and challenges of public private partnerships
+        - Exploring the role of infrastructure banks in project financing
+    - Project Presentations:
+        sections:
+        - Presentation of projects
+        - Work time for written project reports
+        subsections:
+        - Developing effective project presentations
+        - Managing time and resources for written project reports
+    - Wrap-up and Summary:
+        sections:
+        - Summary of the course
+        subsections:
+        - Key takeaways from the course
+        - Future trends in project evaluation

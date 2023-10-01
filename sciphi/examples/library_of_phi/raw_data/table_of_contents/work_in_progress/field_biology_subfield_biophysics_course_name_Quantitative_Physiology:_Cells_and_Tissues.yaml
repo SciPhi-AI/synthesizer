@@ -1,0 +1,146 @@
+textbook:
+  'Quantitative Physiology: Cells and Tissues':
+    chapters:
+    - Introduction to Cellular Transport:
+        sections:
+        - Review of Differential Equations
+          subsections:
+          - Introduction to Ordinary Differential Equations
+          - Introduction to Partial Differential Equations
+    - Macroscopic and Microscopic Laws of Diffusion:
+        sections:
+        - Continuity and Diffusion Equations
+          subsections:
+          - Introduction to Continuity Equation
+          - Introduction to Diffusion Equation
+        - Diffusion
+          subsections:
+          - Introduction to Fick's Law
+          - Introduction to Steady-State Diffusion
+    - 'Diffusion in Cells: Models':
+        sections:
+        - 'Diffusion in Cells: Experiments'
+          subsections:
+          - Introduction to Cell Membrane Permeability
+          - Introduction to Cell Membrane Transporters
+        - 'Osmosis: van Hoff’s Law'
+          subsections:
+          - Introduction to Osmotic Pressure
+          - Introduction to van Hoff's Law
+        - Diffusion and Osmosis
+          subsections:
+          - Introduction to Diffusion and Osmosis in Cellular Systems
+          - Introduction to Water Potential
+    - Chemical Transport:
+        sections:
+        - Four-State Symmetric Carrier Model
+          subsections:
+          - Introduction to Carrier-Mediated Transport
+          - Introduction to Carrier Proteins
+          - Introduction to Facilitated Diffusion
+        - Osmosis and Carrier Mediated Transport
+          subsections:
+          - Introduction to Osmotic Pressure and Carrier-Mediated Transport
+          - Introduction to Aquaporins
+          - Introduction to Co-Transport
+          - Introduction to Counter-Transport
+        - Carrier Models
+          subsections:
+          - Introduction to Uniporters
+          - Introduction to Symporters
+          - Introduction to Antiporters
+        - Glucose Regulation
+          subsections:
+          - Introduction to Glucose Homeostasis
+          - Introduction to Insulin Regulation
+    - Ion Transport:
+        sections:
+        - 'Ion Transport: Nernst-Planck Equation'
+          subsections:
+          - Introduction to Electrochemical Potential
+          - Introduction to Nernst Equation
+          - Introduction to Goldman-Hodgkin-Katz Equation
+        - Ion Transport Models
+          subsections:
+          - Introduction to Passive Ion Transport
+          - Introduction to Active Ion Transport
+        - Ions
+          subsections:
+          - Introduction to Major Ions in Cells
+          - Introduction to Ion Concentration Gradients
+        - Active Transport
+          subsections:
+          - Introduction to Primary Active Transport
+          - Introduction to Secondary Active Transport
+          - Introduction to Sodium-Potassium Pump
+    - Electrical Properties of Cells:
+        sections:
+        - Core Conductor Model of Large Cells
+          subsections:
+          - Introduction to Membrane Resistance
+          - Introduction to Membrane Capacitance
+          - Introduction to Intracellular Resistance
+          - Introduction to Extracellular Resistance
+        - 'HH: Space Clamp'
+          subsections:
+          - Introduction to Space Clamp Technique
+          - Introduction to Voltage Clamp Technique
+          - Introduction to Current Clamp Technique
+        - 'HH: Voltage Clamp'
+          subsections:
+          - Introduction to Voltage Clamp Experiment
+          - Introduction to Voltage-Dependent Ion Channels
+        - 'HH: Current Clamp'
+          subsections:
+          - Introduction to Current Clamp Experiment
+          - Introduction to Membrane Potential Changes
+    - Cable Model:
+        sections:
+        - Writing an Oral Presentation
+          subsections:
+          - Introduction to Effective Presentation Skills
+          - Introduction to Oral Presentation Structure
+          - Introduction to Visual Aids
+        - Myelinated Fibers
+          subsections:
+          - Introduction to Myelin Sheath
+          - Introduction to Saltatory Conduction
+        - Saltatory Conduction
+          subsections:
+          - Introduction to Nodes of Ranvier
+          - Introduction to Myelinated Axons
+          - Introduction to Saltatory Action Potential Propagation
+    - Ion Channels:
+        sections:
+        - Patch Clamp
+          subsections:
+          - Introduction to Patch Clamp Technique
+          - Introduction to Single-Channel Recording
+        - 'Ion Channels: 2-State Models'
+          subsections:
+          - Introduction to Channel Gating
+          - Introduction to Channel Opening and Closing
+        - 'Ion Channels: 4 Gate Model'
+          subsections:
+          - Introduction to Channel Activation and Deactivation
+          - Introduction to Channel Inactivation and Recovery
+        - 'Ion Channels: Gating Currents'
+          subsections:
+          - Introduction to Gating Currents
+          - Introduction to Voltage Sensing in Ion Channels
+        - Ion Channels Multi-State Models
+          subsections:
+          - Introduction to Channel States
+          - Introduction to Channel Kinetics
+    - Projects:
+        sections:
+        - Microfluidics Laboratory Project
+          subsections:
+          - Introduction to Microfluidics
+          - Introduction to Lab-on-a-Chip Technology
+          - Introduction to Microfluidic Device Fabrication
+        - Hodgkin-Huxley Model Simulation Project
+          subsections:
+          - Introduction to Hodgkin-Huxley Model
+          - Introduction to Neuron Simulation Software
+          - Introduction to Action Potential Simulation

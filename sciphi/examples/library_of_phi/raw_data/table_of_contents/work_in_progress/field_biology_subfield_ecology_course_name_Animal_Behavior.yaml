@@ -1,0 +1,77 @@
+textbook:
+  Animal Behavior: A Comprehensive Guide
+  chapters:
+    - Introduction to Animal Behavior:
+        sections:
+        - Class Requirements
+        - Various Approaches to Animal Behavior and its Study
+    - Ethology:
+        sections:
+        - Introduction to Ethology
+        - Three-spined Stickleback Fish
+        - Field Studies of Birds
+        - Niko Tinbergen’s Questions
+        - Konrad Lorenz’ Jackdaws
+        - Ethology of Geese
+        - Fixed Action Patterns and the Central Nervous System
+        - Input and Output Sides of Innate Behavior
+        - Motivation
+    - Sociobiology:
+        sections:
+        - Introduction to Sociobiology
+        - Genetic Influences on Social Behavior
+        - Scientific Method in Sociobiology
+        - Discoveries of Sociobiology
+        - Critique of Cultural Determinism
+        - Sociobiology and Culture
+        - Practical Issues and Sociobiology
+    - Communication:
+        sections:
+        - Communication in Animal Behavior
+        - Meerkats of the Kalahari Desert
+    - Foraging and Anti-Predation Behavior:
+        sections:
+        - Foraging Behavior
+        - Anti-Predation Behavior
+    - Mating and Reproduction:
+        sections:
+        - Mating Behavior
+        - Reproduction in Animals
+        - Sexual Selection and Mate Choice
+    - Evolution and Development of Behavior:
+        sections:
+        - Evolution of Behavior
+        - Development and Plasticity of Behavior
+        - Behavioral Genetics
+        - Cultural Evolution
+        - Epigenetics and Behavior
+    - The Great Apes:
+        sections:
+        - Behavior of Great Apes
+        - Cognitive Abilities of Great Apes
+        - Communication in Great Apes
+        - Social Structure and Cooperation in Great Apes
+    - Animal Cognition:
+        sections:
+        - Introduction to Animal Cognition
+        - Learning and Memory in Animals
+        - Problem Solving and Tool Use
+        - Numerical and Spatial Cognition
+        - Communication and Language in Animals
+    - Comparative Psychology:
+        sections:
+        - Comparative Psychology: History and Approaches
+        - Comparative Method in Animal Behavior Research
+        - Sensation and Perception in Animals
+        - Emotion and Motivation in Animals
+        - Learning and Conditioning in Animals
+        - Cognition and Intelligence in Animals
+    - Applied Animal Behavior:
+        sections:
+        - Animal Training and Enrichment
+        - Animal Welfare and Ethics
+        - Conservation Behavior
+        - Human-Wildlife Conflict
+    - Student Report Presentations:
+        sections:
+        - Presentation of Animal Behavior Reports

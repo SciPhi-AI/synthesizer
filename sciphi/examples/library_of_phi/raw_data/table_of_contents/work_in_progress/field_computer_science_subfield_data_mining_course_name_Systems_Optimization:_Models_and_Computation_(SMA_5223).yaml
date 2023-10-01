@@ -1,0 +1,103 @@
+textbook:
+  'Systems Optimization: Models and Computation':
+    chapters:
+      - chapter: Optimization Modelling and Computational Issues in Radiation Therapy
+        sections:
+          - Modelling Techniques in Radiation Therapy
+          - Computational Challenges in Radiation Therapy Optimization
+          - Optimization Algorithms for Radiation Therapy
+      - chapter: Increasing the Computational Effectiveness of the Simple Method
+        sections:
+          - Simple Method for Optimization
+          - Improving the Computational Efficiency of the Simple Method
+          - Iterative Approaches for Optimization
+      - chapter: Applied Lagrange Duality for Constrained Optimization
+        sections:
+          - Lagrange Duality Theory
+          - Constrained Optimization Problems
+          - Applications of Lagrange Duality in Optimization
+      - chapter: Simple Routines for Optimization
+        sections:
+          - Basic Optimization Algorithms
+          - Optimization Software and Libraries
+          - Performance Analysis of Optimization Routines
+      - chapter: Telecommunications System Design: Minimum-Cost Embeddings of Reliable Virtual Private Networks
+        sections:
+          - Designing Telecommunications Systems
+          - Virtual Private Networks (VPNs)
+          - Cost Optimization in Telecommunications
+          - Reliability and Performance of VPNs
+      - chapter: Column Generation
+        sections:
+          - Introduction to Column Generation
+          - Applications of Column Generation in Optimization
+          - Algorithms and Techniques for Column Generation
+      - chapter: Network Design and Optimization
+        sections:
+          - Facility Location and Distribution System Planning
+          - Network Loading and Pup Matching
+          - Optimization Models for Network Design
+          - Algorithms for Network Optimization
+      - chapter: Introduction to Convex Constrained Optimization
+        sections:
+          - Convex Optimization Problems
+          - Constrained Optimization with Convex Constraints
+          - Convex Optimization Algorithms
+      - chapter: Midterm Exam
+        sections:
+          - Exam Preparation Strategies
+          - Review of Course Topics
+      - chapter: Pattern Classification and Quadratic Problems
+        sections:
+          - Separable Pattern Classification
+          - Quadratic Problems in Optimization
+          - Optimization Methods for Pattern Classification
+      - chapter: Solution Methods for Quadratic Optimization
+        sections:
+          - Algorithms for Quadratic Optimization
+          - Quadratic Programming Solvers
+          - Applications of Quadratic Optimization Methods
+      - chapter: E-commerce Application
+        sections:
+          - Optimization in E-commerce
+          - Supply Chain Optimization
+          - Pricing and Revenue Optimization
+      - chapter: Truss Design and Convex Optimization
+        sections:
+          - Truss Structures and Optimization
+          - Convex Optimization Techniques for Truss Design
+          - Applications of Convex Optimization in Truss Design
+      - chapter: Issues in Non-Convex Optimization
+        sections:
+          - Non-Convex Optimization Problems
+          - Local Optima and Global Optima
+          - Algorithms for Non-Convex Optimization
+      - chapter: Stochastic Linear Optimization and Extensions
+        sections:
+          - Stochastic Optimization Models
+          - Linear Optimization under Uncertainty
+          - Robust Optimization Techniques
+      - chapter: Optimization under Uncertainty
+        sections:
+          - Uncertainty Modeling in Optimization
+          - Stochastic Programming Methods
+          - Risk Analysis and Optimization
+      - chapter: Benders' Decomposition Methods for Structured Optimization, including Stochastic Optimization
+        sections:
+          - Benders' Decomposition Algorithm
+          - Applications of Benders' Decomposition
+          - Stochastic Optimization with Benders' Decomposition
+      - chapter: Introduction to Semidefinite Programming
+        sections:
+          - Semidefinite Programming Problems
+          - Algorithms for Semidefinite Programming
+          - Applications of Semidefinite Programming
+      - chapter: Truss Structures - Natural Frequency Manipulation via SDP
+        sections:
+          - Natural Frequency Control in Truss Structures
+          - Semidefinite Programming for Natural Frequency Manipulation
+      - chapter: Selfish Routing in Capacitated Networks
+        sections:
+          - Routing Optimization in Networks
+          - Capacitated Network Models
+          - Selfish Routing Algorithms

@@ -1,0 +1,165 @@
+```yaml
+textbook:
+  Identification, Estimation, and Learning: A Comprehensive Guide
+  chapters:
+    - Introduction:
+        sections:
+          - Recursive Least Square:
+              subsections:
+                - Overview of Recursive Least Square Algorithm
+                - Derivation of Recursive Least Square Algorithm
+                - Implementation and Applications of Recursive Least Square Algorithm
+          - Properties of RLS:
+              subsections:
+                - Convergence Analysis of Recursive Least Square Algorithm
+                - Robustness Analysis of Recursive Least Square Algorithm
+                - Limitations and Assumptions of Recursive Least Square Algorithm
+          - Random Processes:
+              subsections:
+                - Overview of Random Processes
+                - Gaussian and Non-Gaussian Random Processes
+                - Autocorrelation and Power Spectral Density
+          - Active Noise Cancellation:
+              subsections:
+                - Introduction to Active Noise Cancellation
+                - Feedforward and Feedback Architectures
+                - Adaptive Algorithms for Active Noise Cancellation
+    - Estimation:
+        sections:
+          - Discrete Kalman Filter-1:
+              subsections:
+                - Overview of Discrete Kalman Filter
+                - Prediction Step in Kalman Filter
+                - Update Step in Kalman Filter
+          - Discrete Kalman Filter-2:
+              subsections:
+                - Extended Kalman Filter
+                - Unscented Kalman Filter
+                - Particle Filter
+          - Continuous Kalman Filter:
+              subsections:
+                - Continuous-time State Estimation
+                - Discrete-time Approximations of Continuous Kalman Filter
+                - Applications of Continuous Kalman Filter
+          - Extended Kalman Filter:
+              subsections:
+                - Non-linear State Estimation
+                - Linearization Techniques for Non-linear Systems
+                - Tracking and Navigation Applications
+    - Representation and Learning:
+        sections:
+          - Prediction Modeling of Linear Systems:
+              subsections:
+                - Introduction to Linear System Prediction Modeling
+                - Autoregressive (AR) Models
+                - Moving Average (MA) Models
+          - Model Structure of Linear Time-invariant Systems:
+              subsections:
+                - State-space Representation of Linear Systems
+                - Transfer Function Representation of Linear Systems
+                - Realization Theory of Linear Systems
+          - Time Series Data Compression:
+              subsections:
+                - Overview of Time Series Data Compression
+                - Lossless Compression Techniques
+                - Lossy Compression Techniques
+          - Laguerre Series Expansion:
+              subsections:
+                - Introduction to Laguerre Series Expansion
+                - Properties and Applications of Laguerre Series Expansion
+                - Laguerre Filters for System Identification
+          - Non-linear Models:
+              subsections:
+                - Introduction to Non-linear Models
+                - Non-linear State Space Models
+                - Non-linear ARMA Models
+          - Function Approximation Theory:
+              subsections:
+                - Overview of Function Approximation Theory
+                - Polynomial Approximation Methods
+                - Interpolation and Regression Techniques
+          - Radial Basis Functions:
+              subsections:
+                - Introduction to Radial Basis Functions
+                - Gaussian Radial Basis Functions
+                - Multiquadric Radial Basis Functions
+          - Neural Networks:
+              subsections:
+                - Introduction to Neural Networks
+                - Feedforward and Recurrent Neural Networks
+                - Training Algorithms for Neural Networks
+          - Error Back Propagation Algorithm:
+              subsections:
+                - Overview of Error Back Propagation Algorithm
+                - Gradient Descent and Stochastic Gradient Descent
+                - Back Propagation in Multi-layer Neural Networks
+    - System Identification:
+        sections:
+          - Perspective of System Identification:
+              subsections:
+                - Overview of System Identification
+                - Time-domain and Frequency-domain Analysis
+                - Parametric and Non-parametric Models
+          - Informative Data Sets and Consistency:
+              subsections:
+                - Selection of Informative Data Sets
+                - Consistency Analysis of Parameter Estimates
+                - Bias and Variance Trade-off
+          - Informative Experiments: Persistent Excitation:
+              subsections:
+                - Introduction to Persistent Excitation
+                - Design of Excitation Signals
+                - Analysis of Persistent Excitation
+          - Asymptotic Distribution of Parameter Estimates:
+              subsections:
+                - Large Sample Theory in System Identification
+                - Asymptotic Normality of Parameter Estimates
+                - Confidence Intervals and Hypothesis Testing
+          - Experiment Design, Pseudo Random Binary Signals:
+              subsections:
+                - Design of Experiment for System Identification
+                - Pseudo Random Binary Signals for Excitation
+                - Analysis of Pseudo Random Binary Signals
+          - Maximum Likelihood Estimate:
+              subsections:
+                - Principle of Maximum Likelihood Estimation
+                - Likelihood Function and Log-likelihood Function
+                - Numerical Methods for Maximum Likelihood Estimation
+          - Cramer-Rao Lower Bound and Best Unbiased Estimate:
+              subsections:
+                - Cramer-Rao Lower Bound for Estimators
+                - Efficient Estimators and Best Unbiased Estimate
+                - Minimum Variance Bound for Estimators
+          - Information Theory of System Identification: Kullback-Leibler Information Distance, Akaike’s Information Criterion:
+              subsections:
+                - Introduction to Information Theory in System Identification
+                - Kullback-Leibler Information Distance
+                - Akaike’s Information Criterion and Model Selection
+    - Projects:
+        sections:
+          - Selecting a Project Topic:
+              subsections:
+                - Criteria for Selecting a Project Topic
+                - Brainstorming Techniques for Project Topics
+                - Evaluating Feasibility and Significance of Project Topics
+          - Theory and Practice:
+              subsections:
+                - Application of Theoretical Concepts in Project Implementation
+                - Validation and Verification of Project Results
+                - Documentation and Reporting of Project Findings
+          - Interesting Context or Application Background:
+              subsections:
+                - Exploring Real-world Contexts for Project Implementation
+                - Identifying Novel Applications for Course Concepts
+                - Case Studies and Examples in Project Development
+          - Achieving the Goal:
+              subsections:
+                - Setting Project Goals and Objectives
+                - Planning and Scheduling Project Milestones
+                - Monitoring and Adjusting Project Progress
+          - Specific Technical Details:
+              subsections:
+                - Technical Requirements and Constraints in Project Design
+                - Algorithm Selection and Parameter Tuning in Project Implementation
+                - Handling Data and Processing Results in Project Development
+```

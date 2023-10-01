@@ -1,0 +1,54 @@
+textbook:
+  Estimation and Control of Aerospace Systems: A Comprehensive Guide
+
+chapters:
+  - Introduction:
+    sections:
+      - Frequency Response Bode Plot Rules
+      - Frequency Response
+      - Bode Plot Exercises
+      - Bode Plots for Unstable Open - Loop Systems
+      - Root - Locus Review
+      - Root - Locus Examples
+
+  - Compensation Design Principles:
+    sections:
+      - Compensation Design Principles
+      - Proportional Control
+      - Lag and PID Compensation
+      - Lead and PID Compensation
+      - Examples
+
+  - High Frequency Roll-off Notch and Plant Inversion:
+    sections:
+      - High Frequency Roll-off Notch and Plant Inversion
+      - Design Example Lead-Lag Compensation
+      - Examples
+      - More Examples
+
+  - Control of Unstable Plants:
+    sections:
+      - Control of Unstable Plants
+      - Models of Nonlinearities
+      - Common Effects of Nonlinearities
+      - Prof. David Trumper’s Lecture
+
+  - Describing Functions:
+    sections:
+      - Describing Functions Introduction and Motivation
+      - Describing Function Analysis
+      - Computing DFs
+      - DF Analysis: Example 1, Stability of Boat Autopilot
+      - DF Analysis: Example 1
+      - DF Analysis: Limit Cycling
+      - DF Analysis: Jump Resonance
+      - DF-based Compensation Design
+
+  - Phase-Plane Analysis:
+    sections:
+      - Phase-Plane Analysis Introduction and Motivation
+      - Phase Plane Drawing Rules
+      - Phase - Plane Example I Carry-on Suitcase
+      - Phase - Plane Example II Satellite System
+      - Phase - Plane Example III Satellite System
+      - Phase - Plane and Parameter Dependence of System Dynamics

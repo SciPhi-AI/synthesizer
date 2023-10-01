@@ -1,0 +1,51 @@
+textbook:
+  Space Systems Engineering: A Comprehensive Guide
+  chapters:
+    - System Management:
+        sections:
+        - Requirements
+        - Team Activities
+        - Trade Analyses
+        - Presentation Planning
+        - Design Document
+        subsections: []
+    - Formation Flight Control:
+        sections:
+        - System Management
+        - Formation Flight Control
+        - Presentation Planning
+        subsections: []
+    - Sub-system Planning:
+        sections:
+        - Trade Analyses
+        - Presentation Planning
+        - TARR Preparation
+        subsections: []
+    - Real-time Software:
+        sections:
+        - Sub-system Planning
+        - TARR Preparation
+        subsections: []
+    - Sub-system Design:
+        sections:
+        - Sub-system Prototyping
+        - Presentation Planning
+        subsections: []
+    - Reliability and Operations:
+        sections:
+        - Lab Introduction
+        - Sub-system Design
+        subsections: []
+    - Preliminary Design Review:
+        sections:
+        - Sub-system Prototyping
+        - PDR Action Items
+        subsections: []
+    - Design Document Preparation:
+        sections:
+        - Design Document
+        subsections: []
+    - Team Social:
+        sections:
+        - Design Document Preparation
+        subsections: []

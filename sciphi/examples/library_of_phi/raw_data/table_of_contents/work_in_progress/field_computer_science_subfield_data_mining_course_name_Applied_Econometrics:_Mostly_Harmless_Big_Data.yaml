@@ -1,0 +1,129 @@
+```yaml
+course:
+  'Applied Econometrics: Mostly Harmless Big Data':
+    textbook:
+      title: 'Applied Econometrics: Mostly Harmless Big Data'
+      chapters:
+        - chapter:
+            title: 'Experimentalist Perspective on Applied Econometrics'
+            sections:
+              - section:
+                  title: 'Introduction to Applied Econometrics'
+              - section:
+                  title: 'Experimental Design'
+              - section:
+                  title: 'Causal Inference'
+        - chapter:
+            title: 'Regression Basics and Advanced Topics'
+            sections:
+              - section:
+                  title: 'Introduction to Regression Analysis'
+              - section:
+                  title: 'Multiple Regression'
+              - section:
+                  title: 'Instrumental Variables'
+              - section:
+                  title: 'Difference-in-Differences'
+              - section:
+                  title: 'Regression Discontinuity Design'
+              - section:
+                  title: 'Propensity Score Matching'
+        - chapter:
+            title: 'Estimating Payoff to Attending'
+            sections:
+              - section:
+                  title: 'Payoff to Education'
+              - section:
+                  title: 'Returns to Schooling'
+              - section:
+                  title: 'Human Capital Theory'
+              - section:
+                  title: 'Labor Market Outcomes'
+        - chapter:
+            title: 'Econometric Software'
+            sections:
+              - section:
+                  title: 'Introduction to Econometric Software'
+              - section:
+                  title: 'Data Management and Cleaning'
+              - section:
+                  title: 'Statistical Analysis'
+              - section:
+                  title: 'Model Estimation'
+              - section:
+                  title: 'Model Validation'
+        - chapter:
+            title: 'Applied Econometrics in Big Data'
+            sections:
+              - section:
+                  title: 'Introduction to Big Data'
+              - section:
+                  title: 'Challenges and Opportunities'
+              - section:
+                  title: 'Data Processing and Preparation'
+              - section:
+                  title: 'Machine Learning Techniques'
+              - section:
+                  title: 'Predictive Modeling'
+              - section:
+                  title: 'Data Visualization'
+        - chapter:
+            title: 'Panel Data Analysis'
+            sections:
+              - section:
+                  title: 'Introduction to Panel Data'
+              - section:
+                  title: 'Fixed Effects Models'
+              - section:
+                  title: 'Random Effects Models'
+              - section:
+                  title: 'Dynamic Panel Data Models'
+              - section:
+                  title: 'Endogeneity and Instrumental Variables'
+        - chapter:
+            title: 'Time Series Analysis'
+            sections:
+              - section:
+                  title: 'Introduction to Time Series'
+              - section:
+                  title: 'Stationarity and Autocorrelation'
+              - section:
+                  title: 'ARIMA Models'
+              - section:
+                  title: 'Vector Autoregression (VAR)'
+              - section:
+                  title: 'Granger Causality'
+              - section:
+                  title: 'Forecasting'
+        - chapter:
+            title: 'Program Evaluation Methods'
+            sections:
+              - section:
+                  title: 'Introduction to Program Evaluation'
+              - section:
+                  title: 'Randomized Controlled Trials'
+              - section:
+                  title: 'Quasi-Experimental Designs'
+              - section:
+                  title: 'Matching Methods'
+              - section:
+                  title: 'Regression Discontinuity Design'
+              - section:
+                  title: 'Synthetic Control Methods'
+        - chapter:
+            title: 'Econometric Issues'
+            sections:
+              - section:
+                  title: 'Heteroscedasticity'
+              - section:
+                  title: 'Endogeneity'
+              - section:
+                  title: 'Measurement Error'
+              - section:
+                  title: 'Selection Bias'
+              - section:
+                  title: 'Simultaneity'
+              - section:
+                  title: 'Autocorrelation'
+
+```

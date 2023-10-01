@@ -1,0 +1,51 @@
+textbook:
+  'Architectural Design: Intentions':
+    chapters:
+      - Chapter 1:
+        sections:
+          - Section 1.1: Course Number
+          - Section 1.2: Course Name
+          - Section 1.3: Resource Level
+          - Section 1.4: Readings
+          - Section 1.5: Lecture Notes
+          - Section 1.6: Recitations
+          - Section 1.7: Assignments
+          - Section 1.8: Exams
+          - Section 1.9: Syllabus
+          - Section 1.10: Calendar
+          - Section 1.11: Projects
+      - Chapter 2:
+        sections:
+          - Section 2.1: Set-up Space
+          - Section 2.2: Exercise 1: Drawing the Body
+          - Section 2.3: Review of Exercise 1: Body Drawings
+          - Section 2.4: Group Organization
+          - Section 2.5: Site Visit
+          - Section 2.6: Review of Project 1, Assignment 1: Analysis
+          - Section 2.7: Sketch Problem
+          - Section 2.8: Talk
+          - Section 2.9: Review of Project 1, Assignment 2: Concept Development
+          - Section 2.10: Sketch Problem
+          - Section 2.11: Desk Crits
+          - Section 2.12: Review of Project 1, Assignment 3: Sectional Drawings
+          - Section 2.13: Sketch Problem
+          - Section 2.14: Talk
+          - Section 2.15: Review of Project 1, Assignment 4: Axon
+          - Section 2.16: Desk Crits
+          - Section 2.17: Final Review of Project 1
+          - Section 2.18: Assignment 2: Intensive Perspective Week
+          - Section 2.19: Desk Crits
+          - Section 2.20: Review: Intensive Perspective Week
+          - Section 2.21: Project 2, Assignment 1: Introduction and Analysis
+          - Section 2.22: Desk Crits
+          - Section 2.23: Review: Project 2, Assignment 1: Introduction and Analysis
+          - Section 2.24: Desk Crits
+          - Section 2.25: Review: Project 2, Assignment 2: Concept Development
+          - Section 2.26: Desk Crits
+          - Section 2.27: In-class Review
+          - Section 2.28: Desk Crits
+          - Section 2.29: Preparation for the Final
+          - Section 2.30: Final Review of Project 2
+      - Chapter 3:
+        sections:
+          - Section 3.1: Compilation of Student Work

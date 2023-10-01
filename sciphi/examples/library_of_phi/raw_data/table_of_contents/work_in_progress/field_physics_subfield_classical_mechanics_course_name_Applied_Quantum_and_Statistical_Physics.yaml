@@ -1,0 +1,51 @@
+```yaml
+course:
+  Applied Quantum and Statistical Physics Textbook:
+    chapters:
+    - 'Chapter 1: Introduction to Classical and Quantum Mechanics':
+        sections:
+        - 'Section 1.1: Probability Amplitudes and Development of Quanta'
+        - 'Section 1.2: Fourier Transforms / MATLAB®'
+        - 'Section 1.3: Dispersion, Wavepackets'
+        - 'Section 1.4: Operators and Ehrenfest’s Theorem'
+        - 'Section 1.5: Examples of Operators and Ehrenfest’s Theorem'
+    - 'Chapter 2: Eigenfunctions, Eigenvalues, Superposition':
+        sections:
+        - 'Section 2.1: Finite Well and 1D Box'
+        - 'Section 2.2: Tunneling Barriers'
+        - 'Section 2.3: Simple Harmonic Oscillator'
+        - 'Section 2.4: Tunneling Examples, STM, SHO'
+        - 'Section 2.5: Raising and Lowering Operators'
+    - 'Chapter 3: LC Circuit & SHO Wavepackets':
+        sections:
+        - 'Section 3.1: WKB Approximation, Variational Method'
+        - 'Section 3.2: Finite Basis Set Approximation'
+        - 'Section 3.3: Quiz 1'
+    - 'Chapter 4: Two-level System':
+        sections:
+        - 'Section 4.1: Examples of Two-level Systems'
+        - 'Section 4.2: Two-level System: Dynamic Drive'
+        - 'Section 4.3: Coupled Systems'
+        - 'Section 4.4: Two-level Examples and Coupled System'
+    - 'Chapter 5: 2D and 3D; Density of States':
+        sections:
+        - 'Section 5.1: Examples and Periodic Boundary Conditions'
+        - 'Section 5.2: Quantization of the E and M Fields'
+        - 'Section 5.3: Quiz 2'
+    - 'Chapter 6: Statistical Physics':
+        sections:
+        - 'Section 6.1: Examples of Statistical Physics'
+        - 'Section 6.2: Statistical Physics II'
+        - 'Section 6.3: Thermionic Emission'
+        - 'Section 6.4: Metals and Semiconductors I'
+        - 'Section 6.5: Metals and Semiconductors II'
+    - 'Chapter 7: Hydrogen Atom I':
+        sections:
+        - 'Section 7.1: H-Atom II'
+        - 'Section 7.2: H-Atom Examples'
+        - 'Section 7.3: Summary'
+    - 'Chapter 8: Final Exam':
+        sections:
+        - 'Section 8.1: None'
+```
+```

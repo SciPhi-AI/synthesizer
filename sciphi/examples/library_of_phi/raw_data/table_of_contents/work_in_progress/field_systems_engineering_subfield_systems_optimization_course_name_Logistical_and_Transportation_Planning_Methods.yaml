@@ -1,0 +1,59 @@
+textbook:
+  Logistical and Transportation Planning Methods:
+    chapters:
+      - Chapter 1: Introduction and Overview
+          sections:
+            - Section 1.1: Introduction
+            - Section 1.2: Overview
+      - Chapter 2: Pedestrian Crossing Problem
+          sections:
+            - Section 2.1: Problem 1
+            - Section 2.2: Problem 2
+      - Chapter 3: Functions of Random Variables
+          sections:
+            - Section 3.1: Functions of Random Variables 1
+            - Section 3.2: Functions of Random Variables 2
+      - Chapter 4: Geometrical Probability
+          sections:
+            - Section 4.1: Geometrical Probability 1
+            - Section 4.2: Geometrical Probability 2
+      - Chapter 5: Introduction to Queues
+          sections:
+            - Section 5.1: Introduction to Queues; Little’s Law
+            - Section 5.2: Markov Birth-and-Death Queues
+      - Chapter 6: Transportation Problems
+          sections:
+            - Section 6.1: Some Transportation Problems
+            - Section 6.2: More General Markov Queues
+      - Chapter 7: The M/G/1 Queue and Extensions
+          sections:
+            - Section 7.1: The M/G/1 Queue and Extensions
+            - Section 7.2: Quiz #1
+      - Chapter 8: Congestion Pricing
+          sections:
+            - Section 8.1: Congestion Pricing
+            - Section 8.2: Hypercube Queueing Model 1
+      - Chapter 9: Queueing Networks
+          sections:
+            - Section 9.1: Queueing Networks; Dynamic Queues
+            - Section 9.2: Hypercube Queueing Model 2
+      - Chapter 10: Hypercube in Practice
+          sections:
+            - Section 10.1: Hypercube in Practice
+            - Section 10.2: Introduction to Networks
+      - Chapter 11: Node and Edge Covering
+          sections:
+            - Section 11.1: Node and Edge Covering
+            - Section 11.2: Location Problems
+      - Chapter 12: Probabilistic Routing and Location
+          sections:
+            - Section 12.1: Probabilistic Routing and Location
+            - Section 12.2: Simulating Randomness
+      - Chapter 13: Networks Research from Urban OR
+          sections:
+            - Section 13.1: Networks Research from Urban OR
+            - Section 13.2: Implementation
+      - Chapter 14: Quiz #2
+          sections:
+            - Section 14.1: Quiz #2
+            - Section 14.2: Final Roundup

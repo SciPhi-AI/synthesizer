@@ -1,0 +1,51 @@
+textbook:
+  'Genetics, Neurobiology, and Pathophysiology of Psychiatric Disorders: A Comprehensive Guide':
+    chapters:
+      - General Introduction:
+          sections:
+            - Genome-wide association studies for complex traits
+      - Bipolar Disorder:
+          sections:
+            - Arguments for and Against A Distinct Diagnostic Entity
+            - Review of Neuroimaging Findings
+          subsections:
+            - Linkage and Association Studies in Bipolar Disorder
+            - Bipolar Disorder Subtypes and Genetic Factors
+      - Psychosis and Schizophrenia:
+          sections:
+            - Genetics of Psychiatric Disorder
+            - DISC1
+            - Ca++ Signaling
+          subsections:
+            - Schizophrenia Subtypes and Genetic Factors
+            - DISC1 and its Role in Schizophrenia
+            - Calcium Signaling and its Implications in Schizophrenia
+      - Neurobiology of Depression:
+          sections:
+            - Neurogenesis and Depression
+            - Lithium and GSK3 Hypothesis
+          subsections:
+            - Molecular Mechanisms of Neurogenesis in Depression
+            - Role of Lithium in Regulating GSK3 Signaling in Depression
+            - Neurotrophic Factors and their Implications in Depression
+      - The GABA System:
+          sections:
+            - The GABA System-I
+          subsections:
+            - GABAergic Signaling and its Role in Psychiatric Disorders
+            - GABA Receptors and their Subtypes
+            - GABAergic Drugs and their Therapeutic Potential in Psychiatric Disorders
+      - Glutamate and Schizophrenia:
+          sections:
+            - The Glutamate Hypothesis of Schizophrenia
+          subsections:
+            - NMDA Receptors and their Role in Schizophrenia
+            - Glutamatergic Signaling and Synaptic Plasticity in Schizophrenia
+            - Glutamate Modulating Agents as Potential Treatments for Schizophrenia
+      - The Dopamine Pathway and DARPP32:
+          sections:
+            - The Dopamine Pathway and DARPP32
+          subsections:
+            - Dopaminergic Signaling and its Role in Psychiatric Disorders
+            - DARPP32 and its Implications in Psychiatric Disorders
+            - Dopamine Receptors and their Subtypes

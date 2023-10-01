@@ -1,0 +1,75 @@
+textbook:
+  Introduction to Shape Grammars: A Comprehensive Guide
+  chapters:
+    - Introduction to Shape Grammars:
+        sections:
+        - Definition and Principles
+        - Shape Grammar Notation
+        - Rule Application
+        - Shape Generation
+        - Grammar Analysis
+        - Grammar Visualization
+    - Applications of Shape Grammars:
+        sections:
+        - Architecture Design
+        - Urban Planning
+        - Industrial Design
+        - Computer Graphics
+        - Game Design
+        - Fashion Design
+    - Shape Grammar Variations:
+        sections:
+        - Parametric Shape Grammars
+        - Stochastic Shape Grammars
+        - Generative Shape Grammars
+        - Procedural Shape Grammars
+        - Interactive Shape Grammars
+        - Context-sensitive Shape Grammars
+    - Grammar Analysis Techniques:
+        sections:
+        - Shape Decomposition
+        - Shape Recognition
+        - Shape Comparison
+        - Shape Optimization
+        - Shape Synthesis
+        - Shape Evaluation
+    - Shape Grammar Implementation:
+        sections:
+        - Grammar Parsing
+        - Rule Execution
+        - Shape Generation Algorithms
+        - Grammar Visualization Tools
+        - Grammar Interpretation
+        - Grammar Editing and Debugging
+    - Advanced Topics in Shape Grammars:
+        sections:
+        - Hierarchical Shape Grammars
+        - Multi-Level Shape Grammars
+        - Shape Grammar Evolution
+        - Grammar Learning
+        - Grammar Transformation
+        - Shape Grammar Complexity Analysis
+    - Shape Grammar Applications in Design:
+        sections:
+        - Architectural Styles
+        - Generative Design
+        - 3D Printing
+        - Parametric Design
+        - Responsive Design
+        - Morphogenetic Design
+    - Shape Grammar Evaluation Methods:
+        sections:
+        - Design Evaluation Criteria
+        - Shape Grammar Metrics
+        - User Studies
+        - Performance Evaluation
+        - Robustness Analysis
+        - Case Studies
+    - Shape Grammar Extensions:
+        sections:
+        - Grammar Modularity
+        - Shape Grammar Composition
+        - Contextual Shape Grammars
+        - Shape Grammar Optimization
+        - Shape Grammar Visualization
+        - Shape Grammar Interoperability

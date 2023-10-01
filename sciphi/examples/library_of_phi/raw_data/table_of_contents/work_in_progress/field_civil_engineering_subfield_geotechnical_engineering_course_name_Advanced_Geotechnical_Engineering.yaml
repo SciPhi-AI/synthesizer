@@ -1,0 +1,58 @@
+textbook:
+  Advanced Geotechnical Engineering: A Comprehensive Guide to Design and Analysis
+
+chapters:
+  - Introduction and Examples:
+    sections:
+      - Design and Safety Factors
+      - Site Investigation: Methodology
+      - Boreholes and Soil Sampling
+      - Stratigraphy Classification Schemes
+  - Engineering Properties and In-Situ Testing:
+    sections:
+      - SPT/FV/PCPT in Situ Tests
+      - Strength Parameters for Soils
+      - Allowable Settlements
+  - Settlement Analysis:
+    sections:
+      - Settlements on Sand
+      - Settlements on Clay
+  - Foundation Design:
+    sections:
+      - Spread Foundation Design
+      - Bearing Capacity 1
+      - Bearing Capacity 2
+  - Pile Foundations:
+    sections:
+      - Pile Types and Selection
+      - Characteristic Pile Behavior
+      - Single Pile Capacity 1
+      - Single Pile Capacity 2
+      - Settlement of Single Pile 1
+      - Pile Group Behavior 1
+      - Pile Group Behavior 2
+      - Lateral Loading of Piles
+      - Pile Driving
+      - Pile Load Tests
+  - Slope Stability Analysis:
+    sections:
+      - Slope Stability Methods 1
+      - Slope Stability Methods 2
+      - Slope Stability Methods 3
+  - Earth Retaining Structures:
+    sections:
+      - Earth Pressures - Review
+      - Cantilever and Propped Walls
+      - Tie Back Anchors
+      - Braced Excavations 1
+      - Braced Excavations 2
+  - Reinforced Soil and Geosynthetics:
+    sections:
+      - Reinforced Soil
+      - Soil Nailing
+      - Geosynthetic Reinforcement
+  - Final Exam:
+    subsections:
+      - Exam Preparation
+      - Sample Questions
+      - Answer Key

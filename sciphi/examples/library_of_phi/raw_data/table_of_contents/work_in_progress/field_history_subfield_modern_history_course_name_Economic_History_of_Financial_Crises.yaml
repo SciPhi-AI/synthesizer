@@ -1,0 +1,113 @@
+course:
+  textbook: Economic History of Financial Crises: A Comprehensive Analysis
+
+topics:
+  chapters:
+    - Introduction:
+        sections:
+        - Definition and Scope of Financial Crises
+        - Historical Overview of Financial Crises
+        - Causes and Triggers of Financial Crises
+        - Impact of Financial Crises on Economies
+        subsections:
+        - Different Types of Financial Crises
+        - The Role of Central Banks in Financial Crises
+
+    - Crises and Industrialization:
+        sections:
+        - Relationship between Crises and Industrialization
+        - Role of Financial Sector in Industrialization
+        - Case Studies of Crises during Industrialization Periods
+        subsections:
+        - The Impact of Crises on Economic Growth during Industrialization
+        - The Role of Technological Advancements in Mitigating Crises
+
+    - Early Modern Crises:
+        sections:
+        - Origins and Causes of Early Modern Crises
+        - Impact of Early Modern Crises on Society
+        - Responses and Policy Measures during Early Modern Crises
+        subsections:
+        - The Role of Government in Addressing Early Modern Crises
+        - The Impact of Crises on Social Structures
+
+    - World War I and Depression:
+        sections:
+        - Economic Consequences of World War I
+        - The Great Depression and its Causes
+        - International Responses to the Great Depression
+        subsections:
+        - The Role of Trade Policies in Amplifying the Great Depression
+        - The Impact of Government Interventions on Economic Recovery
+
+    - Recovery and World War II:
+        sections:
+        - Economic Recovery after the Great Depression
+        - Impact of World War II on Global Economy
+        - Post-War Economic Policies and Institutions
+        subsections:
+        - The Role of International Organizations in Facilitating Post-War Recovery
+        - The Impact of War Reparations on Global Economic Stability
+
+    - The Golden Age:
+        sections:
+        - Characteristics of the Golden Age of Capitalism
+        - Economic Growth and Stability during the Golden Age
+        - Challenges and Decline of the Golden Age
+        subsections:
+        - The Role of Technological Advancements in Driving Economic Growth
+        - The Impact of Changing Demographics on the Golden Age
+
+    - Income Inequality:
+        sections:
+        - Causes and Consequences of Income Inequality
+        - Historical Trends in Income Inequality
+        - Policy Responses to Income Inequality
+        subsections:
+        - The Impact of Education on Income Inequality
+        - The Role of Taxation Policies in Reducing Income Inequality
+
+    - Oil Crises of the 1970s:
+        sections:
+        - Causes and Impact of Oil Crises
+        - Responses and Policy Measures during Oil Crises
+        - Long-Term Effects of Oil Crises on Global Economy
+        subsections:
+        - The Role of Renewable Energy in Mitigating Oil Crises
+        - The Impact of Oil Price Volatility on Financial Markets
+
+    - Japanese Growth and Stagnation:
+        sections:
+        - Economic Miracle and High Growth Period in Japan
+        - Causes and Consequences of Japanese Stagnation
+        - Policy Responses to Japanese Stagnation
+        subsections:
+        - The Role of Government Policies in Driving Japanese Economic Growth
+        - The Impact of Aging Population on Japanese Economy
+
+    - Small Crises and Imbalance:
+        sections:
+        - Financial Crises in Small Economies
+        - Imbalances and Vulnerabilities Leading to Crises
+        - International Contagion and Spillover Effects
+        subsections:
+        - The Role of Foreign Investments in Small Economies
+        - The Impact of Global Economic Integration on Small Economies
+
+    - '2008':
+        sections:
+        - Causes and Triggers of the Global Financial Crisis
+        - Impact of the Global Financial Crisis on Global Economy
+        - Policy Responses to the Global Financial Crisis
+        subsections:
+        - The Role of Rating Agencies in the Financial Crisis
+        - The Impact of Housing Market Collapse on Financial Institutions
+
+    - '2009':
+        sections:
+        - Global Economic Recovery after the Financial Crisis
+        - Challenges and Lessons Learned from the Crisis
+        - Reform Efforts and Regulation Changes
+        subsections:
+        - The Role of Fiscal Stimulus in Economic Recovery
+        - The Impact of Financial Regulations on Market Stability

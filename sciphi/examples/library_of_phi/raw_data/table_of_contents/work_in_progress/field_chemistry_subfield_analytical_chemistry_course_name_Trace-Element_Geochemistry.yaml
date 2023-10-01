@@ -1,0 +1,65 @@
+```yaml
+course:
+  Trace-Element Geochemistry Textbook:
+    chapters:
+    - chapter: Beginnings of Geochemistry
+      sections:
+      - section: Historical Development of Geochemistry
+      - section: Major Contributions to Trace-Element Geochemistry
+      - section: Early Techniques and Methods in Trace-Element Analysis
+    - chapter: Thermodynamic Consideration of TE Solid Solutions
+      sections:
+      - section: Definition and Characteristics of Solid Solutions
+      - section: Thermodynamic Laws and Principles
+      - section: Gibbs Free Energy and Activity
+      - section: Phase Diagrams and Binary Systems
+    - chapter: Partition Coefficient
+      sections:
+      - section: Definition and Calculation of Partition Coefficient
+      - section: Factors Affecting Partitioning of Trace Elements
+      - section: Equilibrium and Non-Equilibrium Partitioning
+      - section: Experimental Determination of Partition Coefficients
+    - chapter: Ionic Model for Bonding
+      sections:
+      - section: Ionic Bonding and Lattice Energy
+      - section: Role of Ionic Radii in Trace-Element Partitioning
+      - section: Crystal Field Theory
+      - section: Ligand Field Theory
+    - chapter: Nomenclature for Trace Element Classification
+      sections:
+      - section: Classification Schemes for Trace Elements
+      - section: Major and Minor Trace Elements
+      - section: Chalcophile, Lithophile, Siderophile, and Atmophile Elements
+    - chapter: Determination of Partition Coefficients
+      sections:
+      - section: Experimental Techniques for Partition Coefficient Determination
+      - section: X-Ray Fluorescence (XRF) Analysis
+      - section: Inductively Coupled Plasma Mass Spectrometry (ICP-MS)
+      - section: Laser Ablation Inductively Coupled Plasma Mass Spectrometry (LA-ICP-MS)
+    - chapter: Trace Element Abundance Variations in Simple Melt-Solid Systems
+      sections:
+      - section: Melt-Solid Equilibrium and Fractional Crystallization
+      - section: Crystal Fractionation and Element Enrichment/Depletion
+      - section: Effect of Pressure and Temperature on Trace Element Partitioning
+    - chapter: Fractional Melting
+      sections:
+      - section: Melting of Heterogeneous Mantle Sources
+      - section: Melting Models for Different Mantle Components
+      - section: Role of Trace Elements in Melting Processes
+    - chapter: Complex Melting Models
+      sections:
+      - section: Melting of Metasomatized Mantle
+      - section: Partial Melting of Subducted Oceanic Crust
+      - section: Melt Extraction and Migration in Mantle Wedge
+    - chapter: Constraints on Melt Models
+      sections:
+      - section: Disequilibrium and Tracer Elements in Melt Inclusions
+      - section: Th-U Decay System and Disequilibrium in Magmatic Systems
+      - section: Geochemical Signatures of Disequilibrium Processes
+    - chapter: Ion Exchange Chromatography
+      sections:
+      - section: Principles and Mechanisms of Ion Exchange
+      - section: Application of Ion Exchange in Trace-Element Analysis
+      - section: Advantages and Limitations of Ion Exchange Chromatography
+```
+```

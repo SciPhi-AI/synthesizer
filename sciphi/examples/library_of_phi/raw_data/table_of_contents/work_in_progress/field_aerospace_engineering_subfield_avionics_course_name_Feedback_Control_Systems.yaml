@@ -1,0 +1,57 @@
+textbook:
+  Feedback Control Systems: A Comprehensive Guide
+chapters:
+  - Introduction:
+    sections:
+      - Basic Concepts
+      - Control Systems Overview
+      - Feedback Control
+  - Root Locus Analysis:
+    sections:
+      - Basic Root Locus Analysis
+      - Examples of Root Locus Analysis
+  - Frequency Response Methods:
+    sections:
+      - Bode Plots
+      - Frequency Response Analysis
+      - Gain and Phase Margins
+  - State-Space Models:
+    sections:
+      - Developing State-Space Models
+      - Transfer Functions to State-Space Models Conversion
+      - Basic Properties of State-Space Models
+      - System Zeros and Transfer Function Matrices
+      - State-Space Model Features
+  - Control Design:
+    sections:
+      - Controllability
+      - Full-State Feedback Control
+      - Pole Placement Approach
+      - LQ Servo Introduction
+      - Open-Loop and Closed-Loop Estimators
+      - Combined Estimators and Regulators
+  - Transient Performance:
+    sections:
+      - Adding Reference Inputs
+      - LQ Servo: Improving Transient Performance
+      - Deterministic Linear Quadratic Regulator
+      - Linear Quadratic Gaussian
+  - Digital Control Basics:
+    sections:
+      - Systems with Nonlinear Functions
+      - Analysis of Nonlinear Systems
+      - Anti-Windup
+      - Closed-Loop System Analysis
+  - Project:
+    sections:
+      - Project Requirements and Guidelines
+      - Topics Selection
+      - Literature Exploration
+      - Application of Course Material
+  - Additional Resources:
+    sections:
+      - Readings
+      - Lecture Notes
+      - Recitations
+      - Assignments
+      - Exams

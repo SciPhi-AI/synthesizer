@@ -35,7 +35,9 @@ from glob import glob
 
 import fire
 
-from sciphi.examples.library_of_phi.prompts import TABLE_OF_CONTENTS_PROMPT  # type: ignore
+from sciphi.examples.library_of_phi.prompts import (
+    TABLE_OF_CONTENTS_PROMPT,
+)  # noqa
 from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
 

@@ -1,0 +1,39 @@
+textbook:
+  Turbulent Flow and Transport: A Comprehensive Guide
+  chapters:
+    - Chapter 1: Fundamental Laws of Motion in Turbulent Flow
+      sections:
+        - Section 1.1: Particles, Material Volumes, And Control Volumes
+        - Section 1.2: The Equation of Motion for Viscous Fluids
+    - Chapter 2: Viscous Fluid Flow
+      sections:
+        - Section 2.1: White.Viscous Fluid Flow. 2nd ed. 1991, pp. 59-89, 96-100
+        - Section 2.2: Pope. Chap. 2; or other books
+    - Chapter 3: Thermodynamic Constitutive Equations and Temperature Equation
+      sections:
+        - Section 3.1: Handout: Sonin. "The Thermodynamic Constitutive Equations and the Equation for Temperature."
+    - Chapter 4: Molecular Theory of Fluids
+      sections:
+        - Section 4.1: Sec. 1.11 Bird, Curtis, and Hirschfelder. Molecular Theory
+    - Chapter 5: Flow and Transport Equations
+      sections:
+        - Section 5.1: Review of Flow and Transport Equations, with Particular Emphasis on the Energy Equation and the Role of Viscous Dissipation
+    - Chapter 6: Instability and Transition
+      sections:
+        - Section 6.1: Instability and Transition
+    - Chapter 7: Fundamental Concepts in Turbulence
+      sections:
+        - Section 7.1: Fundamental Concepts in Turbulence, Approaches to Closure, and Turbulence Modeling
+    - Chapter 8: Jets, Wakes, and Scalar Transport
+      sections:
+        - Section 8.1: Jets, Wakes, etc. Modeled via Simple Closure Schemes
+        - Section 8.2: Scalar Transport in Free Flows (Temperature, Concentration)
+    - Chapter 9: Buoyant Plumes and Transient Thermals
+      sections:
+        - Section 9.1: Buoyant Plumes, Transient Thermals, etc.
+    - Chapter 10: Turbulent Flow over Walls
+      sections:
+        - Section 10.1: General Near-Wall Scaling Laws; Flows in Pipes, Channels, etc.
+    - Chapter 11: Advanced Topics
+      sections:
+        - Section 11.1: Advanced Topics in Turbulent Flow and Transport

@@ -1,0 +1,422 @@
+course:
+  Textbook for Time Series Analysis:
+    chapters:
+    - Introduction to Stationary Time Series:
+        sections:
+        - Stationarity
+            subsections:
+            - Definition and Types of Stationarity
+            - Weak Stationarity
+            - Strict Stationarity
+            - Trend Stationarity
+        - Lag Operator
+            subsections:
+            - Definition and Notation
+            - Lag Polynomials
+            - Backshift Operator
+        - ARMA Models
+            subsections:
+            - Autoregressive (AR) Models
+            - Moving Average (MA) Models
+            - Autoregressive Moving Average (ARMA) Models
+            - Properties and Estimation of ARMA Models
+        - Covariance Structure
+            subsections:
+            - Covariance Function
+            - Autocovariance Function
+            - Cross-covariance Function
+            - Properties and Interpretation of Covariance Structure
+
+    - Frequency Domain Analysis:
+        sections:
+        - Spectra
+            subsections:
+            - Power Spectrum
+            - Periodogram
+            - Cross-spectrum
+            - Coherence
+        - Filters
+            subsections:
+            - Moving Average Filters
+            - Low-pass Filters
+            - High-pass Filters
+            - Band-pass Filters
+        - Transforms
+            subsections:
+            - Fourier Transform
+            - Discrete Fourier Transform
+            - Wavelet Transform
+            - Time-Frequency Analysis
+        - Nonparametric Estimation
+            subsections:
+            - Kernel Density Estimation
+            - Nonparametric Regression
+            - Smoothing Splines
+            - Local Polynomial Regression
+
+    - Model Selection and Information:
+        sections:
+        - Consistent Estimation of Number of Lags
+            subsections:
+            - Akaike Information Criterion (AIC)
+            - Bayesian Information Criterion (BIC)
+            - Hannan-Quinn Information Criterion (HQIC)
+            - Schwarz Information Criterion (SIC)
+        - Discussion of Non-uniformity and Post-selection Inferences
+            subsections:
+            - Model Selection Bias
+            - Model Selection Inference
+            - Post-selection Inference
+            - Correcting for Non-uniformity
+
+    - VAR:
+        sections:
+        - Definition
+            subsections:
+            - Vector Autoregressive (VAR) Models
+            - VAR Representation
+            - VAR Order Selection
+            - VAR Estimation Methods
+        - Estimation: OLS, ML
+            subsections:
+            - Ordinary Least Squares (OLS) Estimation
+            - Maximum Likelihood (ML) Estimation
+            - Comparison of OLS and ML Estimation
+        - Granger Causality
+            subsections:
+            - Definition and Concept of Causality
+            - Granger Causality Test
+            - Interpretation and Limitations of Granger Causality
+        - Impulse Response Functions
+            subsections:
+            - Definition and Interpretation
+            - Structural Impulse Response Functions
+            - Forecast Error Variance Decomposition
+        - Variance Decompositions
+            subsections:
+            - Definition and Interpretation
+            - Structural Variance Decompositions
+            - Forecast Error Variance Decomposition
+
+    - Structural VARs:
+        sections:
+        - Identification
+            subsections:
+            - Short Run Identification
+            - Long Run Identification
+            - Recursive Identification
+            - Sign Restrictions and Identification
+        - Short Term Restrictions
+            subsections:
+            - Cholesky Decomposition
+            - Structural Shocks Ordering
+            - Identification through Restrictions
+            - Structural Impulse Response Functions
+        - Long-term Restrictions
+            subsections:
+            - Restrictions on Long-run Multipliers
+            - Long-run Restrictions and Economic Theory
+            - Identification through Long-run Restrictions
+
+    - VAR and DSGE Models:
+        sections:
+        - World Decomposition
+            subsections:
+            - VAR World Decomposition
+            - Structural VAR World Decomposition
+            - Economic Interpretation of World Decomposition
+        - Fundamentality of Shocks
+            subsections:
+            - Identification of Fundamental Shocks
+            - Measurement of Fundamental Shocks
+            - Economic Significance of Fundamental Shocks
+        - Do Long-run Restrictions Identify Anything
+            subsections:
+            - Identification through Long-run Restrictions
+            - Identification through Short-run Restrictions
+            - Identification through Sign Restrictions
+            - Comparison of Identification Strategies
+
+    - Factor Model and FAVAR:
+        sections:
+        - Motivation
+            subsections:
+            - Factor Model Motivation
+            - FAVAR Motivation
+            - Benefits of Factor Models and FAVAR
+        - Principal Components
+            subsections:
+            - Principal Components Analysis
+            - Factor Extraction and Interpretation
+            - Factor Rotation Techniques
+            - Determining the Number of Factors
+        - Choosing Number of Static and Dynamic Factors
+            subsections:
+            - Empirical Methods for Factor Selection
+            - Information Criteria for Factor Selection
+            - Cross-validation for Factor Selection
+            - Dynamic Factor Selection Methods
+        - Structural FAVAR
+            subsections:
+            - Structural Factor VAR Models
+            - Identification of Structural FAVAR
+            - Estimation and Inference in Structural FAVAR
+            - Applications and Interpretation of Structural FAVAR
+        - IV Regression with Factors
+            subsections:
+            - Instrumental Variable (IV) Regression
+            - IV Regression with Factors
+            - Identification and Estimation of IV Regression with Factors
+            - Interpretation and Limitations of IV Regression with Factors
+
+    - Asymptotic Theory of Empirical Processes:
+        sections:
+        - Empirical Processes
+            subsections:
+            - Definition and Properties of Empirical Processes
+            - Weak Convergence of Empirical Processes
+            - Central Limit Theorem for Empirical Processes
+            - Nonparametric Bootstrap for Empirical Processes
+        - Random Walk Asymptotics
+            subsections:
+            - Definition and Properties of Random Walks
+            - Asymptotic Properties of Random Walks
+            - Unit Root Testing with Random Walk Asymptotics
+            - Nonparametric Bootstrap for Random Walks
+        - Local to Unity Asymptotics
+            subsections:
+            - Definition and Properties of Local to Unity Asymptotics
+            - Asymptotic Properties of Local to Unity Asymptotics
+            - Unit Root Testing with Local to Unity Asymptotics
+            - Nonparametric Bootstrap for Local to Unity Asymptotics
+        - Testing for Breaks
+            subsections:
+            - Definition and Types of Structural Breaks
+            - Break Detection Methods
+            - Tests for Structural Breaks
+            - Estimating the Number of Breaks
+
+    - Univariate Unit Roots and Near Unit Root Problem:
+        sections:
+        - Unit Root Problem
+            subsections:
+            - Definition and Concept of Unit Roots
+            - Unit Root Testing Approaches
+            - Identification of Unit Roots
+            - Challenges in Unit Root Testing
+        - Unit Root Testing
+            subsections:
+            - Augmented Dickey-Fuller (ADF) Test
+            - Philips-Perron (PP) Test
+            - Kwiatkowski-Phillips-Schmidt-Shin (KPSS) Test
+            - Zivot-Andrews (ZA) Test
+        - Confidence Sets for Persistence
+            subsections:
+            - Confidence Sets for Unit Root Testing
+            - Estimation of Persistence Parameters
+            - Confidence Intervals for Persistence
+            - Interpreting Confidence Sets
+        - Tests for Stationarity
+            subsections:
+            - Dickey-Fuller Stationarity Test
+            - Phillips-Perron Stationarity Test
+            - KPSS Stationarity Test
+            - ERS Stationarity Test
+
+    - Structural Breaks and Non-linearity:
+        sections:
+        - Testing for Breaks with Known and Unknown Dates
+            subsections:
+            - Single Break Testing Approaches
+            - Multiple Break Testing Approaches
+            - Sequential Testing Approaches
+            - Estimating Break Dates
+        - Multiple Breaks
+            subsections:
+            - Testing for Multiple Breaks
+            - Estimating Multiple Break Dates
+            - Identifying Break Magnitudes
+            - Interpretation and Limitations of Multiple Breaks
+        - Estimating Number of Breaks
+            subsections:
+            - Model Selection Criteria for Breaks
+            - Information Criteria for Breaks
+            - Cross-validation for Breaks
+            - Bootstrap Methods for Breaks
+
+    - Multivariate Unit Roots and Co-integration:
+        sections:
+        - Estimating Cointegration Relations
+            subsections:
+            - Definition and Concept of Cointegration
+            - Engle-Granger Two-Step Method
+            - Johansen Maximum Likelihood Method
+            - Error Correction Models (ECM)
+        - Canonical Form
+            subsections:
+            - VAR Representations of Cointegrated Systems
+            - Canonical Representation of Cointegrated Systems
+            - Interpretation and Use of Canonical Form
+
+    - Persistent Regressors:
+        sections:
+        - Persistent Regressors
+            subsections:
+            - Definition and Characteristics of Persistent Regressors
+            - Modeling and Estimation of Persistent Regressors
+            - Implications of Persistent Regressors
+            - Strategies for Dealing with Persistent Regressors
+
+    - GMM and Simulated GMM:
+        sections:
+        - GMM Estimation and Asymptotic Theory
+            subsections:
+            - Generalized Method of Moments (GMM)
+            - Estimation and Inference in GMM
+            - Asymptotic Properties of GMM
+            - Testing and Model Selection in GMM
+        - Testing in GMM Setting
+            subsections:
+            - Hypothesis Testing in GMM
+            - Testing overidentifying Restrictions
+            - Testing Weak Identification
+            - Bootstrap Methods for GMM Testing
+        - Simulated Method of Moments
+            subsections:
+            - Simulated Method of Moments (SMM)
+            - Estimation and Inference in SMM
+            - Asymptotic Properties of SMM
+            - Testing and Model Selection in SMM
+        - Estimation of Covariance Structure
+            subsections:
+            - Covariance Structures in Time Series Analysis
+            - Estimating Covariance Structure in GMM
+            - Estimating Covariance Structure in SMM
+            - Model Selection Criteria for Covariance Structure
+        - Initial Condition Problem
+            subsections:
+            - Definition and Challenges of Initial Condition Problem
+            - Estimation Methods for Initial Conditions
+            - Bias and Efficiency in Initial Condition Estimation
+            - Correcting for Initial Condition Bias
+        - Indirect Inference
+            subsections:
+            - Indirect Inference Estimation
+            - Asymptotic Properties of Indirect Inference
+            - Model Selection and Testing in Indirect Inference
+            - Applications and Limitations of Indirect Inference
+
+    - Weak IV:
+        sections:
+        - What is Weak IV?
+            subsections:
+            - Definition and Conditions for Weak Instruments
+            - Identification Challenges with Weak Instruments
+            - Limitations of Weak Instrument Testing
+        - Alternative Asymptotic Theory
+            subsections:
+            - Weak Instrument-Robust Inference
+            - Limited Information Maximum Likelihood (LIML)
+            - Two-Stage Least Squares (2SLS) Estimation
+            - Generalized Method of Moments (GMM) Estimation
+        - How to Detect Weak IV
+            subsections:
+            - Weak Instrument Diagnostics
+            - Weak Instrument-Robust Inference Tests
+            - Specification Tests for Weak Instruments
+            - Instrument Strength Measures
+        - Procedures Robust to Weak IV
+            subsections:
+            - Partial Identification Methods
+            - Local Instrumental Variables (LIV) Estimation
+            - Robust Covariance Matrix Estimation
+            - Adaptive Estimation with Weak Instruments
+        - Unsolved Problems
+            subsections:
+            - Current Challenges in Weak Instrument Testing
+            - Future Directions for Weak Instrument Research
+            - Open Questions and Unsolved Problems
+
+    - Kalman Filter and its Applications:
+        sections:
+        - State-Space Models
+            subsections:
+            - State-Space Representation
+            - State Equation and Measurement Equation
+            - State Estimation and Prediction
+            - Filtering and Smoothing
+        - Time Varying Coefficients
+            subsections:
+            - Introduction to Time Varying Coefficients
+            - Dynamic Linear Models
+            - Time Varying Parameter Estimation
+            - Applications of Time Varying Coefficients
+
+    - ML Estimation of DSGE:
+        sections:
+        - Stochastic Singularities Problem
+            subsections:
+            - Definition and Challenges of Stochastic Singularities
+            - Identification and Estimation Issues with Stochastic Singularities
+            - Strategies for Handling Stochastic Singularities
+        - Misspecification and Quasi-ML
+            subsections:
+            - Model Misspecification in DSGE Modeling
+            - Quasi-Maximum Likelihood (Quasi-ML) Estimation
+            - Robustness and Efficiency in Quasi-ML
+            - Testing and Model Selection in Quasi-ML
+        - Identification
+            subsections:
+            - Identification Challenges in DSGE Models
+            - Identification through Sign Restrictions
+            - Identification through External Instruments
+            - Identification through Restrictions on Shocks
+
+    - Identification and Weak Identification of DSGE:
+        sections:
+        - Identification and Weak Identification of DSGE
+            subsections:
+            - Definition and Concepts of Identification
+            - Identification Challenges in DSGE Models
+            - Weak Identification and Small Sample Issues
+            - Testing and Inference with Weak Identification
+
+    - Bayesian Concepts:
+        sections:
+        - Bayesian Concepts
+            subsections:
+            - Bayesian Inference Framework
+            - Prior Distributions and Posterior Distributions
+            - Markov Chain Monte Carlo (MCMC) Methods
+            - Bayesian Model Selection and Averaging
+
+    - Markov Chain Monte Carlo:
+        sections:
+        - Markov Chain Monte Carlo
+            subsections:
+            - Markov Chain Monte Carlo (MCMC) Algorithms
+            - Metropolis-Hastings Algorithm
+            - Gibbs Sampling Algorithm
+            - Hamiltonian Monte Carlo (HMC) Algorithm
+        - MCMC Diagnostics and Convergence
+            subsections:
+            - Assessing MCMC Convergence
+            - Autocorrelation and Effective Sample Size
+            - Gelman-Rubin Diagnostic
+            - Visualization and Summary Statistics for MCMC
+        - Advanced MCMC Techniques
+            subsections:
+            - Slice Sampling
+            - Sequential Monte Carlo (SMC) Methods
+            - Variational Inference
+            - Approximate Bayesian Computation (ABC)
+
+    - Estimation of DSGE Models using Bayesian Methods:
+        sections:
+        - Estimation of DSGE Models using Bayesian Methods
+            subsections:
+            - Bayesian Estimation of DSGE Models
+            - Prior Specification in DSGE Models
+            - Posterior Simulation and Inference
+            - Model Comparison and Selection in DSGE Models
+```

@@ -1,0 +1,452 @@
+```yaml
+course:
+  Experimental Physics I & II 'Junior Lab':
+    textbook:
+      topics:
+        - Introduction to Experimental Physics:
+            chapters:
+              - Measurement Techniques:
+                  sections:
+                    - Introduction to Measurement
+                    - Units and Standards
+                    - Accuracy and Precision
+                    - Measuring Devices
+              - Error Analysis:
+                  sections:
+                    - Types of Errors
+                    - Propagation of Errors
+                    - Statistical Analysis
+                    - Error Reduction Techniques
+              - Data Acquisition:
+                  sections:
+                    - Sensors and Transducers
+                    - Analog and Digital Signals
+                    - Signal Conditioning
+                    - Data Acquisition Systems
+              - Lab Safety:
+                  sections:
+                    - General Safety Guidelines
+                    - Chemical Safety
+                    - Electrical Safety
+                    - Radiation Safety
+        - Mechanics Experiments:
+            chapters:
+              - Newton's Laws of Motion:
+                  sections:
+                    - First Law: Inertia
+                    - Second Law: Force and Acceleration
+                    - Third Law: Action and Reaction
+              - Conservation of Energy:
+                  sections:
+                    - Work and Kinetic Energy
+                    - Potential Energy and Conservation Laws
+                    - Mechanical Energy and Power
+              - Projectile Motion:
+                  sections:
+                    - Projectiles in a Uniform Gravitational Field
+                    - Projectile Motion with Air Resistance
+              - Simple Harmonic Motion:
+                  sections:
+                    - Introduction to Simple Harmonic Motion
+                    - Simple Harmonic Oscillators
+                    - Damped and Forced Oscillations
+              - Rotational Motion:
+                  sections:
+                    - Angular Velocity and Acceleration
+                    - Torque and Angular Momentum
+                    - Rotational Kinetic Energy
+              - Friction and Drag Forces:
+                  sections:
+                    - Frictional Forces and Laws
+                    - Drag Forces and Terminal Velocity
+                    - Rolling and Sliding Friction
+        - Electromagnetism Experiments:
+            chapters:
+              - Electric Fields and Potentials:
+                  sections:
+                    - Electric Charges and Fields
+                    - Electric Potential and Potential Energy
+                    - Electric Field Mapping
+              - Capacitance and Dielectrics:
+                  sections:
+                    - Capacitors and Capacitance
+                    - Dielectric Materials and Polarization
+                    - Energy Stored in a Capacitor
+              - DC Circuits:
+                  sections:
+                    - Ohm's Law and Resistance
+                    - Kirchhoff's Laws
+                    - Series and Parallel Circuits
+              - Magnetic Fields and Forces:
+                  sections:
+                    - Magnetic Fields and Magnetic Forces
+                    - Magnetic Field of Currents
+                    - Magnetic Field of Permanent Magnets
+              - Electromagnetic Induction:
+                  sections:
+                    - Faraday's Law and Lenz's Law
+                    - Magnetic Flux and Induced EMF
+                    - Inductance and Self-Induction
+              - AC Circuits:
+                  sections:
+                    - AC Voltage and Current
+                    - Capacitors and Inductors in AC Circuits
+                    - Resonance and Filters
+        - Optics Experiments:
+            chapters:
+              - Geometrical Optics:
+                  sections:
+                    - Reflection and Refraction
+                    - Snell's Law and Total Internal Reflection
+                    - Mirrors and Lenses
+              - Interference and Diffraction:
+                  sections:
+                    - Interference of Light Waves
+                    - Diffraction of Light Waves
+                    - Young's Double-Slit Experiment
+              - Polarization:
+                  sections:
+                    - Polarized Light and Polarizers
+                    - Malus's Law and Brewster's Angle
+                    - Polarization by Scattering
+              - Optical Instruments:
+                  sections:
+                    - Human Eye and Vision
+                    - Cameras and Photographic Principles
+                    - Microscopes and Telescopes
+              - Lasers:
+                  sections:
+                    - Stimulated Emission and Laser Gain
+                    - Laser Operation and Characteristics
+                    - Applications of Lasers
+              - Holography:
+                  sections:
+                    - Holographic Principles and Techniques
+                    - Recording and Reconstruction of Holograms
+                    - Applications of Holography
+        - Thermal Physics Experiments:
+            chapters:
+              - Temperature and Heat:
+                  sections:
+                    - Temperature Scales and Thermometers
+                    - Thermal Expansion and Contraction
+                    - Heat Transfer Mechanisms
+              - Laws of Thermodynamics:
+                  sections:
+                    - Zeroth Law and Temperature
+                    - First Law and Conservation of Energy
+                    - Second Law and Entropy
+              - Gas Laws:
+                  sections:
+                    - Boyle's Law and Charles's Law
+                    - Ideal Gas Law and Equation of State
+                    - Kinetic Theory of Gases
+              - Heat Engines:
+                  sections:
+                    - Carnot Cycle and Efficiency
+                    - Otto Cycle and Internal Combustion Engines
+                    - Rankine Cycle and Steam Power Plants
+              - Phase Transitions:
+                  sections:
+                    - Phase Diagrams and Phase Transitions
+                    - Heat of Fusion and Heat of Vaporization
+                    - Superconductivity and Superfluidity
+              - Heat Transfer:
+                  sections:
+                    - Conduction, Convection, and Radiation
+                    - Heat Transfer in Solids, Liquids, and Gases
+                    - Heat Exchangers and Thermal Insulation
+        - Quantum Mechanics Experiments:
+            chapters:
+              - Wave-particle Duality:
+                  sections:
+                    - Wave-particle Nature of Light and Matter
+                    - De Broglie Wavelength and Uncertainty Principle
+                    - Wave-packets and Superposition
+              - Photoelectric Effect:
+                  sections:
+                    - Photoelectric Effect and Photocurrent
+                    - Einstein's Explanation and Work Function
+                    - Applications of the Photoelectric Effect
+              - Compton Scattering:
+                  sections:
+                    - Compton Effect and Photon Scattering
+                    - Conservation of Momentum and Energy
+                    - Compton Wavelength and Electron Mass
+              - Quantum Interference:
+                  sections:
+                    - Interference of Matter Waves
+                    - Young's Double-Slit Experiment with Electrons
+                    - Applications of Quantum Interference
+              - Quantum Tunneling:
+                  sections:
+                    - Tunneling Phenomenon and Barriers
+                    - Transmission and Reflection Coefficients
+                    - Applications of Quantum Tunneling
+              - Atomic Spectra:
+                  sections:
+                    - Atomic Spectra and Energy Levels
+                    - Bohr Model of the Hydrogen Atom
+                    - Spectral Lines and Atomic Spectroscopy
+        - Nuclear and Particle Physics Experiments:
+            chapters:
+              - Radioactivity:
+                  sections:
+                    - Types of Radioactive Decay
+                    - Radioactive Decay Laws and Half-Life
+                    - Radioactive Dating and Nuclear Medicine
+              - Nuclear Reactions:
+                  sections:
+                    - Nuclear Fission and Fusion
+                    - Nuclear Energy and Power Generation
+                    - Nuclear Weapons and Radiation Safety
+              - Particle Accelerators:
+                  sections:
+                    - Particle Acceleration and Energy Gain
+                    - Linear and Circular Accelerators
+                    - Particle Colliders and High-Energy Physics
+              - Particle Detectors:
+                  sections:
+                    - Interaction of Particles with Matter
+                    - Ionization Detectors and Gas Chambers
+                    - Scintillation Detectors and Semiconductor Detectors
+              - Quark Model:
+                  sections:
+                    - Quarks and Leptons
+                    - Hadrons and Baryons
+                    - Mesons and Elementary Particles
+              - Standard Model of Particle Physics:
+                  sections:
+                    - Elementary Particles and Forces
+                    - Gauge Symmetry and Higgs Mechanism
+                    - Particle Physics Research and Future Directions
+        - Astrophysics Experiments:
+            chapters:
+              - Stellar Spectra:
+                  sections:
+                    - Electromagnetic Spectrum and Spectral Classification
+                    - Absorption and Emission Lines in Stellar Spectra
+                    - Stellar Atmospheres and Stellar Evolution
+              - Hertzsprung-Russell Diagram:
+                  sections:
+                    - HR Diagram and Stellar Classification
+                    - Main Sequence and Evolutionary Tracks
+                    - Stellar Ages and Stellar Populations
+              - Stellar Evolution:
+                  sections:
+                    - Stellar Birth and Protostars
+                    - Nuclear Fusion and Main Sequence Stars
+                    - Stellar Death and Stellar Remnants
+              - Cosmology:
+                  sections:
+                    - Big Bang Theory and Cosmological Models
+                    - Expansion of the Universe and Hubble's Law
+                    - Dark Energy and Dark Matter
+              - Dark Matter:
+                  sections:
+                    - Evidence for Dark Matter
+                    - Dark Matter Candidates and Detection Methods
+                    - Implications for Cosmology and Particle Physics
+              - Black Holes:
+                  sections:
+                    - Formation and Classification of Black Holes
+                    - Event Horizon and Singularity
+                    - Effects of Black Holes on Space and Time
+        - Condensed Matter Experiments:
+            chapters:
+              - Crystallography:
+                  sections:
+                    - Crystal Lattices and Unit Cells
+                    - Bravais Lattices and Crystal Systems
+                    - X-ray Diffraction and Crystallographic Techniques
+              - Superconductivity:
+                  sections:
+                    - Meissner Effect and Zero Resistance
+                    - Type I and Type II Superconductors
+                    - High-Temperature Superconductivity
+              - Magnetic Materials:
+                  sections:
+                    - Magnetic Domains and Magnetic Moments
+                    - Ferromagnetic, Paramagnetic, and Diamagnetic Materials
+                    - Magnetic Hysteresis and Applications
+              - Semiconductor Devices:
+                  sections:
+                    - Intrinsic and Extrinsic Semiconductors
+                    - PN Junctions and Diodes
+                    - Transistors and Integrated Circuits
+              - Nanotechnology:
+                  sections:
+                    - Nanoscale Materials and Nanoparticles
+                    - Nanofabrication Techniques and Nanodevices
+                    - Applications of Nanotechnology
+              - Phase Transitions in Solids:
+                  sections:
+                    - Phase Diagrams and Phase Transitions
+                    - Order-Disorder Transitions and Crystal Symmetry
+                    - Ferroelectric and Ferromagnetic Transitions
+        - Biophysics Experiments:
+            chapters:
+              - Biomolecular Structure:
+                  sections:
+                    - Protein Structure and Folding
+                    - Nucleic Acid Structure and DNA Replication
+                    - Lipid Bilayers and Membrane Proteins
+              - Protein Folding:
+                  sections:
+                    - Protein Folding and Stability
+                    - Protein Misfolding and Disease
+                    - Protein Folding and Drug Design
+              - Membrane Biophysics:
+                  sections:
+                    - Cell Membranes and Lipid Bilayers
+                    - Membrane Transport and Ion Channels
+                    - Membrane Fusion and Exocytosis
+              - Cellular Biophysics:
+                  sections:
+                    - Cell Structure and Organelles
+                    - Cell Division and Cell Cycle
+                    - Cell Signaling and Cell Communication
+              - Neurophysics:
+                  sections:
+                    - Neural Membrane Potential and Action Potentials
+                    - Synaptic Transmission and Neurotransmitters
+                    - Neural Networks and Brain Function
+              - Biomedical Imaging:
+                  sections:
+                    - X-ray Imaging and Computed Tomography (CT)
+                    - Magnetic Resonance Imaging (MRI)
+                    - Positron Emission Tomography (PET) and Single Photon Emission Computed Tomography (SPECT)
+      subsubtopics:
+        - Introduction to Measurement:
+            subsections:
+              - Fundamental and Derived Quantities
+              - Measurement Uncertainty and Error Analysis
+              - SI Units and Prefixes
+        - Statistical Analysis:
+            subsections:
+              - Probability Distributions and Descriptive Statistics
+              - Confidence Intervals and Hypothesis Testing
+              - Regression Analysis and Correlation Coefficients
+        - Signal Conditioning:
+            subsections:
+              - Amplification and Attenuation
+              - Filtering and Noise Reduction
+              - Analog-to-Digital Conversion
+        - Mechanical Energy and Power:
+            subsections:
+              - Work and Energy
+              - Power and Efficiency
+              - Conservation of Mechanical Energy
+        - Projectile Motion with Air Resistance:
+            subsections:
+              - Horizontal and Vertical Motions
+              - Trajectory and Range
+              - Projectile Motion in a Non-Ideal Environment
+        - Simple Harmonic Oscillators:
+            subsections:
+              - Springs and Simple Pendulums
+              - Damped Oscillations and Resonance
+              - Driven Oscillations and Forced Vibrations
+        - Torque and Angular Momentum:
+            subsections:
+              - Moment of Inertia and Rotational Kinematics
+              - Angular Momentum and Conservation Laws
+              - Angular Impulse and Torque
+        - Drag Forces and Terminal Velocity:
+            subsections:
+              - Drag Coefficient and Drag Force
+              - Terminal Velocity and Stokes' Law
+              - Fluid Dynamics and Reynolds Number
+        - Electric Potential and Potential Energy:
+            subsections:
+              - Electric Potential Energy and Work
+              - Electric Potential and Voltage
+              - Equipotential Surfaces and Electric Field Lines
+        - Dielectric Materials and Polarization:
+            subsections:
+              - Electric Polarization and Dielectric Constant
+              - Capacitors with Dielectric Materials
+              - Electrostatic Shielding and Capacitor Design
+        - Kirchhoff's Laws:
+            subsections:
+              - Kirchhoff's Voltage Law (KVL)
+              - Kirchhoff's Current Law (KCL)
+              - Analysis of Complex Circuits
+        - Magnetic Field of Currents:
+            subsections:
+              - Biot-Savart Law and Magnetic Field Calculation
+              - Ampere's Law and Magnetic Field of a Solenoid
+              - Magnetic Field of a Straight Current-Carrying Wire
+        - Magnetic Flux and Induced EMF:
+            subsections:
+              - Faraday's Law of Electromagnetic Induction
+              - Lenz's Law and Direction of Induced Current
+              - Self-Inductance and Mutual Inductance
+        - Diffraction of Light Waves:
+            subsections:
+              - Single-Slit Diffraction and Intensity Distribution
+              - Double-Slit Diffraction and Interference Patterns
+              - Diffraction Gratings and Spectral Analysis
+        - Malus's Law and Brewster's Angle:
+            subsections:
+              - Polarization of Light Waves
+              - Polarization Filters and Malus's Law
+              - Brewster's Angle and Polarization by Reflection
+        - Cameras and Photographic Principles:
+            subsections:
+              - Camera Obscura and Pinhole Cameras
+              - Aperture and Shutter Speed
+              - Film and Digital Photography
+        - Laser Operation and Characteristics:
+            subsections:
+              - Population Inversion and Stimulated Emission
+              - Laser Gain and Threshold Condition
+              - Laser Modes and Beam Characteristics
+        - Recording and Reconstruction of Holograms:
+            subsections:
+              - Holographic Recording Materials and Techniques
+              - Holographic Reconstruction and Image Formation
+              - Applications of Holography in Science and Technology
+        - Temperature Scales and Thermometers:
+            subsections:
+              - Celsius, Fahrenheit, and Kelvin Scales
+              - Liquid-in-Glass Thermometers and Thermocouples
+              - Infrared Thermometers and Pyrometers
+        - First Law and Conservation of Energy:
+            subsections:
+              - Internal Energy and Heat Transfer
+              - Heat Capacity and Specific Heat
+              - Enthalpy and Thermochemical Reactions
+        - Ideal Gas Law and Equation of State:
+            subsections:
+              - Pressure and Volume Relationships
+              - Temperature and Volume Relationships
+              - Boyle's Law, Charles's Law, and Avogadro's Law
+        - Otto Cycle and Internal Combustion Engines:
+            subsections:
+              - Four-Stroke and Two-Stroke Engines
+              - Efficiency and Power Output
+              - Emissions and Environmental Impact
+        - Heat Transfer in Solids, Liquids, and Gases:
+            subsections:
+              - Conduction, Convection, and Radiation
+              - Fourier's Law and Heat Conduction
+              - Heat Exchangers and Thermal Insulators
+        - De Broglie Wavelength and Uncertainty Principle:
+            subsections:
+              - Wave-particle Duality of Matter
+              - De Broglie Hypothesis and Wavelength Calculation
+              - Heisenberg's Uncertainty Principle
+        - Einstein's Explanation and Work Function:
+            subsections:
+              - Photoelectric Effect and Quantum Theory
+              - Einstein's Photons and Energy Quantization
+              - Work Function and Threshold Frequency
+        - Conservation of Momentum and Energy:
+            subsections:
+              - Photon Momentum and Compton Wavelength
+              - Compton Scattering and Momentum Transfer
+              - Energy and Momentum Conservation Laws
+        - Young's Double-Slit Experiment with Electrons:
+            subsections:
+              - Electron Diffraction

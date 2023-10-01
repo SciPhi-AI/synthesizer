@@ -1,0 +1,132 @@
+textbook:
+  Modern Blacksmithing and Physical Metallurgy: A Comprehensive Guide
+  chapters:
+    - Introduction to Blacksmithing:
+      sections:
+        - History of Blacksmithing
+        - Tools and Equipment
+        - Safety Precautions
+        - Types of Forges
+        - Basic Blacksmithing Techniques
+      subsections:
+        - Introduction to Blacksmithing: An Ancient Craft
+        - Essential Blacksmithing Tools
+        - Safety Measures in the Blacksmith Shop
+        - Types of Forges and their Applications
+        - Mastering Basic Blacksmithing Techniques
+    
+    - Physical Metallurgy:
+      sections:
+        - Crystal Structures
+        - Phase Diagrams
+        - Alloying Elements
+        - Heat Treatment
+        - Mechanical Properties of Metals
+        - Non-Ferrous Metals
+      subsections:
+        - Understanding Crystal Structures and their Effects on Properties
+        - Exploring Phase Diagrams for Alloy Design
+        - Alloying Elements and their Influence on Material Properties
+        - Heat Treatment Techniques for Strengthening and Transforming Metals
+        - Investigating Mechanical Properties of Metals
+        - Exploring the World of Non-Ferrous Metals
+    
+    - Forging Techniques:
+      sections:
+        - Types of Forging
+        - Hammer Forging
+        - Press Forging
+        - Upsetting
+        - Drawing Out
+        - Punching and Drifting
+      subsections:
+        - Traditional and Modern Forging Techniques
+        - Mastering Hammer Forging Techniques
+        - Precision and Power: Press Forging Fundamentals
+        - Upsetting: Forging Techniques for Creating Bulk Material
+        - Drawing Out: Extending and Tapering Metal
+        - Punching and Drifting: Creating Holes and Cavities in Forged Workpieces
+    
+    - Welding and Joining:
+      sections:
+        - Types of Welding
+        - Forge Welding
+        - Gas Welding
+        - Arc Welding
+        - Brazing and Soldering
+        - Joining Techniques for Different Metals
+      subsections:
+        - Overview of Common Welding Techniques
+        - Forge Welding: Joining Metals Using Heat and Pressure
+        - Gas Welding: Fusion Welding with Flame Heating
+        - Arc Welding: Fusion Welding with Electric Arc
+        - Brazing and Soldering: Joining Metals with Filler Materials
+        - Joining Techniques for Specific Metal Combinations
+    
+    - Heat Treatment:
+      sections:
+        - Annealing
+        - Quenching and Tempering
+        - Case Hardening
+        - Surface Hardening
+        - Austempering
+        - Martempering
+      subsections:
+        - Annealing: Restoring Softness and Ductility to Metals
+        - Quenching and Tempering: Strengthening and Toughening Metals
+        - Case Hardening: Creating a Hard, Wear-Resistant Surface Layer
+        - Surface Hardening: Enhancing Surface Characteristics of Metals
+        - Austempering: Producing Strong and Ductile Bainite Structures
+        - Martempering: Achieving Uniform Hardness and Toughness
+    
+    - Metalworking Techniques:
+      sections:
+        - Cutting and Shaping Metal
+        - Cold Working
+        - Hot Working
+        - Rolling
+        - Drawing
+        - Extrusion
+        - Sheet Metal Forming
+        - Casting
+      subsections:
+        - Techniques for Cutting and Shaping Metal
+        - Cold Working: Deforming Metal at Room Temperature
+        - Hot Working: Deforming Metal at Elevated Temperatures
+        - Rolling: Reducing Thickness and Changing Shape of Metal
+        - Drawing: Forming Metal into Tubular Shapes
+        - Extrusion: Creating Complex Cross-Sectional Profiles
+        - Sheet Metal Forming: Bending, Stretching, and Punching Thin Metal Sheets
+        - Casting: Transforming Molten Metal into Solid Shapes
+    
+    - Metallurgical Testing:
+      sections:
+        - Metallography
+        - Mechanical Testing
+        - Non-Destructive Testing
+        - Chemical Analysis
+        - Microstructure Examination
+        - Hardness Testing
+      subsections:
+        - Metallography: Studying the Microstructure of Metals
+        - Mechanical Testing: Evaluating Mechanical Properties of Metals
+        - Non-Destructive Testing: Examining Materials without Causing Damage
+        - Chemical Analysis: Determining Chemical Composition of Metals
+        - Microstructure Examination: Analyzing Microscopic Features of Metals
+        - Hardness Testing: Measuring Material Hardness for Quality Control
+    
+    - Blacksmithing Projects:
+      sections:
+        - Bottle Opener
+        - Three-Legged Table
+        - Metal Rose
+        - Pineapple Twist
+        - Iron Heart
+        - Tools
+      subsections:
+        - Crafting a Unique Bottle Opener
+        - Building a Sturdy Three-Legged Table
+        - Creating a Lifelike Metal Rose
+        - Mastering the Pineapple Twist Technique
+        - Forging an Iron Heart Symbol
+        - Essential Blacksmithing Tools and Their Uses

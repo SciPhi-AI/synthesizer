@@ -1,0 +1,91 @@
+```yaml
+course:
+  Algorithms for Inference:
+    textbook:
+      title: Comprehensive Guide to Algorithms for Inference
+      chapters:
+        - Introduction:
+            sections:
+            - Course Overview
+            - Preliminaries
+        - Directed Graphical Models:
+            sections:
+            - Graphical Model Definitions and Examples
+            - Gaussian Graphical Models: Schur’s Complement
+            - Elimination Algorithm
+            - Reconstituted Graph
+            - Triangulation
+        - Undirected Graphical Models:
+            sections:
+            - Factor Graphs and Comparing Graphical Model Types
+            - Minimal I-Maps
+            - Chordal Graphs
+            - Trees
+            - Markov Chains
+            - Gaussian Graphical Models
+        - Inference Algorithms:
+            sections:
+            - Inference On Graphs: The Elimination Algorithm
+            - Inference On Trees: Sum-Product Algorithm
+            - Forward-Backward Algorithm
+            - Sum-Product On Factor Graphs
+            - MAP Elimination
+            - The Max-Product Algorithm
+            - Gaussian Belief Propagation
+        - Approximate Inference:
+            sections:
+            - Loopy Belief Propagation and its Properties
+            - Variational Inference
+            - Markov Chain Monte Carlo Methods and Approximate MAP
+            - Importance Sampling and Particle Filters
+        - Learning Graphical Models:
+            sections:
+            - Learning Parameters of an Undirected Graphical Model
+            - Parameter Estimation from Partial Observations
+            - Learning Structure in Directed Graphs
+            - Learning Exponential Family Models
+        - Recitations:
+            sections:
+            - Probability Review
+            - Directed Acyclic Graphs
+            - Big-O Notation
+            - Graphical Model Definitions and Examples
+            - Recitation 2 Solutions
+            - Gaussian Graphical Models: Schur’s Complement
+            - Elimination Algorithm
+            - Reconstituted Graph
+            - Triangulation
+            - Review for Quiz 1
+        - Assignments:
+            sections:
+            - Problem Set 1
+            - Problem Set 2
+            - Problem Set 3
+            - Problem Set 4
+            - Problem Set 5
+            - Problem Set 6
+        - Exams:
+            sections:
+            - Quiz 1
+            - Quiz 2
+        - Syllabus:
+            sections:
+            - Introduction, Overview, Preliminaries
+            - Directed Graphical Models
+            - Undirected Graphical Models
+            - Factor Graphs; Generating And Converting Graphs
+            - Minimal I-Maps
+            - Chordal Graphs
+            - Trees And Markov Chains
+            - Gaussian Graphical Models
+            - Inference On Graphs: Elimination Algorithm
+            - Inference On Trees: Sum-Product Algorithm
+            - Forward-Backward Algorithm
+            - Sum-Product On Factor Graphs
+            - MAP Elimination
+            - The Max-Product Algorithm
+            - Gaussian Belief Propagation
+        - Projects:
+            sections: []
+```
+```

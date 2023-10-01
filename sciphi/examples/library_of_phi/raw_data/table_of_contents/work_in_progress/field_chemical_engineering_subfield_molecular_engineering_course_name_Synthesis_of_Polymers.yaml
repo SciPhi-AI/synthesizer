@@ -1,0 +1,75 @@
+```yaml
+textbook:
+  Synthesis of Polymers: A Comprehensive Guide
+    chapters:
+    - Polymer Design and Synthesis:
+        sections:
+        - Introduction to Radical Polymerization
+          subsections: []
+        - Processing Approaches: Emulsion Polymerization Processes
+          subsections: []
+        - Stereoregular Polymerizations
+          subsections: []
+        - Radical Copolymerization: Alternating to Block Copolymers
+          subsections: []
+        - Anionic Block Copolymerization
+          subsections: []
+        - Polysiloxanes, Lactams, etc.
+          subsections: []
+        - Functionalization Case Studies: Biomaterials Systems, Liquid Crystal
+          subsections: []
+        - Inorganic Polymer Synthesis
+          subsections: []
+    - Reaction Types and Processes:
+        sections:
+        - Step Growth Polymerization
+          subsections: []
+        - Types of Monomers
+          subsections: []
+        - Kinetics and Equilibrium
+          subsections: []
+        - Molecular Weight (MW) Control
+          subsections: []
+        - Molecular Weight Distribution (MWD) in Equilibrium Step Condensation Polymerizations
+          subsections: []
+        - Interchange Reactions: Effects on Processing and Product Application
+          subsections: []
+    - Introduction to Step Growth:
+        sections:
+        - Sections 1-1 to 1-4. Examples of Common Functional Grou
+          subsections: []
+    - Polymerization Kinetics:
+        sections:
+        - Interchange Reactions: Effects on Processing and Product Application
+          subsections: []
+        - Example: Common Polyesters
+          subsections: []
+        - Step Growth Polymerization
+          subsections: []
+        - Kinetics and Equilibrium
+          subsections: []
+    - Functionalization Case Studies:
+        sections:
+        - Biomaterials Systems
+          subsections: []
+        - Liquid Crystal
+          subsections: []
+    - Inorganic Polymer Synthesis:
+        sections:
+        - Introduction to Radical Polymerization
+          subsections: []
+        - Processing Approaches: Emulsion Polymerization Processes
+          subsections: []
+        - Stereoregular Polymerizations
+          subsections: []
+        - Radical Copolymerization: Alternating to Block Copolymers
+          subsections: []
+        - Anionic Block Copolymerization
+          subsections: []
+        - Polysiloxanes, Lactams, etc.
+          subsections: []
+        - Functionalization Case Studies: Biomaterials Systems, Liquid Crystal
+          subsections: []
+        - Inorganic Polymer Synthesis
+          subsections: []
+```

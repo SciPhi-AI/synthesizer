@@ -1,0 +1,55 @@
+textbook:
+  Design and Fabrication of Microelectromechanical Devices: A Comprehensive Guide
+  chapters:
+    - Introduction to MEMS
+      sections:
+        - Overview of MEMS Devices and Technologies
+        - Introduction to Design and Modeling
+    - Microfabrication for MEMS: part I
+      sections:
+        - Standard Microelectronic Fabrication Technologies
+        - Bulk Micromachining
+        - Surface Micromachining
+        - Bonding Technologies
+        - Related Fabrication Methods
+        - Process Flows
+    - Microfabrication for MEMS: part II
+      sections:
+        - Materials and Material Properties
+    - Microfabrication for MEMS: part III
+      sections:
+        - Elasticity
+        - Electronics I
+    - Microfabrication for MEMS: part IV; in-class fab problem
+      sections:
+        - Structures
+        - Electronics II
+    - Fabrication for the Life Sciences
+      sections:
+        - Lumped-element Modeling
+        - Energy-conserving Transducers
+        - Dynamics, Especially Nonlinear
+    - Structures
+      sections:
+        - Structures Special Topics
+        - Thermal Energy Domain; Dissipation
+        - Modeling Dissipative Processes
+    - Fluids 1
+      sections:
+        - Fluids 2
+        - Transport
+    - Feedback
+      sections:
+        - Noise
+        - Packaging
+    - In-class Design Problem
+      sections:
+        - Design Tradeoffs
+        - Power MEMS Case Study
+        - Optical MEMS Case Study
+        - Capacitive Accelerometer Case Study
+        - BioMEMS Case Study
+    - Final Presentations
+      sections:
+        - Report Guidelines
+        - Sample Projects

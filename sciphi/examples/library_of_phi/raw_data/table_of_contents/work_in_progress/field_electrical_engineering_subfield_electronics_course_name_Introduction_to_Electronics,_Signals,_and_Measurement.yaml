@@ -1,0 +1,88 @@
+```yaml
+course:
+  Introduction to Electronics, Signals, and Measurement:
+    textbook:
+      title: "Electronics, Signals, and Measurement: A Comprehensive Guide"
+      chapters:
+        - chapter: "Introduction to Electronics"
+          sections:
+            - section: "Introduction"
+            - section: "Learning about the Lab Tools"
+        - chapter: "Signals and Systems"
+          sections:
+            - section: "Introduction to Signals"
+        - chapter: "Fourier Transform and Fourier Series"
+          sections:
+            - section: "Fourier Transform and Fourier Series"
+        - chapter: "Sampling and Aliasing"
+          sections:
+            - section: "Protoboarding Techniques"
+            - section: "Sampling and Aliasing"
+        - chapter: "Numbering System"
+          sections:
+            - section: "Numbering System Basics"
+        - chapter: "Circuit Analysis Techniques"
+          sections:
+            - section: "KVL and KCL Analysis"
+            - section: "Nodal Mesh Analysis"
+        - chapter: "Circuit Theorems and Methods"
+          sections:
+            - section: "Superposition Method"
+            - section: "Thevenin Circuits"
+            - section: "Circuits"
+        - chapter: "Norton Equivalent Circuits"
+          sections:
+            - section: "Norton Equivalent Circuits"
+        - chapter: "Dependent Sources"
+          sections:
+            - section: "Dependent Sources"
+        - chapter: "Capacitors and Inductors"
+          sections:
+            - section: "Capacitors and Inductors"
+        - chapter: "Impedance Method"
+          sections:
+            - section: "Impedance Method"
+        - chapter: "Sinusoidal Steady State"
+          sections:
+            - section: "Sinusoidal Steady State"
+          subsections:
+            - subsection: "Introduction to Sinusoidal Steady State"
+            - subsection: "Differential Equation Method"
+            - subsection: "Impedance Method for Sinusoidal Steady State"
+        - chapter: "Frequency Response and Filters"
+          sections:
+            - section: "Frequency Response and Filters"
+        - chapter: "Transient Response of Circuits"
+          sections:
+            - section: "Transient Response of Circuits"
+            - section: "First Order and RL Circuits"
+          subsections:
+            - subsection: "Transient Response of First Order Circuits"
+            - subsection: "Transient Response of Second Order Circuits"
+        - chapter: "Circuits with Non-linear Elements"
+          sections:
+            - section: "Circuits with Non-linear Elements"
+            - section: "Diode"
+          subsections:
+            - subsection: "Design and Analysis of Diode Circuits"
+        - chapter: "BJT"
+          sections:
+            - section: "BJT"
+        - chapter: "Op Amp"
+          sections:
+            - section: "Op Amp"
+        - chapter: "Control Fundamentals"
+          sections:
+            - section: "Control Fundamentals"
+        - chapter: "Control"
+          sections:
+            - section: "Control"
+        - chapter: "Design and Build a Heart Rate Monitor"
+          sections:
+            - section: "Design and Build a Heart Rate Monitor"
+        - chapter: "Digital Circuits"
+          sections:
+            - section: "Digital Circuits"
+
+```
+```

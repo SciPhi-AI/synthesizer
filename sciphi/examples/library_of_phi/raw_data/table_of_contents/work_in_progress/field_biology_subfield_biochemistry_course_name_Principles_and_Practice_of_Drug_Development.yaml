@@ -1,0 +1,66 @@
+```yaml
+textbook:
+  Principles and Practice of Drug Development: A Comprehensive Guide
+  chapters:
+    - 'Introduction From Discovery to Market: An Integrated View':
+      sections:
+        - Back to the Lab
+        - Lessons from 60 Years of Pharmaceutical Innovation
+        - FY 2011 Innovative Drug Approvals
+    - Brief Economic History of the Pharmaceutical Industry:
+      sections:
+        - Evolving Economics
+        - Emergence of Biopharmaceuticals
+        - Impact of Globalization on Drug Development
+    - The Pharmaceutical Industry and the Drug Development Process; Basic Science:
+      sections:
+        - History of Pharmaceuticals
+        - Pharmaceutical Research and Development (R&D)
+        - Drug Discovery and Target Identification
+        - Preclinical Development
+    - Business of Biopharmaceuticals:
+      sections:
+        - Comparative Effectiveness
+        - Drug Regulation
+        - Intellectual Property Rights and Patents
+        - Biopharmaceutical Licensing and Partnerships
+        - Marketing and Commercialization Strategies
+    - 'Accelerating Cancer Cures: A Global Frontier':
+      sections:
+        - 'Guest Lecturer: Robert Mulroy, M. P. P. M., Director, President & CEO, Merrimack Pharmaceuticals'
+        - 'Guest Lecturer: Sumit Khedekar, Dir'
+    - Clinical Drug Development:
+      sections:
+        - Comparative Effectiveness
+        - Drug Regulation
+        - Clinical Trial Design and Phases
+        - Ethics in Clinical Trials
+        - Data Collection and Analysis
+        - Safety Monitoring and Reporting
+    - Drug Delivery Systems:
+      sections:
+        - Manufacturing
+        - Oral Drug Delivery Systems
+        - Injectable Drug Delivery Systems
+        - Transdermal Drug Delivery Systems
+        - Inhalation Drug Delivery Systems
+        - Implantable Drug Delivery Systems
+        - Nanotechnology in Drug Delivery
+    - Regulation:
+      sections:
+        - Comparative Effectiveness
+        - Drug Regulation
+        - FDA Drug Approval Process
+        - EMA Drug Approval Process
+        - Regulatory Affairs and Compliance
+        - Pharmacovigilance and Post-Marketing Surveillance
+    - Manufacturing III:
+      sections:
+        - Manufacturing
+        - Good Manufacturing Practices (GMP)
+        - Quality Control and Assurance
+        - Production Scale-Up and Technology Transfer
+        - Supply Chain Management
+        - Outsourcing Strategies
+```
+```

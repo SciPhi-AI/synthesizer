@@ -1,0 +1,43 @@
+```yaml
+course:
+  Classical Mechanics II:
+    textbook:
+      title: "Classical Mechanics II: Advanced Topics and Applications"
+      chapters:
+        - chapter: "Introduction to Lagrangian Mechanics"
+          sections:
+            - section: "Principle of Least Action"
+            - section: "Equations of Motion"
+            - section: "Conservation of Energy"
+            - section: "Conservation of Momentum"
+            - section: "Kepler's Laws"
+        - chapter: "Orbits and Scattering"
+          sections:
+            - section: "Two-Body Problem"
+            - section: "Central Force Field"
+            - section: "Scattering Cross Section"
+            - section: "Rutherford Scattering"
+            - section: "Orbital Perturbations"
+        - chapter: "Oscillations"
+          sections:
+            - section: "Simple Harmonic Oscillator"
+            - section: "Damped Oscillations"
+            - section: "Forced Oscillations"
+            - section: "Resonance"
+            - section: "Nonlinear Oscillators"
+        - chapter: "Tricky Potentials"
+          sections:
+            - section: "Anharmonic Oscillators"
+            - section: "Double Well Potential"
+            - section: "Pendulum"
+            - section: "Non-conservative Forces"
+            - section: "Chaos and Fractals"
+        - chapter: "Hamiltonian Mechanics"
+          sections:
+            - section: "Canonical Transforms"
+            - section: "Poisson Brackets"
+            - section: "Hamilton's Equations"
+            - section: "Phase Space"
+            - section: "Symplectic Integration"
+            - section: "Geometric Phases"
+```

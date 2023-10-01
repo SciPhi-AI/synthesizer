@@ -1,0 +1,75 @@
+```yaml
+textbook:
+  'Comprehensive Guide to Global Entrepreneurship':
+    chapters:
+      - Stylized view of entrepreneurship:
+          sections:
+            - Central Role of Entrepreneurs in Transition Economies
+            - 'The Secret to Job Growth: Think Small'
+      - 'Income inequality, social stratification and market opportunity at the bottom of the pyramid: The case of Brazil':
+          sections:
+            - Market Opportunity at the Bottom of the Pyramid
+            - Social Stratification and Income Inequality
+      - Mixer:
+          sections:
+            - Global Cycle Assessment
+      - Entrepreneurship diasporas; Team dynamics:
+          sections:
+            - Role of Entrepreneurship Diasporas
+            - Dynamics of Teamwork in Entrepreneurship
+      - Global location decisions:
+          sections:
+            - Factors Influencing Global Location Decisions
+      - Entering a market in flux:
+          sections:
+            - Strategies for Entering a Market in Flux
+      - Global sales strategies for ambitious entrepreneurs:
+          sections:
+            - Effective Sales Strategies for Ambitious Entrepreneurs
+      - Inside the entrepreneurial ecosystem:
+          sections:
+            - Understanding the Entrepreneurial Ecosystem
+      - Working in a G-Lab project:
+          sections:
+            - Roles and Responsibilities in G-Lab Projects
+      - Faculty meetings with teams:
+          sections:
+            - Importance of Faculty Meetings in G-Lab Projects
+      - When bad teams happen to good people:
+          sections:
+            - Addressing Challenges in Team Dynamics
+      - Introduction to library research; Open Mike:
+          sections:
+            - Conducting Library Research for Entrepreneurship
+            - Open Mike Sessions for Discussion and Q&A
+      - Travel logistics; Faculty meetings with teams:
+          sections:
+            - Managing Travel Logistics in G-Lab Projects
+      - Global environment for your projects:
+          sections:
+            - Understanding the Global Environment for Projects
+      - Local environment for your projects:
+          sections:
+            - Assessing the Local Environment for Projects
+      - Internationalization:
+          sections:
+            - Strategies for Internationalization of Ventures
+      - Managing your G-lab internship:
+          sections:
+            - Effective Management of G-Lab Internships
+      - Conclusion:
+          sections:
+            - Concluding Remarks and Key Learnings
+      - G-Lab Internship:
+          sections:
+            - Overview of G-Lab Internship Experience
+      - Debrief and reflection session:
+          sections:
+            - Reflecting on G-Lab Experience and Learnings
+      - Poster session:
+          sections:
+            - Presenting Project Posters and Findings
+      - Submission of final deliverables:
+          sections:
+            - Final Deliverables for G-Lab Projects
+```

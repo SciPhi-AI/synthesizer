@@ -1,0 +1,101 @@
+```yaml
+textbook:
+  Biomolecular Feedback Systems: A Comprehensive Guide to Modeling and Design
+    chapters:
+    - Introduction:
+        sections:
+        - Overview of the course
+        - Biology and basic biological processes
+        - Importance of feedback in biomolecular systems
+        - Overview of modeling techniques
+    - Chapter 1: Modeling of Core Processes:
+        sections:
+        - Introduction to modeling techniques
+        - Chemical reactions and ordinary differential equations (ODEs)
+        - Reduced order models for common binding reactions
+        - Modeling enzyme kinetics
+        - Modeling metabolic pathways
+    - Chapter 2: Modeling Transcription and Translation:
+        sections:
+        - Chemical reactions and ODEs for transcription and translation
+        - Full mechanistic models of transcription and translation
+        - Reduced models for transcription and translation
+        - Modeling ribosome dynamics
+    - Chapter 3: Modeling Transcriptional Regulation:
+        sections:
+        - Chemical reactions and ODEs for transcriptional regulation
+        - Emphasis on reduced models for transcriptional regulation
+        - Examples of transcriptional regulation models
+        - Modeling genetic switches and bistability
+    - Chapter 4: Modeling Post Transcriptional Regulation:
+        sections:
+        - Modeling allosteric modification
+        - Modeling covalent modification
+        - Modeling ultrasensitivity
+        - Modeling mitogen-activated protein kinases (MAPK) pathways
+    - Chapter 5: Dynamic Behavior:
+        sections:
+        - Stability and analysis near equilibria
+        - Nullcline analysis and phase plane analysis
+        - Linearization techniques and linear stability analysis
+        - Frequency response analysis
+        - Examples of dynamic behavior analysis
+    - Chapter 6: Design Principles for Robustness:
+        sections:
+        - Sensitivity analysis to parameter perturbations
+        - Examples of robustness in biomolecular systems
+        - Adaptation and disturbance rejection through integral feedback
+        - Adaptation and disturbance rejection through feedforward loops
+        - High gain feedback examples and their design principles
+        - Robustness in genetic circuits
+    - Chapter 7: Design Principles for Limit Cycles:
+        sections:
+        - Systems in two dimensions and their analysis
+        - Systems in n-dimensional space and bifurcation analysis
+        - Examples of limit cycle behavior in biomolecular systems
+    - Chapter 8: Model Reduction through Separation of Time Scales:
+        sections:
+        - Examples of time scale separation in biomolecular systems
+        - Reduction techniques for simplifying complex models
+        - Analysis of reduced models
+    - Chapter 9: Stochastic Behavior:
+        sections:
+        - Introduction to stochastic modeling in biomolecular systems
+        - Master equation and its application in modeling stochastic systems
+        - Stochastic Simulation Algorithm (SSA) and its implementation
+        - Langevin equation and its use in simulating stochastic systems
+        - Examples of stochastic behavior in biomolecular systems
+    - Chapter 10: Circuit Design:
+        sections:
+        - Introduction to circuit design in biomolecular systems
+        - Modeling autorepressed systems
+        - Robustness, sensitivity, power spectra, and dynamics in circuit design
+        - Toggle switches and their design principles
+        - Engineered memory in genetic circuits
+        - Repressilator and the realization of loop oscillators
+        - Activator-repressor clock and its design principles
+        - Incoherent feedforward motifs for controlling plasmid copy number
+        - Implementation of adaptation through methylation
+        - Chemotaxis circuit and its design principles
+    - Chapter 11: Interconnecting Circuits:
+        sections:
+        - Retroactivity in transcriptional circuits
+        - Retroactivity in signal transduction circuits
+        - Examples of interconnecting circuits in biomolecular systems
+    - Chapter 12: Gene Circuits:
+        sections:
+        - Equivalent input and output retroactivities
+        - Thevenin’s theorem and its application in gene circuit design
+        - Insulation devices: Principles of functioning and design based on phosphorylation
+        - Insulation devices: Designs based on time scale separation
+        - Insulation devices: Designs based on protease-feedback
+        - Examples of gene circuits and their design principles
+    - Chapter 13: Design Examples:
+        sections:
+        - Multi-module circuits and their design principles
+        - Analysis of input-output impedance in gene circuits
+        - Competition for gene expression machinery and isocosts
+    - Chapter 14: Project Presentations:
+        sections:
+        - Information on project presentations
+```

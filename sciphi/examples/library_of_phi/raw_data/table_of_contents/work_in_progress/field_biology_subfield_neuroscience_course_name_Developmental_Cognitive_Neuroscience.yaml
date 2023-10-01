@@ -1,0 +1,85 @@
+textbook:
+  Developmental Cognitive Neuroscience: Exploring the Mind of a Developing Brain
+  chapters:
+    - chapter1:
+        title: Innate Representations
+        sections:
+          - section1:
+              title: Innate Geometric Representations without Experience
+          - section2:
+              title: Face Representations in the Absence of Experience
+    - chapter2:
+        title: Activity-Dependent and Experience-Dependent Change
+        sections:
+          - section1:
+              title: Retinal Waves: Activity-Dependent Change without Experience
+          - section2:
+              title: Early Experience Affects Face Representations
+    - chapter3:
+        title: Neural Development
+        sections:
+          - section1:
+              title: Formation of 'Special Brain Regions'
+          - section2:
+              title: Early and Specific Neural Responses to Language
+    - chapter4:
+        title: Children's Cognitive Development
+        sections:
+          - section1:
+              title: Theory-Driven Exploration
+          - section2:
+              title: Executive Function Heritability and Stability
+    - chapter5:
+        title: Neural Underpinnings of Developmental Behavior
+        sections:
+          - section1:
+              title: Geometry and Navigation as Innate Representations
+          - section2:
+              title: Learning as Exploration
+          - section3:
+              title: Executive Function
+    - chapter6:
+        title: Neuroplasticity: The Dynamic Brain
+        sections:
+          - section1:
+              title: Structural and Functional Changes in the Developing Brain
+          - section2:
+              title: Experience-Dependent Plasticity in Sensory Systems
+          - section3:
+              title: Cognitive Flexibility and Brain Adaptability
+    - chapter7:
+        title: Language Development and Acquisition
+        sections:
+          - section1:
+              title: Development of Phonological and Syntactic Skills
+          - section2:
+              title: Neural Correlates of Language Learning
+          - section3:
+              title: Bilingualism and Language Processing
+    - chapter8:
+        title: Social and Emotional Development
+        sections:
+          - section1:
+              title: Theory of Mind and Empathy
+          - section2:
+              title: Emotional Regulation and Self-Control
+          - section3:
+              title: Parent-Child Attachment and its Impact on Development
+    - chapter9:
+        title: Cognitive Disorders in Development
+        sections:
+          - section1:
+              title: Autism Spectrum Disorders
+          - section2:
+              title: Attention Deficit Hyperactivity Disorder (ADHD)
+          - section3:
+              title: Intellectual Disability and Learning Disorders
+    - chapter10:
+        title: Brain Plasticity and Rehabilitation
+        sections:
+          - section1:
+              title: Neurorehabilitation after Brain Injury
+          - section2:
+              title: Cognitive Training and Brain Plasticity
+          - section3:
+              title: Neurofeedback and Brain-Computer Interfaces

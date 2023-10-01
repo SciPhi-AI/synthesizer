@@ -1,0 +1,41 @@
+```yaml
+course:
+  Building Technology: A Comprehensive Guide
+    chapters:
+    - chapter: Thermal Aspects of a Building
+      sections:
+      - section: Introduction
+      - section: Outside Environment and Human Needs
+      - section: Heat Flow
+      - section: Air Flow
+      - section: Humid Air
+      - section: Thermal Comfort and Insulation
+      - section: Condensation and Moisture
+      - section: Climate-Responsive Design
+      - section: Passive Controls, Thermal Balance
+      - section: Forms of Energy and Active Heating/Cooling
+    - chapter: Lighting Aspects of a Building
+      sections:
+      - section: Physics of Light, Photometry
+      - section: Vision and Colors, Visual Comfort
+      - section: Designing with Natural Light
+      - section: Electric Lighting
+    - chapter: Sound and Acoustics
+      sections:
+      - section: Sound and Hearing
+      - section: Noise Insulation
+      - section: Room Acoustics
+    - chapter: Construction Principles
+      sections:
+      - section: Construction Principles, Foundations
+      - section: Masonry
+      - section: Concrete
+      - section: Timber
+      - section: Steel
+      - section: Building Elements: Walls, Openings, Floors, Roofs
+    - chapter: Integration of Building Technology
+      sections:
+      - section: In-Class Quiz: Thermal Aspects, Lighting
+      - section: In-Class Quiz: Acoustics, Construction
+      - section: Integration of All Aspects of Building Technology
+```

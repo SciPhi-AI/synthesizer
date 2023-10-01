@@ -1,0 +1,48 @@
+textbook:
+  Semiconductor Manufacturing: A Comprehensive Guide
+chapters:
+  - Overview of Semiconductor Manufacturing:
+    sections:
+      - Statistical Methods for Semiconductor Manufacturing
+      - Introduction to Semiconductor Manufacturing
+  - Statistics Review:
+    sections:
+      - Distributions
+      - Estimation
+  - Hypothesis Tests and Control Chart Introduction:
+    sections:
+      - Control Charts
+  - Advanced Control Charts:
+    sections:
+      - Nested Variance
+  - Analysis and Design of Experiments:
+    sections:
+      - ANOVA
+      - Variance Component Estimation
+  - MANOVA and Factorial Experiments:
+    sections:
+      - Quiz #1
+  - Design of Experiments and Response Surface Modeling:
+    sections:
+      - Response Surface Modeling (RSM) and Regression
+      - Factorial Experiments in Semiconductor Manufacturing
+  - Yield Management and Modeling:
+    sections:
+      - Yield Modeling Techniques
+      - Yield Management Strategies
+  - Spatial Modeling:
+    sections:
+      - Sensors and Signals in Semiconductor Manufacturing
+      - Spatial Analysis in Semiconductor Manufacturing
+  - Run by Run Control:
+    sections:
+      - Principal Component Analysis (PCA) in Semiconductor Manufacturing
+      - Time Series Analysis in Semiconductor Manufacturing
+  - Real Time Control and Scheduling:
+    sections:
+      - Scheduling Techniques in Semiconductor Manufacturing
+      - Real Time Control Systems in Semiconductor Manufacturing
+  - Planning:
+    sections:
+      - Factory Design and Efficiency in Semiconductor Manufacturing
+      - Production Planning and Control in Semiconductor Manufacturing

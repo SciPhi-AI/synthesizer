@@ -1,0 +1,102 @@
+textbook:
+  'The Complete Guide to Boat Design: From History to Environmental Considerations':
+    chapters:
+    - Introduction to Boat Design:
+        sections:
+        - History of Boat Design
+        - Principles of Naval Architecture
+        - Design Considerations
+    - Hull Design:
+        sections:
+        - Hull Shapes and Forms
+        - Hydrodynamics
+        - Stability and Buoyancy
+        - Resistance and Propulsion
+        - Materials and Construction Techniques
+        subsections:
+        - Fiberglass Reinforced Plastic (FRP) Construction
+        - Aluminum Construction
+        - Steel Construction
+        - Wood Construction
+    - Design Process:
+        sections:
+        - Conceptual Design
+        - Preliminary Design
+        - Detailed Design
+        - Iterative Design Process
+        - Design Tools and Software
+    - Performance Analysis:
+        sections:
+        - Speed and Maneuverability
+        - Seakeeping and Wave-Resistance
+        - Efficiency and Fuel Consumption
+        - Load Carrying Capacity
+        subsections:
+        - Stability Analysis
+        - Resistance Analysis
+        - Propulsion Analysis
+        - Maneuvering Analysis
+    - Structural Design:
+        sections:
+        - Structural Analysis
+        - Stress and Strain Analysis
+        - Strength and Stiffness Requirements
+        - Materials Selection
+        - Structural Components and Systems
+        subsections:
+        - Beam Analysis
+        - Frame Analysis
+        - Plate Analysis
+        - Fatigue Analysis
+        - Joining Techniques
+    - Systems and Equipment Design:
+        sections:
+        - Propulsion Systems
+        - Steering and Control Systems
+        - Electrical Systems
+        - Plumbing and HVAC Systems
+        - Safety and Emergency Systems
+        subsections:
+        - Engine Selection and Installation
+        - Propeller Design and Selection
+        - Rudder Design and Selection
+        - Hydraulic Systems
+        - Electrical Wiring and Components
+    - Ergonomics and Human Factors:
+        sections:
+        - Human-Centered Design Principles
+        - Comfort and Accessibility
+        - Controls and Instrumentation
+        - Visibility and Ergonomics
+        subsections:
+        - Cockpit Design
+        - Interior Layout Design
+        - Instrument Panel Design
+        - Lighting and Visibility Analysis
+        - Noise and Vibration Analysis
+    - Environmental Considerations:
+        sections:
+        - Sustainable Design Practices
+        - Energy Efficiency
+        - Emissions and Pollution Control
+        - Recycling and Waste Management
+        subsections:
+        - Green Materials and Technologies
+        - Alternative Power Sources
+        - Ballast Water Management
+        - Noise Reduction Techniques
+        - Waste Disposal and Treatment
+    - Regulations and Standards:
+        sections:
+        - International Maritime Regulations
+        - Classification Societies
+        - Design Codes and Standards
+        - Safety and Compliance Requirements
+    - Case Studies:
+        sections:
+        - Design of Racing Sailboats
+        - Design of Powerboats
+        - Design of Fishing Vessels
+        - Design of Passenger Ferries
+        - Design of Military Vessels
+        - Design of Recreational Boats

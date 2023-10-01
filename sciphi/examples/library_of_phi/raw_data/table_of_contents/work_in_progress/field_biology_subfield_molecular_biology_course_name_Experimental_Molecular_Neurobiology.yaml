@@ -1,0 +1,26 @@
+textbook:
+  Experimental Molecular Neurobiology: A Comprehensive Guide
+  
+chapters:
+  - Introduction:
+    sections:
+      - Course Writing Instructor Presentation
+      - Molecular Characterization of a Functional cDNA Encoding the Serotonin 1c Receptor
+      - A Novel Multigene Family May Encode Odorant Receptors: A Molecular Basis for Odor Recognition
+  - Dynamic Control of CaMKII Translocation and Localization in Hippocampal Neurons by NMDA Receptor Stimulation:
+    sections:
+      - Question and Answer Session
+      - Neuroligin Expressed in Nonneuronal Cells Triggers Presynaptic Development in Contacting Axons
+      - Regulation of Axon Growth In Vivo by Activity-based Competition
+  - Functional Identification of the Mouse Circadian Clock Gene by Transgenic BAC Rescue:
+    sections:
+      - The Netrins Define a Family of Axon Outgrowth-promoting Proteins Homologous to C. elegans UNC-6
+      - Retinal Repair by Transplantation of Photoreceptor Precursors
+      - Synapse Specific control of Synaptic Efficacy at the Terminals of a Single Neuron
+  - Topographic Mapping from the Retina to the Midbrain Is Controlled by Relative but not Absolute Levels of EphA Receptor Signaling:
+    sections:
+      - Question and Answer Session
+    subsections:
+      - Overview of the Retina and the Midbrain
+      - Role of EphA Receptor Signaling in Topographic Mapping
+      - Factors Influencing Relative Levels of EphA Receptor Signaling

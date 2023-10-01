@@ -1,0 +1,145 @@
+```yaml
+textbook:
+  Contemporary Architecture and Critical Debate: A Comprehensive Study
+    chapters:
+    - Introduction:
+        sections:
+        - Overview of contemporary architecture
+        - Importance of critical debate
+        - Evolution of architectural theory
+    - Megacities:
+        sections:
+        - Impact of urbanization on architecture
+        - Case studies of megacity architecture
+        - Sustainable urban design in megacities
+    - Blobs, Curves, and the Formless:
+        sections:
+        - Exploration of organic architectural forms
+        - Theoretical frameworks for formless architecture
+        - Advancements in digital design and fabrication
+    - Theory Outtake 1:
+        sections:
+        - Critical analysis of architectural theories
+        - Evaluation of architectural concepts
+        - Application of theory in design practice
+    - Bodies:
+        sections:
+        - Architecture and the human body
+        - Body-centered design principles
+        - Biophilic architecture and its impact on well-being
+    - CTRL [Space]:
+        sections:
+        - Relationship between architecture and technology
+        - Examples of interactive and responsive spaces
+        - Emerging technologies in architecture
+    - Environmentalism:
+        sections:
+        - Sustainable design practices
+        - Integration of nature in architecture
+        - Net-zero and regenerative design strategies
+    - Architecture and Deconstruction:
+        sections:
+        - Deconstructivist architecture movement
+        - Deconstruction as a design philosophy
+        - Materiality and tectonics in deconstructive architecture
+    - The New York Five:
+        sections:
+        - Architectural works by members of the New York Five
+        - Influence of the New York Five on contemporary architecture
+        - Postmodernism and the New York Five's legacy
+    - Architecture and Post-Modernism:
+        sections:
+        - Post-modern architectural styles and characteristics
+        - Critiques of post-modernism in architecture
+        - The influence of post-modernism on global architecture
+    - Kenneth Frampton and Critical Regionalism:
+        sections:
+        - Concept of critical regionalism in architecture
+        - Works and ideas of Kenneth Frampton
+        - Regionalism and globalization in contemporary architecture
+    - Modernisms Elsewhere:
+        sections:
+        - Modernist architecture outside of Western contexts
+        - Influence of non-Western modernisms on contemporary architecture
+        - Decolonizing architectural discourse and practices
+    - Vernacularism:
+        sections:
+        - Study of vernacular architecture
+        - Incorporation of vernacular elements in contemporary design
+        - Vernacular sustainability and cultural identity
+    - Critiques of Modernism:
+        sections:
+        - Critical examination of modernist architecture
+        - Alternative perspectives on modernism
+        - Postmodern reinterpretations of modernist principles
+    - Theory Outtake 2:
+        sections:
+        - Analysis of architectural theories and concepts
+        - Application of theory in architectural practice
+        - Interdisciplinary approaches to architectural theory
+    - Phenomenology and Place:
+        sections:
+        - Understanding architecture through lived experiences
+        - Importance of place in architectural design
+        - Spatial phenomenology and embodied cognition
+    - Minimalism and Monumentality - Louis Kahn:
+        sections:
+        - Exploration of minimalist architectural style
+        - Louis Kahn's approach to monumentality in architecture
+        - Spirituality and the sublime in Kahn's work
+    - Second Interim Exam:
+        sections:
+        - Assessment of course material up to this point
+        - Examining understanding of key concepts
+        - Critical analysis and synthesis of course content
+    - Voyages into the Surface - Robert Venturi and Denise Scott-Brown:
+        sections:
+        - Architectural works by Venturi and Scott-Brown
+        - Surface-oriented design principles
+        - Complexity and contradiction in postmodern architecture
+    - Aldo Rossi and the Archetypes of Memory:
+        sections:
+        - Architectural theories and works of Aldo Rossi
+        - Role of memory and history in architecture
+        - The city as a palimpsest of collective memory
+    - Manfredo Tafuri and the Venice School:
+        sections:
+        - Works and ideas of Manfredo Tafuri
+        - Influence of the Venice School of architecture
+        - Architectural historiography and critical theory
+    - Theory Outtake 3:
+        sections:
+        - Critical analysis of architectural theories and concepts
+        - Synthesis of multiple theoretical frameworks
+        - Speculative and future-oriented architectural theories
+    - Superstudio - Italy between First and Third Worlds:
+        sections:
+        - Superstudio's radical architectural visions
+        - Critique of social and political conditions through architecture
+        - Utopian and dystopian narratives in architectural discourse
+    - '1968':
+        sections:
+        - Impact of socio-political movements on architecture
+        - Architecture as a reflection of cultural change
+        - Counterculture and the influence on architectural practice
+    - Traces on the City:
+        sections:
+        - Architectural interventions in urban spaces
+        - Urban design strategies for historical preservation
+        - Tactical urbanism and the right to the city
+    - Technofantasy / Megastructure:
+        sections:
+        - Exploration of futuristic architectural concepts
+        - Megastructure as an architectural typology
+        - Parametricism and digital design in megastructural projects
+    - Late CIAM and the Architecture of the Welfare State:
+        sections:
+        - CIAM's architectural theories and practices
+        - Relationship between architecture and social welfare
+        - Postwar reconstruction and social housing programs
+    - Final Paper:
+        sections:
+        - Research and analysis of a specific architectural topic
+        - Synthesis of course material in a comprehensive paper
+        - Ethical considerations in architectural research and practice
+```

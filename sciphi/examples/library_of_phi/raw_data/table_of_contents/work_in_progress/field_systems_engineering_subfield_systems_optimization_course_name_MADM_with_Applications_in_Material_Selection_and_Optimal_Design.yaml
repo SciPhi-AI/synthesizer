@@ -1,0 +1,111 @@
+```yaml
+course:
+  textbook: 
+    name: MADM with Applications in Material Selection and Optimal Design: A Comprehensive Guide
+    chapters:
+      - chapter: Introduction to Multiple Attribute Decision Making (MADM)
+        sections:
+          - section: Definition of MADM
+            subsections: []
+          - section: Decision-making under uncertainty
+            subsections: []
+          - section: Decision-making under risk
+            subsections: []
+          - section: Decision-making under certainty
+            subsections: []
+      - chapter: Methods of Multiple Attribute Decision Making
+        sections:
+          - section: Weighted Sum Model (WSM)
+            subsections: []
+          - section: Analytic Hierarchy Process (AHP)
+            subsections: []
+          - section: Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS)
+            subsections: []
+          - section: ELECTRE Method
+            subsections: []
+          - section: PROMETHEE Method
+            subsections: []
+          - section: Grey Relational Analysis (GRA)
+            subsections: []
+      - chapter: Material Selection in Mechanical Design
+        sections:
+          - section: Design requirements and constraints
+            subsections: []
+          - section: Material property selection criteria
+            subsections: []
+          - section: Material selection charts and databases
+            subsections: []
+          - section: Ashby material selection method
+            subsections: []
+          - section: Multi-objective material selection
+            subsections: []
+          - section: Sustainable material selection
+            subsections: []
+      - chapter: Optimal Design
+        sections:
+          - section: Design objectives and constraints
+            subsections: []
+          - section: Single-objective optimization techniques
+            subsections: []
+          - section: Multi-objective optimization techniques
+            subsections: []
+          - section: Pareto optimality
+            subsections: []
+          - section: Evolutionary algorithms
+            subsections: []
+          - section: Case studies in optimal design
+            subsections: []
+      - chapter: Design of Experiments
+        sections:
+          - section: Taguchi approach to experimental design
+            subsections: []
+          - section: Orthogonal arrays
+            subsections: []
+          - section: Signal-to-noise ratio
+            subsections: []
+          - section: Analysis of variance (ANOVA)
+            subsections: []
+          - section: Robust design
+            subsections: []
+      - chapter: Case Studies in Material Selection and Optimal Design
+        sections:
+          - section: Weight critical ship material selection using MADM
+            subsections: []
+          - section: Optimization of structural components in aerospace design
+            subsections: []
+          - section: Material selection for automotive applications
+            subsections: []
+          - section: Optimal design of composite materials
+            subsections: []
+          - section: Sustainable material selection in product design
+            subsections: []
+      - chapter: Applications of MADM and Optimal Design in Industry
+        sections:
+          - section: Manufacturing process selection
+            subsections: []
+          - section: Supplier selection and evaluation
+            subsections: []
+          - section: Project portfolio management
+            subsections: []
+          - section: Resource allocation in supply chains
+            subsections: []
+          - section: Decision support systems for engineering design
+            subsections: []
+          - section: Cost optimization in product development
+            subsections: []
+      - chapter: Future Trends in MADM and Optimal Design
+        sections:
+          - section: Data-driven decision-making
+            subsections: []
+          - section: Integration of artificial intelligence techniques
+            subsections: []
+          - section: Multi-disciplinary design optimization
+            subsections: []
+          - section: Sustainable design and life cycle assessment
+            subsections: []
+          - section: Industry 4.0 and digitalization in engineering design
+            subsections: []
+          - section: Ethics and social responsibility in decision-making
+            subsections: []
+```
+```

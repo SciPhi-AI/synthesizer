@@ -1,0 +1,91 @@
+course:
+  textbook:
+    chapters:
+    - Introduction, Properties of the Atmosphere:
+        sections:
+        - Atmospheric Composition
+        - Atmospheric Structure
+        - Thermodynamics of the Atmosphere
+        - Radiative Forcing
+    - Combustion Sources and Stoichiometry:
+        sections:
+        - Combustion Reactions
+        - Stoichiometric Calculations
+        - Pollutant Emissions from Combustion Sources
+    - Chemical Thermodynamics/Kinetics:
+        sections:
+        - Equilibrium Constants
+        - Reaction Rates
+        - Activation Energy
+        - Catalysis
+    - Radiative Transfer and Photochemistry:
+        sections:
+        - Absorption and Emission of Radiation
+        - Photochemical Reactions
+        - Photodissociation
+        - Photochemical Smog
+    - 'Tropospheric Chemistry: CO':
+        sections:
+        - Carbon Monoxide Sources and Sinks
+        - Role in Air Pollution and Climate Change
+        - Atmospheric Lifetime
+    - 'Tropospheric Chemistry: NOx and Ozone':
+        sections:
+        - Nitrogen Oxides Sources and Sinks
+        - Ozone Formation and Destruction
+        - Tropospheric Ozone Chemistry
+    - 'Tropospheric Chemistry: HCHO and Ozone':
+        sections:
+        - Formaldehyde Sources and Sinks
+        - Ozone-Forming Potential of Formaldehyde
+        - Formaldehyde as an Air Pollutant
+    - 'Tropospheric Chemistry: Complex Hydrocarbons':
+        sections:
+        - Volatile Organic Compounds (VOCs)
+        - Reaction Mechanisms of Complex Hydrocarbons
+        - Secondary Organic Aerosol Formation
+    - 'Atmospheric Chemistry and Transport: Continuity Equation and Basic Structures':
+        sections:
+        - Mass Conservation Equation
+        - Advection and Diffusion Processes
+        - Basic Structures in Atmospheric Transport
+    - 'Tropospheric Chemistry: Homogeneous Processes':
+        sections:
+        - Homogeneous Gas-Phase Reactions
+        - Chemical Equilibrium in the Troposphere
+        - Tropospheric Organic Chemistry
+    - Air Pollution Controls:
+        sections:
+        - Regulatory Approaches to Air Pollution Control
+        - Control Technologies for Mobile and Stationary Sources
+        - Air Quality Standards and Monitoring
+    - Integrated Assessment of Air Pollution:
+        sections:
+        - Air Pollution and Human Health
+        - Environmental and Economic Impacts of Air Pollution
+        - Integrated Assessment Models
+    - 'Atmospheric Transport Models: Numerical Integration':
+        sections:
+        - Eulerian and Lagrangian Models
+        - Numerical Methods for Solving Transport Equations
+        - Grids and Time-Stepping Schemes
+    - 'Atmospheric Chemical Transport Models: Examples and Measurement Systems':
+        sections:
+        - Description and Evaluation of Chemical Transport Models
+        - Model-Data Comparisons
+        - Remote Sensing Techniques for Atmospheric Measurements
+    - 'Inverse Methods: Optimal Estimation':
+        sections:
+        - Inverse Modeling Framework
+        - Optimal Estimation Theory
+        - Retrieval of Atmospheric Parameters
+    - 'Inverse Methods: Examples':
+        sections:
+        - Inversion of Atmospheric Trace Gases
+        - Estimation of Surface Fluxes
+        - Uncertainty Quantification in Inverse Modeling
+    - Integrated Assessment of Climate Change:
+        sections:
+        - Climate Change Science and Impacts
+        - Greenhouse Gas Emissions and Scenarios
+        - Climate Models and Projections

@@ -1,0 +1,93 @@
+textbook:
+  Quantum Information Science II: A Comprehensive Guide to Quantum Computing and Communication
+  chapters:
+    - Quantum Computation:
+        sections:
+        - Quantum Gates
+        - Quantum Circuits
+        - Quantum Algorithms
+        - Quantum Fourier Transform
+        - Quantum Error Correction
+        - Quantum Complexity Theory
+        - Quantum Simulation
+        - Quantum Supremacy
+    - Quantum Communication:
+        sections:
+        - Quantum Key Distribution
+        - Quantum Teleportation
+        - Quantum Cryptography
+        - Quantum Channel Capacity
+        - Quantum Networks
+        - Quantum Entanglement Swapping
+        - Quantum Repeater
+        - Quantum Information Theory
+    - Quantum Entanglement:
+        sections:
+        - Bell States
+        - EPR Paradox
+        - Quantum Entanglement Measures
+        - Quantum Entanglement Manipulation
+        - Quantum Entanglement Witness
+        - Quantum Entanglement Distribution
+        - Quantum Entanglement Generation
+        - Quantum Entanglement Purification
+    - Quantum Information Theory:
+        sections:
+        - Classical vs Quantum Information
+        - Quantum Entropy
+        - Quantum Mutual Information
+        - Quantum Relative Entropy
+        - Quantum Channel Capacities
+        - Quantum Hypothesis Testing
+        - Quantum Data Compression
+        - Quantum Error Correction
+    - Quantum Algorithms:
+        sections:
+        - Grover's Algorithm
+        - Shor's Algorithm
+        - Quantum Simulation Algorithms
+        - Quantum Approximation Algorithms
+        - Quantum Machine Learning
+        - Quantum Optimization Algorithms
+        - Quantum Walks
+        - Quantum Search Algorithms
+    - Quantum Cryptography:
+        sections:
+        - Quantum Key Distribution Protocols
+        - Quantum One-Time Pad
+        - Quantum Money
+        - Quantum Authentication
+        - Quantum Secure Direct Communication
+        - Quantum Oblivious Transfer
+        - Quantum Commitment
+        - Quantum Secret Sharing
+    - Quantum Error Correction:
+        sections:
+        - Quantum Error Models
+        - Stabilizer Codes
+        - Fault-Tolerant Quantum Computation
+        - Topological Quantum Codes
+        - Surface Codes
+        - Quantum Decoherence
+        - Quantum Error Correction Threshold
+        - Quantum Error Correcting Codes
+    - Quantum Machine Learning:
+        sections:
+        - Quantum Data Encoding
+        - Quantum Feature Maps
+        - Quantum Support Vector Machines
+        - Quantum Clustering
+        - Quantum Neural Networks
+        - Quantum Reinforcement Learning
+        - Quantum Generative Models
+        - Quantum Transfer Learning
+    - Quantum Simulation:
+        sections:
+        - Quantum Simulation Methods
+        - Quantum Monte Carlo Methods
+        - Tensor Network Methods
+        - Variational Quantum Simulation
+        - Quantum Simulation of Condensed Matter Systems
+        - Quantum Simulation of Chemical Reactions
+        - Quantum Simulation of Quantum Field Theories
+        - Quantum Simulation of Black Holes

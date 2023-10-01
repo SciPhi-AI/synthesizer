@@ -1,0 +1,118 @@
+textbook:
+  Water Resource Systems: A Comprehensive Guide to Optimization and Planning
+  chapters:
+    - Introduction and Optimization Concepts:
+      sections:
+        - Introduction:
+          subsections:
+            - Importance of Water Resource Systems
+            - Definition of Optimization
+            - Applications of Optimization in Water Resource Systems
+        - Linear Algebra Review:
+          subsections:
+            - Vectors and Matrices
+            - Systems of Linear Equations
+            - Matrix Operations
+        - General Optimization Concepts:
+          subsections:
+            - Objective Functions
+            - Decision Variables
+            - Constraints
+            - Feasible Solutions
+        - Optimality Conditions:
+          subsections:
+            - Local and Global Optima
+            - First and Second-Order Conditions
+    - Optimization Methods:
+      sections:
+        - Linear Programming Overview:
+          subsections:
+            - Formulating Linear Programming Problems
+            - Graphical Solution Method
+            - Simplex Method
+            - Sensitivity Analysis
+        - Duality, Linear Programming Solution Strategies:
+          subsections:
+            - Duality Theory
+            - Dual Simplex Method
+            - Sensitivity Analysis and Shadow Prices
+            - Integer Linear Programming
+        - Linear Programming Sensitivity Analysis:
+          subsections:
+            - Changes in Objective Coefficients
+            - Changes in Right-Hand Side Values
+            - Changes in Constraint Coefficients
+        - Quadratic Programming:
+          subsections:
+            - Formulating Quadratic Programming Problems
+            - Solution Methods for Quadratic Programming
+        - Differential Constraints:
+          subsections:
+            - Differential Equations in Optimization
+            - Gradient-Based Optimization Methods
+        - Nonlinear Programming Algorithms:
+          subsections:
+            - Unconstrained Optimization
+            - Constrained Optimization
+            - Penalty and Barrier Functions
+    - Optimization over Time and Discounting:
+      sections:
+        - Optimization over Time, Discounting:
+          subsections:
+            - Time-Dependent Decision Making
+            - Discounted Cash Flow Analysis
+            - Present Value and Future Value
+        - Multiobjective Optimization, Utility, Risk Aversion:
+          subsections:
+            - Pareto Optimality
+            - Utility Theory
+            - Risk Aversion Measures
+    - Supply and Demand, Groundwater Management:
+      sections:
+        - Supply and Demand, Groundwater Management:
+          subsections:
+            - Water Supply and Demand Analysis
+            - Groundwater Management Techniques
+            - Conjunctive Use of Surface and Groundwater
+    - River Basin Planning:
+      sections:
+        - River Basin Planning - Screening:
+          subsections:
+            - Screening Tools and Methods
+            - Decision Analysis Techniques
+        - River Basin Planning - Simulation:
+          subsections:
+            - Hydrologic Simulation Models
+            - Water Allocation Models
+            - Risk and Uncertainty Analysis
+    - Real-time Optimization and Dynamic Programming:
+      sections:
+        - Real-time Optimization, Dynamic Programming:
+          subsections:
+            - Real-time Decision Making
+            - Dynamic Programming Algorithms
+        - Capacity Expansion:
+          subsections:
+            - Determining Optimal Capacity Expansion Plans
+            - Long-Term Investment Analysis
+        - Common Pool Problems:
+          subsections:
+            - Tragedy of the Commons
+            - Cooperative Game Theory
+    - Variational and Adjoint Methods, Data Assimilation:
+      sections:
+        - Variational and Adjoint Methods, Data Assimilation:
+          subsections:
+            - Calculus of Variations
+            - Adjoint Sensitivity Analysis
+            - Data Assimilation Techniques
+        - Review:
+          subsections:
+            - Summary of Optimization Methods
+            - Case Studies and Applications
+    - Project Presentations:
+      sections:
+        - Project Presentations:
+          subsections:
+            - Presentation Guidelines
+            - Evaluation Criteria

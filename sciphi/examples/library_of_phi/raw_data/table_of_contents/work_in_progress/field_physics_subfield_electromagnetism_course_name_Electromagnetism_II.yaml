@@ -1,0 +1,74 @@
+```yaml
+course:
+  Electromagnetism II:
+    textbook:
+      title: "Electromagnetism II: Advanced Topics and Applications"
+      chapters:
+        - chapter: "Chapter 1: Vector Analysis"
+          sections:
+            - section: "Section 1.1: Gradient, Divergence, and Curl"
+            - section: "Section 1.2: Line, Surface, and Volume Integrals"
+            - section: "Section 1.3: Stoke's Theorem and Gauss' Theorem"
+            - section: "Section 1.4: Coordinate Systems: Cartesian, Cylindrical, and Spherical"
+        - chapter: "Chapter 2: Rotations in Index Notation"
+          sections:
+            - section: "Section 2.1: Rotation Matrices"
+            - section: "Section 2.2: Tensor Transformation Laws"
+            - section: "Section 2.3: Index Permutation and Levi-Civita Symbol"
+            - section: "Section 2.4: Vector and Tensor Calculus in Curved Spaces"
+        - chapter: "Chapter 3: Integral Formulation of Basic Equations"
+          sections:
+            - section: "Section 3.1: Maxwell's Equations in Integral Form"
+            - section: "Section 3.2: Electric and Magnetic Flux"
+            - section: "Section 3.3: Gauss' Law for Electric Fields and Magnetic Fields"
+            - section: "Section 3.4: Ampere's Law and Faraday's Law"
+        - chapter: "Chapter 4: Conductors: Surface Forces and Capacitance"
+          sections:
+            - section: "Section 4.1: Electrostatics of Conductors"
+            - section: "Section 4.2: Surface Charge Distribution"
+            - section: "Section 4.3: Capacitance of Conductors"
+            - section: "Section 4.4: Electrostatic Force on Conductors"
+        - chapter: "Chapter 5: Image Charge Method; Separation of Variables"
+          sections:
+            - section: "Section 5.1: Method of Images"
+            - section: "Section 5.2: Image Charges in Electrostatics"
+            - section: "Section 5.3: Separation of Variables in Electrostatics"
+            - section: "Section 5.4: Laplace's Equation and Poisson's Equation"
+        - chapter: "Chapter 6: Separation of Variables in Spherical Coordinates"
+          sections:
+            - section: "Section 6.1: Spherical Harmonics"
+            - section: "Section 6.2: Separation of Variables in Laplace's Equation"
+            - section: "Section 6.3: Legendre's Equation"
+            - section: "Section 6.4: Associated Legendre Functions"
+        - chapter: "Chapter 7: A Spherical Shell of Charge with a Circular Hole"
+          sections:
+            - section: "Section 7.1: Electrostatics of a Charged Spherical Shell"
+            - section: "Section 7.2: Potential Inside and Outside the Shell"
+            - section: "Section 7.3: Circular Hole in the Shell"
+            - section: "Section 7.4: Electric Field at the Hole"
+        - chapter: "Chapter 8: The Traceless Symmetric Tensor Expansion and Standard Spherical Harmonics"
+          sections:
+            - section: "Section 8.1: Traceless Symmetric Tensors"
+            - section: "Section 8.2: Multipole Expansion"
+            - section: "Section 8.3: Standard Spherical Harmonics"
+            - section: "Section 8.4: Expansion of Potential in Spherical Coordinates"
+        - chapter: "Chapter 9: Traceless Symmetric Tensor Approach to Legendre Polynomials and Spherical Harmonics"
+          sections:
+            - section: "Section 9.1: Traceless Symmetric Tensor Approach"
+            - section: "Section 9.2: Legendre Polynomials"
+            - section: "Section 9.3: Spherical Harmonics"
+            - section: "Section 9.4: Expansion of Potential in Spherical Coordinates"
+        - chapter: "Chapter 10: Magnetic Multipole Expansion and Magnetic Dipoles"
+          sections:
+            - section: "Section 10.1: Magnetic Multipole Expansion"
+            - section: "Section 10.2: Magnetic Dipoles and Magnetic Fields"
+            - section: "Section 10.3: Magnetic Field of a Current Loop"
+            - section: "Section 10.4: Magnetic Field of a Magnetic Dipole"
+        - chapter: "Chapter 11: Magnetic Dipoles and Magnetic Fields in Matter"
+          sections:
+            - section: "Section 11.1: Magnetization and Magnetic Susceptibility"
+            - section: "Section 11.2: Magnetic Field in the Presence of Matter"
+            - section: "Section 11.3: Paramagnetism, Diamagnetism, and Ferromagnetism"
+            - section: "Section 11.4: Magnetic Hysteresis and Magnetic Domains"
+```
+```

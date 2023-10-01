@@ -1,0 +1,125 @@
+textbook:
+  Urban Energy Systems and Policy: A Comprehensive Guide
+  chapters:
+    - Introduction to Urban Energy Systems:
+        sections:
+        - Definition and Scope
+        - Energy Demand in Urban Areas
+        - Challenges and Opportunities
+        subsections:
+          - Urbanization and Energy Demand
+          - Energy Systems Integration in Cities
+          - Role of Urban Energy in Sustainable Development
+    - Energy Policy and Governance:
+        sections:
+        - Policy Frameworks and Regulations
+        - International Energy Policies
+        - Urban Energy Planning
+        - Stakeholder Engagement
+        subsections:
+          - Policy Instruments and Incentives
+          - Energy Governance Structures
+          - Urban Energy Policy Implementation
+          - Public Participation in Energy Decision Making
+    - Sustainable Energy Technologies:
+        sections:
+        - Solar Energy
+        - Wind Energy
+        - Geothermal Energy
+        - Biomass Energy
+        - Energy Storage Systems
+        subsections:
+          - Photovoltaic Systems and Applications
+          - Concentrated Solar Power
+          - Wind Turbines and Wind Farms
+          - Geothermal Power Generation
+          - Biomass Conversion Technologies
+          - Battery Technologies for Energy Storage
+          - Thermal Energy Storage Systems
+    - Energy Efficiency in Urban Buildings:
+        sections:
+        - Building Energy Consumption
+        - Energy Efficiency Measures
+        - Green Building Design
+        - Building Energy Codes and Standards
+        subsections:
+          - Energy Audit and Benchmarking
+          - Building Envelope and Insulation
+          - Lighting and HVAC Systems Optimization
+          - Passive Design Strategies
+          - Net-Zero Energy Buildings
+          - Energy Performance Certifications
+    - Transportation and Urban Energy:
+        sections:
+        - Transportation Energy Demand
+        - Electric Vehicles and Charging Infrastructure
+        - Alternative Fuels and Transportation Systems
+        - Urban Mobility Planning
+        subsections:
+          - Sustainable Modes of Urban Transportation
+          - Electric Vehicle Technology and Infrastructure
+          - Hydrogen Fuel Cells and Fueling Infrastructure
+          - Public Transportation Planning and Integration
+          - Smart Mobility Solutions and Intelligent Transport Systems
+    - Energy Transition and Climate Change:
+        sections:
+        - Renewable Energy Transition
+        - Decarbonization Strategies
+        - Climate Change Mitigation and Adaptation
+        - Carbon Pricing and Market Mechanisms
+        subsections:
+          - Market Dynamics of Renewable Energy Transition
+          - Low-Carbon Technologies and Pathways
+          - Urban Resilience to Climate Change
+          - Carbon Pricing Mechanisms and Emissions Trading
+    - Energy Economics and Financing:
+        sections:
+        - Cost-Benefit Analysis
+        - Energy Market Dynamics
+        - Financing Renewable Energy Projects
+        - Energy Subsidies and Incentives
+        subsections:
+          - Economic Evaluation Methods for Energy Projects
+          - Energy Market Structures and Pricing Mechanisms
+          - Public and Private Financing of Renewable Energy
+          - Government Incentives and Grants for Energy Projects
+    - Energy Policy Case Studies:
+        sections:
+        - Case Study 1
+        - Case Study 2
+        - Case Study 3
+        - Case Study 4
+        - Case Study 5
+        - Case Study 6
+        - Case Study 7
+        - Case Study 8
+        - Case Study 9
+        - Case Study 10
+        - Case Study 11
+        - Case Study 12
+        subsections:
+          - Case Study 1: Energy Transition in Copenhagen
+          - Case Study 2: Renewable Energy Integration in Germany
+          - Case Study 3: Sustainable Transportation in Curitiba
+          - Case Study 4: Energy Efficiency in Singapore Buildings
+          - Case Study 5: Smart Grid Implementation in California
+          - Case Study 6: Urban Resilience to Climate Change in Tokyo
+          - Case Study 7: Carbon Pricing in British Columbia
+          - Case Study 8: Decentralized Energy Systems in Denmark
+          - Case Study 9: Energy Access in Sub-Saharan Africa
+          - Case Study 10: Energy Efficiency in India's Manufacturing Sector
+          - Case Study 11: Renewable Energy in Island Communities
+          - Case Study 12: Sustainable Urban Development in Brazil
+    - Energy Systems Modeling and Analysis:
+        sections:
+        - Energy Systems Models
+        - Data Analysis and Visualization
+        - Scenario Planning and Optimization
+        - Life Cycle Assessment
+        - Techno-Economic Analysis
+        subsections:
+          - Energy System Modeling Approaches
+          - Data Collection and Analysis Techniques
+          - Energy Scenario Planning and Optimization Tools
+          - Life Cycle Assessment Methodologies
+          - Techno-Economic Analysis of Energy Projects

@@ -1,0 +1,73 @@
+course:
+  Labor Economics and Public Policy Textbook:
+    chapters:
+    - Introduction to Labor Economics:
+        sections:
+        - Definition and Scope of Labor Economics
+        - Labor Markets and Institutions
+        - Labor Supply and Demand
+        - Wage Determination
+        - Labor Market Equilibrium
+    - Labor Supply:
+        sections:
+        - Labor Force Participation
+        - Hours of Work
+        - Labor Force Transitions
+        - Labor Supply Elasticity
+        - Labor Supply in Developing Countries
+    - Labor Demand:
+        sections:
+        - Production and Costs
+        - Marginal Productivity Theory
+        - Demand for Different Types of Labor
+        - Labor Demand Elasticity
+        - Labor Demand in Developing Countries
+    - Wage Differentials:
+        sections:
+        - Human Capital Theory
+        - Compensating Wage Differentials
+        - Discrimination in the Labor Market
+        - Occupational Segregation
+        - Wage Differentials Across Countries
+    - Labor Market Imperfections:
+        sections:
+        - Monopsony Power
+        - Minimum Wage
+        - Labor Unions
+        - Efficiency Wages
+        - Insider-Outsider Theory
+    - Unemployment:
+        sections:
+        - Types of Unemployment
+        - The Natural Rate of Unemployment
+        - Causes of Unemployment
+        - Unemployment Duration
+        - Unemployment Policies
+    - Education and Training:
+        sections:
+        - Returns to Education
+        - Human Capital Accumulation
+        - Education Policies
+        - Job Training Programs
+        - School-to-Work Transition
+    - Labor Mobility and Migration:
+        sections:
+        - Labor Market Dynamics
+        - Geographic Mobility
+        - International Migration
+        - Brain Drain
+        - Remittances and Development
+    - Gender and the Labor Market:
+        sections:
+        - Gender Wage Gap
+        - Occupational Segregation by Gender
+        - Motherhood Penalty
+        - Gender Discrimination
+        - Policies for Gender Equality
+    - Public Policy and Labor Economics:
+        sections:
+        - Minimum Wage Policies
+        - Labor Market Regulations
+        - Social Security Programs
+        - Unemployment Insurance
+        - Income Redistribution

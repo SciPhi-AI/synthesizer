@@ -1,0 +1,201 @@
+textbook:
+  Architectural Communication: The Art of Description and Visual Expression
+  chapters:
+  - The Art of Description:
+      sections:
+      - Writing Techniques:
+          subsections:
+          - Importance of writing skills in architecture
+          - Strategies for effective writing
+          - Technical writing for architectural purposes
+      - Descriptive Language:
+          subsections:
+          - Capturing the essence of architecture through words
+          - Exploring different descriptive techniques
+          - Creating vivid descriptions for architectural projects
+      - Visual Analysis:
+          subsections:
+          - Developing visual analysis skills
+          - Understanding architectural forms and elements
+          - Analyzing architectural composition and space
+      - Case Studies:
+          subsections:
+          - Examining notable architectural projects in detail
+          - Understanding the design process behind successful buildings
+          - Learning from the successes and failures of past projects
+  - Architects on Buildings:
+      sections:
+      - Architectural Critiques:
+          subsections:
+          - The role of critique in architectural discourse
+          - Analyzing and evaluating built work
+          - Developing a critical eye for architectural design
+      - Analyzing Built Work:
+          subsections:
+          - Methods for analyzing architectural projects
+          - Evaluating the success of design solutions
+          - Identifying strengths and weaknesses in built work
+      - Architectural Theory:
+          subsections:
+          - Understanding key architectural theories and philosophies
+          - Exploring different theoretical approaches to design
+          - Applying theoretical concepts to practical design projects
+      - Design Principles:
+          subsections:
+          - Fundamental principles of architectural design
+          - Exploring concepts such as balance, proportion, and harmony
+          - Applying design principles to create compelling architectural solutions
+  - Written Intentions:
+      sections:
+      - Articulating Design Intentions:
+          subsections:
+          - Understanding the importance of clear design intentions
+          - Developing effective ways to articulate design concepts
+          - Communicating design intentions through various mediums
+      - Concept Development:
+          subsections:
+          - Techniques for generating and refining design concepts
+          - Exploring different approaches to concept development
+          - Developing a unique design narrative
+      - Narrative in Architecture:
+          subsections:
+          - Exploring the role of narrative in architectural design
+          - Using storytelling techniques to enhance architectural projects
+          - Creating meaningful connections between architecture and users
+      - Communicating Ideas:
+          subsections:
+          - Effective communication strategies for architects
+          - Presenting design ideas to clients and stakeholders
+          - Utilizing different mediums to convey architectural concepts
+  - Text and Image:
+      sections:
+      - Integration of Text and Images:
+          subsections:
+          - Combining textual and visual elements in architectural communication
+          - Creating cohesive narratives through text and images
+          - Exploring different techniques for integrating text and images
+      - Visual Communication:
+          subsections:
+          - Understanding the power of visual communication in architecture
+          - Developing effective visual representations of architectural ideas
+          - Utilizing graphic elements to enhance architectural presentations
+      - Graphic Design Principles:
+          subsections:
+          - Fundamentals of graphic design for architectural communication
+          - Applying design principles to create visually appealing materials
+          - Using typography, color, and layout to convey architectural concepts
+      - Typography in Architecture:
+          subsections:
+          - Exploring the role of typography in architectural communication
+          - Choosing appropriate fonts and styles for architectural texts
+          - Using typography to enhance the visual impact of architectural projects
+  - Printed Matter:
+      sections:
+      - Publication Design:
+          subsections:
+          - Designing architectural publications and magazines
+          - Creating visually compelling layouts for printed materials
+          - Understanding the printing process and specifications
+      - Bookmaking Techniques:
+          subsections:
+          - Techniques for creating professional architectural books
+          - Understanding different bookbinding methods
+          - Designing covers and layouts for architectural books
+      - Editorial Layout:
+          subsections:
+          - Exploring different editorial layout styles for architectural publications
+          - Creating engaging and visually appealing page layouts
+          - Balancing text and images in editorial design
+      - Print Production Processes:
+          subsections:
+          - Understanding the printing industry and processes
+          - Preparing files for print production
+          - Quality control and proofing in print production
+  - Review Portfolios in class:
+      sections:
+      - Portfolio Presentation Skills:
+          subsections:
+          - Techniques for presenting architectural portfolios effectively
+          - Developing a compelling narrative for portfolio presentations
+          - Showcasing architectural projects in a visually appealing manner
+      - Peer Critiques:
+          subsections:
+          - Giving and receiving constructive feedback on architectural portfolios
+          - Developing critical evaluation skills for portfolio reviews
+          - Collaborating with peers to improve portfolio content and presentation
+      - Constructive Feedback:
+          subsections:
+          - Providing constructive criticism for architectural portfolios
+          - Identifying strengths and areas for improvement in portfolio projects
+          - Giving feedback that helps enhance the overall portfolio presentation
+      - Portfolio Organization:
+          subsections:
+          - Strategies for organizing and structuring architectural portfolios
+          - Creating a cohesive and logical flow in portfolio content
+          - Using different formats and mediums to showcase portfolio projects
+  - Medium + Message:
+      sections:
+      - Multimodal Communication:
+          subsections:
+          - Exploring different modes of communication in architecture
+          - Utilizing a combination of mediums to convey architectural ideas
+          - Creating engaging and interactive architectural presentations
+      - Digital Media in Architecture:
+          subsections:
+          - Using digital tools and software for architectural communication
+          - Exploring the potential of digital media in architectural design
+          - Creating digital presentations and interactive experiences
+      - Interactive Design:
+          subsections:
+          - Designing interactive architectural experiences
+          - Incorporating user interaction into architectural projects
+          - Using technology to enhance architectural communication
+      - User Experience:
+          subsections:
+          - Understanding user-centered design principles in architecture
+          - Considering the needs and preferences of users in design solutions
+          - Creating architectural experiences that prioritize user satisfaction
+  - Web Tutorial:
+      sections:
+      - Web Design Principles:
+          subsections:
+          - Fundamentals of web design for architectural purposes
+          - Designing user-friendly and visually appealing websites
+          - Optimizing web design for architectural content and navigation
+      - HTML and CSS Basics:
+          subsections:
+          - Introduction to HTML and CSS for architectural websites
+          - Understanding the structure and styling of web pages
+          - Applying HTML and CSS to create functional web layouts
+      - Website Navigation:
+          subsections:
+          - Designing intuitive and user-friendly navigation systems for websites
+          - Creating efficient and effective website structures for architectural content
+          - Improving website usability through clear navigation elements
+      - Responsive Design:
+          subsections:
+          - Designing websites that adapt to different devices and screen sizes
+          - Creating responsive layouts for optimal user experience
+          - Implementing responsive design principles in architectural web projects
+  - Review of Web Portfolios in class:
+      sections:
+      - Online Portfolio Evaluation:
+          subsections:
+          - Assessing the effectiveness of web portfolios for architectural purposes
+          - Identifying strengths and weaknesses in online portfolio design and content
+          - Evaluating user experience and usability of web portfolios
+      - Usability Testing:
+          subsections:
+          - Conducting usability tests for architectural websites
+          - Gathering feedback to improve website functionality and user experience
+          - Iterative design process for enhancing usability of web portfolios
+      - Web Accessibility:
+          subsections:
+          - Ensuring web accessibility for individuals with disabilities in architectural websites
+          - Designing inclusive web experiences for all users
+          - Adhering to web accessibility standards and guidelines in architectural web design
+      - Search Engine Optimization:
+          subsections:
+          - Strategies for optimizing web portfolios for search engine visibility
+          - Implementing SEO techniques to increase online discoverability
+          - Understanding the importance of SEO in architectural website promotion and marketing

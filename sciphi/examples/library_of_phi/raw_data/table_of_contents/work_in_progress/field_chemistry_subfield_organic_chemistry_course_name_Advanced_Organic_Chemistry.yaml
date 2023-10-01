@@ -1,0 +1,231 @@
+textbook:
+  Advanced Organic Chemistry: A Comprehensive Guide to Stereochemistry, Reaction Mechanisms, and Total Synthesis:
+    chapters:
+      - Stereochemistry:
+          sections:
+            - Chirality and Enantiomers
+              subsections:
+                - Introduction to Stereochemistry
+                - Chiral Centers and Configuration
+                - R and S Configuration
+                - Fischer Projection
+                - D and L Configuration
+                - Optical Isomerism
+            - Diastereomers and Meso Compounds
+              subsections:
+                - Diastereomers
+                - Meso Compounds
+                - Resolution of Enantiomers
+                - Racemization
+            - Stereoselectivity and Stereospecificity
+              subsections:
+                - Stereoselective Reactions
+                - Stereospecific Reactions
+                - Stereoselectivity in Natural Product Synthesis
+            - Conformational Analysis
+              subsections:
+                - Conformational Isomerism
+                - Newman Projections
+                - Conformational Analysis of Cyclohexane
+                - Conformational Analysis of Substituted Cyclohexanes
+            - Optical Activity
+              subsections:
+                - Specific Rotation and Enantiomeric Excess
+                - Optical Purity and Enantiomeric Excess
+                - Optical Rotation and Concentration
+                - Optical Activity of Chiral Molecules
+            - Prochirality and Chiral Protons
+              subsections:
+                - Prochirality and Prochiral Centers
+                - Chiral Protons
+                - Chiral Protonation
+                - Chiral Induction in Reactions
+      - Elucidating Reaction Mechanisms:
+          sections:
+            - Nucleophiles and Electrophiles
+              subsections:
+                - Nucleophiles: Classification and Mechanisms
+                - Electrophiles: Classification and Mechanisms
+                - Nucleophilic Attack and Electrophilic Attack
+                - Nucleophilicity and Electrophilicity
+            - Leaving Groups and Nucleophilic Substitution
+              subsections:
+                - Leaving Groups: Definition and Influence
+                - Nucleophilic Substitution Reactions
+                - SN1 Mechanism
+                - SN2 Mechanism
+            - Electrophilic Addition and Elimination Reactions
+              subsections:
+                - Electrophilic Addition Reactions
+                - Electrophilic Elimination Reactions
+                - Addition-Elimination Reactions
+                - Rearrangement Reactions
+            - Carbocations and Rearrangement Reactions
+              subsections:
+                - Carbocations: Stability and Formation
+                - Carbocation Rearrangement Reactions
+                - Hydride Shift and Alkyl Shift
+                - Carbocation Rearrangement in Synthesis
+            - Radical Reactions and Radical Chain Mechanisms
+              subsections:
+                - Radical Reactions: Initiation, Propagation, and Termination Steps
+                - Radical Stability and Reactivity
+                - Radical Addition Reactions
+                - Radical Substitution Reactions
+            - Concerted Pericyclic Reactions
+              subsections:
+                - Pericyclic Reactions: Definition and Types
+                - Electrocyclic Reactions
+                - Cycloaddition Reactions
+                - Sigmatropic Rearrangement Reactions
+      - Free Radical Reactions:
+          sections:
+            - Initiation, Propagation, and Termination Steps
+              subsections:
+                - Initiation of Free Radical Reactions
+                - Propagation of Free Radical Reactions
+                - Termination of Free Radical Reactions
+                - Chain Length and Efficiency
+            - Radical Stability and Reactivity
+              subsections:
+                - Radical Stability: Factors and Effects
+                - Radical Reactivity: Factors and Effects
+                - Kinetics of Radical Reactions
+                - Transition State Theory and Radical Reactions
+            - Radical Substitution and Addition Reactions
+              subsections:
+                - Radical Substitution Reactions
+                - Radical Addition Reactions
+                - Radical Chain Reaction Mechanisms
+                - Radical Chain Reactions in Organic Synthesis
+            - Radical Polymerization
+              subsections:
+                - Radical Polymerization: Mechanism and Steps
+                - Radical Initiators and Propagation
+                - Chain Transfer and Termination
+                - Radical Polymerization Techniques
+            - Radical Reactions in Biological Systems
+              subsections:
+                - Radical Reactions in Living Organisms
+                - Role of Radicals in Biological Processes
+                - Reactive Oxygen Species and Antioxidants
+                - Radical Biomarkers and Detection Methods
+            - Radical Cyclization and Rearrangement
+              subsections:
+                - Radical Cyclization Reactions
+                - Radical Rearrangement Reactions
+                - Radical Cyclization in Natural Product Synthesis
+      - Photochemistry:
+          sections:
+            - Absorption of Light and Excited States
+              subsections:
+                - Molecular Absorption Spectroscopy
+                - Electronic Excitation and Deactivation
+                - Singlet and Triplet Excited States
+                - Quantum Yield and Efficiency
+            - Photochemical Reactions and Quantum Yields
+              subsections:
+                - Photochemical Reactions: Mechanisms and Types
+                - Primary Photochemical Processes
+                - Secondary Photochemical Processes
+                - Quantum Yield and Efficiency
+            - Photophysical Processes: Fluorescence and Phosphorescence
+              subsections:
+                - Fluorescence: Principles and Applications
+                - Phosphorescence: Principles and Applications
+                - Fluorescence and Phosphorescence Spectroscopy
+                - Energy Transfer and Quenching Processes
+            - Photochemical Reactions of Carbonyl Compounds
+              subsections:
+                - Photooxidation of Carbonyl Compounds
+                - Photoreduction of Carbonyl Compounds
+                - Photoisomerization of Carbonyl Compounds
+                - Photochemical Reactions in Organic Synthesis
+            - Photochemistry of Aromatic Compounds
+              subsections:
+                - Photochemical Reactions of Aromatic Compounds
+                - Photodimerization and Photocycloaddition
+                - Photorearrangement and Photocleavage
+                - Photochemistry of Aromatic Heterocycles
+            - Photochemical Reactions in Organic Synthesis
+              subsections:
+                - Photochemical Reactions in Synthetic Organic Chemistry
+                - Photoredox Catalysis
+                - Applications of Photochemical Reactions
+                - Synthetic Strategies and Design
+      - Carbenes:
+          sections:
+            - Structure and Stability of Carbenes
+              subsections:
+                - Electronic Structure of Carbenes
+                - Carbene Stability and Reactivity
+                - Carbene Generation and Trapping
+                - Spectroscopic Characterization of Carbenes
+            - Generation of Carbenes: Wolff Rearrangement and Diazomethane
+              subsections:
+                - Wolff Rearrangement: Mechanism and Applications
+                - Diazomethane: Generation and Reactions
+                - Carbene Transfer Reactions
+                - Carbene Capture and Detection Methods
+            - Reactions of Carbenes with Nucleophiles and Electrophiles
+              subsections:
+                - Carbene Nucleophilic Reactions
+                - Carbene Electrophilic Reactions
+                - Carbene Insertion Reactions
+                - Carbene Cycloaddition Reactions
+            - Insertion Reactions and Carbene Cycloadditions
+              subsections:
+                - Carbene Insertion Reactions: Mechanism and Scope
+                - Carbene Cycloaddition Reactions: Mechanism and Scope
+                - Applications of Carbene Insertion and Cycloaddition Reactions
+                - Synthetic Strategies and Design
+            - Carbenes in Organic Synthesis
+              subsections:
+                - Carbene Reagents and Catalysts
+                - Carbene-Mediated Reactions
+                - Asymmetric Carbene Reactions
+                - Synthetic Applications of Carbenes
+            - Carbenoids and Simmons-Smith Reaction
+              subsections:
+                - Carbenoid Generation and Reactivity
+                - Simmons-Smith Reaction: Mechanism and Applications
+                - Carbenoid Reactions and Synthetic Applications
+                - Synthetic Strategies and Design
+      - Total Synthesis:
+          sections:
+            - Retrosynthetic Analysis
+              subsections:
+                - Retrosynthetic Analysis: Principles and Strategies
+                - Functional Group Interconversions
+                - Disconnections and Synthetic Plans
+                - Synthetic Efficiency and Complexity
+            - Protecting Groups and Functional Group Interconversions
+              subsections:
+                - Protecting Groups: Introduction and Strategies
+                - Protecting Group Cleavage Reactions
+                - Functional Group Interconversions
+                - Protecting Groups in Total Synthesis
+            - Carbon-Carbon Bond Formation: Aldol and Wittig Reactions
+              subsections:
+                - Aldol Reaction: Mechanism and Applications
+                - Intramolecular Aldol Reactions
+                - Wittig Reaction: Mechanism and Applications
+                - Synthetic Strategies and Design
+            - Carbon-Heteroatom Bond Formation: Nucleophilic Substitutions and Additions
+              subsections:
+                - Nucleophilic Substitution Reactions
+                - Nucleophilic Addition Reactions
+                - Carbon-Oxygen Bond Formation
+                - Carbon-Nitrogen Bond Formation
+            - Stereoselective Synthesis and Asymmetric Catalysis
+              subsections:
+                - Stereoselective Reactions: Principles and Strategies
+                - Enantioselective Catalysis
+                - Asymmetric Induction and Amplification
+                - Chiral Pool and Chiral Auxiliary Methods
+            - Natural Product Synthesis and Complex Molecule Assembly
+              subsections:
+                - Natural Product Isolation and Structure Elucidation
+                - Retrosynthetic Analysis of Natural Products
+                - Total Synthesis of Complex Molecules
+                - Stereochemical Challenges in Total Synthesis

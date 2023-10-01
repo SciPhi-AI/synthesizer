@@ -1,0 +1,167 @@
+```yaml
+textbook:
+  'New Century Cities: Real Estate, Digital Technology, and Design':
+    chapters:
+      - Introduction:
+          sections:
+            - Example Projects and Prospects:
+                subsections:
+                  - Overview of successful projects in new century cities
+                  - Future prospects of new century cities
+            - The Space of Flows:
+                subsections:
+                  - Understanding the concept of space of flows in new century cities
+                  - Implications of space of flows on urban design and real estate
+            - The Culture of Cities in the Information Age:
+                subsections:
+                  - Impact of digital technology on the culture of cities
+                  - Role of information age in shaping urban environments
+      - Placemaking and Urban Design Value:
+          sections:
+            - Will this Improve the Livability of the City?:
+                subsections:
+                  - Evaluating the impact of placemaking on urban livability
+                  - Factors influencing the livability of new century cities
+            - The Real Estate Developer Value Proposition:
+                subsections:
+                  - Understanding the value proposition for real estate developers in new century cities
+                  - Strategies for maximizing real estate value in new century cities
+            - Real Estate Value:
+                subsections:
+                  - Assessing the value of real estate in new century cities
+                  - Factors influencing real estate value in new century cities
+            - Double Bottom Line Summary Sheet:
+                subsections:
+                  - Analyzing the double bottom line concept in new century cities
+                  - Creating a summary sheet for assessing project sustainability and profitability
+            - Reflection:
+                subsections:
+                  - Reflecting on the importance of placemaking and urban design in new century cities
+                  - Identifying lessons learned from case studies and projects
+      - Technological Value:
+          sections:
+            - What Systems Are Being Developed?:
+                subsections:
+                  - Exploring the technological systems and infrastructure in new century cities
+                  - Implications of technology on urban design and real estate development
+            - Course Overview:
+                subsections:
+                  - Understanding the structure and objectives of the course
+                  - Introduction to key concepts and topics
+            - Urban Design Value:
+                subsections:
+                  - Assessing the value of urban design in the context of technology-driven cities
+                  - Strategies for integrating technology and urban design in new century cities
+            - The Real Estate Developer Value Proposition:
+                subsections:
+                  - Examining the value proposition for real estate developers in technology-driven cities
+                  - Identifying opportunities and challenges for real estate development in new century cities
+      - Social Value:
+          sections:
+            - Who Will Benefit and How?:
+                subsections:
+                  - Analyzing the social impact of new century cities on different stakeholders
+                  - Identifying the beneficiaries and their respective benefits
+            - Course Overview:
+                subsections:
+                  - Understanding the structure and objectives of the course
+                  - Introduction to key concepts and topics
+            - Urban Design Value:
+                subsections:
+                  - Examining the social value of urban design in new century cities
+                  - Strategies for creating inclusive and equitable urban environments
+            - The Real Estate Developer Value Proposition:
+                subsections:
+                  - Evaluating the social value proposition for real estate developers in new century cities
+                  - Addressing social responsibility and community engagement in real estate development
+      - 'Resource Level: Graduate':
+          sections:
+            - Course Number:
+                subsections:
+                  - Understanding the course number and its significance
+                  - Exploring the graduate-level curriculum and requirements
+            - Course Name:
+                subsections:
+                  - Overview of the course name and its relevance to new century cities
+                  - Understanding the interdisciplinary nature of the course
+            - Page:
+                subsections:
+                  - Navigating through the course textbook and reference materials
+                  - Using page numbers for easy access to specific content
+            - Text:
+                subsections:
+                  - Exploring the relevant texts and literature for the course
+                  - Understanding the importance of reading materials in graduate-level education
+            - Information:
+                subsections:
+                  - Accessing additional information and resources related to the course
+                  - Utilizing various sources for research and knowledge acquisition
+      - 'Page: readings':
+          sections:
+            - The Space of Flows:
+                subsections:
+                  - Understanding the concept of space of flows in new century cities
+                  - Exploring relevant readings on space of flows
+            - The Culture of Cities in the Information Age:
+                subsections:
+                  - Analyzing the impact of information age on the culture of cities
+                  - Reviewing readings that discuss the culture of cities in the information age
+      - 'Page: lecture-notes':
+          sections:
+            - Course Overview:
+                subsections:
+                  - Understanding the structure and objectives of the course
+                  - Reviewing lecture notes that provide an overview of the course content
+            - Placemaking and Urban Design Value:
+                subsections:
+                  - Exploring lecture notes on the value of placemaking and urban design in new century cities
+                  - Understanding the role of urban design in enhancing the value of new century cities
+            - The Real Estate Developer Value Proposition:
+                subsections:
+                  - Reviewing lecture notes on the value proposition for real estate developers in new century cities
+                  - Analyzing the role of real estate development in shaping new century cities
+            - Real Estate Value:
+                subsections:
+                  - Exploring lecture notes on assessing real estate value in new century cities
+                  - Understanding the factors influencing real estate value in the context of new century cities
+            - Double Bottom Line Summary Sheet:
+                subsections:
+                  - Reviewing lecture notes on the concept of double bottom line in new century cities
+                  - Analyzing the process of creating a summary sheet for assessing project sustainability and profitability
+            - Reflection:
+                subsections:
+                  - Reflecting on the importance of course content and its application in real-world scenarios
+                  - Engaging in self-reflection and critical analysis of the course material
+      - 'Page: assignments':
+          sections:
+            - Assignment 1:
+                subsections:
+                  - Understanding the requirements and objectives of the first assignment
+                  - Exploring case studies and research topics related to the assignment
+            - Final Paper:
+                subsections:
+                  - Overview of the final paper requirements and guidelines
+                  - Identifying research areas and methodologies for the final paper
+      - 'Page: calendar':
+          sections:
+            - Introduction Example Projects and Prospects:
+                subsections:
+                  - Overview of the introduction session, including example projects and prospects
+                  - Understanding the significance of example projects in new century cities
+            - Placemaking and Urban Design Value:
+                subsections:
+                  - Exploring the calendar events related to placemaking and urban design value
+                  - Identifying key dates and activities for this topic
+            - Technological Value:
+                subsections:
+                  - Reviewing the calendar events related to technological value in new century cities
+                  - Identifying important dates and milestones for this topic
+            - Social Value:
+                subsections:
+                  - Exploring the calendar events related to social value in new century cities
+                  - Identifying significant dates and activities for this topic
+            - Meeting with faculty:
+                subsections:
+                  - Scheduling and attending faculty meetings for guidance and support
+                  - Discussing course progress and seeking clarifications on course content
+```

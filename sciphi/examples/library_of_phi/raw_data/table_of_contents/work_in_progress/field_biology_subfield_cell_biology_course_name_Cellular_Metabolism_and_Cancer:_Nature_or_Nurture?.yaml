@@ -1,0 +1,62 @@
+textbook:
+  'Cellular Metabolism and Cancer: Nature or Nurture? - Exploring the Intersection of Metabolism and Cancer':
+    chapters:
+    - Introduction to the Course:
+        sections:
+        - Overview of the Course
+        - Learning Objectives
+        - Course Structure and Requirements
+    - 'An Introduction to Cancer Metabolism: The Warburg Effect':
+        sections:
+        - Warburg Effect and Tumor Metabolism
+        - Changes in Carbohydrate Metabolism
+        - Lactic Acid and Co-combing Power
+    - Role of Mitochondrial Function in Tumor Cell Growth:
+        sections:
+        - Mitochondria and Cancer Cells
+        - Energy Production and ATP Synthesis
+        - Mitochondrial Dysfunction and Tumor Progression
+    - Amino Acid Metabolism:
+        sections:
+        - Amino Acids and Cancer Cell Growth
+        - Metabolic Alterations in Amino Acid Pathways
+        - Role of Amino Acids in Tumor Microenvironment
+    - Nucleotide and Lipid Metabolism:
+        sections:
+        - Nucleotide Metabolism in Cancer Cells
+        - Lipid Metabolism and Tumor Progression
+        - Lipid Signaling and Cancer Development
+    - Mutations in Isocitrate Dehydrogenase and the Discovery of a Neomorphic Activity:
+        sections:
+        - Isocitrate Dehydrogenase Mutations in Cancer
+        - Neomorphic Activity of Mutant Isocitrate Dehydrogenase
+        - Metabolic Consequences of Mutant Isocitrate Dehydrogenase
+    - '2-hydroxyglutarate: The First Oncometabolite?':
+        sections:
+        - Oncometabolites and Cancer Development
+        - Role of 2-hydroxyglutarate in Tumorigenesis
+        - Metabolic Effects of 2-hydroxyglutarate Accumulation
+    - 'Oncogenes and Metabolism: How Genetic Changes Alter Cancer Metabolism':
+        sections:
+        - Oncogenes and Their Role in Metabolic Reprogramming
+        - Genetic Alterations and Altered Metabolic Pathways
+        - Interplay between Oncogenes and Metabolism in Tumor Growth
+    - Context Matters! How Tissue Environment Alters Cancer Cell Metabolism:
+        sections:
+        - Tissue Microenvironment and Metabolic Adaptations
+        - Metabolic Heterogeneity in Tumor Microenvironment
+        - Metabolic Interactions between Cancer Cells and Stroma
+    - Metabolic Interactions of Stroma Cells and Cancer:
+        sections:
+        - Role of Stroma Cells in Tumor Metabolism
+        - Metabolic Crosstalk between Cancer Cells and Stroma
+        - Impact of Stroma Metabolism on Tumor Progression
+    - Impact of Diet on Tumor Metabolism and Progression:
+        sections:
+        - Nutritional Factors and Cancer Metabolism
+        - Diet-induced Metabolic Changes in Tumor Cells
+        - Role of Dietary Components in Tumor Progression
+    - Oral Presentations and Final Discussion:
+        sections:
+        - Presentation Guidelines and Requirements
+        - Final Discussion on Course Topics and Conclusions

@@ -1,0 +1,45 @@
+textbook:
+  Biochemical Engineering: A Comprehensive Guide
+  chapters:
+    - Chapter 1: Course Overview
+      sections:
+        - Section 1.1: Introduction to Biochemical Engineering
+        - Section 1.2: Scope and Importance of Biochemical Engineering
+        - Section 1.3: Historical Perspective of Biochemical Engineering
+    - Chapter 2: Enzyme Classification
+      sections:
+        - Section 2.1: Introduction to Enzyme Classification
+        - Section 2.2: Enzyme Kinetics
+        - Section 2.3: Enzyme Inhibition
+        - Section 2.4: pH and Temperature Effects on Enzyme Inhibition
+    - Chapter 3: Non-ideal Enzyme Kinetics
+      sections:
+        - Section 3.1: Introduction to Non-ideal Enzyme Kinetics
+        - Section 3.2: Immobilized Enzyme Kinetics (External)
+        - Section 3.3: Immobilized Enzyme Kinetics (Internal)
+        - Section 3.4: Applications of Enzyme Catalysis (Biocatalysis)
+    - Chapter 4: Microbial Growth
+      sections:
+        - Section 4.1: Introduction to Microbial Growth
+        - Section 4.2: Microbial Growth - Batch Cultivation Profiles
+        - Section 4.3: Stoichiometry of Growth and Product Formation
+        - Section 4.4: Models of Microbial Growth
+    - Chapter 5: Continuous Culture
+      sections:
+        - Section 5.1: Introduction to Continuous Culture
+        - Section 5.2: Bioreactor Design
+        - Section 5.3: Mass Transfer
+        - Section 5.4: Heat Transfer, Media, and Air Sterilization
+    - Chapter 6: Scale-up
+      sections:
+        - Section 6.1: Introduction to Scale-up
+        - Section 6.2: Scale-down
+        - Section 6.3: Animal Cell Culture
+        - Section 6.4: Mixed Cultures
+        - Section 6.5: Medium Development
+    - Chapter 7: Cellular Engineering/Molecular Biology for Process Engineering
+      sections:
+        - Section 7.1: Introduction to Cellular Engineering/Molecular Biology for Process Engineering
+        - Section 7.2: Cellular Engineering - An Engineer’s View Towards Recombinant Organisms
+        - Section 7.3: Cellular Engineering/Molecular Biology for Process Engineering
+        - Section 7.4: Enzyme Engineering for Process Improvement

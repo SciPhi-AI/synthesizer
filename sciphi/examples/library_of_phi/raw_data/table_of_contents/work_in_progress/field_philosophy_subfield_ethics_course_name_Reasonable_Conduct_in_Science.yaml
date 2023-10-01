@@ -1,0 +1,191 @@
+```yaml
+textbook:
+  Reasonable Conduct in Science: A Comprehensive Guide to Ethical Practices and Responsible Research
+  chapters:
+    - Scientific Misconduct, Record Keeping, Reporting Results, and Data Selection:
+        sections:
+        - Falsification and Fabrication of Data
+          subsections:
+          - Fabrication of Data
+          - Falsification of Data
+          - Data Manipulation Techniques
+        - Plagiarism and Attribution of Sources
+          subsections:
+          - Types of Plagiarism
+          - Proper Attribution and Citation
+          - Avoiding Plagiarism in Scientific Writing
+        - Proper Record Keeping and Data Management
+          subsections:
+          - Importance of Record Keeping
+          - Best Practices for Data Management
+          - Data Storage and Backup Strategies
+          - Data Retention and Archiving
+        - Selective Reporting of Results
+          subsections:
+          - Cherry-picking Data
+          - Publication Bias and Reporting Bias
+          - Transparent and Complete Reporting
+          - Ethical Considerations in Data Presentation
+        - Data Integrity and Reproducibility
+          subsections:
+          - Ensuring Data Integrity
+          - Replication and Reproducibility in Research
+          - Addressing Irreproducibility Issues
+          - Open Science and Reproducible Research
+        - Ethical Use of Statistics
+          subsections:
+          - Misuse of Statistics in Research
+          - Statistical Significance and P-value
+          - Proper Data Analysis and Interpretation
+          - Ethical Considerations in Statistical Reporting
+    - Mentoring, Authorship, Collaboration:
+        sections:
+        - Responsibilities of Mentors and Mentees
+          subsections:
+          - Role of Mentors in Scientific Training
+          - Responsibilities of Mentees in Research
+          - Effective Mentorship Practices
+          - Mentor-Mentee Communication and Support
+        - Collaboration and Teamwork
+          subsections:
+          - Benefits and Challenges of Collaboration
+          - Establishing Collaborative Relationships
+          - Conflict Resolution in Collaborative Research
+          - Effective Teamwork Strategies
+        - Authorship and Acknowledgements
+          subsections:
+          - Criteria for Authorship
+          - Order of Authorship
+          - Authorship Disputes and Conflict Resolution
+          - Acknowledging Contributions
+        - Intellectual Property and Patent Issues
+          subsections:
+          - Understanding Intellectual Property Rights
+          - Patent Application Process
+          - Patent Infringement and Enforcement
+          - Intellectual Property Management Strategies
+        - Open Science and Data Sharing
+          subsections:
+          - Benefits and Challenges of Open Science
+          - Data Sharing and Data Accessibility
+          - Data Sharing Policies and Platforms
+          - Collaborative Data Sharing Practices
+        - Conflict Resolution in Collaborative Research
+          subsections:
+          - Identifying and Addressing Conflicts
+          - Mediation and Resolution Strategies
+          - Developing Collaborative Agreements
+          - Conflict Prevention Techniques
+    - Human Subjects:
+        sections:
+        - Informed Consent and Voluntary Participation
+          subsections:
+          - Principles of Informed Consent
+          - Obtaining Informed Consent
+          - Informed Consent in Vulnerable Populations
+          - Ethical Considerations in Consent Procedures
+        - Privacy and Confidentiality
+          subsections:
+          - Protecting Participant Privacy
+          - Confidentiality Agreements and Practices
+          - Data Anonymization and De-identification
+          - Ethical Considerations in Data Privacy
+        - Risks and Benefits of Human Research
+          subsections:
+          - Assessing and Minimizing Risks
+          - Balancing Risks and Benefits
+          - Informed Decision-Making for Participants
+          - Ethical Considerations in Risk-Benefit Analysis
+        - Institutional Review Board (IRB) Approval
+          subsections:
+          - Role and Function of IRBs
+          - IRB Application Process
+          - Ethical Review of Research Protocols
+          - IRB Oversight and Compliance
+        - Ethical Considerations in Human Experimentation
+          subsections:
+          - Ethical Considerations in Experimental Design
+          - Ensuring Participant Safety and Well-being
+          - Ethical Considerations in Data Collection
+          - Ethical Issues in Human Research Ethics
+        - Vulnerable Populations and Research Ethics
+          subsections:
+          - Definitions and Categories of Vulnerable Populations
+          - Special Protections for Vulnerable Populations
+          - Ethical Considerations in Research with Vulnerable Populations
+          - Ensuring Equity and Justice in Human Research
+    - Animal Care and Use:
+        sections:
+        - Animal Welfare and Ethical Treatment
+          subsections:
+          - Animal Rights and Welfare
+          - Ethical Guidelines for Animal Experimentation
+          - Animal Care and Housing Standards
+          - Ethical Considerations in Animal Treatment
+        - Institutional Animal Care and Use Committee (IACUC)
+          subsections:
+          - Role and Responsibilities of IACUC
+          - IACUC Protocol Submission and Review
+          - IACUC Inspection and Compliance
+          - Ethical Oversight of Animal Research
+        - Regulatory Guidelines and Compliance
+          subsections:
+          - Laws and Regulations for Animal Research
+          - Institutional Compliance with Animal Research Regulations
+          - Ethical Considerations in Animal Research Compliance
+        - Alternatives to Animal Research
+          subsections:
+          - Non-animal Models and Methods
+          - In vitro and In silico Alternatives
+          - Ethical Considerations in Non-animal Research
+        - Humane Endpoints and Euthanasia
+          subsections:
+          - Humane Endpoints in Animal Research
+          - Euthanasia Methods and Guidelines
+          - Ethical Considerations in Animal Experimentation Endpoints
+        - Ethical Considerations in Animal Experimentation
+          subsections:
+          - Ethical Dilemmas in Animal Research
+          - Balancing Animal Welfare and Scientific Objectives
+          - Ethical Decision-making in Animal Experimentation
+          - Ethical Considerations in Animal Research Publication
+    - Intellectual Property, Patents, Conflict of Interest:
+        sections:
+        - Ownership and Protection of Intellectual Property
+          subsections:
+          - Types of Intellectual Property
+          - Intellectual Property Rights and Ownership
+          - Intellectual Property Protection Strategies
+          - Ethical Considerations in Intellectual Property Management
+        - Patent Application and Licensing
+          subsections:
+          - Patent Application Process
+          - Patent Licensing and Commercialization
+          - Patent Portfolio Management
+          - Ethical Considerations in Patenting and Licensing
+        - Conflict of Interest Disclosure and Management
+          subsections:
+          - Identifying and Disclosing Conflicts of Interest
+          - Conflict of Interest Policies and Procedures
+          - Managing Conflicts of Interest in Research
+          - Ethical Considerations in Conflict of Interest Management
+        - Commercialization and Technology Transfer
+          subsections:
+          - Technology Transfer Process
+          - Commercialization Strategies for Research Findings
+          - Start-ups and Spin-off Companies
+          - Ethical Considerations in Technology Transfer
+        - Ethical Considerations in Industry-Academia Collaboration
+          subsections:
+          - Benefits and Challenges of Industry-Academia Collaboration
+          - Intellectual Property Rights in Collaborative Research
+          - Conflict Resolution in Industry-Academia Collaboration
+          - Ethical Considerations in Collaborative Research with Industry
+        - Conflicts of Interest in Research Funding
+          subsections:
+          - Funding Source Disclosure
+          - Addressing Conflicts of Interest in Research Funding
+          - Ensuring Transparency and Accountability in Funding
+          - Ethical Considerations in Research Funding 
+```
+```

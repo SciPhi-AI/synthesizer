@@ -1,0 +1,97 @@
+textbook:
+  Analysis and Design of Digital Integrated Circuits: A Comprehensive Guide
+chapters:
+  - Challenges in Digital IC Design:
+    sections:
+      - Course Overview
+  - CMOS Inverter I:
+    sections:
+      - MOS Device Model with Sub-micron Effects
+      - VTC Parameters - DC Characteristics
+  - CMOS Inverter II:
+    sections:
+      - CMOS Propagation Delay
+      - Parasitic Capacitance Estimation
+      - Layout of an Inverter
+  - CMOS Inverter III:
+    sections:
+      - Components of Energy and Power
+      - Switching, Short-Circuit and Leakage Components
+  - Combinational Logic I:
+    sections:
+      - Static CMOS Construction
+      - Ratioed Logic
+  - Combinational Logic II:
+    sections:
+      - Pass Transistor / Transmission Gate Logic
+      - DCVSL
+      - Introduction to Dynamic Logic
+  - Combinational Logic III:
+    sections:
+      - Dynamic Logic Design Considerations
+      - Power Dissipation in CMOS
+  - Combinational Logic IV:
+    sections:
+      - Power Consumption in CMOS Logic
+  - Arithmetic Structures / Bit Slice Design:
+    sections:
+      - Finish Arithmetic Structures and Project Ideas
+  - Evening Session on Exploring Project Ideas:
+    sections:
+      - Guest Lecture by Prof. Tayo Akinwande
+  - Integrated CMOS Processing:
+    sections:
+      - Guest Lecture by Prof. Tayo Akinwande
+  - Sequential Circuits I:
+    sections:
+      - Classification / Parameters
+      - Static Latches and Register
+  - Sequential Circuits II:
+    sections:
+      - Race Condition
+      - Dynamic Latches and Registers
+      - Two Phase vs. Single Phase
+  - Sequential Circuits III:
+    sections:
+      - Pulse Based Registers
+      - Latch vs. Register Systems
+      - Metastability
+  - Interconnect:
+    sections:
+      - Capacitance Estimation
+      - Buffer Chains
+      - Low Swing Drivers
+      - Power Distribution
+  - Clock Distribution:
+    sections:
+      - Origins of Clock Skew / Jitter and Impact on Performance
+      - Clock Distribution Techniques
+      - Self-timed Circuits
+  - Memory I: ROM / EPROM / PLA Design:
+    sections:
+      - Organization / Architecture
+      - Cell Design
+      - Sense-amplifiers
+      - PLA Folding Techniques
+      - Self-timing
+  - Memory II: SRAM Design:
+    sections:
+      - Cell Design
+      - Differential Sense Amplifiers
+      - Self-timing
+  - Memory III:
+    sections:
+      - DRAM Design
+      - Single Ended Sense Amplifier
+      - CMOS Scaling
+  - Advanced Voltage Scaling Techniques:
+    sections:
+      - DC-DC Converter Design
+      - Performance Feedback
+      - Dynamic Voltage / Frequency Scaling
+  - Power Reduction Through Switching Activity Reduction:
+    sections:
+      - Power Reduction Through Switching Activity Reduction
+  - Presentation of Final Projects:
+    sections:
+      - Presentation of Final Projects

@@ -1,0 +1,108 @@
+```yaml
+textbook:
+  Relativistic Quantum Field Theory II: A Comprehensive Guide to Non-Abelian Gauge Theories, Renormalization, and Beyond
+    chapters:
+    - Non-Abelian Gauge Theories:
+        sections:
+        - Symmetries, Lie Groups, and Lie Algebras
+          subsections:
+          - Introduction to Symmetries in Field Theory
+          - Lie Groups and Their Properties
+          - Lie Algebras and Their Representations
+        - The Gauge Principle
+          subsections:
+          - Introduction to Gauge Symmetries
+          - Gauge Transformations and Gauge Fields
+          - Gauge Invariance and Noether's Theorem
+        - Non-Abelian Generalizations: Yang-Mills Theory
+          subsections:
+          - Abelian vs Non-Abelian Gauge Theories
+          - Yang-Mills Lagrangian and Field Equations
+          - Gauge Bosons and Their Interactions
+        - Quantization of Non-Abelian Gauge Theories
+          subsections:
+          - Path Integral Quantization of Gauge Theories
+          - Feynman Rules for Non-Abelian Gauge Theories
+          - Renormalization and Running Couplings
+        - Becchi-Rouet-Stora-Tyutin
+          subsections:
+          - Introduction to BRST Symmetry
+          - BRST Transformations and BRST Charge
+          - BRST Invariance and Physical States
+    - General Aspects:
+        sections:
+        - Field and Mass Renormalizations
+          subsections:
+          - Renormalization Schemes and Counterterms
+          - Calculation of Renormalization Constants
+          - Renormalization Group Equations
+        - An Explicit Example
+          subsections:
+          - Scalar Field Theory in Four Dimensions
+          - One-Loop Corrections and Counterterms
+          - Renormalization of Mass and Coupling
+        - Removing Ultraviolet Divergences
+          subsections:
+          - Dimensional Regularization
+          - Renormalization of Divergent Integrals
+          - Renormalization of Operator Products
+        - Unstable Particles and Resonances
+          subsections:
+          - Resonance Phenomenology
+          - Complex Mass Renormalization
+          - Decay Width and Breit-Wigner Formula
+        - S-Matrix Elements and LSZ Reduction
+          subsections:
+          - Scattering Amplitudes and S-Matrix Elements
+          - LSZ Reduction Formula
+          - Connection to Cross Sections and Decay Rates
+    - Renormalization Group:
+        sections:
+        - Renormalized Lagrangian
+          subsections:
+          - Introduction to Renormalization Group
+          - Scaling and Dimensionless Parameters
+          - Renormalization Group Equations for Couplings
+        - Vertex Function
+          subsections:
+          - Definition and Properties of Vertex Function
+          - Renormalization of Vertex Function
+          - Connection to Scattering Amplitudes
+        - Anomalous Magnetic Moment
+          subsections:
+          - Introduction to Anomalous Magnetic Moment
+          - Calculation in Quantum Electrodynamics
+          - Renormalization and Anomalous Dimensions
+        - Vacuum Polarization
+          subsections:
+          - Introduction to Vacuum Polarization
+          - Calculation in Quantum Field Theories
+          - Connection to Electron Self-Energy
+        - Degrees of Divergences
+          subsections:
+          - Classification of Divergences
+          - Power Counting and Superficial Degree of Divergence
+          - Renormalizability and Non-Renormalizability
+    - Cancellation of Divergences:
+        sections:
+        - Cancellation of Divergences
+          subsections:
+          - Mechanisms of Divergence Cancellation
+          - BPHZ Renormalization Scheme
+          - Counterterms and Finite Theories
+        - Wilson's Approach to Field Theories
+          subsections:
+          - Wilson's Renormalization Group
+          - Wilsonian Effective Action
+          - Running Couplings and Scaling Laws
+        - Renormalization Group Flow
+          subsections:
+          - Fixed Points and Critical Phenomena
+          - Beta Functions and Anomalous Dimensions
+          - RG Flow in Non-Abelian Gauge Theories
+        - Beta-Functions from the Traditional Approach
+          subsections:
+          - Calculation of Beta Functions
+          - Perturbative and Non-Perturbative Contributions
+          - Applications to Renormalizable Theories
+```

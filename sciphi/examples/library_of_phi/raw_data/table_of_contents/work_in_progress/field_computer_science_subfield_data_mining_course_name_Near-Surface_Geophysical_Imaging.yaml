@@ -1,0 +1,138 @@
+```yaml
+course:
+  Near-Surface Geophysical Imaging Textbook:
+    chapters:
+      - Introduction to seismic wave propagation:
+          sections:
+            - Seismic wave equations
+            - Elastic properties of materials
+            - Reflection and refraction
+            - Snell's law
+          subsections:
+            - Wave types: P-waves, S-waves, surface waves
+            - Wave propagation in different media: solids, liquids, gases
+            - Wave interactions: scattering, diffraction, attenuation
+            - Wave behavior at interfaces: transmission, reflection, refraction
+      - Land and shallow marine near-surface problems:
+          sections:
+            - Challenges in near-surface imaging
+            - Surface wave analysis
+            - Seismic data acquisition techniques
+            - Noise reduction methods
+          subsections:
+            - Near-surface geological complexities and their impact on imaging
+            - Analysis of dispersive and non-dispersive surface waves
+            - Geophone and hydrophone array design and deployment
+            - Signal processing techniques for noise reduction
+      - Refraction traveltime interpretation:
+          sections:
+            - Traveltime curves
+            - Velocity models
+            - Refraction statics corrections
+            - Velocity-independent redatuming
+          subsections:
+            - Calculation and interpretation of traveltime curves
+            - Building velocity models for near-surface imaging
+            - Statics correction methods for refraction data
+            - Techniques for redatuming seismic data to different depths
+      - First-arrival traveltime tomography:
+          sections:
+            - Traveltime picking
+            - Tomographic inversion
+            - Resolution analysis
+            - Model building and interpretation
+          subsections:
+            - Manual and automated traveltime picking techniques
+            - Iterative and non-iterative tomographic inversion algorithms
+            - Assessing resolution and uncertainty of tomographic models
+            - Integrating geological information for model interpretation
+      - Refraction migration methods:
+          sections:
+            - Kirchhoff migration
+            - Common-offset migration
+            - Reverse-time migration
+            - Full-waveform inversion
+          subsections:
+            - Principles and algorithms of Kirchhoff migration
+            - Imaging with common-offset data using different migration approaches
+            - Reverse-time migration for imaging complex near-surface structures
+            - Full-waveform inversion for high-resolution velocity models
+      - Early-arrival waveform tomography:
+          sections:
+            - Waveform modeling
+            - Waveform inversion
+            - Near-surface imaging in complex environments
+            - Anisotropic media
+          subsections:
+            - Forward modeling of seismic waveforms in near-surface media
+            - Inverse problem formulation and solution methods for waveform inversion
+            - Imaging challenges in complex geological environments
+            - Accounting for anisotropy in near-surface velocity models
+      - Dispersion-curve inversion methods:
+          sections:
+            - Surface wave analysis techniques
+            - Love and Rayleigh waves
+            - Phase velocity estimation
+            - Joint inversion with other seismic methods
+          subsections:
+            - Analysis of dispersion in surface wave data
+            - Separation and characterization of Love and Rayleigh waves
+            - Estimation of phase velocities from dispersion curves
+            - Integrating surface wave data with other seismic methods for improved imaging
+      - Short-wavelength residual statics corrections:
+          sections:
+            - Statics corrections for near-surface layers
+            - Ray tracing techniques
+            - Time shifts and amplitude variations
+            - Quality control and validation
+          subsections:
+            - Methods for correcting static shifts in near-surface layers
+            - Principles and applications of ray tracing in near-surface imaging
+            - Addressing time shifts and amplitude variations in seismic data
+            - Techniques for quality control and validation of processed data
+      - Beyond seismic statics corrections:
+          sections:
+            - Dynamic corrections for near-surface effects
+            - Multiples and ground roll suppression
+            - Near-surface imaging with advanced techniques
+            - Joint inversion with other geophysical methods
+          subsections:
+            - Correction of dynamic near-surface effects on seismic data
+            - Suppression of multiples and ground roll in near-surface imaging
+            - Advanced techniques for improved near-surface imaging
+            - Integration of seismic data with other geophysical methods for joint inversion
+      - Joint geophysical inversions:
+          sections:
+            - Integration of seismic and non-seismic data
+            - Joint inversion algorithms
+            - Data regularization and objective functions
+            - Inversion strategies for near-surface imaging
+          subsections:
+            - Integration of seismic data with other geophysical data types for improved imaging
+            - Algorithms for joint inversion of multiple geophysical datasets
+            - Techniques for regularization and optimization of joint inversion models
+            - Strategies for successful near-surface imaging using joint inversion approaches
+      - Near-surface geophysical case studies:
+          sections:
+            - Urban and infrastructure imaging
+            - Environmental and engineering applications
+            - Archaeological and cultural heritage investigations
+            - Near-surface hazard assessment
+          subsections:
+            - Imaging of underground utilities and infrastructure in urban areas
+            - Applications of near-surface geophysics in environmental and engineering projects
+            - Geophysical investigations for archaeological site mapping and preservation
+            - Near-surface hazard assessment for natural disasters and geotechnical hazards
+      - Future trends in near-surface geophysical imaging:
+          sections:
+            - Advances in instrumentation and data acquisition
+            - Integration of machine learning and AI techniques
+            - Emerging applications and research directions
+            - Challenges and opportunities in near-surface imaging
+          subsections:
+            - Innovations in near-surface geophysical instruments and sensors
+            - Applications of machine learning and artificial intelligence in near-surface imaging
+            - Exploring new areas of near-surface geophysics research and application
+            - Addressing current and future challenges in near-surface imaging
+```
+```

@@ -1,0 +1,59 @@
+course:
+  Nonlinear Econometric Analysis: 
+    textbook:
+      title: Nonlinear Econometric Analysis: Theory and Applications
+      author: [Your Name]
+      chapters:
+        - Methods for nonlinear models:
+            sections:
+              - Maximum likelihood estimation (MLE)
+              - Generalized method of moments (GMM)
+              - Minimum distance
+              - Extremum
+        - Large sample theory:
+            sections:
+              - Asymptotic theory
+              - Discrete choice
+              - Censoring
+              - Sample selection
+        - Bootstrap, subsampling, and finite-sample methods:
+            sections:
+              - Bootstrap
+              - Subsampling
+              - Finite-sample methods
+        - Quantile regression:
+            sections:
+              - Integral transformation/Skorohod representation
+              - Conditional means vs. conditional quantiles
+              - Inference for quantile regression
+              - "High-tech application: wage decompositions"
+        - Bayesian and quasi-Bayesian methods:
+            sections:
+              - Accept-reject sampling
+              - Gibbs sampler
+              - Monte Carlo optimization
+        - Bounds and partial identification:
+            sections:
+              - "Generalized method of moments (GMM): identification, estimation, testing, bias, selecting moments"
+              - "Duration models: main concepts, practical issues"
+        - Weak and many instruments:
+            sections:
+              - Nonparametric estimation
+              - "Nonparametric regression: theoretical bias and variance of the Nadaraya-Watson estimator"
+              - Confidence intervals
+              - "Bandwidth choice: cross-validation in kernel regression"
+        - Semiparametric estimation:
+            sections:
+              - "Generalized method of moments (GMM) with condition moment restriction: optimal IV vs. efficient weighting matrix"
+              - "Nonparametric regression: kernel regression asymptotics, local linear estimation"
+              - "Bandwidth selection, generalized cross-validation"
+        - Treatment effects:
+            sections:
+              - Nonlinear models in panel data
+              - Series estimation and discontinuities
+              - "Example for the partially linear model: semiparametric selection models"
+        - Economic modeling and econometrics:
+            sections:
+              - "Nonlinear panel data: incidental parameters problem"
+              - "Conditional maximum likelihood estimation (MLE): Logit case"
+              - Method of simulated moments

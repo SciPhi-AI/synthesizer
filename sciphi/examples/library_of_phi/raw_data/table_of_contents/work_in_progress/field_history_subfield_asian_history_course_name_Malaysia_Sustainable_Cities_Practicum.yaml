@@ -1,0 +1,122 @@
+```yaml
+course:
+  textbook: Malaysia Sustainable Cities Practicum Handbook
+    chapters:
+      - Introduction to Sustainable Cities:
+          sections:
+            - Definition and Principles of Sustainable Cities
+            - Urbanization and its Impact on the Environment
+            - Sustainable Development Goals (SDGs)
+            - Urban Planning and Design for Sustainability
+            - Green Infrastructure and Urban Resilience
+          subsections:
+            - The History and Evolution of Sustainable Cities
+            - The Role of Stakeholders in Sustainable Cities
+            - The Role of Technology in Sustainable Cities
+      - Sustainable Transportation Systems:
+          sections:
+            - Public Transport and Low Carbon Mobility
+            - Cycling and Walking Infrastructure
+            - Intelligent Transportation Systems (ITS)
+            - Electric Vehicles and Charging Infrastructure
+            - Urban Freight and Logistics Management
+            - Transport Demand Management (TDM)
+          subsections:
+            - The Importance of Sustainable Transportation in Cities
+            - The Role of Public Policy in Promoting Sustainable Transportation
+            - The Benefits and Challenges of Cycling and Walking Infrastructure
+            - The Integration of Intelligent Transportation Systems in Urban Mobility
+            - The Transition to Electric Vehicles and the Development of Charging Infrastructure
+            - The Optimization of Urban Freight and Logistics Management
+      - Energy Efficiency in Buildings:
+          sections:
+            - Building Energy Performance and Rating Systems
+            - Passive Design Strategies
+            - Energy-efficient Lighting and Appliances
+            - HVAC Systems and Energy Management
+            - Renewable Energy Integration in Buildings
+            - Green Building Certifications
+          subsections:
+            - The Evaluation and Measurement of Building Energy Performance
+            - The Principles and Techniques of Passive Design Strategies
+            - The Selection and Implementation of Energy-efficient Lighting and Appliances
+            - The Optimization of HVAC Systems and Energy Management in Buildings
+            - The Integration of Renewable Energy Sources in Buildings
+            - The Certification Process and Benefits of Green Buildings
+      - Water Management in Urban Areas:
+          sections:
+            - Urban Water Supply and Distribution
+            - Wastewater Treatment and Reuse
+            - Stormwater Management and Rainwater Harvesting
+            - Water Conservation and Demand Management
+            - Water Sensitive Urban Design (WSUD)
+            - Water Governance and Policy
+          subsections:
+            - The Challenges and Strategies for Urban Water Supply and Distribution
+            - The Treatment and Reuse of Wastewater in Urban Areas
+            - The Management of Stormwater and the Harvesting of Rainwater
+            - The Importance of Water Conservation and Demand Management in Cities
+            - The Design and Implementation of Water Sensitive Urban Design (WSUD)
+            - The Governance and Policy Framework for Urban Water Management
+      - Waste Management and Circular Economy:
+          sections:
+            - Solid Waste Management and Recycling
+            - Organic Waste Management and Composting
+            - Resource Recovery and Waste-to-Energy
+            - Extended Producer Responsibility (EPR)
+            - Industrial Ecology and Eco-industrial Parks
+            - Circular Economy Strategies
+          subsections:
+            - The Collection, Treatment, and Recycling of Solid Waste in Urban Areas
+            - The Management and Composting of Organic Waste in Cities
+            - The Recovery of Resources and the Utilization of Waste-to-Energy Technologies
+            - The Implementation and Impact of Extended Producer Responsibility (EPR) Programs
+            - The Integration of Industrial Ecology and the Development of Eco-industrial Parks
+            - The Strategies and Practices of Circular Economy in Urban Areas
+      - Smart Cities and Digital Technologies:
+          sections:
+            - Internet of Things (IoT) in Urban Systems
+            - Smart Grids and Energy Management
+            - Big Data Analytics for Urban Planning
+            - Smart Buildings and Intelligent Infrastructure
+            - Smart Mobility and Transportation Solutions
+            - Citizen Engagement and Smart Governance
+          subsections:
+            - The Role and Applications of Internet of Things (IoT) in Urban Systems
+            - The Integration and Optimization of Smart Grids for Energy Management
+            - The Use of Big Data Analytics in Urban Planning and Decision-making
+            - The Design and Implementation of Smart Buildings and Intelligent Infrastructure
+            - The Innovation and Advancement of Smart Mobility and Transportation Solutions
+            - The Engagement of Citizens and the Development of Smart Governance
+      - Green Economy and Sustainable Business:
+          sections:
+            - Sustainable Entrepreneurship and Innovation
+            - Green Jobs and Skill Development
+            - Corporate Social Responsibility (CSR)
+            - Sustainable Supply Chains
+            - Circular Business Models
+            - Financial Instruments for Sustainability
+          subsections:
+            - The Role of Sustainable Entrepreneurship and Innovation in Green Economy
+            - The Creation of Green Jobs and Skill Development in Sustainable Cities
+            - The Implementation and Impact of Corporate Social Responsibility (CSR) in Urban Areas
+            - The Optimization and Management of Sustainable Supply Chains
+            - The Adoption and Benefits of Circular Business Models in Cities
+            - The Financial Instruments and Funding Opportunities for Sustainability Projects
+      - Social Equity and Inclusive Cities:
+          sections:
+            - Affordable Housing and Slum Upgrading
+            - Gender and Social Inclusion in Cities
+            - Community Participation and Empowerment
+            - Urban Poverty and Inequality
+            - Accessible and Age-friendly Cities
+            - Cultural Heritage and Urban Identity
+          subsections:
+            - The Importance of Affordable Housing and Slum Upgrading for Inclusive Cities
+            - The Role of Gender and Social Inclusion in Urban Development
+            - The Engagement and Empowerment of Communities in Urban Planning
+            - The Challenges and Strategies for Addressing Urban Poverty and Inequality
+            - The Design and Implementation of Accessible and Age-friendly Cities
+            - The Preservation and Promotion of Cultural Heritage and Urban Identity in Sustainable Cities
+```
+```

@@ -1,0 +1,62 @@
+textbook:
+  Methods of Policy Analysis: A Comprehensive Guide
+  
+chapters:
+  - Foundations:
+    sections:
+      - Course Description, Goals, and Requirements
+      - What is Policy?
+      
+  - Policy and Governance:
+    sections:
+      - Policy and Visions of Governance
+      - Case Study: Needles and Safe Injection Sites
+      
+  - Theories of Public Policy:
+    sections:
+      - How Choices Are Made
+      - Values and Public Policy
+      
+  - Policy Analysis:
+    sections:
+      - Case Study: Bees, Mites, and Pesticides
+      - Cost of Policy
+    subsections:
+      - Cost-Benefit Analysis
+      - Policy Evaluation Techniques
+      
+  - Defense Policy:
+    sections:
+      - Defense Policy
+    subsections:
+      - National Security Strategy
+      - Military Budgeting and Planning
+      
+  - Cost Benefit Analysis:
+    sections:
+      - Cost Benefit
+      - Cost-Effectiveness and Regression Analysis
+    subsections:
+      - Discounting and Present Value
+      - Sensitivity Analysis
+      
+  - Welfare and Social Insurance:
+    sections:
+      - Welfare - Focus Groups
+      - Social Insurance
+    subsections:
+      - Means-Tested Welfare Programs
+      - Social Security and Medicare
+      
+  - International Policy:
+    sections:
+      - Case Study: Land Readjustment Case; International Policy
+    subsections:
+      - International Organizations
+      - Foreign Policy Analysis
+      
+  - Final Assignment and Presentations:
+    sections:
+      - Final Assignment Work Day
+      - Project Presentations
+      - Wrap Up

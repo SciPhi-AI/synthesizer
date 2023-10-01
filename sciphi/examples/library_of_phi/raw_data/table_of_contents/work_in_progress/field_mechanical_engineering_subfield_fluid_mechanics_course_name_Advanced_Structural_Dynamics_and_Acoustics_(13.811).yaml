@@ -1,0 +1,61 @@
+```yaml
+textbook:
+  Advanced Structural Dynamics and Acoustics: Theory and Applications:
+    chapters:
+      - Structural Dynamics:
+          sections:
+            - Introduction
+            - Fundamental Concepts
+            - Free Vibration of Single Degree of Freedom Systems
+            - Response of Single Degree of Freedom Systems to Harmonic Excitation
+            - Response of Single Degree of Freedom Systems to Arbitrary Excitation
+            - Response of Single Degree of Freedom Systems to Periodic Excitation
+            - Response of Multiple Degree of Freedom Systems
+            - Modal Analysis
+            - Damping in Structural Dynamics
+            - Forced Vibration of Structures
+            - Earthquake Response of Structures
+            - Vibration Control of Structures
+            - Random Vibration of Structures
+      - Radiation from Structures:
+          sections:
+            - Helmholtz Equation and Wave Propagation
+            - Radiation from Infinite Planar Structures
+            - Radiation from Finite Planar Structures
+            - Radiation from Cylindrical Structures
+            - Radiation from Spherical Structures
+            - Radiation from Elastic Plates and Shells
+            - Structural-Acoustic Interaction
+      - Scattering of Waves:
+          sections:
+            - Introduction to Scattering Theory
+            - Scattering from Spheres and Cylinders
+            - Scattering from Complex Structures
+            - Scattering from Periodic Structures
+            - Scattering of Guided Waves
+            - Scattering of Elastic Waves
+      - Acoustics:
+          sections:
+            - Introduction to Acoustics
+            - Basic Principles of Sound Propagation
+            - The Acoustic Wave Equation
+            - Plane Waves and Spherical Waves
+            - Sound Reflection and Transmission
+            - Sound Diffraction and Interference
+            - Sound Absorption and Attenuation
+            - Room Acoustics
+            - Architectural Acoustics
+            - Underwater Acoustics
+      - Quiz:
+          sections:
+            - Quiz (PDF)
+      - Assignments:
+          sections:
+            - Problem Set 1 (PDF)
+            - Problem Set 2 (PDF)
+            - Problem Set 3 (PDF)
+      - Exams:
+          sections:
+            - Quiz (PDF)
+            - Solution to Quiz (PDF)
+```

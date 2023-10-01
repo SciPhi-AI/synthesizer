@@ -1,0 +1,98 @@
+textbook:
+  Climate Change: Understanding the Science, Impacts, and Solutions:
+    chapters:
+      - Introduction to Climate Change:
+          sections:
+            - Definition and Scope of Climate Change
+            - Historical Climate Change
+            - Current Climate Change Trends
+            - Climate Change Impacts
+      - Climate Science:
+          sections:
+            - Greenhouse Effect
+            - Global Warming
+            - Climate Models and Simulations
+            - Climate Feedbacks
+            - Climate Sensitivity
+            - Paleoclimatology
+            - Climate Variability and Oscillations
+            - Ocean Circulation and Climate
+            - Atmospheric Circulation and Climate
+      - Climate Change Mitigation:
+          sections:
+            - Renewable Energy Sources
+            - Energy Efficiency
+            - Carbon Capture and Storage
+            - Policy and Governance
+            - International Climate Agreements
+            - Sustainable Transport
+            - Sustainable Agriculture
+            - Circular Economy and Climate Change
+            - Urban Planning and Climate Change
+            - Green Building and Climate Change
+      - Climate Change Adaptation:
+          sections:
+            - Resilience and Vulnerability
+            - Adaptation Strategies
+            - Climate Change and Health
+            - Ecosystem Adaptation
+            - Climate Change and Food Security
+            - Climate Change and Water Management
+            - Climate Change and Disaster Risk Reduction
+            - Indigenous Knowledge and Climate Change Adaptation
+            - Gender and Climate Change Adaptation
+      - Climate Change Communication:
+          sections:
+            - Science Communication
+            - Public Perception of Climate Change
+            - Media Coverage of Climate Change
+            - Climate Change Denial
+            - Communicating Climate Change to Policy Makers
+            - Communicating Climate Change to the General Public
+            - Communicating Climate Change to Different Cultural Contexts
+            - Art and Climate Change Communication
+      - Climate Change Policy:
+          sections:
+            - Climate Change and Economic Growth
+            - Carbon Pricing
+            - Climate Change and Social Justice
+            - Climate Change and Human Rights
+            - Climate Change and Indigenous Peoples
+            - Climate Change and Migration
+            - Climate Change and Conflict
+            - Climate Change and Sustainable Development Goals
+            - Climate Change and Corporate Responsibility
+            - Climate Change and International Security
+      - Climate Change and Biodiversity:
+          sections:
+            - Impacts on Ecosystems
+            - Species Extinction
+            - Conservation Strategies
+            - Climate Change and Wildlife
+            - Climate Change and Forests
+            - Climate Change and Oceans
+            - Climate Change and Coral Reefs
+            - Climate Change and Polar Regions
+            - Climate Change and Wetlands
+      - Climate Change and Water Resources:
+          sections:
+            - Water Scarcity
+            - Droughts and Floods
+            - Water Management
+            - Climate Change and Agriculture
+            - Climate Change and Urban Water Systems
+            - Climate Change and Water Pollution
+            - Climate Change and Water Governance
+            - Climate Change and Water Equity
+      - Climate Change and Urbanization:
+          sections:
+            - Urban Heat Island Effect
+            - Sustainable Urban Planning
+            - Transportation and Climate Change
+            - Climate Change and Urban Health
+            - Climate Change and Urban Resilience
+            - Climate Change and Urban Food Systems
+            - Climate Change and Urban Biodiversity
+            - Climate Change and Urban Waste Management
+            - Climate Change and Informal Settlements
+            - Climate Change and Urban Poverty

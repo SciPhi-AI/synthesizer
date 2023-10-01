@@ -1,0 +1,46 @@
+```yaml
+course:
+  textbook: 'Mechanics of Material Systems: An Energy Approach - A Comprehensive Guide'
+    chapters:
+    - chapter: 'Deformation and Strain'
+      sections:
+      - section: 'Description of Finite Deformation'
+      - section: 'Infinitesimal Deformation'
+    - chapter: 'Momentum Balance and Stresses'
+      sections:
+      - section: 'Momentum Balance'
+      - section: 'Stress States/Failure Criterion'
+    - chapter: 'Elasticity and Elasticity Bounds'
+      sections:
+      - section: 'Thermoelasticity'
+      - section: 'Variational Methods'
+    - chapter: 'Plasticity and Yield Design'
+      sections:
+      - section: '1D-Plasticity - An Energy Approach'
+      - section: 'Plasticity Models'
+      - section: 'Limit Analysis and Yield Design'
+    - chapter: '[Add Additional Topic Here]'
+      sections:
+      - section: '[Add Subtopic 1 Here]'
+      - section: '[Add Subtopic 2 Here]'
+      - section: '[Add Subtopic 3 Here]'
+      - section: '[Add Subtopic 4 Here]'
+      - section: '[Add Subtopic 5 Here]'
+      - section: '[Add Subtopic 6 Here]'
+      - section: '[Add Subtopic 7 Here]'
+      - section: '[Add Subtopic 8 Here]'
+      - section: '[Add Subtopic 9 Here]'
+      - section: '[Add Subtopic 10 Here]'
+        subsections:
+        - subsection: '[Add Subsubsection 1 Here]'
+        - subsection: '[Add Subsubsection 2 Here]'
+        - subsection: '[Add Subsubsection 3 Here]'
+        - subsection: '[Add Subsubsection 4 Here]'
+        - subsection: '[Add Subsubsection 5 Here]'
+        - subsection: '[Add Subsubsection 6 Here]'
+        - subsection: '[Add Subsubsection 7 Here]'
+        - subsection: '[Add Subsubsection 8 Here]'
+        - subsection: '[Add Subsubsection 9 Here]'
+        - subsection: '[Add Subsubsection 10 Here]'
+```
+```

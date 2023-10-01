@@ -1,0 +1,459 @@
+```yaml
+course:
+  textbook: "Comprehensive Guide to Nuclear and Particle Physics"
+    chapters:
+    - Nuclear Physics:
+        sections:
+        - Nuclear Structure:
+            subsections:
+            - Nuclear Size and Shape
+            - Nuclear Shell Model
+            - Nuclear Excitations
+            - Nuclear Isomers
+        - Radioactive Decay:
+            subsections:
+            - Alpha Decay
+            - Beta Decay
+            - Gamma Decay
+            - Electron Capture
+            - Internal Conversion
+        - Nuclear Reactions:
+            subsections:
+            - Reaction Types
+            - Cross Section and Reaction Rates
+            - Nuclear Scattering
+            - Fusion Reactions
+            - Fission Reactions
+            - Nuclear Transmutations
+        - Nuclear Models:
+            subsections:
+            - Liquid Drop Model
+            - Shell Model
+            - Collective Model
+            - Cluster Model
+            - Nuclear Energy Levels
+        - Nuclear Fission:
+            subsections:
+            - Fission Process
+            - Fission Products
+            - Fission Reactors
+            - Fission Applications
+            - Fission Yield
+        - Nuclear Fusion:
+            subsections:
+            - Fusion Process
+            - Fusion Reactions
+            - Thermonuclear Fusion
+            - Fusion Reactors
+            - Fusion Energy Production
+        - Nuclear Astrophysics:
+            subsections:
+            - Stellar Nucleosynthesis
+            - Supernovae and Neutron Stars
+            - Neutrino Astrophysics
+            - Cosmic Rays and Nucleosynthesis
+    - Particle Physics:
+        sections:
+        - Particle Classification:
+            subsections:
+            - Fundamental Particles
+            - Quarks and Leptons
+            - Hadrons and Mesons
+            - Baryons and Antibaryons
+        - Particle Interactions:
+            subsections:
+            - Electromagnetic Interactions
+            - Strong Interactions
+            - Weak Interactions
+            - Gravitational Interactions
+            - Electroweak Unification
+        - Particle Detectors:
+            subsections:
+            - Ionization Detectors
+            - Scintillation Detectors
+            - Cherenkov Detectors
+            - Calorimeters
+            - Tracking Detectors
+        - Standard Model of Particle Physics:
+            subsections:
+            - Gauge Theory
+            - Quantum Field Theory
+            - Electroweak Theory
+            - Quantum Chromodynamics
+            - Higgs Mechanism
+        - Electroweak Interactions:
+            subsections:
+            - Electromagnetic Interactions
+            - Weak Interactions
+            - Neutral Currents
+            - Charged Currents
+            - W and Z Bosons
+        - Quantum Chromodynamics:
+            subsections:
+            - Quark Confinement
+            - Asymptotic Freedom
+            - Strong Interaction Phenomena
+            - Jets and Parton Showers
+            - Quark-Gluon Plasma
+        - Higgs Boson:
+            subsections:
+            - Higgs Field
+            - Higgs Mechanism
+            - Higgs Boson Discovery
+            - Higgs Boson Properties
+            - Higgs Boson Interactions
+        - Neutrino Physics:
+            subsections:
+            - Neutrino Oscillations
+            - Neutrino Masses
+            - Neutrino Mixing
+            - Neutrino Interactions
+            - Neutrino Detection
+        - Beyond the Standard Model:
+            subsections:
+            - Supersymmetry
+            - Grand Unified Theories
+            - Dark Matter Candidates
+            - Extra Dimensions
+            - String Theory and M-Theory
+    - Particle Accelerators:
+        sections:
+        - Linear Accelerators:
+            subsections:
+            - Radiofrequency Acceleration
+            - Beam Dynamics
+            - Accelerator Structures
+            - Energy Recovery Linacs
+            - Free Electron Lasers
+        - Cyclotrons:
+            subsections:
+            - Magnetic Field and Orbit
+            - Radiofrequency Acceleration
+            - Isotope Production
+            - Cyclotron Applications
+            - Cyclotron Design and Operation
+        - Synchrotrons:
+            subsections:
+            - Magnetic Field and Orbit
+            - Radiofrequency Acceleration
+            - Synchrotron Radiation
+            - Storage Rings
+            - Synchrotron Applications
+        - Colliders:
+            subsections:
+            - Circular Colliders
+            - Linear Colliders
+            - Collider Detectors
+            - Event Reconstruction
+            - Collider Physics
+        - Detectors in Accelerators:
+            subsections:
+            - Tracking Detectors
+            - Particle Identification Detectors
+            - Calorimeters
+            - Muon Detectors
+            - Trigger Systems
+        - Large Hadron Collider (LHC):
+            subsections:
+            - LHC Design and Construction
+            - LHC Acceleration
+            - LHC Experiments
+            - LHC Discoveries
+            - LHC Upgrade Plans
+        - Accelerator Technology:
+            subsections:
+            - Beam Dynamics
+            - Radiofrequency Cavities
+            - Magnet Systems
+            - Vacuum Systems
+            - Accelerator Control Systems
+    - Quark and Lepton Physics:
+        sections:
+        - Quark Structure:
+            subsections:
+            - Parton Distribution Functions
+            - Quark Structure of Hadrons
+            - Deep Inelastic Scattering
+            - Quark Fragmentation
+            - Parton Distributions and Structure Functions
+        - Lepton Structure:
+            subsections:
+            - Lepton Flavor
+            - Lepton Interactions
+            - Lepton Decay Modes
+            - Lepton Flavor Violation
+            - Lepton Mixing and Oscillations
+        - Quark Confinement:
+            subsections:
+            - Color Charge
+            - QCD Confinement Mechanisms
+            - Lattice QCD
+            - Glueballs and Hybrid Mesons
+            - QCD Vacuum Structure
+        - Neutrino Oscillations:
+            subsections:
+            - Neutrino Flavor States
+            - Neutrino Mass Eigenstates
+            - Neutrino Mixing Matrix
+            - Neutrino Oscillation Phenomena
+            - Neutrino Oscillation Experiments
+        - CP Violation:
+            subsections:
+            - CP Symmetry Violation
+            - CKM Matrix and CP Violation
+            - Baryon Asymmetry of the Universe
+            - CP Violation in Neutrinos
+            - CP Violation in B Meson Decays
+        - Baryogenesis:
+            subsections:
+            - Sakharov Conditions
+            - Baryogenesis Mechanisms
+            - Electroweak Baryogenesis
+            - Leptogenesis
+            - Primordial Nucleosynthesis
+        - Leptogenesis:
+            subsections:
+            - Lepton Asymmetry Generation
+            - Lepton Flavor Violation
+            - Leptogenesis Mechanisms
+            - Leptogenesis in Supersymmetry
+            - Leptogenesis in Grand Unified Theories
+    - Nuclear Reactions and Decays:
+        sections:
+        - Cross Section:
+            subsections:
+            - Reaction Probability
+            - Cross Section Measurement
+            - Total, Differential, and Reaction Cross Section
+            - Elastic and Inelastic Cross Section
+            - Cross Section Dependence on Energy
+        - Reaction Rates:
+            subsections:
+            - Reaction Rate Equation
+            - Reaction Rate Constant
+            - Reaction Rate Measurement
+            - Thermal and Stellar Reaction Rates
+            - Reaction Networks in Astrophysics
+        - Compound Nucleus Reactions:
+            subsections:
+            - Compound Nucleus Formation
+            - Compound Nucleus Decay
+            - Compound Nucleus Fission
+            - Statistical Model of Compound Nucleus Reactions
+            - Compound Nucleus Resonances
+        - Direct Reactions:
+            subsections:
+            - Direct Scattering
+            - Direct Reactions and Transfer Reactions
+            - Direct Reactions and Inelastic Scattering
+            - Direct Reactions and Deep Inelastic Scattering
+            - Direct Reactions and Cluster Transfer
+        - Nuclear Decays:
+            subsections:
+            - Decay Modes and Channels
+            - Half-Life and Decay Constant
+            - Decay Energy and Q-Value
+            - Decay Schemes and Decay Chains
+            - Decay Branching Ratio and Partial Half-Life
+        - Beta Decay:
+            subsections:
+            - Beta Minus Decay
+            - Beta Plus Decay
+            - Electron Capture
+            - Beta Spectrum and End Point Energy
+            - Beta Decay and Weak Interaction
+        - Gamma Decay:
+            subsections:
+            - Gamma Emission and Energy Levels
+            - Nuclear Isomers and Gamma Transitions
+            - Gamma Decay Modes
+            - Gamma Decay and Electromagnetic Interaction
+            - Gamma Decay and Internal Conversion
+        - Alpha Decay:
+            subsections:
+            - Alpha Particle Emission
+            - Alpha Decay Energy and Half-Life
+            - Alpha Decay Barrier Penetration
+            - Alpha Decay and Nuclear Stability
+            - Alpha Decay and Quantum Tunneling
+    - Symmetries in Particle Physics:
+        sections:
+        - Conservation Laws:
+            subsections:
+            - Energy Conservation
+            - Momentum Conservation
+            - Angular Momentum Conservation
+            - Charge Conservation
+            - Lepton Number Conservation
+        - Parity Symmetry:
+            subsections:
+            - Parity Transformation
+            - Parity Violation Experiments
+            - Weak Interaction and Parity Violation
+            - Chirality and Parity
+            - Parity Restoration in High Energy Physics
+        - Charge Conjugation:
+            subsections:
+            - Charge Conjugation Transformation
+            - Charge Conjugation Symmetry
+            - Charge Conjugation and Particle-Antiparticle
+            - Charge Conjugation and CPT Symmetry
+            - Charge Conjugation Violation
+        - Time Reversal:
+            subsections:
+            - Time Reversal Transformation
+            - Time Reversal Symmetry
+            - Time Reversal and Particle-Antiparticle
+            - Time Reversal and CP Symmetry
+            - Time Reversal Violation
+        - CPT Theorem:
+            subsections:
+            - CPT Transformation
+            - CPT Symmetry
+            - CPT Theorem and Lorentz Invariance
+            - CPT Theorem and Quantum Field Theory
+            - CPT Violation
+        - Broken Symmetries:
+            subsections:
+            - Spontaneous Symmetry Breaking
+            - Goldstone Bosons and Nambu-Goldstone Theorem
+            - Symmetry Breaking in Electroweak Theory
+            - Symmetry Breaking in QCD
+            - Symmetry Breaking and Higgs Mechanism
+        - Spontaneous Symmetry Breaking:
+            subsections:
+            - Symmetry Breaking Mechanisms
+            - Higgs Mechanism and Spontaneous Symmetry Breaking
+            - Symmetry Breaking and Mass Generation
+            - Symmetry Breaking in Superconductivity
+            - Symmetry Breaking in Cosmology
+        - Chiral Symmetry:
+            subsections:
+            - Chiral Transformations
+            - Chiral Symmetry Breaking
+            - Chiral Anomaly
+            - Chiral Perturbation Theory
+            - Chiral Symmetry Restoration
+    - Neutron and Proton Structure:
+        sections:
+        - Parton Distribution Functions:
+            subsections:
+            - Quark and Gluon Distributions
+            - Parton Distributions in Nucleons
+            - Parton Distributions and Deep Inelastic Scattering
+            - Parton Distributions and Hadron Colliders
+            - Parton Distributions and Nucleon Spin
+        - Deep Inelastic Scattering:
+            subsections:
+            - Structure Functions
+            - Scaling and Bjorken Scaling
+            - Parton Model and Quark Structure
+            - Deep Inelastic Scattering Experiments
+            - QCD Analysis of Deep Inelastic Scattering
+        - Quark-Gluon Plasma:
+            subsections:
+            - Quark-Gluon Plasma Formation
+            - Quark-Gluon Plasma Probes
+            - Quark-Gluon Plasma Signatures
+            - Quark-Gluon Plasma and Heavy Ion Collisions
+            - Quark-Gluon Plasma and QCD Phase Diagram
+        - Nucleon Spin Structure:
+            subsections:
+            - Nucleon Spin Crisis
+            - Spin Sum Rule
+            - Polarized Parton Distribution Functions
+            - Spin Structure Functions
+            - Spin Physics at High Energy
+        - Nuclear Parton Distributions:
+            subsections:
+            - Nuclear Medium Effects
+            - Nuclear PDF Modifications
+            - Nuclear Structure Functions
+            - Deep Inelastic Scattering on Nuclei
+            - Nuclear DIS Experiments
+        - Nucleon Form Factors:
+            subsections:
+            - Elastic Form Factors
+            - Magnetic and Electric Form Factors
+            - Charge and Magnetic Radii
+            - Form Factors and Electron Scattering
+            - Form Factors and Neutrino Scattering
+    - Quark-Gluon Plasma:
+        sections:
+        - Quark-Gluon Plasma Formation:
+            subsections:
+            - QCD Phase Transition
+            - Deconfinement and Chiral Symmetry Restoration
+            - Lattice QCD and QCD Thermodynamics
+            - Heavy Ion Collisions and Quark-Gluon Plasma
+            - Experimental Signatures of Quark-Gluon Plasma
+        - Relativistic Heavy Ion Collisions:
+            subsections:
+            - Relativistic Kinematics
+            - Heavy Ion Collisions at RHIC
+            - Heavy Ion Collisions at LHC
+            - Collectivity and Flow
+            - Jet Quenching and Particle Production
+        - Quarkonium Suppression:
+            subsections:
+            - Quarkonium Production Mechanisms
+            - Quarkonium Dissociation in Quark-Gluon Plasma
+            - Quarkonium Regeneration
+            - Quarkonium Measurements in Heavy Ion Collisions
+            - Quarkonium as a Probe of QGP Properties
+        - Jet Quenching:
+            subsections:
+            - Jet Quenching Mechanism
+            - Energy Loss in Quark-Gluon Plasma
+            - High pT Suppression in Heavy Ion Collisions
+            - Jet Reconstruction Techniques
+            - Jet Quenching and QGP Transport Coefficients
+        - Color Glass Condensate:
+            subsections:
+            - Gluon Saturation
+            - Color Glass Condensate Formalism
+            - Small-x Physics
+            - Parton Distribution Functions at Small-x
+            - Color Glass Condensate and Heavy Ion Collisions
+        - Quark-Gluon Plasma at RHIC and LHC:
+            subsections:
+            - RHIC Experimental Program
+            - LHC Experimental Program
+            - Quark-Gluon Plasma Observables
+            - Quark-Gluon Plasma Results
+            - Future Prospects and Challenges
+    - Dark Matter and Dark Energy:
+        sections:
+        - Dark Matter Candidates:
+            subsections:
+            - Weakly Interacting Massive Particles (WIMPs)
+            - Axions and Axion-Like Particles
+            - Sterile Neutrinos
+            - Superpartners in Supersymmetry
+            - Primordial Black Holes
+        - WIMP Dark Matter:
+            subsections:
+            - WIMP Production Mechanisms
+            - WIMP Detection Methods
+            - Direct Detection Experiments
+            - Indirect Detection Experiments
+            - Collider Searches for WIMPs
+        - Direct and Indirect Detection:
+            subsections:
+            - Direct Dark Matter Detection
+            - Indirect Dark Matter Detection
+            - Gamma-Ray Observations and Dark Matter
+            - Neutrino Observations and Dark Matter
+            - Cosmic Ray Observations and Dark Matter
+        - Dark Matter Annihilation:
+            subsections:
+            - Dark Matter Annihilation Channels
+            - Annihilation Cross Section
+            - Annihilation Signatures
+            - Dark Matter Annihilation in the Universe
+            - Constraints on Dark Matter Properties
+        - Dark Matter Halos:
+            subsections:
+            - Structure Formation
+            - Dark Matter Density Profiles
+            - Dark Matter

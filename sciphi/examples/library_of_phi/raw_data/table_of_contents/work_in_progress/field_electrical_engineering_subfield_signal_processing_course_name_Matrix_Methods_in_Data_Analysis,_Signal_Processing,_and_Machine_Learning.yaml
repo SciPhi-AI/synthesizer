@@ -1,0 +1,127 @@
+```yaml
+course:
+  Matrix Methods in Data Analysis, Signal Processing, and Machine Learning:
+    textbook:
+      title: Comprehensive Guide to Matrix Methods in Data Analysis, Signal Processing, and Machine Learning
+      author: [Your Name]
+      chapters:
+        - chapter: Introduction to Matrix Methods
+          sections:
+            - section: Multiplication \(A\boldsymbol{x}\) Using Columns of \(A\)
+              subsections:
+                - The Column Space of \(A\) Contains All Vectors \(A\boldsymbol{x}\)
+                - Multiplying and Factoring Matrices
+        - chapter: Orthogonal Matrices and Eigenspaces
+          sections:
+            - section: Orthonormal Columns in \(Q\) Give \(Q'Q = I\)
+              subsections:
+                - Orthonormal Columns in \(Q\) Give \(Q'Q = I\)
+            - section: Eigenvalues and Eigenvectors
+              subsections:
+                - Eigenvalues and Eigenvectors
+        - chapter: Positive Definite and Semidefinite Matrices
+          sections:
+            - section: Positive Definite and Semidefinite Matrices
+              subsections:
+                - Positive Definite and Semidefinite Matrices
+        - chapter: Singular Value Decomposition (SVD)
+          sections:
+            - section: Singular Value Decomposition
+              subsections:
+                - Singular Value Decomposition
+        - chapter: Eckart-Young: The Closest Rank \(k\) Matrix to \(A\)
+          sections:
+            - section: Eckart-Young: The Closest Rank \(k\) Matrix to \(A\)
+              subsections:
+                - Eckart-Young: The Closest Rank \(k\) Matrix to \(A\)
+        - chapter: Norms and Optimization
+          sections:
+            - section: Norms of Vectors and Matrices
+              subsections:
+                - Norms of Vectors and Matrices
+            - section: Four Ways to Solve Least Squares Problems
+              subsections:
+                - Four Ways to Solve Least Squares Problems
+            - section: Survey of Difficulties with \(A\boldsymbol{x} = \boldsymbol{b}\)
+              subsections:
+                - Survey of Difficulties with \(A\boldsymbol{x} = \boldsymbol{b}\)
+            - section: Minimizing \(‖\boldsymbol{x}‖\)
+              subsections:
+                - Minimizing \(‖\boldsymbol{x}‖\)
+            - section: Computing Eigenvalues and Singular Values
+              subsections:
+                - Computing Eigenvalues and Singular Values
+            - section: Randomized Matrix Multiplication
+              subsections:
+                - Randomized Matrix Multiplication
+            - section: Low Rank Changes in Matrices
+              subsections:
+                - Low Rank Changes in Matrices
+            - section: Derivatives of Inverse and Singular Values
+              subsections:
+                - Derivatives of Inverse and Singular Values
+            - section: Rapidly Decreasing Singular Values
+              subsections:
+                - Rapidly Decreasing Singular Values
+            - section: Counting Parameters in SVD, LU, QR, Saddle Points
+              subsections:
+                - Counting Parameters in SVD, LU, QR, Saddle Points
+            - section: Saddle Points Continued, Maxmin Principle
+              subsections:
+                - Saddle Points Continued, Maxmin Principle
+        - chapter: Optimization Algorithms
+          sections:
+            - section: Definitions and Inequalities
+              subsections:
+                - Definitions and Inequalities
+            - section: Minimizing a Function Step by Step
+              subsections:
+                - Minimizing a Function Step by Step
+            - section: Gradient Descent: Downhill to a Minimum
+              subsections:
+                - Gradient Descent: Downhill to a Minimum
+            - section: Accelerating Gradient Descent
+              subsections:
+                - Accelerating Gradient Descent
+            - section: Linear Programming and Two-Person Games
+              subsections:
+                - Linear Programming and Two-Person Games
+            - section: Stochastic Gradient Descent
+              subsections:
+                - Stochastic Gradient Descent
+        - chapter: Deep Learning and Neural Networks
+          sections:
+            - section: Structure of Neural Nets for Deep Learning
+              subsections:
+                - Structure of Neural Nets for Deep Learning
+            - section: Backpropagation: Find Partial Derivatives
+              subsections:
+                - Backpropagation: Find Partial Derivatives
+            - section: Computing in Class
+              subsections:
+                - Computing in Class
+            - section: Completing a Rank-One Matrix, Circulants!
+              subsections:
+                - Completing a Rank-One Matrix, Circulants!
+            - section: Eigenvectors of Circulant Matrices: Fourier Matrix
+              subsections:
+                - Eigenvectors of Circulant Matrices: Fourier Matrix
+            - section: ImageNet is a Convolutional Neural Network
+              subsections:
+                - ImageNet is a Convolutional Neural Network
+            - section: Neural Nets and the Learning Function
+              subsections:
+                - Neural Nets and the Learning Function
+        - chapter: Advanced Topics in Matrix Methods
+          sections:
+            - section: Distance Matrices, Procrustes Problem
+              subsections:
+                - Distance Matrices, Procrustes Problem
+            - section: Finding Clusters in Graphs
+              subsections:
+                - Finding Clusters in Graphs
+            - section: Alan Edelman and Julia Language
+              subsections:
+                - Alan Edelman and Julia Language
+```
+```

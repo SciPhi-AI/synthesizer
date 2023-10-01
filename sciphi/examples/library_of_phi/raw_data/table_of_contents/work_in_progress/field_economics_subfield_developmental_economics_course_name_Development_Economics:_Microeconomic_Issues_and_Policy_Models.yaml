@@ -1,0 +1,93 @@
+textbook:
+  'Development Economics: Microeconomic Issues and Policy Models':
+    chapters:
+    - Introduction:
+        sections:
+        - The capacity curve
+          subsections:
+          - Definition and significance of the capacity curve
+          - Factors affecting the capacity curve
+        - Demand for health and calories
+          subsections:
+          - Determinants of health and calorie demand
+          - Measurement of health and calorie demand
+        - Productivity effects of health
+          subsections:
+          - Relationship between health and productivity
+          - Empirical evidence on the productivity effects of health
+    - Education:
+        sections:
+        - Private and social returns to education
+          subsections:
+          - Calculation of private and social returns to education
+          - Factors influencing private and social returns to education
+        - Education quality
+          subsections:
+          - Measurement of education quality
+          - Determinants of education quality
+          - Implications of education quality for development
+        - Education policy and market equilibrium
+          subsections:
+          - Market failures in education
+          - Government intervention in education
+          - Impact of policy on market equilibrium
+    - Gender:
+        sections:
+        - Gender discrimination
+          subsections:
+          - Causes and forms of gender discrimination
+          - Consequences of gender discrimination for development
+    - Public Finance:
+        sections:
+        - Public finance
+          subsections:
+          - Government revenue sources
+          - Public expenditure priorities
+          - Distributional consequences of public finance policies
+    - Household:
+        sections:
+        - Decision making within families
+          subsections:
+          - Intra-household resource allocation
+          - Gender dynamics in household decision making
+          - Implications for individual well-being and development
+    - Firms and Contracts:
+        sections:
+        - Firms and contracts
+          subsections:
+          - Theory of the firm in developing countries
+          - Contractual arrangements in developing country contexts
+          - Impacts of firm and contract characteristics on development outcomes
+    - Technology:
+        sections:
+        - Technology
+          subsections:
+          - Technological innovation and adoption in developing countries
+          - Relationship between technology and economic growth
+          - Implications for development policies
+    - Labor and Migration:
+        sections:
+        - Labor and migration
+          subsections:
+          - Determinants of labor supply and demand in developing countries
+          - Impacts of labor migration on origin and destination countries
+          - Policy implications for labor markets and migration
+    - Land:
+        sections:
+        - Land
+          subsections:
+          - Land tenure systems and their effects on development
+          - Land distribution and inequality
+          - Land reforms and their impact on development outcomes
+    - Credit and Savings:
+        sections:
+        - The supply-side of the markets for credit and savings
+          subsections:
+          - Microfinance and its role in credit markets
+          - Formal and informal credit institutions
+          - Access to credit and savings in developing countries
+        - The demand-side of the markets for credit and savings
+          subsections:
+          - Factors influencing credit and savings behavior
+          - Impact of credit and savings on household welfare
+          - Policy implications for credit and savings markets

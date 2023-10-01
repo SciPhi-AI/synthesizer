@@ -1,0 +1,87 @@
+course:
+  Introduction to Propulsion Systems Textbook:
+    chapters:
+    - Rocket Propulsion:
+        sections:
+        - Rocket Equation
+        - Gravity Loss
+        - Optimum Acceleration
+        - Rocket Staging
+        - Range of Aircraft
+        - Climb & Acceleration
+    - Orbital Mechanics:
+        sections:
+        - Single Force Center
+        - Hyperbolic Orbits
+        - Interplanetary Transfer
+    - Non-Chemical Rockets:
+        sections:
+        - Optimum Exhaust Velocity
+        - Modeling of Thermal Rocket Engines
+        - Nozzle Flow
+        - Control of Mass Flow
+        - Modeling of Rocket Nozzles
+        - Effects of Nozzle Area Ratio
+    - Propellant and Combustion:
+        sections:
+        - Types of Nozzles
+        - Connection of Flow to Nozzle Shape
+        - Solid Propellant Gas Generators
+        - Stability
+        - Grain Designs
+        - Models for Rocket Engines
+        - Flow of Reacting Gases
+        - Reacting Gases
+        - Nozzle Flow of Reacting Gases
+        - Rocket Casing Design
+        - Structural Modeling
+    - Heat Transfer and Cooling:
+        sections:
+        - Ablative Cooling
+        - Thrust Vectoring
+        - Engine Cycles
+        - Mass Estimates
+        - Heat Transfer
+        - Cooling
+    - Aircraft Propulsion:
+        sections:
+        - Configuration and Components
+        - Aircraft Engine Modeling
+        - Turbojet Engine
+        - Turbofan Engines
+        - Inlets or Diffusers
+        - Exhaust Nozzles
+        - Compressors and Fans
+        - Velocity Triangles
+        - Compressor Performance Maps
+        - Compressor Blading
+        - Design
+        - Turbines
+        - Stage Characteristics
+        - Degree of Reaction
+        - Turbine Solidity
+        - Mass Flow Limits
+        - Blade Temperature
+        - Turbine Cooling
+        - Film Cooling
+        - Thermal Stresses
+        - Impingement Cooling
+        - Compressor-Turbine Matching
+        - Gas Generators
+        - Engine Structures
+        - Centrifugal Stresses
+        - Engine Arrangements
+        - Critical Speeds and Vibration
+    - Combustors and Pollution:
+        sections:
+        - Combustors
+        - Afterburners
+        - Pollutant Formation
+        - Motivations for Control
+        - Strategies for Reduction
+        - Aircraft Engine Noise
+        - Principles
+        - Regulations
+        - Jet Noise
+        - Turbomachinery Noise
+        - Rotordynamics of the Jet Engine

@@ -1,0 +1,96 @@
+```yaml
+course:
+  textbook: 'The Politics of Nuclear Proliferation: A Comprehensive Study'
+    chapters:
+    - Chapter 1: Nuclear Weapons - Why They Matter Today
+        sections:
+        - Section 1.1: Historical Context
+        - Section 1.2: Nuclear Weapons and International Security
+        - Section 1.3: Modern Challenges and Threats
+    - Chapter 2: The Second World War, the Manhattan Project, and the Decision to Drop the Bomb
+        sections:
+        - Section 2.1: Origins of the Manhattan Project
+        - Section 2.2: The Development of Nuclear Weapons
+        - Section 2.3: The Decision to Use Nuclear Weapons
+    - Chapter 3: The Birth of the Nuclear Age - Nuclear Deterrence
+        sections:
+        - Section 3.1: Cold War and the Arms Race
+        - Section 3.2: Deterrence Theory
+        - Section 3.3: Nuclear Doctrines
+    - Chapter 4: Nuclear Proliferation and Nonproliferation, Part I
+        sections:
+        - Section 4.1: Nuclear Nonproliferation Regime
+        - Section 4.2: Nuclear Weapons States
+        - Section 4.3: Nonproliferation Challenges
+    - Chapter 5: The Origins of Overkill
+        sections:
+        - Section 5.1: Nuclear Stockpiling
+        - Section 5.2: Arms Control and Disarmament Efforts
+        - Section 5.3: Strategic Stability
+    - Chapter 6: The Berlin Crisis and Nuclear Weapons
+        sections:
+        - Section 6.1: Cold War Tensions in Berlin
+        - Section 6.2: Nuclear Posturing and Threats
+        - Section 6.3: Negotiations and Crisis Management
+    - Chapter 7: The Cuban Missile Crisis
+        sections:
+        - Section 7.1: Cuban Missile Crisis Overview
+        - Section 7.2: Nuclear Brinkmanship and Escalation
+        - Section 7.3: Lessons Learned and Implications
+    - Chapter 8: Détente and the Origins of Nuclear Arms Control
+        sections:
+        - Section 8.1: Détente in the Cold War
+        - Section 8.2: SALT and Other Arms Control Agreements
+        - Section 8.3: Verification and Compliance
+    - Chapter 9: The Nuclear Nonproliferation Treaty
+        sections:
+        - Section 9.1: NPT History and Objectives
+        - Section 9.2: Treaty Provisions and Obligations
+        - Section 9.3: NPT Review Conferences
+    - Chapter 10: Nuclear Proliferation and Nonproliferation, Part II
+        sections:
+        - Section 10.1: Proliferation Challenges and Trends
+        - Section 10.2: Nonproliferation Strategies and Initiatives
+        - Section 10.3: Case Studies of Proliferation
+    - Chapter 11: The Nuclear Balance and Nuclear Strategy
+        sections:
+        - Section 11.1: Strategic Stability and Balance of Power
+        - Section 11.2: Nuclear Deterrence and Escalation
+        - Section 11.3: Nuclear Strategy and Doctrine
+    - Chapter 12: The 1970s: Proliferation Pressures, Strategy Debates
+        sections:
+        - Section 12.1: Proliferation Concerns in the 1970s
+        - Section 12.2: Arms Control Negotiations and Agreements
+        - Section 12.3: Strategic Debates and Policy Shifts
+    - Chapter 13: How to Study / Think about Nuclear Dynamics
+        sections:
+        - Section 13.1: Analytical Frameworks for Nuclear Studies
+        - Section 13.2: Research Methods and Approaches
+        - Section 13.3: Critical Analysis of Nuclear Discourse
+    - Chapter 14: Nuclear Weapons and the End of the Cold War
+        sections:
+        - Section 14.1: Soviet Union's Collapse and Nuclear Disarmament
+        - Section 14.2: Nuclear Weapons in a Post-Cold War World
+        - Section 14.3: Implications for Global Security
+    - Chapter 15: Nuclear Dynamics after the Cold War: Rogue States, Terrorism, and Great Power Politics
+        sections:
+        - Section 15.1: Emergence of Rogue States and Nuclear Programs
+        - Section 15.2: Terrorism and Nuclear Threats
+        - Section 15.3: Great Power Rivalries and Nuclear Competition
+    - Chapter 16: Global Zero?
+        sections:
+        - Section 16.1: Vision and Challenges of Global Zero
+        - Section 16.2: Nuclear Disarmament Initiatives
+        - Section 16.3: Prospects and Obstacles
+    - Chapter 17: Nuclear Policy Simulation
+        sections:
+        - Section 17.1: Simulating Nuclear Decision-Making
+        - Section 17.2: Policy Scenarios and Role-Playing
+        - Section 17.3: Lessons from Simulation Exercises
+    - Chapter 18: The Future of Nuclear Dynamics and Policy
+        sections:
+        - Section 18.1: Emerging Technologies and Nuclear Futures
+        - Section 18.2: Multilateral Approaches to Nuclear Security
+        - Section 18.3: Policy Recommendations and Outlook
+```
+```

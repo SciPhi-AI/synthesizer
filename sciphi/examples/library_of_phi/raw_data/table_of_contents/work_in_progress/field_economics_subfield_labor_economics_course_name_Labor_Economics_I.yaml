@@ -1,0 +1,166 @@
+textbook:
+  Labor Economics: Analyzing the Dynamics of the Modern Labor Market:
+    chapters:
+      - chapter: Labor Market Facts and Trends
+        sections:
+          - section: Labor Market Data and Statistics
+          - section: Labor Market Trends
+          - section: Labor Market Inequality
+          - section: Labor Market Segmentation
+      - chapter: Basics of Labor Economics
+        sections:
+          - section: Introduction to Labor Economics
+          - section: Labor Supply and Demand
+          - section: Labor Market Equilibrium
+          - section: Labor Market Institutions
+      - chapter: Tax and Transfer Programs
+        sections:
+          - section: Income Taxes
+          - section: Government Transfer Programs
+          - section: Social Security
+          - section: Unemployment Insurance
+          - section: Welfare Programs
+      - chapter: The Life-Cycle Model
+        sections:
+          - section: Life-Cycle Hypothesis
+          - section: Saving and Retirement
+          - section: Lifecycle Labor Supply
+          - section: Intergenerational Transfers
+      - chapter: Household and Family Models
+        sections:
+          - section: Household Economics
+          - section: Marriage and Family
+          - section: Fertility and Birth Rates
+          - section: Gender Economics
+          - section: Division of Household Labor
+      - chapter: Labor Demand and Hiring Decisions
+        sections:
+          - section: Firm Hiring Decisions
+          - section: Labor Demand Elasticity
+          - section: Labor Market Monopsony
+          - section: Labor Market Discrimination
+          - section: Job Vacancy and Recruitment
+      - chapter: Market Structure and the Minimum Wage
+        sections:
+          - section: Perfect Competition
+          - section: Monopsony Power
+          - section: Monopoly Power
+          - section: Oligopoly Markets
+          - section: Effects of Minimum Wage
+          - section: Labor Market Regulation
+      - chapter: Immigration and Migration
+        sections:
+          - section: Economic Effects of Immigration
+          - section: Labor Market Impact of Immigration
+          - section: Immigration Policies
+          - section: Brain Drain and Remittances
+          - section: Citizenship and Nationality
+      - chapter: Unions and Collective Bargaining
+        sections:
+          - section: Union Membership and Bargaining Power
+          - section: Union Effects on Wages and Working Conditions
+          - section: Unionization Trends
+          - section: Labor Union Policies
+          - section: Strikes and Labor Disputes
+      - chapter: Schooling, Experience, and Earnings
+        sections:
+          - section: Returns to Education
+          - section: Human Capital Theory
+          - section: Schooling and Labor Market Outcomes
+          - section: Work Experience and Earnings
+          - section: Education Policies
+          - section: Training and Skill Development
+      - chapter: Empirical Earnings Functions
+        sections:
+          - section: Earnings Determinants
+          - section: Wage Decomposition Methods
+          - section: Earnings Inequality
+          - section: Earnings Mobility
+          - section: Earnings Estimation Techniques
+          - section: Gender Pay Gap
+      - chapter: Non-Pecuniary and Pecuniary Externalities in the Labor Market
+        sections:
+          - section: Social Interactions in the Workplace
+          - section: Occupational Choice and Social Influence
+          - section: External Effects of Education
+          - section: External Effects of Immigration
+          - section: Labor Market Policies for Externalities
+          - section: Corporate Social Responsibility
+      - chapter: Signaling and Education
+        sections:
+          - section: Signaling Theory
+          - section: Education as a Signal
+          - section: Job Market Signaling
+          - section: Credentialism
+          - section: Signaling and Discrimination
+          - section: Certification and Licensing
+      - chapter: Social Mobility and Inequality
+        sections:
+          - section: Intergenerational Mobility
+          - section: Intragenerational Mobility
+          - section: Determinants of Social Mobility
+          - section: Policies for Social Mobility
+          - section: Poverty and Income Inequality
+          - section: Wealth and Asset Inequality
+      - chapter: Peer Effects in the Labor Market
+        sections:
+          - section: Peer Influence on Education
+          - section: Peer Effects in the Workplace
+          - section: Peer Effects in Job Search
+          - section: Peer Effects in Training
+          - section: Policies for Peer Effects
+      - chapter: Multitasking and Job Performance
+        sections:
+          - section: Multitasking in the Workplace
+          - section: Task Allocation and Performance
+          - section: Multitasking and Productivity
+          - section: Multitasking and Job Satisfaction
+          - section: Technostress and Work-Life Balance
+      - chapter: Career Concerns and Incentives
+        sections:
+          - section: Promotion Incentives in the Private Sector
+          - section: Tenure and Promotion in the Public Sector
+          - section: Performance Pay and Career Concerns
+          - section: Job Security and Career Concerns
+          - section: Occupational Licensing
+          - section: Workplace Safety and Health
+      - chapter: Efficiency Wages and Labor Market Dynamics
+        sections:
+          - section: Efficiency Wage Theory
+          - section: Wage Rigidity and Efficiency Wages
+          - section: Efficiency Wages and Worker Effort
+          - section: Efficiency Wages and Worker Turnover
+          - section: Incentive Pay and Performance
+          - section: Employee Benefits and Compensation
+      - chapter: Holdups and Investments in the Labor Market
+        sections:
+          - section: Specific Investments and Holdup Problem
+          - section: Relationship-Specific Investments
+          - section: Incomplete Contracts and Holdup Problem
+          - section: Bargaining Power and Investment
+          - section: Intellectual Property Rights
+          - section: Technological Change and Automation
+      - chapter: Investment in Skills and Human Capital
+        sections:
+          - section: General Skills and Labor Market Outcomes
+          - section: On-the-Job Training
+          - section: Human Capital Accumulation
+          - section: Skill-Biased Technological Change
+          - section: Skill Investment Policies
+          - section: Lifelong Learning and Continuing Education
+      - chapter: Specific Skills, Investments, and Learning
+        sections:
+          - section: Specific Skills and Labor Market Outcomes
+          - section: Training Programs and Skill Acquisition
+          - section: Learning and Skill Development
+          - section: Skill Transferability
+          - section: Skill Investment Policies
+          - section: Professional Development and Certifications
+      - chapter: Unemployment, Non-Employment, and Labor Market Flows
+        sections:
+          - section: Unemployment Types and Measurement
+          - section: Labor Force Participation
+          - section: Job Finding and Separation Rates
+          - section: Labor Market Flows
+          - section: Unemployment Policies
+          - section: Job Search Strategies and Techniques

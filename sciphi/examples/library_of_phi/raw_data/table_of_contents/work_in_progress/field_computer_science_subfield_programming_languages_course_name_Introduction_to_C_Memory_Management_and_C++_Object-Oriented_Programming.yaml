@@ -1,0 +1,102 @@
+```yaml
+course:
+  textbook:
+    Introduction to C Memory Management and C++ Object-Oriented Programming:
+      chapters:
+      - Motivation for using C/C++ and Abstraction Hierarchy:
+          sections:
+          - Introduction to C Memory Management:
+              subsections:
+              - Overview of Memory Management
+              - Dynamic Memory Allocation
+              - Memory Leaks and Dangling Pointers
+              - Memory Management Techniques
+          - Introduction to C++:
+              subsections:
+              - Overview of Object-Oriented Programming
+              - C++ Syntax and Features
+              - Differences between C and C++
+          - Encapsulation: Classes, Namespaces, Constructors and Destructors:
+              subsections:
+              - Introduction to Classes and Objects
+              - Using Namespaces in C++
+              - Constructors and Destructors in C++
+              - Encapsulation and Data Hiding
+          - Memory Management in C++:
+              subsections:
+              - Stack vs Heap Memory
+              - Dynamic Memory Allocation in C++
+              - Memory Management Techniques in C++
+              - Garbage Collection in C++
+          - Inheritance and Polymorphism:
+              subsections:
+              - Inheritance in C++
+              - Polymorphism and Virtual Functions
+              - Multiple Inheritance and Interfaces
+      - Memory Manipulation in C:
+          sections:
+          - Pointers and Structs:
+              subsections:
+              - Introduction to Pointers
+              - Pointers and Structures
+              - Pointer Arithmetic
+          - Double Linked-List Insert:
+              subsections:
+              - Overview of Linked Lists
+              - Insertion into a Double Linked List
+              - Deletion from a Double Linked List
+              - Traversing a Double Linked List
+          - Inserting into a Linked List using a Double Pointer:
+              subsections:
+              - Introduction to Double Pointers
+              - Insertion using a Double Pointer
+              - Deletion using a Double Pointer
+              - Searching using a Double Pointer
+          - Corner Cases of Using Memory:
+              subsections:
+              - Memory Alignment and Padding
+              - Memory Overflows and Underflows
+              - Memory Corruption and Segmentation Faults
+              - Memory Leaks and Dangling Pointers in C
+      - More Advanced Memory Manipulation in C:
+          sections:
+          - Introduction to C Memory Management:
+              subsections:
+              - Overview of Memory Management in C
+              - Dynamic Memory Allocation in C
+              - Memory Management Techniques in C
+          - More C Memory Management:
+              subsections:
+              - Advanced Memory Allocation in C
+              - Memory Reallocations in C
+              - Memory Management in Multithreaded Programs
+              - Memory Profiling and Optimization
+      - Templates and Standard Library Containers:
+          sections:
+          - Templates:
+              subsections:
+              - Introduction to Templates in C++
+              - Function Templates
+              - Class Templates
+              - Template Specialization
+          - Standard Library Containers:
+              subsections:
+              - Overview of STL Containers
+              - Vector and Array Containers
+              - List and Forward List Containers
+              - Map and Set Containers
+      - Tricks of the Trade:
+          sections:
+          - Review and Discussion of Covered Topics:
+              subsections:
+              - Recap of Memory Management in C and C++
+              - Overview of Object-Oriented Programming Concepts
+              - Advanced Techniques and Best Practices
+              - Case Studies and Real-World Examples
+          - Q&A Session:
+              subsections:
+              - Common Questions and Answers
+              - Troubleshooting and Debugging Tips
+              - Additional Resources and References
+```
+```

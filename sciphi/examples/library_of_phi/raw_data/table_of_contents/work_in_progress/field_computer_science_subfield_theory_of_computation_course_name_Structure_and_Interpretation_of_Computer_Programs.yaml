@@ -1,0 +1,134 @@
+```yaml
+course:
+  Textbook for Structure and Interpretation of Computer Programs:
+    chapters:
+      - Introduction to Computation:
+          sections:
+            - Scheme Basics
+              subsections:
+                - Understanding Scheme Syntax
+                - Evaluating Scheme Expressions
+                - Scheme Variables and Data Types
+            - Procedures, Processes, and Recursion
+              subsections:
+                - Defining Procedures
+                - Recursive Processes
+                - Tail Recursion and Iteration
+            - Orders of Growth and Kinds of Procedures
+              subsections:
+                - Big O Notation
+                - Time and Space Complexity
+                - Linear and Exponential Procedures
+      - Data Abstraction:
+          sections:
+            - Higher Order Procedures
+              subsections:
+                - Function Composition
+                - Currying and Partial Application
+                - Mapping and Filtering
+            - Good Programming Practices
+              subsections:
+                - Code Readability
+                - Modularity and Reusability
+                - Error Handling and Testing
+            - Using Higher Order Procedures
+              subsections:
+                - Higher Order Procedures in Practice
+                - Examples of Higher Order Procedures
+                - Design Patterns with Higher Order Procedures
+      - Symbols and Quotation:
+          sections:
+            - Tagged Data
+              subsections:
+                - Tagging and Untagging Data
+                - Representing Complex Data Structures
+                - Advantages and Disadvantages of Tagged Data
+            - Advanced Data Types
+              subsections:
+                - Sets and Relations
+                - Vectors and Matrices
+                - Trees and Graphs
+      - Data Mutation:
+          sections:
+            - Trees, Graphs and Search
+              subsections:
+                - Binary Trees
+                - Graph Representation and Traversal
+                - Searching Algorithms
+            - Graphs and Search
+              subsections:
+                - Graph Algorithms: DFS and BFS
+                - Shortest Path Algorithms
+                - Network Flow Algorithms
+      - Environment Model:
+          sections:
+            - Object Oriented Programming I
+              subsections:
+                - Introduction to OOP
+                - Classes and Objects
+                - Inheritance and Polymorphism
+            - Object Oriented Programming II
+              subsections:
+                - Encapsulation and Information Hiding
+                - Class Hierarchies and Interfaces
+                - Design Patterns in OOP
+            - Object Oriented Programming III
+              subsections:
+                - Object-Oriented Analysis and Design
+                - Design Principles and Guidelines
+                - Case Studies in OOP
+      - Interpretation:
+          sections:
+            - The Meta-circular Evaluator
+              subsections:
+                - Understanding the Meta-circular Evaluator
+                - Implementing the Meta-circular Evaluator
+                - Evaluating Scheme Programs
+            - Lazy Evaluation
+              subsections:
+                - Lazy vs Eager Evaluation
+                - Implementing Lazy Evaluation in Scheme
+                - Lazy Evaluation in Practice
+      - Asynchronous Computing:
+          sections:
+            - Universal Machines
+              subsections:
+                - Turing Machines and Computability
+                - Universal Turing Machine
+                - Turing Machine Variants
+            - 'Geometric Folding Algorithms: Origami, Linkages, and Polyhedra'
+              subsections:
+                - Folding Algorithms for Origami
+                - Linkages and Mechanisms
+                - Polyhedra and Geometric Folding
+      - Peer-To-Peer Computing Research:
+          sections:
+            - Computability
+              subsections:
+                - Church-Turing Thesis
+                - Undecidability and Halting Problem
+                - Turing Completeness
+      - Projects:
+          sections:
+            - Project 0
+              subsections:
+                - Project 0 Description
+                - Project 0 Guidelines and Requirements
+                - Project 0 Grading Rubric
+            - Project 1
+              subsections:
+                - Project 1 Description
+                - Project 1 Guidelines and Requirements
+                - Project 1 Grading Rubric
+            - Project 2
+              subsections:
+                - Project 2 Description
+                - Project 2 Guidelines and Requirements
+                - Project 2 Grading Rubric
+            - Project 3
+              subsections:
+                - Project 3 Description
+                - Project 3 Guidelines and Requirements
+                - Project 3 Grading Rubric
+```
+```

@@ -1,0 +1,79 @@
+textbook:
+  Macroeconomic Theory I: A Comprehensive Guide to Economic Growth and Optimization
+  chapters:
+    - Growth Models and Growth Facts:
+        sections:
+        - Introduction to Growth Models and Growth Facts
+        - The Solow Growth Model
+            subsections:
+            - Assumptions and Key Concepts
+            - The Production Function
+            - The Capital Accumulation Equation
+            - Steady State and Golden Rule Equilibrium
+        - The Solow Growth Model and the Data
+            subsections:
+            - Empirical Evidence on Savings Rates and Capital Output Ratio
+            - Convergence Hypothesis and Empirical Findings
+            - Limitations and Critiques of the Solow Model
+        - The Neoclassical Growth Model
+            subsections:
+            - Assumptions and Key Concepts
+            - The Consumption-Savings Tradeoff
+            - The Ramsey-Cass-Koopmans Model
+            - Technological Progress and Steady State
+        - Growth with Overlapping Generations
+            subsections:
+            - Intergenerational Transfers and Overlapping Generations
+            - The Samuelson Overlapping Generations Model
+            - Equilibrium and Welfare Analysis
+        - Applications of the Neoclassical Growth Model
+            subsections:
+            - Optimal Taxation and Public Debt
+            - Labor Market Dynamics and Unemployment
+            - International Trade and Capital Flows
+    - Expanding Variety Models:
+        sections:
+        - Expanding Variety Models
+        - Optimization Methods
+            subsections:
+            - The Maxima and Minima
+            - The Lagrange Multiplier Method
+            - Comparative Statics and Elasticity
+        - Endogenous Growth I: AK, Spillovers, Human Capital
+            subsections:
+            - The AK Model of Endogenous Growth
+            - Knowledge Spillovers and Externalities
+            - Human Capital and Economic Growth
+        - Endogenous Growth II: R&D, Varieties vs. Quality, Directed Technological Change
+            subsections:
+            - Research and Development in Endogenous Growth Models
+            - Product Variety vs. Quality in Growth Models
+            - Directed Technological Change and Economic Growth
+        - Summary
+    - Empirics of Economic Growth:
+        sections:
+        - Empirics of Economic Growth
+            subsections:
+            - Data Sources and Measurement Issues
+            - Growth Accounting and Decomposition
+            - Cross-Country Empirical Studies
+        - Using the NGM Beyond Growth: Asset Pricing, Public Finance, Overlapping Generations
+            subsections:
+            - Asset Pricing and the Neoclassical Growth Model
+            - Public Finance and Optimal Fiscal Policy
+            - Overlapping Generations in Macroeconomics
+    - Optimization Methods:
+        sections:
+        - Optimization Methods
+            subsections:
+            - Theoretical Foundations of Optimization
+            - Unconstrained Optimization
+            - Constrained Optimization
+        - Advanced Optimization Techniques
+            subsections:
+            - Dynamic Programming and Bellman Equation
+            - Control Theory and Pontryagin's Maximum Principle
+            - Numerical Methods for Optimization
+    - Syllabus:
+        sections:
+        - Syllabus

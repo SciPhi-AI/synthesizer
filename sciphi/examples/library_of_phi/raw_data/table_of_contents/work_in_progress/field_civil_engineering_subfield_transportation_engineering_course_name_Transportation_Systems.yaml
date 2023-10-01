@@ -1,0 +1,60 @@
+textbook:
+  Transportation Systems: A Comprehensive Guide
+  chapters:
+    - 'Chapter 1: Introduction: Context, Concepts, and Characterization':
+        sections:
+        - 'Section 1.1: Definition of Transportation Systems'
+        - 'Section 1.2: Historical Evolution of Transportation Systems'
+        - 'Section 1.3: Role of Transportation Systems in Society'
+        - 'Section 1.4: Characteristics and Components of Transportation Systems'
+    - 'Chapter 2: Transportation System Components: An Internal Perspective':
+        sections:
+        - 'Section 2.1: Infrastructure Components'
+        - 'Section 2.2: Vehicle Components'
+        - 'Section 2.3: Operations Components'
+        - 'Section 2.4: Maintenance Components'
+    - 'Chapter 3: Transportation System Components: An External Perspective':
+        sections:
+        - 'Section 3.1: Economic Factors'
+        - 'Section 3.2: Social Factors'
+        - 'Section 3.3: Environmental Factors'
+        - 'Section 3.4: Legal and Regulatory Factors'
+    - 'Chapter 4: The Customer and Level-of-Service':
+        sections:
+        - 'Section 4.1: Customer Expectations in Transportation Systems'
+        - 'Section 4.2: Measurement of Level-of-Service'
+        - 'Section 4.3: Factors Affecting Level-of-Service'
+        - 'Section 4.4: Improving Level-of-Service'
+    - 'Chapter 5: Models and Frameworks':
+        sections:
+        - 'Section 5.1: Transportation System Modeling'
+        - 'Section 5.2: Frameworks for Analyzing Transportation Systems'
+        - 'Section 5.3: Mathematical Models for Transportation Systems'
+    - 'Chapter 6: Rail Freight':
+        sections:
+        - 'Section 6.1: Role of Rail Freight in Transportation Systems'
+        - 'Section 6.2: Rail Freight Infrastructure'
+        - 'Section 6.3: Operations and Management of Rail Freight'
+        - 'Section 6.4: Challenges and Opportunities in Rail Freight'
+    - 'Chapter 7: The Logistics System and Freight Level-of-Service':
+        sections:
+        - 'Section 7.1: Supply Chain Management'
+        - 'Section 7.2: Freight Transportation in Logistics Systems'
+        - 'Section 7.3: Level-of-Service in Freight Transportation'
+        - 'Section 7.4: Improving Freight Level-of-Service'
+    - 'Chapter 8: Networks':
+        sections:
+        - 'Section 8.1: Transportation Network Design'
+        - 'Section 8.2: Network Topology and Connectivity'
+        - 'Section 8.3: Network Performance Evaluation'
+        - 'Section 8.4: Optimization of Transportation Networks'
+    - 'Chapter 9: Article for Discussion':
+        sections:
+        - 'Section 9.1: Recent Developments in Transportation Systems'
+        - 'Section 9.2: Case Studies in Transportation Systems'
+        - 'Section 9.3: Emerging Technologies in Transportation Systems'
+    - 'Chapter 10: Transportation Systems: 30 Key Points':
+        sections:
+        - 'Section 10.1: Key Concepts and Principles in Transportation Systems'
+        - 'Section 10.2: Challenges and Solutions in Transportation Systems'
+        - 'Section 10.3: Future Trends in Transportation Systems'

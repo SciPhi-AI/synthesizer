@@ -1,0 +1,80 @@
+```yaml
+course:
+  Textbook on Program Analysis:
+    chapters:
+      - Introduction to Program Analysis:
+          sections:
+            - Static and Dynamic Analysis:
+                subsections:
+                  - Overview of Static and Dynamic Analysis Techniques
+            - Abstract Interpretation:
+                subsections:
+                  - A Semantics-based Tool for Program Analysis
+            - Static Analysis of Programs:
+                subsections:
+                  - A Unified Lattice Model
+            - Approximation of Fixpoints:
+                subsections:
+                  - Construction or Approximation
+      - Advanced Techniques in Program Analysis:
+          sections:
+            - Dynamic Analysis:
+                subsections:
+                  - Chaining Approach for Software Test Data Generation
+            - Path Profiling:
+                subsections:
+                  - Efficient Path Profiling
+            - Failure-inducing Input:
+                subsections:
+                  - Simplifying and Isolating Failure-inducing Input
+            - Program Invariants:
+                subsections:
+                  - Dynamically Discovering Likely Program Invariants
+      - Type Systems and Type Inference:
+          sections:
+            - Type-schemes:
+                subsections:
+                  - Principal Type-schemes for Functional Programs
+            - Polymorphic Lambda Calculus:
+                subsections:
+                  - Introduction to Part II, Polymorphic Lambda Calculus
+      - Advanced Topics in Program Analysis:
+          sections:
+            - Program Understanding:
+                subsections:
+                  - Lackwit: A Program Understanding Tool based on Type Inference
+            - Points-to Analysis:
+                subsections:
+                  - Points-to Analysis
+            - Model Checking:
+                subsections:
+                  - The Spin Model Checker
+            - Symbolic Model Checking:
+                subsections:
+                  - Optimizing Symbolic Model Checking for Statecharts
+            - Concurrent Java Programs:
+                subsections:
+                  - Constructing Compact Models of Concurrent Java Programs
+      - Project and Research in Program Analysis:
+          sections:
+            - Student Projects:
+                subsections:
+                  - Student Project Presentations
+            - Semester-long Project:
+                subsections:
+                  - Project Description and Timetable
+            - Research Contribution:
+                subsections:
+                  - Types of Acceptable Projects
+            - Group Projects:
+                subsections:
+                  - List of Specific Potentials
+            - Student Final Reports:
+                subsections:
+                  - Matthew Tschantz, Chen Xiao, and Vineet Sinha
+                  - Greg Dennis and Robert Seater
+                  - Philip Guo and Stephen McCamant
+                  - Brad Howes and Anonymous
+                  - Shay Artzi, Adam Kiezun, Carlos Pacheco, and Jeff Perkins
+```
+```

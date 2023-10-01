@@ -1,0 +1,133 @@
+textbook:
+  Separation Processes: A Comprehensive Guide
+  chapters:
+    - Introduction:
+        sections:
+        - Course overview
+        - Importance of separation processes
+        - Overview of separation techniques
+    - Flash Calculations:
+        sections:
+        - Definition and principles of flash calculations
+        - Types of flash calculations
+        - Calculation methods
+        - Flash calculations in industry
+    - Cascades, Distillation Columns:
+        sections:
+        - Overview of cascades and distillation columns
+        - Design principles and considerations
+        - Types of distillation columns
+        - Tray design and selection
+        - Column troubleshooting and optimization
+    - McCabe-Thiele Analysis:
+        sections:
+        - Introduction to McCabe-Thiele method
+        - Construction of equilibrium curve
+        - Determination of number of theoretical stages
+        - Calculation of feed stages
+        - Advanced McCabe-Thiele applications
+    - Multiple Feeds and Side Streams:
+        sections:
+        - Handling multiple feed streams
+        - Side stream extraction
+        - Process optimization
+        - Strategies for handling variable feed compositions
+    - Multicomponent Distillation:
+        sections:
+        - Distillation of mixtures with more than two components
+        - Azeotropic distillation
+        - Energy considerations
+        - Advanced multicomponent distillation techniques
+    - Column Design:
+        sections:
+        - Column internals and trays
+        - Packing materials
+        - Column diameter and height
+        - Pressure drop calculations
+        - Advanced column design techniques
+    - Packed Column Distillation:
+        sections:
+        - Introduction to packed column distillation
+        - Types of packing materials
+        - Efficiency and capacity of packed columns
+        - Packed column troubleshooting and optimization
+    - Other Equilibrium Processes:
+        sections:
+        - Overview of other equilibrium-based separation processes
+        - Liquid-liquid extraction
+        - Solid-liquid extraction
+        - Supercritical fluid extraction
+    - Distillation Summary and Review:
+        sections:
+        - Overview of distillation concepts
+        - Review of key calculations and methods
+        - Case studies in distillation
+        - Recent advances in distillation technology
+    - Membrane Processes:
+        sections:
+        - Introduction to membrane processes
+        - Types of membranes
+        - Membrane separation mechanisms
+        - Membrane materials and fabrication techniques
+    - Tubular Membranes:
+        sections:
+        - Design and operation of tubular membranes
+        - Applications of tubular membranes
+        - Tubular membrane module design
+        - Recent developments in tubular membrane technology
+    - Design of Membrane Systems:
+        sections:
+        - Membrane module design
+        - Membrane system optimization
+        - Scale-up considerations
+        - Advances in membrane system design
+    - Electrodialysis and Electrophoresis:
+        sections:
+        - Principles and applications of electrodialysis
+        - Electrophoresis in separation processes
+        - Electrodialysis system design and operation
+        - Electrophoresis advancements and emerging applications
+    - Adsorption:
+        sections:
+        - Adsorption principles and mechanisms
+        - Types of adsorbents
+        - Adsorption isotherms
+        - Adsorption process optimization
+        - Adsorption in environmental applications
+    - Equilibrium and Kinetic and Mass Transfer Effects:
+        sections:
+        - Equilibrium and rate-based models in adsorption
+        - Mass transfer effects on adsorption
+        - Kinetic models for adsorption processes
+        - Recent developments in adsorption kinetics
+    - Chromatography:
+        sections:
+        - Introduction to chromatography
+        - Types of chromatographic separations
+        - Chromatographic techniques and equipment
+        - Chromatography column selection and troubleshooting
+        - Advances in chromatography technology
+    - Design of Chromatography Systems:
+        sections:
+        - Design considerations for chromatography systems
+        - Column packing and bed height
+        - Optimization of chromatography systems
+        - High-performance liquid chromatography (HPLC)
+    - Examples of Chromatography:
+        sections:
+        - Case studies of chromatographic separations
+        - Industrial applications of chromatography
+        - Preparative chromatography
+        - Recent advances in chromatography applications
+    - Review Equilibrium Processes:
+        sections:
+        - Summary and review of equilibrium-based separation processes
+        - Key concepts and calculations
+        - Comparison of equilibrium-based techniques
+        - Future trends in equilibrium-based separation processes
+    - Review Rate Processes:
+        sections:
+        - Summary and review of rate-based separation processes
+        - Key concepts and calculations
+        - Comparison of rate-based techniques
+        - Emerging applications of rate-based separation processes

@@ -1,0 +1,87 @@
+textbook:
+  Chemical Engineering Thermodynamics: A Comprehensive Guide
+  chapters:
+    - Fundamental Principles of Chemical Engineering Thermodynamics:
+        sections:
+        - Course Outline
+        - Definitions
+        - Nomenclature
+        - Exams Plus Homework Policy
+        - Approach to Solving Problems
+    - Postulatory Approach and the First Law Concepts:
+        sections:
+        - 1st Law for Open Systems
+        - Tank Blowdown and Filling - Class Examples
+        - Problem 3.9
+    - Second Law Concepts and Entropy:
+        sections:
+        - Reversible Heat Engines
+        - Carnot Efficiency
+        - Entropy
+        - Clausius Theorem
+        - Reversibility
+    - Availability and Exergy Concepts:
+        sections:
+        - Heat Integration and Pinch Analysis
+        - Power Cycle Analysis
+        - Calculus of Thermodynamics
+        - Gibbs Fundamental Equation
+    - Equilibrium Criteria and Stability:
+        sections:
+        - Equilibrium Criteria Concepts and Applications
+        - Phase Rule
+        - Stability Criteria, Concepts and Applications
+        - Critical States
+    - Pure Fluid Properties:
+        sections:
+        - Theorem of Corresponding States
+        - Constitutive Property Models
+        - Real Fluid Properties
+        - PVTN Equations of State
+    - Mixtures and Ideal Solutions:
+        sections:
+        - Mixtures
+        - PVTN EOSs
+        - Partial Molar Properties
+        - Gibbs-Duhem Relation
+        - Ideal Gas Mixtures and Ideal Solutions
+    - Ideal Solution Conditions and Excess Properties:
+        sections:
+        - Ideal Solution Conditions
+        - Excess Properties
+        - Activity and Activity Coefficients
+        - ΔGEX-γi Models
+    - Review for Exam 1:
+        sections:
+        - Review for Exam 1
+    - Fundamental Principles of Quantum and Classical Statistical Mechanics:
+        sections:
+        - N-body Problem
+        - Phase Space
+        - Statistics and Distribution Functions
+        - Boltzmann Distribution
+    - Postulates of Statistical Mechanics and Gibbs Ensembles:
+        sections:
+        - Gibbs Ensembles - Micro-canonical and Canonical
+        - States of System
+        - Probabilities
+    - Computation of Ideal Gas Properties from Intramolecular Effects:
+        sections:
+        - Translation, Rotation, and Vibration using Statistical Mechanics I
+        - Translation, Rotation, and Vibration using Statistical Mechanics II
+    - Classical Statistical Mechanics and Ideal Gases:
+        sections:
+        - Hamiltonian and Ideal Gases
+        - Factoring the Partition Function with the Semi-classical Approximation
+        - PVTN Properties via Configuration Integral from Intermolecular Effects
+        - Grand Canonical Ensemble I
+    - Gibbs Ensembles and Intermolecular Forces:
+        sections:
+        - Semi-classical Approximation
+        - PVTN Properties via Configuration Integral from Intermolecular Effects
+        - Grand Canonical Ensemble II - Examples
+        - Intermolecular Forces and Potentials
+    - Virial Equation of State and Beyond:
+        sections:
+        - Virial Equation of State
+        - Beyond the Virial Equation of State

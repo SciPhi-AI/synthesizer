@@ -1,0 +1,100 @@
+textbook:
+  Quantum Physics: A Comprehensive Introduction
+  chapters:
+    - Introduction to Quantum Mechanics:
+        sections:
+        - Basic Features of Quantum Mechanics:
+            subsections:
+            - Linearity
+            - Complex Numbers
+            - Non-deterministic Behavior
+            - Superposition
+            - Entanglement
+            - Wave-particle Duality
+        - Experimental Basis of Quantum Physics:
+            subsections:
+            - Two-slit Experiments
+            - Mach-Zehnder Interferometer
+            - Elitzur-Vaidman Bombs
+            - Photoelectric Effect
+            - Compton Scattering
+            - de Broglie Wavelength
+            - Quantum Tunneling
+        - Wave Mechanics:
+            subsections:
+            - Galilean Transformation of de Broglie Wavelength
+            - Wave-packets and Group Velocity
+            - Matter Wave for a Particle
+            - Momentum and Position Operators
+            - Schrödinger Equation
+            - Time-independent Schrödinger Equation
+            - Time-dependent Schrödinger Equation
+        - Interpretation of Quantum Mechanics:
+            subsections:
+            - Probability Density
+            - Probability Current
+            - Current Conservation
+            - Hermitian Operators
+            - Eigenvalues and Eigenfunctions
+            - Measurement in Quantum Mechanics
+        - Expectation Values and Uncertainty:
+            subsections:
+            - Expectation Values of Operators
+            - Time Evolution of Wave-packets
+            - Fourier Transforms
+            - Parseval Theorem
+            - Uncertainty Relation
+            - Heisenberg's Uncertainty Principle
+        - Quantum Physics in One-dimensional Potentials:
+            subsections:
+            - Stationary States
+            - Boundary Conditions
+            - Particle on a Circle
+            - Infinite Square Well
+            - Finite Square Well
+            - Semiclassical Approximations
+            - Numerical Solution by the Shooting Method
+            - Delta Function Potential
+            - Simple Harmonic Oscillator
+            - Reflection and Transmission Coefficients
+            - Ramsauer Townsend Effect
+            - 1D Scattering and Phase Shifts
+            - Levinson’s Theorem
+            - Quantum Tunneling in One-dimensional Potentials
+        - Angular Momentum and Central Potentials:
+            subsections:
+            - Resonances and Breit-Wigner Distribution
+            - Central Potentials
+            - Algebra of Angular Momentum
+            - Legendre Polynomials
+            - Hydrogen Atom
+            - Energy Levels Diagram
+            - Virial Theorem
+            - Circular Orbits and Eccentricity
+            - Discovery of Spin
+            - Addition of Angular Momenta
+            - Fine Structure of Hydrogen Atom
+            - Zeeman Effect
+            - Paschen-Back Effect
+    - Katrina Practicum:
+        sections:
+        - Introduction to Katrina Practicum
+        - Work Session: Background Research
+        - New Orleans Context
+        - Work Session: Background Research
+        - New Orleans Environmental History/Context
+        - Data Report-back
+        - Work Session
+        - Survey Development
+        - Work Session
+        - Housing Group Presentation
+        - Work Session: Trip Presentation
+        - Work Session: Trip Presentation
+        - Work Session: Trip Presentation
+        - Site Visit
+        - Racism, Society, and New Orleans
+        - Work Session
+        - Update on Student Projects
+        - Check-in/Work Session
+        - Work Session
+        - Final Presentation

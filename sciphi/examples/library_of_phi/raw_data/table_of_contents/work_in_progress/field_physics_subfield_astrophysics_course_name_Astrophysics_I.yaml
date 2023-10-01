@@ -1,0 +1,111 @@
+textbook:
+  Astrophysics for Beginners:
+    chapters:
+    - Introduction:
+        sections:
+        - Kepler Problem
+          subsections:
+          - History of Johannes Kepler
+          - Laws of Planetary Motion
+        - Stellar Distances
+          subsections:
+          - Parallax Method
+          - Cepheid Variables
+        - Color-color Diagrams
+          subsections:
+          - HR Diagram
+          - Spectral Classification
+    - Saha Equation:
+        sections:
+        - Radiation
+          subsections:
+          - Electromagnetic Spectrum
+          - Radiative Transfer
+        - Equations of Stellar Structure
+          subsections:
+          - Hydrostatic Equilibrium
+          - Energy Transport Mechanisms
+        - Convection
+          subsections:
+          - Convective Instability
+          - Mixing-Length Theory
+    - Nuclear Reactions in Stars:
+        sections:
+        - Nuclear Reaction Rates
+          subsections:
+          - Cross Section
+          - Reaction Rates
+        - H/He Burning
+          subsections:
+          - Proton-Proton Chain
+          - CNO Cycle
+        - Stellar Evolution: Lower Main Sequence
+          subsections:
+          - Birth of a Star
+          - Main Sequence Evolution
+    - Degenerate Matter and White Dwarfs:
+        sections:
+        - S-C Limit
+          subsections:
+          - Chandrasekhar Limit
+          - White Dwarf Stability
+        - Degenerate Matter
+          subsections:
+          - Fermi Energy
+          - Electron Degeneracy Pressure
+        - White Dwarf Cooling
+          subsections:
+          - Cooling Models
+          - Cooling Timescales
+    - Evolution of Massive Stars:
+        sections:
+        - Upper Main Sequence: Evolution of Massive Stars
+          subsections:
+          - Massive Star Formation
+          - Hertzsprung-Russell Diagram for Massive Stars
+        - Supernovae
+          subsections:
+          - Core-collapse Supernovae
+          - Type Ia Supernovae
+        - Neutron Stars
+          subsections:
+          - Neutron Star Formation
+          - Pulsars
+    - Sun and Stellar Structure:
+        sections:
+        - Sun as a Star
+          subsections:
+          - Solar Interior
+          - Solar Atmosphere
+        - Gravitational Radiation
+          subsections:
+          - Gravitational Waves
+          - Binary Pulsars
+        - Close Binaries
+          subsections:
+          - Mass Transfer
+          - Accretion Disks
+    - Variable Stars and Compact Objects:
+        sections:
+        - Cepheid Variables
+          subsections:
+          - Variable Star Classification
+          - Period-Luminosity Relationship
+        - Black Holes
+          subsections:
+          - Schwarzschild Black Holes
+          - Accretion onto Black Holes
+        - Star Formation
+          subsections:
+          - Protostars
+          - Molecular Clouds
+    - Interstellar Medium:
+        sections:
+        - Gas in the Interstellar Medium
+          subsections:
+          - Atomic Gas
+          - Molecular Clouds
+        - Shocks
+          subsections:
+          - Shock Waves
+          - Supernova Remnants

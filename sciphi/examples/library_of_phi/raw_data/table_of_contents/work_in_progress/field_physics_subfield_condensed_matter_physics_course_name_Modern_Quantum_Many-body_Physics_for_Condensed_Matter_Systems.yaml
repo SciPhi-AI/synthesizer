@@ -1,0 +1,78 @@
+```
+course:
+  Modern Quantum Many-body Physics for Condensed Matter Systems:
+    textbook:
+      title: "Quantum Many-Body Physics: From Condensed Matter to Quantum Computation"
+      author: "John Smith"
+      chapters:
+        - Introduction to Condensed Matter Physics:
+            sections:
+              - Crystal Structure
+              - Band Structure
+              - Bloch's Theorem
+              - Brillouin Zones
+              - Fermi Surface
+        - Second Quantization:
+            sections:
+              - Creation and Annihilation Operators
+              - Occupation Number Representation
+              - Fock Space
+              - Occupation Number Formalism
+              - Occupation Number Operators
+        - Green's Function Formalism:
+            sections:
+              - Single-particle Green's Function
+              - Retarded and Advanced Green's Functions
+              - Dyson's Equation
+              - Many-body Perturbation Theory
+              - Self-energy
+        - Mean Field Theory:
+            sections:
+              - Hartree-Fock Approximation
+              - Bogoliubov-de Gennes Equations
+              - Mean Field Hamiltonian
+              - Mean Field Ground State
+              - Mean Field Phase Transitions
+        - Superconductivity:
+            sections:
+              - BCS Theory
+              - Cooper Pairs
+              - Energy Gap Equation
+              - Meissner Effect
+              - Type I and Type II Superconductors
+        - Quantum Phase Transitions:
+            sections:
+              - Landau Theory
+              - Order Parameter
+              - Critical Exponents
+              - Universality Classes
+              - Quantum Criticality
+        - Topological Insulators and Superconductors:
+            sections:
+              - Topological Invariants
+              - Bulk-Edge Correspondence
+              - Quantum Hall Effect
+              - Chern Numbers
+              - Majorana Fermions
+        - Strongly Correlated Systems:
+            sections:
+              - Hubbard Model
+              - Mott Insulators
+              - Anderson Localization
+              - Quantum Magnetism
+              - Kondo Effect
+              - Heavy Fermion Systems
+        - Quantum Transport:
+            sections:
+              - Landauer-Büttiker Formalism
+              - Conductance Quantization
+              - Ballistic Transport
+              - Anderson Localization
+              - Quantum Interference
+        - Topological Quantum Computation:
+            sections:
+              - Anyons
+              - Braiding Statistics
+              - Topological Quantum Gates
+              - Topological Quantum Memory
+```

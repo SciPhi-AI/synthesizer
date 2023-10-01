@@ -1,0 +1,136 @@
+textbook:
+  Fundamentals of Energy in Buildings: A Comprehensive Guide
+  chapters:
+    - Introduction to Energy in Buildings:
+        sections:
+        - Introduction
+        - Energy
+    - Energy Conservation in Buildings:
+        sections:
+        - Conservation of Energy
+        - Heat Transfer
+          subsections:
+          - Conduction
+          - Convection
+          - Radiation
+        - Moisture Transfer in Walls
+    - Heating and Cooling Systems:
+        sections:
+        - Heating Systems
+          subsections:
+          - Forced Air Systems
+          - Radiant Heating Systems
+          - Heat Pumps
+        - Cooling Systems
+          subsections:
+          - Air Conditioning Systems
+          - Evaporative Cooling Systems
+    - Natural Ventilation:
+        sections:
+        - Ventilation Systems
+          subsections:
+          - Mechanical Ventilation
+          - Natural Ventilation
+        - Natural Ventilation Techniques
+          subsections:
+          - Stack Ventilation
+          - Wind-driven Ventilation
+    - Transients and Moist Air Mixtures:
+        sections:
+        - Transients
+        - Moist Air Mixtures
+          subsections:
+          - Psychrometric Properties
+          - Moisture Load Calculations
+    - Psychrometrics:
+        sections:
+        - Psychrometric Properties
+        - Psychrometric Charts
+        - Psychrometric Calculations
+    - Applications of Energy in Buildings:
+        sections:
+        - Building Energy Analysis
+          subsections:
+          - Energy Modeling
+          - Energy Audit
+        - Energy Efficiency Measures
+          subsections:
+          - Insulation Techniques
+          - Lighting Efficiency
+          - HVAC System Optimization
+    - Heat Transfer in Buildings:
+        sections:
+        - Introduction to Heat Transfer
+        - Conductive Heat Transfer
+          subsections:
+          - Fourier's Law
+          - Thermal Resistance
+          - Heat Conduction in Solids
+        - Convective Heat Transfer
+          subsections:
+          - Natural Convection
+          - Forced Convection
+        - Radiative Heat Transfer
+          subsections:
+          - Blackbody Radiation
+          - Stefan-Boltzmann Law
+          - Radiative Heat Transfer in Building Envelopes
+    - Human Comfort in Buildings:
+        sections:
+        - Thermal Comfort
+          subsections:
+          - ASHRAE 55 Standard
+          - Adaptive Model
+        - Indoor Air Quality
+          subsections:
+          - Pollutant Sources
+          - Ventilation Requirements
+    - Solar Energy in Buildings:
+        sections:
+        - Solar Radiation
+          subsections:
+          - Solar Geometry
+          - Solar Irradiance
+          - Solar Angles
+        - Solar Energy Systems
+          subsections:
+          - Photovoltaic Systems
+          - Solar Thermal Systems
+          - Passive Solar Systems
+    - The Second Law of Thermodynamics:
+        sections:
+        - Entropy
+        - Cogeneration Systems
+          subsections:
+          - Combined Heat and Power (CHP)
+          - Cogeneration Technologies
+    - Heat Pumps and Refrigeration Cycles:
+        sections:
+        - Heat Pumps
+          subsections:
+          - Vapor Compression Cycle
+          - Absorption Cycle
+        - Refrigeration Cycles
+          subsections:
+          - Vapor Compression Refrigeration
+          - Absorption Refrigeration
+    - Building Design and Fabrication:
+        sections:
+        - Building Design Principles
+          subsections:
+          - Energy-efficient Design Strategies
+          - Building Envelope Design
+          - Daylighting Design
+        - Digital Design Fabrication
+          subsections:
+          - Building Information Modeling (BIM)
+          - Computer-Aided Design (CAD)
+          - Digital Fabrication Techniques
+    - Review and Assessment:
+        sections:
+        - Review of Course Topics
+        - Assessment Methods
+          subsections:
+          - Quizzes
+          - Assignments
+          - Exams

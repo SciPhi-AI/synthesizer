@@ -1,0 +1,131 @@
+```yaml
+textbook:
+  'Sensory-Neural Systems: Spatial Orientation from End Organs to Behavior and Adaptation':
+    chapters:
+      - Introduction and organization, review of peripheral physiology:
+          sections:
+            - The Vestibular System in Everyday Life
+              subsections:
+                - Structure and function of the vestibular system
+                - Role of the vestibular system in spatial orientation
+                - Vestibular system disorders and their impact on daily life
+            - SCC afferent response dynamics
+              subsections:
+                - Physiology of SCC afferents
+                - Encoding of head movements by SCC afferents
+                - Adaptation and plasticity of SCC afferent responses
+            - Otolith afferent response; discharge variations
+              subsections:
+                - Physiology of otolith afferents
+                - Coding of linear acceleration and head tilt by otolith afferents
+                - Modulation of otolith afferent firing rates
+      - Canal-otolith interaction, velocity storage, and modeling:
+          sections:
+            - Canal-otolith interaction
+              subsections:
+                - Mechanisms of interaction between canal and otolith signals
+                - Role of canal-otolith interaction in spatial orientation
+            - Velocity storage
+              subsections:
+                - Neural mechanisms underlying velocity storage
+                - Contribution of velocity storage to perception of self-motion
+                - Disorders associated with abnormal velocity storage
+            - Modeling
+              subsections:
+                - Mathematical models of spatial orientation
+                - Simulations of canal-otolith interactions
+                - Applications of modeling in understanding spatial orientation
+      - Efferents:
+          sections:
+            - Efferents in sensory-neural systems
+              subsections:
+                - Anatomy and distribution of efferent pathways
+                - Function and role of efferents in sensory processing
+                - Modulation of sensory signals by efferent pathways
+      - Noise/thresholds:
+          sections:
+            - Noise in sensory-neural systems
+              subsections:
+                - Sources of noise in sensory systems
+                - Impact of noise on sensory signal processing
+                - Strategies to mitigate the effects of noise
+            - Thresholds in sensory-neural systems
+              subsections:
+                - Determination and measurement of sensory thresholds
+                - Factors influencing sensory thresholds
+                - Clinical implications of sensory thresholds
+      - Eye movement control system:
+          sections:
+            - Control of eye movements
+              subsections:
+                - Neural circuits involved in eye movement control
+                - Generation and coordination of different types of eye movements
+                - Disorders affecting eye movement control
+      - Active-passive responses and early processing of brainstem signals:
+          sections:
+            - Active and passive responses in sensory-neural systems
+              subsections:
+                - Distinction between active and passive responses
+                - Role of active and passive responses in spatial orientation
+                - Neural mechanisms underlying active and passive responses
+            - Early processing of brainstem signals
+              subsections:
+                - Neural pathways and structures involved in early processing
+                - Encoding and transformation of sensory signals in the brainstem
+                - Contribution of early processing to spatial orientation
+      - Cerebellum and adaptation:
+          sections:
+            - Role of the cerebellum in adaptation
+              subsections:
+                - Anatomy and connectivity of the cerebellum
+                - Role of the cerebellum in motor learning and adaptation
+                - Impairments in adaptation associated with cerebellar dysfunction
+      - Motion sickness:
+          sections:
+            - Causes and effects of motion sickness
+              subsections:
+                - Physiological and psychological factors contributing to motion sickness
+                - Symptoms and consequences of motion sickness
+                - Strategies for prevention and treatment of motion sickness
+      - Vestibulo spinal pathways, locomotion:
+          sections:
+            - Vestibulo spinal pathways
+              subsections:
+                - Anatomy and function of vestibulo spinal pathways
+                - Contribution of vestibulo spinal pathways to postural control and locomotion
+                - Disorders affecting vestibulo spinal pathways
+            - Locomotion in sensory-neural systems
+              subsections:
+                - Neural control of locomotion
+                - Role of sensory systems in the regulation of locomotion
+                - Adaptive mechanisms involved in locomotion
+      - Place and direction and path integration; limbic head direction, place and grid cells:
+          sections:
+            - Place and direction in sensory-neural systems
+              subsections:
+                - Neural mechanisms underlying place and direction coding
+                - Role of place and direction information in spatial navigation
+                - Experimental techniques for studying place and direction coding
+            - Path integration in sensory-neural systems
+              subsections:
+                - Neural mechanisms of path integration
+                - Role of path integration in spatial orientation and navigation
+                - Computational models of path integration
+            - Limbic head direction, place, and grid cells
+              subsections:
+                - Identification and characteristics of limbic head direction cells
+                - Function and role of limbic head direction cells in spatial navigation
+                - Relationship between limbic head direction, place, and grid cells
+      - Space and aviation applications:
+          sections:
+            - Applications of sensory-neural systems in space and aviation
+              subsections:
+                - Vestibular adaptation in microgravity environments
+                - Impact of sensory-neural systems on pilot performance
+                - Designing sensory interfaces for aerospace applications
+            - Human factors in space and aviation
+              subsections:
+                - Psychological and physiological challenges in space and aviation
+                - Human-machine interfaces and their role in safety and performance
+                - Training and countermeasures for space and aviation personnel
+```

@@ -1,0 +1,56 @@
+```yaml
+textbook:
+  System Design and Analysis: A Comprehensive Guide based on AD and Complexity Theories:
+    chapters:
+      - Introduction to Axiomatic Design:
+          sections:
+          - Understanding the Principles of Axiomatic Design
+          - Importance of Information Content in System Design
+          - Ensuring Robustness in System Design
+          - Designing Multi-Functional Requirements
+      - Design of Systems:
+          sections:
+          - Guest Lecture: Insights from Industry Experts
+          - Applying Axiomatic Design Principles to System Design
+      - Design of Manufacturing Systems:
+          sections:
+          - Axiomatic Design of Manufacturing Systems
+          - Complexity I: Understanding the Nature of Complexity in Manufacturing
+          - Complexity II: Advanced Concepts in Complexity Theory
+          - Case Studies: Applying Axiomatic Design to Real-World Manufacturing Systems
+      - Reduction of Complexity:
+          sections:
+          - Reduction of Complexity with Geometric Functional Periodicity
+          - Reduction of Complexity in Materials through Functional Periodicity
+          - Case Studies: Practical Applications of Complexity Reduction
+      - Complexity of Socio-Economic Political Systems:
+          sections:
+          - Understanding the Complexity of Socio-Economic Political Systems
+          - Application of Functional Periodicity in Socio-Economic Political Systems
+          - Case Studies: Analyzing Complex Systems in the Socio-Economic Political Context
+      - Cost Engineering in Axiomatic Design:
+          sections:
+          - Understanding the Role of Cost Engineering in Axiomatic Design
+          - Cost Analysis Techniques in System Design
+          - Exam 2: Assessing Cost Engineering Skills
+      - Project Presentations:
+          sections:
+          - Preparing for Project Presentations
+          - Strategies for Effective Communication in Project Presentations
+          - Showcasing the Application of Axiomatic Design in Real-World Projects
+    subsections:
+      - Introduction to Axiomatic Design:
+          - Information Content and Robustness: Key Principles in Axiomatic Design
+          - Multi-FR Design: Designing Systems with Multiple Functional Requirements
+      - Design of Manufacturing Systems:
+          - Axiomatic Design of Manufacturing Systems: Applying AD Principles to Manufacturing
+          - Complexity I: Understanding the Nature of Complexity in Manufacturing Systems
+          - Complexity II: Advanced Concepts in Complexity Theory for Manufacturing Systems
+      - Reduction of Complexity:
+          - Reduction of Complexity with Geometric Functional Periodicity: Techniques and Case Studies
+          - Reduction of Complexity in Materials through Functional Periodicity: Applications and Examples
+      - Cost Engineering in Axiomatic Design:
+          - Exam 2: Assessing Cost Engineering Skills through a Comprehensive Examination
+      - Project Presentations:
+          - Project Presentations: Showcasing the Application of Axiomatic Design in Real-World Projects
+```

@@ -1,0 +1,46 @@
+course:
+  textbook: 
+    title: "Housing and Land Use in Rapidly Urbanizing Regions: Exploring Theory and Practice"
+    chapters:
+      - chapter1:
+          title: "Current Lenses on the Phenomenon"
+          sections:
+            - section1:
+                title: "Introduction to Ho Chi Minh City cases: The urban periphery and urban core"
+            - section2:
+                title: "The urban economics lens about urban land and housing"
+            - section3:
+                title: "Political and sociological theory lens about urban land and housing"
+            - section4:
+                title: "Legal theory lens about property rights"
+            - section5:
+                title: "Everyday practices in public space: Way making, street vending"
+            - section6:
+                title: "Critical cartography and the unmasking of spatial relations"
+                subsections:
+                  - subsection1:
+                      title: "The construction of new property relations"
+                  - subsection2:
+                      title: "SLAB research"
+      - chapter2:
+          title: "Land Titling and Regularization"
+          sections:
+            - section1:
+                title: "Land titling and regularization"
+            - section2:
+                title: "Land trusts and affordable housing"
+      - chapter3:
+          title: "Guest speaker from Dudley Street Neighborhood Initiative: May Louie"
+          sections:
+            - section1:
+                title: "A community's power of eminent domain"
+      - chapter4:
+          title: "Land Takings and Compensation: How to Make Change, Social Cognition"
+          sections:
+            - section1:
+                title: "Land takings and compensation: How to make change, social cognition"
+      - chapter5:
+          title: "Final Class: Presentations"
+          sections:
+            - section1:
+                title: "Final Class: Presentations"

@@ -1,0 +1,66 @@
+textbook:
+  Knowledge-Based Applications Systems: A Comprehensive Guide
+  chapters:
+    - Introduction and Background:
+        sections:
+        - Course Organization
+        - Spirit of the Undertaking
+    - Tell it What to Know; Search:
+        sections:
+        - 'Origins of KBS: MACSYMA and DENDRAL'
+        - 'Application Analysis Case Study: Case Introduction'
+        - 'Application Analysis Case Study: Class Discussion'
+    - Rule-Based Systems:
+        sections:
+        - Rule-Based Systems
+    - Semantic Nets:
+        sections:
+        - Semantic Nets
+    - Logic:
+        sections:
+        - Logic
+    - Frame-Based Systems:
+        sections:
+        - Frame-Based Systems
+    - Uncertain Reasoning, Models of Rationality:
+        sections:
+        - Uncertain Reasoning, Models of Rationality
+    - Blackboards:
+        sections:
+        - Blackboards
+    - Pragmatic Issues in Knowledge Acquisition:
+        sections:
+        - Pragmatic Issues in Knowledge Acquisition
+    - Summary of Knowledge Representation:
+        sections:
+        - Summary of Knowledge Representation
+    - Causal Reasoning:
+        sections:
+        - Causal Reasoning
+    - Model-Based Reasoning:
+        sections:
+        - Model-Based Reasoning
+    - Case-Based Reasoning:
+        sections:
+        - Case-Based Reasoning
+    - Reasoning with Constraints:
+        sections:
+        - Reasoning with Constraints
+    - Reasoning about Physical Systems:
+        sections:
+        - Reasoning about Physical Systems
+    - Human Intelligence Project:
+        sections:
+        - Human Intelligence Project
+    - Common Sense:
+        sections:
+        - Common Sense
+    - Learning:
+        sections:
+        - Learning
+    - Ontologies and Data Mining:
+        sections:
+        - Ontologies and Data Mining
+    - Project Presentations and Discussion:
+        sections:
+        - Project Presentations and Discussion

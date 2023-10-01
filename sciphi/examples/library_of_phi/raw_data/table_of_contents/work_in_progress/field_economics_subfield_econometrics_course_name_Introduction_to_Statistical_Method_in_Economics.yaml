@@ -1,0 +1,38 @@
+```yaml
+textbook:
+  A Comprehensive Guide to Statistical Methods in Economics:
+    chapters:
+    - Chapter 1: Set and Probability Theory
+      sections:
+      - Section 1.1: Basics of Set Theory
+    - Chapter 2: Random Variables and Distributions
+      sections:
+      - Section 2.1: Probability Mass/Density Function
+      - Section 2.2: Cumulative Distribution Function
+    - Chapter 3: Multiple Random Variables
+      sections:
+      - Section 3.1: Bivariate Distribution
+      - Section 3.2: Marginal Distribution
+      - Section 3.3: Conditional Distribution
+      - Section 3.4: Independence
+      - Section 3.5: Multivariate Distribution
+    - Chapter 4: Expectation
+      sections:
+      - Section 4.1: Moments
+    - Chapter 5: Review for Exam 1
+    - Chapter 6: Random Variable and Random Vector Transformations
+      sections:
+      - Section 6.1: Univariate and Multivariate Models
+    - Chapter 7: Special Distributions
+    - Chapter 8: Review for Exam 2
+    - Chapter 9: Random Sample and Limit Theorem
+      sections:
+      - Section 9.1: Law of Large Numbers
+      - Section 9.2: Central Limit Theorem
+    - Chapter 10: Point Estimators and Estimation Methods
+      sections:
+      - Section 10.1: Point Estimators
+    - Chapter 11: Interval Estimation and Confidence Intervals
+    - Chapter 12: Hypothesis Testing
+    - Chapter 13: Review for Exam 3
+```

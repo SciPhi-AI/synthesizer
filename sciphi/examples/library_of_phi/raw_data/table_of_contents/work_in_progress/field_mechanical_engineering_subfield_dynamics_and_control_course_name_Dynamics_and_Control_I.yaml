@@ -1,0 +1,67 @@
+```yaml
+course:
+  Dynamics and Control I Textbook:
+    chapters:
+    - Chapter 1: Motion of a Single Particle
+      sections:
+      - Section 1.1: Frames of Reference and Frame Notation
+      - Section 1.2: Kinematics using First Principles
+      - Section 1.3: Pulley Problem
+      - Section 1.4: Angular Velocity
+      - Section 1.5: Magic Formula
+    - Chapter 2: Momentum and Newton’s Laws
+      sections:
+      - Section 2.1: Impulse
+      - Section 2.2: Skier Separation Problem
+      - Section 2.3: Dumbbell Problem
+      - Section 2.4: Multiple Particle Systems
+      - Section 2.5: Rigid Bodies
+      - Section 2.6: Derivation of Torque = I*alpha
+    - Chapter 3: Work-Energy Principle
+      sections:
+      - Section 3.1: Three Cases
+      - Section 3.2: Rolling Disc Problem
+      - Section 3.3: Exam 1 Recap
+      - Section 3.4: Exam 1
+    - Chapter 4: Introduction to Lagrangian
+      sections:
+      - Section 4.1: Generalized Coordinates
+      - Section 4.2: Lagrangian Derivation
+      - Section 4.3: Generalized Forces
+      - Section 4.4: Double Pendulum Problem
+    - Chapter 5: Helicopter Dynamics
+      sections:
+      - Section 5.1: Exam 2
+      - Section 5.2: Single DOF System
+      - Section 5.3: Equilibrium
+      - Section 5.4: Linearization
+      - Section 5.5: Stability Analysis
+    - Chapter 6: Free Response of a Damped Oscillator
+      sections:
+      - Section 6.1: Free Response
+    - Chapter 7: Final Exam Review
+      sections:
+      - Section 7.1: Final Exam
+    - Chapter 8: Problem Sets
+      sections:
+      - Section 8.1: Problem Set 1
+      - Section 8.2: Problem Set 2
+      - Section 8.3: Problem Set 3
+      - Section 8.4: Problem Set 4
+      - Section 8.5: Problem Set 5
+      - Section 8.6: Problem Set 6
+      - Section 8.7: Problem Set 7
+      - Section 8.8: Problem Set 8
+      - Section 8.9: Problem Set 9
+      - Section 8.10: Problem Set 10
+    - Chapter 9: Exams
+      sections:
+      - Section 9.1: Benevolent Quiz with Prerequisites Check
+      - Section 9.2: Exam 1 from Fall 2006
+      - Section 9.3: Exam 2 from Fall 2006
+      - Section 9.4: Final Exam from Fall 2006
+      - Section 9.5: Exam 1
+      - Section 9.6: Exams 2
+      - Section 9.7: Final Exam
+```
+```

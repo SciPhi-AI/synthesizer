@@ -1,0 +1,146 @@
+textbook:
+  Petrology: A Comprehensive Guide to the Study of Rocks and their Processes
+  chapters:
+    - Rock Forming Minerals:
+        sections:
+        - 'RFM I: Olivine and Spinel'
+          subsections:
+          - Olivine: Crystal Structure and Physical Properties
+          - Olivine in Igneous and Metamorphic Rocks
+          - Spinel: Crystal Structure and Occurrence
+          - Spinel in Igneous and Metamorphic Rocks
+        - 'RFM II: Feldspars'
+          subsections:
+          - Feldspar: Crystal Structure and Physical Properties
+          - Alkali Feldspars: Occurrence and Uses
+          - Plagioclase Feldspars: Occurrence and Uses
+          - Feldspars in Igneous and Metamorphic Rocks
+        - 'RFM III: Pyroxenes'
+          subsections:
+          - Pyroxene: Crystal Structure and Physical Properties
+          - Orthopyroxenes: Occurrence and Uses
+          - Clinopyroxenes: Occurrence and Uses
+          - Pyroxenes in Igneous and Metamorphic Rocks
+        - 'RFM IV: Pyriboles'
+          subsections:
+          - Pyribole: Crystal Structure and Physical Properties
+          - Amphiboles: Occurrence and Uses
+          - Pyroxenoids: Occurrence and Uses
+          - Pyriboles in Igneous and Metamorphic Rocks
+    - Thermodynamics:
+        sections:
+        - Energy Functions-E-S-V and G-T-P-X
+          subsections:
+          - Energy Functions: Introduction and Applications
+          - Entropy and Enthalpy: Definitions and Calculations
+          - Gibbs Free Energy: Concept and Calculation
+          - Thermodynamic Variables: Temperature, Pressure, and Composition
+        - P-T-X Phase Diagrams
+          subsections:
+          - Phase Diagrams: Introduction and Basic Concepts
+          - Binary Phase Diagrams: Simple Eutectic Systems
+          - Ternary Phase Diagrams: Solid Solutions and Miscibility Gaps
+          - P-T-X Diagrams: Applications in Petrology
+        - Exchange Reactions and Equilibrium Constants
+          subsections:
+          - Exchange Reactions: Definition and Types
+          - Equilibrium Constants: Calculation and Significance
+          - Thermodynamic Activity: Concept and Calculation
+          - Exchange Reactions in Petrology
+        - Earth’s Outer Mantle - Phase Relations and Variation with Tectonic Setting
+          subsections:
+          - Earth's Mantle: Composition and Structure
+          - Phase Relations in the Mantle: Olivine, Pyroxene, and Spinel Stability
+          - Mantle Variation with Tectonic Setting: Subduction Zones and Mid-Ocean Ridges
+    - Mantle Rock Types and Processes:
+        sections:
+        - Serpentine Stability - Recycling of Mantle
+          subsections:
+          - Serpentine Minerals: Occurrence and Properties
+          - Serpentinization: Process and Significance
+          - Serpentinite: Formation and Petrologic Implications
+          - Recycling of Mantle Material: Subduction and Mantle Wedge Processes
+        - Melting and Crystallization Processes
+          subsections:
+          - Melting Mechanisms: Decompression and Flux Melting
+          - Crystallization Processes: Fractional and Equilibrium Crystallization
+          - Magma Differentiation: Assimilation and Fractional Crystallization
+          - Magmatic Processes in the Mantle: Basalts and Komatiites
+        - Basalts, Komatiites Rock Series Mantle Melting Processes
+          subsections:
+          - Basaltic Rocks: Classification and Petrogenesis
+          - Komatiites: Occurrence and Petrologic Significance
+          - Rock Series: Tholeiitic, Alkali, and Calc-alkaline Series
+          - Mantle Melting Processes: Basaltic and Komatiitic Magmas
+    - Phase Equilibria:
+        sections:
+        - 'Phase Equilibria: Silicate + H2O'
+          subsections:
+          - Silicate-H2O Systems: Introduction and Importance
+          - Solubility of Water in Silicate Minerals
+          - Effect of Water on Phase Assemblages
+          - Hydration and Dehydration Reactions in Petrology
+        - Granitic Rocks and Crustal Magmatic Processes
+          subsections:
+          - Granitic Rocks: Classification and Petrogenesis
+          - Partial Melting in the Crust: Granite Formation
+          - Crustal Magmatic Processes: Magma Mixing and Assimilation
+          - Granitic Intrusions and Their Petrologic Significance
+        - Continental Crustal Igneous Rocks
+          subsections:
+          - Continental Crust: Composition and Formation
+          - Igneous Rocks in the Crust: Plutonic and Volcanic
+          - Crustal Evolution: Magmatic Processes and Petrologic Significance
+    - The Major Types of Sedimentary Rocks:
+        sections:
+        - The Major Types of Sedimentary Rocks
+          subsections:
+          - Clastic Sedimentary Rocks: Sandstone, Shale, and Conglomerate
+          - Chemical Sedimentary Rocks: Limestone, Dolomite, and Chert
+          - Organic Sedimentary Rocks: Coal and Oil Shale
+          - Sedimentary Structures and Depositional Environments
+    - Metamorphic Petrology:
+        sections:
+        - Metamorphic Petrology 1 - Metamorphic Processes, Contact, Regional, T and P Variations
+          subsections:
+          - Metamorphism: Definition, Agents, and Types
+          - Contact Metamorphism: Occurrence and Mineral Assemblages
+          - Regional Metamorphism: Pressure, Temperature, and Metamorphic Grade
+          - Metamorphic Variations: Tectonic Setting and P-T Conditions
+        - Metamorphic Petrology 2 - Metamorphic Facies
+          subsections:
+          - Metamorphic Facies: Definition and Classification
+          - Index Minerals: Indicator of Metamorphic Grade
+          - Facies Series: Progressive Metamorphism and Mineral Assemblages
+          - Metamorphic Facies and Plate Tectonics
+        - Metamorphic Petrology 3 - Metamorphism of Pelitic Rocks Minerals and Isograds
+          subsections:
+          - Pelitic Rocks: Composition and Mineralogy
+          - Metamorphism of Pelitic Rocks: Reactions and Mineral Assemblages
+          - Isograds: Definition and Petrologic Significance
+          - P-T Paths: Petrologic Constraints and Thermobarometry
+        - Metamorphic Petrology 4 - Pelites - The AKFM System Continuous and Discontinuous
+          Reactions
+          subsections:
+          - AKFM System: Introduction and Composition
+          - Continuous Reactions: Al2SiO5 Polymorphs and Mineral Assemblages
+          - Discontinuous Reactions: Incongruent Melting and Mineral Reactions
+          - Metamorphic Petrology of Pelitic Rocks: AKFM System and P-T Conditions
+        - Metamorphic Petrology 5 - Metamorphism of Mafic Rocks, Metamorphism
+          subsections:
+          - Mafic Rocks: Composition and Petrogenesis
+          - Metamorphism of Mafic Rocks: Mineral Reactions and Assemblages
+          - Metamorphic Zones: Greenschists, Amphibolites, and Granulites
+          - Metamorphic P-T Paths: Constraints and Tectonic Implications
+        - Greenschists, Blueschists and Eclogites
+          subsections:
+          - Greenschist Facies: Mineral Assemblages and Metamorphic Conditions
+          - Blueschist Facies: Mineral Assemblages and Metamorphic Processes
+          - Eclogite Facies: Mineral Assemblages and Petrologic Significance
+          - High-Pressure Metamorphism: Subduction Zones and Continental Collision
+        - Metamorphic Petrology 6 - Metamorphism of calc-silicates
+          subsections:
+          - Calc-silicate Rocks: Composition and Mineralogy
+          - Metamorphism of Calc-silicate Rocks: Mineral Reactions and Assemblages
+          - Skarns: Occurrence and Petrologic Significance
+          - Metamorphic Fluids: Interaction and Metasomatism

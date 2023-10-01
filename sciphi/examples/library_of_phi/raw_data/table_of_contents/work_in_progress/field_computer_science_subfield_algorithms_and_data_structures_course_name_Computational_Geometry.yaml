@@ -1,0 +1,96 @@
+```yaml
+course:
+  Computational Geometry:
+    textbook:
+      - name: "Computational Geometry: Theory and Applications"
+        chapters:
+        - chapter: "Introduction to Geometric Modeling"
+          sections:
+          - section: "Classification of Geometric Modeling Forms"
+        - chapter: "Differential Geometry of Curves"
+          sections:
+          - section: "Differential Geometry of Curves"
+        - chapter: "Differential Geometry of Surfaces"
+          sections:
+          - section: "Differential Geometry of Surfaces (Demo)"
+        - chapter: "Introduction to Spline Curves"
+          sections:
+          - section: "Introduction to Spline Curves"
+          - section: "Introduction to Spline Curves"
+        - chapter: "B-splines"
+          sections:
+          - section: "B-splines"
+        - chapter: "Non-Uniform B-splines and Spline Surfaces"
+          sections:
+          - section: "Non-Uniform B-splines"
+          - section: "Spline Surfaces"
+        - chapter: "Non-Uniform Rational B-spline Curves and Surfaces"
+          sections:
+          - section: "Non-Uniform Rational B-spline Curves and Surfaces (Demo)"
+          - section: "Demo Program"
+        - chapter: "Physically-Based Deformable Surfaces"
+          sections:
+          - section: "Physically-Based Deformable Surfaces (Demo)"
+        - chapter: "Fairing and Generalized Cylinders"
+          sections:
+          - section: "Fairing"
+          - section: "Generalized Cylinders"
+        - chapter: "Blending Surfaces"
+          sections:
+          - section: "Blending Surfaces"
+        - chapter: "Intersections"
+          sections:
+          - section: "Intersections"
+          - section: "Surface Intersections"
+          - section: "Nonlinear Solvers"
+        - chapter: "Interval Methods and Robustness"
+          sections:
+          - section: "Interval Methods"
+          - section: "Robustness"
+        - chapter: "Offset Curves and Surfaces"
+          sections:
+          - section: "Offset Curves"
+          - section: "Offset Surfaces"
+        - chapter: "B-rep and CSG"
+          sections:
+          - section: "B-rep"
+          - section: "CSG"
+        - chapter: "B-rep and Non-Manifold Mixed Dimension Models"
+          sections:
+          - section: "B-rep"
+          - section: "Non-Manifold Mixed Dimension Models"
+        - chapter: "Computer Graphics Techniques"
+          sections:
+          - section: "Computer Graphics Techniques"
+        - chapter: "Reverse Engineering and Reconstructing the Past"
+          sections:
+          - section: "Reverse Engineering"
+          - section: "Reconstructing the Past"
+        - chapter: "Mechanical Tolerances"
+          sections:
+          - section: "Mechanical Tolerances"
+        - chapter: "Decomposition Models and Integral Properties of Solids"
+          sections:
+          - section: "Decomposition Models"
+          - section: "Integral Properties of Solids"
+        - chapter: "Advanced Topics in Differential Geometry"
+          sections:
+          - section: "Advanced Topics in Differential Geometry"
+        - chapter: "Localization, Inspection and Model Matching"
+          sections:
+          - section: "Localization"
+          - section: "Inspection"
+          - section: "Model Matching"
+        - chapter: "Discrete Differential Geometry"
+          sections:
+          - section: "Discrete Differential Geometry"
+        - chapter: "F. E. and B. E. Meshing Algorithms"
+          sections:
+          - section: "F. E. Meshing Algorithms"
+          - section: "B. E. Meshing Algorithms"
+        - chapter: "Machining Automation"
+          sections:
+          - section: "Machining Automation"
+```
+
+The new textbook is named "Computational Geometry: Theory and Applications". It expands on the original syllabus by breaking down each topic into chapters, and each subtopic into sections. Additionally, it adds more detailed subtopics by including subsubtopics as subsections under each section.

@@ -1,0 +1,269 @@
+```yaml
+course:
+  Textbook on Information Theory:
+    chapters:
+      - Introduction to Information Theory:
+        sections:
+          - Entropy:
+            subsections:
+              - Definition of entropy
+              - Properties of entropy
+              - Joint entropy
+              - Conditional entropy
+              - Cross entropy
+              - Relative entropy
+              - Mutual information
+              - Information gain
+              - Entropy rate
+              - Differential entropy
+
+      - Fundamentals of Information Theory:
+        sections:
+          - Jensen’s inequality:
+            subsections:
+              - Convex functions
+              - Jensen's inequality
+              - Applications of Jensen's inequality
+
+          - Data processing theorem:
+            subsections:
+              - Markov chains
+              - Data processing inequality
+              - Applications of data processing theorem
+
+          - Fanos’s inequality:
+            subsections:
+              - Fanos's inequality
+              - Applications of Fanos's inequality
+
+      - Convergence and Typicality:
+        sections:
+          - Different types of convergence:
+            subsections:
+              - Pointwise convergence
+              - Almost sure convergence
+              - Convergence in probability
+              - Convergence in distribution
+
+          - Asymptotic equipartition property (AEP):
+            subsections:
+              - Definition of AEP
+              - AEP for i.i.d. random variables
+              - AEP for ergodic processes
+              - Applications of AEP
+
+          - Joint typicality:
+            subsections:
+              - Joint typical sets
+              - Joint typicality decoding
+              - Joint typicality of multiple sources
+
+      - Entropies of Stochastic Processes:
+        sections:
+          - Entropies of stochastic processes:
+            subsections:
+              - Entropy rate of a stochastic process
+              - Conditional entropy rate
+              - Differential entropy rate
+              - Ergodicity and entropy
+
+      - Data Compression:
+        sections:
+          - Kraft inequality:
+            subsections:
+              - Kraft inequality
+              - Kraft-McMillan inequality
+              - Applications of Kraft inequality
+
+          - Optimal codes:
+            subsections:
+              - Prefix codes
+              - Huffman codes
+              - Arithmetic coding
+              - Lempel-Ziv-Welch (LZW) algorithm
+              - Run-length encoding
+              - Universal codes
+
+      - Huffman Codes:
+        sections:
+          - Huffman codes:
+            subsections:
+              - Construction of Huffman codes
+              - Properties of Huffman codes
+              - Optimal prefix codes
+
+      - Shannon-Fano-Elias Codes and Slepian-Wolf:
+        sections:
+          - Shannon-Fano-Elias codes:
+            subsections:
+              - Construction of Shannon-Fano-Elias codes
+              - Properties of Shannon-Fano-Elias codes
+              - Limitations of Shannon-Fano-Elias codes
+
+          - Slepian-Wolf codes:
+            subsections:
+              - Construction of Slepian-Wolf codes
+              - Properties of Slepian-Wolf codes
+              - Limitations of Slepian-Wolf codes
+
+      - Channel Capacity and Binary Channels:
+        sections:
+          - Channel capacity:
+            subsections:
+              - Definition of channel capacity
+              - Capacity achieving codes
+              - Bounds on channel capacity
+              - Examples of channel capacity calculations
+
+          - Binary symmetric channels:
+            subsections:
+              - Definition of binary symmetric channel
+              - Binary symmetric channel capacity
+              - Error correction codes for binary symmetric channels
+
+          - Binary erasure channels:
+            subsections:
+              - Definition of binary erasure channel
+              - Binary erasure channel capacity
+              - Error correction codes for binary erasure channels
+
+      - Maximizing Channel Capacity:
+        sections:
+          - Maximizing capacity:
+            subsections:
+              - Water-filling algorithm
+              - Capacity of channels with input constraints
+              - Capacity of channels with output constraints
+
+          - Blahut-Arimoto algorithm:
+            subsections:
+              - Blahut-Arimoto algorithm for capacity calculation
+              - Applications of the Blahut-Arimoto algorithm
+
+      - Channel Coding Theorem:
+        sections:
+          - The channel coding theorem:
+            subsections:
+              - Statement and proof of the channel coding theorem
+              - Error probability bounds
+
+      - Strong Coding Theorem and Error Exponents:
+        sections:
+          - Strong coding theorem:
+            subsections:
+              - Statement and proof of the strong coding theorem
+              - Error exponent properties
+              - Applications of the strong coding theorem
+
+          - Types of errors:
+            subsections:
+              - Bit errors
+              - Burst errors
+              - Packet errors
+              - Symbol errors
+
+          - Error exponents:
+            subsections:
+              - Definition of error exponents
+              - Calculation of error exponents
+              - Error exponent bounds
+
+      - Feedback Capacity:
+        sections:
+          - Feedback capacity:
+            subsections:
+              - Definition of feedback capacity
+              - Capacity of channels with feedback
+              - Applications of feedback capacity
+
+      - Joint Source-Channel Coding:
+        sections:
+          - Joint source channel coding:
+            subsections:
+              - Channel coding for discrete memoryless sources
+              - Channel coding for Markov sources
+              - Distributed source coding
+
+      - Differential Entropy and Maximizing Entropy:
+        sections:
+          - Differential entropy:
+            subsections:
+              - Definition of differential entropy
+              - Properties of differential entropy
+              - Maximum differential entropy
+
+          - Maximizing entropy:
+            subsections:
+              - Entropy maximization under constraints
+              - Applications of entropy maximization
+
+      - Additive Gaussian Noise Channel:
+        sections:
+          - Additive Gaussian noise channel:
+            subsections:
+              - Definition of additive Gaussian noise channel
+              - Channel capacity of Gaussian noise channel
+              - Gaussian capacity-achieving codes
+
+      - Gaussian Channels and Interference:
+        sections:
+          - Gaussian channels: parallel:
+            subsections:
+              - Capacity of parallel Gaussian channels
+              - Gaussian codebooks for parallel channels
+
+          - Gaussian channels: colored noise:
+            subsections:
+              - Capacity of Gaussian channels with colored noise
+              - Capacity-achieving codes for channels with colored noise
+
+          - Gaussian channels: inter-symbol interference:
+            subsections:
+              - Capacity of Gaussian channels with inter-symbol interference
+              - Equalization techniques for channels with inter-symbol interference
+
+      - Gaussian Channels with Feedback:
+        sections:
+          - Gaussian channels with feedback:
+            subsections:
+              - Capacity of Gaussian channels with feedback
+              - Feedback strategies for Gaussian channels
+
+      - Multiple Access Channels:
+        sections:
+          - Multiple access channels:
+            subsections:
+              - Capacity of multiple access channels
+              - Multiple access strategies
+              - Multiple access with interference
+
+      - Broadcast Channels:
+        sections:
+          - Broadcast channels:
+            subsections:
+              - Capacity of broadcast channels
+              - Broadcast coding strategies
+
+      - Finite State Markov Channels:
+        sections:
+          - Finite state Markov channels:
+            subsections:
+              - Capacity of finite state Markov channels
+              - Channel coding for Markov channels
+              - Error correction for Markov channels
+
+      - Channel Side Information and Wide-Band Channels:
+        sections:
+          - Channel side information:
+            subsections:
+              - Channel state information at the transmitter
+              - Channel state information at the receiver
+              - Wyner-Ziv coding
+
+          - Wide-band channels:
+            subsections:
+              - Capacity of wide-band channels
+              - Channel coding for wide-band channels
+
+```
+```

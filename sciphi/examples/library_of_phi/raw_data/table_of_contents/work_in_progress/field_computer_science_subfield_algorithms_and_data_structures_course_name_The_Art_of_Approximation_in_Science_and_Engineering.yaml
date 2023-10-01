@@ -1,0 +1,236 @@
+```yaml
+textbook:
+  The Art of Approximation in Science and Engineering: A Comprehensive Guide to Mathematical Approximation Techniques
+    chapters:
+    - Calculating logarithms using musical intervals:
+        sections:
+        - Preview
+        - Tree representations
+        - Gold or bills?
+        - Random walks
+        - UNIX
+        - Triangle bisection
+        - Pentagonal heat flow
+        - Animal jump heights
+        - Calculus
+        - Falling cones
+    - Drag and jumping:
+        sections:
+        - Drag and jumping
+        - Cycling, swimming, flying
+        - Conservation cube
+        - Flight
+        - Flight
+        - Flight
+    - Algebraic symmetry:
+        sections:
+        - Algebraic symmetry
+        - Economics example; pyramid example
+        - Dimensionless groups
+        - Densities
+        - Long-lasting learning 1
+        - Bending of light
+        - Long-lasting learning 2
+        - Pyramid volume
+        - Drag!
+        - Random walks and keeping warm
+    - Waves:
+        sections:
+        - Waves
+    - Introduction and managing complexity:
+        sections:
+        - Introduction and managing complexity
+    - Heterogeneous hierarchies:
+        sections:
+        - Heterogeneous hierarchies
+    - Proportional reasoning:
+        sections:
+        - Proportional reasoning
+    - Conservation/box models:
+        sections:
+        - Conservation/box models
+    - Dimensions and afterword:
+        sections:
+        - Dimensions and afterword
+    - Special cases:
+        sections:
+        - Special cases
+    - Discretization:
+        sections:
+        - Discretization
+    - Spring models:
+        sections:
+        - Spring models
+    - Calculating logarithms using musical intervals:
+        sections:
+        - Introduction
+        - Logarithmic scales
+        - Musical intervals and logarithms
+        - Applications in science and engineering
+    - Drag and jumping:
+        sections:
+        - Introduction
+        - Drag forces
+        - Jumping and projectile motion
+        - Applications in various fields
+    - Algebraic symmetry:
+        sections:
+        - Introduction
+        - Symmetry in mathematics and physics
+        - Applications in economics and geometry
+    - Waves:
+        sections:
+        - Introduction
+        - Wave properties and behavior
+        - Applications in different areas
+    - Introduction and managing complexity:
+        sections:
+        - Introduction to approximation
+        - Dealing with complex problems
+        - Techniques for managing complexity
+    - Heterogeneous hierarchies:
+        sections:
+        - Introduction to heterogeneous hierarchies
+        - Applications in systems with multiple scales
+    - Proportional reasoning:
+        sections:
+        - Introduction to proportional reasoning
+        - Using proportions in problem-solving
+        - Applications in science and engineering
+    - Conservation/box models:
+        sections:
+        - Introduction to conservation and box models
+        - Principles of conservation modeling
+        - Applications in various domains
+    - Dimensions and afterword:
+        sections:
+        - Dimensions and dimensional analysis
+        - Importance of dimensional analysis in approximation
+        - Closing thoughts and further reading
+    - Special cases:
+        sections:
+        - Introduction to special cases
+        - Analyzing specific scenarios
+        - Applications in different fields
+    - Discretization:
+        sections:
+        - Introduction to discretization methods
+        - Techniques for discretizing continuous systems
+        - Applications in numerical analysis and simulation
+    - Spring models:
+        sections:
+        - Introduction to spring models
+        - Modeling the behavior of springs
+        - Applications in engineering and physics
+    - Calculating logarithms using musical intervals:
+        sections:
+        - Introduction
+        - Logarithmic scales
+        - Musical intervals and logarithms
+        - Applications in science and engineering
+        subsections:
+        - Overview of logarithm functions
+        - Historical development of logarithms
+        - Logarithmic identities and properties
+        - Logarithmic scales in real-world applications
+    - Drag and jumping:
+        sections:
+        - Introduction
+        - Drag forces
+        - Jumping and projectile motion
+        - Applications in various fields
+        subsections:
+        - The role of drag in sports
+        - Modeling jumping and projectile motion
+        - Case studies in drag reduction
+    - Algebraic symmetry:
+        sections:
+        - Introduction
+        - Symmetry in mathematics and physics
+        - Applications in economics and geometry
+        subsections:
+        - Symmetry groups and transformations
+        - Symmetry in economic modeling
+        - Symmetry in geometric shapes and constructions
+    - Waves:
+        sections:
+        - Introduction
+        - Wave properties and behavior
+        - Applications in different areas
+        subsections:
+        - Wave equations and wave types
+        - Wave phenomena in nature and technology
+        - Wave analysis techniques
+    - Introduction and managing complexity:
+        sections:
+        - Introduction to approximation
+        - Dealing with complex problems
+        - Techniques for managing complexity
+        subsections:
+        - Approximation methods in problem-solving
+        - Strategies for simplifying complex systems
+        - Trade-offs in approximation and complexity management
+    - Heterogeneous hierarchies:
+        sections:
+        - Introduction to heterogeneous hierarchies
+        - Applications in systems with multiple scales
+        subsections:
+        - Understanding scale interactions in complex systems
+        - Modeling hierarchical structures and dynamics
+        - Case studies of heterogeneous hierarchies in science and engineering
+    - Proportional reasoning:
+        sections:
+        - Introduction to proportional reasoning
+        - Using proportions in problem-solving
+        - Applications in science and engineering
+        subsections:
+        - Proportional relationships and their properties
+        - Proportional reasoning in scientific measurements
+        - Proportional models in engineering design
+    - Conservation/box models:
+        sections:
+        - Introduction to conservation and box models
+        - Principles of conservation modeling
+        - Applications in various domains
+        subsections:
+        - Conservation laws and their mathematical representations
+        - Box models for studying dynamic systems
+        - Examples of conservation modeling in environmental science and economics
+    - Dimensions and afterword:
+        sections:
+        - Dimensions and dimensional analysis
+        - Importance of dimensional analysis in approximation
+        - Closing thoughts and further reading
+        subsections:
+        - Fundamentals of dimensional analysis
+        - Dimensional homogeneity and Buckingham Pi theorem
+        - Dimensional analysis in scientific research and engineering design
+    - Special cases:
+        sections:
+        - Introduction to special cases
+        - Analyzing specific scenarios
+        - Applications in different fields
+        subsections:
+        - Identifying and studying special cases in mathematical models
+        - Case studies of special cases in physics and biology
+        - Generalizing from special cases to broader contexts
+    - Discretization:
+        sections:
+        - Introduction to discretization methods
+        - Techniques for discretizing continuous systems
+        - Applications in numerical analysis and simulation
+        subsections:
+        - Finite difference methods for discretization
+        - Finite element methods for discretization
+        - Discretization in computer simulations and modeling
+    - Spring models:
+        sections:
+        - Introduction to spring models
+        - Modeling the behavior of springs
+        - Applications in engineering and physics
+        subsections:
+        - Hooke's law and spring constants
+        - Dynamics of spring systems
+        - Spring models in mechanical and structural analysis
+```
+```

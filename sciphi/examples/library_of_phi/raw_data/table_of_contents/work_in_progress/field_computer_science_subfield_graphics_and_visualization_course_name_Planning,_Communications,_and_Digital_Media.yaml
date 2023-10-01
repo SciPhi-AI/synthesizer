@@ -1,0 +1,65 @@
+textbook:
+  Planning, Communications, and Digital Media: A Comprehensive Guide
+  chapters:
+    - Chapter 1: The Planner’s Toolbox
+      sections:
+        - Section 1.1: Introduction to Planning
+        - Section 1.2: The Role of a Planner
+        - Section 1.3: Tools for Planning
+          subsections:
+            - Subsection 1.3.1: Lorlene’s Web-based Portfolio
+    - Chapter 2: Introduction to Web Design
+      sections:
+        - Section 2.1: Web Design Principles
+        - Section 2.2: Web Style Guide
+          subsections:
+            - Subsection 2.2.1: Basic Design Principles
+            - Subsection 2.2.2: Creating Accessible Websites
+    - Chapter 3: Planning a Web Site
+      sections:
+        - Section 3.1: Understanding User Needs
+        - Section 3.2: Web Style Guide
+          subsections:
+            - Subsection 3.2.1: Basic Design Principles
+            - Subsection 3.2.2: Creating Accessible Websites
+        - Section 3.3: Content Strategy and Information Architecture
+        - Section 3.4: Wireframing and Prototyping
+    - Chapter 4: The Photographic Essay
+      sections:
+        - Section 4.1: Introduction to Photographic Essays
+        - Section 4.2: Visual Storytelling Techniques
+        - Section 4.3: Change Over Time
+          subsections:
+            - Subsection 4.3.1: Documenting Urban Development
+            - Subsection 4.3.2: Capturing Natural Transformation
+    - Chapter 5: Geographic Information Systems (GIS)
+      sections:
+        - Section 5.1: Introduction to GIS
+        - Section 5.2: Top Down GIS
+          subsections:
+            - Subsection 5.2.1: Understanding Spatial Data
+            - Subsection 5.2.2: Analyzing Geographic Patterns
+        - Section 5.3: Bottom Up GIS
+        - Section 5.4: Web Portfolio Critique
+        - Section 5.5: Spatial Data Acquisition
+          subsections:
+            - Subsection 5.5.1: Introduction to MassGIS
+        - Section 5.6: Capturing and Editing Digital Video
+        - Section 5.7: Advanced Photoshop® and Dreamweaver®
+    - Chapter 6: Visual Representation and Analysis of Place
+      sections:
+        - Section 6.1: The Planner’s Toolbox
+        - Section 6.2: Planning a Web Site
+        - Section 6.3: The Photographic Essay
+        - Section 6.4: Change Over Time
+    - Chapter 7: Understanding Population Change
+      sections:
+        - Section 7.1: Introduction to Demographics
+        - Section 7.2: Using Excel to Analyze Population Data
+        - Section 7.3: Using ArcGIS™ to Visualize Population Density
+        - Section 7.4: Using Access to Query Multiple Data Sets
+        - Section 7.5: Using GIS Tools to Compare Two Aspects of Central Square
+    - Chapter 8: Web-based Planning Portfolio
+      sections:
+        - Section 8.1: Introduction to Planning Portfolios
+        - Section 8.2: Exploring, Analyzing, and Describing a Massachusetts Town

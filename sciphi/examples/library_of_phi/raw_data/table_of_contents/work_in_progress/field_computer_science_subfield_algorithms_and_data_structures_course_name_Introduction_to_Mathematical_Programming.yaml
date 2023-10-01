@@ -1,0 +1,72 @@
+```yaml
+course:
+  Textbook for Introduction to Mathematical Programming:
+    chapters:
+      - chapter: Formulations
+        sections:
+          - section: Chapter 1
+      - chapter: Geometry
+        sections:
+          - section: Geometry I
+          - section: Geometry II
+          - section: Geometry III
+      - chapter: Simplex method
+        sections:
+          - section: Simplex method I
+          - section: Simplex method II
+          - section: Simplex method III
+          - section: Simplex method IV
+      - chapter: Duality theory
+        sections:
+          - section: Duality theory I
+          - section: Duality theory II
+          - section: Duality theory III
+      - chapter: Sensitivity analysis
+        sections:
+          - section: Sensitivity analysis
+      - chapter: Robust optimization
+        sections:
+          - section: Robust optimization
+      - chapter: Large scale optimization
+        sections:
+          - section: Large scale optimization I
+          - section: Large scale optimization II
+      - chapter: Network flows
+        sections:
+          - section: Network flows I
+          - section: Network flows II
+      - chapter: The Ellipsoid method
+        sections:
+          - section: The Ellipsoid method
+      - chapter: Problems with exponentially many constraints
+        sections:
+          - section: Problems with exponentially many constraints
+      - chapter: Interior point methods
+        sections:
+          - section: Interior point methods I
+          - section: Interior point methods II
+          - section: Interior point methods III
+      - chapter: Semidefinite optimization
+        sections:
+          - section: Semidefinite optimization
+      - chapter: Discrete optimization
+        sections:
+          - section: Discrete optimization I
+          - section: Discrete optimization II
+    subsubtopics:
+      - subsection: Introduction to Mathematical Programming
+      - subsection: Mathematical Programming Models
+      - subsection: Problem Formulation
+      - subsection: Linear Programming
+      - subsection: Convex Optimization
+      - subsection: Nonlinear Optimization
+      - subsection: Integer and Combinatorial Optimization
+      - subsection: Dynamic Programming
+      - subsection: Network Optimization
+      - subsection: Robust Optimization
+      - subsection: Stochastic Optimization
+      - subsection: Heuristic Methods
+      - subsection: Multi-Objective Optimization
+      - subsection: Optimization Software
+      - subsection: Optimization Applications
+```

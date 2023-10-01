@@ -1,0 +1,101 @@
+```yaml
+textbook:
+  Prototyping Avionics: A Comprehensive Guide to Design and Development
+  chapters:
+    - Introduction to Design:
+        sections:
+          - Course Introduction and Overview
+          - Revisit of the Design Process
+          - Prototyping Techniques
+    - Review of E&M Concepts:
+        sections:
+          - Voltage, Current, Resistance, Capacitance, and Inductance
+          - Major Relations: V = IR, P = IV = I2R, I = CdV/dt, V = LdI/dt
+    - Discrete Components:
+        sections:
+          - Resistors
+            - Types and Applications
+            - Color Coding and Tolerance
+          - Capacitors
+            - Types and Applications
+            - Capacitance Value and Voltage Rating
+          - Transistors
+            - Bipolar Junction Transistors (BJTs)
+            - Field-Effect Transistors (FETs)
+          - Power Components
+            - Diodes and Rectifiers
+            - Transformers
+            - Switches and Relays
+            - Voltage Regulators
+    - Digital Components:
+        sections:
+          - Digital Thinking
+            - Binary System and Logic Gates
+            - Boolean Algebra
+            - Combinational and Sequential Logic
+          - Processors
+            - Microcontrollers and Microprocessors
+            - Instruction Set Architecture (ISA)
+            - Memory Organization
+          - Interfacing Digital and Analog
+            - Analog-to-Digital Conversion (ADC)
+            - Digital-to-Analog Conversion (DAC)
+            - Sensors and Actuators
+    - Schematics:
+        sections:
+          - Introduction to Schematics
+            - Symbols and Notations
+            - Schematic Diagrams
+          - Schematic Parts
+            - Passive Components
+            - Active Components
+            - Connectors and Terminals
+          - Advanced Schematic Tools
+            - Circuit Simulation and Analysis
+            - PCB Layout Integration
+          - Finishing Design with Schematics
+            - Design Review and Validation
+            - Iterative Design Process
+    - PCB Design:
+        sections:
+          - Basics of PCB Design
+            - PCB Materials and Fabrication
+            - PCB Layout Guidelines
+          - Routing in PCB Design
+            - Traces and Signal Integrity
+            - Grounding and Power Distribution
+          - Finishing PCB Design
+            - Design Rule Checking (DRC)
+            - Gerber File Generation
+            - PCB Manufacturing and Assembly
+    - Documentation:
+        sections:
+          - Assembly Tips
+            - Component Placement and Orientation
+            - Soldering Techniques
+            - PCB Cleaning and Coating
+          - Testing and Debugging PCBs
+            - Circuit Testing Methods
+            - Fault Identification and Troubleshooting
+    - Complex Embedded Systems:
+        sections:
+          - Introduction to Complex Embedded Systems
+            - Embedded System Architecture
+            - Real-Time Operating Systems (RTOS)
+            - System Integration Challenges
+    - Projects:
+        sections:
+          - Final Project Overview
+            - Project Scope and Objectives
+            - Project Planning and Timeline
+          - Design Requirements
+            - Functional and Non-Functional Requirements
+            - Design Constraints and Trade-offs
+          - Project Constraints
+            - Cost and Budget Considerations
+            - Resource and Time Constraints
+          - Deliverables for the Project
+            - Project Documentation
+            - Project Presentation and Demonstration
+```
+```

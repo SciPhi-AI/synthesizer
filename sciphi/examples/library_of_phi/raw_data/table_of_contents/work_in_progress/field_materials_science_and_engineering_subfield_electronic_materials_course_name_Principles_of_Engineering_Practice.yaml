@@ -1,0 +1,36 @@
+```yaml
+textbook:
+  Principles of Engineering Practice: A Comprehensive Guide to Solar Energy and Engineering Ethics
+    chapters:
+    - Introduction to Principles of Engineering Practice and Solar Energy:
+        sections:
+        - 'Chapter 1: Course Overview and Objectives'
+        - 'Chapter 2: Understanding Solar Energy'
+        - 'Section 2.1: Lab 1 - Index of Refraction'
+        - 'Section 2.2: Case Study 1 - An Ethical Engineer'
+        - 'Section 2.3: Lab 2 - Communications: Oral/Written'
+        - 'Section 2.4: Lab 3 - Measure the Speed of Light'
+        - 'Section 2.5: Photons, Semiconductors, and Energy'
+        - 'Section 2.6: Guest Lecture - Fred Salvucci: History of Boston Transportation, 1630-2007'
+        - 'Section 2.7: The Solar Cell Lecture'
+        - 'Section 2.8: Guest Lecture - Prof. Eugene Fitzgerald: Platforms and Learning Curves'
+    - 'Chapter 3: Simulation and Design of Solar Cells':
+        sections:
+        - 'Section 3.1: Lab 4 - Simulation of Solar Cells'
+        - 'Section 3.2: Guest Lecture - Prof. Randolph Kirchain: Moving Towards Sustainable Materials Use'
+        - 'Section 3.3: Cultural Differences in Engineering Practice: Introduction to Collaboration with University of Tokyo'
+        - 'Section 3.4: Engineering the Future of Solar Electricity'
+        - 'Section 3.5: Field Trip with Fred Salvucci: Walk the Big Dig'
+        - 'Section 3.6: Project 1A - Electricity Generation System Constraints'
+        - 'Section 3.7: Project 2A - Solar Cell Materials; Assignment of Teams'
+        - 'Section 3.8: Project 2B - Solar Cell Performance'
+    - 'Chapter 4: Advanced Topics in Solar Energy Engineering':
+        sections:
+        - 'Section 4.1: Project 1C - Engineering the Future of Solar Electricity'
+        - 'Section 4.2: Guest Lecture - Prof. Akira Toriumi'
+        - 'Section 4.3: Class Discussion of Draft Written Reports'
+        - 'Section 4.4: Guest Lecture - Prof. Kazumi Wada'
+        - 'Section 4.5: Project 1D - Final Project Team Presentations and Written Reports'
+        - 'Section 4.6: Editing of Report for Final Project'
+        - 'Section 4.7: Guest Lecture - Prof. Christopher Weaver: How To Be a Big Engineer and What You Can Do for Society'
+```

@@ -1,0 +1,107 @@
+```yaml
+course:
+  Textbook for Theory of Solids I:
+    chapters:
+      - Free Electron Model:
+          sections:
+            - Crystalline Lattice
+            - Debye Waller Factor and Incommensurate Structures
+            - Point Group for Bravais Lattice
+            - Bloch Theorem
+            - Band Structure
+      - Orthogonalized Plane Wave (OPW):
+          sections:
+            - Pseudopotential and Augmented-Plane-Wave (APW)
+            - Tight Binding, van Hove Singularity
+            - Experimental Tests of Band Structure and A Survey of the Periodic Table
+      - Semiconductors: Donors, Acceptors and Excitons:
+          sections:
+            - Semiclassical Dynamics of Electrons, Bloch Oscillation and Quantization of Orbits in a Uniform Magnetic Field
+            - de Haas-van Alphen Effect and Quantum Hall Effect
+            - Quantum Hall Effect and Edge States
+            - Electron-electron Interaction: Hartree-Fock Approximation
+            - Exchange Energy for Jellium
+      - Density Functional Theory:
+          sections:
+            - Hubbard Model, Screening and Plasmons
+            - Phonons
+            - Electron-phonon Coupling and Electron Lifetime
+            - Attraction by Exchanging Phonons
+            - The Cooper Instability and the BCS Wavefunction
+      - The Bogoliubov Quasiparticles:
+          sections:
+            - Ginzburg Landau Free Energy, Meissner Effect and Flux Quantization
+    subsubtopics:
+      - Free Electron Model:
+          - Crystalline Lattice:
+            - Definition of a Crystal Structure
+            - Unit Cell and Lattice Parameters
+            - Bravais Lattice
+            - Miller Indices
+            - Reciprocal Lattice
+            - Crystallographic Directions and Planes
+            - Crystal Symmetry and Space Groups
+          - Debye Waller Factor and Incommensurate Structures:
+            - Debye-Waller Factor and Thermal Vibrations
+            - Incommensurate Structures and Quasicrystals
+          - Point Group for Bravais Lattice:
+            - Definition of Point Group
+            - Symmetry Elements and Operations
+            - Bravais Lattice and Point Group
+          - Bloch Theorem:
+            - Wavefunction of an Electron in a Periodic Potential
+            - Bloch Theorem and Bloch Functions
+            - Brillouin Zone
+          - Band Structure:
+            - Energy Bands and Band Structure
+            - Classification of Solids based on Band Structure
+            - Effective Mass and Density of States
+            - Metal, Insulator, and Semiconductor Classification
+      - Orthogonalized Plane Wave (OPW):
+          - Pseudopotential and Augmented-Plane-Wave (APW):
+            - Pseudopotential Approximation
+            - Augmented Plane Wave Method
+          - Tight Binding, van Hove Singularity:
+            - Tight Binding Model
+            - van Hove Singularity
+          - Experimental Tests of Band Structure and A Survey of the Periodic Table:
+            - Experimental Techniques for Measuring Band Structure
+            - Band Structure of Various Materials
+      - Semiconductors: Donors, Acceptors and Excitons:
+          - Semiclassical Dynamics of Electrons, Bloch Oscillation and Quantization of Orbits in a Uniform Magnetic Field:
+            - Classical Dynamics of Electrons in a Magnetic Field
+            - Quantum Dynamics of Electrons in a Uniform Magnetic Field
+            - Bloch Oscillation and Quantization of Electron Orbits
+          - de Haas-van Alphen Effect and Quantum Hall Effect:
+            - de Haas-van Alphen Effect and its Experimental Observation
+            - Quantum Hall Effect and its Experimental Observation
+          - Quantum Hall Effect and Edge States:
+            - Quantum Hall Effect and its Theoretical Explanation
+            - Edge States in Quantum Hall Systems
+          - Electron-electron Interaction: Hartree-Fock Approximation:
+            - Hartree-Fock Approximation for Electron-electron Interaction
+            - Self-consistent Field and Hartree-Fock Equations
+          - Exchange Energy for Jellium:
+            - Exchange Energy and its Physical Significance
+            - Jellium Model and Calculation of Exchange Energy
+      - Density Functional Theory:
+          - Hubbard Model, Screening and Plasmons:
+            - Hubbard Model for Strongly Correlated Systems
+            - Screening in Solids and Plasmon Excitations
+          - Phonons:
+            - Lattice Vibrations and Phonons
+            - Phonon Dispersion and Density of States
+          - Electron-phonon Coupling and Electron Lifetime:
+            - Electron-phonon Interaction and its Effects
+            - Calculation of Electron Lifetime in Metals
+          - Attraction by Exchanging Phonons:
+            - Electron Attraction by Exchanging Phonons
+            - Cooper Pairs and Superconductivity
+          - The Cooper Instability and the BCS Wavefunction:
+            - Cooper Instability and the Formation of Cooper Pairs
+            - BCS Wavefunction and its Properties
+      - The Bogoliubov Quasiparticles:
+          - Ginzburg Landau Free Energy, Meissner Effect and Flux Quantization:
+            - Ginzburg-Landau Theory and its Free Energy Formulation
+            - Meissner Effect and Flux Quantization in Superconductors
+```

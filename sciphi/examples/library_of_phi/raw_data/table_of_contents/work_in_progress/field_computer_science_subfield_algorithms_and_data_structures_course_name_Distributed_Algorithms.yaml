@@ -1,0 +1,171 @@
+```yaml
+course:
+  Distributed Algorithms Textbook:
+    chapters:
+    - Introduction:
+        sections:
+        - Course Overview
+          subsections:
+          - Synchronous Networks
+          - Asynchronous Networks
+          - Distributed Computing Models
+          - Timing-based Systems
+    - Leader Election:
+        sections:
+        - Leader Election in Synchronous Ring Networks
+          subsections:
+          - Synchronous Ring Networks
+        - Leader Election in General Synchronous Networks
+          subsections:
+          - General Synchronous Networks
+    - Basic Computational Tasks:
+        sections:
+        - Breadth-first Search
+          subsections:
+          - Breadth-first Search Algorithm
+        - Broadcast and Convergecast
+          subsections:
+          - Broadcast Algorithm
+          - Convergecast Algorithm
+        - Shortest Paths
+          subsections:
+          - Shortest Paths Algorithm
+    - Spanning Trees:
+        sections:
+        - Minimum Spanning Trees
+          subsections:
+          - Minimum Spanning Trees Algorithm
+        - Gallager et al. Minimum Spanning Trees
+          subsections:
+          - Gallager et al. Minimum Spanning Trees Algorithm
+    - Fault-tolerant Consensus:
+        sections:
+        - Link Failures: The Two Generals Problem
+          subsections:
+          - The Two Generals Problem
+        - Process Failures
+          subsections:
+          - Process Failures in Distributed Systems
+        - Byzantine Agreement
+          subsections:
+          - Byzantine Agreement Algorithm
+        - Weak Byzantine Agreement
+          subsections:
+          - Weak Byzantine Agreement Algorithm
+        - Time Bounds for Consensus Problems
+          subsections:
+          - Consensus Time Bounds
+    - Distributed Commit:
+        sections:
+        - k-set Agreement
+          subsections:
+          - k-set Agreement Algorithm
+        - Approximate Agreement
+          subsections:
+          - Approximate Agreement Algorithm
+        - Distributed Commit
+          subsections:
+          - Distributed Commit Algorithm
+    - Formal Modeling of Asynchronous Systems:
+        sections:
+        - Interacting State Machines
+          subsections:
+          - Interacting State Machines Model
+        - Non-fault-tolerant Algorithms
+          subsections:
+          - Non-fault-tolerant Algorithms in Distributed Systems
+        - Synchronizers
+          subsections:
+          - Synchronizers in Distributed Systems
+        - Synchronous vs. Asynchronous Distributed Systems
+          subsections:
+          - Comparison of Synchronous and Asynchronous Distributed Systems
+    - Time, Clocks, and Ordering of Events:
+        sections:
+        - State-machine Simulation
+          subsections:
+          - State-machine Simulation Algorithms
+        - Vector Timestamps
+          subsections:
+          - Vector Timestamps Algorithm
+        - Stable Property Detection
+          subsections:
+          - Stable Property Detection Algorithm
+        - Distributed Termination
+          subsections:
+          - Distributed Termination Algorithm
+        - Global Snapshots
+          subsections:
+          - Global Snapshots Algorithm
+        - Deadlock Detection
+          subsections:
+          - Deadlock Detection Algorithm
+    - Asynchronous Shared-memory Systems:
+        sections:
+        - Mutual Exclusion Problem
+          subsections:
+          - Mutual Exclusion Problem in Distributed Systems
+        - Mutual Exclusion Algorithms
+          subsections:
+          - Mutual Exclusion Algorithms in Distributed Systems
+        - Resource Allocation
+          subsections:
+          - Resource Allocation Algorithm
+        - The Dining Philosophers Problem
+          subsections:
+          - The Dining Philosophers Problem in Distributed Systems
+        - Bounds on Shared Memory
+          subsections:
+          - Bounds on Shared Memory in Distributed Systems
+        - Contentions, Caching, and Locality
+          subsections:
+          - Contentions in Distributed Systems
+          - Caching in Distributed Systems
+          - Locality in Distributed Systems
+    - Atomic Objects:
+        sections:
+        - Atomic Snapshot Algorithms
+          subsections:
+          - Atomic Snapshot Algorithms in Distributed Systems
+        - Atomic Read/Write Register Algorithms
+          subsections:
+          - Atomic Read/Write Register Algorithms in Distributed Systems
+        - List Algorithms
+          subsections:
+          - List Algorithms in Distributed Systems
+        - Transactional Memory
+          subsections:
+          - Transactional Memory in Distributed Systems
+        - Wait-free Computability
+          subsections:
+          - Wait-free Computability in Distributed Systems
+    - Asynchronous Network Model:
+        sections:
+        - Failure Detectors and Consensus
+          subsections:
+          - Failure Detectors in Distributed Systems
+          - Consensus in Distributed Systems
+        - Paxos Consensus Algorithm
+          subsections:
+          - Paxos Consensus Algorithm in Distributed Systems
+        - Impossibility of Consensus
+          subsections:
+          - Impossibility of Consensus Theorem
+    - Self-stabilizing Algorithms:
+        sections:
+        - Modeling and Verification
+          subsections:
+          - Modeling of Self-stabilizing Algorithms
+          - Verification of Self-stabilizing Algorithms
+        - Timing-based Algorithms
+          subsections:
+          - Timing-based Self-stabilizing Algorithms
+        - Clock Synchronization
+          subsections:
+          - Clock Synchronization Algorithms
+    - Projects:
+        sections:
+        - Overview
+          subsections:
+          - (No specific subtopics mentioned in the syllabus)
+```

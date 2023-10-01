@@ -1,0 +1,106 @@
+```yaml
+course:
+  Textbook for Computer Language Engineering (SMA 5502):
+    chapters:
+      - Introduction to Programming Languages:
+          sections:
+            - Overview of Programming Languages
+            - History of Programming Languages
+            - Syntax and Semantics
+            - Programming Paradigms
+            - Language Design Principles
+      - Compiler Design:
+          sections:
+            - Compiler Structure
+            - Lexical Analysis
+            - Syntax Analysis
+            - Semantic Analysis
+            - Intermediate Representations
+          subsections:
+            - Abstract Syntax Trees
+            - Type Checking
+            - Symbol Table
+            - Error Handling in Compilers
+      - Code Generation:
+          sections:
+            - Unoptimized Code Generation
+            - Instruction Selection
+            - Register Allocation
+            - Stack Management
+            - Code Optimization Techniques
+          subsections:
+            - Peephole Optimization
+            - Function Inlining
+            - Loop Unrolling
+            - Instruction Scheduling
+      - Program Analysis:
+          sections:
+            - Data-flow Analysis
+            - Control-flow Analysis
+            - Alias Analysis
+            - Points-to Analysis
+            - Program Slicing
+          subsections:
+            - Reaching Definitions
+            - Live Variable Analysis
+            - Dominator Analysis
+            - Control Dependence Analysis
+            - Call Graph Analysis
+      - Compiler Optimization:
+          sections:
+            - Data-flow Optimization
+            - Loop Optimization
+            - Register Optimization
+            - Inline Expansion
+            - Constant Propagation
+            - Dead Code Elimination
+          subsections:
+            - Loop Fusion
+            - Loop Interchange
+            - Loop Unswitching
+            - Loop Jamming
+            - Loop Vectorization
+      - Language Implementation:
+          sections:
+            - Virtual Machines
+            - Garbage Collection
+            - Just-In-Time Compilation
+            - Memory Management
+            - Error Handling
+            - Concurrency and Parallelism
+          subsections:
+            - Stack-based Virtual Machines
+            - Heap-based Virtual Machines
+            - Mark and Sweep Garbage Collection
+            - Generational Garbage Collection
+            - Thread Safety
+            - Lock-free Programming
+      - Language Tools and Utilities:
+          sections:
+            - Debuggers
+            - Profilers
+            - Static Analysis Tools
+            - Testing Frameworks
+            - Build Systems
+          subsections:
+            - Dynamic Analysis
+            - Performance Profiling
+            - Code Coverage Analysis
+            - Static Code Analysis
+            - Unit Testing
+            - Continuous Integration
+      - Case Studies:
+          sections:
+            - Design and Implementation of a Compiler for a Specific Language
+            - Optimization Techniques in Real-world Compilers
+            - Performance Analysis of Programming Languages
+            - Language Implementation Challenges in Industry
+            - Compiler Construction Projects
+          subsections:
+            - Lexical Analysis in a Compiler Project
+            - Syntax Analysis in a Compiler Project
+            - Code Generation in a Compiler Project
+            - Program Analysis in a Compiler Project
+            - Compiler Optimization in a Compiler Project
+```
+```

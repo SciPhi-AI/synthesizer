@@ -1,0 +1,134 @@
+```yaml
+course:
+  Computational Quantum Mechanics of Molecular and Extended Systems:
+    textbook:
+      chapters:
+      - Introduction and Overview:
+          sections:
+          - Many Body Schrödinger Equation
+          - Density Functional Theory
+          - Examples and Inspiration
+      - Electronic Structure Methods:
+          sections:
+          - Electronic Spin
+          - Spin Orbitals
+          - Molecular Orbital Theory
+          - Valence Bond Theory
+      - Hartree-Fock Theory and Matrix Manipulations:
+          sections:
+          - Hartree-Fock Theory
+          - Matrix Manipulations
+      - Mathematical Foundations and Calculations:
+          sections:
+          - Dirac Notation
+          - G03 Calculations
+      - Electronic Classroom Tutorial:
+          sections:
+          - Introduction to Electronic Classroom
+          - Hands-on Exercises
+      - Solution of Hartree-Fock Equations:
+          sections:
+          - Variational Principle
+          - Mean Field Theory
+      - Gaussian Basis Sets:
+          sections:
+          - Introduction to Gaussian Basis Sets
+          - Applications in Quantum Mechanics
+      - Correlation and Perturbation Theories:
+          sections:
+          - Correlation Methods
+          - Configuration Interaction
+          - Many-Body Perturbation Theories
+      - Density Functional Theory:
+          sections:
+          - Kohn-Sham Equations
+          - Exchange-Correlation Functionals
+      - Coupled-Cluster Theories:
+          sections:
+          - QCISD Method
+          - G1 and G2 Approximations
+      - Plane-wave Pseudopotential Method:
+          sections:
+          - Introduction to Plane-wave Method
+          - Pseudopotential Approximations
+      - Car-Parrinello Molecular Dynamics:
+          sections:
+          - Methodology and Algorithm
+          - Running the Car-Parrinello Code
+          - Applications in Molecular Dynamics
+      - Embedding and Reaction Field Methods:
+          sections:
+          - Introduction to Embedding Methods
+          - Reaction Field Models
+          - Solvation Effects
+          - Combined QM/MM Approaches
+      - Exploring Complex Free Energy Landscapes:
+          sections:
+          - Reactivity Analysis Methods
+          - Transition State Search
+      - Computing Reaction Rate Constants:
+          sections:
+          - Transition State Theory
+          - Kinetics Calculations
+      - Student Final Project Presentations:
+          sections:
+          - Presentation Session I
+          - Presentation Session II
+      - Design of Selective Catalysts:
+          sections:
+          - Catalyst Design Principles
+          - Sulfur Resistance in Catalysts
+          - Oxidation Automotive Catalysts
+      - Advanced Topics in Quantum Mechanics:
+          sections:
+          - Time-Dependent Schrödinger Equation
+          - Quantum Monte Carlo Methods
+          - Post-Hartree-Fock Methods
+          - Electron Correlation Effects
+      - Quantum Dynamics and Spectroscopy:
+          sections:
+          - Quantum Dynamics Theory
+          - Vibrational Spectroscopy
+          - Electronic Spectroscopy
+          - Photochemistry and Photophysics
+      - Quantum Simulations of Materials:
+          sections:
+          - Periodic Boundary Conditions
+          - Band Structure Calculations
+          - Density Functional Tight Binding
+          - Molecular Dynamics of Solids
+      - Quantum Simulations of Biomolecules:
+          sections:
+          - Protein Structure Prediction
+          - Molecular Docking
+          - Drug Design and Discovery
+          - Molecular Dynamics of Biomolecules
+      - Quantum Machine Learning:
+          sections:
+          - Introduction to Quantum Machine Learning
+          - Quantum Feature Extraction
+          - Quantum Neural Networks
+          - Quantum Data Encoding and Decoding
+      - Quantum Computing and Quantum Algorithms:
+          sections:
+          - Introduction to Quantum Computing
+          - Quantum Gates and Circuits
+          - Quantum Algorithms for Shor's and Grover's Algorithms
+          - Quantum Error Correction
+          - Quantum Simulations on Quantum Computers
+      - Applications of Computational Quantum Mechanics:
+          sections:
+          - Materials Science and Engineering
+          - Drug Discovery and Design
+          - Catalysis and Chemical Reactions
+          - Quantum Information and Communication
+          - Quantum Sensing and Metrology
+      - Future Directions in Computational Quantum Mechanics:
+          sections:
+          - Quantum Computing Beyond Classical Computers
+          - Quantum Machine Learning in Industry
+          - Quantum Simulations of Complex Systems
+          - Quantum Algorithms for Optimization
+          - Quantum Communication Networks
+```
+```

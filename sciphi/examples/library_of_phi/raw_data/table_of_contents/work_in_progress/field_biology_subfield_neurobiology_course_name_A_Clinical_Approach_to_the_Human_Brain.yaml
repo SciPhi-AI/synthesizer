@@ -1,0 +1,45 @@
+textbook:
+  A Comprehensive Guide to the Human Brain:
+    chapters:
+      - Brain Anatomy and Imaging:
+          sections:
+            - Brain as seat of consciousness
+            - Overview of regional anatomy of the brain and spinal cord
+            - Cerebral cortex and white matter
+            - Brain stem and cerebellum
+            - Thalamus and Hypothalamus
+      - Cells and Brain Imaging:
+          sections:
+            - Brain Anatomy and Imaging (repeated)
+            - Cells and Brain Imaging (repeated)
+            - Synaptic Potentials (repeated)
+      - Seeing and Reading Others:
+          sections:
+            - Cognitive Enhancement through Neuropharmacology
+            - Oxytocin and Trust, Antidepressants and Neurogenesis
+            - Neurogenesis: Teaching Old Dogs New Tricks
+      - Critical Periods: Implications for Education:
+          sections:
+            - Neuroplasticity in the Adult
+            - Language, Dyslexia and Universal Grammar
+      - Visual System I:
+          sections:
+            - Visual Neglect and Prosopagnosia
+            - Rembrandt, Leonardo, Monet: How We See Them
+      - Sensory System and Pain:
+          sections:
+            - Placebo, Empathy, and Theory of Mind
+      - Emotions and Feelings: Romantic and Maternal Love:
+          sections:
+            - Neuroscience and Marketing: Hitting the "Sweet Spot"
+      - Learning and Memory: The Case of HM:
+          sections:
+            - Structure and Function of Brains with Superior Memory
+            - How Emotion and Antidepressants Affect Memory
+      - Depression, Anxiety and Psychosis:
+          sections:
+            - Vision, Memory and Feelings: Binding them Together
+      - Music, Math and the Brain:
+          sections:
+            - Additional Topic: Consciousness / Neuroeconomics
+            - Additional Topic: Can Thinking Prevent Dementia?

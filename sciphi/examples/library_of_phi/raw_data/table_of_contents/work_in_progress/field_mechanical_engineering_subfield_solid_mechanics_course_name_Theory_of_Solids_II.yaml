@@ -1,0 +1,135 @@
+course:
+  textbook: "Fundamentals of Solid State Physics: Advanced Topics"
+
+topics:
+  chapters:
+    - Fluctuation Dissipation Theorem:
+        sections:
+        - Definition and Concept
+        - Relation to Thermodynamics
+        - Applications in Solid State Physics
+    - Scattering:
+        sections:
+        - Elastic and Inelastic Scattering
+        - Cross Section and Scattering Amplitude
+        - Quantum Mechanical Description
+        - Experimental Techniques
+    - Response Functions:
+        sections:
+        - General Properties
+        - Linear and Nonlinear Response
+        - Frequency and Time Domain
+        - Correlation Functions
+    - Kubo Formula:
+        sections:
+        - Derivation and Physical Interpretation
+        - Conductivity and Optical Response
+        - Kubo-Greenwood Approach
+        - Applications in Solid State Physics
+    - Boundary Conditions:
+        sections:
+        - Influence on Electronic Properties
+        - Surface and Interface Effects
+        - Quantum Well States
+        - Density of States Modifications
+    - Localization:
+        sections:
+        - Anderson Localization
+        - Scaling Theory of Localization
+        - Quantum Hall Effect
+        - Disorder Effects on Electronic Transport
+    - Superconductivity:
+        sections:
+        - London Equation
+        - Josephson Effect
+        - Cooper Pairs and BCS Theory
+        - Type I and Type II Superconductors
+    - Magnetism in Solids:
+        sections:
+        - Local Moment Magnetism
+        - Exchange Interactions
+        - Spin Waves and Neutron Scattering
+        - Ferro- and Antiferromagnetism
+    - Band Magnetism:
+        sections:
+        - Stoner Theory
+        - Band Structure Effects on Magnetism
+        - Magnetic Ordering in Metals
+        - Spin Density Wave
+    - Kondo Effect:
+        sections:
+        - Anderson Model
+        - Kondo Problem
+        - Singlet Ground State
+        - Fermi Liquid Interpretation
+
+subsubtopics:
+  - section: "Fluctuation Dissipation Theorem"
+    subsections:
+      - Linear Response and Susceptibility
+      - Nonequilibrium Fluctuation-Dissipation Theorem
+      - Generalized Fluctuation-Dissipation Theorem
+      - Applications in Statistical Mechanics
+
+  - section: "Scattering"
+    subsections:
+      - Electron Scattering
+      - Phonon Scattering
+      - Spin Scattering
+      - Scattering Mechanisms in Different Materials
+
+  - section: "Response Functions"
+    subsections:
+      - Density-Density Response Function
+      - Current-Current Response Function
+      - Polarization Response Function
+      - Nonlinear Response Functions
+
+  - section: "Kubo Formula"
+    subsections:
+      - Kubo-Greenwood Formula
+      - Optical Conductivity
+      - Transport Properties
+      - Applications in Condensed Matter Physics
+
+  - section: "Boundary Conditions"
+    subsections:
+      - Periodic Boundary Conditions
+      - Open Boundary Conditions
+      - Boundary Effects on Electronic Structure
+      - Quantum Well States and Quantum Confinement
+
+  - section: "Localization"
+    subsections:
+      - Anderson Localization and Disorder Effects
+      - Scaling Theory of Localization and Metal-Insulator Transition
+      - Quantum Hall Effect and Topological Insulators
+      - Localization Effects on Electronic Transport Properties
+
+  - section: "Superconductivity"
+    subsections:
+      - Cooper Pairing and BCS Theory
+      - Meissner Effect and Magnetic Flux Quantization
+      - Type I and Type II Superconductors
+      - High-Temperature Superconductivity
+
+  - section: "Magnetism in Solids"
+    subsections:
+      - Magnetic Moments and Localized Spins
+      - Exchange Interactions and Magnetic Ordering
+      - Spin Waves and Magnons
+      - Magnetic Phases and Phase Transitions
+
+  - section: "Band Magnetism"
+    subsections:
+      - Stoner Criterion and Band Magnetism
+      - Band Structure Effects on Magnetic Properties
+      - Magnetic Ordering in Metals and Alloys
+      - Spin Density Wave and Charge Density Wave
+
+  - section: "Kondo Effect"
+    subsections:
+      - Anderson Model for Impurity Systems
+      - Kondo Problem and Kondo Effect
+      - Singlet Ground State and Kondo Resonance
+      - Fermi Liquid Theory and Heavy Fermion Systems

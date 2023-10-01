@@ -1,0 +1,41 @@
+textbook:
+  Science and Policy of Natural Hazards: A Comprehensive Guide
+
+chapters:
+  - Introduction:
+      sections:
+        - Earthquakes:
+            subsections:
+              - Seismic waves
+              - Earthquake kinematics
+              - Earthquake dynamics
+              - Associated phenomena: Tsunami
+              - Earthquake preparedness and warning systems
+        - Hurricanes:
+            subsections:
+              - Tropical cyclones
+              - The tropical atmosphere: Hurricane incubator
+              - Computational models of hurricanes
+        - Volcanoes:
+            subsections:
+              - Volcano overview
+              - Magma generation
+              - Magma ascent and eruption
+              - Volcanic hazards
+              - Volcano hazards
+        - Tornadoes:
+            subsections:
+              - Tornado overview
+              - Moist convection
+              - Stability assessment
+              - Thunderstorms
+              - Mesoscale organization of convection
+              - Supercells and tornadoes
+              - Forecasting tornadoes
+        - Term Project:
+            subsections:
+              - Purpose of the project
+              - Scientific skills required
+              - Hazard assessment
+              - Location selection
+              - Communication of scientific information

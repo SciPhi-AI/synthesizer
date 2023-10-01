@@ -1,0 +1,56 @@
+textbook:
+  Parallel Computing: A Comprehensive Guide
+chapters:
+  - Introduction:
+      sections:
+        - Types of parallel computers
+  - Parallel prefix:
+      sections:
+        - More parallel prefix
+  - Lincoln Labsview of the cloud; Intro to MapReduce:
+      sections:
+        - MapReduce, as accumArray
+  - MapReduce, graph partitioning:
+      sections:
+        - MapReduce, more partitioning
+  - Project discussion session:
+      sections:
+        - Guest lecture by Dr. Viral B. Shah
+  - Parallel linear algebra past and future:
+      sections:
+        - LU decomposition
+  - Ring and hypercube topologies:
+      sections:
+        - Fast Fourier Transform (FFT)
+  - Parallel programming in Julia:
+      sections:
+        - Domain decomposition, PDEs
+  - Finite differences, direct and iterative methods, preconditioned conjugate gradient:
+      sections:
+        - Schur complement method; Intro to sparse methods
+  - Fast multipole method:
+      sections:
+        - Guest lecture by Dr. Toby Bloom, Director, Informatics, Genome Sequencing,
+          Broad Institute
+  - Student project presentations:
+      sections:
+        - Kinds of Projects
+        - Julia-related Project Ideas
+        - Modern Parallel Linear Algebra Project Ideas
+        - Parallel Algorithms, Libraries Project Ideas
+        - Abstractions and Infrastructure Project Ideas
+        - Tools Sample Student Projects
+        - Three of the students in the class have provided their final projects for publication on OCW and they are presented here with their permission. Parallel FFT in Julia:Slide (PDF - 1.6MB),Code (TXT),Report (PDF)(Courtesy of anonymous MIT student. Used with permission.) Social coding:Slides
+subsubtopics:
+  - Parallel prefix:
+      - Introduction to parallel prefix
+      - Applications of parallel prefix
+  - MapReduce, graph partitioning:
+      - Introduction to MapReduce graph partitioning
+      - Advanced techniques in MapReduce graph partitioning
+  - Parallel programming in Julia:
+      - Introduction to parallel programming in Julia
+      - Parallel domain decomposition for PDEs in Julia
+  - Finite differences, direct and iterative methods, preconditioned conjugate gradient:
+      - Introduction to finite differences and direct methods
+      - Preconditioned conjugate gradient method for parallel computation

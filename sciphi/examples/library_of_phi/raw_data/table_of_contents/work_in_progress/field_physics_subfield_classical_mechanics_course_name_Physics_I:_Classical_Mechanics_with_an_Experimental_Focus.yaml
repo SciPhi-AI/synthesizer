@@ -1,0 +1,135 @@
+course:
+  'Physics I: Classical Mechanics with an Experimental Focus':
+    textbook:
+      name: 'Classical Mechanics: Exploring the Fundamentals'
+      chapters:
+        - chapter: 'Chapter 1: Introduction to 8.01X, Measurement Standards'
+          sections:
+            - section: 'Section 1.1: Course Introduction'
+            - section: 'Section 1.2: Measurement Standards'
+        - chapter: 'Chapter 2: Mechanics Baseline Test I'
+          sections:
+            - section: 'Section 2.1: Test Overview'
+            - section: 'Section 2.2: Problem Solving Strategies'
+        - chapter: 'Chapter 3: Units, Dimensions, Fermi Problems, Estimating a Second Experiment Questions'
+          sections:
+            - section: 'Section 3.1: Units and Dimensions'
+            - section: 'Section 3.2: Fermi Problems'
+            - section: 'Section 3.3: Estimating a Second Experiment'
+        - chapter: 'Chapter 4: Kinematics: 1D Motion, Displacement and Velocity'
+          sections:
+            - section: 'Section 4.1: 1D Motion'
+            - section: 'Section 4.2: Displacement'
+            - section: 'Section 4.3: Velocity'
+        - chapter: 'Chapter 5: Vectors, Newton’s Laws of Motion, Force, Mass and Acceleration'
+          sections:
+            - section: 'Section 5.1: Vectors'
+            - section: 'Section 5.2: Newton’s Laws of Motion'
+            - section: 'Section 5.3: Force'
+            - section: 'Section 5.4: Mass and Acceleration'
+        - chapter: 'Chapter 6: Newton’s Laws, Gravitation and Weight, Projectiles'
+          sections:
+            - section: 'Section 6.1: Newton's Laws'
+            - section: 'Section 6.2: Gravitation and Weight'
+            - section: 'Section 6.3: Projectiles'
+        - chapter: 'Chapter 7: Review, Applications of Newton’s Laws'
+          sections:
+            - section: 'Section 7.1: Review of Newton's Laws'
+            - section: 'Section 7.2: Applications of Newton's Laws'
+        - chapter: 'Chapter 8: Uniform Circular Motion'
+          sections:
+            - section: 'Section 8.1: Circular Motion'
+            - section: 'Section 8.2: Uniform Circular Motion'
+        - chapter: 'Chapter 9: Universal Law of Gravitation, Planetary Orbits'
+          sections:
+            - section: 'Section 9.1: Universal Law of Gravitation'
+            - section: 'Section 9.2: Planetary Orbits'
+        - chapter: 'Chapter 10: Levers, Statics and Torque'
+          sections:
+            - section: 'Section 10.1: Levers'
+            - section: 'Section 10.2: Statics'
+            - section: 'Section 10.3: Torque'
+        - chapter: 'Chapter 11: Work, Kinetic Energy'
+          sections:
+            - section: 'Section 11.1: Work'
+            - section: 'Section 11.2: Kinetic Energy'
+        - chapter: 'Chapter 12: Conservation Laws, Potential Energy'
+          sections:
+            - section: 'Section 12.1: Conservation Laws'
+            - section: 'Section 12.2: Potential Energy'
+        - chapter: 'Chapter 13: Conservation of Mechanical Energy'
+          sections:
+            - section: 'Section 13.1: Conservation of Mechanical Energy'
+        - chapter: 'Chapter 14: Energy: Universal Gravitation and Planetary Orbits'
+          sections:
+            - section: 'Section 14.1: Energy'
+            - section: 'Section 14.2: Universal Gravitation'
+            - section: 'Section 14.3: Planetary Orbits'
+        - chapter: 'Chapter 15: Energy Transformations, Heat'
+          sections:
+            - section: 'Section 15.1: Energy Transformations'
+            - section: 'Section 15.2: Heat'
+        - chapter: 'Chapter 16: Restoring Forces and Harmonic Motion, Pendulum'
+          sections:
+            - section: 'Section 16.1: Restoring Forces'
+            - section: 'Section 16.2: Harmonic Motion'
+            - section: 'Section 16.3: Pendulum'
+        - chapter: 'Chapter 17: Linear Momentum, Impulse, Newton’s 2nd Law'
+          sections:
+            - section: 'Section 17.1: Linear Momentum'
+            - section: 'Section 17.2: Impulse'
+            - section: 'Section 17.3: Newton’s 2nd Law'
+        - chapter: 'Chapter 18: Momentum, Center of Mass'
+          sections:
+            - section: 'Section 18.1: Momentum'
+            - section: 'Section 18.2: Center of Mass'
+        - chapter: 'Chapter 19: Collisions, Kinetic Theory'
+          sections:
+            - section: 'Section 19.1: Collisions'
+            - section: 'Section 19.2: Kinetic Theory'
+        - chapter: 'Chapter 20: Angular Kinematics, Torque, Rigid Bodies, Moment of Inertia'
+          sections:
+            - section: 'Section 20.1: Angular Kinematics'
+            - section: 'Section 20.2: Torque'
+            - section: 'Section 20.3: Rigid Bodies'
+            - section: 'Section 20.4: Moment of Inertia'
+        - chapter: 'Chapter 21: Moment of Inertia'
+          sections:
+            - section: 'Section 21.1: Moment of Inertia'
+        - chapter: 'Chapter 22: Rotational Dynamics'
+          sections:
+            - section: 'Section 22.1: Rotational Dynamics'
+        - chapter: 'Chapter 23: Angular Dynamics, Translation and Rotation'
+          sections:
+            - section: 'Section 23.1: Angular Dynamics'
+            - section: 'Section 23.2: Translation and Rotation'
+        - chapter: 'Chapter 24: Properties of Materials: Solids'
+          sections:
+            - section: 'Section 24.1: Properties of Materials'
+            - section: 'Section 24.2: Solids'
+        - chapter: 'Chapter 25: Properties of Materials: Fluids'
+          sections:
+            - section: 'Section 25.1: Properties of Materials'
+            - section: 'Section 25.2: Fluids'
+        - chapter: 'Chapter 26: Conservation of Flow, Buoyancy'
+          sections:
+            - section: 'Section 26.1: Conservation of Flow'
+            - section: 'Section 26.2: Buoyancy'
+        - chapter: 'Chapter 27: Viscosity'
+          sections:
+            - section: 'Section 27.1: Viscosity'
+        - chapter: 'Chapter 28: Properties of Materials: Atomic Hypothesis'
+          sections:
+            - section: 'Section 28.1: Properties of Materials'
+            - section: 'Section 28.2: Atomic Hypothesis'
+        - chapter: 'Chapter 29: Special Relativity, Inertial Frames'
+          sections:
+            - section: 'Section 29.1: Special Relativity'
+            - section: 'Section 29.2: Inertial Frames'
+        - chapter: 'Chapter 30: Final Review'
+          sections:
+            - section: 'Section 30.1: Review Topics'
+        - chapter: 'Chapter 31: Final Exam'
+          sections:
+            - section: 'Section 31.1: Exam Format'
+            - section: 'Section 31.2: Study Tips'

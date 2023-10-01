@@ -1,0 +1,103 @@
+textbook:
+  Strobe Project Laboratory: A Comprehensive Guide to Strobe Photography and Imaging Techniques
+  chapters:
+    - Introduction to Strobe Photography:
+        sections:
+        - BCPS Equation
+        - Lens Equation and Magnification
+        - Synch and Delay
+        - What Makes a Good Team Member?
+    - Macro Lenses and Field of View:
+        sections:
+        - Macro Lens Basics
+        - Field of View and Depth of Field
+        - How to Write a Lab Report?
+    - Light Measurement - Units and Methods:
+        sections:
+        - Introduction to Light Measurement
+        - Units of Light Measurement
+        - Methods of Light Measurement
+        - Stroboscopy
+        - Practical Exercise (Solo)
+    - Project Planning:
+        sections:
+        - Importance of Project Planning
+        - Setting Project Goals and Objectives
+        - Project Timeline and Milestones
+        - In-class Project-planning Exercise
+    - Evaluate Project Plans from Last Class:
+        sections:
+        - Evaluating Project Feasibility
+        - Assessing Project Risks and Constraints
+        - Photographic Techniques for Project Evaluation
+        - Reviewing Project Plans
+    - Review Lab Reports:
+        sections:
+        - Importance of Lab Reports
+        - Structure and Format of a Lab Report
+        - Analyzing Lab Report Findings
+        - Overview of HSV
+    - Schlieren Photography:
+        sections:
+        - Introduction to Schlieren Photography
+        - Applications of Schlieren Photography
+        - Edgerton Video
+    - Brainstorm Potential Final Projects:
+        sections:
+        - Importance of Final Projects
+        - Generating Project Ideas
+        - Evaluating Final Project Ideas
+    - How to Select a Mark 1 Project:
+        sections:
+        - Mark 1 Project Overview
+        - Criteria for Mark 1 Project Selection
+        - In-class Planning of Mark 1 Project
+    - Presentation Tips:
+        sections:
+        - Importance of Effective Presentations
+        - Planning and Structuring a Presentation
+        - Visual Aids and Slide Design
+        - Strobe Circuits and Strobe Process
+    - Mark I Oral Reports:
+        sections:
+        - Overview of Mark I Oral Reports
+        - Components of a Mark I Oral Report
+        - Return and Review Homework
+    - Guest Lecture - Motion Analysis from High-speed Video Records:
+        sections:
+        - Introduction to Motion Analysis
+        - Techniques for High-speed Video Analysis
+        - Blackbody Emission vs. Line Emission
+    - Other Strobe Applications:
+        sections:
+        - Exploring Different Strobe Applications
+        - Case Studies of Strobe Imaging
+        - Guest Lecture - Life as a High-speed Imaging Consultant
+    - Derive BCPS Equation and HKN Evaluation:
+        sections:
+        - Derivation of BCPS Equation
+        - Understanding HKN Evaluation
+        - Final Project Presentations
+    - Mark I Project:
+        sections:
+        - Mark I Project Overview
+        - Project Execution and Implementation
+        - Final Project Presentations
+    - Final Project:
+        sections:
+        - Importance of Final Projects
+        - Final Project Guidelines and Requirements
+        - Final Project Evaluation Criteria
+        - 'TheMark I Projectcloses with a 15-minute-long group presentation and a
+          written report from your group. TheFinal Projectcloses with a final 15-minute-long
+          group presentation of the project in the last week of class, and a written
+          report that is due on the last day of classes. The Mark I and Final Project
+          reports and presentations are group efforts. Again, all assigned work must
+          be handed in to receive a grade. Ferrofluid Drops: Studying Ferrofluids
+          with High Speed Video (PDF) (Courtesy of Arun Ag'
+        subsections:
+        - Introduction to Ferrofluids
+        - Properties and Behavior of Ferrofluids
+        - Experimental Setup and Data Collection
+        - Data Analysis and Interpretation
+        - Conclusion and Findings

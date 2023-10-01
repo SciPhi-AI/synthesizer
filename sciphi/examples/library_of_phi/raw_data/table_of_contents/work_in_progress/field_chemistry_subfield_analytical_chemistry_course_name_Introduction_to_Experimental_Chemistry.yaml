@@ -1,0 +1,42 @@
+course:
+  Textbook for Introduction to Experimental Chemistry:
+    chapters:
+    - Chapter 1: Spectroscopy
+      sections:
+      - Section 1.1: Spectroscopy in frequency and time domains
+      - Section 1.2: Linear and nonlinear spectroscopy
+      subsections: []
+    - Chapter 2: Introduction to Coordination Chemistry
+      sections:
+      - Section 2.1: Practical aspects of FTIR Spectroscopy
+      subsections: []
+    - Chapter 3: Analytical Techniques
+      sections:
+      - Section 3.1: Gas chromatography
+      - Section 3.2: Liquid chromatography
+      subsections: []
+    - Chapter 4: Electrochemistry
+      sections:
+      - Section 4.1: Fundamentals of electrochemistry
+      - Section 4.2: Electrochemical cells and electrodes
+      subsections: []
+    - Chapter 5: Organic Synthesis
+      sections:
+      - Section 5.1: Basics of organic synthesis
+      - Section 5.2: Functional group transformations
+      subsections: []
+    - Chapter 6: Inorganic Synthesis
+      sections:
+      - Section 6.1: Techniques in inorganic synthesis
+      - Section 6.2: Coordination complexes and ligand synthesis
+      subsections: []
+    - Chapter 7: Physical Chemistry
+      sections:
+      - Section 7.1: Thermodynamics and kinetics
+      - Section 7.2: Quantum mechanics and spectroscopy
+      subsections: []
+    - Chapter 8: Materials Chemistry
+      sections:
+      - Section 8.1: Synthesis and characterization of materials
+      - Section 8.2: Nanomaterials and their applications
+      subsections: []

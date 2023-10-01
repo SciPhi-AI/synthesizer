@@ -1,0 +1,31 @@
+textbook:
+  Biochemistry Laboratory Companion:
+    chapters:
+      - Introduction to Biochemistry Laboratory:
+          sections:
+            - Kinases in healthy and cancerous cells
+              subsections: []
+      - DNA Analysis and Manipulation:
+          sections:
+            - DNA digestion and PCR
+              subsections: []
+      - Protein Purification and Detection:
+          sections:
+            - Affinity tags for protein purification/detection
+              subsections: []
+      - Structural Analysis of Proteins:
+          sections:
+            - Conserved and variable structural features of kinase domains
+              subsections: []
+      - Site-Directed Mutagenesis:
+          sections:
+            - Site directed mutagenesis
+              subsections: []
+      - Kinase Activity Assays:
+          sections:
+            - Detecting kinase activity
+              subsections: []
+      - Crystal Structure Analysis:
+          sections:
+            - Complete crystal structure viewing exercises
+              subsections: []

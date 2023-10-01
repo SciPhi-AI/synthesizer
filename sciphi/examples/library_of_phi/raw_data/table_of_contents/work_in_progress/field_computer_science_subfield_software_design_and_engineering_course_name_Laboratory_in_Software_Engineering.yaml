@@ -1,0 +1,35 @@
+textbook:
+  Laboratory in Software Engineering: A Comprehensive Guide
+  chapters:
+    - Introduction:
+        sections:
+        - Object semantics
+    - Subclassing:
+        sections:
+        - Specifications
+    - Testing:
+        sections:
+        - Introduction to ADTs
+    - Object model notations:
+        sections:
+        - Representation invariants
+    - Abstraction functions:
+        sections:
+        - Dependencies and decoupling
+    - Exceptions:
+        sections:
+        - Equality
+    - Polymorphism:
+        sections:
+        - Subtypes and subclasses
+    - Classes and interfaces:
+        sections:
+        - Usability 1
+        - Usability 2
+    - Design patterns:
+        sections:
+        - Design project experiences 1
+        - Design project experiences 2
+    - Managing a small software team:
+        sections:
+        - Guest lecture by Joshua Bloch and Neal Gafter

@@ -1,0 +1,38 @@
+textbook:
+  Site and Infrastructure Systems Planning: A Comprehensive Guide
+  chapters:
+    - 'Chapter 1: Introduction to Site Planning':
+        sections:
+        - 'Section 1.1: Site and Landscape Planning Processes'
+        - 'Section 1.2: Site Inventory and Evaluation'
+    - 'Chapter 2: Earthwork and Soils':
+        sections:
+        - 'Section 2.1: Earthwork and Utilities'
+        - 'Section 2.2: Storm Water: Best Management Practices'
+    - 'Chapter 3: Sites Around Wetlands and Water Features':
+        sections:
+        - 'Section 3.1: Traffic and Circulation'
+    - 'Chapter 4: Graphic Communications':
+        sections:
+        - 'Section 4.1: Lecture Notes'
+    - 'Chapter 5: Assignments':
+        sections:
+        - 'Section 5.1: Readings'
+        - 'Section 5.2: Future Scenarios Assignment'
+        - 'Section 5.3: Landscape Units and Site Physiography Mapping and Transects Assignment'
+        - 'Section 5.4: Alternatives and New Approaches to Site and Infrastructure Technologies Assignment'
+        - 'Section 5.5: Inventory'
+        - 'Section 5.6: Technology-Driven Schematic Site Plan Investigation Assignment'
+    - 'Chapter 6: Final Project':
+        sections:
+        - 'Section 6.1: Preparations'
+        - 'Section 6.2: Final Site Plans and Typologies'
+    - 'Chapter 7: Projects':
+        sections:
+        - 'Section 7.1: Studio Development'
+        - 'Section 7.2: Neighborhood Scale Synthesis'
+        - 'Section 7.3: Programmatic Elements'
+        - 'Section 7.4: Housing Selection'
+    - 'Chapter 8: Wrap Up and Debriefing':
+        sections:
+        - 'Section 8.1: Calendar'

@@ -1,0 +1,32 @@
+```yaml
+course:
+  textbook: 'The Art Museum: History, Theory, Controversy and Beyond'
+  chapters:
+    - Introduction:
+        sections:
+        - Museum, Nation, Citizen
+        - 'Guest Lecture: Sam Bardaouil and Till Fellrath.Tea with Nefertiti, or How the Arts Shape Culture'
+    - 'The Museum as Arbiter: Episodes in Exhibition History':
+        sections:
+        - 'Western Museums and the Rest of the World: The ''Primitive'' and the Global International'
+        - 'The Artist as Curator: A Discussion with Arlene Shechet on Meissen Recast'
+        - Looting and Restitution, or, the Universal Museum Reconsidered
+        - The Private Museum
+        - 'Beyond the Nation: The Americas Galleries at the MFA'
+    - Lightning Talks:
+        subsections:
+        - The Role of Technology in Modern Museums
+        - The Importance of Accessibility in Museum Exhibitions
+        - Curatorial Practices in Contemporary Art Museums
+    - Museums and Money:
+        sections:
+        - Funding Models for Museums
+        - Impact of Sponsorships and Donations on Museum Collections
+        - The Economics of Museum Attendance
+        - The Role of Government in Supporting Museums
+    - Sneak Preview of new Harvard University Art Museums with Elizabeth Rudy, Theodore Rousseau Assistant Curator of European Paintings:
+        subsections:
+        - History and Architecture of the new Harvard University Art Museums
+        - Highlights from the Permanent Collection
+        - Temporary Exhibitions and Special Programs at the new Harvard University Art Museums
+```

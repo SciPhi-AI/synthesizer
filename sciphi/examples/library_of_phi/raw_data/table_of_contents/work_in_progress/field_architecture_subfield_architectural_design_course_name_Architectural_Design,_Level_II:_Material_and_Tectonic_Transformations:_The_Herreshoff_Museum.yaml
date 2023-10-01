@@ -1,0 +1,104 @@
+course:
+  textbook: 'Architectural Design Level II: Material and Tectonic Transformations: The Herreshoff Museum Companion'
+  chapters:
+    - chapter: Introduction to Architectural Design Level II
+      sections:
+        - section: Course Number
+        - section: Resource Level
+    - chapter: Research and Site Readings
+      sections:
+        - section: Assignment 1 - Research / Site Readings (PDF)
+        - section: Site Readings
+    - chapter: Developing a Tectonic Language for an Entrance Hall / Pavilion
+      sections:
+        - section: Assignment 2 - Developing a Tectonic Language for an Entrance Hall / Pavilion
+    - chapter: Museum Program and Concept Development
+      sections:
+        - section: Assignment 3 - Museum Program and Concept Development
+    - chapter: Review with Critics
+      sections:
+        - section: Assignment 4 - Review with Critics
+    - chapter: Expanded Museum Program
+      sections:
+        - section: Final Assignment - Expanded Museum Program (PDF)
+    - chapter: Show and Tell
+      sections:
+        - section: Show and Tell
+    - chapter: First Studio: Project 1 Group Introduction
+      sections:
+        - section: First Studio: Project 1 Group Introduction
+    - chapter: Field Trip to Thomson Island
+      sections:
+        - section: Field Trip to Thomson Island
+    - chapter: Pin Up of First Ideas / Concepts
+      sections:
+        - section: Pin Up of First Ideas / Concepts (Individual) - Group Selections
+    - chapter: Group Esquisse
+      sections:
+        - section: Group Esquisse
+    - chapter: Team Presentations of Design Strategies
+      sections:
+        - section: Team Presentations x 12 of Design Strategies
+    - chapter: Research, Development and Test
+      sections:
+        - section: Research, Development and Test
+    - chapter: Informal Pin Up
+      sections:
+        - section: Informal Pin Up
+    - chapter: Prototype / Production
+      sections:
+        - section: Prototype / Production
+    - chapter: Review
+      sections:
+        - section: Review
+    - chapter: Field Trip: Herreshoff / IYRS Bristol, RI
+      sections:
+        - section: Field Trip: Herreshoff / IYRS Bristol, RI
+    - chapter: Lecture: Frano Violich
+      sections:
+        - section: Lecture: Frano Violich
+    - chapter: Lecture: George Brin / RISD
+      sections:
+        - section: Lecture: George Brin / RISD
+    - chapter: Lecture: Tim Eliason / Tri-Pyramid
+      sections:
+        - section: Lecture: Tim Eliason / Tri-Pyramid
+    - chapter: Field Trip: Goetz Boat Builders Hereshoff / Part II
+      sections:
+        - section: Field Trip: Goetz Boat Builders Hereshoff / Part II
+    - chapter: Working Review
+      sections:
+        - section: Working Review
+    - chapter: Lecture / Demonstration: Lofting and Hereshoff / N52
+      sections:
+        - section: Lecture / Demonstration: Lofting and Hereshoff / N52
+    - chapter: Studio / Shop Time
+      sections:
+        - section: Studio / Shop Time
+    - chapter: Review: Reliance Pavilion
+      sections:
+        - section: Review: Reliance Pavilion
+    - chapter: Studio
+      sections:
+        - section: Studio
+    - chapter: Review: Program / Concept
+      sections:
+        - section: Review: Program / Concept
+    - chapter: Field Trip: Peabody / Essex MuseumM. Kim / Safdie Assoc
+      sections:
+        - section: Field Trip: Peabody / Essex MuseumM. Kim / Safdie Assoc
+    - chapter: Working Review
+      sections:
+        - section: Working Review
+    - chapter: Studio
+      sections:
+        - section: Studio
+    - chapter: Mid Term
+      sections:
+        - section: Mid Term
+    - chapter: Last Studio
+      sections:
+        - section: Last Studio
+    - chapter: Final Review
+      sections:
+        - section: Final Review

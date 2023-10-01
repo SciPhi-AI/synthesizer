@@ -1,0 +1,70 @@
+```yaml
+course:
+  Electronic and Mechanical Properties of Materials:
+    textbook:
+      title: "Materials: From Microstructure to Macro Properties"
+      chapters:
+        - chapter: "Elasticity"
+          sections:
+            - section: "Stress, Strain, and Linear Elastic Behaviour"
+            - section: "Measurement of Young's Modulus"
+            - section: "Generalized Hooke's Law and Strain Energy"
+            - section: "Physical Origin and Control of Modulus for Crystalline and Rubbery Materials"
+            - section: "Composites and Modulus Control"
+            - section: "Thermo-elastic Analysis of Layered Materials"
+            - section: "Stoney's Formula for Thin Films on Thick Substrates"
+        - chapter: "Viscoelasticity"
+          sections:
+            - section: "Creep and Relaxation Tests"
+            - section: "Linear Viscoelasticity"
+            - section: "Boltzmann Superposition Principle"
+            - section: "Spring-dashpot Models"
+            - section: "Time-temperature Equivalence for Amorphous Polymers"
+            - section: "Role of Diffusion"
+        - chapter: "Plasticity"
+          sections:
+            - section: "Plastic Behaviour"
+            - section: "Yield Strength Data"
+            - section: "Equations of Plasticity and Yield Criteria"
+            - section: "Dislocation Mechanics"
+            - section: "Mechanism of Low Temperature Plasticity"
+            - section: "Temperature Dependence of Yield Strength"
+            - section: "Microstructural Strengthening Mechanisms"
+        - chapter: "Fracture"
+          sections:
+            - section: "Griffith Crack Theory"
+            - section: "Stress Analysis of Cracks"
+            - section: "Crack-tip Plastic Zone Size"
+            - section: "Measurement of Fracture Toughness"
+        - chapter: "Materials Selection"
+          sections:
+            - section: "Optimization"
+            - section: "Material Performance Indices"
+            - section: "Materials Selection Charts"
+            - section: "Case Studies"
+        - chapter: "Micro to Macro Conductivity"
+          sections:
+            - section: "Conductivity"
+        - chapter: "Electromagnetic Waves in Materials"
+          sections:
+            - section: "Wave-particle Duality"
+            - section: "Fermi-Dirac Statistics and Energy Levels"
+            - section: "Bloch Model and Band Gaps"
+            - section: "Metals and Insulators"
+            - section: "Semiconductors"
+        - chapter: "Doping and Conductivity"
+          sections:
+            - section: "Doping"
+            - section: "p-n Junctions"
+        - chapter: "Dielectrics and Polarization"
+          sections:
+            - section: "Dielectrics"
+            - section: "Polarization"
+        - chapter: "Optical Fiber Properties"
+          sections:
+            - section: "Optical Fibers"
+        - chapter: "Magnetic Materials"
+          sections:
+            - section: "Magnetic Properties"
+```
+```

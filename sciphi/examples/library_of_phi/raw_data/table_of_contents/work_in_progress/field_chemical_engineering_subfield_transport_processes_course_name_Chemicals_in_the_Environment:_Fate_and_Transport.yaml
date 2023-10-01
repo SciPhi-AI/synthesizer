@@ -1,0 +1,97 @@
+textbook:
+  'Chemicals in the Environment: Fate and Transport':
+    chapters:
+      - Control Volumes and Mass Balance:
+          sections:
+            - Advective/Dispersive Transport:
+                subsections: null
+      - Chemical Equilibria:
+          sections:
+            - Mass Action:
+                subsections: null
+            - Electroneutrality:
+                subsections: null
+            - Mass Conservation:
+                subsections: null
+      - Chemical Kinetics:
+          sections:
+            - Partitioning:
+                subsections: null
+      - River Transport:
+          sections: null
+      - Lakes and Wetlands:
+          sections:
+            - Estuaries:
+                subsections: null
+      - Sediment Transport:
+          sections:
+            - Bottom Sediments:
+                subsections: null
+            - Paleolimnology:
+                subsections: null
+      - Air-Water Exchange:
+          sections: null
+      - Major Ion Chemistry of Natural Waters:
+          sections: null
+      - Ecosystem Characteristics:
+          sections:
+            - Redox Chemistry:
+                subsections: null
+            - Redox Chemistry in Ecosystems:
+                subsections: null
+      - BOD/DO Modeling:
+          sections:
+            - Microbial Kinetics:
+                subsections: null
+      - Photochemistry:
+          sections:
+            - Hydrolysis:
+                subsections: null
+      - Groundwater and Aquifers:
+          sections:
+            - Darcy’s Law:
+                subsections: null
+            - Flow Nets:
+                subsections: null
+            - Wells:
+                subsections: null
+            - Superposition:
+                subsections: null
+            - Capture Curves:
+                subsections: null
+            - Transient Well Hydraulics:
+                subsections: null
+            - Transport and Retardation:
+                subsections: null
+      - Unsaturated Zone Flow:
+          sections:
+            - NAPL:
+                subsections: null
+      - Biodegradation:
+          sections:
+            - Bioremediation:
+                subsections: null
+      - Atmospheric Structure:
+          sections:
+            - Adiabatic Lapse Rates:
+                subsections: null
+      - Global, Synoptic, Local Scale Circulation:
+          sections: null
+      - Gaussian Plume Modeling:
+          sections:
+            - Deposition Processes:
+                subsections: null
+      - Tropospheric Chemistry:
+          sections:
+            - Acid Deposition:
+                subsections: null
+      - Stratospheric Chemistry:
+          sections:
+            - Radiative Activity of Gases:
+                subsections: null
+      - Court Cases:
+          sections:
+            - Court Case I:
+                subsections: null
+            - Court Case II:
+                subsections: null

@@ -1,0 +1,35 @@
+course:
+  Advanced Algorithms Textbook:
+    chapters:
+      - Network Flows:
+          sections:
+            - Ahuja, R. K., T. L. Magnanti, and J. B. Orlin. Network Flows: Theory, Algorithms, and Applications. Upper Saddle River, NJ: Prentice Hall, 1993. ISBN: 9780136175490
+      - Data Structures:
+          sections:
+            - Splay Trees
+            - Dynamic Trees
+      - Linear Programming:
+          sections:
+            - LP: duality, geometry, simplex
+            - LP: complexity; introduction to the ellipsoid algorithm
+            - LP: ellipsoid algorithm
+            - LP: applications of the ellipsoid algorithm
+      - Conic Programming:
+          sections:
+            - Conic programming I
+            - Conic programming II
+      - Approximation Algorithms:
+          sections:
+            - Approximation algorithms
+            - Max-cut and sparsest-cut
+            - Multi-commodity flows and metric embeddings
+      - Convex Hulls:
+          sections:
+            - Convex hulls
+            - Convex hulls and fixed dimension LP
+      - Voronoi Diagrams:
+          sections:
+            - Voronoi diagrams
+      - Streaming Algorithms:
+          sections:
+            - Streaming algorithms

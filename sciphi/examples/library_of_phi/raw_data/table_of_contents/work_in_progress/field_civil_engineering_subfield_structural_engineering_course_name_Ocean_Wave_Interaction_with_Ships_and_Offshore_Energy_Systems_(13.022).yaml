@@ -1,0 +1,126 @@
+textbook:
+  Ocean Wave Interaction with Ships and Offshore Energy Systems: A Comprehensive Guide
+
+chapters:
+  - Conservation Laws and Boundary Conditions:
+    sections:
+      - Conservation of Mass
+      - Conservation of Momentum
+      - Conservation of Energy
+      - Boundary Conditions for Waves
+  - Linear and Second-Order Wave Theory:
+    sections:
+      - Linear Wave Theory
+      - Second-Order Wave Theory
+      - Wave Reflection and Transmission
+      - Wave Dispersion
+      - Linear Wave-Body Interaction
+      - Added-Mass, Damping Coefficients, and Exciting Forces
+      - Second-Order Wave Generation
+      - Second-Order Wave Nonlinearity
+      - Second-Order Wave Analysis
+      - Second-Order Wave Forces
+  - Plane Progressive Regular Waves:
+    sections:
+      - Definition of Regular Waves
+      - Wave Height and Period
+      - Wave Amplitude and Phase
+      - Wave Velocity
+  - Wave Energy Density and Flux:
+    sections:
+      - Energy Conservation for Waves
+      - Wave Energy Density
+      - Wave Energy Flux
+  - Wave Momentum Flux:
+    sections:
+      - Momentum Conservation for Waves
+      - Wave Momentum Density
+      - Wave Momentum Flux
+  - Wavemaker Theory:
+    sections:
+      - Wavemaker Types
+      - Linear Wavemaker Theory
+      - Nonlinear Wavemaker Theory
+      - Wavemaker Efficiency
+  - Translating Coordinate Systems:
+    sections:
+      - Eulerian and Lagrangian Descriptions
+      - Translation of Coordinate Systems
+      - Wave Equations in Translating Systems
+  - Ship Kelvin Wake:
+    sections:
+      - Kelvin Wake Formation
+      - Kelvin Wake Characteristics
+      - Influence of Kelvin Wake on Ship Motion
+  - Linear Wave-Body Interaction:
+    sections:
+      - Linear Wave-Body Forces
+      - Added Mass and Damping Coefficients
+      - Exciting Forces on Structures
+      - Motion Response of Structures
+  - Added-Mass, Damping Coefficients, and Exciting Forces:
+    sections:
+      - Concept of Added Mass
+      - Calculation of Added Mass Coefficients
+      - Concept of Damping
+      - Calculation of Damping Coefficients
+      - Exciting Forces on Structures
+  - Long Wavelength Approximations:
+    sections:
+      - Long Wavelength Limit
+      - Wave Diffraction
+      - Wave Focusing
+      - Wave Scattering
+  - Wave Scattering By A Vertical Circular Cylinder:
+    sections:
+      - Scattering of Waves by a Cylinder
+      - Scattering Cross Section
+      - Scattering Diagram
+      - Coefficient of Scattering
+  - Forward-Speed Ship Wave Flows:
+    sections:
+      - Ship Wave Pattern
+      - Wave Resistance
+      - Wave Making Resistance
+      - Wave Interference
+  - Strip Theory Of Ship Motions. Heave & Pitch:
+    sections:
+      - Strip Theory Method
+      - Heave Motion of Ships
+      - Pitch Motion of Ships
+      - Added Mass and Damping for Heave and Pitch
+  - Ship Roll-Sway-Yaw Motions:
+    sections:
+      - Roll Motion of Ships
+      - Sway Motion of Ships
+      - Yaw Motion of Ships
+      - Added Mass and Damping for Roll, Sway, and Yaw
+  - Derivative Seakeeping Quantities:
+    sections:
+      - Hydrodynamic Derivatives
+      - Response Amplitude Operators
+      - Motion Transfer Functions
+  - Seakeeping In Random Waves:
+    sections:
+      - Random Wave Spectrum
+      - Wave Scatter Diagram
+      - Wave Response Analysis
+      - Motion Statistics
+  - Solution of Wave-Body Flows, Green's Theorem:
+    sections:
+      - Potential Flow Theory
+      - Green's Theorem
+      - Boundary Integral Equation Method
+      - Panel Method
+      - Rankine Intergral Equations For Ship Flows
+      - Panel Methods
+  - Wave Drift Forces:
+    sections:
+      - Drift Force on Structures
+      - Second-Order Drift Force
+      - Drift Force Calculation Methods
+  - Second-Order Wave Effect On Offshore Platforms:
+    sections:
+      - Second-Order Wave Excitation
+      - Second-Order Wave Response
+      - Second-Order Wave Loads

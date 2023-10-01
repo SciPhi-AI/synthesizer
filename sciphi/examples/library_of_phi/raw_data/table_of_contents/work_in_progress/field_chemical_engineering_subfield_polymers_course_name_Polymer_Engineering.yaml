@@ -1,0 +1,38 @@
+course:
+  Polymer Engineering Textbook:
+    chapters:
+      - chapter: Introduction, Overview of Polymeric Materials
+        sections:
+          - section: Polymerization and Crosslinking
+          - section: Tacticity, Molecular Weight
+          - section: Crystallinity, Glass Transition Temperature
+          - section: Molecular Orientation
+      - chapter: Chain Conformation, Kinetic Theory of Rubber Elasticity
+        sections:
+          - section: Mechanics of Elastomers
+          - section: Viscoelasticity - Creep, Stress Relaxation
+          - section: Dynamic Response
+          - section: Maxwell Models
+          - section: Zener Model
+      - chapter: Distribution of Relaxation Times
+        sections:
+          - section: Effect of Temperature
+          - section: Stiffness
+          - section: Stress Analysis
+          - section: Yielding and Crazing
+          - section: Linear Fracture Mechanics
+      - chapter: Elastic-plastic Fracture
+        sections:
+          - section: Brittle Fracture, Toughening
+          - section: Composites
+          - section: Matrices and Reinforcements
+          - section: Composites Fabrication
+          - section: Mechanics of Continuous Fibers
+      - chapter: Discontinuous Fibers, Reinforced Rubber
+        sections:
+          - section: Melt Processing
+          - section: Transport Theory, Viscous Flow
+          - section: Viscous Flow Continued
+          - section: Cooling and Solidification
+          - section: Extrusion
+          - section: Injection Molding

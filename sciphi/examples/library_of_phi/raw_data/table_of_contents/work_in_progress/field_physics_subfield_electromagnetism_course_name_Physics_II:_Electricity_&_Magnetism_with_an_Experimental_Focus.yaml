@@ -1,0 +1,50 @@
+textbook:
+  'Electricity & Magnetism: A Comprehensive Guide':
+    chapters:
+    - 'Chapter 1: Introduction to Electricity and Magnetism':
+        sections:
+        - 'Section 1.1: Fundamental Forces':
+            subsections:
+            - 'Subsection 1.1.1: Electric Charge and Electrostatic Induction'
+            - 'Subsection 1.1.2: Coulomb’s Law'
+            - 'Subsection 1.1.3: Electric Field'
+            - 'Subsection 1.1.4: Electric Field and Polarization'
+            - 'Subsection 1.1.5: Gauss’ Law'
+            - 'Subsection 1.1.6: Electric Field: Work, Energy, Potential'
+    - 'Chapter 2: Conductors, Insulators, and Semi-Conductors':
+        sections:
+        - 'Section 2.1: Review for Quiz 1'
+        - 'Section 2.2: Quiz 1'
+        - 'Section 2.3: Capacitance'
+        - 'Section 2.4: Electrostatic Force Experiment'
+        - 'Section 2.5: Electric Current, Ohm’s Law'
+        - 'Section 2.6: Electric Circuits'
+    - 'Chapter 3: Magnetism':
+        sections:
+        - 'Section 3.1: RC Circuits'
+        - 'Section 3.2: Ionization, Electrical Breakdown Experiment'
+        - 'Section 3.3: Magnetic Field - Lorentz Force'
+        - 'Section 3.4: Magnetic Field Sources; Biot-Savart’s Law'
+        - 'Section 3.5: Magnetic Field - Ampere’s Law'
+        - 'Section 3.6: Magnetic Fields in Matter'
+    - 'Chapter 4: Magnetic Induction':
+        sections:
+        - 'Section 4.1: Magnetic Induction - Faraday’s Law'
+        - 'Section 4.2: Review for Quiz 3'
+        - 'Section 4.3: Quiz 3'
+        - 'Section 4.4: Magnetic Induction - Lenz’s Law, Eddy Currents'
+        - 'Section 4.5: Inductance'
+        - 'Section 4.6: AC Circuits'
+    - 'Chapter 5: Electromagnetic Waves':
+        sections:
+        - 'Section 5.1: RL Circuits'
+        - 'Section 5.2: RLC Circuits'
+        - 'Section 5.3: Displacement Current and Maxwell’s Equations'
+        - 'Section 5.4: Electromagnetic Waves'
+        - 'Section 5.5: Review for Quiz 4'
+        - 'Section 5.6: Quiz 4'
+    - 'Chapter 6: Polarization, Interference, Diffraction, Scattering':
+        sections:
+        - 'Section 6.1: Polarization-Microwave Experiment'
+        - 'Section 6.2: Interference, Diffraction, Scattering'
+        - 'Section 6.3: Interference, Diffraction, Scattering'

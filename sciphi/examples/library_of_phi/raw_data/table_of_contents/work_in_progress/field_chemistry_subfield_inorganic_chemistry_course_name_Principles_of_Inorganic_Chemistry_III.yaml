@@ -1,0 +1,50 @@
+```yaml
+textbook:
+  Principles of Inorganic Chemistry Volume III: Advanced Topics in Inorganic Chemistry
+  chapters:
+    - Introduction and Theory:
+      sections:
+        - The three-center-four-electron (3c-4e) bond nature
+        - Chemical Bonding in Hypervalent Molecules
+        subsections:
+    - Aluminum Chemistry I:
+      sections:
+        - Aluminum Chemistry I
+        subsections:
+    - Aluminum II:
+      sections:
+        - Aluminum II
+        subsections:
+    - Phosphorus:
+      sections:
+        - Phosphorus
+        subsections:
+    - Gallium and Indium:
+      sections:
+        - Gallium and Indium
+        subsections:
+    - Gallium Multiple Bonds:
+      sections:
+        - Gallium Multiple Bonds
+        subsections:
+    - Gallium, Phosphorus, and Tin:
+      sections:
+        - Gallium, Phosphorus, and Tin
+        subsections:
+    - Nitrogen, Halogens, Noble Gases:
+      sections:
+        - Nitrogen, Halogens, Noble Gases
+        subsections:
+    - Fluorine, Krypton:
+      sections:
+        - Fluorine, Krypton
+        subsections:
+    - Relativistic Effects:
+      sections:
+        - Relativistic Effects
+        subsections:
+    - Gold, Fluorine, Xenon:
+      sections:
+        - Gold, Fluorine, Xenon
+        subsections:
+```

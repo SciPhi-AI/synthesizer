@@ -1,0 +1,57 @@
+textbook:
+  Global Freshwater Crisis: A Comprehensive Study
+  chapters:
+    - 'Chapter 1: Water for life: Commons, commodity, nature/culture':
+        sections:
+        - 'Section 1.1: Water as a Common Resource'
+        - 'Section 1.2: Water as a Commodity'
+        - 'Section 1.3: Water in the Context of Nature and Culture'
+    - 'Chapter 2: Water, history, and culture':
+        sections:
+        - 'Section 2.1: Historical Perspective of Water Use and Development'
+        - 'Section 2.2: Cultural Significance of Water'
+    - 'Chapter 3: Water resources: The physical system, weather, and climate':
+        sections:
+        - 'Section 3.1: The Physical System of Water Resources'
+        - 'Section 3.2: Weather and Climate Influences on Water Resources'
+    - 'Chapter 4: Water power - Lowell National Historical Park':
+        sections:
+        - 'Section 4.1: Field trip to Lowell National Historical Park'
+        - 'Section 4.2: Water Power and Its Historical Significance'
+    - 'Chapter 5: China’s Three Gorges Dam Controversy':
+        sections:
+        - 'Section 5.1: Controversies Surrounding the Three Gorges Dam'
+    - 'Chapter 6: Water scarcity':
+        sections:
+        - 'Section 6.1: Causes and Impacts of Water Scarcity'
+    - 'Chapter 7: Cambridge Water Treatment Plant':
+        sections:
+        - 'Section 7.1: Field trip to Cambridge Water Treatment Plant'
+        - 'Section 7.2: Water Treatment Processes'
+    - 'Chapter 8: WASH and Pure Home Water’s story and factory update':
+        sections:
+        - 'Section 8.1: WASH (Water, Sanitation, and Hygiene)'
+        - 'Section 8.2: Pure Home Water and Its Initiatives'
+    - 'Chapter 9: Water conflict and cooperation':
+        sections:
+        - 'Section 9.1: Conflicts Over Water Resources'
+        - 'Section 9.2: Cooperation for Water Management'
+    - 'Chapter 10: Adaption: Integrated water resources management':
+        sections:
+        - 'Section 10.1: Integrated Water Resources Management'
+    - 'Chapter 11: Ecological waterscapes':
+        sections:
+        - 'Section 11.1: Ecological Importance of Water Landscapes'
+    - 'Chapter 12: Protecting water: Green roofs, rainwater harvesting, and waste stabilization ponds':
+        sections:
+        - 'Section 12.1: Green Roofs for Water Conservation'
+        - 'Section 12.2: Rainwater Harvesting Techniques'
+        - 'Section 12.3: Waste Stabilization Ponds for Water Treatment'
+    - 'Chapter 13: Water, food security, and agriculture':
+        sections:
+        - 'Section 13.1: Water's Role in Food Security'
+        - 'Section 13.2: Water Use in Agriculture'
+    - 'Chapter 14: Student presentations; Water visions: The next 50 years':
+        sections:
+        - 'Section 14.1: Student Presentations on Water-Related Topics'
+        - 'Section 14.2: Future Visions and Challenges in Water Management'

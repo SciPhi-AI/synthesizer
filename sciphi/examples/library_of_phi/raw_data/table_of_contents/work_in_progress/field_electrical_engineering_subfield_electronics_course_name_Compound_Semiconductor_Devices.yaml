@@ -1,0 +1,85 @@
+textbook:
+  Compound Semiconductor Devices: A Comprehensive Guide
+  chapters:
+    - Compound Semiconductors:
+        sections:
+        - Families of Compound Semiconductors (III-V's, II-VI's, IV-VI's, IV-IV's)
+        - Alloys and Band Structures
+        - Crystal Lattices and Electrical Properties
+        - Optical Properties and Trends
+        - Useful Compounds
+    - Metal-Semiconductor Interfaces:
+        sections:
+        - Schottky Barriers
+        - Compound Semiconductor Surface
+        - Fermi Level Pinning
+        - Theories of Barrier Formation
+        - Current Flow Mechanisms
+    - Heterostructures:
+        sections:
+        - Energy Band Profiles (ΔEc, ΔEv, Ec)
+        - Conduction Normal to Junction
+        - I-V Models and Characteristics
+        - Theory of Graded Layers
+        - Creation of Internal Carrier-Specific Fields
+    - Quantum Effect Structures:
+        sections:
+        - Quantum Wells: Theory, Fabrication, Observation
+    - Epitaxy:
+        sections:
+        - Concerns and Constraints
+        - Lattice-Matched Systems
+        - Strained Layers
+    - MESFETs:
+        sections:
+        - Basic Concepts
+        - Models for Terminal Characteristics
+        - Velocity Saturation
+        - Dynamic Models
+        - Fabrication Sequences
+    - HFETs:
+        sections:
+        - High Electron Mobility Transistors
+    - HBTs:
+        sections:
+        - Emitter Efficiency
+        - Base Transport
+        - Base Resistance
+        - Junction Capacitance
+        - Graded Layers Applications
+    - Light Emission and Absorption:
+        sections:
+        - Basic Theory
+        - Direct vs. Indirect Gap
+        - Band-to-Band and Band-to-Impurity Transitions
+    - Dielectric Waveguides and Photonic Crystals:
+        sections:
+        - Basics of Optical Cavities and Waveguides
+        - Photonic Crystal Concepts, Structures, Issues
+    - Light Emitting Diodes (LEDs):
+        sections:
+        - Structure, Materials, Characteristics
+    - Laser Diodes:
+        sections:
+        - Feedback and Stimulated Emission
+        - Cavity Design
+        - Quantum Well, Wire, Dot Active Regions
+        - Strained Layers
+    - Detectors:
+        sections:
+        - Structure and Theory of Basic Types (p-i-n)
+    - Modulators:
+        sections:
+        - Multiple Quantum Well Structures
+        - Quantum Confined Stark Effect
+        - Waveguide Couplers, Switches, Modulators
+    - OEICs:
+        sections:
+        - Optoelectronic Integrated Circuits
+    - Quantum Effect Devices:
+        sections:
+        - Electron Waveguides
+        - Single Electron Transistors
+    - Device Research Conference Preview:
+        sections:
+        - What's New and Exciting in Research and the Marketplace?

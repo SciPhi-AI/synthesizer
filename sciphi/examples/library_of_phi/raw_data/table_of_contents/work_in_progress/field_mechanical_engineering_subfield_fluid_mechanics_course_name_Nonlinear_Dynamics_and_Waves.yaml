@@ -1,0 +1,62 @@
+course:
+  textbook: Nonlinear Dynamics and Waves: A Comprehensive Introduction
+  chapters:
+    - chapter: Introduction to Nonlinear Dynamics
+      sections:
+        - section: Linear vs Nonlinear Systems
+        - section: Stability and Instability
+        - section: Bifurcations
+    - chapter: Nonlinear Oscillations
+      sections:
+        - section: Periodic Solutions
+        - section: Limit Cycles
+        - section: Poincaré Maps
+        - section: Nonlinear Damping
+    - chapter: Chaos and Fractals
+      sections:
+        - section: Strange Attractors
+        - section: Lyapunov Exponents
+        - section: Fractal Geometry
+        - section: Sensitive Dependence on Initial Conditions
+    - chapter: Nonlinear Waves
+      sections:
+        - section: Solitons
+        - section: Dispersive Waves
+        - section: Nonlinear Schrödinger Equation
+        - section: Rogue Waves
+    - chapter: Pattern Formation
+      sections:
+        - section: Turing Patterns
+        - section: Reaction-Diffusion Equations
+        - section: Self-Organization
+        - section: Spatiotemporal Chaos
+    - chapter: Nonlinear Control
+      sections:
+        - section: Feedback Control
+        - section: Stabilization
+        - section: Controllability and Observability
+        - section: Optimal Control
+    - chapter: Nonlinear Systems in Biology
+      sections:
+        - section: Neural Networks
+        - section: Genetic Regulatory Networks
+        - section: Ecological Dynamics
+        - section: Epidemiological Models
+    - chapter: Nonlinear Systems in Engineering
+      sections:
+        - section: Structural Dynamics
+        - section: Vibrations and Resonance
+        - section: Fluid Dynamics
+        - section: Electrical Circuits
+    - chapter: Nonlinear Systems in Physics
+      sections:
+        - section: Nonlinear Optics
+        - section: Bose-Einstein Condensates
+        - section: Granular Materials
+        - section: Superconductivity
+    - chapter: Nonlinear Systems in Economics
+      sections:
+        - section: Economic Cycles
+        - section: Game Theory
+        - section: Financial Markets
+        - section: Complex Networks

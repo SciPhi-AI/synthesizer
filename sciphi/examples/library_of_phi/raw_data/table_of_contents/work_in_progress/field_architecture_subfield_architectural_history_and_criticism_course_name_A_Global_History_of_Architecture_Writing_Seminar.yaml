@@ -1,0 +1,27 @@
+```yaml
+course:
+  textbook: A Comprehensive Guide to Global Architectural History Writing Seminar
+  chapters:
+    - Introduction:
+        sections:
+        - Conceptualizing 'the global':
+            subsections: []
+        - Comparative 'globality' in architectural history textbooks:
+            subsections: []
+        - The global and art history:
+            subsections: []
+        - Euro-centrism and ethno-centrism:
+            subsections: []
+        - Large perspective histories:
+            subsections: []
+    - Example Lecture:
+        sections:
+        - Some global hot points:
+            subsections: []
+        - Some global hot points:
+            subsections: []
+    - Discussion:
+        sections: []
+    - Student Presentations:
+        sections: []
+```

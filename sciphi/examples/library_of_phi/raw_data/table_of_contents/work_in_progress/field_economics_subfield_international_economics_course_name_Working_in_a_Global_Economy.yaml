@@ -1,0 +1,41 @@
+```yaml
+textbook:
+  Working in a Global Economy: A Comprehensive Guide to Understanding the New Global Economy
+  chapters:
+    - 'Chapter 1: Introduction: What is New in the ''New'' Global Economy':
+        sections:
+        - 'Section 1.1: The World is Flat'
+        - 'Section 1.2: Sinking Globalization'
+    - 'Chapter 2: Competing Interpretations of Globalization':
+        sections:
+        - 'Section 2.1: The Globalization Perspective'
+        - 'Section 2.2: The National Perspective'
+    - 'Chapter 3: Globalization and Technology':
+        sections:
+        - 'Section 3.1: Technological Factors in the International Division of Labor'
+        - 'Section 3.2: Contenders for Different Segments of Work/Production'
+    - 'Chapter 4: Globalization and Culture':
+        sections:
+        - 'Section 4.1: Cultural Factors in the International Division of Labor'
+        - 'Section 4.2: Institutional Factors in the International Division of Labor'
+    - 'Chapter 5: Globalization and Competition':
+        sections:
+        - 'Section 5.1: Types of Competition in the Global Economy'
+        - 'Section 5.2: Market Forces and Competition'
+    - 'Chapter 6: Globalization and Labor':
+        sections:
+        - 'Section 6.1: Labor Mobility and Globalization'
+        - 'Section 6.2: Labor Market Flexibility'
+    - 'Chapter 7: Globalization and Trade':
+        sections:
+        - 'Section 7.1: International Trade Patterns'
+        - 'Section 7.2: Trade Agreements and Organizations'
+    - 'Chapter 8: Globalization and Finance':
+        sections:
+        - 'Section 8.1: Global Financial Markets'
+        - 'Section 8.2: International Capital Flows'
+    - 'Chapter 9: Globalization and Development':
+        sections:
+        - 'Section 9.1: Globalization and Economic Development'
+        - 'Section 9.2: Globalization and Social Development'
+```

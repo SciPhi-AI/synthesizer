@@ -1,0 +1,42 @@
+textbook:
+  Hydrodynamics: A Comprehensive Guide
+  chapters:
+  - Introduction to Marine Hydrodynamics:
+      sections:
+      - Introduction
+      - Hydrostatics
+      - Qualitative Flow Descriptions
+      - Lab Tour and Safety Briefing
+  - Bernoulli’s Equation and Vorticity:
+      sections:
+      - Bernoulli’s Equation
+      - Vorticity
+  - Potential Flow:
+      sections:
+      - Potential Flow Theory
+  - Unsteady Bernoulli’s Equation and D’Alembert’s Paradox:
+      sections:
+      - Unsteady Bernoulli’s Equation
+      - D’Alembert’s Paradox
+  - Added Mass:
+      sections:
+      - 'Lab 1: Added Mass'
+      - 'Recitation: Added Mass'
+  - Linear Free-Surface Gravity Waves:
+      sections:
+      - 'Lab 2: Waves'
+      - Waves
+      - Energy in Waves
+  - Forces on Bodies:
+      sections:
+      - Wave Drag
+      - 'Lab 3: Ship Resistance'
+      - Boundary Layers
+      - Vortex Induced Vibrations
+  - Propellers:
+      sections:
+      - Propellers
+      - Fish Swimming
+  - Project Presentations:
+      sections:
+      - Project Presentations

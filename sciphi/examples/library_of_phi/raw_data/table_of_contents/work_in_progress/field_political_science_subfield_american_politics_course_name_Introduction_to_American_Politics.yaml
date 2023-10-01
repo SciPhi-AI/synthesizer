@@ -1,0 +1,124 @@
+course:
+  textbook:
+    Introduction to American Politics:
+      chapters:
+        - The American Political Tradition:
+            sections:
+              - Dahl, Robert A. How Democratic is the American Constitution?
+              - 'Kernell, Samuel, and Steven S. Smith, eds. Principles and Practice of American Politics: Classic and Contemporary Readings.'
+              - 'Mayhew, David R. Partisan Balance: Why Political Parties Don’t Kill the U.S. Constitutional System.'
+        - The Constitution I:
+            sections:
+              - Foundations of the American Political System
+              - Constitutional Principles and Structures
+              - Separation of Powers
+        - The Constitution II:
+            sections:
+              - Constitutional Interpretation
+              - Judicial Review
+              - Federalism and the Constitution
+        - 'Congress I: Ambitious Politicians':
+            sections:
+              - Structure and Organization of Congress
+              - Congressional Elections
+              - Congressional Committees
+        - 'Congress II: Internal Organization':
+            sections:
+              - Party Leadership and Organization in Congress
+              - Congressional Procedures and Rules
+              - Lawmaking Process in Congress
+        - The Presidency:
+            sections:
+              - Executive Powers and Functions
+              - Presidential Elections
+              - The President's Relationship with Congress and the Courts
+        - The Bureaucracy:
+            sections:
+              - Structure and Organization of the Bureaucracy
+              - Bureaucratic Decision-Making
+              - Bureaucratic Accountability and Oversight
+        - The Judiciary:
+            sections:
+              - Structure and Organization of the Judiciary
+              - Judicial Decision-Making
+              - Judicial Activism vs. Judicial Restraint
+        - Federalism:
+            sections:
+              - Federal vs. State Powers
+              - Intergovernmental Relations
+              - Constitutional Issues in Federalism
+        - Citizens and Politics:
+            sections:
+              - Political Socialization
+              - Public Opinion and Political Participation
+              - Voting Behavior and Political Parties
+        - Public Opinion:
+            sections:
+              - Formation and Measurement of Public Opinion
+              - Political Ideologies and Public Opinion
+              - Public Opinion and Policymaking
+        - Parties and Partisanship:
+            sections:
+              - Political Parties and Their Functions
+              - Party Organization and Mobilization
+              - Party Competition and Electoral Systems
+        - Political Choice:
+            sections:
+              - Rational Choice Theory
+              - Voting Models and Electoral Systems
+              - Political Campaigns and Media Influence
+        - Campaigns and Elections:
+            sections:
+              - Campaign Strategies and Tactics
+              - Election Laws and Voting Rights
+              - Electoral Systems and their Consequences
+        - The U.S. in Comparative Perspective:
+            sections:
+              - Comparative Political Systems
+              - Comparative Electoral Systems
+              - Comparative Public Policies
+        - Political Participation:
+            sections:
+              - Forms of Political Participation
+              - Civic Engagement and Social Movements
+              - Interest Groups and Lobbying
+        - Politics and Policy:
+            sections:
+              - Policy Making Process
+              - Policy Analysis and Evaluation
+              - Policy Implementation and Impact
+        - Political Geography:
+            sections:
+              - Spatial Distribution of Political Power
+              - Electoral Geography and Gerrymandering
+              - Geographic Factors in Political Behavior
+        - Parties and the U.S. Political System:
+            sections:
+              - Historical Development of American Political Parties
+              - Party Systems and Realignment
+              - Contemporary Party Politics
+        - Polarization and Extremism:
+            sections:
+              - Political Polarization and its Causes
+              - Extremist Movements and Radicalization
+              - The Impact of Polarization on Governance
+        - Money and Organized Interests:
+            sections:
+              - Campaign Finance and Political Fundraising
+              - Interest Group Politics and Lobbying
+              - Influence of Money and Interests on Politics
+        - The Politics of Economic Inequality:
+            sections:
+              - Income Distribution and Wealth Gap
+              - Economic Policies and Inequality
+              - Social Welfare and Redistribution
+        - Race and Racism:
+            sections:
+              - Historical Context of Race in American Politics
+              - Racial Politics and Voting Rights
+              - Policies Addressing Racial Inequality
+        - Immigration and Multiculturalism:
+            sections:
+              - Immigration Policies and Politics
+              - Multiculturalism and Diversity in the U.S.
+              - Assimilation and Integration Challenges

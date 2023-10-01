@@ -1,0 +1,64 @@
+```yaml
+textbook:
+  'How to Build an Animal: Cell Fate and Identity in Development and Disease':
+    chapters:
+      - Chapter 1: Introduction to Cell Fate and Identity
+        sections:
+          - Section 1.1: Class Introduction
+            subsections:
+              - Lecture Summary
+              - Ruben, Adam. 'How to Read a Scientific Paper.' Science Magazine, January 2016. (Accessed November 28, 2017.)
+      - Chapter 2: Potency and Pluripotent Stem Cells
+        sections:
+          - Section 2.1: Lecture Summary
+          - Section 2.2: Martin, George R. 'Isolation of a Pluripotent Cell Line from Early Mouse Embryos Cultured in Medium Conditioned by Teratocarcinoma Stem Cells.' Proceedings of the National Academy of Sciences of the United States of America, 78, no. 12 (1981): 7634-38.
+          - Section 2.3: Takahashi, K
+      - Chapter 3: Signatures and Mechanisms of Pluripotency: Transcriptional Networks
+        sections:
+          - Section 3.1: Lecture Notes
+      - Chapter 4: Signatures and Mechanisms of Pluripotency: Bivalent Chromatin Domains
+        sections:
+          - Section 4.1: Lecture Notes
+      - Chapter 5: Germ Cell Identity
+        sections:
+          - Section 5.1: Lecture Notes
+      - Chapter 6: Reprogramming of Germ Cells and Stem Cells
+        sections:
+          - Section 6.1: Lecture Notes
+      - Chapter 7: Reprogramming Soma by Pioneer Transcription Factors
+        sections:
+          - Section 7.1: Lecture Notes
+      - Chapter 8: Defining Hematopoietic Identities: Part 1
+        sections:
+          - Section 8.1: Lecture Notes
+      - Chapter 9: Defining Hematopoietic Identities: Part 2
+        sections:
+          - Section 9.1: Lecture Notes
+      - Chapter 10: Regulatory Mechanisms for Immune Cell Identity: Chromatin and Transcription Factors
+        sections:
+          - Section 10.1: Lecture Notes
+      - Chapter 11: Regulatory Mechanisms for Immune Cell Identity: Cell Signaling
+        sections:
+          - Section 11.1: Lecture Notes
+      - Chapter 12: Disorders of Cell Identity: The Reproductive Tract and Germ Cell Identity
+        sections:
+          - Section 12.1: Lecture Notes
+      - Chapter 13: Disorders of Cell Identity: Hematopoiesis
+        sections:
+          - Section 13.1: Lecture Notes
+      - Chapter 14: Cellular Reprogramming and Therapeutics
+        sections:
+          - Section 14.1: Lecture Notes
+      - Chapter 15: Oral Presentations and Evaluations
+        sections:
+          - Section 15.1: Lecture Notes
+      - Chapter 16: Readings
+        sections:
+          - Section 16.1: Syllabus
+      - Chapter 17: Calendar
+        sections:
+          - Section 17.1: Syllabus
+      - Chapter 18: Projects
+        sections:
+          - Section 18.1: Syllabus
+```

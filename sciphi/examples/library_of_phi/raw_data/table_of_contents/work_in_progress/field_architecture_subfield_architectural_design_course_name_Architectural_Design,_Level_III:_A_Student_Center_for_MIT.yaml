@@ -1,0 +1,97 @@
+textbook:
+  'Architectural Design, Level III: A Comprehensive Guide to Designing a Student Center for MIT':
+    chapters:
+      - Introduction to Architectural Design:
+          sections:
+            - Principles of Architectural Design
+            - Design Process
+            - Conceptualization
+            - Design Thinking
+            - Design Brief
+      - Site Analysis and Contextualization:
+          sections:
+            - Site Selection
+            - Site Assessment
+            - Site Analysis Methods
+            - Contextual Factors
+            - Urban Planning Considerations
+            - Environmental Impact Assessment
+            - Historic Preservation Considerations
+            - Accessibility Analysis
+      - Program Development and Space Planning:
+          sections:
+            - Program Requirements
+            - Functional Spaces
+            - Space Allocation
+            - Space Relationships
+            - Spatial Organization
+            - Circulation Design
+            - Furniture and Equipment Selection
+            - Interior Design Considerations
+            - Universal Design Principles
+      - Structural Systems and Construction:
+          sections:
+            - Structural Principles
+            - Material Selection
+            - Building Systems
+            - Construction Techniques
+            - Sustainability in Construction
+            - Building Codes and Regulations
+            - Foundation Design
+            - Structural Analysis and Design
+            - Structural Connections
+      - Environmental Design and Energy Efficiency:
+          sections:
+            - Passive Design Strategies
+            - Daylighting and Lighting Design
+            - Thermal Comfort
+            - Energy Modeling
+            - Renewable Energy Systems
+            - Indoor Air Quality
+            - Water Efficiency Strategies
+            - Waste Management Systems
+            - Green Building Certification
+      - Building Technology and Systems:
+          sections:
+            - HVAC Systems
+            - Plumbing Systems
+            - Electrical Systems
+            - Fire Protection Systems
+            - Acoustics and Sound Control
+            - Building Automation Systems
+            - Telecommunications and Networking
+            - Security Systems
+            - Building Maintenance and Operations
+      - Architectural Representation and Communication:
+          sections:
+            - Architectural Drawings
+            - 3D Modeling and Rendering
+            - Virtual Reality in Architecture
+            - Graphic Design Principles
+            - Presentation Techniques
+            - Design Communication Tools
+            - Digital Fabrication Techniques
+            - Photography in Architecture
+            - Design Portfolio Development
+      - Design Critique and Evaluation:
+          sections:
+            - Critique Methods
+            - Design Evaluation Criteria
+            - Peer Review Process
+            - Design Feedback and Iteration
+            - Design Ethics and Responsibility
+            - User Experience Evaluation
+            - Post-Occupancy Evaluation
+            - Comparative Analysis of Designs
+            - Design Research Methods
+      - Project Management and Professional Practice:
+          sections:
+            - Project Planning and Scheduling
+            - Budgeting and Cost Estimation
+            - Contract Administration
+            - Building Permit Process
+            - Client Relations
+            - Professional Ethics in Architecture
+            - Legal and Regulatory Considerations
+            - Risk Management in Architecture
+            - Marketing and Business Development

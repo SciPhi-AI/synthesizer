@@ -1,0 +1,57 @@
+textbook:
+  Solving Complex Problems: A Comprehensive Guide to Problem Solving Strategies
+  chapters:
+    - Introduction to Complex Problem Solving:
+        sections:
+        - Definition of a Complex Problem
+        - Characteristics of Complex Problems
+        - Approaches to Complex Problem Solving
+    - Problem Analysis and Structuring:
+        sections:
+        - Problem Identification
+        - Problem Framing
+        - Problem Decomposition
+        - Systems Thinking
+        - Root Cause Analysis
+    - Decision Making and Evaluation:
+        sections:
+        - Decision Making Models
+        - Decision Criteria and Trade-offs
+        - Decision Analysis Techniques
+        - Evaluation Methods
+        - Risk Assessment and Management
+    - Collaboration and Teamwork:
+        sections:
+        - Team Formation and Dynamics
+        - Communication Strategies
+        - Conflict Resolution
+        - Team Decision Making
+        - Virtual Collaboration
+    - Creativity and Innovation:
+        sections:
+        - Creativity Techniques
+        - Idea Generation and Selection
+        - Design Thinking
+        - Innovation Management
+        - Intellectual Property Rights
+    - Implementation and Monitoring:
+        sections:
+        - Project Planning and Scheduling
+        - Resource Allocation
+        - Performance Measurement
+        - Change Management
+        - Continuous Improvement
+    - Ethical and Social Considerations:
+        sections:
+        - Ethical Decision Making
+        - Social Impact Assessment
+        - Stakeholder Engagement
+        - Sustainability Principles
+        - Corporate Social Responsibility
+    - Case Studies:
+        sections:
+        - Complex Problem Solving in Business
+        - Complex Problem Solving in Engineering
+        - Complex Problem Solving in Public Policy
+        - Complex Problem Solving in Healthcare
+        - Complex Problem Solving in Education

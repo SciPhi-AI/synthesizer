@@ -1,0 +1,90 @@
+```yaml
+textbook:
+  Computational Ocean Acoustics: Theory and Applications:
+    chapters:
+      - chapter:
+          title: Fundamentals of Ocean Acoustics
+          sections:
+            - section:
+                title: The Acoustic Wave Equation
+            - section:
+                title: Integral Transforms
+            - section:
+                title: The Helmholtz Equation
+      - chapter:
+          title: Sources in Unbounded and Bounded Media
+          sections:
+            - section:
+                title: Green's Functions
+            - section:
+                title: Green's Theorem
+      - chapter:
+          title: Reflection and Transmission
+          sections:
+            - section:
+                title: Integral Transform Solution
+            - section:
+                title: Source in Half-spaces
+      - chapter:
+          title: Ideal Waveguides
+          sections:
+            - section:
+                title: The Pekeris Waveguide
+      - chapter:
+          title: Wavenumber Integration
+          sections:
+            - section:
+                title: Layer Solutions and Interface Conditions
+            - section:
+                title: Global Matrix Solution
+            - section:
+                title: Propagator Matrix and Invariant Embedding Solution
+            - section:
+                title: Numerical Evaluation of Wavenumber Integral
+            - section:
+                title: Aliasing and Wrap-around
+            - section:
+                title: Numerical Methods Used in Wavenumber Integration
+      - chapter:
+          title: Normal Modes
+          sections:
+            - section:
+                title: Mathematical Derivation
+            - section:
+                title: Model Expansion of the Green's Function
+            - section:
+                title: Isovelocity Problem
+            - section:
+                title: Generalized Derivation
+            - section:
+                title: Munk Profile
+            - section:
+                title: Numerical Approaches
+            - section:
+                title: Numerical Procedures
+            - section:
+                title: Range-dependent Environment
+            - section:
+                title: Coupled Modes
+            - section:
+                title: 3-D Environment
+      - chapter:
+          title: Parabolic Equation
+          sections:
+            - section:
+                title: Derivation of Parabolic Equations
+            - section:
+                title: Starting Fields
+            - section:
+                title: Energy Conservation Problem
+            - section:
+                title: Solutions by FDs FEs
+      - chapter:
+          title: Doppler Shift in Waveguide
+      - chapter:
+          title: Time Series Simulation
+          sections:
+            - section:
+                title: Signal and Noise
+```
+```

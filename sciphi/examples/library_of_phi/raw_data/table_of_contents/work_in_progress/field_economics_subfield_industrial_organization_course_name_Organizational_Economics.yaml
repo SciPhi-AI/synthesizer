@@ -1,0 +1,134 @@
+textbook:
+  Organizational Economics: A Comprehensive Guide to Understanding and Analyzing Organizations
+  chapters:
+    - Boundaries of the Firm:
+        sections:
+        - Introduction
+          subsections:
+          - Definition of Boundaries
+          - Importance of Boundaries in Organizations
+          - Historical Perspective on Boundaries
+        - Classic Evidence
+          subsections:
+          - Coase's Theory of the Firm
+          - Williamson's Transaction Cost Economics
+          - Chandler's Theory of the Managerial Enterprise
+        - Formal Theories
+          subsections:
+          - Agency Theory
+          - Property Rights Theory
+          - Resource-Based View
+        - Recent Evidence
+          subsections:
+          - Empirical Studies on Firm Boundaries
+          - The Role of Technology in Shaping Firm Boundaries
+          - Globalization and Firm Boundaries
+    - Contracting between Firms:
+        sections:
+        - Evidence on Contracts
+          subsections:
+          - Types of Contracts
+          - Incomplete Contracts and Relationship-Specific Investments
+          - Empirical Studies on Contracting
+        - Cases on Integration and Contracts
+          subsections:
+          - Vertical Integration Cases
+          - Outsourcing Cases
+          - Strategic Alliances and Joint Ventures Cases
+    - Pay for Performance:
+        sections:
+        - Cases on Incentives
+          subsections:
+          - Performance-Based Pay Systems
+          - Bonuses and Incentive Compensation
+          - Long-Term Incentive Plans
+    - Job Assignment, Skill Development, and Networks:
+        sections:
+        - Job Assignment
+          subsections:
+          - Job Design and Work Allocation
+          - Task Specialization and Division of Labor
+          - Job Rotation and Enrichment
+        - Skill Development
+          subsections:
+          - Training and Development Programs
+          - Learning Curves and Skill Acquisition
+          - Knowledge Transfer and Knowledge Management
+        - Networks
+          subsections:
+          - Social Networks in Organizations
+          - Inter-Organizational Networks and Alliances
+          - Network Analysis and Organizational Connectivity
+    - Careers in Organizations:
+        sections:
+        - Employment Systems
+          subsections:
+          - Types of Employment Contracts
+          - Career Paths and Promotions
+          - Employee Benefits and Perks
+        - Decision Processes
+          subsections:
+          - Decision-Making Models and Theories
+          - Group Decision-Making and Consensus Building
+          - Decision Biases and Heuristics
+        - Authority and Power
+          subsections:
+          - Types of Authority in Organizations
+          - Power Dynamics and Organizational Politics
+          - Leadership and Influence
+        - Politics and Influence
+          subsections:
+          - Organizational Politics and Power Struggles
+          - Influence Tactics and Strategies
+          - Persuasion and Negotiation Skills
+        - Culture and Language
+          subsections:
+          - Organizational Culture and its Impact
+          - Language and Communication in Organizations
+          - Cross-Cultural Management
+        - Social Relations
+          subsections:
+          - Socialization and Onboarding
+          - Workplace Relationships and Networks
+          - Conflict Resolution and Mediation
+        - Leadership
+          subsections:
+          - Leadership Styles and Theories
+          - Emotional Intelligence and Leadership Effectiveness
+          - Transformational Leadership and Change Management
+    - Organizational Structures and Processes:
+        sections:
+        - Five Elemental Models of Hierarchy
+          subsections:
+          - Traditional Hierarchies
+          - Matrix Organizations
+          - Network Organizations
+        - Cases on Organizational Structures and Processes
+          subsections:
+          - Organizational Design and Redesign Cases
+          - Organizational Change and Restructuring Cases
+          - Organizational Culture and Structure Alignment Cases
+        - Recent Models of Structure
+          subsections:
+          - Flat Organizations and Holacracy
+          - Agile and Lean Organizational Structures
+          - Virtual and Remote Work Arrangements
+    - Conglomerates and Corporate Strategy:
+        sections:
+        - Hybrids
+          subsections:
+          - Diversification Strategies
+          - Mergers and Acquisitions
+          - Strategic Alliances and Joint Ventures
+        - Corporate Governance and Corporate Capital
+          subsections:
+          - Board of Directors and Shareholder Activism
+          - Capital Structure and Financing Decisions
+          - Corporate Social Responsibility and Sustainability
+    - Conclusion:
+        sections:
+        - Summary of Course Topics
+          subsections:
+          - Key Concepts and Theories Recap
+          - Application of Organizational Economics in Practice
+          - Future Trends and Directions in Organizational Economics

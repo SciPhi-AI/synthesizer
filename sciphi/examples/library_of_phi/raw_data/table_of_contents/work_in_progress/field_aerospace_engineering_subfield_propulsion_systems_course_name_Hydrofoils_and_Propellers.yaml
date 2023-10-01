@@ -1,0 +1,77 @@
+textbook:
+  Hydrofoils and Propellers: A Comprehensive Guide
+  chapters:
+    - Introduction to Hydrofoils and Propellers:
+        sections:
+        - Definition and Overview
+        - Historical Development
+        - Applications
+    - Hydrofoil Theory:
+        sections:
+        - Hydrodynamic Lift and Drag
+        - Angle of Attack
+        - Cavitation
+    - Propeller Theory:
+        sections:
+        - Momentum Theory
+        - Blade Element Theory
+        - Blade Performance Characteristics
+    - Hydrofoil Design:
+        sections:
+        - Foil Section Shapes
+        - Hydrodynamic Performance Optimization
+        - Structural Considerations
+    - Propeller Design:
+        sections:
+        - Number of Blades
+        - Blade Geometry
+        - Diameter and Pitch
+        - Propeller Performance Optimization
+    - Hydrodynamic Interactions:
+        sections:
+        - Foil-Propeller Interactions
+        - Hull-Propeller Interactions
+        - Wake Interference
+    - Cavitation and Ventilation:
+        sections:
+        - Cavitation Phenomenon
+        - Ventilation Phenomenon
+        - Cavitation and Ventilation Control
+    - Experimental Methods in Hydrofoils and Propellers:
+        sections:
+        - Model Testing
+        - Flow Visualization Techniques
+        - Pressure and Force Measurements
+    - Computational Methods in Hydrofoils and Propellers:
+        sections:
+        - Computational Fluid Dynamics (CFD)
+        - Numerical Simulation Techniques
+        - Grid Generation Methods
+        - Validation and Verification of CFD Models
+    - Propulsion Systems for Hydrofoil Vessels:
+        sections:
+        - Diesel Engines
+        - Electric Motors
+        - Gas Turbines
+        - Jet Propulsion
+    - Hydrofoil Vessel Design:
+        sections:
+        - Hull Shapes and Materials
+        - Stability and Control
+        - Seakeeping and Maneuvering
+    - Hydrofoil Performance Testing:
+        sections:
+        - Speed Trials and Power Measurements
+        - Resistance and Drag Testing
+        - Maneuverability Testing
+        - Seakeeping Performance Evaluation
+    - Propeller Cavitation and Noise:
+        sections:
+        - Cavitation Erosion
+        - Propeller Noise Generation
+        - Noise Reduction Techniques
+    - Future Trends in Hydrofoils and Propellers:
+        sections:
+        - Advanced Hydrofoil Designs
+        - Alternative Propulsion Technologies
+        - Green Technologies in Marine Propulsion

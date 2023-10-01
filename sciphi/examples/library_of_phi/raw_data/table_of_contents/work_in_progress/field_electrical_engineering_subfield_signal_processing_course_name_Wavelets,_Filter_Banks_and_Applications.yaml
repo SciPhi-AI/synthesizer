@@ -1,0 +1,71 @@
+```yaml
+course:
+  Textbook for Wavelets, Filter Banks and Applications:
+    chapters:
+      - Discrete-time Filters:
+          sections:
+            - Convolution
+            - Fourier Transform
+            - Lowpass and Highpass Filters
+      - Sampling Rate Change Operations:
+          sections:
+            - Upsampling and Downsampling
+            - Fractional Sampling
+            - Interpolation
+      - Filter Banks:
+          sections:
+            - Time Domain
+            - Modulation and Polyphase Representations
+            - MATLAB Wavelet Toolbox
+      - Orthogonal Filter Banks:
+          sections:
+            - Paraunitary Matrices
+            - Orthogonality Condition
+      - Maxflat Filters:
+          sections:
+            - Daubechies and Meyer Formulas
+            - Spectral Factorization
+      - Multiresolution Analysis:
+          sections:
+            - Refinement Equation
+            - Infinite Product Formula
+            - Filter Bank Approach for Computing Scaling Functions and Wavelets
+      - Orthogonal Wavelet Bases:
+          sections:
+            - Connection to Orthogonal Filters
+            - Orthogonality in the Frequency Domain
+            - Biorthogonal Wavelet Bases
+      - Mallat Pyramid Algorithm:
+          sections:
+            - Accuracy of Wavelet Approximations
+            - Smoothness of Wavelet Bases
+      - Signal and Image Processing:
+          sections:
+            - Finite Length Signals
+            - Boundary Filters and Boundary Wavelets
+            - Wavelet Compression Algorithms
+      - Physical Wavelets and their Sources:
+          sections:
+            - Real Physics in Complex Spacetime
+      - Lifting:
+          sections:
+            - Ladder Structure for Filter Banks
+            - Factorization of Polyphase Matrix into Lifting Steps
+            - Lifting Form of Refinement Equation
+      - Wavelets and Subdivision:
+          sections:
+            - Nonuniform Grids
+            - Multiresolution for Triangular Meshes
+            - Representation and Compression of Surfaces
+      - Numerical Solution of PDEs:
+          sections:
+            - Galerkin Approximation
+            - Wavelet Integrals
+      - M-band Wavelets:
+          sections:
+            - DFT Filter Banks and Cosine Modulated Filter Banks
+            - Multiwavelets
+      - Project Presentations:
+          sections:
+            - Project Presentations
+```

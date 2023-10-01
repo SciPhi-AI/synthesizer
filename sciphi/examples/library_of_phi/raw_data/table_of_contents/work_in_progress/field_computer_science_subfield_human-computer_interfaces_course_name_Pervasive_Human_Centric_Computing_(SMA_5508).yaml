@@ -1,0 +1,63 @@
+book:
+  Pervasive Human Centric Computing: Concepts and Applications:
+    chapters:
+    - Introduction to Pervasive Human Centric Computing:
+        sections:
+        - The Age of Calm Technology
+        - Computer Science Challenges in Pervasive Computing
+    - iPAQ, Python, and Connectivity:
+        sections:
+        - Introduction to iPAQ
+        - Introduction to Python
+        - Connectivity Technologies in Pervasive Computing
+    - Socket Programming and Bluetooth:
+        sections:
+        - Introduction to Bluetooth Programming
+        - Advanced Bluetooth Programming
+    - Location-Based Services - GPS:
+        sections:
+        - Introduction to Location-Based Services
+        - GPS Technology in Pervasive Computing
+    - Location-Based Services - APIs:
+        sections:
+        - Introduction to APIs in Pervasive Computing
+    - Location-Based Services - Cricket:
+        sections:
+        - Cricket Technology in Pervasive Computing
+    - Python on Series 60 Phones:
+        sections:
+        - Introduction to Phone Programming
+    - User Interface Design for Mobile Devices:
+        sections:
+        - Graphical User Interfaces (GUIs)
+        - XWand and Arrays in Mobile UI Design
+        - Pre-Recorded Speech in Mobile UI Design
+    - Vision-Based Interfaces:
+        sections:
+        - Pre-Recorded Speech in Vision-Based Interfaces
+        - Vision Technology in Pervasive Computing
+    - Kiosk Systems and Interactive Displays:
+        sections:
+        - Introduction to Kiosk Systems
+    - Sketching and Prototyping:
+        sections:
+        - Sketching Techniques for Pervasive Computing
+    - Security in Pervasive Computing:
+        sections:
+        - Introduction to Security in Pervasive Computing
+    - Debugging and Troubleshooting:
+        sections:
+        - Debugging Techniques in Pervasive Computing
+    - Publish-Subscribe Architecture and Middleware:
+        sections:
+        - Introduction to Publish-Subscribe Architecture
+        - Middleware Technologies in Pervasive Computing
+    - Human Factors in Pervasive Computing:
+        sections:
+        - Understanding Human Factors in Pervasive Computing
+    - Distributed Pervasive Applications:
+        sections:
+        - Introduction to Distributed Pervasive Applications
+    - Showcase of Other Projects:
+        sections:
+        - Showcase Videos of Pervasive Computing Projects

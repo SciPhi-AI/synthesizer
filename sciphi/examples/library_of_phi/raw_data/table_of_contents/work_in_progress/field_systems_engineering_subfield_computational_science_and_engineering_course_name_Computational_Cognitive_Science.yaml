@@ -1,0 +1,93 @@
+textbook:
+  Computational Cognitive Science: A Comprehensive Guide
+  chapters:
+    - Introduction and Organizational Meeting:
+        sections:
+        - Course overview
+        - Administrative details
+        - Expectations
+    - Tutorial on Probability Theory, Bayesian Inference, Bayes Nets:
+        sections:
+        - Basic probability theory
+        - Bayesian inference
+        - Bayes nets
+    - Induction:
+        sections:
+        - Goodman's grue problem
+        - Osherson et al. paper
+        - Answering the fundamental question about induction
+    - Similarity:
+        sections:
+        - Similarity measures
+        - Cognitive processes in similarity judgment
+        - Applications in cognitive science
+    - Concepts:
+        sections:
+        - Definition of concepts
+        - Category formation
+        - Concept learning
+        - Conceptual knowledge representation
+        subsections:
+        - Prototype theory
+        - Exemplar theory
+        - Theory theory
+    - Causality and Categorization:
+        sections:
+        - Causal relationships in categorization
+        - Causal induction
+        - Causal reasoning
+        subsections:
+        - Counterfactual reasoning
+        - Causal models
+        - Probabilistic causation
+    - Causal Induction:
+        sections:
+        - Mechanisms of causal induction
+        - Experimental studies in causal induction
+        - Bayesian models of causal induction
+    - Theories:
+        sections:
+        - Role of theories in cognitive science
+        - Theory construction and evaluation
+        - Neural network theories
+        subsections:
+        - Connectionist models
+        - Symbolic models
+    - Inductive Reasoning in Biology:
+        sections:
+        - Inductive reasoning in evolutionary biology
+        - Inductive biases in learning
+        - Inductive reasoning in animal cognition
+    - Conceptual Change in Biology:
+        sections:
+        - Conceptual change in biological knowledge
+        - Paradigm shifts in biology
+        - Conceptual change in evolutionary theory
+    - Word Learning:
+        sections:
+        - Acquisition of word meanings
+        - Word learning in infants and children
+        - Computational models of word learning
+    - 'Intuitive Physics: Objects, Mass/Density':
+        sections:
+        - Perceptual and cognitive aspects of intuitive physics
+        - Object representation
+        - Mass and density perception
+        subsections:
+        - Object permanence
+        - Gravity perception
+        - Weight perception
+    - Theory of Mind:
+        sections:
+        - Development of theory of mind
+        - Mental state attribution
+        - Neural basis of theory of mind
+    - Number:
+        sections:
+        - Numerical cognition
+        - Development of numerical concepts
+        - Neural mechanisms of numerical processing
+        subsections:
+        - Counting
+        - Arithmetic
+        - Magnitude representation

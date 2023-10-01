@@ -1,0 +1,106 @@
+```yaml
+course:
+  textbook: Algorithms for Computational Biology: A Comprehensive Guide
+    chapters:
+    - Computational Challenges:
+        sections:
+        - Introduction to Computational Biology
+          subsections:
+          - The Central Dogma of Molecular Biology
+          - DNA, RNA, and Protein Structures
+          - Introduction to Biological Databases
+          - Sequence Databases
+          - Structure Databases
+          - Function Databases
+        - Rapid Database Search (Hashing)
+          subsections:
+          - Introduction to Rapid Database Search
+          - Hash Tables and Hash Functions
+          - Indexing Techniques for Efficient Searching
+          - Algorithms for String Matching
+          - Applications of Rapid Database Search
+    - Motif Discovery:
+        sections:
+        - Regulatory Motif Discovery (Combinatorial Search)
+          subsections:
+          - Introduction to Regulatory Motif Discovery
+          - Combinatorial Search Algorithms
+          - Motif Scoring and Evaluation
+          - Applications of Regulatory Motif Discovery
+        - Probabilistic Motif Finding (Gibbs Sampling)
+          subsections:
+          - Introduction to Probabilistic Motif Finding
+          - Gibbs Sampling Algorithm
+          - Statistical Measures for Motif Finding
+          - Applications of Probabilistic Motif Finding
+    - Sequence Alignment:
+        sections:
+        - Sequence Alignment (Dynamic Programming)
+          subsections:
+          - Introduction to Sequence Alignment
+          - Dynamic Programming Algorithm for Sequence Alignment
+          - Scoring Systems and Gap Penalties
+          - Applications of Sequence Alignment
+    - RNA Secondary Structure:
+        sections:
+        - Markov Chains and Hidden Markov Models
+          subsections:
+          - Introduction to Markov Chains and Hidden Markov Models
+          - Markov Chain Models for RNA Secondary Structure
+          - Hidden Markov Models for RNA Secondary Structure
+          - Applications of Markov Chains and Hidden Markov Models in RNA Secondary Structure Prediction
+    - HMMs and Gene Finding:
+        sections:
+        - Gene Finding
+          subsections:
+          - Introduction to Gene Finding
+          - Hidden Markov Models for Gene Finding
+          - Gene Prediction Algorithms
+          - Gene Annotation and Validation
+    - Genome Evolution and Phylogenetic Trees:
+        sections:
+        - Genome Evolution and Phylogenetic Trees
+          subsections:
+          - Introduction to Genome Evolution and Phylogenetic Trees
+          - Evolutionary Models and Phylogenetic Inference
+          - Phylogenetic Tree Construction Algorithms
+          - Molecular Clocks and Evolutionary Rates
+        - Genome Duplication
+          subsections:
+          - Introduction to Genome Duplication
+          - Mechanisms of Genome Duplication
+          - Evolutionary Consequences of Genome Duplication
+          - Applications of Genome Duplication in Comparative Genomics
+    - Gene Expression Clustering:
+        sections:
+        - Gene Expression Clustering
+          subsections:
+          - Introduction to Gene Expression Clustering
+          - Clustering Algorithms for Gene Expression Data
+          - Evaluation and Visualization of Clustering Results
+          - Applications of Gene Expression Clustering
+    - Gene Network and Inference:
+        sections:
+        - Gene Network and Inference
+          subsections:
+          - Introduction to Gene Networks
+          - Inference of Gene Regulatory Networks
+          - Network Construction Algorithms
+          - Network Analysis and Visualization
+    - Scale-free Networks:
+        sections:
+        - Scale-free Networks
+          subsections:
+          - Introduction to Scale-free Networks
+          - Models for Scale-free Networks
+          - Network Growth and Preferential Attachment
+          - Applications of Scale-free Networks
+    - Comparative Genomics:
+        sections:
+        - Comparative Genomics
+          subsections:
+          - Introduction to Comparative Genomics
+          - Comparative Genomic Analysis Methods
+          - Gene and Genome Evolution
+          - Applications of Comparative Genomics
+```

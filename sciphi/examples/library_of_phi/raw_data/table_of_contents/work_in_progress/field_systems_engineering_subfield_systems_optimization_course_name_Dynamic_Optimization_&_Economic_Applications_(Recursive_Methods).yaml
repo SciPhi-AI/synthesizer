@@ -1,0 +1,56 @@
+```yaml
+course:
+  textbook: Dynamic Optimization & Economic Applications: A Comprehensive Guide
+    chapters:
+    - Preliminaries:
+        sections:
+        - Euler Equations and Transversality Conditions
+        - Principle of Optimality
+        subsections:
+        - Introduction to Dynamic Optimization
+        - Mathematical Tools for Dynamic Optimization
+    - Bounded Returns:
+        sections:
+        - Differentiability of Value Function
+        - Homogenous and Unbounded Returns
+        - Applications
+        subsections:
+        - Concavity and Convexity of Value Function
+        - Infinite Horizon Models
+        - Optimal Control Theory
+    - Deterministic Global and Local Dynamics:
+        sections:
+        - Deterministic Global Dynamics
+        - Deterministic Local Dynamics
+        subsections:
+        - Stability Analysis in Dynamic Systems
+        - Equilibrium Analysis in Dynamic Systems
+    - Stochastic Dynamic Programming:
+        sections:
+        - Applications
+        - Markov Chains
+        subsections:
+        - Optimal Stopping Problems
+        - Dynamic Programming with Uncertainty
+    - Weak Convergence:
+        sections:
+        - Applications
+        subsections:
+        - Convergence of Stochastic Processes
+        - Weak Convergence Theorems
+    - Repeated Games and Dynamic Contracts:
+        sections:
+        - Repeated Games
+        - Dynamic Contracts
+        subsections:
+        - Folk Theorem in Repeated Games
+        - Optimal Contract Design
+    - Continuous-Time Dynamic Programming:
+        sections:
+        - Hamilton-Jacobi-Bellman PDE Equations
+        - Applications
+        subsections:
+        - Solution Methods for HJB Equations
+        - Optimal Control in Continuous Time
+```
+```

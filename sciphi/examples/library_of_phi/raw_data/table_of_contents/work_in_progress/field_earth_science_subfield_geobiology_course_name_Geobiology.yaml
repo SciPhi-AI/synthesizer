@@ -1,0 +1,104 @@
+textbook:
+  Geobiology: A Comprehensive Guide to the Study of Life in Geological Contexts
+  chapters:
+    - chapter:
+        title: Introduction to Geobiology
+        sections:
+          - section: Overview of course
+            subsections:
+              - Sedimentary environments and processes
+              - Stratigraphy
+          - section: The History of Life on Earth
+            subsections:
+              - Time scales of major events in the formation of the Universe and Solar System
+              - Abundance of elements
+              - Geochronology
+              - Introduction to geological processes, rocks, and minerals
+              - Planetary accretion and differentiation
+              - Introduction to the geological timescale and major transitions in Earth history
+          - section: The Origins of Life
+            subsections:
+              - Evolution of other terrestrial planets
+              - Prebiotic chemistry
+              - Nucleic acids
+              - Amino Acids and Chirality
+              - Origins of life
+              - Panspermia
+              - Luca and the three domains
+              - Universal tree of life
+          - section: Isotopes in Geobiology
+            subsections:
+              - Isotopes and their nomenclature
+              - Simple isotopic calculations and mass balance
+              - CHNOS standards and isotopic analysis
+              - Isotopic fractionation in different reservoirs
+              - Discussion of isotope papers
+              - Fike seminar in EAPS
+          - section: Redox Processes in Geobiology
+            subsections:
+              - Redox processes II and examples from various environments
+              - Anaerobic metabolisms
+          - section: Photosynthesis and Early Life on Earth
+            subsections:
+              - Anoxygenic and oxygenic photosynthesis
+              - Banded Iron Formations (BIF)
+              - Evidence for early life on Earth
+              - Stromatolites
+              - Microfossils
+              - Microbial sediments
+          - section: The Oxygenation of Earth's Atmosphere and Ocean
+            subsections:
+              - Geological evidence of photosynthesis and oxygenation
+              - Early atmosphere
+              - Oxygenation of the ocean/atmosphere system
+              - Redox transitions
+          - section: Neoproterozoic Environmental Oscillations
+            subsections:
+              - Neoproterozoic carbon cycle and environmental oscillations
+              - Snowball Earth
+          - section: Evolution and Radiation of Life
+            subsections:
+              - Evolution and radiation of photosynthetic organisms
+              - Successions of plankton in the ocean
+              - Radiation of vascular plants
+              - Ediacaran fauna
+              - Evolution and radiation of animals
+              - Evidence for early animals
+              - Animal body plans
+              - Sponges
+          - section: Reefs and Carbonate Precipitation through Time
+            subsections:
+              - Evidence for changes in ocean chemistry and biology
+              - Impact of biomineralization on the carbon cycle
+          - section: Biomineralization and Biominerals
+            subsections:
+              - Biomineralization and its significance
+              - Ray Pierrehumbert seminar in EAPS
+          - section: Mass Extinctions
+            subsections:
+              - Overview of mass extinctions
+              - Permian-Triassic event
+          - section: Mesozoic Time
+            subsections:
+              - Geology and biology of the Mesozoic era
+              - K-T boundary
+              - LPTM
+              - Volcanism, carbon cycle perturbation, or impact?
+          - section: Life in Extreme Environments
+            subsections:
+              - Overview of extreme environments
+              - Adaptations and survival strategies
+          - section: Molecular Microbiology and Paleontology
+            subsections:
+              - PCR, genomics, and evolutionary trees
+              - Modern microbially-dominated ecosystems
+          - section: Class Discussion and Student Presentations
+            subsections:
+              - Discussion of a paper related to environmental microbiology
+              - Student presentations of blog pieces
+          - section: Assessment
+            subsections:
+              - Midterm exam
+              - Oral exam
+              - Final exam
+              - Exam week

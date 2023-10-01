@@ -1,0 +1,48 @@
+textbook:
+  Biomedical Devices Design Laboratory: A Comprehensive Guide
+    chapters:
+    - Introduction:
+        sections:
+        - Robopsy Slide
+    - Linear Elements and Impedance Analysis:
+        sections:
+        - Thevenin-Norton
+        - LED
+        - Peak Detector
+        - Zeners
+        - Diode Protection Circuits
+        - BJT
+        - FET
+        - Amplifiers
+        - Drivers
+        - H-Bridges
+    - Proper Bypassing and Power Supplies:
+        sections:
+        - Linear Power Supplies
+        - Switching Power Supplies
+    - Basic Topologies and Feedback:
+        sections:
+        - Stability
+        - Accurate Peak Detector
+    - Practical Considerations:
+        sections:
+        - Practical Considerations 1
+        - Practical Considerations 2
+    - Lab Assignments:
+        sections:
+        - Lab 1
+        - Lab 2
+            subsections:
+            - Introduction to Lab Equipment
+            - Experimental Design and Protocols
+            - Data Analysis and Interpretation
+    - Final Presentations:
+        sections:
+        - Projects 3
+        - Projects 4
+            subsections:
+            - Project Proposal
+            - Experimental Setup
+            - Data Collection and Analysis
+            - Results and Discussion
+            - Conclusion and Future Work

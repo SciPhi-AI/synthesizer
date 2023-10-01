@@ -1,0 +1,71 @@
+textbook:
+  'Microbial Megaproducers: Discovery, Biosynthesis, Engineering and Applications of Natural Products':
+    chapters:
+    - Introduction to the Course:
+        sections:
+        - Course number and name
+        - Resource level
+    - RiPPs (ribosomally synthesized and post-translationally modified peptides):
+        sections:
+        - Discovery via Culture/Manipulation of the Native Producer
+        - Identification and Characterisation of Capidermicin, a Novel Bacteriocin
+          Produced by Staphylococcus capitis
+        subsections:
+        - Techniques for culture and manipulation of native producers
+        - Isolation and characterization methods of RiPPs
+    - 'RiPPs: Discovery via Genomics/Data-Driven Strategies':
+        sections:
+        - Genomic-based approaches
+        - Data-driven strategies
+        subsections:
+        - Mining genomic databases for RiPPs discovery
+        - Utilizing computational tools for RiPPs identification
+    - 'RiPPs: Biosynthesis and Enzyme Function/Mechanism':
+        sections:
+        - Biosynthetic pathways
+        - Enzyme functions and mechanisms
+        subsections:
+        - Elucidation of biosynthetic pathways of RiPPs
+        - Understanding the catalytic mechanisms of RiPPs enzymes
+    - 'RiPPs: Engineering':
+        sections:
+        - Engineering strategies for RiPPs
+        subsections:
+        - Rational design and directed evolution of RiPPs
+    - Panel Discussion with Natural Product Professionals:
+        sections:
+        - Industry insights and experiences
+        subsections:
+        - Case studies of successful natural product discoveries in industry
+    - NRPs (non-ribosomal peptides):
+        sections:
+        - Biosynthesis and Enzyme Function/Mechanism
+        - Engineering strategies for NRPs
+        subsections:
+        - Understanding the biosynthetic processes of NRPs
+        - Strategies for modifying and optimizing NRPs
+    - Plant NPs (natural products):
+        sections:
+        - Discovery methods from complex environments
+        subsections:
+        - Techniques for isolating and characterizing plant natural products
+    - Culture-Dependent and Metagenomic Methods of NP Discovery from Complex Environments:
+        sections:
+        - Culture-dependent methods
+        - Metagenomic approaches
+        subsections:
+        - Culturing techniques for capturing diverse microbial communities
+        - Metagenomic sequencing and analysis for natural product discovery
+    - Applications of NPs in Combating Diseases:
+        sections:
+        - Therapeutic potential of NPs
+        subsections:
+        - Natural products as antimicrobial agents
+        - Natural products in drug discovery and development
+    - Student Presentations and Evaluation:
+        sections:
+        - Presentation of research findings
+        - Evaluation of student work
+        subsections:
+        - Guidelines for effective scientific presentations
+        - Methods for evaluating student research projects

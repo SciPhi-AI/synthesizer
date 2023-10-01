@@ -1,0 +1,90 @@
+```yaml
+textbook:
+  Economic Growth and Development: A Comprehensive Analysis
+    chapters:
+      - Stylized Facts and Proximate and Fundamental Causes of Economic Development:
+          sections:
+            - Introduction to the Solow Growth Model
+            - The Solow Model and the Data: Growth Accounting, Levels Accounting, and the Facts
+      - Neoclassical Growth:
+          sections:
+            - Overlapping Generations and Dynamic Efficiency
+            - Neoclassical Endogenous Growth: Capital Accumulation, Externalities, and Human Capital
+      - Endogenous Growth with Expanding Input Varieties:
+          sections:
+            - Questions and Evidence
+            - The Solow Model
+            - The Solow Growth Model and the Data
+            - Neoclassical Growth
+            - Overlapping Generations
+            - Neoclassical Endogenous Growth
+      - Technology Diffusion, Trade, and World Growth:
+          sections:
+            - Endogenous Technological Growth
+            - Technology Diffusion, Trade, and World Growth
+            - Directed Technological Change and Applications
+      - Consumer’s Budget Constraint and Assets:
+          sections:
+            - Recitation 2 Notes
+            - Recitation 3 Notes
+            - Recitation 4 Notes
+      - Problem Sets:
+          sections:
+            - Problem Set 1
+            - Problem Set 2
+            - Problem Set 3
+            - Problem Set 4
+      - Exams:
+          sections:
+            - Short Questions
+            - Long Questions
+    subsections:
+      - Introduction to Economic Growth and Development:
+          - Definition and importance of economic growth and development
+          - Historical perspectives
+          - Approaches and theories
+      - Empirical Methods in Economic Growth:
+          - Data sources and collection techniques
+          - Measuring economic growth and development
+          - Analyzing growth patterns and trends
+      - The Solow Growth Model:
+          - Assumptions and key concepts
+          - Solow's model in detail
+          - Critiques and extensions
+      - Neoclassical Growth Theory:
+          - Capital accumulation and productivity
+          - Technological progress and innovation
+          - Externalities and spillover effects
+      - Endogenous Growth Theory:
+          - Human capital and education
+          - Research and development
+          - Innovation and entrepreneurship
+      - Technology Diffusion and International Trade:
+          - The role of technology diffusion in economic growth
+          - Globalization and trade patterns
+          - Impacts of international trade on growth
+      - Income Distribution and Inequality:
+          - Causes and consequences of inequality
+          - Poverty alleviation strategies
+          - Inclusive growth policies
+      - Institutions and Economic Development:
+          - The role of institutions in fostering growth
+          - Property rights and rule of law
+          - Governance and corruption
+      - Sustainable Development and Environmental Economics:
+          - Balancing economic growth and environmental preservation
+          - Climate change and its economic impacts
+          - Green technologies and sustainable practices
+      - Financial Systems and Economic Growth:
+          - Role of financial institutions in economic development
+          - Financial markets and access to capital
+          - Financial inclusion and economic empowerment
+      - Social and Cultural Factors in Development:
+          - Social capital and community development
+          - Cultural values and economic behavior
+          - Gender and development
+      - Economic Growth Policies and Strategies:
+          - Industrialization and structural transformation
+          - Macroeconomic policies for growth
+          - International development assistance
+```

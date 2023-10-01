@@ -1,0 +1,443 @@
+textbook:
+  'Physics III: Vibrations and Waves Companion':
+    chapters:
+    - Wave Phenomena:
+        sections:
+        - Types of Waves:
+            subsections:
+            - Introduction to Waves
+            - Transverse Waves
+            - Longitudinal Waves
+            - Surface Waves
+        - Wave Characteristics:
+            subsections:
+            - Amplitude
+            - Wavelength
+            - Frequency
+            - Period
+            - Phase
+        - Wave Equation:
+            subsections:
+            - Derivation of the Wave Equation
+            - Wave Equation in One Dimension
+            - Wave Equation in Three Dimensions
+        - Wave Propagation:
+            subsections:
+            - Wavefronts
+            - Ray Model of Light
+            - Huygens' Principle
+            - Wavefront Propagation
+        - Wave Speed:
+            subsections:
+            - Wave Speed in Different Media
+            - Relationship between Wave Speed and Wave Properties
+            - Wave Speed in Elastic Media
+        - Wave Interference:
+            subsections:
+            - Superposition Principle
+            - Constructive Interference
+            - Destructive Interference
+            - Coherence
+        - Standing Waves:
+            subsections:
+            - Formation of Standing Waves
+            - Nodes and Antinodes in Standing Waves
+            - Harmonics in Standing Waves
+            - Standing Waves in Musical Instruments
+        - Doppler Effect:
+            subsections:
+            - Doppler Effect for Sound Waves
+            - Doppler Effect for Light Waves
+            - Applications of Doppler Effect
+    - Harmonic Oscillators:
+        sections:
+        - Simple Harmonic Motion:
+            subsections:
+            - Definition of Simple Harmonic Motion
+            - Equations of Simple Harmonic Motion
+            - Energy in Simple Harmonic Motion
+        - Hooke's Law:
+            subsections:
+            - Definition of Hooke's Law
+            - Spring Constant
+            - Elastic Potential Energy
+            - Hooke's Law and Simple Harmonic Motion
+        - Mass-Spring Systems:
+            subsections:
+            - Mass-Spring System Equation
+            - Period and Frequency of Mass-Spring Systems
+            - Energy in Mass-Spring Systems
+            - Damped Mass-Spring Systems
+        - Pendulums:
+            subsections:
+            - Simple Pendulum
+            - Physical Pendulum
+            - Period of a Pendulum
+            - Energy in Pendulums
+        - Damped Oscillations:
+            subsections:
+            - Damping Force
+            - Damped Harmonic Motion
+            - Quality Factor in Damped Oscillations
+            - Critical Damping
+        - Forced Oscillations:
+            subsections:
+            - Forced Harmonic Motion
+            - Resonance in Forced Oscillations
+            - Impedance and Resonance
+            - Applications of Forced Oscillations
+        - Resonance:
+            subsections:
+            - Resonant Frequency
+            - Quality Factor in Resonance
+            - Resonance in Mechanical Systems
+            - Resonance in Electrical Circuits
+        - Quality Factor:
+            subsections:
+            - Definition of Quality Factor
+            - Damping and Quality Factor
+            - Quality Factor in Oscillating Systems
+            - Quality Factor in Resonant Systems
+        - Mechanical Waves:
+            subsections:
+            - Types of Mechanical Waves
+            - Wave Motion in Solids
+            - Wave Motion in Liquids
+            - Wave Motion in Gases
+    - Sound Waves:
+        sections:
+        - Speed of Sound:
+            subsections:
+            - Definition of Speed of Sound
+            - Factors Affecting Speed of Sound
+            - Measurement of Speed of Sound
+            - Ultrasonic and Infrasonic Waves
+        - Intensity and Amplitude:
+            subsections:
+            - Definition of Intensity
+            - Relationship between Intensity and Amplitude
+            - Measurement of Intensity
+            - Decibel Scale
+        - Pitch and Frequency:
+            subsections:
+            - Definition of Pitch
+            - Relationship between Pitch and Frequency
+            - Perception of Pitch
+            - Musical Scales
+        - Sound Waves in Air:
+            subsections:
+            - Wave Propagation in Air
+            - Reflection of Sound Waves
+            - Refraction of Sound Waves
+            - Diffraction of Sound Waves
+        - Sound Wave Interference:
+            subsections:
+            - Interference of Sound Waves
+            - Beats and Beat Frequency
+            - Applications of Sound Wave Interference
+        - Standing Sound Waves:
+            subsections:
+            - Formation of Standing Sound Waves
+            - Nodes and Antinodes in Standing Sound Waves
+            - Harmonics in Standing Sound Waves
+            - Resonance in Musical Instruments
+        - Doppler Effect for Sound:
+            subsections:
+            - Doppler Effect for Moving Sources
+            - Doppler Effect for Moving Observers
+            - Applications of Doppler Effect for Sound
+        - Beats:
+            subsections:
+            - Definition of Beats
+            - Beat Frequency
+            - Beat Phenomenon
+            - Applications of Beats
+        - Resonance in Tubes:
+            subsections:
+            - Resonance in Open Tubes
+            - Resonance in Closed Tubes
+            - Relationship between Tube Length and Resonance
+            - Applications of Resonance in Tubes
+    - Electromagnetic Waves:
+        sections:
+        - Electromagnetic Spectrum:
+            subsections:
+            - Definition of Electromagnetic Spectrum
+            - Types of Electromagnetic Waves
+            - Range of Electromagnetic Waves
+            - Applications of Electromagnetic Waves
+        - Electromagnetic Radiation:
+            subsections:
+            - Definition of Electromagnetic Radiation
+            - Electromagnetic Wave Propagation
+            - Electromagnetic Wave Properties
+            - Electromagnetic Wave Polarization
+        - Polarization:
+            subsections:
+            - Definition of Polarization
+            - Polarization of Transverse Waves
+            - Polarization of Light Waves
+            - Applications of Polarization
+        - Reflection and Refraction:
+            subsections:
+            - Reflection of Electromagnetic Waves
+            - Laws of Reflection
+            - Refraction of Electromagnetic Waves
+            - Snell's Law and Refraction
+        - Snell's Law:
+            subsections:
+            - Definition of Snell's Law
+            - Refraction at Planar Interfaces
+            - Total Internal Reflection
+            - Applications of Snell's Law
+        - Total Internal Reflection:
+            subsections:
+            - Conditions for Total Internal Reflection
+            - Critical Angle
+            - Applications of Total Internal Reflection
+            - Fiber Optics
+        - Dispersion and Prisms:
+            subsections:
+            - Dispersion of Electromagnetic Waves
+            - Refraction and Dispersion
+            - Prism Dispersion
+            - Applications of Dispersion and Prisms
+        - Interference of Light:
+            subsections:
+            - Interference of Electromagnetic Waves
+            - Coherent and Incoherent Light
+            - Young's Double Slit Experiment
+            - Applications of Interference of Light
+        - Diffraction:
+            subsections:
+            - Diffraction of Electromagnetic Waves
+            - Single Slit Diffraction
+            - Double Slit Diffraction
+            - Applications of Diffraction
+    - Optics:
+        sections:
+        - Geometrical Optics:
+            subsections:
+            - Reflection and Refraction of Light
+            - Laws of Geometrical Optics
+            - Image Formation by Mirrors
+            - Image Formation by Lenses
+        - Lenses and Mirrors:
+            subsections:
+            - Types of Lenses
+            - Types of Mirrors
+            - Ray Tracing in Lenses
+            - Ray Tracing in Mirrors
+        - Thin Lens Equation:
+            subsections:
+            - Definition of Thin Lens Equation
+            - Lens Equation for Mirrors
+            - Image Formation by Thin Lenses
+            - Applications of Thin Lens Equation
+        - Lens and Mirror Combinations:
+            subsections:
+            - Lens-Mirror Systems
+            - Image Formation in Lens-Mirror Systems
+            - Applications of Lens-Mirror Combinations
+        - Lens and Mirror Aberrations:
+            subsections:
+            - Spherical Aberration
+            - Chromatic Aberration
+            - Coma and Astigmatism
+            - Applications of Aberrations in Optics
+        - Wave Optics:
+            subsections:
+            - Wave Nature of Light
+            - Young's Double Slit Experiment
+            - Interference in Thin Films
+            - Diffraction Grating
+        - Young's Double Slit Experiment:
+            subsections:
+            - Setup of Young's Double Slit Experiment
+            - Interference Pattern
+            - Coherence and Visibility
+            - Applications of Young's Double Slit Experiment
+        - Interference in Thin Films:
+            subsections:
+            - Thin Film Interference
+            - Colors in Thin Films
+            - Applications of Interference in Thin Films
+        - Diffraction Grating:
+            subsections:
+            - Diffraction Grating Principle
+            - Diffraction Grating Equation
+            - Applications of Diffraction Gratings
+        - Polarization of Light:
+            subsections:
+            - Polarization of Light Waves
+            - Polarizers and Polarization Filters
+            - Applications of Polarization of Light
+    - Wave-Particle Duality:
+        sections:
+        - Particle-Wave Duality:
+            subsections:
+            - Historical Background of Duality
+            - Wave-Particle Duality in Quantum Theory
+            - Experimental Evidence for Duality
+            - Applications of Particle-Wave Duality
+        - The Uncertainty Principle:
+            subsections:
+            - Definition of Uncertainty Principle
+            - Heisenberg's Thought Experiment
+            - Mathematical Formulation of Uncertainty Principle
+            - Implications of Uncertainty Principle
+        - Wave Function Collapse:
+            subsections:
+            - Measurement in Quantum Mechanics
+            - Wave Function Collapse in Measurement
+            - Quantum Measurement Problem
+            - Interpretations of Wave Function Collapse
+        - Wave Packet:
+            subsections:
+            - Definition of Wave Packet
+            - Wave Packet in Quantum Mechanics
+            - Wave Packet Propagation
+            - Applications of Wave Packets
+        - Quantum Harmonic Oscillator:
+            subsections:
+            - Harmonic Oscillator in Quantum Mechanics
+            - Energy Levels of Quantum Harmonic Oscillator
+            - Wave Functions of Quantum Harmonic Oscillator
+            - Applications of Quantum Harmonic Oscillator
+        - Probability Amplitude:
+            subsections:
+            - Definition of Probability Amplitude
+            - Wave Function and Probability Density
+            - Probability Current Density
+            - Applications of Probability Amplitude
+        - Time-Independent Schrödinger Equation:
+            subsections:
+            - Schrödinger Equation in Quantum Mechanics
+            - Time-Independent Schrödinger Equation
+            - Eigenvalues and Eigenfunctions
+            - Applications of Time-Independent Schrödinger Equation
+        - Quantum Tunneling:
+            subsections:
+            - Tunneling Phenomenon in Quantum Mechanics
+            - Tunneling Probability
+            - Quantum Tunneling Applications
+            - Tunneling in Solid-State Physics
+        - Scattering Theory:
+            subsections:
+            - Scattering of Particles and Waves
+            - Cross Section and Scattering Amplitude
+            - Scattering in Quantum Mechanics
+            - Applications of Scattering Theory
+    - Quantum Mechanics and Waves:
+        sections:
+        - Wavefunction and Probability:
+            subsections:
+            - Wavefunction in Quantum Mechanics
+            - Probability Density Function
+            - Normalization of Wavefunction
+            - Interpretation of Probability in Quantum Mechanics
+        - Superposition and Interference:
+            subsections:
+            - Superposition Principle in Quantum Mechanics
+            - Quantum Interference Phenomenon
+            - Interference in Double Slit Experiment
+            - Applications of Superposition and Interference
+        - Time Evolution of Wavefunctions:
+            subsections:
+            - Time-Dependent Schrödinger Equation
+            - Time Evolution of Wavefunction
+            - Stationary States and Energy Eigenstates
+            - Applications of Time Evolution of Wavefunctions
+        - Expectation Values:
+            subsections:
+            - Definition of Expectation Values
+            - Operators and Observables
+            - Expectation Values in Quantum Mechanics
+            - Applications of Expectation Values
+        - Heisenberg Uncertainty Principle:
+            subsections:
+            - Definition of Heisenberg Uncertainty Principle
+            - Position-Momentum Uncertainty Principle
+            - Energy-Time Uncertainty Principle
+            - Applications of Heisenberg Uncertainty Principle
+        - Wavefunctions in One Dimension:
+            subsections:
+            - Wavefunctions in Infinite Square Well
+            - Wavefunctions in Finite Square Well
+            - Wavefunctions in Harmonic Oscillator Potential
+            - Applications of Wavefunctions in One Dimension
+        - Wavefunctions in Three Dimensions:
+            subsections:
+            - Wavefunctions in Three-Dimensional Box
+            - Wavefunctions in Spherical Potential
+            - Wavefunctions in Central Potentials
+            - Applications of Wavefunctions in Three Dimensions
+        - Central Potentials:
+            subsections:
+            - Definition of Central Potentials
+            - Coulomb Potential and Hydrogen Atom
+            - Radial Equation and Angular Equation
+            - Applications of Central Potentials
+        - Angular Momentum Operators:
+            subsections:
+            - Angular Momentum in Quantum Mechanics
+            - Angular Momentum Operators
+            - Commutation Relations of Angular Momentum
+            - Applications of Angular Momentum Operators
+        - Hydrogen Atom Energy Levels:
+            subsections:
+            - Energy Levels in Hydrogen Atom
+            - Quantum Numbers for Hydrogen Atom
+            - Radial Wavefunctions in Hydrogen Atom
+            - Applications of Hydrogen Atom Energy Levels
+    - Resonance and Natural Frequencies:
+        sections:
+        - Resonance Phenomenon:
+            subsections:
+            - Definition of Resonance
+            - Resonant Frequency and Resonant Modes
+            - Resonance Amplification
+            - Applications of Resonance Phenomenon
+        - Natural Frequencies:
+            subsections:
+            - Definition of Natural Frequencies
+            - Behavior of Systems at Natural Frequencies
+            - Harmonics and Overtones
+            - Applications of Natural Frequencies
+        - Forced Vibrations:
+            subsections:
+            - Forced Oscillation in Mechanical Systems
+            - Resonance in Forced Vibrations
+            - Transmissibility and Resonance
+            - Applications of Forced Vibrations
+        - Damping and Decay:
+            subsections:
+            - Damping in Oscillating Systems
+            - Critically Damped Systems
+            - Overdamped and Underdamped Systems
+            - Applications of Damping and Decay
+        - Phase Space:
+            subsections:
+            - Definition of Phase Space
+            - Phase Space Diagrams
+            - Phase Trajectories and Phase Portraits
+            - Applications of Phase Space
+        - Coupled Oscillators:
+            subsections:
+            - Coupled Oscillation in Mechanical Systems
+            - Normal Modes of Coupled Oscillators
+            - Coupled Oscillation in Electrical Circuits
+            - Applications of Coupled Oscillators
+        - Normal Modes:
+            subsections:
+            - Normal Modes in Vibrating Systems
+            - Vibration Modes in Musical Instruments
+            - Normal Modes in String Instruments
+            - Applications of Normal Modes
+        - Beats and Modulation:
+            subsections:
+            - Beat Phenomenon in Waves
+            - Beat Frequency and Beat Period
+            - Beat Detection and Analysis
+            - Applications of Beats and Modulation
+        -

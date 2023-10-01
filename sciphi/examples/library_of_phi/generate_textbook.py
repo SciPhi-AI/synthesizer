@@ -8,11 +8,7 @@ Description:
 
 Usage:
     Command-line interface:
-        $ python sciphi/examples/library_of_phi/generate_textbook.py run \
-            --input_dir=table_of_contents  \
-            --provider=openai \
-            --model_name=gpt-4-0613 \
-            --log_level=DEBUG
+        $ python sciphi/examples/library_of_phi/generate_textbook.py run
 Parameters:
     provider (str): 
         The provider to use. Default is 'openai'.

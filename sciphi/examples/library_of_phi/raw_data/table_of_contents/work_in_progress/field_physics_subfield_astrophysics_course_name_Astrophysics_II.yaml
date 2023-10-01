@@ -1,0 +1,51 @@
+```yaml
+textbook:
+  Astrophysics II: A Comprehensive Guide to Galaxies, Clusters, and Cosmology
+  chapters:
+    - 'Chapter 1: Introduction: What is a Galaxy?':
+      sections:
+        - 'Section 1.1: How Do You Build a Galaxy?'
+        - 'Section 1.2: How are Galaxies Described?'
+    - 'Chapter 2: Gravitational Potentials: General Results':
+      sections:
+        - 'Section 2.1: Interesting and Special Cases'
+        - 'Section 2.2: Orbits in Spherical Potentials and Integrals'
+        - 'Section 2.3: Orbits in Axisymmetric Potentials'
+    - 'Chapter 3: Equilibria of Stellar Systems':
+      sections:
+        - 'Section 3.1: Jeans’ Equations in Spherical Coordinates'
+        - 'Section 3.2: Jeans’ Equations Applied'
+    - 'Chapter 4: Stability: Jeans Mass and Spiral Structure':
+      sections:
+        - 'Section 4.1: Gravitational Mirages'
+        - 'Section 4.2: Applied Gravitational Lensing'
+        - 'Section 4.3: Weak Lensing'
+    - 'Chapter 5: Clusters of Galaxies':
+      sections:
+        - 'Section 5.1: Physics in Clusters of Galaxies'
+        - 'Section 5.2: The Sunyaev-Zeldovich Effect'
+    - 'Chapter 6: Cosmology: Recent History and a Serviceable Newtonian Model':
+      sections:
+        - 'Section 6.1: The Spherical Model'
+        - 'Section 6.2: Recombination'
+        - 'Section 6.3: From Fields to Objects: The Press-Schecter Recipe'
+        - 'Section 6.4: Adding GR to Cosmology'
+        - 'Section 6.5: Distances in Cosmology'
+    - 'Chapter 7: Growing Modes in Expanding Universes: Jeans Redux':
+      sections:
+        - 'Section 7.1: Growing Modes: Radiation Dominated and Non-baryonic Universes'
+        - 'Section 7.2: Statistical Measures of Cosmic Structure'
+        - 'Section 7.3: The Cosmic Microwave Background and its Fluctuations'
+    - 'Chapter 8: Cosmological Helium Production':
+      sections:
+        - 'Section 8.1: Details of Helium Production'
+        - 'Section 8.2: Absorbers along Quasar Lines of Sight'
+    - 'Chapter 9: Active Galactic Nuclei':
+      sections:
+        - 'Section 9.1: The Black Hole Paradigm for AGN'
+        - 'Section 9.2: Accretion Disks'
+        - 'Section 9.3: Superluminality and Jets'
+        - 'Section 9.4: Extragalactic Sky Brightness: Present and Past Superposed'
+    - 'Chapter 10: Bonus Lecture #1'
+    - 'Chapter 11: Bonus Lecture #2'
+```

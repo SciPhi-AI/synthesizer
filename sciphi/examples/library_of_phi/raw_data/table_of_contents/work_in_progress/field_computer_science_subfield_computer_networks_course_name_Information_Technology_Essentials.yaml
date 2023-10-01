@@ -1,0 +1,91 @@
+textbook:
+  Information Technology Essentials: A Comprehensive Guide
+  chapters:
+    - Fundamentals of Computing I:
+        sections:
+          - Introduction
+          - Technology
+    - Fundamentals of Computing II:
+        sections:
+          - The Technology
+          - The History
+          - The Future
+    - Networks I:
+        sections:
+          - Introduction to Networks
+          - Network Topologies
+          - Network Protocols
+    - Networks II:
+        sections:
+          - Introduction to Network Security
+          - Network Threats and Vulnerabilities
+          - Network Security Best Practices
+    - Programming Languages:
+        sections:
+          - Introduction to Programming
+          - Programming Concepts and Paradigms
+          - Popular Programming Languages
+    - Relational Databases:
+        sections:
+          - Introduction to Databases
+          - Relational Database Concepts
+          - SQL Querying and Manipulation
+    - Introduction to Microsoft Access:
+        sections:
+          - Introduction to Microsoft Access
+          - Creating and Managing Tables
+          - Building Queries and Reports
+    - Web Technologies Fundamentals:
+        sections:
+          - Introduction to Web Technologies
+          - HTML and CSS Basics
+          - JavaScript Fundamentals
+          - Web Development Frameworks
+    - 'Computer Security I: Encryption and Digital Signatures':
+        sections:
+          - Introduction to Computer Security
+          - Cryptography and Encryption Algorithms
+          - Digital Signatures and Certificates
+    - 'Computer Security II: Network Security':
+        sections:
+          - Introduction to Network Security
+          - Firewalls and Intrusion Detection Systems
+          - Secure Network Communication Protocols
+    - '''Under the Hood'' of a Commercial Website':
+        sections:
+          - Introduction to Website Architecture
+          - Web Server Technologies
+          - Database Integration in Websites
+          - Content Management Systems
+    - Managing Software Development:
+        sections:
+          - Introduction to Software Development
+          - Software Development Life Cycle Models
+          - Agile Development Methodologies
+          - Project Management for Software Development
+    - Enterprise Systems:
+        sections:
+          - Introduction to Enterprise Systems
+          - Enterprise Resource Planning (ERP) Systems
+          - Customer Relationship Management (CRM) Systems
+          - Supply Chain Management (SCM) Systems
+    - Systems that Span Multiple Enterprises:
+        sections:
+          - Introduction to Inter-Enterprise Systems
+          - Electronic Data Interchange (EDI)
+          - Cloud Computing and Enterprise Systems
+    - 'Business Intelligence: Data Mining and Data Warehousing':
+        sections:
+          - Introduction to Business Intelligence
+          - Data Warehousing and Data Modeling
+          - Data Mining Techniques and Algorithms
+          - Business Analytics and Reporting
+    - Final Exam:
+        sections:
+          - Exam Preparation
+          - Reviewing Course Materials
+          - Test-Taking Strategies
+        subsections:
+          - Information Retrieval Techniques
+          - Data Analysis Methods
+          - Application Design and Development

@@ -1,0 +1,69 @@
+```yaml
+course:
+  textbook: International Relations Theory in the Cyber Age: A Comprehensive Guide
+    chapters:
+    - Chapter 1: The Classics—Concepts and Contexts
+        sections:
+        - Section 1.1: Classical Theories of International Relations
+        - Section 1.2: Historical Context of International Relations
+    - Chapter 2: Construction of Cyberspace
+        sections:
+        - Section 2.1: Evolution of Cyberspace
+        - Section 2.2: Impact of Technology on International Relations
+        - Section 2.3: Legal and Policy Frameworks for Cyberspace
+    - Chapter 3: Cyberspace and the State System—New Challenges
+        sections:
+        - Section 3.1: Sovereignty and Territoriality in Cyberspace
+        - Section 3.2: Cyber Threats and Security Challenges
+        - Section 3.3: Role of Non-State Actors in Cyberspace
+    - Chapter 4: Globalization and Emergent Dynamics
+        sections:
+        - Section 4.1: Globalization and Its Impact on International Relations
+        - Section 4.2: Emergent Issues in the Cyber Age
+        - Section 4.3: Transnational Networks and Cyber Diplomacy
+    - Chapter 5: Power and Security—Realism and Neo-Realism
+        sections:
+        - Section 5.1: Realist Theories of International Relations
+        - Section 5.2: Balance of Power in Cyberspace
+        - Section 5.3: Cyber Warfare and Deterrence Strategies
+    - Chapter 6: Governance and Order—Institutionalism and Neo-Institutionalism
+        sections:
+        - Section 6.1: Institutional Theories of International Relations
+        - Section 6.2: International Organizations and Cyber Governance
+        - Section 6.3: Norms and Rules in Cyberspace
+    - Chapter 7: Perceptions and Expression—Constructivism
+        sections:
+        - Section 7.1: Constructivist Theories of International Relations
+        - Section 7.2: Social Construction of Cyberspace
+        - Section 7.3: Role of Identity and Norms in Cyber Interactions
+    - Chapter 8: Growth and Expansion—Lateral Pressure
+        sections:
+        - Section 8.1: Economic Dimensions of Cyberspace
+        - Section 8.2: Cyber Espionage and Intellectual Property Theft
+        - Section 8.3: Digital Divide and Global Inequality
+    - Chapter 9: Cyberpolitics in International Relations
+        sections:
+        - Section 9.1: Influence of Cyberspace on Politics and Governance
+        - Section 9.2: Cyber Activism and Online Political Movements
+        - Section 9.3: Cyber Propaganda and Information Warfare
+    - Chapter 10: International Conflict and War
+        sections:
+        - Section 10.1: Cyberspace as a New Domain of Conflict
+        - Section 10.2: Cyber Attacks and Their Impact on International Security
+        - Section 10.3: Cyber Deterrence and Response Strategies
+    - Chapter 11: International Cooperation and Global Agenda
+        sections:
+        - Section 11.1: Multilateral Cooperation in Cyberspace
+        - Section 11.2: Cyber Diplomacy and International Negotiations
+        - Section 11.3: Global Governance of Emerging Technologies
+    - Chapter 12: Contending Authority—Principles and Practice
+        sections:
+        - Section 12.1: Cyber Sovereignty and Jurisdiction Issues
+        - Section 12.2: Role of International Law in Cyberspace
+        - Section 12.3: Balancing National Security and Individual Privacy
+    - Chapter 13: Alternative Futures—21st Century Challenges
+        sections:
+        - Section 13.1: Emerging Technologies and Their Impact on International Relations
+        - Section 13.2: Future Scenarios for Cyberspace Governance
+        - Section 13.3: Ethical and Legal Considerations in the Cyber Age
+```

@@ -1,0 +1,32 @@
+textbook:
+  'The Comprehensive Guide to Cognitive Neuroscience of Remembering: Creating and Controlling Memory':
+    chapters:
+      - Prefrontal Cortex and Mnemonic Control:
+          sections:
+            - Introduction to Course
+            - PFC and Cognitive Control I
+            - PFC and Cognitive Control II
+            - PFC and Mnemonic Control
+              subsections:
+                - Prefrontal Cortex Anatomy and Function
+                - Working Memory and Prefrontal Cortex
+      - Medial Temporal Lobe (MTL) and Memory Creation:
+          sections:
+            - MTL and Memory Formation I
+              subsections:
+                - Hippocampus and Memory Encoding
+                - Amygdala and Emotional Memory
+            - MTL and Memory Formation II
+              subsections:
+                - Entorhinal Cortex and Memory Consolidation
+                - Parahippocampal Cortex and Spatial Memory
+            - MTL and Memory Formation III
+              subsections:
+                - Perirhinal Cortex and Object Recognition Memory
+                - Retrosplenial Cortex and Episodic Memory
+      - Final Exam:
+          sections:
+            - Final Exam
+              subsections:
+                - Exam Preparation Tips
+                - Sample Questions and Answers

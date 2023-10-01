@@ -1,0 +1,56 @@
+```yaml
+course:
+  Introduction to Design Inquiry:
+    textbook:
+      name: "Design Inquiry: Exploring the Intersection of Creativity and Problem Solving"
+      chapters:
+        - Chapter 1: Introduction to Design Inquiry
+          sections:
+            - Section 1.1: The Conduit Metaphor
+            - Section 1.2: Frame Conflict in Language
+        - Chapter 2: Readings
+          sections:
+            - Section 2.1: The Airtight Cage
+            - Section 2.2: Death and Life of Great American Cities
+            - Section 2.3: Spirit of Place
+        - Chapter 3: Lecture Notes
+          sections:
+            - Section 3.1: Introduction - Woodland
+            - Section 3.2: How to Calculate with Shapes
+            - Section 3.3: When is Reasoning Visual?
+            - Section 3.4: A Note on Generative Design Technologies
+            - Section 3.5: Genetic Algorithms
+            - Section 3.6: Everything You Wanted to Know About Computers
+        - Chapter 4: Recitations
+          sections:
+            - Section 4.1: None
+        - Chapter 5: Assignments
+          sections:
+            - Section 5.1: Assignment List
+        - Chapter 6: Exams
+          sections:
+            - Section 6.1: None
+        - Chapter 7: Syllabus
+          sections:
+            - Section 7.1: None
+        - Chapter 8: Calendar
+          sections:
+            - Section 8.1: Introduction / Woodland Cemetery
+            - Section 8.2: Discuss Objects
+            - Section 8.3: Tool Maker’s Paradigm
+            - Section 8.4: Characteristics of Design
+            - Section 8.5: Reading Strategies
+            - Section 8.6: Exeter Library Field Trip
+            - Section 8.7: Discussion of Field Trip
+            - Section 8.8: Discussion of Reading a Building: The Exeter Library
+            - Section 8.9: Discussion of Part 4 of Reading a Building
+            - Section 8.10: Discussion of Type
+        - Chapter 9: Projects
+          sections:
+            - Section 9.1: Assignment 1 - A Bottle of Wine
+            - Section 9.2: Assignment 2 - The Infinite Corridor
+            - Section 9.3: Assignment 3 - MIT Chapel: Form
+            - Section 9.4: Assignment 4 - Reading a Building: The Exeter Library
+            - Section 9.5: Assignment 7 - Open Experiment
+            - Section 9.6: Assignment 10 - Reflection
+```

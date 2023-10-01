@@ -1,0 +1,73 @@
+textbook:
+  'Architectural Design: From Perceptions to Processes':
+    chapters:
+      - Introduction to Architectural Design:
+          sections:
+            - Design Principles
+            - Form and Function
+            - Aesthetics
+            - Human Perception of Space
+            - Design Process
+      - Architectural Drawing Techniques:
+          sections:
+            - Sketching and Rendering
+            - Orthographic Projection
+            - Isometric and Axonometric Projection
+            - Perspective Drawing
+            - Digital Drawing Tools
+      - Site Analysis and Programming:
+          sections:
+            - Site Selection
+            - Site Surveying Techniques
+            - Environmental Analysis
+            - Program Development
+            - Site Constraints and Opportunities
+      - Design Concept Development:
+          sections:
+            - Conceptual Thinking
+            - Design Ideation Techniques
+            - Design Principles Application
+            - Design Concept Exploration
+            - Concept Refinement
+      - Architectural Materials and Construction:
+          sections:
+            - Building Materials Properties
+            - Structural Systems
+            - Building Elements and Assemblies
+            - Construction Techniques
+            - Sustainability in Construction
+      - Building Codes and Regulations:
+          sections:
+            - Zoning Laws
+            - Building Codes
+            - Accessibility Regulations
+            - Fire Safety Regulations
+            - Environmental Regulations
+      - Building Systems Integration:
+          sections:
+            - HVAC Systems
+            - Electrical Systems
+            - Plumbing Systems
+            - Lighting Systems
+            - Acoustic Systems
+      - Architectural History and Theory:
+          sections:
+            - Ancient Architecture
+            - Medieval Architecture
+            - Renaissance Architecture
+            - Modern Architecture
+            - Contemporary Architecture
+      - Sustainable Design Principles:
+          sections:
+            - Energy Efficiency
+            - Water Conservation
+            - Passive Design Strategies
+            - Green Building Materials
+            - Renewable Energy Systems
+      - Design Communication and Presentation:
+          sections:
+            - Graphic Design Principles
+            - Digital Presentation Techniques
+            - Model Making
+            - Oral Presentation Skills
+            - Design Portfolios

@@ -1,0 +1,153 @@
+```yaml
+course:
+  Cell and Molecular Neurobiology:
+    textbook:
+      title: Comprehensive Guide to Cell and Molecular Neurobiology
+      chapters:
+        - chapter: Ion Channels I
+          sections:
+            - section: Basics of Ion Channels
+            - section: Structure of Ion Channels
+            - section: Function of Ion Channels
+          subsections: []
+        - chapter: Ion Channels II
+          sections:
+            - section: Potassium Channels
+            - section: Sodium Channels
+            - section: Calcium Channels
+          subsections: []
+        - chapter: Receptors I
+          sections:
+            - section: Types of Receptors
+            - section: Ligand-gated Receptors
+            - section: G-protein Coupled Receptors
+          subsections: []
+        - chapter: Receptors II
+          sections:
+            - section: Ionotropic Receptors
+            - section: Metabotropic Receptors
+            - section: Neurotransmitter Receptors
+          subsections: []
+        - chapter: Introduction to Neurobiology
+          sections:
+            - section: Neurons and Glia
+            - section: Action Potentials
+            - section: Synaptic Transmission
+          subsections: []
+        - chapter: Basics of Electrophysiology
+          sections:
+            - section: Membrane Potential
+            - section: Resting Potential
+            - section: Action Potential Generation
+          subsections: []
+        - chapter: Modulation of Receptor Activity
+          sections:
+            - section: Receptor Desensitization
+            - section: Receptor Downregulation
+            - section: Receptor Upregulation
+          subsections: []
+        - chapter: Protein Targeting and Signaling Complexes
+          sections:
+            - section: Protein Sorting in Neurons
+            - section: Synaptic Signaling Complexes
+            - section: Intracellular Signaling Pathways
+          subsections: []
+        - chapter: Neuronal Polarity and Subcellular Specialization
+          sections:
+            - section: Neuronal Dendrites
+            - section: Axonal Transport
+            - section: Synaptic Plasticity
+          subsections: []
+        - chapter: Repertoire of Neuron Interactions
+          sections:
+            - section: Neuronal Circuits
+            - section: Synaptic Connectivity
+            - section: Neural Circuits in Behavior
+          subsections: []
+        - chapter: Neurogenesis
+          sections:
+            - section: Neural Stem Cells
+            - section: Adult Neurogenesis
+            - section: Regulation of Neurogenesis
+          subsections: []
+        - chapter: Presynaptic Mechanisms
+          sections:
+            - section: Neurotransmitter Release
+            - section: Synaptic Vesicle Recycling
+            - section: Short-term Plasticity
+          subsections: []
+        - chapter: Molecular Manipulation of Neural Circuits
+          sections:
+            - section: Optogenetics
+            - section: Chemogenetics
+            - section: Genetic Engineering in Neurons
+          subsections: []
+        - chapter: Axon Guidance
+          sections:
+            - section: Molecular Guidance Cues
+            - section: Growth Cone Navigation
+            - section: Axon Pathfinding
+          subsections: []
+        - chapter: Synapse Formation and Elimination
+          sections:
+            - section: Synaptogenesis
+            - section: Synaptic Pruning
+            - section: Synaptic Stabilization
+          subsections: []
+        - chapter: Trophic Factors
+          sections:
+            - section: Nerve Growth Factor
+            - section: Brain-derived Neurotrophic Factor
+            - section: Neurotrophin-3
+          subsections: []
+        - chapter: Postsynaptic Mechanisms and Long-term Potentiation/Depression
+          sections:
+            - section: Excitatory Postsynaptic Potentials
+            - section: Inhibitory Postsynaptic Potentials
+            - section: Long-term Potentiation
+            - section: Long-term Depression
+          subsections: []
+        - chapter: Waves and Chemoaffinity
+          sections:
+            - section: Neural Activity Waves
+            - section: Chemoaffinity Hypothesis
+            - section: Axon Guidance by Activity
+          subsections: []
+        - chapter: Two Faces of GABA
+          sections:
+            - section: GABAergic Inhibition
+            - section: GABAergic Excitation
+            - section: GABA Receptor Subtypes
+          subsections: []
+        - chapter: Hodgkin and Huxley
+          sections:
+            - section: Hodgkin-Huxley Model
+            - section: Voltage-gated Ion Channels
+            - section: Action Potential Generation
+          subsections: []
+        - chapter: Aplysia Learning
+          sections:
+            - section: Habituation
+            - section: Sensitization
+            - section: Classical Conditioning
+          subsections: []
+        - chapter: Drosophila Learning
+          sections:
+            - section: Olfactory Learning
+            - section: Courtship Conditioning
+            - section: Place Learning
+          subsections: []
+        - chapter: Drosophila Circadian Rhythms
+          sections:
+            - section: Molecular Clock Mechanisms
+            - section: Circadian Behavior
+            - section: Light Input Pathways
+          subsections: []
+        - chapter: Epilepsy
+          sections:
+            - section: Seizure Types
+            - section: Epileptic Networks
+            - section: Anti-epileptic Drugs
+          subsections: []
+```
+```

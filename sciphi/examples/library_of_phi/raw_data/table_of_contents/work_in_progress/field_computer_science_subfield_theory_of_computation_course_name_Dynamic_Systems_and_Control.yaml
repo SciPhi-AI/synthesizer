@@ -1,0 +1,80 @@
+```yaml
+course:
+  textbook: "Dynamic Systems and Control: Theory and Applications"
+    chapters:
+    - chapter: "Linear Algebra Review"
+      sections:
+      - section: "Matrix Algebra"
+      - section: "Least Squares Estimation"
+      - section: "Least Squares Solution of y = < A, x >"
+      - section: "Matrix Norms and Singular Value Decomposition"
+    - chapter: "Matrix Perturbations"
+      sections:
+      - section: "Dynamic Models"
+      - section: "State-Space Models"
+      - section: "Simulation/Realization"
+      - section: "Discrete-Time Linear State-Space Models"
+      - section: "Continuous-Time Linear State-Space Models"
+      - section: "Modal Decomposition of State-Space Models"
+    - chapter: "Internal Stability for LTI Systems"
+      sections:
+      - section: "External Input-Output Stability"
+      - section: "System Norms"
+      - section: "Interconnected Systems and Feedback: Well-Posedness, Stability, and Performance"
+      - section: "Performance of Feedback Systems"
+    - chapter: "Robust Stability and Performance"
+      sections:
+      - section: "Robust Stability in SISO Systems"
+      - section: "Stability Robustness"
+      - section: "Robust Performance and Introduction to the Structured Singular Value Function"
+    - chapter: "Reachability and Observability"
+      sections:
+      - section: "Reachability of DT LTI Systems"
+      - section: "CT Reachability, Canonical Forms"
+      - section: "Observability"
+      - section: "Minimal State-Space Realization"
+      - section: "Balanced Realization"
+      - section: "Poles and Zeros of MIMO Systems"
+    - chapter: "Stabilization and Control"
+      sections:
+      - section: "State Feedback"
+      - section: "Observers, Model-Based Controllers"
+      - section: "Minimality and Stability of Interconnected Systems"
+    - chapter: "Introduction to Dynamic Systems and Control"
+      sections:
+      - section: "Matrix Algebra"
+      - section: "Least Squares Error Solutions of Overdetermined/Underdetermined Systems"
+      - section: "Matrix Norms, SVD, Matrix Perturbations"
+    - chapter: "State-Space Models and Solutions"
+      sections:
+      - section: "State-Space Models, Linearity and Time Invariance"
+      - section: "Solutions of State-Space Models"
+      - section: "Similarity Transformations, Modes of LTI Systems, Laplace Transform, Transfer Functions"
+    - chapter: "Stability and I/O Stability"
+      sections:
+      - section: "Stability, Lyapunov Methods"
+      - section: "External I/O Stability, Storage Functions"
+      - section: "Interconnected Systems, Feedback, I/O Stability"
+    - chapter: "Performance Measures and Robustness"
+      sections:
+      - section: "System Norms"
+      - section: "Performance Measures in Feedback Control"
+      - section: "Small Gain Theorem, Stability Robustness"
+      - section: "Stability Robustness"
+    - chapter: "Reachability and Observability Analysis"
+      sections:
+      - section: "Reachability"
+      - section: "Reachability: Standard and Canonical Forms, Modal Tests"
+      - section: "Observability"
+      - section: "Minimality, Realization, Kalman Decomposition, Model Reduction"
+    - chapter: "State Feedback and MIMO Systems"
+      sections:
+      - section: "State Feedback, Observers, Output Feedback, MIMO Poles and Zeros"
+      - section: "Minimality of Interconnections, Pole/Zero Cancellations"
+      - section: "Parameterization of All Stabilizing Controllers"
+    - chapter: "Optimal Control Synthesis"
+      sections:
+      - section: "Optimal Control Synthesis: Problem Setup"
+      - section: "H2 Optimization"
+      - section: "H∞ Optimization"
+```

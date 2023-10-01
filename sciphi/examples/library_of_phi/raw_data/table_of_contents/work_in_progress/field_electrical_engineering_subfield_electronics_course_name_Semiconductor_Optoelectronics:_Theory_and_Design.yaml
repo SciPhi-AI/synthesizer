@@ -1,0 +1,234 @@
+```yaml
+textbook:
+  'Semiconductor Optoelectronics: Theory and Design':
+    chapters:
+      - Introduction to Semiconductor Optoelectronics:
+          sections:
+            - Basics of Semiconductors
+              subsections:
+                - Crystal Structure
+                - Energy Band Diagram
+                - Intrinsic and Extrinsic Semiconductors
+                - Doping
+                - Charge Carriers
+                - Carrier Mobility
+            - Band Structure
+              subsections:
+                - Energy Bands in Solids
+                - Kronig-Penney Model
+                - Effective Mass Approximation
+                - Density of States
+                - Band Gap Engineering
+            - Carrier Distributions
+              subsections:
+                - Fermi-Dirac Distribution
+                - Intrinsic and Extrinsic Carrier Concentration
+                - Carrier Statistics
+                - Carrier Transport
+                - Drift and Diffusion
+            - pn Junctions
+              subsections:
+                - Formation of pn Junction
+                - Depletion Region
+                - Forward and Reverse Biasing
+                - I-V Characteristics
+                - pn Junction Capacitance
+            - Carrier Injection
+              subsections:
+                - Minority and Majority Carriers
+                - Forward and Reverse Bias Injection
+                - Recombination and Generation
+                - Diffusion Current
+                - Drift Current
+      - Optical Absorption in Semiconductors:
+          sections:
+            - Absorption in Bulk Semiconductors
+              subsections:
+                - Direct and Indirect Transitions
+                - Urbach Rule
+                - Absorption Coefficient
+                - Absorption Edge
+                - Tauc Plot
+            - Displacement Currents
+              subsections:
+                - Maxwell's Equations
+                - Time-varying Electric Fields
+                - Polarization Current
+                - Dielectric Relaxation
+                - Frequency-dependent Permittivity
+            - Gain-Bandwidth Limits
+              subsections:
+                - Stimulated Emission
+                - Gain Saturation
+                - Linewidth Enhancement Factor
+                - Modulation Bandwidth
+                - Relaxation Oscillations
+      - Quantum Wells and Quantum Confined Stark Effect:
+          sections:
+            - Absorption in Quantum Wells
+              subsections:
+                - Quantum Confinement
+                - Energy Levels in Quantum Wells
+                - Selection Rules
+                - Quantum Well Absorption
+                - Quantum Well Lasers
+            - Quantum Confined Stark Effect
+              subsections:
+                - Electric Field Modulation
+                - Stark Shift
+                - Quantum Well Stark Effect
+                - Modulation Spectroscopy
+                - Electroabsorption Modulators
+      - Population Inversion and Gain:
+          sections:
+            - Non-radiative Recombination
+              subsections:
+                - Surface Recombination
+                - Shockley-Read-Hall Recombination
+                - Auger Recombination
+                - Radiative and Non-radiative Recombination
+                - Lifetimes of Carriers
+            - Coupled Electron-Photon Rate Equations
+              subsections:
+                - Rate Equations for Carriers
+                - Rate Equations for Photons
+                - Carrier and Photon Lifetimes
+                - Steady-state and Transient Behavior
+                - Threshold Gain
+            - Gain Saturation
+              subsections:
+                - Saturation Intensity
+                - Gain Compression
+                - Carrier Density Dependence
+                - Gain Recovery Time
+                - Dynamic Gain Control
+            - Optical Confinement
+              subsections:
+                - Waveguides
+                - Total Internal Reflection
+                - Optical Cavities
+                - Distributed Bragg Reflectors
+                - Vertical Cavity Surface Emitting Lasers
+      - Resonators and Lasing:
+          sections:
+            - Fabry-Perot Resonators
+              subsections:
+                - Multiple Reflections
+                - Finesse and Free Spectral Range
+                - Transmission and Reflection Coefficients
+                - Mode Spacing
+                - Fabry-Perot Etalons
+            - Lasing Threshold
+              subsections:
+                - Amplified Spontaneous Emission
+                - Threshold Gain and Loss
+                - Threshold Current and Voltage
+                - Lasing Action
+                - Continuous Wave and Pulsed Operation
+      - Heterostructure Band Alignment and Alloys:
+          sections:
+            - Optical and Electrical Properties of Alloys
+              subsections:
+                - Alloy Composition
+                - Band Gap Engineering
+                - Energy Levels in Alloys
+                - Band Offset
+                - Alloy Band Alignment
+            - Heterostructure Band Alignment
+              subsections:
+                - Valence Band Offset
+                - Conduction Band Offset
+                - Type-I, Type-II, and Straddling Heterostructures
+                - Band Bending
+                - Band Discontinuities
+      - T-matrix Formalism:
+          sections:
+            - Introduction to T-matrix Formalism
+              subsections:
+                - Electromagnetic Scattering
+                - Scattering Matrix
+                - T-matrix and Green's Function
+                - Scattering Cross Section
+                - T-matrix Calculation Methods
+      - Review and Midterm:
+          sections:
+            - Review for Midterm Exam
+              subsections:
+                - Key Concepts and Definitions
+                - Important Equations and Formulas
+                - Problem-solving Techniques
+                - Sample Midterm Questions
+      - Projects:
+          sections:
+            - Project 1
+              subsections:
+                - Project Proposal
+                - Literature Review
+                - Experimental Setup
+                - Data Collection and Analysis
+                - Results and Discussion
+            - Project 2
+              subsections:
+                - Project Proposal
+                - Literature Review
+                - Simulation Setup
+                - Data Analysis and Visualization
+                - Conclusion and Future Work
+            - Project 3
+              subsections:
+                - Project Proposal
+                - Experimental Design
+                - Prototype Development
+                - Testing and Evaluation
+                - Conclusion and Recommendations
+            - Project 4
+              subsections:
+                - Project Proposal
+                - Theoretical Background
+                - Computational Modeling
+                - Numerical Simulations
+                - Results and Interpretation
+            - Project 5
+              subsections:
+                - Project Proposal
+                - Experimental Setup
+                - Data Collection and Analysis
+                - Comparison with Theoretical Models
+                - Conclusion and Future Directions
+            - Project 6
+              subsections:
+                - Project Proposal
+                - Literature Review
+                - Design and Fabrication
+                - Characterization and Testing
+                - Discussion and Conclusions
+            - Project 7
+              subsections:
+                - Project Proposal
+                - Experimental Methodology
+                - Data Analysis and Results
+                - Discussion and Interpretation
+                - Conclusion and Future Work
+            - Project 8
+              subsections:
+                - Project Proposal
+                - Theoretical Approach
+                - Model Development
+                - Simulation Results
+                - Discussion and Conclusion
+            - Project 9
+              subsections:
+                - Project Proposal
+                - Experimental Setup
+                - Data Acquisition and Processing
+                - Analysis and Results
+                - Conclusion and Recommendations
+            - Project 10
+              subsections:
+                - Project Proposal
+                - Literature Review
+                - Methodology and Experimental Design
+                - Data Analysis and Interpretation
+                - Conclusion and Future Scope
+
+```

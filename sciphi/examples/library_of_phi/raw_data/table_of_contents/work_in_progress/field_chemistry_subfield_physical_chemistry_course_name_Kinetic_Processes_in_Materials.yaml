@@ -1,0 +1,45 @@
+textbook:
+  Kinetic Processes in Materials: A Comprehensive Guide
+  chapters:
+    - 'Introduction: Fields and Gradients; Fluxes; Continuity Equation':
+        sections:
+        - Fields and Gradients
+        - Fluxes
+        - Continuity Equation
+    - Irreversible Thermodynamics:
+        sections:
+        - Driving Forces and Fluxes for Diffusion; Self-Diffusion and Interdiffusion
+        - Effects of Electrical Potential, Capillarity, and Stress on Diffusion Potential
+        - Effects of Capillarity and Stress on Diffusion
+    - The Diffusion Equation:
+        sections:
+        - Solutions to the Diffusion Equation - I
+        - Solutions to the Diffusion Equation - II
+        - Solutions to the Diffusion Equation - III
+    - Activated Jump Processes:
+        sections:
+        - Diffusion Resulting from Discrete Jumps
+        - Diffusion in Crystals
+    - Atomic Models for Diffusivities:
+        sections:
+        - Atomic Models for Diffusivities - I
+        - Atomic Models for Diffusivities - II
+    - Short-Circuit Diffusion in Crystals:
+        sections:
+        - Diffusion in Noncrystalline Materials
+        - Surface Evolution Due to Capillary Forces
+    - Particle Coarsening:
+        sections:
+        - Grain Growth
+        - 'Diverse Short Topics: Anisotropic Surfaces, Diffusional Creep, and Sintering'
+    - General Features of Phase Transformations:
+        sections:
+        - Spinodal Decomposition and Continuous Ordering
+        - Spinodal Decomposition Kinetics
+    - Nucleation:
+        sections:
+        - Heterogeneous Nucleation
+        - Diffusional Growth
+    - Morphological Stability of Moving Interfaces:
+        sections:
+        - Kinetics of Nucleation and Growth Transformations

@@ -1,0 +1,38 @@
+textbook:
+  Ethics and the Law on the Electronic Frontier: A Comprehensive Guide
+  chapters:
+    - Introduction to Ethics and the Law on the Electronic Frontier:
+        sections:
+        - Course Overview and Introduction
+        - Policy Making and the Structure of Law
+    - Regulating the Decentralized Internet:
+        sections:
+        - The Internet meets the U.S. Constitution
+        - 'The Legacy of Reno: The Strengths and Limits of Filtering and User Control'
+        - The Role of Intermediaries in Online Regulation
+        - Content Moderation Challenges: Balancing Free Speech and Harmful Content
+    - Regulating Government Use of Surveillance Technology:
+        sections:
+        - Fourth Amendment Foundations and the First Century of Electronic Surveillance
+        - International Issues in Surveillance Regulation
+        - Technology-driven Public-private Boundary Shifts in Surveillance
+        - The Ethics of Government Surveillance
+    - Anonymity and Transparency:
+        sections:
+        - Profiling and Datamining Post-9/11
+        - Anonymity vs. Transparency: Striking the Right Balance
+        - Personal Information on the Web: Privacy and Security Concerns
+        - Transparency in Consumer Protection and Commercial Regulation
+        - The Right to be Forgotten: Balancing Privacy and Freedom of Information
+    - Broadcast Regulation and Public Policy Challenges:
+        sections:
+        - Origins of Broadcast Regulation: Early Efforts to Regulate the Airwaves
+        - Semantic Web Public Policy Challenges: Regulating AI and Machine Learning
+        - Media Ownership and Consolidation: Implications for Diversity and Democracy
+        - The Role of Social Media in Shaping Public Opinion: Challenges and Solutions
+    - Term Paper Assignments:
+        sections:
+        - Guidelines and Expectations for Final Papers
+        - Exemplary Term Papers
+        - Research Methodologies and Resources for Writing
+        - Citing Sources and Avoiding Plagiarism

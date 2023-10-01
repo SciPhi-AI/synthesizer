@@ -1,0 +1,20 @@
+textbook:
+  Information Technology and the Labor Market: An In-Depth Analysis
+  chapters:
+    - Chapter 1: Setting the Stage - Incomes, Occupations and Wages
+      sections:
+        - Section 1.1: Two Early Views of Computers’ Impacts
+        - Section 1.2: Does Technology Complement 'Skill'?
+    - Chapter 2: Cognition I - Perceiving What Task is to be Done
+      sections:
+        - Section 2.1: IT and Tasks I: Rules Based Applications Including Expert Systems
+        - Section 2.2: IT and Tasks II: Pattern Recognition and Computer Learning
+    - Chapter 3: Implementing Computers and the Reorganization of Work
+      sections:
+        - Section 3.1: Cognition II - What People Get Paid For: Expert Thinking and Complex Communication
+        - Section 3.2: IT and Markets
+        - Section 3.3: IT and Outsourcing
+    - Chapter 4: How Can Computers Substitute for/Complement Classroom Teachers?
+      sections:
+        - Section 4.1: IT and Productivity
+        - Section 4.2: Wrap-up

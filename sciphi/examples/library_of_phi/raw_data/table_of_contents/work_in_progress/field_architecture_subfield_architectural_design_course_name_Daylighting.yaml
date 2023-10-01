@@ -1,0 +1,81 @@
+textbook:
+  Daylighting: A Comprehensive Guide to Harnessing Natural Light
+  chapters:
+    - Introduction to Daylighting:
+        sections:
+        - The Importance of Daylighting in Architecture
+        - The Benefits of Daylighting
+        - Historical Overview of Daylighting
+        - The Role of Daylighting in Sustainable Design
+    - Photometry and HDR Workshop:
+        sections:
+        - Introduction to Photometry
+        - Measurement Units and Standards
+        - High Dynamic Range Imaging Techniques
+        - Glare Analysis and Control Strategies
+        - Daylight Metrics and Performance Evaluation
+    - Massing Studies:
+        sections:
+        - Concept of Massing in Architecture
+        - Massing Analysis and Strategies
+        - Case Studies: Successful Massing Approaches
+    - Designing with the Sun:
+        sections:
+        - Solar Geometry and Principles
+        - Solar Orientation and Building Layout
+        - Daylighting Strategies for Different Building Types
+        - Sunlight Analysis Techniques and Tools
+    - Physical Model Building:
+        sections:
+        - Introduction to Physical Models in Daylighting Design
+        - Building Scale Models: Materials, Techniques, and Considerations
+        - Light Manipulation Techniques in Physical Models
+        - Case Studies: Effective Use of Physical Models in Daylighting Design
+    - Daylight Simulations:
+        sections:
+        - Introduction to Daylight Simulations
+        - Simulation Techniques and Software Tools
+        - Daylighting Analysis and Performance Evaluation
+        - Case Studies: Successful Daylight Simulations in Real Projects
+    - Light and Matter:
+        sections:
+        - Properties of Light and Vision
+        - Interaction of Light with Different Materials
+        - Reflection and Refraction in Daylighting Design
+        - Advanced Materials and Light Manipulation Techniques
+    - Circadian Effects of Light:
+        sections:
+        - Biological Rhythms and Human Health
+        - Lighting Design for Circadian Well-being
+        - Daylight and Sleep Quality
+        - Case Studies: Circadian Lighting in Healthcare and Educational Facilities
+    - Daylight Availability:
+        sections:
+        - Sun Path Diagrams and Analysis
+        - Sunlight Intensity and Distribution
+        - Daylight Autonomy and Useful Daylight Illuminance
+        - Daylighting Strategies for Different Climate Zones
+    - Visual Comfort & Occupant Behavior:
+        sections:
+        - Glare Control Techniques and Strategies
+        - Daylighting Comfort and User Satisfaction
+        - Occupant Behavior and Daylighting Design
+        - Case Studies: User-Centric Daylighting Approaches
+    - Envelope Design:
+        sections:
+        - Window Design for Daylighting
+        - Shading Systems and Light Control Devices
+        - Insulation and Thermal Performance in Daylighting Design
+        - Case Studies: Innovative Envelope Design for Optimal Daylighting
+    - Electric Lighting:
+        sections:
+        - Artificial Lighting Systems and Technologies
+        - Light Fixtures and Controls in Daylighting Design
+        - Lighting Design Principles and Strategies
+        - Case Studies: Integration of Electric Lighting with Natural Light
+    - Integrating Electric Lighting & Energy:
+        sections:
+        - Daylight and Electric Lighting Integration Strategies
+        - Energy Efficiency Strategies in Daylighting Design
+        - Lighting Controls and Automation Systems
+        - Case Studies: Energy-Efficient Lighting Design Solutions
