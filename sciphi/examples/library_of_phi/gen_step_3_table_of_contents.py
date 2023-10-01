@@ -36,9 +36,8 @@ from glob import glob
 
 import fire
 
+from sciphi.examples.helpers import get_default_settings_provider
 from sciphi.examples.library_of_phi.prompts import TABLE_OF_CONTENTS_PROMPT
-from sciphi.interface import InterfaceManager, ProviderName
-from sciphi.llm import LLMConfigManager
 
 
 class TableOfContentsRunner:
@@ -47,7 +46,7 @@ class TableOfContentsRunner:
     def __init__(
         self,
         input_rel_dir: str = "output_step_2",
-        output_rel_dir: str = "table_of_contents",
+        output_rel_dir: str = "output_step_3",
         data_directory=None,
         provider: str = "openai",
         model_name: str = "gpt-4-0613",
@@ -70,14 +69,9 @@ class TableOfContentsRunner:
             )
 
         # Build an LLM and provider interface
-        provider_name = ProviderName(self.provider)
-        llm_config = LLMConfigManager.get_config_for_provider(
-            provider_name
-        ).create(max_tokens_to_sample=None)
-        llm_provider = InterfaceManager.get_provider(
-            provider_name, self.model_name, llm_config
+        llm_provider = get_default_settings_provider(
+            provider=self.provider, model_name=self.model_name
         )
-
         input_dir = os.path.join(self.data_directory, self.input_rel_dir)
         output_dir = os.path.join(self.data_directory, self.output_rel_dir)
 
