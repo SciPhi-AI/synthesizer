@@ -1,110 +1,133 @@
-# SciPhi [ΨΦ]: A framework for breaking LLM scaling laws
+# **SciPhi [ΨΦ]: A Framework for Breaking LLM Scaling Laws**
 
-## Overview
+## **Overview**
 
-SciPhi is a Python package that provides two high-level features:
-
-- Configurable generation of LLM-mediated synthetic training / tuning data for LLMs.
+SciPhi is a Python package offering:
+- Configurable generation of LLM-mediated synthetic training/tuning data.
 - Seamless LLM-mediated evaluation of model output.
 
 <p align="center">
 <img width="524" alt="Screenshot 2023-09-18 at 9 53 55 AM" src="https://github.com/emrgnt-cmplxty/SciPhi/assets/68796651/9731f891-1d99-432a-aaec-37916bc6362f">
 </p>
 
-## Questions?
+## **Questions?**
 
-Join us on [Discord here](https://discord.gg/j9GxfbxqAe) or [contact me](mailto:owen@emergentagi.com) directly. For a SciPhi tutorial, [go here](https://substack.com/inbox/post/137197905).
+- Join our [Discord community](https://discord.gg/j9GxfbxqAe).
+- For direct inquiries, [email me](mailto:owen@emergentagi.com).
+- New to SciPhi? Start with our [tutorial](https://substack.com/inbox/post/137197905).
 
-## Installation
+## **Installation**
 
 ```bash
-# Repository setup
+# Clone the repository
 git clone https://github.com/emrgnt-cmplxty/sciphi.git
 cd sciphi
+
 # Install dependencies
-# pip3 install poetry (if you don't have it)
+# Install poetry if you don't have it: pip3 install poetry
 poetry install -E all
-# Setup your environment
+
+# Set up your environment
+# Note: Modify the .env file as needed after copying
 cp .env.example .env && vim .env
 ```
 
----
+### Requirements
 
-## Requirements
+- Python: >= 3.11 and < 3.12
+- Poetry: For package management
 
-- Python >= 3.11 and < 3.12
-- Poetry for package management
+### Optional Features
 
-### Optional Feature Requirements
-
-For additional features, you can install the optional dependencies:
+Install optional dependencies for enhanced features:
 
 ```bash
 poetry install -E <extra_name>
 ```
 
-- `anthropic_support`: For running with Anthropic models.
-- `hf_support`: For running with the HuggingFace package, useful for a large variety of model access.
-- `openai_support`: For running with OpenAI models.
-- `vllm_support`: For with VLLM, useful for fast inference.
-- `llama_index_support`: For LlamaIndex, useful for grounded synthesis.
-- `chroma_support`: For Chroma support, used for large vector databases.
-- `all`: For all dependencies (ex-vllm, which requires a separate install).
+Options include:
+- `anthropic_support`: For Anthropic models.
+- `hf_support`: With the HuggingFace package for diverse model access.
+- `openai_support`: For OpenAI models.
+- `vllm_support`: For VLLM, aiding fast inference.
+- `llama_index_support`: For LlamaIndex, enhancing grounded synthesis.
+- `chroma_support`: For Chroma support in large vector databases.
+- `all`: Includes all dependencies (excluding `vllm`, which needs separate installation).
+- `all_with_cuda`: Everything.
 
-## Usage
+## **Usage**
 
-### Library of Phi Generation
+### **Library of Phi Generation**
 
-The Library of Phi is a project sponsored by SciPhi which aims to democratize access to high quality textbooks. Currently, the library is generated with AI by a pipeline which goes from MIT OCW Course Webpages -> Syllabi -> Table of Contents -> Textbooks. This multi-step process involves scraping the MIT OCW website, processing the scraped data, generating configuration YAMLs, and performing RAG over wikipedia. LLMs are used throughout the pipeline to facilitate the data processing and generation.
+**Overview:**  
+The Library of Phi is an initiative sponsored by SciPhi. Its primary goal is to democratize access to high-quality textbooks. The project utilizes AI-driven techniques to generate textbooks by processing information from the MIT OCW course webpages.
 
-To contribute to the Library of Phi generation, run with the following commands below:
 
-#### Step 0: Scraping the MIT OCW Website
+**Workflow:**  
+The workflow encompasses data scraping, data processing, YAML configuration creation, and RAG execution over Wikipedia, with intermittent work done by LLMs.
 
-Scrape the MIT OCW website to obtain course details like course number, title, URL, resource level, page contents, etc., for each course.
+1. Scrape MIT OCW Course Webpages.
+2. Extract Syllabi.
+3. Formulate Table of Contents.
+4. Craft Textbooks.
+
+#### **Generating the default Textbook:**
+
+```bash
+poetry run python sciphi/examples/library_of_phi/generate_textbook.py run --do-wiki=False --textbook=Introduction_to_Deep_Learning
+```
+
+#### **Using a Custom Table of Contents:**
+
+1. Draft a table of contents and save as `textbook_name.yaml`.
+2. Place it in `sciphi/examples/library_of_phi/raw_data/table_of_contents`.
+3. Format similarly to `Introduction_to_Deep_Learning.yaml`.
+
+#### **Incorporating RAG over Wikipedia:**
+
+1. Enable the `--do-wiki` flag: `True`.
+2. In `.env`, set:
+   - `WIKI_SERVER_URL`
+   - `WIKI_SERVER_USERNAME`
+   - `WIKI_SERVER_PASSWORD`
+
+**Output**:  
+Generated textbooks reside in:  
+`[Your Working Directory]/sciphi/examples/library_of_phi/raw_data/created_textbooks`
+
+**Note**: The Wikipedia embeddings server is private but will be public soon. Meanwhile, ensure your configuration aligns with our specifications.
+
+---
+
+### Replicating Full Table of Contents Generation
+
+**Step 0**: Scrape MIT OCW for course details.
 
 ```bash
 poetry run python sciphi/examples/library_of_phi/raw_data/ocw_scraper.py scrape
 ```
 
-#### Step 1: Process the scraped data to Generate 'Draft' syllabi YAMLs
-
-Converts the scraped data into a JSON YAML 'draft' syllabi with the help of a specified LLM (defaults to openai).
+**Step 1**: Convert scraped data into 'draft' syllabi YAMLs.
 
 ```bash
 poetry run python sciphi/examples/library_of_phi/gen_step_1_draft_syllabi.py run
 ```
 
-#### Step 2: Process the draft YAML into the final YAML syllabi
-
-Clean the drafted syllabi and saves into a ready-to-run YAML output. TODO - Add LLM support for failing drafts.
+**Step 2**: Refine the draft YAML into the finalized syllabi.
 
 ```bash
 poetry run python sciphi/examples/library_of_phi/gen_step_2_clean_syllabi.py run
 ```
 
-#### Step 3: Convert the syllabi into a table of contents
-
-This step converts the clean syllabi info a table of contents.
+**Step 3**: Transition the syllabi to a table of contents.
 
 ```bash
 poetry run python sciphi/examples/library_of_phi/gen_step_3_table_of_contents.py run
 ```
 
-#### Step 4: Convert the table of contents into a textbook
+### Customizable Runner Script
 
-This step converts the clean syllabi info a table of contents.
-
-```bash
-poetry run python sciphi/examples/library_of_phi/gen_step_4_draft_book.py run --do-wiki=False
-# To run with wiki, set --do-wiki=True and place the appropriate 
-# `WIKI_SERVER_URL`, `WIKI_SERVER_USERNAME`, and `WIKI_SERVER_PASSWORD`
-# parameters into your local .env file.
-```
-
-### Customizeable Runner Script
-
-For customizeable application, you can use SciPhi for dataset generation by executing the relevant `runner.py` file with various command-line arguments.
+For flexible applications, execute the relevant `runner.py` with various command-line arguments.
 
 ```bash
 poetry run python sciphi/examples/basic_data_gen/runner.py --provider_name=openai --model_name=gpt-4 --log_level=INFO --batch_size=1 --num_samples=1 --output_file_name=example_output.jsonl --example_config=textbooks_are_all_you_need_basic_split
@@ -112,93 +135,35 @@ poetry run python sciphi/examples/basic_data_gen/runner.py --provider_name=opena
 
 ### Command-Line Arguments
 
-- `--provider`: Which provider to use for completions (default: "openai").
-- `--model_name`: The name of the model to load from the provider (default: "gpt-3.5-turbo").
-- `--temperature`: Temperature parameter for the provided model (default: 0.7).
-- `--example_config`: Which example configuration to use (default: "textbooks_are_all_you_need_basic_split").
-- `--override_config_path`: Used to override the example configurations with custom config.
-- `--num_samples`: Number of samples to generate (default: 1_024).
-- `--output_dir`: File path to override the default output output file path with.
-- `--output_file_name`: Filename to override the default output file name with.
+See arguments and their default values in the README. Notable ones include `--provider`, `--model_name`, and `--temperature`.
 
-### Stock data configs
+### Example Generated Data
 
-- `evol_instruct` - A config for replicating the EvolInstruct dataset
-- `textbooks_are_all_you_need_basic_split` - A config for replicating the Python textbook data from Textbooks Are All You Need [2]
-  
-### Example generated data
+<p align="center">
 <img width="776" alt="Screenshot 2023-09-17 at 11 11 18 PM" src="https://github.com/emrgnt-cmplxty/SciPhi/assets/68796651/8f1ef11d-cd37-4fc7-a7a0-a1e0159ba4a3">
+</p>
 
 ## Development
 
-
-The code snippet below shows how to use SciPhi to generate synthetic data for a given LLM provider.
-
-```python
-# Build an LLM and provider interface
-llm_config = LLMConfigManager.get_config_for_provider(
-    provider_name
-).create(**gen_llm_config(args))
-llm_provider = InterfaceManager.get_provider(
-    provider_name,
-    model_name,
-    llm_config,
-)
-
-# Initialize the data maker
-data_maker = DataMaker(
-    DataGeneratorMode(data_config.generator_mode),
-    prompt_generator,
-    prompt,
-    # Optional field,
-    # currently only used when generator_mode == "from_hf_dataset"
-    dataset_name=data_config.dataset_name,
-)
-
-# Generate & write out the results
-output_path = get_output_path(args)
-logger.debug(f"Writing results to: {output_path}.")
-writer = JsonlDataWriter(output_path)
-
-for batch in data_maker.generator(args.batch_size, args.num_samples):
-    completions = llm_provider.get_batch_completion(batch)
-    for formatted_prompt, completion in zip(batch, completions):
-        logger.debug("-" * 100)
-        logger.debug(f"Formatted Prompt:\n{formatted_prompt}")
-        logger.debug(f"\nCompletion:\n{completion}")
-        logger.debug("-" * 100)
-
-        # Write the results using DataWriter
-        writer.write(
-            [
-                {
-                    "formatted_prompt": formatted_prompt,
-                    "completion": completion,
-                }
-            ]
-        )
-
-```
+Use SciPhi to craft synthetic data for a given LLM provider. Check the provided code for an example.
 
 ### License
 
-This project is licensed under the Apache-2.0 License.
+Licensed under the Apache-2.0 License.
 
-### Datasets Generated
+### Referenced Datasets
 
-[1] [Python Synthetic Textbooks](https://huggingface.co/datasets/emrgnt-cmplxty/sciphi-python-textbook/viewer/default/train)
+1. [Python Synthetic Textbooks](https://huggingface.co/datasets/emrgnt-cmplxty/sciphi-python-textbook/viewer/default/train)
+2. [Textbooks are all you need](https://huggingface.co/datasets/emrgnt-cmplxty/sciphi-textbooks-are-all-you-need)
 
-[2] [Textbooks are all you need](https://huggingface.co/datasets/emrgnt-cmplxty/sciphi-textbooks-are-all-you-need)
+### Citations
 
-### Sources
+1. [WizardCoder: Empowering Code Large Language Models with Evol-Instruct](https://arxiv.org/abs/2306.08568)
+2. [Textbooks Are All You Need](https://arxiv.org/abs/2306.11644)
 
-[1] [WizardCoder: Empowering Code Large Language Models with Evol-Instruct](https://arxiv.org/abs/2306.08568)
+## Citation
 
-[2] [Textbooks Are All You Need](https://arxiv.org/abs/2306.11644)
-
-## 📖 Citation
-
-Reference to cite if you use SciPhi in a paper:
+If using SciPhi in academic work, please cite:
 
 ```
 @software{Emergent_AGI_SciPhi,
