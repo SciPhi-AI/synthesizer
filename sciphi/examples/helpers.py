@@ -3,6 +3,8 @@ import argparse
 import json
 import logging
 import os
+import requests
+from requests.auth import HTTPBasicAuth
 
 import yaml
 
@@ -373,3 +375,26 @@ def prase_yaml_completion(yml_content: dict) -> str:
         return parsed_yml_str
 
     return clean_yaml_string(yml_str)
+
+
+def wiki_search_api(
+    url: str, username: str, password: str, query: str
+) -> dict:
+    """
+    Queries the search API with the provided credentials and query.
+    The expected output is a JSON response containing matches.
+    The API used in generating the initially shared textbook samples
+    contains
+    """
+    # Make the GET request with basic authentication and the query parameter
+    response = requests.get(
+        url,
+        auth=HTTPBasicAuth(username, password),
+        params={"query": query, "k": 10},
+    )
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        return response.json()["match"]  # Return the JSON response
+    else:
+        response.raise_for_status()  # Raise an HTTPError if the HTTP request returned an unsuccessful status code

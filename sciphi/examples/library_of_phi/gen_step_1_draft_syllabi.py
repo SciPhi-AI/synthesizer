@@ -121,7 +121,7 @@ class DraftSyllabiYAMLRunner:
         model_name: str = "gpt-4-0613",
         data_directory: Optional[str] = None,
         output_rel_dir: str = "output_step_1",
-        input_jsonl_filename: str = "scraped_ocw.jsonl",
+        input_jsonl_filename: str = "ocw_scraped.jsonl",
         prompt: str = SYLLABI_CREATION_PROMPT,
         log_level: str = "INFO",
     ):

@@ -6,7 +6,7 @@ Description:
 
 Usage:
     Command-line interface:
-        $ python sciphi/examples/library_of_phi/gen_step_3_table_of_contents.py \
+        $ python sciphi/examples/library_of_phi/gen_step_3_table_of_contents.py run \
             --input_dir=output_step_2 \
             --provider=openai \
             --model_name=gpt-4-0613 \
