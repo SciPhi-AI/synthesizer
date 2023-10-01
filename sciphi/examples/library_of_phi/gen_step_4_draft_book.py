@@ -102,7 +102,7 @@ class TextbookContentGenerator:
     def __init__(
         self,
         provider="openai",
-        model="gpt-3.5-turbo-instruct",
+        model="gpt-4-0613",
         parsed_dir="raw_data",
         toc_dir="output_step_3",
         output_dir="output_step_4",
@@ -184,7 +184,7 @@ class TextbookContentGenerator:
                         self.url, self.username, self.password, self.textbook
                     )
                     if self.do_wiki
-                    else "N/A"
+                    else "Related context not available."
                 )
                 foreward_prompt = BOOK_FOREWARD_PROMPT.format(
                     title=textbook,
@@ -229,8 +229,10 @@ class TextbookContentGenerator:
                 print(f"Chapter Introduction:\n{prev_response}\n\n")
                 current_chapter = chapter
 
-            related_context = search_api(
-                url, username, password, subsection or section
+            related_context = (
+                wiki_search_api(url, username, password, subsection or section)
+                if self.do_wiki
+                else "Related context not available."
             )
 
             step_prompt = BOOK_BULK_PROMPT.format(
@@ -239,7 +241,7 @@ class TextbookContentGenerator:
                 section=section,
                 subsection=subsection or "",
                 related_context=related_context[
-                    : self.related_context_to_sample
+                    : self.max_related_context_to_sample
                 ],
                 book_context=prev_response[: self.max_prev_snippet_to_sample],
             )
