@@ -16,8 +16,8 @@ Usage:
 Parameters:
     provider (str): 
         The provider to use. Default is 'openai'.
-    model (str): 
-        The model name to use. Default is 'gpt-3.5-turbo-instruct'.
+    model_name (str): 
+        The model_name to use. Default is 'gpt-3.5-turbo-instruct'.
     parsed_dir (str): 
         Directory containing parsed data. Default is 'raw_data'.
     toc_dir (str): 
@@ -48,15 +48,17 @@ from typing import Generator, Tuple
 
 import fire
 
-from sciphi.examples.helpers import load_yaml_file, wiki_search_api
+from sciphi.examples.helpers import (
+    load_yaml_file,
+    wiki_search_api,
+    get_default_settings_provider,
+)
 from sciphi.examples.library_of_phi.prompts import (
     BOOK_BULK_PROMPT,
     BOOK_CHAPTER_INTRODUCTION_PROMPT,
     BOOK_CHAPTER_SUMMARY_PROMPT,
     BOOK_FOREWARD_PROMPT,
 )
-from sciphi.interface import InterfaceManager, ProviderName
-from sciphi.llm import LLMConfigManager
 from sciphi.writers import RawDataWriter
 
 logger = logging.getLogger(__name__)
@@ -102,7 +104,7 @@ class TextbookContentGenerator:
     def __init__(
         self,
         provider="openai",
-        model="gpt-4-0613",
+        model_name="gpt-4-0613",
         parsed_dir="raw_data",
         toc_dir="table_of_contents",
         output_dir="output_step_4",
@@ -116,7 +118,7 @@ class TextbookContentGenerator:
         log_level="INFO",
     ):
         self.provider = provider
-        self.model = model
+        self.model_name = model_name
         self.parsed_dir = parsed_dir
         self.toc_dir = toc_dir
         self.output_dir = output_dir
@@ -146,22 +148,15 @@ class TextbookContentGenerator:
         )
         yml_config = load_yaml_file(yml_file_path, do_prep=True)
 
-        # Build an LLM and provider interface
-        provider_name = ProviderName(self.provider)
-        llm_config = LLMConfigManager.get_config_for_provider(
-            provider_name
-        ).create(max_tokens_to_sample=None)
-        llm_provider = InterfaceManager.get_provider(
-            provider_name, self.model, llm_config
-        )
-
         # Create an instance of the generator
         traversal_generator = traverse_config(yml_config)
 
         output_path = os.path.join(
             local_pwd, self.parsed_dir, self.output_dir, f"{self.textbook}.md"
         )
-
+        llm_provider = get_default_settings_provider(
+            provider=self.provider, model_name=self.model_name
+        )
         if not os.path.exists(os.path.dirname(output_path)):
             os.makedirs(os.path.dirname(output_path))
         logger.info(f"Saving textbook to {output_path}")

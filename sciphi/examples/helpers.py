@@ -3,12 +3,15 @@ import argparse
 import json
 import logging
 import os
+from typing import Tuple
 
 import requests
 import yaml
 from requests.auth import HTTPBasicAuth
 
 from sciphi.interface import ProviderName
+from sciphi.interface import InterfaceManager, ProviderName
+from sciphi.llm import LLMConfigManager
 
 
 def gen_llm_config(args: argparse.Namespace) -> dict:
@@ -308,7 +311,7 @@ def format_yaml_line(line: str, index: int, split_lines: list[str]) -> str:
             line = (
                 line[:first_non_blank_char]
                 + '"'
-                + line[first_non_blank_char:-1]
+                + line[first_non_blank_char:]
                 + '":'
             )
     return line
@@ -397,3 +400,19 @@ def wiki_search_api(
     else:
         response.raise_for_status()  # Raise an HTTPError if the HTTP request returned an unsuccessful status code
         raise ValueError("Unexpected response from API")
+
+
+def get_default_settings_provider(
+    provider: str, model_name: str, max_tokens_to_sample=None
+) -> Tuple[InterfaceManager, LLMConfigManager]:
+    """Get the default LLM config and provider for the given provider and model name."""
+
+    provider_name = ProviderName(provider)
+    llm_config = LLMConfigManager.get_config_for_provider(
+        provider_name
+    ).create(max_tokens_to_sample=max_tokens_to_sample, model_name=model_name)
+    llm_provider = InterfaceManager.get_provider(
+        provider_name, model_name, llm_config
+    )
+
+    return llm_provider

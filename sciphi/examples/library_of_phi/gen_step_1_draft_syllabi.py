@@ -48,6 +48,7 @@ from typing import Optional, Set
 import fire
 import yaml
 
+from sciphi.examples.helpers import get_default_settings_provider
 from sciphi.examples.library_of_phi.prompts import SYLLABI_CREATION_PROMPT
 from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
@@ -137,12 +138,8 @@ class DraftSyllabiYAMLRunner:
         """Run the draft YAML generation process."""
         yaml.add_representer(str, quoted_presenter)
 
-        provider_name = ProviderName(self.provider)
-        llm_config = LLMConfigManager.get_config_for_provider(
-            provider_name
-        ).create(max_tokens_to_sample=None)
-        llm_provider = InterfaceManager.get_provider(
-            provider_name, self.model_name, llm_config
+        llm_provider = get_default_settings_provider(
+            provider=self.provider, model_name=self.model_name
         )
         if not self.data_directory:
             file_path = os.path.dirname(os.path.abspath(__file__))

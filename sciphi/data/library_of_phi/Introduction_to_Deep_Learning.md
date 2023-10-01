@@ -1,4 +1,4 @@
-# NOTE - THIS TEXTBOOK WAS GENERATED WITH AI.
+# NOTE - THIS TEXTBOOK WAS AI GENERATED
 
 # Table of Contents
 
@@ -2042,4 +2042,3 @@ It is worth noting that while manifold alignment can produce accurate alignments
 To illustrate the concept further, let's consider an example from the field of speech recognition. Speaker adaptation, an essential technology for fine-tuning speech models, often encounters inter-speaker variation as a mismatch between training and testing speakers. Kernel eigenvoice (KEV) is a non-linear adaptation technique that incorporates kernel principal component analysis to capture higher-order correlations and enhance recognition performance. By applying KEV, it becomes possible to adapt the speaker models based on prior knowledge of training speakers, even with limited adaptation data. This demonstrates the efficacy of feature-level adaptation in addressing domain-specific challenges.
 
 In summary, feature-level adaptation, particularly through techniques like manifold alignment, plays a crucial role in domain adaptation. By aligning the feature representations of the source and target domains, feature-level adaptation enables the transfer of knowledge from a source domain to a target domain with a different data distribution. This technique is valuable in various real-world applications and facilitates transfer learning, where knowledge from one domain is leveraged to improve performance in related domains.
-
