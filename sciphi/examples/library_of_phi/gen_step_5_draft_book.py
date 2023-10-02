@@ -8,8 +8,8 @@ Description:
 
 Usage:
     Command-line interface:
-        $ python sciphi/examples/library_of_phi/gen_step5_draft_book.py run \
-            --input_dir=table_of_contents  \
+        $ python sciphi/examples/library_of_phi/gen_step_5_draft_book.py run \
+            --input_dir=output_step_4  \
             --provider=openai \
             --model_name=gpt-4-0613 \
             --log_level=DEBUG
@@ -17,9 +17,9 @@ Parameters:
     provider (str): 
         The provider to use. Default is 'openai'.
     model_name (str): 
-        The model_name to use. Default is 'gpt-3.5-turbo-instruct'.
+        The model_name to use. Default is 'gpt-4-0613'.
     toc_dir (str): 
-        Directory for the table of contents. Default is 'table_of_contents'.
+        Directory for the table of contents. Default is 'output_step_4'.
     output_dir (str): 
         Directory for the output. Default is 'output_step_5'.
       (str): 
@@ -41,6 +41,8 @@ Parameters:
         Wikipedia password. Uses environment variable "WIKI_SERVER_PASSWORD" if not provided.
     log_level (str): 
         Logging level. Can be one of: DEBUG, INFO, WARNING, ERROR, CRITICAL. Default is 'INFO'.
+    num_threads (int):
+        Number of threads to use. Defaults to the number of CPUs available.
 """
 import glob
 import logging
@@ -106,6 +108,8 @@ def setup_logging(log_level="INFO"):
 class TextbookContentGenerator:
     """Generates textbook content from parsed course data."""
 
+    NO_WIKI_TEXT = "Not currently available."
+
     def __init__(
         self,
         provider="openai",
@@ -145,7 +149,7 @@ class TextbookContentGenerator:
 
         self.num_threads = num_threads or multiprocessing.cpu_count()
 
-        if do_wiki and not all([self.url, self.username, self.password]):
+        if self.do_wiki and not all([self.url, self.username, self.password]):
             raise ValueError(
                 "Set do_wiki to `False`, or provide Wikipedia server url, username, and password."
             )
@@ -173,7 +177,7 @@ class TextbookContentGenerator:
         else:
             yml_file_paths = glob.glob(
                 os.path.join(self.data_dir, self.toc_dir, "**/**/*.yaml")
-            )
+            )[0:1]
 
         self.logger.debug(
             f"Running process over a total of {len(yml_file_paths)} files"
@@ -193,7 +197,6 @@ class TextbookContentGenerator:
         self.logger.debug(f"Processing {yml_file_path}")
         yml_config = load_yaml_file(yml_file_path)
 
-        output_path, writer = self.setup_output_writer(textbook_output_name)
         (
             output_path,
             writer,
@@ -203,7 +206,8 @@ class TextbookContentGenerator:
         ) = self.initialize_processing(textbook_output_name)
 
         traversal_generator = traverse_config(yml_config)
-
+        prev_chapter_config = None
+        current_chapter = None
         for counter, elements in enumerate(traversal_generator):
             textbook, chapter, section, subsection = elements
             start_flag = self.update_start_flag(
@@ -216,17 +220,6 @@ class TextbookContentGenerator:
             )
 
             if not start_flag:
-                continue
-
-            # Skip elements that were processed in previous runs
-            if self.should_skip_element(
-                chapter,
-                section,
-                subsection,
-                last_chapter,
-                last_section,
-                last_subsection,
-            ):
                 continue
 
             self.logger.debug(
@@ -248,7 +241,11 @@ class TextbookContentGenerator:
                 )
                 current_chapter = chapter
 
-            related_context = self.get_related_context(subsection or section)
+            related_context = (
+                self.get_related_context(subsection or section)
+                if self.do_wiki
+                else TextbookContentGenerator.NO_WIKI_TEXT
+            )
             step_prompt = self.build_step_prompt(
                 textbook,
                 chapter,
@@ -266,7 +263,7 @@ class TextbookContentGenerator:
                 chapter, section, subsection, output_path
             )
 
-        os.remove(output_path.replace(".md", "_progress.txt"))
+        # os.remove(output_path.replace(".md", "_progress.txt"))
 
     def setup_output_writer(
         self, textbook_name: str
@@ -328,6 +325,8 @@ class TextbookContentGenerator:
                 writer,
                 "Authored a chapter conclusion:\n",
             )
+            writer.write(f"{chapter_completion}\n")
+
         chapter_intro_prompt = BOOK_CHAPTER_INTRODUCTION_PROMPT.format(
             title=textbook,
             chapter=chapter,
@@ -337,7 +336,6 @@ class TextbookContentGenerator:
         self.logger.debug(
             f"Authored a chapter introduction:\n{chapter_introduction}\n\n"
         )
-
         writer.write(f"{chapter_introduction}\n")
         return chapter_introduction
 
@@ -405,7 +403,7 @@ class TextbookContentGenerator:
         return (
             chapter == last_chapter
             and section == last_section
-            and subsection == last_subsection
+            and (last_subsection == "None" or subsection == last_subsection)
         )
 
     def _progress_textbook(
