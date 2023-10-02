@@ -14,6 +14,7 @@ class ModelName(Enum):
     ## GPT-3.5
     GPT_3p5_TURBO_0301 = "gpt-3.5-turbo-0301"
     GPT_3p5_TURBO_0613 = "gpt-3.5-turbo-0613"
+    GPT_3p5_TURBO_16k_0613 = "gpt-3.5-turbo-16k-0613"
     GPT_3p5_TURBO = "gpt-3.5-turbo"
     GPT_3p5_TURBO_INSTRUCT = "gpt-3.5-turbo-instruct"
 
@@ -21,6 +22,7 @@ class ModelName(Enum):
     GPT_4_0314 = "gpt-4-0314"
     GPT_4_0613 = "gpt-4-0613"
     GPT_4 = "gpt-4"
+    GPT_4_32k = "gpt-4-32k"
 
     # Anthropic Models
 

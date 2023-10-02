@@ -3,6 +3,8 @@
 from dataclasses import dataclass
 from typing import Optional
 
+import tiktoken
+
 from sciphi.core import ProviderName
 from sciphi.llm.base import LLM, LLMConfig
 from sciphi.llm.config_manager import model_config
@@ -22,6 +24,7 @@ class OpenAIConfig(LLMConfig):
     # OpenAI Extras
     do_stream: bool = False
     max_tokens_to_sample: int = 256
+    max_total_tokens = 4_096  # TODO - automate population of this.
     functions: Optional[list[dict]] = None
 
 
@@ -72,19 +75,27 @@ class OpenAILLM(LLM):
         import openai
 
         # Create a dictionary with the default arguments
-        args = self._get_base_args()
+        args = self._get_base_args(instruction)
 
         # Create the instruction completion
         args["prompt"] = instruction
         response = openai.Completion.create(**args)
         return response.choices[0].text
 
-    def _get_base_args(self) -> dict:
+    def _get_base_args(
+        self,
+        prompt=None,
+    ) -> dict:
         """Get the base arguments for the OpenAI API."""
+        encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
+
         return {
             "model": self.config.model_name,
             "temperature": self.config.temperature,
             "top_p": self.config.top_p,
-            "max_tokens": self.config.max_tokens_to_sample,
+            "max_tokens": self.config.max_total_tokens
+            - len(encoding.encode(prompt))
+            if prompt
+            else self.config.max_tokens_to_sample,
             "stream": self.config.do_stream,
         }

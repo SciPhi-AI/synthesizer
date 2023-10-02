@@ -3,6 +3,8 @@ import argparse
 import json
 import logging
 import os
+import time
+from typing import Generator, Tuple
 
 import requests
 import yaml
@@ -259,6 +261,19 @@ def setup_logging(log_level: str = "INFO") -> logging.Logger:
     return logging.getLogger(__name__)
 
 
+def get_default_settings_provider(
+    provider: str, model_name: str, max_tokens_to_sample=None
+) -> LLMInterface:
+    """Get the default LLM config and provider for the given provider and model name."""
+
+    provider_name = ProviderName(provider)
+    llm_config = LLMConfigManager.get_config_for_provider(
+        provider_name
+    ).create(max_tokens_to_sample=max_tokens_to_sample, model_name=model_name)
+
+    return InterfaceManager.get_provider(provider_name, model_name, llm_config)
+
+
 def prep_yaml_line(line: str) -> str:
     """Replace special characters in the YAML string."""
     replacements = {
@@ -401,14 +416,48 @@ def wiki_search_api(
         raise ValueError("Unexpected response from API")
 
 
-def get_default_settings_provider(
-    provider: str, model_name: str, max_tokens_to_sample=None
-) -> LLMInterface:
-    """Get the default LLM config and provider for the given provider and model name."""
+def traverse_config(
+    config: dict,
+) -> Generator[Tuple[str, str, str, str], None, None]:
+    """Traverse the config and yield textbook, chapter, section, subsection names"""
 
-    provider_name = ProviderName(provider)
-    llm_config = LLMConfigManager.get_config_for_provider(
-        provider_name
-    ).create(max_tokens_to_sample=max_tokens_to_sample, model_name=model_name)
+    def get_key(config_dict: dict) -> str:
+        """Get the key from a dictionary with a single key-value pair"""
+        keys = list(config_dict.keys())
+        if not keys:
+            raise KeyError("Dictionary is empty, no key found")
+        return keys[0]
 
-    return InterfaceManager.get_provider(provider_name, model_name, llm_config)
+    textbook_name = get_key(config["textbook"])
+    chapters = config["textbook"][textbook_name]["chapters"]
+
+    for chapter in chapters:
+        chapter_name = get_key(chapter)
+        sections = chapter[chapter_name]["sections"]
+        for section in sections:
+            section_name = get_key(section)
+            subsections = section[section_name]["subsections"]
+            if not subsections:
+                yield textbook_name, chapter_name, section_name, ""
+            for subsection in subsections:
+                if isinstance(subsection, str):
+                    yield textbook_name, chapter_name, section_name, subsection
+                elif isinstance(
+                    subsection, dict
+                ):  # Additional check if subsections have nested structure
+                    subsection_name = get_key(subsection)
+                    # Add logic to handle deeper nested structures if needed
+                    yield textbook_name, chapter_name, section_name, subsection_name
+
+
+def with_retry(func, max_retries=3):
+    """Attempt to execute the provided function up to max_retries times."""
+    for _ in range(max_retries):
+        try:
+            return func()
+        except Exception as e:
+            logging.warning(f"Exception encountered: {e}. Retrying...")
+            time.sleep(5)
+    raise ValueError(
+        f"Failed to execute {func.__name__} after {max_retries} retries."
+    )
