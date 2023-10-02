@@ -37,13 +37,14 @@ Parameters:
     log_level (str): 
         Logging level. Can be one of: DEBUG, INFO, WARNING, ERROR, CRITICAL. Default is 'INFO'.
 """
-import fire
 import os
 
+import fire
+
+from sciphi.core.utils import get_data_dir
 from sciphi.examples.library_of_phi.gen_step_4_draft_book import (
     TextbookContentGenerator,
 )
-from sciphi.core.utils import get_data_dir
 
 
 class TextbookContentGeneratorSimplified:

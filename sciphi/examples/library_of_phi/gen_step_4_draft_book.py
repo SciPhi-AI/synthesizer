@@ -69,7 +69,6 @@ MAX_RETRIES = 3
 
 def get_key(config_dict: dict) -> str:
     """Get the key from a dictionary with a single key-value pair"""
-    print("config_dict = ", config_dict)
     keys = list(config_dict.keys())
     if not keys:
         raise KeyError("Dictionary is empty, no key found")
@@ -194,7 +193,6 @@ class TextbookContentGenerator:
         prev_chapter_config = None
         chapter_intro_prompt = None
         logger.info("Looping over the textbook config...")
-        do_skip = True
 
         for counter, elements in enumerate(traversal_generator):
             # elements is a tuple containing the names of textbook, chapter, section, and subsection.
@@ -245,7 +243,6 @@ class TextbookContentGenerator:
 
                     prev_response = chapter_completion
                     writer.write(f"{prev_response}\n")
-                    print(f"Chapter Conclusion:\n{prev_response}\n\n")
 
                 # Introduce the new chapter
                 chapter_intro_prompt = BOOK_CHAPTER_INTRODUCTION_PROMPT.format(
@@ -258,7 +255,6 @@ class TextbookContentGenerator:
                 )
                 prev_response = chapter_introduction
                 writer.write(f"{prev_response}\n")
-                print(f"Chapter Introduction:\n{prev_response}\n\n")
                 current_chapter = chapter
 
             related_context = (
