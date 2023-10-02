@@ -450,45 +450,7 @@ def traverse_config(
                     yield textbook_name, chapter_name, section_name, subsection_name
 
 
-# def traverse_config(
-#     config: dict,
-# ) -> Generator[Tuple[str, str, str, str, dict], None, None]:
-#     """Traverse the config and yield textbook, chapter, section, subsection names"""
-
-#     def get_key(config_dict: dict) -> str:
-#         """Get the key from a dictionary with a single key-value pair"""
-#         keys = list(config_dict.keys())
-#         if not keys:
-#             raise KeyError("Dictionary is empty, no key found")
-#         return keys[0]
-
-#     textbook_config = config[get_key(config)]
-#     textbook_name = get_key(textbook_config)
-
-#     chapter_configs = textbook_config[textbook_name][
-#         get_key(textbook_config[textbook_name])
-#     ]
-#     for chapter_config in chapter_configs:
-#         chapter_name = get_key(chapter_config)
-#         section_config = chapter_config[chapter_name]
-#         sections = section_config[get_key(section_config)]
-#         for section in sections:
-#             if isinstance(section, str):
-#                 yield textbook_name, chapter_name, section, None, chapter_config
-
-#             elif isinstance(section, dict):
-#                 section_name = get_key(section)
-#                 subsection_config = section[section_name][
-#                     get_key(section[section_name])
-#                 ]
-#                 for subsection_name in subsection_config:
-#                     yield textbook_name, chapter_name, section_name, subsection_name, chapter_config
-
-
-MAX_RETRIES = 3
-
-
-def with_retry(func, max_retries=MAX_RETRIES):
+def with_retry(func, max_retries=3):
     """Attempt to execute the provided function up to max_retries times."""
     for _ in range(max_retries):
         try:
