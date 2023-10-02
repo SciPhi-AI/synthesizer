@@ -418,7 +418,7 @@ def wiki_search_api(
 
 def traverse_config(
     config: dict,
-) -> Generator[Tuple[str, str, str, str, dict], None, None]:
+) -> Generator[Tuple[str, str, str, str], None, None]:
     """Traverse the config and yield textbook, chapter, section, subsection names"""
 
     def get_key(config_dict: dict) -> str:
