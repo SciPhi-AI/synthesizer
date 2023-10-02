@@ -49,6 +49,12 @@ def get_root_dir() -> str:
     return os.path.join(script_dir, "..", "..")
 
 
+def get_data_dir() -> str:
+    """Get the path to the root of the config directory."""
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+    return os.path.join(script_dir, "..", "data")
+
+
 def get_data_config_dir() -> str:
     """Get the path to the root of the config directory."""
     script_dir = os.path.dirname(os.path.realpath(__file__))

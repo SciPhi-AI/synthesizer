@@ -18,14 +18,15 @@ Parameters:
         The provider to use. Default is 'openai'.
     model_name (str): 
         The model_name to use. Default is 'gpt-3.5-turbo-instruct'.
-    parsed_dir (str): 
-        Directory containing parsed data. Default is 'raw_data'.
     toc_dir (str): 
         Directory for the table of contents. Default is 'table_of_contents'.
     output_dir (str): 
         Directory for the output. Default is 'output_step_4'.
       (str): 
         Name of the textbook. Default is 'Introduction_to_Deep_Learning'.
+    data_dir (Optional[str]):
+        Directory where data is to be read from, defaults to `None`.
+        When `None`, defaults to the `[Local Script Directory]/raw_data`
     max_related_context_to_sample (int): 
         Maximum context to sample. Default is 2000.
     max_prev_snippet_to_sample (int): 
@@ -63,9 +64,12 @@ from sciphi.writers import RawDataWriter
 
 logger = logging.getLogger(__name__)
 
+MAX_RETRIES = 3
+
 
 def get_key(config_dict: dict) -> str:
     """Get the key from a dictionary with a single key-value pair"""
+    print("config_dict = ", config_dict)
     keys = list(config_dict.keys())
     if not keys:
         raise KeyError("Dictionary is empty, no key found")
@@ -98,6 +102,25 @@ def traverse_config(
                     yield textbook_name, chapter_name, section_name, subsection_name, chapter_config
 
 
+def save_progress(chapter, section, subsection, output):
+    """Save progress to a file."""
+    with open(f"{output}", "w") as f:
+        f.write(f"{chapter}\n{section}\n{subsection or 'None'}")
+
+
+def with_retry(func, max_retries=MAX_RETRIES):
+    """Attempt to execute the provided function up to max_retries times."""
+    for _ in range(max_retries):
+        try:
+            return func()
+        except Exception as e:
+            logging.warning(f"Exception encountered: {e}. Retrying...")
+            time.sleep(5)
+    raise ValueError(
+        f"Failed to execute {func.__name__} after {max_retries} retries."
+    )
+
+
 class TextbookContentGenerator:
     """Generates textbook content from parsed course data."""
 
@@ -105,7 +128,7 @@ class TextbookContentGenerator:
         self,
         provider="openai",
         model_name="gpt-4-0613",
-        parsed_dir="raw_data",
+        data_dir=None,
         toc_dir="table_of_contents",
         output_dir="output_step_4",
         textbook="Introduction_to_Deep_Learning",
@@ -119,7 +142,9 @@ class TextbookContentGenerator:
     ):
         self.provider = provider
         self.model_name = model_name
-        self.parsed_dir = parsed_dir
+        self.data_dir = data_dir or os.path.join(
+            os.path.dirname(__file__), "raw_data"
+        )
         self.toc_dir = toc_dir
         self.output_dir = output_dir
         self.textbook = textbook
@@ -142,9 +167,8 @@ class TextbookContentGenerator:
     def run(self):
         """Run the draft book generation process."""
 
-        local_pwd = os.path.dirname(os.path.realpath(__file__))
         yml_file_path = os.path.join(
-            local_pwd, self.parsed_dir, self.toc_dir, f"{self.textbook}.yaml"
+            self.data_dir, self.toc_dir, f"{self.textbook}.yaml"
         )
         yml_config = load_yaml_file(yml_file_path, do_prep=True)
 
@@ -152,7 +176,7 @@ class TextbookContentGenerator:
         traversal_generator = traverse_config(yml_config)
 
         output_path = os.path.join(
-            local_pwd, self.parsed_dir, self.output_dir, f"{self.textbook}.md"
+            self.data_dir, self.output_dir, f"{self.textbook}.md"
         )
         llm_provider = get_default_settings_provider(
             provider=self.provider, model_name=self.model_name
@@ -161,14 +185,21 @@ class TextbookContentGenerator:
             os.makedirs(os.path.dirname(output_path))
         logger.info(f"Saving textbook to {output_path}")
         writer = RawDataWriter(output_path)
+        writer.write("# NOTE - THIS TEXTBOOK WAS AI GENERATED\n")
+        writer.write(
+            "This textbook was generated using AI techniques. While it aims to be factual and accurate, please verify any critical information. The content may contain errors, biases or harmful content despite best efforts. Please report any issues.\n"
+        )
 
         current_chapter = None
         prev_chapter_config = None
         chapter_intro_prompt = None
         logger.info("Looping over the textbook config...")
+        do_skip = True
+
         for counter, elements in enumerate(traversal_generator):
             # elements is a tuple containing the names of textbook, chapter, section, and subsection.
             textbook, chapter, section, subsection, chapter_config = elements
+
             # Build the forward prompt
             if counter == 0:
                 logger.info(f"Processing {textbook}, Chapter:{chapter}")
@@ -187,7 +218,11 @@ class TextbookContentGenerator:
                     ],
                 )
                 logger.debug(f"Constructing the foreward...")
-                foreward = llm_provider.get_completion(foreward_prompt)
+                writer.write(f"# {textbook}\n")
+
+                foreward = with_retry(
+                    lambda: llm_provider.get_completion(foreward_prompt)
+                )
                 prev_response = foreward
                 prev_chapter_config = chapter_config
                 writer.write(f"{prev_response}\n")
@@ -202,8 +237,10 @@ class TextbookContentGenerator:
                         chapter=current_chapter,
                         book_context=f"Chapter outline:\n{str(prev_chapter_config)}",
                     )
-                    chapter_completion = llm_provider.get_completion(
-                        chapter_summary_prompt
+                    chapter_completion = with_retry(
+                        lambda: llm_provider.get_completion(
+                            chapter_summary_prompt
+                        )
                     )
 
                     prev_response = chapter_completion
@@ -216,8 +253,8 @@ class TextbookContentGenerator:
                     chapter=chapter,
                     book_context=str(chapter_config),
                 )
-                chapter_introduction = llm_provider.get_completion(
-                    chapter_intro_prompt
+                chapter_introduction = with_retry(
+                    lambda: llm_provider.get_completion(chapter_intro_prompt)
                 )
                 prev_response = chapter_introduction
                 writer.write(f"{prev_response}\n")
@@ -246,10 +283,18 @@ class TextbookContentGenerator:
                 book_context=prev_response[: self.max_prev_snippet_to_sample],
             )
 
-            step_completion = llm_provider.get_completion(step_prompt)
+            step_completion = with_retry(
+                lambda: llm_provider.get_completion(step_prompt)
+            )
             prev_response = step_completion
             writer.write(f"{step_completion}\n")
-            print(f"{counter} Completion:\n{step_completion}\n\n")
+            save_progress(
+                chapter,
+                section,
+                subsection,
+                output_path.replace(".md", "_progress.txt"),
+            )
+        os.remove(output_path.replace(".md", "_progress.txt"))
 
 
 if __name__ == "__main__":

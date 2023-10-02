@@ -38,10 +38,12 @@ Parameters:
         Logging level. Can be one of: DEBUG, INFO, WARNING, ERROR, CRITICAL. Default is 'INFO'.
 """
 import fire
+import os
 
 from sciphi.examples.library_of_phi.gen_step_4_draft_book import (
     TextbookContentGenerator,
 )
+from sciphi.core.utils import get_data_dir
 
 
 class TextbookContentGeneratorSimplified:
@@ -52,9 +54,7 @@ class TextbookContentGeneratorSimplified:
         self,
         provider="openai",
         model_name="gpt-4-0613",
-        parsed_dir="raw_data",
         toc_dir="table_of_contents",
-        output_dir="created_textbooks",
         textbook="Introduction_to_Deep_Learning",
         max_related_context_to_sample=2_000,
         max_prev_snippet_to_sample=2_000,
@@ -68,17 +68,17 @@ class TextbookContentGeneratorSimplified:
         TextbookContentGenerator(
             provider,
             model_name,
-            parsed_dir,
-            toc_dir,
-            output_dir,
-            textbook,
-            max_related_context_to_sample,
-            max_prev_snippet_to_sample,
-            do_wiki,
-            wiki_server_url,
-            wiki_username,
-            wiki_password,
-            log_level,
+            data_dir=os.path.join(get_data_dir(), "library_of_phi"),
+            toc_dir=toc_dir,
+            output_dir="",
+            textbook=textbook,
+            max_related_context_to_sample=max_related_context_to_sample,
+            max_prev_snippet_to_sample=max_prev_snippet_to_sample,
+            do_wiki=do_wiki,
+            wiki_server_url=wiki_server_url,
+            wiki_username=wiki_username,
+            wiki_password=wiki_password,
+            log_level=log_level,
         ).run()
 
 

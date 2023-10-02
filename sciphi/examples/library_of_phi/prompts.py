@@ -122,6 +122,7 @@ Notes:
 - The book is being written in the popular Markdown format.
 - The context may be truncated and is meant only to provide a starting point. Feel free to expand on it or take the response in any direction that fits the prompt, but keep it in a voice that is appropriate for an advanced undergraduate course at MIT.
 - Avoid making any factual claims or opinions without proper citations or context to support them, stick to the proposed context.
+- Begin your response with `## Foreward`
 
 ### Response:
 """
@@ -158,6 +159,8 @@ Notes:
 - Format ALL math equations with the $ and $$ delimiters to insert math expressions in TeX and LaTeX style syntax. This content is then rendered using the highly popular MathJax library. E.g. write inline math like `$y_j(n)$` and equations like `$$
 \\Delta w = ...
 $$
+- If starting a new section, include `### [Section Title]`
+- If starting a new subsection, include `#### [Subsection Title]`
 `
 
 ### Response:
@@ -185,6 +188,8 @@ Notes:
 - Format ALL math equations with the $ and $$ delimiters to insert math expressions in TeX and LaTeX style syntax. This content is then rendered using the highly popular MathJax library. E.g. write inline math like `$y_j(n)$` and equations like `$$
 \\Delta w = ...
 $$
+- Finalize the Chapter with a header that reads `### Conclusion`.
+
 `
 
 ### Response:
@@ -212,6 +217,7 @@ Notes:
 - Format ALL math equations with the $ and $$ delimiters to insert math expressions in TeX and LaTeX style syntax. This content is then rendered using the highly popular MathJax library. E.g. write inline math like `$y_j(n)$` and equations like `$$
 \\Delta w = ...
 $$
+- Include the chapter title at the top of your output, formatted as  `## Chapter: [Title]`,  `### Introduction` below that.
 `
 
 ### Response:
