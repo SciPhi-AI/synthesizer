@@ -1,4 +1,3 @@
-```yaml
 textbook:
   Deep Learning Fundamentals: A Comprehensive Textbook
     chapters:
@@ -226,4 +225,3 @@ textbook:
             - Recall
             - Mean Average Precision
             - Normalized Discounted Cumulative Gain
-```

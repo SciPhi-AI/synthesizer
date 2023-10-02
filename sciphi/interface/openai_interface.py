@@ -21,9 +21,11 @@ class OpenAILLMInterface(LLMInterface):
         ModelName.GPT_3p5_TURBO_0613,
         ModelName.GPT_3p5_TURBO,
         ModelName.GPT_3p5_TURBO_INSTRUCT,
+        ModelName.GPT_3p5_TURBO_16k_0613,
         ModelName.GPT_4_0314,
         ModelName.GPT_4_0613,
         ModelName.GPT_4,
+        ModelName.GPT_4_32k,
     ]
     system_message = "You are a helpful assistant."
 

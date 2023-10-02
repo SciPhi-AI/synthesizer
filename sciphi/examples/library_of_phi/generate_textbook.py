@@ -42,7 +42,7 @@ import os
 import fire
 
 from sciphi.core.utils import get_data_dir
-from sciphi.examples.library_of_phi.gen_step_4_draft_book import (
+from sciphi.examples.library_of_phi.gen_step_5_draft_book import (
     TextbookContentGenerator,
 )
 

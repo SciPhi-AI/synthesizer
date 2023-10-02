@@ -1,22 +1,18 @@
 # type: ignore
 """
-YAML Syllabi to YAML Table of Contents Generator
+YAML Syllabi to YAML 'Draft' Table of Contents Generator
 
 Description:
     This script processes YAML files and generates a detailed Table of Contents for a new textbook accompanying the course.
 
 Usage:
-    Command-line interface:
-        $ python sciphi/examples/library_of_phi/gen_step_3_table_of_contents.py run \
-            --input_dir=output_step_2 \
+    Command-line interface example:
+        $ python sciphi/examples/library_of_phi/gen_step_3_draft_table_of_contents.py run \
+            --input_dir=output_step_3 \
             --provider=openai \
             --model_name=gpt-4-0613 \
             --log_level=DEBUG
 Parameters:
-    input_dir (str): 
-        The directory where the input YAML files are located. 
-        Default is 'output_step_2'.
-    
     provider (str): 
         The provider to use for LLM.
         Default is 'openai'.
@@ -24,6 +20,18 @@ Parameters:
     model_name (str): 
         The model to use for LLM.
         Default is 'gpt-4-0613'.
+
+    data_directory (Optional[str]): 
+        The directory input / output data is stored.
+        If none, defaults to the directory of this script plus '/raw_data'.
+
+    input_rel_dir (str): 
+        The folder for the input JSONL files containing the first pass YAML data. 
+        Defaults to 'output_step_1'.
+
+    output_rel_dir (str): 
+        The directory where the parsed YAML files will be saved. 
+        Defaults to 'output_step_2'.
 
     log_level (str): 
         Logging level for the scraper. Can be one of: DEBUG, INFO, WARNING, ERROR, CRITICAL. 
@@ -37,26 +45,28 @@ from glob import glob
 import fire
 
 from sciphi.examples.helpers import get_default_settings_provider
-from sciphi.examples.library_of_phi.prompts import TABLE_OF_CONTENTS_PROMPT
+from sciphi.examples.library_of_phi.prompts import (
+    TABLE_OF_CONTENTS_DRAFT_PROMPT,
+)
 
 
-class TableOfContentsRunner:
-    """Class to run the generation of detailed Table of Contents for textbooks based on YAML syllabus."""
+class DraftTableOfContentsRunner:
+    """Class to run the generation of detailed 'draft' Table of Contents for textbooks based on YAML syllabus."""
 
     def __init__(
         self,
+        provider: str = "openai",
+        model_name: str = "gpt-4-0613",
         input_rel_dir: str = "output_step_2",
         output_rel_dir: str = "output_step_3",
         data_directory=None,
-        provider: str = "openai",
-        model_name: str = "gpt-4-0613",
         log_level: str = "INFO",
     ):
+        self.provider = provider
+        self.model_name = model_name
         self.input_rel_dir = input_rel_dir
         self.output_rel_dir = output_rel_dir
         self.data_directory = data_directory
-        self.provider = provider
-        self.model_name = model_name
         logging.basicConfig(level=getattr(logging, log_level.upper()))
 
     def run(self):
@@ -95,7 +105,7 @@ class TableOfContentsRunner:
                     course_name = " ".join(
                         yml_file_name.split("name_")[1].split("-")
                     )
-                formatted_prompt = TABLE_OF_CONTENTS_PROMPT.format(
+                formatted_prompt = TABLE_OF_CONTENTS_DRAFT_PROMPT.format(
                     course_name=course_name, context=yml_load
                 )
                 logging.debug(
@@ -113,4 +123,4 @@ class TableOfContentsRunner:
 
 
 if __name__ == "__main__":
-    fire.Fire(TableOfContentsRunner)
+    fire.Fire(DraftTableOfContentsRunner)

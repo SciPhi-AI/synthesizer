@@ -26,7 +26,7 @@
 
 **Introduction:**  
 The Library of Phi is an initiative sponsored by SciPhi. Its primary goal is to democratize access to high-quality textbooks. The project utilizes AI-driven techniques to generate textbooks by processing information from the MIT OCW course webpages.
-
+"
 **Workflow:**  
 The workflow encompasses data scraping, data processing, YAML configuration creation, and [RAG](https://research.ibm.com/blog/retrieval-augmented-generation-RAG) over all of Wikipedia, with intermittent work done by LLMs.
 
@@ -46,7 +46,7 @@ _[See the example output here](sciphi/data/library_of_phi/Introduction_to_Deep_L
 #### **Using a Custom Table of Contents:**
 
 1. Draft a table of contents and save as `textbook_name.yaml`.
-2. Place it in `sciphi/examples/library_of_phi/raw_data/table_of_contents`.
+2. Place it in `[Your Working Directory]/sciphi/data/library_of_phi/table_of_contents`.
 3. Format similarly to `Introduction_to_Deep_Learning.yaml`.
 
 #### **Incorporating RAG over Wikipedia:**
@@ -59,7 +59,7 @@ _[See the example output here](sciphi/data/library_of_phi/Introduction_to_Deep_L
 
 **Output**:  
 Generated textbooks reside in:  
-`[Your Working Directory]/sciphi/examples/library_of_phi/raw_data/created_textbooks`
+`[Your Working Directory]/sciphi/data/library_of_phi`
 
 **Note**: The Wikipedia embeddings server is private but will be public soon. Meanwhile, ensure your configuration aligns with our specifications.
 --
@@ -144,10 +144,16 @@ poetry run python sciphi/examples/library_of_phi/gen_step_1_draft_syllabi.py run
 poetry run python sciphi/examples/library_of_phi/gen_step_2_clean_syllabi.py run
 ```
 
-**Step 3**: Transition the syllabi to a table of contents.
+**Step 3**: Transition the syllabi to a 'draft' table of contents.
 
 ```bash
-poetry run python sciphi/examples/library_of_phi/gen_step_3_table_of_contents.py run
+poetry run python sciphi/examples/library_of_phi/gen_step_3_draft_table_of_contents.py run
+```
+
+**Step 4**: Produce clean table of contents YAML files.
+
+```bash
+poetry run python sciphi/examples/library_of_phi/gen_step_4_clean_table_of_contents.py run
 ```
 
 ### License
