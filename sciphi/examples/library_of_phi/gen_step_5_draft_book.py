@@ -177,7 +177,7 @@ class TextbookContentGenerator:
         else:
             yml_file_paths = glob.glob(
                 os.path.join(self.data_dir, self.toc_dir, "**/**/*.yaml")
-            )[0:1]
+            )
 
         self.logger.debug(
             f"Running process over a total of {len(yml_file_paths)} files"
