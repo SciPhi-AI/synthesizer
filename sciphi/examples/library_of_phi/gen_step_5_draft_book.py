@@ -87,12 +87,12 @@ def load_progress(output_path: str) -> Tuple[str, str, str]:
 
 
 def get_wiki_related_context(
-    query: str, url: str, username: str, password: str
+    query: str, url: str, username: str, password: str, do_wiki: bool
 ) -> str:
     """Retrieve related context from Wikipedia."""
     return (
         wiki_search_api(url, username, password, query)
-        if url and username and password
+        if do_wiki
         else "Related context not available."
     )
 
@@ -342,7 +342,7 @@ class TextbookContentGenerator:
     def get_related_context(self, query: str) -> str:
         """Retrieve related context from Wikipedia."""
         return get_wiki_related_context(
-            query, self.url, self.username, self.password
+            query, self.url, self.username, self.password, self.do_wiki
         )
 
     def build_step_prompt(

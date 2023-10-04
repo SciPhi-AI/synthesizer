@@ -1,4 +1,4 @@
-# **SciPhi [ΨΦ]: A Framework for Breaking LLM Scaling Laws**
+# **SciPhi [ΨΦ]: A Framework for Cata Creation**
 
 <p align="center">
 <img width="716" alt="Screenshot 2023-10-01 at 10 45 12 AM" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/c4192288-b5af-4ef8-9774-82b3bb5c8251">
@@ -6,7 +6,7 @@
 
 <!-- ## **Overview** -->
 
-**SciPhi** is an configurable Python framework designed to tackle the challenges of LLM (Large Language Model) scaling laws. At its core, SciPhi offers:
+**SciPhi** is an configurable Python framework designed to tackle the challenges of efficiently training LLM (Large Language Model) through synthetic data. At its core, SciPhi offers:
 
 - **Configurable Data Generation**: Efficiently produce LLM-mediated synthetic training and tuning datasets tailored to your specific needs.
   
@@ -38,16 +38,16 @@ The workflow encompasses data scraping, data processing, YAML configuration crea
 #### **Generating the default Textbook:**
 
 ```bash
-poetry run python sciphi/examples/library_of_phi/generate_textbook.py run --do-wiki=False --textbook=Introduction_to_Deep_Learning
+poetry run python sciphi/examples/library_of_phi/generate_textbook.py run --do-wiki=False --textbook=Aerodynamics_of_Viscous_Fluids --log-level=DEBUG
 ```
 
-_[See the example output here](sciphi/data/library_of_phi/Introduction_to_Deep_Learning.md)_
+_[See the example output here](sciphi/data/library_of_phi/Aerodynamics_of_Viscous_Fluids.md)_
 
 #### **Using a Custom Table of Contents:**
 
 1. Draft a table of contents and save as `textbook_name.yaml`.
 2. Place it in `[Your Working Directory]/sciphi/data/library_of_phi/table_of_contents`.
-3. Format similarly to `Introduction_to_Deep_Learning.yaml`.
+3. Format similarly to `Aerodynamics_of_Viscous_Fluids.yaml`.
 
 #### **Incorporating RAG over Wikipedia:**
 
@@ -61,7 +61,10 @@ _[See the example output here](sciphi/data/library_of_phi/Introduction_to_Deep_L
 Generated textbooks reside in:  
 `[Your Working Directory]/sciphi/data/library_of_phi`
 
-**Note**: The Wikipedia embeddings server is private but will be public soon. Meanwhile, ensure your configuration aligns with our specifications.
+**Note**: The Wikipedia embeddings server not yet public. Meanwhile, ensure your configuration aligns with our specifications if you wish to use wikipedia for RAG.
+
+If you would like to peruse more example output, go [here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main).
+
 --
 ## **Installation**
 
