@@ -56,7 +56,7 @@ class TextbookContentGeneratorSimplified:
         provider="openai",
         model_name="gpt-4-0613",
         toc_dir="table_of_contents",
-        textbook="Introduction_to_Deep_Learning",
+        textbook="Aerodynamics_of_Viscous_Fluids",
         max_related_context_to_sample=2_000,
         max_prev_snippet_to_sample=2_000,
         do_wiki=True,
