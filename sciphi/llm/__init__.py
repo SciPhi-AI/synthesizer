@@ -1,4 +1,5 @@
 from sciphi.llm.anthropic_llm import AnthropicConfig, AnthropicLLM
+from sciphi.llm.lite_llm import LiteLLMConfig, LiteLLM
 from sciphi.llm.base import LLM, LLMConfig, ModelName
 from sciphi.llm.config_manager import LLMConfigManager
 from sciphi.llm.hugging_face_llm import HuggingFaceConfig, HuggingFaceLLM
@@ -23,4 +24,6 @@ __all__ = [
     "OpenAILLM",
     "vLLMConfig",
     "vLLM",
+    "LiteLLMConfig",
+    "LiteLLM"
 ]
