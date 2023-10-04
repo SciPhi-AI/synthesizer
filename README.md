@@ -41,7 +41,7 @@ The workflow encompasses data scraping, data processing, YAML configuration crea
 poetry run python sciphi/examples/library_of_phi/generate_textbook.py run --do-wiki=False --textbook=Aerodynamics_of_Viscous_Fluids --log-level=DEBUG
 ```
 
-_[See the example output here](sciphi/data/library_of_phi/Aerodynamics_of_Viscous_Fluids.md)_
+_[See the example output here](sciphi/data/library_of_phi/sample/Aerodynamics_of_Viscous_Fluids.md)_
 
 #### **Using a Custom Table of Contents:**
 
@@ -61,11 +61,8 @@ _[See the example output here](sciphi/data/library_of_phi/Aerodynamics_of_Viscou
 Generated textbooks reside in:  
 `[Your Working Directory]/sciphi/data/library_of_phi`
 
-**Note**: The Wikipedia embeddings server not yet public. Meanwhile, ensure your configuration aligns with our specifications if you wish to use wikipedia for RAG.
+**Note**: The Wikipedia embeddings server is not yet public. Meanwhile, ensure your configuration aligns with our specifications if you wish to use wikipedia for RAG. If you would like to peruse more example textbooks, go [here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main).
 
-If you would like to peruse more example output, go [here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main).
-
---
 ## **Installation**
 
 ```bash
