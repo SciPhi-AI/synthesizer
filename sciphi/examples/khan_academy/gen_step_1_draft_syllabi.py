@@ -54,9 +54,7 @@ from sciphi.examples.library_of_phi.prompts import SYLLABI_CREATION_PROMPT
 
 def extract_data_from_record(record: dict[str, str]) -> tuple[dict, str]:
     """Extract and organize data from a given record."""
-    context = f"### Course Number:\n{record['course_number']}\n"
     context += f"### Course Name:\n{record['course_title']}\n"
-    context += f"### Resource Level: {record['resource_level']}\n"
     topics = {}
     page_contents = record["page_contents"]
 
@@ -120,7 +118,7 @@ class DraftSyllabiYAMLRunner:
         model_name: str = "gpt-4-0613",
         data_directory: Optional[str] = None,
         output_rel_dir: str = "output_step_1",
-        input_jsonl_filename: str = "ocw_scraped.jsonl",
+        input_jsonl_filename: str = "ka_scraped.jsonl",
         prompt: str = SYLLABI_CREATION_PROMPT,
         log_level: str = "INFO",
     ):

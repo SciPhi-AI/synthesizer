@@ -84,6 +84,7 @@ class Scraper:
         courses = soup.find_all("a", href=True)
 
         # Extract and print the href values and corresponding text
+        pass_through = True
         for a_tag in courses:
             href = a_tag["href"]
             text = a_tag.text.strip()  # Remove leading/trailing whitespace
@@ -93,7 +94,26 @@ class Scraper:
             os.path.join(data_directory, output_file_name)
         )
 
+        course_dictionary = {}
+
         for course in courses:
+            if "/humanities/art-history" == course["href"]:
+                pass_through = False
+                continue
+            if pass_through:
+                continue
+            if course["href"].count("/") < 2:
+                continue
+
+            if (
+                "digital-sat" in course["href"]
+                or "/sat/" in course["href"]
+                or "prep" in course["href"]
+                or "college-careers-more" in course["href"]
+                or "partner-content" in course["href"]
+            ):
+                continue
+
             course_data = Scraper.extract_course_data(course)
             writer.write([course_data])
             time.sleep(self.sleep_time)
@@ -121,10 +141,40 @@ class Scraper:
 
         units = soup.find_all("a")
         result = {}
+        result["topics"] = {}
+        current_topic_url = None
+        current_topic_key = None
 
         for unit in units:
-            if page_url in unit["href"] and "/v/" in unit["href"]:
-                print(f'{page_url}\n\t{unit["href"]} {unit.text.strip()}')
+            if (
+                page_url in unit["href"]
+                and "/a/" not in unit["href"]
+                and not unit["href"].endswith("/d")
+                and "/e/" not in unit["href"]
+                and "/quiz/" not in unit["href"]
+                and "privacy" not in unit.text.strip().lower()
+                and "skills" not in unit.text.strip().lower()
+            ):
+                # print(f'{page_url}\n\t{unit["href"]} {unit.text.strip()}')
+
+                if (
+                    "unit" in unit.text.strip().lower()
+                    or current_topic_url not in unit["href"]
+                ):
+                    current_topic_url = page_url
+                    current_topic_key = unit.text.strip()
+                    result["topics"][current_topic_key] = []
+
+                else:
+                    # print(unit.text.strip().lower())
+                    if unit.text.strip().lower() == "start course challenge":
+                        continue
+                    result["topics"][current_topic_key].append(
+                        unit.text.strip()
+                    )
+
+                    # print(unit["href"].replace(current_topic_url, ""))
+                # result["topics"]
 
             # logging.debug("Scraping the syllabus")
             # try:
@@ -132,6 +182,17 @@ class Scraper:
             # except Exception as e:
             #     logging.warning(f"Failed to extract topics. Error: {e}")
             #     result["topics"] = {}
+
+        # REMOVE all empty topics
+        to_delete = []
+        for topic in result["topics"].keys():
+            if len(result["topics"][topic]) <= 1:
+                to_delete.append(topic)
+
+        for topic in to_delete:
+            del result["topics"][topic]
+
+        print(result["topics"])
 
         return result
 
@@ -177,8 +238,6 @@ class Scraper:
                 )
             except requests.RequestException:
                 pass
-
-        return course_data
 
         return course_data
 
