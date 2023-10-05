@@ -12,7 +12,7 @@
   
 <!-- - Seamless Model Evaluation: Streamline the process of evaluating model outputs using our integrated LLM-mediated tools _(under construction)_. -->
   
-- The Library of Phi: An initiative to leverages AI-driven techniques to craft high-quality open source textbooks.
+- The Library of Phi: An initiative to leverage AI-driven techniques to craft high-quality open source textbooks.
 
 ## **Getting Started & Support**
 
