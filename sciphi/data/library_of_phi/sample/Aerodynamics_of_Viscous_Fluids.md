@@ -2,6 +2,10 @@
 
 This textbook was generated using AI techniques. While it aims to be factual and accurate, please verify any critical information. The content may contain errors, biases or harmful content despite best efforts. Please report any issues.
 
+# Aerodynamics of Viscous Fluids: A Comprehensive Study
+
+![_5b5c6571-bbb5-4c5c-8055-7fac36ebd428](https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/0acec9d7-ac58-4fb2-9ff8-89b40520ea9f)
+
 # Table of Contents
 - [Aerodynamics of Viscous Fluids: A Comprehensive Study](#aerodynamicsofviscousfluidsacomprehensivestudy)
   - [Foreward](#foreward)
@@ -256,9 +260,6 @@ This textbook was generated using AI techniques. While it aims to be factual and
 - [Aerodynamics of Viscous Fluids: A Comprehensive Study](#aerodynamicsofviscousfluidsacomprehensivestudy)
   - [Foreward](#foreward)
 
-
-
-# Aerodynamics of Viscous Fluids: A Comprehensive Study
 
 ## Foreward
 
