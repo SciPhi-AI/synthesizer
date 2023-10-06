@@ -1,0 +1,157 @@
+textbook:
+  "Artificial Intelligence and Librarianship":
+    chapters:
+      - "Chapter 0: Some Theoretical Background to Librarianship":
+          sections:
+            - "Section: 0.1 Evolution of Librarianship":
+                subsections:
+                  - 0.1a Ancient to Modern Libraries
+                  - 0.1b Technological Advancements in Librarianship
+            - "Section: 0.2 Theoretical Frameworks":
+                subsections:
+                  - 0.2a Information Science
+                  - 0.2b Knowledge Organization
+
+      - "Chapter 1: Intellectual Background":
+          sections:
+            - "Section: 1.1 Historical Context":
+                subsections:
+                  - 1.1a Early Computing and Information Retrieval
+                  - 1.1b Birth of Artificial Intelligence
+            - "Section: 1.2 Philosophical Underpinnings":
+                subsections:
+                  - 1.2a Mind and Machine
+                  - 1.2b Ethical Considerations
+
+      - "Chapter 2: Chatbots":
+          sections:
+            - "Section: 2.1 Development of Chatbots":
+                subsections:
+                  - 2.1a Early Chatbots
+                  - 2.1b Modern Chatbots
+            - "Section: 2.2 Chatbots in Libraries":
+                subsections:
+                  - 2.2a User Engagement
+                  - 2.2b Information Retrieval
+
+      - "Chapter 3: Language Models":
+          sections:
+            - "Section: 3.1 Understanding Language Models":
+                subsections:
+                  - 3.1a Fundamentals of Language Models
+                  - 3.1b Application in Text Processing
+            - "Section: 3.2 Language Models in Librarianship":
+                subsections:
+                  - 3.2a Cataloging
+                  - 3.2b Semantic Analysis
+
+      - "Chapter 4: Large Language Models":
+          sections:
+            - "Section: 4.1 Evolution of Large Language Models":
+                subsections:
+                  - 4.1a From RNNs to Transformers
+                  - 4.1b Scalability and Performance
+            - "Section: 4.2 Implications for Librarianship":
+                subsections:
+                  - 4.2a Automated Indexing
+                  - 4.2b User Interaction
+
+      - "Chapter 5: Bias":
+          sections:
+            - "Section: 5.1 Understanding Bias":
+                subsections:
+                  - 5.1a Sources of Bias
+                  - 5.1b Impact of Bias
+            - "Section: 5.2 Mitigating Bias":
+                subsections:
+                  - 5.2a Bias Detection
+                  - 5.2b Bias Correction
+
+      - "Chapter 6: Bias in Machine Learning and Librarianship":
+          sections:
+            - "Section: 6.1 Analyzing Bias":
+                subsections:
+                  - 6.1a Case Studies
+                  - 6.1b Ethical Implications
+            - "Section: 6.2 Strategies for Fair ML":
+                subsections:
+                  - 6.2a Fairness Frameworks
+                  - 6.2b Library Policies
+
+      - "Chapter 7: What Might Natural Language Processing (NLP) Bring to Librarianship?":
+          sections:
+            - "Section: 7.1 NLP Technologies":
+                subsections:
+                  - 7.1a Text Classification
+                  - 7.1b Named Entity Recognition
+            - "Section: 7.2 NLP Applications in Libraries":
+                subsections:
+                  - 7.2a Automated Metadata Generation
+                  - 7.2b Sentiment Analysis
+
+      - "Chapter 8: What are the Opportunities for Librarians?":
+          sections:
+            - "Section: 8.1 Emerging Roles":
+                subsections:
+                  - 8.1a Data Stewards
+                  - 8.1b Digital Archivists
+            - "Section: 8.2 Skill Development":
+                subsections:
+                  - 8.2a Technical Skills
+                  - 8.2b Ethical Competence
+
+      - "Chapter 9: Librarians as Synergists":
+          sections:
+            - "Section: 9.1 Bridging Domains":
+                subsections:
+                  - 9.1a Interdisciplinary Collaboration
+                  - 9.1b Advocacy for Open Knowledge
+
+      - "Chapter 10: Librarians as Sentries":
+          sections:
+            - "Section: 10.1 Guarding Information":
+                subsections:
+                  - 10.1a Privacy Protection
+                  - 10.1b Digital Rights Management
+
+      - "Chapter 11: Librarians as Educators":
+          sections:
+            - "Section: 11.1 Information Literacy":
+                subsections:
+                  - 11.1a Developing Information Literacy Programs
+                  - 11.1b Teaching Digital Citizenship
+
+      - "Chapter 12: Librarians as Managers":
+          sections:
+            - "Section: 12.1 Leadership in the Digital Age":
+                subsections:
+                  - 12.1a Strategic Planning
+                  - 12.1b Managing Digital Resources
+
+      - "Chapter 13: Librarians as Astronauts":
+          sections:
+            - "Section: 13.1 Exploring New Frontiers":
+                subsections:
+                  - 13.1a Virtual Reality in Libraries
+                  - 13.1b Augmented Reality in Libraries
+
+      - "Appendix A: Working With LLMs":
+          sections:
+            - "Section: A.1 Implementation Strategies":
+                subsections:
+                  - A.1a Selecting LLM Platforms
+                  - A.1b Training and Fine-tuning LLMs
+
+      - "Appendix B: Two Important Methodological Points":
+          sections:
+            - "Section: B.1 Methodological Foundations":
+                subsections:
+                  - B.1a Evaluating AI Tools
+                  - B.1b Research Design in AI
+
+      - "Appendix C: Causal Diagrams":
+          sections:
+            - "Section: C.1 Understanding Causal Diagrams":
+                subsections:
+                  - C.1a Drawing Causal Diagrams
+                  - C.1b Interpreting Causal Diagrams
