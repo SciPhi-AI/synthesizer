@@ -3,7 +3,7 @@ import textwrap
 
 SYLLABI_CREATION_PROMPT = textwrap.dedent(
     """
-Take a deep breath, then closely examine the configuration that follows. You will be asked to produce a similar configuration as part of this task, so pay close attention to the format.
+Take a deep breath, then closely examine the configuration that follows. You will be asked to produce a similar configuration as part of this task, so pay close attention to the following YAML format.
 
 ```yaml
 course:
@@ -58,7 +58,7 @@ course:
                     - Reflection and Transmission Coefficients
                     - Ramsauer Townsend Effect
                     - 1D Scattering and Phase Shifts
-                    - Levinson’s Theorem
+                    - Levinson's Theorem
             - Angular Momentum and Central Potentials:
                 subtopics:
                     - Resonances and Breit-Wigner Distribution
@@ -80,8 +80,10 @@ Given the following context, deduce the new configuration entry for the course "
 
 Notes:
 - Filter out any erroneous content like "QUIZ" or "TEST" that might appear in the syllabus. 
+- Remove phrases like "UNIT" or "CHAPTER" that signal new sections.
 - Attempt to match the length and specificity of the above example; add your own context if necessary to accomplish this or remove extra context.
 - You should target **5-10 main topics with 6-10 subtopics each**.
+- It should be valid YAML, so be sure to indent properly. Assume that the output of your response will be parsed by a YAML parser.
 
 ### Response:
 """

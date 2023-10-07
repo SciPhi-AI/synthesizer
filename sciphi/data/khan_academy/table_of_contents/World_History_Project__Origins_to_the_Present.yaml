@@ -1,0 +1,226 @@
+textbook:
+  'A Comprehensive Guide to World History: From Origins to the Present:':
+    chapters:
+    - 'Chapter 1: Prehistory and Early Civilizations':
+        sections:
+        - 'Section 1.1: Hunter-Gatherer Societies':
+            subsections:
+            - The Evolution of Hunter-Gatherer Societies
+            - Lifestyle and Culture
+            - Impact on Modern Societies
+        - 'Section 1.2: Neolithic Revolution':
+            subsections:
+            - Causes and Effects
+            - Development of Agriculture
+            - Transition to Settled Life
+        - 'Section 1.3: Early River Valley Civilizations':
+            subsections:
+            - Mesopotamia
+            - Ancient Egypt
+            - Indus Valley
+            - Ancient China
+        - 'Section 1.4: Code of Hammurabi':
+            subsections:
+            - Creation and Purpose
+            - Laws and Society
+            - Influence on Modern Legal Systems
+        - 'Section 1.5: Ancient Egypt':
+            subsections:
+            - Pharaohs and Dynasties
+            - Religion and Mythology
+            - Achievements and Legacy
+        - 'Section 1.6: Indus Valley Civilization':
+            subsections:
+            - Urban Planning and Architecture
+            - Society and Culture
+            - Decline and Disappearance
+        - 'Section 1.7: Shang Dynasty':
+            subsections:
+            - Rise and Fall
+            - Achievements in Art and Technology
+            - Influence on Chinese History
+    - 'Chapter 2: Classical Civilizations':
+        sections:
+        - 'Section 2.1: Persian Empire':
+            subsections:
+            - Formation and Expansion
+            - Administration and Governance
+            - Persian Wars with Greece
+        - 'Section 2.2: Greek City-States':
+            subsections:
+            - Athens and Sparta
+            - Democracy and Philosophy
+            - Peloponnesian War
+        - 'Section 2.3: Roman Republic and Empire':
+            subsections:
+            - From Republic to Empire
+            - Pax Romana
+            - Fall of the Roman Empire
+        - 'Section 2.4: Maurya and Gupta Empires':
+            subsections:
+            - Rise and Fall
+            - Achievements in Science and Culture
+            - Influence on Indian History
+        - 'Section 2.5: Han Dynasty':
+            subsections:
+            - Formation and Expansion
+            - Achievements in Art and Technology
+            - Fall and Legacy
+        - 'Section 2.6: Mayan Civilization':
+            subsections:
+            - City-States and Society
+            - Achievements in Astronomy and Mathematics
+            - Decline and Disappearance
+        - 'Section 2.7: Byzantine Empire':
+            subsections:
+            - Formation and Expansion
+            - Justinian's Code
+            - Fall and Legacy
+    - 'Chapter 3: Middle Ages':
+        sections:
+        - 'Section 3.1: Feudalism':
+            subsections:
+            - Structure and Function
+            - Life under Feudalism
+            - Decline of Feudalism
+        - 'Section 3.2: Crusades':
+            subsections:
+            - Causes and Effects
+            - Major Crusades
+            - Impact on East-West Relations
+        - 'Section 3.3: Black Death':
+            subsections:
+            - Causes and Spread
+            - Impact on Society
+            - Long-Term Effects
+        - 'Section 3.4: Mongol Empire':
+            subsections:
+            - Formation and Expansion
+            - Administration and Culture
+            - Legacy of the Mongols
+        - 'Section 3.5: Islamic Golden Age':
+            subsections:
+            - Achievements in Science and Culture
+            - Influence on Modern World
+            - Decline and Legacy
+        - 'Section 3.6: Renaissance':
+            subsections:
+            - Humanism and Art
+            - Scientific Revolution
+            - Impact on Modern Thought
+        - 'Section 3.7: Reformation':
+            subsections:
+            - Causes and Effects
+            - Major Figures
+            - Impact on Christianity
+    - 'Chapter 4: Age of Exploration and Colonization':
+        sections:
+        - 'Section 4.1: Columbus''s Voyages':
+            subsections:
+            - Discovery of the New World
+            - Impact on Native Populations
+            - Legacy of Columbus
+        - 'Section 4.2: Conquistadors':
+            subsections:
+            - Conquest of the Aztecs and Incas
+            - Impact on Native Populations
+            - Legacy of the Conquistadors
+        - 'Section 4.3: Triangular Trade':
+            subsections:
+            - Structure and Function
+            - Impact on Africa, Europe, and the Americas
+            - Legacy of the Slave Trade
+        - 'Section 4.4: Columbian Exchange':
+            subsections:
+            - Exchange of Goods and Ideas
+            - Impact on Global Economy
+            - Environmental Consequences
+        - 'Section 4.5: Mercantilism':
+            subsections:
+            - Principles and Practices
+            - Impact on Colonies
+            - Decline and Legacy
+        - 'Section 4.6: Enlightenment':
+            subsections:
+            - Major Figures and Ideas
+            - Impact on Society and Government
+            - Legacy of the Enlightenment
+        - 'Section 4.7: Scientific Revolution':
+            subsections:
+            - Major Figures and Discoveries
+            - Impact on Society and Religion
+            - Legacy of the Scientific Revolution
+    - 'Chapter 5: Industrial Revolution and Imperialism':
+        sections:
+        - 'Section 5.1: Industrialization':
+            subsections:
+            - Causes and Effects
+            - Impact on Society and Economy
+            - Legacy of Industrialization
+        - 'Section 5.2: Social Changes and Movements':
+            subsections:
+            - Labor Movements
+            - Women's Rights Movements
+            - Abolitionist Movements
+        - 'Section 5.3: Imperialism in Africa and Asia':
+            subsections:
+            - Causes and Effects
+            - Major Empires and Colonies
+            - Resistance and Decolonization
+        - 'Section 5.4: Opium Wars':
+            subsections:
+            - Causes and Effects
+            - Impact on China
+            - Legacy of the Opium Wars
+        - 'Section 5.5: Meiji Restoration':
+            subsections:
+            - Causes and Effects
+            - Modernization of Japan
+            - Impact on Asia
+        - 'Section 5.6: Scramble for Africa':
+            subsections:
+            - Causes and Effects
+            - Major Colonies and Empires
+            - Impact on Africa
+        - 'Section 5.7: World War I':
+            subsections:
+            - Causes and Effects
+            - Major Battles and Events
+            - Treaty of Versailles
+    - 'Chapter 6: Modern Era':
+        sections:
+        - 'Section 6.1: Russian Revolution':
+            subsections:
+            - Causes and Effects
+            - Major Figures and Events
+            - Impact on Russia and the World
+        - 'Section 6.2: Great Depression':
+            subsections:
+            - Causes and Effects
+            - Impact on Society and Economy
+            - New Deal and Recovery
+        - 'Section 6.3: World War II':
+            subsections:
+            - Causes and Effects
+            - Major Battles and Events
+            - Holocaust and Atomic Bomb
+        - 'Section 6.4: Cold War':
+            subsections:
+            - Causes and Effects
+            - Major Events and Crises
+            - Fall of the Soviet Union
+        - 'Section 6.5: Decolonization':
+            subsections:
+            - Causes and Effects
+            - Major Independence Movements
+            - Impact on Global Politics
+        - 'Section 6.6: Globalization':
+            subsections:
+            - Causes and Effects
+            - Impact on Economy and Culture
+            - Criticisms and Challenges
+        - 'Section 6.7: Contemporary Issues':
+            subsections:
+            - Climate Change
+            - Terrorism
+            - Human Rights

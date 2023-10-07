@@ -1,0 +1,213 @@
+textbook:
+    "Mastering Mathematics: A Comprehensive Guide from Pre-K to 8th Grade":
+        chapters:
+            - Numbers and Operations:
+                  sections:
+                      - Counting:
+                            subsections:
+                                - Counting Forward
+                                - Counting Backward
+                                - Skip Counting
+                      - Addition:
+                            subsections:
+                                - Basic Addition
+                                - Addition with Carryover
+                                - Word Problems on Addition
+                      - Subtraction:
+                            subsections:
+                                - Basic Subtraction
+                                - Subtraction with Borrowing
+                                - Word Problems on Subtraction
+                      - Multiplication:
+                            subsections:
+                                - Multiplication Tables
+                                - Multiplication of Large Numbers
+                                - Word Problems on Multiplication
+                      - Division:
+                            subsections:
+                                - Division Facts
+                                - Long Division
+                                - Word Problems on Division
+                      - Fractions:
+                            subsections:
+                                - Understanding Fractions
+                                - Addition and Subtraction of Fractions
+                                - Multiplication and Division of Fractions
+                      - Decimals:
+                            subsections:
+                                - Understanding Decimals
+                                - Addition and Subtraction of Decimals
+                                - Multiplication and Division of Decimals
+                      - Place Value:
+                            subsections:
+                                - Understanding Place Value
+                                - Comparing and Ordering Numbers
+                                - Rounding Numbers
+                      - Order of Operations:
+                            subsections:
+                                - Understanding the Order of Operations
+                                - Simplifying Expressions
+                                - Solving Equations
+            - Geometry:
+                  sections:
+                      - Shapes and their Properties:
+                            subsections:
+                                - Identifying Shapes
+                                - Properties of Shapes
+                                - Classifying Shapes
+                      - Area and Perimeter:
+                            subsections:
+                                - Understanding Area and Perimeter
+                                - Calculating Area and Perimeter
+                                - Word Problems on Area and Perimeter
+                      - Volume:
+                            subsections:
+                                - Understanding Volume
+                                - Calculating Volume
+                                - Word Problems on Volume
+                      - Angles:
+                            subsections:
+                                - Understanding Angles
+                                - Measuring Angles
+                                - Angle Relationships
+                      - Coordinate Geometry:
+                            subsections:
+                                - Understanding Coordinates
+                                - Plotting Points
+                                - Graphing Lines
+                      - Transformations:
+                            subsections:
+                                - Understanding Transformations
+                                - Performing Transformations
+                                - Transformation Properties
+                      - Congruence and Similarity:
+                            subsections:
+                                - Understanding Congruence and Similarity
+                                - Proving Congruence and Similarity
+                                - Applications of Congruence and Similarity
+                      - Pythagorean Theorem:
+                            subsections:
+                                - Understanding the Pythagorean Theorem
+                                - Applying the Pythagorean Theorem
+                                - Word Problems on the Pythagorean Theorem
+            - Algebra:
+                  sections:
+                      - Variables and Expressions:
+                            subsections:
+                                - Understanding Variables and Expressions
+                                - Simplifying Expressions
+                                - Evaluating Expressions
+                      - Equations:
+                            subsections:
+                                - Understanding Equations
+                                - Solving Equations
+                                - Word Problems on Equations
+                      - Inequalities:
+                            subsections:
+                                - Understanding Inequalities
+                                - Solving Inequalities
+                                - Word Problems on Inequalities
+                      - Linear Functions:
+                            subsections:
+                                - Understanding Linear Functions
+                                - Graphing Linear Functions
+                                - Applications of Linear Functions
+                      - Quadratic Functions:
+                            subsections:
+                                - Understanding Quadratic Functions
+                                - Graphing Quadratic Functions
+                                - Applications of Quadratic Functions
+                      - Polynomials:
+                            subsections:
+                                - Understanding Polynomials
+                                - Adding and Subtracting Polynomials
+                                - Multiplying and Dividing Polynomials
+                      - Exponents and Radicals:
+                            subsections:
+                                - Understanding Exponents and Radicals
+                                - Simplifying Expressions with Exponents and Radicals
+                                - Solving Equations with Exponents and Radicals
+                      - Systems of Equations:
+                            subsections:
+                                - Understanding Systems of Equations
+                                - Solving Systems of Equations
+                                - Applications of Systems of Equations
+            - Data Analysis and Probability:
+                  sections:
+                      - Graphs and Charts:
+                            subsections:
+                                - Understanding Graphs and Charts
+                                - Creating Graphs and Charts
+                                - Interpreting Graphs and Charts
+                      - Measures of Central Tendency:
+                            subsections:
+                                - Understanding Measures of Central Tendency
+                                - Calculating Measures of Central Tendency
+                                - Applying Measures of Central Tendency
+                      - Probability:
+                            subsections:
+                                - Understanding Probability
+                                - Calculating Probability
+                                - Applying Probability
+                      - Combinations and Permutations:
+                            subsections:
+                                - Understanding Combinations and Permutations
+                                - Calculating Combinations and Permutations
+                                - Applying Combinations and Permutations
+                      - Statistical Variability:
+                            subsections:
+                                - Understanding Statistical Variability
+                                - Calculating Statistical Variability
+                                - Applying Statistical Variability
+                      - Predictions and Inferences:
+                            subsections:
+                                - Understanding Predictions and Inferences
+                                - Making Predictions and Inferences
+                                - Applying Predictions and Inferences
+                      - Random Sampling:
+                            subsections:
+                                - Understanding Random Sampling
+                                - Conducting Random Sampling
+                                - Applying Random Sampling
+            - Measurement:
+                  sections:
+                      - Length:
+                            subsections:
+                                - Understanding Length
+                                - Measuring Length
+                                - Converting Length Units
+                      - Weight:
+                            subsections:
+                                - Understanding Weight
+                                - Measuring Weight
+                                - Converting Weight Units
+                      - Volume:
+                            subsections:
+                                - Understanding Volume
+                                - Measuring Volume
+                                - Converting Volume Units
+                      - Time:
+                            subsections:
+                                - Understanding Time
+                                - Measuring Time
+                                - Converting Time Units
+                      - Temperature:
+                            subsections:
+                                - Understanding Temperature
+                                - Measuring Temperature
+                                - Converting Temperature Units
+                      - Money:
+                            subsections:
+                                - Understanding Money
+                                - Counting Money
+                                - Making Change
+                      - Conversions:
+                            subsections:
+                                - Understanding Conversions
+                                - Performing Conversions
+                                - Applying Conversions
+                      - Precision and Accuracy:
+                            subsections:
+                                - Understanding Precision and Accuracy
+                                - Measuring with Precision and Accuracy
+                                - Applying Precision and Accuracy

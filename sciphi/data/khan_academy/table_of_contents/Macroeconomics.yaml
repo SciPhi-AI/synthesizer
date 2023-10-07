@@ -1,0 +1,249 @@
+textbook:
+  '''Understanding Macroeconomics: A Comprehensive Guide'':':
+    chapters:
+    - Basic Economics Concepts:
+        sections:
+        - Opportunity Cost and the Production Possibilities Curve:
+            subsections:
+            - Defining Opportunity Cost
+            - Understanding the Production Possibilities Curve
+            - Real-world Applications
+        - Comparative Advantage and the Gains from Trade:
+            subsections:
+            - The Principle of Comparative Advantage
+            - How Trade Benefits Economies
+            - Case Studies in Comparative Advantage
+        - Demand:
+            subsections:
+            - The Law of Demand
+            - Factors Influencing Demand
+            - Demand Curves and Their Shifts
+        - Supply:
+            subsections:
+            - The Law of Supply
+            - Factors Influencing Supply
+            - Supply Curves and Their Shifts
+        - Markets:
+            subsections:
+            - Defining Markets
+            - Types of Markets
+            - Market Equilibrium
+    - Economic Indicators and the Business Cycle:
+        sections:
+        - Gross Domestic Product:
+            subsections:
+            - What is GDP?
+            - Calculating GDP
+            - GDP and Economic Health
+        - Limitations of GDP:
+            subsections:
+            - What GDP Doesn't Measure
+            - Alternative Measures of Economic Health
+            - Critiques of GDP
+        - Unemployment:
+            subsections:
+            - Defining Unemployment
+            - Types of Unemployment
+            - The Social and Economic Costs of Unemployment
+        - Inflation:
+            subsections:
+            - What is Inflation?
+            - Causes and Effects of Inflation
+            - Measuring Inflation
+        - Costs of Inflation:
+            subsections:
+            - Inflation and Purchasing Power
+            - Inflation and Interest Rates
+            - Inflation and Economic Stability
+        - Real vs. Nominal GDP:
+            subsections:
+            - Understanding Nominal GDP
+            - Understanding Real GDP
+            - Comparing Nominal and Real GDP
+        - Business Cycles:
+            subsections:
+            - Phases of the Business Cycle
+            - Causes of Business Cycles
+            - Business Cycles and Economic Policy
+    - National Income and Price Determination:
+        sections:
+        - Aggregate Demand:
+            subsections:
+            - Understanding Aggregate Demand
+            - Factors Influencing Aggregate Demand
+            - Aggregate Demand and Economic Policy
+        - Multipliers:
+            subsections:
+            - The Concept of the Multiplier
+            - Calculating the Multiplier
+            - The Multiplier Effect in the Economy
+        - Short-run Aggregate Supply:
+            subsections:
+            - Understanding Short-run Aggregate Supply
+            - Factors Influencing Short-run Aggregate Supply
+            - Short-run Aggregate Supply and Economic Policy
+        - Long-run Aggregate Supply:
+            subsections:
+            - Understanding Long-run Aggregate Supply
+            - Factors Influencing Long-run Aggregate Supply
+            - Long-run Aggregate Supply and Economic Policy
+        - Equilibrium in the AD-AS Model:
+            subsections:
+            - Understanding Equilibrium in the AD-AS Model
+            - Shifts in the AD-AS Model
+            - The AD-AS Model and Economic Policy
+        - Changes in the AD-AS Model in the Short Run:
+            subsections:
+            - Short-run Changes in the AD-AS Model
+            - Causes and Effects of Short-run Changes
+            - Policy Responses to Short-run Changes
+        - Long Run Self-adjustment:
+            subsections:
+            - The Concept of Long-run Self-adjustment
+            - Factors Influencing Long-run Self-adjustment
+            - Long-run Self-adjustment and Economic Policy
+        - Fiscal Policy:
+            subsections:
+            - Understanding Fiscal Policy
+            - Tools of Fiscal Policy
+            - Fiscal Policy and Economic Stability
+        - Automatic Stabilizers:
+            subsections:
+            - What are Automatic Stabilizers?
+            - Types of Automatic Stabilizers
+            - Automatic Stabilizers and Economic Stability
+    - Financial Sector:
+        sections:
+        - Financial Assets:
+            subsections:
+            - Defining Financial Assets
+            - Types of Financial Assets
+            - Financial Assets and the Economy
+        - Nominal v. Real Interest Rates:
+            subsections:
+            - Understanding Nominal Interest Rates
+            - Understanding Real Interest Rates
+            - Comparing Nominal and Real Interest Rates
+        - Definition, Measurement, and Functions of Money:
+            subsections:
+            - What is Money?
+            - Measuring the Money Supply
+            - The Functions of Money
+        - Banking and the Expansion of the Money Supply:
+            subsections:
+            - The Role of Banks in the Economy
+            - How Banks Expand the Money Supply
+            - The Money Multiplier
+        - The Money Market:
+            subsections:
+            - Understanding the Money Market
+            - The Demand and Supply of Money
+            - The Money Market and Interest Rates
+        - Monetary Policy:
+            subsections:
+            - Understanding Monetary Policy
+            - Tools of Monetary Policy
+            - Monetary Policy and Economic Stability
+        - The Market for Loanable Funds:
+            subsections:
+            - Understanding the Market for Loanable Funds
+            - The Demand and Supply of Loanable Funds
+            - The Market for Loanable Funds and Interest Rates
+        - Interest Rates and the Time Value of Money:
+            subsections:
+            - Understanding Interest Rates
+            - The Time Value of Money
+            - Interest Rates and Investment Decisions
+    - Long-run Consequences of Stabilization Policies:
+        sections:
+        - Fiscal and Monetary Policy Actions in the Short Run:
+            subsections:
+            - Short-run Fiscal Policy Actions
+            - Short-run Monetary Policy Actions
+            - The Impact of Short-run Policy Actions
+        - The Phillips Curve:
+            subsections:
+            - Understanding the Phillips Curve
+            - The Phillips Curve and Economic Policy
+            - Critiques of the Phillips Curve
+        - Money Growth and Inflation:
+            subsections:
+            - The Relationship Between Money Growth and Inflation
+            - The Quantity Theory of Money
+            - Money Growth, Inflation, and Economic Policy
+        - Crowding Out:
+            subsections:
+            - Understanding Crowding Out
+            - The Causes and Effects of Crowding Out
+            - Crowding Out and Economic Policy
+        - Deficits and Debts:
+            subsections:
+            - Understanding Deficits and Debts
+            - The Impact of Deficits and Debts on the Economy
+            - Deficits, Debts, and Economic Policy
+        - Economic Growth:
+            subsections:
+            - Understanding Economic Growth
+            - The Determinants of Economic Growth
+            - Economic Growth and Economic Policy
+    - 'Open Economy: International Trade and Finance':
+        sections:
+        - The Balance of Payments:
+            subsections:
+            - Understanding the Balance of Payments
+            - The Components of the Balance of Payments
+            - The Balance of Payments and Economic Policy
+        - Exchange Rates:
+            subsections:
+            - Understanding Exchange Rates
+            - The Determinants of Exchange Rates
+            - Exchange Rates and Economic Policy
+        - The Foreign Exchange Market:
+            subsections:
+            - Understanding the Foreign Exchange Market
+            - The Demand and Supply of Foreign Exchange
+            - The Foreign Exchange Market and Economic Policy
+        - Effect of Changes in Policies and Economic Conditions on the Foreign Exchange Market:
+            subsections:
+            - Policy Changes and the Foreign Exchange Market
+            - Economic Conditions and the Foreign Exchange Market
+            - The Impact of Changes on the Foreign Exchange Market
+        - Real Interest Rates and International Capital Flows:
+            subsections:
+            - Understanding Real Interest Rates
+            - International Capital Flows
+            - Real Interest Rates, Capital Flows, and Economic Policy
+    - Keynesian Approaches and IS-LM:
+        sections:
+        - The Consumption Function:
+            subsections:
+            - Understanding the Consumption Function
+            - The Determinants of Consumption
+            - The Consumption Function and Economic Policy
+        - The Keynesian Cross:
+            subsections:
+            - Understanding the Keynesian Cross
+            - The Keynesian Cross and Aggregate Demand
+            - The Keynesian Cross and Economic Policy
+        - IS-LM:
+            subsections:
+            - Understanding the IS-LM Model
+            - The IS Curve and the LM Curve
+            - The IS-LM Model and Economic Policy
+        - Keynesian Economics and its Critiques:
+            subsections:
+            - Understanding Keynesian Economics
+            - The Principles of Keynesian Economics
+            - Critiques of Keynesian Economics
+    - Contemporary Macroeconomic Issues:
+        sections:
+        - National Income and Inequality:
+            subsections:
+            - Understanding National Income
+            - Income Inequality
+            - National Income, Inequality, and Economic Policy
+        - The 2008 Financial Crisis:
+            subsections:
+            - The Causes of the 2008 Financial Crisis
+            - The Impact of the 2008 Financial Crisis
+            - Lessons from the 2008 Financial Crisis

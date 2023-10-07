@@ -1,0 +1,155 @@
+textbook:
+  'Mastering Microeconomics: A Comprehensive Guide for AP®︎/College Students:':
+    chapters:
+    - Understanding the Basics of Economics:
+        sections:
+        - Exploring Resource Allocation and Economic Systems:
+            subsections:
+            - Different Economic Systems
+            - Role of Resources in Economics
+        - Unraveling the Production Possibilities Curve (PPC):
+            subsections:
+            - Understanding the PPC
+            - Shifts in the PPC
+        - Delving into Comparative Advantage and Trade:
+            subsections:
+            - Concept of Comparative Advantage
+            - Importance of Trade in Economics
+        - Decoding Cost-Benefit Analysis:
+            subsections:
+            - Principles of Cost-Benefit Analysis
+            - Real-world Applications of Cost-Benefit Analysis
+        - Marginal Analysis and Consumer Choice:
+            subsections:
+            - Understanding Marginal Analysis
+            - Consumer Choice Theory
+    - The Dynamics of Supply and Demand:
+        sections:
+        - Understanding Demand:
+            subsections:
+            - Law of Demand
+            - Factors Affecting Demand
+        - The Nature of Supply:
+            subsections:
+            - Law of Supply
+            - Factors Influencing Supply
+        - Price Elasticity of Demand:
+            subsections:
+            - Understanding Price Elasticity
+            - Factors Affecting Price Elasticity of Demand
+        - Price Elasticity of Supply:
+            subsections:
+            - Understanding Price Elasticity of Supply
+            - Factors Affecting Price Elasticity of Supply
+        - Other Elasticities:
+            subsections:
+            - Income Elasticity of Demand
+            - Cross Elasticity of Demand
+        - Market Equilibrium and Consumer and Producer Surplus:
+            subsections:
+            - Understanding Market Equilibrium
+            - Consumer and Producer Surplus Explained
+        - Disequilibrium and Changes in Equilibrium:
+            subsections:
+            - Understanding Disequilibrium
+            - Factors Causing Changes in Equilibrium
+        - The Effects of Government Interventions in Markets:
+            subsections:
+            - Types of Government Interventions
+            - Impact of Government Interventions
+        - International Trade and Public Policy:
+            subsections:
+            - Role of International Trade in Economics
+            - Impact of Public Policies on Trade
+    - Production, Cost, and the Perfect Competition Model:
+        sections:
+        - The Production Function:
+            subsections:
+            - Understanding the Production Function
+            - Factors Affecting the Production Function
+        - Short-run Production Costs:
+            subsections:
+            - Types of Short-run Costs
+            - Cost Curves in the Short-run
+        - Long-run Production Costs:
+            subsections:
+            - Types of Long-run Costs
+            - Cost Curves in the Long-run
+        - Types of Profit:
+            subsections:
+            - Accounting vs Economic Profit
+            - Normal vs Supernormal Profit
+        - Profit Maximization:
+            subsections:
+            - Understanding Profit Maximization
+            - Strategies for Profit Maximization
+        - Firms’ Short-run Decisions to Produce and Long-Run Decisions to Enter or Exit a Market:
+            subsections:
+            - Short-run Production Decisions
+            - Long-run Market Entry and Exit Decisions
+        - Perfect Competition:
+            subsections:
+            - Characteristics of Perfect Competition
+            - Price Determination under Perfect Competition
+    - Imperfect Competition:
+        sections:
+        - Introduction to Imperfect Competition:
+            subsections:
+            - Understanding Imperfect Competition
+            - Types of Imperfect Competition
+        - Monopoly:
+            subsections:
+            - Characteristics of Monopoly
+            - Price Determination under Monopoly
+        - Price Discrimination:
+            subsections:
+            - Understanding Price Discrimination
+            - Types of Price Discrimination
+        - Monopolistic Competition:
+            subsections:
+            - Characteristics of Monopolistic Competition
+            - Price and Output Determination under Monopolistic Competition
+        - Oligopoly and Game Theory:
+            subsections:
+            - Understanding Oligopoly
+            - Game Theory in Economics
+    - Factor Markets:
+        sections:
+        - Introduction to Factor Markets:
+            subsections:
+            - Understanding Factor Markets
+            - Role of Factors of Production
+        - Changes in Factor Demand and Supply:
+            subsections:
+            - Factors Affecting Demand and Supply of Factors of Production
+            - Impact of Changes in Factor Demand and Supply
+        - Profit-maximizing Behavior in Perfectly Competitive Factor Markets:
+            subsections:
+            - Understanding Profit Maximization in Factor Markets
+            - Real-world Applications of Profit Maximization in Factor Markets
+        - Monopsonistic Markets:
+            subsections:
+            - Understanding Monopsony
+            - Price and Wage Determination under Monopsony
+    - Market Failure and the Role of Government:
+        sections:
+        - Socially Efficient and Inefficient Market Outcomes:
+            subsections:
+            - Understanding Social Efficiency
+            - Causes and Consequences of Market Inefficiency
+        - Externalities:
+            subsections:
+            - Understanding Externalities
+            - Impact of Externalities on Market Outcomes
+        - Public and Private Goods:
+            subsections:
+            - Understanding Public and Private Goods
+            - Role of Public and Private Goods in the Economy
+        - The Effects of Government Intervention in Different Market Structures:
+            subsections:
+            - Government Intervention in Perfect Competition
+            - Government Intervention in Imperfect Competition
+        - Inequality:
+            subsections:
+            - Understanding Economic Inequality
+            - Causes and Consequences of Economic Inequality

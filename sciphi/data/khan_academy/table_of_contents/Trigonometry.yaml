@@ -1,0 +1,112 @@
+textbook:
+  'Mastering Trigonometry: A Comprehensive Guide:':
+    chapters:
+    - Fundamentals of Right triangles & trigonometry:
+        sections:
+        - Introduction to the trigonometric ratios:
+            subsections:
+            - Definition and importance of trigonometric ratios
+            - Understanding sine, cosine, and tangent
+        - Solving for a side in a right triangle using the trigonometric ratios:
+            subsections:
+            - Using sine to find a side
+            - Using cosine to find a side
+            - Using tangent to find a side
+        - Sine and cosine of complementary angles:
+            subsections:
+            - Understanding complementary angles
+            - Sine and cosine relationships in complementary angles
+        - Modeling with right triangles:
+            subsections:
+            - Real-world applications of right triangles
+            - Problem-solving with right triangles
+    - Deep Dive into Trigonometric functions:
+        sections:
+        - Unit circle introduction:
+            subsections:
+            - Understanding the unit circle
+            - Trigonometric functions on the unit circle
+        - Radians:
+            subsections:
+            - Definition and importance of radians
+            - Converting between degrees and radians
+        - The Pythagorean identity:
+            subsections:
+            - Deriving the Pythagorean identity
+            - Applications of the Pythagorean identity
+        - Special trigonometric values in the first quadrant:
+            subsections:
+            - Identifying special angles in the first quadrant
+            - Trigonometric values of special angles
+        - Trigonometric values on the unit circle:
+            subsections:
+            - Understanding the unit circle
+            - Trigonometric values at various points on the unit circle
+        - Graphs of sin(x), cos(x), and tan(x):
+            subsections:
+            - Understanding the graphs of sin(x), cos(x), and tan(x)
+            - Identifying key features of trigonometric graphs
+        - Amplitude, midline, and period:
+            subsections:
+            - Understanding amplitude, midline, and period
+            - Calculating amplitude, midline, and period
+        - Transforming sinusoidal graphs:
+            subsections:
+            - Understanding transformations of sinusoidal graphs
+            - Applying transformations to sinusoidal graphs
+        - Graphing sinusoidal functions:
+            subsections:
+            - Techniques for graphing sinusoidal functions
+            - Practice problems for graphing sinusoidal functions
+        - Sinusoidal models:
+            subsections:
+            - Real-world applications of sinusoidal models
+            - Creating and interpreting sinusoidal models
+        - Long live Tau:
+            subsections:
+            - Understanding the concept of Tau
+            - The relationship between Tau and Pi
+    - Exploring Non-right triangles & trigonometry:
+        sections:
+        - Law of sines:
+            subsections:
+            - Understanding the law of sines
+            - Applying the law of sines
+        - Law of cosines:
+            subsections:
+            - Understanding the law of cosines
+            - Applying the law of cosines
+        - Solving general triangles:
+            subsections:
+            - Techniques for solving general triangles
+            - Practice problems for solving general triangles
+    - Unraveling Trigonometric equations and identities:
+        sections:
+        - Inverse trigonometric functions:
+            subsections:
+            - Understanding inverse trigonometric functions
+            - Applying inverse trigonometric functions
+        - Sinusoidal equations:
+            subsections:
+            - Understanding sinusoidal equations
+            - Solving sinusoidal equations
+        - Sinusoidal models:
+            subsections:
+            - Understanding sinusoidal models
+            - Creating and interpreting sinusoidal models
+        - Angle addition identities:
+            subsections:
+            - Understanding angle addition identities
+            - Applying angle addition identities
+        - Using trigonometric identities:
+            subsections:
+            - Understanding trigonometric identities
+            - Applying trigonometric identities
+        - Challenging trigonometry problems:
+            subsections:
+            - Strategies for solving challenging problems
+            - Practice problems for challenging trigonometry
+        - The reciprocal trigonometric ratios:
+            subsections:
+            - Understanding reciprocal trigonometric ratios
+            - Applying reciprocal trigonometric ratios

@@ -1,0 +1,66 @@
+textbook:
+  'Mastering 8th Grade Mathematics:':
+    chapters:
+    - Fundamentals of Numbers and Operations:
+        sections:
+        - Understanding Fractions and Decimals:
+            subsections:
+            - Basics of Converting fractions to decimals
+            - Practical examples of fraction to decimal conversion
+        - The Power of Exponents:
+            subsections:
+            - Introduction to Exponents
+            - Evaluating exponent expressions
+            - Real-world applications of exponents
+        - Mastering the Order of Operations:
+            subsections:
+            - Understanding the Order of Operations
+            - Practical exercises on Order of Operations
+        - Exploring Powers of Ten:
+            subsections:
+            - Basics of Powers of Ten
+            - Multiplying and dividing with powers of ten
+            - Real-world applications of Powers of Ten
+        - Estimation Techniques with Decimals:
+            subsections:
+            - Estimating with multiplying and dividing decimals
+            - Practical exercises on estimation with decimals
+    - Solving Equations and Systems of Equations:
+        sections:
+        - Basics of Algebraic Equations:
+            subsections:
+            - Understanding Algebraic equations basics
+            - Practical exercises on Algebraic equations
+        - One-Step Equations:
+            subsections:
+            - One-step addition and subtraction equations
+            - One-step multiplication and division equations
+        - Advanced Algebraic Techniques:
+            subsections:
+            - Combining like terms
+            - The distributive property & equivalent expressions
+        - Introduction to Two-Step Equations:
+            subsections:
+            - Two-step equations intro
+            - Two-step equations with decimals and fractions
+    - Linear Equations and Functions:
+        sections:
+        - Understanding the Constant of Proportionality:
+            subsections:
+            - Basics of Constant of proportionality
+            - Compare and interpret constant of proportionality
+        - Proportional Relationships:
+            subsections:
+            - Identifying proportional relationships
+            - Graphs of proportional relationships
+            - Equations of proportional relationships
+    - Geometry for 8th Grade:
+        sections:
+        - Polygons and the Coordinate Plane:
+            subsections:
+            - Understanding Polygons on the coordinate plane
+            - Practical exercises on Polygons on the coordinate plane
+        - Solving Missing Angle Problems:
+            subsections:
+            - Basics of Missing angle problems
+            - Practical exercises on Missing angle problems

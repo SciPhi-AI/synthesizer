@@ -1,0 +1,139 @@
+textbook:
+  'Mastering 7th Grade Mathematics:':
+    chapters:
+    - Mastering Negative Number Operations:
+        sections:
+        - Introduction to Negative Numbers:
+            subsections:
+            - Understanding Negative Numbers
+            - Real-life Applications of Negative Numbers
+        - The Negative Symbol as Opposite:
+            subsections:
+            - Concept of Opposites in Mathematics
+            - Negative Symbol as an Indicator of Opposite
+        - Negative Decimals & Fractions on the Number Line:
+            subsections:
+            - Plotting Negative Decimals on the Number Line
+            - Plotting Negative Fractions on the Number Line
+        - Understanding Absolute Value:
+            subsections:
+            - Definition and Properties of Absolute Value
+            - Absolute Value in Real-life Situations
+        - Adding and Subtracting Fractions with Unlike Denominators:
+            subsections:
+            - Steps to Add Fractions with Unlike Denominators
+            - Steps to Subtract Fractions with Unlike Denominators
+        - Multiplying Fractions:
+            subsections:
+            - Steps to Multiply Fractions
+            - Practice Problems on Multiplying Fractions
+        - Fraction as Division:
+            subsections:
+            - Understanding Fraction as Division
+            - Practice Problems on Fraction as Division
+        - Dividing Fractions:
+            subsections:
+            - Steps to Divide Fractions
+            - Practice Problems on Dividing Fractions
+    - Mastering Fractions, Decimals, & Percentages:
+        sections:
+        - Adding and Subtracting Decimals Word Problems:
+            subsections:
+            - Understanding Decimal Addition and Subtraction
+            - Solving Word Problems Involving Decimal Addition and Subtraction
+        - Percent Problems:
+            subsections:
+            - Understanding Percentages
+            - Solving Percent Problems
+        - Percent Word Problems:
+            subsections:
+            - Understanding Word Problems Involving Percentages
+            - Solving Word Problems Involving Percentages
+    - Mastering Rates & Proportional Relationships:
+        sections:
+        - Understanding Equivalent Ratios:
+            subsections:
+            - Definition and Properties of Equivalent Ratios
+            - Practice Problems on Equivalent Ratios
+        - Ratio Application:
+            subsections:
+            - Real-life Applications of Ratios
+            - Practice Problems on Ratio Applications
+        - Introduction to Rates:
+            subsections:
+            - Understanding Rates
+            - Practice Problems on Rates
+        - Understanding Dependent and Independent Variables:
+            subsections:
+            - Definition and Examples of Dependent and Independent Variables
+            - Practice Problems on Dependent and Independent Variables
+        - Analyzing Relationships Between Variables:
+            subsections:
+            - Understanding Relationships Between Variables
+            - Practice Problems on Relationships Between Variables
+    - Mastering Expressions, Equations, & Inequalities:
+        sections:
+        - Distributive Property with Variables:
+            subsections:
+            - Understanding the Distributive Property
+            - Applying the Distributive Property with Variables
+        - Combining Like Terms:
+            subsections:
+            - Understanding Like Terms
+            - Practice Problems on Combining Like Terms
+        - Understanding Equivalent Expressions:
+            subsections:
+            - Definition and Properties of Equivalent Expressions
+            - Practice Problems on Equivalent Expressions
+        - One-step Addition and Subtraction Equations:
+            subsections:
+            - Solving One-step Addition Equations
+            - Solving One-step Subtraction Equations
+        - One-step Multiplication and Division Equations:
+            subsections:
+            - Solving One-step Multiplication Equations
+            - Solving One-step Division Equations
+        - Finding Mistakes in One-step Equations:
+            subsections:
+            - Common Mistakes in Solving One-step Equations
+            - Practice Problems on Finding Mistakes in One-step Equations
+        - One-step Equation Word Problems:
+            subsections:
+            - Understanding Word Problems Involving One-step Equations
+            - Solving Word Problems Involving One-step Equations
+        - Introduction to Inequalities with Variables:
+            subsections:
+            - Understanding Inequalities
+            - Solving Inequalities with Variables
+    - Mastering Geometry:
+        sections:
+        - Decomposing Angles:
+            subsections:
+            - Understanding Angle Decomposition
+            - Practice Problems on Decomposing Angles
+        - Area of Parallelograms and Triangles:
+            subsections:
+            - Calculating the Area of Parallelograms
+            - Calculating the Area of Triangles
+        - Area of Composite Figures:
+            subsections:
+            - Understanding Composite Figures
+            - Calculating the Area of Composite Figures
+        - Volume with Fractions:
+            subsections:
+            - Understanding Volume
+            - Calculating Volume with Fractional Dimensions
+        - Nets of 3D Figures:
+            subsections:
+            - Understanding 3D Figures and Their Nets
+            - Practice Problems on Nets of 3D Figures
+    - Mastering Statistics & Probability:
+        sections:
+        - Understanding Statistical Questions:
+            subsections:
+            - Definition and Examples of Statistical Questions
+            - Practice Problems on Statistical Questions
+        - Understanding the Shape of Data Distributions:
+            subsections:
+            - Different Shapes of Data Distributions
+            - Practice Problems on the Shape of Data Distributions

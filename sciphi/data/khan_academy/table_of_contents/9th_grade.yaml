@@ -1,0 +1,86 @@
+textbook:
+  '9th grade:':
+    chapters:
+    - Borders:
+        sections:
+        - 'Close reading: poetry':
+            subsections:
+            - 'Understanding Poetry: An Introduction'
+            - Analyzing Poetic Devices
+            - Interpreting Themes and Messages
+        - 'Close reading: argumentative text':
+            subsections:
+            - Identifying Arguments and Counterarguments
+            - Evaluating Evidence and Claims
+            - Structuring an Argumentative Essay
+        - Applying vocabulary knowledge:
+            subsections:
+            - Expanding Vocabulary through Context Clues
+            - Utilizing Vocabulary in Writing
+            - Vocabulary Quizzes and Tests
+        - 'Reading for understanding: informational text':
+            subsections:
+            - Identifying Main Ideas and Supporting Details
+            - Analyzing Text Structure
+            - Evaluating Author's Purpose and Point of View
+        - 'Reading for understanding: speech':
+            subsections:
+            - 'Analyzing Speeches: Rhetoric and Persuasion'
+            - Delivering Effective Speeches
+            - Speech Analysis and Critique
+    - Social Psychology:
+        sections:
+        - 'Close reading: informational text':
+            subsections:
+            - Understanding Psychological Concepts
+            - Analyzing Psychological Studies
+            - Evaluating Psychological Theories
+        - 'Close reading: fiction':
+            subsections:
+            - Exploring Characters' Psychological Motivations
+            - Analyzing Themes of Identity and Society
+            - Writing Psychological Fiction
+        - Applying vocabulary knowledge:
+            subsections:
+            - Mastering Psychology Terminology
+            - Applying Psychology Vocabulary in Context
+            - Vocabulary Quizzes and Tests
+        - 'Reading for understanding: informational text':
+            subsections:
+            - Understanding Psychological Research
+            - Analyzing Psychological Case Studies
+            - Evaluating Psychological Arguments
+        - 'Reading for understanding: fiction':
+            subsections:
+            - Analyzing Characters and Motivations
+            - Interpreting Themes and Symbols
+            - Writing Fictional Analysis
+    - The Apocalypse:
+        sections:
+        - 'Close reading: informational text':
+            subsections:
+            - Understanding Apocalyptic Concepts
+            - Analyzing Apocalyptic Predictions
+            - Evaluating Apocalyptic Theories
+        - 'Close reading: fiction':
+            subsections:
+            - Exploring Apocalyptic Themes in Literature
+            - Analyzing Characters' Survival Strategies
+            - Writing Apocalyptic Fiction
+        - Applying vocabulary knowledge:
+            subsections:
+            - Mastering Apocalyptic Terminology
+            - Applying Apocalyptic Vocabulary in Context
+            - Vocabulary Quizzes and Tests
+        - 'Reading for understanding: fiction':
+            subsections:
+            - Analyzing Apocalyptic Narratives
+            - Interpreting Themes of Survival and Humanity
+            - Writing Fictional Analysis
+        - The War of the Worlds:
+            subsections:
+            - Understanding the Historical Context
+            - Analyzing the Novel's Themes and Characters
+            - Writing a Literary Analysis Essay
+    title: 'Exploring Borders, Minds, and Apocalypses: A Comprehensive Guide for 9th
+      Grade'

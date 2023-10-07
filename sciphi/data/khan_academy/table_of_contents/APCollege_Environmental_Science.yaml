@@ -1,0 +1,170 @@
+textbook:
+  '''Environmental Science: A Comprehensive Guide for AP®︎/College Students'':':
+    chapters:
+    - 'The living world: ecosystems and biodiversity':
+        sections:
+        - Ecosystems and biomes:
+            subsections:
+            - Definition and types of ecosystems
+            - Major biomes of the world
+            - Human impact on ecosystems and biomes
+        - Biogeochemical cycles:
+            subsections:
+            - The water cycle
+            - The carbon cycle
+            - The nitrogen cycle
+            - The phosphorus cycle
+        - Matter and energy flow:
+            subsections:
+            - Energy flow in ecosystems
+            - Food chains and food webs
+            - Ecological pyramids
+        - Intro to biodiversity and biogeography:
+            subsections:
+            - Definition and importance of biodiversity
+            - 'Biogeography: patterns and processes'
+            - Threats to biodiversity
+        - Changes to ecosystems:
+            subsections:
+            - Natural changes and their effects
+            - Human-induced changes and their effects
+            - Conservation of ecosystems
+    - Populations:
+        sections:
+        - Species growth:
+            subsections:
+            - Factors affecting species growth
+            - Population dynamics
+            - Conservation strategies for species growth
+        - Population growth:
+            subsections:
+            - 'Human population growth: history and future trends'
+            - Impacts of population growth on the environment
+            - Sustainable population growth
+        - Human populations:
+            subsections:
+            - Demographic transition model
+            - Population pyramids
+            - Urbanization and its effects
+    - Earth systems and resources:
+        sections:
+        - Plate tectonics:
+            subsections:
+            - The theory of plate tectonics
+            - Plate boundaries and geological events
+            - Plate tectonics and biodiversity
+        - Earth's climate:
+            subsections:
+            - Climate zones and biomes
+            - 'Climate change: causes and impacts'
+            - Mitigation and adaptation strategies for climate change
+    - Land and water use:
+        sections:
+        - Intro to land and water use:
+            subsections:
+            - 'Land use: types and impacts'
+            - 'Water use: types and impacts'
+            - Sustainable land and water use
+        - Effects of land and water use I:
+            subsections:
+            - Deforestation and desertification
+            - Water pollution and scarcity
+            - Land and water conservation strategies
+        - Effect of land and water use II:
+            subsections:
+            - Agriculture and its impacts
+            - Urbanization and its impacts
+            - Strategies for sustainable agriculture and urbanization
+        - Intro to sustainable practices:
+            subsections:
+            - Principles of sustainability
+            - Sustainable development goals
+            - Case studies of sustainable practices
+        - Types of sustainable practices:
+            subsections:
+            - Sustainable agriculture
+            - Sustainable energy
+            - Sustainable waste management
+    - Energy resources and consumption:
+        sections:
+        - Intro to energy resources and consumption:
+            subsections:
+            - Types of energy resources
+            - Global energy consumption trends
+            - Impacts of energy consumption
+        - Fuel types and uses II:
+            subsections:
+            - 'Fossil fuels: types, uses, and impacts'
+            - 'Renewable energy: types, uses, and impacts'
+            - Transition to renewable energy
+        - Energy conservation:
+            subsections:
+            - Energy efficiency
+            - Energy conservation strategies
+            - Case studies of energy conservation
+    - Atmospheric pollution:
+        sections:
+        - Air pollution:
+            subsections:
+            - Types of air pollutants
+            - Sources and impacts of air pollution
+            - Air quality and health
+        - Reducing air pollution:
+            subsections:
+            - Air pollution control technologies
+            - Policies for air pollution reduction
+            - Role of individuals in reducing air pollution
+        - Other atmospheric pollution:
+            subsections:
+            - Acid rain
+            - Ozone depletion
+            - Global warming
+    - Aquatic and terrestrial pollution:
+        sections:
+        - Sources of pollution:
+            subsections:
+            - Point and non-point sources of pollution
+            - Major pollutants and their sources
+            - Impacts of pollution on ecosystems
+        - Types of aquatic and terrestrial pollution:
+            subsections:
+            - 'Water pollution: types and impacts'
+            - 'Soil pollution: types and impacts'
+            - Noise and light pollution
+        - Waste disposal, reduction, and treatment:
+            subsections:
+            - Waste management strategies
+            - Waste reduction and recycling
+            - Treatment of waste water
+        - Pollution and health:
+            subsections:
+            - Health effects of pollution
+            - Environmental justice
+            - Role of public health in pollution control
+        - Pathogens:
+            subsections:
+            - Types of pathogens
+            - Pathogens and disease
+            - Control of pathogens
+    - Global change:
+        sections:
+        - Ozone:
+            subsections:
+            - Ozone layer and ozone hole
+            - Effects of ozone depletion
+            - Strategies for ozone layer protection
+        - Greenhouse effect:
+            subsections:
+            - The greenhouse effect and global warming
+            - 'Greenhouse gases: sources and impacts'
+            - Mitigation strategies for greenhouse gases
+        - Climate change:
+            subsections:
+            - Evidence for climate change
+            - Impacts of climate change
+            - Climate change mitigation and adaptation
+        - Human impact on species:
+            subsections:
+            - Human activities and species extinction
+            - Conservation strategies for species
+            - Case studies of successful conservation efforts

@@ -1,0 +1,301 @@
+textbook:
+  '''Mastering 6th Grade Math'':':
+    chapters:
+    - Ratios:
+        sections:
+        - Intro to ratios:
+            subsections:
+            - Understanding the concept of ratios
+            - Real-life examples of ratios
+        - Visualize equivalent ratios:
+            subsections:
+            - Drawing equivalent ratios
+            - Practice problems on equivalent ratios
+        - Ratio application:
+            subsections:
+            - Applying ratios in daily life
+            - Solving complex problems using ratios
+    - Arithmetic with rational numbers:
+        sections:
+        - Adding decimals:
+            subsections:
+            - Step-by-step guide to adding decimals
+            - Practice problems on adding decimals
+        - Subtracting decimals:
+            subsections:
+            - Understanding decimal subtraction
+            - Practice problems on subtracting decimals
+        - Adding and subtracting decimals word problems:
+            subsections:
+            - Solving word problems involving decimal addition and subtraction
+            - Challenging word problems on decimals
+        - Dividing fractions and whole numbers:
+            subsections:
+            - Concept of dividing fractions and whole numbers
+            - Practice problems on dividing fractions and whole numbers
+        - Dividing fractions by fractions:
+            subsections:
+            - Understanding fraction division
+            - Practice problems on dividing fractions by fractions
+        - Multiplying decimals:
+            subsections:
+            - Step-by-step guide to multiplying decimals
+            - Practice problems on multiplying decimals
+        - Dividing whole numbers:
+            subsections:
+            - Concept of whole number division
+            - Practice problems on dividing whole numbers
+        - Dividing decimals:
+            subsections:
+            - Understanding decimal division
+            - Practice problems on dividing decimals
+    - Rates and percentages:
+        sections:
+        - Intro to rates:
+            subsections:
+            - Understanding the concept of rates
+            - Real-life examples of rates
+        - Intro to percents:
+            subsections:
+            - Understanding the concept of percents
+            - Real-life examples of percents
+        - Visualize percents:
+            subsections:
+            - Drawing and interpreting percent diagrams
+            - Practice problems on visualizing percents
+        - Equivalent representations of percent problems:
+            subsections:
+            - Understanding equivalent representations of percent problems
+            - Practice problems on equivalent representations of percent problems
+        - Percent problems:
+            subsections:
+            - Solving basic percent problems
+            - Challenging percent problems
+        - Percent word problems:
+            subsections:
+            - Solving word problems involving percents
+            - Challenging word problems on percents
+    - Exponents and order of operations:
+        sections:
+        - Meaning of exponents:
+            subsections:
+            - Understanding the concept of exponents
+            - Real-life examples of exponents
+        - Powers of whole numbers:
+            subsections:
+            - Calculating powers of whole numbers
+            - Practice problems on powers of whole numbers
+        - Powers of fractions and decimals:
+            subsections:
+            - Understanding powers of fractions and decimals
+            - Practice problems on powers of fractions and decimals
+        - Order of operations introduction:
+            subsections:
+            - Understanding the order of operations
+            - Real-life examples of order of operations
+        - More on order of operations:
+            subsections:
+            - Advanced concepts in order of operations
+            - Challenging problems on order of operations
+    - Negative numbers:
+        sections:
+        - Intro to negative numbers:
+            subsections:
+            - Understanding the concept of negative numbers
+            - Real-life examples of negative numbers
+        - Negative symbol as opposite:
+            subsections:
+            - Understanding the negative symbol as opposite
+            - Practice problems on negative symbol as opposite
+        - Rational numbers on the number line:
+            subsections:
+            - Plotting rational numbers on the number line
+            - Practice problems on rational numbers on the number line
+        - Comparing negative numbers:
+            subsections:
+            - Understanding how to compare negative numbers
+            - Practice problems on comparing negative numbers
+        - Ordering rational numbers:
+            subsections:
+            - Understanding how to order rational numbers
+            - Practice problems on ordering rational numbers
+        - Intro to absolute value:
+            subsections:
+            - Understanding the concept of absolute value
+            - Real-life examples of absolute value
+        - Comparing absolute values:
+            subsections:
+            - Understanding how to compare absolute values
+            - Practice problems on comparing absolute values
+    - Variables & expressions:
+        sections:
+        - Parts of algebraic expressions:
+            subsections:
+            - Understanding the parts of algebraic expressions
+            - Practice problems on parts of algebraic expressions
+        - Substitution & evaluating expressions:
+            subsections:
+            - Understanding substitution and evaluation of expressions
+            - Practice problems on substitution and evaluation of expressions
+        - Evaluating expressions with multiple variables:
+            subsections:
+            - Understanding expressions with multiple variables
+            - Practice problems on expressions with multiple variables
+        - Expression value intuition:
+            subsections:
+            - Developing intuition for expression values
+            - Practice problems on expression value intuition
+        - Evaluating expressions word problems:
+            subsections:
+            - Solving word problems involving expression evaluation
+            - Challenging word problems on expression evaluation
+        - Writing algebraic expressions introduction:
+            subsections:
+            - Understanding how to write algebraic expressions
+            - Practice problems on writing algebraic expressions
+        - Writing basic algebraic expressions word problems:
+            subsections:
+            - Solving word problems involving writing algebraic expressions
+            - Challenging word problems on writing algebraic expressions
+        - Least common multiple:
+            subsections:
+            - Understanding the concept of least common multiple
+            - Practice problems on least common multiple
+        - Greatest common factor:
+            subsections:
+            - Understanding the concept of greatest common factor
+            - Practice problems on greatest common factor
+        - Distributive property with variables:
+            subsections:
+            - Understanding the distributive property with variables
+            - Practice problems on the distributive property with variables
+        - Combining like terms:
+            subsections:
+            - Understanding how to combine like terms
+            - Practice problems on combining like terms
+        - Equivalent expressions:
+            subsections:
+            - Understanding equivalent expressions
+            - Practice problems on equivalent expressions
+    - Equations & inequalities:
+        sections:
+        - Algebraic equations basics:
+            subsections:
+            - Understanding the basics of algebraic equations
+            - Practice problems on algebraic equations
+        - One-step equations intuition:
+            subsections:
+            - Developing intuition for one-step equations
+            - Practice problems on one-step equations
+        - One-step addition & subtraction equations:
+            subsections:
+            - Solving one-step addition and subtraction equations
+            - Challenging problems on one-step addition and subtraction equations
+        - One-step multiplication and division equations:
+            subsections:
+            - Solving one-step multiplication and division equations
+            - Challenging problems on one-step multiplication and division equations
+        - Finding mistakes in one-step equations:
+            subsections:
+            - Identifying mistakes in one-step equations
+            - Practice problems on finding mistakes in one-step equations
+        - One-step equation word problems:
+            subsections:
+            - Solving word problems involving one-step equations
+            - Challenging word problems on one-step equations
+        - Intro to inequalities with variables:
+            subsections:
+            - Understanding inequalities with variables
+            - Practice problems on inequalities with variables
+        - Dependent and independent variables:
+            subsections:
+            - Understanding dependent and independent variables
+            - Practice problems on dependent and independent variables
+        - Analyzing relationships between variables:
+            subsections:
+            - Understanding relationships between variables
+            - Practice problems on analyzing relationships between variables
+    - Plane figures:
+        sections:
+        - Areas of parallelograms:
+            subsections:
+            - Understanding the area of parallelograms
+            - Practice problems on areas of parallelograms
+        - Areas of triangles:
+            subsections:
+            - Understanding the area of triangles
+            - Practice problems on areas of triangles
+        - Area of composite figures:
+            subsections:
+            - Understanding the area of composite figures
+            - Practice problems on area of composite figures
+    - Coordinate plane:
+        sections:
+        - Four quadrants:
+            subsections:
+            - Understanding the four quadrants of the coordinate plane
+            - Practice problems on the four quadrants
+        - Distance on the coordinate plane:
+            subsections:
+            - Calculating distance on the coordinate plane
+            - Practice problems on distance on the coordinate plane
+        - Polygons on the coordinate plane:
+            subsections:
+            - Understanding polygons on the coordinate plane
+            - Practice problems on polygons on the coordinate plane
+    - 3D figures:
+        sections:
+        - Geometric solids (3D shapes):
+            subsections:
+            - Understanding geometric solids
+            - Real-life examples of geometric solids
+        - Volume with fractions:
+            subsections:
+            - Calculating volume with fractions
+            - Practice problems on volume with fractions
+        - Nets of 3D figures:
+            subsections:
+            - Understanding nets of 3D figures
+            - Practice problems on nets of 3D figures
+    - Data and statistics:
+        sections:
+        - Statistical questions:
+            subsections:
+            - Understanding statistical questions
+            - Practice problems on statistical questions
+        - Dot plots & frequency tables:
+            subsections:
+            - Understanding dot plots and frequency tables
+            - Practice problems on dot plots and frequency tables
+        - Histograms:
+            subsections:
+            - Understanding histograms
+            - Practice problems on histograms
+        - Mean and median:
+            subsections:
+            - Understanding mean and median
+            - Practice problems on mean and median
+        - Mean and median challenge problems:
+            subsections:
+            - Challenging problems on mean and median
+            - Solutions to challenging problems on mean and median
+        - Interquartile range (IQR):
+            subsections:
+            - Understanding the interquartile range
+            - Practice problems on the interquartile range
+        - Box plots:
+            subsections:
+            - Understanding box plots
+            - Practice problems on box plots
+        - Mean absolute deviation (MAD):
+            subsections:
+            - Understanding the mean absolute deviation
+            - Practice problems on the mean absolute deviation
+        - Comparing data displays:
+            subsections:
+            - Understanding how to compare data displays
+            - Practice problems on comparing data displays
+        - Shape of data distributions:
+            subsections:
+            - Understanding the shape of data distributions
+            - Practice problems on the shape of data distributions

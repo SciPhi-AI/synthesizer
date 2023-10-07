@@ -1,0 +1,150 @@
+textbook:
+  'Mastering Art History: A Comprehensive Guide to AP®︎/College Art History:':
+    chapters:
+    - Introduction:
+        sections:
+        - The Importance of Art:
+            subsections:
+            - Defining Art
+            - The Impact of Art on Society
+            - Why Art Matters
+        - Understanding Art History:
+            subsections:
+            - The Evolution of Art
+            - The Language of Art History
+            - Current Issues in Art History
+    - The Ancient Mediterranean (3500 B.C.E.-300 C.E.):
+        sections:
+        - The Art of Ancient Greece:
+            subsections:
+            - Greek Pottery
+            - Greek Sculpture
+            - Greek Architecture
+        - The Art of Ancient Rome:
+            subsections:
+            - Roman Sculpture
+            - Roman Architecture
+            - Roman Mosaics
+    - The Middle Ages:
+        sections:
+        - Early Christian Art:
+            subsections:
+            - Catacombs and Sarcophagi
+            - Basilicas
+            - Illuminated Manuscripts
+        - Byzantine Art:
+            subsections:
+            - Iconography
+            - Mosaics
+            - Architecture
+        - Islamic Art:
+            subsections:
+            - Calligraphy
+            - Architecture
+            - Ceramics
+        - Romanesque Art:
+            subsections:
+            - Sculpture
+            - Architecture
+            - Illuminated Manuscripts
+        - Gothic Art:
+            subsections:
+            - Stained Glass
+            - Sculpture
+            - Architecture
+    - From Renaissance to Neoclassicism:
+        sections:
+        - Early Renaissance:
+            subsections:
+            - The Birth of Perspective
+            - Humanism in Art
+            - The Medici and Patronage
+        - High Renaissance:
+            subsections:
+            - Leonardo da Vinci
+            - Michelangelo
+            - Raphael
+        - Mannerism:
+            subsections:
+            - El Greco
+            - Tintoretto
+            - Parmigianino
+        - Baroque:
+            subsections:
+            - Caravaggio
+            - Bernini
+            - Dutch Golden Age
+        - Rococo:
+            subsections:
+            - Fragonard
+            - Boucher
+            - Watteau
+        - Neoclassicism:
+            subsections:
+            - Jacques-Louis David
+            - Jean-Auguste-Dominique Ingres
+            - Architecture
+    - From Romanticism to Modernism:
+        sections:
+        - Romanticism:
+            subsections:
+            - Delacroix
+            - Goya
+            - Turner
+        - Realism:
+            subsections:
+            - Courbet
+            - Manet
+            - The Barbizon School
+        - Impressionism:
+            subsections:
+            - Monet
+            - Renoir
+            - Degas
+        - Post-Impressionism:
+            subsections:
+            - Van Gogh
+            - Gauguin
+            - Cézanne
+        - Cubism:
+            subsections:
+            - Picasso
+            - Braque
+            - Gris
+        - Surrealism:
+            subsections:
+            - Dalí
+            - Magritte
+            - Ernst
+    - Contemporary Art:
+        sections:
+        - Abstract Expressionism:
+            subsections:
+            - Pollock
+            - de Kooning
+            - Rothko
+        - Pop Art:
+            subsections:
+            - Warhol
+            - Lichtenstein
+            - Johns
+        - Minimalism:
+            subsections:
+            - Judd
+            - Morris
+            - LeWitt
+        - Conceptual Art:
+            subsections:
+            - Kosuth
+            - Weiner
+            - Huebler
+        - Performance Art:
+            subsections:
+            - Abramović
+            - Beuys
+            - Ono
+        - Digital Art:
+            subsections:
+            - Paik
+            - Rauschenberg
+            - Hockney

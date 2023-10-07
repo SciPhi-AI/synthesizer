@@ -1,0 +1,137 @@
+textbook:
+  Comprehensive Guide to High School Biology - "NGSS":
+    chapters:
+    - Genes, cells, and organisms:
+        sections:
+        - Cell specialization:
+            subsections:
+            - The role of stem cells
+            - Different types of specialized cells
+        - Genes, proteins, and cells:
+            subsections:
+            - The structure of genes
+            - The role of proteins in cell function
+            - The relationship between genes and proteins
+        - Organization of multicellular organisms:
+            subsections:
+            - The hierarchy of biological organization
+            - The role of organ systems
+    - Growth and feedback in organisms:
+        sections:
+        - Cell division and organism growth:
+            subsections:
+            - The process of mitosis
+            - The process of meiosis
+            - The role of cell division in growth and development
+        - Feedback in living systems:
+            subsections:
+            - The concept of homeostasis
+            - Examples of feedback mechanisms in organisms
+    - Matter and energy in organisms:
+        sections:
+        - Photosynthesis:
+            subsections:
+            - The light-dependent reactions
+            - The Calvin cycle
+        - Formation of biomolecules:
+            subsections:
+            - The structure and function of carbohydrates
+            - The structure and function of lipids
+            - The structure and function of proteins
+            - The structure and function of nucleic acids
+        - Cellular respiration:
+            subsections:
+            - Glycolysis
+            - The Krebs cycle
+            - The electron transport chain
+    - Matter and energy in ecosystems:
+        sections:
+        - Population growth and carrying capacity:
+            subsections:
+            - The exponential growth model
+            - The logistic growth model
+            - The concept of carrying capacity
+        - Flow of energy and cycling of matter in ecosystems:
+            subsections:
+            - Food chains and food webs
+            - The water cycle
+            - The nitrogen cycle
+        - The carbon cycle:
+            subsections:
+            - The role of photosynthesis in the carbon cycle
+            - The role of respiration in the carbon cycle
+    - Interactions in ecosystems:
+        sections:
+        - Ecosystem resilience and change:
+            subsections:
+            - The concept of ecological succession
+            - The role of disturbances in ecosystems
+        - Human impacts on ecosystems:
+            subsections:
+            - The effects of pollution on ecosystems
+            - The effects of climate change on ecosystems
+    - Inheritance and variation:
+        sections:
+        - Gene expression and regulation:
+            subsections:
+            - The process of transcription
+            - The process of translation
+            - The role of regulatory genes
+        - Sources of genetic variation:
+            subsections:
+            - The role of mutation in genetic variation
+            - The role of sexual reproduction in genetic variation
+        - Genes, traits, and the environment:
+            subsections:
+            - The concept of phenotype and genotype
+            - The role of the environment in gene expression
+    - Evolution and natural selection:
+        sections:
+        - Evidence of common ancestry:
+            subsections:
+            - The fossil record
+            - Molecular evidence for evolution
+        - Natural selection:
+            subsections:
+            - The concept of fitness
+            - The process of natural selection
+        - Natural selection and evolution:
+            subsections:
+            - The role of natural selection in evolution
+            - The concept of speciation
+        - Evolution of group behavior:
+            subsections:
+            - The concept of altruism
+            - The role of social behavior in evolution
+    - Adaptation and environmental change:
+        sections:
+        - Natural selection and adaptation:
+            subsections:
+            - The concept of adaptation
+            - Examples of adaptations in various organisms
+        - Adaptation and environmental change:
+            subsections:
+            - The effects of environmental change on adaptation
+            - The role of adaptation in species survival
+        - Species and the environment:
+            subsections:
+            - The concept of niche
+            - The role of competition in shaping species interactions
+        - Extinction:
+            subsections:
+            - The causes of extinction
+            - The effects of extinction on ecosystems
+    - Biodiversity and human impacts:
+        sections:
+        - Humans and biodiversity:
+            subsections:
+            - The effects of human activity on biodiversity
+            - The importance of biodiversity for human societies
+        - Sustainability and natural resource management:
+            subsections:
+            - The concept of sustainability
+            - Strategies for sustainable resource management
+        - Science, technology, and the environment:
+            subsections:
+            - The role of science in understanding the environment
+            - The role of technology in environmental management

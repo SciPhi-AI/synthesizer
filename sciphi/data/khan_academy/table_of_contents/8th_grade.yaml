@@ -1,0 +1,224 @@
+textbook:
+  'Mastering Mathematics: An In-depth Guide for 8th Grade:':
+    chapters:
+    - Understanding Numbers and Operations:
+        sections:
+        - Delving into Repeating Decimals:
+            subsections:
+            - Definition and Examples
+            - Converting Repeating Decimals to Fractions
+            - Real-world Applications
+        - Exploring Square Roots and Cube Roots:
+            subsections:
+            - Understanding Square Roots
+            - Understanding Cube Roots
+            - Practical Applications
+        - The World of Irrational Numbers:
+            subsections:
+            - Defining Irrational Numbers
+            - Properties of Irrational Numbers
+            - Real-world Examples
+        - Approximating Irrational Numbers:
+            subsections:
+            - Rounding and Estimation Techniques
+            - Practical Applications
+        - Exponents with Negative Bases:
+            subsections:
+            - Understanding Negative Bases
+            - Solving Problems with Negative Bases
+        - Introduction to Exponent Properties:
+            subsections:
+            - Basic Exponent Rules
+            - Applying Exponent Rules
+        - Understanding Negative Exponents:
+            subsections:
+            - Definition and Properties
+            - Solving Problems with Negative Exponents
+        - Exponent Properties with Integer Exponents:
+            subsections:
+            - Understanding Integer Exponents
+            - Practical Applications
+        - Working with Powers of 10:
+            subsections:
+            - Understanding Powers of 10
+            - Real-world Applications
+        - Introduction to Scientific Notation:
+            subsections:
+            - Basics of Scientific Notation
+            - Converting Between Standard and Scientific Notation
+        - Arithmetic with Numbers in Scientific Notation:
+            subsections:
+            - Addition and Subtraction
+            - Multiplication and Division
+        - Scientific Notation Word Problems:
+            subsections:
+            - Solving Word Problems
+            - Real-world Applications
+    - Solving Equations with One Unknown:
+        sections:
+        - Equations with Variables on Both Sides:
+            subsections:
+            - Understanding the Concept
+            - Solving Equations
+        - Equations with Parentheses:
+            subsections:
+            - Understanding Parentheses in Equations
+            - Solving Equations with Parentheses
+        - Number of Solutions to Equations:
+            subsections:
+            - Identifying the Number of Solutions
+            - Solving Equations with Multiple Solutions
+        - Equations Word Problems:
+            subsections:
+            - Understanding Word Problems
+            - Solving Word Problems
+    - Linear Equations and Functions:
+        sections:
+        - Graphing Proportional Relationships:
+            subsections:
+            - Understanding Proportional Relationships
+            - Graphing Techniques
+        - Solutions to Linear Equations:
+            subsections:
+            - Identifying Solutions
+            - Solving Linear Equations
+        - Intercepts:
+            subsections:
+            - Understanding Intercepts
+            - Finding Intercepts in Linear Equations
+        - Slope:
+            subsections:
+            - Understanding Slope
+            - Calculating Slope
+        - Introduction to Slope-Intercept Form:
+            subsections:
+            - Understanding Slope-Intercept Form
+            - Converting to Slope-Intercept Form
+        - Graphing in Slope-Intercept Form:
+            subsections:
+            - Graphing Techniques
+            - Real-world Applications
+        - Writing Slope-Intercept Equations:
+            subsections:
+            - Understanding the Process
+            - Writing Equations from Graphs
+        - Functions:
+            subsections:
+            - Understanding Functions
+            - Identifying Functions
+        - Linear Models:
+            subsections:
+            - Understanding Linear Models
+            - Creating Linear Models
+        - Comparing Linear Functions:
+            subsections:
+            - Understanding Comparison
+            - Comparing Functions in Real-world Scenarios
+        - Constructing Linear Models for Real-world Relationships:
+            subsections:
+            - Understanding the Process
+            - Real-world Applications
+        - Recognizing Functions:
+            subsections:
+            - Identifying Functions
+            - Distinguishing Between Linear and Nonlinear Functions
+        - Linear and Nonlinear Functions:
+            subsections:
+            - Understanding Linear and Nonlinear Functions
+            - Comparing Linear and Nonlinear Functions
+    - Systems of Equations:
+        sections:
+        - Introduction to Systems of Equations:
+            subsections:
+            - Understanding Systems of Equations
+            - Solving Simple Systems
+        - Solving Systems with Substitution:
+            subsections:
+            - Understanding Substitution
+            - Solving Systems Using Substitution
+        - Number of Solutions to Systems of Equations:
+            subsections:
+            - Identifying the Number of Solutions
+            - Solving Systems with Multiple Solutions
+        - Systems of Equations Word Problems:
+            subsections:
+            - Understanding Word Problems
+            - Solving Word Problems
+    - Geometry:
+        sections:
+        - Angles Between Intersecting Lines:
+            subsections:
+            - Understanding Angles and Intersecting Lines
+            - Calculating Angles
+        - Triangle Angles:
+            subsections:
+            - Understanding Triangle Angles
+            - Calculating Triangle Angles
+        - Pythagorean Theorem:
+            subsections:
+            - Understanding the Pythagorean Theorem
+            - Applying the Pythagorean Theorem
+        - Pythagorean Theorem Application:
+            subsections:
+            - Real-world Applications
+            - Solving Problems Using the Pythagorean Theorem
+        - Pythagorean Theorem and Distance Between Points:
+            subsections:
+            - Understanding the Concept
+            - Calculating Distance Using the Pythagorean Theorem
+        - Pythagorean Theorem Proofs:
+            subsections:
+            - Understanding Proofs
+            - Proving the Pythagorean Theorem
+        - Volume:
+            subsections:
+            - Understanding Volume
+            - Calculating Volume of Various Shapes
+    - Geometric Transformations:
+        sections:
+        - Introduction to Transformations:
+            subsections:
+            - Understanding Transformations
+            - Types of Transformations
+        - Translations:
+            subsections:
+            - Understanding Translations
+            - Performing Translations
+        - Rotations:
+            subsections:
+            - Understanding Rotations
+            - Performing Rotations
+        - Reflections:
+            subsections:
+            - Understanding Reflections
+            - Performing Reflections
+        - Properties and Definitions of Transformations:
+            subsections:
+            - Understanding Properties of Transformations
+            - Defining Transformations
+        - Dilations:
+            subsections:
+            - Understanding Dilations
+            - Performing Dilations
+        - Congruence and Similarity:
+            subsections:
+            - Understanding Congruence and Similarity
+            - Identifying Congruent and Similar Figures
+    - Data and Modeling:
+        sections:
+        - Introduction to Scatter Plots:
+            subsections:
+            - Understanding Scatter Plots
+            - Creating Scatter Plots
+        - Interpreting Scatter Plots:
+            subsections:
+            - Reading Scatter Plots
+            - Drawing Conclusions from Scatter Plots
+        - Estimating Lines of Best Fit:
+            subsections:
+            - Understanding Lines of Best Fit
+            - Estimating Lines of Best Fit
+        - Two-way Tables:
+            subsections:
+            - Understanding Two-way Tables
+            - Creating and Interpreting Two-way Tables

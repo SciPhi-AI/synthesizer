@@ -1,0 +1,153 @@
+textbook:
+  'Mastering Algebra 1: A Comprehensive Guide:':
+    chapters:
+    - Foundations of Equations & Inequalities:
+        sections:
+        - Basics of Algebraic Equations:
+            subsections:
+            - Understanding Variables
+            - Solving Simple Equations
+        - One-Step Addition & Subtraction Equations:
+            subsections:
+            - Addition Equations
+            - Subtraction Equations
+        - One-Step Multiplication & Division Equations:
+            subsections:
+            - Multiplication Equations
+            - Division Equations
+        - Finding Mistakes in One-Step Equations:
+            subsections:
+            - Common Mistakes
+            - Error Analysis
+        - Introduction to Inequalities with Variables:
+            subsections:
+            - Understanding Inequalities
+            - Solving Simple Inequalities
+        - Testing Solutions to Inequalities:
+            subsections:
+            - Checking Your Work
+            - Common Mistakes in Inequalities
+        - Combining Like Terms:
+            subsections:
+            - Understanding Like Terms
+            - Simplifying Expressions
+        - The Distributive Property & Equivalent Expressions:
+            subsections:
+            - Understanding the Distributive Property
+            - Creating Equivalent Expressions
+        - Two-Step Equations:
+            subsections:
+            - Solving Two-Step Equations
+            - Checking Your Work
+        - Finding Mistakes in Two-Step Equations:
+            subsections:
+            - Common Mistakes
+            - Error Analysis
+        - One- and Two-Step Inequalities:
+            subsections:
+            - Solving One-Step Inequalities
+            - Solving Two-Step Inequalities
+        - Equations with Variables on Both Sides:
+            subsections:
+            - Solving Equations with Variables on Both Sides
+            - Checking Your Work
+        - Equations with Parentheses:
+            subsections:
+            - Understanding Parentheses in Equations
+            - Solving Equations with Parentheses
+    - Exploring Linear Relationships:
+        sections:
+        - Constant of Proportionality:
+            subsections:
+            - Understanding Constants of Proportionality
+            - Solving Problems with Constants of Proportionality
+        - Compare and Interpret Constants of Proportionality:
+            subsections:
+            - Comparing Constants of Proportionality
+            - Interpreting Constants of Proportionality
+        - Identifying Proportional Relationships:
+            subsections:
+            - Understanding Proportional Relationships
+            - Identifying Proportional Relationships in Problems
+        - Graphs of Proportional Relationships:
+            subsections:
+            - Understanding Graphs of Proportional Relationships
+            - Creating Graphs of Proportional Relationships
+        - Writing & Solving Proportions:
+            subsections:
+            - Writing Proportions
+            - Solving Proportions
+        - Equations of Proportional Relationships:
+            subsections:
+            - Understanding Equations of Proportional Relationships
+            - Solving Equations of Proportional Relationships
+        - Graphing Proportional Relationships:
+            subsections:
+            - Creating Graphs of Proportional Relationships
+            - Interpreting Graphs of Proportional Relationships
+    - 'Functions & Sequences: A Deep Dive':
+        sections:
+        - Math Patterns:
+            subsections:
+            - Identifying Patterns
+            - Applying Patterns to Solve Problems
+        - Patterns with Variables:
+            subsections:
+            - Understanding Patterns with Variables
+            - Solving Problems with Patterns and Variables
+        - Functions Introduction:
+            subsections:
+            - Understanding Functions
+            - Applying Functions to Solve Problems
+        - Linear Models:
+            subsections:
+            - Understanding Linear Models
+            - Applying Linear Models to Solve Problems
+        - Linear & Nonlinear Functions:
+            subsections:
+            - Understanding Linear and Nonlinear Functions
+            - Comparing Linear and Nonlinear Functions
+    - Exponents, Radicals, & Irrational Numbers Uncovered:
+        sections:
+        - Square Roots & Cube Roots:
+            subsections:
+            - Understanding Square and Cube Roots
+            - Solving Problems with Square and Cube Roots
+        - Irrational Numbers:
+            subsections:
+            - Understanding Irrational Numbers
+            - Working with Irrational Numbers
+        - Exponents with Negative Bases:
+            subsections:
+            - Understanding Exponents with Negative Bases
+            - Solving Problems with Exponents and Negative Bases
+        - Exponent Properties Introduction:
+            subsections:
+            - Understanding Exponent Properties
+            - Applying Exponent Properties to Solve Problems
+        - Negative Exponents:
+            subsections:
+            - Understanding Negative Exponents
+            - Solving Problems with Negative Exponents
+        - Exponent Properties (Integer Exponents):
+            subsections:
+            - Understanding Exponent Properties with Integer Exponents
+            - Solving Problems with Integer Exponents
+    - 'Quadratics: The Next Level':
+        sections:
+        - Equations with Square Roots & Cube Roots:
+            subsections:
+            - Understanding Equations with Square and Cube Roots
+            - Solving Equations with Square and Cube Roots
+        - Combining Like Terms:
+            subsections:
+            - Understanding Like Terms in Quadratics
+            - Simplifying Quadratic Expressions
+        - The Distributive Property & Equivalent Expressions:
+            subsections:
+            - Understanding the Distributive Property in Quadratics
+            - Creating Equivalent Quadratic Expressions
+        - Interpreting Graphs of Functions:
+            subsections:
+            - Understanding Graphs of Quadratic Functions
+            - Interpreting Graphs of Quadratic Functions

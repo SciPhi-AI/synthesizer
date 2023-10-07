@@ -1,0 +1,136 @@
+textbook:
+  Comprehensive Guide to Middle School Biology - "NGSSNEW":
+    chapters:
+    - Cells and Organisms:
+        sections:
+        - Introduction to Cells and Organisms:
+            subsections:
+            - Definition and Importance
+            - Types of Organisms
+        - Cell Parts and Functions:
+            subsections:
+            - Cell Structure
+            - Cell Functions
+            - Types of Cells
+        - Organization in the Human Body:
+            subsections:
+            - Organ Systems
+            - Homeostasis
+            - Human Anatomy
+        - Sensory Processing and the Brain:
+            subsections:
+            - The Nervous System
+            - Sensory Organs
+            - Brain Functions
+    - Organism Growth and Reproduction:
+        sections:
+        - Sexual and Asexual Reproduction:
+            subsections:
+            - Differences and Similarities
+            - Advantages and Disadvantages
+        - Animal Behavior and Offspring Success:
+            subsections:
+            - Animal Behavior Patterns
+            - Impact on Offspring Success
+        - Plant Reproductive Success:
+            subsections:
+            - Plant Reproduction Methods
+            - Factors Affecting Reproductive Success
+        - Organism Growth and the Environment:
+            subsections:
+            - Environmental Factors
+            - Impact on Organism Growth
+    - Matter and Energy in Organisms:
+        sections:
+        - Photosynthesis in Organisms:
+            subsections:
+            - Process of Photosynthesis
+            - Importance of Photosynthesis
+        - Food and Energy in Organisms:
+            subsections:
+            - Nutrition and Diet
+            - Energy Production
+    - Interactions in Ecosystems:
+        sections:
+        - Resources and Population Growth:
+            subsections:
+            - Resource Availability
+            - Population Dynamics
+        - Ecological Interactions:
+            subsections:
+            - Types of Interactions
+            - Impact on Ecosystems
+    - Matter and Energy in Ecosystems:
+        sections:
+        - Photosynthesis in Ecosystems:
+            subsections:
+            - Role of Photosynthesis
+            - Impact on Ecosystems
+        - Matter and Energy in Foodwebs:
+            subsections:
+            - Understanding Foodwebs
+            - Energy Flow in Ecosystems
+    - Ecosystems and Biodiversity:
+        sections:
+        - Ecosystem Dynamics:
+            subsections:
+            - Ecosystem Components
+            - Ecosystem Changes
+        - Biodiversity and Ecosystem Health:
+            subsections:
+            - Importance of Biodiversity
+            - Threats to Biodiversity
+        - Humans and Ecosystems:
+            subsections:
+            - Human Impact on Ecosystems
+            - Conservation Efforts
+    - Inheritance and Variation:
+        sections:
+        - Chromosomes:
+            subsections:
+            - Structure and Function
+            - Chromosomal Disorders
+        - Genes, Proteins, and Traits:
+            subsections:
+            - Genetic Code
+            - Protein Synthesis
+        - Mutations:
+            subsections:
+            - Types of Mutations
+            - Impact on Organisms
+        - Reproduction and Genetic Variation:
+            subsections:
+            - Genetic Diversity
+            - Role in Evolution
+    - Evolution:
+        sections:
+        - Evolution and Common Ancestry:
+            subsections:
+            - Theory of Evolution
+            - Evidence of Common Ancestry
+        - The Fossil Record:
+            subsections:
+            - Fossil Formation
+            - Fossils as Evidence of Evolution
+        - 'Evidence of Evolution: Anatomy':
+            subsections:
+            - Comparative Anatomy
+            - Vestigial Structures
+        - 'Evidence of Evolution: Embryology':
+            subsections:
+            - Embryonic Development
+            - Embryology as Evidence of Evolution
+    - Natural and Artificial Selection:
+        sections:
+        - Natural Selection:
+            subsections:
+            - Principles of Natural Selection
+            - Examples of Natural Selection
+        - Adaptation and Environmental Change:
+            subsections:
+            - Types of Adaptations
+            - Impact of Environmental Change
+        - Artificial Selection:
+            subsections:
+            - Principles of Artificial Selection
+            - Examples and Implications

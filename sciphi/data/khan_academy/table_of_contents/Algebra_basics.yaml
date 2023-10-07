@@ -1,0 +1,283 @@
+textbook:
+  'Mastering Algebra: A Comprehensive Guide:':
+    chapters:
+    - Foundations of Algebra:
+        sections:
+        - Understanding Absolute Value:
+            subsections:
+            - Definition and Properties
+            - Absolute Value Equations
+            - Real World Applications
+        - Exploring Exponents:
+            subsections:
+            - Definition and Properties
+            - Exponent Rules
+            - Exponential Equations
+        - Delving into Square Roots:
+            subsections:
+            - Definition and Properties
+            - Simplifying Square Roots
+            - Square Root Equations
+        - Mastering the Order of Operations:
+            subsections:
+            - Definition and Importance
+            - PEMDAS/BODMAS Rule
+            - Practice Problems
+        - Fractions Uncovered:
+            subsections:
+            - Basic Operations
+            - Simplifying Fractions
+            - Fraction Word Problems
+        - Decimals, Fractions, and Percentages:
+            subsections:
+            - Conversions
+            - Operations
+            - Real World Applications
+        - Operations with Decimals:
+            subsections:
+            - Addition and Subtraction
+            - Multiplication and Division
+            - Decimal Word Problems
+        - Area of Triangles:
+            subsections:
+            - Formula and Calculation
+            - Practice Problems
+            - Real World Applications
+        - Circumference and Area of Circles:
+            subsections:
+            - Formula and Calculation
+            - Practice Problems
+            - Real World Applications
+    - Algebraic Expressions:
+        sections:
+        - Introduction to Variables:
+            subsections:
+            - Definition and Use
+            - Variable Expressions
+            - Variable Word Problems
+        - Substitution & Evaluating Expressions:
+            subsections:
+            - Substitution Method
+            - Evaluating Expressions
+            - Practice Problems
+        - Writing Algebraic Expressions:
+            subsections:
+            - Translating Words into Algebra
+            - Practice Problems
+            - Real World Applications
+        - Combining Like Terms:
+            subsections:
+            - Definition and Rules
+            - Practice Problems
+            - Real World Applications
+        - Understanding the Distributive Property:
+            subsections:
+            - Definition and Rules
+            - Practice Problems
+            - Real World Applications
+        - Equivalent Algebraic Expressions:
+            subsections:
+            - Definition and Properties
+            - Practice Problems
+            - Real World Applications
+        - Nested Fractions:
+            subsections:
+            - Simplifying Nested Fractions
+            - Practice Problems
+            - Real World Applications
+    - Linear Equations and Inequalities:
+        sections:
+        - One-step Equations:
+            subsections:
+            - Definition and Solution
+            - Practice Problems
+            - Real World Applications
+        - Two-steps Equations:
+            subsections:
+            - Definition and Solution
+            - Practice Problems
+            - Real World Applications
+        - Multi-step Equations:
+            subsections:
+            - Definition and Solution
+            - Practice Problems
+            - Real World Applications
+        - One-step Inequalities:
+            subsections:
+            - Definition and Solution
+            - Practice Problems
+            - Real World Applications
+        - Two-step Inequalities:
+            subsections:
+            - Definition and Solution
+            - Practice Problems
+            - Real World Applications
+        - Multi-step Inequalities:
+            subsections:
+            - Definition and Solution
+            - Practice Problems
+            - Real World Applications
+        - Writing & Solving Proportions:
+            subsections:
+            - Definition and Solution
+            - Practice Problems
+            - Real World Applications
+    - Graphing Lines and Slope:
+        sections:
+        - Understanding the Coordinate Plane:
+            subsections:
+            - Definition and Properties
+            - Plotting Points
+            - Real World Applications
+        - Solutions to Two-variable Linear Equations:
+            subsections:
+            - Graphical Solution
+            - Algebraic Solution
+            - Real World Applications
+        - x-intercepts and y-intercepts:
+            subsections:
+            - Definition and Calculation
+            - Practice Problems
+            - Real World Applications
+        - The Concept of Slope:
+            subsections:
+            - Definition and Calculation
+            - Slope of a Line
+            - Real World Applications
+        - Horizontal & Vertical Lines:
+            subsections:
+            - Definition and Properties
+            - Practice Problems
+            - Real World Applications
+        - Slope-intercept Form Intro:
+            subsections:
+            - Definition and Properties
+            - Writing Equations in Slope-intercept Form
+            - Real World Applications
+        - Writing Slope-intercept Equations:
+            subsections:
+            - From Two Points
+            - From a Graph
+            - Real World Applications
+        - Graphing Two-variable Inequalities:
+            subsections:
+            - Definition and Properties
+            - Practice Problems
+            - Real World Applications
+    - Systems of Equations:
+        sections:
+        - Systems of Equations Intro:
+            subsections:
+            - Definition and Properties
+            - Graphical Solution
+            - Real World Applications
+        - Elimination Method for Systems of Equations:
+            subsections:
+            - Definition and Procedure
+            - Practice Problems
+            - Real World Applications
+        - Substitution Method for Systems of Equations:
+            subsections:
+            - Definition and Procedure
+            - Practice Problems
+            - Real World Applications
+        - Number of Solutions to Systems of Equations:
+            subsections:
+            - One Solution, No Solution, Infinite Solutions
+            - Practice Problems
+            - Real World Applications
+    - Expressions with Exponents:
+        sections:
+        - Exponent Properties Intro:
+            subsections:
+            - Definition and Properties
+            - Practice Problems
+            - Real World Applications
+        - Negative Exponents:
+            subsections:
+            - Definition and Properties
+            - Practice Problems
+            - Real World Applications
+        - Exponent Properties (Integer Exponents):
+            subsections:
+            - Definition and Properties
+            - Practice Problems
+            - Real World Applications
+        - Scientific Notation Intro:
+            subsections:
+            - Definition and Properties
+            - Converting to and from Scientific Notation
+            - Real World Applications
+        - Scientific Notation Word Problems:
+            subsections:
+            - Practice Problems
+            - Real World Applications
+    - Quadratics and Polynomials:
+        sections:
+        - Adding & Subtracting Polynomials:
+            subsections:
+            - Definition and Procedure
+            - Practice Problems
+            - Real World Applications
+        - Multiplying Binomials:
+            subsections:
+            - Definition and Procedure
+            - Practice Problems
+            - Real World Applications
+        - Special Products of Binomials:
+            subsections:
+            - Definition and Procedure
+            - Practice Problems
+            - Real World Applications
+        - Factoring Polynomials by Taking Common Factors:
+            subsections:
+            - Definition and Procedure
+            - Practice Problems
+            - Real World Applications
+        - Factoring Quadratics 1:
+            subsections:
+            - Definition and Procedure
+            - Practice Problems
+            - Real World Applications
+        - Factoring Quadratics 2:
+            subsections:
+            - Definition and Procedure
+            - Practice Problems
+            - Real World Applications
+        - 'Factoring Quadratics: Difference of Squares':
+            subsections:
+            - Definition and Procedure
+            - Practice Problems
+            - Real World Applications
+        - 'Factoring Quadratics: Perfect Squares':
+            subsections:
+            - Definition and Procedure
+            - Practice Problems
+            - Real World Applications
+        - Solving Quadratic Equations by Factoring:
+            subsections:
+            - Definition and Procedure
+            - Practice Problems
+            - Real World Applications
+    - Equations and Geometry:
+        sections:
+        - Equations & Geometry:
+            subsections:
+            - Using Equations in Geometry
+            - Practice Problems
+            - Real World Applications
+        - Triangle Angles:
+            subsections:
+            - Definition and Properties
+            - Practice Problems
+            - Real World Applications
+        - Pythagorean Theorem:
+            subsections:
+            - Definition and Proof
+            - Practice Problems
+            - Real World Applications
+        - Triangle Similarity Intro:
+            subsections:
+            - Definition and Properties
+            - Practice Problems
+            - Real World Applications

@@ -1,0 +1,117 @@
+textbook:
+  'Mastering Physics: A Comprehensive Guide to NGSS High School Physics:':
+    chapters:
+    - Understanding Forces and Motion:
+        sections:
+        - The Concept of Force, Mass, and Acceleration:
+            subsections:
+            - Defining Force
+            - Understanding Mass
+            - The Relationship between Force and Acceleration
+        - A Basic Introduction to Momentum:
+            subsections:
+            - Defining Momentum
+            - Conservation of Momentum
+            - Real-world Applications of Momentum
+    - Exploring Types of Interactions:
+        sections:
+        - Newton's Law of Universal Gravitation:
+            subsections:
+            - The History of Newton's Law
+            - The Mathematics of Gravitation
+            - Gravitation in the Universe
+        - Understanding Coulomb's Law:
+            subsections:
+            - The Basics of Coulomb's Law
+            - Coulomb's Law in Electricity
+            - Coulomb's Law in Magnetism
+        - Electric and Magnetic Fields:
+            subsections:
+            - Defining Electric Fields
+            - Understanding Magnetic Fields
+            - The Interplay between Electric and Magnetic Fields
+    - An Introduction to Energy:
+        sections:
+        - Understanding the Concept of Energy:
+            subsections:
+            - Defining Energy
+            - The Law of Conservation of Energy
+            - Energy Transfer and Transformation
+        - Exploring the Different Forms of Energy:
+            subsections:
+            - Kinetic Energy
+            - Potential Energy
+            - Thermal Energy
+            - Chemical Energy
+        - Energy and Fields:
+            subsections:
+            - Energy in Electric Fields
+            - Energy in Magnetic Fields
+            - Energy in Gravitational Fields
+        - Energy at the Microscopic Scale:
+            subsections:
+            - Quantum Energy
+            - Energy in Atoms
+            - Energy in Molecules
+    - Modeling Energy:
+        sections:
+        - Calculating Energy:
+            subsections:
+            - Energy Formulas
+            - Energy Calculations in Practice
+            - Energy Units
+        - Energy in Systems:
+            subsections:
+            - System and Surroundings
+            - Energy Transfer in Systems
+            - Energy Efficiency in Systems
+        - Making Predictions using Energy:
+            subsections:
+            - Predictive Models in Physics
+            - Energy Predictions in Real-world Scenarios
+        - Thermodynamics:
+            subsections:
+            - The Laws of Thermodynamics
+            - Thermodynamic Systems
+            - Thermodynamics in Everyday Life
+    - Wave Properties:
+        sections:
+        - Understanding Waves:
+            subsections:
+            - Defining Waves
+            - Types of Waves
+            - Wave Properties
+        - Wave Interference:
+            subsections:
+            - The Principle of Superposition
+            - Constructive and Destructive Interference
+            - Applications of Wave Interference
+    - Electromagnetic Radiation:
+        sections:
+        - Wave–Particle Duality:
+            subsections:
+            - The Dual Nature of Light
+            - The Photoelectric Effect
+            - Quantum Mechanics and Wave-Particle Duality
+        - Electromagnetic Radiation and Matter:
+            subsections:
+            - Absorption and Emission of Radiation
+            - The Electromagnetic Spectrum
+            - Radiation and Human Health
+        - Emission of Electromagnetic Radiation:
+            subsections:
+            - Sources of Electromagnetic Radiation
+            - The Sun as a Source of Electromagnetic Radiation
+            - Man-made Sources of Electromagnetic Radiation
+    - Information Technologies:
+        sections:
+        - Information in Waves:
+            subsections:
+            - Encoding Information in Waves
+            - Transmitting and Receiving Information
+            - Digital vs Analog Signals
+        - Technology and Waves:
+            subsections:
+            - Waves in Telecommunication
+            - Waves in Medical Technology
+            - Waves in Entertainment Technology

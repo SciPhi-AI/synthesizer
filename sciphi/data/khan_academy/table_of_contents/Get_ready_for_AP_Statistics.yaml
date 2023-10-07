@@ -1,0 +1,97 @@
+textbook:
+  'Mastering AP® Statistics: A Comprehensive Guide:':
+    chapters:
+    - Understanding and Analyzing Categorical Data:
+        sections:
+        - The Importance of Frequency Tables:
+            subsections:
+            - Constructing Frequency Tables
+            - Interpreting Frequency Tables
+        - Visualizing Data with Bar Graphs:
+            subsections:
+            - Creating Bar Graphs
+            - Analyzing Bar Graphs
+        - Mastering Fractions, Decimals, and Percentages:
+            subsections:
+            - Conversion Techniques
+            - Practical Applications
+    - Delving into One-variable Quantitative Data:
+        sections:
+        - 'Frequency Tables and Dot Plots: A Comparative Study':
+            subsections:
+            - Building Dot Plots
+            - Analyzing Dot Plots
+        - Understanding Box and Whisker Plots:
+            subsections:
+            - Constructing Box and Whisker Plots
+            - Interpreting Box and Whisker Plots
+        - 'Comparing Data Displays: A Practical Approach':
+            subsections:
+            - Choosing the Right Data Display
+            - Comparative Analysis Techniques
+        - 'Mean, Median, and Mode: The Pillars of Central Tendency':
+            subsections:
+            - Calculating Mean, Median, and Mode
+            - Understanding Their Implications
+        - 'Mean Absolute Deviation: A Key Measure of Variability':
+            subsections:
+            - Calculating Mean Absolute Deviation
+            - Interpreting Mean Absolute Deviation
+        - Linear Equations with Variables on Both Sides:
+            subsections:
+            - Solving Linear Equations
+            - Practical Applications of Linear Equations
+        - Linear Equations with Unknown Coefficients:
+            subsections:
+            - Techniques for Solving Unknown Coefficients
+            - Real-world Applications
+    - Exploring Two-variable Quantitative Data:
+        sections:
+        - Introduction to Scatter Plots:
+            subsections:
+            - Creating Scatter Plots
+            - Analyzing Scatter Plots
+        - Estimating with Trend Lines:
+            subsections:
+            - Drawing Trend Lines
+            - Using Trend Lines for Estimation
+        - 'Logarithms: A Powerful Mathematical Tool':
+            subsections:
+            - Understanding Logarithms
+            - Applying Logarithms
+    - 'Probability: The Science of Uncertainty':
+        sections:
+        - 'Fractions, Decimals, and Percentages: A Review':
+            subsections:
+            - Converting Between Fractions, Decimals, and Percentages
+            - Using Fractions, Decimals, and Percentages in Probability
+        - Comparing Decimals and Fractions:
+            subsections:
+            - Techniques for Comparison
+            - Practical Applications
+        - Arithmetic with Fractions:
+            subsections:
+            - Basic Operations
+            - Complex Calculations
+        - Probability Introduction:
+            subsections:
+            - Understanding Probability
+            - Calculating Simple Probabilities
+        - 'Experimental Probability: A Hands-on Approach':
+            subsections:
+            - Designing Experiments
+            - Analyzing Experimental Results
+    - 'Random Variables and Probability Distributions: Predicting the Unpredictable':
+        sections:
+        - Predictions with Probability:
+            subsections:
+            - Understanding Predictive Probability
+            - Applying Predictive Probability
+        - 'The Counting Principle: A Fundamental Concept':
+            subsections:
+            - Understanding the Counting Principle
+            - Applying the Counting Principle
+        - Probability Distributions Introduction:
+            subsections:
+            - Understanding Probability Distributions
+            - Using Probability Distributions

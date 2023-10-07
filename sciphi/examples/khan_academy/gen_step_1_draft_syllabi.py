@@ -44,28 +44,31 @@ import logging
 import os
 from glob import glob
 from typing import Optional, Set
+import re
 
 import fire
 import yaml
 
 from sciphi.examples.helpers import get_default_settings_provider
-from sciphi.examples.library_of_phi.prompts import SYLLABI_CREATION_PROMPT
+from sciphi.examples.khan_academy.prompts import SYLLABI_CREATION_PROMPT
+
+from sciphi.examples.helpers import (
+    prase_yaml_completion,
+    save_yaml,
+)
 
 
 def extract_data_from_record(record: dict[str, str]) -> tuple[dict, str]:
     """Extract and organize data from a given record."""
-    context += f"### Course Name:\n{record['course_title']}\n"
+    context = f"### Course Name:\n{record['course_title'].replace(':', '')}\n"
     topics = {}
-    page_contents = record["page_contents"]
+    page_contents = record["page_contents"]["syllabus"]
 
-    for key in page_contents.keys():
-        page = page_contents[key]
-        context += f"## Page:\n{key}\n"
-        if key != "syllabus":
-            context += f"Text:\n{page['leading_text'][:500]}\n"
-        else:
-            topics = page["topics"]
-        table = "\n".join([ele["topic"] for ele in page["table_rows"]])
+    for topic in page_contents["topics"]:
+        context += f"## Page:\n{topic}\n"
+        topics[topic] = "\n".join(page_contents["topics"][topic])
+
+        table = "\n".join(page_contents["topics"][topic])
         context += f"Information:\n{table}\n"
 
     return topics, context
@@ -155,47 +158,43 @@ class DraftSyllabiYAMLRunner:
             for line in file:
                 try:
                     record = json.loads(line)
-                    topics, context = extract_data_from_record(record)
-                    mapped_topics = get_mapped_topics(topics)
 
-                    if len(mapped_topics) != 3:
-                        continue
+                    # Don't use the topics in KA, and all the context is in the string
+                    _, context = extract_data_from_record(record)
 
-                    category = (
-                        mapped_topics["category"].lower().replace(" ", "_")
-                    )
-                    field = mapped_topics["field"].lower().replace(" ", "_")
-                    subfield = (
-                        mapped_topics["subfield"].lower().replace(" ", "_")
-                    )
                     course_name = record["course_title"]
 
-                    dump_name = f"field_{field}_subfield_{subfield}_course_name_{course_name.replace(' ','_')}"
-                    observed_files = get_observed_files(output_dir)
+                    # Replace all non-alphanumeric characters with underscores
+                    dump_name = re.sub(
+                        r"\W+", "", course_name.replace(" ", "_")
+                    )
 
-                    if dump_name in observed_files:
-                        logging.info(f"Skipping output file {dump_name}....")
+                    if os.path.exists(
+                        os.path.join(output_dir, f"{dump_name}.yaml")
+                    ):
+                        logging.warn(
+                            f"Skipping {dump_name} because it was already created..."
+                        )
                         continue
 
-                    logging.info(f"Saving output file named {dump_name}.")
                     formatted_prompt = self.prompt.format(
-                        course_name=course_name, context=context
+                        course_name=course_name,
+                        context=context,
                     )
+
                     completion = llm_provider.get_completion(formatted_prompt)
+
                     data_to_save = {
                         "completion": completion,
-                        "discipline": category,
-                        "resource_level": record["resource_level"],
-                        "field": field,
-                        "subfield": subfield,
                         "course_name": course_name,
                     }
 
-                    with open(
+                    yaml_completion = prase_yaml_completion(data_to_save)
+                    yml_load = yaml.safe_load(yaml_completion)
+                    save_yaml(
+                        yml_load,
                         os.path.join(output_dir, f"{dump_name}.yaml"),
-                        "w",
-                    ) as f:
-                        yaml.dump(data_to_save, f, default_flow_style=False)
+                    )
 
                 except Exception as e:
                     logging.error(

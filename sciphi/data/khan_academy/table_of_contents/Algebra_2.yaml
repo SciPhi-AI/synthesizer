@@ -1,0 +1,295 @@
+textbook:
+  'Mastering Algebra 2: A Comprehensive Guide:':
+    chapters:
+    - Polynomial Arithmetic:
+        sections:
+        - Introduction to Polynomials:
+            subsections:
+            - Definition and Types of Polynomials
+            - Degree and Coefficients of Polynomials
+        - Average Rate of Change of Polynomials:
+            subsections:
+            - Concept of Average Rate of Change
+            - Calculating Average Rate of Change
+        - Adding and Subtracting Polynomials:
+            subsections:
+            - Rules for Adding Polynomials
+            - Rules for Subtracting Polynomials
+        - Multiplying Monomials by Polynomials:
+            subsections:
+            - Definition of Monomials
+            - Multiplication Process
+        - Multiplying Binomials by Polynomials:
+            subsections:
+            - Definition of Binomials
+            - The FOIL Method
+        - Special Products of Polynomials:
+            subsections:
+            - Square of a Binomial
+            - Product of Sum and Difference
+    - Complex Numbers:
+        sections:
+        - The Imaginary Unit i:
+            subsections:
+            - Definition and Properties of i
+            - Powers of i
+        - Complex Numbers Introduction:
+            subsections:
+            - Definition of Complex Numbers
+            - Real and Imaginary Parts
+        - The Complex Plane:
+            subsections:
+            - Plotting Complex Numbers
+            - Modulus and Argument
+        - Adding and Subtracting Complex Numbers:
+            subsections:
+            - Rules for Addition
+            - Rules for Subtraction
+        - Quadratic Equations with Complex Solutions:
+            subsections:
+            - Solving Quadratic Equations
+            - Nature of Roots
+    - Polynomial Factorization:
+        sections:
+        - Factoring Monomials:
+            subsections:
+            - Common Factors
+            - Factoring Process
+        - Greatest Common Factor:
+            subsections:
+            - Finding the GCF
+            - Factoring using GCF
+        - Taking Common Factors:
+            subsections:
+            - Identifying Common Factors
+            - Factoring by Grouping
+        - Factoring Higher Degree Polynomials:
+            subsections:
+            - Synthetic Division
+            - Rational Root Theorem
+        - Factoring using Structure:
+            subsections:
+            - Recognizing Patterns
+            - Factoring by Parts
+        - Polynomial Identities:
+            subsections:
+            - Binomial Theorem
+            - Sum and Difference of Cubes
+        - Geometric Series:
+            subsections:
+            - Definition and Formula
+            - Applications of Geometric Series
+    - Polynomial Division:
+        sections:
+        - Dividing Polynomials by x:
+            subsections:
+            - Long Division Method
+            - Synthetic Division Method
+        - Dividing Quadratics by Linear Factors:
+            subsections:
+            - Factorization Method
+            - Division Algorithm
+        - Dividing Polynomials by Linear Factors:
+            subsections:
+            - Long Division Method
+            - Synthetic Division Method
+        - Polynomial Remainder Theorem:
+            subsections:
+            - Statement of the Theorem
+            - Applications of the Theorem
+    - Polynomial Graphs:
+        sections:
+        - Zeros of Polynomials:
+            subsections:
+            - Definition and Importance
+            - Finding Zeros of Polynomials
+        - Positive and Negative Intervals of Polynomials:
+            subsections:
+            - Sign Chart Method
+            - Interval Test
+        - End Behavior of Polynomials:
+            subsections:
+            - Definition and Importance
+            - Determining End Behavior
+    - Rational Exponents and Radicals:
+        sections:
+        - Rational Exponents:
+            subsections:
+            - Definition and Properties
+            - Simplifying Expressions
+        - Properties of Exponents (Rational Exponents):
+            subsections:
+            - Product Rule
+            - Quotient Rule
+        - Evaluating Exponents & Radicals:
+            subsections:
+            - Simplifying Radicals
+            - Rationalizing Denominators
+        - Equivalent Forms of Exponential Expressions:
+            subsections:
+            - Converting Between Forms
+            - Simplifying Expressions
+        - Solving Exponential Equations using Properties of Exponents:
+            subsections:
+            - Isolating the Exponent
+            - Logarithmic Method
+    - Exponential Models:
+        sections:
+        - Interpreting the Rate of Change of Exponential Models:
+            subsections:
+            - Understanding Rate of Change
+            - Applying Rate of Change
+        - Constructing Exponential Models according to Rate of Change:
+            subsections:
+            - Building Models
+            - Predicting Outcomes
+        - Advanced Interpretation of Exponential Models:
+            subsections:
+            - Analyzing Models
+            - Making Predictions
+    - Logarithms:
+        sections:
+        - Introduction to Logarithms:
+            subsections:
+            - Definition and Properties
+            - Common and Natural Logarithms
+        - The Constant e and the Natural Logarithm:
+            subsections:
+            - Definition of e
+            - Properties of Natural Logarithms
+        - Properties of Logarithms:
+            subsections:
+            - Product Rule
+            - Quotient Rule
+        - The Change of Base Formula for Logarithms:
+            subsections:
+            - Statement of the Formula
+            - Applications of the Formula
+        - Solving Exponential Equations with Logarithms:
+            subsections:
+            - Logarithmic Method
+            - Exponential Method
+        - Solving Exponential Models:
+            subsections:
+            - Building Models
+            - Solving for Variables
+    - Transformations of Functions:
+        sections:
+        - Shifting Functions:
+            subsections:
+            - Horizontal Shifts
+            - Vertical Shifts
+        - Reflecting Functions:
+            subsections:
+            - Reflection about the x-axis
+            - Reflection about the y-axis
+        - Symmetry of Functions:
+            subsections:
+            - Even and Odd Functions
+            - Testing for Symmetry
+        - Scaling Functions:
+            subsections:
+            - Vertical Scaling
+            - Horizontal Scaling
+        - Putting it all Together:
+            subsections:
+            - Combining Transformations
+            - Order of Transformations
+        - Graphs of Square and Cube Root Functions:
+            subsections:
+            - Graphing Square Root Functions
+            - Graphing Cube Root Functions
+        - Graphs of Exponential Functions:
+            subsections:
+            - Basic Shape and Shifts
+            - Reflections and Stretches
+        - Graphs of Logarithmic Functions:
+            subsections:
+            - Basic Shape and Shifts
+            - Reflections and Stretches
+    - Equations:
+        sections:
+        - Rational Equations:
+            subsections:
+            - Solving by Cross Multiplication
+            - Solving by Factoring
+        - Square-root Equations:
+            subsections:
+            - Isolating the Square Root
+            - Squaring Both Sides
+        - Extraneous Solutions:
+            subsections:
+            - Definition and Causes
+            - Checking for Extraneous Solutions
+        - Cube-root Equations:
+            subsections:
+            - Isolating the Cube Root
+            - Cubing Both Sides
+        - Quadratic Systems:
+            subsections:
+            - Solving by Substitution
+            - Solving by Elimination
+        - Solving Equations by Graphing:
+            subsections:
+            - Graphical Method
+            - Intersection of Graphs
+    - Trigonometry:
+        sections:
+        - Unit Circle Introduction:
+            subsections:
+            - Definition and Importance
+            - Trigonometric Functions on the Unit Circle
+        - Radians:
+            subsections:
+            - Definition and Conversion
+            - Arc Length and Area of a Sector
+        - The Pythagorean Identity:
+            subsections:
+            - Derivation of the Identity
+            - Applications of the Identity
+        - Trigonometric Values of Special Angles:
+            subsections:
+            - 30, 45, and 60 Degrees
+            - Other Special Angles
+        - Graphs of sin(x), cos(x), and tan(x):
+            subsections:
+            - Basic Shapes and Shifts
+            - Amplitude and Period
+        - Amplitude, Midline and Period:
+            subsections:
+            - Definition and Calculation
+            - Effects on the Graph
+        - Transforming Sinusoidal Graphs:
+            subsections:
+            - Vertical and Horizontal Shifts
+            - Reflections and Stretches
+        - Graphing Sinusoidal Functions:
+            subsections:
+            - Basic Shape and Shifts
+            - Amplitude and Period
+        - Sinusoidal Models:
+            subsections:
+            - Building Models
+            - Analyzing Models
+    - Modeling:
+        sections:
+        - Modeling with Function Combination:
+            subsections:
+            - Combining Functions
+            - Applications in Real Life
+        - Interpreting Features of Functions:
+            subsections:
+            - Domain and Range
+            - Intercepts and Asymptotes
+        - Manipulating Formulas:
+            subsections:
+            - Algebraic Manipulation
+            - Solving for a Variable
+        - Modeling with Two Variables:
+            subsections:
+            - Building Models
+            - Analyzing Models
+        - Modeling with Multiple Variables:
+            subsections:
+            - Multivariable Functions
+            - Partial Derivatives

@@ -1,0 +1,186 @@
+textbook:
+  'Comprehensive Guide to High School Biology:':
+    chapters:
+    - Introduction to Biology:
+        sections:
+        - The Science of Life
+        - The Nature of Science
+        - The Methods of Biology
+    - Biology foundations:
+        sections:
+        - Biology and the scientific method:
+            subsections:
+            - The Scientific Method in Action
+            - Designing an Experiment
+        - Important molecules for biology:
+            subsections:
+            - The Chemistry of Life
+            - Organic Compounds
+        - Water and life:
+            subsections:
+            - The Properties of Water
+            - Water's Role in Life Processes
+        - pH, acids, and bases:
+            subsections:
+            - Understanding pH
+            - The Role of Acids and Bases in Biology
+    - Cells:
+        sections:
+        - Introduction to cells:
+            subsections:
+            - The Discovery of Cells
+            - Cell Theory
+        - Basic cell structures:
+            subsections:
+            - Cell Organelles
+            - The Cell Wall and Cell Membrane
+        - The cell membrane:
+            subsections:
+            - Structure of the Cell Membrane
+            - Functions of the Cell Membrane
+        - Eukaryotic cell structures:
+            subsections:
+            - Comparing Eukaryotic and Prokaryotic Cells
+            - The Nucleus and Endoplasmic Reticulum
+        - Prokaryotes and eukaryotes:
+            subsections:
+            - Characteristics of Prokaryotes
+            - Characteristics of Eukaryotes
+        - Plant vs animal cells:
+            subsections:
+            - Comparing Plant and Animal Cells
+            - Unique Structures in Plant Cells
+    - Energy and transport:
+        sections:
+        - Introduction to metabolism:
+            subsections:
+            - Understanding Metabolism
+            - Anabolism and Catabolism
+        - Enzymes:
+            subsections:
+            - The Role of Enzymes in Metabolism
+            - Factors Affecting Enzyme Activity
+        - Passive and active transport:
+            subsections:
+            - Understanding Passive Transport
+            - Understanding Active Transport
+        - Osmosis and tonicity:
+            subsections:
+            - The Process of Osmosis
+            - Hypotonic, Hypertonic, and Isotonic Solutions
+        - Photosynthesis:
+            subsections:
+            - The Process of Photosynthesis
+            - The Light-Dependent and Light-Independent Reactions
+        - Cellular respiration:
+            subsections:
+            - The Process of Cellular Respiration
+            - Glycolysis, the Krebs Cycle, and the Electron Transport Chain
+    - Reproduction and cell division:
+        sections:
+        - Types of reproduction:
+            subsections:
+            - Asexual vs Sexual Reproduction
+            - Binary Fission, Budding, and Spore Formation
+        - The cell cycle and mitosis:
+            subsections:
+            - The Stages of the Cell Cycle
+            - The Process of Mitosis
+        - Meiosis:
+            subsections:
+            - The Process of Meiosis
+            - Comparing Mitosis and Meiosis
+        - Fertilization and development:
+            subsections:
+            - The Process of Fertilization
+            - Early Development and Embryology
+    - Classical genetics:
+        sections:
+        - Introduction to heredity:
+            subsections:
+            - Understanding Heredity
+            - Mendel's Laws of Heredity
+        - Non-Mendelian inheritance:
+            subsections:
+            - Incomplete Dominance and Codominance
+            - Multiple Alleles and Polygenic Traits
+        - Sex linkage:
+            subsections:
+            - Understanding Sex-Linked Traits
+            - Examples of Sex-Linked Disorders
+        - Pedigrees:
+            subsections:
+            - Reading and Interpreting Pedigree Charts
+            - Using Pedigrees in Genetic Counseling
+    - Molecular genetics:
+        sections:
+        - RNA and protein synthesis:
+            subsections:
+            - The Process of Transcription
+            - The Process of Translation
+        - Biotechnology:
+            subsections:
+            - The Tools of Biotechnology
+            - Applications of Biotechnology in Medicine and Agriculture
+    - Evolution:
+        sections:
+        - Evolution and natural selection:
+            subsections:
+            - Darwin's Theory of Natural Selection
+            - Evidence for Evolution
+        - Evidence of evolution:
+            subsections:
+            - Fossil Evidence
+            - Genetic Evidence
+        - Phylogeny:
+            subsections:
+            - Understanding Phylogenetic Trees
+            - The Six Kingdoms of Life
+    - Human body systems:
+        sections:
+        - Body structure and homeostasis:
+            subsections:
+            - The Levels of Organization in the Body
+            - The Role of Homeostasis in the Body
+        - The circulatory and respiratory systems:
+            subsections:
+            - The Structure and Function of the Heart
+            - The Structure and Function of the Lungs
+        - The musculoskeletal system:
+            subsections:
+            - The Structure and Function of the Skeleton
+            - The Structure and Function of Muscles
+        - The digestive and excretory systems:
+            subsections:
+            - The Structure and Function of the Digestive System
+            - The Structure and Function of the Excretory System
+        - The nervous and endocrine systems:
+            subsections:
+            - The Structure and Function of the Nervous System
+            - The Structure and Function of the Endocrine System
+        - The reproductive system:
+            subsections:
+            - The Structure and Function of the Male Reproductive System
+            - The Structure and Function of the Female Reproductive System
+        - The immune system:
+            subsections:
+            - The Structure and Function of the Immune System
+            - The Body's Defenses Against Pathogens
+    - Ecology:
+        sections:
+        - Ecological relationships:
+            subsections:
+            - Understanding Ecological Relationships
+            - Symbiosis, Predation, and Competition
+        - Trophic levels:
+            subsections:
+            - Understanding Trophic Levels
+            - Food Chains and Food Webs
+        - Biogeochemical cycles:
+            subsections:
+            - The Water Cycle
+            - The Carbon Cycle
+        - Human impact on ecosystems:
+            subsections:
+            - Human Impact on Biodiversity
+            - Climate Change and Ecosystems

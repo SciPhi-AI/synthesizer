@@ -1,0 +1,238 @@
+textbook:
+  'Mastering 4th Grade Mathematics:':
+    chapters:
+    - Understanding Place Value:
+        sections:
+        - Exploring Whole Numbers in Expanded Form:
+            subsections:
+            - The Concept of Expanded Form
+            - Practical Examples of Writing Whole Numbers in Expanded Form
+        - Mastering Whole Numbers in Written Form:
+            subsections:
+            - The Basics of Written Form
+            - Practical Examples of Writing Whole Numbers in Written Form
+        - The Art of Regrouping Whole Numbers:
+            subsections:
+            - Understanding Regrouping
+            - Practical Examples of Regrouping Whole Numbers
+        - The Relationship between 10 and Place Value:
+            subsections:
+            - The Importance of 10 in Place Value
+            - Practical Examples of How 10 Relates to Place Value
+        - Comparing Multi-Digit Numbers:
+            subsections:
+            - The Basics of Comparing Numbers
+            - Practical Examples of Comparing Multi-Digit Numbers
+    - Mastering Addition, Subtraction, and Estimation:
+        sections:
+        - Adding Multi-Digit Numbers:
+            subsections:
+            - The Basics of Addition
+            - Practical Examples of Adding Multi-Digit Numbers
+        - Subtracting Multi-Digit Numbers:
+            subsections:
+            - The Basics of Subtraction
+            - Practical Examples of Subtracting Multi-Digit Numbers
+    - Multiplication by 1-Digit Numbers:
+        sections:
+        - Multiplication by 10s, 100s, and 1000s:
+            subsections:
+            - Understanding Multiplication by 10s, 100s, and 1000s
+            - Practical Examples of Multiplication by 10s, 100s, and 1000s
+        - 'Multi-Digit Multiplication: Place Value and Area Models':
+            subsections:
+            - Understanding Place Value and Area Models
+            - Practical Examples of Multi-Digit Multiplication Using Place Value and
+              Area Models
+        - Estimating Products:
+            subsections:
+            - The Basics of Estimation
+            - Practical Examples of Estimating Products
+        - Multiplication with Partial Products:
+            subsections:
+            - Understanding Partial Products
+            - Practical Examples of Multiplication with Partial Products
+    - Multiplication by 2-Digit Numbers:
+        sections:
+        - Multiplying 2-Digit Numbers with Area Models:
+            subsections:
+            - Understanding Area Models
+            - Practical Examples of Multiplying 2-Digit Numbers with Area Models
+        - Estimating Products with 2-Digit Numbers:
+            subsections:
+            - The Basics of Estimation with 2-Digit Numbers
+            - Practical Examples of Estimating Products with 2-Digit Numbers
+        - Multiplying 2-Digit Numbers with Partial Products:
+            subsections:
+            - Understanding Partial Products with 2-Digit Numbers
+            - Practical Examples of Multiplying 2-Digit Numbers with Partial Products
+    - Diving into Division:
+        sections:
+        - Dividing Multiples of 10, 100, and 1,000 by 1-Digit Numbers:
+            subsections:
+            - Understanding Division of Multiples of 10, 100, and 1,000
+            - Practical Examples of Dividing Multiples of 10, 100, and 1,000 by 1-Digit
+              Numbers
+        - Division with Place Value:
+            subsections:
+            - The Basics of Division with Place Value
+            - Practical Examples of Division with Place Value
+        - Division with Area Models:
+            subsections:
+            - Understanding Area Models in Division
+            - Practical Examples of Division with Area Models
+        - Estimating Quotients:
+            subsections:
+            - The Basics of Estimating Quotients
+            - Practical Examples of Estimating Quotients
+        - Multi-Digit Division with Partial Quotients:
+            subsections:
+            - Understanding Partial Quotients
+            - Practical Examples of Multi-Digit Division with Partial Quotients
+        - Multiplication and Division Word Problems:
+            subsections:
+            - Understanding Word Problems
+            - Practical Examples of Multiplication and Division Word Problems
+        - Multi-Step Word Problems:
+            subsections:
+            - The Basics of Multi-Step Word Problems
+            - Practical Examples of Multi-Step Word Problems
+    - Factors, Multiples and Patterns:
+        sections:
+        - Prime and Composite Numbers:
+            subsections:
+            - Understanding Prime and Composite Numbers
+            - Practical Examples of Prime and Composite Numbers
+        - Math Patterns:
+            subsections:
+            - The Basics of Math Patterns
+            - Practical Examples of Math Patterns
+    - Equivalent Fractions and Comparing Fractions:
+        sections:
+        - Common Denominators:
+            subsections:
+            - Understanding Common Denominators
+            - Practical Examples of Common Denominators
+        - Comparing Fractions with Unlike Denominators Visually:
+            subsections:
+            - The Basics of Comparing Fractions Visually
+            - Practical Examples of Comparing Fractions with Unlike Denominators Visually
+    - Adding and Subtracting Fractions:
+        sections:
+        - Adding and Subtracting Fractions with Like Denominators:
+            subsections:
+            - Understanding Addition and Subtraction of Fractions
+            - Practical Examples of Adding and Subtracting Fractions with Like Denominators
+        - 'Adding and Subtracting Fractions: Word Problems':
+            subsections:
+            - Understanding Fraction Word Problems
+            - 'Practical Examples of Adding and Subtracting Fractions: Word Problems'
+        - Mixed Numbers:
+            subsections:
+            - Understanding Mixed Numbers
+            - Practical Examples of Mixed Numbers
+        - Adding and Subtracting Mixed Numbers:
+            subsections:
+            - The Basics of Adding and Subtracting Mixed Numbers
+            - Practical Examples of Adding and Subtracting Mixed Numbers
+        - Adding and Subtracting Mixed Numbers Word Problems:
+            subsections:
+            - Understanding Mixed Numbers Word Problems
+            - Practical Examples of Adding and Subtracting Mixed Numbers Word Problems
+        - Fractions with Denominators of 10 and 100:
+            subsections:
+            - Understanding Fractions with Denominators of 10 and 100
+            - Practical Examples of Fractions with Denominators of 10 and 100
+        - Line Plots with Fractions:
+            subsections:
+            - Understanding Line Plots
+            - Practical Examples of Line Plots with Fractions
+    - Multiplying Fractions:
+        sections:
+        - Multiplying Fractions and Whole Numbers Visually:
+            subsections:
+            - Understanding Visual Multiplication of Fractions and Whole Numbers
+            - Practical Examples of Multiplying Fractions and Whole Numbers Visually
+        - Multiplying Whole Numbers and Fractions:
+            subsections:
+            - The Basics of Multiplying Whole Numbers and Fractions
+            - Practical Examples of Multiplying Whole Numbers and Fractions
+        - Multiplying Whole Numbers and Mixed Numbers:
+            subsections:
+            - Understanding Multiplication of Whole Numbers and Mixed Numbers
+            - Practical Examples of Multiplying Whole Numbers and Mixed Numbers
+        - Multiplying Whole Numbers and Fractions Word Problems:
+            subsections:
+            - Understanding Word Problems Involving Multiplication of Whole Numbers
+              and Fractions
+            - Practical Examples of Multiplying Whole Numbers and Fractions Word Problems
+    - Understanding Decimals:
+        sections:
+        - Decimal Fractions Greater Than 1:
+            subsections:
+            - Understanding Decimal Fractions Greater Than 1
+            - Practical Examples of Decimal Fractions Greater Than 1
+        - Writing Fractions as Decimals:
+            subsections:
+            - The Basics of Writing Fractions as Decimals
+            - Practical Examples of Writing Fractions as Decimals
+        - Decimals in Word Form:
+            subsections:
+            - Understanding Decimals in Word Form
+            - Practical Examples of Decimals in Word Form
+        - Decimals on the Number Line:
+            subsections:
+            - Understanding the Number Line
+            - Practical Examples of Decimals on the Number Line
+        - Regrouping Decimals:
+            subsections:
+            - The Basics of Regrouping Decimals
+            - Practical Examples of Regrouping Decimals
+        - Writing Decimals as Fractions:
+            subsections:
+            - Understanding the Conversion of Decimals to Fractions
+            - Practical Examples of Writing Decimals as Fractions
+        - Common Fractions and Decimals:
+            subsections:
+            - Understanding Common Fractions and Decimals
+            - Practical Examples of Common Fractions and Decimals
+        - Comparing Decimals Visually:
+            subsections:
+            - The Basics of Comparing Decimals Visually
+            - Practical Examples of Comparing Decimals Visually
+        - Comparing Decimals:
+            subsections:
+            - Understanding Decimal Comparison
+            - Practical Examples of Comparing Decimals
+    - Exploring Plane Figures:
+        sections:
+        - Angle Introduction:
+            subsections:
+            - Understanding Angles
+            - Practical Examples of Angles
+        - Parallel and Perpendicular:
+            subsections:
+            - Understanding Parallel and Perpendicular Lines
+            - Practical Examples of Parallel and Perpendicular Lines
+        - Classifying Triangles:
+            subsections:
+            - Understanding Different Types of Triangles
+            - Practical Examples of Classifying Triangles
+        - Classifying Geometric Shapes:
+            subsections:
+            - Understanding Different Geometric Shapes
+            - Practical Examples of Classifying Geometric Shapes
+        - Line of Symmetry:
+            subsections:
+            - Understanding Line of Symmetry
+            - Practical Examples of Line of Symmetry
+    - Measuring Angles:
+        sections:
+        - Measuring Angles:
+            subsections:
+            - Understanding Angle Measurement
+            - Practical Examples of Measuring Angles
+        - Decomposing Angles:
+            subsections:
+            - Understanding Angle Decomposition
+            - Practical Examples of Decomposing Angles

@@ -1,0 +1,256 @@
+textbook:
+  'Mastering Calculus: A Comprehensive Guide to AP®︎/College Calculus AB:':
+    chapters:
+    - Limits and Continuity:
+        sections:
+        - Introduction to Limits:
+            subsections:
+            - Defining limits and using limit notation
+            - Real-life applications of limits
+        - Estimating Limits:
+            subsections:
+            - Estimating limit values from graphs
+            - Estimating limit values from tables
+            - Techniques for estimating limits
+        - Algebraic Properties of Limits:
+            subsections:
+            - Determining limits using algebraic properties of limits
+            - Limit laws and their proofs
+        - The Squeeze Theorem:
+            subsections:
+            - Determining limits using the squeeze theorem
+            - Understanding the squeeze theorem with examples
+        - Discontinuities and their Types:
+            subsections:
+            - Exploring types of discontinuities
+            - Classifying discontinuities
+        - Continuity at a Point:
+            subsections:
+            - Defining continuity at a point
+            - Conditions for continuity at a point
+        - Continuity over an Interval:
+            subsections:
+            - Confirming continuity over an interval
+            - Continuous functions and their properties
+        - Infinite Limits and Asymptotes:
+            subsections:
+            - Connecting infinite limits and vertical asymptotes
+            - Connecting limits at infinity and horizontal asymptotes
+        - The Intermediate Value Theorem:
+            subsections:
+            - Working with the intermediate value theorem
+            - Applications of the intermediate value theorem
+    - 'Differentiation: Definition and Basic Derivative Rules':
+        sections:
+        - Rates of Change:
+            subsections:
+            - Defining average and instantaneous rates of change at a point
+            - Understanding rates of change in real-world scenarios
+        - The Derivative of a Function:
+            subsections:
+            - Defining the derivative of a function and using derivative notation
+            - Graphical interpretation of derivatives
+        - Estimating Derivatives:
+            subsections:
+            - Estimating derivatives of a function at a point
+            - Techniques for estimating derivatives
+        - Power Rule and Basic Derivative Rules:
+            subsections:
+            - Applying the power rule
+            - 'Derivative rules: constant, sum, difference, and constant multiple'
+        - Derivatives of Trigonometric and Logarithmic Functions:
+            subsections:
+            - Derivatives of cos(x), sin(x), \U0001D452ˣ, and ln(x)
+            - Understanding the derivatives of trigonometric and logarithmic functions
+        - The Product and Quotient Rules:
+            subsections:
+            - The product rule
+            - The quotient rule
+        - Derivatives of Other Trigonometric Functions:
+            subsections:
+            - Finding the derivatives of tangent, cotangent, secant, and/or cosecant
+              functions
+            - Applications of derivatives of trigonometric functions
+    - 'Differentiation: Composite, Implicit, and Inverse Functions':
+        sections:
+        - The Chain Rule:
+            subsections:
+            - The chain rule
+            - Applications of the chain rule
+        - Implicit Differentiation:
+            subsections:
+            - Implicit differentiation
+            - Solving problems using implicit differentiation
+        - Differentiating Inverse Functions:
+            subsections:
+            - Differentiating inverse functions
+            - Differentiating inverse trigonometric functions
+        - Procedures for Calculating Derivatives:
+            subsections:
+            - Selecting procedures for calculating derivatives
+            - Advanced techniques for finding derivatives
+        - Higher-Order Derivatives:
+            subsections:
+            - Calculating higher-order derivatives
+            - Applications of higher-order derivatives
+    - Contextual Applications of Differentiation:
+        sections:
+        - Interpreting the Derivative in Context:
+            subsections:
+            - Interpreting the meaning of the derivative in context
+            - Real-world applications of derivatives
+        - Motion Along a Straight Line:
+            subsections:
+            - 'Straight-line motion: connecting position, velocity, and acceleration'
+            - Kinematics and calculus
+        - Rates of Change in Applied Contexts:
+            subsections:
+            - Rates of change in other applied contexts
+            - Understanding rates of change in various fields
+        - Introduction to Related Rates:
+            subsections:
+            - Introduction to related rates
+            - Solving problems involving related rates
+        - Local Linearity and Linearization:
+            subsections:
+            - Approximating values of a function using local linearity and linearization
+            - Understanding the concept of linear approximation
+        - L’Hôpital’s Rule:
+            subsections:
+            - Using L’Hôpital’s rule for finding limits of indeterminate forms
+            - Applications of L’Hôpital’s rule
+    - Applying Derivatives to Analyze Functions:
+        sections:
+        - The Mean Value Theorem:
+            subsections:
+            - Using the mean value theorem
+            - Proving the mean value theorem
+        - Extreme Values and Critical Points:
+            subsections:
+            - Extreme value theorem, global versus local extrema, and critical points
+            - Understanding the concept of extrema
+        - Increasing and Decreasing Functions:
+            subsections:
+            - Determining intervals on which a function is increasing or decreasing
+            - Applications of increasing and decreasing functions
+        - Finding Extrema:
+            subsections:
+            - Using the first derivative test to find relative (local) extrema
+            - Using the candidates test to find absolute (global) extrema
+        - Concavity and Points of Inflection:
+            subsections:
+            - Determining concavity of intervals and finding points of inflection
+            - Understanding concavity and points of inflection
+        - The Second Derivative Test:
+            subsections:
+            - Using the second derivative test to find extrema
+            - Understanding the second derivative test
+        - Sketching Curves:
+            subsections:
+            - Sketching curves of functions and their derivatives
+            - Techniques for sketching curves
+        - Connecting Function and Its Derivatives:
+            subsections:
+            - Connecting a function, its first derivative, and its second derivative
+            - Understanding the relationships between a function and its derivatives
+        - Optimization Problems:
+            subsections:
+            - Solving optimization problems
+            - Applications of optimization
+    - Integration and Accumulation of Change:
+        sections:
+        - Accumulations of Change:
+            subsections:
+            - Exploring accumulations of change
+            - Understanding the concept of accumulation
+        - Riemann Sums and Area Approximation:
+            subsections:
+            - Approximating areas with Riemann sums
+            - Understanding the concept of Riemann sums
+        - The Fundamental Theorem of Calculus:
+            subsections:
+            - The fundamental theorem of calculus and accumulation functions
+            - Proving the fundamental theorem of calculus
+        - Accumulation Functions:
+            subsections:
+            - Interpreting the behavior of accumulation functions involving area
+            - Applications of accumulation functions
+        - Properties of Definite Integrals:
+            subsections:
+            - Applying properties of definite integrals
+            - Understanding the properties of definite integrals
+        - Antiderivatives and Indefinite Integrals:
+            subsections:
+            - 'Finding antiderivatives and indefinite integrals: basic rules and notation'
+            - Understanding the concept of antiderivatives
+        - Techniques of Integration:
+            subsections:
+            - Integrating using substitution
+            - Integrating functions using long division and completing the square
+    - Differential Equations:
+        sections:
+        - Modeling with Differential Equations:
+            subsections:
+            - Modeling situations with differential equations
+            - Real-world applications of differential equations
+        - Verifying Solutions for Differential Equations:
+            subsections:
+            - Verifying solutions for differential equations
+            - Techniques for verifying solutions
+        - Slope Fields:
+            subsections:
+            - Sketching slope fields
+            - Reasoning using slope fields
+        - Separation of Variables:
+            subsections:
+            - Finding general solutions using separation of variables
+            - Understanding the method of separation of variables
+        - Particular Solutions:
+            subsections:
+            - Finding particular solutions using initial conditions and separation
+              of variables
+            - Understanding the concept of particular solutions
+        - Exponential Models:
+            subsections:
+            - Exponential models with differential equations
+            - Applications of exponential models
+    - Applications of Integration:
+        sections:
+        - Average Value of a Function:
+            subsections:
+            - Finding the average value of a function on an interval
+            - Understanding the concept of average value
+        - Connecting Functions Using Integrals:
+            subsections:
+            - Connecting position, velocity, and acceleration functions using integrals
+            - Understanding the integral as an accumulator
+        - Applied Contexts of Accumulation Functions and Definite Integrals:
+            subsections:
+            - Using accumulation functions and definite integrals in applied contexts
+            - Real-world applications of accumulation functions and definite integrals
+        - Area Between Curves:
+            subsections:
+            - Finding the area between curves expressed as functions of x
+            - Finding the area between curves expressed as functions of y
+        - Volumes with Cross Sections:
+            subsections:
+            - 'Volumes with cross sections: squares and rectangles'
+            - 'Volumes with cross sections: triangles and semicircles'
+        - Volume with Disc and Washer Methods:
+            subsections:
+            - 'Volume with disc method: revolving around x- or y-axis'
+            - 'Volume with washer method: revolving around x- or y-axis'
+    - AP Calculus AB Solved Free Response Questions from Past Exams:
+        sections:
+        - AP Calculus AB 2017 Free Response:
+            subsections:
+            - AP Calculus AB 2017 free response
+            - Analysis and solutions of 2017 free response questions
+        - AP Calculus AB 2015 Free Response:
+            subsections:
+            - AP Calculus AB 2015 free response
+            - Analysis and solutions of 2015 free response questions
+        - AP Calculus AB 2011 Free Response:
+            subsections:
+            - AP Calculus AB 2011 free response
+            - Analysis and solutions of 2011 free response questions

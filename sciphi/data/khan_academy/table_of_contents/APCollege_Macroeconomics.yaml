@@ -1,0 +1,215 @@
+textbook:
+  '''Mastering Macroeconomics: A Comprehensive Guide for AP®︎/College Students'':':
+    chapters:
+    - '''Understanding the Basics of Economics''':
+        sections:
+        - '''The Concept of Opportunity Cost and the Production Possibilities Curve''':
+            subsections:
+            - '''Defining Opportunity Cost'''
+            - '''Understanding the Production Possibilities Curve'''
+            - '''Applications of Opportunity Cost and the Production Possibilities
+              Curve'''
+        - '''Comparative Advantage and the Gains from Trade''':
+            subsections:
+            - '''Defining Comparative Advantage'''
+            - '''Exploring the Gains from Trade'''
+            - '''Real-world Examples of Comparative Advantage and Trade'''
+        - '''The Theory of Demand''':
+            subsections:
+            - '''Understanding Demand'''
+            - '''Factors Influencing Demand'''
+            - '''Demand Curves and Their Shifts'''
+        - '''The Theory of Supply''':
+            subsections:
+            - '''Understanding Supply'''
+            - '''Factors Influencing Supply'''
+            - '''Supply Curves and Their Shifts'''
+        - '''Market Equilibrium, Disequilibrium, and Changes in Equilibrium''':
+            subsections:
+            - '''Defining Market Equilibrium'''
+            - '''Understanding Disequilibrium'''
+            - '''Changes in Market Equilibrium'''
+    - '''Decoding Economic Indicators and the Business Cycle''':
+        sections:
+        - '''The Circular Flow and GDP''':
+            subsections:
+            - '''Understanding the Circular Flow of Income'''
+            - '''Calculating GDP'''
+            - '''The Importance of GDP'''
+        - '''Limitations of GDP''':
+            subsections:
+            - '''Understanding the Limitations of GDP'''
+            - '''Alternative Measures of Economic Performance'''
+        - '''Unemployment''':
+            subsections:
+            - '''Types of Unemployment'''
+            - '''The Costs of Unemployment'''
+            - '''Policies to Reduce Unemployment'''
+        - '''Price Indices and Inflation''':
+            subsections:
+            - '''Understanding Price Indices'''
+            - '''Measuring Inflation'''
+            - '''The Impact of Inflation'''
+        - '''Costs of Inflation''':
+            subsections:
+            - '''The Social and Economic Costs of Inflation'''
+            - '''Inflation and Income Distribution'''
+        - '''Real vs. Nominal GDP''':
+            subsections:
+            - '''Understanding Real and Nominal GDP'''
+            - '''Calculating Real GDP'''
+            - '''The Importance of Real GDP'''
+        - '''Business Cycles''':
+            subsections:
+            - '''Understanding Business Cycles'''
+            - '''The Phases of a Business Cycle'''
+            - '''Policies to Manage Business Cycles'''
+    - '''Exploring National Income and Price Determination''':
+        sections:
+        - '''Aggregate Demand''':
+            subsections:
+            - '''Understanding Aggregate Demand'''
+            - '''Factors Influencing Aggregate Demand'''
+            - '''The Aggregate Demand Curve'''
+        - '''Multipliers''':
+            subsections:
+            - '''The Concept of Multipliers'''
+            - '''Calculating the Multiplier Effect'''
+            - '''The Multiplier Effect in Practice'''
+        - '''Short-run Aggregate Supply''':
+            subsections:
+            - '''Understanding Short-run Aggregate Supply'''
+            - '''Factors Influencing Short-run Aggregate Supply'''
+            - '''The Short-run Aggregate Supply Curve'''
+        - '''Long-run Aggregate Supply''':
+            subsections:
+            - '''Understanding Long-run Aggregate Supply'''
+            - '''Factors Influencing Long-run Aggregate Supply'''
+            - '''The Long-run Aggregate Supply Curve'''
+        - '''Equilibrium in the AD-AS Model''':
+            subsections:
+            - '''Understanding Equilibrium in the AD-AS Model'''
+            - '''Shifts in the AD-AS Model'''
+            - '''The Impact of Equilibrium Changes on the Economy'''
+        - '''Changes in the AD-AS Model in the Short Run''':
+            subsections:
+            - '''Short-run Shifts in the AD-AS Model'''
+            - '''The Impact of Short-run Shifts on the Economy'''
+        - '''Long Run Self-adjustment''':
+            subsections:
+            - '''Understanding Long-run Self-adjustment'''
+            - '''The Role of Expectations in Self-adjustment'''
+        - '''Fiscal Policy''':
+            subsections:
+            - '''Understanding Fiscal Policy'''
+            - '''Tools of Fiscal Policy'''
+            - '''The Impact of Fiscal Policy on the Economy'''
+        - '''Automatic Stabilizers''':
+            subsections:
+            - '''Understanding Automatic Stabilizers'''
+            - '''Examples of Automatic Stabilizers'''
+            - '''The Role of Automatic Stabilizers in the Economy'''
+    - '''Delving into the Financial Sector''':
+        sections:
+        - '''Financial Assets''':
+            subsections:
+            - '''Understanding Financial Assets'''
+            - '''Types of Financial Assets'''
+            - '''The Role of Financial Assets in the Economy'''
+        - '''Nominal vs. Real Interest Rates''':
+            subsections:
+            - '''Understanding Nominal and Real Interest Rates'''
+            - '''Calculating Real Interest Rates'''
+            - '''The Impact of Interest Rates on the Economy'''
+        - '''Definition, Measurement, and Functions of Money''':
+            subsections:
+            - '''Defining Money'''
+            - '''Measuring the Money Supply'''
+            - '''The Functions of Money'''
+        - '''Banking and the Expansion of the Money Supply''':
+            subsections:
+            - '''Understanding the Role of Banks'''
+            - '''How Banks Expand the Money Supply'''
+            - '''The Impact of Banking on the Economy'''
+        - '''The Money Market''':
+            subsections:
+            - '''Understanding the Money Market'''
+            - '''The Role of the Money Market in the Economy'''
+            - '''Money Market Equilibrium'''
+        - '''Monetary Policy''':
+            subsections:
+            - '''Understanding Monetary Policy'''
+            - '''Tools of Monetary Policy'''
+            - '''The Impact of Monetary Policy on the Economy'''
+        - '''The Market for Loanable Funds''':
+            subsections:
+            - '''Understanding the Market for Loanable Funds'''
+            - '''The Role of the Loanable Funds Market in the Economy'''
+            - '''Loanable Funds Market Equilibrium'''
+    - '''Long-run Consequences of Stabilization Policies''':
+        sections:
+        - '''Fiscal and Monetary Policy Actions in the Short Run''':
+            subsections:
+            - '''Understanding Short-run Fiscal and Monetary Policy Actions'''
+            - '''The Impact of Short-run Policy Actions on the Economy'''
+        - '''The Phillips Curve''':
+            subsections:
+            - '''Understanding the Phillips Curve'''
+            - '''The Short-run and Long-run Phillips Curve'''
+            - '''The Phillips Curve and Policy Implications'''
+        - '''Money Growth and Inflation''':
+            subsections:
+            - '''Understanding the Relationship Between Money Growth and Inflation'''
+            - '''The Quantity Theory of Money'''
+            - '''The Costs of Inflation'''
+        - '''Crowding Out''':
+            subsections:
+            - '''Understanding Crowding Out'''
+            - '''The Impact of Crowding Out on the Economy'''
+        - '''Deficits and Debts''':
+            subsections:
+            - '''Understanding Deficits and Debts'''
+            - '''The Impact of Deficits and Debts on the Economy'''
+        - '''Economic Growth''':
+            subsections:
+            - '''Understanding Economic Growth'''
+            - '''Factors Influencing Economic Growth'''
+            - '''The Impact of Economic Growth on the Economy'''
+        - '''Public Policy and Economic Growth''':
+            subsections:
+            - '''Understanding the Role of Public Policy in Economic Growth'''
+            - '''Examples of Growth-promoting Policies'''
+            - '''The Impact of Public Policy on Economic Growth'''
+    - '''Navigating the Open Economy: International Trade and Finance''':
+        sections:
+        - '''The Balance of Payments''':
+            subsections:
+            - '''Understanding the Balance of Payments'''
+            - '''Components of the Balance of Payments'''
+            - '''The Impact of the Balance of Payments on the Economy'''
+        - '''Exchange Rates''':
+            subsections:
+            - '''Understanding Exchange Rates'''
+            - '''Factors Influencing Exchange Rates'''
+            - '''The Impact of Exchange Rates on the Economy'''
+        - '''The Foreign Exchange Market''':
+            subsections:
+            - '''Understanding the Foreign Exchange Market'''
+            - '''How the Foreign Exchange Market Works'''
+            - '''The Impact of the Foreign Exchange Market on the Economy'''
+        - '''Effect of Changes in Policies and Economic Conditions on the Foreign Exchange Market''':
+            subsections:
+            - '''Understanding Policy and Economic Influences on the Foreign Exchange
+              Market'''
+            - '''Examples of Policy and Economic Changes Affecting the Foreign Exchange
+              Market'''
+        - '''Changes in the Foreign Exchange Markets and Net Exports''':
+            subsections:
+            - '''Understanding the Relationship Between the Foreign Exchange Market
+              and Net Exports'''
+            - '''The Impact of Foreign Exchange Market Changes on Net Exports'''
+        - '''Real Interest Rates and International Capital Flows''':
+            subsections:
+            - '''Understanding Real Interest Rates and International Capital Flows'''
+            - '''The Impact of Real Interest Rates on International Capital Flows'''
+            - '''The Role of International Capital Flows in the Economy'''

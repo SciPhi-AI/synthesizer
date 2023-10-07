@@ -1,0 +1,127 @@
+textbook:
+  'Mastering 5th Grade Mathematics:':
+    chapters:
+    - Understanding Decimal Place Value:
+        sections:
+        - Introduction to Whole Number Place Value:
+            subsections:
+            - Understanding Units, Tens, Hundreds
+            - Place Value and Number Sense
+        - Writing Whole Numbers in Different Forms:
+            subsections:
+            - Standard, Word and Expanded Form
+            - Comparing Different Forms
+        - Comparing Whole Numbers:
+            subsections:
+            - Using Number Lines
+            - Greater Than, Less Than, Equal To
+        - Comparing Decimals:
+            subsections:
+            - Decimal Place Value
+            - Comparing Decimals on a Number Line
+        - Rounding Whole Numbers:
+            subsections:
+            - Rounding to the Nearest Ten, Hundred
+            - Real-life Applications of Rounding
+    - Adding and Subtracting Decimals:
+        sections:
+        - Adding Multi-digit Numbers:
+            subsections:
+            - Column Addition
+            - Adding with Regrouping
+        - Subtracting Multi-digit Numbers:
+            subsections:
+            - Column Subtraction
+            - Subtracting with Borrowing
+    - Adding and Subtracting Fractions:
+        sections:
+        - Understanding Equivalent Fractions:
+            subsections:
+            - Simplifying Fractions
+            - Using Multiplication and Division to Find Equivalent Fractions
+        - Finding Common Denominators:
+            subsections:
+            - Least Common Multiple
+            - Adding and Subtracting with Different Denominators
+        - Adding and Subtracting Fractions with Like Denominators:
+            subsections:
+            - Adding Fractions Visually
+            - Subtracting Fractions Visually
+        - Adding and Subtracting Mixed Numbers:
+            subsections:
+            - Converting Between Improper Fractions and Mixed Numbers
+            - Adding and Subtracting Mixed Numbers with Regrouping
+        - Fractions with Denominators of 10 and 100:
+            subsections:
+            - Understanding Decimal Fractions
+            - Converting Between Fractions and Decimals
+    - Multiplication and Division with Whole Numbers and Decimals:
+        sections:
+        - 'Multi-digit Multiplication: Place Value and Area Models':
+            subsections:
+            - Understanding Area Models
+            - Multiplying Using Area Models
+        - Multi-digit Multiplication:
+            subsections:
+            - Long Multiplication
+            - Multiplying Decimals
+        - Understanding Remainders:
+            subsections:
+            - Division with Remainders
+            - Interpreting Remainders
+        - 'Multi-digit Division: Place Value and Area Models':
+            subsections:
+            - Understanding Division as Repeated Subtraction
+            - Dividing Using Area Models
+        - Multi-digit Division:
+            subsections:
+            - Long Division
+            - Dividing Decimals
+    - Multiplying and Dividing Fractions:
+        sections:
+        - Introduction to Multiplication:
+            subsections:
+            - Multiplying Fractions by Whole Numbers
+            - Multiplying Fractions by Fractions
+        - Introduction to Division:
+            subsections:
+            - Dividing Fractions by Whole Numbers
+            - Dividing Fractions by Fractions
+        - Relating Multiplication and Division:
+            subsections:
+            - Inverse Operations
+            - Solving Problems with Multiplication and Division
+        - Comparing with Multiplication:
+            subsections:
+            - Comparing Fractions Using Multiplication
+            - Comparing Decimals Using Multiplication
+        - Multiplication and Division Word Problems:
+            subsections:
+            - Solving Word Problems with Fractions
+            - Solving Word Problems with Decimals
+        - Area of Rectangles:
+            subsections:
+            - Understanding Area
+            - Calculating Area with Fractions
+        - Multiply Fractions and Whole Numbers:
+            subsections:
+            - Multiplying Fractions by Whole Numbers Visually
+            - Multiplying Fractions by Whole Numbers Using Algorithms
+    - Understanding Powers of 10:
+        sections:
+        - How 10 Relates to Place Value:
+            subsections:
+            - Understanding Powers of 10
+            - Using Powers of 10 to Understand Place Value
+        - Decimal Fractions:
+            subsections:
+            - Understanding Decimal Fractions
+            - Converting Between Decimal Fractions and Fractions
+        - Decimal Fractions Greater Than 1:
+            subsections:
+            - Understanding Decimals Greater Than 1
+            - Comparing and Ordering Decimals Greater Than 1
+        - Decimals and Fractions in Word Form:
+            subsections:
+            - Writing Decimals in Word Form
+            - Writing Fractions in Word Form

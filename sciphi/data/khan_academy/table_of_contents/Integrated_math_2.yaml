@@ -1,0 +1,392 @@
+textbook:
+  'Mastering Integrated Math 2:':
+    chapters:
+    - Absolute Value & Piecewise Functions:
+        sections:
+        - Graphs of Absolute Value Functions:
+            subsections:
+            - Understanding Absolute Value
+            - Plotting Absolute Value Functions
+            - Real-world Applications of Absolute Value Functions
+        - Piecewise Functions:
+            subsections:
+            - Introduction to Piecewise Functions
+            - Graphing Piecewise Functions
+            - Solving Piecewise Functions
+    - 'Quadratics: Multiplying & Factoring':
+        sections:
+        - Multiplying Monomials by Polynomials:
+            subsections:
+            - Basics of Monomials and Polynomials
+            - Multiplication Process
+            - Practice Problems
+        - Multiplying Binomials:
+            subsections:
+            - Understanding Binomials
+            - The FOIL Method
+            - Practice Problems
+        - Special Products of Binomials:
+            subsections:
+            - Recognizing Special Binomial Products
+            - Solving Special Binomial Products
+            - Practice Problems
+        - Introduction to Factoring:
+            subsections:
+            - Basics of Factoring
+            - Factoring Techniques
+            - Practice Problems
+        - Factoring Quadratics Intro:
+            subsections:
+            - Understanding Quadratics
+            - Factoring Techniques for Quadratics
+            - Practice Problems
+        - Factoring Quadratics by Grouping:
+            subsections:
+            - Grouping Method Explained
+            - Factoring Quadratics Using Grouping
+            - Practice Problems
+        - Factoring Quadratics with Difference of Squares:
+            subsections:
+            - Recognizing Difference of Squares
+            - Factoring Difference of Squares
+            - Practice Problems
+        - Factoring Quadratics with Perfect Squares:
+            subsections:
+            - Recognizing Perfect Squares
+            - Factoring Perfect Squares
+            - Practice Problems
+        - Strategy in Factoring Quadratics:
+            subsections:
+            - Choosing the Right Factoring Method
+            - Factoring Strategies
+            - Practice Problems
+    - Quadratic Functions & Equations:
+        sections:
+        - Intro to Parabolas:
+            subsections:
+            - Understanding Parabolas
+            - Graphing Parabolas
+            - Real-world Applications of Parabolas
+        - Solving and Graphing with Factored Form:
+            subsections:
+            - Understanding Factored Form
+            - Solving Quadratics in Factored Form
+            - Graphing Quadratics in Factored Form
+        - Solving by Taking the Square Root:
+            subsections:
+            - The Square Root Method
+            - Solving Quadratics by Taking the Square Root
+            - Practice Problems
+        - Vertex Form:
+            subsections:
+            - Understanding Vertex Form
+            - Converting to Vertex Form
+            - Practice Problems
+        - Solving Quadratics by Factoring:
+            subsections:
+            - Factoring Quadratics
+            - Solving Quadratics by Factoring
+            - Practice Problems
+        - The Quadratic Formula:
+            subsections:
+            - Deriving the Quadratic Formula
+            - Using the Quadratic Formula
+            - Practice Problems
+        - Completing the Square:
+            subsections:
+            - Understanding Completing the Square
+            - Solving Quadratics by Completing the Square
+            - Practice Problems
+        - Strategizing to Solve Quadratic Equations:
+            subsections:
+            - Choosing the Right Method
+            - Solving Strategies
+            - Practice Problems
+        - Quadratics Standard Form:
+            subsections:
+            - Understanding Standard Form
+            - Converting to Standard Form
+            - Practice Problems
+        - Features & Forms of Quadratic Functions:
+            subsections:
+            - Recognizing Different Forms
+            - Understanding Features of Quadratics
+            - Practice Problems
+        - Comparing Quadratic Functions:
+            subsections:
+            - Comparing Quadratics in Different Forms
+            - Graphical Comparison of Quadratics
+            - Practice Problems
+        - Transforming Quadratic Functions:
+            subsections:
+            - Understanding Transformations
+            - Transforming Quadratics
+            - Practice Problems
+    - Irrational Numbers:
+        sections:
+        - Irrational Numbers:
+            subsections:
+            - Understanding Irrational Numbers
+            - Operations with Irrational Numbers
+            - Real-world Applications of Irrational Numbers
+        - Sums & Products of Rational/Irrational Numbers:
+            subsections:
+            - Adding and Subtracting Rational and Irrational Numbers
+            - Multiplying and Dividing Rational and Irrational Numbers
+            - Practice Problems
+        - Proofs Concerning Irrational Numbers:
+            subsections:
+            - Understanding Proofs
+            - Proving Properties of Irrational Numbers
+            - Practice Problems
+    - Complex Numbers:
+        sections:
+        - The Imaginary Unit i:
+            subsections:
+            - Understanding the Imaginary Unit
+            - Operations with i
+            - Practice Problems
+        - Complex Numbers Introduction:
+            subsections:
+            - Understanding Complex Numbers
+            - Operations with Complex Numbers
+            - Practice Problems
+        - The Complex Plane:
+            subsections:
+            - Plotting Complex Numbers
+            - Understanding the Complex Plane
+            - Practice Problems
+        - Adding & Subtracting Complex Numbers:
+            subsections:
+            - Adding Complex Numbers
+            - Subtracting Complex Numbers
+            - Practice Problems
+        - Quadratic Equations with Complex Solutions:
+            subsections:
+            - Recognizing Complex Solutions
+            - Solving Quadratics with Complex Solutions
+            - Practice Problems
+    - Rational Exponents and Radicals:
+        sections:
+        - Rational Exponents:
+            subsections:
+            - Understanding Rational Exponents
+            - Operations with Rational Exponents
+            - Practice Problems
+        - Properties of Exponents (Rational Exponents):
+            subsections:
+            - Understanding Exponent Properties
+            - Applying Exponent Properties
+            - Practice Problems
+        - Equivalent Forms of Exponential Expressions:
+            subsections:
+            - Recognizing Equivalent Forms
+            - Converting Between Forms
+            - Practice Problems
+        - Evaluating Exponents and Radicals:
+            subsections:
+            - Evaluating Exponential Expressions
+            - Evaluating Radical Expressions
+            - Practice Problems
+        - Solving Exponential Expressions Using Properties of Exponents:
+            subsections:
+            - Applying Exponent Properties
+            - Solving Exponential Expressions
+            - Practice Problems
+    - Exponential Models:
+        sections:
+        - Interpreting the Rate of Change of Exponential Models:
+            subsections:
+            - Understanding Rate of Change
+            - Interpreting Exponential Models
+            - Practice Problems
+        - Constructing Exponential Models According to Rate of Change:
+            subsections:
+            - Constructing Exponential Models
+            - Applying Rate of Change
+            - Practice Problems
+        - Advanced Interpretation of Exponential Models:
+            subsections:
+            - Advanced Interpretation Techniques
+            - Real-world Applications of Exponential Models
+            - Practice Problems
+    - Similarity:
+        sections:
+        - Introduction to Triangle Similarity:
+            subsections:
+            - Understanding Similarity
+            - Proving Triangle Similarity
+            - Practice Problems
+        - Angle Bisector Theorem:
+            subsections:
+            - Understanding the Angle Bisector Theorem
+            - Applying the Angle Bisector Theorem
+            - Practice Problems
+        - Solving Problems with Similar & Congruent Triangles:
+            subsections:
+            - Recognizing Similar and Congruent Triangles
+            - Solving Problems Using Similarity and Congruence
+            - Practice Problems
+        - Proving Relationships Using Similarity:
+            subsections:
+            - Proving Relationships
+            - Applying Similarity in Proofs
+            - Practice Problems
+        - Solving Modeling Problems with Similar & Congruent Triangles:
+            subsections:
+            - Modeling with Similar and Congruent Triangles
+            - Solving Real-world Problems
+            - Practice Problems
+    - Right Triangles & Trigonometry:
+        sections:
+        - Pythagorean Theorem Proofs:
+            subsections:
+            - Understanding the Pythagorean Theorem
+            - Proving the Pythagorean Theorem
+            - Practice Problems
+        - Special Right Triangles:
+            subsections:
+            - Recognizing Special Right Triangles
+            - Solving Problems with Special Right Triangles
+            - Practice Problems
+        - Introduction to the Trigonometric Ratios:
+            subsections:
+            - Understanding Trigonometric Ratios
+            - Calculating Trigonometric Ratios
+            - Practice Problems
+        - Sine & Cosine of Complementary Angles:
+            subsections:
+            - Understanding Complementary Angles
+            - Calculating Sine and Cosine of Complementary Angles
+            - Practice Problems
+        - Modeling with Right Triangles:
+            subsections:
+            - Real-world Applications of Right Triangles
+            - Solving Problems with Right Triangles
+            - Practice Problems
+    - Solid Geometry:
+        sections:
+        - Volume and Surface Area:
+            subsections:
+            - Understanding Volume and Surface Area
+            - Calculating Volume and Surface Area
+            - Practice Problems
+        - Density:
+            subsections:
+            - Understanding Density
+            - Calculating Density
+            - Practice Problems
+    - Circles:
+        sections:
+        - Arc Measure:
+            subsections:
+            - Understanding Arc Measure
+            - Calculating Arc Measure
+            - Practice Problems
+        - Arc Length (from Degrees):
+            subsections:
+            - Understanding Arc Length
+            - Calculating Arc Length from Degrees
+            - Practice Problems
+        - Introduction to Radians:
+            subsections:
+            - Understanding Radians
+            - Converting Between Degrees and Radians
+            - Practice Problems
+        - Arc Length (from Radians):
+            subsections:
+            - Calculating Arc Length from Radians
+            - Practice Problems
+        - Sectors:
+            subsections:
+            - Understanding Sectors
+            - Calculating Sector Area
+            - Practice Problems
+        - Inscribed Angles:
+            subsections:
+            - Understanding Inscribed Angles
+            - Calculating Inscribed Angles
+            - Practice Problems
+        - Inscribed Shapes Problem Solving:
+            subsections:
+            - Recognizing Inscribed Shapes
+            - Solving Problems with Inscribed Shapes
+            - Practice Problems
+        - Proofs with Inscribed Shapes:
+            subsections:
+            - Proving Properties of Inscribed Shapes
+            - Practice Problems
+        - Properties of Tangents:
+            subsections:
+            - Understanding Tangents
+            - Proving Properties of Tangents
+            - Practice Problems
+        - Constructing Regular Polygons Inscribed in Circles:
+            subsections:
+            - Understanding Regular Polygons
+            - Constructing Inscribed Regular Polygons
+            - Practice Problems
+        - Constructing Circumcircles & Incircles:
+            subsections:
+            - Understanding Circumcircles and Incircles
+            - Constructing Circumcircles and Incircles
+            - Practice Problems
+        - Constructing a Line Tangent to a Circle:
+            subsections:
+            - Understanding Tangent Lines
+            - Constructing Tangent Lines
+            - Practice Problems
+    - Conic Sections:
+        sections:
+        - Features of a Circle:
+            subsections:
+            - Understanding Circles
+            - Recognizing Features of a Circle
+            - Practice Problems
+        - Standard Equation of a Circle:
+            subsections:
+            - Understanding the Standard Equation
+            - Applying the Standard Equation
+            - Practice Problems
+        - Expanded Equation of a Circle:
+            subsections:
+            - Understanding the Expanded Equation
+            - Applying the Expanded Equation
+            - Practice Problems
+        - Focus & Directrix of a Parabola:
+            subsections:
+            - Understanding the Focus and Directrix
+            - Applying the Focus and Directrix
+            - Practice Problems
+    - Probability:
+        sections:
+        - Probability Basics:
+            subsections:
+            - Understanding Probability
+            - Calculating Simple Probability
+            - Practice Problems
+        - Counting with Combinations:
+            subsections:
+            - Understanding Combinations
+            - Counting Using Combinations
+            - Practice Problems
+        - Probability with Counting, Permutations, Combinations:
+            subsections:
+            - Understanding Permutations and Combinations
+            - Calculating Probability Using Counting Techniques
+            - Practice Problems
+        - Multiplication Rule for Independent Events:
+            subsections:
+            - Understanding Independent Events
+            - Applying the Multiplication Rule
+            - Practice Problems
+        - Multiplication Rule for Dependent Events:
+            subsections:
+            - Understanding Dependent Events
+            - Applying the Multiplication Rule
+            - Practice Problems
+        - Addition Rule for Probability:
+            subsections:
+            - Understanding the Addition Rule
+            - Applying the Addition Rule
+            - Practice Problems

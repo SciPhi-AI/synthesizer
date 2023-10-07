@@ -1,0 +1,181 @@
+textbook:
+  'Mastering Math: A Comprehensive Guide from Pre-K to 8th Grade:':
+    chapters:
+    - Understanding Numbers and Operations:
+        sections:
+        - Exploring Counting and Cardinality:
+            subsections:
+            - Introduction to Counting
+            - Understanding Cardinality
+        - Mastering Addition and Subtraction:
+            subsections:
+            - Basics of Addition
+            - Basics of Subtraction
+            - Word Problems
+        - Delving into Multiplication and Division:
+            subsections:
+            - Multiplication Basics
+            - Division Basics
+            - Word Problems
+        - 'Fractions: A Closer Look':
+            subsections:
+            - Understanding Fractions
+            - Adding and Subtracting Fractions
+            - Multiplying and Dividing Fractions
+        - Decimals Demystified:
+            subsections:
+            - Understanding Decimals
+            - Operations with Decimals
+        - 'Percentages: A Practical Approach':
+            subsections:
+            - Understanding Percentages
+            - Calculating Percentages
+        - 'Order of Operations: The PEMDAS Rule':
+            subsections:
+            - Understanding the Order of Operations
+            - Applying the PEMDAS Rule
+        - 'Prime Numbers and Factors: A Deep Dive':
+            subsections:
+            - Understanding Prime Numbers
+            - Finding Factors
+        - 'Rational and Irrational Numbers: A Contrast':
+            subsections:
+            - Understanding Rational Numbers
+            - Understanding Irrational Numbers
+    - 'Algebraic Concepts: The Building Blocks':
+        sections:
+        - 'Basic Algebraic Expressions: A Primer':
+            subsections:
+            - Understanding Algebraic Expressions
+            - Simplifying Algebraic Expressions
+        - 'Solving Equations: A Step-by-Step Guide':
+            subsections:
+            - Understanding Equations
+            - Solving Simple Equations
+            - Solving Complex Equations
+        - 'Inequalities: Beyond Equality':
+            subsections:
+            - Understanding Inequalities
+            - Solving Inequalities
+        - 'Linear Equations: A Linear Journey':
+            subsections:
+            - Understanding Linear Equations
+            - Graphing Linear Equations
+        - 'Quadratic Equations: A Parabolic Path':
+            subsections:
+            - Understanding Quadratic Equations
+            - Solving Quadratic Equations
+        - 'Exponents and Radicals: Powering Through':
+            subsections:
+            - Understanding Exponents
+            - Understanding Radicals
+        - 'Polynomials: A Polynomial Probe':
+            subsections:
+            - Understanding Polynomials
+            - Operations with Polynomials
+        - 'Algebraic Fractions: A Fractional Study':
+            subsections:
+            - Understanding Algebraic Fractions
+            - Simplifying Algebraic Fractions
+    - 'Geometry: Shaping the World':
+        sections:
+        - 'Basic Shapes and Figures: A Geometric Journey':
+            subsections:
+            - Understanding Basic Shapes
+            - Understanding Basic Figures
+        - 'Perimeter and Area: Measuring Shapes':
+            subsections:
+            - Calculating Perimeter
+            - Calculating Area
+        - 'Volume: A Three-Dimensional Measure':
+            subsections:
+            - Understanding Volume
+            - Calculating Volume
+        - 'Angles: The Cornerstones of Geometry':
+            subsections:
+            - Understanding Angles
+            - Measuring Angles
+        - 'Triangles: A Three-Sided Story':
+            subsections:
+            - Understanding Triangles
+            - Properties of Triangles
+        - 'Quadrilaterals: Four-Sided Figures':
+            subsections:
+            - Understanding Quadrilaterals
+            - Properties of Quadrilaterals
+        - 'Circles: A Roundabout Journey':
+            subsections:
+            - Understanding Circles
+            - Properties of Circles
+        - 'Coordinate Geometry: Plotting Points':
+            subsections:
+            - Understanding Coordinate Geometry
+            - Plotting Points on a Coordinate Plane
+        - 'Transformations: Changing Shapes':
+            subsections:
+            - Understanding Transformations
+            - Types of Transformations
+    - 'Measurement and Data: Quantifying the World':
+        sections:
+        - 'Units of Measurement: A Comparative Study':
+            subsections:
+            - Understanding Units of Measurement
+            - Converting Units of Measurement
+        - 'Time: A Temporal Journey':
+            subsections:
+            - Understanding Time
+            - Reading Clocks and Calendars
+        - 'Money: A Financial Primer':
+            subsections:
+            - Understanding Money
+            - Counting Money
+        - 'Data Interpretation: Making Sense of Data':
+            subsections:
+            - Understanding Data
+            - Interpreting Data
+        - 'Graphs and Charts: Visualizing Data':
+            subsections:
+            - Understanding Graphs and Charts
+            - Creating Graphs and Charts
+        - 'Probability: Predicting Possibilities':
+            subsections:
+            - Understanding Probability
+            - Calculating Probability
+        - 'Statistics: Analyzing Data':
+            subsections:
+            - Understanding Statistics
+            - Analyzing Data with Statistics
+        - 'Patterns: Recognizing Repetition':
+            subsections:
+            - Understanding Patterns
+            - Creating and Extending Patterns
+    - 'Ratios and Proportional Relationships: A Comparative Study':
+        sections:
+        - 'Ratios: A Comparative Analysis':
+            subsections:
+            - Understanding Ratios
+            - Using Ratios
+        - 'Rates: A Rate of Change':
+            subsections:
+            - Understanding Rates
+            - Calculating Rates
+        - 'Proportions: A Proportional Perspective':
+            subsections:
+            - Understanding Proportions
+            - Solving Proportions
+        - 'Percentages: A Fractional Equivalent':
+            subsections:
+            - Understanding Percentages
+            - Calculating Percentages
+        - 'Scaling: A Proportional Increase or Decrease':
+            subsections:
+            - Understanding Scaling
+            - Applying Scaling
+        - 'Similar Figures: A Geometric Comparison':
+            subsections:
+            - Understanding Similar Figures
+            - Identifying Similar Figures
+        - 'Direct and Inverse Variation: A Variable Relationship':
+            subsections:
+            - Understanding Direct Variation
+            - Understanding Inverse Variation

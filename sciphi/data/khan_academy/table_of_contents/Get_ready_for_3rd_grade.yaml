@@ -1,0 +1,95 @@
+textbook:
+  'Mastering 3rd Grade Mathematics:':
+    chapters:
+    - Fundamentals of Addition and Subtraction:
+        sections:
+        - Understanding Place Value:
+            subsections:
+            - Introduction to Place Value
+            - Place Value and Number Sense
+            - Comparing and Ordering Numbers
+        - Regrouping Whole Numbers:
+            subsections:
+            - Basics of Regrouping
+            - Regrouping in Addition
+            - Regrouping in Subtraction
+        - Addition within 100:
+            subsections:
+            - Basic Addition Facts
+            - Strategies for Addition
+            - Practice Problems
+        - Subtraction within 100:
+            subsections:
+            - Basic Subtraction Facts
+            - Strategies for Subtraction
+            - Practice Problems
+        - Visual Addition and Subtraction within 1,000:
+            subsections:
+            - Visualizing Addition
+            - Visualizing Subtraction
+            - Practice Problems
+    - Introduction to Multiplication and Division:
+        sections:
+        - Addition using Arrays:
+            subsections:
+            - Understanding Arrays
+            - Arrays and Addition
+            - Practice Problems
+        - Even and Odd Numbers:
+            subsections:
+            - Identifying Even and Odd Numbers
+            - Properties of Even and Odd Numbers
+            - Practice Problems
+    - Basics of Fractions:
+        sections:
+        - Equal Parts of Shapes:
+            subsections:
+            - Understanding Equal Parts
+            - Identifying Equal Parts of Shapes
+            - Practice Problems
+        - Fractions of Shapes:
+            subsections:
+            - Understanding Fractions
+            - Fractions and Shapes
+            - Practice Problems
+    - Patterns and Problem Solving:
+        sections:
+        - Addition and Subtraction Word Problems (1-step):
+            subsections:
+            - Understanding Word Problems
+            - Solving 1-step Addition and Subtraction Word Problems
+            - Practice Problems
+        - Addition and Subtraction Word Problems (2-step):
+            subsections:
+            - Understanding 2-step Word Problems
+            - Solving 2-step Addition and Subtraction Word Problems
+            - Practice Problems
+    - Understanding Area and Perimeter:
+        sections:
+        - Measure Length:
+            subsections:
+            - Introduction to Measurement
+            - Measuring Length
+            - Practice Problems
+        - Partitioning Rectangles:
+            subsections:
+            - Understanding Rectangles
+            - Partitioning Rectangles into Equal Parts
+            - Practice Problems
+    - Data Interpretation:
+        sections:
+        - Picture Graphs:
+            subsections:
+            - Understanding Picture Graphs
+            - Interpreting Picture Graphs
+            - Practice Problems
+        - Bar Graphs:
+            subsections:
+            - Understanding Bar Graphs
+            - Interpreting Bar Graphs
+            - Practice Problems
+        - Line Plots:
+            subsections:
+            - Understanding Line Plots
+            - Interpreting Line Plots
+            - Practice Problems

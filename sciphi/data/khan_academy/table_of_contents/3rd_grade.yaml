@@ -1,0 +1,223 @@
+textbook:
+  'Mastering Mathematics: A Comprehensive Guide for 3rd Graders:':
+    chapters:
+    - Introduction to Multiplication:
+        sections:
+        - Understanding Multiplication as Equal Groups:
+            subsections:
+            - Concept of Equal Groups
+            - Practical Examples of Equal Groups
+        - Exploring Multiplication on the Number Line:
+            subsections:
+            - Basics of Number Line
+            - Multiplication Using Number Line
+        - Multiplication as Groups of Objects:
+            subsections:
+            - Concept of Grouping Objects
+            - Multiplication with Grouped Objects
+        - Multiplication with Arrays:
+            subsections:
+            - Understanding Arrays
+            - Multiplication Using Arrays
+        - Applying Multiplication in Contexts:
+            subsections:
+            - Real-life Examples of Multiplication
+            - Practice Problems
+        - Understanding Commutative Property of Multiplication:
+            subsections:
+            - Definition and Explanation
+            - Examples and Practice Problems
+    - Addition, Subtraction, and Estimation:
+        sections:
+        - Rounding to Nearest 10 or 100:
+            subsections:
+            - Concept of Rounding
+            - Rounding Practice Problems
+        - Estimating to Add Multi-Digit Numbers:
+            subsections:
+            - Introduction to Estimation
+            - Estimation Practice Problems
+        - Strategies for Adding Two and Three-Digit Numbers:
+            subsections:
+            - Addition Strategies
+            - Practice Problems
+        - Adding with Regrouping within 1000:
+            subsections:
+            - Concept of Regrouping
+            - Practice Problems
+        - Estimating to Subtract Multi-Digit Numbers:
+            subsections:
+            - Subtraction Estimation Strategies
+            - Practice Problems
+        - Strategies for Subtracting Two and Three-Digit Numbers:
+            subsections:
+            - Subtraction Strategies
+            - Practice Problems
+        - Subtracting with Regrouping within 1000:
+            subsections:
+            - Concept of Regrouping in Subtraction
+            - Practice Problems
+        - Addition and Subtraction Missing Value Problems:
+            subsections:
+            - Understanding Missing Values
+            - Practice Problems
+        - Addition and Subtraction Word Problems:
+            subsections:
+            - Word Problem Strategies
+            - Practice Problems
+    - Introduction to Division:
+        sections:
+        - Division Introduction:
+            subsections:
+            - Basic Concept of Division
+            - Division Symbols and Terms
+        - Division in Contexts:
+            subsections:
+            - Real-life Examples of Division
+            - Practice Problems
+        - Relating Multiplication and Division:
+            subsections:
+            - Understanding the Relationship
+            - Practice Problems
+    - Understanding Fractions:
+        sections:
+        - Fractions Introduction:
+            subsections:
+            - Basic Concept of Fractions
+            - Fractions Symbols and Terms
+        - Fractions in Contexts:
+            subsections:
+            - Real-life Examples of Fractions
+            - Practice Problems
+        - What Fractions Mean:
+            subsections:
+            - Understanding Fraction Values
+            - Practice Problems
+        - Fractions on the Number Line:
+            subsections:
+            - Placing Fractions on a Number Line
+            - Practice Problems
+        - Fractions and Whole Numbers:
+            subsections:
+            - Relationship Between Fractions and Whole Numbers
+            - Practice Problems
+    - Equivalent Fractions and Comparing Fractions:
+        sections:
+        - Comparing Fractions:
+            subsections:
+            - Strategies for Comparing Fractions
+            - Practice Problems
+        - Comparing Fractions of Different Wholes:
+            subsections:
+            - Understanding Different Wholes
+            - Practice Problems
+        - Equivalent Fractions:
+            subsections:
+            - Concept of Equivalent Fractions
+            - Practice Problems
+    - More with Multiplication and Division:
+        sections:
+        - Letters and Symbols in Multiplication and Division Equations:
+            subsections:
+            - Understanding Symbols and Letters
+            - Practice Problems
+        - Multiplication and Division Word Problems:
+            subsections:
+            - Word Problem Strategies
+            - Practice Problems
+        - Associative Property of Multiplication:
+            subsections:
+            - Understanding the Associative Property
+            - Practice Problems
+        - Multiplying by Tens:
+            subsections:
+            - Strategies for Multiplying by Tens
+            - Practice Problems
+    - Arithmetic Patterns and Problem Solving:
+        sections:
+        - 2-Step Expressions:
+            subsections:
+            - Understanding 2-Step Expressions
+            - Practice Problems
+        - Estimation Word Problems:
+            subsections:
+            - Estimation Strategies for Word Problems
+            - Practice Problems
+        - One and Two-Step Word Problems:
+            subsections:
+            - Strategies for Solving Word Problems
+            - Practice Problems
+        - Patterns in Arithmetic:
+            subsections:
+            - Recognizing Arithmetic Patterns
+            - Practice Problems
+    - Area:
+        sections:
+        - Count Unit Squares to Find Area:
+            subsections:
+            - Understanding Unit Squares
+            - Practice Problems
+        - Area Formula Intuition:
+            subsections:
+            - Understanding the Area Formula
+            - Practice Problems
+        - Multiply to Find Area:
+            subsections:
+            - Multiplication and Area
+            - Practice Problems
+        - Area and the Distributive Property:
+            subsections:
+            - Understanding the Distributive Property
+            - Practice Problems
+        - Decompose Figures to Find Area:
+            subsections:
+            - Decomposing Figures
+            - Practice Problems
+    - Perimeter:
+        sections:
+        - Understanding Perimeter:
+            subsections:
+            - Basic Concept of Perimeter
+            - Practice Problems
+        - Perimeter Word Problems:
+            subsections:
+            - Strategies for Solving Perimeter Word Problems
+            - Practice Problems
+    - Time:
+        sections:
+        - Time on Number Line:
+            subsections:
+            - Understanding Time on a Number Line
+            - Practice Problems
+        - Telling Time:
+            subsections:
+            - Reading Analog and Digital Clocks
+            - Practice Problems
+        - Elapsed Time:
+            subsections:
+            - Understanding Elapsed Time
+            - Practice Problems
+    - Measurement:
+        sections:
+        - Understanding Mass:
+            subsections:
+            - Basic Concept of Mass
+            - Practice Problems
+        - Understanding Volume:
+            subsections:
+            - Basic Concept of Volume
+            - Practice Problems
+    - Represent and Interpret Data:
+        sections:
+        - Understanding Picture Graphs:
+            subsections:
+            - Reading and Interpreting Picture Graphs
+            - Practice Problems
+        - Understanding Bar Graphs:
+            subsections:
+            - Reading and Interpreting Bar Graphs
+            - Practice Problems
+        - Understanding Line Plots with Fractions:
+            subsections:
+            - Reading and Interpreting Line Plots
+            - Practice Problems

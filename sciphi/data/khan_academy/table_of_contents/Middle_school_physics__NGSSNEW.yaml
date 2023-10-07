@@ -1,0 +1,92 @@
+textbook:
+  Comprehensive Guide to Middle School Physics - "NGSSNEW":
+    chapters:
+    - Introduction to Physics:
+        sections:
+        - What is Physics?
+        - Importance of Physics
+        - Branches of Physics
+    - 'Waves: Unit test':
+        sections:
+        - Introduction video:
+            subsections:
+            - Understanding Waves
+            - Types of Waves
+        - Learn more:
+            subsections:
+            - Wave Interference
+            - Wave Diffraction
+            - Wave Refraction
+    - 'Unit 1: Movement and forces':
+        sections:
+        - Representing motion:
+            subsections:
+            - Graphical Representation
+            - Mathematical Representation
+        - Forces and acceleration:
+            subsections:
+            - Newton's Second Law
+            - Calculating Acceleration
+        - Action and reaction forces:
+            subsections:
+            - Newton's Third Law
+            - Real-world Applications
+    - 'Unit 2: Forces at a distance':
+        sections:
+        - Gravitational forces:
+            subsections:
+            - Law of Universal Gravitation
+            - Gravitational Fields
+        - Electric forces:
+            subsections:
+            - Coulomb's Law
+            - Electric Fields
+        - Magnetic forces:
+            subsections:
+            - Magnetic Fields
+            - Electromagnetism
+        - Fields:
+            subsections:
+            - Field Lines
+            - Field Strength
+        - Electromagnetism:
+            subsections:
+            - Faraday's Law
+            - Lenz's Law
+    - 'Unit 3: Energy':
+        sections:
+        - Kinetic energy:
+            subsections:
+            - Calculating Kinetic Energy
+            - Conservation of Energy
+        - Potential energy:
+            subsections:
+            - Gravitational Potential Energy
+            - Elastic Potential Energy
+    - 'Unit 4: Waves':
+        sections:
+        - Wave properties:
+            subsections:
+            - Wave Speed
+            - Wave Frequency
+        - Mechanical waves and light:
+            subsections:
+            - Types of Mechanical Waves
+            - Properties of Light
+        - Transmission and refraction:
+            subsections:
+            - Snell's Law
+            - Total Internal Reflection
+        - Absorption and reflection:
+            subsections:
+            - Law of Reflection
+            - Absorption of Light
+        - Digital signals:
+            subsections:
+            - Analog vs Digital Signals
+            - Signal Processing
+    - Conclusion:
+        sections:
+        - Recap of Key Concepts
+        - Future Applications of Physics
+        - Further Reading

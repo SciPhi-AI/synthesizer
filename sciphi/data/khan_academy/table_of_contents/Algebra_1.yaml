@@ -1,0 +1,476 @@
+textbook:
+  'Mastering Algebra 1:':
+    chapters:
+    - Algebra foundations:
+        sections:
+        - Overview and history of algebra:
+            subsections:
+            - The birth of algebra
+            - Major contributors to algebra
+            - Evolution of algebraic concepts
+        - Introduction to variables:
+            subsections:
+            - Understanding variables
+            - Types of variables
+            - Application of variables in equations
+        - Substitution and evaluating expressions:
+            subsections:
+            - The substitution method
+            - Evaluating algebraic expressions
+            - Practical examples of substitution
+        - Combining like terms:
+            subsections:
+            - Identifying like terms
+            - Rules for combining like terms
+            - Simplifying expressions by combining like terms
+        - Introduction to equivalent expressions:
+            subsections:
+            - Understanding equivalent expressions
+            - Creating equivalent expressions
+            - Testing for equivalence
+        - Division by zero:
+            subsections:
+            - The concept of undefined
+            - Why division by zero is undefined
+            - The implications of division by zero in algebra
+    - Solving equations & inequalities:
+        sections:
+        - Linear equations with variables on both sides:
+            subsections:
+            - Solving linear equations with variables on both sides
+            - Checking solutions
+            - Real-world applications
+        - Linear equations with parentheses:
+            subsections:
+            - Distributive property
+            - Solving equations with parentheses
+            - Complex equations with parentheses
+        - Analyzing the number of solutions to linear equations:
+            subsections:
+            - Understanding solutions
+            - Determining the number of solutions
+            - Analyzing solution sets
+        - Linear equations with unknown coefficients:
+            subsections:
+            - Solving for unknown coefficients
+            - Applications of equations with unknown coefficients
+            - Strategies for solving complex equations
+        - Multi-step inequalities:
+            subsections:
+            - Solving multi-step inequalities
+            - Graphing solutions to inequalities
+            - Compound inequalities
+        - Compound inequalities:
+            subsections:
+            - Understanding compound inequalities
+            - Solving compound inequalities
+            - Graphing compound inequalities
+    - Linear equations & graphs:
+        sections:
+        - Two-variable linear equations intro:
+            subsections:
+            - Understanding two-variable equations
+            - Solving two-variable equations
+            - Graphing two-variable equations
+        - Slope:
+            subsections:
+            - Understanding slope
+            - Calculating slope
+            - Slope as rate of change
+        - Horizontal & vertical lines:
+            subsections:
+            - Understanding horizontal and vertical lines
+            - Graphing horizontal and vertical lines
+            - Slope of horizontal and vertical lines
+        - x-intercepts and y-intercepts:
+            subsections:
+            - Understanding intercepts
+            - Finding x and y intercepts
+            - Using intercepts to graph lines
+        - Applying intercepts and slope:
+            subsections:
+            - Using slope and intercepts to graph lines
+            - Writing equations from graphs
+            - Real-world applications of slope and intercepts
+        - Modeling with linear equations and inequalities:
+            subsections:
+            - Creating models with linear equations
+            - Creating models with linear inequalities
+            - Analyzing models
+    - Forms of linear equations:
+        sections:
+        - Intro to slope-intercept form:
+            subsections:
+            - Understanding slope-intercept form
+            - Converting to slope-intercept form
+            - Graphing using slope-intercept form
+        - Graphing slope-intercept equations:
+            subsections:
+            - Graphing lines in slope-intercept form
+            - Interpreting graphs of lines
+            - Real-world applications of slope-intercept form
+        - Writing slope-intercept equations:
+            subsections:
+            - Writing equations in slope-intercept form
+            - Converting from standard form to slope-intercept form
+            - Using slope and y-intercept to write equations
+        - Point-slope form:
+            subsections:
+            - Understanding point-slope form
+            - Writing equations in point-slope form
+            - Converting between point-slope and slope-intercept form
+        - Standard form:
+            subsections:
+            - Understanding standard form
+            - Writing equations in standard form
+            - Converting between standard form and other forms
+        - 'Summary: Forms of two-variable linear equations':
+            subsections:
+            - Review of forms of linear equations
+            - Comparing and contrasting forms
+            - Choosing the appropriate form for a given situation
+    - Systems of equations:
+        sections:
+        - Introduction to systems of equations:
+            subsections:
+            - Understanding systems of equations
+            - Solving systems by graphing
+            - Applications of systems of equations
+        - Solving systems of equations with substitution:
+            subsections:
+            - The substitution method for systems
+            - Solving systems with substitution
+            - Checking solutions to systems
+        - Solving systems of equations with elimination:
+            subsections:
+            - The elimination method for systems
+            - Solving systems with elimination
+            - Comparing substitution and elimination
+        - Equivalent systems of equations:
+            subsections:
+            - Understanding equivalent systems
+            - Creating equivalent systems
+            - Solving equivalent systems
+        - Number of solutions to systems of equations:
+            subsections:
+            - Determining the number of solutions to a system
+            - Analyzing systems with no solution or infinite solutions
+            - Interpreting solutions in context
+        - Systems of equations word problems:
+            subsections:
+            - Translating word problems into systems
+            - Solving word problems with systems
+            - Interpreting solutions to word problems
+    - Inequalities (systems & graphs):
+        sections:
+        - Checking solutions of two-variable inequalities:
+            subsections:
+            - Understanding two-variable inequalities
+            - Checking solutions to two-variable inequalities
+            - Graphing solutions to two-variable inequalities
+        - Graphing two-variable inequalities:
+            subsections:
+            - Graphing linear inequalities in two variables
+            - Shading regions for inequalities
+            - Interpreting graphs of inequalities
+        - Modeling with linear inequalities:
+            subsections:
+            - Creating models with linear inequalities
+            - Solving problems with inequality models
+            - Interpreting solutions to inequality models
+    - Functions:
+        sections:
+        - Evaluating functions:
+            subsections:
+            - Understanding function notation
+            - Evaluating functions for specific inputs
+            - Using function notation in context
+        - Inputs and outputs of a function:
+            subsections:
+            - Identifying inputs and outputs
+            - Understanding the concept of a function
+            - Function notation and evaluation
+        - Functions and equations:
+            subsections:
+            - Comparing functions and equations
+            - Converting between functions and equations
+            - Using functions to model relationships
+        - Interpreting function notation:
+            subsections:
+            - Understanding function notation
+            - Evaluating functions using function notation
+            - Applying function notation in context
+        - Introduction to the domain and range of a function:
+            subsections:
+            - Understanding domain and range
+            - Finding the domain and range of a function
+            - Interpreting domain and range in context
+        - Determining the domain of a function:
+            subsections:
+            - Finding the domain of a function
+            - Domain restrictions
+            - Interpreting domain in context
+        - Recognizing functions:
+            subsections:
+            - Identifying functions
+            - Using the vertical line test
+            - Comparing functions and relations
+        - Maximum and minimum points:
+            subsections:
+            - Identifying maximum and minimum points
+            - Using maxima and minima to understand functions
+            - Real-world applications of maxima and minima
+        - Intervals where a function is positive, negative, increasing, or decreasing:
+            subsections:
+            - Understanding intervals of increase and decrease
+            - Finding where a function is positive or negative
+            - Interpreting intervals in context
+        - Interpreting features of graphs:
+            subsections:
+            - Identifying key features of graphs
+            - Using graphs to understand functions
+            - Interpreting graphs in context
+        - Average rate of change:
+            subsections:
+            - Understanding average rate of change
+            - Calculating average rate of change
+            - Interpreting average rate of change in context
+        - Average rate of change word problems:
+            subsections:
+            - Translating word problems into functions
+            - Using average rate of change to solve problems
+            - Interpreting solutions to word problems
+        - Intro to inverse functions:
+            subsections:
+            - Understanding inverse functions
+            - Finding the inverse of a function
+            - Using inverse functions to solve problems
+    - Sequences:
+        sections:
+        - Introduction to arithmetic sequences:
+            subsections:
+            - Understanding arithmetic sequences
+            - Writing arithmetic sequences
+            - Using arithmetic sequences to model situations
+        - Constructing arithmetic sequences:
+            subsections:
+            - Writing arithmetic sequences
+            - Using the common difference
+            - Arithmetic sequences in context
+        - Introduction to geometric sequences:
+            subsections:
+            - Understanding geometric sequences
+            - Writing geometric sequences
+            - Using geometric sequences to model situations
+        - Constructing geometric sequences:
+            subsections:
+            - Writing geometric sequences
+            - Using the common ratio
+            - Geometric sequences in context
+        - Modeling with sequences:
+            subsections:
+            - Using sequences to model situations
+            - Writing equations for sequences
+            - Interpreting sequences in context
+        - General sequences:
+            subsections:
+            - Understanding sequences
+            - Writing general sequences
+            - Using sequences to model situations
+    - Absolute value & piecewise functions:
+        sections:
+        - Graphs of absolute value functions:
+            subsections:
+            - Understanding absolute value functions
+            - Graphing absolute value functions
+            - Interpreting graphs of absolute value functions
+        - Piecewise functions:
+            subsections:
+            - Understanding piecewise functions
+            - Graphing piecewise functions
+            - Interpreting piecewise functions in context
+    - Exponents & radicals:
+        sections:
+        - Exponent properties review:
+            subsections:
+            - Understanding exponents
+            - Reviewing exponent properties
+            - Applying exponent properties
+        - Radicals:
+            subsections:
+            - Understanding radicals
+            - Simplifying radicals
+            - Operations with radicals
+        - Simplifying square roots:
+            subsections:
+            - Understanding square roots
+            - Simplifying square roots
+            - Rationalizing denominators
+    - Exponential growth & decay:
+        sections:
+        - Exponential vs. linear growth:
+            subsections:
+            - Comparing exponential and linear growth
+            - Understanding exponential growth
+            - Real-world applications of exponential growth
+        - Exponential expressions:
+            subsections:
+            - Writing exponential expressions
+            - Simplifying exponential expressions
+            - Using exponential expressions to model situations
+        - Graphs of exponential growth:
+            subsections:
+            - Understanding graphs of exponential functions
+            - Graphing exponential growth functions
+            - Interpreting graphs of exponential growth
+        - Exponential vs. linear growth over time:
+            subsections:
+            - Comparing exponential and linear growth over time
+            - Modeling with exponential and linear functions
+            - Interpreting exponential and linear models
+        - Exponential growth & decay:
+            subsections:
+            - Understanding exponential decay
+            - Comparing exponential growth and decay
+            - Modeling with exponential decay
+        - Exponential functions from tables & graphs:
+            subsections:
+            - Writing exponential functions from tables
+            - Writing exponential functions from graphs
+            - Interpreting tables and graphs of exponential functions
+        - Exponential vs. linear models:
+            subsections:
+            - Comparing exponential and linear models
+            - Choosing between exponential and linear models
+            - Interpreting exponential and linear models
+    - 'Quadratics: Multiplying & factoring':
+        sections:
+        - Multiplying monomials by polynomials:
+            subsections:
+            - Understanding monomials and polynomials
+            - Multiplying monomials by polynomials
+            - Simplifying expressions with monomials and polynomials
+        - Multiplying binomials:
+            subsections:
+            - Understanding binomials
+            - Multiplying binomials
+            - Using the FOIL method
+        - Special products of binomials:
+            subsections:
+            - Recognizing special products
+            - Multiplying special binomials
+            - Using special products to simplify expressions
+        - Introduction to factoring:
+            subsections:
+            - Understanding factoring
+            - Factoring monomials from polynomials
+            - Factoring binomials
+        - Factoring quadratics intro:
+            subsections:
+            - Understanding quadratic expressions
+            - Factoring quadratic expressions
+            - Using factoring to solve quadratic equations
+        - Factoring quadratics by grouping:
+            subsections:
+            - Understanding factoring by grouping
+            - Factoring quadratic expressions by grouping
+            - Using factoring by grouping to solve quadratic equations
+        - Factoring quadratics with difference of squares:
+            subsections:
+            - Recognizing difference of squares
+            - Factoring difference of squares
+            - Using difference of squares to solve quadratic equations
+        - Factoring quadratics with perfect squares:
+            subsections:
+            - Recognizing perfect square trinomials
+            - Factoring perfect square trinomials
+            - Using perfect square trinomials to solve quadratic equations
+        - Strategy in factoring quadratics:
+            subsections:
+            - Developing strategies for factoring
+            - Choosing the right factoring method
+            - Factoring complex quadratic expressions
+    - Quadratic functions & equations:
+        sections:
+        - Intro to parabolas:
+            subsections:
+            - Understanding parabolas
+            - Graphing parabolas
+            - Interpreting graphs of parabolas
+        - Solving and graphing with factored form:
+            subsections:
+            - Understanding factored form
+            - Solving quadratic equations in factored form
+            - Graphing quadratic functions in factored form
+        - Solving by taking the square root:
+            subsections:
+            - Understanding the square root method
+            - Solving quadratic equations by taking the square root
+            - Checking solutions to quadratic equations
+        - Vertex form:
+            subsections:
+            - Understanding vertex form
+            - Writing quadratic functions in vertex form
+            - Graphing quadratic functions in vertex form
+        - Solving quadratics by factoring:
+            subsections:
+            - Solving quadratic equations by factoring
+            - Checking solutions to quadratic equations
+            - Real-world applications of solving by factoring
+        - The quadratic formula:
+            subsections:
+            - Understanding the quadratic formula
+            - Solving quadratic equations with the quadratic formula
+            - Using the discriminant to analyze solutions
+        - Completing the square intro:
+            subsections:
+            - Understanding completing the square
+            - Completing the square to solve quadratic equations
+            - Using completing the square to write quadratic functions in vertex form
+        - More on completing the square:
+            subsections:
+            - Completing the square with complex numbers
+            - Using completing the square to solve real-world problems
+            - Comparing methods for solving quadratic equations
+        - Strategizing to solve quadratic equations:
+            subsections:
+            - Choosing the best method to solve a quadratic equation
+            - Solving complex quadratic equations
+            - Reviewing strategies for solving quadratic equations
+        - Quadratic standard form:
+            subsections:
+            - Understanding standard form
+            - Writing quadratic functions in standard form
+            - Graphing quadratic functions in standard form
+        - Features & forms of quadratic functions:
+            subsections:
+            - Identifying key features of quadratic functions
+            - Comparing forms of quadratic functions
+            - Using features and forms to solve real-world problems
+        - Comparing quadratic functions:
+            subsections:
+            - Comparing graphs of quadratic functions
+            - Comparing equations of quadratic functions
+            - Using comparisons to solve problems
+        - Transforming quadratic functions:
+            subsections:
+            - Understanding transformations of quadratic functions
+            - Graphing transformations of quadratic functions
+            - Writing equations for transformed quadratic functions
+    - Irrational numbers:
+        sections:
+        - Irrational numbers:
+            subsections:
+            - Understanding irrational numbers
+            - Approximating irrational numbers
+            - Operations with irrational numbers
+        - Sums and products of rational and irrational numbers:
+            subsections:
+            - Adding and subtracting rational and irrational numbers
+            - Multiplying and dividing rational and irrational numbers
+            - Simplifying expressions with rational and irrational numbers
+        - Proofs concerning irrational numbers:
+            subsections:
+            - Understanding proofs
+            - Proving properties of irrational numbers
+            - Using proofs to understand irrational numbers

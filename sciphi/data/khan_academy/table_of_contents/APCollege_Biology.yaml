@@ -1,0 +1,211 @@
+textbook:
+  'Comprehensive Guide to AP®︎/College Biology:':
+    chapters:
+    - The Chemistry of Life:
+        sections:
+        - The Structure of Water and Hydrogen Bonding:
+            subsections:
+            - The Unique Properties of Water
+            - The Role of Hydrogen Bonds
+        - The Elements of Life:
+            subsections:
+            - The Periodic Table and Biological Elements
+            - The Role of Each Element in Life
+        - Introduction to Biological Macromolecules:
+            subsections:
+            - The Four Major Types of Biological Macromolecules
+            - The Role of Macromolecules in Organisms
+        - Properties, Structure, and Function of Biological Macromolecules:
+            subsections:
+            - The Structure-Function Relationship in Macromolecules
+            - The Role of Macromolecules in Energy Storage and Release
+        - Nucleic Acids:
+            subsections:
+            - 'DNA and RNA: The Carriers of Genetic Information'
+            - The Structure and Function of Nucleic Acids
+    - Cell Structure and Function:
+        sections:
+        - Cell Structures and Their Functions:
+            subsections:
+            - The Cell Theory
+            - Prokaryotic and Eukaryotic Cells
+        - Cell Size:
+            subsections:
+            - The Importance of Cell Size
+            - The Relationship Between Cell Size and Function
+        - Plasma Membranes:
+            subsections:
+            - The Fluid Mosaic Model
+            - The Role of the Plasma Membrane in Cell Function
+        - Membrane Permeability:
+            subsections:
+            - Passive and Active Transport
+            - The Role of Membrane Permeability in Cell Function
+        - Membrane Transport:
+            subsections:
+            - The Role of Transport Proteins
+            - The Importance of Membrane Transport in Cell Function
+        - Facilitated Diffusion:
+            subsections:
+            - The Role of Carrier Proteins
+            - The Importance of Facilitated Diffusion in Cell Function
+        - 'Mechanisms of Transport: Tonicity and Osmoregulation':
+            subsections:
+            - The Concepts of Hypertonic, Hypotonic, and Isotonic Solutions
+            - The Role of Osmoregulation in Cell Function
+        - Cell Compartmentalization and Its Origins:
+            subsections:
+            - The Role of Organelles in Cell Compartmentalization
+            - The Endosymbiotic Theory
+    - Cellular Energetics:
+        sections:
+        - Enzyme Structure and Catalysis:
+            subsections:
+            - The Role of Enzymes in Biological Reactions
+            - The Effect of Environmental Factors on Enzyme Activity
+        - Cellular Energy:
+            subsections:
+            - The Role of ATP in Energy Transfer
+            - The Process of Cellular Respiration
+        - Photosynthesis:
+            subsections:
+            - The Light-Dependent and Light-Independent Reactions
+            - The Importance of Photosynthesis in the Carbon Cycle
+        - Cellular Respiration:
+            subsections:
+            - Glycolysis, the Krebs Cycle, and the Electron Transport Chain
+            - The Role of Cellular Respiration in Energy Production
+        - Fitness:
+            subsections:
+            - The Biological Definition of Fitness
+            - The Role of Fitness in Evolution
+    - Cell Communication and Cell Cycle:
+        sections:
+        - Cell Communication:
+            subsections:
+            - Signal Transduction Pathways
+            - The Role of Cell Communication in Multicellular Organisms
+        - Signal Transduction:
+            subsections:
+            - The Role of Receptors in Signal Transduction
+            - The Process of Signal Amplification
+        - Changes in Signal Transduction Pathways:
+            subsections:
+            - The Role of Signal Transduction Pathways in Disease
+            - The Effect of Mutations on Signal Transduction Pathways
+        - Feedback:
+            subsections:
+            - The Role of Feedback in Biological Systems
+            - Positive and Negative Feedback
+        - Cell Cycle:
+            subsections:
+            - The Phases of the Cell Cycle
+            - The Role of the Cell Cycle in Growth and Repair
+        - Regulation of Cell Cycle:
+            subsections:
+            - The Role of Checkpoints in the Cell Cycle
+            - The Effect of Mutations on Cell Cycle Regulation
+    - Heredity:
+        sections:
+        - Meiosis and Genetic Diversity:
+            subsections:
+            - The Process of Meiosis
+            - The Role of Meiosis in Genetic Diversity
+        - Mendelian Genetics:
+            subsections:
+            - The Laws of Inheritance
+            - The Role of Mendelian Genetics in Predicting Offspring Traits
+        - Environmental Effects on Phenotype:
+            subsections:
+            - The Concept of Phenotypic Plasticity
+            - The Role of the Environment in Shaping Phenotypes
+        - Chromosomal Inheritance:
+            subsections:
+            - The Role of Chromosomes in Inheritance
+            - The Effect of Chromosomal Abnormalities on Phenotypes
+    - Gene Expression and Regulation:
+        sections:
+        - DNA and RNA Structure:
+            subsections:
+            - The Double Helix and the Central Dogma
+            - The Role of DNA and RNA in Protein Synthesis
+        - Replication:
+            subsections:
+            - The Process of DNA Replication
+            - The Role of Replication in Cell Division
+        - Transcription and RNA Processing:
+            subsections:
+            - The Process of Transcription
+            - The Role of RNA Processing in Gene Expression
+        - Translation:
+            subsections:
+            - The Role of the Ribosome in Translation
+            - The Process of Protein Synthesis
+        - Regulation of Gene Expression and Cell Specialization:
+            subsections:
+            - The Role of Transcription Factors in Gene Regulation
+            - The Process of Cell Differentiation
+        - Mutations:
+            subsections:
+            - The Types of Mutations and Their Effects on Proteins
+            - The Role of Mutations in Evolution and Disease
+        - Biotechnology:
+            subsections:
+            - The Techniques of Genetic Engineering
+            - The Role of Biotechnology in Medicine and Agriculture
+    - Natural Selection:
+        sections:
+        - Natural Selection:
+            subsections:
+            - The Mechanisms of Natural Selection
+            - The Role of Natural Selection in Evolution
+        - Population Genetics:
+            subsections:
+            - The Hardy-Weinberg Principle
+            - The Role of Genetic Variation in Population Genetics
+        - Hardy-Weinberg Equilibrium:
+            subsections:
+            - The Conditions for Hardy-Weinberg Equilibrium
+            - The Role of Hardy-Weinberg Equilibrium in Population Genetics
+        - Evidence for Evolution:
+            subsections:
+            - Fossil Evidence and Comparative Anatomy
+            - Molecular Evidence for Evolution
+        - Common Ancestry and Continuing Evolution:
+            subsections:
+            - The Concept of Common Ancestry
+            - The Role of Continuing Evolution in Biodiversity
+        - Phylogeny:
+            subsections:
+            - The Construction and Interpretation of Phylogenetic Trees
+            - The Role of Phylogeny in Understanding Evolution
+        - Speciation:
+            subsections:
+            - The Mechanisms of Speciation
+            - The Role of Speciation in Biodiversity
+        - Extinction:
+            subsections:
+            - The Causes and Consequences of Extinction
+            - The Role of Extinction in Evolution
+        - Variations in Populations:
+            subsections:
+            - The Sources of Genetic Variation
+            - The Role of Genetic Variation in Evolution
+        - Origins of Life on Earth:
+            subsections:
+            - Theories on the Origins of Life
+            - The Role of Abiogenesis in the Origins of Life
+    - Ecology:
+        sections:
+        - Community Ecology:
+            subsections:
+            - The Role of Interactions in Community Structure
+            - The Concepts of Keystone Species and Trophic Levels
+        - Biodiversity:
+            subsections:
+            - The Measurement and Importance of Biodiversity
+            - The Threats to Biodiversity and Conservation Efforts
+        - Disruptions to Ecosystems:
+            subsections:
+            - The Impact of Human Activities on Ecosystems
+            - The Role of Climate Change in Ecosystem Disruptions

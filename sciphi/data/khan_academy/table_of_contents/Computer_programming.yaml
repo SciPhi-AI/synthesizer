@@ -1,0 +1,215 @@
+textbook:
+  'Mastering Computer Programming:':
+    chapters:
+    - 'Introduction to JavaScript: Drawing & Animation':
+        sections:
+        - Introduction to Programming:
+            subsections:
+            - Understanding the basics
+            - Setting up the environment
+            - Writing your first program
+        - Drawing Basics:
+            subsections:
+            - Understanding coordinates
+            - Drawing shapes
+            - Using the canvas
+        - Coloring:
+            subsections:
+            - Understanding color models
+            - Applying colors
+            - Gradients and patterns
+        - Variables:
+            subsections:
+            - Declaring variables
+            - Variable types
+            - Variable scope
+        - Interactive Programs:
+            subsections:
+            - User input
+            - Event handling
+            - Creating interactive elements
+        - Text and Strings:
+            subsections:
+            - String manipulation
+            - Regular expressions
+            - String formatting
+        - Functions:
+            subsections:
+            - Defining functions
+            - Function parameters and return values
+            - Anonymous functions and closures
+        - Logic and If Statements:
+            subsections:
+            - Understanding conditional statements
+            - Logical operators
+            - Control flow
+        - Debugging Programs:
+            subsections:
+            - Understanding errors
+            - Using the console
+            - Debugging tools and techniques
+        - Looping:
+            subsections:
+            - For loops
+            - While loops
+            - Loop control statements
+        - Writing Clean Code:
+            subsections:
+            - Code formatting
+            - Commenting
+            - Code refactoring
+        - Arrays:
+            subsections:
+            - Array manipulation
+            - Multidimensional arrays
+            - Array methods
+        - Objects:
+            subsections:
+            - Object creation
+            - Object properties and methods
+            - Prototypes and inheritance
+        - Object-Oriented Design:
+            subsections:
+            - Understanding classes
+            - Encapsulation
+            - Polymorphism
+    - 'Introduction to HTML/CSS: Making Webpages':
+        sections:
+        - Introduction to HTML:
+            subsections:
+            - Understanding HTML structure
+            - Common HTML tags
+            - HTML attributes
+        - Introduction to CSS:
+            subsections:
+            - CSS syntax
+            - CSS selectors
+            - CSS box model
+        - More HTML Tags:
+            subsections:
+            - HTML lists
+            - HTML tables
+            - HTML forms
+        - CSS Text Properties:
+            subsections:
+            - Text color
+            - Text alignment
+            - Text decoration
+        - CSS Layout:
+            subsections:
+            - Display property
+            - Positioning elements
+            - CSS grid and flexbox
+        - More CSS Selectors:
+            subsections:
+            - Attribute selectors
+            - Pseudo-classes and pseudo-elements
+            - Combinators
+        - Other Ways to Embed CSS:
+            subsections:
+            - Inline styles
+            - Internal styles
+            - External stylesheets
+    - 'Introduction to SQL: Querying and Managing Data':
+        sections:
+        - SQL Basics:
+            subsections:
+            - SQL syntax
+            - Creating tables
+            - Inserting data
+        - More Advanced SQL Queries:
+            subsections:
+            - Joining tables
+            - Subqueries
+            - Stored procedures
+    - 'HTML/JS: Making Webpages Interactive':
+        sections:
+        - Get Ready to Make Your Webpages Interactive:
+            subsections:
+            - Understanding the DOM
+            - Selecting elements
+            - Modifying elements
+        - JS and the DOM:
+            subsections:
+            - DOM manipulation
+            - Event handling
+            - AJAX and fetch API
+        - DOM Access Methods:
+            subsections:
+            - getElementById
+            - getElementsByClassName
+            - querySelector
+        - DOM Modification:
+            subsections:
+            - Changing element content
+            - Adding and removing elements
+            - Changing element attributes
+        - DOM Events:
+            subsections:
+            - Event listeners
+            - Event propagation
+            - Event objects
+        - DOM Animation:
+            subsections:
+            - CSS transitions
+            - JavaScript animations
+            - requestAnimationFrame
+    - 'HTML/JS: Making Webpages Interactive with jQuery':
+        sections:
+        - Welcome to jQuery:
+            subsections:
+            - jQuery syntax
+            - jQuery selectors
+            - jQuery events
+        - DOM Access with jQuery:
+            subsections:
+            - jQuery methods for DOM access
+            - Traversing the DOM with jQuery
+            - jQuery and AJAX
+        - DOM Modification with jQuery:
+            subsections:
+            - Adding and removing elements with jQuery
+            - Changing content with jQuery
+            - jQuery effects
+        - jQuery Techniques:
+            subsections:
+            - Chaining
+            - Callbacks
+            - Promises
+        - DOM Events with jQuery:
+            subsections:
+            - Event handling with jQuery
+            - Custom events
+            - Event delegation
+        - DOM Animation & Effects with jQuery:
+            subsections:
+            - jQuery animate method
+            - jQuery fade and slide methods
+            - jQuery stop, delay, and finish methods
+    - Meet the Professional:
+        sections:
+        - Meet the Professional:
+            subsections:
+            - Interview with a professional
+            - Career advice
+            - Industry insights
+        - Watch an Introduction Video:
+            subsections:
+            - Video content
+            - Video analysis
+            - Discussion
+        - Meet the Professionals:
+            subsections:
+            - Panel discussion
+            - Q&A session
+            - Networking tips
+        - Help Requests:
+            subsections:
+            - Asking for help
+            - Providing help
+            - Building a support network
+        - Browse Projects:
+            subsections:
+            - Project showcase
+            - Project analysis
+            - Creating your own project

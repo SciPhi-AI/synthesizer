@@ -1,0 +1,256 @@
+textbook:
+  'Mastering Algebra 2: A Comprehensive Guide:':
+    chapters:
+    - Polynomial Operations and Complex Numbers:
+        sections:
+        - Understanding Like Terms:
+            subsections:
+            - Definition of Like Terms
+            - Rules for Combining Like Terms
+            - Practice Problems
+        - The Distributive Property & Equivalent Expressions:
+            subsections:
+            - Understanding the Distributive Property
+            - Applying the Distributive Property
+            - Equivalent Expressions
+            - Practice Problems
+        - 'Powers: Multiplication & Division':
+            subsections:
+            - Basics of Powers
+            - Multiplying Powers
+            - Dividing Powers
+            - Practice Problems
+        - Multiplying Binomials:
+            subsections:
+            - Introduction to Binomials
+            - Steps for Multiplying Binomials
+            - Practice Problems
+        - Special Products of Binomials:
+            subsections:
+            - Understanding Special Products
+            - Applying Special Products to Binomials
+            - Practice Problems
+        - Introduction to Factoring Quadratics:
+            subsections:
+            - Basics of Quadratics
+            - 'Factoring Quadratics: An Overview'
+            - Practice Problems
+        - Factoring Quadratics by Grouping:
+            subsections:
+            - Understanding Grouping
+            - Factoring Quadratics Using Grouping
+            - Practice Problems
+        - Factoring Quadratics with Difference of Squares:
+            subsections:
+            - Understanding Difference of Squares
+            - Factoring Quadratics Using Difference of Squares
+            - Practice Problems
+        - Factoring Quadratics with Perfect Squares:
+            subsections:
+            - Understanding Perfect Squares
+            - Factoring Quadratics Using Perfect Squares
+            - Practice Problems
+    - Equations:
+        sections:
+        - Solving Equations with Variables on Both Sides:
+            subsections:
+            - Understanding Equations with Variables on Both Sides
+            - Steps for Solving Equations with Variables on Both Sides
+            - Practice Problems
+        - Linear Equations with Parentheses:
+            subsections:
+            - Understanding Linear Equations with Parentheses
+            - Solving Linear Equations with Parentheses
+            - Practice Problems
+        - Introduction to Systems of Equations:
+            subsections:
+            - Basics of Systems of Equations
+            - 'Solving Systems of Equations: An Overview'
+            - Practice Problems
+        - Solving Systems of Equations with Substitution:
+            subsections:
+            - Understanding the Substitution Method
+            - Applying the Substitution Method to Systems of Equations
+            - Practice Problems
+        - Equivalent Systems of Equations and the Elimination Method:
+            subsections:
+            - Understanding Equivalent Systems of Equations
+            - 'The Elimination Method: An Overview'
+            - Practice Problems
+        - Radicals:
+            subsections:
+            - Basics of Radicals
+            - Solving Equations with Radicals
+            - Practice Problems
+        - Solving Quadratic Equations by Taking the Square Root:
+            subsections:
+            - Understanding Quadratic Equations
+            - Solving Quadratics by Taking the Square Root
+            - Practice Problems
+        - Solving Quadratics by Factoring:
+            subsections:
+            - Understanding Factoring
+            - 'Solving Quadratics by Factoring: An Overview'
+            - Practice Problems
+        - The Quadratic Formula:
+            subsections:
+            - Understanding the Quadratic Formula
+            - Applying the Quadratic Formula
+            - Practice Problems
+    - Transformations of Functions and Modeling with Functions:
+        sections:
+        - Evaluating Functions:
+            subsections:
+            - Basics of Functions
+            - Steps for Evaluating Functions
+            - Practice Problems
+        - Introduction to the Domain and Range of a Function:
+            subsections:
+            - Understanding Domain and Range
+            - Determining the Domain and Range of a Function
+            - Practice Problems
+        - Recognizing Functions:
+            subsections:
+            - Understanding Function Recognition
+            - Practice Problems
+        - Maximum and Minimum Points:
+            subsections:
+            - Understanding Maximum and Minimum Points
+            - Finding Maximum and Minimum Points
+            - Practice Problems
+        - Intervals where a Function is Positive, Negative, Increasing, or Decreasing:
+            subsections:
+            - Understanding Function Intervals
+            - Determining Function Intervals
+            - Practice Problems
+        - Graphs of Absolute Value Functions:
+            subsections:
+            - Understanding Absolute Value Functions
+            - Graphing Absolute Value Functions
+            - Practice Problems
+        - Graphing Quadratics in Factored Form:
+            subsections:
+            - Understanding Quadratics in Factored Form
+            - Steps for Graphing Quadratics in Factored Form
+            - Practice Problems
+        - Graphing Quadratics in Vertex Form:
+            subsections:
+            - Understanding Quadratics in Vertex Form
+            - Steps for Graphing Quadratics in Vertex Form
+            - Practice Problems
+        - Graphing Quadratics in Standard Form:
+            subsections:
+            - Understanding Quadratics in Standard Form
+            - Steps for Graphing Quadratics in Standard Form
+            - Practice Problems
+        - Features and Forms of Quadratic Functions:
+            subsections:
+            - Understanding Quadratic Functions
+            - Different Forms of Quadratic Functions
+            - Practice Problems
+        - Transforming Quadratic Functions:
+            subsections:
+            - Understanding Function Transformations
+            - 'Transforming Quadratic Functions: An Overview'
+            - Practice Problems
+    - Exponential and Logarithmic Relationships:
+        sections:
+        - Exponent Properties (Integer Exponents):
+            subsections:
+            - Understanding Exponent Properties
+            - Applying Exponent Properties
+            - Practice Problems
+        - Radicals:
+            subsections:
+            - Basics of Radicals
+            - Solving Equations with Radicals
+            - Practice Problems
+        - Exponential vs. Linear Growth:
+            subsections:
+            - Understanding Exponential Growth
+            - Comparing Exponential and Linear Growth
+            - Practice Problems
+        - Exponential Expressions:
+            subsections:
+            - Understanding Exponential Expressions
+            - Solving Exponential Expressions
+            - Practice Problems
+        - Graphs of Exponential Growth:
+            subsections:
+            - Understanding Graphs of Exponential Growth
+            - Plotting Graphs of Exponential Growth
+            - Practice Problems
+        - Exponential vs. Linear Growth over Time:
+            subsections:
+            - Understanding Growth over Time
+            - Comparing Exponential and Linear Growth over Time
+            - Practice Problems
+        - Exponential Growth & Decay:
+            subsections:
+            - Understanding Exponential Decay
+            - Comparing Exponential Growth and Decay
+            - Practice Problems
+        - Exponential Functions from Tables & Graphs:
+            subsections:
+            - Understanding Exponential Functions
+            - Identifying Exponential Functions from Tables and Graphs
+            - Practice Problems
+        - Introduction to Inverse Functions:
+            subsections:
+            - Basics of Inverse Functions
+            - Solving Inverse Functions
+            - Practice Problems
+    - Trigonometry:
+        sections:
+        - Pythagorean Theorem:
+            subsections:
+            - Understanding the Pythagorean Theorem
+            - Applying the Pythagorean Theorem
+            - Practice Problems
+        - Pythagorean Theorem and Distance Between Points:
+            subsections:
+            - Understanding Distance Between Points
+            - Applying the Pythagorean Theorem to Find Distance
+            - Practice Problems
+        - Ratios in Right Triangles:
+            subsections:
+            - Understanding Ratios in Right Triangles
+            - Applying Ratios in Right Triangles
+            - Practice Problems
+        - Introduction to the Trigonometric Ratios:
+            subsections:
+            - Basics of Trigonometric Ratios
+            - Applying Trigonometric Ratios
+            - Practice Problems
+        - Solving for Sides and Angles in Right Triangles Using the Trigonometric Ratios:
+            subsections:
+            - Understanding Sides and Angles in Right Triangles
+            - Applying Trigonometric Ratios to Solve for Sides and Angles
+            - Practice Problems
+        - Introduction to Radians:
+            subsections:
+            - Basics of Radians
+            - Converting Between Degrees and Radians
+            - Practice Problems
+    - Rational Functions:
+        sections:
+        - Adding and Subtracting Fractions with Unlike Denominators:
+            subsections:
+            - Understanding Fractions with Unlike Denominators
+            - Steps for Adding and Subtracting Fractions with Unlike Denominators
+            - Practice Problems
+        - Multiplying and Dividing Fractions:
+            subsections:
+            - Understanding Fraction Multiplication and Division
+            - Steps for Multiplying and Dividing Fractions
+            - Practice Problems
+        - Multiplying Binomials:
+            subsections:
+            - Introduction to Binomials
+            - Steps for Multiplying Binomials
+            - Practice Problems
+        - Introduction to Factoring Quadratics:
+            subsections:
+            - Basics of Quadratics
+            - 'Factoring Quadratics: An Overview'
+            - Practice Problems

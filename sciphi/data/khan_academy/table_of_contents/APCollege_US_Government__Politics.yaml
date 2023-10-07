@@ -1,0 +1,242 @@
+textbook:
+  '''Mastering AP®︎/College US Government & Politics: A Comprehensive Guide'':':
+    chapters:
+    - Foundations of American democracy:
+        sections:
+        - Ideals of democracy:
+            subsections:
+            - The concept of democracy
+            - Historical development of democratic ideals
+        - Types of democracy:
+            subsections:
+            - Direct democracy
+            - Representative democracy
+            - Hybrid systems
+        - Challenges of the Articles of Confederation:
+            subsections:
+            - Weaknesses of the Articles
+            - Shays' Rebellion and its impact
+        - Government power and individual rights:
+            subsections:
+            - The balance of power
+            - Civil liberties and their protection
+        - Ratification of the US Constitution:
+            subsections:
+            - The Constitutional Convention
+            - The Federalist Papers and the debate over ratification
+        - Principles of American government:
+            subsections:
+            - Separation of powers
+            - Checks and balances
+        - The relationship between the states and the federal government:
+            subsections:
+            - The concept of federalism
+            - Dual federalism and cooperative federalism
+        - Constitutional interpretations of federalism:
+            subsections:
+            - The Supreme Court and federalism
+            - Key federalism cases
+        - Federalism in action:
+            subsections:
+            - Case studies of federalism
+            - The impact of federalism on policy making
+    - Interactions among branches of government:
+        sections:
+        - 'Congress: The Senate and the House of Representatives':
+            subsections:
+            - The structure of Congress
+            - Differences between the Senate and the House
+        - Structures, powers, and functions of Congress:
+            subsections:
+            - Legislative powers
+            - Non-legislative functions
+        - Congressional behavior:
+            subsections:
+            - The role of parties in Congress
+            - Committee system and legislative process
+        - Roles and powers of the president:
+            subsections:
+            - Constitutional powers of the president
+            - The president as chief executive
+        - Checks on the presidency:
+            subsections:
+            - Congressional oversight
+            - The role of the judiciary
+        - Expansion of presidential power:
+            subsections:
+            - Historical trends in presidential power
+            - The modern presidency
+        - Presidential communication:
+            subsections:
+            - The bully pulpit
+            - The president and the press
+        - The judicial branch:
+            subsections:
+            - The structure of the federal court system
+            - 'The Supreme Court: composition and procedures'
+        - Legitimacy of the judicial branch:
+            subsections:
+            - Judicial review
+            - The Court and public opinion
+        - The Court in action:
+            subsections:
+            - Landmark Supreme Court cases
+            - The impact of Court decisions
+        - Checks on the judicial branch:
+            subsections:
+            - Congressional checks on the judiciary
+            - Executive checks on the judiciary
+        - The bureaucracy:
+            subsections:
+            - The structure and function of the federal bureaucracy
+            - Bureaucratic behavior and policymaking
+        - Discretionary and rule-making authority:
+            subsections:
+            - Bureaucratic discretion
+            - Rule-making process
+        - Holding the bureaucracy accountable:
+            subsections:
+            - Oversight and control of the bureaucracy
+            - Bureaucracy and democratic accountability
+        - Policy and the branches of government:
+            subsections:
+            - The policy-making process
+            - The role of each branch in policy making
+    - Civil liberties and civil rights:
+        sections:
+        - The Bill of Rights:
+            subsections:
+            - The origins of the Bill of Rights
+            - Analysis of each amendment
+        - 'The First Amendment: freedom of religion':
+            subsections:
+            - Establishment clause
+            - Free exercise clause
+        - The Second Amendment:
+            subsections:
+            - The right to bear arms
+            - Gun control debates
+        - Balancing individual freedom with public order and safety:
+            subsections:
+            - The limits of freedom
+            - Public safety and national security
+        - Selective incorporation:
+            subsections:
+            - The doctrine of incorporation
+            - Key incorporation cases
+        - Due process and the rights of the accused:
+            subsections:
+            - The concept of due process
+            - Criminal rights and procedures
+        - Social movements and equal protection:
+            subsections:
+            - The Civil Rights Movement
+            - The Women's Rights Movement
+        - Government responses to social movements:
+            subsections:
+            - Government action and civil rights
+            - Government action and women's rights
+        - Balancing minority and majority rights:
+            subsections:
+            - The concept of majority rule and minority rights
+            - Case studies in balancing rights
+        - Affirmative action:
+            subsections:
+            - The origins and goals of affirmative action
+            - Controversies and court cases
+    - American political ideologies and beliefs:
+        sections:
+        - American attitudes about government and politics:
+            subsections:
+            - Public opinion and political culture
+            - Trust in government
+        - Political socialization:
+            subsections:
+            - Agents of socialization
+            - The impact of socialization on political beliefs
+        - Changes in ideology:
+            subsections:
+            - Shifts in American political ideology
+            - Factors influencing ideological change
+        - Influence of political events on ideology:
+            subsections:
+            - Key events and their impact on public opinion
+            - The role of crises in shaping ideology
+        - Measuring public opinion:
+            subsections:
+            - Polling methods and techniques
+            - Interpreting poll results
+        - Evaluating public opinion data:
+            subsections:
+            - Understanding margin of error
+            - The role of bias in polling
+        - Ideologies of political parties:
+            subsections:
+            - 'The Democratic Party: history and ideology'
+            - 'The Republican Party: history and ideology'
+        - Ideology and policymaking:
+            subsections:
+            - The impact of ideology on policy
+            - Case studies in ideology and policy
+        - Ideology and economic policy:
+            subsections:
+            - 'Economic ideologies: liberalism and conservatism'
+            - Economic policy debates
+        - Ideology and social policy:
+            subsections:
+            - Social policy and political ideology
+            - Key social policy issues
+    - Political participation:
+        sections:
+        - Voting rights and models of voter behavior:
+            subsections:
+            - The history of voting rights
+            - Theories of voting behavior
+        - Voter turnout:
+            subsections:
+            - Factors influencing voter turnout
+            - Efforts to increase turnout
+        - Political parties:
+            subsections:
+            - The role of parties in American politics
+            - Party organization and structure
+        - How and why political parties change and adapt:
+            subsections:
+            - Party realignment and dealignment
+            - The impact of third parties
+        - Third-party politics:
+            subsections:
+            - The role of third parties
+            - Notable third-party campaigns
+        - Interest groups influencing policymaking:
+            subsections:
+            - The role of interest groups
+            - Lobbying and influence
+        - Groups influencing policy outcomes:
+            subsections:
+            - Case studies in interest group influence
+            - The impact of PACs and Super PACs
+        - Electing a president:
+            subsections:
+            - The presidential election process
+            - The Electoral College
+        - Congressional elections:
+            subsections:
+            - The structure of congressional elections
+            - Gerrymandering and redistricting
+        - Modern campaigns:
+            subsections:
+            - Campaign strategies and tactics
+            - The role of money in campaigns
+        - Campaign finance:
+            subsections:
+            - The history of campaign finance laws
+            - Current issues in campaign finance
+        - The media:
+            subsections:
+            - The role of the media in politics
+            - Media bias and influence
+        - Changing media:
+            subsections:
+            - The impact of new media
+            - Social media and politics
