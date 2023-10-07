@@ -98,10 +98,10 @@ class Scraper:
 
         for course in courses:
             if "/humanities/art-history" == course["href"]:
-                pass_through = False
+                #     pass_through = False
                 continue
-            if pass_through:
-                continue
+            # if pass_through:
+            #     continue
             if course["href"].count("/") < 2:
                 continue
 
@@ -116,6 +116,7 @@ class Scraper:
 
             course_data = Scraper.extract_course_data(course)
             writer.write([course_data])
+
             time.sleep(self.sleep_time)
 
     @staticmethod
@@ -163,6 +164,7 @@ class Scraper:
                 ):
                     current_topic_url = page_url
                     current_topic_key = unit.text.strip()
+                    print("Switching to", current_topic_key)
                     result["topics"][current_topic_key] = []
 
                 else:
@@ -172,6 +174,8 @@ class Scraper:
                     result["topics"][current_topic_key].append(
                         unit.text.strip()
                     )
+
+                    # print(result["topics"][current_topic_key])
 
                     # print(unit["href"].replace(current_topic_url, ""))
                 # result["topics"]
