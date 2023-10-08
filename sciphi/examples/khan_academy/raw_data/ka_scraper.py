@@ -88,7 +88,6 @@ class Scraper:
         for a_tag in courses:
             href = a_tag["href"]
             text = a_tag.text.strip()  # Remove leading/trailing whitespace
-            print(f"Text: {text}, Href: {href}")
 
         writer = JsonlDataWriter(
             os.path.join(data_directory, output_file_name)
@@ -96,12 +95,11 @@ class Scraper:
 
         course_dictionary = {}
 
+        # This section handles many of the edge cases in the KA course listings
         for course in courses:
             if "/humanities/art-history" == course["href"]:
-                #     pass_through = False
                 continue
-            # if pass_through:
-            #     continue
+
             if course["href"].count("/") < 2:
                 continue
 
@@ -156,47 +154,31 @@ class Scraper:
                 and "privacy" not in unit.text.strip().lower()
                 and "skills" not in unit.text.strip().lower()
             ):
-                # print(f'{page_url}\n\t{unit["href"]} {unit.text.strip()}')
-
                 if (
                     "unit" in unit.text.strip().lower()
                     or current_topic_url not in unit["href"]
                 ):
                     current_topic_url = page_url
                     current_topic_key = unit.text.strip()
-                    print("Switching to", current_topic_key)
+
                     result["topics"][current_topic_key] = []
 
                 else:
-                    # print(unit.text.strip().lower())
                     if unit.text.strip().lower() == "start course challenge":
                         continue
                     result["topics"][current_topic_key].append(
                         unit.text.strip()
                     )
 
-                    # print(result["topics"][current_topic_key])
-
-                    # print(unit["href"].replace(current_topic_url, ""))
-                # result["topics"]
-
-            # logging.debug("Scraping the syllabus")
-            # try:
-            #     result["topics"] = Scraper._get_topics_and_depths(soup)
-            # except Exception as e:
-            #     logging.warning(f"Failed to extract topics. Error: {e}")
-            #     result["topics"] = {}
-
         # REMOVE all empty topics
-        to_delete = []
+        # We remove <= 1 because certain classes in KA only have an introduction
+        empty_topics = []
         for topic in result["topics"].keys():
             if len(result["topics"][topic]) <= 1:
-                to_delete.append(topic)
+                empty_topics.append(topic)
 
-        for topic in to_delete:
+        for topic in empty_topics:
             del result["topics"][topic]
-
-        print(result["topics"])
 
         return result
 

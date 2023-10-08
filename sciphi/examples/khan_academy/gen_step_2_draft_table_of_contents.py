@@ -42,7 +42,6 @@ import logging
 import os
 from glob import glob
 
-import 
 import fire
 
 from sciphi.examples.helpers import get_default_settings_provider
