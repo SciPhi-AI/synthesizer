@@ -4,7 +4,7 @@
 <img width="716" alt="Screenshot 2023-10-01 at 10 45 12 AM" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/c4192288-b5af-4ef8-9774-82b3bb5c8251">
 </p>
 
-**SciPhi** is an configurable Python framework designed to tackle the challenges of efficiently training LLM (Large Language Model) through synthetic data. At its core, SciPhi offers:
+**SciPhi** is an configurable Python framework designed to tackle the challenges of efficiently training powerful LLMs (Large Language Model) through synthetic data. At its core, SciPhi offers:
 
 - **Configurable Data Generation**: Efficiently produce LLM-mediated synthetic training and tuning datasets tailored to your specific needs.
   
@@ -24,7 +24,8 @@ The Library of Phi is an initiative sponsored by SciPhi. Its primary goal is to 
 #### **Generating the default Textbook:**
 
 ```bash
-poetry run python sciphi/examples/library_of_phi/generate_textbook.py run --do-rag=False --textbook=Aerodynamics_of_Viscous_Fluids --log-level=DEBUG
+# Note, rather than passing arguments in the command line, you can modify the default settings in config/generation_settings/book_draft_settings.yml
+poetry run python sciphi/examples/library_of_phi/generate_textbook.py run  --llm-provider=openai --llm_model_name=gpt-3.5-turbo --do-rag=False --textbook=Aerodynamics_of_Viscous_Fluids --filter_existing_books=False --log-level=debug
 ```
 
 _[See the example output here](sciphi/data/library_of_phi/sample/Aerodynamics_of_Viscous_Fluids.md)_

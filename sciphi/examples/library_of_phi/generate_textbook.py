@@ -10,8 +10,8 @@ from tqdm import tqdm
 from sciphi.core.utils import (
     SciPhiConfig,
     get_config_dir,
-    get_data_dir,
     get_configured_logger,
+    get_data_dir,
 )
 from sciphi.examples.helpers import (
     load_yaml_file,
@@ -35,6 +35,7 @@ class TextbookContentGenerator:
 
     NO_WIKI_TEXT = "Not currently available."
     DEFAULT_SETTINGS_CONFIG = "book_draft_settings.yml"
+    AI_DISCLAIMER = "# NOTE - THIS TEXTBOOK WAS AI GENERATED\nThis textbook was generated using AI techniques. While it aims to be factual and accurate, please verify any critical information. The content may contain errors, biases or harmful content despite best efforts. Please report any issues.\n"
 
     class CompositeWriter:
         """Combines different writers for textbook generation."""
@@ -61,11 +62,21 @@ class TextbookContentGenerator:
             config = SciPhiConfig(yaml.safe_load(file))
 
         # RAG settings
-        config.rag_url = config.rag_server_url or os.environ.get("RAG_SERVER_URL")
-        config.rag_username = config.rag_username or os.environ.get("RAG_SERVER_USERNAME")
-        config.rag_password = config.rag_password or os.environ.get("RAG_SERVER_PASSWORD")
-        config.num_threads_per_proc = config.num_threads_per_proc or multiprocessing.cpu_count()
-        config.data_dir = config.data_dir or os.path.join(get_data_dir(), "library_of_phi")
+        config.rag_url = config.rag_server_url or os.environ.get(
+            "RAG_SERVER_URL"
+        )
+        config.rag_username = config.rag_username or os.environ.get(
+            "RAG_SERVER_USERNAME"
+        )
+        config.rag_password = config.rag_password or os.environ.get(
+            "RAG_SERVER_PASSWORD"
+        )
+        config.num_threads_per_proc = (
+            config.num_threads_per_proc or multiprocessing.cpu_count()
+        )
+        config.data_dir = config.data_dir or os.path.join(
+            get_data_dir(), "library_of_phi"
+        )
         config.update(cli_args)
 
         if config.do_rag and not all(
@@ -94,7 +105,9 @@ class TextbookContentGenerator:
         self.config = config
         self.logger = get_configured_logger(__name__, config.log_level.upper())
 
-    def initialize_processing(self, textbook_output_name: str):
+    def initialize_processing(
+        self, textbook_output_name: str
+    ) -> CompositeWriter:
         """Set up and return the output writer."""
         output_path = os.path.join(
             self.config.data_dir, self.config.output_dir, textbook_output_name
@@ -103,10 +116,7 @@ class TextbookContentGenerator:
             os.makedirs(os.path.dirname(output_path))
         self.logger.info(f"Saving textbook to {output_path}")
         writer = TextbookContentGenerator.CompositeWriter(output_path)
-        writer.raw_writer.write("# NOTE - THIS TEXTBOOK WAS AI GENERATED\n")
-        writer.raw_writer.write(
-            "This textbook was generated using AI techniques. While it aims to be factual and accurate, please verify any critical information. The content may contain errors, biases or harmful content despite best efforts. Please report any issues.\n"
-        )
+        writer.raw_writer.write(TextbookContentGenerator.AI_DISCLAIMER)
         return writer
 
     def run(self) -> None:
@@ -121,7 +131,9 @@ class TextbookContentGenerator:
             ]
         else:
             yml_file_paths = glob.glob(
-                os.path.join(self.config.data_dir, self.config.toc_dir, "*.yaml")
+                os.path.join(
+                    self.config.data_dir, self.config.toc_dir, "*.yaml"
+                )
             )
 
         # Split the file paths into chunks for each process
@@ -136,21 +148,39 @@ class TextbookContentGenerator:
         yml_file_paths_chunk = yml_file_paths[start_idx:end_idx]
 
         # Filter out books that already exist in the target directory
-        yml_file_paths_chunk = [yml for yml in yml_file_paths_chunk if not self.book_exists(yml)]
+        if self.config.filter_existing_books:
+            filtered_books = []
+            for yml_file_path in yml_file_paths_chunk:
+                if not self.book_exists(yml_file_path):
+                    filtered_books.append(yml_file_path)
+                else:
+                    self.logger.warning(
+                        f"Skipping {yml_file_path} as it already exists."
+                    )
+            yml_file_paths_chunk = filtered_books
 
-        self.logger.debug(
-            f"Process {self.config.process_num} is processing {len(yml_file_paths_chunk)} files"
-        )
+        if self.config.num_threads_per_proc > 1:
+            self.logger.debug(
+                f"Process {self.config.process_num} is processing {len(yml_file_paths_chunk)} files"
+            )
 
-        # Use multiprocessing to parallelize the processing of files in the chunk
-        pool = multiprocessing.Pool(processes=self.config.num_threads_per_proc)
-        # Wrap yml_file_paths_chunk with tqdm
-        with tqdm(total=len(yml_file_paths_chunk), desc="Processing files") as pbar:
-            for _ in pool.imap(self.process_yml_file, yml_file_paths_chunk):
-                pbar.update(1)
+            # Use multiprocessing to parallelize the processing of files in the chunk
+            pool = multiprocessing.Pool(
+                processes=self.config.num_threads_per_proc
+            )
+            # Wrap yml_file_paths_chunk with tqdm
+            with tqdm(
+                total=len(yml_file_paths_chunk), desc="Processing files"
+            ) as pbar:
+                for _ in pool.imap(
+                    self.process_yml_file, yml_file_paths_chunk
+                ):
+                    pbar.update(1)
 
-        pool.close()
-        pool.join()
+            pool.close()
+            pool.join()
+        else:
+            self.process_yml_file(yml_file_paths_chunk[0])
 
     def get_related_context(self, query: str) -> str:
         """Retrieve related context from Wikipedia."""
@@ -171,15 +201,17 @@ class TextbookContentGenerator:
         ]  # Extract the book name from the YAML file name
 
         # Assume the book files in the output directory have the ".md" extension
-        output_path = os.path.join(self.config.data_dir, self.config.output_dir, f"{book_name}.md")
+        output_path = os.path.join(
+            self.config.data_dir, self.config.output_dir, f"{book_name}.md"
+        )
         return os.path.exists(output_path)
 
-    def process_yml_file(self, yml_file_path: str):
+    def process_yml_file(self, yml_file_path: str) -> None:
         """Process a single YAML file to generate textbook content."""
         try:
-            textbook_output_name = self.config.textbook or os.path.basename(yml_file_path).replace(
-                ".yaml", ""
-            )
+            textbook_output_name = self.config.textbook or os.path.basename(
+                yml_file_path
+            ).replace(".yaml", "")
             self.logger.debug(f"Processing {yml_file_path}")
             yml_config = load_yaml_file(yml_file_path)
 
@@ -195,12 +227,18 @@ class TextbookContentGenerator:
                     subsection,
                     chapter_config,
                 ) = elements
-                self.logger.debug(f"Iterating over {textbook}, {chapter}, {section}, {subsection}")
+                self.logger.debug(
+                    f"Iterating over {textbook}, {chapter}, {section}, {subsection}"
+                )
 
-                self.logger.debug(f"Generating step for {chapter} - {section} - {subsection}")
+                self.logger.debug(
+                    f"Generating step for {chapter} - {section} - {subsection}"
+                )
 
                 if counter == 0:
-                    prev_response = self.handle_foreword(writer, textbook, chapter)
+                    prev_response = self.handle_foreword(
+                        writer, textbook, chapter
+                    )
 
                 if chapter != current_chapter:
                     prev_response = self.handle_chapter_transition(
@@ -229,7 +267,9 @@ class TextbookContentGenerator:
                 self.logger.debug(f"The prompt for this step:\n{step_prompt}")
                 step_completion = self.llm_provider.get_completion(step_prompt)
 
-                self.logger.debug(f"The completion for this step:\n{step_completion}")
+                self.logger.debug(
+                    f"The completion for this step:\n{step_completion}"
+                )
 
                 prev_response = step_completion
                 writer.raw_writer.write(f"{step_completion}\n")
@@ -243,7 +283,8 @@ class TextbookContentGenerator:
                     ]
                 )
                 prev_chapter_config = chapter_config
-        except:
+        except Exception as e:
+            self.logger.error("Error processing file with {e}")
             return
 
     def handle_foreword(
@@ -254,13 +295,18 @@ class TextbookContentGenerator:
     ) -> Tuple[str, dict]:
         """Handle the foreword section and return the previous response and chapter configuration."""
         self.logger.info(f"Processing {textbook}, Chapter:{chapter}")
-        self.logger.info("Getting context...")
         related_context = self.get_related_context(textbook)
         foreword_prompt = BOOK_FOREWORD_PROMPT.format(
             title=textbook,
-            related_context=related_context[: self.config.max_related_context_to_sample],
+            related_context=related_context[
+                : self.config.max_related_context_to_sample
+            ],
         )
+        print("foreword_prompt = ", foreword_prompt)
+        self.logger.debug(f"Prompting a foreword with:\n{foreword_prompt}\n\n")
         foreword_completion = self.llm_provider.get_completion(foreword_prompt)
+        self.logger.debug(f"Authored a foreword:\n{foreword_completion}\n\n")
+        print("foreword_completion = ", foreword_completion)
 
         writer.raw_writer.write(f"# {textbook}\n{foreword_completion}\n")
         writer.jsonl_writer.write(
@@ -292,10 +338,16 @@ class TextbookContentGenerator:
                 chapter=current_chapter,
                 book_context=f"Chapter outline:\n{prev_chapter_config}",
             )
-            self.logger.debug(f"Prompting a conclusion with:\n{chapter_summary_prompt}\n\n")
+            self.logger.debug(
+                f"Prompting a conclusion with:\n{chapter_summary_prompt}\n\n"
+            )
 
-            chapter_conclusion = self.llm_provider.get_completion(chapter_summary_prompt)
-            self.logger.debug(f"Authored a chapter completion:\n{chapter_conclusion}\n\n")
+            chapter_conclusion = self.llm_provider.get_completion(
+                chapter_summary_prompt
+            )
+            self.logger.debug(
+                f"Authored a chapter completion:\n{chapter_conclusion}\n\n"
+            )
 
             writer.raw_writer.write(f"{chapter_conclusion}\n")
             writer.jsonl_writer.write(
@@ -313,10 +365,16 @@ class TextbookContentGenerator:
             chapter=chapter,
             book_context=f"Chapter outline:\n{chapter_config}",
         )
-        self.logger.debug(f"Prompting an introduction with:\n{chapter_intro_prompt}\n\n")
+        self.logger.debug(
+            f"Prompting an introduction with:\n{chapter_intro_prompt}\n\n"
+        )
 
-        chapter_introduction = self.llm_provider.get_completion(chapter_intro_prompt)
-        self.logger.debug(f"Authored a chapter introduction:\n{chapter_introduction}\n\n")
+        chapter_introduction = self.llm_provider.get_completion(
+            chapter_intro_prompt
+        )
+        self.logger.debug(
+            f"Authored a chapter introduction:\n{chapter_introduction}\n\n"
+        )
 
         writer.raw_writer.write(f"{chapter_introduction}\n")
         writer.jsonl_writer.write(
@@ -345,8 +403,12 @@ class TextbookContentGenerator:
             chapter=chapter,
             section=section,
             subsection=subsection or "",
-            related_context=related_context[: self.config.max_related_context_to_sample],
-            book_context=prev_response[: self.config.max_prev_snippet_to_sample],
+            related_context=related_context[
+                : self.config.max_related_context_to_sample
+            ],
+            book_context=prev_response[
+                : self.config.max_prev_snippet_to_sample
+            ],
         )
 
 

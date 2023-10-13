@@ -47,8 +47,7 @@ class vLLM(LLM):
         self,
         config: vLLMConfig,
     ) -> None:
-        super().__init__(config)
-        if self.config.port is None:
+        if config.port is None:
             try:
                 from vllm import LLM as vvLLM
                 from vllm import SamplingParams
@@ -70,22 +69,28 @@ class vLLM(LLM):
                 raise ImportError(
                     "You specified a configuration port. Please install openai before attempting to run vLLM through a server. This can be accomplished via `poetry install -E openai,  ...OTHER_DEPENDENCIES_HERE`."
                 )
+        super().__init__(config)
 
     def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
         """Get a completion from the OpenAI API based on the provided messages."""
-        raise NotImplementedError("Chat completion not yet implemented for vLLM.")
+        raise NotImplementedError(
+            "Chat completion not yet implemented for vLLM."
+        )
 
     def get_instruct_completion(self, prompt: str) -> str:
         """Get an instruction completion from local vLLM API."""
         if not self.config.port:
-            return self.model.generate([prompt], self.sampling_params)[0].outputs[0].text
+            return (
+                self.model.generate([prompt], self.sampling_params)[0]
+                .outputs[0]
+                .text
+            )
 
         else:
             import openai
 
             openai.api_key = vLLM.DUMMY_API_KEY
             openai.api_base = vLLM.DUMMY_API_BASE.format(PORT=self.config.port)
-
             outputs = openai.Completion.create(
                 model=self.config.model_name,
                 temperature=self.config.temperature,
@@ -101,7 +106,11 @@ class vLLM(LLM):
         """Get batch instruction completion from local vLLM."""
         if self.config.port:
             return [
-                self.model.get_instruct_completion(prompt).outputs[0].text for prompt in prompts
+                self.model.get_instruct_completion(prompt).outputs[0].text
+                for prompt in prompts
             ]
 
-        return [ele.outputs[0].text for ele in self.model.generate(prompts, self.sampling_params)]
+        return [
+            ele.outputs[0].text
+            for ele in self.model.generate(prompts, self.sampling_params)
+        ]

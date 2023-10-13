@@ -15,11 +15,15 @@ def load_file_or_raise(path: str) -> pd.DataFrame:
             return pd.read_csv(path)
         elif file_extension == ".jsonl":
             with open(path, "r", encoding="utf-8") as file:
-                return pd.DataFrame(json.loads(line) for line in file if line.strip())
+                return pd.DataFrame(
+                    json.loads(line) for line in file if line.strip()
+                )
         else:
             raise ValueError(f"Unsupported file format: {file_extension}")
     except FileNotFoundError as e:
-        raise FileNotFoundError(f"Please check the expected data at {path}.") from e
+        raise FileNotFoundError(
+            f"Please check the expected data at {path}."
+        ) from e
 
 
 def load_existing_jsonl(file_path: str) -> list[dict]:
@@ -33,7 +37,9 @@ def load_existing_jsonl(file_path: str) -> list[dict]:
 def get_configured_logger(name: str, log_level: str) -> logging.Logger:
     """Get a configured logger."""
     log_level = getattr(logging, log_level.upper(), "INFO")
-    logging.basicConfig(level=log_level, format="%(asctime)s - %(levelname)s - %(message)s")
+    logging.basicConfig(
+        level=log_level, format="%(asctime)s - %(levelname)s - %(message)s"
+    )
     return logging.getLogger(name)
 
 
@@ -67,9 +73,13 @@ class SciPhiConfig:
     def __init__(self, dictionary):
         for key, value in dictionary.items():
             if isinstance(value, dict):
-                value = SciPhiConfig(value)  # Recursively convert nested dictionaries
+                value = SciPhiConfig(
+                    value
+                )  # Recursively convert nested dictionaries
             else:
-                value = self._cast_to_appropriate_type(value)  # Cast value to its appropriate type
+                value = self._cast_to_appropriate_type(
+                    value
+                )  # Cast value to its appropriate type
             setattr(self, key, value)
 
     @staticmethod
