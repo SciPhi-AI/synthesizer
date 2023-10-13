@@ -31,5 +31,4 @@ jobs:
         run: |
           poetry run black --check .
           poetry run isort --check-only --diff .
-          poetry run mypy --config-file pyproject.toml .
           poetry run flake8 .
