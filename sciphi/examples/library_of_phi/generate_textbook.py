@@ -1,3 +1,5 @@
+"""Generates textbook content from parsed course data."""
+import collections
 import glob
 import multiprocessing
 import os
@@ -118,6 +120,75 @@ class TextbookContentGenerator:
         writer = TextbookContentGenerator.CompositeWriter(output_path)
         writer.raw_writer.write(TextbookContentGenerator.AI_DISCLAIMER)
         return writer
+
+    def dry_run(self) -> None:
+        """Run a dry configuration validation without content generation and output summary statistics."""
+        # Check RAG configurations
+        if self.config.do_rag and not all(
+            [
+                self.config.rag_url,
+                self.config.rag_username,
+                self.config.rag_password,
+            ]
+        ):
+            raise ValueError(
+                "RAG configuration is invalid. Make sure you provide a RAG server rag_url, rag_username, and rag_password."
+            )
+
+        # Validate LLM provider configuration
+        if not self.llm_provider:
+            raise ValueError("Invalid LLM provider configuration.")
+
+        # Check for YAML file paths
+        if self.config.textbook:
+            yml_file_paths = [
+                os.path.join(
+                    self.config.data_dir,
+                    self.config.toc_dir,
+                    f"{self.config.textbook}.yaml",
+                )
+            ]
+        else:
+            yml_file_paths = glob.glob(
+                os.path.join(
+                    self.config.data_dir, self.config.toc_dir, "*.yaml"
+                )
+            )
+
+        if not yml_file_paths:
+            raise ValueError("No YAML files found in the specified directory.")
+
+        # Check the output path
+        output_path = os.path.join(
+            self.config.data_dir, self.config.output_dir, "dry_run_output"
+        )
+        if not os.path.exists(os.path.dirname(output_path)):
+            os.makedirs(os.path.dirname(output_path))
+
+        # Output some summary statistics
+        summary = collections.OrderedDict()
+        summary["RAG Server URL"] = self.config.rag_url
+        summary["LLM Provider"] = self.config.llm_provider
+        summary["LLM Model Name"] = self.config.llm_model_name
+        summary["Total YAML Files"] = len(yml_file_paths)
+        summary["Output Directory"] = os.path.dirname(output_path)
+        failed_loads = 0
+        self.logger.info("Validating configs now...")
+        for yml in tqdm(yml_file_paths):
+            try:
+                yml_config = load_yaml_file(yml)
+                # check that we can traverse the config
+                _ = [ele for ele in traverse_config(yml_config)]
+            except:
+                continue
+                failed_loads += 1
+        summary["YAML Files with Errors"] = failed_loads
+        summary["YAML Failure Rate"] = float(failed_loads) / len(
+            yml_file_paths
+        )
+        print("\nDry Run Summary:")
+        for key, value in summary.items():
+            print(f"{key}: {value}")
 
     def run(self) -> None:
         """Run the draft book generation process."""

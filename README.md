@@ -21,6 +21,13 @@
 **Introduction:**  
 The Library of Phi is an initiative sponsored by SciPhi. Its primary goal is to democratize access to high-quality textbooks. The project utilizes AI-driven techniques to generate textbooks by processing combining raw information (such as table of contents) with unstructured data (such as Vector Databases) to generate high quality factually grounded textbooks.
 
+#### **Optional - Validating Generation Pipeline:**
+
+```bash
+poetry run python sciphi/examples/library_of_phi/generate_textbook.py dry_run
+```
+
+
 #### **Generating the default Textbook:**
 
 ```bash

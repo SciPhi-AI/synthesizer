@@ -422,14 +422,16 @@ def wiki_search_api(
 def traverse_config(
     config: dict,
 ) -> Generator[Tuple[str, str, str, str, dict], None, None]:
-    """Traverse the config and yield textbook, chapter, section, subsection names"""
+    """
+    Traverse the config and yield textbook,
+    chapter, section, subsection names, and full chapter config
+    """
 
     def get_key(config_dict: dict) -> str:
         """Get the key from a dictionary with a single key-value pair"""
-        keys = list(config_dict.keys())
-        if not keys:
+        if not config_dict:
             raise KeyError("Dictionary is empty, no key found")
-        return keys[0]
+        return next(iter(config_dict))
 
     textbook_name = get_key(config["textbook"])
     chapters = config["textbook"][textbook_name]["chapters"]
@@ -437,6 +439,7 @@ def traverse_config(
     for chapter in chapters:
         chapter_name = get_key(chapter)
         sections = chapter[chapter_name]["sections"]
+
         for section in sections:
             if isinstance(section, str):
                 yield textbook_name, chapter_name, section, "", chapter[
@@ -445,14 +448,9 @@ def traverse_config(
                 continue
 
             section_name = get_key(section)
-            subsections = section[section_name].get("subsections")
-            if not subsections or len(subsections) == 0:
-                yield textbook_name, chapter_name, section_name, "", chapter[
-                    chapter_name
-                ]
-                continue
+            subsections = section[section_name].get("subsections", [])
 
-            if subsections == None:
+            if not subsections:
                 yield textbook_name, chapter_name, section_name, "", chapter[
                     chapter_name
                 ]
@@ -463,11 +461,8 @@ def traverse_config(
                     yield textbook_name, chapter_name, section_name, subsection, chapter[
                         chapter_name
                     ]
-                elif isinstance(
-                    subsection, dict
-                ):  # Additional check if subsections have nested structure
+                else:
                     subsection_name = get_key(subsection)
-                    # Add logic to handle deeper nested structures if needed
                     yield textbook_name, chapter_name, section_name, subsection_name, chapter[
                         chapter_name
                     ]
