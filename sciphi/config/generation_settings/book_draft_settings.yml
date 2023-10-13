@@ -1,7 +1,7 @@
 # null represents Python's None. Will be replaced with default in the code.
 # basic_config:
 data_dir: null
-toc_dir: scraped
+toc_dir: table_of_contents
 output_dir: textbooks
 textbook: null
 log_level: INFO
