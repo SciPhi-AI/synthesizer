@@ -262,14 +262,17 @@ def setup_logging(log_level: str = "INFO") -> logging.Logger:
 
 
 def get_default_settings_provider(
-    provider: str, model_name: str, max_tokens_to_sample=None
+    provider: str,
+    model_name: str,
 ) -> LLMInterface:
     """Get the default LLM config and provider for the given provider and model name."""
 
     provider_name = ProviderName(provider)
     llm_config = LLMConfigManager.get_config_for_provider(
         provider_name
-    ).create(max_tokens_to_sample=max_tokens_to_sample, model_name=model_name)
+    ).create(
+        model_name=model_name,
+    )
 
     return InterfaceManager.get_provider(provider_name, model_name, llm_config)
 
@@ -395,7 +398,7 @@ def prase_yaml_completion(yml_content: dict) -> str:
 
 
 def wiki_search_api(
-    url: str, username: str, password: str, query: str, top_k=10
+    query: str, url: str, username: str, password: str, top_k=10
 ) -> dict:
     """
     Queries the search API with the provided credentials and query.
@@ -418,7 +421,7 @@ def wiki_search_api(
 
 def traverse_config(
     config: dict,
-) -> Generator[Tuple[str, str, str, str], None, None]:
+) -> Generator[Tuple[str, str, str, str, dict], None, None]:
     """Traverse the config and yield textbook, chapter, section, subsection names"""
 
     def get_key(config_dict: dict) -> str:
@@ -435,19 +438,39 @@ def traverse_config(
         chapter_name = get_key(chapter)
         sections = chapter[chapter_name]["sections"]
         for section in sections:
+            if isinstance(section, str):
+                yield textbook_name, chapter_name, section, "", chapter[
+                    chapter_name
+                ]
+                continue
+
             section_name = get_key(section)
-            subsections = section[section_name]["subsections"]
-            if not subsections:
-                yield textbook_name, chapter_name, section_name, ""
+            subsections = section[section_name].get("subsections")
+            if not subsections or len(subsections) == 0:
+                yield textbook_name, chapter_name, section_name, "", chapter[
+                    chapter_name
+                ]
+                continue
+
+            if subsections == None:
+                yield textbook_name, chapter_name, section_name, "", chapter[
+                    chapter_name
+                ]
+                continue
+
             for subsection in subsections:
                 if isinstance(subsection, str):
-                    yield textbook_name, chapter_name, section_name, subsection
+                    yield textbook_name, chapter_name, section_name, subsection, chapter[
+                        chapter_name
+                    ]
                 elif isinstance(
                     subsection, dict
                 ):  # Additional check if subsections have nested structure
                     subsection_name = get_key(subsection)
                     # Add logic to handle deeper nested structures if needed
-                    yield textbook_name, chapter_name, section_name, subsection_name
+                    yield textbook_name, chapter_name, section_name, subsection_name, chapter[
+                        chapter_name
+                    ]
 
 
 def with_retry(func, max_retries=3):

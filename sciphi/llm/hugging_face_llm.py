@@ -59,20 +59,21 @@ class HuggingFaceLLM(LLM):
             raise ValueError(
                 "The provided config must be an instance of HuggingFaceConfig."
             )
+        print("config = ", config)
         self.config: HuggingFaceConfig = config
 
         # Create the model, tokenizer, and generation config
         model_name = self.config.model_name
-
+        print("model_name = ", model_name)
         self.model = AutoModelForCausalLM.from_pretrained(
             model_name,
-            device_map=self.config.device,
             trust_remote_code=True,
+            token="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",
             **config.add_model_kwargs,
-        )
+        ).to(self.config.device)
         self.tokenizer = AutoTokenizer.from_pretrained(
             model_name,
-            device_map=self.config.device,
+            token="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",
             **config.add_tokenizer_kwargs,
         )
         self.generation_config = GenerationConfig.from_pretrained(

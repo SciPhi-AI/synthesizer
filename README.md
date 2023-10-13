@@ -4,20 +4,14 @@
 <img width="716" alt="Screenshot 2023-10-01 at 10 45 12 AM" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/c4192288-b5af-4ef8-9774-82b3bb5c8251">
 </p>
 
-<!-- ## **Overview** -->
-
 **SciPhi** is an configurable Python framework designed to tackle the challenges of efficiently training LLM (Large Language Model) through synthetic data. At its core, SciPhi offers:
 
 - **Configurable Data Generation**: Efficiently produce LLM-mediated synthetic training and tuning datasets tailored to your specific needs.
   
-<!-- - Seamless Model Evaluation: Streamline the process of evaluating model outputs using our integrated LLM-mediated tools _(under construction)_. -->
-  
-- The Library of Phi: An initiative to leverage AI-driven techniques to craft high-quality open source textbooks.
+- **The Library of Phi**: An initiative to leverage AI-driven techniques to craft high-quality open source textbooks.
 
 ## **Getting Started & Support**
 
-<!-- - New to SciPhi? Kickstart your journey with our comprehensive [tutorial](https://substack.com/inbox/post/137197905). -->
-  
 - Engage with our active [Discord community](https://discord.gg/j9GxfbxqAe) for discussions, troubleshooting, and collaboration.
   
 - For specialized support or collaboration inquiries, feel free to [reach out directly](mailto:owen@emergentagi.com).
@@ -25,20 +19,12 @@
 ## **Library of Phi Generation**
 
 **Introduction:**  
-The Library of Phi is an initiative sponsored by SciPhi. Its primary goal is to democratize access to high-quality textbooks. The project utilizes AI-driven techniques to generate textbooks by processing information from the MIT OCW course webpages.
-"
-**Workflow:**  
-The workflow encompasses data scraping, data processing, YAML configuration creation, and [RAG](https://research.ibm.com/blog/retrieval-augmented-generation-RAG) over all of Wikipedia, with intermittent work done by LLMs.
-
-1. Scrape MIT OCW Course Webpages.
-2. Extract Syllabi.
-3. Formulate Table of Contents.
-4. Craft Textbooks.
+The Library of Phi is an initiative sponsored by SciPhi. Its primary goal is to democratize access to high-quality textbooks. The project utilizes AI-driven techniques to generate textbooks by processing combining raw information (such as table of contents) with unstructured data (such as Vector Databases) to generate high quality factually grounded textbooks.
 
 #### **Generating the default Textbook:**
 
 ```bash
-poetry run python sciphi/examples/library_of_phi/generate_textbook.py run --do-wiki=False --textbook=Aerodynamics_of_Viscous_Fluids --log-level=DEBUG
+poetry run python sciphi/examples/library_of_phi/generate_textbook.py run --do-rag=False --textbook=Aerodynamics_of_Viscous_Fluids --log-level=DEBUG
 ```
 
 _[See the example output here](sciphi/data/library_of_phi/sample/Aerodynamics_of_Viscous_Fluids.md)_
@@ -47,15 +33,15 @@ _[See the example output here](sciphi/data/library_of_phi/sample/Aerodynamics_of
 
 1. Draft a table of contents and save as `textbook_name.yaml`.
 2. Place it in `[Your Working Directory]/sciphi/data/library_of_phi/table_of_contents`.
-3. Format similarly to `Aerodynamics_of_Viscous_Fluids.yaml`.
+3. Format identically to `Aerodynamics_of_Viscous_Fluids.yaml`.
 
-#### **Incorporating RAG over Wikipedia:**
+#### **Incorporating RAG:**
 
-1. Enable the `--do-wiki` flag: `True`.
+1. Enable the `--do-rag` flag: `True`.
 2. In `.env`, set:
-   - `WIKI_SERVER_URL`
-   - `WIKI_SERVER_USERNAME`
-   - `WIKI_SERVER_PASSWORD`
+   - `RAG_SERVER_URL`
+   - `RAG_SERVER_USERNAME`
+   - `RAG_SERVER_PASSWORD`
 
 **Output**:  
 Generated textbooks reside in:  
@@ -123,38 +109,6 @@ The long-term view of the SciPhi framework is to provide a training-feedback loo
 #### **Command-Line Arguments**
 
 See arguments and their default values in the README. Notable ones include `--provider`, `--model_name`, and `--temperature`.
-
-### **Replicating Full Table of Contents Generation**
-
-**Step 0**: Scrape MIT OCW for course details.
-
-```bash
-poetry run python sciphi/examples/library_of_phi/raw_data/ocw_scraper.py scrape
-```
-
-**Step 1**: Convert scraped data into 'draft' syllabi YAMLs.
-
-```bash
-poetry run python sciphi/examples/library_of_phi/gen_step_1_draft_syllabi.py run
-```
-
-**Step 2**: Refine the draft YAML into the finalized syllabi.
-
-```bash
-poetry run python sciphi/examples/library_of_phi/gen_step_2_clean_syllabi.py run
-```
-
-**Step 3**: Transition the syllabi to a 'draft' table of contents.
-
-```bash
-poetry run python sciphi/examples/library_of_phi/gen_step_3_draft_table_of_contents.py run
-```
-
-**Step 4**: Produce clean table of contents YAML files.
-
-```bash
-poetry run python sciphi/examples/library_of_phi/gen_step_4_clean_table_of_contents.py run
-```
 
 ### License
 

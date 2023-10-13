@@ -1,7 +1,11 @@
 # Local cruft and other
 poetry.lock
 .env
+.vscode
+*.out
 *.bak
+*.log
+*.sh
 **/__pycache__/**
 **/.DS_Store
 storeage/
@@ -9,6 +13,7 @@ storeage/
 # Local sandbox environments
 playground/
 outputs/
+dump/
 
 # Scraped data
 sciphi/examples/library_of_phi/raw_data/
