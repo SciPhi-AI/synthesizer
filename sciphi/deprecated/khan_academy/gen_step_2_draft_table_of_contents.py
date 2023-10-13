@@ -44,15 +44,12 @@ from glob import glob
 
 import fire
 
-from sciphi.examples.helpers import get_default_settings_provider
-from sciphi.examples.khan_academy.prompts import (
-    TABLE_OF_CONTENTS_DRAFT_PROMPT,
-)
-
 from sciphi.examples.helpers import (
+    get_default_settings_provider,
     prase_yaml_completion,
     save_yaml,
 )
+from sciphi.examples.khan_academy.prompts import TABLE_OF_CONTENTS_DRAFT_PROMPT
 
 
 class DraftTableOfContentsRunner:

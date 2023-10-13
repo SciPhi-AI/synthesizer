@@ -55,13 +55,59 @@ def get_data_dir() -> str:
     return os.path.join(script_dir, "..", "data")
 
 
-def get_data_config_dir() -> str:
+def get_config_dir() -> str:
     """Get the path to the root of the config directory."""
     script_dir = os.path.dirname(os.path.realpath(__file__))
-    return os.path.join(script_dir, "..", "data", "stock_config")
+    return os.path.join(script_dir, "..", "config")
 
 
 def get_data_raw_dir() -> str:
     """Get the path to the root of the raw data directory."""
     script_dir = os.path.dirname(os.path.realpath(__file__))
     return os.path.join(script_dir, "..", "data", "stock_raw")
+
+
+class SciPhiConfig:
+    """Configuration class for SciPhi."""
+
+    def __init__(self, dictionary):
+        for key, value in dictionary.items():
+            if isinstance(value, dict):
+                value = SciPhiConfig(
+                    value
+                )  # Recursively convert nested dictionaries
+            else:
+                value = self._cast_to_appropriate_type(
+                    value
+                )  # Cast value to its appropriate type
+            setattr(self, key, value)
+
+    @staticmethod
+    def _cast_to_appropriate_type(value):
+        """Automatically cast a value to its appropriate type."""
+        # If value is a string representation of an integer
+        if isinstance(value, str) and value.isdigit():
+            return int(value)
+        return value
+
+    def _update_from_dict(self, dictionary):
+        """Update fields using a dictionary."""
+        for key, value in dictionary.items():
+            if isinstance(value, dict):
+                existing_value = getattr(self, key, None)
+                if existing_value and isinstance(existing_value, SciPhiConfig):
+                    existing_value.update(value)
+                else:
+                    setattr(self, key, SciPhiConfig(value))
+            else:
+                setattr(
+                    self, key, self._cast_to_appropriate_type(value)
+                )  # Cast value to its appropriate type
+
+    def add_field(self, key, value):
+        """Add a field to the configuration."""
+        setattr(self, key, value)
+
+    def update(self, new_config_dict):
+        """Update fields using a dictionary."""
+        self._update_from_dict(new_config_dict)

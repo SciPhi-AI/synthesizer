@@ -31,6 +31,10 @@ class OpenAIConfig(LLMConfig):
 class OpenAILLM(LLM):
     """A concrete class for creating OpenAI models."""
 
+    PROMPT_MEASUREMENT_PREFIX = (
+        "<DUMMY PADDING, LOOKUP ACTUAL STRUCTUER LATER>"
+    )
+
     def __init__(
         self,
         config: OpenAIConfig,
@@ -58,7 +62,12 @@ class OpenAILLM(LLM):
         import openai
 
         # Create a dictionary with the default arguments
-        args = self._get_base_args()
+        args = self._get_base_args(
+            OpenAILLM.PROMPT_MEASUREMENT_PREFIX
+            + f"{OpenAILLM.PROMPT_MEASUREMENT_PREFIX}\n\n".join(
+                [m["content"] for m in messages]
+            )
+        )
 
         args["messages"] = messages
 
@@ -88,14 +97,11 @@ class OpenAILLM(LLM):
     ) -> dict:
         """Get the base arguments for the OpenAI API."""
         encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
-
         return {
             "model": self.config.model_name,
             "temperature": self.config.temperature,
             "top_p": self.config.top_p,
             "max_tokens": self.config.max_total_tokens
-            - len(encoding.encode(prompt))
-            if prompt
-            else self.config.max_tokens_to_sample,
+            - len(encoding.encode(prompt)),
             "stream": self.config.do_stream,
         }

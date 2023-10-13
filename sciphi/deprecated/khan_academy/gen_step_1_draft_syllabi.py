@@ -42,20 +42,19 @@ Parameters:
 import json
 import logging
 import os
+import re
 from glob import glob
 from typing import Optional, Set
-import re
 
 import fire
 import yaml
 
-from sciphi.examples.helpers import get_default_settings_provider
-from sciphi.examples.khan_academy.prompts import SYLLABI_CREATION_PROMPT
-
 from sciphi.examples.helpers import (
+    get_default_settings_provider,
     prase_yaml_completion,
     save_yaml,
 )
+from sciphi.examples.khan_academy.prompts import SYLLABI_CREATION_PROMPT
 
 
 def extract_data_from_record(record: dict[str, str]) -> tuple[dict, str]:
