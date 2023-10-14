@@ -36,10 +36,6 @@ def load_existing_jsonl(file_path: str) -> list[dict]:
 
 def get_configured_logger(name: str, log_level: str) -> logging.Logger:
     """Get a configured logger."""
-    log_level = getattr(logging, log_level.upper(), "INFO")
-    logging.basicConfig(
-        level=log_level, format="%(asctime)s - %(levelname)s - %(message)s"
-    )
     return logging.getLogger(name)
 
 
@@ -93,6 +89,7 @@ class SciPhiConfig:
     def _update_from_dict(self, dictionary):
         """Update fields using a dictionary."""
         for key, value in dictionary.items():
+            print("updating {key} with {value}".format(key=key, value=value))
             if isinstance(value, dict):
                 existing_value = getattr(self, key, None)
                 if existing_value and isinstance(existing_value, SciPhiConfig):
