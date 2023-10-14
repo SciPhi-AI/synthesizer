@@ -104,7 +104,7 @@ class ConfigurationManager:
         for key, value in summary.items():
             logger.info(f"{key}: {value}")
 
-    def get_yml_file_paths(self) -> list:
+    def get_yml_file_paths(self, logger: logging.Logger) -> list:
         """Get the YAML file paths."""
         if self.config.textbook:
             yml_file_paths = [
@@ -139,7 +139,7 @@ class ConfigurationManager:
                 if not self._book_exists(yml_file_path):
                     filtered_books.append(yml_file_path)
                 else:
-                    self.logger.warning(
+                    logger.warning(
                         f"Skipping {yml_file_path} as it already exists."
                     )
             yml_file_paths_chunk = filtered_books
