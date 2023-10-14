@@ -1,20 +1,14 @@
 """Managers textbook generation configs"""
 import collections
 import glob
-import os
 import logging
+import os
 
 import yaml
 from tqdm import tqdm
 
-from sciphi.core.utils import (
-    SciPhiConfig,
-    get_config_dir,
-)
-from sciphi.examples.helpers import (
-    load_yaml_file,
-    traverse_config,
-)
+from sciphi.core.utils import SciPhiConfig, get_config_dir
+from sciphi.examples.helpers import load_yaml_file, traverse_config
 
 
 class ConfigurationManager:
@@ -68,14 +62,18 @@ class ConfigurationManager:
             ]
         else:
             yml_file_paths = glob.glob(
-                os.path.join(self.config.data_dir, self.config.toc_dir, "*.yaml")
+                os.path.join(
+                    self.config.data_dir, self.config.toc_dir, "*.yaml"
+                )
             )
 
         if not yml_file_paths:
             raise ValueError("No YAML files found in the specified directory.")
 
         # Check the output path
-        output_path = os.path.join(self.config.data_dir, self.config.output_dir, "dry_run_output")
+        output_path = os.path.join(
+            self.config.data_dir, self.config.output_dir, "dry_run_output"
+        )
         if not os.path.exists(os.path.dirname(output_path)):
             os.makedirs(os.path.dirname(output_path))
 
@@ -98,7 +96,9 @@ class ConfigurationManager:
                 failed_loads += 1
 
         summary["YAML Files with Errors"] = failed_loads
-        summary["YAML Failure Rate"] = float(failed_loads) / len(yml_file_paths)
+        summary["YAML Failure Rate"] = float(failed_loads) / len(
+            yml_file_paths
+        )
 
         logger.info("\nDry Run Summary:")
         for key, value in summary.items():
@@ -116,7 +116,9 @@ class ConfigurationManager:
             ]
         else:
             yml_file_paths = glob.glob(
-                os.path.join(self.config.data_dir, self.config.toc_dir, "*.yaml")
+                os.path.join(
+                    self.config.data_dir, self.config.toc_dir, "*.yaml"
+                )
             )
 
         # Split the file paths into chunks for each process
@@ -137,6 +139,8 @@ class ConfigurationManager:
                 if not self._book_exists(yml_file_path):
                     filtered_books.append(yml_file_path)
                 else:
-                    self.logger.warning(f"Skipping {yml_file_path} as it already exists.")
+                    self.logger.warning(
+                        f"Skipping {yml_file_path} as it already exists."
+                    )
             yml_file_paths_chunk = filtered_books
         return yml_file_paths_chunk
