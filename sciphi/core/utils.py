@@ -34,11 +34,6 @@ def load_existing_jsonl(file_path: str) -> list[dict]:
     return []
 
 
-def get_configured_logger(name: str, log_level: str) -> logging.Logger:
-    """Get a configured logger."""
-    return logging.getLogger(name)
-
-
 def get_root_dir() -> str:
     """Get the path to the root of the code repository."""
     script_dir = os.path.dirname(os.path.realpath(__file__))
