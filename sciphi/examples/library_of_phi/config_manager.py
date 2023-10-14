@@ -144,3 +144,13 @@ class ConfigurationManager:
                     )
             yml_file_paths_chunk = filtered_books
         return yml_file_paths_chunk
+
+    def _book_exists(self, yml_path: str) -> bool:
+        """Check if the book for the given YAML file exists in the output directory."""
+        book_name = os.path.splitext(os.path.basename(yml_path))[0]
+
+        # Assume the book files in the output directory have the ".md" extension
+        output_path = os.path.join(
+            self.config.data_dir, self.config.output_dir, f"{book_name}.md"
+        )
+        return os.path.exists(output_path)
