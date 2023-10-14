@@ -7,7 +7,7 @@ from typing import Generator, Tuple
 import fire
 from tqdm import tqdm
 
-from sciphi.core.utils import get_configured_logger, get_data_dir
+from sciphi.core.utils import get_data_dir
 from sciphi.examples.helpers import (
     load_yaml_file,
     traverse_config,
@@ -26,7 +26,7 @@ from sciphi.llm import LLMConfigManager
 from sciphi.writers import JsonlDataWriter, RawDataWriter
 
 logging.basicConfig(
-    level=logging.INFO,  # This will be overridden by config.log_level
+    level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
 
@@ -49,7 +49,28 @@ class TextbookContentGenerator:
         config_path: str = None,
         **cli_args,
     ) -> None:
-        # Load the configuration
+        """Initialize the textbook content generator."""
+        self._load_configuration(config_path, cli_args)
+
+        provider_name = ProviderName(self.config.llm_provider)
+        self.llm_provider = InterfaceManager.get_provider(
+            provider_name,
+            self.config.llm_model_name,
+            LLMConfigManager.get_config_for_provider(provider_name).create(
+                model_name=self.config.llm_model_name,
+                max_tokens_to_sample=self.config.max_tokens_to_sample,
+                temperature=self.config.temperature,
+                top_k=self.config.top_k,
+                port=cli_args.get("llm_port"),
+            ),
+        )
+        self.logger = logging.getLogger("textbook_content_generator")
+        self.logger.setLevel(self.config.log_level)
+        if not self.config.skip_validation:
+            self.config_manager.validate_config(self.logger)
+
+    def _load_configuration(self, config_path: str, cli_args: dict):
+        """Loads the configuration."""
         self.config_manager = ConfigurationManager(config_path)
         config = self.config_manager.load_config()
 
@@ -73,32 +94,13 @@ class TextbookContentGenerator:
         config.log_level = config.log_level.upper()
 
         if config.do_rag and not all(
-            [
-                config.rag_url,
-                config.rag_username,
-                config.rag_password,
-            ]
+            [config.rag_url, config.rag_username, config.rag_password]
         ):
             raise ValueError(
                 "Set do_rag to `False`, or provide a RAG server rag_url, rag_username, and rag_password."
             )
 
-        provider_name = ProviderName(config.llm_provider)
-        self.llm_provider = InterfaceManager.get_provider(
-            provider_name,
-            config.llm_model_name,
-            LLMConfigManager.get_config_for_provider(provider_name).create(
-                model_name=config.llm_model_name,
-                max_tokens_to_sample=config.max_tokens_to_sample,
-                temperature=config.temperature,
-                top_k=config.top_k,
-                port=cli_args.get("llm_port"),
-            ),
-        )
         self.config = config
-        self.logger = logging.getLogger("textbook_content_generator")
-        self.logger.setLevel(self.config.log_level)
-        self.config_manager.validate_config(self.logger)
 
     def initialize_processing(self, textbook_output_name: str) -> None:
         """Set up and return the output writer."""
@@ -130,11 +132,9 @@ class TextbookContentGenerator:
                 f"Process {self.config.process_num} is processing {len(yml_file_paths_chunk)} files"
             )
 
-            # Use multiprocessing to parallelize the processing of files in the chunk
             pool = multiprocessing.Pool(
                 processes=self.config.num_threads_per_proc
             )
-            # Wrap yml_file_paths_chunk with tqdm
             with tqdm(
                 total=len(yml_file_paths_chunk), desc="Processing files"
             ) as pbar:
@@ -156,39 +156,41 @@ class TextbookContentGenerator:
         self.initialize_processing(textbook_output_name)
         yml_config = load_yaml_file(yml_file_path)
 
-        prev_completion = None
-        for (
-            textbook,
-            current_prompt,
-            prompt_type,
-            # chapter information is just yielded for persistance
-            _,
-            __,
-        ) in self.process_book_elements(yml_config, prev_completion):
-            self.logger.debug("-" * 200)
-            self.logger.debug(f"Current Prompt:\n{current_prompt}\n\n")
-            current_completion = self.llm_provider.get_completion(
-                current_prompt
-            )
-            self.logger.debug(f"Current Completion:\n{current_completion}\n\n")
-            self.logger.debug("-" * 200)
+        generator = self.process_book_elements(yml_config)
+        current_completion = None
+        try:
+            while True:
+                textbook, current_prompt, prompt_type, _, __ = generator.send(
+                    current_completion
+                )
+                self.logger.debug("-" * 200)
+                self.logger.debug(f"Current Prompt:\n{current_prompt}\n\n")
+                current_completion = with_retry(
+                    lambda: self.llm_provider.get_completion(current_prompt)
+                )
+                self.logger.debug(
+                    f"Current Completion:\n{current_completion}\n\n"
+                )
+                self.logger.debug("-" * 200)
 
-            self.writer.raw_writer.write(
-                f"# {textbook}\n{current_completion}\n"
-            )
-            self.writer.jsonl_writer.write(
-                [
-                    {
-                        "prompt": current_prompt,
-                        "completion": current_completion,
-                        "type": prompt_type,
-                    }
-                ]
-            )
-            prev_completion = current_completion
+                self.writer.raw_writer.write(
+                    f"# {textbook}\n{current_completion}\n"
+                )
+                self.writer.jsonl_writer.write(
+                    [
+                        {
+                            "prompt": current_prompt,
+                            "completion": current_completion,
+                            "type": prompt_type,
+                        }
+                    ]
+                )
+
+        except StopIteration:
+            pass
 
     def process_book_elements(
-        self, config: dict, prev_completion: str = None
+        self, config: dict  # , prev_completion: str = None
     ) -> Generator[Tuple[str, str, str, str], None, None]:
         """Process the elements of a textbook configuration."""
         prev_chapter_config = None
@@ -213,7 +215,13 @@ class TextbookContentGenerator:
                 current_prompt = self.construct_foreward_prompt(
                     textbook, chapter
                 )
-                yield textbook, current_prompt, "foreword", current_chapter, prev_chapter_config
+                prev_completion = (
+                    yield textbook,
+                    current_prompt,
+                    "foreword",
+                    current_chapter,
+                    prev_chapter_config,
+                )
 
             if chapter != current_chapter:
                 # If we are past the foreword, write a chapter summary
@@ -221,19 +229,37 @@ class TextbookContentGenerator:
                     current_prompt = self.construct_summary_prompt(
                         textbook, chapter, prev_chapter_config
                     )
-                yield textbook, current_prompt, "chapter_introduction", current_chapter, prev_chapter_config
+                prev_completion = (
+                    yield textbook,
+                    current_prompt,
+                    "chapter_introduction",
+                    current_chapter,
+                    prev_chapter_config,
+                )
 
                 current_prompt = self.construct_intro_prompt(
                     textbook, chapter, chapter_config
                 )
-                yield textbook, current_prompt, current_chapter, prev_chapter_config, "chapter_conclusion"
+                prev_completion = (
+                    yield textbook,
+                    current_prompt,
+                    current_chapter,
+                    prev_chapter_config,
+                    "chapter_conclusion",
+                )
 
                 current_chapter = chapter
 
             current_prompt = self.construct_step_prompt(
                 textbook, chapter, section, subsection, prev_completion
             )
-            yield textbook, current_prompt, "chapter_bulk", current_chapter, prev_chapter_config
+            prev_completion = (
+                yield textbook,
+                current_prompt,
+                "chapter_bulk",
+                current_chapter,
+                prev_chapter_config,
+            )
 
             prev_chapter_config = chapter_config
 
@@ -308,16 +334,6 @@ class TextbookContentGenerator:
             chapter=current_chapter,
             book_context=f"Chapter outline:\n{prev_chapter_config}",
         )
-
-    def _book_exists(self, yml_path: str) -> bool:
-        """Check if the book for the given YAML file exists in the output directory."""
-        book_name = os.path.splitext(os.path.basename(yml_path))[0]
-
-        # Assume the book files in the output directory have the ".md" extension
-        output_path = os.path.join(
-            self.config.data_dir, self.config.output_dir, f"{book_name}.md"
-        )
-        return os.path.exists(output_path)
 
     def _get_related_context(self, query: str) -> str:
         """Retrieve related context from Wikipedia."""
