@@ -9,6 +9,7 @@ num_threads_per_proc: null
 num_processes: 1
 process_num: 0
 filter_existing_books: true
+batch_size: 2
 
 # llm config
 llm_provider: openai
