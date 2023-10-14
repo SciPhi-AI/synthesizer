@@ -125,7 +125,9 @@ class TextbookContentGenerator:
 
     def run(self) -> None:
         """Run the draft book generation process."""
-        yml_file_paths_chunk = self.config_manager.get_yml_file_paths()
+        yml_file_paths_chunk = self.config_manager.get_yml_file_paths(
+            self.logger
+        )
 
         if self.config.num_threads_per_proc > 1:
             self.logger.debug(
@@ -146,7 +148,10 @@ class TextbookContentGenerator:
             pool.close()
             pool.join()
         else:
-            self.process_yml_file(yml_file_paths_chunk[0])
+            for yml_file_path in tqdm(
+                yml_file_paths_chunk, desc="Processing files"
+            ):
+                self.process_yml_file(yml_file_path)
 
     def process_yml_file(self, yml_file_path: str) -> None:
         """Process a single YAML file to generate textbook content."""
