@@ -6,6 +6,7 @@ from sciphi.interface.litellm_interface import LiteLLMInterface
 from sciphi.interface.llama_index_interface import LlamaIndexInterface
 from sciphi.interface.openai_interface import OpenAILLMInterface
 from sciphi.interface.vllm_interface import vLLMInterface
+from sciphi.interface.llamacpp_interface import LlamaCPPInterface
 
 __all__ = [
     "InterfaceManager",
@@ -19,4 +20,5 @@ __all__ = [
     "OpenAILLMInterface",
     "vLLMInterface",
     "LiteLLMInterface",
+    "LlamaCPPInterface"
 ]

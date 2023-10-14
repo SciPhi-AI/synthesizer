@@ -91,6 +91,7 @@ Options include:
 - `hf_support`: For diverse model access with the HuggingFace package.
 - `openai_support`: For OpenAI models.
 - `vllm_support`: For VLLM, aiding fast inference.
+- `llamacpp_support`: For LlamaCPP, aiding gpu-poor inference. This hasn't been implemented perfectly, use the model_name parameter to specify the path to the model you want to use.
 - `llama_index_support`: For LlamaIndex, enhancing grounded synthesis.
 - `chroma_support`: For Chroma support in large vector databases.
 - `all`: Includes all dependencies (excluding `vllm`, which needs separate installation).
