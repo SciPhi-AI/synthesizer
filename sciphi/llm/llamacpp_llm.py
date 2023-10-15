@@ -4,7 +4,6 @@ import logging
 from dataclasses import dataclass
 from multiprocessing import Lock, Value
 from typing import Optional
-from multiprocessing import Lock, Value
 
 from sciphi.core import ProviderName
 from sciphi.llm.base import LLM, LLMConfig
