@@ -51,13 +51,15 @@ class LlamaCPP(LLM):
 
     def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
         """Get a completion from the LlamaCPP model based on the provided messages."""
-        raise NotImplementedError("Chat completion not yet implemented for LlamaCPP.")
+        raise NotImplementedError(
+            "Chat completion not yet implemented for LlamaCPP."
+        )
 
     def get_instruct_completion(self, prompt: str) -> str:
         """Get an instruction completion from local LlamaCPP API."""
-        return self.model(prompt, max_tokens=self.config.max_tokens_to_sample)["choices"][0][
-            "text"
-        ]
+        return self.model(prompt, max_tokens=self.config.max_tokens_to_sample)[
+            "choices"
+        ][0]["text"]
 
     def get_batch_instruct_completion(self, prompts: list[str]) -> list[str]:
         """Get batch instruction completion from local LlamaCPP."""
