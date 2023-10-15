@@ -4,9 +4,9 @@ from sciphi.llm.config_manager import LLMConfigManager
 from sciphi.llm.hugging_face_llm import HuggingFaceConfig, HuggingFaceLLM
 from sciphi.llm.lite_llm import LiteLLM, LiteLLMConfig
 from sciphi.llm.llama_index_llm import LLamaIndexConfig, LlamaIndexLLM
+from sciphi.llm.llamacpp_llm import LlamaCPP, LLamaCPPConfig
 from sciphi.llm.openai_llm import OpenAIConfig, OpenAILLM
 from sciphi.llm.vllm_llm import vLLM, vLLMConfig
-from sciphi.llm.llamacpp_llm import LlamaCPP, LLamaCPPConfig
 
 __all__ = [
     # Base
@@ -28,5 +28,5 @@ __all__ = [
     "LiteLLMConfig",
     "LiteLLM",
     "LLamaCPPConfig",
-    "LlamaCPP"
+    "LlamaCPP",
 ]

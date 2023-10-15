@@ -37,7 +37,7 @@ class LiteLLM(LLM):
     ) -> None:
         super().__init__(config)
         try:
-            import litellm
+            import litellm  # noqa: F401
         except ImportError:
             raise ImportError(
                 "Please install the litellm package before attempting to run with a LiteLLM model. This can be accomplished via `poetry add litellm`."

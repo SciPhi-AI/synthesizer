@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "SciPhi"
 version = "0.1.0"
-description = "SciPhi: A framework for breaking scaling laws."
+description = "SciPhi: A framework for synthetic data."
 authors = ["Owen Colegrove <owen@emergentagi.com>"]
 license = "Apache-2.0"
 readme = "README.md"
@@ -73,13 +73,8 @@ line-length = 79
 
 [tool.mypy]
 ignore_missing_imports = true
-exclude = 'playground/.*|deprecated/*|dump/*'
+exclude = 'playground/.*|deprecated/**|dump/*'
 
 [[tool.mypy.overrides]]
 module = "yaml"
 ignore_missing_imports = true
-
-[tool.flake8]
-ignore = ["E501", "W503"]
-exclude = 'playground/.*'
-
