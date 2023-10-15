@@ -10,3 +10,4 @@ class ProviderName(Enum):
     HUGGING_FACE = "hugging-face"
     LLAMA_INDEX = "llama-index"
     VLLM = "vllm"
+    LLAMACPP = "llamacpp"
