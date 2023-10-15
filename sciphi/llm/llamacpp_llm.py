@@ -4,6 +4,7 @@ import logging
 from dataclasses import dataclass
 from multiprocessing import Lock, Value
 from typing import Optional
+from multiprocessing import Lock, Value
 
 from sciphi.core import ProviderName
 from sciphi.llm.base import LLM, LLMConfig
@@ -70,9 +71,7 @@ class LlamaCPP(LLM):
 
     def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
         """Get a completion from the OpenAI API based on the provided messages."""
-        raise NotImplementedError(
-            "Chat completion not yet implemented for LlamaCPP."
-        )
+        raise NotImplementedError("Chat completion not yet implemented for LlamaCPP.")
 
     def get_instruct_completion(self, prompt: str) -> str:
         """Get an instruction completion from local LlamaCPP API."""
@@ -83,9 +82,7 @@ class LlamaCPP(LLM):
             import openai
 
             openai.api_key = LlamaCPP.DUMMY_API_KEY
-            openai.api_base = LlamaCPP.DUMMY_API_BASE.format(
-                PORT=self.config.port
-            )
+            openai.api_base = LlamaCPP.DUMMY_API_BASE.format(PORT=self.config.port)
             outputs = openai.Completion.create(
                 model=self.config.model_name,
                 temperature=self.config.temperature,
@@ -100,8 +97,6 @@ class LlamaCPP(LLM):
     def get_batch_instruct_completion(self, prompts: list[str]) -> list[str]:
         """Get batch instruction completion from local LlamaCPP."""
         if self.config.port:
-            return [
-                self.model(prompt)["choices"][0]["text"] for prompt in prompts
-            ]
+            return [self.model(prompt)["choices"][0]["text"] for prompt in prompts]
 
         return [ele["choices"][0]["text"] for ele in self.model(prompts)]
