@@ -7,13 +7,11 @@ from typing import Any, Generator, Tuple, Union
 import fire
 
 from sciphi.core.utils import get_data_dir
-from sciphi.examples.helpers import (
-    load_yaml_file,
-    traverse_config,
-    wiki_search_api,
-    with_retry,
+from sciphi.examples.helpers import load_yaml_file, wiki_search_api, with_retry
+from sciphi.examples.library_of_phi.config_manager import (
+    ConfigurationManager,
+    traverse_textbook_config,
 )
-from sciphi.examples.library_of_phi.config_manager import ConfigurationManager
 from sciphi.examples.library_of_phi.prompts import (
     BOOK_CHAPTER_BULK_PROMPT,
     BOOK_CHAPTER_CONCLUSION_PROMPT,
@@ -110,6 +108,16 @@ class TextbookContentGenerator:
             f"Saving textbook at {textbook_output_name} to {output_path}"
         )
         return TextbookContentGenerator.CompositeWriter(output_path)
+
+    def dry_run(self) -> None:
+        """
+        Run a dry configuration validation without content
+        generation and output summary statistics.
+        Configuration is loaded and validated upstream in the constructor
+        Validate LLM provider configuration
+        """
+        if not self.llm_provider:
+            raise ValueError("Invalid LLM provider configuration.")
 
     def run(self) -> None:
         """Run the draft book generation process."""
@@ -318,7 +326,7 @@ class TextbookContentGenerator:
         current_chapter = None
         prev_chapter_config = None
 
-        for counter, elements in enumerate(traverse_config(config)):
+        for counter, elements in enumerate(traverse_textbook_config(config)):
             (
                 textbook,
                 chapter,

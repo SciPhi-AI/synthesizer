@@ -3,12 +3,62 @@ import collections
 import glob
 import logging
 import os
+from typing import Generator, Tuple
 
 import yaml
 from tqdm import tqdm
 
 from sciphi.core.utils import SciPhiConfig, get_config_dir
-from sciphi.examples.helpers import load_yaml_file, traverse_config
+from sciphi.examples.helpers import load_yaml_file
+
+
+def traverse_textbook_config(
+    config: dict,
+) -> Generator[Tuple[str, str, str, str, dict], None, None]:
+    """
+    Traverse the config and yield textbook,
+    chapter, section, subsection names, and full chapter config
+    """
+
+    def get_key(config_dict: dict) -> str:
+        """Get the key from a dictionary with a single key-value pair"""
+        if not config_dict:
+            raise KeyError("Dictionary is empty, no key found")
+        return next(iter(config_dict))
+
+    textbook_name = get_key(config["textbook"])
+    if not textbook_name:
+        raise KeyError("No textbook name found in config")
+    chapters = config["textbook"][textbook_name]["chapters"]
+    if not chapters:
+        raise KeyError("No chapters found in config")
+
+    for chapter in chapters:
+        chapter_name = get_key(chapter)
+        sections = chapter[chapter_name]["sections"]
+
+        for section in sections:
+            if isinstance(section, str):
+                yield textbook_name, chapter_name, section, "", chapter[chapter_name]
+                continue
+
+            section_name = get_key(section)
+            subsections = section[section_name].get("subsections", [])
+
+            if not subsections:
+                yield textbook_name, chapter_name, section_name, "", chapter[chapter_name]
+                continue
+
+            for subsection in subsections:
+                if isinstance(subsection, str):
+                    yield textbook_name, chapter_name, section_name, subsection, chapter[
+                        chapter_name
+                    ]
+                else:
+                    subsection_name = get_key(subsection)
+                    yield textbook_name, chapter_name, section_name, subsection_name, chapter[
+                        chapter_name
+                    ]
 
 
 class ConfigurationManager:
@@ -62,18 +112,14 @@ class ConfigurationManager:
             ]
         else:
             yml_file_paths = glob.glob(
-                os.path.join(
-                    self.config.data_dir, self.config.toc_dir, "*.yaml"
-                )
+                os.path.join(self.config.data_dir, self.config.toc_dir, "*.yaml")
             )
 
         if not yml_file_paths:
             raise ValueError("No YAML files found in the specified directory.")
 
         # Check the output path
-        output_path = os.path.join(
-            self.config.data_dir, self.config.output_dir, "dry_run_output"
-        )
+        output_path = os.path.join(self.config.data_dir, self.config.output_dir, "dry_run_output")
         if not os.path.exists(os.path.dirname(output_path)):
             os.makedirs(os.path.dirname(output_path))
 
@@ -91,15 +137,13 @@ class ConfigurationManager:
             try:
                 yml_config = load_yaml_file(yml)
                 # check that we can traverse the config
-                _ = [ele for ele in traverse_config(yml_config)]
+                _ = [ele for ele in traverse_textbook_config(yml_config)]
             except Exception as e:
                 logger.error(f"Failed to load {yml} with error: {e}")
                 failed_loads += 1
 
         summary["YAML Files with Errors"] = failed_loads
-        summary["YAML Failure Rate"] = float(failed_loads) / len(
-            yml_file_paths
-        )
+        summary["YAML Failure Rate"] = float(failed_loads) / len(yml_file_paths)
 
         logger.info("\nDry Run Summary:")
         for key, value in summary.items():
@@ -117,14 +161,10 @@ class ConfigurationManager:
             ]
         else:
             yml_file_paths = glob.glob(
-                os.path.join(
-                    self.config.data_dir, self.config.toc_dir, "*.yaml"
-                )
+                os.path.join(self.config.data_dir, self.config.toc_dir, "*.yaml")
             )
             yml_file_paths += glob.glob(
-                os.path.join(
-                    self.config.data_dir, self.config.toc_dir, "**/**/*.yaml"
-                )
+                os.path.join(self.config.data_dir, self.config.toc_dir, "**/**/*.yaml")
             )
 
         # Split the file paths into chunks for each process
@@ -145,9 +185,7 @@ class ConfigurationManager:
                 if not self._book_exists(yml_file_path):
                     filtered_books.append(yml_file_path)
                 else:
-                    logger.warning(
-                        f"Skipping {yml_file_path} as it already exists."
-                    )
+                    logger.warning(f"Skipping {yml_file_path} as it already exists.")
             yml_file_paths_chunk = filtered_books
         return yml_file_paths_chunk
 
@@ -156,7 +194,5 @@ class ConfigurationManager:
         book_name = os.path.splitext(os.path.basename(yml_path))[0]
 
         # Assume the book files in the output directory have the ".md" extension
-        output_path = os.path.join(
-            self.config.data_dir, self.config.output_dir, f"{book_name}.md"
-        )
+        output_path = os.path.join(self.config.data_dir, self.config.output_dir, f"{book_name}.md")
         return os.path.exists(output_path)

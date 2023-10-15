@@ -17,20 +17,6 @@ SciPhi is a Python framework that enables the generation of high-quality synthet
 
 ## Features
 
-### Configurable Data Generation
-
-Execute `runner.py` with various command-line arguments for customized data generation.
-
-```bash
-python sciphi/examples/basic_data_gen/runner.py --provider_name=openai --model_name=gpt-4 --log_level=INFO --batch_size=1 --num_samples=1 --output_file_name=example_output.jsonl --example_config=textbooks_are_all_you_need_basic_split
-```
-
-*Generates a single sample from GPT-4 using specified configurations.*
-
-#### Command-Line Arguments
-
-Refer to the README for a comprehensive list of arguments and their defaults. Noteworthy ones include `--provider`, `--model_name`, and `--temperature`.
-
 ### The Library of Phi
 
 An initiative to democratize access to high-quality textbooks by employing AI techniques to craft factually accurate books.
@@ -54,6 +40,21 @@ An initiative to democratize access to high-quality textbooks by employing AI te
 4. **Incorporating RAG:** Enable the flag and set the appropriate `.env` variables.
 
 *Note:* Ensure alignment with our specifications if using Wikipedia for RAG. Explore more examples [here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main).
+
+
+### Configurable Data Generation
+
+Execute `runner.py` with various command-line arguments for customized data generation.
+
+```bash
+python sciphi/examples/basic_data_gen/runner.py --provider_name=openai --model_name=gpt-4 --log_level=INFO --batch_size=1 --num_samples=1 --output_file_name=example_output.jsonl --example_config=textbooks_are_all_you_need_basic_split
+```
+
+*Generates a single sample from GPT-4 using specified configurations.*
+
+#### Command-Line Arguments
+
+Refer to the README for a comprehensive list of arguments and their defaults. Noteworthy ones include `--provider`, `--model_name`, and `--temperature`.
 
 ## Getting Started
 

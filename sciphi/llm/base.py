@@ -34,8 +34,6 @@ class ModelName(Enum):
 class LLMConfig(ABC):
     provider_name: ProviderName
     model_name: str
-    temperature: float
-    top_p: float
 
     version: str = "0.1.0"
 
