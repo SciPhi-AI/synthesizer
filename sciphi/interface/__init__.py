@@ -20,5 +20,5 @@ __all__ = [
     "OpenAILLMInterface",
     "vLLMInterface",
     "LiteLLMInterface",
-    "LlamaCPPInterface"
+    "LlamaCPPInterface",
 ]

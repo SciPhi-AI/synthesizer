@@ -54,7 +54,12 @@ class LlamaCPP(LLM):
                 raise ImportError(
                     "Please install the llama_cpp package before attempting to run with an LLamaCPP model. This can be accomplished via `poetry install -E llamacpp_support, ...OTHER_DEPENDENCIES_HERE`."
                 )
-            self.model = Llama(model_path=config.model_name, n_gpu_layers=8, n_ctx=8192, f16_kv=True)
+            self.model = Llama(
+                model_path=config.model_name,
+                n_gpu_layers=8,
+                n_ctx=8192,
+                f16_kv=True,
+            )
         else:
             try:
                 import openai
@@ -73,15 +78,15 @@ class LlamaCPP(LLM):
     def get_instruct_completion(self, prompt: str) -> str:
         """Get an instruction completion from local LlamaCPP API."""
         if not self.config.port:
-            return (
-                self.model(prompt, max_tokens=2000)["choices"][0]["text"]
-            )
+            return self.model(prompt, max_tokens=2000)["choices"][0]["text"]
 
         else:
             import openai
 
             openai.api_key = LlamaCPP.DUMMY_API_KEY
-            openai.api_base = LlamaCPP.DUMMY_API_BASE.format(PORT=self.config.port)
+            openai.api_base = LlamaCPP.DUMMY_API_BASE.format(
+                PORT=self.config.port
+            )
             outputs = openai.Completion.create(
                 model=self.config.model_name,
                 temperature=self.config.temperature,
@@ -97,11 +102,7 @@ class LlamaCPP(LLM):
         """Get batch instruction completion from local LlamaCPP."""
         if self.config.port:
             return [
-                self.model(prompt)["choices"][0]["text"]
-                for prompt in prompts
+                self.model(prompt)["choices"][0]["text"] for prompt in prompts
             ]
 
-        return [
-            ele["choices"][0]["text"]
-            for ele in self.model(prompts)
-        ]
+        return [ele["choices"][0]["text"] for ele in self.model(prompts)]
