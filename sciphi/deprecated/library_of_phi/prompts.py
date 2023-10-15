@@ -123,7 +123,7 @@ Notes:
 - The book is being written in the popular Markdown format.
 - The context may be truncated and is meant only to provide a starting point. Feel free to expand on it or take the response in any direction that fits the prompt, but keep it in a voice that is appropriate for an advanced undergraduate course at MIT.
 - Avoid making any factual claims or opinions without proper citations or context to support them, stick to the proposed context.
-- Begin your response with `## Foreward`
+- Begin your response with `## Foreword`
 
 ### Response:
 """
@@ -534,7 +534,7 @@ $$
 """
 
 # Prompt for the LLM
-BOOK_CHAPTER_SUMMARY_PROMPT = """
+BOOK_CHAPTER_CONCLUSION_PROMPT = """
 ### Instructions:
 You are a writing a book titled "{title}". You are tasked with writing a several paragraph CONCLUSION FOR THE CHAPTER shown below:
 

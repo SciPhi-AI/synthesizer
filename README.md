@@ -1,139 +1,104 @@
-# **SciPhi [ΨΦ]: A Framework for Cata Creation**
+# SciPhi [ΨΦ]: A Framework for Synthetic Data
 
 <p align="center">
-<img width="716" alt="Screenshot 2023-10-01 at 10 45 12 AM" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/c4192288-b5af-4ef8-9774-82b3bb5c8251">
+<img width="716" alt="SciPhi Logo" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/c4192288-b5af-4ef8-9774-82b3bb5c8251">
 </p>
 
-**SciPhi** is an configurable Python framework designed to tackle the challenges of efficiently training powerful LLMs (Large Language Model) through synthetic data. At its core, SciPhi offers:
+SciPhi is a Python framework that enables the generation of high-quality synthetic data for LLM and/or Human consumption. Key features include:
 
-- **Configurable Data Generation**: Efficiently produce LLM-mediated synthetic training and tuning datasets tailored to your specific needs.
-  
-- **The Library of Phi**: An initiative to leverage AI-driven techniques to craft high-quality open source textbooks.
+- **Configurable Data Generation:** Produce LLM-mediated datasets tailored to your needs.
+- **The Library of Phi:** An AI-powered initiative to create open-source textbooks.
 
-## **Getting Started & Support**
+## Community & Support
 
-- Engage with our active [Discord community](https://discord.gg/j9GxfbxqAe) for discussions, troubleshooting, and collaboration.
-  
-- For specialized support or collaboration inquiries, feel free to [reach out directly](mailto:owen@emergentagi.com).
+- Join our [Discord community](https://discord.gg/j9GxfbxqAe) for discussions and collaboration.
+- For specialized inquiries, [email us](mailto:owen@emergentagi.com).
 
-## **Library of Phi Generation**
+## Features
 
-**Introduction:**  
-The Library of Phi is an initiative sponsored by SciPhi. Its primary goal is to democratize access to high-quality textbooks. The project utilizes AI-driven techniques to generate textbooks by processing combining raw information (such as table of contents) with unstructured data (such as Vector Databases) to generate high quality factually grounded textbooks.
+### Configurable Data Generation
 
-#### **Optional - Validating Generation Pipeline:**
+Execute `runner.py` with various command-line arguments for customized data generation.
 
 ```bash
-poetry run python sciphi/examples/library_of_phi/generate_textbook.py dry_run
+python sciphi/examples/basic_data_gen/runner.py --provider_name=openai --model_name=gpt-4 --log_level=INFO --batch_size=1 --num_samples=1 --output_file_name=example_output.jsonl --example_config=textbooks_are_all_you_need_basic_split
 ```
 
+*Generates a single sample from GPT-4 using specified configurations.*
 
-#### **Generating the default Textbook:**
+#### Command-Line Arguments
 
-```bash
-# Note, rather than passing arguments in the command line, you can modify the default settings in config/generation_settings/book_draft_settings.yml
-poetry run python sciphi/examples/library_of_phi/generate_textbook.py run  --llm-provider=openai --llm_model_name=gpt-3.5-turbo --do-rag=False --textbook=Aerodynamics_of_Viscous_Fluids --filter_existing_books=False --log-level=debug
-```
+Refer to the README for a comprehensive list of arguments and their defaults. Noteworthy ones include `--provider`, `--model_name`, and `--temperature`.
 
-_[See the example output here](sciphi/data/library_of_phi/sample/Aerodynamics_of_Viscous_Fluids.md)_
+### The Library of Phi
 
-#### **Using a Custom Table of Contents:**
+An initiative to democratize access to high-quality textbooks by employing AI techniques to craft factually accurate books.
 
-1. Draft a table of contents and save as `textbook_name.yaml`.
-2. Place it in `[Your Working Directory]/sciphi/data/library_of_phi/table_of_contents`.
-3. Format identically to `Aerodynamics_of_Viscous_Fluids.yaml`.
+#### Generating Textbooks
 
-#### **Incorporating RAG:**
+1. **Dry Run:**
+   ```bash
+   python sciphi/examples/library_of_phi/generate_textbook.py dry_run
+   ```
 
-1. Enable the `--do-rag` flag: `True`.
-2. In `.env`, set:
-   - `RAG_SERVER_URL`
-   - `RAG_SERVER_USERNAME`
-   - `RAG_SERVER_PASSWORD`
+2. **Default Textbook Generation:**
+   ```bash
+   python sciphi/examples/library_of_phi/generate_textbook.py run  --llm-provider=openai --llm_model_name=gpt-3.5-turbo --do-rag=False --textbook=Aerodynamics_of_Viscous_Fluids --filter_existing_books=False --log-level=debug
+   ```
 
-**Output**:  
-Generated textbooks reside in:  
-`[Your Working Directory]/sciphi/data/library_of_phi`
+   [Sample Output](sciphi/data/library_of_phi/sample/Aerodynamics_of_Viscous_Fluids.md)
 
-**Note**: The Wikipedia embeddings server is not yet public. Meanwhile, ensure your configuration aligns with our specifications if you wish to use wikipedia for RAG. If you would like to peruse more example textbooks, go [here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main).
+3. **Using Custom Table of Contents:** Draft and save as `textbook_name.yaml`, then place it in the specified directory.
 
-## **Installation**
+4. **Incorporating RAG:** Enable the flag and set the appropriate `.env` variables.
 
-```bash
-# Clone the repository
-git clone https://github.com/emrgnt-cmplxty/sciphi.git
-cd sciphi
+*Note:* Ensure alignment with our specifications if using Wikipedia for RAG. Explore more examples [here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main).
 
-# Install dependencies
-# If you don't have poetry installed: pip3 install poetry
-poetry install -E all
+## Getting Started
 
-# Set up your environment
-# Note: Modify the .env file as needed after copying
-cp .env.example .env && vim .env
-```
+### Installation
+
+1. Clone and navigate to the repository:
+   ```bash
+   git clone https://github.com/emrgnt-cmplxty/sciphi.git
+   cd sciphi
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Set up your environment:
+   ```bash
+   cp .env.example .env
+   ```
 
 ### Requirements
 
-- Python: >= 3.11 and < 3.12
-- Poetry: For package management
+- **Python:** 3.11 - 3.12
 
-### Optional Features
+### Optional Dependencies
 
-Install optional dependencies for enhanced features:
-
-```bash
-poetry install -E <extra_name>
-```
-
-Options include:
-- `anthropic_support`: For Anthropic models.
-- `hf_support`: For diverse model access with the HuggingFace package.
-- `openai_support`: For OpenAI models.
-- `vllm_support`: For VLLM, aiding fast inference.
-- `llamacpp_support`: For LlamaCPP, aiding gpu-poor inference. This hasn't been implemented perfectly, use the model_name parameter to specify the path to the model you want to use.
-- `llama_index_support`: For LlamaIndex, enhancing grounded synthesis.
-- `chroma_support`: For Chroma support in large vector databases.
-- `all`: Includes all dependencies (excluding `vllm`, which needs separate installation).
-- `all_with_cuda`: Everything.
+Install enhanced features using `pip install <package_name>`.
 
 ---
 
-### **Customizable Data Generation**
+## License
 
-For fully configurable and flexible data generation, execute the relevant `runner.py` with various command-line arguments.
+Apache-2.0 License.
 
-```bash
-poetry run python sciphi/examples/basic_data_gen/runner.py --provider_name=openai --model_name=gpt-4 --log_level=INFO --batch_size=1 --num_samples=1 --output_file_name=example_output.jsonl --example_config=textbooks_are_all_you_need_basic_split
-```
+## Citations & References
 
-The above command will generate a single sample from GPT-4. This sample is generated using the `textbooks_are_all_you_need_basic_split` configuration, and the output is appended to `example_output.jsonl`. 
+- [Textbooks Are All You Need](https://arxiv.org/abs/2306.11644)
+- [Textbooks Are All You Need II: Phi-1.5 Technical Report](https://arxiv.org/abs/2309.05463)
 
-The long-term view of the SciPhi framework is to provide a training-feedback loop as shown below:
+### Citation
 
-<p align="center">
-<img width="524" alt="Screenshot 2023-09-18 at 9 53 55 AM" src="https://github.com/emrgnt-cmplxty/SciPhi/assets/68796651/9731f891-1d99-432a-aaec-37916bc6362f">
-</p>
+If using SciPhi in your research, please cite:
 
-#### **Command-Line Arguments**
-
-See arguments and their default values in the README. Notable ones include `--provider`, `--model_name`, and `--temperature`.
-
-### License
-
-Licensed under the Apache-2.0 License.
-
-### Citations
-
-1. [Textbooks Are All You Need](https://arxiv.org/abs/2306.11644)
-2. [Textbooks Are All You Need II: Phi-1.5 Technical Report](https://arxiv.org/abs/2309.05463)
-
-## Citation
-
-If using SciPhi in academic work, please cite:
-
-```
-@software{Emergent_AGI_SciPhi,
+```plaintext
+@software{SciPhi,
 author = {Colegrove, Owen},
 doi = {Pending},
 month = {09},
@@ -142,3 +107,7 @@ url = {https://github.com/emrgnt-cmplxty/sciphi},
 year = {2023}
 }
 ```
+
+---
+
+Note: This version assumes you have a `requirements.txt` file that lists all the necessary dependencies for `pip` to install. If such a file doesn't exist, you'll need to create one.

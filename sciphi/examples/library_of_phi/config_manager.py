@@ -92,7 +92,8 @@ class ConfigurationManager:
                 yml_config = load_yaml_file(yml)
                 # check that we can traverse the config
                 _ = [ele for ele in traverse_config(yml_config)]
-            except:
+            except Exception as e:
+                logger.error(f"Failed to load {yml} with error: {e}")
                 failed_loads += 1
 
         summary["YAML Files with Errors"] = failed_loads
@@ -118,6 +119,11 @@ class ConfigurationManager:
             yml_file_paths = glob.glob(
                 os.path.join(
                     self.config.data_dir, self.config.toc_dir, "*.yaml"
+                )
+            )
+            yml_file_paths += glob.glob(
+                os.path.join(
+                    self.config.data_dir, self.config.toc_dir, "**/**/*.yaml"
                 )
             )
 

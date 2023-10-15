@@ -1,7 +1,8 @@
 """A module which defines utilities for the library."""
 import json
-import logging
 import os
+import time
+from functools import wraps
 
 import pandas as pd
 
@@ -103,3 +104,15 @@ class SciPhiConfig:
     def update(self, new_config_dict):
         """Update fields using a dictionary."""
         self._update_from_dict(new_config_dict)
+
+
+# Utility to time a function's execution
+def time_function(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        elapsed_time = time.time() - start_time
+        return result, elapsed_time
+
+    return wrapper

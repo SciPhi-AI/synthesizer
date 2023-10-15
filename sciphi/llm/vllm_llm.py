@@ -1,22 +1,37 @@
 """A module for managing local vLLM models."""
 
 import logging
-import time
 from dataclasses import dataclass
 from typing import Optional
 
 from sciphi.core import ProviderName
+from sciphi.core.utils import time_function
 from sciphi.llm.base import LLM, LLMConfig
 from sciphi.llm.config_manager import model_config
 
 logging.basicConfig(level=logging.INFO)
 
-from multiprocessing import Lock, Value
 
-# Create a multiprocessing-safe value for the counter and a lock
-global_lock = Lock()
-global_token_counter = Value("i", 0)
-global_time_counter = Value("d", 0)
+class TokenCounterUtility:
+    """Class for tracking tokens per second."""
+
+    def __init__(self) -> None:
+        self.total_tokens = 0
+        self.total_time = 0.0
+
+    def update_counters(self, tokens: list[int], elapsed_time: int) -> None:
+        self.total_tokens += tokens
+        self.total_time += elapsed_time
+
+    def get_tokens_per_second(
+        self, tokens: list[int], elapsed_time: int
+    ) -> None:
+        return tokens / elapsed_time
+
+    def get_avg_tokens_per_second(self):
+        return (
+            self.total_tokens / self.total_time if self.total_time > 0 else 0
+        )
 
 
 @model_config
@@ -62,9 +77,10 @@ class vLLM(LLM):
                 top_k=config.top_k,
                 max_tokens=config.max_tokens_to_sample,
             )
+            self.token_counter = TokenCounterUtility()
         else:
             try:
-                import openai
+                import openai  # noqa: F401
             except ImportError:
                 raise ImportError(
                     "You specified a configuration port. Please install openai before attempting to run vLLM through a server. This can be accomplished via `poetry install -E openai,  ...OTHER_DEPENDENCIES_HERE`."
@@ -79,14 +95,7 @@ class vLLM(LLM):
 
     def get_instruct_completion(self, prompt: str) -> str:
         """Get an instruction completion from local vLLM API."""
-        if not self.config.port:
-            return (
-                self.model.generate([prompt], self.sampling_params)[0]
-                .outputs[0]
-                .text
-            )
-
-        else:
+        if self.config.port:
             import openai
 
             openai.api_key = vLLM.DUMMY_API_KEY
@@ -101,6 +110,24 @@ class vLLM(LLM):
             )
 
             return outputs["choices"][0]["text"]
+        else:
+            results, elapsed_time = self._timed_generate([prompt])
+            total_tokens = len(results[0].token_ids)
+            self.token_counter.update_counters(total_tokens, elapsed_time)
+
+            tokens_per_second = self.token_counter.get_tokens_per_second(
+                total_tokens, elapsed_time
+            )
+            avg_tokens_per_second = (
+                self.token_counter.get_avg_tokens_per_second()
+            )
+
+            print(
+                f"Latest batch - Completion tokens per second: {tokens_per_second}"
+            )
+            print(
+                f"Running average - Completion tokens per second: {avg_tokens_per_second}"
+            )
 
     def get_batch_instruct_completion(self, prompts: list[str]) -> list[str]:
         """Get batch instruction completion from local vLLM."""
@@ -110,7 +137,20 @@ class vLLM(LLM):
                 for prompt in prompts
             ]
 
-        return [
-            ele.outputs[0].text
-            for ele in self.model.generate(prompts, self.sampling_params)
-        ]
+        results, elapsed_time = self._timed_generate(prompts)
+        total_tokens = sum([len(ele.outputs[0].token_ids) for ele in results])
+        self.token_counter.update_counters(total_tokens, elapsed_time)
+
+        tokens_per_second = self.token_counter.get_tokens_per_second(
+            total_tokens, elapsed_time
+        )
+        avg_tokens_per_second = self.token_counter.get_avg_tokens_per_second()
+
+        print(f"Latest batch - Tokens per second: {tokens_per_second}")
+        print(f"Running average - Tokens per second: {avg_tokens_per_second}")
+
+        return [ele.outputs[0].text for ele in results]
+
+    @time_function
+    def _timed_generate(self, prompts):
+        return self.model.generate(prompts, self.sampling_params)
