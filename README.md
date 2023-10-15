@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img width="716" alt="SciPhi Logo" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/195367d8-54fd-4281-ace0-87ea8523f982">
+<img width="716" alt="SciPhi Logo" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/c4192288-b5af-4ef8-9774-82b3bb5c8251">
 </p>
 
 SciPhi is a Python framework that enables the generation of high-quality synthetic data for LLM and/or human consumption. Key features include:
@@ -89,11 +89,6 @@ Install enhanced features using `pip install <package_name>`.
 
 Apache-2.0 License.
 
-## Citations & References
-
-- [Textbooks Are All You Need](https://arxiv.org/abs/2306.11644)
-- [Textbooks Are All You Need II: Phi-1.5 Technical Report](https://arxiv.org/abs/2309.05463)
-
 ### Citation
 
 If using SciPhi in your research, please cite:
@@ -108,7 +103,3 @@ url = {https://github.com/emrgnt-cmplxty/sciphi},
 year = {2023}
 }
 ```
-
----
-
-Note: This version assumes you have a `requirements.txt` file that lists all the necessary dependencies for `pip` to install. If such a file doesn't exist, you'll need to create one.
