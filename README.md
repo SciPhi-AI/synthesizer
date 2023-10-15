@@ -1,13 +1,14 @@
-# SciPhi [ΨΦ]: A Framework for Synthetic Data
+# SciPhi [<span style="color:gold">ΨΦ</span>]: A Framework for LLM Powered Data
+
 
 <p align="center">
 <img width="716" alt="SciPhi Logo" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/c4192288-b5af-4ef8-9774-82b3bb5c8251">
 </p>
 
-SciPhi is a Python framework that enables the generation of high-quality synthetic data for LLM and/or Human consumption. Key features include:
+SciPhi is a Python framework that enables the generation of high-quality synthetic data for LLM and/or human consumption. Key features include:
 
 - **Configurable Data Generation:** Produce LLM-mediated datasets tailored to your needs.
-- **The Library of Phi:** An AI-powered initiative to create open-source textbooks.
+- **The Library of Phi:** An AI-powered initiative that creates open-source textbooks.
 
 ## Community & Support
 
