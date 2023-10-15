@@ -1,8 +1,8 @@
 """A module for managing local Llama-cpp models."""
 
 import logging
-import time
 from dataclasses import dataclass
+from multiprocessing import Lock, Value
 from typing import Optional
 
 from sciphi.core import ProviderName
@@ -11,7 +11,6 @@ from sciphi.llm.config_manager import model_config
 
 logging.basicConfig(level=logging.INFO)
 
-from multiprocessing import Lock, Value
 
 # Create a multiprocessing-safe value for the counter and a lock
 global_lock = Lock()
@@ -62,7 +61,7 @@ class LlamaCPP(LLM):
             )
         else:
             try:
-                import openai
+                import openai  # type: ignore
             except ImportError:
                 raise ImportError(
                     "You specified a configuration port. Please install openai before attempting to run llamaCPP through a server. This can be accomplished via `poetry install -E openai,  ...OTHER_DEPENDENCIES_HERE`."

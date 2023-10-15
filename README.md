@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img width="713" alt="Screenshot 2023-10-15 at 10 02 16 AM" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/195367d8-54fd-4281-ace0-87ea8523f982">
+<img width="716" alt="SciPhi Logo" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/195367d8-54fd-4281-ace0-87ea8523f982">
 </p>
 
 SciPhi is a Python framework that enables the generation of high-quality synthetic data for LLM and/or human consumption. Key features include:
