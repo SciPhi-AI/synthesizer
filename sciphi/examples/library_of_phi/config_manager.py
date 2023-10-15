@@ -39,14 +39,18 @@ def traverse_textbook_config(
 
         for section in sections:
             if isinstance(section, str):
-                yield textbook_name, chapter_name, section, "", chapter[chapter_name]
+                yield textbook_name, chapter_name, section, "", chapter[
+                    chapter_name
+                ]
                 continue
 
             section_name = get_key(section)
             subsections = section[section_name].get("subsections", [])
 
             if not subsections:
-                yield textbook_name, chapter_name, section_name, "", chapter[chapter_name]
+                yield textbook_name, chapter_name, section_name, "", chapter[
+                    chapter_name
+                ]
                 continue
 
             for subsection in subsections:
@@ -112,14 +116,18 @@ class ConfigurationManager:
             ]
         else:
             yml_file_paths = glob.glob(
-                os.path.join(self.config.data_dir, self.config.toc_dir, "*.yaml")
+                os.path.join(
+                    self.config.data_dir, self.config.toc_dir, "*.yaml"
+                )
             )
 
         if not yml_file_paths:
             raise ValueError("No YAML files found in the specified directory.")
 
         # Check the output path
-        output_path = os.path.join(self.config.data_dir, self.config.output_dir, "dry_run_output")
+        output_path = os.path.join(
+            self.config.data_dir, self.config.output_dir, "dry_run_output"
+        )
         if not os.path.exists(os.path.dirname(output_path)):
             os.makedirs(os.path.dirname(output_path))
 
@@ -143,7 +151,9 @@ class ConfigurationManager:
                 failed_loads += 1
 
         summary["YAML Files with Errors"] = failed_loads
-        summary["YAML Failure Rate"] = float(failed_loads) / len(yml_file_paths)
+        summary["YAML Failure Rate"] = float(failed_loads) / len(
+            yml_file_paths
+        )
 
         logger.info("\nDry Run Summary:")
         for key, value in summary.items():
@@ -161,10 +171,14 @@ class ConfigurationManager:
             ]
         else:
             yml_file_paths = glob.glob(
-                os.path.join(self.config.data_dir, self.config.toc_dir, "*.yaml")
+                os.path.join(
+                    self.config.data_dir, self.config.toc_dir, "*.yaml"
+                )
             )
             yml_file_paths += glob.glob(
-                os.path.join(self.config.data_dir, self.config.toc_dir, "**/**/*.yaml")
+                os.path.join(
+                    self.config.data_dir, self.config.toc_dir, "**/**/*.yaml"
+                )
             )
 
         # Split the file paths into chunks for each process
@@ -185,7 +199,9 @@ class ConfigurationManager:
                 if not self._book_exists(yml_file_path):
                     filtered_books.append(yml_file_path)
                 else:
-                    logger.warning(f"Skipping {yml_file_path} as it already exists.")
+                    logger.warning(
+                        f"Skipping {yml_file_path} as it already exists."
+                    )
             yml_file_paths_chunk = filtered_books
         return yml_file_paths_chunk
 
@@ -194,5 +210,7 @@ class ConfigurationManager:
         book_name = os.path.splitext(os.path.basename(yml_path))[0]
 
         # Assume the book files in the output directory have the ".md" extension
-        output_path = os.path.join(self.config.data_dir, self.config.output_dir, f"{book_name}.md")
+        output_path = os.path.join(
+            self.config.data_dir, self.config.output_dir, f"{book_name}.md"
+        )
         return os.path.exists(output_path)

@@ -35,7 +35,9 @@ def gen_llm_config(args: argparse.Namespace) -> dict:
         "llama_load_from_avail_store": args.llama_load_from_avail_store,
         "llama_chunk_size": args.llama_chunk_size,
         "llama_top_k_similarity": args.llama_top_k_similarity,
-        "add_model_kwargs": json.loads(args.add_model_kwargs) if args.add_model_kwargs else None,
+        "add_model_kwargs": json.loads(args.add_model_kwargs)
+        if args.add_model_kwargs
+        else None,
         "add_generation_kwargs": json.loads(args.add_generation_kwargs)
         if args.add_generation_kwargs
         else None,
@@ -57,7 +59,9 @@ def prep_for_file_path(in_path: str) -> str:
 def parse_arguments() -> argparse.Namespace:
     """Parse command line arguments."""
 
-    parser = argparse.ArgumentParser(description="Parse SciPhi running commands")
+    parser = argparse.ArgumentParser(
+        description="Parse SciPhi running commands"
+    )
     # Run arguments
     parser.add_argument(
         "--run_name",
@@ -263,7 +267,9 @@ def get_default_settings_provider(
     """Get the default LLM config and provider for the given provider and model name."""
 
     provider_name = ProviderName(provider)
-    llm_config = LLMConfigManager.get_config_for_provider(provider_name).create(
+    llm_config = LLMConfigManager.get_config_for_provider(
+        provider_name
+    ).create(
         model_name=model_name,
     )
 
@@ -314,9 +320,16 @@ def format_yaml_line(line: str, index: int, split_lines: list[str]) -> str:
             if "subtopics:" in split_lines[index + 1]:
                 line += ":"
     elif index == 2:
-        first_non_blank_char = next((i for i, char in enumerate(line) if char != " "), 0)
+        first_non_blank_char = next(
+            (i for i, char in enumerate(line) if char != " "), 0
+        )
         if first_non_blank_char != 0:
-            line = line[:first_non_blank_char] + '"' + line[first_non_blank_char:] + '":'
+            line = (
+                line[:first_non_blank_char]
+                + '"'
+                + line[first_non_blank_char:]
+                + '":'
+            )
     return line
 
 
@@ -383,7 +396,9 @@ def prase_yaml_completion(yml_content: dict) -> str:
     return clean_yaml_string(yml_str)
 
 
-def wiki_search_api(query: str, url: str, username: str, password: str, top_k=10) -> dict:
+def wiki_search_api(
+    query: str, url: str, username: str, password: str, top_k=10
+) -> dict:
     """
     Queries the search API with the provided credentials and query.
     The expected output is a JSON response containing the top_k examples.
@@ -411,4 +426,6 @@ def with_retry(func, max_retries=3):
         except Exception as e:
             logging.warning(f"Exception encountered: {e}. Retrying...")
             time.sleep(5)
-    raise ValueError(f"Failed to execute {func.__name__} after {max_retries} retries.")
+    raise ValueError(
+        f"Failed to execute {func.__name__} after {max_retries} retries."
+    )
