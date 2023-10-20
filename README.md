@@ -50,7 +50,7 @@ _Note:_ Ensure alignment with our specifications if using Wikipedia for RAG. Exp
 
 ### RAG Eval Harness
 
-We introduce a RAG evaluation harness in order to evaluate the perfomance of a given RAG pipeline.
+We introduce a RAG evaluation harness in order to evaluate the performance of a given RAG pipeline.
 
 #### RAG Harness
 
