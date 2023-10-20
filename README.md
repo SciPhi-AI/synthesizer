@@ -13,7 +13,7 @@ SciPhi is a Python framework that enables the generation of high-quality synthet
 ## Community & Support
 
 - Join our [Discord community](https://discord.gg/j9GxfbxqAe) for discussions and collaboration.
-- For specialized inquiries, [email us](mailto:owen@emergentagi.com).
+- For specialized inquiries, [email us](mailto:owen@sciphi.ai).
 
 ## Features
 
