@@ -1,18 +1,18 @@
 """A module for interfacing with local HuggingFace models"""
 import logging
 
-from sciphi.interface.base import LLMInterface, ProviderName
-from sciphi.interface.interface_manager import llm_provider
+from sciphi.interface.base import LLMInterface, LLMProviderName
+from sciphi.interface.llm_interface_manager import llm_interface
 from sciphi.llm import HuggingFaceConfig, HuggingFaceLLM
 
 logger = logging.getLogger(__name__)
 
 
-@llm_provider
+@llm_interface
 class HuggingFaceLLMInterface(LLMInterface):
     """A class to interface with local HuggingFace models."""
 
-    provider_name = ProviderName.HUGGING_FACE
+    llm_provider_name = LLMProviderName.HUGGING_FACE
 
     def __init__(
         self,

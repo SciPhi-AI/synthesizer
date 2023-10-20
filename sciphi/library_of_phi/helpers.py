@@ -5,12 +5,10 @@ import logging
 import os
 import time
 
-import requests
 import yaml
-from requests.auth import HTTPBasicAuth
 
-from sciphi.interface import InterfaceManager, ProviderName
-from sciphi.interface.base import LLMInterface
+from sciphi.core import LLMProviderName
+from sciphi.interface import LLMInterface, LLMInterfaceManager
 from sciphi.llm import LLMConfigManager
 
 
@@ -18,7 +16,7 @@ def gen_llm_config(args: argparse.Namespace) -> dict:
     """Constructs the LLM config based on provided arguments."""
 
     config_args = {
-        "provider_name": ProviderName(args.provider_name),
+        "llm_provider_name": LLMProviderName(args.llm_provider_name),
         "model_name": args.model_name,
         "temperature": args.temperature,
         "top_p": args.top_p,
@@ -70,7 +68,7 @@ def parse_arguments() -> argparse.Namespace:
         help="The name of the run.",
     )
     parser.add_argument(
-        "--provider_name",
+        "--llm_provider_name",
         type=str,
         default="openai",
         help="Which provider to use for zero-shot completions?",
@@ -266,14 +264,14 @@ def get_default_settings_provider(
 ) -> LLMInterface:
     """Get the default LLM config and provider for the given provider and model name."""
 
-    provider_name = ProviderName(provider)
+    llm_provider_name = LLMProviderName(provider)
     llm_config = LLMConfigManager.get_config_for_provider(
-        provider_name
+        llm_provider_name
     ).create(
         model_name=model_name,
     )
 
-    return InterfaceManager.get_provider(provider_name, model_name, llm_config)
+    return LLMInterfaceManager.get_interface(llm_provider_name, llm_config)
 
 
 def prep_yaml_line(line: str) -> str:
@@ -394,28 +392,6 @@ def prase_yaml_completion(yml_content: dict) -> str:
         return parsed_yml_str
 
     return clean_yaml_string(yml_str)
-
-
-def wiki_search_api(
-    query: str, url: str, username: str, password: str, top_k=10
-) -> dict:
-    """
-    Queries the search API with the provided credentials and query.
-    The expected output is a JSON response containing the top_k examples.
-    """
-    # Make the GET request with basic authentication and the query parameter
-    response = requests.get(
-        url,
-        auth=HTTPBasicAuth(username, password),
-        params={"query": query, "k": top_k},
-    )
-
-    # Check if the request was successful
-    if response.status_code == 200:
-        return response.json()["match"]  # Return the JSON response
-    else:
-        response.raise_for_status()  # Raise an HTTPError if the HTTP request returned an unsuccessful status code
-        raise ValueError("Unexpected response from API")
 
 
 def with_retry(func, max_retries=3):

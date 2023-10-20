@@ -1,18 +1,18 @@
 """A module for interfacing with the LlamaIndex API"""
 import logging
 
-from sciphi.interface.base import LLMInterface, ProviderName
-from sciphi.interface.interface_manager import llm_provider
+from sciphi.interface.base import LLMInterface, LLMProviderName
+from sciphi.interface.llm_interface_manager import llm_interface
 from sciphi.llm import LLamaIndexConfig, LlamaIndexLLM
 
 logger = logging.getLogger(__name__)
 
 
-@llm_provider
+@llm_interface
 class LlamaIndexInterface(LLMInterface):
     """A class to interface with the LlamaIndex API."""
 
-    provider_name = ProviderName.LLAMA_INDEX
+    llm_provider_name = LLMProviderName.LLAMA_INDEX
 
     def __init__(
         self,

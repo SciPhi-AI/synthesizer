@@ -1,7 +1,7 @@
 """A module which facilitates JSONL data writing."""
 import json
 
-from sciphi.writers.base import DataWriter
+from sciphi.core.writers.base import DataWriter
 
 
 class JsonlDataWriter(DataWriter):

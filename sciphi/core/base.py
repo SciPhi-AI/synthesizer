@@ -2,7 +2,7 @@
 from enum import Enum
 
 
-class ProviderName(Enum):
+class LLMProviderName(Enum):
     """Specifies the name of the LLM provider"""
 
     OPENAI = "openai"
@@ -11,3 +11,8 @@ class ProviderName(Enum):
     LLAMA_INDEX = "llama-index"
     VLLM = "vllm"
     LLAMACPP = "llamacpp"
+    LITE_LLM = "lite-llm"
+
+
+class RAGProviderName(Enum):
+    SCIPHI_WIKI = "sciphi-wiki"

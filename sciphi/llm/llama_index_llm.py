@@ -2,8 +2,8 @@
 import os
 from dataclasses import dataclass
 
-from sciphi.core.utils import get_data_raw_dir
-from sciphi.interface.base import ProviderName
+from sciphi.core.utils import get_data_dir
+from sciphi.interface.base import LLMProviderName
 from sciphi.llm.base import LLM
 from sciphi.llm.config_manager import model_config
 from sciphi.llm.openai_llm import OpenAIConfig
@@ -14,11 +14,13 @@ from sciphi.llm.openai_llm import OpenAIConfig
 class LLamaIndexConfig(OpenAIConfig):
     """A class to manage the configurations for LlamaIndex."""
 
-    provider_name: ProviderName = ProviderName.LLAMA_INDEX
+    llm_provider_name: LLMProviderName = LLMProviderName.LLAMA_INDEX
 
     # LlamaIndex-specific configs
-    # Defaults to the algorithms textbook
-    llama_data_dir: str = os.path.join(get_data_raw_dir(), "algorithms")
+    # Defaults to the library of phi textbook
+    llama_data_dir: str = os.path.join(
+        get_data_dir(), "library_of_phi", "Aerodynamics_of_Viscous_Fluids.md"
+    )
     llama_index_name: str = "vector_index"
     llama_out_store: str = "storage"
     llama_load_from_avail_store: bool = True

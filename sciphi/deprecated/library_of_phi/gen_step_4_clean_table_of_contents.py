@@ -7,7 +7,7 @@ Description:
 
 Usage:
     Command-line interface example:
-        $ python sciphi/examples/library_of_phi/gen_step_4_clean_table_of_contents.py run \
+        $ python sciphi/library_of_phi/gen_step_4_clean_table_of_contents.py run \
             --input_dir=output_step_3 \
             --provider=openai \
             --model_name=gpt-4-0613 \
@@ -50,13 +50,13 @@ from glob import glob
 import fire
 import yaml
 
-from sciphi.examples.helpers import (
+from sciphi.examples.library_of_phi.prompts import (
+    TABLE_OF_CONTENTS_CLEAN_PROMPT,
+)
+from sciphi.library_of_phi.helpers import (
     get_default_settings_provider,
     traverse_config,
     with_retry,
-)
-from sciphi.examples.library_of_phi.prompts import (
-    TABLE_OF_CONTENTS_CLEAN_PROMPT,
 )
 
 

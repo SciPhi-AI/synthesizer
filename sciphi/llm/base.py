@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass, fields
 from enum import Enum
 
-from sciphi.core import ProviderName
+from sciphi.core import LLMProviderName
 
 
 class ModelName(Enum):
@@ -32,7 +32,7 @@ class ModelName(Enum):
 
 @dataclass
 class LLMConfig(ABC):
-    provider_name: ProviderName
+    llm_provider_name: LLMProviderName
     model_name: str
 
     version: str = "0.1.0"

@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass, field
 
-from sciphi.core import ProviderName
+from sciphi.core import LLMProviderName
 from sciphi.llm.base import LLM, LLMConfig
 from sciphi.llm.config_manager import model_config
 
@@ -13,7 +13,7 @@ class HuggingFaceConfig(LLMConfig):
     """Configuration for local HuggingFace models."""
 
     # Base
-    provider_name: ProviderName = ProviderName.HUGGING_FACE
+    llm_provider_name: LLMProviderName = LLMProviderName.HUGGING_FACE
     model_name: str = "gpt2"
     temperature: float = 0.7
     top_p: float = 1.0
@@ -59,12 +59,10 @@ class HuggingFaceLLM(LLM):
             raise ValueError(
                 "The provided config must be an instance of HuggingFaceConfig."
             )
-        print("config = ", config)
         self.config: HuggingFaceConfig = config
 
         # Create the model, tokenizer, and generation config
         model_name = self.config.model_name
-        print("model_name = ", model_name)
         self.model = AutoModelForCausalLM.from_pretrained(
             model_name,
             trust_remote_code=True,

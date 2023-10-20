@@ -1,5 +1,5 @@
 """A module which facilitates raw data writing."""
-from sciphi.writers.base import DataWriter
+from sciphi.core.writers.base import DataWriter
 
 
 class RawDataWriter(DataWriter):

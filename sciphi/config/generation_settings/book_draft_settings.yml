@@ -13,19 +13,19 @@ skip_validation: false
 max_threads: null
 
 # llm config
-llm_provider: openai
-llm_model_name: gpt-4-0613
-temperature: 0.1
-max_tokens_to_sample: 1024
-top_k: 100
-
-# sampling config
-max_related_context_to_sample: 2000
-max_prev_snippet_to_sample: 2000
+llm_provider_name: openai
+llm_model_name: gpt-3.5-turbo
+llm_temperature: 0.1
+llm_max_tokens_to_sample: 1024
+llm_top_k: 100
+## sampling config
+max_related_context_to_sample: 2_096
+max_prev_snippet_to_sample: 2_096
 
 # rag config
-do_rag: true
-rag_server_url: null
-rag_username: null
-rag_password: null
-
+rag_provider_name: sciphi-wiki
+rag_enabled: true
+rag_api_base: null
+rag_api_key: null
+rag_max_context: 2_096
+rag_top_k: 10

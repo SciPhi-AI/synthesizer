@@ -1,6 +1,5 @@
 # SciPhi [<span style="color:gold">ΨΦ</span>]: A Framework for LLM Powered Data
 
-
 <p align="center">
 <img width="716" alt="SciPhi Logo" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/195367d8-54fd-4281-ace0-87ea8523f982">
 </p>
@@ -8,7 +7,8 @@
 SciPhi is a Python framework that enables the generation of high-quality synthetic data for LLM and/or human consumption. Key features include:
 
 - **Configurable Data Generation:** Produce LLM-mediated datasets tailored to your needs.
-- **The Library of Phi:** An AI-powered initiative that creates open-source textbooks.
+- **RAG Grounding**
+- **Textbook Generation**
 
 ## Community & Support
 
@@ -17,56 +17,65 @@ SciPhi is a Python framework that enables the generation of high-quality synthet
 
 ## Features
 
-### The Library of Phi
+### Textbook Generation (The Library of Phi)
 
 An initiative to democratize access to high-quality textbooks by employing AI techniques to craft factually accurate books.
 
 #### Generating Textbooks
 
 1. **Dry Run:**
+
    ```bash
-   python sciphi/examples/library_of_phi/generate_textbook.py dry_run
+   python sciphi/scripts/generate_textbook.py dry_run
    ```
 
 2. **Default Textbook Generation:**
+
    ```bash
-   python sciphi/examples/library_of_phi/generate_textbook.py run  --llm-provider=openai --llm_model_name=gpt-3.5-turbo --do-rag=False --textbook=Aerodynamics_of_Viscous_Fluids --filter_existing_books=False --log-level=debug
+   python sciphi/scripts/generate_textbook.py run --textbook=Aerodynamics_of_Viscous_Fluids --rag-enabled=False --filter_existing_books=False --log-level=debug
    ```
 
    [Sample Output](sciphi/data/library_of_phi/sample/Aerodynamics_of_Viscous_Fluids.md)
 
-3. **Using Custom Table of Contents:** Draft and save as `textbook_name.yaml`, then place it in the specified directory.
+3. **Using Custom Table of Contents:** 
 
-4. **Incorporating RAG:** Enable the flag and set the appropriate `.env` variables.
+   Draft and save as `textbook_name.yaml`, then place it in the specified directory.
 
-*Note:* Ensure alignment with our specifications if using Wikipedia for RAG. Explore more examples [here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main).
+4. **Incorporating RAG:** 
+
+   Set rag-enabled=True and set the appropriate `.env` variables, or pass in values for `rag_api_base` and `rag_api_key`.
+
+_Note:_ Ensure alignment with our specifications if using Wikipedia for RAG. Explore more examples [here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main).
 
 
-### Configurable Data Generation
+### RAG Eval Harness
 
-Execute `runner.py` with various command-line arguments for customized data generation.
+We introduce a RAG evaluation harness in order to evaluate the perfomance of a given RAG pipeline.
 
-```bash
-python sciphi/examples/basic_data_gen/runner.py --provider_name=openai --model_name=gpt-4 --log_level=INFO --batch_size=1 --num_samples=1 --output_file_name=example_output.jsonl --example_config=textbooks_are_all_you_need_basic_split
-```
+#### RAG Harness
 
-*Generates a single sample from GPT-4 using specified configurations.*
+1. **Run the Harness:**
 
-#### Command-Line Arguments
+   ```bash
+   poetry run python sciphi/scripts/rag_harness.py --n-samples=100 --rag-enabled=True --evals_to_run="science_multiple_choice"
+   ...
+   INFO:__main__:Final Accuracy=0.65
+   ```
 
-Refer to the README for a comprehensive list of arguments and their defaults. Noteworthy ones include `--provider`, `--model_name`, and `--temperature`.
 
 ## Getting Started
 
 ### Installation
 
 1. Clone and navigate to the repository:
+
    ```bash
    git clone https://github.com/emrgnt-cmplxty/sciphi.git
    cd sciphi
    ```
 
 2. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```

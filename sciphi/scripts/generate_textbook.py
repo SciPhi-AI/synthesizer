@@ -2,25 +2,25 @@
 import logging
 import os
 from concurrent.futures import ThreadPoolExecutor
-from typing import Any, Generator, Tuple, Union
+from typing import Generator, Optional, Tuple
 
 import fire
 
+from sciphi.core import LLMProviderName, RAGProviderName
 from sciphi.core.utils import get_data_dir
-from sciphi.examples.helpers import load_yaml_file, wiki_search_api, with_retry
-from sciphi.examples.library_of_phi.config_manager import (
+from sciphi.core.writers import JsonlDataWriter, RawDataWriter
+from sciphi.interface import LLMInterfaceManager, RAGInterfaceManager
+from sciphi.library_of_phi.config_manager import (
     ConfigurationManager,
     traverse_textbook_config,
 )
-from sciphi.examples.library_of_phi.prompts import (
+from sciphi.library_of_phi.helpers import load_yaml_file, with_retry
+from sciphi.library_of_phi.prompts import (
     BOOK_CHAPTER_BULK_PROMPT,
     BOOK_CHAPTER_CONCLUSION_PROMPT,
     BOOK_CHAPTER_INTRODUCTION_PROMPT,
     BOOK_FOREWORD_PROMPT,
 )
-from sciphi.interface import InterfaceManager, ProviderName
-from sciphi.llm import LLMConfigManager
-from sciphi.writers import JsonlDataWriter, RawDataWriter
 
 logging.basicConfig(
     level=logging.INFO,
@@ -43,43 +43,47 @@ class TextbookContentGenerator:
 
     def __init__(
         self,
-        config_path: str = None,
+        config_path: Optional[str] = None,
         **cli_args,
     ) -> None:
         """Initialize the textbook content generator."""
         self._load_configuration(config_path, cli_args)
 
-        provider_name = ProviderName(self.config.llm_provider)
-        self.llm_provider = InterfaceManager.get_provider(
-            provider_name,
-            self.config.llm_model_name,
-            LLMConfigManager.get_config_for_provider(provider_name).create(
-                model_name=self.config.llm_model_name,
-                max_tokens_to_sample=self.config.max_tokens_to_sample,
-                temperature=self.config.temperature,
-                top_k=self.config.top_k,
-                port=cli_args.get("llm_port"),
-            ),
+        self.llm_interface = LLMInterfaceManager.get_interface_from_args(
+            provider_name=LLMProviderName(self.config.llm_provider_name),
+            model_name=self.config.llm_model_name,
+            # Additional args
+            max_tokens_to_sample=self.config.llm_max_tokens_to_sample,
+            temperature=self.config.llm_temperature,
+            top_k=self.config.llm_top_k,
+            # Used for re-routing requests to a remote vLLM server
+            server_base=cli_args.get("llm_server_base", None),
         )
+
+        self.rag_interface = RAGInterfaceManager.get_interface_from_args(
+            provider_name=RAGProviderName(self.config.rag_provider_name),
+            base=self.config.rag_api_base,
+            token=self.config.rag_api_key,
+            max_context=self.config.rag_max_context,
+            top_k=self.config.rag_top_k,
+        )
+
         self.logger = logging.getLogger("textbook_content_generator")
         self.logger.setLevel(self.config.log_level)
         if not self.config.skip_validation:
             self.config_manager.validate_config(self.logger)
 
-    def _load_configuration(self, config_path: str, cli_args: dict):
+    def _load_configuration(self, config_path: Optional[str], cli_args: dict):
         """Loads the configuration."""
         self.config_manager = ConfigurationManager(config_path)
         config = self.config_manager.load_config()
 
         # RAG settings
-        config.rag_url = config.rag_server_url or os.environ.get(
-            "RAG_SERVER_URL"
+        config.rag_api_base = config.rag_api_base or os.environ.get(
+            "RAG_API_BASE"
         )
-        config.rag_username = config.rag_username or os.environ.get(
-            "RAG_SERVER_USERNAME"
-        )
-        config.rag_password = config.rag_password or os.environ.get(
-            "RAG_SERVER_PASSWORD"
+        config.rag_api_key = config.rag_api_key or os.environ.get(
+            "RAG_API_KEY"
         )
         config.data_dir = config.data_dir or os.path.join(
             get_data_dir(), "library_of_phi"
@@ -88,11 +92,11 @@ class TextbookContentGenerator:
         config.log_level = config.log_level.upper()
         config.max_threads = config.max_threads or os.cpu_count()
 
-        if config.do_rag and not all(
-            [config.rag_url, config.rag_username, config.rag_password]
+        if config.rag_enabled and not all(
+            [config.rag_api_base, config.rag_api_key]
         ):
             raise ValueError(
-                "Set do_rag to `False`, or provide a RAG server rag_url, rag_username, and rag_password."
+                "Set do_rag to `False`, or provide a RAG server rag_api_base and rag_api_key."
             )
         self.yml_pointer = 0
         self.config = config
@@ -116,7 +120,7 @@ class TextbookContentGenerator:
         Configuration is loaded and validated upstream in the constructor
         Validate LLM provider configuration
         """
-        if not self.llm_provider:
+        if not self.llm_interface:
             raise ValueError("Invalid LLM provider configuration.")
 
     def run(self) -> None:
@@ -138,16 +142,26 @@ class TextbookContentGenerator:
 
     def initialize_generators(
         self, yml_file_paths_chunk: list[str]
-    ) -> list[list[Union[Generator, Any]]]:
+    ) -> list[
+        tuple[Generator[dict, None, None], Optional[str], CompositeWriter]
+    ]:
         """Initialize generators based on the yaml files."""
         return [
-            self._get_next_generator(yml_file_paths_chunk)
-            for _ in range(
-                min(self.config.batch_size, len(yml_file_paths_chunk))
-            )
+            ele
+            for ele in [
+                self._get_next_generator(yml_file_paths_chunk)
+                for _ in range(
+                    min(self.config.batch_size, len(yml_file_paths_chunk))
+                )
+            ]
+            if ele is not None
         ]
 
-    def _get_next_generator(self, yml_file_paths_chunk: list[str]):
+    def _get_next_generator(
+        self, yml_file_paths_chunk: list[str]
+    ) -> Optional[
+        tuple[Generator[dict, None, None], Optional[str], CompositeWriter]
+    ]:
         """Get a generator for the next yml file."""
         if self.yml_pointer < len(yml_file_paths_chunk):
             yml_file_path = yml_file_paths_chunk[self.yml_pointer]
@@ -156,25 +170,27 @@ class TextbookContentGenerator:
             )
             yml_config = load_yaml_file(yml_file_path)
             self.yml_pointer += 1
-            return [
+            return (
                 self.process_book_elements(yml_config),
                 None,
                 self.get_writer(textbook_output_name),
-            ]
+            )
         return None
 
     def _worker(
         self, i: int, generator, current_completion
-    ) -> Tuple[int, dict, int]:
+    ) -> Tuple[int, Optional[dict], int]:
         try:
             current_iteration = generator.send(current_completion)
             return i, current_iteration, i
         except StopIteration:
-            return i, None, None
+            return i, None, i
 
-    def _process_iteration(self) -> Tuple[list[dict], list[int]]:
+    def _process_iteration(self) -> Tuple[list[Optional[dict]], list[int]]:
         """Process a single iteration of the generators."""
-        current_iterations = [None] * len(self.generators)
+        current_iterations: list[Optional[dict]] = [None] * len(
+            self.generators
+        )
         prompts_for_completion = []
         prompt_indices = []
 
@@ -196,31 +212,41 @@ class TextbookContentGenerator:
         return current_iterations, prompt_indices
 
     def _fetch_completions(
-        self, current_iterations: list[dict], prompt_indices: list[int]
-    ) -> list[str]:
+        self,
+        current_iterations: list[Optional[dict]],
+        prompt_indices: list[int],
+    ) -> list[Optional[str]]:
         """Fetch completions for the current iteration."""
         prompts_for_completion = [x["prompt"] for x in current_iterations if x]
-        fetched_completions = self.llm_provider.get_batch_completion(
+        fetched_completions = self.llm_interface.get_batch_completion(
             prompts_for_completion
         )
-        current_completions = [None] * len(current_iterations)
+        current_completions: list[Optional[str]] = [None] * len(
+            current_iterations
+        )
         for idx, completion in zip(prompt_indices, fetched_completions):
             current_completions[idx] = completion
         return current_completions
 
     def _handle_generators(
-        self, current_iterations: list[dict], current_completions: list[str]
+        self,
+        current_iterations: list[Optional[dict]],
+        current_completions: list[Optional[str]],
     ) -> None:
         """Handle the generators, logging and updating current state."""
         for i, (_, __, writer) in enumerate(self.generators):
-            current_iteration = current_iterations[i]
-            if not current_iteration:
+            current_iteration: Optional[dict] = current_iterations[i]
+            if current_iteration is None:
                 continue
             current_iteration["completion"] = current_completions[i]
 
             self._log_current_state(current_iteration)
             self._write_content(writer, current_iteration)
-            self.generators[i][1] = current_completions[i]
+            self.generators[i] = (
+                self.generators[i][0],
+                current_completions[i],
+                self.generators[i][2],
+            )
 
     def _write_content(
         self,
@@ -238,7 +264,9 @@ class TextbookContentGenerator:
         writer.jsonl_writer.write([current_iteration])
 
     def _manage_generators(
-        self, yml_file_paths_chunk: list[int], current_iterations: list[dict]
+        self,
+        yml_file_paths_chunk: list[str],
+        current_iterations: list[Optional[dict]],
     ):
         """Manage the generators, removing exhausted ones and adding new ones."""
         exhausted_generators = [
@@ -273,7 +301,7 @@ class TextbookContentGenerator:
             chapter: str,
             section: str,
             subsection: str,
-            prev_chapter_config: dict,
+            prev_chapter_config: Optional[dict],
             prompt: str,
             related_context: str,
             book_context: str,
@@ -296,8 +324,8 @@ class TextbookContentGenerator:
             chapter_config: dict,
             section: str,
             subsection: str,
-            prev_completion: str,
-            prev_chapter_config: dict,
+            prev_completion: Optional[str],
+            prev_chapter_config: Optional[dict],
             prompt_type: str,
         ):
             prompt, related_context, book_context = self.construct_prompt(
@@ -400,15 +428,21 @@ class TextbookContentGenerator:
         chapter_config: dict,
         section: str,
         subsection: str,
-        prev_completion: str,
-        prev_chapter_config: dict,
+        prev_completion: Optional[str],
+        prev_chapter_config: Optional[dict],
         prompt_type: str,
     ):
         """Construct the prompt for the given chapter and section."""
         self.logger.info(f"Processing {textbook}, Chapter:{chapter}, Summary")
-        related_context = self._get_related_context(subsection or section)[
-            : self.config.max_related_context_to_sample
-        ]
+        related_context = (
+            with_retry(
+                lambda: self.rag_interface.get_contexts(
+                    [subsection or section]
+                )
+            )[0][: self.config.max_related_context_to_sample]
+            if self.config.rag_enabled
+            else TextbookContentGenerator.NO_RAG_TEXT
+        )
         book_context = (
             prev_completion[: self.config.max_prev_snippet_to_sample]
             if prev_completion
@@ -456,29 +490,13 @@ class TextbookContentGenerator:
                     chapter=chapter,
                     related_context=related_context,
                     book_context=book_context,
-                    chapter_outline=prev_chapter_config,
+                    chapter_outline=prev_chapter_config or "",
                 ),
                 related_context,
                 book_context,
             )
         else:
             raise ValueError(f"Unknown prompt type {prompt_type}")
-
-    def _get_related_context(self, query: str) -> str:
-        """Retrieve related context from Wikipedia."""
-
-        return (
-            with_retry(
-                lambda: wiki_search_api(
-                    query,
-                    self.config.rag_url,
-                    self.config.rag_username,
-                    self.config.rag_password,
-                )
-            )
-            if self.config.do_rag
-            else TextbookContentGenerator.NO_RAG_TEXT
-        )
 
 
 if __name__ == "__main__":
