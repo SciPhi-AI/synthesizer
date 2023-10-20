@@ -1,19 +1,29 @@
-from sciphi.interface.anthropic_interface import AnthropicLLMInterface
-from sciphi.interface.base import LLMInterface, ProviderConfig, ProviderName
-from sciphi.interface.hugging_face_interface import HuggingFaceLLMInterface
-from sciphi.interface.interface_manager import InterfaceManager
-from sciphi.interface.litellm_interface import LiteLLMInterface
-from sciphi.interface.llama_index_interface import LlamaIndexInterface
-from sciphi.interface.llamacpp_interface import LlamaCPPInterface
-from sciphi.interface.openai_interface import OpenAILLMInterface
-from sciphi.interface.vllm_interface import vLLMInterface
+from sciphi.interface.base import (
+    LLMInterface,
+    LLMProviderConfig,
+    RAGInterface,
+    RAGProviderConfig,
+)
+from sciphi.interface.llm.anthropic_interface import AnthropicLLMInterface
+from sciphi.interface.llm.hugging_face_interface import HuggingFaceLLMInterface
+from sciphi.interface.llm.litellm_interface import LiteLLMInterface
+from sciphi.interface.llm.llama_index_interface import LlamaIndexInterface
+from sciphi.interface.llm.llamacpp_interface import LlamaCPPInterface
+from sciphi.interface.llm.openai_interface import OpenAILLMInterface
+from sciphi.interface.llm.vllm_interface import vLLMInterface
+from sciphi.interface.llm_interface_manager import LLMInterfaceManager
+from sciphi.interface.rag.sciphi_wiki import (
+    SciPhiWikiRAGConfig,
+    SciPhiWikiRAGInterface,
+)
+from sciphi.interface.rag_interface_manager import RAGInterfaceManager
 
 __all__ = [
-    "InterfaceManager",
-    "ProviderName",
-    "ProviderConfig",
+    # LLM
+    "LLMInterfaceManager",
+    "LLMProviderConfig",
     "LLMInterface",
-    # Concrete Providers
+    # Concrete LLM Interfaces
     "AnthropicLLMInterface",
     "HuggingFaceLLMInterface",
     "LlamaIndexInterface",
@@ -21,4 +31,11 @@ __all__ = [
     "vLLMInterface",
     "LiteLLMInterface",
     "LlamaCPPInterface",
+    # RAG
+    "RAGInterfaceManager",
+    "RAGProviderConfig",
+    "RAGInterface",
+    # Concrete RAG Interfaces
+    "SciPhiWikiRAGInterface",
+    "SciPhiWikiRAGConfig",
 ]

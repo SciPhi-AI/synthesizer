@@ -1,21 +1,21 @@
 """A module for interfacing with the OpenAI API"""
 import logging
 
-from sciphi.interface.base import LLMInterface, ModelName, ProviderName
-from sciphi.interface.interface_manager import llm_provider
+from sciphi.interface.base import LLMInterface, LLMProviderName, ModelName
+from sciphi.interface.llm_interface_manager import llm_interface
 from sciphi.llm import OpenAIConfig, OpenAILLM
 
 logger = logging.getLogger(__name__)
 
 
-@llm_provider
+@llm_interface
 class OpenAILLMInterface(LLMInterface):
     """A class to interface with the OpenAI API."""
 
     instruct_models = [
         ModelName.GPT_3p5_TURBO_INSTRUCT,
     ]
-    provider_name = ProviderName.OPENAI
+    llm_provider_name = LLMProviderName.OPENAI
     supported_models = [
         ModelName.GPT_3p5_TURBO_0301,
         ModelName.GPT_3p5_TURBO_0613,

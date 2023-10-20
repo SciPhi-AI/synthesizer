@@ -7,7 +7,7 @@ Description:
 
 Usage:
     Command-line interface:
-        $ python sciphi/examples/library_of_phi/gen_step_2_clean_syllabi.py run \
+        $ python sciphi/library_of_phi/gen_step_2_clean_syllabi.py run \
             --output_dir=my_output_directory \
             --input_filename=my_input_file.jsonl \
             --log_level=DEBUG
@@ -37,7 +37,7 @@ import os
 import fire
 import yaml
 
-from sciphi.examples.helpers import (
+from sciphi.library_of_phi.helpers import (
     load_yaml_file,
     prase_yaml_completion,
     save_yaml,

@@ -12,12 +12,12 @@ from sciphi.core.utils import (
     get_data_config_dir,
     get_root_dir,
 )
-from sciphi.examples.helpers import (
+from sciphi.interface import LLMInterfaceManager, LLMProviderName
+from sciphi.library_of_phi.helpers import (
     gen_llm_config,
     parse_arguments,
     prep_for_file_path,
 )
-from sciphi.interface import InterfaceManager, ProviderName
 from sciphi.llm import LLMConfigManager
 from sciphi.makers import DataMaker
 from sciphi.prompt import (
@@ -43,7 +43,7 @@ def get_output_path(args: argparse.Namespace) -> str:
     output_dir = os.path.join(
         get_root_dir(),
         prep_for_file_path(args.output_dir),
-        prep_for_file_path(args.provider_name),
+        prep_for_file_path(args.llm_provider_name),
         prep_for_file_path(args.model_name),
     )
     if not os.path.exists(output_dir):
@@ -57,7 +57,7 @@ def get_output_path(args: argparse.Namespace) -> str:
                 k: prep_for_file_path(v)
                 for k, v in {
                     "RUN_NAME": args.run_name,
-                    "PROVIDER": str(args.provider_name),
+                    "PROVIDER": str(args.llm_provider_name),
                     "MODEL": args.model_name,
                     "VERSION": args.version,
                     "EXTRA": args.extra_output_file_text
@@ -87,18 +87,18 @@ if __name__ == "__main__":
         )
 
     model_name = args.model_name
-    provider_name = ProviderName(args.provider_name)
+    llm_provider_name = LLMProviderName(args.llm_provider_name)
 
     logger.info(
-        f"Loading ModelName={model_name} from ProviderName={provider_name.value}."
+        f"Loading ModelName={model_name} from LLMProviderName={llm_provider_name.value}."
     )
 
     # Build an LLM and provider interface
     llm_config = LLMConfigManager.get_config_for_provider(
-        provider_name
+        llm_provider_name
     ).create(**gen_llm_config(args))
-    llm_provider = InterfaceManager.get_provider(
-        provider_name,
+    llm_provider = LLMInterfaceManager.get_provider(
+        llm_provider_name,
         model_name,
         llm_config,
     )

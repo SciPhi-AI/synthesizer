@@ -1,5 +1,3 @@
-from sciphi.core.base import ProviderName
+from sciphi.core.base import LLMProviderName, RAGProviderName
 
-__all__ = [
-    "ProviderName",
-]
+__all__ = ["LLMProviderName", "RAGProviderName"]

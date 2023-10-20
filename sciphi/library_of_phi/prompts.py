@@ -1,4 +1,3 @@
-# type: ignore
 BOOK_FOREWORD_PROMPT = """
 ### Instructions:
 You are a writing a book titled "{title}". You are currently writing the foreward for the book:

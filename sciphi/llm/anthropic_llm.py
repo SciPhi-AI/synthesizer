@@ -1,7 +1,7 @@
 """A module for creating Anthropic models."""
 from dataclasses import dataclass
 
-from sciphi.core import ProviderName
+from sciphi.core import LLMProviderName
 from sciphi.llm.base import LLM, LLMConfig
 from sciphi.llm.config_manager import model_config
 
@@ -12,7 +12,7 @@ class AnthropicConfig(LLMConfig):
     """Configuration for Anthropic models."""
 
     # Base
-    provider_name: ProviderName = ProviderName.ANTHROPIC
+    llm_provider_name: LLMProviderName = LLMProviderName.ANTHROPIC
     model_name: str = "claude-2"
     temperature: float = 0.7
     top_p: float = 1.0

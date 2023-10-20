@@ -2,18 +2,18 @@
 import logging
 from typing import List
 
-from sciphi.interface.base import LLMInterface, ProviderName
-from sciphi.interface.interface_manager import llm_provider
+from sciphi.interface.base import LLMInterface, LLMProviderName
+from sciphi.interface.llm_interface_manager import llm_interface
 from sciphi.llm import LlamaCPP, LLamaCPPConfig
 
 logger = logging.getLogger(__name__)
 
 
-@llm_provider
+@llm_interface
 class LlamaCPPInterface(LLMInterface):
     """A class to interface with local LlamaCPP models."""
 
-    provider_name = ProviderName.LLAMACPP
+    llm_provider_name = LLMProviderName.LLAMACPP
 
     def __init__(
         self,

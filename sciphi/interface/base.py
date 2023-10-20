@@ -1,16 +1,25 @@
 """A module which defines interface abstractions for various LLM providers."""
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from typing import List, Type
+from typing import Any, List, Type
 
-from sciphi.core import ProviderName
+from sciphi.core import LLMProviderName, RAGProviderName
 from sciphi.llm import LLM, LLMConfig, ModelName
+
+
+@dataclass
+class LLMProviderConfig:
+    """A dataclass to hold the configuration for a provider."""
+
+    llm_provider_name: LLMProviderName
+    models: List[ModelName]
+    llm_class: Type["LLMInterface"]
 
 
 class LLMInterface(ABC):
     """An abstract class to provide a common interface for LLM providers."""
 
-    provider_name: ProviderName
+    llm_provider_name: LLMProviderName
     supported_models: list[ModelName] = []
 
     def __init__(
@@ -36,9 +45,63 @@ class LLMInterface(ABC):
 
 
 @dataclass
-class ProviderConfig:
-    """A dataclass to hold the configuration for a provider."""
+class RAGProviderConfig(ABC):
+    """An abstract class to hold the configuration for a RAG provider."""
 
-    provider_name: ProviderName
-    models: List[ModelName]
-    llm_class: Type[LLMInterface]
+    rag_provider_name: RAGProviderName
+    base: str
+    token: str
+    max_context: int = 2_048
+
+
+class RAGInterface(ABC):
+    """An abstract class to provide a common interface for RAG providers."""
+
+    rag_provider_name: RAGProviderName
+    RAG_DISABLED_MESSAGE: str = "Not Available."
+
+    def __init__(
+        self,
+        config: RAGProviderConfig,
+    ) -> None:
+        self.config = config
+
+    @abstractmethod
+    def get_contexts(self, prompts: list[str]) -> list[str]:
+        """Get the context for a prompt."""
+        pass
+
+
+class InterfaceManager(ABC):
+    """An abstract class to provide a common interface for interface managers."""
+
+    provider_registry: dict[Any, Any] = {}
+
+    @staticmethod
+    @abstractmethod
+    def register_provider(
+        provider: Type[Any],
+    ) -> Type[Any]:
+        """Registers a provider with the interface manager."""
+        pass
+
+    @staticmethod
+    @abstractmethod
+    def get_interface(
+        provider_name: Any,
+        config: Any,
+        *args,
+        **kwargs,
+    ) -> Any:
+        """Gets an interface based on the given provider and model name."""
+        pass
+
+    @staticmethod
+    @abstractmethod
+    def get_interface_from_args(
+        provider_name: Any,
+        *args,
+        **kwargs,
+    ) -> Any:
+        """Gets an interface based on the given provider and model name."""
+        pass

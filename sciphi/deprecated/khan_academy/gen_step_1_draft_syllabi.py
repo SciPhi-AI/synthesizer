@@ -8,7 +8,7 @@ Description:
 
 Usage:
     Command-line interface:
-        $ python sciphi/examples/library_of_phi/gen_step_1_draft_syllabi.py run \
+        $ python sciphi/library_of_phi/gen_step_1_draft_syllabi.py run \
             --output_rel_dir=my_output_directory \
             --input_jsonl_filename=my_input_file.jsonl \
             --log_level=DEBUG
@@ -49,12 +49,12 @@ from typing import Optional, Set
 import fire
 import yaml
 
-from sciphi.examples.helpers import (
+from sciphi.examples.khan_academy.prompts import SYLLABI_CREATION_PROMPT
+from sciphi.library_of_phi.helpers import (
     get_default_settings_provider,
     prase_yaml_completion,
     save_yaml,
 )
-from sciphi.examples.khan_academy.prompts import SYLLABI_CREATION_PROMPT
 
 
 def extract_data_from_record(record: dict[str, str]) -> tuple[dict, str]:

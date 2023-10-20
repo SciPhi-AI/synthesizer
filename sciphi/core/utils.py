@@ -53,12 +53,6 @@ def get_config_dir() -> str:
     return os.path.join(script_dir, "..", "config")
 
 
-def get_data_raw_dir() -> str:
-    """Get the path to the root of the raw data directory."""
-    script_dir = os.path.dirname(os.path.realpath(__file__))
-    return os.path.join(script_dir, "..", "data", "stock_raw")
-
-
 class SciPhiConfig:
     """Configuration class for SciPhi."""
 
@@ -85,7 +79,6 @@ class SciPhiConfig:
     def _update_from_dict(self, dictionary):
         """Update fields using a dictionary."""
         for key, value in dictionary.items():
-            print("updating {key} with {value}".format(key=key, value=value))
             if isinstance(value, dict):
                 existing_value = getattr(self, key, None)
                 if existing_value and isinstance(existing_value, SciPhiConfig):

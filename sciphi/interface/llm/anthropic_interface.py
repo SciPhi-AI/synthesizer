@@ -1,14 +1,14 @@
 """A module for interfacing with the Anthropic API"""
-from sciphi.interface.base import LLMInterface, ProviderName
-from sciphi.interface.interface_manager import llm_provider
+from sciphi.interface.base import LLMInterface, LLMProviderName
+from sciphi.interface.llm_interface_manager import llm_interface
 from sciphi.llm import AnthropicConfig, AnthropicLLM, ModelName
 
 
-@llm_provider
+@llm_interface
 class AnthropicLLMInterface(LLMInterface):
     """A class to interface with the Anthropic API."""
 
-    provider_name = ProviderName.ANTHROPIC
+    llm_provider_name = LLMProviderName.ANTHROPIC
     supported_models = [
         ModelName.CLAUDE_INSTANT_1,
         ModelName.CLAUDE_2,

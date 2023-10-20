@@ -7,7 +7,7 @@ Description:
 
 Usage:
     Command-line interface:
-        $ poetry run python sciphi/examples/library_of_phi/raw_data/ka_scraper.py scrape \
+        $ poetry run python sciphi/library_of_phi/raw_data/ka_scraper.py scrape \
             --input_file_name=ka_topics.html \
             --output_file_name=scraped_ka.jsonl \
             --sleep_time=1 \

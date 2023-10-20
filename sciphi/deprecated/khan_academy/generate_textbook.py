@@ -8,7 +8,7 @@ Description:
 
 Usage:
     Command-line interface:
-        $ python sciphi/examples/library_of_phi/generate_textbook.py run
+        $ python sciphi/library_of_phi/generate_textbook.py run
 Parameters:
     provider (str): 
         The provider to use. Default is 'openai'.

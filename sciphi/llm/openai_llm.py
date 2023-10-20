@@ -5,7 +5,7 @@ from typing import Optional
 
 import tiktoken
 
-from sciphi.core import ProviderName
+from sciphi.core import LLMProviderName
 from sciphi.llm.base import LLM, LLMConfig
 from sciphi.llm.config_manager import model_config
 
@@ -16,7 +16,7 @@ class OpenAIConfig(LLMConfig):
     """Configuration for OpenAI models."""
 
     # Base
-    provider_name: ProviderName = ProviderName.OPENAI
+    llm_provider_name: LLMProviderName = LLMProviderName.OPENAI
     model_name: str = "gpt-3.5-turbo"
     temperature: float = 0.1
     top_p: float = 1.0

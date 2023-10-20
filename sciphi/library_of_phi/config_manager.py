@@ -3,13 +3,13 @@ import collections
 import glob
 import logging
 import os
-from typing import Generator, Tuple
+from typing import Any, Generator, Optional, Tuple
 
 import yaml
 from tqdm import tqdm
 
 from sciphi.core.utils import SciPhiConfig, get_config_dir
-from sciphi.examples.helpers import load_yaml_file
+from sciphi.library_of_phi.helpers import load_yaml_file
 
 
 def traverse_textbook_config(
@@ -70,22 +70,23 @@ class ConfigurationManager:
 
     DEFAULT_SETTINGS_CONFIG = "book_draft_settings.yml"
 
-    def __init__(self, config_path: str = None) -> None:
+    def __init__(self, config_path: Optional[str] = None) -> None:
         self.config_path = config_path or os.path.join(
             get_config_dir(),
             "generation_settings",
             ConfigurationManager.DEFAULT_SETTINGS_CONFIG,
         )
-        pass
+        self.load_config()
 
-    def load_config(self) -> SciPhiConfig:
+    def load_config(self) -> Any:
         """Load the configuration."""
         # Load the configuration
         with open(
             self.config_path,
             "r",
         ) as file:
-            config = SciPhiConfig(yaml.safe_load(file))
+            # TODO - Find a less hacky solution than any typing
+            config: Any = SciPhiConfig(yaml.safe_load(file))
         self.config = config
         return config
 
@@ -94,15 +95,14 @@ class ConfigurationManager:
         if not self.config:
             raise ValueError("No configuration loaded.")
         # Check RAG configurations
-        if self.config.do_rag and not all(
+        if self.config.rag_enabled and not all(
             [
-                self.config.rag_url,
-                self.config.rag_username,
-                self.config.rag_password,
+                self.config.rag_api_base,
+                self.config.rag_api_key,
             ]
         ):
             raise ValueError(
-                "RAG self.configuration is invalid. Make sure you provide a RAG server rag_url, rag_username, and rag_password."
+                "RAG self.configuration is invalid. Make sure you provide a RAG server base and token."
             )
 
         # Check for YAML file paths
@@ -133,8 +133,8 @@ class ConfigurationManager:
 
         # Output some summary statistics
         summary = collections.OrderedDict()
-        summary["RAG Server URL"] = self.config.rag_url
-        summary["LLM Provider"] = self.config.llm_provider
+        summary["RAG Server URL"] = self.config.rag_api_base
+        summary["LLM Provider"] = self.config.llm_provider_name
         summary["LLM Model Name"] = self.config.llm_model_name
         summary["Total YAML Files"] = len(yml_file_paths)
         summary["Output Directory"] = os.path.dirname(output_path)
