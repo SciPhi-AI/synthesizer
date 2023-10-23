@@ -50,6 +50,7 @@ pip install 'sciphi[all_with_extras]'
    ```
 
    After entering your settings, ensure you save and exit the file.
+   
 ---
 
 ## Features
@@ -91,7 +92,7 @@ This is an effort to democratize access to top-tier textbooks. This can readily 
 
    Simply switch `rag-enabled` to `True`. Ensure you have the right `.env` variables set up, or provide CLI values for `rag_api_base` and `rag_api_key`.
 
-_Important:_ To make the most out of grounding your data with Wikipedia, ensure your system matches our detailed specifications. We offer additional examples and resources [here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main). More high quality outbook books are available [here](https://github.com/SciPhi-AI/library-of-phi).
+_Important:_ To make the most out of grounding your data with Wikipedia, ensure your system matches our detailed specifications. An example RAG provider can be seen [here](https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/interface/rag/sciphi_wiki.py). More high quality outbook books are available [here](https://github.com/SciPhi-AI/library-of-phi).
 
 ### RAG Eval Harness
 
