@@ -9,7 +9,6 @@ SciPhi is a Python-based framework designed to facilitate the generation of high
 - **Configurable Data Generation:** Craft datasets mediated by LLMs according to your specifications.
 - **Retriever-Augmented Generation (RAG) Integration:** Make use of an integrated RAG Provider API to ground your generated data to real-world datasets. Also, SciPhi comes bundled with an evaluation harness to optimise your RAG workflow.
 - **Textbook Generation Module:** A module to power the generation of RAG-augmented synthetic textbooks straight from a given table of contents.
-- **Retriever-Augmented Generation (RAG) Integration:** Make use of an integrated RAG Provider API to ground your generated data to real-world datasets. Also, SciPhi comes bundled with an evaluation harness to optimise your RAG workflow.
 
 ---
 
@@ -37,21 +36,24 @@ Install with specific optional support using extras:
 pip install 'sciphi[all_with_extras]'
 ```
 
-
 ### **Setup Your Environment**:
 
-   Begin by duplicating the sample environment file to craft your own:
-   ```bash
-   cp .env.example .env
-   ```
+   Navigate to a working directory and use a text editor to adjust the `.env` file with your specific configurations.
 
-   Next, use a text editor to adjust the `.env` file with your specific configurations. An example with `vim` is shown below:
-   ```bash
-   vim .env
-   ```
+  ```bash
+  # Proprietary Providers
+  OPENAI_API_KEY=your_openai_key
+  ANTHROPIC_API_KEY=your_anthropic_key
+  # Open Source Providers
+  HF_TOKEN=your_huggingface_token
+  # vLLM
+  VLLM_API_KEY=your_vllm_token
+  # RAG Provider Settings
+  RAG_API_BASE=your_rag_server_base_url
+  RAG_API_KEY=your_rag_server_key
+  ```
+  After entering your settings, ensure you save and exit the file.
 
-   After entering your settings, ensure you save and exit the file.
-   
 ---
 
 ## Features

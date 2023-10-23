@@ -1,0 +1,31 @@
+# null represents Python's None. Will be replaced with default in the code.
+# basic_config:
+data_dir: null
+toc_dir: table_of_contents
+output_dir: textbooks
+textbook: null
+log_level: INFO
+num_processes: 1
+process_num: 0
+filter_existing_books: true
+batch_size: 256
+skip_validation: false
+max_threads: null
+
+# llm config
+llm_provider_name: openai
+llm_model_name: gpt-3.5-turbo
+llm_temperature: 0.1
+llm_max_tokens_to_sample: 1024
+llm_top_k: 100
+## sampling config
+max_related_context_to_sample: 2_096
+max_prev_snippet_to_sample: 2_096
+
+# rag config
+rag_provider_name: sciphi-wiki
+rag_enabled: true
+rag_api_base: null
+rag_api_key: null
+rag_max_context: 2_096
+rag_top_k: 10
