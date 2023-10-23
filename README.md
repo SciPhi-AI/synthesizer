@@ -10,13 +10,6 @@ SciPhi is a Python-based framework designed to facilitate the generation of high
 - **Retriever-Augmented Generation (RAG) Integration:** Make use of an integrated RAG Provider API. Also, it comes bundled with an evaluation harness to ground your generated data to real-world datasets.
 - **Textbook Generation Module:** A module to power the generation of RAG-augmented synthetic textbooks straight from a given table of contents.
 
----
-
-Certainly! Let's compress the instructions and address the "default to all" question.
-
-Regarding setting a default: By default, when a user installs a package via `pip install package-name`, they get the base set of dependencies. Any extras must be explicitly requested. However, you can guide users to install with all optional dependencies in the README.
-
-Here's a more concise version:
 
 ---
 
