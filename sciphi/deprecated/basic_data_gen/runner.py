@@ -13,11 +13,6 @@ from sciphi.core.utils import (
     get_root_dir,
 )
 from sciphi.interface import LLMInterfaceManager, LLMProviderName
-from sciphi.library_of_phi.helpers import (
-    gen_llm_config,
-    parse_arguments,
-    prep_for_file_path,
-)
 from sciphi.llm import LLMConfigManager
 from sciphi.makers import DataMaker
 from sciphi.prompt import (
@@ -25,6 +20,11 @@ from sciphi.prompt import (
     PromptGenerator,
     PromptManager,
     PromptStructure,
+)
+from sciphi.textbook_generation.helpers import (
+    gen_llm_config,
+    parse_arguments,
+    prep_for_file_path,
 )
 from sciphi.writers import JsonlDataWriter
 

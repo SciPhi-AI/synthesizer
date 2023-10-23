@@ -53,7 +53,7 @@ import yaml
 from sciphi.examples.library_of_phi.prompts import (
     TABLE_OF_CONTENTS_CLEAN_PROMPT,
 )
-from sciphi.library_of_phi.helpers import (
+from sciphi.textbook_generation.helpers import (
     get_default_settings_provider,
     traverse_config,
     with_retry,

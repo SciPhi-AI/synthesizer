@@ -2,10 +2,13 @@
 requires = ["poetry-core", "setuptools", "wheel"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.setuptools_scm]
+write_to = "sciphi/_version.py"
+
 [tool.poetry]
 name = "sciphi"
-version = "0.1.1"
-description = "sciphi: A framework for synthetic data."
+version = "0.1.2"
+description = "SciPhi: A Framework for LLM Powered Data."
 authors = ["Owen Colegrove <owen@sciphi.ai>"]
 license = "Apache-2.0"
 readme = "README.md"
