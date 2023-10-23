@@ -7,24 +7,19 @@
 SciPhi is a Python-based framework designed to facilitate the generation of high-quality synthetic data tailored for both Large Language Models (LLMs) and human users. This suite offers:
 
 - **Configurable Data Generation:** Craft datasets mediated by LLMs according to your specifications.
-- **Retriever-Augmented Generation (RAG) Integration:** Make use of an integrated RAG Provider API. Also, it comes bundled with an evaluation harness to ground your generated data to real-world datasets.
 - **Textbook Generation Module:** A module to power the generation of RAG-augmented synthetic textbooks straight from a given table of contents.
-
+- **Retriever-Augmented Generation (RAG) Integration:** Make use of an integrated RAG Provider API to ground your generated data to real-world datasets. Also, SciPhi comes bundled with an evaluation harness to optimise your RAG workflow.
 
 ---
 
 ## Fast Setup
 
-Install SciPhi via `pip`:
-
-### Base Installation:
-
+Installation with no required dependencies can be done with:
 ```bash
 pip install sciphi
 ```
 
-
-### Optional Dependencies:
+### Optional Dependencies
 
 Install with specific optional support using extras:
 
@@ -33,8 +28,10 @@ Install with specific optional support using extras:
 - **Llama-CPP**: `'sciphi[llama_cpp_support]'`
 - **Llama-Index**: `'sciphi[llama_index_support]'`
 - **VLLM (includes Torch)**: `'sciphi[vllm_support]'`
+- **All (no vLLM)**: `'sciphi[all]'`
+- **All (with extras, e.g. vLLM)**: `'sciphi[all_with_extras]'`
 
-### Recommended (All Optional Dependencies):
+### **Recommended** (All Optional Dependencies)
 
 ```bash
 pip install 'sciphi[all_with_extras]'
@@ -44,9 +41,6 @@ Note: Depending on your shell, you might need to use quotes around the package n
 
 ---
 
-- Join our [Discord community](https://discord.gg/j9GxfbxqAe) for discussions and collaboration.
-- For specialized inquiries, [email us](mailto:owen@sciphi.ai).
-
 ## Features
 
 ### Community & Support
@@ -54,7 +48,7 @@ Note: Depending on your shell, you might need to use quotes around the package n
 - Engage with our vibrant community on [Discord](https://discord.gg/j9GxfbxqAe).
 - For tailored inquiries or feedback, please [email us](mailto:owen@sciphi.ai).
 
-### Textbook Generation (The Library of Phi)
+### Textbook Generation
 
 This is an effort to democratize access to top-tier textbooks. By leveraging cutting-edge AI techniques, we aim to produce factual and high-quality educational materials. This can readily be extended to other domains, such as internal commercial documents.
 
@@ -62,41 +56,44 @@ This is an effort to democratize access to top-tier textbooks. By leveraging cut
 
 1. **Dry Run**:
    ```bash
-   python -m sciphi.scripts.generate_textbook dry_run
+   python -m sciphi.scripts.textbook_generator dry_run --toc_dir=sciphi/data/sample/table_of_contents --rag-enabled=False
    ```
 
-2. **Default Textbook Generation**:
+    This will perform a dry-run over the default textbooks stored in `sciphi/data/sample/textbooks`.
+
+    _Note_ - this must be run from the root of the repository, or else you will need to update the `toc_dir` accordingly. Setting rag-enabled to `True` will enable RAG augmentation during the generation process. You may customize the RAG provider through additional arguments.
+
+2. **Textbook Generation**:
    ```bash
-   python -m sciphi.scripts.generate_textbook run --textbook=Aerodynamics_of_Viscous_Fluids --rag-enabled=False
+   python -m sciphi.scripts.textbook_generator run --toc_dir=sciphi/data/sample/table_of_contents --rag-enabled=False
    ```
-   
-   You may use the setting rag-enabled to toggle on/off RAG augmentation of the textbook. You may customize the RAG provider through additional arguments.
 
-   See a [sample output here.](sciphi/data/library_of_phi/sample/Aerodynamics_of_Viscous_Fluids.md)
+   Replace `dry_run` above with `run` to generate one textbook for each table of contents in the target directory. See a [sample textbook here.](sciphi/data/sample/textbooks/Aerodynamics_of_Viscous_Fluids.md)
 
-3. **Example With a Custom Table of Contents**: 
+3. **Example With a Custom Table of Contents**:
 
-   Prepare your table of contents and save it into `$PWD/toc/test.yaml`, for example. Then, run the following command:
+   Prepare your table of contents and save it into `$PWD/toc/test.yaml`. Then, run the following command:
    ```bash
-   python -m sciphi.scripts.generate_textbook run --toc_dir=toc --output_dir=books --data_dir=$PWD
-   ``````
+   python -m sciphi.scripts.textbook_generator run --toc_dir=toc --output_dir=books --data_dir=$PWD
+   ```
 
-4. **Activating RAG Functionality**: 
+4. **Custom Settings & RAG Functionality**:
 
    Simply switch `rag-enabled` to `True`. Ensure you have the right `.env` variables set up, or provide CLI values for `rag_api_base` and `rag_api_key`.
+   
+   Alternatively, you may provide your own custom settings in a YAML file. See the [default settings configuration here](sciphi/config/generation_settings/textbook_generation_settings.yaml).
 
-_Important:_ To make the most out of grounding your data with Wikipedia, ensure your system matches our detailed specifications. We offer additional examples and resources [here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main).
+    __Important:__ To make the most out of grounding your data RAG is recommended. You must ensure your system matches our detailed specifications, which can be seen [here for example](sciphi/interface/rag/sciphi_wiki.py). If you would like to better understand what this technique can produce, [see more example textbooks here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main).
 
 ### RAG Eval Harness
 
 To measure the efficacy of your RAG pipeline, we provide a unique RAG evaluation harness.
 
-#### Deploying the RAG Harness
-
-1. **Initiate the Harness**:
+#### Running the RAG Harness
    ```bash
    python -m sciphi.scripts.rag_harness --n-samples=100 --rag-enabled=True --evals_to_run="science_multiple_choice"
    ```
+  This example runs over 100 science multiple choice questions with RAG enabled and reports the final accuracy.
 
 ---
 
@@ -120,7 +117,7 @@ To measure the efficacy of your RAG pipeline, we provide a unique RAG evaluation
    If you require further functionalities, consider the following:
    - For the developer's toolkit and utilities:
      ```bash
-     pip install -r requirements-dev.txt
+     pip install -r requirements_dev.txt
      ```
 
    - To encompass all optional dependencies:
