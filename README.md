@@ -7,17 +7,13 @@
 SciPhi is a Python-based framework designed to facilitate the generation of high-quality synthetic data tailored for both Large Language Models (LLMs) and human users. This suite offers:
 
 - **Configurable Data Generation:** Craft datasets mediated by LLMs according to your specifications.
-- **Retriever-Augmented Generation (RAG) Integration:** Make use of an integrated RAG Provider API. Also, it comes bundled with an evaluation harness to ground your generated data to real-world datasets.
+- **Retriever-Augmented Generation (RAG) Integration:** Make use of an integrated RAG Provider API to ground your generated data to real-world datasets. Also, SciPhi comes bundled with an evaluation harness to optimise your RAG workflow.
 - **Textbook Generation Module:** A module to power the generation of RAG-augmented synthetic textbooks straight from a given table of contents.
 
 
 ---
 
 ## Fast Setup
-
-Install SciPhi via `pip`:
-
-### Base Installation:
 
 ```bash
 pip install sciphi
@@ -34,7 +30,7 @@ Install with specific optional support using extras:
 - **Llama-Index**: `'sciphi[llama_index_support]'`
 - **VLLM (includes Torch)**: `'sciphi[vllm_support]'`
 
-### Recommended (All Optional Dependencies):
+### **Recommended** (All Optional Dependencies):
 
 ```bash
 pip install 'sciphi[all_with_extras]'
