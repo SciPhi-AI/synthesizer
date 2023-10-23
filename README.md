@@ -63,6 +63,25 @@ pip install 'sciphi[all_with_extras]'
 - Engage with our vibrant community on [Discord](https://discord.gg/j9GxfbxqAe).
 - For tailored inquiries or feedback, please [email us](mailto:owen@sciphi.ai).
 
+### Configurable Data Generation
+
+Running the data_augmenter with an input dataset and prompt configuration will generate a new dataset with the specified number of samples.
+```bash
+python -m sciphi.scripts.sdata_augmenter.py --config-path=$PWD/sciphi/config/prompts/question_and_answer.yaml --config_name=None --n_samples=1
+```
+
+  We can readily example the output of this command: 
+
+  ```bash
+  tail augmented_output/config_name__question_and_answer_dataset_name__ContextualAI_tiny-wiki100-chunks.jsonl
+  {"question": "What is the reaction called when alcohol and carboxylic acids react?", "answer": "Fischer esterification"}
+  {"question": "What is the catalyst usually required for Fischer esterification?", "answer": "concentrated sulfuric acid"}
+  {"question": "How are tosyl esters made?", "answer": "by reaction of the alcohol with p-toluenesulfonyl chloride in pyridine"}
+  {"question": "What are primary alcohols oxidized to?", "answer": "aldehydes or carboxylic acids"}
+  {"question": "What is the final product of the oxidation of secondary alcohols?", "answer": "ketone"}
+  {"question": "Are tertiary alcohols resistant to oxidation?", "answer": "Yes"}
+  ```
+
 ### Textbook Generation
 
 This is an effort to democratize access to top-tier textbooks. This can readily be extended to other domains, such as internal commercial documents.

@@ -77,7 +77,6 @@ class Prompt:
             raise ValueError(
                 f"Expected `raw_text` to be a string, but got {type(self.raw_text)}"
             )
-        print("kwargs = ", kwargs)
         return self.raw_text.format(**kwargs)
 
     @property
