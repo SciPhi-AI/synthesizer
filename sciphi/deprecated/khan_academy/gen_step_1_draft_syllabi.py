@@ -50,7 +50,7 @@ import fire
 import yaml
 
 from sciphi.examples.khan_academy.prompts import SYLLABI_CREATION_PROMPT
-from sciphi.library_of_phi.helpers import (
+from sciphi.textbook_generation.helpers import (
     get_default_settings_provider,
     prase_yaml_completion,
     save_yaml,
