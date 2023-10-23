@@ -67,7 +67,7 @@ pip install 'sciphi[all_with_extras]'
 
 Running the data_augmenter with an input dataset and prompt configuration will generate a new dataset with the specified number of samples.
 ```bash
-python -m sciphi.scripts.sdata_augmenter.py --config-path=$PWD/sciphi/config/prompts/question_and_answer.yaml --config_name=None --n_samples=1
+python -m sciphi.scripts.data_augmenter.py --config-path=$PWD/sciphi/config/prompts/question_and_answer.yaml --config_name=None --n_samples=1
 ```
 
   We can readily example the output of this command: 
