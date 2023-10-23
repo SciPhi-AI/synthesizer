@@ -62,21 +62,24 @@ This is an effort to democratize access to top-tier textbooks. By leveraging cut
 
 1. **Dry Run**:
    ```bash
-   python sciphi/scripts/generate_textbook.py dry_run
+   python -m sciphi.scripts.generate_textbook dry_run
    ```
 
 2. **Default Textbook Generation**:
    ```bash
-   python sciphi/scripts/generate_textbook.py run --textbook=Aerodynamics_of_Viscous_Fluids --rag-enabled=False --filter_existing_books=False --log-level=debug
+   python -m sciphi.scripts.generate_textbook run --textbook=Aerodynamics_of_Viscous_Fluids --rag-enabled=False
    ```
    
    You may use the setting rag-enabled to toggle on/off RAG augmentation of the textbook. You may customize the RAG provider through additional arguments.
 
    See a [sample output here.](sciphi/data/library_of_phi/sample/Aerodynamics_of_Viscous_Fluids.md)
 
-3. **Crafting with a Custom Table of Contents**: 
+3. **Example With a Custom Table of Contents**: 
 
-   Prepare your table of contents and save it as `textbook_name.yaml`. Then, move this file to the recommended directory.
+   Prepare your table of contents and save it into `$PWD/toc/test.yaml`, for example. Then, run the following command:
+   ```bash
+   python -m sciphi.scripts.generate_textbook run --toc_dir=toc --output_dir=books --data_dir=$PWD
+   ``````
 
 4. **Activating RAG Functionality**: 
 
@@ -92,7 +95,7 @@ To measure the efficacy of your RAG pipeline, we provide a unique RAG evaluation
 
 1. **Initiate the Harness**:
    ```bash
-   poetry run python sciphi/scripts/rag_harness.py --n-samples=100 --rag-enabled=True --evals_to_run="science_multiple_choice"
+   python -m sciphi.scripts.rag_harness --n-samples=100 --rag-enabled=True --evals_to_run="science_multiple_choice"
    ```
 
 ---

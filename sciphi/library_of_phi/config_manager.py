@@ -125,11 +125,9 @@ class ConfigurationManager:
             raise ValueError("No YAML files found in the specified directory.")
 
         # Check the output path
-        output_path = os.path.join(
-            self.config.data_dir, self.config.output_dir, "dry_run_output"
-        )
-        if not os.path.exists(os.path.dirname(output_path)):
-            os.makedirs(os.path.dirname(output_path))
+        output_dir = os.path.join(self.config.data_dir, self.config.output_dir)
+        if not os.path.exists(os.path.dirname(output_dir)):
+            os.makedirs(os.path.dirname(output_dir))
 
         # Output some summary statistics
         summary = collections.OrderedDict()
@@ -137,7 +135,7 @@ class ConfigurationManager:
         summary["LLM Provider"] = self.config.llm_provider_name
         summary["LLM Model Name"] = self.config.llm_model_name
         summary["Total YAML Files"] = len(yml_file_paths)
-        summary["Output Directory"] = os.path.dirname(output_path)
+        summary["Output Directory"] = os.path.dirname(output_dir)
 
         failed_loads = 0
         logger.info("Validating configs now...")

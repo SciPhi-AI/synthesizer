@@ -3,10 +3,10 @@ requires = ["poetry-core", "setuptools", "wheel"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "SciPhi"
-version = "0.1.0"
-description = "SciPhi: A framework for synthetic data."
-authors = ["Owen Colegrove <owen@emergentagi.com>"]
+name = "sciphi"
+version = "0.1.1"
+description = "sciphi: A framework for synthetic data."
+authors = ["Owen Colegrove <owen@sciphi.ai>"]
 license = "Apache-2.0"
 readme = "README.md"
 
@@ -76,7 +76,6 @@ all_with_extras = [
 # poetry export -f requirements.txt --with dev --without-hashes --output requirements-dev.txt
 # poetry export -f requirements.txt --without-hashes --extras all --output requirements.txt
 # poetry export -f requirements.txt --without-hashes --extras all_with_extras --output requirements_with_extras.txt
-
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
