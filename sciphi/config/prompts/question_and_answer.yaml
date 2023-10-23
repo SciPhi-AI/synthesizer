@@ -1,0 +1,18 @@
+raw_text: |
+  ### Instruction
+  Given the context provided after this instruction, extract and return question and answer pairs in JSONL format. The expected format is:
+
+  ```jsonl
+  [{{\"question\": X, \"answer\": Y}}, ...]
+  ```
+
+  #### Context
+  {context}
+
+  {user_supplied_suffix}
+  ### Response
+
+dataset_supplied_inputs_map:
+  text: context
+
+user_supplied_inputs: [user_supplied_suffix]
