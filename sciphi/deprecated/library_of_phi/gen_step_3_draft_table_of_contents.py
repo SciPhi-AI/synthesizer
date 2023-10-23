@@ -47,7 +47,7 @@ import fire
 from sciphi.examples.library_of_phi.prompts import (
     TABLE_OF_CONTENTS_DRAFT_PROMPT,
 )
-from sciphi.library_of_phi.helpers import get_default_settings_provider
+from sciphi.textbook_generation.helpers import get_default_settings_provider
 
 
 class DraftTableOfContentsRunner:

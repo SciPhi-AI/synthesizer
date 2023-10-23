@@ -37,7 +37,7 @@ import os
 import fire
 import yaml
 
-from sciphi.library_of_phi.helpers import (
+from sciphi.textbook_generation.helpers import (
     load_yaml_file,
     prase_yaml_completion,
     save_yaml,

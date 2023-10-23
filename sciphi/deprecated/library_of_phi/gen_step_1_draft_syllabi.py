@@ -49,7 +49,7 @@ import fire
 import yaml
 
 from sciphi.examples.library_of_phi.prompts import SYLLABI_CREATION_PROMPT
-from sciphi.library_of_phi.helpers import get_default_settings_provider
+from sciphi.textbook_generation.helpers import get_default_settings_provider
 
 
 def extract_data_from_record(record: dict[str, str]) -> tuple[dict, str]:
