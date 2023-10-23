@@ -1,0 +1,340 @@
+textbook:
+  "Aerodynamics of Viscous Fluids: A Comprehensive Study":
+    chapters:
+      - "Chapter 1: Fundamental Theorem of Kinematics":
+          sections:
+            - "Section: 1.1 Convection":
+                subsections:
+                  - 1.1a Introduction to Convection
+                  - 1.1b Boundary Layer Convection
+            - "Section: 1.2 Vorticity":
+                subsections:
+                  - 1.2a Definition of Vorticity
+                  - 1.2b Vorticity Transport Equation
+                  - 1.2c Vorticity Generation
+            - "Section: 1.3 Strain":
+                subsections:
+                  - 1.3a Introduction to Strain
+                  - 1.3b Strain Rate Tensor
+                  - 1.3c Rate of Deformation Tensor
+      - "Chapter 2: Eulerian vs. Lagrangian Description":
+          sections:
+            - "Section: 2.1 Convection Relations":
+                subsections:
+                  - 2.1a Eulerian and Lagrangian Descriptions
+                  - 2.1b Material Derivative
+      - "Chapter 3: Conservation Laws":
+          sections:
+            - "Section: 3.1 Conservation of Mass":
+                subsections:
+                  - 3.1a Continuity Equation
+                  - 3.1b Incompressible Flow
+                  - 3.1c Compressible Flow
+            - "Section: 3.2 Conservation of Momentum":
+                subsections:
+                  - 3.2a Navier-Stokes Equations
+                  - 3.2b Reynolds Transport Theorem
+                  - 3.2c Pressure and Viscous Forces
+            - "Section: 3.3 Stress Tensor":
+                subsections:
+                  - 3.3a Definition of Stress Tensor
+                  - 3.3b Viscous and Pressure Stresses
+                  - 3.3c Reynolds Stress Tensor
+
+      - "Chapter 4: Viscosity and Newtonian Fluids":
+          sections:
+            - "Section: 4.1 Vorticity and Circulation":
+                subsections:
+                  - 4.1a Vorticity and Circulation Equations
+                  - 4.1b Kelvin's Circulation Theorem
+                  - 4.1c Vorticity Distribution
+                  - 4.1d Circulation and Vorticity Relations
+
+      - "Chapter 5: Navier-Stokes Equations":
+          sections:
+            - "Section: 5.1 Physical Parameters":
+                subsections:
+                  - 5.1a Dimensionless Parameters
+                  - 5.1b Reynolds Number
+                  - 5.1c Mach Number
+            - "Section: 5.2 Dynamic Similarity":
+                subsections:
+                  - 5.2a Scaling Laws
+                  - 5.2b Model Testing
+                  - 5.2c Similarity Criteria
+
+      - "Chapter 6: Dimensional Analysis":
+          sections:
+            - "Section: 6.1 Dominant Balance":
+                subsections:
+                  - 6.1a Balance of Forces
+                  - 6.1b Balance of Stresses
+            - "Section: 6.2 Viscous Flow Classification":
+                subsections:
+                  - 6.2a Laminar Flow
+                  - 6.2b Turbulent Flow
+
+      - "Chapter 7: Thin Shear Layer Equations":
+          sections:
+            - "Section: 7.1 TSL Coordinates":
+                subsections:
+                  - 7.1a Definition of TSL Coordinates
+                  - 7.1b TSL Navier-Stokes Equations
+            - "Section: 7.2 Boundary Conditions":
+                subsections:
+                  - 7.2a No-Slip Condition
+                  - 7.2b Impermeability Condition
+                  - 7.2c Kutta Condition
+            - "Section: 7.3 Shear Layer Categories":
+                subsections:
+                  - 7.3a Blasius Shear Layer
+                  - 7.3b Falkner-Skan Shear Layer
+                  - 7.3c Displacement Shear Layer
+
+      - "Chapter 8: Local Scaling":
+          sections:
+            - "Section: 8.1 Falkner-Skan Flows":
+                subsections:
+                  - 8.1a Introduction to Falkner-Skan Flows
+                  - 8.1b Boundary Layer Equations
+                  - 8.1c Solution Techniques
+
+      - "Chapter 9: ODE's, PDE's, and Boundary Conditions":
+          sections:
+            - "Section: 9.1 Well-Posedness":
+                subsections:
+                  - 9.1a Definition of Well-Posedness
+                  - 9.1b Initial and Boundary Conditions
+            - "Section: 9.2 Partial Differential Equations":
+                subsections:
+                  - 9.2a Classification of PDEs
+                  - 9.2b Elliptic, Parabolic, and Hyperbolic Equations
+            - "Section: 9.3 Boundary Conditions":
+                subsections:
+                  - 9.3a Dirichlet Boundary Condition
+                  - 9.3b Neumann Boundary Condition
+                  - 9.3c Mixed Boundary Condition
+
+      - "Chapter 10: Numerical Methods for ODE's":
+          sections:
+            - "Section: 10.1 Discretization":
+                subsections:
+                  - 10.1a Finite Difference Method
+                  - 10.1b Finite Element Method
+                  - 10.1c Finite Volume Method
+            - "Section: 10.2 Stability":
+                subsections:
+                  - 10.2a Von Neumann Stability Analysis
+                  - 10.2b CFL Condition
+                  - 10.2c Implicit vs. Explicit Methods
+
+      - "Chapter 11: Integral Methods":
+          sections:
+            - "Section: 11.1 Integral Momentum Equation":
+                subsections:
+                  - 11.1a Integral Boundary Layer Equations
+                  - 11.1b Blasius Solution
+                  - 11.1c Falkner-Skan Solution
+            - "Section: 11.2 Thwaites' Method":
+                subsections:
+                  - 11.2a Introduction to Thwaites' Method
+                  - 11.2b Boundary Layer Growth
+                  - 11.2c Thwaites' Laminar Boundary Layer Solution
+
+      - "Chapter 12: Dissipation Methods":
+          sections:
+            - "Section: 12.1 Integral Kinetic Energy Equation":
+                subsections:
+                  - 12.1a Turbulent Dissipation
+                  - 12.1b Shear Stress Distribution
+                  - 12.1c Integral Energy Equation
+
+      - "Chapter 13: Asymptotic Perturbation Theory":
+          sections:
+            - "Section: 13.1 Higher-Order Effects":
+                subsections:
+                  - 13.1a Introduction to Perturbation Theory
+                  - 13.1b Asymptotic Expansion
+                  - 13.1c Higher-Order Corrections
+
+      - "Chapter 14: 2D Interaction Models":
+          sections:
+            - "Section: 14.1 Displacement Body":
+                subsections:
+                  - 14.1a Flow Past a Cylinder
+                  - 14.1b Flow Past an Airfoil
+            - "Section: 14.2 Transpiration":
+                subsections:
+                  - 14.2a Transpiration Boundary Condition
+                  - 14.2b Transpiration Effects on Flow Field
+            - "Section: 14.3 Form Drag":
+                subsections:
+                  - 14.3a Definition of Form Drag
+                  - 14.3b Pressure Drag
+                  - 14.3c Friction Drag
+            - "Section: 14.4 Stall Mechanisms":
+                subsections:
+                  - 14.4a Boundary Layer Separation
+                  - 14.4b Flow Reattachment
+                  - 14.4c Dynamic Stall
+
+      - "Chapter 15: IBLT Solution Techniques":
+          sections:
+            - "Section: 15.1 Iteration Stability":
+                subsections:
+                  - 15.1a Stability Analysis
+                  - 15.1b Convergence Criteria
+                  - 15.1c Solution Techniques
+            - "Section: 15.2 Fully-Coupled Iteration":
+                subsections:
+                  - 15.2a Introduction to Fully-Coupled Iteration
+                  - 15.2b Fluid-Structure Interaction
+                  - 15.2c Aeroelasticity
+            - "Section: 15.3 3-D IBLT":
+                subsections:
+                  - 15.3a Three-Dimensional Boundary Layers
+                  - 15.3b Transition Mechanisms in 3D Flows
+
+      - "Chapter 16: Small-Perturbation Theory":
+          sections:
+            - "Section: 16.1 Orr-Sommerfeld Equation":
+                subsections:
+                  - 16.1a Definition of Orr-Sommerfeld Equation
+                  - 16.1b Linear Stability Analysis
+                  - 16.1c Growth Rates and Frequencies
+
+      - "Chapter 17: Boundary Conditions, Homogeneity, Solution Techniques":
+          sections:
+            - "Section: 17.1 Transition Mechanisms":
+                subsections:
+                  - 17.1a Laminar-Turbulent Transition
+                  - 17.1b Transition Prediction Methods
+            - "Section: 17.2 Transition Prediction":
+                subsections:
+                  - 17.2a Stability Analysis
+                  - 17.2b Experimental Methods
+                  - 17.2c Computational Methods
+
+      - "Chapter 18: Reynolds Averaging":
+          sections:
+            - "Section: 18.1 Prandtl's Analogy":
+                subsections:
+                  - 18.1a Reynolds-Averaged Navier-Stokes Equations
+                  - 18.1b Turbulent Stresses
+                  - 18.1c Reynolds Stress Modeling
+
+      - "Chapter 19: Turbulent BL Structurea":
+          sections:
+            - "Section: 19.1 Wakea":
+                subsections:
+                  - 19.1a Wake Formation
+                  - 19.1b Wake Characteristics
+            - "Section: 19.2 Wall Layersa":
+                subsections:
+                  - 19.2a Viscous Sublayer
+                  - 19.2b Buffer Layer
+                  - 19.2c Overlap Layer
+            - "Section: 19.3 Inner, Outer Variablesa":
+                subsections:
+                  - 19.3a Velocity and Length Scales
+                  - 19.3b Wall Coordinates
+                  - 19.3c Outer Variables
+            - "Section: 19.4 Effects of Roughness":
+                subsections:
+                  - 19.4a Roughness Effects on Boundary Layer
+                  - 19.4b Skin Friction and Heat Transfer
+
+      - "Chapter 20: Equilibrium BL's":
+          sections:
+            - "Section: 20.1 Clauser Hypothesis":
+                subsections:
+                  - 20.1a Equilibrium Boundary Layer Concept
+                  - 20.1b Clauser's Equilibrium Assumptions
+            - "Section: 20.2 Dissipation Formulasa":
+                subsections:
+                  - 20.2a Turbulent Energy Dissipation
+                  - 20.2b Dissipation in Equilibrium Boundary Layers
+            - "Section: 20.3 Integral Closurea":
+                subsections:
+                  - 20.3a Reynolds Stress Closure
+                  - 20.3b Eddy Viscosity Models
+                  - 20.3c Mixing Length Models
+
+      - "Chapter 21: Turbulence Modeling and Closure":
+          sections:
+            - "Section: 21.1 Algebraic Models":
+                subsections:
+                  - 21.1a Mixing Length Model
+                  - 21.1b Baldwin-Lomax Model
+            - "Section: 21.2 Transport Models":
+                subsections:
+                  - 21.2a Reynolds Stress Transport Model
+                  - 21.2b Spalart-Allmaras Model
+
+      - "Chapter 22: Definition and Implications of Compressibility":
+          sections:
+            - "Section: 22.1 Special Solutions":
+                subsections:
+                  - 22.1a Subsonic Flows
+                  - 22.1b Supersonic Flows
+            - "Section: 22.2 Reynolds Analogy":
+                subsections:
+                  - 22.2a Heat Transfer Analogy
+                  - 22.2b Mass Transfer Analogy
+
+      - "Chapter 23: Approximate Temperature Profile":
+          sections:
+            - "Section: 23.1 Reynolds Heat Flux":
+                subsections:
+                  - 23.1a Heat Flux Distribution
+                  - 23.1b Temperature Gradient
+                  - 23.1c Reynolds Analogy for Heat Transfer
+
+      - "Chapter 24: New Effects":
+          sections:
+            - "Section: 24.1 Crossflow":
+                subsections:
+                  - 24.1a Crossflow Instabilities
+                  - 24.1b Crossflow Control Techniques
+            - "Section: 24.2 Lateral Dilation":
+                subsections:
+                  - 24.2a Expansion and Contraction Flows
+                  - 24.2b Lateral Dilation Effects
+            - "Section: 24.3 3D Separation":
+                subsections:
+                  - 24.3a Flow Separation Mechanisms
+                  - 24.3b Three-Dimensional Boundary Layer Separation
+            - "Section: 24.4 Governing Equations":
+                subsections:
+                  - 24.4a Nonlinear Navier-Stokes Equations
+                  - 24.4b Conservation Equations
+                  - 24.4c Energy Equation
+
+      - "Chapter 25: Coordinate Systems":
+          sections:
+            - "Section: 25.1 Characteristics":
+                subsections:
+                  - 25.1a Method of Characteristics
+                  - 25.1b Integral Equations
+            - "Section: 25.2 Boundary Conditions":
+                subsections:
+                  - 25.2a Characteristic Boundary Conditions
+                  - 25.2b Compatibility Conditions
+            - "Section: 25.3 Well-Posedness":
+                subsections:
+                  - 25.3a Definition of Well-Posedness
+                  - 25.3b Existence and Uniqueness of Solutions
+
+      - "Chapter 26: 3D Characteristics":
+          sections:
+            - "Section: 26.1 Quasi-3D: Constant-Crossflow Approximation":
+                subsections:
+                  - 26.1a 3D Flow Characteristics
+                  - 26.1b Constant-Crossflow Approximation
+
+      - "Chapter 27: 3D Stability Theory":
+          sections:
+            - "Section: 27.1 3D Transition Mechanisms":
+                subsections:
+                  - 27.1a Laminar-Turbulent Transition in 3D Flows
+                  - 27.1b Transition Prediction in 3D Flows
