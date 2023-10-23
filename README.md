@@ -47,7 +47,7 @@ Note: Depending on your shell, you might need to use quotes around the package n
 - Engage with our vibrant community on [Discord](https://discord.gg/j9GxfbxqAe).
 - For tailored inquiries or feedback, please [email us](mailto:owen@sciphi.ai).
 
-### Textbook Generation (The Library of Phi)
+### Textbook Generation
 
 This is an effort to democratize access to top-tier textbooks. By leveraging cutting-edge AI techniques, we aim to produce factual and high-quality educational materials. This can readily be extended to other domains, such as internal commercial documents.
 
@@ -78,7 +78,7 @@ This is an effort to democratize access to top-tier textbooks. By leveraging cut
 
    Simply switch `rag-enabled` to `True`. Ensure you have the right `.env` variables set up, or provide CLI values for `rag_api_base` and `rag_api_key`.
 
-_Important:_ To make the most out of grounding your data with Wikipedia, ensure your system matches our detailed specifications. We offer additional examples and resources [here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main).
+_Important:_ To make the most out of grounding your data with Wikipedia, ensure your system matches our detailed specifications. We offer additional examples and resources [here](https://github.com/emrgnt-cmplxty/library_of_phi/tree/main). More high quality outbook books are available [here](https://github.com/SciPhi-AI/library-of-phi).
 
 ### RAG Eval Harness
 
