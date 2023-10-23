@@ -36,8 +36,20 @@ Install with specific optional support using extras:
 pip install 'sciphi[all_with_extras]'
 ```
 
-Note: Depending on your shell, you might need to use quotes around the package name and extras to avoid globbing.
 
+### **Setup Your Environment**:
+
+   Begin by duplicating the sample environment file to craft your own:
+   ```bash
+   cp .env.example .env
+   ```
+
+   Next, use a text editor to adjust the `.env` file with your specific configurations. An example with `vim` is shown below:
+   ```bash
+   vim .env
+   ```
+
+   After entering your settings, ensure you save and exit the file.
 ---
 
 ## Features
@@ -49,7 +61,7 @@ Note: Depending on your shell, you might need to use quotes around the package n
 
 ### Textbook Generation
 
-This is an effort to democratize access to top-tier textbooks. By leveraging cutting-edge AI techniques, we aim to produce factual and high-quality educational materials. This can readily be extended to other domains, such as internal commercial documents.
+This is an effort to democratize access to top-tier textbooks. This can readily be extended to other domains, such as internal commercial documents.
 
 #### Generating Textbooks
 
@@ -73,6 +85,7 @@ This is an effort to democratize access to top-tier textbooks. By leveraging cut
    ```bash
    python -m sciphi.scripts.generate_textbook run --toc_dir=toc --output_dir=books --data_dir=$PWD
    ``````
+   For help with formatting your table of contents, [see here](https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/data/library_of_phi/table_of_contents/Aerodynamics_of_Viscous_Fluids.yaml).
 
 4. **Activating RAG Functionality**: 
 
@@ -95,6 +108,7 @@ To measure the efficacy of your RAG pipeline, we provide a unique RAG evaluation
 
 ## Local Development
 
+### Local setup
 1. **Clone the Repository**:
    
    Begin by cloning the repository and stepping into the project directory:
@@ -130,21 +144,38 @@ To measure the efficacy of your RAG pipeline, we provide a unique RAG evaluation
      ```bash
      poetry install -E [all, all_with_extras]
      ```
+     
+3. **Example - Create your own LLM and RAG provider**:
 
-3. **Setting Up Your Environment**:
+   ```python
+   from sciphi.core import LLMProviderName, RAGProviderName
+   from sciphi.interface import LLMInterfaceManager, RAGInterfaceManager
 
-   Begin by duplicating the sample environment file to craft your own:
-   ```bash
-   cp .env.example .env
+       llm_interface = LLMInterfaceManager.get_interface_from_args(
+           provider_name=LLMProviderName(llm_provider_name),
+           model_name=llm_model_name,
+           # Additional args
+           max_tokens_to_sample=llm_max_tokens_to_sample,
+           temperature=llm_temperature,
+           top_k=llm_top_k,
+           # Used for re-routing requests to a remote vLLM server
+           server_base=kwargs.get("llm_server_base", None),
+       )
+   
+       rag_interface = (
+           RAGInterfaceManager.get_interface_from_args(
+               provider_name=RAGProviderName(rag_provider_name),
+               base=rag_api_base or os.environ.get("RAG_API_BASE"),
+               token=rag_api_key or os.environ.get("RAG_API_KEY"),
+               max_context=rag_max_context,
+               top_k=rag_top_k,
+           )
+           if rag_enabled
+           else None
+       )
+      # ... Continue ...
    ```
-
-   Next, use a text editor to adjust the `.env` file with your specific configurations. An example with `vim` is shown below:
-   ```bash
-   vim .env
-   ```
-
-   After entering your settings, ensure you save and exit the file.
-
+   Supported LLM providers include OpenAI, Anthropic, HuggingFace, and vLLM. For RAG database access, configure your own, or get access to the SciPhi **gigaRAG API**.
 ---
 
 ## System Requirements
