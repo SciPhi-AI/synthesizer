@@ -44,9 +44,6 @@ Note: Depending on your shell, you might need to use quotes around the package n
 
 ---
 
-- Join our [Discord community](https://discord.gg/j9GxfbxqAe) for discussions and collaboration.
-- For specialized inquiries, [email us](mailto:owen@sciphi.ai).
-
 ## Features
 
 ### Community & Support
