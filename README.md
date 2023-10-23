@@ -9,7 +9,7 @@ SciPhi is a Python-based framework designed to facilitate the generation of high
 - **Configurable Data Generation:** Craft datasets mediated by LLMs according to your specifications.
 - **Retriever-Augmented Generation (RAG) Integration:** Make use of an integrated RAG Provider API to ground your generated data to real-world datasets. Also, SciPhi comes bundled with an evaluation harness to optimise your RAG workflow.
 - **Textbook Generation Module:** A module to power the generation of RAG-augmented synthetic textbooks straight from a given table of contents.
-
+- **Retriever-Augmented Generation (RAG) Integration:** Make use of an integrated RAG Provider API to ground your generated data to real-world datasets. Also, SciPhi comes bundled with an evaluation harness to optimise your RAG workflow.
 
 ---
 
@@ -19,8 +19,7 @@ SciPhi is a Python-based framework designed to facilitate the generation of high
 pip install sciphi
 ```
 
-
-### Optional Dependencies:
+### Optional Dependencies
 
 Install with specific optional support using extras:
 
@@ -29,6 +28,8 @@ Install with specific optional support using extras:
 - **Llama-CPP**: `'sciphi[llama_cpp_support]'`
 - **Llama-Index**: `'sciphi[llama_index_support]'`
 - **VLLM (includes Torch)**: `'sciphi[vllm_support]'`
+- **All (no vLLM)**: `'sciphi[all]'`
+- **All (with extras, e.g. vLLM)**: `'sciphi[all_with_extras]'`
 
 ### **Recommended** (All Optional Dependencies):
 
@@ -68,29 +69,33 @@ This is an effort to democratize access to top-tier textbooks. This can readily 
 
 1. **Dry Run**:
    ```bash
-   python -m sciphi.scripts.generate_textbook dry_run
+   python -m sciphi.scripts.textbook_generator dry_run --toc_dir=sciphi/data/sample/table_of_contents --rag-enabled=False
    ```
 
-2. **Default Textbook Generation**:
+    This will perform a dry-run over the default textbooks stored in `sciphi/data/sample/textbooks`.
+
+    _Note_ - this must be run from the root of the repository, or else you will need to update the `toc_dir` accordingly. Setting rag-enabled to `True` will enable RAG augmentation during the generation process. You may customize the RAG provider through additional arguments.
+
+2. **Textbook Generation**:
    ```bash
-   python -m sciphi.scripts.generate_textbook run --textbook=Aerodynamics_of_Viscous_Fluids --rag-enabled=False
+   python -m sciphi.scripts.textbook_generator run --toc_dir=sciphi/data/sample/table_of_contents --rag-enabled=False
    ```
-   
-   You may use the setting rag-enabled to toggle on/off RAG augmentation of the textbook. You may customize the RAG provider through additional arguments.
 
-   See a [sample output here.](sciphi/data/library_of_phi/sample/Aerodynamics_of_Viscous_Fluids.md)
+   Replace `dry_run` above with `run` to generate one textbook for each table of contents in the target directory. See a [sample textbook here.](sciphi/data/sample/textbooks/Aerodynamics_of_Viscous_Fluids.md)
 
-3. **Example With a Custom Table of Contents**: 
+3. **Example With a Custom Table of Contents**:
 
-   Prepare your table of contents and save it into `$PWD/toc/test.yaml`, for example. Then, run the following command:
+   Prepare your table of contents and save it into `$PWD/toc/test.yaml`. Then, run the following command:
    ```bash
    python -m sciphi.scripts.generate_textbook run --toc_dir=toc --output_dir=books --data_dir=$PWD
    ``````
    For help with formatting your table of contents, [see here](https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/data/library_of_phi/table_of_contents/Aerodynamics_of_Viscous_Fluids.yaml).
 
-4. **Activating RAG Functionality**: 
+4. **Custom Settings & RAG Functionality**:
 
    Simply switch `rag-enabled` to `True`. Ensure you have the right `.env` variables set up, or provide CLI values for `rag_api_base` and `rag_api_key`.
+   
+   Alternatively, you may provide your own custom settings in a YAML file. See the [default settings configuration here](sciphi/config/generation_settings/textbook_generation_settings.yaml).
 
 _Important:_ To make the most out of grounding your data with Wikipedia, ensure your system matches our detailed specifications. An example RAG provider can be seen [here](https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/interface/rag/sciphi_wiki.py). More high quality outbook books are available [here](https://github.com/SciPhi-AI/library-of-phi).
 
@@ -98,12 +103,11 @@ _Important:_ To make the most out of grounding your data with Wikipedia, ensure 
 
 To measure the efficacy of your RAG pipeline, we provide a unique RAG evaluation harness.
 
-#### Deploying the RAG Harness
-
-1. **Initiate the Harness**:
+#### Running the RAG Harness
    ```bash
    python -m sciphi.scripts.rag_harness --n-samples=100 --rag-enabled=True --evals_to_run="science_multiple_choice"
    ```
+  This example runs over 100 science multiple choice questions with RAG enabled and reports the final accuracy.
 
 ---
 
@@ -128,7 +132,7 @@ To measure the efficacy of your RAG pipeline, we provide a unique RAG evaluation
    If you require further functionalities, consider the following:
    - For the developer's toolkit and utilities:
      ```bash
-     pip install -r requirements-dev.txt
+     pip install -r requirements_dev.txt
      ```
 
    - To encompass all optional dependencies:
