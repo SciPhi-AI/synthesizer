@@ -3,10 +3,10 @@ import os
 from dataclasses import dataclass
 
 from sciphi.core.utils import get_data_dir
-from sciphi.interface.base import LLMProviderName
 from sciphi.llm.base import LLM
 from sciphi.llm.config_manager import model_config
-from sciphi.llm.openai_llm import OpenAIConfig
+from sciphi.llm.models.openai_llm import OpenAIConfig
+from sciphi.core import LLMProviderName
 
 
 @model_config
@@ -14,7 +14,7 @@ from sciphi.llm.openai_llm import OpenAIConfig
 class LLamaIndexConfig(OpenAIConfig):
     """A class to manage the configurations for LlamaIndex."""
 
-    llm_provider_name: LLMProviderName = LLMProviderName.LLAMA_INDEX
+    llm_provider_name: "LLMProviderName" = LLMProviderName.LLAMA_INDEX
 
     # LlamaIndex-specific configs
     # Defaults to the library of phi textbook
