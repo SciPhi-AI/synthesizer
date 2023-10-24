@@ -7,7 +7,7 @@ from typing import Optional
 import dotenv
 import fire
 import yaml
-from datasets import load_dataset, Dataset
+from datasets import Dataset, load_dataset
 from tqdm import tqdm
 
 from sciphi.core import JsonlDataWriter, LLMProviderName, Prompt
@@ -109,7 +109,7 @@ def main(
     ].replace(".yaml", "")
     output_name = (
         output_name
-        or f"config_name__{config_name}_dataset_name__{dataset_name.replace('/','_')}.jsonl"
+        or f"config_name_eq_{config_name}__dataset_name_eq_{dataset_name.replace('/','_')}.jsonl"
     )
     logger.info(
         f"Augmenting dataset {dataset_name} with prompt {config_name}."
