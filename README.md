@@ -70,7 +70,7 @@ Running the data_augmenter with an input dataset and prompt configuration will g
 python -m sciphi.scripts.data_augmenter.py --config-path=$PWD/sciphi/config/prompts/question_and_answer.yaml --config_name=None --n_samples=1
 ```
 
-  We can readily example the output of this command: 
+  We can readily examine the the output of this command: 
 
   ```bash
   tail augmented_output/config_name__question_and_answer_dataset_name__ContextualAI_tiny-wiki100-chunks.jsonl
