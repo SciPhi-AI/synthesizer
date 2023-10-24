@@ -11,7 +11,7 @@ from tqdm import tqdm
 
 from sciphi.core import JsonlDataWriter, LLMProviderName, Prompt
 from sciphi.core.utils import get_config_dir
-from sciphi.interface import LLMInterfaceManager
+from sciphi.interface import LLMInterface, LLMInterfaceManager
 
 # Load environment variables
 dotenv.load_dotenv()
@@ -21,6 +21,9 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 SHUFFLE_SEED = 42
+DEFAULT_USER_INPUTS = {
+    "user_supplied_suffix": "_Note_ - Ensure all question and answer pairs are implied by the context above.",
+}
 
 
 def get_output_path(output_dir: str, output_name: str) -> str:
@@ -39,7 +42,12 @@ def ensure_directory_exists(filepath: str):
         os.makedirs(directory)
 
 
-def augment_data_with_llm(entry, prompt, llm_interface, user_supplied_inputs):
+def augment_data_with_llm(
+    entry: dict,
+    prompt: Prompt,
+    llm_interface: LLMInterface,
+    user_supplied_inputs: dict[str, str],
+):
     """Fetches augmented data from LLM for a given entry."""
     formatted_prompt = prompt.format(
         dataset_entry=entry, **user_supplied_inputs
@@ -68,9 +76,7 @@ def main(
     ## Additional user inputs (like user_supplied_suffix)
     ## can be passed in through Fire as kwargs, e.g.
     ## --user_supplied_inputs "{'your_input': 'Your Input Value'}"
-    user_supplied_inputs: Optional[dict] = {
-        "user_supplied_suffix": "_Note_ - Ensure all question and answer pairs are implied by the context above.",
-    },
+    user_supplied_inputs: Optional[dict] = None,
     **kwargs,
 ):
     """Run the data augmenter."""
@@ -80,7 +86,6 @@ def main(
         raise ValueError(
             "Must provide either a config name or a config path, but not both."
         )
-
     # Initialize configuration and output path
     config_path_from_name_or_default = config_path or os.path.join(
         get_config_dir(), "prompts", f"{config_name}.yaml"
@@ -120,6 +125,8 @@ def main(
         dataset_split = dataset_split.shuffle(seed=SHUFFLE_SEED)
     n_samples = min(n_samples, len(dataset_split))
     samples = dataset_split.select(range(n_samples))
+    if not user_supplied_inputs:
+        user_supplied_inputs = DEFAULT_USER_INPUTS
 
     logger.info(f"Now running over {n_samples} samples.")
     for entry in tqdm(samples):
