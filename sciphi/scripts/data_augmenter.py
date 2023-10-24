@@ -1,5 +1,4 @@
 """A module which facilitates data augmentation.""" ""
-import yaml
 import json
 import logging
 import os
@@ -7,7 +6,8 @@ from typing import Optional
 
 import dotenv
 import fire
-from datasets import load_dataset
+import yaml
+from datasets import load_dataset, Dataset
 from tqdm import tqdm
 
 from sciphi.core import JsonlDataWriter, LLMProviderName, Prompt
@@ -21,68 +21,37 @@ dotenv.load_dotenv()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
+def get_output_path(output_dir: str, output_name: str) -> str:
+    """Returns the complete path where the output will be saved."""
+    return (
+        os.path.join(output_dir, output_name)
+        if os.path.isabs(output_dir)
+        else os.path.join(os.getcwd(), output_dir, output_name)
+    )
+
+
+def ensure_directory_exists(filepath: str):
+    """Ensures the directory of the given filepath exists."""
+    directory = os.path.dirname(filepath)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+
+def augment_data_with_llm(
+    entry: dict,
+    prompt: Prompt,
+    llm_interface: LLMInterface,
+    user_supplied_inputs: dict[str, str],
+):
+    """Fetches augmented data from LLM for a given entry."""
+    formatted_prompt = prompt.format(
+        dataset_entry=entry, **user_supplied_inputs
+    )
+    return llm_interface.get_completion(formatted_prompt)
+
+
 SHUFFLE_SEED = 42
-DEFAULT_USER_INPUTS = {
-    "user_supplied_suffix": "_Note_ - Ensure all question and answer pairs are implied by the context above.",
-}
-
-
-def get_output_path(output_dir: str, output_name: str) -> str:
-    """Returns the complete path where the output will be saved."""
-    return (
-        os.path.join(output_dir, output_name)
-        if os.path.isabs(output_dir)
-        else os.path.join(os.getcwd(), output_dir, output_name)
-    )
-
-
-def ensure_directory_exists(filepath: str):
-    """Ensures the directory of the given filepath exists."""
-    directory = os.path.dirname(filepath)
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
-
-def augment_data_with_llm(
-    entry: dict,
-    prompt: Prompt,
-    llm_interface: LLMInterface,
-    user_supplied_inputs: dict[str, str],
-):
-    """Fetches augmented data from LLM for a given entry."""
-    formatted_prompt = prompt.format(
-        dataset_entry=entry, **user_supplied_inputs
-    )
-    return llm_interface.get_completion(formatted_prompt)
-
-
-def get_output_path(output_dir: str, output_name: str) -> str:
-    """Returns the complete path where the output will be saved."""
-    return (
-        os.path.join(output_dir, output_name)
-        if os.path.isabs(output_dir)
-        else os.path.join(os.getcwd(), output_dir, output_name)
-    )
-
-
-def ensure_directory_exists(filepath: str):
-    """Ensures the directory of the given filepath exists."""
-    directory = os.path.dirname(filepath)
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
-
-def augment_data_with_llm(
-    entry: dict,
-    prompt: Prompt,
-    llm_interface: LLMInterface,
-    user_supplied_inputs: dict[str, str],
-):
-    """Fetches augmented data from LLM for a given entry."""
-    formatted_prompt = prompt.format(
-        dataset_entry=entry, **user_supplied_inputs
-    )
-    return llm_interface.get_completion(formatted_prompt)
 
 
 def main(
@@ -94,7 +63,7 @@ def main(
     # LLM Settings
     llm_provider_name: str = "openai",
     llm_model_name: str = "gpt-3.5-turbo",
-    llm_max_tokens_to_sample: str = 32,
+    llm_max_tokens_to_sample: int = 32,
     llm_temperature: float = 0.1,
     llm_top_k: int = 100,
     # Dataset Settings
@@ -126,6 +95,11 @@ def main(
 
     # Set default dataset name if not provided
     dataset_name = dataset_name or config["default_dataset_name"]
+
+    # Set the default user supplied inputs
+    user_supplied_inputs = (
+        user_supplied_inputs or config["default_user_inputs_map"]
+    )
 
     # Set up output settings
 
@@ -162,14 +136,12 @@ def main(
     )
 
     # Prepare the samples
-    dataset = load_dataset(dataset_name)
-    dataset_split = dataset[dataset_split]
+    dataset: Dataset = load_dataset(dataset_name)[dataset_split]
+
     if shuffle:
-        dataset_split = dataset_split.shuffle(seed=SHUFFLE_SEED)
-    n_samples = min(n_samples, len(dataset_split))
-    samples = dataset_split.select(range(n_samples))
-    if not user_supplied_inputs:
-        user_supplied_inputs = DEFAULT_USER_INPUTS
+        dataset = dataset.shuffle(seed=SHUFFLE_SEED)
+    n_samples = min(n_samples, len(dataset))
+    samples = dataset.select(range(n_samples))
 
     logger.info(f"Now running over {n_samples} samples.")
     for entry in tqdm(samples):

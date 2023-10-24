@@ -22,8 +22,10 @@ dataset_supplied_inputs_map:
   support: supporting_information
   correct_answer: answer
 
-user_supplied_inputs: [user_supplied_suffix]
+user_supplied_inputs: []
 
 default_dataset_name: "sciq"
 
 output_format: "raw_completion"
+
+default_user_inputs_map: {}

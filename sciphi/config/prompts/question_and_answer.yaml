@@ -22,3 +22,6 @@ user_supplied_inputs: [user_supplied_suffix]
 default_dataset_name: "ContextualAI/tiny-wiki100-chunks"
 
 output_format: "jsonl"
+
+default_user_inputs_map:
+  user_supplied_suffix: "_Note_ - Ensure all question and answer pairs are implied by the context above."
