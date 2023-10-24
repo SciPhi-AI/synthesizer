@@ -19,7 +19,7 @@ class Prompt:
             raise ValueError(
                 "Must provide either a config or a config path, but not both."
             )
-        if not os.path.exists(config_path):
+        if config_path and not os.path.exists(config_path):
             raise ValueError(f"Config path {config_path} does not exist.")
         if config_path:
             with open(config_path, "r") as yaml_file:

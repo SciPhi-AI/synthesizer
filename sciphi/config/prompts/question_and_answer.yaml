@@ -1,4 +1,6 @@
 raw_text: |
+  Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
   ### Instruction
   Given the context provided after this instruction, extract and return question and answer pairs in JSONL format. The expected format is:
 
@@ -6,7 +8,7 @@ raw_text: |
   [{{\"question\": X, \"answer\": Y}}, ...]
   ```
 
-  #### Context
+  ### Input:
   {context}
 
   {user_supplied_suffix}
@@ -16,3 +18,7 @@ dataset_supplied_inputs_map:
   text: context
 
 user_supplied_inputs: [user_supplied_suffix]
+
+default_dataset_name: "ContextualAI/tiny-wiki100-chunks"
+
+output_format: "jsonl"
