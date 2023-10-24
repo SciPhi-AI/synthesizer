@@ -6,7 +6,8 @@ from typing import Optional
 
 import dotenv
 import fire
-from datasets import load_dataset
+import yaml
+from datasets import Dataset, load_dataset
 from tqdm import tqdm
 
 from sciphi.core import JsonlDataWriter, LLMProviderName, Prompt
@@ -19,11 +20,6 @@ dotenv.load_dotenv()
 # Logging setup
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
-SHUFFLE_SEED = 42
-DEFAULT_USER_INPUTS = {
-    "user_supplied_suffix": "_Note_ - Ensure all question and answer pairs are implied by the context above.",
-}
 
 
 def get_output_path(output_dir: str, output_name: str) -> str:
@@ -55,6 +51,9 @@ def augment_data_with_llm(
     return llm_interface.get_completion(formatted_prompt)
 
 
+SHUFFLE_SEED = 42
+
+
 def main(
     # Run Settings
     output_dir="augmented_output",
@@ -64,11 +63,11 @@ def main(
     # LLM Settings
     llm_provider_name: str = "openai",
     llm_model_name: str = "gpt-3.5-turbo",
-    llm_max_tokens_to_sample: str = 32,
+    llm_max_tokens_to_sample: int = 32,
     llm_temperature: float = 0.1,
     llm_top_k: int = 100,
     # Dataset Settings
-    dataset_name: str = "ContextualAI/tiny-wiki100-chunks",
+    dataset_name: Optional[str] = None,
     dataset_split: str = "train",
     # Prompt Settings
     config_name: Optional[str] = "question_and_answer",
@@ -86,29 +85,45 @@ def main(
         raise ValueError(
             "Must provide either a config name or a config path, but not both."
         )
+
     # Initialize configuration and output path
     config_path_from_name_or_default = config_path or os.path.join(
         get_config_dir(), "prompts", f"{config_name}.yaml"
     )
-    prompt = Prompt(config_path=config_path_from_name_or_default)
+    with open(config_path_from_name_or_default, "r") as yaml_file:
+        config = yaml.safe_load(yaml_file)
+
+    # Set default dataset name if not provided
+    dataset_name = dataset_name or config["default_dataset_name"]
+
+    # Set the default user supplied inputs
+    user_supplied_inputs = (
+        user_supplied_inputs or config["default_user_inputs_map"]
+    )
+
+    # Set up output settings
+
+    ## Get the configuration name and the output file name
     config_name = config_path_from_name_or_default.split(os.path.sep)[
         -1
     ].replace(".yaml", "")
     output_name = (
         output_name
-        or f"config_name__{config_name}_dataset_name__{dataset_name.replace('/','_')}.jsonl"
+        or f"config_name_eq_{config_name}__dataset_name_eq_{dataset_name.replace('/','_')}.jsonl"
     )
     logger.info(
         f"Augmenting dataset {dataset_name} with prompt {config_name}."
     )
+
     logger.info(f"Saving the output to {output_name}.")
     output_path = get_output_path(output_dir, output_name)
 
-    # Ensure output directory exists
+    ## Ensure output directory exists
     ensure_directory_exists(output_path)
     writer = JsonlDataWriter(output_path)
 
-    dataset = load_dataset(dataset_name)
+    prompt = Prompt(config=config)
+
     llm_interface = LLMInterfaceManager.get_interface_from_args(
         provider_name=LLMProviderName(llm_provider_name),
         model_name=llm_model_name,
@@ -120,13 +135,13 @@ def main(
         server_base=kwargs.get("llm_server_base", None),
     )
 
-    dataset_split = dataset[dataset_split]
+    # Prepare the samples
+    dataset: Dataset = load_dataset(dataset_name)[dataset_split]
+
     if shuffle:
-        dataset_split = dataset_split.shuffle(seed=SHUFFLE_SEED)
-    n_samples = min(n_samples, len(dataset_split))
-    samples = dataset_split.select(range(n_samples))
-    if not user_supplied_inputs:
-        user_supplied_inputs = DEFAULT_USER_INPUTS
+        dataset = dataset.shuffle(seed=SHUFFLE_SEED)
+    n_samples = min(n_samples, len(dataset))
+    samples = dataset.select(range(n_samples))
 
     logger.info(f"Now running over {n_samples} samples.")
     for entry in tqdm(samples):
@@ -134,12 +149,17 @@ def main(
             dataset_entry=entry, **user_supplied_inputs
         )
         completion = llm_interface.get_completion(formatted_prompt)
-        try:
-            data = json.loads(completion)
-            writer.write(data)
-        except json.decoder.JSONDecodeError:
-            logger.error(
-                f"Failed to decode JSON response from LLM: {completion}"
+        if config["output_format"] == "jsonl":
+            try:
+                data = json.loads(completion)
+                writer.write(data)
+            except json.decoder.JSONDecodeError:
+                logger.error(
+                    f"Failed to decode JSON response from LLM: {completion}"
+                )
+        else:
+            writer.write(
+                [{"prompt": formatted_prompt, "completion": completion}]
             )
 
 
