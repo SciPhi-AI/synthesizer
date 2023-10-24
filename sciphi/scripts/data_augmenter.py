@@ -55,6 +55,30 @@ def augment_data_with_llm(
     return llm_interface.get_completion(formatted_prompt)
 
 
+def get_output_path(output_dir: str, output_name: str) -> str:
+    """Returns the complete path where the output will be saved."""
+    return (
+        os.path.join(output_dir, output_name)
+        if os.path.isabs(output_dir)
+        else os.path.join(os.getcwd(), output_dir, output_name)
+    )
+
+
+def ensure_directory_exists(filepath: str):
+    """Ensures the directory of the given filepath exists."""
+    directory = os.path.dirname(filepath)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+
+def augment_data_with_llm(entry, prompt, llm_interface, user_supplied_inputs):
+    """Fetches augmented data from LLM for a given entry."""
+    formatted_prompt = prompt.format(
+        dataset_entry=entry, **user_supplied_inputs
+    )
+    return llm_interface.get_completion(formatted_prompt)
+
+
 def main(
     # Run Settings
     output_dir="augmented_output",
