@@ -1,29 +1,37 @@
+import logging
 import pandas as pd
 from sciphi.llm.embedding_helpers import process_documents
 import json
 
+logger = logging.getLogger(__name__)
 
-def read_jsonl(file_path):
+
+def stream_jsonl(file_path):
     """
     Generator function to read a JSONL (JSON Lines) file line by line.
     """
-    counter = 0
     with open(file_path, "r") as f:
         for line in f:
-            counter += 1
-            if counter == 1:
+            entry = json.loads(line.strip())
+            # skip header entries
+            if "page_id" not in entry:
                 continue
-            yield json.loads(line.strip())
+
+            yield entry
 
 
 document_ids = []
 documents = []
 
-for entry in read_jsonl("sample.json"):
+for entry in stream_jsonl("sample.json"):
     # dict_keys(['template', 'content_model', 'opening_text', 'wiki', 'statement_keywords', 'auxiliary_text', 'language', 'title', 'descriptions', 'page_id', 'create_timestamp', 'text', 'timestamp', 'redirect', 'heading', 'source_text', 'version_type', 'coordinates', 'version', 'external_link', 'labels', 'namespace_text', 'statement_count', 'sitelink_count', 'namespace', 'text_bytes', 'label_count', 'incoming_links', 'category', 'outgoing_link', 'popularity_score'])
     document_ids.append(entry["page_id"])
     documents.append(entry["text"])
-    print(entry)
+    if len(document_ids) > 100:
+        import pdb
+
+        pdb.set_trace()
+        df = process_documents(documents, document_ids)
 
 
 # import pdb

@@ -1,6 +1,6 @@
 import pandas as pd
 from collections.abc import Iterable
-import tqdm
+from tqdm import tqdm
 import blingfire as bf
 
 
