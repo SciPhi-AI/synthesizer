@@ -11,7 +11,7 @@ from tqdm import tqdm
 
 from sciphi.core import JsonlDataWriter, LLMProviderName, Prompt
 from sciphi.core.utils import get_config_dir
-from sciphi.interface import LLMInterfaceManager
+from sciphi.interface import LLMInterface, LLMInterfaceManager
 
 # Load environment variables
 dotenv.load_dotenv()
@@ -21,6 +21,38 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 SHUFFLE_SEED = 42
+DEFAULT_USER_INPUTS = {
+    "user_supplied_suffix": "_Note_ - Ensure all question and answer pairs are implied by the context above.",
+}
+
+
+def get_output_path(output_dir: str, output_name: str) -> str:
+    """Returns the complete path where the output will be saved."""
+    return (
+        os.path.join(output_dir, output_name)
+        if os.path.isabs(output_dir)
+        else os.path.join(os.getcwd(), output_dir, output_name)
+    )
+
+
+def ensure_directory_exists(filepath: str):
+    """Ensures the directory of the given filepath exists."""
+    directory = os.path.dirname(filepath)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+
+def augment_data_with_llm(
+    entry: dict,
+    prompt: Prompt,
+    llm_interface: LLMInterface,
+    user_supplied_inputs: dict[str, str],
+):
+    """Fetches augmented data from LLM for a given entry."""
+    formatted_prompt = prompt.format(
+        dataset_entry=entry, **user_supplied_inputs
+    )
+    return llm_interface.get_completion(formatted_prompt)
 
 
 def main(
@@ -44,18 +76,17 @@ def main(
     ## Additional user inputs (like user_supplied_suffix)
     ## can be passed in through Fire as kwargs, e.g.
     ## --user_supplied_inputs "{'your_input': 'Your Input Value'}"
-    user_supplied_inputs: Optional[dict] = {
-        "user_supplied_suffix": "_Note_ - Ensure all question and answer pairs are implied by the context above.",
-    },
+    user_supplied_inputs: Optional[dict] = None,
     **kwargs,
 ):
     """Run the data augmenter."""
 
+    # Validate configurations
     if config_name and config_path:
         raise ValueError(
             "Must provide either a config name or a config path, but not both."
         )
-    # get config file path
+    # Initialize configuration and output path
     config_path_from_name_or_default = config_path or os.path.join(
         get_config_dir(), "prompts", f"{config_name}.yaml"
     )
@@ -67,16 +98,17 @@ def main(
         output_name
         or f"config_name__{config_name}_dataset_name__{dataset_name.replace('/','_')}.jsonl"
     )
-    writer = JsonlDataWriter(
-        os.path.join(output_dir, output_name)
-        if os.path.isabs(output_dir)
-        else os.path.join(os.getcwd(), output_dir, output_name)
+    logger.info(
+        f"Augmenting dataset {dataset_name} with prompt {config_name}."
     )
-    if not os.path.exists(os.path.dirname(writer.output_path)):
-        os.makedirs(os.path.dirname(writer.output_path))
+    logger.info(f"Saving the output to {output_name}.")
+    output_path = get_output_path(output_dir, output_name)
+
+    # Ensure output directory exists
+    ensure_directory_exists(output_path)
+    writer = JsonlDataWriter(output_path)
 
     dataset = load_dataset(dataset_name)
-
     llm_interface = LLMInterfaceManager.get_interface_from_args(
         provider_name=LLMProviderName(llm_provider_name),
         model_name=llm_model_name,
@@ -91,9 +123,13 @@ def main(
     dataset_split = dataset[dataset_split]
     if shuffle:
         dataset_split = dataset_split.shuffle(seed=SHUFFLE_SEED)
-    samples = dataset_split.select(range(min(n_samples, len(dataset_split))))
+    n_samples = min(n_samples, len(dataset_split))
+    samples = dataset_split.select(range(n_samples))
+    if not user_supplied_inputs:
+        user_supplied_inputs = DEFAULT_USER_INPUTS
 
-    for iloc, entry in tqdm(enumerate(samples)):
+    logger.info(f"Now running over {n_samples} samples.")
+    for entry in tqdm(samples):
         formatted_prompt = prompt.format(
             dataset_entry=entry, **user_supplied_inputs
         )
