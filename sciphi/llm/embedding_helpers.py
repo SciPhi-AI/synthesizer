@@ -1,12 +1,11 @@
-import pandas as pd
-from collections.abc import Iterable
-from tqdm import tqdm
 import blingfire as bf
+import pandas as pd
+from tqdm import tqdm
 
 
 def process_documents(
-    documents: Iterable[str],
-    document_ids: Iterable,
+    documents: list[str],
+    document_ids: list[int],
     split_sentences: bool = True,
     filter_len: int = 3,
     disable_progress_bar: bool = False,
@@ -38,8 +37,8 @@ def process_documents(
 
 
 def sectionize_documents(
-    documents: Iterable[str],
-    document_ids: Iterable,
+    documents: list[str],
+    document_ids: list[int],
     disable_progress_bar: bool = False,
 ) -> pd.DataFrame:
     """
@@ -75,9 +74,9 @@ def sectionize_documents(
 
 
 def sentencize(
-    documents: Iterable[str],
-    document_ids: Iterable,
-    offsets: Iterable[tuple[int, int]],
+    documents: list[str],
+    document_ids: list[int],
+    offsets: list[tuple[int, int]],
     filter_len: int = 3,
     disable_progress_bar: bool = False,
 ) -> pd.DataFrame:

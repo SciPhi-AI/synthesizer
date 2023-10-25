@@ -2,11 +2,11 @@
 import os
 from dataclasses import dataclass
 
+from sciphi.core import LLMProviderName
 from sciphi.core.utils import get_data_dir
 from sciphi.llm.base import LLM
 from sciphi.llm.config_manager import model_config
 from sciphi.llm.models.openai_llm import OpenAIConfig
-from sciphi.core import LLMProviderName
 
 
 @model_config
