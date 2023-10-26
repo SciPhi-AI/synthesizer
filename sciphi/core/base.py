@@ -12,6 +12,7 @@ class LLMProviderName(Enum):
     VLLM = "vllm"
     LLAMACPP = "llamacpp"
     LITE_LLM = "lite-llm"
+    SCIPHI = "sciphi"
 
 
 class RAGProviderName(Enum):
