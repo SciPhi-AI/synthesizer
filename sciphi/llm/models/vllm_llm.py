@@ -95,7 +95,7 @@ class vLLM(LLM):
         self.config: vLLMConfig = config
 
     def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
-        """Get a completion from the OpenAI API based on the provided messages."""
+        """Get a completion from the vLLM API based on the provided messages."""
         raise NotImplementedError(
             "Chat completion not yet implemented for vLLM."
         )

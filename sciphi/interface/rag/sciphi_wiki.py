@@ -69,12 +69,12 @@ def wiki_search_api(
     # Make the GET request with basic authentication and the query parameter
     response = requests.get(
         rag_api_base,
-        params={"queries": queries, "k": top_k},
+        params={"queries": queries, "top_k": top_k},
         headers={"Authorization": f"Bearer {rag_api_key}"},
     )
 
     if response.status_code == 200:
-        return response.json()["match"]  # Return the JSON response
+        return response.json()  # Return the JSON response
     if "detail" in response.json():
         raise ValueError(
             f'Unexpected response from API - {response.json()["detail"]}'
