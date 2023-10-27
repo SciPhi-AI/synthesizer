@@ -48,13 +48,12 @@ def initialize_memmap(
             shape_file.write(f"{initial_estimate},{embedding_dim}")
 
         # Create initial memmap
-        memmap_array = np.memmap(
+        np.memmap(
             file_name,
             dtype="float32",
             mode="w+",
             shape=(initial_estimate, embedding_dim),
         )
-        del memmap_array
 
 
 def reconstitute_sentences_into_chunks(

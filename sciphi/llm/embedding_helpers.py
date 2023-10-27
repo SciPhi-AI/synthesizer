@@ -111,6 +111,6 @@ def sentencize(
                         "offset": abs_offsets,
                     }
                     document_sentences.append(row)
-        except:
+        except Exception:
             continue
     return pd.DataFrame(document_sentences)

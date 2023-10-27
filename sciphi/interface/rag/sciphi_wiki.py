@@ -7,8 +7,6 @@ from sciphi.core import RAGProviderName
 from sciphi.interface.base import RAGInterface, RAGProviderConfig
 from sciphi.interface.rag_interface_manager import rag_config, rag_provider
 
-""
-
 
 @dataclass
 @rag_config
@@ -44,16 +42,13 @@ class SciPhiWikiRAGInterface(RAGInterface):
             for raw_context in raw_contexts
         ]
 
-    def _format_wiki_context(self, context: str) -> str:
+    def _format_wiki_context(self, context: list) -> str:
         """Format the context for a prompt."""
-        truncated_context = context[0 : self.config.max_context]
-        wiki_context = dedent(truncated_context)
+        joined_context = [f"{ele['title']}\n{ele['text']}" for ele in context]
         return "\n".join(
-            [
-                f"{SciPhiWikiRAGInterface.FORMAT_INDENT}{line}"
-                for line in wiki_context.split("\n")
-            ]
-        )
+            f"{SciPhiWikiRAGInterface.FORMAT_INDENT}{dedent(entry)}"
+            for entry in joined_context
+        )[: self.config.max_context]
 
 
 def wiki_search_api(
@@ -69,12 +64,12 @@ def wiki_search_api(
     # Make the GET request with basic authentication and the query parameter
     response = requests.get(
         rag_api_base,
-        params={"queries": queries, "k": top_k},
+        params={"queries": queries, "top_k": top_k},
         headers={"Authorization": f"Bearer {rag_api_key}"},
     )
 
     if response.status_code == 200:
-        return response.json()["match"]  # Return the JSON response
+        return response.json()  # Return the JSON response
     if "detail" in response.json():
         raise ValueError(
             f'Unexpected response from API - {response.json()["detail"]}'
