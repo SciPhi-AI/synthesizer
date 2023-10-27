@@ -7,8 +7,6 @@ from sciphi.core import RAGProviderName
 from sciphi.interface.base import RAGInterface, RAGProviderConfig
 from sciphi.interface.rag_interface_manager import rag_config, rag_provider
 
-""
-
 
 @dataclass
 @rag_config
@@ -44,7 +42,7 @@ class SciPhiWikiRAGInterface(RAGInterface):
             for raw_context in raw_contexts
         ]
 
-    def _format_wiki_context(self, context: str) -> str:
+    def _format_wiki_context(self, context: list) -> str:
         """Format the context for a prompt."""
         joined_context = [f"{ele['title']}\n{ele['text']}" for ele in context]
         return "\n".join(
