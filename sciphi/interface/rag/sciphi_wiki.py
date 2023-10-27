@@ -47,13 +47,12 @@ class SciPhiWikiRAGInterface(RAGInterface):
     def _format_wiki_context(self, context: str) -> str:
         """Format the context for a prompt."""
         joined_context = [f"{ele['title']}\n{ele['text']}" for ele in context]
-        wiki_context = dedent(joined_context[: self.config.max_context])
         return "\n".join(
             [
-                f"{SciPhiWikiRAGInterface.FORMAT_INDENT}{line}"
-                for line in wiki_context.split("\n")
+                f"{SciPhiWikiRAGInterface.FORMAT_INDENT}{dedent(line)}"
+                for line in joined_context.split("\n")
             ]
-        )
+        )[: self.config.max_context]
 
 
 def wiki_search_api(
