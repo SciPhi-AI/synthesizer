@@ -1,11 +1,11 @@
 """A module for managing local vLLM models."""
 
 import logging
-import os
 from dataclasses import dataclass
 from typing import Optional
 
 from sciphi.core import LLMProviderName, RAGProviderName
+from sciphi.interface.rag_interface_manager import RAGInterfaceManager
 from sciphi.llm.config_manager import model_config
 from sciphi.llm.models.vllm_llm import vLLM, vLLMConfig
 
@@ -45,6 +45,7 @@ class SciPhiFormatter:
 
 
 @model_config
+@dataclass
 class SciPhiConfig(vLLMConfig):
     """Configuration for local vLLM models."""
 
@@ -56,8 +57,6 @@ class SciPhiConfig(vLLMConfig):
     top_k: int = 100
     max_tokens_to_sample: int = 256
     server_base: Optional[str] = None
-
-    # Generation parameters
 
     # RAG Parameters
     rag_provider_name: RAGProviderName = RAGProviderName.SCIPHI_WIKI
@@ -85,18 +84,12 @@ class SciPhiLLM(vLLM):
             skip_special_tokens=False,  # RAG Fine Tune includes special tokens
             stop=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,  # Stops on Retrieval
         )
-        from sciphi.interface.rag.sciphi_wiki import (
-            SciPhiWikiRAGConfig,
-            SciPhiWikiRAGInterface,
-        )
 
-        self.rag_provider = SciPhiWikiRAGInterface(
-            SciPhiWikiRAGConfig(
-                rag_provider_name=config.rag_provider_name,
-                base=config.rag_provider_base or "http://localhost:8000",
-                token=config.rag_provider_token or "",
-                top_k=config.rag_top_k,
-            )
+        self.rag_provider = RAGInterfaceManager.get_interface_from_args(
+            provider_name=config.rag_provider_name,
+            base=config.rag_provider_base or "http://localhost:8000",
+            token=config.rag_provider_token or "",
+            top_k=config.rag_top_k,
         )
 
     def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
