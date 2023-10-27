@@ -50,7 +50,7 @@ class SciPhiWikiRAGInterface(RAGInterface):
         return "\n".join(
             [
                 f"{SciPhiWikiRAGInterface.FORMAT_INDENT}{dedent(line)}"
-                for line in joined_context.split("\n")
+                for line in joined_context
             ]
         )[: self.config.max_context]
 
