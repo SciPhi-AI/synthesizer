@@ -46,6 +46,7 @@ class SciPhiWikiRAGInterface(RAGInterface):
 
     def _format_wiki_context(self, context: str) -> str:
         """Format the context for a prompt."""
+        print('context = ', context)
         truncated_context = context[0 : self.config.max_context]
         wiki_context = dedent(truncated_context)
         return "\n".join(
