@@ -48,10 +48,8 @@ class SciPhiWikiRAGInterface(RAGInterface):
         """Format the context for a prompt."""
         joined_context = [f"{ele['title']}\n{ele['text']}" for ele in context]
         return "\n".join(
-            [
-                f"{SciPhiWikiRAGInterface.FORMAT_INDENT}{dedent(line)}"
-                for line in joined_context
-            ]
+            f"{SciPhiWikiRAGInterface.FORMAT_INDENT}{dedent(entry)}"
+            for entry in joined_context
         )[: self.config.max_context]
 
 
