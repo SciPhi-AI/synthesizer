@@ -1,4 +1,4 @@
-# SciPhi [ΨΦ]: A Framework for LLM Powered Data 💡
+# SciPhi [ΨΦ]: AI's Knowledge Engine 💡
 
 <p align="center">
 <img width="716" alt="SciPhi Logo" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/195367d8-54fd-4281-ace0-87ea8523f982">
@@ -6,9 +6,10 @@
 
 With SciPhi, users can:
 
-- **Customize Data Creation**: Generate datasets via LLMs that are tailored to your needs.
-- **Integrate Retriever-Augmented Generation (RAG)**: Utilize the built-in RAG Provider API to anchor generated data to real-world sources. Plus, take advantage of the evaluation harness to refine your RAG processes.
-- **Generate Textbooks**: Use the dedicated module to produce RAG-enhanced synthetic textbooks directly from a provided table of contents.
+- **Retriever-Augmented Generation (RAG) on Demand**: Built-in RAG Provider Interface to anchor generated data to real-world sources. 
+   - _Coming Soon_ - End-to-end cloud and local RAG knowledge enginge API for seamless use. 
+- **Customize Data Creation**: Generate datasets via LLMs that are tailored to your needs, for LLM training, RAG, and more.
+   - _Included Example_ - A dedicated textbook module which writes RAG-enhanced textbooks directly from a provided table of contents.
 
 ---
 
