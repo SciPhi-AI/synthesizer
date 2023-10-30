@@ -39,6 +39,7 @@ def main(
         LLMProviderName(llm_provider_name),
         api_key=api_key,
         server_base=server_base,
+        # Currently only consumed by SciPhi
         rag_interface=rag_interface,
     )
 

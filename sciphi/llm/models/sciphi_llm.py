@@ -1,6 +1,6 @@
 """A module for managing local vLLM models."""
-import os
 import logging
+import os
 from dataclasses import dataclass
 from enum import Enum
 from typing import Optional
@@ -42,7 +42,6 @@ class SciPhiLLM(LLM):
         *args,
         **kwargs,
     ) -> None:
-        print("config = ", config)
         self.config: SciPhiConfig = config
         if self.config.mode in [
             SciPhiProviderMode.REMOTE,

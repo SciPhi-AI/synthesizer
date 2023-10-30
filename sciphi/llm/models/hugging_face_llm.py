@@ -47,7 +47,7 @@ class HuggingFaceLLM(LLM):
             )
         except ImportError:
             raise ImportError(
-                "Please install the torch and transformers packages before attempting to run with a HuggingFace model. This can be accomplished via `poetry install -E hf_support, ...OTHER_DEPENDENCIES_HERE`."
+                "Please install the torch and transformers packages before attempting to run with a HuggingFace model. This can be accomplished via `pip install transformers`."
             )
 
         super().__init__(

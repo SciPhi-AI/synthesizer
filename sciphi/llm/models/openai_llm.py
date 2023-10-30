@@ -1,5 +1,7 @@
 """A module for creating OpenAI model abstractions."""
-
+# TODO - Will we face issues if a user attempts to access
+# OpenAI + vLLM / SciPhi remote in the same session?
+# My guess is yes, but need to test + workaround.
 from dataclasses import dataclass
 
 import tiktoken
@@ -38,7 +40,7 @@ class OpenAILLM(LLM):
             import openai
         except ImportError:
             raise ImportError(
-                "Please install the openai package before attempting to run with an OpenAI model. This can be accomplished via `poetry install -E openai_support, ...OTHER_DEPENDENCIES_HERE`."
+                "Please install the openai package before attempting to run with an OpenAI model. This can be accomplished via `pip install openai`."
             )
         if (
             config.provider_name == LLMProviderName.OPENAI

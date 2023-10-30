@@ -1,8 +1,8 @@
 """A module for managing local vLLM models."""
-
-import os
 import logging
+import os
 from dataclasses import dataclass
+from enum import Enum
 from typing import Optional
 
 from sciphi.core import LLMProviderName
@@ -10,7 +10,6 @@ from sciphi.llm.base import LLM, GenerationConfig, LLMConfig
 from sciphi.llm.config_manager import model_config
 
 logging.basicConfig(level=logging.INFO)
-from enum import Enum
 
 
 class vLLMProviderMode(Enum):
