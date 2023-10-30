@@ -107,9 +107,10 @@ class OpenAILLM(LLM):
             "model": generation_config.model_name,
             "temperature": generation_config.temperature,
             "top_p": generation_config.top_p,
-            "max_tokens": generation_config.max_tokens_to_sample
-            - len(encoding.encode(prompt)),
             "stream": generation_config.do_stream,
+            # TODO - We need to cap this to avoid potential errors when exceed max allowable context
+            "max_tokens": generation_config.max_tokens_to_sample
+            + len(encoding.encode(prompt)),
         }
 
         # Check if were using OpenAI api with re-routed base

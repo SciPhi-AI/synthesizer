@@ -13,7 +13,7 @@ from sciphi.interface.rag_interface_manager import rag_config, rag_provider
 class SciPhiWikiRAGConfig(RAGProviderConfig):
     """An abstract class to hold the configuration for a RAG provider."""
 
-    rag_provider_name = RAGProviderName.SCIPHI_WIKI
+    provider_name = RAGProviderName.SCIPHI_WIKI
     top_k: int = 10
 
 
@@ -21,10 +21,10 @@ class SciPhiWikiRAGConfig(RAGProviderConfig):
 class SciPhiWikiRAGInterface(RAGInterface):
     """A RAG provider that uses Wikipedia as the retrieval source."""
 
-    rag_provider_name = RAGProviderName.SCIPHI_WIKI
+    provider_name = RAGProviderName.SCIPHI_WIKI
     FORMAT_INDENT = "        "
 
-    def __init__(self, config: SciPhiWikiRAGConfig) -> None:
+    def __init__(self, config: SciPhiWikiRAGConfig, *args, **kwargs) -> None:
         super().__init__(config)
         self.config: SciPhiWikiRAGConfig = config
 
@@ -32,7 +32,7 @@ class SciPhiWikiRAGInterface(RAGInterface):
         """Get the context for a prompt."""
         raw_contexts = wiki_search_api(
             prompts,
-            self.config.base,
+            self.config.api_base,
             self.config.api_key,
             self.config.top_k,
         )

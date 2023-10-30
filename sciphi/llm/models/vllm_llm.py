@@ -27,7 +27,7 @@ class vLLMConfig(LLMConfig):
 
     # vLLM Extras...
     mode: vLLMProviderMode = vLLMProviderMode.REMOTE
-    server_base: Optional[str] = None
+    api_base: Optional[str] = None
     api_key: Optional[str] = None
 
 
@@ -64,13 +64,13 @@ class vLLM(LLM):
         """Get an instruction completion from local SciPhi API."""
         import openai
 
-        if self.config.server_base:
-            openai.api_base = self.config.server_base
+        if self.config.api_base:
+            openai.api_base = self.config.api_base
             openai.api_key = self.config.api_key or os.getenv("VLLM_API_KEY")
             return self.model.get_instruct_completion(
                 prompt, generation_config
             )
-        raise NotImplementedError("Missing server base.")
+        raise NotImplementedError("Missing api base.")
 
     def get_batch_instruct_completion(
         self, prompts: list[str], generation_config: GenerationConfig

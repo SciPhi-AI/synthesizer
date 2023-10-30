@@ -55,8 +55,8 @@ class LLMInterface(ABC):
 class RAGProviderConfig(ABC):
     """An abstract class to hold the configuration for a RAG provider."""
 
-    rag_provider_name: RAGProviderName
-    base: str
+    provider_name: RAGProviderName
+    api_base: str
     api_key: str
     max_context: int = 2_048
 
@@ -64,7 +64,7 @@ class RAGProviderConfig(ABC):
 class RAGInterface(ABC):
     """An abstract class to provide a common interface for RAG providers."""
 
-    rag_provider_name: RAGProviderName
+    provider_name: RAGProviderName
     RAG_DISABLED_MESSAGE: str = "Not Available."
 
     def __init__(

@@ -26,7 +26,7 @@ class RAGInterfaceManager(InterfaceManager):
     ) -> Type[RAGInterface]:
         """Register a provider with the RAGInterfaceManager."""
         RAGInterfaceManager.provider_registry[
-            provider.rag_provider_name
+            provider.provider_name
         ] = provider
         return provider
 
@@ -36,7 +36,7 @@ class RAGInterfaceManager(InterfaceManager):
     ) -> Type[RAGProviderConfig]:
         """Register a provider with the RAGInterfaceManager."""
         RAGInterfaceManager.provider_config_registry[
-            config.rag_provider_name
+            config.provider_name
         ] = config
         return config
 
@@ -71,12 +71,14 @@ class RAGInterfaceManager(InterfaceManager):
         """Gets an interface based on the given provider and model name."""
 
         config = RAGInterfaceManager.provider_config_registry[provider_name](
-            rag_provider_name=provider_name, **kwargs
+            provider_name=provider_name, *args, **kwargs
         )
 
         return RAGInterfaceManager.get_interface(
             provider_name=provider_name,
             config=config,
+            *args,
+            **kwargs,
         )
 
 

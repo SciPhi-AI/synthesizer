@@ -19,34 +19,59 @@ def filter_relevant_args(dataclass_type, args_dict):
 
 
 def main(
-    api_key: Optional[str] = None,
-    llm_provider_name: str = "sciphi",
-    server_base: str = "https://api.sciphi.ai/v1",
-    rag_provider_name: str = "sciphi-wiki",
-    rag_server_base: str = "https://api.sciphi.ai",
-    rag_top_k: int = 10,
-    rag_api_key: Optional[str] = None,
+    # api_key: Optional[str] = None,
+    # llm_provider_name: str = "sciphi",
+    # llm_api_base: str = "https://api.sciphi.ai/v1",
+    # rag_provider_name: str = "sciphi-wiki",
+    # rag_api_base: str = "https://api.sciphi.ai",
+    # rag_top_k: int = 10,
+    # rag_api_key: Optional[str] = None,
     query: str = "Who is the president of the United States?",
+    llm_provider_name="sciphi",
+    llm_model_name="SciPhi/SciPhi-Self-RAG-Mistral-7B-32k",
+    llm_temperature=0.1,
+    llm_top_k=100,
+    llm_max_tokens_to_sample=256,
+    llm_api_base: Optional[str] = None,
+    llm_api_key: Optional[str] = None,
+    llm_skip_special_tokens: bool = False,
+    # RAG Settings
+    rag_provider_name="sciphi-wiki",
+    rag_enabled=True,
+    rag_top_k=10,
+    rag_api_base="https://api.sciphi.ai",
+    rag_api_key=None,
     **kwargs,
 ):
-    rag_interface = RAGInterfaceManager.get_interface_from_args(
-        provider_name=RAGProviderName(rag_provider_name),
-        base=rag_server_base,
-        api_key=rag_api_key or api_key,
-        top_k=rag_top_k,
+    rag_interface = (
+        RAGInterfaceManager.get_interface_from_args(
+            RAGProviderName(rag_provider_name),
+            api_base=rag_api_base or llm_api_base,
+            api_key=rag_api_key or llm_api_key,
+            top_k=rag_top_k,
+        )
+        if rag_enabled
+        else None
     )
     sciphi_llm = LLMInterfaceManager.get_interface_from_args(
         LLMProviderName(llm_provider_name),
-        api_key=api_key,
-        server_base=server_base,
+        api_key=llm_api_key,
+        api_base=llm_api_base,
         # Currently only consumed by SciPhi
         rag_interface=rag_interface,
+        # Consumed by single-load providers
+        model_name=llm_model_name,
     )
 
     completion_config = GenerationConfig(
-        **filter_relevant_args(GenerationConfig, kwargs),
+        temperature=llm_temperature,
+        top_k=llm_top_k,
+        max_tokens_to_sample=llm_max_tokens_to_sample,
+        model_name=llm_model_name,
+        skip_special_tokens=llm_skip_special_tokens,
         stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
     )
+    print("completion_config = ", completion_config)
     completion = sciphi_llm.get_completion(query, completion_config)
     print("completion = ", completion)
 

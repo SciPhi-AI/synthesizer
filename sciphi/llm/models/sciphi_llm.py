@@ -29,7 +29,7 @@ class SciPhiConfig(LLMConfig):
 
     # SciPhi Extras...
     mode = SciPhiProviderMode.REMOTE
-    server_base: Optional[str] = None
+    api_base: Optional[str] = None
     api_key: Optional[str] = None
 
 
@@ -59,7 +59,7 @@ class SciPhiLLM(LLM):
                 self.model = vLLM(
                     vLLMConfig(
                         provider_name=config.provider_name,
-                        server_base=config.server_base,
+                        api_base=config.api_base,
                         api_key=config.api_key or os.getenv("SCIPHI_API_KEY"),
                         mode=vLLMProviderMode.REMOTE,
                     ),

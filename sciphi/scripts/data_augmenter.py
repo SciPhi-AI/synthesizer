@@ -132,7 +132,7 @@ def main(
         temperature=llm_temperature,
         top_k=llm_top_k,
         # Used for re-routing requests to a remote vLLM server
-        server_base=kwargs.get("llm_server_base", None),
+        =kwargs.get("llm_", None),
     )
 
     # Prepare the samples

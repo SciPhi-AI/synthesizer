@@ -49,7 +49,7 @@ VLLM_API_KEY=your_vllm_api_key # for remote vLLM use.
 SCIPHI_API_KEY=your_sciphi_api_key # for remote vLLM use.
 # RAG Provider Settings
 RAG_API_KEY=your_rag_server_api_key
-RAG_API_BASE=your_rag_server_base_url
+RAG_API_BASE=your_rag_api_base_url
 ```
 
 After entering your settings, ensure you save and exit the file.
@@ -162,7 +162,7 @@ if __name__ == "__main__":
       temperature=llm_temperature,
       top_k=llm_top_k,
       # Used for re-routing requests to a remote vLLM server
-      server_base=kwargs.get("llm_server_base", None),
+      api_base=kwargs.get("llm_api_base", None),
   )
 
   rag_interface = RAGInterfaceManager.get_interface_from_args(

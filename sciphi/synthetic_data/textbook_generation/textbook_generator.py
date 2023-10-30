@@ -57,12 +57,12 @@ class TextbookContentGenerator:
             temperature=self.config.llm_temperature,
             top_k=self.config.llm_top_k,
             # Used for re-routing requests to a remote vLLM server
-            server_base=cli_args.get("llm_server_base", None),
+            api_base=cli_args.get("llm_api_base", None),
         )
 
         self.rag_interface = RAGInterfaceManager.get_interface_from_args(
             provider_name=RAGProviderName(self.config.rag_provider_name),
-            base=self.config.rag_api_base,
+            api_base=self.config.rag_api_base,
             token=self.config.rag_api_key,
             max_context=self.config.rag_max_context,
             top_k=self.config.rag_top_k,
