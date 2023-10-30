@@ -44,7 +44,7 @@ HF_TOKEN=your_huggingface_token
 # vLLM
 VLLM_API_KEY=your_vllm_api_key # for remote vLLM use.
 # SciPhi
-SCIPHI_API_KEY=your_sciphi_api_key # for remote vLLM use.
+SCIPHI_API_KEY=your_sciphi_api_key # for SciPhi API use.
 # RAG Provider Settings
 RAG_API_KEY=your_rag_server_api_key
 RAG_API_BASE=your_rag_api_base_url
@@ -60,6 +60,14 @@ After entering your settings, ensure you save and exit the file.
 
 - Engage with our vibrant community on [Discord](https://discord.gg/j9GxfbxqAe).
 - For tailored inquiries or feedback, please [email us](mailto:owen@sciphi.ai).
+
+### Multiple provider support
+
+SciPhi supports multiple LLM providers (e.g. OpenAI, Anthropic, HuggingFace, and vLLM) and RAG providers (e.g. SciPhi). The framework supports seamless integration of these providers. To run an example completion with SciPhi, execute:
+
+```bash
+python -m sciphi.scripts.sciphi_gen_completion -llm_provider_name=sciphi --llm_api_key=YOUR_SCIPHI_API_KEY --llm_api_base=https://api.sciphi.ai/v1 --rag_api_base=https://api.sciphi.ai --llm_model_name=SciPhi/SciPhi-Self-RAG-Mistral-7B-32k --query="Write a few paragraphs on general relativity. Include the mathematical definition of Einsteins field equation in your writeup."
+```
 
 ### Configurable Data Generation
 
@@ -138,7 +146,7 @@ This example evaluates your RAG over 100 science multiple-choice questions and r
 
 ---
 
-## Local Development
+## Development
 
 ### Example - Instantiate your own LLM and RAG provider
 
@@ -147,31 +155,48 @@ Here's an example of how you can instantiate your own LLM and RAG provider using
 ```python
 from sciphi.core import LLMProviderName, RAGProviderName
 from sciphi.interface import LLMInterfaceManager, RAGInterfaceManager
-
-if __name__ == "__main__":
+from sciphi.llm import GenerationConfig
 
   # ... Inputs ...
 
-  llm_interface = LLMInterfaceManager.get_interface_from_args(
-      provider_name=LLMProviderName(llm_provider_name),
+   # RAG Provider Settings
+   rag_interface = (
+      RAGInterfaceManager.get_interface_from_args(
+         RAGProviderName(rag_provider_name),
+         # fall back on LLM provider if no RAG provider is specified
+         api_base=rag_api_base or llm_api_base,
+         api_key=rag_api_key or llm_api_key,
+         top_k=rag_top_k,
+      )
+      if rag_enabled
+      else None
+   )
+
+   # LLM Provider Settings
+   llm_interface = LLMInterfaceManager.get_interface_from_args(
+      LLMProviderName(llm_provider_name),
+      api_key=llm_api_key,
+      api_base=llm_api_base,
+      # Currently only consumed by SciPhi
+      rag_interface=rag_interface,
+      # Consumed by single-model providers
+      # e.g. HuggingFace and vLLM
       model_name=llm_model_name,
-      # Additional args
-      max_tokens_to_sample=llm_max_tokens_to_sample,
+   )
+
+   # Typical LLM Generation Settings
+   completion_config = GenerationConfig(
       temperature=llm_temperature,
       top_k=llm_top_k,
-      # Used for re-routing requests to a remote vLLM server
-      api_base=kwargs.get("llm_api_base", None),
-  )
+      max_tokens_to_sample=llm_max_tokens_to_sample,
+      model_name=llm_model_name,
+      skip_special_tokens=llm_skip_special_tokens,
+      stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
+   )
 
-  rag_interface = RAGInterfaceManager.get_interface_from_args(
-      provider_name=RAGProviderName(rag_provider_name),
-      # RAG Server settings
-      base=rag_api_base or os.environ.get("RAG_API_BASE"),
-      token=rag_api_key or os.environ.get("RAG_API_KEY"),
-      # Additional RAG settings
-      max_context=rag_max_context,
-      top_k=rag_top_k,
-  )
+   
+   # Get the completion for a given prompt
+   completion = llm_interface.get_completion(prompt, generation_config)
 
   # ... Continue ...
 ```

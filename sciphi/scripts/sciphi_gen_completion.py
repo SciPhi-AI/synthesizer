@@ -9,6 +9,24 @@ from sciphi.interface.llm_interface_manager import LLMInterfaceManager
 from sciphi.interface.rag_interface_manager import RAGInterfaceManager
 from sciphi.llm import GenerationConfig
 
+msg_1 = """
+Inside the box, no forces act upon the particle, so the time-independent Schrödinger equation is given by:
+
+(-ħ^2 / (2m))(d^2ψ / dx^2) + V(x)ψ(x) = Eψ(x)
+
+where ħ is the reduced Planck constant, m is the mass of the particle, V(x) is the potential energy of the particle, E is the energy of the particle, and ψ(x) is the wave function of the particle.   In the case of a particle in a box, the potential energy is zero inside the box, so the equation becomes:
+
+(-ħ^2 / (2m))(d^2ψ / dx^2) = Eψ(x)
+"""
+
+msg_2 = """
+It is given by:
+
+(-γ^μ (∂ / ∂x^μ) + m)ψ(x) = 0
+
+where γ^μ are the Dirac matrices, x^μ represents the position of the particle, m is the mass of the particle, and ψ(x) is the spinor representing the state of the particle.   
+"""
+
 
 def filter_relevant_args(dataclass_type, args_dict):
     if not is_dataclass(dataclass_type):
@@ -57,7 +75,7 @@ def main(
         model_name=llm_model_name,
     )
 
-    completion_config = GenerationConfig(
+    generation_config = GenerationConfig(
         temperature=llm_temperature,
         top_k=llm_top_k,
         max_tokens_to_sample=llm_max_tokens_to_sample,
@@ -65,7 +83,27 @@ def main(
         skip_special_tokens=llm_skip_special_tokens,
         stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
     )
-    completion = llm_interface.get_completion(query, completion_config)
+
+    conversation = [
+        {
+            "role": "system",
+            "content": "You are a helpful and informative professor. You give long, accurate, and detailed explanations to student questions. You answer EVERY question that is given to you. You retrieve data multiple times if necessary.",
+        },
+        {
+            "role": "user",
+            "content": "Return Schrodinger's equation for a particle in a box.",
+        },
+        {"role": "assistant", "content": msg_1},
+        {
+            "role": "user",
+            "content": "Excellent. Now, what about Dirac's equation for a free particle?",
+        },
+        {"role": "assistant", "content": msg_2},
+    ]
+    # completion = llm_interface.get_completion(query, generation_config)
+    completion = llm_interface.get_chat_completion(
+        conversation, generation_config
+    )
     print(f"Output Completion = {completion}")
 
 

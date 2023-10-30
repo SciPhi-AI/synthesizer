@@ -3,7 +3,7 @@ import logging
 
 from sciphi.interface.base import LLMInterface, LLMProviderName
 from sciphi.interface.llm_interface_manager import llm_interface
-from sciphi.llm import HuggingFaceConfig, HuggingFaceLLM
+from sciphi.llm import HuggingFaceConfig, HuggingFaceLLM, GenerationConfig
 
 logger = logging.getLogger(__name__)
 
@@ -27,6 +27,14 @@ class HuggingFaceLLMInterface(LLMInterface):
             f"Requesting completion from local HuggingFace with model={self._model.config.model_name} and prompt={prompt}"
         )
         return self.model.get_instruct_completion(prompt)
+
+    def get_chat_completion(
+        self, conversation: list[dict], generation_config: GenerationConfig
+    ) -> str:
+        """Get a chat completion from the local HuggingFace provider."""
+        raise NotImplementedError(
+            "Chat completion not yet implemented for OpenAI."
+        )
 
     @property
     def model(self) -> HuggingFaceLLM:

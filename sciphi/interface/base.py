@@ -50,6 +50,13 @@ class LLMInterface(ABC):
             for prompt in prompts
         ]
 
+    @abstractmethod
+    def get_chat_completion(
+        self, conversation: List[dict], generation_config: GenerationConfig
+    ) -> str:
+        """Abstract method to get a completion from the provider."""
+        pass
+
 
 @dataclass
 class RAGProviderConfig(ABC):
