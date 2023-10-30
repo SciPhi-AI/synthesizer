@@ -55,6 +55,8 @@ class GenerationConfig(ABC):
     functions: Optional[list[dict]] = None
     skip_special_tokens: bool = False
     stop_token: Optional[str] = None
+    num_beams: int = 1
+    do_sample: bool = True
 
 
 class LLM(ABC):

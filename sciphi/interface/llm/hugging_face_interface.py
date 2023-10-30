@@ -33,7 +33,7 @@ class HuggingFaceLLMInterface(LLMInterface):
     ) -> str:
         """Get a chat completion from the local HuggingFace provider."""
         raise NotImplementedError(
-            "Chat completion not yet implemented for OpenAI."
+            "Chat completion not yet implemented for HuggingFace."
         )
 
     @property
