@@ -42,22 +42,13 @@ class LLMInterfaceManager(InterfaceManager):
             f"Loaded the following provider registry: {LLMInterfaceManager.provider_registry}"
         )
         provider = LLMInterfaceManager.provider_registry.get(provider_name)
-
         if not provider:
             raise ValueError(f"Provider '{provider_name}' not supported.")
 
-        if (
-            provider.models
-            and ModelName(config.model_name) not in provider.models
-        ):
-            raise ValueError(
-                f"Model '{config.model_name}' not supported by provider '{provider_name}'."
-            )
-
         logger.info(
-            f"Using provider '{provider_name}' with model '{config.model_name}' and configuration '{config}'."
+            f"Using provider '{provider_name}' with  and configuration '{config}'."
         )
-        return provider.llm_class(config)
+        return provider.llm_class(config, **kwargs)
 
     @staticmethod
     def get_interface_from_args(
@@ -69,10 +60,10 @@ class LLMInterfaceManager(InterfaceManager):
         config = LLMConfigManager.get_config_for_provider(
             provider_name
         ).create(**kwargs)
-
         return LLMInterfaceManager.get_interface(
             provider_name=provider_name,
             config=config,
+            **kwargs,
         )
 
 

@@ -2,6 +2,7 @@
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, fields
 from enum import Enum
+from typing import Optional
 
 from sciphi.core import LLMProviderName
 
@@ -33,7 +34,6 @@ class ModelName(Enum):
 @dataclass
 class LLMConfig(ABC):
     llm_provider_name: LLMProviderName
-    model_name: str
 
     version: str = "0.1.0"
 
@@ -44,6 +44,16 @@ class LLMConfig(ABC):
         return cls(**filtered_kwargs)
 
 
+@dataclass
+class GenerationConfig(ABC):
+    temperature: float = 0.1
+    top_p: float = 1.0
+    top_k: int = 100
+    max_tokens_to_sample: int = 1_024
+    model_name: Optional[str] = None
+    stop_token: Optional[str] = None
+
+
 class LLM(ABC):
     """An abstract class to provide a common interface for LLMs."""
 
@@ -51,7 +61,7 @@ class LLM(ABC):
         self,
         config: LLMConfig,
     ) -> None:
-        self.config = config
+        pass
 
     @abstractmethod
     def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
