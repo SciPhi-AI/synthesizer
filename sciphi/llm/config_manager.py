@@ -29,9 +29,7 @@ class LLMConfigManager:
         config_cls: Type[LLMConfig],
     ) -> Type[LLMConfig]:
         """Register a provider with the LLMConfigManager."""
-        LLMConfigManager.config_registry[
-            config_cls.llm_provider_name
-        ] = config_cls
+        LLMConfigManager.config_registry[config_cls.provider_name] = config_cls
         return config_cls
 
 

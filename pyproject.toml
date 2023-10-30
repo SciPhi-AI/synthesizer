@@ -7,7 +7,7 @@ write_to = "sciphi/_version.py"
 
 [tool.poetry]
 name = "sciphi"
-version = "0.1.5"
+version = "0.1.6"
 description = "SciPhi: A Framework for LLM Powered Data."
 authors = ["Owen Colegrove <owen@sciphi.ai>"]
 license = "Apache-2.0"
@@ -37,20 +37,13 @@ anthropic = { version = "^0.3.10", optional = true }
 accelerate = { version = "^0.23.0", optional = true }
 datasets = { version = "^2.14.5", optional = true }
 transformers = { version = "^4.33.1", optional = true }
-# llama-cpp 
-llama-cpp-python = { version = "^0.2.11", optional = true }
-# llama-index
-llama-index = { version = "^0.8.29.post1", optional = true }
 # vllm
-# accelerate = { version = "^0.23.0", optional = true } ## Defined above in 'hf'
 vllm = { version = "0.2.0", optional = true }
 blingfire = "^0.1.8"
 
 [tool.poetry.extras]
 anthropic_support = ["anthropic"]
 hf_support = ["accelerate", "datasets", "torch", "transformers"]
-llama_cpp_support = ["llama-cpp-python"]
-llama_index_support = ["llama-index"]
 vllm_support = ["accelerate", "torch", "vllm"]
 
 all = [
@@ -72,8 +65,6 @@ all_with_extras = [
     "torch",
     "transformers",
     # More Extras
-    "llama-index",
-    "llama-cpp-python",
     "vllm",
 ]
 # To export dependencies to pip, use:

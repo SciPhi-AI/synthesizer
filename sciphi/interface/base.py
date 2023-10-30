@@ -4,14 +4,14 @@ from dataclasses import dataclass
 from typing import Any, List, Type
 
 from sciphi.core import LLMProviderName, RAGProviderName
-from sciphi.llm import LLM, LLMConfig, ModelName
+from sciphi.llm import LLM, GenerationConfig, LLMConfig, ModelName
 
 
 @dataclass
 class LLMProviderConfig:
     """A dataclass to hold the configuration for a provider."""
 
-    llm_provider_name: LLMProviderName
+    provider_name: LLMProviderName
     models: List[ModelName]
     llm_class: Type["LLMInterface"]
 
@@ -19,7 +19,7 @@ class LLMProviderConfig:
 class LLMInterface(ABC):
     """An abstract class to provide a common interface for LLM providers."""
 
-    llm_provider_name: LLMProviderName
+    provider_name: LLMProviderName
     supported_models: list[ModelName] = []
 
     def __init__(
@@ -35,21 +35,28 @@ class LLMInterface(ABC):
         pass
 
     @abstractmethod
-    def get_completion(self, prompt: str) -> str:
+    def get_completion(
+        self, prompt: str, generation_config: GenerationConfig
+    ) -> str:
         """Abstract method to get a completion from the provider."""
         pass
 
-    def get_batch_completion(self, prompts: List[str]) -> List[str]:
+    def get_batch_completion(
+        self, prompts: List[str], generation_config: GenerationConfig
+    ) -> List[str]:
         """Get a batch of completions from the provider."""
-        return [self.get_completion(prompt) for prompt in prompts]
+        return [
+            self.get_completion(prompt, generation_config)
+            for prompt in prompts
+        ]
 
 
 @dataclass
 class RAGProviderConfig(ABC):
     """An abstract class to hold the configuration for a RAG provider."""
 
-    rag_provider_name: RAGProviderName
-    base: str
+    provider_name: RAGProviderName
+    api_base: str
     api_key: str
     max_context: int = 2_048
 
@@ -57,7 +64,7 @@ class RAGProviderConfig(ABC):
 class RAGInterface(ABC):
     """An abstract class to provide a common interface for RAG providers."""
 
-    rag_provider_name: RAGProviderName
+    provider_name: RAGProviderName
     RAG_DISABLED_MESSAGE: str = "Not Available."
 
     def __init__(

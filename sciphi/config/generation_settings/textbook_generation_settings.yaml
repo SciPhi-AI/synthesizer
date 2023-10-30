@@ -18,6 +18,9 @@ llm_model_name: gpt-3.5-turbo
 llm_temperature: 0.1
 llm_max_tokens_to_sample: 1024
 llm_top_k: 100
+llm_api_base: null
+llm_api_key: null
+llm_skip_special_tokens: true
 ## sampling config
 max_related_context_to_sample: 2_096
 max_prev_snippet_to_sample: 2_096

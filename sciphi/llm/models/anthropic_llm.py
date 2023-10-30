@@ -2,7 +2,7 @@
 from dataclasses import dataclass
 
 from sciphi.core import LLMProviderName
-from sciphi.llm.base import LLM, LLMConfig
+from sciphi.llm.base import LLM, GenerationConfig, LLMConfig
 from sciphi.llm.config_manager import model_config
 
 
@@ -12,10 +12,8 @@ class AnthropicConfig(LLMConfig):
     """Configuration for Anthropic models."""
 
     # Base
-    llm_provider_name: LLMProviderName = LLMProviderName.ANTHROPIC
+    provider_name: LLMProviderName = LLMProviderName.ANTHROPIC
     model_name: str = "claude-2"
-    temperature: float = 0.7
-    top_p: float = 1.0
 
     # Anthropic Extras
     do_stream: bool = False
@@ -29,18 +27,17 @@ class AnthropicLLM(LLM):
         self,
         config: AnthropicConfig,
     ) -> None:
-        super().__init__(
-            config,
-        )
+        super().__init__()
         try:
             from anthropic import AI_PROMPT, HUMAN_PROMPT, Anthropic
         except ImportError:
             raise ImportError(
-                "Please install the anthropic package before attempting to run with an Anthropic model. This can be accomplished via `poetry install -E anthropic_support, ...OTHER_DEPENDENCIES_HERE`."
+                "Please install the anthropic package before attempting to run with an Anthropic model. This can be accomplished via `pip install anthropic`."
             )
 
         self.raw_prompt = HUMAN_PROMPT + " {instruction} " + AI_PROMPT
         self.anthropic = Anthropic()
+        self.config: AnthropicConfig = config
 
         if not self.anthropic.api_key:
             raise ValueError(
@@ -52,25 +49,30 @@ class AnthropicLLM(LLM):
             raise ValueError(
                 "The provided config must be an instance of AnthropicConfig."
             )
-        self.config: AnthropicConfig = config
 
-    def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
+    def get_chat_completion(
+        self,
+        messages: list[dict[str, str]],
+        generation_config: GenerationConfig,
+    ) -> str:
         """Get a chat completion from the remote Anthropic API."""
         raise NotImplementedError(
             "Chat completion is not yet supported for Anthropic."
         )
 
-    def get_instruct_completion(self, instruction: str) -> str:
+    def get_instruct_completion(
+        self, prompt: str, generation_config: GenerationConfig
+    ) -> str:
         """Get an instruction completion from the remote Anthropic API."""
 
-        formatted_prompt = self.raw_prompt.format(instruction=instruction)
+        formatted_prompt = self.raw_prompt.format(instruction=prompt)
         # TODO - Why does anthropic completion endpoint create a type error?
         completion = self.anthropic.completions.create(
-            model=self.config.model_name,
+            model=generation_config.model_name,
             prompt=formatted_prompt,
-            temperature=self.config.temperature,
-            top_p=self.config.top_p,
-            max_tokens_to_sample=self.config.max_tokens_to_sample,
-            stream=self.config.do_stream,
+            temperature=generation_config.temperature,
+            top_p=generation_config.top_p,
+            max_tokens_to_sample=generation_config.max_tokens_to_sample,
+            stream=generation_config.do_stream,
         )  # type: ignore
         return completion.completion

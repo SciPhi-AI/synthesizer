@@ -15,8 +15,6 @@ With SciPhi, users can:
 
 ## Fast Setup
 
-### Bare Minimum
-
 ```bash
 pip install sciphi
 ```
@@ -31,8 +29,6 @@ pip install 'sciphi[all_with_extras]'
 - **All (no vLLM)**: `'sciphi[all]'`
 - **Anthropic**: `'sciphi[anthropic_support]'`
 - **HF (includes Torch)**: `'sciphi[hf_support]'`
-- **Llama-CPP**: `'sciphi[llama_cpp_support]'`
-- **Llama-Index**: `'sciphi[llama_index_support]'`
 - **VLLM (includes Torch)**: `'sciphi[vllm_support]'`
 
 ### **Setup Your Environment**
@@ -41,15 +37,17 @@ Navigate to your working directory and use a text editor to adjust the `.env` fi
 
 ```bash
 # Proprietary Providers
-OPENAI_API_KEY=your_openai_key
-ANTHROPIC_API_KEY=your_anthropic_key
+OPENAI_API_KEY=your_openai_api_key
+ANTHROPIC_API_KEY=your_anthropic_api_key
 # Open Source Providers
 HF_TOKEN=your_huggingface_token
 # vLLM
-VLLM_API_KEY=your_vllm_token
+VLLM_API_KEY=your_vllm_api_key # for remote vLLM use.
+# SciPhi
+SCIPHI_API_KEY=your_sciphi_api_key # for remote vLLM use.
 # RAG Provider Settings
-RAG_API_BASE=your_rag_server_base_url
-RAG_API_KEY=your_rag_server_key
+RAG_API_KEY=your_rag_server_api_key
+RAG_API_BASE=your_rag_api_base_url
 ```
 
 After entering your settings, ensure you save and exit the file.
@@ -104,7 +102,7 @@ This is an effort to democratize access to top-tier textbooks. This can readily 
 2. **Textbook Generation**:
 
    ```bash
-   python -m sciphi.scripts.textbook_generator run --toc_dir=sciphi/data/sample/table_of_contents --rag-enabled=False
+   python -m sciphi.scripts.textbook_generator run --toc_dir=sciphi/data/sample/table_of_contents --rag-enabled=False --filter_existing_books=False
    ```
 
    Replace `dry_run` in step 1 with `run` to generate one textbook for each table of contents in the target directory. See a [sample textbook here.](sciphi/data/sample/textbooks/Aerodynamics_of_Viscous_Fluids.md)
@@ -114,7 +112,7 @@ This is an effort to democratize access to top-tier textbooks. This can readily 
    Prepare your table of contents and save it into `$PWD/toc/test.yaml`. Then, run the following command:
 
    ```bash
-   python -m sciphi.scripts.generate_textbook run --toc_dir=toc --output_dir=books --data_dir=$PWD
+   python -m sciphi.scripts.textbook_generator run --toc_dir=toc --output_dir=books --data_dir=$PWD
    ```
 
    For help with formatting your table of contents, [see here](https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/data/library_of_phi/table_of_contents/Aerodynamics_of_Viscous_Fluids.yaml).
@@ -162,7 +160,7 @@ if __name__ == "__main__":
       temperature=llm_temperature,
       top_k=llm_top_k,
       # Used for re-routing requests to a remote vLLM server
-      server_base=kwargs.get("llm_server_base", None),
+      api_base=kwargs.get("llm_api_base", None),
   )
 
   rag_interface = RAGInterfaceManager.get_interface_from_args(
@@ -178,7 +176,7 @@ if __name__ == "__main__":
   # ... Continue ...
 ```
 
-Supported LLM providers include OpenAI, Anthropic, HuggingFace, and vLLM. For RAG database access, configure your own or use the SciPhi **gigaRAG API**.
+Supported LLM providers include OpenAI, Anthropic, HuggingFace, and vLLM. For RAG database access, configure your own or use the SciPhi **World Databasef API**.
 
 ### Setting Up Locally
 

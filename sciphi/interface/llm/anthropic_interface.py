@@ -1,14 +1,19 @@
 """A module for interfacing with the Anthropic API"""
 from sciphi.interface.base import LLMInterface, LLMProviderName
 from sciphi.interface.llm_interface_manager import llm_interface
-from sciphi.llm import AnthropicConfig, AnthropicLLM, ModelName
+from sciphi.llm import (
+    AnthropicConfig,
+    AnthropicLLM,
+    GenerationConfig,
+    ModelName,
+)
 
 
 @llm_interface
 class AnthropicLLMInterface(LLMInterface):
     """A class to interface with the Anthropic API."""
 
-    llm_provider_name = LLMProviderName.ANTHROPIC
+    provider_name = LLMProviderName.ANTHROPIC
     supported_models = [
         ModelName.CLAUDE_INSTANT_1,
         ModelName.CLAUDE_2,
@@ -16,16 +21,20 @@ class AnthropicLLMInterface(LLMInterface):
 
     def __init__(
         self,
-        config: AnthropicConfig = AnthropicConfig(),
+        config: AnthropicConfig,
+        *args,
+        **kwargs,
     ) -> None:
         super()
         self._model = AnthropicLLM(
             config,
         )
 
-    def get_completion(self, prompt: str) -> str:
+    def get_completion(
+        self, prompt: str, generation_config: GenerationConfig
+    ) -> str:
         """Get a completion from the remote Anthropic provider."""
-        return self.model.get_instruct_completion(prompt)
+        return self.model.get_instruct_completion(prompt, generation_config)
 
     @property
     def model(self) -> AnthropicLLM:

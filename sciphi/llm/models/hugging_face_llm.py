@@ -13,7 +13,7 @@ class HuggingFaceConfig(LLMConfig):
     """Configuration for local HuggingFace models."""
 
     # Base
-    llm_provider_name: LLMProviderName = LLMProviderName.HUGGING_FACE
+    provider_name: LLMProviderName = LLMProviderName.HUGGING_FACE
     model_name: str = "gpt2"
     temperature: float = 0.7
     top_p: float = 1.0
@@ -47,7 +47,7 @@ class HuggingFaceLLM(LLM):
             )
         except ImportError:
             raise ImportError(
-                "Please install the torch and transformers packages before attempting to run with a HuggingFace model. This can be accomplished via `poetry install -E hf_support, ...OTHER_DEPENDENCIES_HERE`."
+                "Please install the torch and transformers packages before attempting to run with a HuggingFace model. This can be accomplished via `pip install transformers`."
             )
 
         super().__init__(

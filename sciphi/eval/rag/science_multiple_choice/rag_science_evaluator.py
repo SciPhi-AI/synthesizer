@@ -75,7 +75,11 @@ class ScienceMultipleChoiceEvaluator(Evaluator):
     def initialize_prompts(self):
         contexts = (
             self.rag_interface.get_contexts(
-                self.evals[ScienceMultipleChoiceEvaluator.PROMPT_FIELD]
+                list(
+                    self.evals[
+                        ScienceMultipleChoiceEvaluator.PROMPT_FIELD
+                    ].values
+                )
             )
             if self.rag_interface
             else [ScienceMultipleChoiceEvaluator.RAG_DISABLED_RESPONSE]

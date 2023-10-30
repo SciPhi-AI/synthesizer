@@ -13,11 +13,12 @@ logger = logging.getLogger(__name__)
 class vLLMInterface(LLMInterface):
     """A class to interface with local vLLM models."""
 
-    llm_provider_name = LLMProviderName.VLLM
+    provider_name = LLMProviderName.VLLM
+    model_name = "SciPhi/SciPhi-Self-RAG-Mistral-7B-32k"
 
     def __init__(
         self,
-        config: vLLMConfig = vLLMConfig(),
+        config: vLLMConfig,
     ) -> None:
         self._model = vLLM(config)
 

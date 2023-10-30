@@ -12,11 +12,11 @@ logger = logging.getLogger(__name__)
 class HuggingFaceLLMInterface(LLMInterface):
     """A class to interface with local HuggingFace models."""
 
-    llm_provider_name = LLMProviderName.HUGGING_FACE
+    provider_name = LLMProviderName.HUGGING_FACE
 
     def __init__(
         self,
-        config: HuggingFaceConfig = HuggingFaceConfig(),
+        config: HuggingFaceConfig,
     ) -> None:
         self._model = HuggingFaceLLM(config)
 

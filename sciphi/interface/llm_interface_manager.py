@@ -8,7 +8,7 @@ from sciphi.interface.base import (
     LLMProviderConfig,
     LLMProviderName,
 )
-from sciphi.llm import LLMConfig, LLMConfigManager, ModelName
+from sciphi.llm import LLMConfig, LLMConfigManager
 
 logger = logging.getLogger(__name__)
 
@@ -24,9 +24,9 @@ class LLMInterfaceManager(InterfaceManager):
     ) -> Type[LLMInterface]:
         """Register a provider with the LLMInterfaceManager."""
         LLMInterfaceManager.provider_registry[
-            provider.llm_provider_name
+            provider.provider_name
         ] = LLMProviderConfig(
-            provider.llm_provider_name, provider.supported_models, provider
+            provider.provider_name, provider.supported_models, provider
         )
         return provider
 
@@ -42,22 +42,13 @@ class LLMInterfaceManager(InterfaceManager):
             f"Loaded the following provider registry: {LLMInterfaceManager.provider_registry}"
         )
         provider = LLMInterfaceManager.provider_registry.get(provider_name)
-
         if not provider:
             raise ValueError(f"Provider '{provider_name}' not supported.")
 
-        if (
-            provider.models
-            and ModelName(config.model_name) not in provider.models
-        ):
-            raise ValueError(
-                f"Model '{config.model_name}' not supported by provider '{provider_name}'."
-            )
-
         logger.info(
-            f"Using provider '{provider_name}' with model '{config.model_name}' and configuration '{config}'."
+            f"Using provider '{provider_name}' with  and configuration '{config}'."
         )
-        return provider.llm_class(config)
+        return provider.llm_class(config, **kwargs)
 
     @staticmethod
     def get_interface_from_args(
@@ -73,7 +64,9 @@ class LLMInterfaceManager(InterfaceManager):
         return LLMInterfaceManager.get_interface(
             provider_name=provider_name,
             config=config,
-        )
+            *args,
+            **kwargs,
+        )  # type: ignore
 
 
 llm_interface = LLMInterfaceManager.register_provider
