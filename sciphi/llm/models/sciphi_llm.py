@@ -1,7 +1,8 @@
 """A module for managing local vLLM models."""
-
+import os
 import logging
 from dataclasses import dataclass
+from enum import Enum
 from typing import Optional
 
 from sciphi.core import LLMProviderName
@@ -9,7 +10,6 @@ from sciphi.llm import LLM, GenerationConfig, LLMConfig
 from sciphi.llm.config_manager import model_config
 
 logging.basicConfig(level=logging.INFO)
-from enum import Enum
 
 
 class SciPhiProviderMode(Enum):
@@ -48,12 +48,12 @@ class SciPhiLLM(LLM):
             SciPhiProviderMode.REMOTE,
             SciPhiProviderMode.LOCAL_VLLM,
         ]:
-            # Remtoe and local vLLM are both powered by vLLM
+            # Remote and local vLLM are both powered by vLLM
             assert self.config.sub_provider_name == LLMProviderName.VLLM
             from sciphi.llm.models.vllm_llm import (
+                vLLM,
                 vLLMConfig,
                 vLLMProviderMode,
-                vLLM,
             )
 
             if self.config.mode == SciPhiProviderMode.REMOTE:
@@ -61,7 +61,7 @@ class SciPhiLLM(LLM):
                     vLLMConfig(
                         provider_name=config.provider_name,
                         server_base=config.server_base,
-                        api_key=config.api_key,
+                        api_key=config.api_key or os.getenv("SCIPHI_API_KEY"),
                         mode=vLLMProviderMode.REMOTE,
                     ),
                 )

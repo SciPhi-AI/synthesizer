@@ -1,5 +1,6 @@
 """A module for managing local vLLM models."""
 
+import os
 import logging
 from dataclasses import dataclass
 from typing import Optional
@@ -42,7 +43,7 @@ class vLLM(LLM):
     ) -> None:
         self.config = config
         if config.mode == vLLMProviderMode.REMOTE:
-            from sciphi.llm.models.openai_llm import OpenAILLM, OpenAIConfig
+            from sciphi.llm.models.openai_llm import OpenAIConfig, OpenAILLM
 
             self.model = OpenAILLM(OpenAIConfig(config.provider_name))
         else:
@@ -66,7 +67,7 @@ class vLLM(LLM):
 
         if self.config.server_base:
             openai.api_base = self.config.server_base
-            openai.api_key = self.config.api_key
+            openai.api_key = self.config.api_key or os.getenv("VLLM_API_KEY")
             return self.model.get_instruct_completion(
                 prompt, generation_config
             )

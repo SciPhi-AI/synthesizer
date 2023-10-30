@@ -31,8 +31,6 @@ pip install 'sciphi[all_with_extras]'
 - **All (no vLLM)**: `'sciphi[all]'`
 - **Anthropic**: `'sciphi[anthropic_support]'`
 - **HF (includes Torch)**: `'sciphi[hf_support]'`
-- **Llama-CPP**: `'sciphi[llama_cpp_support]'`
-- **Llama-Index**: `'sciphi[llama_index_support]'`
 - **VLLM (includes Torch)**: `'sciphi[vllm_support]'`
 
 ### **Setup Your Environment**
@@ -41,15 +39,17 @@ Navigate to your working directory and use a text editor to adjust the `.env` fi
 
 ```bash
 # Proprietary Providers
-OPENAI_API_KEY=your_openai_key
-ANTHROPIC_API_KEY=your_anthropic_key
+OPENAI_API_KEY=your_openai_api_key
+ANTHROPIC_API_KEY=your_anthropic_api_key
 # Open Source Providers
 HF_TOKEN=your_huggingface_token
 # vLLM
-VLLM_API_KEY=your_vllm_token
+VLLM_API_KEY=your_vllm_api_key # for remote vLLM use.
+# SciPhi
+SCIPHI_API_KEY=your_sciphi_api_key # for remote vLLM use.
 # RAG Provider Settings
+RAG_API_KEY=your_rag_server_api_key
 RAG_API_BASE=your_rag_server_base_url
-RAG_API_KEY=your_rag_server_key
 ```
 
 After entering your settings, ensure you save and exit the file.
