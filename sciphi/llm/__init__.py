@@ -15,7 +15,7 @@ from sciphi.llm.embedding_helpers import (
 # from sciphi.llm.models.lite_llm import LiteLLM, LiteLLMConfig
 # from sciphi.llm.models.llama_index_llm import LLamaIndexConfig, LlamaIndexLLM
 # from sciphi.llm.models.llamacpp_llm import LlamaCPP, LLamaCPPConfig
-# from sciphi.llm.models.openai_llm import OpenAIConfig, OpenAILLM
+from sciphi.llm.models.openai_llm import OpenAIConfig, OpenAILLM
 from sciphi.llm.models.sciphi_llm import SciPhiConfig, SciPhiLLM
 
 __all__ = [
@@ -32,8 +32,8 @@ __all__ = [
     # "HuggingFaceLLM",
     # "LLamaIndexConfig",
     # "LlamaIndexLLM",
-    # "OpenAIConfig",
-    # "OpenAILLM",
+    "OpenAIConfig",
+    "OpenAILLM",
     # "LiteLLMConfig",
     # "LiteLLM",
     # "LLamaCPPConfig",

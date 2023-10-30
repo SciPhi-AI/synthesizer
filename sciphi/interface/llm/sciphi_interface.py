@@ -92,7 +92,7 @@ class SciPhiInterface(LLMInterface):
             )
             latest_completion = self.model.get_instruct_completion(
                 prompt_with_context, generation_config
-            )["choices"][0]["text"].strip()
+            ).strip()
             completion += latest_completion
 
             if not completion.endswith(SciPhiFormatter.RETRIEVAL_TOKEN):

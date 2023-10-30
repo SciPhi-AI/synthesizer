@@ -10,7 +10,7 @@ from sciphi.interface.base import (
 # from sciphi.interface.llm.litellm_interface import LiteLLMInterface
 # from sciphi.interface.llm.llama_index_interface import LlamaIndexInterface
 # from sciphi.interface.llm.llamacpp_interface import LlamaCPPInterface
-# from sciphi.interface.llm.openai_interface import OpenAILLMInterface
+from sciphi.interface.llm.openai_interface import OpenAILLMInterface
 from sciphi.interface.llm.sciphi_interface import SciPhiInterface
 
 # from sciphi.interface.llm.vllm_interface import vLLMInterface
@@ -30,7 +30,7 @@ __all__ = [
     # "AnthropicLLMInterface",
     # "HuggingFaceLLMInterface",
     # "LlamaIndexInterface",
-    # "OpenAILLMInterface",
+    "OpenAILLMInterface",
     # "vLLMInterface",
     # "LiteLLMInterface",
     # "LlamaCPPInterface",

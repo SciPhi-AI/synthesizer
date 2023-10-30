@@ -52,6 +52,8 @@ class GenerationConfig(ABC):
     max_tokens_to_sample: int = 1_024
     model_name: Optional[str] = None
     stop_token: Optional[str] = None
+    do_stream: bool = False
+    functions: Optional[list[dict]] = None
 
 
 class LLM(ABC):
@@ -59,16 +61,19 @@ class LLM(ABC):
 
     def __init__(
         self,
-        config: LLMConfig,
     ) -> None:
         pass
 
     @abstractmethod
-    def get_chat_completion(self, messages: list[dict[str, str]]) -> str:
+    def get_chat_completion(
+        self, messages: list[dict[str, str]], config: GenerationConfig
+    ) -> str:
         """Abstract method to get a chat completion from the provider."""
         pass
 
     @abstractmethod
-    def get_instruct_completion(self, instruction: str) -> str:
+    def get_instruct_completion(
+        self, instruction: str, config: GenerationConfig
+    ) -> str:
         """Abstract method to get an instruction completion from the provider."""
         pass

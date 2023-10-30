@@ -5,9 +5,7 @@ import fire
 
 from sciphi.core import LLMProviderName, RAGProviderName
 from sciphi.interface.llm.sciphi_interface import SciPhiFormatter
-from sciphi.interface.llm_interface_manager import (
-    LLMInterfaceManager,
-)
+from sciphi.interface.llm_interface_manager import LLMInterfaceManager
 from sciphi.interface.rag_interface_manager import RAGInterfaceManager
 from sciphi.llm import GenerationConfig
 
@@ -22,6 +20,7 @@ def filter_relevant_args(dataclass_type, args_dict):
 
 def main(
     api_key: Optional[str] = None,
+    llm_provider_name: str = "sciphi",
     server_base: str = "https://api.sciphi.ai/v1",
     rag_provider_name: str = "sciphi-wiki",
     rag_server_base: str = "https://api.sciphi.ai",
@@ -37,7 +36,7 @@ def main(
         top_k=rag_top_k,
     )
     sciphi_llm = LLMInterfaceManager.get_interface_from_args(
-        LLMProviderName("sciphi"),
+        LLMProviderName(llm_provider_name),
         api_key=api_key,
         server_base=server_base,
         rag_interface=rag_interface,

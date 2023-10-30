@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from typing import Any, List, Type
 
 from sciphi.core import LLMProviderName, RAGProviderName
-from sciphi.llm import LLM, LLMConfig, ModelName
+from sciphi.llm import LLM, GenerationConfig, LLMConfig, ModelName
 
 
 @dataclass
@@ -35,13 +35,20 @@ class LLMInterface(ABC):
         pass
 
     @abstractmethod
-    def get_completion(self, prompt: str) -> str:
+    def get_completion(
+        self, prompt: str, generation_config: GenerationConfig
+    ) -> str:
         """Abstract method to get a completion from the provider."""
         pass
 
-    def get_batch_completion(self, prompts: List[str]) -> List[str]:
+    def get_batch_completion(
+        self, prompts: List[str], generation_config: GenerationConfig
+    ) -> List[str]:
         """Get a batch of completions from the provider."""
-        return [self.get_completion(prompt) for prompt in prompts]
+        return [
+            self.get_completion(prompt, generation_config)
+            for prompt in prompts
+        ]
 
 
 @dataclass

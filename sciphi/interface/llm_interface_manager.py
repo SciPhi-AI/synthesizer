@@ -60,11 +60,13 @@ class LLMInterfaceManager(InterfaceManager):
         config = LLMConfigManager.get_config_for_provider(
             provider_name
         ).create(**kwargs)
+
         return LLMInterfaceManager.get_interface(
             provider_name=provider_name,
             config=config,
+            *args,
             **kwargs,
-        )
+        )  # type: ignore
 
 
 llm_interface = LLMInterfaceManager.register_provider
