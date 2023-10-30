@@ -99,6 +99,10 @@ def main(
             "content": "Excellent. Now, what about Dirac's equation for a free particle?",
         },
         {"role": "assistant", "content": msg_2},
+        {
+            "role": "user",
+            "content": query,
+        },
     ]
     # completion = llm_interface.get_completion(query, generation_config)
     completion = llm_interface.get_chat_completion(
