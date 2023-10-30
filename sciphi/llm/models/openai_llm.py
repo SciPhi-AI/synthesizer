@@ -85,6 +85,8 @@ class OpenAILLM(LLM):
 
         args = self._get_base_args(generation_config, prompt)
 
+        args["prompt"] = prompt
+
         # Create the instruction completion
         response = openai.Completion.create(**args)
         return response.choices[0].text
@@ -96,12 +98,22 @@ class OpenAILLM(LLM):
     ) -> dict:
         """Get the base arguments for the OpenAI API."""
         encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
-        return {
+        args = {
             "model": generation_config.model_name,
             "temperature": generation_config.temperature,
             "top_p": generation_config.top_p,
             "max_tokens": generation_config.max_tokens_to_sample
             - len(encoding.encode(prompt)),
             "stream": generation_config.do_stream,
-            "stop": generation_config.stop_token,
         }
+
+        # Check if were using OpenAI api with re-routed base
+        if self.config.provider_name in [
+            LLMProviderName.VLLM,
+            LLMProviderName.SCIPHI,
+        ]:
+            args["top_k"] = generation_config.top_k
+            args["skip_special_tokens"] = generation_config.skip_special_tokens
+            args["stop"] = generation_config.stop_token
+
+        return args

@@ -2,7 +2,7 @@
 from dataclasses import dataclass
 
 from sciphi.core import LLMProviderName
-from sciphi.llm.base import LLM, LLMConfig, GenerationConfig
+from sciphi.llm.base import LLM, GenerationConfig, LLMConfig
 from sciphi.llm.config_manager import model_config
 
 

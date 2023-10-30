@@ -4,8 +4,8 @@ from sciphi.interface.llm_interface_manager import llm_interface
 from sciphi.llm import (
     AnthropicConfig,
     AnthropicLLM,
-    ModelName,
     GenerationConfig,
+    ModelName,
 )
 
 

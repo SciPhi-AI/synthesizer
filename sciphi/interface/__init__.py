@@ -4,7 +4,6 @@ from sciphi.interface.base import (
     RAGInterface,
     RAGProviderConfig,
 )
-
 from sciphi.interface.llm.anthropic_interface import AnthropicLLMInterface
 
 # from sciphi.interface.llm.hugging_face_interface import HuggingFaceLLMInterface

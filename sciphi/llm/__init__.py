@@ -1,4 +1,3 @@
-from sciphi.llm.models.vllm_llm import vLLM, vLLMConfig
 from sciphi.llm.base import LLM, GenerationConfig, LLMConfig, ModelName
 from sciphi.llm.config_manager import LLMConfigManager
 from sciphi.llm.embedding_helpers import (
@@ -6,7 +5,6 @@ from sciphi.llm.embedding_helpers import (
     sectionize_documents,
     sentencize,
 )
-
 from sciphi.llm.models.anthropic_llm import AnthropicConfig, AnthropicLLM
 
 # from sciphi.llm.models.hugging_face_llm import (
@@ -18,6 +16,7 @@ from sciphi.llm.models.anthropic_llm import AnthropicConfig, AnthropicLLM
 # from sciphi.llm.models.llamacpp_llm import LlamaCPP, LLamaCPPConfig
 from sciphi.llm.models.openai_llm import OpenAIConfig, OpenAILLM
 from sciphi.llm.models.sciphi_llm import SciPhiConfig, SciPhiLLM
+from sciphi.llm.models.vllm_llm import vLLM, vLLMConfig
 
 __all__ = [
     # Base
@@ -41,8 +40,8 @@ __all__ = [
     # "LlamaCPP",
     "SciPhiConfig",
     "SciPhiLLM",
-    # "vLLMConfig",
-    # "vLLM",
+    "vLLMConfig",
+    "vLLM",
     # Embedding Helpers
     "process_documents",
     "sectionize_documents",

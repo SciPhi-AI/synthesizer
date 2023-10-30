@@ -9,6 +9,13 @@ from sciphi.llm import LLM, GenerationConfig, LLMConfig
 from sciphi.llm.config_manager import model_config
 
 logging.basicConfig(level=logging.INFO)
+from enum import Enum
+
+
+class SciPhiProviderMode(Enum):
+    REMOTE = "remote"
+    LOCAL_VLLM = "local-vllm"
+    LOCAL_HF = "local-hf"
 
 
 @model_config
@@ -18,8 +25,10 @@ class SciPhiConfig(LLMConfig):
 
     # Base
     provider_name: LLMProviderName = LLMProviderName.SCIPHI
+    sub_provider_name: LLMProviderName = LLMProviderName.VLLM
 
     # SciPhi Extras...
+    mode = SciPhiProviderMode.REMOTE
     server_base: Optional[str] = None
     api_key: Optional[str] = None
 
@@ -33,13 +42,33 @@ class SciPhiLLM(LLM):
         *args,
         **kwargs,
     ) -> None:
-        try:
-            import openai  # noqa: F401
-        except ImportError:
-            raise ImportError(
-                "Please install the openai package before attempting to run with an OpenAI model. This can be accomplished via `poetry install -E openai_support, ...OTHER_DEPENDENCIES_HERE`."
+        print("config = ", config)
+        self.config: SciPhiConfig = config
+        if self.config.mode in [
+            SciPhiProviderMode.REMOTE,
+            SciPhiProviderMode.LOCAL_VLLM,
+        ]:
+            # Remtoe and local vLLM are both powered by vLLM
+            assert self.config.sub_provider_name == LLMProviderName.VLLM
+            from sciphi.llm.models.vllm_llm import (
+                vLLMConfig,
+                vLLMProviderMode,
+                vLLM,
             )
-        self.config = config
+
+            self.model = vLLM(
+                vLLMConfig(
+                    provider_name=config.provider_name,
+                    server_base=config.server_base,
+                    api_key=config.api_key,
+                    mode=vLLMProviderMode.REMOTE,
+                ),
+            )
+        elif self.config.mode == SciPhiProviderMode.LOCAL_HF:
+            from sciphi.llm.models import hugging_face_llm
+
+        else:
+            raise ValueError(f"Invalid mode: {self.config.mode}")
 
     def get_chat_completion(
         self,
@@ -55,23 +84,7 @@ class SciPhiLLM(LLM):
         self, prompt: str, generation_config: GenerationConfig
     ) -> str:
         """Get an instruction completion from local SciPhi API."""
-        import openai
-
-        if self.config.server_base:
-            openai.api_base = self.config.server_base
-
-            return openai.Completion.create(
-                api_key=self.config.api_key,
-                model=generation_config.model_name,
-                temperature=generation_config.temperature,
-                top_p=generation_config.top_p,
-                top_k=generation_config.top_k,
-                max_tokens=generation_config.max_tokens_to_sample,
-                prompt=prompt,
-                skip_special_tokens=False,
-                stop=generation_config.stop_token,
-            )["choices"][0]["text"]
-        raise NotImplementedError("Missing server base.")
+        return self.model.get_instruct_completion(prompt, generation_config)
 
     def get_batch_instruct_completion(
         self, prompts: list[str], generation_config: GenerationConfig
