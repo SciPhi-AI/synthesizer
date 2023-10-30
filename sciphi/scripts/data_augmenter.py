@@ -10,9 +10,20 @@ import yaml
 from datasets import Dataset, load_dataset
 from tqdm import tqdm
 
-from sciphi.core import JsonlDataWriter, LLMProviderName, Prompt
+from sciphi.core import (
+    JsonlDataWriter,
+    LLMProviderName,
+    Prompt,
+    RAGProviderName,
+)
 from sciphi.core.utils import get_config_dir
-from sciphi.interface import LLMInterface, LLMInterfaceManager
+from sciphi.interface import (
+    LLMInterface,
+    LLMInterfaceManager,
+    RAGInterfaceManager,
+)
+from sciphi.interface.llm.sciphi_interface import SciPhiFormatter
+from sciphi.llm import GenerationConfig
 
 # Load environment variables
 dotenv.load_dotenv()
@@ -61,11 +72,20 @@ def main(
     shuffle: bool = True,
     n_samples: int = 100,
     # LLM Settings
-    llm_provider_name: str = "openai",
-    llm_model_name: str = "gpt-3.5-turbo",
-    llm_max_tokens_to_sample: int = 32,
-    llm_temperature: float = 0.1,
-    llm_top_k: int = 100,
+    llm_provider_name="openai",
+    llm_model_name="gpt-3.5-turbo",
+    llm_max_tokens_to_sample=32,
+    llm_temperature=0.1,
+    llm_top_k=100,
+    llm_api_base: Optional[str] = None,
+    llm_api_key: Optional[str] = None,
+    llm_skip_special_tokens: bool = False,
+    # RAG Settings
+    rag_provider_name="sciphi-wiki",
+    rag_enabled=True,
+    rag_api_base="https://api.sciphi.ai",
+    rag_api_key=None,
+    rag_top_k=10,
     # Dataset Settings
     dataset_name: Optional[str] = None,
     dataset_split: str = "train",
@@ -123,18 +143,35 @@ def main(
     writer = JsonlDataWriter(output_path)
 
     prompt = Prompt(config=config)
-
-    llm_interface = LLMInterfaceManager.get_interface_from_args(
-        provider_name=LLMProviderName(llm_provider_name),
-        model_name=llm_model_name,
-        # Additional args
-        max_tokens_to_sample=llm_max_tokens_to_sample,
-        temperature=llm_temperature,
-        top_k=llm_top_k,
-        # Used for re-routing requests to a remote vLLM server
-        =kwargs.get("llm_", None),
+    rag_interface = (
+        RAGInterfaceManager.get_interface_from_args(
+            RAGProviderName(rag_provider_name),
+            api_base=rag_api_base or llm_api_base,
+            api_key=rag_api_key or llm_api_key,
+            top_k=rag_top_k,
+        )
+        if rag_enabled
+        else None
     )
 
+    llm_interface = LLMInterfaceManager.get_interface_from_args(
+        LLMProviderName(llm_provider_name),
+        api_key=llm_api_key,
+        api_base=llm_api_base,
+        # Currently only consumed by SciPhi
+        rag_interface=rag_interface,
+        # Consumed by single-load providers
+        model_name=llm_model_name,
+    )
+
+    llm_generation_config = GenerationConfig(
+        temperature=llm_temperature,
+        top_k=llm_top_k,
+        max_tokens_to_sample=llm_max_tokens_to_sample,
+        model_name=llm_model_name,
+        skip_special_tokens=llm_skip_special_tokens,
+        stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
+    )
     # Prepare the samples
     dataset: Dataset = load_dataset(dataset_name)[dataset_split]
 
@@ -148,7 +185,9 @@ def main(
         formatted_prompt = prompt.format(
             dataset_entry=entry, **user_supplied_inputs
         )
-        completion = llm_interface.get_completion(formatted_prompt)
+        completion = llm_interface.get_completion(
+            formatted_prompt, llm_generation_config
+        )
         if config["output_format"] == "jsonl":
             try:
                 data = json.loads(completion)

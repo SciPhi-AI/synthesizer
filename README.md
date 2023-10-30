@@ -178,7 +178,7 @@ if __name__ == "__main__":
   # ... Continue ...
 ```
 
-Supported LLM providers include OpenAI, Anthropic, HuggingFace, and vLLM. For RAG database access, configure your own or use the SciPhi **gigaRAG API**.
+Supported LLM providers include OpenAI, Anthropic, HuggingFace, and vLLM. For RAG database access, configure your own or use the SciPhi **World Databasef API**.
 
 ### Setting Up Locally
 

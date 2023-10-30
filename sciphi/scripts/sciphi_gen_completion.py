@@ -19,13 +19,6 @@ def filter_relevant_args(dataclass_type, args_dict):
 
 
 def main(
-    # api_key: Optional[str] = None,
-    # llm_provider_name: str = "sciphi",
-    # llm_api_base: str = "https://api.sciphi.ai/v1",
-    # rag_provider_name: str = "sciphi-wiki",
-    # rag_api_base: str = "https://api.sciphi.ai",
-    # rag_top_k: int = 10,
-    # rag_api_key: Optional[str] = None,
     query: str = "Who is the president of the United States?",
     llm_provider_name="sciphi",
     llm_model_name="SciPhi/SciPhi-Self-RAG-Mistral-7B-32k",
@@ -41,6 +34,7 @@ def main(
     rag_top_k=10,
     rag_api_base="https://api.sciphi.ai",
     rag_api_key=None,
+    *args,
     **kwargs,
 ):
     rag_interface = (
@@ -53,7 +47,7 @@ def main(
         if rag_enabled
         else None
     )
-    sciphi_llm = LLMInterfaceManager.get_interface_from_args(
+    llm_interface = LLMInterfaceManager.get_interface_from_args(
         LLMProviderName(llm_provider_name),
         api_key=llm_api_key,
         api_base=llm_api_base,
@@ -71,9 +65,7 @@ def main(
         skip_special_tokens=llm_skip_special_tokens,
         stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
     )
-    print("completion_config = ", completion_config)
-    completion = sciphi_llm.get_completion(query, completion_config)
-    print("completion = ", completion)
+    completion = llm_interface.get_completion(query, completion_config)
 
 
 if __name__ == "__main__":

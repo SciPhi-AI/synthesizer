@@ -56,23 +56,35 @@ def wiki_search_api(
     rag_api_base: str,
     rag_api_key: str,
     top_k=10,
+    batch_size=64,
 ) -> dict:
     """
     Queries the search API with the provided credentials and query.
     The expected output is a JSON response containing the top_k examples.
     """
-    # Make the GET request with basic authentication and the query parameter
-    response = requests.get(
-        f"{rag_api_base}/search",
-        params={"queries": queries, "top_k": top_k},
-        headers={"Authorization": f"Bearer {rag_api_key}"},
-    )
 
-    if response.status_code == 200:
-        return response.json()  # Return the JSON response
-    if "detail" in response.json():
-        raise ValueError(
-            f'Unexpected response from API - {response.json()["detail"]}'
+    def _send_request(batch_queries: list[str]) -> dict:
+        """Helper function to send the request."""
+        response = requests.post(
+            f"{rag_api_base}/search",
+            json={"queries": batch_queries, "top_k": top_k},
+            headers={"Authorization": f"Bearer {rag_api_key}"},
         )
-    else:
-        raise ValueError(f"Unexpected response from API - {response.json()}")
+        if response.status_code != 200:
+            if "detail" in response.json():
+                raise ValueError(
+                    f'Unexpected response from API - {response.json()["detail"]}'
+                )
+            else:
+                raise ValueError(
+                    f"Unexpected response from API - {response.json()}"
+                )
+        return response.json()
+
+    # Break the list of queries into chunks of 'batch_size'
+    results = []
+    for i in range(0, len(queries), batch_size):
+        batch = queries[i : i + batch_size]
+        results.extend(_send_request(batch))
+
+    return results

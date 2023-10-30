@@ -7,10 +7,10 @@ import fire
 from tqdm import tqdm
 
 from sciphi.core import LLMProviderName, RAGProviderName
-from sciphi.llm import GenerationConfig
 from sciphi.eval.rag import ScienceMultipleChoiceEvaluator
 from sciphi.interface import LLMInterfaceManager, RAGInterfaceManager
 from sciphi.interface.llm.sciphi_interface import SciPhiFormatter
+from sciphi.llm import GenerationConfig
 
 # Load environment variables
 dotenv.load_dotenv()
@@ -29,45 +29,24 @@ def main(
     llm_top_k=100,
     llm_api_base: Optional[str] = None,
     llm_api_key: Optional[str] = None,
+    llm_skip_special_tokens: bool = False,
     # RAG Settings
     rag_provider_name="sciphi-wiki",
     rag_enabled=True,
-    rag_api_base=None,
+    rag_api_base="https://api.sciphi.ai",
     rag_api_key=None,
     rag_top_k=10,
     # Evaluation Settings
     n_few_shot=3,
     n_samples=100,
     evals_to_run="science_multiple_choice",
+    *args,
     **kwargs,
 ):
-    # llm_interface = LLMInterfaceManager.get_interface_from_args(
-    #     provider_name=LLMProviderName(llm_provider_name),
-    #     model_name=llm_model_name,
-    #     # Additional args
-    #     max_tokens_to_sample=llm_max_tokens_to_sample,
-    #     temperature=llm_temperature,
-    #     top_k=llm_top_k,
-    #     # Used for re-routing requests to a remote vLLM server
-    #     api_base=kwargs.get("llm_api_base", None),
-    # )
-
-    # rag_interface = (
-    #     RAGInterfaceManager.get_interface_from_args(
-    #         provider_name=RAGProviderName(rag_provider_name),
-    #         base=rag_api_base or os.environ.get("RAG_API_BASE"),
-    #         token=rag_api_key or os.environ.get("RAG_API_KEY"),
-    #         max_context=rag_max_context,
-    #         top_k=rag_top_k,
-    #     )
-    #     if rag_enabled
-    #     else None
-    # )
-
     rag_interface = (
         RAGInterfaceManager.get_interface_from_args(
-            provider_name=RAGProviderName(rag_provider_name),
-            api_base=rag_api_base,
+            RAGProviderName(rag_provider_name),
+            api_base=rag_api_base or llm_api_base,
             api_key=rag_api_key or llm_api_key,
             top_k=rag_top_k,
         )
@@ -76,21 +55,20 @@ def main(
     )
     llm_interface = LLMInterfaceManager.get_interface_from_args(
         LLMProviderName(llm_provider_name),
-        api_base=llm_api_base,
         api_key=llm_api_key,
+        api_base=llm_api_base,
         # Currently only consumed by SciPhi
         rag_interface=rag_interface,
-        # Consumed by providers which can only serve one LLM
-        # e.g. HuggingFace / vLLM local.
+        # Consumed by single-load providers
         model_name=llm_model_name,
     )
 
-    completion_config = GenerationConfig(
+    llm_generation_config = GenerationConfig(
         temperature=llm_temperature,
         top_k=llm_top_k,
         max_tokens_to_sample=llm_max_tokens_to_sample,
-        # **filter_relevant_args(GenerationConfig, kwargs),
-        # for RAG implementations
+        model_name=llm_model_name,
+        skip_special_tokens=llm_skip_special_tokens,
         stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
     )
 
@@ -118,7 +96,8 @@ def main(
                 f"Processing sample {i} with prompt:\n{evaluator.prompts[i]}"
             )
             response = llm_interface.get_completion(
-                prompt=evaluator.prompts[i]
+                prompt=evaluator.prompts[i],
+                generation_config=llm_generation_config,
             )
             counts += int(evaluator.evaluate_response(response, i))
         logger.info(f"Final Accuracy={(counts) / (i + 1)}")
