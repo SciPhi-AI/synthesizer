@@ -56,14 +56,15 @@ class SciPhiLLM(LLM):
                 vLLM,
             )
 
-            self.model = vLLM(
-                vLLMConfig(
-                    provider_name=config.provider_name,
-                    server_base=config.server_base,
-                    api_key=config.api_key,
-                    mode=vLLMProviderMode.REMOTE,
-                ),
-            )
+            if self.config.mode == SciPhiProviderMode.REMOTE:
+                self.model = vLLM(
+                    vLLMConfig(
+                        provider_name=config.provider_name,
+                        server_base=config.server_base,
+                        api_key=config.api_key,
+                        mode=vLLMProviderMode.REMOTE,
+                    ),
+                )
         elif self.config.mode == SciPhiProviderMode.LOCAL_HF:
             from sciphi.llm.models import hugging_face_llm
 
