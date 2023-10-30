@@ -40,7 +40,10 @@ class OpenAILLM(LLM):
             raise ImportError(
                 "Please install the openai package before attempting to run with an OpenAI model. This can be accomplished via `poetry install -E openai_support, ...OTHER_DEPENDENCIES_HERE`."
             )
-        if not openai.api_key:
+        if (
+            config.provider_name == LLMProviderName.OPENAI
+            and not openai.api_key
+        ):
             raise ValueError(
                 "OpenAI API key not found. Please set the OPENAI_API_KEY environment variable."
             )
