@@ -1,16 +1,15 @@
-from dataclasses import dataclass, fields, is_dataclass
+from dataclasses import fields, is_dataclass
 from typing import Optional
 
 import fire
 
 from sciphi.core import LLMProviderName, RAGProviderName
+from sciphi.interface.llm.sciphi_interface import SciPhiFormatter
 from sciphi.interface.llm_interface_manager import (
-    LLMConfigManager,
     LLMInterfaceManager,
 )
 from sciphi.interface.rag_interface_manager import RAGInterfaceManager
 from sciphi.llm import GenerationConfig
-from sciphi.interface.llm.sciphi_interface import SciPhiFormatter
 
 # python sciphi/scripts/test_sciphi.py --server_base=https://api.sciphi.ai/v1 --api_key=55c51253002ed4f7d1dd3afbe2a72635 --model_name=selfrag/selfrag_llama2_7b --query="What is general relativity?" --rag_server_base=https://api.sciphi.ai
 

@@ -8,7 +8,7 @@ from sciphi.interface.base import (
     LLMProviderConfig,
     LLMProviderName,
 )
-from sciphi.llm import LLMConfig, LLMConfigManager, ModelName
+from sciphi.llm import LLMConfig, LLMConfigManager
 
 logger = logging.getLogger(__name__)
 
