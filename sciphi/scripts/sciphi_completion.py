@@ -23,7 +23,6 @@ def filter_relevant_args(dataclass_type, args_dict):
 def main(
     api_key: Optional[str] = None,
     server_base: str = "https://api.sciphi.ai/v1",
-    # llm_provider_name="sciphi",
     rag_provider_name: str = "sciphi-wiki",
     rag_server_base: str = "https://api.sciphi.ai",
     rag_top_k: int = 10,
