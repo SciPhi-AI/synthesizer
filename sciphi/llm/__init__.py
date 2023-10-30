@@ -14,6 +14,7 @@ from sciphi.llm.models.lite_llm import LiteLLM, LiteLLMConfig
 from sciphi.llm.models.llama_index_llm import LLamaIndexConfig, LlamaIndexLLM
 from sciphi.llm.models.llamacpp_llm import LlamaCPP, LLamaCPPConfig
 from sciphi.llm.models.openai_llm import OpenAIConfig, OpenAILLM
+from sciphi.llm.models.sciphi_llm import SciPhiConfig, SciPhiLLM
 from sciphi.llm.models.vllm_llm import vLLM, vLLMConfig
 
 __all__ = [
@@ -31,12 +32,14 @@ __all__ = [
     "LlamaIndexLLM",
     "OpenAIConfig",
     "OpenAILLM",
-    "vLLMConfig",
-    "vLLM",
     "LiteLLMConfig",
     "LiteLLM",
     "LLamaCPPConfig",
     "LlamaCPP",
+    "SciPhiConfig",
+    "SciPhiLLM",
+    "vLLMConfig",
+    "vLLM",
     # Embedding Helpers
     "process_documents",
     "sectionize_documents",

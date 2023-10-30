@@ -50,7 +50,7 @@ class RAGProviderConfig(ABC):
 
     rag_provider_name: RAGProviderName
     base: str
-    token: str
+    api_key: str
     max_context: int = 2_048
 
 

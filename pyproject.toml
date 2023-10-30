@@ -7,7 +7,7 @@ write_to = "sciphi/_version.py"
 
 [tool.poetry]
 name = "sciphi"
-version = "0.1.4"
+version = "0.1.5"
 description = "SciPhi: A Framework for LLM Powered Data."
 authors = ["Owen Colegrove <owen@sciphi.ai>"]
 license = "Apache-2.0"

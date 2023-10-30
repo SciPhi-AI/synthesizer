@@ -33,7 +33,7 @@ class SciPhiWikiRAGInterface(RAGInterface):
         raw_contexts = wiki_search_api(
             prompts,
             self.config.base,
-            self.config.token,
+            self.config.api_key,
             self.config.top_k,
         )
 
@@ -63,7 +63,7 @@ def wiki_search_api(
     """
     # Make the GET request with basic authentication and the query parameter
     response = requests.get(
-        rag_api_base,
+        f"{rag_api_base}/search",
         params={"queries": queries, "top_k": top_k},
         headers={"Authorization": f"Bearer {rag_api_key}"},
     )
