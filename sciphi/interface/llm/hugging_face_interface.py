@@ -35,6 +35,14 @@ class HuggingFaceLLMInterface(LLMInterface):
             "Chat completion not yet implemented for HuggingFace."
         )
 
+    def get_chat_completion(
+        self, conversation: list[dict], generation_config: GenerationConfig
+    ) -> str:
+        """Get a chat completion from the local HuggingFace provider."""
+        raise NotImplementedError(
+            "Chat completion not yet implemented for OpenAI."
+        )
+
     @property
     def model(self) -> HuggingFaceLLM:
         return self._model
