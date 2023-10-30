@@ -66,6 +66,7 @@ def main(
         stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
     )
     completion = llm_interface.get_completion(query, completion_config)
+    print(f"Output Completion = {completion}")
 
 
 if __name__ == "__main__":

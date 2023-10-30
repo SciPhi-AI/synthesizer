@@ -15,8 +15,6 @@ With SciPhi, users can:
 
 ## Fast Setup
 
-### Bare Minimum
-
 ```bash
 pip install sciphi
 ```
@@ -104,7 +102,7 @@ This is an effort to democratize access to top-tier textbooks. This can readily 
 2. **Textbook Generation**:
 
    ```bash
-   python -m sciphi.scripts.textbook_generator run --toc_dir=sciphi/data/sample/table_of_contents --rag-enabled=False
+   python -m sciphi.scripts.textbook_generator run --toc_dir=sciphi/data/sample/table_of_contents --rag-enabled=False --filter_existing_books=False
    ```
 
    Replace `dry_run` in step 1 with `run` to generate one textbook for each table of contents in the target directory. See a [sample textbook here.](sciphi/data/sample/textbooks/Aerodynamics_of_Viscous_Fluids.md)
@@ -114,7 +112,7 @@ This is an effort to democratize access to top-tier textbooks. This can readily 
    Prepare your table of contents and save it into `$PWD/toc/test.yaml`. Then, run the following command:
 
    ```bash
-   python -m sciphi.scripts.generate_textbook run --toc_dir=toc --output_dir=books --data_dir=$PWD
+   python -m sciphi.scripts.textbook_generator run --toc_dir=toc --output_dir=books --data_dir=$PWD
    ```
 
    For help with formatting your table of contents, [see here](https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/data/library_of_phi/table_of_contents/Aerodynamics_of_Viscous_Fluids.yaml).

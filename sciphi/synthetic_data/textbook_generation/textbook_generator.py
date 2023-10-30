@@ -4,9 +4,11 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 from typing import Generator, Optional, Tuple
 
+from sciphi.llm import GenerationConfig
 from sciphi.core import LLMProviderName, RAGProviderName
 from sciphi.core.writers import JsonlDataWriter, RawDataWriter
 from sciphi.interface import LLMInterfaceManager, RAGInterfaceManager
+from sciphi.interface.llm.sciphi_interface import SciPhiFormatter
 from sciphi.synthetic_data.textbook_generation.helpers import (
     load_yaml_file,
     with_retry,
@@ -49,23 +51,33 @@ class TextbookContentGenerator:
         """Initialize the textbook content generator."""
         self._load_configuration(config_path, cli_args)
 
+        rag_interface = (
+            RAGInterfaceManager.get_interface_from_args(
+                RAGProviderName(self.config.rag_provider_name),
+                api_base=self.config.rag_api_base or self.config.llm_api_base,
+                api_key=self.config.rag_api_key or self.config.llm_api_key,
+                top_k=self.config.rag_top_k,
+            )
+            if self.config.rag_enabled
+            else None
+        )
         self.llm_interface = LLMInterfaceManager.get_interface_from_args(
-            provider_name=LLMProviderName(self.config.llm_provider_name),
+            LLMProviderName(self.config.llm_provider_name),
+            api_key=self.config.llm_api_key,
+            api_base=self.config.llm_api_base,
+            # Currently only consumed by SciPhi
+            rag_interface=rag_interface,
+            # Consumed by single-load providers
             model_name=self.config.llm_model_name,
-            # Additional args
-            max_tokens_to_sample=self.config.llm_max_tokens_to_sample,
-            temperature=self.config.llm_temperature,
-            top_k=self.config.llm_top_k,
-            # Used for re-routing requests to a remote vLLM server
-            api_base=cli_args.get("llm_api_base", None),
         )
 
-        self.rag_interface = RAGInterfaceManager.get_interface_from_args(
-            provider_name=RAGProviderName(self.config.rag_provider_name),
-            api_base=self.config.rag_api_base,
-            token=self.config.rag_api_key,
-            max_context=self.config.rag_max_context,
-            top_k=self.config.rag_top_k,
+        self.generation_config = GenerationConfig(
+            temperature=self.config.llm_temperature,
+            top_k=self.config.llm_top_k,
+            max_tokens_to_sample=self.config.llm_max_tokens_to_sample,
+            model_name=self.config.llm_model_name,
+            skip_special_tokens=self.config.llm_skip_special_tokens,
+            stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
         )
 
         self.logger = logging.getLogger("textbook_content_generator")
@@ -217,7 +229,7 @@ class TextbookContentGenerator:
         """Fetch completions for the current iteration."""
         prompts_for_completion = [x["prompt"] for x in current_iterations if x]
         fetched_completions = self.llm_interface.get_batch_completion(
-            prompts_for_completion
+            prompts_for_completion, self.generation_config
         )
         current_completions: list[Optional[str]] = [None] * len(
             current_iterations
