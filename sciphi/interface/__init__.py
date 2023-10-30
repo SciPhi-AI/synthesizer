@@ -5,7 +5,8 @@ from sciphi.interface.base import (
     RAGProviderConfig,
 )
 
-# from sciphi.interface.llm.anthropic_interface import AnthropicLLMInterface
+from sciphi.interface.llm.anthropic_interface import AnthropicLLMInterface
+
 # from sciphi.interface.llm.hugging_face_interface import HuggingFaceLLMInterface
 # from sciphi.interface.llm.litellm_interface import LiteLLMInterface
 # from sciphi.interface.llm.llama_index_interface import LlamaIndexInterface
@@ -27,7 +28,7 @@ __all__ = [
     "LLMProviderConfig",
     "LLMInterface",
     # Concrete LLM Interfaces
-    # "AnthropicLLMInterface",
+    "AnthropicLLMInterface",
     # "HuggingFaceLLMInterface",
     # "LlamaIndexInterface",
     "OpenAILLMInterface",

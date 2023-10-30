@@ -1,7 +1,6 @@
 """A module for creating OpenAI model abstractions."""
 
 from dataclasses import dataclass
-from typing import Optional
 
 import tiktoken
 
@@ -16,7 +15,7 @@ class OpenAIConfig(LLMConfig):
     """Configuration for OpenAI models."""
 
     # Base
-    llm_provider_name: LLMProviderName = LLMProviderName.OPENAI
+    provider_name: LLMProviderName = LLMProviderName.OPENAI
 
 
 class OpenAILLM(LLM):

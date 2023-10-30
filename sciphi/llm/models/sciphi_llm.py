@@ -17,7 +17,7 @@ class SciPhiConfig(LLMConfig):
     """Configuration for local vLLM models."""
 
     # Base
-    llm_provider_name: LLMProviderName = LLMProviderName.SCIPHI
+    provider_name: LLMProviderName = LLMProviderName.SCIPHI
 
     # SciPhi Extras...
     server_base: Optional[str] = None
@@ -34,7 +34,7 @@ class SciPhiLLM(LLM):
         **kwargs,
     ) -> None:
         try:
-            import openai
+            import openai  # noqa: F401
         except ImportError:
             raise ImportError(
                 "Please install the openai package before attempting to run with an OpenAI model. This can be accomplished via `poetry install -E openai_support, ...OTHER_DEPENDENCIES_HERE`."

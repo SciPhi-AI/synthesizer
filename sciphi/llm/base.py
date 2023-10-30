@@ -33,7 +33,7 @@ class ModelName(Enum):
 
 @dataclass
 class LLMConfig(ABC):
-    llm_provider_name: LLMProviderName
+    provider_name: LLMProviderName
 
     version: str = "0.1.0"
 

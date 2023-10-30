@@ -65,7 +65,7 @@ class SciPhiFormatter:
 class SciPhiInterface(LLMInterface):
     """A class to interface with local vLLM models."""
 
-    llm_provider_name = LLMProviderName.SCIPHI
+    provider_name = LLMProviderName.SCIPHI
 
     def __init__(
         self,

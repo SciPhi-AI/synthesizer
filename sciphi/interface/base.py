@@ -11,7 +11,7 @@ from sciphi.llm import LLM, GenerationConfig, LLMConfig, ModelName
 class LLMProviderConfig:
     """A dataclass to hold the configuration for a provider."""
 
-    llm_provider_name: LLMProviderName
+    provider_name: LLMProviderName
     models: List[ModelName]
     llm_class: Type["LLMInterface"]
 
@@ -19,7 +19,7 @@ class LLMProviderConfig:
 class LLMInterface(ABC):
     """An abstract class to provide a common interface for LLM providers."""
 
-    llm_provider_name: LLMProviderName
+    provider_name: LLMProviderName
     supported_models: list[ModelName] = []
 
     def __init__(

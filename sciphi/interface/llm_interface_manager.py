@@ -24,9 +24,9 @@ class LLMInterfaceManager(InterfaceManager):
     ) -> Type[LLMInterface]:
         """Register a provider with the LLMInterfaceManager."""
         LLMInterfaceManager.provider_registry[
-            provider.llm_provider_name
+            provider.provider_name
         ] = LLMProviderConfig(
-            provider.llm_provider_name, provider.supported_models, provider
+            provider.provider_name, provider.supported_models, provider
         )
         return provider
 

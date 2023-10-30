@@ -15,7 +15,7 @@ class OpenAILLMInterface(LLMInterface):
     instruct_models = [
         ModelName.GPT_3p5_TURBO_INSTRUCT,
     ]
-    llm_provider_name = LLMProviderName.OPENAI
+    provider_name = LLMProviderName.OPENAI
     supported_models = [
         ModelName.GPT_3p5_TURBO_0301,
         ModelName.GPT_3p5_TURBO_0613,
