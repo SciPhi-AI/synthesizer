@@ -1,7 +1,7 @@
 """A module which defines interface abstractions for various LLM providers."""
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from typing import Any, List, Type
+from typing import Any, List, Optional, Type
 
 from sciphi.core import LLMProviderName, RAGProviderName
 from sciphi.llm import LLM, GenerationConfig, LLMConfig, ModelName
@@ -63,9 +63,9 @@ class RAGProviderConfig(ABC):
     """An abstract class to hold the configuration for a RAG provider."""
 
     provider_name: RAGProviderName
-    api_base: str
-    api_key: str
     max_context: int = 2_048
+    api_base: Optional[str] = None
+    api_key: Optional[str] = None
 
 
 class RAGInterface(ABC):

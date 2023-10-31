@@ -22,12 +22,51 @@ Before you start, ensure you've installed SciPhi:
 
     pip install sciphi
 
-For additional details, refer to the `installation guide <https://sciphi.readthedocs.io/en/latest/installation.html>`_.
+For additional details, refer to the `installation guide <https://sciphi.readthedocs.io/en/latest/setup/installation.html>`_.
 
 Instantiate Your LLM and RAG Provider
 -------------------------------------
 
-Here's a simple example of how you can utilize SciPhi to work with your own LLM and RAG provider:
+Here's how you can use SciPhi to quickly set up and retrieve chat completions, without diving deep into intricate configurations:
+
+.. code-block:: python
+
+    from sciphi.interface import (
+        SciPhiFormatter,
+        SciPhiLLMInterface,
+        SciPhiWikiRAGInterface,
+    )
+
+    # SciPhi RAG Interface
+    # Supports calls like `contexts = rag_interface.get_contexts(query)`
+    rag_interface = SciPhiWikiRAGInterface()
+
+    # SciPhi LLM Interface
+    llm_interface = SciPhiLLMInterface(rag_interface)
+
+    # Initializing the conversation
+    query: str = "Who is the president of the United States?"
+    conversation = []
+    conversation.append({"role": "user", "content": query})
+
+    # Define generation configuration
+    generation_config = GenerationConfig(
+        model_name=llm_model_name,
+        stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
+        # Pass in any other desired generation settings here
+    )
+
+    # Get the chat completion
+    completion = llm_interface.get_chat_completion(
+        conversation, generation_config
+    )
+
+    print(completion)
+    # Expected output: The current President of the United States is Joe Biden.
+
+---
+
+Here's a more advanced example of how you can utilize SciPhi to work with configurably with available LLM and RAG providers:
 
 .. code-block:: python
 
