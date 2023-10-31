@@ -6,6 +6,8 @@
 
 With SciPhi, users can:
 
+- **Custom Data Creation**: Generate datasets via LLMs that are tailored to your needs.
+   - Anthropic, OpenAI, vLLM, and SciPhi API are supported.
 - **Retriever-Augmented Generation (RAG) on Demand**: Built-in RAG Provider Interface to anchor generated data to real-world sources. 
    - _Coming Soon_ - End-to-end cloud and local RAG knowledge engine API for seamless use. 
 - **Customize Data Creation**: Generate datasets via LLMs that are tailored to your needs, for LLM training, RAG, and more.
