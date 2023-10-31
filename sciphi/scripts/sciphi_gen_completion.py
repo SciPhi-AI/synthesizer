@@ -92,23 +92,12 @@ def main(
         {
             "role": "user",
             "content": query,
-            # "content": "Return Schrodinger's equation for a particle in a box.",
         },
-        # {"role": "assistant", "content": msg_1},
-        # {
-        #     "role": "user",
-        #     "content": "Excellent. Now, what about Dirac's equation for a free particle?",
-        # },
-        # {"role": "assistant", "content": msg_2},
-        # {
-        #     "role": "user",
-        #     "content": query,
-        # },
     ]
-    completion = llm_interface.get_completion(query, generation_config)
-    # completion = llm_interface.get_chat_completion(
-    #     conversation, generation_config
-    # )
+
+    completion = llm_interface.get_chat_completion(
+        conversation, generation_config
+    )
     print(f"Output Completion = {completion}")
 
 

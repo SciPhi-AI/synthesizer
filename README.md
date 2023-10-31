@@ -133,7 +133,6 @@ This is an effort to democratize access to top-tier textbooks. This can readily 
 
    _Important:_ To make the most out of grounding your data with Wikipedia, ensure your system matches our detailed specifications. An example RAG provider can be seen [here](https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/interface/rag/sciphi_wiki.py). More high quality outbook books are available [here](https://github.com/SciPhi-AI/library-of-phi).
 
-
 ### RAG Eval Harness
 
 Measure the efficacy of your RAG pipeline with our unique evaluation harness.
