@@ -49,6 +49,16 @@ class vLLMInterface(LLMInterface):
             "Chat completion not yet implemented for vLLM."
         )
 
+    def get_chat_completion(
+        self, conversation: List[dict], generation_config: GenerationConfig
+    ) -> str:
+        """Get a conversation completion from the local vLLM provider."""
+
+        logger.debug(
+            f"Requesting chat completion from local vLLM with model={self._model.config.model_name} and prompts={prompts}"
+        )
+        return self.model.get_instruct_completion(prompt)
+
     @property
     def model(self) -> vLLM:
         return self._model
