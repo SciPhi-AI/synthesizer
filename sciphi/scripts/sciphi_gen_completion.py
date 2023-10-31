@@ -105,10 +105,10 @@ def main(
         #     "content": query,
         # },
     ]
-    # completion = llm_interface.get_completion(query, generation_config)
-    completion = llm_interface.get_chat_completion(
-        conversation, generation_config
-    )
+    completion = llm_interface.get_completion(query, generation_config)
+    # completion = llm_interface.get_chat_completion(
+    #     conversation, generation_config
+    # )
     print(f"Output Completion = {completion}")
 
 

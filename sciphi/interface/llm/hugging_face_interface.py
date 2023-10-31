@@ -14,19 +14,18 @@ class HuggingFaceLLMInterface(LLMInterface):
 
     provider_name = LLMProviderName.HUGGING_FACE
 
-    def __init__(
-        self,
-        config: HuggingFaceConfig,
-    ) -> None:
+    def __init__(self, config: HuggingFaceConfig, *args, **kwargs) -> None:
         self._model = HuggingFaceLLM(config)
 
-    def get_completion(self, prompt: str) -> str:
+    def get_completion(
+        self, prompt: str, generation_config: GenerationConfig
+    ) -> str:
         """Get a completion from the local HuggingFace provider."""
 
         logger.debug(
             f"Requesting completion from local HuggingFace with model={self._model.config.model_name} and prompt={prompt}"
         )
-        return self.model.get_instruct_completion(prompt)
+        return self.model.get_instruct_completion(prompt, generation_config)
 
     def get_chat_completion(
         self, conversation: list[dict], generation_config: GenerationConfig

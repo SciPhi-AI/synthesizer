@@ -21,17 +21,19 @@ class HuggingFaceConfig(LLMConfig):
     provider_name: LLMProviderName = LLMProviderName.HUGGING_FACE
     model_name: str = "gpt2"
     temperature: float = 0.7
+
     # Model and Tokenizer extras
     device: str = "cpu"
+
+    # Additional model and tokenizer kwargs
+    add_model_kwargs: dict = field(default_factory=dict)
+    add_tokenizer_kwargs: dict = field(default_factory=dict)
 
 
 class HuggingFaceLLM(LLM):
     """A concrete class for creating a local HuggingFace model."""
 
-    def __init__(
-        self,
-        config: HuggingFaceConfig,
-    ) -> None:
+    def __init__(self, config: HuggingFaceConfig, *args, **kwargs) -> None:
         try:
             import torch  # noqa: F401
             from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -39,18 +41,15 @@ class HuggingFaceLLM(LLM):
             raise ImportError(
                 "Please install the torch and transformers packages before attempting to run with a HuggingFace model. This can be accomplished via `pip install transformers`."
             )
+        super().__init__()
+        self.config: HuggingFaceConfig = config
 
-        super().__init__(
-            config,
-        )
         # Set the config here, again, for typing purposes
         # TODO - Can setting the config twice be avoided?
         if not isinstance(self.config, HuggingFaceConfig):
             raise ValueError(
                 "The provided config must be an instance of HuggingFaceConfig."
             )
-        self.config: HuggingFaceConfig = config
-
         # Create the model, tokenizer, and generation config
         self.model = AutoModelForCausalLM.from_pretrained(
             self.config.model_name,
@@ -59,16 +58,6 @@ class HuggingFaceLLM(LLM):
         self.tokenizer = AutoTokenizer.from_pretrained(
             self.config.model_name,
             **config.add_tokenizer_kwargs,
-        )
-
-    def get_chat_completion(
-        self,
-        messages: list[dict[str, str]],
-        generation_config: GenerationConfig,
-    ) -> str:
-        """Get a completion from the local HuggingFace model."""
-        raise NotImplementedError(
-            "Chat completion not yet implemented for HuggingFace."
         )
 
     def get_instruct_completion(
@@ -91,11 +80,23 @@ class HuggingFaceLLM(LLM):
             instruction, ""
         )
 
+    def get_chat_completion(
+        self,
+        messages: list[dict[str, str]],
+        generation_config: GenerationConfig,
+    ) -> str:
+        """Get a completion from the local HuggingFace model."""
+        raise NotImplementedError(
+            "Chat completion not yet implemented for HuggingFace."
+        )
+
     def _get_hf_generation_config(
         self, generation_config: GenerationConfig
     ) -> "HFGenerationConfig":
         """Get the generation config for this model."""
-        return GenerationConfig.from_pretrained(
+        from transformers import GenerationConfig as HFGenerationConfig
+
+        return HFGenerationConfig.from_pretrained(
             self.config.model_name,
             top_k=generation_config.top_k,
             top_p=generation_config.top_p,
