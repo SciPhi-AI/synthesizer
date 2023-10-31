@@ -99,7 +99,7 @@ class SciPhiLLMInterface(LLMInterface):
             prompt = f"### System:\n{SciPhiLLMInterface.ALPACA_CHAT_SYSTEM_PROMPT}.\n\n{prompt}"
 
         context = self.rag_interface.get_contexts([last_user_message])[0]
-        prompt += f"{SciPhiFormatter.RETRIEVAL_TOKEN} {SciPhiFormatter.INIT_PARAGRAPH_TOKEN}{context}{SciPhiFormatter.END_PARAGRAPH_TOKEN}"
+        prompt += f"### Response:\n{SciPhiFormatter.RETRIEVAL_TOKEN} {SciPhiFormatter.INIT_PARAGRAPH_TOKEN}{context}{SciPhiFormatter.END_PARAGRAPH_TOKEN}"
         latest_completion = self.model.get_instruct_completion(
             prompt, generation_config
         ).strip()

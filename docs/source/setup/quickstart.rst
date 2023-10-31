@@ -36,7 +36,9 @@ Here's how you can use SciPhi to quickly set up and retrieve chat completions, w
         SciPhiLLMInterface,
         SciPhiWikiRAGInterface,
     )
-
+    # ... Initial Setup ...
+    # query = ...
+    
     # SciPhi RAG Interface
     # Supports calls like `contexts = rag_interface.get_contexts(query)`
     rag_interface = SciPhiWikiRAGInterface()
@@ -44,10 +46,25 @@ Here's how you can use SciPhi to quickly set up and retrieve chat completions, w
     # SciPhi LLM Interface
     llm_interface = SciPhiLLMInterface(rag_interface)
 
-    # Initializing the conversation
-    query: str = "Who is the president of the United States?"
-    conversation = []
-    conversation.append({"role": "user", "content": query})
+    # Example Conversation
+    conversation = [
+        {
+            "role": "system",
+            "content": "You are a helpful and informative professor. You give long, accurate, and detailed explanations to student questions. You answer EVERY question that is given to you. You retrieve data multiple times if necessary.",
+        },
+        {
+            "role": "user",
+            "content": "Who is the president of the United States?",
+        },
+        {
+            "role": "assistant",
+            "content": "Joe Biden is the current president of the United States.",
+        },
+        {
+            "role": "user",
+            "content": query,
+        },
+    ]
 
     # Define generation configuration
     generation_config = GenerationConfig(

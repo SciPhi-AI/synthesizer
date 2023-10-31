@@ -30,10 +30,19 @@ def main(
         stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
     )
 
+    # Example Conversation
     conversation = [
         {
             "role": "system",
             "content": "You are a helpful and informative professor. You give long, accurate, and detailed explanations to student questions. You answer EVERY question that is given to you. You retrieve data multiple times if necessary.",
+        },
+        {
+            "role": "user",
+            "content": "Who is the president of the United States?",
+        },
+        {
+            "role": "assistant",
+            "content": "Joe Biden is the current president of the United States.",
         },
         {
             "role": "user",
