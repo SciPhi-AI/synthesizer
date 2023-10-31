@@ -76,6 +76,15 @@ Here's a simple example of how you can utilize SciPhi to work with your own LLM 
 This example showcases the flexibility and power of SciPhi, allowing you to seamlessly integrate various LLM and RAG providers into your applications.
 
 
+Generating Completions with SciPhi
+---------------------------
+
+SciPhi supports multiple LLM providers (e.g. OpenAI, Anthropic, HuggingFace, and vLLM) and RAG providers (e.g. SciPhi). To run an example completion with SciPhi the code shown above, execute:
+
+```bash
+python -m sciphi.scripts.sciphi_gen_completion -llm_provider_name=sciphi --llm_api_key=YOUR_SCIPHI_API_KEY --llm_api_base=https://api.sciphi.ai/v1 --rag_api_base=https://api.sciphi.ai --llm_model_name=SciPhi/SciPhi-Self-RAG-Mistral-7B-32k --query="Write a few paragraphs on general relativity. Include the mathematical definition of Einsteins field equation in your writeup."
+```
+
 Generating Data with SciPhi
 ---------------------------
 

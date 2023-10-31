@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "SciPHi"
-copyright = "2023, SciPHi Team"
-author = "the SciPHi Team"
+project = "SciPhi"
+copyright = "2023, Emergent AGI Inc."
+author = "the SciPhi Team"
 
 
 # -- General configuration ---------------------------------------------------

@@ -51,13 +51,27 @@ Developers can also instantiate their own LLM and RAG providers using the SciPhi
 For a detailed setup guide, deeper feature exploration, and developer insights, refer to:
 
 * `SciPhi GitHub Repository <https://github.com/emrgnt-cmplxty/sciphi>`_
-* `Example Textbook Generated with SciPhi <https://github.com/SciPhi-AI/sciphi/data/sample/textbooks/Aerodynamics_of_Viscous_Fluids.md>`_
-* `Default Settings for Textbook Generation <https://github.com/SciPhi-AI/sciphi/config/generation_settings/textbook_generation_settings.yaml>`_
-* `Library of SciPhi Books <https://github.com/SciPhi-AI/github.com/SciPhi-AI/library-of-phi>`_
+* `Example Textbook Generated with SciPhi <https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/data/sample/textbooks/Aerodynamics_of_Viscous_Fluids.md>`_
+* `ToC Used for Sample Textbook Generation <https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/data/sample/table_of_contents/Aerodynamics_of_Viscous_Fluids.yaml>`_
+* `Default Settings for Textbook Generation <https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/config/generation_settings/textbook_generation_settings.yaml>`_
+* `Library of SciPhi Books <https://github.com/SciPhi-AI/library-of-phi/>`_
 
-Do consider citing our work if SciPhi aids your research. Check the citation section for details.
 
+Citing Our Work
+---------------
 
+If you're using SciPhi in your research or project, please cite our work:
+
+.. code-block:: plaintext
+
+   @software{SciPhi,
+   author = {Colegrove, Owen},
+   doi = {Pending},
+   month = {09},
+   title = {{SciPhi: A Framework for LLM Powered Data}},
+   url = {https://github.com/sciphi-ai/sciphi},
+   year = {2023}
+   }
 
 Documentation
 -------------
@@ -71,15 +85,6 @@ Documentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Serving
+   :caption: API
 
-   serving/distributed_serving
-   serving/run_on_sky
-   serving/deploying_with_triton
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Models
-
-   models/supported_models
-   models/adding_model
+   api/main

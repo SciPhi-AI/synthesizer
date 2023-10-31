@@ -1,11 +1,7 @@
 .. _sciphi_installation:
 
-Installation for SciPhi [ΨΦ]: AI's Knowledge Engine 💡
+Installation for SciPhi
 =====================================================
-
-<p align="center">
-<img width="716" alt="SciPhi Logo" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/195367d8-54fd-4281-ace0-87ea8523f982">
-</p>
 
 SciPhi is a powerful knowledge engine that integrates with multiple LLM providers and RAG providers, allowing for customizable data creation, retriever-augmented generation, and even textbook generation.
 
@@ -74,20 +70,4 @@ To set up SciPhi for development:
 Licensing and Acknowledgment
 ---------------------------
 
-SciPhi is licensed under the [Apache-2.0 License](./LICENSE).
-
-Citing Our Work
----------------
-
-If you're using SciPhi in your research or project, please cite our work:
-
-.. code-block:: plaintext
-
-   @software{SciPhi,
-   author = {Colegrove, Owen},
-   doi = {Pending},
-   month = {09},
-   title = {{SciPhi: A Framework for LLM Powered Data}},
-   url = {https://github.com/sciphi-ai/sciphi},
-   year = {2023}
-   }
+SciPhi is licensed under the Apache-2.0 License.
