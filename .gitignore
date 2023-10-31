@@ -1,4 +1,4 @@
-# Local cruft and other
+# Crufty EXTs 
 poetry.lock
 .env
 .vscode
@@ -8,12 +8,17 @@ poetry.lock
 *.sh
 **/__pycache__/**
 **/.DS_Store
-storeage/
-textbooks/
+
+
 # Local sandbox environments
 playground/
 outputs/
 dump/
 sciphi/_version.py
+textbooks/
+
 # Scraped data
 sciphi/library_of_phi/raw_data/
+
+# Built Docs
+docs/build

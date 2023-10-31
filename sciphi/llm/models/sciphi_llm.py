@@ -29,7 +29,7 @@ class SciPhiConfig(LLMConfig):
 
     # SciPhi Extras...
     mode = SciPhiProviderMode.REMOTE
-    api_base: Optional[str] = None
+    api_base: Optional[str] = "https://api.sciphi.ai/v1"
     api_key: Optional[str] = None
 
 
@@ -56,11 +56,16 @@ class SciPhiLLM(LLM):
             )
 
             if self.config.mode == SciPhiProviderMode.REMOTE:
+                api_key = config.api_key or os.getenv("SCIPHI_API_KEY")
+                if not api_key:
+                    raise ValueError(
+                        "No API key provided. Please provide an API key or set the SCIPHI_API_KEY environment variable."
+                    )
                 self.model = vLLM(
                     vLLMConfig(
                         provider_name=config.provider_name,
                         api_base=config.api_base,
-                        api_key=config.api_key or os.getenv("SCIPHI_API_KEY"),
+                        api_key=api_key,
                         mode=vLLMProviderMode.REMOTE,
                     ),
                 )

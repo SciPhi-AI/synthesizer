@@ -1,3 +1,4 @@
+import os
 from dataclasses import dataclass
 from textwrap import dedent
 
@@ -13,7 +14,8 @@ from sciphi.interface.rag_interface_manager import rag_config, rag_provider
 class SciPhiWikiRAGConfig(RAGProviderConfig):
     """An abstract class to hold the configuration for a RAG provider."""
 
-    provider_name = RAGProviderName.SCIPHI_WIKI
+    provider_name: RAGProviderName = RAGProviderName.SCIPHI_WIKI
+    api_base: str = "https://api.sciphi.ai"
     top_k: int = 10
 
 
@@ -24,16 +26,26 @@ class SciPhiWikiRAGInterface(RAGInterface):
     provider_name = RAGProviderName.SCIPHI_WIKI
     FORMAT_INDENT = "        "
 
-    def __init__(self, config: SciPhiWikiRAGConfig, *args, **kwargs) -> None:
+    def __init__(
+        self,
+        config: SciPhiWikiRAGConfig = SciPhiWikiRAGConfig(),
+        *args,
+        **kwargs,
+    ) -> None:
         super().__init__(config)
         self.config: SciPhiWikiRAGConfig = config
 
     def get_contexts(self, prompts: list[str]) -> list[str]:
         """Get the context for a prompt."""
+        api_key = self.config.api_key or os.getenv("SCIPHI_API_KEY")
+        if not api_key:
+            raise ValueError(
+                "No API key provided. Please provide an API key or set the SCIPHI_API_KEY environment variable."
+            )
         raw_contexts = wiki_search_api(
             prompts,
             self.config.api_base,
-            self.config.api_key,
+            api_key,
             self.config.top_k,
         )
 

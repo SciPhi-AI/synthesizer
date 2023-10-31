@@ -1,7 +1,7 @@
 """A module for interfacing with local vLLM models"""
 import logging
 import re
-from typing import List
+from typing import List, Optional
 
 from sciphi.interface.base import LLMInterface, LLMProviderName, RAGInterface
 from sciphi.interface.llm_interface_manager import llm_interface
@@ -63,7 +63,7 @@ class SciPhiFormatter:
 
 
 @llm_interface
-class SciPhiInterface(LLMInterface):
+class SciPhiLLMInterface(LLMInterface):
     """A class to interface with local vLLM models."""
 
     provider_name = LLMProviderName.SCIPHI
@@ -71,8 +71,8 @@ class SciPhiInterface(LLMInterface):
 
     def __init__(
         self,
-        config: SciPhiConfig,
         rag_interface: RAGInterface,
+        config: SciPhiConfig = SciPhiConfig(),
         *args,
         **kwargs,
     ) -> None:
@@ -82,11 +82,12 @@ class SciPhiInterface(LLMInterface):
     def get_chat_completion(
         self, conversation: list[dict], generation_config: GenerationConfig
     ) -> str:
+        self._check_stop_token(generation_config.stop_token)
         prompt = ""
         added_system_prompt = False
         for message in conversation:
             if message["role"] == "system":
-                prompt += f"### System:\n{SciPhiInterface.ALPACA_CHAT_SYSTEM_PROMPT}. Further, the assistant is given the following additional instructions - {message['content']}\n\n"
+                prompt += f"### System:\n{SciPhiLLMInterface.ALPACA_CHAT_SYSTEM_PROMPT}. Further, the assistant is given the following additional instructions - {message['content']}\n\n"
                 added_system_prompt = True
             elif message["role"] == "user":
                 last_user_message = message["content"]
@@ -95,7 +96,7 @@ class SciPhiInterface(LLMInterface):
                 prompt += f"### Response:\n{message['content']}\n\n"
 
         if not added_system_prompt:
-            prompt = f"### System:\n{SciPhiInterface.ALPACA_CHAT_SYSTEM_PROMPT}.\n\n{prompt}"
+            prompt = f"### System:\n{SciPhiLLMInterface.ALPACA_CHAT_SYSTEM_PROMPT}.\n\n{prompt}"
 
         context = self.rag_interface.get_contexts([last_user_message])[0]
         prompt += f"{SciPhiFormatter.RETRIEVAL_TOKEN} {SciPhiFormatter.INIT_PARAGRAPH_TOKEN}{context}{SciPhiFormatter.END_PARAGRAPH_TOKEN}"
@@ -109,7 +110,7 @@ class SciPhiInterface(LLMInterface):
         self, prompt: str, generation_config: GenerationConfig
     ) -> str:
         """Get a completion from the local vLLM provider."""
-
+        self._check_stop_token(generation_config.stop_token)
         logger.debug(
             f"Requesting completion from local vLLM with model={generation_config.model_name} and prompt={prompt}"
         )
@@ -145,6 +146,12 @@ class SciPhiInterface(LLMInterface):
         return self.model.get_batch_instruct_completion(
             prompts, generation_config
         )
+
+    def _check_stop_token(self, stop_token: Optional[str]) -> None:
+        if stop_token != SciPhiFormatter.INIT_PARAGRAPH_TOKEN:
+            raise ValueError(
+                f"Must speicfy stop_token={stop_token} to run with SciPhi"
+            )
 
     @property
     def model(self) -> SciPhiLLM:

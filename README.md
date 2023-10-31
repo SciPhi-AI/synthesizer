@@ -72,7 +72,7 @@ After entering your settings, ensure you save and exit the file.
 SciPhi supports multiple LLM providers (e.g. OpenAI, Anthropic, HuggingFace, and vLLM) and RAG providers (e.g. SciPhi). The framework supports seamless integration of these providers. To run an example completion with SciPhi, execute:
 
 ```bash
-python -m sciphi.scripts.sciphi_gen_completion -llm_provider_name=sciphi --llm_api_key=YOUR_SCIPHI_API_KEY --llm_api_base=https://api.sciphi.ai/v1 --rag_api_base=https://api.sciphi.ai --llm_model_name=SciPhi/SciPhi-Self-RAG-Mistral-7B-32k --query="Write a few paragraphs on general relativity. Include the mathematical definition of Einsteins field equation in your writeup."
+python -m sciphi.scripts.sciphi_chat --llm_model_name=SciPhi/SciPhi-Self-RAG-Mistral-7B-32k --query="Write a few paragraphs on general relativity. Include the mathematical definition of Einsteins field equation in your writeup."
 ```
 
 ### Configurable Data Generation
@@ -83,13 +83,7 @@ Use SciPhi to generate datasets tailored to your specifications. By running the 
 python -m sciphi.scripts.data_augmenter --config-path=$PWD/sciphi/config/prompts/question_and_answer.yaml --config_name=None --n_samples=1
 ```
 
-Inspect the output of this command:
-
-```bash
-tail augmented_output/config_name__question_and_answer_dataset_name__ContextualAI_tiny-wiki100-chunks.jsonl
-```
-
-Sample Output:
+Inspecting the output of this command:
 
 ```bash
 {"question": "What is the reaction called when alcohol and carboxylic acids react?", "answer": "Fischer esterification"}
@@ -134,7 +128,7 @@ This is an effort to democratize access to top-tier textbooks. This can readily 
 4. **Custom Settings & RAG Functionality**:
 
    Simply switch `rag-enabled` to `True`. Ensure you have the right `.env` variables set up, or provide CLI values for `rag_api_base` and `rag_api_key`.
-   
+
    Alternatively, you may provide your own custom settings in a YAML file. See the [default settings configuration here](sciphi/config/generation_settings/textbook_generation_settings.yaml).
 
    _Important:_ To make the most out of grounding your data with Wikipedia, ensure your system matches our detailed specifications. An example RAG provider can be seen [here](https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/interface/rag/sciphi_wiki.py). More high quality outbook books are available [here](https://github.com/SciPhi-AI/library-of-phi).
@@ -153,7 +147,42 @@ This example evaluates your RAG over 100 science multiple-choice questions and r
 
 ## Development
 
-### Example - Instantiate your own LLM and RAG provider
+### Basic Example - Generate a chat completion with SciPhi
+
+Here's how you can use SciPhi to quickly set up and retrieve chat completions, without diving deep into intricate configurations:
+
+```python
+
+from sciphi.interface import (
+    SciPhiFormatter,
+    SciPhiLLMInterface,
+    SciPhiWikiRAGInterface,
+)
+   # SciPhi RAG Interface
+   # Supports calls like `contexts = rag_interface.get_contexts(query)`
+   rag_interface = SciPhiWikiRAGInterface()
+
+   # SciPhi LLM Interface
+   llm_interface = SciPhiLLMInterface(rag_interface)
+
+   # Get the completion for a given prompt
+   query: str = "Who is the president of the United States?"
+   conversation.append({"role": "user", "content": query})
+
+   generation_config = GenerationConfig(
+      model_name=llm_model_name,
+      stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
+      # pass in any other generation settings here
+   )
+
+   completion = llm_interface.get_chat_completion(
+      conversation, generation_config
+   )
+   print(completion)
+   # The current President of the United States is Joe Biden.
+```
+
+### Advanced Example - Instantiate your own LLM and RAG provider
 
 Here's an example of how you can instantiate your own LLM and RAG provider using SciPhi:
 

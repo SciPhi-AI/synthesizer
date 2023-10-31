@@ -42,12 +42,14 @@ After installation, set up your environment to link with supported LLM providers
 Here is an example of the configuration in the `.env` file:
 
 .. code-block:: bash
+   # To use SciPhi as a provider:
+   SCIPHI_API_KEY=your_sciphi_api_key
 
+   # Other providers in SciPhi:
    OPENAI_API_KEY=your_openai_api_key
    ANTHROPIC_API_KEY=your_anthropic_api_key
    HF_TOKEN=your_huggingface_token
    VLLM_API_KEY=your_vllm_api_key
-   SCIPHI_API_KEY=your_sciphi_api_key
    RAG_API_KEY=your_rag_server_api_key
    RAG_API_BASE=your_rag_api_base_url
 
@@ -61,10 +63,10 @@ To set up SciPhi for development:
 
 .. code-block:: console
 
-   $ git clone https://github.com/emrgnt-cmplxty/sciphi.git
+   $ git clone https://github.com/SciPhi-AI/sciphi.git
    $ cd sciphi
    $ pip3 install poetry  # If you do not have Poetry installed.
-   $ poetry install
+   $ poetry install # Can use `pip install -e .`` instead.
    $ poetry install -E all_with_extras
 
 Licensing and Acknowledgment

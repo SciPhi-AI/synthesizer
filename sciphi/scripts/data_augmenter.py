@@ -17,10 +17,7 @@ from sciphi.core import (
     RAGProviderName,
 )
 from sciphi.core.utils import get_config_dir
-from sciphi.interface import (
-    LLMInterfaceManager,
-    RAGInterfaceManager,
-)
+from sciphi.interface import LLMInterfaceManager, RAGInterfaceManager
 from sciphi.interface.llm.sciphi_interface import SciPhiFormatter
 from sciphi.llm import GenerationConfig
 

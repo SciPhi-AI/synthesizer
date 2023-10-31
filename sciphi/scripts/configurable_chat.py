@@ -9,24 +9,6 @@ from sciphi.interface.llm_interface_manager import LLMInterfaceManager
 from sciphi.interface.rag_interface_manager import RAGInterfaceManager
 from sciphi.llm import GenerationConfig
 
-msg_1 = """
-Inside the box, no forces act upon the particle, so the time-independent Schrödinger equation is given by:
-
-(-ħ^2 / (2m))(d^2ψ / dx^2) + V(x)ψ(x) = Eψ(x)
-
-where ħ is the reduced Planck constant, m is the mass of the particle, V(x) is the potential energy of the particle, E is the energy of the particle, and ψ(x) is the wave function of the particle.   In the case of a particle in a box, the potential energy is zero inside the box, so the equation becomes:
-
-(-ħ^2 / (2m))(d^2ψ / dx^2) = Eψ(x)
-"""
-
-msg_2 = """
-It is given by:
-
-(-γ^μ (∂ / ∂x^μ) + m)ψ(x) = 0
-
-where γ^μ are the Dirac matrices, x^μ represents the position of the particle, m is the mass of the particle, and ψ(x) is the spinor representing the state of the particle.   
-"""
-
 
 def filter_relevant_args(dataclass_type, args_dict):
     if not is_dataclass(dataclass_type):
