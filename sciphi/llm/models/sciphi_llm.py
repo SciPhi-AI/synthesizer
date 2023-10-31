@@ -65,7 +65,7 @@ class SciPhiLLM(LLM):
                     ),
                 )
         elif self.config.mode == SciPhiProviderMode.LOCAL_HF:
-            from sciphi.llm.models import hugging_face_llm
+            from sciphi.llm.models import hugging_face_llm  # noqa F401
 
         else:
             raise ValueError(f"Invalid mode: {self.config.mode}")
