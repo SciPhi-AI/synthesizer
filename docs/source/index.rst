@@ -26,7 +26,7 @@ SciPhi is a powerful knowledge engine tailored for LLM-based inference, data gen
 
 With SciPhi, you can:
 
-* Tap into the **Retriever-Augmented Generation (RAG)** for data anchoring to real-world sources.
+* Leverage **Retriever-Augmented Generation (RAG)** for better accuracy and efficiency.
    - Features like end-to-end cloud and local RAG knowledge engine APIs are underway!
 * Generate truthful datasets using various LLMs, supporting **Anthropic**, **OpenAI**, **vLLM**, and **SciPhi**.
 * Custom tailor your data creation for applications such as LLM training, RAG, and beyond.

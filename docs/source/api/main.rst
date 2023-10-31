@@ -17,7 +17,7 @@ Search Endpoint
 
 - **URL**: ``/search``
 - **Method**: ``POST``
-- **Description**: This endpoint interacts with the Retriever module of the SciPhi codebase, allowing you to search for related documents based on the provided queries.
+- **Description**: This endpoint interacts with the Retriever module of the SciPhi-Infra codebase, allowing you to search for related documents based on the provided queries.
 
 **Request Body**:
   - ``queries``: A list of query strings for which related documents should be retrieved.
@@ -35,7 +35,7 @@ A list of lists containing Document objects, where each list corresponds to the 
         -H "Content-Type: application/json" \
         -d '{"queries": ["What is general relativity?", "Who is Albert Einstein?"], "top_k": 5}'
 
-This request queries the SciPhi World Database. The expected response is:
+The expected response is:
 
 .. code-block:: none
 
@@ -51,40 +51,39 @@ SciPhi adheres to the API specification of OpenAI's API, allowing compatibility 
 
 .. code-block:: bash
 
-curl https://api.sciphi.ai/v1/completions \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer 55c51253002ed4f7d1dd3afbe2a72635" \
-  -d '{
-     "model": "SciPhi/SciPhi-Self-RAG-Mistral-7B-32k",
-     "prompt": "Say this is a test.",
-     "temperature": 0.7
-   }'
+    curl https://api.sciphi.ai/v1/completions \
+      -H "Content-Type: application/json" \
+      -H "Authorization: Bearer $SCIPHI_API_KEY" \
+      -d '{
+         "model": "SciPhi/SciPhi-Self-RAG-Mistral-7B-32k",
+         "prompt": "Say this is a test.",
+         "temperature": 0.7
+       }'
 
-
-After executing the above request with the SciPhi/SciPhi-Self-RAG-Mistral-7B-32k model, the expected response is:
+The expected response is:
 
 .. code-block:: json
 
-{
-    "id":"cmpl-f03f53c15a174ffe89bdfc83507de7a9",
-    "object":"text_completion",
-    "created":1698730137,
-    "model":"SciPhi/SciPhi-Self-RAG-Mistral-7B-32k",
-    "choices":[
-        {
-            "index":0,
-            "text":"This is a test.",
-            "logprobs":null,
-            "finish_reason":"length"
-        }
-    ],
-    "usage":
-        {
-            "prompt_tokens":7,
-            "total_tokens":23,
-            "completion_tokens":16
-        }
-}                                                                                                                                                                           (base) ocolegrove@MacBook-Pro-5 sciphi-core % 
+    {
+        "id":"cmpl-f03f53c15a174ffe89bdfc83507de7a9",
+        "object":"text_completion",
+        "created":1698730137,
+        "model":"SciPhi/SciPhi-Self-RAG-Mistral-7B-32k",
+        "choices":[
+            {
+                "index":0,
+                "text":"This is a test.",
+                "logprobs":null,
+                "finish_reason":"length"
+            }
+        ],
+        "usage":
+            {
+                "prompt_tokens":7,
+                "total_tokens":15,
+                "completion_tokens":8
+            }
+    }
 
 API Key and Signup
 ------------------
