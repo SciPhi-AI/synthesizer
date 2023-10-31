@@ -60,7 +60,7 @@ class vLLM(LLM):
         self, prompt: str, generation_config: GenerationConfig
     ) -> str:
         """Get an instruction completion from local SciPhi API."""
-        if self.config.api_base:
+        if self.config.mode == vLLMProviderMode.REMOTE:
             import openai
 
             openai.api_base = self.config.api_base

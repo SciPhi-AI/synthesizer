@@ -4,7 +4,7 @@ from typing import List
 
 from sciphi.interface.base import LLMInterface, LLMProviderName
 from sciphi.interface.llm_interface_manager import llm_interface
-from sciphi.llm import vLLM, vLLMConfig
+from sciphi.llm import GenerationConfig, vLLM, vLLMConfig
 
 logger = logging.getLogger(__name__)
 
@@ -22,7 +22,9 @@ class vLLMInterface(LLMInterface):
     ) -> None:
         self._model = vLLM(config)
 
-    def get_completion(self, prompt: str) -> str:
+    def get_completion(
+        self, prompt: str, generation_config: GenerationConfig
+    ) -> str:
         """Get a completion from the local vLLM provider."""
 
         logger.debug(
@@ -30,13 +32,25 @@ class vLLMInterface(LLMInterface):
         )
         return self.model.get_instruct_completion(prompt)
 
-    def get_batch_completion(self, prompts: List[str]) -> List[str]:
-        """Get a completion from the local vLLM provider."""
+    def get_batch_completion(
+        self, prompts: List[str], generation_config: GenerationConfig
+    ) -> List[str]:
+        """Get a batch completion from the local vLLM provider."""
 
         logger.debug(
-            f"Requesting completion from local vLLM with model={self._model.config.model_name} and prompts={prompts}"
+            f"Requesting batch completion from local vLLM with model={self._model.config.model_name} and prompts={prompts}"
         )
         return self.model.get_batch_instruct_completion(prompts)
+
+    def get_chat_completion(
+        self, conversation: List[dict], generation_config: GenerationConfig
+    ) -> str:
+        """Get a conversation completion from the local vLLM provider."""
+
+        logger.debug(
+            f"Requesting chat completion from local vLLM with model={self._model.config.model_name} and prompts={prompts}"
+        )
+        return self.model.get_instruct_completion(prompt)
 
     @property
     def model(self) -> vLLM:
