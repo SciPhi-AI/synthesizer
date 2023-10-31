@@ -16,10 +16,7 @@ class vLLMInterface(LLMInterface):
     provider_name = LLMProviderName.VLLM
     model_name = "SciPhi/SciPhi-Self-RAG-Mistral-7B-32k"
 
-    def __init__(
-        self,
-        config: vLLMConfig,
-    ) -> None:
+    def __init__(self, config: vLLMConfig, *args, **kwargs) -> None:
         self._model = vLLM(config)
 
     def get_completion(
