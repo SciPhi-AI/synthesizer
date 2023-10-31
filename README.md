@@ -15,6 +15,10 @@ With SciPhi, users can:
 
 ---
 
+## Documentation
+
+For more detailed information, tutorials, and API references, please visit the official [SciPhi Documentation](https://sciphi.readthedocs.io/en/latest/).
+
 ## Fast Setup
 
 ```bash
