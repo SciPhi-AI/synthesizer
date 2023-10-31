@@ -7,7 +7,7 @@
 With SciPhi, users can:
 
 - **Retriever-Augmented Generation (RAG) on Demand**: Built-in RAG Provider Interface to anchor generated data to real-world sources. 
-   - _Coming Soon_ - End-to-end cloud and local RAG knowledge enginge API for seamless use. 
+   - _Coming Soon_ - End-to-end cloud and local RAG knowledge engine API for seamless use. 
 - **Customize Data Creation**: Generate datasets via LLMs that are tailored to your needs, for LLM training, RAG, and more.
    - _Included Example_ - A dedicated textbook module which writes RAG-enhanced textbooks directly from a provided table of contents.
 
