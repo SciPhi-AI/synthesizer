@@ -7,6 +7,7 @@ Endpoint Overview
 -----------------
 
 1. **Search**: This endpoint allows you to fetch related documents based on a set of queries. The documents are retrieved by re-ranked similarity search over embeddings produced by the `facebook/contriever <https://huggingface.co/facebook/contriever>`_. As of now, only Wikipedia is embedded, but there are plans to expand this to a more comprehensive corpus using state-of-the-art embedding methods.
+
 2. **OpenAI Formatted LLM Request (v1)**: SciPhi models are served via an API that is compatible with the OpenAI API.
 
 Detailed Endpoint Descriptions
@@ -35,12 +36,6 @@ A list of lists containing Document objects, where each list corresponds to the 
         -H "Content-Type: application/json" \
         -d '{"queries": ["What is general relativity?", "Who is Albert Einstein?"], "top_k": 5}'
 
-The expected response is:
-
-.. code-block:: none
-
-    [[{"id":14678539,"title":"General Relativity and Gravitation","text":"General Relativity and Gravitation General Re ...
-
 
 SciPhi v1 Endpoints
 ~~~~~~~~~~~~~~~~~~~
@@ -60,7 +55,7 @@ SciPhi adheres to the API specification of OpenAI's API, allowing compatibility 
          "temperature": 0.7
        }'
 
-The expected response is:
+**Response**:
 
 .. code-block:: json
 
@@ -77,12 +72,11 @@ The expected response is:
                 "finish_reason":"length"
             }
         ],
-        "usage":
-            {
-                "prompt_tokens":7,
-                "total_tokens":15,
-                "completion_tokens":8
-            }
+        "usage": {
+            "prompt_tokens":7,
+            "total_tokens":15,
+            "completion_tokens":8
+        }
     }
 
 API Key and Signup
