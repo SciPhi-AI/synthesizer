@@ -122,7 +122,6 @@ class SciPhiInterface(LLMInterface):
                 prompt_with_context, generation_config
             ).strip()
             completion += latest_completion
-            print("latest_completion = ", latest_completion)
 
             if not completion.endswith(SciPhiFormatter.RETRIEVAL_TOKEN):
                 break
@@ -132,7 +131,6 @@ class SciPhiInterface(LLMInterface):
                 else f"{SciPhiFormatter.remove_cruft(completion)}"
             )
             context = self.rag_interface.get_contexts([context_query])[0]
-            print("context = ", context)
             completion += f"{SciPhiFormatter.INIT_PARAGRAPH_TOKEN}{context}{SciPhiFormatter.END_PARAGRAPH_TOKEN}"
         return SciPhiFormatter.remove_cruft(completion)
 
