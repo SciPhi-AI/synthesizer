@@ -25,9 +25,9 @@ class vLLMInterface(LLMInterface):
         """Get a completion from the local vLLM provider."""
 
         logger.debug(
-            f"Requesting completion from local vLLM with model={self._model.config.model_name} and prompt={prompt}"
+            f"Requesting completion from local vLLM with prompt={prompt}"
         )
-        return self.model.get_instruct_completion(prompt)
+        return self.model.get_instruct_completion(prompt, generation_config)
 
     def get_batch_completion(
         self, prompts: List[str], generation_config: GenerationConfig
@@ -35,9 +35,11 @@ class vLLMInterface(LLMInterface):
         """Get a batch completion from the local vLLM provider."""
 
         logger.debug(
-            f"Requesting batch completion from local vLLM with model={self._model.config.model_name} and prompts={prompts}"
+            f"Requesting batch completion from local vLLM with prompts={prompts}"
         )
-        return self.model.get_batch_instruct_completion(prompts)
+        return self.model.get_batch_instruct_completion(
+            prompts, generation_config
+        )
 
     def get_chat_completion(
         self, conversation: List[dict], generation_config: GenerationConfig
@@ -45,9 +47,11 @@ class vLLMInterface(LLMInterface):
         """Get a conversation completion from the local vLLM provider."""
 
         logger.debug(
-            f"Requesting chat completion from local vLLM with model={self._model.config.model_name} and prompts={prompts}"
+            f"Requesting chat completion from local vLLM with conversation={conversation}"
         )
-        return self.model.get_instruct_completion(prompt)
+        return self.model.get_instruct_completion(
+            conversation, generation_config
+        )
 
     @property
     def model(self) -> vLLM:
