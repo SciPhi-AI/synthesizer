@@ -9,6 +9,8 @@ from sciphi.interface.llm_interface_manager import LLMInterfaceManager
 from sciphi.interface.rag_interface_manager import RAGInterfaceManager
 from sciphi.llm import GenerationConfig
 
+from sciphi.llm.models.vllm_llm import vLLMProviderMode
+
 msg_1 = """
 Inside the box, no forces act upon the particle, so the time-independent Schrödinger equation is given by:
 
@@ -73,6 +75,7 @@ def main(
         rag_interface=rag_interface,
         # Consumed by single-load providers
         model_name=llm_model_name,
+        mode=vLLMProviderMode.LOCAL
     )
 
     generation_config = GenerationConfig(
