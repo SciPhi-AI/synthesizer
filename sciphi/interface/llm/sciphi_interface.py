@@ -82,7 +82,6 @@ class SciPhiInterface(LLMInterface):
     def get_chat_completion(
         self, conversation: list[dict], generation_config: GenerationConfig
     ) -> str:
-        print("conversation =", conversation)
         prompt = ""
         added_system_prompt = False
         for message in conversation:
@@ -96,19 +95,13 @@ class SciPhiInterface(LLMInterface):
                 prompt += f"### Response:\n{message['content']}\n\n"
 
         if not added_system_prompt:
-            prompt = (
-                f"### System:\n{SciPhiInterface.ALPACA_CHAT_SYSTEM_PROMPT}.\n\n"
-                + prompt
-            )
+            prompt = f"### System:\n{SciPhiInterface.ALPACA_CHAT_SYSTEM_PROMPT}.\n\n{prompt}"
 
         context = self.rag_interface.get_contexts([last_user_message])[0]
         prompt += f"{SciPhiFormatter.RETRIEVAL_TOKEN} {SciPhiFormatter.INIT_PARAGRAPH_TOKEN}{context}{SciPhiFormatter.END_PARAGRAPH_TOKEN}"
-        print("Formatted Prompt = ", prompt)
-        # return self.get_completion(prompt, generation_config)
         latest_completion = self.model.get_instruct_completion(
             prompt, generation_config
         ).strip()
-        print("latest_completion = ", latest_completion)
 
         return SciPhiFormatter.remove_cruft(latest_completion)
 
