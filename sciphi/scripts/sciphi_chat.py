@@ -35,7 +35,7 @@ def main(
     else:
         config = SciPhiConfig()
 
-    llm_interface = SciPhiLLMInterface(rag_interface, config)
+    llm_interface = SciPhiLLMInterface(config, rag_interface)
 
     generation_config = GenerationConfig(
         model_name=llm_model_name,

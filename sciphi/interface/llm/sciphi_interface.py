@@ -71,8 +71,8 @@ class SciPhiLLMInterface(LLMInterface):
 
     def __init__(
         self,
-        rag_interface: RAGInterface,
         config: SciPhiConfig = SciPhiConfig(),
+        rag_interface: Optional[RAGInterface] = None,
         *args,
         **kwargs,
     ) -> None:
@@ -98,11 +98,22 @@ class SciPhiLLMInterface(LLMInterface):
         if not added_system_prompt:
             prompt = f"### System:\n{SciPhiLLMInterface.ALPACA_CHAT_SYSTEM_PROMPT}.\n\n{prompt}"
 
-        context = self.rag_interface.get_contexts([last_user_message])[0]
-        prompt += f"### Response:\n{SciPhiFormatter.RETRIEVAL_TOKEN} {SciPhiFormatter.INIT_PARAGRAPH_TOKEN}{context}{SciPhiFormatter.END_PARAGRAPH_TOKEN}"
+        # TODO - Cleanup RAG logic checks across this script.
+
+        if not generation_config.model_name:
+            raise ValueError("No model name provided")
+        if "RAG" in generation_config.model_name:
+            if not self.rag_interface:
+                raise ValueError(
+                    "RAG generation requested but no RAG interface provided"
+                )
+            context = self.rag_interface.get_contexts([last_user_message])[0]
+            prompt += f"### Response:\n{SciPhiFormatter.RETRIEVAL_TOKEN} {SciPhiFormatter.INIT_PARAGRAPH_TOKEN}{context}{SciPhiFormatter.END_PARAGRAPH_TOKEN}"
+        else:
+            prompt += f"### Response:\n"
         latest_completion = self.model.get_instruct_completion(
             prompt, generation_config
-        ).strip()
+        )
 
         return SciPhiFormatter.remove_cruft(latest_completion)
 
@@ -114,6 +125,20 @@ class SciPhiLLMInterface(LLMInterface):
         logger.debug(
             f"Requesting completion from local vLLM with model={generation_config.model_name} and prompt={prompt}"
         )
+
+        # TODO - Cleanup and consolidate RAG logic checks across this script.
+
+        if not generation_config.model_name:
+            raise ValueError("No model name provided")
+
+        if "RAG" not in generation_config.model_name:
+            return self.model.get_instruct_completion(
+                prompt, generation_config
+            ).strip()
+        if not self.rag_interface:
+            raise ValueError(
+                "RAG model requested, but no RAG interface provided"
+            )
         completion = ""
         while True:
             prompt_with_context = (
@@ -133,7 +158,7 @@ class SciPhiLLMInterface(LLMInterface):
             )
             context = self.rag_interface.get_contexts([context_query])[0]
             completion += f"{SciPhiFormatter.INIT_PARAGRAPH_TOKEN}{context}{SciPhiFormatter.END_PARAGRAPH_TOKEN}"
-        return SciPhiFormatter.remove_cruft(completion)
+        return SciPhiFormatter.remove_cruft(completion).strip()
 
     def get_batch_completion(
         self, prompts: List[str], generation_config: GenerationConfig
