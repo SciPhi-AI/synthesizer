@@ -72,14 +72,14 @@ class RAGInterfaceManager(InterfaceManager):
 
         config = RAGInterfaceManager.provider_config_registry[provider_name](
             provider_name=provider_name, *args, **kwargs
-        )
+        )  # type: ignore
 
         return RAGInterfaceManager.get_interface(
             provider_name=provider_name,
             config=config,
             *args,
             **kwargs,
-        )
+        )  # type: ignore
 
 
 rag_provider = RAGInterfaceManager.register_provider

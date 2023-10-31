@@ -6,14 +6,10 @@ from sciphi.llm.embedding_helpers import (
     sentencize,
 )
 from sciphi.llm.models.anthropic_llm import AnthropicConfig, AnthropicLLM
-
-# from sciphi.llm.models.hugging_face_llm import (
-#     HuggingFaceConfig,
-#     HuggingFaceLLM,
-# )
-# from sciphi.llm.models.lite_llm import LiteLLM, LiteLLMConfig
-# from sciphi.llm.models.llama_index_llm import LLamaIndexConfig, LlamaIndexLLM
-# from sciphi.llm.models.llamacpp_llm import LlamaCPP, LLamaCPPConfig
+from sciphi.llm.models.hugging_face_llm import (
+    HuggingFaceConfig,
+    HuggingFaceLLM,
+)
 from sciphi.llm.models.openai_llm import OpenAIConfig, OpenAILLM
 from sciphi.llm.models.sciphi_llm import SciPhiConfig, SciPhiLLM
 from sciphi.llm.models.vllm_llm import vLLM, vLLMConfig
@@ -28,16 +24,10 @@ __all__ = [
     # Provider LLM Models
     "AnthropicConfig",
     "AnthropicLLM",
-    # "HuggingFaceConfig",
-    # "HuggingFaceLLM",
-    # "LLamaIndexConfig",
-    # "LlamaIndexLLM",
+    "HuggingFaceConfig",
+    "HuggingFaceLLM",
     "OpenAIConfig",
     "OpenAILLM",
-    # "LiteLLMConfig",
-    # "LiteLLM",
-    # "LLamaCPPConfig",
-    # "LlamaCPP",
     "SciPhiConfig",
     "SciPhiLLM",
     "vLLMConfig",

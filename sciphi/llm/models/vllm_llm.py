@@ -29,6 +29,8 @@ class vLLMConfig(LLMConfig):
     mode: vLLMProviderMode = vLLMProviderMode.REMOTE
     api_base: Optional[str] = None
     api_key: Optional[str] = None
+    # For local inference
+    model_name: Optional[str] = None
 
 
 class vLLM(LLM):
@@ -44,38 +46,62 @@ class vLLM(LLM):
         if config.mode == vLLMProviderMode.REMOTE:
             from sciphi.llm.models.openai_llm import OpenAIConfig, OpenAILLM
 
-            self.model = OpenAILLM(OpenAIConfig(config.provider_name))
+            self.openai_model = OpenAILLM(OpenAIConfig(config.provider_name))
         else:
-            raise NotImplementedError("Local vLLM models not yet implemented.")
+            try:
+                from vllm import LLM as vvLLM
+            except ImportError:
+                raise ImportError(
+                    "Please install the vllm package before attempting to run with an vLLM model. This can be accomplished via `pip install vllm`."
+                )
+
+            self.vllm_model = vvLLM(model=config.model_name)
+
+    def get_instruct_completion(
+        self, prompt: str, generation_config: GenerationConfig
+    ) -> str:
+        """Get an instruction completion from local SciPhi API."""
+        if self.config.mode == vLLMProviderMode.REMOTE:
+            import openai
+
+            if not self.config.api_base:
+                raise ValueError(
+                    "The api_base must be specified for remote vLLM models."
+                )
+            openai.api_base = self.config.api_base
+            openai.api_key = self.config.api_key or os.getenv("VLLM_API_KEY")
+            return self.openai_model.get_instruct_completion(
+                prompt, generation_config
+            )
+        else:
+            from vllm import SamplingParams
+
+            self.sampling_params = SamplingParams(
+                temperature=generation_config.temperature,
+                top_p=generation_config.top_p,
+                top_k=generation_config.top_k,
+                max_tokens=generation_config.max_tokens_to_sample,
+            )
+            results = self.vllm_model.generate(
+                prompt,
+                sampling_params=self.sampling_params,
+            )
+            return results[0].outputs[0].text
+
+    def get_batch_instruct_completion(
+        self, prompts: list[str], generation_config: GenerationConfig
+    ) -> list[str]:
+        """Get batch instruction completion from the vLLM interface."""
+        raise NotImplementedError(
+            "Batch instruction completion not yet implemented for vLLM."
+        )
 
     def get_chat_completion(
         self,
         messages: list[dict[str, str]],
         generation_config: GenerationConfig,
     ) -> str:
-        """Get a completion from the SciPhi API based on the provided messages."""
+        """Get chat completion from the vLLM interface."""
         raise NotImplementedError(
-            "Chat completion not yet implemented for SciPhi."
-        )
-
-    def get_instruct_completion(
-        self, prompt: str, generation_config: GenerationConfig
-    ) -> str:
-        """Get an instruction completion from local SciPhi API."""
-        import openai
-
-        if self.config.api_base:
-            openai.api_base = self.config.api_base
-            openai.api_key = self.config.api_key or os.getenv("VLLM_API_KEY")
-            return self.model.get_instruct_completion(
-                prompt, generation_config
-            )
-        raise NotImplementedError("Missing api base.")
-
-    def get_batch_instruct_completion(
-        self, prompts: list[str], generation_config: GenerationConfig
-    ) -> list[str]:
-        """Get batch instruction completion from local vLLM."""
-        raise NotImplementedError(
-            "Batch instruction completion not yet implemented for SciPhi."
+            "Chat completion not yet implemented for vLLM."
         )

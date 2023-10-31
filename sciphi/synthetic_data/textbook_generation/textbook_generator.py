@@ -4,11 +4,11 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 from typing import Generator, Optional, Tuple
 
-from sciphi.llm import GenerationConfig
 from sciphi.core import LLMProviderName, RAGProviderName
 from sciphi.core.writers import JsonlDataWriter, RawDataWriter
 from sciphi.interface import LLMInterfaceManager, RAGInterfaceManager
 from sciphi.interface.llm.sciphi_interface import SciPhiFormatter
+from sciphi.llm import GenerationConfig
 from sciphi.synthetic_data.textbook_generation.helpers import (
     load_yaml_file,
     with_retry,
@@ -51,7 +51,7 @@ class TextbookContentGenerator:
         """Initialize the textbook content generator."""
         self._load_configuration(config_path, cli_args)
 
-        rag_interface = (
+        self.rag_interface = (
             RAGInterfaceManager.get_interface_from_args(
                 RAGProviderName(self.config.rag_provider_name),
                 api_base=self.config.rag_api_base or self.config.llm_api_base,
@@ -66,7 +66,7 @@ class TextbookContentGenerator:
             api_key=self.config.llm_api_key,
             api_base=self.config.llm_api_base,
             # Currently only consumed by SciPhi
-            rag_interface=rag_interface,
+            rag_interface=self.rag_interface,
             # Consumed by single-load providers
             model_name=self.config.llm_model_name,
         )
@@ -450,7 +450,7 @@ class TextbookContentGenerator:
                     [subsection or section]
                 )
             )[0][: self.config.max_related_context_to_sample]
-            if self.config.rag_enabled
+            if self.config.rag_enabled and self.rag_interface
             else TextbookContentGenerator.NO_RAG_TEXT
         )
         book_context = (

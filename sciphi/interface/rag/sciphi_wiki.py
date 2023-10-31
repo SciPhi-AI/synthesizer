@@ -42,7 +42,7 @@ class SciPhiWikiRAGInterface(RAGInterface):
             for raw_context in raw_contexts
         ]
 
-    def _format_wiki_context(self, context: list) -> str:
+    def _format_wiki_context(self, context: dict) -> str:
         """Format the context for a prompt."""
         joined_context = [f"{ele['title']}\n{ele['text']}" for ele in context]
         return "\n".join(
@@ -57,7 +57,7 @@ def wiki_search_api(
     rag_api_key: str,
     top_k=10,
     batch_size=64,
-) -> dict:
+) -> list[dict]:
     """
     Queries the search API with the provided credentials and query.
     The expected output is a JSON response containing the top_k examples.
@@ -82,7 +82,7 @@ def wiki_search_api(
         return response.json()
 
     # Break the list of queries into chunks of 'batch_size'
-    results = []
+    results: list[dict] = []
     for i in range(0, len(queries), batch_size):
         batch = queries[i : i + batch_size]
         results.extend(_send_request(batch))

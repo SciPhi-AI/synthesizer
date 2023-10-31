@@ -1,6 +1,6 @@
 """Base classes for language model providers."""
 from abc import ABC, abstractmethod
-from dataclasses import dataclass, fields
+from dataclasses import dataclass, field, fields
 from enum import Enum
 from typing import Optional
 
@@ -55,6 +55,10 @@ class GenerationConfig(ABC):
     functions: Optional[list[dict]] = None
     skip_special_tokens: bool = False
     stop_token: Optional[str] = None
+    num_beams: int = 1
+    do_sample: bool = True
+    # Additional args to pass to the generation config
+    add_generation_kwargs: dict = field(default_factory=dict)
 
 
 class LLM(ABC):

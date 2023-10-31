@@ -1,4 +1,3 @@
-import blingfire as bf
 import pandas as pd
 from tqdm import tqdm
 
@@ -80,6 +79,8 @@ def sentencize(
     filter_len: int = 3,
     disable_progress_bar: bool = False,
 ) -> pd.DataFrame:
+    import blingfire as bf
+
     """
     Split a document into sentences. Can be used with `sectionize_documents`
     to further split documents into more manageable pieces. Takes in offsets

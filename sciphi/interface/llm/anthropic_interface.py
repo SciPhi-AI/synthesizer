@@ -36,6 +36,14 @@ class AnthropicLLMInterface(LLMInterface):
         """Get a completion from the remote Anthropic provider."""
         return self.model.get_instruct_completion(prompt, generation_config)
 
+    def get_chat_completion(
+        self, conversation: list[dict], generation_config: GenerationConfig
+    ) -> str:
+        """Get a chat completion from the remote Anthropic provider."""
+        raise NotImplementedError(
+            "Chat completion not yet implemented for Anthropic."
+        )
+
     @property
     def model(self) -> AnthropicLLM:
         return self._model

@@ -62,6 +62,13 @@ class OpenAILLMInterface(LLMInterface):
                 generation_config,
             )
 
+    def get_chat_completion(
+        self, conversation: list[dict], generation_config: GenerationConfig
+    ) -> str:
+        raise NotImplementedError(
+            "Chat completion not yet implemented for OpenAI."
+        )
+
     @property
     def model(self) -> OpenAILLM:
         return self._model
