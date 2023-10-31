@@ -55,9 +55,11 @@ class vLLMInterface(LLMInterface):
         """Get a conversation completion from the local vLLM provider."""
 
         logger.debug(
-            f"Requesting chat completion from local vLLM with model={self._model.config.model_name} and prompts={prompts}"
+            f"Requesting chat completion from local vLLM with conversation={conversation}"
         )
-        return self.model.get_instruct_completion(prompt)
+        return self.model.get_instruct_completion(
+            conversation, generation_config
+        )
 
     @property
     def model(self) -> vLLM:
