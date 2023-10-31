@@ -18,7 +18,6 @@ from sciphi.core import (
 )
 from sciphi.core.utils import get_config_dir
 from sciphi.interface import (
-    LLMInterface,
     LLMInterfaceManager,
     RAGInterfaceManager,
 )

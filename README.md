@@ -7,7 +7,7 @@
 With SciPhi, users can:
 
 - **Retriever-Augmented Generation (RAG) on Demand**: Built-in RAG Provider Interface to anchor generated data to real-world sources. 
-   - _Coming Soon_ - End-to-end cloud and local RAG knowledge enginge API for seamless use. 
+   - _Coming Soon_ - End-to-end cloud and local RAG knowledge enginge API for seamless use.
 - **Customize Data Creation**: Generate datasets via LLMs that are tailored to your needs, for LLM training, RAG, and more.
    - _Included Example_ - A dedicated textbook module which writes RAG-enhanced textbooks directly from a provided table of contents.
 
@@ -132,7 +132,6 @@ This is an effort to democratize access to top-tier textbooks. This can readily 
    Alternatively, you may provide your own custom settings in a YAML file. See the [default settings configuration here](sciphi/config/generation_settings/textbook_generation_settings.yaml).
 
    _Important:_ To make the most out of grounding your data with Wikipedia, ensure your system matches our detailed specifications. An example RAG provider can be seen [here](https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/interface/rag/sciphi_wiki.py). More high quality outbook books are available [here](https://github.com/SciPhi-AI/library-of-phi).
-
 
 ### RAG Eval Harness
 
