@@ -21,14 +21,14 @@ Welcome to SciPHi!
    </p>
 
 
-SciPhi [ΨΦ]: AI's Knowledge Engine for Tailored Data Generation 💡
+SciPhi [ΨΦ]: AI's Knowledge Engine 💡
 -----------------------------------------------------------------
 
 SciPhi is a powerful knowledge engine tailored for LLM-based data generation and management.
 
 With SciPhi, you can:
 
-* Generate datasets using various LLMs, supporting **Anthropic**, **OpenAI**, **vLLM**, and **SciPhi API**.
+* Generate datasets using various LLMs, supporting **Anthropic**, **OpenAI**, **vLLM**, and **SciPhi**.
 * Tap into the **Retriever-Augmented Generation (RAG)** for data anchoring to real-world sources.
    - Features like end-to-end cloud and local RAG knowledge engine APIs are underway!
 * Custom tailor your data creation for applications such as LLM training, RAG, and beyond.
@@ -41,19 +41,19 @@ Quick and easy setup:
 
 Diverse Features:
 
-* Engage with the community on platforms like `Discord <https://discord.gg/j9GxfbxqAe>`_.
-* Seamlessly integrate multiple LLM and RAG providers like OpenAI, Anthropic, HuggingFace, and vLLM.
+* Seamlessly integrate multiple LLM and RAG providers like SciPhi, OpenAI, Anthropic, HuggingFace, and vLLM.
 * Generate custom datasets and even full textbooks using SciPhi's unique capabilities.
 * Evaluate your RAG systems effectively with the SciPhi evaluation harness.
+* Engage with the community on platforms like `Discord <https://discord.gg/j9GxfbxqAe>`_.
 
 Developers can also instantiate their own LLM and RAG providers using the SciPhi framework. The supported LLM providers include popular choices like OpenAI, Anthropic, HuggingFace, and vLLM. For specialized RAG capabilities, SciPhi offers the **World Databasef API** for comprehensive database access.
 
 For a detailed setup guide, deeper feature exploration, and developer insights, refer to:
 
 * `SciPhi GitHub Repository <https://github.com/emrgnt-cmplxty/sciphi>`_
-* `Example Textbook Generated with SciPhi <sciphi/data/sample/textbooks/Aerodynamics_of_Viscous_Fluids.md>`_
-* `Default Settings for Textbook Generation <sciphi/config/generation_settings/textbook_generation_settings.yaml>`_
-* `Library of SciPhi Books <https://github.com/SciPhi-AI/library-of-phi>`_
+* `Example Textbook Generated with SciPhi <https://github.com/SciPhi-AI/sciphi/data/sample/textbooks/Aerodynamics_of_Viscous_Fluids.md>`_
+* `Default Settings for Textbook Generation <https://github.com/SciPhi-AI/sciphi/config/generation_settings/textbook_generation_settings.yaml>`_
+* `Library of SciPhi Books <https://github.com/SciPhi-AI/github.com/SciPhi-AI/library-of-phi>`_
 
 Do consider citing our work if SciPhi aids your research. Check the citation section for details.
 
@@ -66,8 +66,8 @@ Documentation
    :maxdepth: 1
    :caption: Getting Started
 
-   getting_started/installation
-   getting_started/quickstart
+   setup/installation
+   setup/quickstart
 
 .. toctree::
    :maxdepth: 1
