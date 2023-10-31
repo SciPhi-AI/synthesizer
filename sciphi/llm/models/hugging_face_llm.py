@@ -6,7 +6,9 @@ from sciphi.core import LLMProviderName
 from sciphi.llm import LLM, GenerationConfig, LLMConfig
 from sciphi.llm.config_manager import model_config
 
-if type_checking:
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
     from transformers import GenerationConfig as HFGenerationConfig
 
 
