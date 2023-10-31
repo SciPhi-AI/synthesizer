@@ -49,19 +49,6 @@ def ensure_directory_exists(filepath: str):
         os.makedirs(directory)
 
 
-def augment_data_with_llm(
-    entry: dict,
-    prompt: Prompt,
-    llm_interface: LLMInterface,
-    user_supplied_inputs: dict[str, str],
-):
-    """Fetches augmented data from LLM for a given entry."""
-    formatted_prompt = prompt.format(
-        dataset_entry=entry, **user_supplied_inputs
-    )
-    return llm_interface.get_completion(formatted_prompt)
-
-
 SHUFFLE_SEED = 42
 
 

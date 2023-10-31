@@ -1,12 +1,11 @@
 """A module for managing local HuggingFace models."""
 
 from dataclasses import dataclass, field
+from typing import TYPE_CHECKING
 
 from sciphi.core import LLMProviderName
 from sciphi.llm import LLM, GenerationConfig, LLMConfig
 from sciphi.llm.config_manager import model_config
-
-from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from transformers import GenerationConfig as HFGenerationConfig
