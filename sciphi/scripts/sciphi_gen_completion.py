@@ -82,6 +82,7 @@ def main(
         model_name=llm_model_name,
         skip_special_tokens=llm_skip_special_tokens,
         stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
+        device=kwargs.get("device", "cpu"),
     )
 
     conversation = [

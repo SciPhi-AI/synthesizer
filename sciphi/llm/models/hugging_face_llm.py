@@ -20,7 +20,7 @@ class HuggingFaceConfig(LLMConfig):
     # Base
     provider_name: LLMProviderName = LLMProviderName.HUGGING_FACE
     model_name: str = "gpt2"
-    temperature: float = 0.7
+    temperature: float = 0.1
 
     # Model and Tokenizer extras
     device: str = "cpu"
