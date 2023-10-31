@@ -3,7 +3,7 @@ import logging
 
 from sciphi.interface.base import LLMInterface, LLMProviderName
 from sciphi.interface.llm_interface_manager import llm_interface
-from sciphi.llm import HuggingFaceConfig, HuggingFaceLLM, GenerationConfig
+from sciphi.llm import GenerationConfig, HuggingFaceConfig, HuggingFaceLLM
 
 logger = logging.getLogger(__name__)
 

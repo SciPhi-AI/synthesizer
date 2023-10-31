@@ -4,11 +4,11 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 from typing import Generator, Optional, Tuple
 
-from sciphi.llm import GenerationConfig
 from sciphi.core import LLMProviderName, RAGProviderName
 from sciphi.core.writers import JsonlDataWriter, RawDataWriter
 from sciphi.interface import LLMInterfaceManager, RAGInterfaceManager
 from sciphi.interface.llm.sciphi_interface import SciPhiFormatter
+from sciphi.llm import GenerationConfig
 from sciphi.synthetic_data.textbook_generation.helpers import (
     load_yaml_file,
     with_retry,

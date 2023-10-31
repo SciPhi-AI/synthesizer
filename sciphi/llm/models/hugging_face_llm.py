@@ -3,7 +3,7 @@
 from dataclasses import dataclass, field
 
 from sciphi.core import LLMProviderName
-from sciphi.llm import LLM, LLMConfig, GenerationConfig
+from sciphi.llm import LLM, GenerationConfig, LLMConfig
 from sciphi.llm.config_manager import model_config
 
 if type_checking:
@@ -32,10 +32,7 @@ class HuggingFaceLLM(LLM):
     ) -> None:
         try:
             import torch  # noqa: F401
-            from transformers import (
-                AutoModelForCausalLM,
-                AutoTokenizer,
-            )
+            from transformers import AutoModelForCausalLM, AutoTokenizer
         except ImportError:
             raise ImportError(
                 "Please install the torch and transformers packages before attempting to run with a HuggingFace model. This can be accomplished via `pip install transformers`."
