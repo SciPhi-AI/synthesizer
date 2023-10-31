@@ -28,7 +28,10 @@ class SciPhiConfig(LLMConfig):
     sub_provider_name: LLMProviderName = LLMProviderName.VLLM
 
     # SciPhi Extras...
-    mode = SciPhiProviderMode.REMOTE
+    mode: SciPhiProviderMode = SciPhiProviderMode.REMOTE
+    ## Local
+    model_name: Optional[str] = None
+    ## Remote
     api_base: Optional[str] = "https://api.sciphi.ai/v1"
     api_key: Optional[str] = None
 
@@ -47,13 +50,14 @@ class SciPhiLLM(LLM):
             SciPhiProviderMode.REMOTE,
             SciPhiProviderMode.LOCAL_VLLM,
         ]:
-            # Remote and local vLLM are both powered by vLLM
-            assert self.config.sub_provider_name == LLMProviderName.VLLM
             from sciphi.llm.models.vllm_llm import (
                 vLLM,
                 vLLMConfig,
                 vLLMProviderMode,
             )
+
+            # Remote and local vLLM are both powered by vLLM
+            assert self.config.sub_provider_name == LLMProviderName.VLLM
 
             if self.config.mode == SciPhiProviderMode.REMOTE:
                 api_key = config.api_key or os.getenv("SCIPHI_API_KEY")
@@ -64,11 +68,21 @@ class SciPhiLLM(LLM):
                 self.model = vLLM(
                     vLLMConfig(
                         provider_name=config.provider_name,
+                        model_name=config.model_name,
                         api_base=config.api_base,
                         api_key=api_key,
                         mode=vLLMProviderMode.REMOTE,
                     ),
                 )
+            elif self.config.mode == SciPhiProviderMode.LOCAL_VLLM:
+                self.model = vLLM(
+                    vLLMConfig(
+                        provider_name=config.provider_name,
+                        model_name=config.model_name,
+                        mode=vLLMProviderMode.LOCAL,
+                    ),
+                )
+
         elif self.config.mode == SciPhiProviderMode.LOCAL_HF:
             from sciphi.llm.models import hugging_face_llm  # noqa F401
 

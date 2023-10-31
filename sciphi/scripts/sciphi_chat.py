@@ -7,7 +7,7 @@ from sciphi.interface import (
     SciPhiLLMInterface,
     SciPhiWikiRAGInterface,
 )
-from sciphi.llm import GenerationConfig
+from sciphi.llm import GenerationConfig, SciPhiConfig
 
 
 def filter_relevant_args(dataclass_type, args_dict):
@@ -20,10 +20,22 @@ def filter_relevant_args(dataclass_type, args_dict):
 
 def main(
     query: str = "Who is the president of the United States?",
+    mode="remote",
     llm_model_name="SciPhi/SciPhi-Self-RAG-Mistral-7B-32k",
 ):
     rag_interface = SciPhiWikiRAGInterface()
-    llm_interface = SciPhiLLMInterface(rag_interface)
+
+    config = None
+    if mode == "local":
+        from sciphi.llm.models.sciphi_llm import SciPhiProviderMode
+
+        config = SciPhiConfig(
+            mode=SciPhiProviderMode.LOCAL_VLLM, model_name=llm_model_name
+        )
+    else:
+        config = SciPhiConfig()
+
+    llm_interface = SciPhiLLMInterface(rag_interface, config)
 
     generation_config = GenerationConfig(
         model_name=llm_model_name,
@@ -36,14 +48,14 @@ def main(
             "role": "system",
             "content": "You are a helpful and informative professor. You give long, accurate, and detailed explanations to student questions. You answer EVERY question that is given to you. You retrieve data multiple times if necessary.",
         },
-        {
-            "role": "user",
-            "content": "Who is the president of the United States?",
-        },
-        {
-            "role": "assistant",
-            "content": "Joe Biden is the current president of the United States.",
-        },
+        # {
+        #     "role": "user",
+        #     "content": "Who is the president of the United States?",
+        # },
+        # {
+        #     "role": "assistant",
+        #     "content": "Joe Biden is the current president of the United States.",
+        # },
         {
             "role": "user",
             "content": query,
