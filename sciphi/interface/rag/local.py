@@ -14,7 +14,7 @@ class LocalRAGInterface(RAGInterface):
     def __init__(
         self,
         config: RAGProviderConfig = RAGProviderConfig(RAGProviderName.LOCAL),
-        context_fn: Callable[[list[str], list[str]]] = None,
+        context_fn: Callable[[list[str]], list[str]] = None,
         *args,
         **kwargs,
     ) -> None:
