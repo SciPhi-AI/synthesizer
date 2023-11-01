@@ -1,6 +1,7 @@
 from sciphi.core import RAGProviderName
 from sciphi.interface.base import RAGInterface, RAGProviderConfig
 from sciphi.interface.rag_interface_manager import rag_provider
+from typing import Callable
 
 
 @rag_provider
@@ -13,7 +14,7 @@ class LocalRAGInterface(RAGInterface):
     def __init__(
         self,
         config: RAGProviderConfig = RAGProviderConfig(RAGProviderName.LOCAL),
-        context_fn: function = None,
+        context_fn: Callable[[list[str], list[str]]] = None,
         *args,
         **kwargs,
     ) -> None:
