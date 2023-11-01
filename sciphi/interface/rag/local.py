@@ -12,7 +12,7 @@ class LocalRAGInterface(RAGInterface):
 
     def __init__(
         self,
-        config: RAGProviderConfig = RAGProviderConfig(),
+        config: RAGProviderConfig = RAGProviderConfig(RAGProviderName.LOCAL),
         context_fn: function = None,
         *args,
         **kwargs,
