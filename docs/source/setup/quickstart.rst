@@ -6,10 +6,12 @@ SciPhi Quickstart
 Welcome to the SciPhi quickstart guide! SciPhi, or ΨΦ, is your portal to using large language models (LLMs) like OpenAI's models, Anthropic, HuggingFace, and vLLM, combined with the power of Retrieval-Augmented Generation (RAG).
 
 This guide will introduce you to:
+
 - Generating data tailored to your needs.
 - Using the RAG provider interface.
 - Creating RAG-enhanced textbooks.
 - Evaluating your RAG pipeline.
+
 
 Let's get started!
 
@@ -41,6 +43,7 @@ Here's how you can use SciPhi to quickly set up and retrieve chat completions, w
     
     # SciPhi RAG Interface
     # Supports calls like `contexts = rag_interface.get_contexts(query)`
+    # Requires a valid SCIPHI_API_KEY env var
     rag_interface = SciPhiWikiRAGInterface()
 
     # SciPhi LLM Interface
@@ -137,9 +140,8 @@ Generating Completions with SciPhi
 
 SciPhi supports multiple LLM providers (e.g. OpenAI, Anthropic, HuggingFace, and vLLM) and RAG providers (e.g. SciPhi). To run an example completion with SciPhi the code shown above, execute:
 
-```bash
-python -m sciphi.scripts.sciphi_gen_completion -llm_provider_name=sciphi --llm_api_key=YOUR_SCIPHI_API_KEY --llm_api_base=https://api.sciphi.ai/v1 --rag_api_base=https://api.sciphi.ai --llm_model_name=SciPhi/SciPhi-Self-RAG-Mistral-7B-32k --query="Write a few paragraphs on general relativity. Include the mathematical definition of Einsteins field equation in your writeup."
-```
+.. code-block:: bash
+    python -m sciphi.scripts.sciphi_gen_completion -llm_provider_name=sciphi --llm_api_key=YOUR_SCIPHI_API_KEY --llm_api_base=https://api.sciphi.ai/v1 --rag_api_base=https://api.sciphi.ai --llm_model_name=SciPhi/SciPhi-Self-RAG-Mistral-7B-32k --query="Write a few paragraphs on general relativity. Include the mathematical definition of Einsteins field equation in your writeup."
 
 Generating Data with SciPhi
 ---------------------------

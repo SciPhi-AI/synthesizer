@@ -1,4 +1,4 @@
-SciPhi [ΨΦ]: AI's Knowledge Engine 💡
+Welcome to SciPhi 💡
 ================
 
 .. image:: https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/195367d8-54fd-4281-ace0-87ea8523f982
@@ -27,7 +27,7 @@ SciPhi is a powerful knowledge engine tailored for LLM-based inference, data gen
 With SciPhi, you can:
 
 * Leverage **Retrieval-Augmented Generation (RAG)** for better accuracy and efficiency.
-   - Features like end-to-end cloud and local RAG knowledge engine APIs are underway!
+   - Access SciPhi's cloud World Database via API.
 * Generate truthful datasets using various LLMs, supporting **Anthropic**, **OpenAI**, **vLLM**, and **SciPhi**.
 * Custom tailor your data creation for applications such as LLM training, RAG, and beyond.
    - For ex., generate RAG-grounded textbooks from a given table of contents.
@@ -35,7 +35,7 @@ With SciPhi, you can:
 Quick and easy setup:
 
 * Installation with pip: ``pip install sciphi``
-* Optional dependencies are available for extended functionality, such as ``sciphi[vllm_support]`` for vLLM integration.
+* Optional dependencies are available for extended functionality, such as ``sciphi[all_with_extras]`` for additional integrations.
 
 Diverse Features:
 

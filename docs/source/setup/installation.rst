@@ -1,6 +1,6 @@
 .. _sciphi_installation:
 
-Installation for SciPhi
+Installation
 =====================================================
 
 SciPhi is a powerful knowledge engine that integrates with multiple LLM providers and RAG providers, allowing for customizable data creation, retriever-augmented generation, and even textbook generation.
