@@ -16,4 +16,5 @@ class LLMProviderName(Enum):
 
 
 class RAGProviderName(Enum):
+    LOCAL = "local"
     SCIPHI_WIKI = "sciphi-wiki"

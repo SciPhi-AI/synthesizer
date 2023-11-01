@@ -13,6 +13,7 @@ from sciphi.interface.llm.sciphi_interface import (
 )
 from sciphi.interface.llm.vllm_interface import vLLMInterface
 from sciphi.interface.llm_interface_manager import LLMInterfaceManager
+from sciphi.interface.rag.local import LocalRAGInterface
 from sciphi.interface.rag.sciphi_wiki import (
     SciPhiWikiRAGConfig,
     SciPhiWikiRAGInterface,
@@ -35,6 +36,7 @@ __all__ = [
     "RAGProviderConfig",
     "RAGInterface",
     # Concrete RAG Interfaces
+    "LocalRAGInterface",
     "SciPhiFormatter",
     "SciPhiWikiRAGConfig",
     "SciPhiWikiRAGInterface",
