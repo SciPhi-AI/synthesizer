@@ -26,7 +26,7 @@ SciPhi is a powerful knowledge engine tailored for LLM-based inference, data gen
 
 With SciPhi, you can:
 
-* Leverage **Retriever-Augmented Generation (RAG)** for better accuracy and efficiency.
+* Leverage **Retrieval-Augmented Generation (RAG)** for better accuracy and efficiency.
    - Features like end-to-end cloud and local RAG knowledge engine APIs are underway!
 * Generate truthful datasets using various LLMs, supporting **Anthropic**, **OpenAI**, **vLLM**, and **SciPhi**.
 * Custom tailor your data creation for applications such as LLM training, RAG, and beyond.
@@ -44,7 +44,7 @@ Diverse Features:
 * Evaluate your RAG systems effectively with the SciPhi evaluation harness.
 * Engage with the community on platforms like `Discord <https://discord.gg/j9GxfbxqAe>`_.
 
-Developers can also instantiate their own LLM and RAG providers using the SciPhi framework. The supported LLM providers include popular choices like OpenAI, Anthropic, HuggingFace, and vLLM. For specialized RAG capabilities, SciPhi offers the `World Databasef API <https://sciphi.readthedocs.io/en/latest/api/main.html>`_ for comprehensive knowledge access.
+Developers can also instantiate their own LLM and RAG providers using the SciPhi framework. The supported LLM providers include popular choices like OpenAI, Anthropic, HuggingFace, and vLLM. For specialized RAG capabilities, SciPhi offers the `World Database API <https://sciphi.readthedocs.io/en/latest/api/main.html>`_ for comprehensive knowledge access.
 
 You can use this format in your reStructuredText documentation, and it should render as a clickable link.
 For a detailed setup guide, deeper feature exploration, and developer insights, refer to:

@@ -3,7 +3,7 @@
 SciPhi Quickstart
 =================
 
-Welcome to the SciPhi quickstart guide! SciPhi, or ΨΦ, is your portal to using large language models (LLMs) like OpenAI's models, Anthropic, HuggingFace, and vLLM, combined with the power of Retriever-Augmented Generation (RAG).
+Welcome to the SciPhi quickstart guide! SciPhi, or ΨΦ, is your portal to using large language models (LLMs) like OpenAI's models, Anthropic, HuggingFace, and vLLM, combined with the power of Retrieval-Augmented Generation (RAG).
 
 This guide will introduce you to:
 - Generating data tailored to your needs.
