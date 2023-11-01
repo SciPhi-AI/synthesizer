@@ -36,6 +36,37 @@ A list of lists containing Document objects, where each list corresponds to the 
         -H "Content-Type: application/json" \
         -d '{"queries": ["What is general relativity?", "Who is Albert Einstein?"], "top_k": 5}'
 
+**Response**:
+
+.. code-block:: none
+
+   [
+     {
+       "id":14678539,
+       "title":"General Relativity and Gravitation",
+       "text":"...a monthly peer-reviewed scientific journal published by Springer Science+Business Media. Editors-in-chief are Abhay Ashtekar and Roy Maartens..."
+     },
+     {
+       "id":152075,
+       "title":"General relativity",
+       "text":"...a geometric theory of gravitation by Albert Einstein in 1915. It generalizes special relativity and Newton's law..."
+     },
+     {
+       "id":434606,
+       "title":"Universe",
+       "text":"...General relativity provides a unified description of gravity affecting the geometry of spacetime..."
+     },
+     {
+       "id":14246698,
+       "title":"Albert Einstein: Creator and Rebel",
+       "text":"...a biography of Albert Einstein by Banesh Hoffmann with Helen Dukas, published in 1972 by Viking Press..."
+     },
+     {
+       "id":2060,
+       "title":"Albert Einstein",
+       "text":"...German-born physicist known for the theory of relativity and the mass–energy equivalence formula. He received the 1921 Nobel Prize in Physics..."
+     }
+   ]
 
 SciPhi v1 Endpoints
 ~~~~~~~~~~~~~~~~~~~

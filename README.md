@@ -160,6 +160,7 @@ from sciphi.interface import (
 )
    # SciPhi RAG Interface
    # Supports calls like `contexts = rag_interface.get_contexts(query)`
+   # Requires a valid SCIPHI_API_KEY env var
    rag_interface = SciPhiWikiRAGInterface()
 
    # SciPhi LLM Interface
