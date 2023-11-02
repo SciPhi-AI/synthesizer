@@ -113,12 +113,15 @@ class SciPhiLLMInterface(LLMInterface):
                 )
             generation_config_copy = copy(generation_config)
             generation_config_copy.stop_token = None
-            context_query = SciPhiFormatter.remove_cruft(
-                self.model.get_instruct_completion(
-                    f"### Instruction:\nBased on the following conversation, what is the ideal query to retrieve related context? ### Conversation:\n{prompt}\n\nNow, return the query.\n\n### Response:\n",
-                    generation_config_copy,
+            if len(conversation) > 1:
+                context_query = SciPhiFormatter.remove_cruft(
+                    self.model.get_instruct_completion(
+                        f"### Instruction:\nBased on the following conversation, what is the ideal query to retrieve related context? ### Conversation:\n{prompt}\n\nNow, return the query.\n\n### Response:\n",
+                        generation_config_copy,
+                    )
                 )
-            )
+            else:
+                context_query = last_user_message
             print("context_query = ", context_query)
             context = self.rag_interface.get_contexts([context_query])[0]
             prompt += f"### Response:\n{SciPhiFormatter.RETRIEVAL_TOKEN} {SciPhiFormatter.INIT_PARAGRAPH_TOKEN}{context}{SciPhiFormatter.END_PARAGRAPH_TOKEN}"
