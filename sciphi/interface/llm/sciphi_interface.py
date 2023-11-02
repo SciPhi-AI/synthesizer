@@ -3,6 +3,8 @@ import logging
 import re
 from typing import List, Optional
 
+from copy import copy
+
 from sciphi.interface.base import LLMInterface, LLMProviderName, RAGInterface
 from sciphi.interface.llm_interface_manager import llm_interface
 from sciphi.llm import GenerationConfig, SciPhiConfig, SciPhiLLM
@@ -20,6 +22,7 @@ class SciPhiFormatter:
     END_PARAGRAPH_TOKEN = "</paragraph>"
 
     RETRIEVAL_TOKEN = "[Retrieval]"
+    IRRELEVANT_TOKEN = "[Irrelevant]"
     FULLY_SUPPORTED = "[Fully supported]"
     NO_RETRIEVAL_TOKEN = "[No Retrieval]"
     EVIDENCE_TOKEN = "[Continue to Use Evidence]"
@@ -52,6 +55,7 @@ class SciPhiFormatter:
         return (
             result.replace(SciPhiFormatter.RETRIEVAL_TOKEN, "")
             .replace(SciPhiFormatter.NO_RETRIEVAL_TOKEN, "")
+            .replace(SciPhiFormatter.IRRELEVANT_TOKEN, "")
             .replace(SciPhiFormatter.EVIDENCE_TOKEN, "")
             .replace(SciPhiFormatter.UTILITY_TOKEN, "")
             .replace(SciPhiFormatter.RELEVANT_TOKEN, "")
@@ -107,7 +111,19 @@ class SciPhiLLMInterface(LLMInterface):
                 raise ValueError(
                     "RAG generation requested but no RAG interface provided"
                 )
-            context = self.rag_interface.get_contexts([last_user_message])[0]
+            generation_config_copy = copy(generation_config)
+            generation_config_copy.stop_token = None
+            if len(conversation) > 1:
+                context_query = SciPhiFormatter.remove_cruft(
+                    self.model.get_instruct_completion(
+                        f"### Instruction:\nBased on the following conversation, what is the ideal query to retrieve related context? ### Conversation:\n{prompt}\n\nNow, return the query.\n\n### Response:\n",
+                        generation_config_copy,
+                    )
+                )
+            else:
+                context_query = last_user_message
+            print("context_query = ", context_query)
+            context = self.rag_interface.get_contexts([context_query])[0]
             prompt += f"### Response:\n{SciPhiFormatter.RETRIEVAL_TOKEN} {SciPhiFormatter.INIT_PARAGRAPH_TOKEN}{context}{SciPhiFormatter.END_PARAGRAPH_TOKEN}"
         else:
             prompt += f"### Response:\n"
@@ -175,7 +191,7 @@ class SciPhiLLMInterface(LLMInterface):
     def _check_stop_token(self, stop_token: Optional[str]) -> None:
         if stop_token != SciPhiFormatter.INIT_PARAGRAPH_TOKEN:
             raise ValueError(
-                f"Must speicfy stop_token={stop_token} to run with SciPhi"
+                f"Must speicfy stop_token = {SciPhiFormatter.INIT_PARAGRAPH_TOKEN} to run with SciPhi"
             )
 
     @property
