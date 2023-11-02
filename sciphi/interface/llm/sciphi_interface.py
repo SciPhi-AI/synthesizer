@@ -3,6 +3,8 @@ import logging
 import re
 from typing import List, Optional
 
+from copy import copy
+
 from sciphi.interface.base import LLMInterface, LLMProviderName, RAGInterface
 from sciphi.interface.llm_interface_manager import llm_interface
 from sciphi.llm import GenerationConfig, SciPhiConfig, SciPhiLLM
@@ -109,12 +111,15 @@ class SciPhiLLMInterface(LLMInterface):
                 raise ValueError(
                     "RAG generation requested but no RAG interface provided"
                 )
+            generation_config_copy = copy(generation_config)
+            generation_config_copy.stop_token = None
             context_query = SciPhiFormatter.remove_cruft(
                 self.model.get_instruct_completion(
-                    "### Instruction:\nBased on the following conversation, what is the ideal query to retrieve related context?\n\n### Response:\n",
-                    generation_config,
+                    f"### Instruction:\nBased on the following conversation, what is the ideal query to retrieve related context? ### Conversation:\n{prompt}\n\nNow, return the query.\n\n### Response:\n",
+                    generation_config_copy,
                 )
             )
+            print("context_query = ", context_query)
             context = self.rag_interface.get_contexts([context_query])[0]
             prompt += f"### Response:\n{SciPhiFormatter.RETRIEVAL_TOKEN} {SciPhiFormatter.INIT_PARAGRAPH_TOKEN}{context}{SciPhiFormatter.END_PARAGRAPH_TOKEN}"
         else:
