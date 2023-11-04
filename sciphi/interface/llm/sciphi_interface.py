@@ -122,7 +122,6 @@ class SciPhiLLMInterface(LLMInterface):
                 )
             else:
                 context_query = last_user_message
-            print("context_query = ", context_query)
             context = self.rag_interface.get_contexts([context_query])[0]
             prompt += f"### Response:\n{SciPhiFormatter.RETRIEVAL_TOKEN} {SciPhiFormatter.INIT_PARAGRAPH_TOKEN}{context}{SciPhiFormatter.END_PARAGRAPH_TOKEN}"
         else:
