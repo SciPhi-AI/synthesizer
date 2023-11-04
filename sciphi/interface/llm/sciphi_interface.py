@@ -1,9 +1,8 @@
 """A module for interfacing with local vLLM models"""
 import logging
 import re
-from typing import List, Optional
-
 from copy import copy
+from typing import List, Optional
 
 from sciphi.interface.base import LLMInterface, LLMProviderName, RAGInterface
 from sciphi.interface.llm_interface_manager import llm_interface
