@@ -58,7 +58,7 @@ def main(
         # },
         {
             "role": "user",
-            "content": query,
+            "content": "'Solve 24 = 1601*c - 1605*c for c.\n' using Sympy which  ",  # query,
         },
     ]
 
