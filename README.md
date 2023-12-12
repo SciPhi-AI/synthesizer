@@ -1,4 +1,4 @@
-# SciPhi [ΨΦ]: AI's Knowledge Engine 💡
+# SciPhi [ΨΦ]: Synthesizer - A synthetic data framework 💡
 
 <p align="center">
 <img width="716" alt="SciPhi Logo" src="https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/195367d8-54fd-4281-ace0-87ea8523f982">
@@ -9,7 +9,7 @@ With SciPhi, users can:
 - **Custom Data Creation**: Generate datasets via LLMs that are tailored to your needs.
    - Anthropic, OpenAI, vLLM, and SciPhi API are supported.
 - **Retrieval-Augmented Generation (RAG) on Demand**: Built-in RAG Provider Interface to anchor generated data to real-world sources. 
-   - _Coming Soon_ - End-to-end cloud and local RAG knowledge engine API for seamless use. 
+   - _Coming Soon_ - End-to-end cloud and local Agent Search API for seamless use. 
 - **Customize Data Creation**: Generate datasets via LLMs that are tailored to your needs, for LLM training, RAG, and more.
    - _Included Example_ - A dedicated textbook module which writes RAG-enhanced textbooks directly from a provided table of contents.
 
