@@ -23,20 +23,19 @@ Welcome to Synthesizer 💡
 
 A multi-purpose LLM framework for inference, RAG, and data creation.
 
-Looking for the AgentSearch documentation? `Click Here <agent-search.readthedocs.io>`.
+Looking for the AgentSearch documentation? `Click Here <agent-search.readthedocs.io>`_.
 
 With Synthesizer, you can:
 
 * Leverage **Retrieval-Augmented Generation (RAG)** for better accuracy and efficiency.
    - Turnkey integration with SciPhi's AgentSearch.
-* Generate truthful datasets using various LLMs, supporting **Anthropic**, **OpenAI**, **vLLM**.
-* Custom tailored data for applications such as LLM training, RAG, and beyond.
-   - For ex., create RAG-grounded textbooks.
+* Generate truthful synthetic datasets using various LLMs, supporting **Anthropic**, **OpenAI**, **vLLM**.
+* Custom tailor data for LLM training and beyond.
 
 Quick and easy setup:
 
-* Installation with pip: ``pip install synthesizer``
-* Optional dependencies are available for extended functionality, such as ``synthesizer[all_with_extras]`` for additional integrations.
+* Installation with pip: ``pip install sciphi-synthesizer``
+* Optional dependencies are available for extended functionality, such as ``sciphi-synthesizer[all_with_extras]`` for additional integrations.
 
 Diverse Features:
 

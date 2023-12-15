@@ -32,6 +32,7 @@ Instantiate Your LLM and RAG Provider
 Here's how you can use Synthesizer to quickly set up and retrieve chat completions, without diving deep into intricate configurations:
 
 .. code-block:: python
+    
     # Requires a valid SCIPHI_API_KEY in env ...
 
     # Imports
