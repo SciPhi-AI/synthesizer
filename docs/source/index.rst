@@ -1,4 +1,4 @@
-Welcome to SciPhi 💡
+Welcome to Synthesizer 💡
 ================
 
 .. image:: https://github.com/emrgnt-cmplxty/sciphi/assets/68796651/195367d8-54fd-4281-ace0-87ea8523f982
@@ -22,15 +22,15 @@ Welcome to SciPhi 💡
 
 
 
-SciPhi is a powerful knowledge engine tailored for LLM-based inference, data generation and management.
+A multi-purpose LLM framework for inference, RAG, and data creation.
 
-With SciPhi, you can:
+With Synthesizer, you can:
 
 * Leverage **Retrieval-Augmented Generation (RAG)** for better accuracy and efficiency.
-   - Access SciPhi's cloud World Database via API.
-* Generate truthful datasets using various LLMs, supporting **Anthropic**, **OpenAI**, **vLLM**, and **SciPhi**.
-* Custom tailor your data creation for applications such as LLM training, RAG, and beyond.
-   - For ex., generate RAG-grounded textbooks from a given table of contents.
+   - Turnkey integration with SciPhi's AgentSearch.
+* Generate truthful datasets using various LLMs, supporting **Anthropic**, **OpenAI**, **vLLM**.
+* Custom tailored data for applications such as LLM training, RAG, and beyond.
+   - For ex., create RAG-grounded textbooks.
 
 Quick and easy setup:
 
@@ -39,38 +39,19 @@ Quick and easy setup:
 
 Diverse Features:
 
-* Seamlessly integrate multiple LLM and RAG providers like SciPhi, OpenAI, Anthropic, HuggingFace, and vLLM.
-* Generate custom datasets and even full textbooks using SciPhi's unique capabilities.
-* Evaluate your RAG systems effectively with the SciPhi evaluation harness.
+* Seamlessly integrate multiple LLM and RAG providers like OpenAI, Anthropic, HuggingFace, and vLLM.
+* Generate custom datasets and even full textbooks using synthesizers unique capabilities.
+* Evaluate your RAG systems effectively with the synthesizer evaluation harness.
 * Engage with the community on platforms like `Discord <https://discord.gg/j9GxfbxqAe>`_.
 
-Developers can also instantiate their own LLM and RAG providers using the SciPhi framework. The supported LLM providers include popular choices like OpenAI, Anthropic, HuggingFace, and vLLM. For specialized RAG capabilities, SciPhi offers the `World Database API <https://sciphi.readthedocs.io/en/latest/api/main.html>`_ for comprehensive knowledge access.
+Developers can also instantiate their own LLM and RAG providers using the Synthesizer framework. The supported LLM providers include popular choices like OpenAI, Anthropic, HuggingFace, and vLLM. For specialized RAG capabilities, SciPhi offers the `AgentSearch API <https://agent-search.readthedocs.io/en/latest/api/main.html>`_ for comprehensive knowledge access.
 
 You can use this format in your reStructuredText documentation, and it should render as a clickable link.
 For a detailed setup guide, deeper feature exploration, and developer insights, refer to:
 
-* `SciPhi GitHub Repository <https://github.com/emrgnt-cmplxty/sciphi>`_
-* `Example Textbook Generated with SciPhi <https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/data/sample/textbooks/Aerodynamics_of_Viscous_Fluids.md>`_
-* `ToC Used for Sample Textbook Generation <https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/data/sample/table_of_contents/Aerodynamics_of_Viscous_Fluids.yaml>`_
-* `Default Settings for Textbook Generation <https://github.com/SciPhi-AI/sciphi/blob/main/sciphi/config/generation_settings/textbook_generation_settings.yaml>`_
+* `Example Textbook Generated with Synthesizer <https://github.com/SciPhi-AI/synthesizer/blob/main/synthesizer/data/sample/textbooks/Aerodynamics_of_Viscous_Fluids.md>`_
 * `Library of Phi <https://github.com/SciPhi-AI/library-of-phi/>`_
 
-
-Citing Our Work
----------------
-
-If you're using SciPhi in your research or project, please cite our work:
-
-.. code-block:: none
-
-   @software{SciPhi,
-      author = {Colegrove, Owen},
-      doi = {Pending},
-      month = {09},
-      title = {{SciPhi: A Framework for LLM Powered Data}},
-      url = {https://github.com/sciphi-ai/sciphi},
-      year = {2023}
-   }
 
 Documentation
 -------------
@@ -81,9 +62,3 @@ Documentation
 
    setup/installation
    setup/quickstart
-
-.. toctree::
-   :maxdepth: 1
-   :caption: API
-
-   api/main

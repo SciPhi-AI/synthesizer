@@ -3,30 +3,29 @@ requires = ["poetry-core", "setuptools", "wheel"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.setuptools_scm]
-write_to = "sciphi/_version.py"
+write_to = "synthesizer/_version.py"
+
+[project]
+name = 'sciphi-synthesizer'
+version = '1.0.0'
 
 [tool.poetry]
-name = "sciphi"
-version = "0.1.7"
-description = "SciPhi: A Framework for LLM Powered Data."
+description = "Synthesizer: A Framework for LLM Powered Data."
 authors = ["Owen Colegrove <owen@sciphi.ai>"]
 license = "Apache-2.0"
 readme = "README.md"
+packages = [
+    { include = "synthesizer" }
+]
 
 [tool.poetry.dependencies]
 # python version
 python = ">=3.9,<3.12"
 # package dependencies
-bs4 = "^0.0.1"
 fire = "^0.5.0"
 openai = { version = "0.27.8" }
-pandas = "^2.1.0"
-python-dotenv = "^1.0.0"
 pyyaml = "^6.0.1"
 retrying = "^1.3.4"
-sentencepiece = "^0.1.99"
-torch = "^2.1.0"
-tiktoken = "^0.5.1"
 tqdm = "^4.66.1"
 
 # Begin optional dependencies

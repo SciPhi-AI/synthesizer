@@ -1,9 +1,9 @@
-.. _sciphi_quickstart:
+.. _synthesizer_quickstart:
 
-SciPhi Quickstart
+Synthesizer Quickstart
 =================
 
-Welcome to the SciPhi quickstart guide! SciPhi, or ΨΦ, is your portal to using large language models (LLMs) like OpenAI's models, Anthropic, HuggingFace, and vLLM, combined with the power of Retrieval-Augmented Generation (RAG).
+Welcome to the Synthesizer quickstart guide! Synthesizer, or ΨΦ, is your portal to combining Retrieval-Augmented Generation (RAG) with large language models (LLMs) like OpenAI's models, Anthropic, HuggingFace, and vLLM.
 
 This guide will introduce you to:
 
@@ -18,186 +18,60 @@ Let's get started!
 Setting Up Your Environment
 ---------------------------
 
-Before you start, ensure you've installed SciPhi:
+Before you start, ensure you've installed Synthesizer:
 
 .. code-block:: bash
 
-    pip install sciphi
+    pip install sciphi-synthesizer
 
 For additional details, refer to the `installation guide <https://sciphi.readthedocs.io/en/latest/setup/installation.html>`_.
 
 Instantiate Your LLM and RAG Provider
 -------------------------------------
 
-Here's how you can use SciPhi to quickly set up and retrieve chat completions, without diving deep into intricate configurations:
+Here's how you can use Synthesizer to quickly set up and retrieve chat completions, without diving deep into intricate configurations:
 
 .. code-block:: python
+    # Requires a valid SCIPHI_API_KEY in env ...
 
-    from sciphi.interface import (
-        SciPhiFormatter,
-        SciPhiLLMInterface,
-        SciPhiWikiRAGInterface,
+    # Imports
+    from synthesizer.core import LLMProviderName, RAGProviderName
+    from synthesizer.interface import (
+        LLMInterfaceManager,
+        RAGInterfaceManager,
     )
-    # ... Initial Setup ...
-    # query = ...
-    
-    # SciPhi RAG Interface
-    # Supports calls like `contexts = rag_interface.get_contexts(query)`
-    # Requires a valid SCIPHI_API_KEY env var
-    rag_interface = SciPhiWikiRAGInterface()
-
-    # SciPhi LLM Interface
-    llm_interface = SciPhiLLMInterface(rag_interface)
-
-    # Example Conversation
-    conversation = [
-        {
-            "role": "system",
-            "content": "You are a helpful and informative professor. You give long, accurate, and detailed explanations to student questions. You answer EVERY question that is given to you. You retrieve data multiple times if necessary.",
-        },
-        {
-            "role": "user",
-            "content": "Who is the president of the United States?",
-        },
-        {
-            "role": "assistant",
-            "content": "Joe Biden is the current president of the United States.",
-        },
-        {
-            "role": "user",
-            "content": query,
-        },
-    ]
-
-    # Define generation configuration
-    generation_config = GenerationConfig(
-        model_name=llm_model_name,
-        stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
-        # Pass in any other desired generation settings here
-    )
-
-    # Get the chat completion
-    completion = llm_interface.get_chat_completion(
-        conversation, generation_config
-    )
-
-    print(completion)
-    # Expected output: The current President of the United States is Joe Biden.
-
----
-
-Here's a more advanced example of how you can utilize SciPhi to work with configurably with available LLM and RAG providers:
-
-.. code-block:: python
-
-    from sciphi.core import LLMProviderName, RAGProviderName
-    from sciphi.interface import LLMInterfaceManager, RAGInterfaceManager
-    from sciphi.llm import GenerationConfig
-
-    # Define your parameters here...
+    from synthesizer.llm import GenerationConfig
 
     # RAG Provider Settings
-    rag_interface = (
-        RAGInterfaceManager.get_interface_from_args(
-            RAGProviderName(rag_provider_name),
-            api_base=rag_api_base or llm_api_base,
-            api_key=rag_api_key or llm_api_key,
-            top_k=rag_top_k,
-        )
-        if rag_enabled
-        else None
+    rag_interface = RAGInterfaceManager.get_interface_from_args(
+        RAGProviderName(rag_provider_name),
+        api_base=rag_api_base,
+        limit_hierarchical_url_results=rag_limit_hierarchical_url_results,
+        limit_final_pagerank_results=rag_limit_final_pagerank_results,
     )
+    rag_context = rag_interface.get_rag_context(query)
 
     # LLM Provider Settings
     llm_interface = LLMInterfaceManager.get_interface_from_args(
-        LLMProviderName(llm_provider_name),
-        api_key=llm_api_key,
-        api_base=llm_api_base,
-        rag_interface=rag_interface,
-        model_name=llm_model_name,
+        LLMProviderName("openai"),
     )
 
-    # Set up typical LLM generation settings
-    completion_config = GenerationConfig(
-        temperature=llm_temperature,
-        top_k=llm_top_k,
+    generation_config = GenerationConfig(
+        model_name=llm_model_name,
         max_tokens_to_sample=llm_max_tokens_to_sample,
-        model_name=llm_model_name,
-        skip_special_tokens=llm_skip_special_tokens,
-        stop_token=SciPhiFormatter.INIT_PARAGRAPH_TOKEN,
+        temperature=llm_temperature,
+        top_p=llm_top_p,
+        # other generation params here ...
     )
 
-    # Get the completion for a prompt
-    completion = llm_interface.get_completion(prompt, generation_config)
+    formatted_prompt = rag_prompt.format(rag_context=rag_context)
+    completion = llm_interface.get_completion(
+        formatted_prompt, generation_config
+    )
+    print(completion)
 
-    # Continue with your process...
+    ### Output:
+    # Fermat's Last Theorem was proven by British mathematician Andrew Wiles in 1994 (Wikipedia). Wiles's proof was based on a special case of the modularity theorem for elliptic curves, along with Ribet's theorem (Wikipedia). The modularity theorem and Fermat's Last Theorem were previously considered inaccessible to proof by contemporaneous mathematicians (Wikipedia). However, Wiles's proof provided a solution to Fermat's Last Theorem, which had remained unproved for over 300 years (PlanetMath). Wiles's proof is widely accepted and has been recognized with numerous awards, including the Abel Prize in 2016 (Wikipedia).
 
-This example showcases the flexibility and power of SciPhi, allowing you to seamlessly integrate various LLM and RAG providers into your applications.
-
-
-Generating Completions with SciPhi
----------------------------
-
-SciPhi supports multiple LLM providers (e.g. OpenAI, Anthropic, HuggingFace, and vLLM) and RAG providers (e.g. SciPhi). To run an example completion with SciPhi the code shown above, execute:
-
-.. code-block:: bash
-    python -m sciphi.scripts.sciphi_gen_completion -llm_provider_name=sciphi --llm_api_key=YOUR_SCIPHI_API_KEY --llm_api_base=https://api.sciphi.ai/v1 --rag_api_base=https://api.sciphi.ai --llm_model_name=SciPhi/SciPhi-Self-RAG-Mistral-7B-32k --query="Write a few paragraphs on general relativity. Include the mathematical definition of Einsteins field equation in your writeup."
-
-Generating Data with SciPhi
----------------------------
-
-To generate data tailored to your specifications, you can use the provided scripts. For instance, to generate a dataset with a desired number of samples:
-
-.. code-block:: bash
-
-    python -m sciphi.scripts.data_augmenter --config-path=$PWD/sciphi/config/prompts/question_and_answer.yaml --config_name=None --n_samples=1
-
-
-Inspecting the output:
-
-.. code-block:: bash
-
-    {"question": "What is the reaction called when alcohol and carboxylic acids react?", "answer": "Fischer esterification"}
-    ...
-    {"question": "Are tertiary alcohols resistant to oxidation?", "answer": "Yes"}
-
-
-This command can be readily expanded to other configurations.
-
-RAG-Enhanced Textbooks
-----------------------
-
-With SciPhi, you can generate textbooks with the assistance of RAG. To perform a dry-run:
-
-.. code-block:: bash
-
-    python -m sciphi.scripts.textbook_generator dry_run --toc_dir=sciphi/data/sample/table_of_contents --rag-enabled=False
-
-To generate a textbook:
-
-.. code-block:: bash
-
-    python -m sciphi.scripts.textbook_generator run --toc_dir=sciphi/data/sample/table_of_contents --rag-enabled=False --filter_existing_books=False
-
-You can also use a custom table of contents:
-
-.. code-block:: bash
-
-    python -m sciphi.scripts.textbook_generator run --toc_dir=toc --output_dir=books --data_dir=$PWD
-
-RAG Evaluation
---------------
-
-Measure the efficacy of your RAG pipeline using SciPhi's evaluation harness:
-
-.. code-block:: bash
-
-    python -m sciphi.scripts.rag_harness --n-samples=100 --rag-enabled=True --evals_to_run="science_multiple_choice"
-
-This will evaluate your RAG over a set of questions and report the final accuracy.
-
-
-Wrapping Up
------------
-
-Congratulations! You've now been introduced to the core functionalities of SciPhi. This is just the beginning; delve deeper into the documentation, explore the community on Discord, or reach out for tailored inquiries. Happy modeling!
+    # It is important to note that Wiles's proof of Fermat's Last Theorem is a mathematical proof and not related to the science fiction novel "The Last Theorem" by Arthur C. Clarke and Frederik Pohl (Wikipedia). The novel is a work of fiction and does not provide a real mathematical proof for Fermat's Last Theorem (Wikipedia). Additionally, there have been other attempts to prove Fermat's Last Theorem, such as Sophie Germain's approach, but Wiles's proof is the most widely accepted and recognized (Math Stack Exchange).
+---
