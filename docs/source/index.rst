@@ -9,7 +9,6 @@ Welcome to Synthesizer 💡
 .. raw:: html
 
    <p style="text-align:center">
-   <strong>AI's Knowledge Engine.
    </strong>
    </p>
 
@@ -24,6 +23,8 @@ Welcome to Synthesizer 💡
 
 A multi-purpose LLM framework for inference, RAG, and data creation.
 
+Looking for the AgentSearch documentation? `Click Here <agent-search.readthedocs.io>`.
+
 With Synthesizer, you can:
 
 * Leverage **Retrieval-Augmented Generation (RAG)** for better accuracy and efficiency.
@@ -34,8 +35,8 @@ With Synthesizer, you can:
 
 Quick and easy setup:
 
-* Installation with pip: ``pip install sciphi``
-* Optional dependencies are available for extended functionality, such as ``sciphi[all_with_extras]`` for additional integrations.
+* Installation with pip: ``pip install synthesizer``
+* Optional dependencies are available for extended functionality, such as ``synthesizer[all_with_extras]`` for additional integrations.
 
 Diverse Features:
 

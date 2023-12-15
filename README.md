@@ -11,7 +11,6 @@ With Synthesizer, users can:
 - **Retrieval-Augmented Generation (RAG) on Demand**: Built-in RAG Provider Interface to anchor generated data to real-world sources. 
    - Turnkey integration with Agent Search API. 
 - **Custom Data Creation**: Generate datasets via LLMs that are tailored to your needs, for LLM training, RAG, and more.
-   - _Included Example_ - A dedicated textbook module which writes RAG-enhanced textbooks directly from a provided table of contents.
 
 ---
 

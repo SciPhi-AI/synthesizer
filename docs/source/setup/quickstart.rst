@@ -1,7 +1,7 @@
 .. _synthesizer_quickstart:
 
 Synthesizer Quickstart
-=================
+======================
 
 Welcome to the Synthesizer quickstart guide! Synthesizer, or ΨΦ, is your portal to combining Retrieval-Augmented Generation (RAG) with large language models (LLMs) like OpenAI's models, Anthropic, HuggingFace, and vLLM.
 
@@ -74,4 +74,3 @@ Here's how you can use Synthesizer to quickly set up and retrieve chat completio
     # Fermat's Last Theorem was proven by British mathematician Andrew Wiles in 1994 (Wikipedia). Wiles's proof was based on a special case of the modularity theorem for elliptic curves, along with Ribet's theorem (Wikipedia). The modularity theorem and Fermat's Last Theorem were previously considered inaccessible to proof by contemporaneous mathematicians (Wikipedia). However, Wiles's proof provided a solution to Fermat's Last Theorem, which had remained unproved for over 300 years (PlanetMath). Wiles's proof is widely accepted and has been recognized with numerous awards, including the Abel Prize in 2016 (Wikipedia).
 
     # It is important to note that Wiles's proof of Fermat's Last Theorem is a mathematical proof and not related to the science fiction novel "The Last Theorem" by Arthur C. Clarke and Frederik Pohl (Wikipedia). The novel is a work of fiction and does not provide a real mathematical proof for Fermat's Last Theorem (Wikipedia). Additionally, there have been other attempts to prove Fermat's Last Theorem, such as Sophie Germain's approach, but Wiles's proof is the most widely accepted and recognized (Math Stack Exchange).
----
