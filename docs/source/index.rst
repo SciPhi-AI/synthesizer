@@ -23,7 +23,7 @@ Welcome to Synthesizer 💡
 
 A multi-purpose LLM framework for inference, RAG, and data creation.
 
-Looking for the AgentSearch documentation? `Click Here <agent-search.readthedocs.io>`_.
+Looking for the AgentSearch documentation? `Click Here <https://agent-search.readthedocs.io>`_.
 
 With Synthesizer, you can:
 
