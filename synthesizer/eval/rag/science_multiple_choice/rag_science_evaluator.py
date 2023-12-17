@@ -30,7 +30,7 @@ SCIENCE_QUESTION_TEMPLATE = dedent(
             E: {E}
         
         #### Wikipedia Context:
-            {wiki_context}
+            {search_context}
             
         #### Answer:
 """
@@ -70,17 +70,16 @@ class ScienceMultipleChoiceEvaluator(Evaluator):
                 "evals",
                 f"{ScienceMultipleChoiceEvaluator.NAME.lower().replace(' ', '_')}.csv",
             )
-        )
+        ).head(n_samples)
 
     def initialize_prompts(self):
         contexts = (
-            self.rag_interface.get_rag_context(
-                list(
-                    self.evals[
-                        ScienceMultipleChoiceEvaluator.PROMPT_FIELD
-                    ].values
-                )
-            )
+            [
+                self.rag_interface.get_rag_context(prompt)
+                for prompt in self.evals[
+                    ScienceMultipleChoiceEvaluator.PROMPT_FIELD
+                ].values
+            ]
             if self.rag_interface
             else [ScienceMultipleChoiceEvaluator.RAG_DISABLED_RESPONSE]
             * len(self.evals)
@@ -98,7 +97,7 @@ class ScienceMultipleChoiceEvaluator(Evaluator):
             + "\n"
             + SCIENCE_QUESTION_TEMPLATE.format(
                 example_number=self.n_few_shot + 1,
-                wiki_context=context,
+                search_context=context,
                 **entry,
             )
         )
@@ -119,8 +118,8 @@ class ScienceMultipleChoiceEvaluator(Evaluator):
                 SCIENCE_QUESTION_TEMPLATE.format(
                     example_number=example_number,
                     prompt=example_prompt,
-                    wiki_context=self.rag_interface.get_rag_context(
-                        [example_prompt]
+                    search_context=self.rag_interface.get_rag_context(
+                        example_prompt
                     )
                     if self.rag_interface
                     else ScienceMultipleChoiceEvaluator.RAG_DISABLED_RESPONSE,
@@ -140,9 +139,9 @@ class ScienceMultipleChoiceEvaluator(Evaluator):
                 SCIENCE_QUESTION_TEMPLATE.format(
                     example_number=example_number,
                     prompt=example_prompt,
-                    wiki_context=self.rag_interface.get_rag_context(
-                        [example_prompt]
-                    )[0]
+                    search_context=self.rag_interface.get_rag_context(
+                        example_prompt
+                    )
                     if self.rag_interface
                     else ScienceMultipleChoiceEvaluator.RAG_DISABLED_RESPONSE,
                     A="Mitochondria are primarily responsible for protein synthesis using ribosomes.",
@@ -161,9 +160,9 @@ class ScienceMultipleChoiceEvaluator(Evaluator):
                 SCIENCE_QUESTION_TEMPLATE.format(
                     example_number=example_number,
                     prompt=example_prompt,
-                    wiki_context=self.rag_interface.get_rag_context(
-                        [example_prompt]
-                    )[0]
+                    search_context=self.rag_interface.get_rag_context(
+                        example_prompt
+                    )
                     if self.rag_interface
                     else ScienceMultipleChoiceEvaluator.RAG_DISABLED_RESPONSE,
                     A="Oxidation involves the addition of oxygen to a molecule or the loss of electrons from an atom or molecule.",

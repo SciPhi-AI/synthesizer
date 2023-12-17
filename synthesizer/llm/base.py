@@ -1,34 +1,9 @@
 """Base classes for language model providers."""
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field, fields
-from enum import Enum
 from typing import Optional
 
 from synthesizer.core import LLMProviderName
-
-
-class ModelName(Enum):
-    """An enum to hold the names of supported models."""
-
-    # OpenAI Models
-
-    ## GPT-3.5
-    GPT_3p5_TURBO_0301 = "gpt-3.5-turbo-0301"
-    GPT_3p5_TURBO_0613 = "gpt-3.5-turbo-0613"
-    GPT_3p5_TURBO_16k_0613 = "gpt-3.5-turbo-16k-0613"
-    GPT_3p5_TURBO = "gpt-3.5-turbo"
-    GPT_3p5_TURBO_INSTRUCT = "gpt-3.5-turbo-instruct"
-
-    ## GPT-4
-    GPT_4_0314 = "gpt-4-0314"
-    GPT_4_0613 = "gpt-4-0613"
-    GPT_4 = "gpt-4"
-    GPT_4_32k = "gpt-4-32k"
-
-    # Anthropic Models
-
-    CLAUDE_INSTANT_1 = "claude-instant-1"
-    CLAUDE_2 = "claude-2"
 
 
 @dataclass

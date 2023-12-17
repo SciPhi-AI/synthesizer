@@ -7,9 +7,7 @@ Welcome to the Synthesizer quickstart guide! Synthesizer, or ΨΦ, is your porta
 
 This guide will introduce you to:
 
-- Generating data tailored to your needs.
 - Using the RAG provider interface.
-- Creating RAG-enhanced textbooks.
 - Evaluating your RAG pipeline.
 
 
@@ -26,10 +24,43 @@ Before you start, ensure you've installed Synthesizer:
 
 For additional details, refer to the `installation guide <https://sciphi.readthedocs.io/en/latest/setup/installation.html>`_.
 
-Instantiate Your LLM and RAG Provider
+Using Synthesizer
+-----------------
+
+1. **Generate synthetic question answer pairs**
+
+   .. code-block:: bash
+
+      export SCIPHI_API_KEY=MY_SCIPHI_API_KEY
+      python -m synthesizer.scripts.data_augmenter run --dataset="wiki_qa"
+
+   .. code-block:: bash
+
+      tail augmented_output/config_name_eq_answer_question__dataset_name_eq_wiki_qa.jsonl
+      { "formatted_prompt": "... ### Question:\nwhat country did wine originate in\n\n### Input:\n1. URL: https://en.wikipedia.org/wiki/History%20of%20wine (Score: 0.85)\nTitle:History of wine....",
+      { "completion": Wine originated in the South Caucasus, which is now part of modern-day Armenia ...
+
+2. **Evaluate RAG pipeline performance**
+
+   .. code-block:: bash
+
+      export SCIPHI_API_KEY=MY_SCIPHI_API_KEY
+      python -m synthesizer.scripts.rag_harness --rag_provider="agent-search" --llm_provider_name="sciphi" --n_samples=25
+
+   .. code-block:: bash
+      ...
+      INFO:__main__:Now generating completions...
+      100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:29<00:00,  3.40it/s]
+      INFO:__main__:Final Accuracy=0.42
+
+.. note::
+    This is a basic introduction to Synthesizer. Check back later for more detailed and intricate documentation that delves deeper into advanced features and customization options.
+
+
+Developing with Synthesizer
 -------------------------------------
 
-Here's how you can use Synthesizer to quickly set up and retrieve chat completions, without diving deep into intricate configurations:
+Here's how you can use Synthesizer to quickly set up and RAG augmented generation, without diving deep into intricate configurations:
 
 .. code-block:: python
     
@@ -45,8 +76,7 @@ Here's how you can use Synthesizer to quickly set up and retrieve chat completio
 
     # RAG Provider Settings
     rag_interface = RAGInterfaceManager.get_interface_from_args(
-        RAGProviderName(rag_provider_name),
-        api_base=rag_api_base,
+        RAGProviderName("agent-search"),
         limit_hierarchical_url_results=rag_limit_hierarchical_url_results,
         limit_final_pagerank_results=rag_limit_final_pagerank_results,
     )
@@ -65,13 +95,7 @@ Here's how you can use Synthesizer to quickly set up and retrieve chat completio
         # other generation params here ...
     )
 
-    formatted_prompt = rag_prompt.format(rag_context=rag_context)
+    formatted_prompt = raw_prompt.format(rag_context=rag_context)
     completion = llm_interface.get_completion(
         formatted_prompt, generation_config
     )
-    print(completion)
-
-    ### Output:
-    # Fermat's Last Theorem was proven by British mathematician Andrew Wiles in 1994 (Wikipedia). Wiles's proof was based on a special case of the modularity theorem for elliptic curves, along with Ribet's theorem (Wikipedia). The modularity theorem and Fermat's Last Theorem were previously considered inaccessible to proof by contemporaneous mathematicians (Wikipedia). However, Wiles's proof provided a solution to Fermat's Last Theorem, which had remained unproved for over 300 years (PlanetMath). Wiles's proof is widely accepted and has been recognized with numerous awards, including the Abel Prize in 2016 (Wikipedia).
-
-    # It is important to note that Wiles's proof of Fermat's Last Theorem is a mathematical proof and not related to the science fiction novel "The Last Theorem" by Arthur C. Clarke and Frederik Pohl (Wikipedia). The novel is a work of fiction and does not provide a real mathematical proof for Fermat's Last Theorem (Wikipedia). Additionally, there have been other attempts to prove Fermat's Last Theorem, such as Sophie Germain's approach, but Wiles's proof is the most widely accepted and recognized (Math Stack Exchange).
