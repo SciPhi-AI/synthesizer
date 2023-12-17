@@ -48,6 +48,7 @@ Using Synthesizer
       python -m synthesizer.scripts.rag_harness --rag_provider="agent-search" --llm_provider_name="sciphi" --n_samples=25
 
    .. code-block:: bash
+    
       ...
       INFO:__main__:Now generating completions...
       100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:29<00:00,  3.40it/s]
