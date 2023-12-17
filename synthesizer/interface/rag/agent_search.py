@@ -2,6 +2,7 @@ import os
 from dataclasses import dataclass
 
 from agent_search.core import SERPClient
+
 from synthesizer.core import RAGProviderName
 from synthesizer.interface.base import RAGInterface, RAGProviderConfig
 from synthesizer.interface.rag_interface_manager import (

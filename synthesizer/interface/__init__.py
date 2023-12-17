@@ -9,6 +9,7 @@ from synthesizer.interface.llm.hugging_face_interface import (
     HuggingFaceLLMInterface,
 )
 from synthesizer.interface.llm.openai_interface import OpenAILLMInterface
+from synthesizer.interface.llm.sciphi_interface import SciPhiLLMInterface
 from synthesizer.interface.llm.vllm_interface import vLLMInterface
 from synthesizer.interface.llm_interface_manager import LLMInterfaceManager
 from synthesizer.interface.rag.agent_search import (
@@ -27,6 +28,7 @@ __all__ = [
     "AnthropicLLMInterface",
     "HuggingFaceLLMInterface",
     "OpenAILLMInterface",
+    "SciPhiLLMInterface",
     "vLLMInterface",
     # RAG
     "RAGInterfaceManager",
