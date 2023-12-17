@@ -1,7 +1,4 @@
-"""A module for creating OpenAI model abstractions."""
-# TODO - Will we face issues if a user attempts to access
-# OpenAI + vLLM / SciPhi remote in the same session?
-# My guess is yes, but need to test + workaround.
+"""A module for creating SciPhi model abstractions."""
 import os
 from dataclasses import dataclass
 
@@ -13,7 +10,7 @@ from synthesizer.llm.config_manager import model_config
 @model_config
 @dataclass
 class SciPhiConfig(LLMConfig):
-    """Configuration for OpenAI models."""
+    """Configuration for SciPhi models."""
 
     # Base
     provider_name: LLMProviderName = LLMProviderName.SCIPHI
@@ -22,7 +19,7 @@ class SciPhiConfig(LLMConfig):
 
 
 class SciPhiLLM(LLM):
-    """A concrete class for creating OpenAI models."""
+    """A concrete class for creating SciPhi models."""
 
     PROMPT_MEASUREMENT_PREFIX = (
         "<DUMMY PADDING, LOOKUP ACTUAL STRUCTUER LATER>"
@@ -62,7 +59,7 @@ class SciPhiLLM(LLM):
         messages: list[dict[str, str]],
         generation_config: GenerationConfig,
     ) -> str:
-        """Get a completion from the OpenAI API based on the provided messages."""
+        """Get a completion from the SciPhi API based on the provided messages."""
         import openai
 
         # Create a dictionary with the default arguments
@@ -87,7 +84,7 @@ class SciPhiLLM(LLM):
     def get_instruct_completion(
         self, prompt: str, generation_config: GenerationConfig
     ) -> str:
-        """Get an instruction completion from the OpenAI API based on the provided prompt."""
+        """Get an instruction completion from the SciPhi API based on the provided prompt."""
         import openai
 
         args = self._get_base_args(generation_config, prompt)
@@ -103,7 +100,7 @@ class SciPhiLLM(LLM):
         generation_config: GenerationConfig,
         prompt=None,
     ) -> dict:
-        """Get the base arguments for the OpenAI API."""
+        """Get the base arguments for the SciPhi API."""
 
         args = {
             "model": generation_config.model_name,
@@ -114,7 +111,7 @@ class SciPhiLLM(LLM):
             "max_tokens": generation_config.max_tokens_to_sample,
         }
 
-        # Check if were using OpenAI api with re-routed base
+        # Check if were using SciPhi api with re-routed base
         if self.config.provider_name in [
             LLMProviderName.VLLM,
             LLMProviderName.SCIPHI,

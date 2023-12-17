@@ -1,7 +1,4 @@
 """A module for creating OpenAI model abstractions."""
-# TODO - Will we face issues if a user attempts to access
-# OpenAI + vLLM / SciPhi remote in the same session?
-# My guess is yes, but need to test + workaround.
 from dataclasses import dataclass
 
 from synthesizer.core import LLMProviderName

@@ -1,4 +1,4 @@
-"""A module for interfacing with the OpenAI API"""
+"""A module for interfacing with the SciPhi API"""
 import logging
 
 from synthesizer.interface.base import LLMInterface, LLMProviderName
@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 @llm_interface
 class SciPhiLLMInterface(LLMInterface):
-    """A class to interface with the OpenAI API."""
+    """A class to interface with the SciPhi API."""
 
     provider_name = LLMProviderName.SCIPHI
     system_message = "You are a helpful assistant."
@@ -27,10 +27,10 @@ class SciPhiLLMInterface(LLMInterface):
     def get_completion(
         self, prompt: str, generation_config: GenerationConfig
     ) -> str:
-        """Get a completion from the OpenAI API based on the provided prompt."""
+        """Get a completion from the SciPhi API based on the provided prompt."""
 
         logger.debug(
-            f"Getting completion from OpenAI API for model={generation_config.model_name}"
+            f"Getting completion from SciPhi API for model={generation_config.model_name}"
         )
         if "instruct" in generation_config.model_name:
             return self.model.get_instruct_completion(
@@ -52,7 +52,7 @@ class SciPhiLLMInterface(LLMInterface):
         self, conversation: list[dict], generation_config: GenerationConfig
     ) -> str:
         raise NotImplementedError(
-            "Chat completion not yet implemented for OpenAI."
+            "Chat completion not yet implemented for SciPhi."
         )
 
     @property
