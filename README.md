@@ -31,6 +31,8 @@ pip install sciphi-synthesizer
 
    ```bash
    tail augmented_output/config_name_eq_answer_question__dataset_name_eq_wiki_qa.jsonl
+   { "formatted_prompt": "... ### Question:\nwhat country did wine originate in\n\n### Input:\n1. URL: https://en.wikipedia.org/wiki/History%20of%20wine (Score: 0.85)\nTitle:History of wine....",
+   { "completion": "Wine originated in the South Caucasus, which is now part of modern-day Armenia ..."
    ```
 
 2. **Evaluate RAG pipeline performance**
