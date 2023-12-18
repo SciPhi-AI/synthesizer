@@ -11,7 +11,7 @@ authors = ["Owen Colegrove <owen@sciphi.ai>"]
 license = "Apache-2.0"
 readme = "README.md"
 name = 'sciphi-synthesizer'
-version = '1.0.3'
+version = '1.0.2'
 packages = [
     { include = "synthesizer" }
 ]
