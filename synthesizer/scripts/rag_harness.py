@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 def main(
     # LLM Settings
     llm_provider_name="sciphi",
-    llm_model_name="SciPhi/Sensei-7B-V1",
+    llm_model_name="SciPhi/SciPhi-SearchAgent-Alpha-7B",
     llm_max_tokens_to_sample=32,
     llm_temperature=0.1,
     llm_top_k=100,
