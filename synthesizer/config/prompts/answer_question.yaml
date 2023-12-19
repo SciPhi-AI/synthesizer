@@ -6,6 +6,9 @@ raw_text: |
 
   ### Question:
   {question}
+
+  ### Choices:
+  {choices}
   
   ### Input:
   {rag_context}
@@ -14,10 +17,11 @@ raw_text: |
 
 dataset_supplied_inputs_map:
   question: question
+  choices: choices
 
 user_supplied_inputs: [rag_context]
 
-default_dataset_name: "wiki_qa"
+default_dataset_name: "tasksource/ScienceQA_text_only"
 
 output_format: "jsonl"
 

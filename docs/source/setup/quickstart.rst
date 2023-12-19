@@ -26,8 +26,30 @@ For additional details, refer to the `installation guide <https://sciphi.readthe
 
 Using Synthesizer
 -----------------
+1. **Run with RAG**
 
-1. **Generate synthetic question answer pairs**
+   .. code-block:: shell
+
+      export SCIPHI_API_KEY=MY_SCIPHI_API_KEY
+      # Queries AgentSearch and passes results on to the SciPhi Sensei
+      python -m agent_search.scripts.run_rag run --query="Your Search Query"  --rag_provider_name="agent-search" 
+      
+   .. code-block:: shell
+
+      export SCIPHI_API_KEY=MY_SCIPHI_API_KEY
+      export SERP_API_KEY=MY_SERP_API_KEY # refer to https://serpapi.com
+      # Queries Google and passes results on to the SciPhi Sensei
+      python -m agent_search.scripts.run_rag run --query="Your Search Query" --rag_provider_name=google-search
+      
+
+   .. code-block:: bash
+
+      tail augmented_output/config_name_eq_answer_question__dataset_name_eq_wiki_qa.jsonl
+      { "formatted_prompt": "... ### Question:\nwhat country did wine originate in\n\n### Input:\n1. URL: https://en.wikipedia.org/wiki/History%20of%20wine (Score: 0.85)\nTitle:History of wine....",
+      { "completion": Wine originated in the South Caucasus, which is now part of modern-day Armenia ...
+
+
+2. **Generate synthetic question answer pairs**
 
    .. code-block:: bash
 
@@ -40,7 +62,7 @@ Using Synthesizer
       { "formatted_prompt": "... ### Question:\nwhat country did wine originate in\n\n### Input:\n1. URL: https://en.wikipedia.org/wiki/History%20of%20wine (Score: 0.85)\nTitle:History of wine....",
       { "completion": Wine originated in the South Caucasus, which is now part of modern-day Armenia ...
 
-2. **Evaluate RAG pipeline performance**
+3. **Evaluate RAG pipeline performance**
 
    .. code-block:: bash
 
