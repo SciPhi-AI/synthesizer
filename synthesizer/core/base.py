@@ -18,3 +18,4 @@ class LLMProviderName(Enum):
 class RAGProviderName(Enum):
     LOCAL = "local"
     AGENT_SEARCH = "agent-search"
+    GOOGLE_SEARCH = "google-search"
