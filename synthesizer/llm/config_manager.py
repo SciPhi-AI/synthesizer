@@ -15,10 +15,6 @@ class LLMConfigManager:
         llm_provider_name: LLMProviderName,
     ) -> Type[LLMConfig]:
         """Get the configuration class for a given model."""
-        print(
-            "LLMConfigManager.config_registry = ",
-            LLMConfigManager.config_registry,
-        )
         config_class = LLMConfigManager.config_registry.get(llm_provider_name)
 
         if not config_class:
