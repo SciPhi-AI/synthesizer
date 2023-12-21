@@ -13,7 +13,6 @@ class SciPhiLLMInterface(LLMInterface):
     """A class to interface with the SciPhi API."""
 
     provider_name = LLMProviderName.SCIPHI
-    system_message = "You are a helpful assistant."
 
     def __init__(
         self,
@@ -32,21 +31,9 @@ class SciPhiLLMInterface(LLMInterface):
         logger.debug(
             f"Getting completion from SciPhi API for model={generation_config.model_name}"
         )
-        if "instruct" in generation_config.model_name:
-            return self.model.get_instruct_completion(
-                prompt, generation_config
-            )
-        else:
-            return self._model.get_chat_completion(
-                [
-                    {
-                        "role": "system",
-                        "content": SciPhiLLMInterface.system_message,
-                    },
-                    {"role": "user", "content": prompt},
-                ],
-                generation_config,
-            )
+        return self.model.get_instruct_completion(
+            prompt, generation_config
+        )
 
     def get_chat_completion(
         self, conversation: list[dict], generation_config: GenerationConfig
