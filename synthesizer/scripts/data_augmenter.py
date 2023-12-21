@@ -55,7 +55,7 @@ def main(
     n_samples: int = 100,
     # LLM Settings
     llm_provider_name="sciphi",
-    llm_model_name="SciPhi/SciPhi-SearchAgent-Alpha-7B",
+    llm_model_name="SciPhi/SciPhi/Sensei-7B-V1",
     llm_max_tokens_to_sample=128,
     llm_temperature=0.1,
     llm_top_k=100,
