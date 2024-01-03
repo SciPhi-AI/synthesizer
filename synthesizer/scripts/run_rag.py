@@ -1,11 +1,10 @@
 import json
-from synthesizer.core import LLMProviderName, RAGProviderName
-from synthesizer.interface import (
-    LLMInterfaceManager,
-    RAGInterfaceManager,
-)
-from synthesizer.llm import GenerationConfig
+
 import fire
+
+from synthesizer.core import LLMProviderName, RAGProviderName
+from synthesizer.interface import LLMInterfaceManager, RAGInterfaceManager
+from synthesizer.llm import GenerationConfig
 
 PROMPT = """
 ### Instruction:
@@ -47,10 +46,19 @@ class RagDemo:
         llm_temperature=0.1,
         llm_top_p=0.95,
     ):
+        # The following example is included to show the customizeability of the SciPhi API
+        # this workflow can be trivially replicated by calling the below:
+
+        # from agent_search import SciPhi
+        # client = SciPhi()
+        # client.get_search_rag_response(query='latest news', search_provider='agent-search', llm_model='SciPhi/Sensei-7B-V1')
+
+        
         # RAG Provider Settings
         rag_interface = RAGInterfaceManager.get_interface_from_args(
             RAGProviderName(rag_provider_name),
             api_base=rag_api_base,
+            # -- Customize your search response --
             # limit_hierarchical_url_results=rag_limit_hierarchical_url_results,
             # limit_final_pagerank_results=rag_limit_final_pagerank_results,
         )

@@ -2,8 +2,6 @@ import os
 from dataclasses import dataclass
 from typing import Optional
 
-from agent_search.core import SERPClient
-
 from synthesizer.core import RAGProviderName
 from synthesizer.interface.base import RAGInterface, RAGProviderConfig
 from synthesizer.interface.rag_interface_manager import (
@@ -30,10 +28,10 @@ def call_search_engine(query, serpapi_api_key):
 
 @dataclass
 @rag_config
-class GoogleSearchRAGConfig(RAGProviderConfig):
+class SERPSearchRAGConfig(RAGProviderConfig):
     """An abstract class to hold the configuration for a RAG provider."""
 
-    provider_name: RAGProviderName = RAGProviderName.GOOGLE_SEARCH
+    provider_name: RAGProviderName = RAGProviderName.SERP_API
     google_domain: str = "google.com"
     api_key: Optional[str] = None
 
@@ -359,10 +357,6 @@ def freshprompt_format(
         answer_box = format_search_results({})
     df = pd.concat([df, pd.DataFrame([answer_box])], ignore_index=True)
 
-    # Sort by date
-    # df["date"] = df["date"].apply(lambda x: format_date(x))
-    # df["datetime"] = pd.to_datetime(df["date"], errors="coerce")
-    # df = df.sort_values(by="datetime", na_position="first")
     df.replace({pd.NaT: None}, inplace=True)
     df = df.dropna(how="all")
 
@@ -386,15 +380,15 @@ def freshprompt_format(
 
 
 @rag_provider
-class GoogleSearchRAGInterface(RAGInterface):
+class SERPSearchRAGInterface(RAGInterface):
     """A RAG provider that uses Wikipedia as the retrieval source."""
 
-    provider_name = RAGProviderName.GOOGLE_SEARCH
+    provider_name = RAGProviderName.SERP_API
     FORMAT_INDENT = "        "
 
     def __init__(
         self,
-        config: GoogleSearchRAGConfig = GoogleSearchRAGConfig(),
+        config: SERPSearchRAGConfig = SERPSearchRAGConfig(),
         *args,
         **kwargs,
     ) -> None:
@@ -411,7 +405,7 @@ class GoogleSearchRAGInterface(RAGInterface):
                 f"ImportError: {e}. Note, `python-dateutil` must be installed to run RAG with Google Search."
             )
         super().__init__(config)
-        self.config: GoogleSearchRAGConfig = config
+        self.config: SERPSearchRAGConfig = config
 
     def get_rag_context(self, query) -> list[str]:
         """Get the context for a prompt."""
@@ -435,4 +429,3 @@ class GoogleSearchRAGInterface(RAGInterface):
             num_questions_and_answers,
             num_retrieved_evidences,
         )
-

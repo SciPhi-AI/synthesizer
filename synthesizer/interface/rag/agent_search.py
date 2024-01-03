@@ -1,10 +1,13 @@
 import os
 from dataclasses import dataclass
 
-from agent_search.core import SERPClient
-
+from agent_search.core import AgentSearchClient
 from synthesizer.core import RAGProviderName
-from synthesizer.interface.base import RAGInterface, RAGProviderConfig
+from synthesizer.interface.base import (
+    RAGInterface,
+    RAGProviderConfig,
+    RagResult,
+)
 from synthesizer.interface.rag_interface_manager import (
     rag_config,
     rag_provider,
@@ -39,7 +42,7 @@ class AgentSearchRAGInterface(RAGInterface):
     ) -> None:
         super().__init__(config)
         self.config: AgentSearchRAGConfig = config
-        self.client = SERPClient(config.api_base)
+        self.client = AgentSearchClient(config.api_base)
 
     def get_rag_context(self, query) -> list[str]:
         """Get the context for a prompt."""
@@ -48,16 +51,19 @@ class AgentSearchRAGInterface(RAGInterface):
             raise ValueError(
                 "No API key provided. Please provide an API key or set the SCIPHI_API_KEY environment variable."
             )
-        results = self.client.search(
+        serp_results = self.client.search(
             query,
             self.config.limit_broad_results,
             self.config.limit_deduped_url_results,
             self.config.limit_hierarchical_url_results,
             self.config.limit_final_pagerank_results,
         )
-        return "\n".join(
-            [
-                f"{i+1}. URL: {result.url} (Score: {result.score:.2f})\nTitle:{result.title}\nSnippet:\n{result.text}"
-                for i, result in enumerate(results)
-            ]
+        return RagResult(
+            context="\n".join(
+                [
+                    f"{i+1}. URL: {result.url} (Score: {result.score:.2f})\nTitle:{result.title}\nSnippet:\n{result.text}"
+                    for i, result in enumerate(serp_results)
+                ]
+            ),
+            meta_data=[ele.to_string_dict() for ele in serp_results],
         )

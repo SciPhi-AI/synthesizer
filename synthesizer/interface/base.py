@@ -1,7 +1,7 @@
 """A module which defines interface abstractions for various LLM providers."""
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from typing import Any, List, Optional, Type
+from typing import Any, Dict, List, Optional, Type
 
 from synthesizer.core import LLMProviderName, RAGProviderName
 from synthesizer.llm import LLM, GenerationConfig, LLMConfig
@@ -66,6 +66,12 @@ class RAGProviderConfig(ABC):
     api_key: Optional[str] = None
 
 
+@dataclass
+class RagResult(ABC):
+    context: str
+    meta_data: Optional[List[Dict[str, str]]] = None
+
+
 class RAGInterface(ABC):
     """An abstract class to provide a common interface for RAG providers."""
 
@@ -79,7 +85,7 @@ class RAGInterface(ABC):
         self.config = config
 
     @abstractmethod
-    def get_rag_context(self, query: str) -> list[str]:
+    def get_rag_context(self, query: str) -> RagResult:
         """Get the context for a given query."""
         pass
 

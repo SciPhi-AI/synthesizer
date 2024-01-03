@@ -31,9 +31,7 @@ class SciPhiLLMInterface(LLMInterface):
         logger.debug(
             f"Getting completion from SciPhi API for model={generation_config.model_name}"
         )
-        return self.model.get_instruct_completion(
-            prompt, generation_config
-        )
+        return self.model.get_instruct_completion(prompt, generation_config)
 
     def get_chat_completion(
         self, conversation: list[dict], generation_config: GenerationConfig
