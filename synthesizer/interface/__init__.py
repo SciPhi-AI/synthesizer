@@ -16,11 +16,15 @@ from synthesizer.interface.rag.agent_search import (
     AgentSearchRAGConfig,
     AgentSearchRAGInterface,
 )
-from synthesizer.interface.rag.google_search import (
-    GoogleSearchRAGConfig,
-    GoogleSearchRAGInterface,
+from synthesizer.interface.rag.bing_search import (
+    BingRAGConfig,
+    BingRAGInterface,
 )
 from synthesizer.interface.rag.local import LocalRAGInterface
+from synthesizer.interface.rag.serp_api import (
+    SERPSearchRAGConfig,
+    SERPSearchRAGInterface,
+)
 from synthesizer.interface.rag_interface_manager import RAGInterfaceManager
 
 __all__ = [
@@ -42,6 +46,8 @@ __all__ = [
     "LocalRAGInterface",
     "AgentSearchRAGConfig",
     "AgentSearchRAGInterface",
-    "GoogleSearchRAGConfig",
-    "GoogleSearchRAGInterface",
+    "SERPSearchRAGConfig",
+    "SERPSearchRAGInterface",
+    "BingRAGConfig",
+    "BingRAGInterface",
 ]
