@@ -8,6 +8,7 @@ from synthesizer.llm.models.hugging_face_llm import (
 from synthesizer.llm.models.openai_llm import OpenAIConfig, OpenAILLM
 from synthesizer.llm.models.sciphi_llm import SciPhiConfig, SciPhiLLM
 from synthesizer.llm.models.vllm_llm import vLLM, vLLMConfig
+from synthesizer.llm.models.ollama_llm import OllamaConfig, OllamaLLM
 
 __all__ = [
     # Base
@@ -26,4 +27,6 @@ __all__ = [
     "SciPhiLLM",
     "vLLMConfig",
     "vLLM",
+    "OllamaConfig",
+    "OllamaLLM",
 ]

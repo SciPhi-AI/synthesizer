@@ -37,7 +37,7 @@ class BingRAGInterface(RAGInterface):
     ) -> None:
         super().__init__(config)
         self.config: BingRAGConfig = config
-        print('self.config = ', self.config)
+        print("self.config = ", self.config)
         api_key = self.config.api_key or os.getenv("BING_API_KEY")
         if not api_key:
             raise ValueError(
