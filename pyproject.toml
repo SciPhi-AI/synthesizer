@@ -28,6 +28,7 @@ retrying = "^1.3.4"
 anthropic_support = ["anthropic"]
 hf_support = ["accelerate", "datasets", "torch", "transformers"]
 vllm_support = ["accelerate", "torch", "vllm"]
+ollama_support = ["litellm"]
 
 all = [
     # anthropic
@@ -37,6 +38,7 @@ all = [
     "datasets",
     "torch",
     "transformers",
+    "litellm"
 ]
 all_with_extras = [
     # all
@@ -49,6 +51,8 @@ all_with_extras = [
     "transformers",
     # More Extras
     "vllm",
+    # ollama
+    "litellm"
 ]
 # To export dependencies to pip, use:
 # poetry export -f requirements.txt --with dev --without-hashes --output requirements-dev.txt

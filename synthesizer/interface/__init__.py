@@ -12,6 +12,7 @@ from synthesizer.interface.llm.openai_interface import OpenAILLMInterface
 from synthesizer.interface.llm.sciphi_interface import SciPhiLLMInterface
 from synthesizer.interface.llm.vllm_interface import vLLMInterface
 from synthesizer.interface.llm_interface_manager import LLMInterfaceManager
+from synthesizer.interface.llm.ollama_interface import OllamaLLMInterface
 from synthesizer.interface.rag.agent_search import (
     AgentSearchRAGConfig,
     AgentSearchRAGInterface,
@@ -38,6 +39,7 @@ __all__ = [
     "OpenAILLMInterface",
     "SciPhiLLMInterface",
     "vLLMInterface",
+    "OllamaLLMInterface",
     # RAG
     "RAGInterfaceManager",
     "RAGProviderConfig",
